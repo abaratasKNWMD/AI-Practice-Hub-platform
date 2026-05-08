@@ -1,0 +1,9 @@
+{
+  "name": "codex-lab-mcp-readonly-docs",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "node scripts/smoke-test.mjs"
+  }
+}

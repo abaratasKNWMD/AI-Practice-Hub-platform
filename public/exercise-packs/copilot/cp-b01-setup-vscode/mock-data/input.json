@@ -1,0 +1,21 @@
+{
+  "vendor": "copilot",
+  "exerciseId": "cp-b01-setup-vscode",
+  "title": "Setup Copilot en VS Code",
+  "surface": "VS Code",
+  "recommendedModel": "Modelo incluido",
+  "permissionMode": "configuracion local",
+  "estimatedCost": "Muy bajo: setup y comprobacion",
+  "intentionalErrors": [
+    "briefing demasiado amplio",
+    "falta de evidencia",
+    "coste sin registrar"
+  ],
+  "expectedArtifacts": [
+    "prompt",
+    "resultado",
+    "evidencia",
+    "coste",
+    "decision"
+  ]
+}

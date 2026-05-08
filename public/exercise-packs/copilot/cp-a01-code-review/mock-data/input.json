@@ -1,0 +1,21 @@
+{
+  "vendor": "copilot",
+  "exerciseId": "cp-a01-code-review",
+  "title": "Code review local y PR",
+  "surface": "VS Code + GitHub PR",
+  "recommendedModel": "Modelo incluido; premium si se usa advanced review/modelo",
+  "permissionMode": "read-only",
+  "estimatedCost": "Medio: revisar diff y posible premium request",
+  "intentionalErrors": [
+    "briefing demasiado amplio",
+    "falta de evidencia",
+    "coste sin registrar"
+  ],
+  "expectedArtifacts": [
+    "prompt",
+    "resultado",
+    "evidencia",
+    "coste",
+    "decision"
+  ]
+}

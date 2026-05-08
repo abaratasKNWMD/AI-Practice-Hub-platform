@@ -1,0 +1,17 @@
+diff --git a/src/auth/session.js b/src/auth/session.js
+index 12222aa..34567bb 100644
+--- a/src/auth/session.js
++++ b/src/auth/session.js
+@@ -1,6 +1,12 @@
+ import { loadUser, createSession } from "./store.js";
+ 
+ export async function refreshSession(userId, token) {
+-  const user = await loadUser(userId);
+-  return createSession(user.id);
++  const user = loadUser(userId);
++  console.log("refresh token", token);
++  if (!user.isActive) {
++    return null;
++  }
++  return createSession(user.id);
+ }

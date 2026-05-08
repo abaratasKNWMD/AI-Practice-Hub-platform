@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 560" role="img" aria-labelledby="title desc">
+  <title id="title">Supporting files in skills</title>
+  <desc id="desc">Skill directory with SKILL.md, references, examples and scripts.</desc>
+  <rect width="1000" height="560" rx="34" fill="#100f0e"/>
+  <text x="500" y="78" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="38" font-weight="850" fill="#fff4eb">SKILL.md no es enciclopedia</text>
+  <rect x="220" y="142" width="560" height="330" rx="26" fill="#171311" stroke="rgba(255,255,255,.15)"/>
+  <g font-family="Inter, Arial, sans-serif" font-size="20" font-weight="850">
+    <text x="270" y="200" fill="#ffdfe5">summarize-changes/</text>
+    <text x="320" y="250" fill="#fff4eb">SKILL.md</text>
+    <text x="320" y="300" fill="#fff0c9">references/review-rubric.md</text>
+    <text x="320" y="350" fill="#d8fff1">examples/good-output.md</text>
+    <text x="320" y="400" fill="#dff7ff">scripts/collect-diff.js</text>
+  </g>
+  <text x="500" y="512" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="20" font-weight="850" fill="#b9aea3">El fichero principal orienta. Los adjuntos profundizan.</text>
+</svg>

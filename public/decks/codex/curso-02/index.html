@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Codex Potente - Curso avanzado</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="shell">
+      <aside class="rail" aria-label="Indice del curso">
+        <div class="brand">
+          <span class="brand-mark">CX</span>
+          <div>
+            <strong>Codex Potente</strong>
+            <span>Curso avanzado</span>
+          </div>
+        </div>
+        <div id="moduleList" class="module-list"></div>
+      </aside>
+
+      <main class="stage">
+        <header class="topbar">
+          <button id="toggleRail" class="ghost-btn" type="button" aria-label="Mostrar u ocultar indice">Indice</button>
+          <div class="course-meta">
+            <span id="modulePill">Modulo</span>
+            <strong id="slideTitle">Titulo</strong>
+          </div>
+          <div class="top-actions">
+            <button id="notesBtn" class="ghost-btn" type="button">Notas</button>
+            <button id="overviewBtn" class="ghost-btn" type="button">Mapa</button>
+            <button id="fullscreenBtn" class="ghost-btn" type="button" title="Pantalla completa (F5)" aria-label="Pantalla completa (F5)">Pantalla</button>
+          </div>
+        </header>
+
+        <section class="deck-wrap" aria-live="polite">
+          <div id="slide" class="slide"></div>
+        </section>
+
+        <footer class="controls">
+          <button id="prevBtn" class="nav-btn" type="button">Anterior</button>
+          <div class="progress-area">
+            <div class="progress-label">
+              <span id="counter">1 / 1</span>
+              <span id="timeHint">0 min</span>
+            </div>
+            <div class="progress-track" aria-hidden="true"><span id="progressFill"></span></div>
+          </div>
+          <button id="nextBtn" class="nav-btn primary" type="button">Siguiente</button>
+        </footer>
+      </main>
+
+      <aside id="notesPanel" class="notes-panel" aria-label="Notas del creador">
+        <div class="notes-head">
+          <strong>Notas del creador</strong>
+          <button id="closeNotes" class="icon-btn" type="button" aria-label="Cerrar notas">x</button>
+        </div>
+        <div id="notesBody" class="notes-body"></div>
+      </aside>
+    </div>
+
+    <div id="overview" class="overview" aria-hidden="true">
+      <div class="overview-card">
+        <div class="overview-head">
+          <strong>Mapa rapido</strong>
+          <button id="closeOverview" class="icon-btn" type="button" aria-label="Cerrar mapa">x</button>
+        </div>
+        <div id="overviewGrid" class="overview-grid"></div>
+      </div>
+    </div>
+
+    <script src="assets.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>

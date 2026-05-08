@@ -1,0 +1,21 @@
+{
+  "vendor": "claude",
+  "exerciseId": "cl0-e01-surface-map",
+  "title": "Mapa de superficies Claude Code",
+  "surface": "Claude Code CLI",
+  "recommendedModel": "Sonnet",
+  "permissionMode": "read-only",
+  "estimatedCost": "bajo: solo lectura y resumen",
+  "intentionalErrors": [
+    "briefing demasiado amplio",
+    "falta de evidencia",
+    "coste sin registrar"
+  ],
+  "expectedArtifacts": [
+    "prompt",
+    "resultado",
+    "evidencia",
+    "coste",
+    "decision"
+  ]
+}

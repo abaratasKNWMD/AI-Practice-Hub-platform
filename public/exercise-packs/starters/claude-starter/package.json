@@ -1,0 +1,6 @@
+{
+  "scripts": {
+    "validate": "node validator.mjs"
+  },
+  "type": "module"
+}

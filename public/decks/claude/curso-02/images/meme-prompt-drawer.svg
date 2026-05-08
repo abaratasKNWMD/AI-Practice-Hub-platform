@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 560" role="img" aria-labelledby="title desc">
+  <title id="title">Prompt drawer meme</title>
+  <desc id="desc">Meme about loose prompts stored everywhere.</desc>
+  <rect width="1000" height="560" rx="34" fill="#11100f"/>
+  <text x="500" y="78" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="38" font-weight="850" fill="#fff4eb">El cajon de prompts</text>
+  <text x="500" y="114" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="18" fill="#b9aea3">Cuando nadie sabe cual es el prompt bueno.</text>
+  <rect x="210" y="170" width="580" height="260" rx="26" fill="#241a16" stroke="#6b5d51" stroke-width="4"/>
+  <rect x="250" y="210" width="500" height="70" rx="16" fill="#1a1715" stroke="#ff9aad"/>
+  <rect x="250" y="314" width="500" height="70" rx="16" fill="#1a1715" stroke="#75e6c0"/>
+  <g font-family="Inter, Arial, sans-serif" font-size="20" font-weight="850" fill="#fff4eb">
+    <text x="500" y="253" text-anchor="middle">prompt_final_bueno_ahora_si.md</text>
+    <text x="500" y="357" text-anchor="middle">prompt_juan_version_mejorada_v7.txt</text>
+  </g>
+  <text x="500" y="488" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="22" font-weight="850" fill="#d8fff1">Si se repite tres veces, pide skill.</text>
+</svg>

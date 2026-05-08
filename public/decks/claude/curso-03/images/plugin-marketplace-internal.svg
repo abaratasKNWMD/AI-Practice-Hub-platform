@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" role="img" aria-labelledby="title desc">
+  <title id="title">Marketplace interno de plugins Claude</title>
+  <desc id="desc">Pantalla de marketplace interno con plugins aprobados, piloto y bloqueados.</desc>
+  <rect width="1280" height="720" rx="36" fill="#f7efe5"/>
+  <text x="74" y="86" font-family="Inter, Arial, sans-serif" font-size="42" font-weight="900" fill="#211914">Marketplace interno</text>
+  <text x="74" y="124" font-family="Inter, Arial, sans-serif" font-size="21" fill="#695746">Distribuir practica tambien necesita catalogo, owner y estado.</text>
+  <g font-family="Inter, Arial, sans-serif">
+    <rect x="86" y="190" width="342" height="326" rx="28" fill="#fffaf2" stroke="#d9bf9c"/>
+    <text x="126" y="242" font-size="28" font-weight="900" fill="#211914">team-review</text>
+    <text x="126" y="282" font-size="19" fill="#695746">skill + qa-agent + hooks</text>
+    <rect x="126" y="324" width="132" height="38" rx="12" fill="#bbf7d0"/>
+    <text x="192" y="349" text-anchor="middle" font-size="15" font-weight="900" fill="#14532d">approved</text>
+    <text x="126" y="424" font-size="18" fill="#4f3e31">owner: platform</text>
+    <text x="126" y="458" font-size="18" fill="#4f3e31">version: 1.2.0</text>
+    <rect x="470" y="190" width="342" height="326" rx="28" fill="#fffaf2" stroke="#d9bf9c"/>
+    <text x="510" y="242" font-size="28" font-weight="900" fill="#211914">security-gate</text>
+    <text x="510" y="282" font-size="19" fill="#695746">pretool + secrets policy</text>
+    <rect x="510" y="324" width="102" height="38" rx="12" fill="#fde68a"/>
+    <text x="561" y="349" text-anchor="middle" font-size="15" font-weight="900" fill="#713f12">pilot</text>
+    <text x="510" y="424" font-size="18" fill="#4f3e31">owner: security</text>
+    <text x="510" y="458" font-size="18" fill="#4f3e31">version: 0.4.0</text>
+    <rect x="854" y="190" width="342" height="326" rx="28" fill="#fffaf2" stroke="#d9bf9c"/>
+    <text x="894" y="242" font-size="28" font-weight="900" fill="#211914">auto-merge</text>
+    <text x="894" y="282" font-size="19" fill="#695746">dangerous write flow</text>
+    <rect x="894" y="324" width="116" height="38" rx="12" fill="#fecaca"/>
+    <text x="952" y="349" text-anchor="middle" font-size="15" font-weight="900" fill="#7f1d1d">blocked</text>
+    <text x="894" y="424" font-size="18" fill="#4f3e31">owner: none</text>
+    <text x="894" y="458" font-size="18" fill="#4f3e31">reason: no rollback</text>
+  </g>
+  <rect x="262" y="594" width="756" height="54" rx="18" fill="#1f1f1f"/>
+  <text x="640" y="629" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="20" font-weight="900" fill="#fff">Un plugin sin owner no se instala: se investiga.</text>
+</svg>

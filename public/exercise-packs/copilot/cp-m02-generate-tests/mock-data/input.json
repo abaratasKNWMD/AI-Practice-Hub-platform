@@ -1,0 +1,21 @@
+{
+  "vendor": "copilot",
+  "exerciseId": "cp-m02-generate-tests",
+  "title": "Tests con Copilot",
+  "surface": "VS Code + test runner",
+  "recommendedModel": "Modelo incluido para tests simples",
+  "permissionMode": "workspace-write + execute",
+  "estimatedCost": "Medio: generacion y ejecucion",
+  "intentionalErrors": [
+    "briefing demasiado amplio",
+    "falta de evidencia",
+    "coste sin registrar"
+  ],
+  "expectedArtifacts": [
+    "prompt",
+    "resultado",
+    "evidencia",
+    "coste",
+    "decision"
+  ]
+}

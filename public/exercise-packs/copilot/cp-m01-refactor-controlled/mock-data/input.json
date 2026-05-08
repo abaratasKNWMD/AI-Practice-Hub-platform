@@ -1,0 +1,21 @@
+{
+  "vendor": "copilot",
+  "exerciseId": "cp-m01-refactor-controlled",
+  "title": "Refactor controlado",
+  "surface": "Copilot Edit / Agent",
+  "recommendedModel": "Modelo incluido o premium segun impacto",
+  "permissionMode": "workspace-write",
+  "estimatedCost": "Medio: revisar diff y tests",
+  "intentionalErrors": [
+    "briefing demasiado amplio",
+    "falta de evidencia",
+    "coste sin registrar"
+  ],
+  "expectedArtifacts": [
+    "prompt",
+    "resultado",
+    "evidencia",
+    "coste",
+    "decision"
+  ]
+}

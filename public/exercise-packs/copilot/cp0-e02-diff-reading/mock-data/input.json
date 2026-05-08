@@ -1,0 +1,21 @@
+{
+  "vendor": "copilot",
+  "exerciseId": "cp0-e02-diff-reading",
+  "title": "Leer diff antes de aceptar magia",
+  "surface": "VS Code diff",
+  "recommendedModel": "Modelo incluido / Ask",
+  "permissionMode": "read-only",
+  "estimatedCost": "Muy bajo: una explicacion corta",
+  "intentionalErrors": [
+    "briefing demasiado amplio",
+    "falta de evidencia",
+    "coste sin registrar"
+  ],
+  "expectedArtifacts": [
+    "prompt",
+    "resultado",
+    "evidencia",
+    "coste",
+    "decision"
+  ]
+}

@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 760" role="img" aria-labelledby="title desc">
+  <title id="title">mcp json vault</title>
+  <desc id="desc">An mcp.json file protected by a vault and environment variables for tokens and scopes.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#111827"/>
+      <stop offset="1" stop-color="#071a18"/>
+    </linearGradient>
+    <style>
+      .title{font:900 34px Inter,Segoe UI,sans-serif;fill:#f8fbff}
+      .label{font:850 20px Inter,Segoe UI,sans-serif;fill:#f8fbff}
+      .small{font:700 15px Inter,Segoe UI,sans-serif;fill:#aebbd0}
+      .mono{font:650 16px ui-monospace,SFMono-Regular,Consolas,monospace;fill:#dce8f7}
+      .card{fill:#ffffff;fill-opacity:.07;stroke:#ffffff;stroke-opacity:.14}
+    </style>
+  </defs>
+  <rect width="1200" height="760" rx="34" fill="url(#bg)"/>
+  <text x="70" y="88" class="title">mcp.json: el JSON no es lo peligroso</text>
+  <text x="72" y="122" class="small">Lo delicado son credenciales, scopes, comandos, red y persistencia.</text>
+  <g transform="translate(118 180)">
+    <rect width="610" height="420" rx="30" class="card"/>
+    <rect width="610" height="58" rx="30" fill="#ffffff" fill-opacity=".08"/>
+    <text x="34" y="37" class="small">mcp.json</text>
+    <g transform="translate(42 102)">
+      <text x="0" y="0" class="mono">{</text>
+      <text x="24" y="38" class="mono">"inputs": [{ "password": true }],</text>
+      <text x="24" y="76" class="mono">"servers": {</text>
+      <text x="48" y="114" class="mono">"github": { "command": "npx" }</text>
+      <text x="24" y="152" class="mono">}</text>
+      <text x="0" y="190" class="mono">}</text>
+    </g>
+  </g>
+  <g transform="translate(806 222)">
+    <rect width="250" height="300" rx="30" class="card"/>
+    <path d="M76 126V92c0-56 98-56 98 0v34" fill="none" stroke="#62e6a2" stroke-width="14" stroke-linecap="round"/>
+    <rect x="54" y="126" width="142" height="110" rx="22" fill="#62e6a2" fill-opacity=".15" stroke="#62e6a2" stroke-opacity=".42"/>
+    <circle cx="125" cy="174" r="12" fill="#f8fbff"/>
+    <text x="42" y="268" class="small">tokens fuera del codigo</text>
+  </g>
+</svg>

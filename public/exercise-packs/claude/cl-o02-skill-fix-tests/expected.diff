@@ -1,0 +1,9 @@
+diff --git a/README.md b/README.md
+--- a/README.md
++++ b/README.md
+@@
++# Evidencia de ejercicio
++- Ejercicio: cl-o02-skill-fix-tests
++- Resultado: salida verificable
++- Coste: medio: reproduce + patch + rerun
++- Permisos: workspace-write

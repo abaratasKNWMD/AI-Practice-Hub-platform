@@ -1,0 +1,21 @@
+{
+  "vendor": "copilot",
+  "exerciseId": "cp-b04-chat-ask-edit-agent",
+  "title": "Ask, Edit y Agent: tres velocidades",
+  "surface": "Copilot Chat VS Code",
+  "recommendedModel": "Modelo incluido para Ask/Edit; escalar solo si hay ambiguedad",
+  "permissionMode": "read-only -> workspace-write",
+  "estimatedCost": "Bajo/medio segun modo y modelo",
+  "intentionalErrors": [
+    "briefing demasiado amplio",
+    "falta de evidencia",
+    "coste sin registrar"
+  ],
+  "expectedArtifacts": [
+    "prompt",
+    "resultado",
+    "evidencia",
+    "coste",
+    "decision"
+  ]
+}

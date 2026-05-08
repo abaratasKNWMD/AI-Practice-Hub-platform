@@ -1,0 +1,179 @@
+{
+  "roleRoutes": [
+    {
+      "id": "role-developer",
+      "role": "desarrollador",
+      "title": "Developer AI Practitioner",
+      "audience": "Desarrolladores que necesitan cerrar tareas reales con IA sin perder disciplina de ingenieria.",
+      "objectiveIds": ["objective-onboarding", "objective-productivity", "objective-pr"],
+      "courseIds": ["codex-basic", "copilot-basic", "claude-basic"],
+      "exerciseIds": ["cx-b04-bug-login", "cp-b06-error-to-fix", "cl-b04-bugfix-test"],
+      "workshopIds": ["codex-workshop-1h-first-task-to-pr", "copilot-workshop-1h-vscode-to-pr-review", "claude-workshop-1h-memory-to-automation"],
+      "videoSlugs": ["cx-basic-02-plan-before-patch", "cp-basic-03-error-to-fix", "cl-basic-02-compact-context"],
+      "outcomes": ["Cerrar un bug pequeno con evidencia.", "Elegir herramienta y modo segun riesgo.", "Convertir una tarea en PR revisable."]
+    },
+    {
+      "id": "role-qa",
+      "role": "QA",
+      "title": "QA AI Reviewer",
+      "audience": "QA engineers y developers que quieren usar IA para pruebas, revision visual y regresiones.",
+      "objectiveIds": ["objective-testing", "objective-pr", "objective-governance"],
+      "courseIds": ["codex-potente", "copilot-medium", "claude-operator"],
+      "exerciseIds": ["cx-m04-skill-qa", "cp-m02-generate-tests", "cl-o04-subagent-qa"],
+      "workshopIds": ["codex-workshop-potente", "copilot-workshop-team-flow", "claude-workshop-operator"],
+      "videoSlugs": ["cx-medium-03-skill-qa-visual", "cp-medium-01-instructions", "cl-operator-02-subagent-explorer"],
+      "outcomes": ["Crear pruebas utiles con contexto.", "Revisar cambios con findings accionables.", "Montar una skill o subagente QA reutilizable."]
+    },
+    {
+      "id": "role-tech-lead",
+      "role": "tech lead",
+      "title": "AI Tech Lead",
+      "audience": "Tech leads que tienen que decidir modelo, coste, permisos, rutas de adopcion y criterios de revision.",
+      "objectiveIds": ["objective-pr", "objective-automation", "objective-governance"],
+      "courseIds": ["codex-operating-model", "copilot-advanced", "claude-advanced-automation"],
+      "exerciseIds": ["cx-m05-subagentes-review", "cp-a02-custom-planner-agent", "cl-a03-plugin-team-review"],
+      "workshopIds": ["codex-workshop-ultra", "copilot-workshop-advanced-agents", "claude-workshop-hooks-plugins"],
+      "videoSlugs": ["cx-ultra-02-pr-swarm", "cp-advanced-01-custom-agent", "cl-advanced-02-plugin-action"],
+      "outcomes": ["Definir limites de delegacion.", "Elegir patrones de agentes sin ruido.", "Preparar reviews y handoffs de equipo."]
+    },
+    {
+      "id": "role-architect",
+      "role": "arquitecto",
+      "title": "AI Architect",
+      "audience": "Arquitectos que aterrizan swarms, RAG, APIs, evaluaciones y automatizaciones de plataforma.",
+      "objectiveIds": ["objective-legacy", "objective-automation", "objective-governance"],
+      "courseIds": ["codex-ultra", "copilot-cloud-enterprise", "claude-agent-sdk-enterprise"],
+      "exerciseIds": ["cx-u02-rag-ast", "cp-c03-cloud-mcp-policy", "cl-s04-eval-harness"],
+      "workshopIds": ["codex-workshop-1h-first-task-to-pr", "copilot-workshop-cloud-governance", "claude-workshop-sdk-enterprise"],
+      "videoSlugs": ["cx-ultra-01-github-action", "cp-cloud-01-cloud-agent-pr", "cl-sdk-02-evals-governance"],
+      "outcomes": ["Disenar contexto enterprise.", "Definir evals y contratos de salida.", "Gobernar APIs, MCP y CI."]
+    },
+    {
+      "id": "role-manager",
+      "role": "manager",
+      "title": "AI Adoption Manager",
+      "audience": "Responsables de adopcion que necesitan reducir demanda reactiva y medir progreso real.",
+      "objectiveIds": ["objective-onboarding", "objective-productivity", "objective-governance"],
+      "courseIds": ["codex-operating-model", "copilot-cloud-enterprise", "claude-agent-sdk-enterprise"],
+      "exerciseIds": ["cx-e01-cost-budget", "cp-a05-premium-budget", "cl-o06-model-routing"],
+      "workshopIds": ["codex-workshop-operating-model", "copilot-workshop-cloud-governance", "claude-workshop-sdk-enterprise"],
+      "videoSlugs": ["hub-operating-model-60m", "hub-workshop-60m-vendor-selection"],
+      "outcomes": ["Montar flipping training.", "Planificar tutorias con datos.", "Medir coste, calidad y adopcion."]
+    }
+  ],
+  "objectiveRoutes": [
+    {
+      "id": "objective-onboarding",
+      "title": "Onboarding IA sin friccion",
+      "goal": "Que una persona arranque sin bloquear tutoria con dudas basicas de Git, contexto o permisos.",
+      "courseIds": ["codex-orientation", "copilot-git-survival", "claude-orientation"],
+      "exerciseIds": ["cx-b01-repo-map", "cp0-e01-branch-pr", "cl0-e01-surface-map"],
+      "videoSlugs": ["cx-orientation-01-surface-map", "cp-git-01-fork-vs-branch", "cl-orientation-01-claude-md"],
+      "successMetric": "Primer ejercicio entregado y duda concreta registrada."
+    },
+    {
+      "id": "objective-productivity",
+      "title": "Productividad verificable",
+      "goal": "Aumentar velocidad sin aceptar cambios a ciegas ni inflar coste.",
+      "courseIds": ["codex-basic", "copilot-basic", "claude-basic"],
+      "exerciseIds": ["cx-b02-prompt-4-piezas", "cp-b02-inline-completion", "cl-b05-context-compact"],
+      "videoSlugs": ["cx-basic-02-plan-before-patch", "cp-basic-01-inline-completion", "cl-basic-02-compact-context"],
+      "successMetric": "Diff pequeno, prueba o evidencia y coste estimado."
+    },
+    {
+      "id": "objective-pr",
+      "title": "Del task al PR",
+      "goal": "Convertir una peticion ambigua en PR con contexto, pruebas, riesgos y narrativa.",
+      "courseIds": ["codex-basic", "copilot-medium", "claude-basic"],
+      "exerciseIds": ["cx-b05-review-diff", "cp-a01-code-review", "cl-b06-handoff"],
+      "videoSlugs": ["cx-workshop-60m-first-task-to-pr", "cp-workshop-60m-vscode-to-pr-review", "cl-workshop-60m-memory-to-automation"],
+      "successMetric": "PR body con contexto, cambio, pruebas, riesgo y rollback."
+    },
+    {
+      "id": "objective-testing",
+      "title": "Testing y QA con IA",
+      "goal": "Usar IA para cubrir regresiones, revisar UI y convertir findings en tareas accionables.",
+      "courseIds": ["codex-potente", "copilot-medium", "claude-operator"],
+      "exerciseIds": ["cx-m04-skill-qa", "cp-m02-generate-tests", "cl-o02-skill-fix-tests"],
+      "videoSlugs": ["cx-medium-03-skill-qa-visual", "cp-medium-01-instructions", "cl-operator-01-first-skill"],
+      "successMetric": "Una prueba o checklist reusable por equipo."
+    },
+    {
+      "id": "objective-legacy",
+      "title": "Legacy y contexto profundo",
+      "goal": "Entender codigo heredado con evidencia, indices, AST y handoffs para no depender de memoria oral.",
+      "courseIds": ["codex-ultra", "copilot-advanced", "claude-agent-sdk-enterprise"],
+      "exerciseIds": ["cx-u02-rag-ast", "cp-m05-path-instructions", "cl-s02-agent-reads-repo"],
+      "videoSlugs": ["cx-ultra-02-pr-swarm", "cp-advanced-02-mcp-code-review", "cl-sdk-01-agent-sdk"],
+      "successMetric": "Mapa de contexto con rutas, riesgos y fuente verificable."
+    },
+    {
+      "id": "objective-automation",
+      "title": "Automatizacion segura",
+      "goal": "Llevar IA a CI/CD, GitHub Actions, hooks, agents y APIs sin perder limites humanos.",
+      "courseIds": ["codex-ultra", "copilot-cloud-enterprise", "claude-advanced-automation"],
+      "exerciseIds": ["cx-a01-github-action", "cp-c02-review-agent-pr", "cl-a04-github-action"],
+      "videoSlugs": ["cx-ultra-01-github-action", "cp-cloud-01-cloud-agent-pr", "cl-advanced-01-hooks"],
+      "successMetric": "Automatizacion con trigger, presupuesto, permisos y salida estructurada."
+    },
+    {
+      "id": "objective-governance",
+      "title": "Gobierno, coste y seguridad",
+      "goal": "Hacer que la adopcion sea sostenible: modelos, permisos, presupuesto, MCP y revision humana.",
+      "courseIds": ["codex-operating-model", "copilot-cloud-enterprise", "claude-agent-sdk-enterprise"],
+      "exerciseIds": ["cx-e01-cost-budget", "cp-a05-premium-budget", "cl-o06-model-routing"],
+      "videoSlugs": ["hub-operating-model-60m", "hub-workshop-60m-vendor-selection"],
+      "successMetric": "Politica de uso de una pagina con owners y caducidad."
+    }
+  ],
+  "cohorts": [
+    {
+      "id": "cohort-dev-foundation",
+      "name": "Foundation Devs - IA practica",
+      "focus": "Codex + Copilot + Claude basico",
+      "cadence": "2 viernes al mes, 12:00-14:00",
+      "nextSession": "2026-05-22",
+      "seats": 18,
+      "status": "abierta",
+      "routeIds": ["role-developer", "objective-onboarding"]
+    },
+    {
+      "id": "cohort-techlead-agentic",
+      "name": "Tech Leads - agentes y review",
+      "focus": "Subagentes, MCP, PR review y coste",
+      "cadence": "1 viernes al mes, 12:00-14:00",
+      "nextSession": "2026-06-05",
+      "seats": 12,
+      "status": "preparacion",
+      "routeIds": ["role-tech-lead", "objective-pr", "objective-governance"]
+    },
+    {
+      "id": "cohort-enterprise-platform",
+      "name": "Platform - automatizacion enterprise",
+      "focus": "CI/CD, swarms, hooks, Agent SDK y evals",
+      "cadence": "workshop intensivo + tutoria",
+      "nextSession": "2026-06-19",
+      "seats": 10,
+      "status": "roadmap",
+      "routeIds": ["role-architect", "objective-automation"]
+    }
+  ],
+  "tutoringPolicy": {
+    "cadence": "Segundo y cuarto viernes de cada mes, 12:00-14:00",
+    "rules": [
+      "La duda debe traer curso, ejercicio y evidencia.",
+      "No se atienden bloqueos de Git basico si el modulo CP0 no esta consumido.",
+      "Una tutoria resuelve criterio, no sustituye el trabajo del alumno.",
+      "Toda duda recurrente se convierte en material, microvideo o FAQ."
+    ],
+    "defaultSlots": ["2026-05-22 12:00", "2026-05-22 13:00", "2026-06-12 12:00", "2026-06-12 13:00"]
+  },
+  "badges": [
+    { "id": "badge-first-course", "title": "Primer curso cerrado", "criteria": "Completar cualquier curso al 100%." },
+    { "id": "badge-three-reviewed", "title": "Tres retos revisados", "criteria": "Tener tres ejercicios en estado revisado." },
+    { "id": "badge-cost-aware", "title": "Cost aware", "criteria": "Completar una ruta de gobierno o coste." },
+    { "id": "badge-workshop-ready", "title": "Workshop ready", "criteria": "Completar un workshop al 100%." },
+    { "id": "badge-pr-ready", "title": "PR ready", "criteria": "Completar una ruta del task al PR." },
+    { "id": "badge-instructor-signal", "title": "Senal de instructor", "criteria": "Registrar una duda con evidencia y estado." }
+  ]
+}

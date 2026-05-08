@@ -1,0 +1,402 @@
+{
+  "id": "hub-operating-model-60m",
+  "title": "AI Practice Hub 60m - Operating Model",
+  "description": "Video platform de 60 minutos para explicar flipping training, tutorias, rutas vendor, workshops, video factory, coste y gobierno de adopcion.",
+  "vendor": "platform",
+  "template": "executive",
+  "durationMin": 60,
+  "voice": "es-ES-AlvaroNeural",
+  "author": "AI Practice Hub",
+  "createdAt": "2026-05-08T00:00:00.000Z",
+  "chapters": [
+    { "id": "problem", "label": "Problema", "sceneId": "title" },
+    { "id": "model", "label": "Modelo", "sceneId": "flipping-model" },
+    { "id": "content", "label": "Contenido", "sceneId": "content-system" },
+    { "id": "governance", "label": "Gobierno", "sceneId": "cost-governance" },
+    { "id": "roadmap", "label": "Roadmap", "sceneId": "sprint-board" }
+  ],
+  "scenes": [
+    {
+      "id": "title",
+      "name": "Apertura ejecutiva",
+      "chapterId": "problem",
+      "kind": "title",
+      "durationSec": 300,
+      "screen": {
+        "visual": "hub hero + metrics",
+        "content": {
+          "title": "AI Practice Hub Operating Model",
+          "subtitle": "Una hora para convertir demanda formativa en sistema de autoconsumo, practica y tutoria.",
+          "tag": "Platform / 60 min"
+        }
+      },
+      "voiceover": [
+        "El problema no es solo impartir cursos.",
+        "El problema es que la demanda crece mas rapido que la capacidad del equipo formador.",
+        "La respuesta es una plataforma de practica con videos, ejercicios, workshops y tutorias mejor enfocadas."
+      ],
+      "action": {
+        "type": "narrate",
+        "label": "Abrir narrativa",
+        "detail": "Alinear audiencia con el dolor: 12 horas semanales y dudas repetidas."
+      }
+    },
+    {
+      "id": "demand-problem",
+      "name": "Demanda reactiva",
+      "chapterId": "problem",
+      "kind": "concept",
+      "durationSec": 300,
+      "screen": {
+        "visual": "demand funnel",
+        "content": {
+          "tag": "Dolor operativo",
+          "title": "La formacion reactiva no escala",
+          "body": "Cuando cada equipo llega con nivel distinto, el formador termina explicando Git, prompts basicos, contexto y permisos una y otra vez. La demanda diaria consume preparacion, voz y foco.",
+          "highlight": "El directo debe resolver criterio, no repetir definiciones.",
+          "points": [
+            "Material tardio: llega despues de la duda.",
+            "Sesiones largas: mezclan basico y avanzado.",
+            "Dudas repetidas: bloquean workshops reales.",
+            "Sin evidencia: la tutoria empieza desde cero."
+          ]
+        }
+      },
+      "voiceover": [
+        "El diagnostico es que falta precalentamiento.",
+        "La gente llega a clase sin base comun.",
+        "Por eso el directo se llena de preguntas que podrian estar resueltas en material guiado."
+      ],
+      "action": {
+        "type": "narrate",
+        "label": "Diagnosticar",
+        "detail": "Mostrar ejemplos de dudas que deben moverse a autoconsumo."
+      }
+    },
+    {
+      "id": "flipping-model",
+      "name": "Flipping training",
+      "chapterId": "model",
+      "kind": "compare",
+      "durationSec": 300,
+      "screen": {
+        "visual": "before after operating model",
+        "content": {
+          "tag": "Modelo de adopcion",
+          "left": {
+            "label": "Curso tradicional",
+            "color": "destructive",
+            "steps": [
+              { "icon": "Clock", "text": "12h explicando base" },
+              { "icon": "MessageSquare", "text": "Dudas sueltas en directo" },
+              { "icon": "AlertTriangle", "text": "Poca practica real" }
+            ],
+            "total": "Demanda infinita"
+          },
+          "right": {
+            "label": "Flipping training",
+            "color": "accent",
+            "steps": [
+              { "icon": "Play", "text": "Video y deck antes" },
+              { "icon": "Code", "text": "Reto autoconsumible" },
+              { "icon": "Check", "text": "Tutoria con evidencia" }
+            ],
+            "total": "Tiempo directo de mayor valor"
+          }
+        }
+      },
+      "voiceover": [
+        "El modelo cambia el orden.",
+        "Primero material guiado y ejercicio.",
+        "Despues tutoria con output concreto y dudas de criterio."
+      ],
+      "action": {
+        "type": "human-decision",
+        "label": "Cambiar contrato formativo",
+        "detail": "Definir que se debe consumir antes de reservar tutoria."
+      }
+    },
+    {
+      "id": "routes",
+      "name": "Tres rutas vendor",
+      "chapterId": "model",
+      "kind": "preview",
+      "durationSec": 300,
+      "screen": {
+        "visual": "three vendor cards",
+        "content": {
+          "title": "Tres rutas, una metodologia",
+          "description": "Codex, Copilot y Claude tienen contenido especifico, pero comparten salida: practica, evidencia, coste y criterio.",
+          "items": [
+            { "label": "Codex", "value": "agente de ingenieria" },
+            { "label": "Copilot", "value": "workbench VS Code/GitHub" },
+            { "label": "Claude", "value": "memoria + controles" },
+            { "label": "Hub", "value": "sprints y tutorias" }
+          ]
+        }
+      },
+      "voiceover": [
+        "No buscamos guerra de herramientas.",
+        "Cada vendor tiene una personalidad operativa.",
+        "El hub hace que el alumno pueda practicar la diferencia."
+      ],
+      "action": {
+        "type": "narrate",
+        "label": "Explicar rutas",
+        "detail": "Mostrar cuando elegir cada vendor."
+      }
+    },
+    {
+      "id": "content-system",
+      "name": "Sistema de contenido",
+      "chapterId": "content",
+      "kind": "concept",
+      "durationSec": 300,
+      "screen": {
+        "visual": "content stack",
+        "content": {
+          "tag": "Arquitectura de aprendizaje",
+          "title": "Cada curso tiene cuatro capas",
+          "body": "Un curso no es solo un deck. Es una ficha de ruta, un deck autoexplicativo, microvideos o masterclass, ejercicios con materiales y workshops que convierten conocimiento en accion.",
+          "highlight": "Slides para entender, ejercicios para activar, workshops para consolidar.",
+          "points": [
+            "Deck: narrativa y notas del creador.",
+            "Video: cadencia, voz y pantalla simulada.",
+            "Ejercicio: tarea, prompts, solucion y rubrica.",
+            "Workshop: reto guiado con salida revisable."
+          ]
+        }
+      },
+      "voiceover": [
+        "Esta capa evita cursos que se olvidan.",
+        "El deck explica, pero el ejercicio obliga a practicar.",
+        "El workshop convierte practica individual en criterio compartido."
+      ],
+      "action": {
+        "type": "narrate",
+        "label": "Presentar contenido",
+        "detail": "Explicar como se empaqueta un curso completo."
+      }
+    },
+    {
+      "id": "video-factory",
+      "name": "Video factory",
+      "chapterId": "content",
+      "kind": "coding",
+      "durationSec": 300,
+      "screen": {
+        "visual": "blueprint json",
+        "content": {
+          "filename": "public/video-blueprints/*.json",
+          "language": "json",
+          "code": "{\n  \"id\": \"cx-workshop-30m-first-real-task\",\n  \"durationMin\": 30,\n  \"chapters\": [{ \"id\": \"map\", \"sceneId\": \"repo-map-prompt\" }],\n  \"scenes\": [{\n    \"kind\": \"coding\",\n    \"durationSec\": 150,\n    \"screen\": { \"content\": { \"filename\": \"prompt.md\", \"code\": \"...\" } },\n    \"voiceover\": [\"Linea de voz\"],\n    \"action\": { \"type\": \"prompt\", \"label\": \"Enviar prompt\" }\n  }]\n}"
+        }
+      },
+      "voiceover": [
+        "La video factory permite editar guiones largos en JSON.",
+        "Cada escena declara pantalla, voz y accion.",
+        "El generador lo convierte en CourseScript reproducible."
+      ],
+      "action": {
+        "type": "narrate",
+        "label": "Explicar blueprint",
+        "detail": "Mostrar relacion entre blueprint y player."
+      }
+    },
+    {
+      "id": "exercise-depth",
+      "name": "Ejercicios autoconsumibles",
+      "chapterId": "content",
+      "kind": "linear",
+      "durationSec": 300,
+      "screen": {
+        "visual": "exercise pack ticket",
+        "content": {
+          "ticketId": "HUB-EX",
+          "title": "Cada ejercicio debe poder hacerse sin profesor",
+          "project": "AI Practice Hub",
+          "priority": "High",
+          "assignee": "Content team",
+          "status": "In Progress",
+          "labels": ["starter", "solution", "rubric", "prompt"],
+          "description": "Cada reto debe incluir repo starter, prompts iniciales, prompts de rescate, solucion guiada, diff esperado, rubrica y evidencia de cierre."
+        }
+      },
+      "voiceover": [
+        "El gran salto esta en los ejercicios.",
+        "Si el alumno puede practicar solo, la tutoria cambia.",
+        "El formador revisa outputs, no explica desde cero."
+      ],
+      "action": {
+        "type": "human-decision",
+        "label": "Definir pack minimo",
+        "detail": "Aprobar estructura starter/solution/rubrica."
+      }
+    },
+    {
+      "id": "cost-governance",
+      "name": "Coste y permisos",
+      "chapterId": "governance",
+      "kind": "concept",
+      "durationSec": 300,
+      "screen": {
+        "visual": "governance dashboard",
+        "content": {
+          "tag": "Gobierno",
+          "title": "Coste, permisos y modelos son contenido de curso",
+          "body": "No se dejan para una politica externa. Cada ejercicio declara modelo recomendado, permission mode, coste estimado y evidencia esperada. Asi el alumno aprende a decidir mientras practica.",
+          "highlight": "La conciencia de coste se entrena en cada reto.",
+          "points": [
+            "Modelo recomendado por dificultad.",
+            "Permisos: read-only, write, tools, MCP.",
+            "Coste estimado: bajo, medio, alto.",
+            "Cierre: diff, checks, riesgos y handoff."
+          ]
+        }
+      },
+      "voiceover": [
+        "El coste no debe aparecer al final como susto.",
+        "Debe estar integrado en el aprendizaje.",
+        "Cada reto enseña una decision operativa."
+      ],
+      "action": {
+        "type": "narrate",
+        "label": "Alinear gobierno",
+        "detail": "Explicar como se ve coste/modelo/permisos en fichas."
+      }
+    },
+    {
+      "id": "tutoring-model",
+      "name": "Tutorias",
+      "chapterId": "governance",
+      "kind": "thinking",
+      "durationSec": 300,
+      "screen": {
+        "visual": "monthly cadence",
+        "content": {
+          "tag": "Cadencia",
+          "title": "Como debe llegar una persona a tutoria",
+          "thoughts": [
+            { "ms": 0, "text": "Consumio masterclass o microvideo.", "done": true },
+            { "ms": 30000, "text": "Abrio el deck y reviso notas clave.", "done": true },
+            { "ms": 70000, "text": "Ejecuto al menos un ejercicio.", "done": true },
+            { "ms": 120000, "text": "Trae handoff, diff o bloqueo concreto.", "done": true },
+            { "ms": 190000, "text": "La tutoria discute criterio, no definiciones.", "done": false }
+          ]
+        }
+      },
+      "voiceover": [
+        "La tutoria se reserva para casos reales.",
+        "El alumno debe llegar con evidencia.",
+        "Esto reduce horas repetidas y mejora la calidad de la conversacion."
+      ],
+      "action": {
+        "type": "human-decision",
+        "label": "Definir requisito de tutoria",
+        "detail": "No aceptar reservas sin handoff o ejercicio asociado."
+      }
+    },
+    {
+      "id": "sprint-board",
+      "name": "Sprints",
+      "chapterId": "roadmap",
+      "kind": "preview",
+      "durationSec": 300,
+      "screen": {
+        "visual": "operations board",
+        "content": {
+          "title": "Roadmap operativo",
+          "description": "La plataforma avanza por sprints: foundation, masterclass, video factory, assets, ejercicios, workshops y release ops.",
+          "items": [
+            { "label": "Sprint 02", "value": "video factory" },
+            { "label": "Sprint 03", "value": "assets y memes" },
+            { "label": "Sprint 04", "value": "ejercicios profundos" },
+            { "label": "Sprint 05", "value": "workshops 1h" }
+          ]
+        }
+      },
+      "voiceover": [
+        "El roadmap esta dentro de la app.",
+        "Esto permite ejecutar, no solo debatir.",
+        "Cada sprint tiene entregables y criterio de done."
+      ],
+      "action": {
+        "type": "narrate",
+        "label": "Abrir /operaciones",
+        "detail": "Mostrar sprint board y video roadmap."
+      }
+    },
+    {
+      "id": "release-readiness",
+      "name": "Release readiness",
+      "chapterId": "roadmap",
+      "kind": "compare",
+      "durationSec": 300,
+      "screen": {
+        "visual": "release checklist",
+        "content": {
+          "tag": "Go / No-go",
+          "left": {
+            "label": "Aun no",
+            "color": "destructive",
+            "steps": [
+              { "icon": "AlertTriangle", "text": "Ejercicios solo metadata" },
+              { "icon": "AlertTriangle", "text": "Videos largos sin QA" },
+              { "icon": "AlertTriangle", "text": "Sin seguimiento de progreso" }
+            ],
+            "total": "Demo interna"
+          },
+          "right": {
+            "label": "Listo para piloto",
+            "color": "accent",
+            "steps": [
+              { "icon": "Check", "text": "Starter y solution por reto clave" },
+              { "icon": "Check", "text": "Workshops largos validados" },
+              { "icon": "Check", "text": "Tutorias con handoff obligatorio" }
+            ],
+            "total": "Piloto controlado"
+          }
+        }
+      },
+      "voiceover": [
+        "La plataforma no necesita estar perfecta para pilotar.",
+        "Pero si necesita outputs revisables.",
+        "El criterio es simple: autoconsumo real y tutorias mejores."
+      ],
+      "action": {
+        "type": "human-decision",
+        "label": "Decidir piloto",
+        "detail": "Acordar alcance de primera cohorte."
+      }
+    },
+    {
+      "id": "finale",
+      "name": "Cierre",
+      "chapterId": "roadmap",
+      "kind": "finale",
+      "durationSec": 300,
+      "screen": {
+        "visual": "executive summary",
+        "content": {
+          "title": "El objetivo no es mas contenido. Es menos friccion.",
+          "summary": [
+            { "number": "01", "label": "Autoconsumo", "body": "Videos, decks y ejercicios absorben lo repetitivo." },
+            { "number": "02", "label": "Tutoria", "body": "El directo se reserva para criterio y desbloqueos." },
+            { "number": "03", "label": "Sistema", "body": "Sprints, costes, permisos y outputs hacen que la adopcion sea gobernable." }
+          ],
+          "cta": "Siguiente accion: ejecutar Sprint 05 con workshops de 1 hora y piloto de cohorte."
+        }
+      },
+      "voiceover": [
+        "La meta no es crear una biblioteca infinita.",
+        "La meta es que la gente se active con IA sin depender del formador para cada paso.",
+        "Ese es el valor real del hub."
+      ],
+      "action": {
+        "type": "handoff",
+        "label": "Cerrar operating model",
+        "detail": "Publicar plan de piloto y backlog de sprint siguiente."
+      }
+    }
+  ]
+}

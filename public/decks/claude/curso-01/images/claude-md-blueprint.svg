@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="620" viewBox="0 0 1100 620" role="img" aria-labelledby="title desc">
+  <title id="title">CLAUDE.md blueprint</title>
+  <desc id="desc">Blueprint layout for a useful CLAUDE.md file.</desc>
+  <rect width="1100" height="620" rx="34" fill="#0b0a09"/>
+  <rect x="95" y="70" width="910" height="480" rx="30" fill="#15110f" stroke="#fff" stroke-opacity="0.12"/>
+  <text x="132" y="126" font-family="Inter, Arial, sans-serif" font-size="34" font-weight="900" fill="#fff7f0">CLAUDE.md util</text>
+  <text x="132" y="160" font-family="Inter, Arial, sans-serif" font-size="18" fill="#b9aea3">Una pagina de decisiones, no una enciclopedia.</text>
+  <g transform="translate(132 210)" font-family="Inter, Arial, sans-serif">
+    <rect width="836" height="282" rx="22" fill="#0c0a09" stroke="#ff9aad" stroke-opacity="0.3"/>
+    <path d="M418 0V282" stroke="#fff" stroke-opacity="0.1"/>
+    <path d="M0 94H836M0 188H836" stroke="#fff" stroke-opacity="0.1"/>
+    <text x="30" y="44" font-size="18" font-weight="800" fill="#ffdfe5">Objetivo</text>
+    <text x="30" y="76" font-size="15" fill="#b9aea3">Que tipo de ayuda queremos.</text>
+    <text x="448" y="44" font-size="18" font-weight="800" fill="#c9fff0">Comandos</text>
+    <text x="448" y="76" font-size="15" fill="#b9aea3">Instalar, lint, test, build.</text>
+    <text x="30" y="138" font-size="18" font-weight="800" fill="#ffe6ad">Reglas</text>
+    <text x="30" y="170" font-size="15" fill="#b9aea3">No secretos, plan antes de patch.</text>
+    <text x="448" y="138" font-size="18" font-weight="800" fill="#d8f4ff">Arquitectura</text>
+    <text x="448" y="170" font-size="15" fill="#b9aea3">Donde vive cada cosa.</text>
+    <text x="30" y="232" font-size="18" font-weight="800" fill="#c9fff0">Done</text>
+    <text x="30" y="264" font-size="15" fill="#b9aea3">Diff, checks, riesgos y handoff.</text>
+    <text x="448" y="232" font-size="18" font-weight="800" fill="#ffdfe5">Coste</text>
+    <text x="448" y="264" font-size="15" fill="#b9aea3">Contexto justo y modelo correcto.</text>
+  </g>
+</svg>

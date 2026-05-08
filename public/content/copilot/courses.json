@@ -1,0 +1,90 @@
+[
+  {
+    "id": "copilot-git-survival",
+    "code": "CP0",
+    "title": "Git/GitHub Survival para IA",
+    "level": "orientation",
+    "duration": "90 min",
+    "summary": "Ruta cero para que ramas, forks, commits, PRs, diffs y reviews no bloqueen los workshops de Copilot.",
+    "videoSlugs": ["cp-masterclass-10m-copilot-workbench", "cp-git-01-fork-vs-branch", "cp-git-02-pr-as-contract"],
+    "exerciseIds": ["cp0-e01-branch-pr", "cp0-e02-diff-reading"],
+    "materialIds": ["cp-cheatsheets", "cp-pack-cloud-issue", "cp-pack-review-policy"],
+    "status": "ready",
+    "outcomes": [
+      "Entender rama, fork, commit, push y PR como flujo minimo.",
+      "Leer un diff antes de pedir o aceptar cambios de IA.",
+      "Preparar issues y PRs que un agente pueda entender."
+    ]
+  },
+  {
+    "id": "copilot-basic",
+    "code": "CP1",
+    "title": "Copilot Basic",
+    "level": "basic",
+    "duration": "3 h",
+    "summary": "Activacion diaria en VS Code: setup, ghost text, shortcuts, comment-to-code, chat, inline edit, explain y code fixes.",
+    "deckUrl": "/decks/copilot/curso-01/index.html",
+    "videoSlugs": ["cp-basic-01-inline-completion", "cp-basic-02-ask-edit-agent", "cp-basic-03-error-to-fix"],
+    "exerciseIds": ["cp-b01-setup-vscode", "cp-b02-inline-completion", "cp-b03-comment-to-code", "cp-b04-chat-ask-edit-agent", "cp-b05-explain-legacy", "cp-b06-error-to-fix"],
+    "materialIds": ["cp-deck-core-web", "cp-setup-vscode", "cp-setup-cli", "cp-completion", "cp-shortcuts", "cp-comment-code", "cp-chat", "cp-inline-chat", "cp-explain", "cp-fixes", "cp-deck-core"],
+    "status": "ready",
+    "outcomes": [
+      "Usar Copilot sin aceptar sugerencias a ciegas.",
+      "Elegir Ask, Edit o Agent segun el tipo de tarea.",
+      "Cerrar bugs pequenos con patch y evidencia."
+    ]
+  },
+  {
+    "id": "copilot-medium",
+    "code": "CP2",
+    "title": "Copilot Medium",
+    "level": "medium",
+    "duration": "4 h",
+    "summary": "Copilot como flujo de equipo: refactors, tests, docs, custom instructions, path instructions y prompt files.",
+    "deckUrl": "/decks/copilot/curso-02/index.html",
+    "videoSlugs": ["cp-medium-01-instructions", "cp-medium-02-prompt-files"],
+    "exerciseIds": ["cp-m01-refactor-controlled", "cp-m02-generate-tests", "cp-m03-docs-with-context", "cp-m04-repo-instructions", "cp-m05-path-instructions", "cp-m06-prompt-files"],
+    "materialIds": ["cp-deck-basic-web", "cp-refactor", "cp-tests-best", "cp-unit-test", "cp-test-cases", "cp-docs-general", "cp-docs-code", "cp-instructions-lab", "cp-instructions-best", "cp-prompt-lab", "cp-pack-instructions", "cp-pack-frontend-instructions", "cp-pack-tests-instructions", "cp-pack-prompt-tests", "cp-pack-prompt-pr", "cp-deck-basic"],
+    "status": "ready",
+    "outcomes": [
+      "Separar instrucciones globales, path-specific y prompts invocables.",
+      "Generar tests y docs con criterio de equipo.",
+      "Reducir repeticion con prompt files reutilizables."
+    ]
+  },
+  {
+    "id": "copilot-advanced",
+    "code": "CP3",
+    "title": "Copilot Advanced",
+    "level": "advanced",
+    "duration": "5 h",
+    "summary": "Agent mode, custom agents, handoffs, MCP en IDE, code review y premium request budget.",
+    "deckUrl": "/decks/copilot/curso-03/index.html",
+    "videoSlugs": ["cp-advanced-01-custom-agent", "cp-advanced-02-mcp-code-review", "cp-cloud-02-premium-requests"],
+    "exerciseIds": ["cp-a01-code-review", "cp-a02-custom-planner-agent", "cp-a03-agent-handoff", "cp-a04-mcp-github", "cp-a05-premium-budget"],
+    "materialIds": ["cp-deck-advanced-web", "cp-code-review-lab", "cp-custom-agents-lab", "cp-mcp-github-lab", "cp-pack-review-instructions", "cp-pack-review-policy", "cp-pack-agent-planner", "cp-pack-agent-implementer", "cp-pack-agent-reviewer", "cp-pack-mcp-inventory", "cp-pack-cost", "cp-deck-advanced"],
+    "status": "ready",
+    "outcomes": [
+      "Crear agentes custom con herramientas acotadas.",
+      "Usar MCP en modo readonly con inventario de riesgo.",
+      "Medir premium requests y evitar agent mode sin alcance."
+    ]
+  },
+  {
+    "id": "copilot-cloud-enterprise",
+    "code": "CP4",
+    "title": "Copilot Cloud Agent Enterprise",
+    "level": "enterprise",
+    "duration": "4 h",
+    "summary": "Delegacion gobernada en GitHub: issues aptos para cloud agent, PRs generadas, MCP cloud, skills, hooks, coste y politicas.",
+    "videoSlugs": ["cp-cloud-01-cloud-agent-pr", "cp-cloud-02-premium-requests"],
+    "exerciseIds": ["cp-c01-delegable-issue", "cp-c02-review-agent-pr", "cp-c03-cloud-mcp-policy", "cp-c04-governance-pack"],
+    "materialIds": ["cp-pack-cloud-issue", "cp-pack-review-policy", "cp-pack-cost", "cp-pack-mcp-inventory", "cp-skills-lab", "cp-audit", "omega-audit", "cp-official-sources"],
+    "status": "ready",
+    "outcomes": [
+      "Delegar tareas a cloud agent con contexto, restricciones y presupuesto.",
+      "Revisar PRs generadas por IA con responsabilidad humana.",
+      "Definir politicas enterprise de MCP, premium requests y adopcion."
+    ]
+  }
+]

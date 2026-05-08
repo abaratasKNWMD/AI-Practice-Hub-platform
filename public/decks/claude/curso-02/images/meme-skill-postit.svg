@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="620" viewBox="0 0 1100 620" role="img" aria-labelledby="title desc">
+  <title id="title">Skill post-it meme</title>
+  <desc id="desc">Humorous warning about creating skills for trivial tasks.</desc>
+  <rect width="1100" height="620" rx="34" fill="#11100f"/>
+  <text x="96" y="112" font-family="Inter, Arial, sans-serif" font-size="34" font-weight="900" fill="#fff7f0">Skill para todo?</text>
+  <text x="96" y="148" font-family="Inter, Arial, sans-serif" font-size="18" fill="#b9aea3">No abstraigas antes de tener repeticion real.</text>
+  <g transform="translate(135 210)" font-family="Inter, Arial, sans-serif">
+    <rect width="380" height="265" rx="28" fill="#211713" stroke="#ff9aad" stroke-opacity="0.42"/>
+    <rect x="78" y="62" width="220" height="160" rx="16" fill="#ffd27a"/>
+    <text x="188" y="128" text-anchor="middle" font-size="24" font-weight="900" fill="#211713">responde hola</text>
+    <text x="188" y="168" text-anchor="middle" font-size="15" fill="#5a4130">SKILL.md?</text>
+    <rect x="480" width="380" height="265" rx="28" fill="#111817" stroke="#75e6c0" stroke-opacity="0.42"/>
+    <text x="670" y="82" text-anchor="middle" font-size="25" font-weight="900" fill="#c9fff0">Mejor skill</text>
+    <text x="670" y="130" text-anchor="middle" font-size="16" fill="#b9aea3">review-pr</text>
+    <text x="670" y="164" text-anchor="middle" font-size="16" fill="#b9aea3">fix-tests</text>
+    <text x="670" y="198" text-anchor="middle" font-size="16" fill="#b9aea3">summarize-changes</text>
+  </g>
+</svg>

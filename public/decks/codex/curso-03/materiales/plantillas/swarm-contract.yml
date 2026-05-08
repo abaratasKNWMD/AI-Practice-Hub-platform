@@ -1,0 +1,61 @@
+name: codex-pr-swarm
+version: 1
+owner: platform-ai
+
+inputs:
+  diff: required
+  agents_md: optional
+  repo_map: optional
+  risk_policy: required
+
+roles:
+  architect:
+    mode: read-only
+    owns:
+      - architecture
+      - boundaries
+      - dependency impact
+    output: findings[]
+  qa:
+    mode: read-only
+    owns:
+      - tests
+      - regression paths
+      - reproducibility
+    output: findings[]
+  security:
+    mode: read-only
+    owns:
+      - secrets
+      - auth
+      - data exposure
+      - supply chain
+    output: findings[]
+  judge:
+    mode: read-only
+    owns:
+      - dedupe
+      - severity calibration
+      - final decision
+    output: decision
+
+gates:
+  approve:
+    requires:
+      - no high findings
+      - tests_green
+      - evidence_present
+  changes:
+    when:
+      - medium_or_high_findings
+      - missing_tests_for_risk
+  escalate:
+    when:
+      - secrets_or_pii
+      - production_deploy
+      - unclear_ownership
+
+artifacts:
+  findings_json: out/review.json
+  pr_comment: out/pr-comment.md
+  cost_note: out/cost.md

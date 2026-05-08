@@ -1,0 +1,21 @@
+{
+  "vendor": "codex",
+  "exerciseId": "cx-u03-dataset-sintetico",
+  "title": "Dataset sintetico corporativo",
+  "surface": "datos sinteticos + fine-tuning readiness",
+  "recommendedModel": "GPT-5.5 para generacion y juez",
+  "permissionMode": "read-only con datos anonimizados",
+  "estimatedCost": "Alto: generacion mas evaluacion",
+  "intentionalErrors": [
+    "briefing demasiado amplio",
+    "falta de evidencia",
+    "coste sin registrar"
+  ],
+  "expectedArtifacts": [
+    "prompt",
+    "resultado",
+    "evidencia",
+    "coste",
+    "decision"
+  ]
+}

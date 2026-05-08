@@ -1,0 +1,21 @@
+{
+  "vendor": "copilot",
+  "exerciseId": "cp-b02-inline-completion",
+  "title": "Ghost text con criterio",
+  "surface": "VS Code editor",
+  "recommendedModel": "Modelo incluido",
+  "permissionMode": "workspace-write",
+  "estimatedCost": "Bajo: inline suggestions incluidas en planes de pago",
+  "intentionalErrors": [
+    "briefing demasiado amplio",
+    "falta de evidencia",
+    "coste sin registrar"
+  ],
+  "expectedArtifacts": [
+    "prompt",
+    "resultado",
+    "evidencia",
+    "coste",
+    "decision"
+  ]
+}

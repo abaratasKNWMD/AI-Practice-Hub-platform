@@ -1,0 +1,14 @@
+{
+  "cadence": "quarterly",
+  "nextReview": "2026-08-08",
+  "checks": [
+    "Validar modelos recomendados por vendor.",
+    "Validar cambios de precios, cuotas o premium requests.",
+    "Validar permisos, MCPs, plugins, skills y hooks documentados.",
+    "Validar que decks siguen teniendo minimo hero, 3 diagramas, 2 memes y 2 reflexiones.",
+    "Ejecutar QA visual de decks y player.",
+    "Ejecutar smoke test de rutas por vendor.",
+    "Revisar feedback post-ejercicio y post-workshop.",
+    "Convertir dudas recurrentes en microvideo, FAQ o material."
+  ]
+}

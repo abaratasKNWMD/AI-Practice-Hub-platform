@@ -1,0 +1,87 @@
+{
+  "id": "cp-advanced-02-mcp-code-review",
+  "title": "Copilot Advanced 02 - MCP and Review",
+  "description": "MCP readonly y Copilot code review con instrucciones concretas.",
+  "template": "technical",
+  "durationPreset": 5,
+  "durationMs": 90000,
+  "voice": "es-ES-AlvaroNeural",
+  "author": "AI Practice Hub",
+  "createdAt": "2026-05-07T00:00:00.000Z",
+  "chapters": [
+    { "id": "start", "label": "MCP", "startMs": 0 },
+    { "id": "compare", "label": "Control", "startMs": 9000 },
+    { "id": "close", "label": "Review", "startMs": 65000 }
+  ],
+  "scenes": [
+    {
+      "id": "title",
+      "name": "Apertura",
+      "startMs": 0,
+      "endMs": 9000,
+      "type": "title",
+      "content": {
+        "title": "MCP + Review",
+        "subtitle": "Mas contexto, pero con allowlist y politica.",
+        "tag": "Copilot Advanced"
+      },
+      "subtitles": [
+        { "text": "MCP puede hacer a Copilot mas util, y tambien mas arriesgado.", "startMs": 1000, "endMs": 8200 }
+      ]
+    },
+    {
+      "id": "compare",
+      "name": "Control",
+      "startMs": 9000,
+      "endMs": 65000,
+      "type": "compare",
+      "content": {
+        "tag": "MCP governance",
+        "left": {
+          "label": "Todo conectado",
+          "color": "destructive",
+          "steps": [
+            { "icon": "Zap", "text": "Todos los servidores activos" },
+            { "icon": "AlertTriangle", "text": "Datos y acciones sin inventario" },
+            { "icon": "MessageSquare", "text": "Review con ruido y contexto excesivo" }
+          ],
+          "total": "Potente pero opaco"
+        },
+        "right": {
+          "label": "Readonly + allowlist",
+          "color": "accent",
+          "steps": [
+            { "icon": "Eye", "text": "GitHub MCP readonly primero" },
+            { "icon": "FileText", "text": "Inventario de datos y tools" },
+            { "icon": "Check", "text": "Review con instrucciones concretas" }
+          ],
+          "total": "Potente y gobernable"
+        }
+      },
+      "subtitles": [
+        { "text": "No actives todo por comodidad.", "startMs": 10000, "endMs": 22000 },
+        { "text": "Empieza readonly y documenta tools.", "startMs": 23000, "endMs": 39000 },
+        { "text": "Despues usa review con politica y evidencia.", "startMs": 40000, "endMs": 62000 }
+      ]
+    },
+    {
+      "id": "finale",
+      "name": "Cierre",
+      "startMs": 65000,
+      "endMs": 90000,
+      "type": "finale",
+      "content": {
+        "title": "MCP y review sin sustos",
+        "summary": [
+          { "number": "01", "label": "Readonly", "body": "Primero entender." },
+          { "number": "02", "label": "Allowlist", "body": "Tools permitidas." },
+          { "number": "03", "label": "Review policy", "body": "Findings con evidencia." }
+        ],
+        "cta": "Ejercicios: cp-a01 y cp-a04."
+      },
+      "subtitles": [
+        { "text": "Readonly, allowlist y review policy. Ese es el triangulo seguro.", "startMs": 66000, "endMs": 89000 }
+      ]
+    }
+  ]
+}

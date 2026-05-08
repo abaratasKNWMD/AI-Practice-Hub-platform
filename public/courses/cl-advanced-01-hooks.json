@@ -1,0 +1,80 @@
+{
+  "id": "cl-advanced-01-hooks",
+  "title": "Claude Advanced 01 - Hooks",
+  "description": "Hooks como guardrails deterministicos en Claude Code.",
+  "template": "technical",
+  "durationPreset": 5,
+  "durationMs": 90000,
+  "voice": "es-ES-AlvaroNeural",
+  "author": "AI Practice Hub",
+  "createdAt": "2026-05-07T00:00:00.000Z",
+  "chapters": [
+    { "id": "start", "label": "Hooks", "startMs": 0 },
+    { "id": "compare", "label": "Control", "startMs": 9000 },
+    { "id": "close", "label": "Eventos", "startMs": 65000 }
+  ],
+  "scenes": [
+    {
+      "id": "title",
+      "name": "Apertura",
+      "startMs": 0,
+      "endMs": 9000,
+      "type": "title",
+      "content": { "title": "Hooks", "subtitle": "Cuando no basta con pedir por favor.", "tag": "Claude Advanced" },
+      "subtitles": [{ "text": "Los hooks convierten reglas de seguridad en controles ejecutables.", "startMs": 1000, "endMs": 8200 }]
+    },
+    {
+      "id": "compare",
+      "name": "Control",
+      "startMs": 9000,
+      "endMs": 65000,
+      "type": "compare",
+      "content": {
+        "tag": "Guardrails",
+        "left": {
+          "label": "Solo instrucciones",
+          "color": "destructive",
+          "steps": [
+            { "icon": "MessageSquare", "text": "No escribas secretos" },
+            { "icon": "AlertTriangle", "text": "Depende de memoria" },
+            { "icon": "XCircle", "text": "Falla tarde" }
+          ],
+          "total": "Fragil"
+        },
+        "right": {
+          "label": "Hook",
+          "color": "accent",
+          "steps": [
+            { "icon": "ShieldCheck", "text": "Intercepta Write/Edit" },
+            { "icon": "Terminal", "text": "Ejecuta script" },
+            { "icon": "Ban", "text": "Bloquea con exit code" }
+          ],
+          "total": "Deterministico"
+        }
+      },
+      "subtitles": [
+        { "text": "Un hook no convence al modelo. Controla la herramienta.", "startMs": 10000, "endMs": 29000 },
+        { "text": "Eso es lo que lo hace util para seguridad.", "startMs": 30000, "endMs": 47000 },
+        { "text": "La clave es fallar claro y con poco ruido.", "startMs": 48000, "endMs": 63000 }
+      ]
+    },
+    {
+      "id": "finale",
+      "name": "Cierre",
+      "startMs": 65000,
+      "endMs": 90000,
+      "type": "finale",
+      "content": {
+        "title": "Eventos basicos",
+        "summary": [
+          { "number": "Pre", "label": "Antes", "body": "Bloquea acciones peligrosas." },
+          { "number": "Post", "label": "Despues", "body": "Audita o formatea." },
+          { "number": "Stop", "label": "Cierre", "body": "Exige evidencia." }
+        ],
+        "cta": "Ejercicio: cl-a01-hook-block-secrets."
+      },
+      "subtitles": [{ "text": "Los hooks buenos no hacen teatro. Evitan errores reales.", "startMs": 66000, "endMs": 89000 }]
+    }
+  ]
+}
+

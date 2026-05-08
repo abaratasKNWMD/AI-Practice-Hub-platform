@@ -1,0 +1,92 @@
+[
+  {
+    "vendor": "codex",
+    "course": "curso-01",
+    "status": "ready",
+    "hero": true,
+    "operativeDiagrams": 26,
+    "memes": 9,
+    "reflectionImages": 56,
+    "notes": "34 slides detectadas, 7/7 imagenes referenciadas, 0 assets sin uso directo."
+  },
+  {
+    "vendor": "codex",
+    "course": "curso-02",
+    "status": "ready",
+    "hero": true,
+    "operativeDiagrams": 67,
+    "memes": 24,
+    "reflectionImages": 140,
+    "notes": "83 slides detectadas, 14/14 imagenes referenciadas, 0 assets sin uso directo."
+  },
+  {
+    "vendor": "codex",
+    "course": "curso-03",
+    "status": "ready",
+    "hero": true,
+    "operativeDiagrams": 96,
+    "memes": 28,
+    "reflectionImages": 100,
+    "notes": "81 slides detectadas, 13/13 imagenes referenciadas, 0 assets sin uso directo."
+  },
+  {
+    "vendor": "copilot",
+    "course": "curso-01",
+    "status": "ready",
+    "hero": true,
+    "operativeDiagrams": 13,
+    "memes": 30,
+    "reflectionImages": 46,
+    "notes": "48 slides detectadas, 17/17 imagenes referenciadas, 0 assets sin uso directo."
+  },
+  {
+    "vendor": "copilot",
+    "course": "curso-02",
+    "status": "ready",
+    "hero": true,
+    "operativeDiagrams": 26,
+    "memes": 37,
+    "reflectionImages": 34,
+    "notes": "54 slides detectadas, 24/24 imagenes referenciadas, 0 assets sin uso directo."
+  },
+  {
+    "vendor": "copilot",
+    "course": "curso-03",
+    "status": "ready",
+    "hero": true,
+    "operativeDiagrams": 15,
+    "memes": 39,
+    "reflectionImages": 29,
+    "notes": "53 slides detectadas, 22/22 imagenes referenciadas, 0 assets sin uso directo."
+  },
+  {
+    "vendor": "claude",
+    "course": "curso-01",
+    "status": "ready",
+    "hero": true,
+    "operativeDiagrams": 22,
+    "memes": 16,
+    "reflectionImages": 57,
+    "notes": "48 slides detectadas, 20/20 imagenes referenciadas, 0 assets sin uso directo."
+  },
+  {
+    "vendor": "claude",
+    "course": "curso-02",
+    "status": "ready",
+    "hero": true,
+    "operativeDiagrams": 18,
+    "memes": 12,
+    "reflectionImages": 58,
+    "notes": "44 slides detectadas, 23/37 imagenes referenciadas, 14 assets sin uso directo."
+  },
+  {
+    "vendor": "claude",
+    "course": "curso-03",
+    "status": "ready",
+    "hero": true,
+    "operativeDiagrams": 17,
+    "memes": 17,
+    "reflectionImages": 59,
+    "notes": "46 slides detectadas, 25/34 imagenes referenciadas, 9 assets sin uso directo."
+  }
+]

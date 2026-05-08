@@ -1,0 +1,18 @@
+diff --git a/CLAUDE.md b/CLAUDE.md
+new file mode 100644
+--- /dev/null
++++ b/CLAUDE.md
+@@
++# CLAUDE.md
++- No leer ni escribir .env*.
++- Plan antes de patch.
++- Cerrar con diff, checks y riesgos.
+diff --git a/.claude/hooks/scripts/block-secrets.js b/.claude/hooks/scripts/block-secrets.js
+new file mode 100644
+--- /dev/null
++++ b/.claude/hooks/scripts/block-secrets.js
+@@
++const input = JSON.parse(process.argv[2] ?? '{}')
++const target = `${input.tool ?? ''} ${JSON.stringify(input.args ?? {})}`
++if (/\\.env|secret|token|credential/i.test(target)) process.exit(2)
++process.exit(0)

@@ -1,0 +1,21 @@
+{
+  "vendor": "copilot",
+  "exerciseId": "cp-b06-error-to-fix",
+  "title": "De error a fix sin parche gigante",
+  "surface": "VS Code + terminal",
+  "recommendedModel": "Modelo incluido; premium solo si el error es complejo",
+  "permissionMode": "workspace-write",
+  "estimatedCost": "Medio-bajo: un diagnostico y un patch",
+  "intentionalErrors": [
+    "briefing demasiado amplio",
+    "falta de evidencia",
+    "coste sin registrar"
+  ],
+  "expectedArtifacts": [
+    "prompt",
+    "resultado",
+    "evidencia",
+    "coste",
+    "decision"
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "name": "debug-multimodal-ui",
+  "subagents": 0,
+  "handoffs": false,
+  "turns": [
+    { "inputTokens": 1200, "outputTokens": 500, "toolCalls": 2, "images": 1, "largeLogs": 0 },
+    { "inputTokens": 2600, "outputTokens": 900, "toolCalls": 5, "images": 1, "largeLogs": 1 },
+    { "inputTokens": 800, "outputTokens": 400, "toolCalls": 2, "images": 0, "largeLogs": 0 }
+  ]
+}

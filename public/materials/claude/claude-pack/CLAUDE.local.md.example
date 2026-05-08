@@ -1,0 +1,17 @@
+# CLAUDE.local.md ejemplo personal
+
+Este fichero es para preferencias locales y no debe commitearse.
+
+## Preferencias personales
+
+- Prefiero respuestas en espanol.
+- En este equipo usamos `pnpm`, no `npm`.
+- Cuando haya duda entre rapidez y seguridad, priorizar una verificacion corta.
+
+## Entorno local
+
+- Dev server habitual: `pnpm dev`
+- Lint: `pnpm lint`
+- Typecheck: `pnpm exec tsc --noEmit`
+- Build: `pnpm build`
+

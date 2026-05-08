@@ -1,0 +1,21 @@
+{
+  "vendor": "copilot",
+  "exerciseId": "cp-a04-mcp-github",
+  "title": "GitHub MCP readonly",
+  "surface": "MCP en IDE",
+  "recommendedModel": "Modelo incluido o premium segun consulta",
+  "permissionMode": "read-only",
+  "estimatedCost": "Medio: mas contexto y herramientas",
+  "intentionalErrors": [
+    "briefing demasiado amplio",
+    "falta de evidencia",
+    "coste sin registrar"
+  ],
+  "expectedArtifacts": [
+    "prompt",
+    "resultado",
+    "evidencia",
+    "coste",
+    "decision"
+  ]
+}

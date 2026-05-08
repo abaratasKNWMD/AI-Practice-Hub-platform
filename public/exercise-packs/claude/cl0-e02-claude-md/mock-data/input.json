@@ -1,0 +1,21 @@
+{
+  "vendor": "claude",
+  "exerciseId": "cl0-e02-claude-md",
+  "title": "Primer CLAUDE.md util",
+  "surface": "CLAUDE.md",
+  "recommendedModel": "Sonnet",
+  "permissionMode": "write project memory",
+  "estimatedCost": "bajo: un fichero y revision",
+  "intentionalErrors": [
+    "briefing demasiado amplio",
+    "falta de evidencia",
+    "coste sin registrar"
+  ],
+  "expectedArtifacts": [
+    "prompt",
+    "resultado",
+    "evidencia",
+    "coste",
+    "decision"
+  ]
+}

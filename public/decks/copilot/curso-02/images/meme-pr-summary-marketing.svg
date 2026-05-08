@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 760" role="img" aria-labelledby="title desc">
+  <title id="title">PR summary is not marketing copy</title>
+  <desc id="desc">A PR summary comparison between marketing-like vague text and reviewable technical summary.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#111827"/>
+      <stop offset="1" stop-color="#071a18"/>
+    </linearGradient>
+    <style>
+      .title{font:900 34px Inter,Segoe UI,sans-serif;fill:#f8fbff}
+      .label{font:850 21px Inter,Segoe UI,sans-serif;fill:#f8fbff}
+      .small{font:700 15px Inter,Segoe UI,sans-serif;fill:#aebbd0}
+      .mono{font:700 16px ui-monospace,SFMono-Regular,Consolas,monospace;fill:#dce8f7}
+      .card{fill:#ffffff;fill-opacity:.07;stroke:#ffffff;stroke-opacity:.14}
+    </style>
+  </defs>
+  <rect width="1200" height="760" rx="34" fill="url(#bg)"/>
+  <text x="70" y="88" class="title">PR summary no es nota de prensa</text>
+  <text x="72" y="122" class="small">Un buen resumen no vende el cambio. Lo hace revisable.</text>
+  <g transform="translate(98 184)">
+    <rect width="468" height="398" rx="34" class="card"/>
+    <text x="38" y="58" class="label">Resumen bonito</text>
+    <text x="44" y="122" class="mono">"Mejora la experiencia"</text>
+    <text x="44" y="166" class="mono">"Optimiza el flujo"</text>
+    <text x="44" y="210" class="mono">"Arregla cosas"</text>
+    <text x="44" y="286" class="small">Suena bien. Revisa mal.</text>
+  </g>
+  <g transform="translate(634 184)">
+    <rect width="468" height="398" rx="34" class="card"/>
+    <text x="38" y="58" class="label">Resumen util</text>
+    <text x="44" y="122" class="mono">Que cambio</text>
+    <text x="44" y="166" class="mono">Por que</text>
+    <text x="44" y="210" class="mono">Riesgos</text>
+    <text x="44" y="254" class="mono">Tests ejecutados</text>
+  </g>
+</svg>

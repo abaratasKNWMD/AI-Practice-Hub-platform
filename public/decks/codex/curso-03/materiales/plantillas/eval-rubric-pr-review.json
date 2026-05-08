@@ -1,0 +1,29 @@
+{
+  "name": "codex_pr_review_quality",
+  "data_source_config": {
+    "type": "custom",
+    "item_schema": {
+      "type": "object",
+      "properties": {
+        "diff": { "type": "string" },
+        "expected_decision": { "type": "string" },
+        "must_find": {
+          "type": "array",
+          "items": { "type": "string" }
+        }
+      },
+      "required": ["diff", "expected_decision", "must_find"]
+    },
+    "include_sample_schema": true
+  },
+  "testing_criteria": [
+    {
+      "type": "string_check",
+      "name": "decision matches expected",
+      "input": "{{ sample.output_json.decision }}",
+      "operation": "eq",
+      "reference": "{{ item.expected_decision }}"
+    }
+  ],
+  "notes": "Extiende esta rubrica con graders de modelo para evidence, no_speculation y severity_calibration."
+}

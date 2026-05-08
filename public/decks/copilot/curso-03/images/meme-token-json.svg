@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 760" role="img" aria-labelledby="title desc">
+  <title id="title">Do not put tokens in JSON</title>
+  <desc id="desc">A security meme showing a token escaping from mcp.json and being moved to a vault.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#111827"/>
+      <stop offset="1" stop-color="#071a18"/>
+    </linearGradient>
+    <style>
+      .title{font:900 34px Inter,Segoe UI,sans-serif;fill:#f8fbff}
+      .label{font:850 22px Inter,Segoe UI,sans-serif;fill:#f8fbff}
+      .small{font:700 15px Inter,Segoe UI,sans-serif;fill:#aebbd0}
+      .mono{font:700 17px ui-monospace,SFMono-Regular,Consolas,monospace;fill:#dce8f7}
+      .card{fill:#ffffff;fill-opacity:.07;stroke:#ffffff;stroke-opacity:.14}
+    </style>
+  </defs>
+  <rect width="1200" height="760" rx="34" fill="url(#bg)"/>
+  <text x="70" y="88" class="title">El token no vive en mcp.json</text>
+  <text x="72" y="122" class="small">Los ejemplos usan placeholders. La plataforma real usa inputs, vault, scopes y rotacion.</text>
+  <g transform="translate(120 186)">
+    <rect width="450" height="390" rx="34" class="card"/>
+    <text x="42" y="62" class="label">Mala idea</text>
+    <rect x="58" y="110" width="330" height="170" rx="26" fill="#07101e" stroke="#ff8fab" stroke-opacity=".38"/>
+    <text x="86" y="164" class="mono">"token": "TOKEN_PLACEHOLDER"</text>
+    <text x="86" y="210" class="mono">"scope": "all"</text>
+  </g>
+  <g transform="translate(650 186)">
+    <rect width="430" height="390" rx="34" class="card"/>
+    <text x="42" y="62" class="label">Mejor</text>
+    <rect x="94" y="120" width="210" height="156" rx="28" fill="#62e6a2" fill-opacity=".14" stroke="#62e6a2" stroke-opacity=".42"/>
+    <path d="M136 120V88c0-52 126-52 126 0v32" fill="none" stroke="#62e6a2" stroke-width="12" stroke-linecap="round"/>
+    <text x="128" y="206" class="mono">vault input</text>
+    <text x="54" y="334" class="small">Scoping, rotation, no hardcode.</text>
+  </g>
+</svg>

@@ -1,0 +1,50 @@
+[
+  {
+    "id": "cx-workshop-60m-first-task-to-pr",
+    "vendor": "codex",
+    "status": "ready",
+    "title": "Codex first task to PR",
+    "routeHref": "/tracks/codex/workshops/codex-workshop-1h-first-task-to-pr",
+    "playerSlug": "cx-workshop-60m-first-task-to-pr",
+    "packHref": "/workshop-packs/codex/cx-workshop-60m-first-task-to-pr/README.md",
+    "minuteGuideHref": "/workshop-packs/codex/cx-workshop-60m-first-task-to-pr/minute-by-minute.md",
+    "demoHref": "/workshop-packs/codex/cx-workshop-60m-first-task-to-pr/demo-simulated.md",
+    "outputs": ["briefing", "mapa readonly", "diff", "test", "review", "PR body", "cost ledger"]
+  },
+  {
+    "id": "cp-workshop-60m-vscode-to-pr-review",
+    "vendor": "copilot",
+    "status": "ready",
+    "title": "Copilot VS Code to PR review",
+    "routeHref": "/tracks/copilot/workshops/copilot-workshop-1h-vscode-to-pr-review",
+    "playerSlug": "cp-workshop-60m-vscode-to-pr-review",
+    "packHref": "/workshop-packs/copilot/cp-workshop-60m-vscode-to-pr-review/README.md",
+    "minuteGuideHref": "/workshop-packs/copilot/cp-workshop-60m-vscode-to-pr-review/minute-by-minute.md",
+    "demoHref": "/workshop-packs/copilot/cp-workshop-60m-vscode-to-pr-review/demo-simulated.md",
+    "outputs": ["Ask/Edit/Agent matrix", "patch", "test", "PR review", "premium budget", "prompt files"]
+  },
+  {
+    "id": "cl-workshop-60m-memory-to-automation",
+    "vendor": "claude",
+    "status": "ready",
+    "title": "Claude memory to automation",
+    "routeHref": "/tracks/claude/workshops/claude-workshop-1h-memory-to-automation",
+    "playerSlug": "cl-workshop-60m-memory-to-automation",
+    "packHref": "/workshop-packs/claude/cl-workshop-60m-memory-to-automation/README.md",
+    "minuteGuideHref": "/workshop-packs/claude/cl-workshop-60m-memory-to-automation/minute-by-minute.md",
+    "demoHref": "/workshop-packs/claude/cl-workshop-60m-memory-to-automation/demo-simulated.md",
+    "outputs": ["CLAUDE.md", "skill", "subagente", "MCP inventory", "hook", "eval", "routing"]
+  },
+  {
+    "id": "hub-workshop-60m-vendor-selection",
+    "vendor": "platform",
+    "status": "ready",
+    "title": "Transversal vendor selection",
+    "routeHref": "/operaciones",
+    "playerSlug": "hub-workshop-60m-vendor-selection",
+    "packHref": "/workshop-packs/platform/hub-workshop-60m-vendor-selection/README.md",
+    "minuteGuideHref": "/workshop-packs/platform/hub-workshop-60m-vendor-selection/minute-by-minute.md",
+    "demoHref": "/workshop-packs/platform/hub-workshop-60m-vendor-selection/demo-simulated.md",
+    "outputs": ["decision tree", "cost ledger", "permission matrix", "ruta recomendada", "feedback loop"]
+  }
+]

@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" role="img" aria-labelledby="title desc">
+  <title id="title">Meme CI slot machine</title>
+  <desc id="desc">Meme sobre una GitHub Action sin presupuesto que se comporta como tragaperras de coste.</desc>
+  <rect width="1280" height="720" rx="36" fill="#f9efe5"/>
+  <text x="74" y="88" font-family="Inter, Arial, sans-serif" font-size="42" font-weight="900" fill="#211914">Meme: la tragaperras del CI</text>
+  <text x="74" y="126" font-family="Inter, Arial, sans-serif" font-size="21" fill="#6a5847">Cuando pones Claude en cada push sin label, limite ni presupuesto.</text>
+  <rect x="410" y="180" width="460" height="390" rx="42" fill="#c74733"/>
+  <rect x="462" y="236" width="356" height="130" rx="24" fill="#fffaf2"/>
+  <g font-family="Inter, Arial, sans-serif" font-size="34" font-weight="900" fill="#211914">
+    <text x="520" y="316">PR</text>
+    <text x="626" y="316">PR</text>
+    <text x="732" y="316">PR</text>
+  </g>
+  <rect x="502" y="414" width="276" height="70" rx="18" fill="#1f1f1f"/>
+  <text x="640" y="459" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="26" font-weight="900" fill="#fff">rerun?</text>
+  <circle cx="826" cy="408" r="32" fill="#f4d58d"/>
+  <path d="M870 256 C1010 246 1040 372 918 420" stroke="#1f1f1f" stroke-width="16" fill="none" stroke-linecap="round"/>
+  <text x="640" y="642" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="23" font-weight="900" fill="#211914">La automatizacion que no mira presupuesto tambien automatiza sorpresas.</text>
+</svg>

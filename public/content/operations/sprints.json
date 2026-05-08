@@ -1,0 +1,147 @@
+[
+  {
+    "id": "sprint-00-foundation",
+    "status": "done",
+    "title": "Foundation multi-vendor",
+    "goal": "Tener hub navegable con Codex, Copilot y Claude, decks, ejercicios, workshops, materiales y microvideos.",
+    "deliverables": [
+      "Rutas /tracks/codex, /tracks/copilot y /tracks/claude.",
+      "9 decks HTML enlazados desde fichas de curso.",
+      "33 microvideos CourseScript iniciales.",
+      "Catalogo JSON de cursos, ejercicios, workshops y materiales."
+    ],
+    "definitionOfDone": [
+      "Las rutas principales cargan.",
+      "Cada vendor tiene cursos, labs y materiales.",
+      "Los decks no tienen imagenes rotas conocidas."
+    ]
+  },
+  {
+    "id": "sprint-01-masterclass-10m",
+    "status": "done",
+    "title": "Masterclass inicial por vendor",
+    "goal": "Crear un video largo de 10 minutos por vendor para abrir la ruta antes de decks y labs.",
+    "deliverables": [
+      "cx-masterclass-10m-codex-operating-system.json.",
+      "cp-masterclass-10m-copilot-workbench.json.",
+      "cl-masterclass-10m-claude-operating-model.json.",
+      "Enlaces como primer video en Codex, Copilot y Claude."
+    ],
+    "definitionOfDone": [
+      "Cada masterclass se reproduce en /player/[slug].",
+      "Los contadores de video en las rutas son dinamicos.",
+      "Los videos explican coste/modelo/permisos."
+    ]
+  },
+  {
+    "id": "sprint-02-video-factory",
+    "status": "done",
+    "title": "Video factory 30m/60m",
+    "goal": "Estandarizar videos largos con guion, escenas, prompts, respuestas simuladas y assets por JSON.",
+    "deliverables": [
+      "Schema VideoBlueprint estable.",
+      "Generador de CourseScript desde blueprint.",
+      "Tres workshops de 30 minutos: Codex, Copilot y Claude.",
+      "Un video platform de 60 minutos sobre operating model.",
+      "Comando pnpm build:videos."
+    ],
+    "definitionOfDone": [
+      "Un no-programador puede editar guion base en JSON.",
+      "Cada escena declara pantalla, voz, subtitulo, accion y asset.",
+      "El player reproduce videos largos sin romper controles."
+    ]
+  },
+  {
+    "id": "sprint-03-assets-and-memes",
+    "status": "done",
+    "title": "Assets inteligentes y memes por deck",
+    "goal": "Subir todos los decks al mismo nivel visual: imagen primaria, imagen de reflexion, meme con aprendizaje y diagrama operativo.",
+    "deliverables": [
+      "Claude curso 3 ampliado a 35-40 slides.",
+      "Claude curso 2 debe usar mejor sus assets disponibles.",
+      "QA visual para los 9 decks en desktop y mobile.",
+      "Matriz de gaps visuales por curso."
+    ],
+    "definitionOfDone": [
+      "Cada curso tiene minimo 1 hero, 3 diagramas, 2 memes y 2 reflexiones visuales.",
+      "No hay referencias de imagen rotas.",
+      "Las slides no se sienten solo texto."
+    ]
+  },
+  {
+    "id": "sprint-04-exercise-depth",
+    "status": "done",
+    "title": "Ejercicios con repos, prompts y soluciones",
+    "goal": "Convertir todos los ejercicios en retos autoconsumibles con materiales completos y solucion guiada.",
+    "deliverables": [
+      "Repo mock por vendor con carpeta de labs.",
+      "Prompts iniciales y prompts de rescate.",
+      "Soluciones paso a paso con diff esperado.",
+      "Rubrica por ejercicio.",
+      "Materiales enlazados desde ejercicios clave."
+    ],
+    "definitionOfDone": [
+      "Cada ejercicio se puede hacer sin profesor.",
+      "Cada ejercicio enlaza material real.",
+      "Cada ejercicio tiene evidencia de cierre."
+    ]
+  },
+  {
+    "id": "sprint-05-workshops-1h",
+    "status": "done",
+    "title": "Workshops de 1 hora",
+    "goal": "Crear workshops listos para impartir con video simulado, retos, prompts, respuestas y notas del facilitador.",
+    "deliverables": [
+      "Workshop 1h Codex: first task to PR.",
+      "Workshop 1h Copilot: VS Code to PR review.",
+      "Workshop 1h Claude: memory to automation.",
+      "Workshop 1h transversal: elegir vendor por caso.",
+      "Guion minuto a minuto por workshop.",
+      "Demo simulada y pack instructor por workshop."
+    ],
+    "definitionOfDone": [
+      "Cada workshop tiene guion minuto a minuto.",
+      "Cada workshop tiene video o demo simulada.",
+      "Cada workshop produce output revisable.",
+      "Cada workshop se puede abrir desde su ruta o desde operaciones."
+    ]
+  },
+  {
+    "id": "sprint-06-release-ops",
+    "status": "done",
+    "title": "Release, metricas y adopcion",
+    "goal": "Preparar la plataforma para uso real en equipo: QA, versionado, metricas, feedback y cadencia de tutoria.",
+    "deliverables": [
+      "Checklist de release.",
+      "Script de smoke test.",
+      "Script de QA visual desktop/mobile.",
+      "Matriz de progreso por alumno o cohort.",
+      "Registro de feedback de tutorias.",
+      "Dashboard de coste/uso estimado.",
+      "Documento de versionado."
+    ],
+    "definitionOfDone": [
+      "Hay una version etiquetable.",
+      "Hay criterios de aceptacion por sprint.",
+      "Hay ruta clara para mantener contenido actualizado.",
+      "El release puede validarse con comandos reproducibles."
+    ]
+  },
+  {
+    "id": "sprint-07-cohort-progress",
+    "status": "next",
+    "title": "Cohortes, progreso y tutoria",
+    "goal": "Convertir el hub en una herramienta de seguimiento de cohortes con progreso local, dudas reales y handoff a tutoria.",
+    "deliverables": [
+      "Estado por alumno o cohort.",
+      "Checklist completado por curso, video, workshop y ejercicio.",
+      "Registro de dudas para tutoria.",
+      "Panel de avance por vendor."
+    ],
+    "definitionOfDone": [
+      "Un alumno puede marcar avance.",
+      "Un instructor puede ver que falta antes de tutoria.",
+      "Las dudas repetidas entran al feedback loop."
+    ]
+  }
+]

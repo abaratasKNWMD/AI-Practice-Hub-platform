@@ -1,0 +1,21 @@
+{
+  "vendor": "codex",
+  "exerciseId": "cx-b05-review-diff",
+  "title": "Review de diff con evidencia",
+  "surface": "git diff + chat Codex",
+  "recommendedModel": "GPT-5.4",
+  "permissionMode": "read-only",
+  "estimatedCost": "Bajo: una revision enfocada",
+  "intentionalErrors": [
+    "briefing demasiado amplio",
+    "falta de evidencia",
+    "coste sin registrar"
+  ],
+  "expectedArtifacts": [
+    "prompt",
+    "resultado",
+    "evidencia",
+    "coste",
+    "decision"
+  ]
+}

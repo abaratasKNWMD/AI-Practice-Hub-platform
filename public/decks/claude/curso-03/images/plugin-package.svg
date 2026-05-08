@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="620" viewBox="0 0 1100 620" role="img" aria-labelledby="title desc">
+  <title id="title">Plugin package</title>
+  <desc id="desc">Claude plugin package containing skills, agents, hooks and MCP.</desc>
+  <rect width="1100" height="620" rx="34" fill="#0d0b0a"/>
+  <text x="95" y="112" font-family="Inter, Arial, sans-serif" font-size="34" font-weight="900" fill="#fff7f0">Plugin como paquete</text>
+  <g transform="translate(180 195)" font-family="Inter, Arial, sans-serif">
+    <rect width="740" height="330" rx="30" fill="#15110f" stroke="#75e6c0" stroke-opacity="0.42"/>
+    <text x="42" y="62" font-size="26" font-weight="900" fill="#c9fff0">team-review-plugin</text>
+    <rect x="42" y="105" width="280" height="58" rx="18" fill="#111817" stroke="#75e6c0" stroke-opacity="0.38"/>
+    <text x="72" y="141" font-size="16" font-weight="900" fill="#c9fff0">skills/review-pr</text>
+    <rect x="360" y="105" width="280" height="58" rx="18" fill="#171313" stroke="#ffd27a" stroke-opacity="0.38"/>
+    <text x="390" y="141" font-size="16" font-weight="900" fill="#ffe6ad">agents/qa-reviewer</text>
+    <rect x="42" y="195" width="280" height="58" rx="18" fill="#211713" stroke="#ff9aad" stroke-opacity="0.38"/>
+    <text x="72" y="231" font-size="16" font-weight="900" fill="#ffdfe5">hooks/block-secrets</text>
+    <rect x="360" y="195" width="280" height="58" rx="18" fill="#101418" stroke="#7bd7ff" stroke-opacity="0.38"/>
+    <text x="390" y="231" font-size="16" font-weight="900" fill="#d8f4ff">mcp readonly</text>
+  </g>
+</svg>

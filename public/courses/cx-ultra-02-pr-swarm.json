@@ -1,0 +1,114 @@
+{
+  "id": "cx-ultra-02-pr-swarm",
+  "title": "Codex Ultra 02 - PR Swarm",
+  "description": "Orquestacion multiagente aplicada a revision de PR con Codex.",
+  "template": "technical",
+  "durationPreset": 5,
+  "durationMs": 90000,
+  "voice": "es-ES-AlvaroNeural",
+  "author": "AI Practice Hub",
+  "createdAt": "2026-05-07T00:00:00.000Z",
+  "chapters": [
+    { "id": "start", "label": "Swarm", "startMs": 0 },
+    { "id": "roles", "label": "Roles", "startMs": 8000 },
+    { "id": "orchestration", "label": "Orquestacion", "startMs": 42000 },
+    { "id": "close", "label": "Cierre", "startMs": 70000 }
+  ],
+  "scenes": [
+    {
+      "id": "title",
+      "name": "Apertura",
+      "startMs": 0,
+      "endMs": 8000,
+      "type": "title",
+      "content": {
+        "title": "PR Swarm",
+        "subtitle": "Arquitecto, dev, QA y orquestador. Cada uno con una mision.",
+        "tag": "Codex Ultra"
+      },
+      "subtitles": [
+        { "text": "Un swarm no es hacer hablar a muchos agentes.", "startMs": 1000, "endMs": 5000 },
+        { "text": "Es repartir criterios.", "startMs": 5200, "endMs": 7600 }
+      ]
+    },
+    {
+      "id": "compare",
+      "name": "Roles",
+      "startMs": 8000,
+      "endMs": 42000,
+      "type": "compare",
+      "content": {
+        "tag": "Agente unico vs swarm",
+        "left": {
+          "label": "Agente unico",
+          "color": "destructive",
+          "steps": [
+            { "icon": "Code", "text": "Mira arquitectura, bug, test y UX a la vez" },
+            { "icon": "AlertTriangle", "text": "Puede dejar puntos ciegos" },
+            { "icon": "MessageSquare", "text": "Respuesta larga y dificil de auditar" }
+          ],
+          "total": "Bueno para tareas pequenas"
+        },
+        "right": {
+          "label": "Swarm orquestado",
+          "color": "accent",
+          "steps": [
+            { "icon": "Eye", "text": "Arquitecto revisa impacto y diseno" },
+            { "icon": "Code2", "text": "Dev revisa implementacion y edge cases" },
+            { "icon": "Check", "text": "QA revisa tests y regresiones" },
+            { "icon": "GitPullRequest", "text": "Orquestador sintetiza decision" }
+          ],
+          "total": "Mejor para PRs criticos"
+        }
+      },
+      "subtitles": [
+        { "text": "Cada rol ve un tipo de riesgo.", "startMs": 9000, "endMs": 16000 },
+        { "text": "El orquestador no copia respuestas.", "startMs": 16500, "endMs": 24500 },
+        { "text": "Integra, resuelve desacuerdos y decide.", "startMs": 25000, "endMs": 40500 }
+      ]
+    },
+    {
+      "id": "thinking",
+      "name": "Orquestacion",
+      "startMs": 42000,
+      "endMs": 70000,
+      "type": "thinking",
+      "content": {
+        "tag": "Swarm loop",
+        "title": "Orquestador Codex sintetizando...",
+        "thoughts": [
+          { "ms": 0, "text": "Arquitecto: impacto en modulo de autenticacion", "done": false },
+          { "ms": 5000, "text": "Dev: edge case en token expirado", "done": false },
+          { "ms": 11000, "text": "QA: falta test de sesion caducada", "done": false },
+          { "ms": 18000, "text": "Resolviendo conflicto: bug real vs preferencia", "done": false },
+          { "ms": 25000, "text": "Decision: changes requested con evidencia", "done": true }
+        ]
+      },
+      "subtitles": [
+        { "text": "El valor aparece en la sintesis.", "startMs": 43000, "endMs": 50000 },
+        { "text": "No en tener muchas voces.", "startMs": 50500, "endMs": 59000 },
+        { "text": "Un buen swarm termina con una decision clara.", "startMs": 59500, "endMs": 69000 }
+      ]
+    },
+    {
+      "id": "finale",
+      "name": "Cierre",
+      "startMs": 70000,
+      "endMs": 90000,
+      "type": "finale",
+      "content": {
+        "title": "Swarm que sirve",
+        "summary": [
+          { "number": "01", "label": "Roles", "body": "Cada agente tiene criterio propio." },
+          { "number": "02", "label": "Limites", "body": "Read-only por defecto y presupuesto." },
+          { "number": "03", "label": "Decision", "body": "Aprobado, cambios o preguntas." }
+        ],
+        "cta": "Ejercicio asociado: cx-u01-pr-swarm."
+      },
+      "subtitles": [
+        { "text": "El swarm potente no hace ruido.", "startMs": 70500, "endMs": 79500 },
+        { "text": "Hace mejor la decision.", "startMs": 80000, "endMs": 89500 }
+      ]
+    }
+  ]
+}

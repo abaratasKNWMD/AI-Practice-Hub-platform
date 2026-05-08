@@ -1,0 +1,9 @@
+diff --git a/README.md b/README.md
+--- a/README.md
++++ b/README.md
+@@
++# Evidencia de ejercicio
++- Ejercicio: cl0-e04-cost-baseline
++- Resultado: salida verificable
++- Coste: bajo: medicion inicial
++- Permisos: read-only

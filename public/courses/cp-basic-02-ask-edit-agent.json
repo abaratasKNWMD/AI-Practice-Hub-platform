@@ -1,0 +1,87 @@
+{
+  "id": "cp-basic-02-ask-edit-agent",
+  "title": "Copilot Basic 02 - Ask Edit Agent",
+  "description": "Elegir Ask, Edit o Agent segun la tarea.",
+  "template": "technical",
+  "durationPreset": 5,
+  "durationMs": 90000,
+  "voice": "es-ES-AlvaroNeural",
+  "author": "AI Practice Hub",
+  "createdAt": "2026-05-07T00:00:00.000Z",
+  "chapters": [
+    { "id": "start", "label": "Modos", "startMs": 0 },
+    { "id": "compare", "label": "Decision", "startMs": 9000 },
+    { "id": "close", "label": "Regla", "startMs": 65000 }
+  ],
+  "scenes": [
+    {
+      "id": "title",
+      "name": "Apertura",
+      "startMs": 0,
+      "endMs": 9000,
+      "type": "title",
+      "content": {
+        "title": "Ask, Edit, Agent",
+        "subtitle": "Tres velocidades. No uses siempre la mas grande.",
+        "tag": "Copilot Basic"
+      },
+      "subtitles": [
+        { "text": "Copilot no es un unico boton. Tiene modos con riesgo distinto.", "startMs": 1000, "endMs": 8200 }
+      ]
+    },
+    {
+      "id": "compare",
+      "name": "Decision",
+      "startMs": 9000,
+      "endMs": 65000,
+      "type": "compare",
+      "content": {
+        "tag": "Modo correcto",
+        "left": {
+          "label": "Modo mal elegido",
+          "color": "destructive",
+          "steps": [
+            { "icon": "AlertTriangle", "text": "Agent para una duda simple" },
+            { "icon": "Code", "text": "Edit sin seleccionar alcance" },
+            { "icon": "MessageSquare", "text": "Ask esperando que modifique archivos" }
+          ],
+          "total": "Ruido y coste"
+        },
+        "right": {
+          "label": "Modo con criterio",
+          "color": "accent",
+          "steps": [
+            { "icon": "Eye", "text": "Ask para entender" },
+            { "icon": "Code2", "text": "Edit para cambio acotado" },
+            { "icon": "GitPullRequest", "text": "Agent para tareas multiarchivo" }
+          ],
+          "total": "Control y velocidad"
+        }
+      },
+      "subtitles": [
+        { "text": "Ask sirve para entender.", "startMs": 10000, "endMs": 19000 },
+        { "text": "Edit sirve para cambiar algo acotado.", "startMs": 20000, "endMs": 33000 },
+        { "text": "Agent solo merece la pena si hay plan, alcance y cierre.", "startMs": 34000, "endMs": 62000 }
+      ]
+    },
+    {
+      "id": "finale",
+      "name": "Cierre",
+      "startMs": 65000,
+      "endMs": 90000,
+      "type": "finale",
+      "content": {
+        "title": "Regla de modo",
+        "summary": [
+          { "number": "Ask", "label": "Entender", "body": "No edita, reduce incertidumbre." },
+          { "number": "Edit", "label": "Cambiar", "body": "Scope pequeno y visible." },
+          { "number": "Agent", "label": "Delegar", "body": "Tarea multiarchivo con done claro." }
+        ],
+        "cta": "Ejercicio: cp-b04-chat-ask-edit-agent."
+      },
+      "subtitles": [
+        { "text": "El modo correcto ahorra tiempo, coste y sustos.", "startMs": 66000, "endMs": 89000 }
+      ]
+    }
+  ]
+}

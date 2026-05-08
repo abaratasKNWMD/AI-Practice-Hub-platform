@@ -1,0 +1,75 @@
+{
+  "id": "cp-git-02-pr-as-contract",
+  "title": "Copilot Git 02 - PR as Contract",
+  "description": "Como leer un PR y un diff antes de pedir review a Copilot.",
+  "template": "technical",
+  "durationPreset": 5,
+  "durationMs": 90000,
+  "voice": "es-ES-AlvaroNeural",
+  "author": "AI Practice Hub",
+  "createdAt": "2026-05-07T00:00:00.000Z",
+  "chapters": [
+    { "id": "start", "label": "PR", "startMs": 0 },
+    { "id": "ticket", "label": "Contrato", "startMs": 9000 },
+    { "id": "close", "label": "Review", "startMs": 65000 }
+  ],
+  "scenes": [
+    {
+      "id": "title",
+      "name": "Apertura",
+      "startMs": 0,
+      "endMs": 9000,
+      "type": "title",
+      "content": {
+        "title": "El PR es el contrato",
+        "subtitle": "Copilot review funciona mejor cuando el cambio tiene intencion clara.",
+        "tag": "Copilot CP0"
+      },
+      "subtitles": [
+        { "text": "Un PR no es solo un boton antes del merge.", "startMs": 1000, "endMs": 5000 },
+        { "text": "Es el contrato que Copilot y el humano van a revisar.", "startMs": 5200, "endMs": 8500 }
+      ]
+    },
+    {
+      "id": "linear",
+      "name": "PR contract",
+      "startMs": 9000,
+      "endMs": 65000,
+      "type": "linear",
+      "content": {
+        "ticketId": "CP-PR",
+        "title": "PR apto para Copilot review",
+        "project": "GitHub Copilot Practice",
+        "priority": "Medium",
+        "assignee": "Developer + Copilot",
+        "status": "Ready for review",
+        "labels": ["diff", "review", "training"],
+        "description": "Objetivo: explicar que cambia y por que.\n\nContexto: archivos tocados y comportamiento esperado.\n\nNo alcance: que no debe revisarse como parte de este PR.\n\nVerificacion: comandos ejecutados o motivo por el que no se ejecutaron.\n\nPregunta para Copilot: revisa bugs, seguridad, tests y regresiones. Evita comentarios cosmeticos."
+      },
+      "subtitles": [
+        { "text": "El PR bueno dice objetivo, contexto, no alcance y verificacion.", "startMs": 10000, "endMs": 25000 },
+        { "text": "La pregunta a Copilot review tambien debe tener criterio.", "startMs": 26000, "endMs": 42000 },
+        { "text": "Sin contrato, la review se llena de ruido.", "startMs": 43000, "endMs": 62000 }
+      ]
+    },
+    {
+      "id": "finale",
+      "name": "Cierre",
+      "startMs": 65000,
+      "endMs": 90000,
+      "type": "finale",
+      "content": {
+        "title": "Review que sirve",
+        "summary": [
+          { "number": "01", "label": "Diff", "body": "Que cambio exactamente." },
+          { "number": "02", "label": "Riesgo", "body": "Que puede romper." },
+          { "number": "03", "label": "Evidencia", "body": "Como se verifico." }
+        ],
+        "cta": "Ejercicio: cp0-e02-diff-reading."
+      },
+      "subtitles": [
+        { "text": "Diff, riesgo y evidencia. Esa es la base de una review buena.", "startMs": 66000, "endMs": 89000 }
+      ]
+    }
+  ]
+}

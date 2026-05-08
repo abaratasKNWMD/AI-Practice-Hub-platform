@@ -1,0 +1,91 @@
+[
+  {
+    "id": "claude-orientation",
+    "code": "CL0",
+    "title": "Claude Code Orientation",
+    "level": "orientation",
+    "duration": "60 min",
+    "summary": "Mapa operativo de Claude Code: memoria, contexto, permisos, coste y criterio para arrancar sin convertir cada sesion en un prompt gigante.",
+    "deckUrl": "/decks/claude/curso-01/index.html",
+    "videoSlugs": ["cl-masterclass-10m-claude-operating-model", "cl-orientation-01-claude-md", "cl-orientation-02-memory-vs-instructions", "cl-orientation-03-cost-context"],
+    "exerciseIds": ["cl0-e01-surface-map", "cl0-e02-claude-md", "cl0-e03-memory-audit", "cl0-e04-cost-baseline"],
+    "materialIds": ["cl-deck-core-web", "cl-audit", "omega-audit", "cl-official-sources", "cl-claude-md", "cl-local-md", "cl-settings", "cl-cost-audit", "cl-context-policy", "cl-memory-policy"],
+    "status": "ready",
+    "outcomes": [
+      "Distinguir memoria persistente, instrucciones locales y contexto de sesion.",
+      "Preparar un CLAUDE.md minimo que reduzca repeticion y coste.",
+      "Usar /context, /usage, /compact y /clear con criterio operativo."
+    ]
+  },
+  {
+    "id": "claude-basic",
+    "code": "CL1",
+    "title": "Claude Basic",
+    "level": "basic",
+    "duration": "3 h",
+    "summary": "Uso diario de Claude Code en repos reales: CLAUDE.md, reglas por carpeta, handoff, bugfix con test y compactacion de contexto.",
+    "deckUrl": "/decks/claude/curso-01/index.html",
+    "videoSlugs": ["cl-basic-01-claude-md", "cl-basic-02-compact-context"],
+    "exerciseIds": ["cl-b01-claude-md", "cl-b02-local-memory", "cl-b03-folder-rules", "cl-b04-bugfix-test", "cl-b05-context-compact", "cl-b06-handoff"],
+    "materialIds": ["cl-deck-core-web", "cl-claude-md", "cl-local-md", "cl-rule-frontend", "cl-rule-backend", "cl-rule-tests", "cl-rule-security", "cl-handoff"],
+    "status": "ready",
+    "outcomes": [
+      "Crear memoria util sin meter documentacion entera en el prompt.",
+      "Resolver tareas pequenas con evidencia y sin perder trazabilidad.",
+      "Producir handoffs que permitan continuar un trabajo sin repetir explicaciones."
+    ]
+  },
+  {
+    "id": "claude-operator",
+    "code": "CL2",
+    "title": "Claude Operator",
+    "level": "medium",
+    "duration": "5 h",
+    "summary": "Claude como sistema operativo de equipo: skills bajo demanda, subagentes especialistas, MCP read-only y routing de modelos por coste.",
+    "deckUrl": "/decks/claude/curso-02/index.html",
+    "videoSlugs": ["cl-operator-01-first-skill", "cl-operator-02-subagent-explorer", "cl-operator-03-mcp-project"],
+    "exerciseIds": ["cl-o01-skill-summarize", "cl-o02-skill-fix-tests", "cl-o03-subagent-explorer", "cl-o04-subagent-qa", "cl-o05-mcp-project", "cl-o06-model-routing"],
+    "materialIds": ["cl-deck-operator-web", "cl-skill-summarize", "cl-skill-rubric", "cl-skill-fix-tests", "cl-skill-run-tests", "cl-agent-explorer", "cl-agent-qa", "cl-agent-security", "cl-agent-architect", "cl-mcp-project", "cl-context-policy"],
+    "status": "ready",
+    "outcomes": [
+      "Transformar procedimientos repetidos en skills versionadas.",
+      "Separar exploracion, QA, seguridad y arquitectura con subagentes.",
+      "Conectar MCP solo cuando aporta contexto accionable y gobernado."
+    ]
+  },
+  {
+    "id": "claude-advanced-automation",
+    "code": "CL3",
+    "title": "Claude Advanced Automation",
+    "level": "advanced",
+    "duration": "6 h",
+    "summary": "Automatizacion seria con hooks, plugins, GitHub Actions, reviews colaborativas y guardrails para equipos.",
+    "deckUrl": "/decks/claude/curso-03/index.html",
+    "videoSlugs": ["cl-advanced-01-hooks", "cl-advanced-02-plugin-action"],
+    "exerciseIds": ["cl-a01-hook-block-secrets", "cl-a02-hook-require-tests", "cl-a03-plugin-team-review", "cl-a04-github-action", "cl-a05-pr-trigger"],
+    "materialIds": ["cl-deck-advanced-web", "cl-hooks-config", "cl-hook-block-secrets", "cl-hook-require-tests", "cl-plugin-root-manifest", "cl-plugin-team-manifest", "cl-plugin-review-skill", "cl-plugin-qa-agent", "cl-plugin-hooks", "cl-plugin-hook-script", "cl-cost-audit"],
+    "status": "ready",
+    "outcomes": [
+      "Usar hooks como controles deterministicos, no como magia de demo.",
+      "Empaquetar practicas de equipo en plugins reutilizables.",
+      "Integrar Claude en PRs con criterios de seguridad, coste y responsabilidad humana."
+    ]
+  },
+  {
+    "id": "claude-agent-sdk-enterprise",
+    "code": "CL4",
+    "title": "Claude Agent SDK Enterprise",
+    "level": "enterprise",
+    "duration": "6 h",
+    "summary": "Construccion de agentes programaticos con Agent SDK, evaluaciones, JSON de review, governance y capstone enterprise.",
+    "videoSlugs": ["cl-sdk-01-agent-sdk", "cl-sdk-02-evals-governance"],
+    "exerciseIds": ["cl-s01-sdk-setup", "cl-s02-agent-reads-repo", "cl-s03-agent-review-json", "cl-s04-eval-harness", "cl-s05-capstone-reviewer"],
+    "materialIds": ["cl-sdk-index", "cl-sdk-rubric", "cl-cost-audit", "cl-context-policy", "cl-official-sources", "cl-audit"],
+    "status": "ready",
+    "outcomes": [
+      "Convertir un workflow Claude Code en agente interno programatico.",
+      "Evaluar salidas con rubricas y LLM-as-a-judge controlado.",
+      "Diseñar un operating model con coste, seguridad, auditoria y adopcion."
+    ]
+  }
+]

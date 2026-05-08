@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="620" viewBox="0 0 1100 620" role="img" aria-labelledby="title desc">
+  <title id="title">Permission gate</title>
+  <desc id="desc">Claude permission gate for files, terminal and MCP.</desc>
+  <rect width="1100" height="620" rx="34" fill="#0c0a09"/>
+  <text x="95" y="110" font-family="Inter, Arial, sans-serif" font-size="34" font-weight="900" fill="#fff7f0">Permisos con criterio</text>
+  <text x="95" y="146" font-family="Inter, Arial, sans-serif" font-size="18" fill="#b9aea3">Aprobar es decidir impacto.</text>
+  <g transform="translate(130 215)" font-family="Inter, Arial, sans-serif">
+    <rect width="230" height="230" rx="28" fill="#181310" stroke="#ff9aad" stroke-opacity="0.42"/>
+    <text x="115" y="108" text-anchor="middle" font-size="28" font-weight="900" fill="#ffdfe5">Claude</text>
+    <text x="115" y="142" text-anchor="middle" font-size="15" fill="#b9aea3">quiere actuar</text>
+    <path d="M260 115H430" stroke="#ffd27a" stroke-width="6" stroke-linecap="round"/>
+    <path d="M408 94L442 115L408 136" fill="none" stroke="#ffd27a" stroke-width="6" stroke-linecap="round"/>
+    <rect x="470" y="-20" width="150" height="270" rx="24" fill="#211713" stroke="#ffd27a" stroke-opacity="0.5"/>
+    <text x="545" y="92" text-anchor="middle" font-size="24" font-weight="900" fill="#ffe6ad">Gate</text>
+    <text x="545" y="128" text-anchor="middle" font-size="15" fill="#b9aea3">file</text>
+    <text x="545" y="158" text-anchor="middle" font-size="15" fill="#b9aea3">command</text>
+    <text x="545" y="188" text-anchor="middle" font-size="15" fill="#b9aea3">network</text>
+    <path d="M650 115H820" stroke="#75e6c0" stroke-width="6" stroke-linecap="round"/>
+    <path d="M798 94L832 115L798 136" fill="none" stroke="#75e6c0" stroke-width="6" stroke-linecap="round"/>
+    <rect x="860" width="230" height="230" rx="28" fill="#111817" stroke="#75e6c0" stroke-opacity="0.42"/>
+    <text x="975" y="82" text-anchor="middle" font-size="23" font-weight="900" fill="#c9fff0">Accion segura</text>
+    <text x="975" y="126" text-anchor="middle" font-size="15" fill="#b9aea3">scope pequeno</text>
+    <text x="975" y="156" text-anchor="middle" font-size="15" fill="#b9aea3">sin secretos</text>
+    <text x="975" y="186" text-anchor="middle" font-size="15" fill="#b9aea3">verificada</text>
+  </g>
+</svg>

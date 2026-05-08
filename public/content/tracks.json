@@ -1,0 +1,44 @@
+[
+  {
+    "id": "codex",
+    "vendor": "OpenAI",
+    "title": "Codex Practice Hub",
+    "status": "active",
+    "summary": "Ruta practica para operar Codex como plataforma agentica: app, IDE, CLI, cloud, AGENTS.md, MCP, skills, subagentes, coste y CI/CD.",
+    "href": "/tracks/codex",
+    "accent": "emerald",
+    "metrics": [
+      { "label": "cursos", "value": "5" },
+      { "label": "ejercicios", "value": "20" },
+      { "label": "microvideos", "value": "10" }
+    ]
+  },
+  {
+    "id": "copilot",
+    "vendor": "GitHub",
+    "title": "Copilot Practice",
+    "status": "active",
+    "summary": "Ruta practica para adopcion masiva: VS Code, GitHub, completions, Ask/Edit/Agent, instructions, prompt files, custom agents, MCP, code review, cloud agent y premium requests.",
+    "href": "/tracks/copilot",
+    "accent": "blue",
+    "metrics": [
+      { "label": "cursos", "value": "5" },
+      { "label": "ejercicios", "value": "23" },
+      { "label": "microvideos", "value": "11" }
+    ]
+  },
+  {
+    "id": "claude",
+    "vendor": "Anthropic",
+    "title": "Claude Code Practice",
+    "status": "active",
+    "summary": "Ruta practica para Claude Code como plataforma: CLAUDE.md, memoria, rules, skills, subagentes, hooks, plugins, MCP, GitHub Actions, coste y Agent SDK.",
+    "href": "/tracks/claude",
+    "accent": "rose",
+    "metrics": [
+      { "label": "cursos", "value": "5" },
+      { "label": "ejercicios", "value": "26" },
+      { "label": "microvideos", "value": "12" }
+    ]
+  }
+]

@@ -1,0 +1,21 @@
+{
+  "vendor": "claude",
+  "exerciseId": "cl-s04-eval-harness",
+  "title": "Harness de evaluacion",
+  "surface": "Evals",
+  "recommendedModel": "Haiku judge + Sonnet worker",
+  "permissionMode": "local sdk",
+  "estimatedCost": "medio-alto: dataset + judge",
+  "intentionalErrors": [
+    "briefing demasiado amplio",
+    "falta de evidencia",
+    "coste sin registrar"
+  ],
+  "expectedArtifacts": [
+    "prompt",
+    "resultado",
+    "evidencia",
+    "coste",
+    "decision"
+  ]
+}

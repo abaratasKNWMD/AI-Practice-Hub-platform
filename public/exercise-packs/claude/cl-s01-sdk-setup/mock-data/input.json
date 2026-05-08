@@ -1,0 +1,21 @@
+{
+  "vendor": "claude",
+  "exerciseId": "cl-s01-sdk-setup",
+  "title": "Primer proyecto Agent SDK",
+  "surface": "Agent SDK",
+  "recommendedModel": "Sonnet",
+  "permissionMode": "local sdk",
+  "estimatedCost": "medio: setup + primera consulta",
+  "intentionalErrors": [
+    "briefing demasiado amplio",
+    "falta de evidencia",
+    "coste sin registrar"
+  ],
+  "expectedArtifacts": [
+    "prompt",
+    "resultado",
+    "evidencia",
+    "coste",
+    "decision"
+  ]
+}

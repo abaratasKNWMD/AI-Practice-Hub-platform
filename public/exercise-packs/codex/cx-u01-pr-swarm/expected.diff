@@ -1,0 +1,9 @@
+diff --git a/README.md b/README.md
+--- a/README.md
++++ b/README.md
+@@
++# Evidencia de ejercicio
++- Ejercicio: cx-u01-pr-swarm
++- Resultado: salida verificable
++- Coste: Alto: varios agentes y sintesis
++- Permisos: read-only para agentes, write solo coordinador

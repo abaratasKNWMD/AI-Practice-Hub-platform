@@ -1,0 +1,9 @@
+diff --git a/README.md b/README.md
+--- a/README.md
++++ b/README.md
+@@
++# Evidencia de ejercicio
++- Ejercicio: cl-a04-github-action
++- Resultado: salida verificable
++- Coste: medio-alto: CI + tokens + reintentos
++- Permisos: CI read + PR comment

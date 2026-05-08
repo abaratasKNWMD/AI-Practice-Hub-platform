@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="620" viewBox="0 0 1100 620" role="img" aria-labelledby="title desc">
+  <title id="title">Claude Operator control room</title>
+  <desc id="desc">A control room for Claude Operator with skills, agents, MCP and cost routing.</desc>
+  <rect width="1100" height="620" rx="34" fill="#0c0a09"/>
+  <rect x="76" y="72" width="948" height="476" rx="30" fill="#15110f" stroke="#fff" stroke-opacity="0.12"/>
+  <text x="112" y="128" font-family="Inter, Arial, sans-serif" font-size="34" font-weight="900" fill="#fff7f0">Claude Operator</text>
+  <text x="112" y="164" font-family="Inter, Arial, sans-serif" font-size="18" fill="#b9aea3">De prompts sueltos a piezas versionadas.</text>
+  <g font-family="Inter, Arial, sans-serif">
+    <rect x="112" y="232" width="200" height="170" rx="24" fill="#111817" stroke="#75e6c0" stroke-opacity="0.45"/>
+    <text x="212" y="300" text-anchor="middle" font-size="25" font-weight="900" fill="#c9fff0">Skills</text>
+    <text x="212" y="336" text-anchor="middle" font-size="15" fill="#b9aea3">workflows</text>
+    <rect x="344" y="232" width="200" height="170" rx="24" fill="#211713" stroke="#ff9aad" stroke-opacity="0.45"/>
+    <text x="444" y="300" text-anchor="middle" font-size="25" font-weight="900" fill="#ffdfe5">Agents</text>
+    <text x="444" y="336" text-anchor="middle" font-size="15" fill="#b9aea3">roles</text>
+    <rect x="576" y="232" width="200" height="170" rx="24" fill="#171313" stroke="#ffd27a" stroke-opacity="0.45"/>
+    <text x="676" y="300" text-anchor="middle" font-size="25" font-weight="900" fill="#ffe6ad">MCP</text>
+    <text x="676" y="336" text-anchor="middle" font-size="15" fill="#b9aea3">tools</text>
+    <rect x="808" y="232" width="180" height="170" rx="24" fill="#101418" stroke="#7bd7ff" stroke-opacity="0.45"/>
+    <text x="898" y="300" text-anchor="middle" font-size="25" font-weight="900" fill="#d8f4ff">Cost</text>
+    <text x="898" y="336" text-anchor="middle" font-size="15" fill="#b9aea3">routing</text>
+  </g>
+</svg>

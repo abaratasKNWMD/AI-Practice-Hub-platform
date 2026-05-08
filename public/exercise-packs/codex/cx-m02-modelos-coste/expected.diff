@@ -1,0 +1,9 @@
+diff --git a/README.md b/README.md
+--- a/README.md
++++ b/README.md
+@@
++# Evidencia de ejercicio
++- Ejercicio: cx-m02-modelos-coste
++- Resultado: salida verificable
++- Coste: Variable: se compara barato, medio y premium
++- Permisos: read-only

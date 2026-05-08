@@ -1,0 +1,1382 @@
+[
+  {
+    "id": "codex-cx-b01-repo-map",
+    "vendor": "codex",
+    "exerciseId": "cx-b01-repo-map",
+    "href": "/exercise-packs/codex/cx-b01-repo-map/README.md",
+    "status": "implemented",
+    "contains": [
+      "starter",
+      "mock-data",
+      "validator.mjs",
+      "prompts.md",
+      "rescue-prompts.md",
+      "solution-guide.md",
+      "expected.diff",
+      "rubric.md",
+      "self-assessment.md",
+      "instructor-mode.md",
+      "pr-simulated"
+    ]
+  },
+  {
+    "id": "codex-cx-b02-prompt-4-piezas",
+    "vendor": "codex",
+    "exerciseId": "cx-b02-prompt-4-piezas",
+    "href": "/exercise-packs/codex/cx-b02-prompt-4-piezas/README.md",
+    "status": "implemented",
+    "contains": [
+      "starter",
+      "mock-data",
+      "validator.mjs",
+      "prompts.md",
+      "rescue-prompts.md",
+      "solution-guide.md",
+      "expected.diff",
+      "rubric.md",
+      "self-assessment.md",
+      "instructor-mode.md",
+      "pr-simulated"
+    ]
+  },
+  {
+    "id": "codex-cx-b03-agents-md",
+    "vendor": "codex",
+    "exerciseId": "cx-b03-agents-md",
+    "href": "/exercise-packs/codex/cx-b03-agents-md/README.md",
+    "status": "implemented",
+    "contains": [
+      "starter",
+      "mock-data",
+      "validator.mjs",
+      "prompts.md",
+      "rescue-prompts.md",
+      "solution-guide.md",
+      "expected.diff",
+      "rubric.md",
+      "self-assessment.md",
+      "instructor-mode.md",
+      "pr-simulated"
+    ]
+  },
+  {
+    "id": "codex-cx-b04-bug-login",
+    "vendor": "codex",
+    "exerciseId": "cx-b04-bug-login",
+    "href": "/exercise-packs/codex/cx-b04-bug-login/README.md",
+    "status": "implemented",
+    "contains": [
+      "starter",
+      "mock-data",
+      "validator.mjs",
+      "prompts.md",
+      "rescue-prompts.md",
+      "solution-guide.md",
+      "expected.diff",
+      "rubric.md",
+      "self-assessment.md",
+      "instructor-mode.md",
+      "pr-simulated"
+    ]
+  },
+  {
+    "id": "codex-cx-b05-review-diff",
+    "vendor": "codex",
+    "exerciseId": "cx-b05-review-diff",
+    "href": "/exercise-packs/codex/cx-b05-review-diff/README.md",
+    "status": "implemented",
+    "contains": [
+      "starter",
+      "mock-data",
+      "validator.mjs",
+      "prompts.md",
+      "rescue-prompts.md",
+      "solution-guide.md",
+      "expected.diff",
+      "rubric.md",
+      "self-assessment.md",
+      "instructor-mode.md",
+      "pr-simulated"
+    ]
+  },
+  {
+    "id": "codex-cx-m01-config-safe",
+    "vendor": "codex",
+    "exerciseId": "cx-m01-config-safe",
+    "href": "/exercise-packs/codex/cx-m01-config-safe/README.md",
+    "status": "implemented",
+    "contains": [
+      "starter",
+      "mock-data",
+      "validator.mjs",
+      "prompts.md",
+      "rescue-prompts.md",
+      "solution-guide.md",
+      "expected.diff",
+      "rubric.md",
+      "self-assessment.md",
+      "instructor-mode.md",
+      "pr-simulated"
+    ]
+  },
+  {
+    "id": "codex-cx-m02-modelos-coste",
+    "vendor": "codex",
+    "exerciseId": "cx-m02-modelos-coste",
+    "href": "/exercise-packs/codex/cx-m02-modelos-coste/README.md",
+    "status": "implemented",
+    "contains": [
+      "starter",
+      "mock-data",
+      "validator.mjs",
+      "prompts.md",
+      "rescue-prompts.md",
+      "solution-guide.md",
+      "expected.diff",
+      "rubric.md",
+      "self-assessment.md",
+      "instructor-mode.md",
+      "pr-simulated"
+    ]
+  },
+  {
+    "id": "codex-cx-m03-mcp-readonly",
+    "vendor": "codex",
+    "exerciseId": "cx-m03-mcp-readonly",
+    "href": "/exercise-packs/codex/cx-m03-mcp-readonly/README.md",
+    "status": "implemented",
+    "contains": [
+      "starter",
+      "mock-data",
+      "validator.mjs",
+      "prompts.md",
+      "rescue-prompts.md",
+      "solution-guide.md",
+      "expected.diff",
+      "rubric.md",
+      "self-assessment.md",
+      "instructor-mode.md",
+      "pr-simulated"
+    ]
+  },
+  {
+    "id": "codex-cx-m04-skill-qa",
+    "vendor": "codex",
+    "exerciseId": "cx-m04-skill-qa",
+    "href": "/exercise-packs/codex/cx-m04-skill-qa/README.md",
+    "status": "implemented",
+    "contains": [
+      "starter",
+      "mock-data",
+      "validator.mjs",
+      "prompts.md",
+      "rescue-prompts.md",
+      "solution-guide.md",
+      "expected.diff",
+      "rubric.md",
+      "self-assessment.md",
+      "instructor-mode.md",
+      "pr-simulated"
+    ]
+  },
+  {
+    "id": "codex-cx-m05-subagentes-review",
+    "vendor": "codex",
+    "exerciseId": "cx-m05-subagentes-review",
+    "href": "/exercise-packs/codex/cx-m05-subagentes-review/README.md",
+    "status": "implemented",
+    "contains": [
+      "starter",
+      "mock-data",
+      "validator.mjs",
+      "prompts.md",
+      "rescue-prompts.md",
+      "solution-guide.md",
+      "expected.diff",
+      "rubric.md",
+      "self-assessment.md",
+      "instructor-mode.md",
+      "pr-simulated"
+    ]
+  },
+  {
+    "id": "codex-cx-m06-debug-ui",
+    "vendor": "codex",
+    "exerciseId": "cx-m06-debug-ui",
+    "href": "/exercise-packs/codex/cx-m06-debug-ui/README.md",
+    "status": "implemented",
+    "contains": [
+      "starter",
+      "mock-data",
+      "validator.mjs",
+      "prompts.md",
+      "rescue-prompts.md",
+      "solution-guide.md",
+      "expected.diff",
+      "rubric.md",
+      "self-assessment.md",
+      "instructor-mode.md",
+      "pr-simulated"
+    ]
+  },
+  {
+    "id": "codex-cx-a01-github-action",
+    "vendor": "codex",
+    "exerciseId": "cx-a01-github-action",
+    "href": "/exercise-packs/codex/cx-a01-github-action/README.md",
+    "status": "implemented",
+    "contains": [
+      "starter",
+      "mock-data",
+      "validator.mjs",
+      "prompts.md",
+      "rescue-prompts.md",
+      "solution-guide.md",
+      "expected.diff",
+      "rubric.md",
+      "self-assessment.md",
+      "instructor-mode.md",
+      "pr-simulated"
+    ]
+  },
+  {
+    "id": "codex-cx-a02-output-schema",
+    "vendor": "codex",
+    "exerciseId": "cx-a02-output-schema",
+    "href": "/exercise-packs/codex/cx-a02-output-schema/README.md",
+    "status": "implemented",
+    "contains": [
+      "starter",
+      "mock-data",
+      "validator.mjs",
+      "prompts.md",
+      "rescue-prompts.md",
+      "solution-guide.md",
+      "expected.diff",
+      "rubric.md",
+      "self-assessment.md",
+      "instructor-mode.md",
+      "pr-simulated"
+    ]
+  },
+  {
+    "id": "codex-cx-u01-pr-swarm",
+    "vendor": "codex",
+    "exerciseId": "cx-u01-pr-swarm",
+    "href": "/exercise-packs/codex/cx-u01-pr-swarm/README.md",
+    "status": "implemented",
+    "contains": [
+      "starter",
+      "mock-data",
+      "validator.mjs",
+      "prompts.md",
+      "rescue-prompts.md",
+      "solution-guide.md",
+      "expected.diff",
+      "rubric.md",
+      "self-assessment.md",
+      "instructor-mode.md",
+      "pr-simulated"
+    ]
+  },
+  {
+    "id": "codex-cx-u02-rag-ast",
+    "vendor": "codex",
+    "exerciseId": "cx-u02-rag-ast",
+    "href": "/exercise-packs/codex/cx-u02-rag-ast/README.md",
+    "status": "implemented",
+    "contains": [
+      "starter",
+      "mock-data",
+      "validator.mjs",
+      "prompts.md",
+      "rescue-prompts.md",
+      "solution-guide.md",
+      "expected.diff",
+      "rubric.md",
+      "self-assessment.md",
+      "instructor-mode.md",
+      "pr-simulated"
+    ]
+  },
+  {
+    "id": "codex-cx-u03-dataset-sintetico",
+    "vendor": "codex",
+    "exerciseId": "cx-u03-dataset-sintetico",
+    "href": "/exercise-packs/codex/cx-u03-dataset-sintetico/README.md",
+    "status": "implemented",
+    "contains": [
+      "starter",
+      "mock-data",
+      "validator.mjs",
+      "prompts.md",
+      "rescue-prompts.md",
+      "solution-guide.md",
+      "expected.diff",
+      "rubric.md",
+      "self-assessment.md",
+      "instructor-mode.md",
+      "pr-simulated"
+    ]
+  },
+  {
+    "id": "codex-cx-u04-jueces-evals",
+    "vendor": "codex",
+    "exerciseId": "cx-u04-jueces-evals",
+    "href": "/exercise-packs/codex/cx-u04-jueces-evals/README.md",
+    "status": "implemented",
+    "contains": [
+      "starter",
+      "mock-data",
+      "validator.mjs",
+      "prompts.md",
+      "rescue-prompts.md",
+      "solution-guide.md",
+      "expected.diff",
+      "rubric.md",
+      "self-assessment.md",
+      "instructor-mode.md",
+      "pr-simulated"
+    ]
+  },
+  {
+    "id": "codex-cx-e01-cost-budget",
+    "vendor": "codex",
+    "exerciseId": "cx-e01-cost-budget",
+    "href": "/exercise-packs/codex/cx-e01-cost-budget/README.md",
+    "status": "implemented",
+    "contains": [
+      "starter",
+      "mock-data",
+      "validator.mjs",
+      "prompts.md",
+      "rescue-prompts.md",
+      "solution-guide.md",
+      "expected.diff",
+      "rubric.md",
+      "self-assessment.md",
+      "instructor-mode.md",
+      "pr-simulated"
+    ]
+  },
+  {
+    "id": "codex-cx-e02-mcp-policy",
+    "vendor": "codex",
+    "exerciseId": "cx-e02-mcp-policy",
+    "href": "/exercise-packs/codex/cx-e02-mcp-policy/README.md",
+    "status": "implemented",
+    "contains": [
+      "starter",
+      "mock-data",
+      "validator.mjs",
+      "prompts.md",
+      "rescue-prompts.md",
+      "solution-guide.md",
+      "expected.diff",
+      "rubric.md",
+      "self-assessment.md",
+      "instructor-mode.md",
+      "pr-simulated"
+    ]
+  },
+  {
+    "id": "codex-cx-e03-workshop-pack",
+    "vendor": "codex",
+    "exerciseId": "cx-e03-workshop-pack",
+    "href": "/exercise-packs/codex/cx-e03-workshop-pack/README.md",
+    "status": "implemented",
+    "contains": [
+      "starter",
+      "mock-data",
+      "validator.mjs",
+      "prompts.md",
+      "rescue-prompts.md",
+      "solution-guide.md",
+      "expected.diff",
+      "rubric.md",
+      "self-assessment.md",
+      "instructor-mode.md",
+      "pr-simulated"
+    ]
+  },
+  {
+    "id": "copilot-cp0-e01-branch-pr",
+    "vendor": "copilot",
+    "exerciseId": "cp0-e01-branch-pr",
+    "href": "/exercise-packs/copilot/cp0-e01-branch-pr/README.md",
+    "status": "implemented",
+    "contains": [
+      "starter",
+      "mock-data",
+      "validator.mjs",
+      "prompts.md",
+      "rescue-prompts.md",
+      "solution-guide.md",
+      "expected.diff",
+      "rubric.md",
+      "self-assessment.md",
+      "instructor-mode.md",
+      "pr-simulated"
+    ]
+  },
+  {
+    "id": "copilot-cp0-e02-diff-reading",
+    "vendor": "copilot",
+    "exerciseId": "cp0-e02-diff-reading",
+    "href": "/exercise-packs/copilot/cp0-e02-diff-reading/README.md",
+    "status": "implemented",
+    "contains": [
+      "starter",
+      "mock-data",
+      "validator.mjs",
+      "prompts.md",
+      "rescue-prompts.md",
+      "solution-guide.md",
+      "expected.diff",
+      "rubric.md",
+      "self-assessment.md",
+      "instructor-mode.md",
+      "pr-simulated"
+    ]
+  },
+  {
+    "id": "copilot-cp-b01-setup-vscode",
+    "vendor": "copilot",
+    "exerciseId": "cp-b01-setup-vscode",
+    "href": "/exercise-packs/copilot/cp-b01-setup-vscode/README.md",
+    "status": "implemented",
+    "contains": [
+      "starter",
+      "mock-data",
+      "validator.mjs",
+      "prompts.md",
+      "rescue-prompts.md",
+      "solution-guide.md",
+      "expected.diff",
+      "rubric.md",
+      "self-assessment.md",
+      "instructor-mode.md",
+      "pr-simulated"
+    ]
+  },
+  {
+    "id": "copilot-cp-b02-inline-completion",
+    "vendor": "copilot",
+    "exerciseId": "cp-b02-inline-completion",
+    "href": "/exercise-packs/copilot/cp-b02-inline-completion/README.md",
+    "status": "implemented",
+    "contains": [
+      "starter",
+      "mock-data",
+      "validator.mjs",
+      "prompts.md",
+      "rescue-prompts.md",
+      "solution-guide.md",
+      "expected.diff",
+      "rubric.md",
+      "self-assessment.md",
+      "instructor-mode.md",
+      "pr-simulated"
+    ]
+  },
+  {
+    "id": "copilot-cp-b03-comment-to-code",
+    "vendor": "copilot",
+    "exerciseId": "cp-b03-comment-to-code",
+    "href": "/exercise-packs/copilot/cp-b03-comment-to-code/README.md",
+    "status": "implemented",
+    "contains": [
+      "starter",
+      "mock-data",
+      "validator.mjs",
+      "prompts.md",
+      "rescue-prompts.md",
+      "solution-guide.md",
+      "expected.diff",
+      "rubric.md",
+      "self-assessment.md",
+      "instructor-mode.md",
+      "pr-simulated"
+    ]
+  },
+  {
+    "id": "copilot-cp-b04-chat-ask-edit-agent",
+    "vendor": "copilot",
+    "exerciseId": "cp-b04-chat-ask-edit-agent",
+    "href": "/exercise-packs/copilot/cp-b04-chat-ask-edit-agent/README.md",
+    "status": "implemented",
+    "contains": [
+      "starter",
+      "mock-data",
+      "validator.mjs",
+      "prompts.md",
+      "rescue-prompts.md",
+      "solution-guide.md",
+      "expected.diff",
+      "rubric.md",
+      "self-assessment.md",
+      "instructor-mode.md",
+      "pr-simulated"
+    ]
+  },
+  {
+    "id": "copilot-cp-b05-explain-legacy",
+    "vendor": "copilot",
+    "exerciseId": "cp-b05-explain-legacy",
+    "href": "/exercise-packs/copilot/cp-b05-explain-legacy/README.md",
+    "status": "implemented",
+    "contains": [
+      "starter",
+      "mock-data",
+      "validator.mjs",
+      "prompts.md",
+      "rescue-prompts.md",
+      "solution-guide.md",
+      "expected.diff",
+      "rubric.md",
+      "self-assessment.md",
+      "instructor-mode.md",
+      "pr-simulated"
+    ]
+  },
+  {
+    "id": "copilot-cp-b06-error-to-fix",
+    "vendor": "copilot",
+    "exerciseId": "cp-b06-error-to-fix",
+    "href": "/exercise-packs/copilot/cp-b06-error-to-fix/README.md",
+    "status": "implemented",
+    "contains": [
+      "starter",
+      "mock-data",
+      "validator.mjs",
+      "prompts.md",
+      "rescue-prompts.md",
+      "solution-guide.md",
+      "expected.diff",
+      "rubric.md",
+      "self-assessment.md",
+      "instructor-mode.md",
+      "pr-simulated"
+    ]
+  },
+  {
+    "id": "copilot-cp-m01-refactor-controlled",
+    "vendor": "copilot",
+    "exerciseId": "cp-m01-refactor-controlled",
+    "href": "/exercise-packs/copilot/cp-m01-refactor-controlled/README.md",
+    "status": "implemented",
+    "contains": [
+      "starter",
+      "mock-data",
+      "validator.mjs",
+      "prompts.md",
+      "rescue-prompts.md",
+      "solution-guide.md",
+      "expected.diff",
+      "rubric.md",
+      "self-assessment.md",
+      "instructor-mode.md",
+      "pr-simulated"
+    ]
+  },
+  {
+    "id": "copilot-cp-m02-generate-tests",
+    "vendor": "copilot",
+    "exerciseId": "cp-m02-generate-tests",
+    "href": "/exercise-packs/copilot/cp-m02-generate-tests/README.md",
+    "status": "implemented",
+    "contains": [
+      "starter",
+      "mock-data",
+      "validator.mjs",
+      "prompts.md",
+      "rescue-prompts.md",
+      "solution-guide.md",
+      "expected.diff",
+      "rubric.md",
+      "self-assessment.md",
+      "instructor-mode.md",
+      "pr-simulated"
+    ]
+  },
+  {
+    "id": "copilot-cp-m03-docs-with-context",
+    "vendor": "copilot",
+    "exerciseId": "cp-m03-docs-with-context",
+    "href": "/exercise-packs/copilot/cp-m03-docs-with-context/README.md",
+    "status": "implemented",
+    "contains": [
+      "starter",
+      "mock-data",
+      "validator.mjs",
+      "prompts.md",
+      "rescue-prompts.md",
+      "solution-guide.md",
+      "expected.diff",
+      "rubric.md",
+      "self-assessment.md",
+      "instructor-mode.md",
+      "pr-simulated"
+    ]
+  },
+  {
+    "id": "copilot-cp-m04-repo-instructions",
+    "vendor": "copilot",
+    "exerciseId": "cp-m04-repo-instructions",
+    "href": "/exercise-packs/copilot/cp-m04-repo-instructions/README.md",
+    "status": "implemented",
+    "contains": [
+      "starter",
+      "mock-data",
+      "validator.mjs",
+      "prompts.md",
+      "rescue-prompts.md",
+      "solution-guide.md",
+      "expected.diff",
+      "rubric.md",
+      "self-assessment.md",
+      "instructor-mode.md",
+      "pr-simulated"
+    ]
+  },
+  {
+    "id": "copilot-cp-m05-path-instructions",
+    "vendor": "copilot",
+    "exerciseId": "cp-m05-path-instructions",
+    "href": "/exercise-packs/copilot/cp-m05-path-instructions/README.md",
+    "status": "implemented",
+    "contains": [
+      "starter",
+      "mock-data",
+      "validator.mjs",
+      "prompts.md",
+      "rescue-prompts.md",
+      "solution-guide.md",
+      "expected.diff",
+      "rubric.md",
+      "self-assessment.md",
+      "instructor-mode.md",
+      "pr-simulated"
+    ]
+  },
+  {
+    "id": "copilot-cp-m06-prompt-files",
+    "vendor": "copilot",
+    "exerciseId": "cp-m06-prompt-files",
+    "href": "/exercise-packs/copilot/cp-m06-prompt-files/README.md",
+    "status": "implemented",
+    "contains": [
+      "starter",
+      "mock-data",
+      "validator.mjs",
+      "prompts.md",
+      "rescue-prompts.md",
+      "solution-guide.md",
+      "expected.diff",
+      "rubric.md",
+      "self-assessment.md",
+      "instructor-mode.md",
+      "pr-simulated"
+    ]
+  },
+  {
+    "id": "copilot-cp-a01-code-review",
+    "vendor": "copilot",
+    "exerciseId": "cp-a01-code-review",
+    "href": "/exercise-packs/copilot/cp-a01-code-review/README.md",
+    "status": "implemented",
+    "contains": [
+      "starter",
+      "mock-data",
+      "validator.mjs",
+      "prompts.md",
+      "rescue-prompts.md",
+      "solution-guide.md",
+      "expected.diff",
+      "rubric.md",
+      "self-assessment.md",
+      "instructor-mode.md",
+      "pr-simulated"
+    ]
+  },
+  {
+    "id": "copilot-cp-a02-custom-planner-agent",
+    "vendor": "copilot",
+    "exerciseId": "cp-a02-custom-planner-agent",
+    "href": "/exercise-packs/copilot/cp-a02-custom-planner-agent/README.md",
+    "status": "implemented",
+    "contains": [
+      "starter",
+      "mock-data",
+      "validator.mjs",
+      "prompts.md",
+      "rescue-prompts.md",
+      "solution-guide.md",
+      "expected.diff",
+      "rubric.md",
+      "self-assessment.md",
+      "instructor-mode.md",
+      "pr-simulated"
+    ]
+  },
+  {
+    "id": "copilot-cp-a03-agent-handoff",
+    "vendor": "copilot",
+    "exerciseId": "cp-a03-agent-handoff",
+    "href": "/exercise-packs/copilot/cp-a03-agent-handoff/README.md",
+    "status": "implemented",
+    "contains": [
+      "starter",
+      "mock-data",
+      "validator.mjs",
+      "prompts.md",
+      "rescue-prompts.md",
+      "solution-guide.md",
+      "expected.diff",
+      "rubric.md",
+      "self-assessment.md",
+      "instructor-mode.md",
+      "pr-simulated"
+    ]
+  },
+  {
+    "id": "copilot-cp-a04-mcp-github",
+    "vendor": "copilot",
+    "exerciseId": "cp-a04-mcp-github",
+    "href": "/exercise-packs/copilot/cp-a04-mcp-github/README.md",
+    "status": "implemented",
+    "contains": [
+      "starter",
+      "mock-data",
+      "validator.mjs",
+      "prompts.md",
+      "rescue-prompts.md",
+      "solution-guide.md",
+      "expected.diff",
+      "rubric.md",
+      "self-assessment.md",
+      "instructor-mode.md",
+      "pr-simulated"
+    ]
+  },
+  {
+    "id": "copilot-cp-a05-premium-budget",
+    "vendor": "copilot",
+    "exerciseId": "cp-a05-premium-budget",
+    "href": "/exercise-packs/copilot/cp-a05-premium-budget/README.md",
+    "status": "implemented",
+    "contains": [
+      "starter",
+      "mock-data",
+      "validator.mjs",
+      "prompts.md",
+      "rescue-prompts.md",
+      "solution-guide.md",
+      "expected.diff",
+      "rubric.md",
+      "self-assessment.md",
+      "instructor-mode.md",
+      "pr-simulated"
+    ]
+  },
+  {
+    "id": "copilot-cp-c01-delegable-issue",
+    "vendor": "copilot",
+    "exerciseId": "cp-c01-delegable-issue",
+    "href": "/exercise-packs/copilot/cp-c01-delegable-issue/README.md",
+    "status": "implemented",
+    "contains": [
+      "starter",
+      "mock-data",
+      "validator.mjs",
+      "prompts.md",
+      "rescue-prompts.md",
+      "solution-guide.md",
+      "expected.diff",
+      "rubric.md",
+      "self-assessment.md",
+      "instructor-mode.md",
+      "pr-simulated"
+    ]
+  },
+  {
+    "id": "copilot-cp-c02-review-agent-pr",
+    "vendor": "copilot",
+    "exerciseId": "cp-c02-review-agent-pr",
+    "href": "/exercise-packs/copilot/cp-c02-review-agent-pr/README.md",
+    "status": "implemented",
+    "contains": [
+      "starter",
+      "mock-data",
+      "validator.mjs",
+      "prompts.md",
+      "rescue-prompts.md",
+      "solution-guide.md",
+      "expected.diff",
+      "rubric.md",
+      "self-assessment.md",
+      "instructor-mode.md",
+      "pr-simulated"
+    ]
+  },
+  {
+    "id": "copilot-cp-c03-cloud-mcp-policy",
+    "vendor": "copilot",
+    "exerciseId": "cp-c03-cloud-mcp-policy",
+    "href": "/exercise-packs/copilot/cp-c03-cloud-mcp-policy/README.md",
+    "status": "implemented",
+    "contains": [
+      "starter",
+      "mock-data",
+      "validator.mjs",
+      "prompts.md",
+      "rescue-prompts.md",
+      "solution-guide.md",
+      "expected.diff",
+      "rubric.md",
+      "self-assessment.md",
+      "instructor-mode.md",
+      "pr-simulated"
+    ]
+  },
+  {
+    "id": "copilot-cp-c04-governance-pack",
+    "vendor": "copilot",
+    "exerciseId": "cp-c04-governance-pack",
+    "href": "/exercise-packs/copilot/cp-c04-governance-pack/README.md",
+    "status": "implemented",
+    "contains": [
+      "starter",
+      "mock-data",
+      "validator.mjs",
+      "prompts.md",
+      "rescue-prompts.md",
+      "solution-guide.md",
+      "expected.diff",
+      "rubric.md",
+      "self-assessment.md",
+      "instructor-mode.md",
+      "pr-simulated"
+    ]
+  },
+  {
+    "id": "claude-cl0-e01-surface-map",
+    "vendor": "claude",
+    "exerciseId": "cl0-e01-surface-map",
+    "href": "/exercise-packs/claude/cl0-e01-surface-map/README.md",
+    "status": "implemented",
+    "contains": [
+      "starter",
+      "mock-data",
+      "validator.mjs",
+      "prompts.md",
+      "rescue-prompts.md",
+      "solution-guide.md",
+      "expected.diff",
+      "rubric.md",
+      "self-assessment.md",
+      "instructor-mode.md",
+      "pr-simulated"
+    ]
+  },
+  {
+    "id": "claude-cl0-e02-claude-md",
+    "vendor": "claude",
+    "exerciseId": "cl0-e02-claude-md",
+    "href": "/exercise-packs/claude/cl0-e02-claude-md/README.md",
+    "status": "implemented",
+    "contains": [
+      "starter",
+      "mock-data",
+      "validator.mjs",
+      "prompts.md",
+      "rescue-prompts.md",
+      "solution-guide.md",
+      "expected.diff",
+      "rubric.md",
+      "self-assessment.md",
+      "instructor-mode.md",
+      "pr-simulated"
+    ]
+  },
+  {
+    "id": "claude-cl0-e03-memory-audit",
+    "vendor": "claude",
+    "exerciseId": "cl0-e03-memory-audit",
+    "href": "/exercise-packs/claude/cl0-e03-memory-audit/README.md",
+    "status": "implemented",
+    "contains": [
+      "starter",
+      "mock-data",
+      "validator.mjs",
+      "prompts.md",
+      "rescue-prompts.md",
+      "solution-guide.md",
+      "expected.diff",
+      "rubric.md",
+      "self-assessment.md",
+      "instructor-mode.md",
+      "pr-simulated"
+    ]
+  },
+  {
+    "id": "claude-cl0-e04-cost-baseline",
+    "vendor": "claude",
+    "exerciseId": "cl0-e04-cost-baseline",
+    "href": "/exercise-packs/claude/cl0-e04-cost-baseline/README.md",
+    "status": "implemented",
+    "contains": [
+      "starter",
+      "mock-data",
+      "validator.mjs",
+      "prompts.md",
+      "rescue-prompts.md",
+      "solution-guide.md",
+      "expected.diff",
+      "rubric.md",
+      "self-assessment.md",
+      "instructor-mode.md",
+      "pr-simulated"
+    ]
+  },
+  {
+    "id": "claude-cl-b01-claude-md",
+    "vendor": "claude",
+    "exerciseId": "cl-b01-claude-md",
+    "href": "/exercise-packs/claude/cl-b01-claude-md/README.md",
+    "status": "implemented",
+    "contains": [
+      "starter",
+      "mock-data",
+      "validator.mjs",
+      "prompts.md",
+      "rescue-prompts.md",
+      "solution-guide.md",
+      "expected.diff",
+      "rubric.md",
+      "self-assessment.md",
+      "instructor-mode.md",
+      "pr-simulated"
+    ]
+  },
+  {
+    "id": "claude-cl-b02-local-memory",
+    "vendor": "claude",
+    "exerciseId": "cl-b02-local-memory",
+    "href": "/exercise-packs/claude/cl-b02-local-memory/README.md",
+    "status": "implemented",
+    "contains": [
+      "starter",
+      "mock-data",
+      "validator.mjs",
+      "prompts.md",
+      "rescue-prompts.md",
+      "solution-guide.md",
+      "expected.diff",
+      "rubric.md",
+      "self-assessment.md",
+      "instructor-mode.md",
+      "pr-simulated"
+    ]
+  },
+  {
+    "id": "claude-cl-b03-folder-rules",
+    "vendor": "claude",
+    "exerciseId": "cl-b03-folder-rules",
+    "href": "/exercise-packs/claude/cl-b03-folder-rules/README.md",
+    "status": "implemented",
+    "contains": [
+      "starter",
+      "mock-data",
+      "validator.mjs",
+      "prompts.md",
+      "rescue-prompts.md",
+      "solution-guide.md",
+      "expected.diff",
+      "rubric.md",
+      "self-assessment.md",
+      "instructor-mode.md",
+      "pr-simulated"
+    ]
+  },
+  {
+    "id": "claude-cl-b04-bugfix-test",
+    "vendor": "claude",
+    "exerciseId": "cl-b04-bugfix-test",
+    "href": "/exercise-packs/claude/cl-b04-bugfix-test/README.md",
+    "status": "implemented",
+    "contains": [
+      "starter",
+      "mock-data",
+      "validator.mjs",
+      "prompts.md",
+      "rescue-prompts.md",
+      "solution-guide.md",
+      "expected.diff",
+      "rubric.md",
+      "self-assessment.md",
+      "instructor-mode.md",
+      "pr-simulated"
+    ]
+  },
+  {
+    "id": "claude-cl-b05-context-compact",
+    "vendor": "claude",
+    "exerciseId": "cl-b05-context-compact",
+    "href": "/exercise-packs/claude/cl-b05-context-compact/README.md",
+    "status": "implemented",
+    "contains": [
+      "starter",
+      "mock-data",
+      "validator.mjs",
+      "prompts.md",
+      "rescue-prompts.md",
+      "solution-guide.md",
+      "expected.diff",
+      "rubric.md",
+      "self-assessment.md",
+      "instructor-mode.md",
+      "pr-simulated"
+    ]
+  },
+  {
+    "id": "claude-cl-b06-handoff",
+    "vendor": "claude",
+    "exerciseId": "cl-b06-handoff",
+    "href": "/exercise-packs/claude/cl-b06-handoff/README.md",
+    "status": "implemented",
+    "contains": [
+      "starter",
+      "mock-data",
+      "validator.mjs",
+      "prompts.md",
+      "rescue-prompts.md",
+      "solution-guide.md",
+      "expected.diff",
+      "rubric.md",
+      "self-assessment.md",
+      "instructor-mode.md",
+      "pr-simulated"
+    ]
+  },
+  {
+    "id": "claude-cl-o01-skill-summarize",
+    "vendor": "claude",
+    "exerciseId": "cl-o01-skill-summarize",
+    "href": "/exercise-packs/claude/cl-o01-skill-summarize/README.md",
+    "status": "implemented",
+    "contains": [
+      "starter",
+      "mock-data",
+      "validator.mjs",
+      "prompts.md",
+      "rescue-prompts.md",
+      "solution-guide.md",
+      "expected.diff",
+      "rubric.md",
+      "self-assessment.md",
+      "instructor-mode.md",
+      "pr-simulated"
+    ]
+  },
+  {
+    "id": "claude-cl-o02-skill-fix-tests",
+    "vendor": "claude",
+    "exerciseId": "cl-o02-skill-fix-tests",
+    "href": "/exercise-packs/claude/cl-o02-skill-fix-tests/README.md",
+    "status": "implemented",
+    "contains": [
+      "starter",
+      "mock-data",
+      "validator.mjs",
+      "prompts.md",
+      "rescue-prompts.md",
+      "solution-guide.md",
+      "expected.diff",
+      "rubric.md",
+      "self-assessment.md",
+      "instructor-mode.md",
+      "pr-simulated"
+    ]
+  },
+  {
+    "id": "claude-cl-o03-subagent-explorer",
+    "vendor": "claude",
+    "exerciseId": "cl-o03-subagent-explorer",
+    "href": "/exercise-packs/claude/cl-o03-subagent-explorer/README.md",
+    "status": "implemented",
+    "contains": [
+      "starter",
+      "mock-data",
+      "validator.mjs",
+      "prompts.md",
+      "rescue-prompts.md",
+      "solution-guide.md",
+      "expected.diff",
+      "rubric.md",
+      "self-assessment.md",
+      "instructor-mode.md",
+      "pr-simulated"
+    ]
+  },
+  {
+    "id": "claude-cl-o04-subagent-qa",
+    "vendor": "claude",
+    "exerciseId": "cl-o04-subagent-qa",
+    "href": "/exercise-packs/claude/cl-o04-subagent-qa/README.md",
+    "status": "implemented",
+    "contains": [
+      "starter",
+      "mock-data",
+      "validator.mjs",
+      "prompts.md",
+      "rescue-prompts.md",
+      "solution-guide.md",
+      "expected.diff",
+      "rubric.md",
+      "self-assessment.md",
+      "instructor-mode.md",
+      "pr-simulated"
+    ]
+  },
+  {
+    "id": "claude-cl-o05-mcp-project",
+    "vendor": "claude",
+    "exerciseId": "cl-o05-mcp-project",
+    "href": "/exercise-packs/claude/cl-o05-mcp-project/README.md",
+    "status": "implemented",
+    "contains": [
+      "starter",
+      "mock-data",
+      "validator.mjs",
+      "prompts.md",
+      "rescue-prompts.md",
+      "solution-guide.md",
+      "expected.diff",
+      "rubric.md",
+      "self-assessment.md",
+      "instructor-mode.md",
+      "pr-simulated"
+    ]
+  },
+  {
+    "id": "claude-cl-o06-model-routing",
+    "vendor": "claude",
+    "exerciseId": "cl-o06-model-routing",
+    "href": "/exercise-packs/claude/cl-o06-model-routing/README.md",
+    "status": "implemented",
+    "contains": [
+      "starter",
+      "mock-data",
+      "validator.mjs",
+      "prompts.md",
+      "rescue-prompts.md",
+      "solution-guide.md",
+      "expected.diff",
+      "rubric.md",
+      "self-assessment.md",
+      "instructor-mode.md",
+      "pr-simulated"
+    ]
+  },
+  {
+    "id": "claude-cl-a01-hook-block-secrets",
+    "vendor": "claude",
+    "exerciseId": "cl-a01-hook-block-secrets",
+    "href": "/exercise-packs/claude/cl-a01-hook-block-secrets/README.md",
+    "status": "implemented",
+    "contains": [
+      "starter",
+      "mock-data",
+      "validator.mjs",
+      "prompts.md",
+      "rescue-prompts.md",
+      "solution-guide.md",
+      "expected.diff",
+      "rubric.md",
+      "self-assessment.md",
+      "instructor-mode.md",
+      "pr-simulated"
+    ]
+  },
+  {
+    "id": "claude-cl-a02-hook-require-tests",
+    "vendor": "claude",
+    "exerciseId": "cl-a02-hook-require-tests",
+    "href": "/exercise-packs/claude/cl-a02-hook-require-tests/README.md",
+    "status": "implemented",
+    "contains": [
+      "starter",
+      "mock-data",
+      "validator.mjs",
+      "prompts.md",
+      "rescue-prompts.md",
+      "solution-guide.md",
+      "expected.diff",
+      "rubric.md",
+      "self-assessment.md",
+      "instructor-mode.md",
+      "pr-simulated"
+    ]
+  },
+  {
+    "id": "claude-cl-a03-plugin-team-review",
+    "vendor": "claude",
+    "exerciseId": "cl-a03-plugin-team-review",
+    "href": "/exercise-packs/claude/cl-a03-plugin-team-review/README.md",
+    "status": "implemented",
+    "contains": [
+      "starter",
+      "mock-data",
+      "validator.mjs",
+      "prompts.md",
+      "rescue-prompts.md",
+      "solution-guide.md",
+      "expected.diff",
+      "rubric.md",
+      "self-assessment.md",
+      "instructor-mode.md",
+      "pr-simulated"
+    ]
+  },
+  {
+    "id": "claude-cl-a04-github-action",
+    "vendor": "claude",
+    "exerciseId": "cl-a04-github-action",
+    "href": "/exercise-packs/claude/cl-a04-github-action/README.md",
+    "status": "implemented",
+    "contains": [
+      "starter",
+      "mock-data",
+      "validator.mjs",
+      "prompts.md",
+      "rescue-prompts.md",
+      "solution-guide.md",
+      "expected.diff",
+      "rubric.md",
+      "self-assessment.md",
+      "instructor-mode.md",
+      "pr-simulated"
+    ]
+  },
+  {
+    "id": "claude-cl-a05-pr-trigger",
+    "vendor": "claude",
+    "exerciseId": "cl-a05-pr-trigger",
+    "href": "/exercise-packs/claude/cl-a05-pr-trigger/README.md",
+    "status": "implemented",
+    "contains": [
+      "starter",
+      "mock-data",
+      "validator.mjs",
+      "prompts.md",
+      "rescue-prompts.md",
+      "solution-guide.md",
+      "expected.diff",
+      "rubric.md",
+      "self-assessment.md",
+      "instructor-mode.md",
+      "pr-simulated"
+    ]
+  },
+  {
+    "id": "claude-cl-s01-sdk-setup",
+    "vendor": "claude",
+    "exerciseId": "cl-s01-sdk-setup",
+    "href": "/exercise-packs/claude/cl-s01-sdk-setup/README.md",
+    "status": "implemented",
+    "contains": [
+      "starter",
+      "mock-data",
+      "validator.mjs",
+      "prompts.md",
+      "rescue-prompts.md",
+      "solution-guide.md",
+      "expected.diff",
+      "rubric.md",
+      "self-assessment.md",
+      "instructor-mode.md",
+      "pr-simulated"
+    ]
+  },
+  {
+    "id": "claude-cl-s02-agent-reads-repo",
+    "vendor": "claude",
+    "exerciseId": "cl-s02-agent-reads-repo",
+    "href": "/exercise-packs/claude/cl-s02-agent-reads-repo/README.md",
+    "status": "implemented",
+    "contains": [
+      "starter",
+      "mock-data",
+      "validator.mjs",
+      "prompts.md",
+      "rescue-prompts.md",
+      "solution-guide.md",
+      "expected.diff",
+      "rubric.md",
+      "self-assessment.md",
+      "instructor-mode.md",
+      "pr-simulated"
+    ]
+  },
+  {
+    "id": "claude-cl-s03-agent-review-json",
+    "vendor": "claude",
+    "exerciseId": "cl-s03-agent-review-json",
+    "href": "/exercise-packs/claude/cl-s03-agent-review-json/README.md",
+    "status": "implemented",
+    "contains": [
+      "starter",
+      "mock-data",
+      "validator.mjs",
+      "prompts.md",
+      "rescue-prompts.md",
+      "solution-guide.md",
+      "expected.diff",
+      "rubric.md",
+      "self-assessment.md",
+      "instructor-mode.md",
+      "pr-simulated"
+    ]
+  },
+  {
+    "id": "claude-cl-s04-eval-harness",
+    "vendor": "claude",
+    "exerciseId": "cl-s04-eval-harness",
+    "href": "/exercise-packs/claude/cl-s04-eval-harness/README.md",
+    "status": "implemented",
+    "contains": [
+      "starter",
+      "mock-data",
+      "validator.mjs",
+      "prompts.md",
+      "rescue-prompts.md",
+      "solution-guide.md",
+      "expected.diff",
+      "rubric.md",
+      "self-assessment.md",
+      "instructor-mode.md",
+      "pr-simulated"
+    ]
+  },
+  {
+    "id": "claude-cl-s05-capstone-reviewer",
+    "vendor": "claude",
+    "exerciseId": "cl-s05-capstone-reviewer",
+    "href": "/exercise-packs/claude/cl-s05-capstone-reviewer/README.md",
+    "status": "implemented",
+    "contains": [
+      "starter",
+      "mock-data",
+      "validator.mjs",
+      "prompts.md",
+      "rescue-prompts.md",
+      "solution-guide.md",
+      "expected.diff",
+      "rubric.md",
+      "self-assessment.md",
+      "instructor-mode.md",
+      "pr-simulated"
+    ]
+  }
+]

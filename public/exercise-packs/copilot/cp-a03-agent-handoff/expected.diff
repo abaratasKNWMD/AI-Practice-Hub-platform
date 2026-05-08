@@ -1,0 +1,9 @@
+diff --git a/README.md b/README.md
+--- a/README.md
++++ b/README.md
+@@
++# Evidencia de ejercicio
++- Ejercicio: cp-a03-agent-handoff
++- Resultado: salida verificable
++- Coste: Medio-alto: varios agentes/iteraciones
++- Permisos: read-only por rol, write solo implementer

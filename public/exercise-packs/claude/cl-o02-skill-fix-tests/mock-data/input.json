@@ -1,0 +1,21 @@
+{
+  "vendor": "claude",
+  "exerciseId": "cl-o02-skill-fix-tests",
+  "title": "Skill de fix-tests",
+  "surface": ".claude/skills",
+  "recommendedModel": "Sonnet",
+  "permissionMode": "workspace-write",
+  "estimatedCost": "medio: reproduce + patch + rerun",
+  "intentionalErrors": [
+    "briefing demasiado amplio",
+    "falta de evidencia",
+    "coste sin registrar"
+  ],
+  "expectedArtifacts": [
+    "prompt",
+    "resultado",
+    "evidencia",
+    "coste",
+    "decision"
+  ]
+}

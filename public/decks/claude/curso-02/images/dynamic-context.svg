@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="620" viewBox="0 0 1100 620" role="img" aria-labelledby="title desc">
+  <title id="title">Dynamic context</title>
+  <desc id="desc">Skill loading dynamic context from git diff with a cost gate.</desc>
+  <rect width="1100" height="620" rx="34" fill="#0d0b0a"/>
+  <text x="96" y="112" font-family="Inter, Arial, sans-serif" font-size="34" font-weight="900" fill="#fff7f0">Dynamic context</text>
+  <text x="96" y="148" font-family="Inter, Arial, sans-serif" font-size="18" fill="#b9aea3">Trae estado real solo cuando desbloquea una decision.</text>
+  <g transform="translate(130 230)" font-family="Inter, Arial, sans-serif">
+    <rect width="260" height="180" rx="24" fill="#111817" stroke="#75e6c0" stroke-opacity="0.42"/>
+    <text x="130" y="80" text-anchor="middle" font-size="24" font-weight="900" fill="#c9fff0">Skill</text>
+    <text x="130" y="118" text-anchor="middle" font-size="15" fill="#b9aea3">summarize-changes</text>
+    <path d="M300 90H470" stroke="#ffd27a" stroke-width="6" stroke-linecap="round"/>
+    <text x="385" y="72" text-anchor="middle" font-size="14" fill="#ffe6ad">git diff</text>
+    <rect x="510" width="260" height="180" rx="24" fill="#211713" stroke="#ff9aad" stroke-opacity="0.42"/>
+    <text x="640" y="80" text-anchor="middle" font-size="24" font-weight="900" fill="#ffdfe5">Context gate</text>
+    <text x="640" y="118" text-anchor="middle" font-size="15" fill="#b9aea3">necesario?</text>
+  </g>
+</svg>

@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="620" viewBox="0 0 1100 620" role="img" aria-labelledby="title desc">
+  <title id="title">Model per agent</title>
+  <desc id="desc">Different agent roles mapped to model cost tiers.</desc>
+  <rect width="1100" height="620" rx="34" fill="#0d0b0a"/>
+  <text x="90" y="112" font-family="Inter, Arial, sans-serif" font-size="34" font-weight="900" fill="#fff7f0">Modelo por subagente</text>
+  <g transform="translate(120 220)" font-family="Inter, Arial, sans-serif">
+    <rect width="260" height="190" rx="24" fill="#111817" stroke="#75e6c0" stroke-opacity="0.45"/>
+    <text x="130" y="70" text-anchor="middle" font-size="24" font-weight="900" fill="#c9fff0">Explorer</text>
+    <text x="130" y="108" text-anchor="middle" font-size="16" fill="#b9aea3">barato + read-only</text>
+    <rect x="310" width="260" height="190" rx="24" fill="#171313" stroke="#ffd27a" stroke-opacity="0.45"/>
+    <text x="440" y="70" text-anchor="middle" font-size="24" font-weight="900" fill="#ffe6ad">QA</text>
+    <text x="440" y="108" text-anchor="middle" font-size="16" fill="#b9aea3">consistente</text>
+    <rect x="620" width="260" height="190" rx="24" fill="#211713" stroke="#ff9aad" stroke-opacity="0.45"/>
+    <text x="750" y="70" text-anchor="middle" font-size="24" font-weight="900" fill="#ffdfe5">Architect</text>
+    <text x="750" y="108" text-anchor="middle" font-size="16" fill="#b9aea3">potente con limites</text>
+  </g>
+</svg>

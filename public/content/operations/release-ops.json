@@ -1,0 +1,96 @@
+{
+  "version": "0.4.0-excellence-assets-exercises-ops",
+  "status": "release-candidate",
+  "releaseDate": "2026-05-08",
+  "commands": [
+    "pnpm build:videos",
+    "pnpm qa:decks",
+    "pnpm qa:player",
+    "pnpm lint",
+    "pnpm exec tsc --noEmit",
+    "pnpm build",
+    "pnpm release:smoke",
+    "pnpm qa:visual"
+  ],
+  "checklists": [
+    {
+      "id": "qa-visual",
+      "title": "QA visual desktop/mobile",
+      "href": "/release-ops/qa/visual-qa-plan.md",
+      "status": "ready"
+    },
+    {
+      "id": "release-checklist",
+      "title": "Checklist release",
+      "href": "/release-ops/checklists/release-checklist.md",
+      "status": "ready"
+    },
+    {
+      "id": "feedback-loop",
+      "title": "Feedback loops",
+      "href": "/release-ops/feedback/feedback-loop.md",
+      "status": "ready"
+    },
+    {
+      "id": "usage-metrics",
+      "title": "Metricas de uso",
+      "href": "/release-ops/metrics/usage-metrics.md",
+      "status": "ready"
+    },
+    {
+      "id": "versioning",
+      "title": "Versionado",
+      "href": "/release-ops/versioning.md",
+      "status": "ready"
+    }
+  ],
+  "smokeTargets": [
+    "/",
+    "/operaciones",
+    "/plataforma",
+    "/tracks/codex",
+    "/tracks/copilot",
+    "/tracks/claude",
+    "/tracks/codex/courses/codex-basic",
+    "/tracks/copilot/courses/copilot-basic",
+    "/tracks/claude/courses/claude-basic",
+    "/tracks/codex/exercises/cx-b04-bug-login",
+    "/tracks/copilot/exercises/cp-b06-error-to-fix",
+    "/tracks/claude/exercises/cl-a01-hook-block-secrets",
+    "/player/cx-workshop-60m-first-task-to-pr",
+    "/player/cp-workshop-60m-vscode-to-pr-review",
+    "/player/cl-workshop-60m-memory-to-automation",
+    "/player/hub-workshop-60m-vendor-selection",
+    "/content/operations/content-versions.json",
+    "/content/operations/ownership.json",
+    "/content/operations/freshness-checklist.json",
+    "/content/operations/quarterly-review.json",
+    "/content/operations/usage-measurement.json",
+    "/exercise-packs/starters/transversal-starter/README.md"
+  ],
+  "visualTargets": [
+    { "id": "hub", "path": "/", "viewports": ["desktop", "mobile"] },
+    { "id": "operaciones", "path": "/operaciones", "viewports": ["desktop", "mobile"] },
+    { "id": "plataforma", "path": "/plataforma", "viewports": ["desktop", "mobile"] },
+    { "id": "codex-track", "path": "/tracks/codex", "viewports": ["desktop", "mobile"] },
+    { "id": "player-60m", "path": "/player/hub-workshop-60m-vendor-selection", "viewports": ["desktop", "mobile"] }
+  ],
+  "metrics": [
+    "video_start",
+    "video_complete",
+    "exercise_open",
+    "exercise_complete",
+    "workshop_pack_open",
+    "feedback_submitted",
+    "exercise_pack_open",
+    "self_assessment_open",
+    "instructor_mode_open",
+    "self_assessment_complete",
+    "instructor_review_saved",
+    "tutoring_question_created"
+  ],
+  "knownWarnings": [
+    "Lint heredado: subtitleDurationMs no usado en generate-course.",
+    "Lint heredado: actionTypes solo usado como tipo en use-toast duplicado."
+  ]
+}

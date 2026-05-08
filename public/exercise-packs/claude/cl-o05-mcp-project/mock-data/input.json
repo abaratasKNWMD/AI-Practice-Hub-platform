@@ -1,0 +1,21 @@
+{
+  "vendor": "claude",
+  "exerciseId": "cl-o05-mcp-project",
+  "title": "MCP de proyecto read-only",
+  "surface": ".mcp.json",
+  "recommendedModel": "Sonnet",
+  "permissionMode": "read-only MCP",
+  "estimatedCost": "medio: conexion externa controlada",
+  "intentionalErrors": [
+    "briefing demasiado amplio",
+    "falta de evidencia",
+    "coste sin registrar"
+  ],
+  "expectedArtifacts": [
+    "prompt",
+    "resultado",
+    "evidencia",
+    "coste",
+    "decision"
+  ]
+}

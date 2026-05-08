@@ -1,0 +1,84 @@
+{
+  "id": "cp-basic-03-error-to-fix",
+  "title": "Copilot Basic 03 - Error to Fix",
+  "description": "Convertir un error en diagnostico, patch minimo y verificacion.",
+  "template": "technical",
+  "durationPreset": 5,
+  "durationMs": 90000,
+  "voice": "es-ES-AlvaroNeural",
+  "author": "AI Practice Hub",
+  "createdAt": "2026-05-07T00:00:00.000Z",
+  "chapters": [
+    { "id": "start", "label": "Error", "startMs": 0 },
+    { "id": "fix", "label": "Fix", "startMs": 9000 },
+    { "id": "close", "label": "Verificar", "startMs": 65000 }
+  ],
+  "scenes": [
+    {
+      "id": "title",
+      "name": "Apertura",
+      "startMs": 0,
+      "endMs": 9000,
+      "type": "title",
+      "content": {
+        "title": "Error -> Fix",
+        "subtitle": "No pegues un stacktrace y reces. Dale contexto.",
+        "tag": "Copilot Basic"
+      },
+      "subtitles": [
+        { "text": "Un error sin contexto invita a parches grandes.", "startMs": 1000, "endMs": 7800 }
+      ]
+    },
+    {
+      "id": "error",
+      "name": "Error",
+      "startMs": 9000,
+      "endMs": 65000,
+      "type": "error",
+      "content": {
+        "tag": "Debug con Copilot",
+        "sentry": {
+          "id": "CP-ERR-17",
+          "title": "TypeError: Cannot read properties of undefined",
+          "file": "src/session.js",
+          "line": 42,
+          "occurrences": 12,
+          "users": 3,
+          "first": "hace 10 min",
+          "trace": ["at getUserName (src/session.js:42)", "at renderHeader (src/header.js:12)"],
+          "context": "return session.user.name"
+        },
+        "linearFix": {
+          "ticketId": "CP-FIX",
+          "title": "Fix: session user can be missing",
+          "description": "Add guard clause and regression test for missing user."
+        },
+        "fix": "if (!session?.user?.name) {\n  return 'Invitado'\n}\n\nreturn session.user.name"
+      },
+      "subtitles": [
+        { "text": "El prompt bueno dice que estaba pasando, donde falla y que no queremos tocar.", "startMs": 10000, "endMs": 31000 },
+        { "text": "Despues pedimos patch minimo y test.", "startMs": 32000, "endMs": 50000 },
+        { "text": "Copilot arregla mejor cuando el cierre esta definido.", "startMs": 51000, "endMs": 62000 }
+      ]
+    },
+    {
+      "id": "finale",
+      "name": "Cierre",
+      "startMs": 65000,
+      "endMs": 90000,
+      "type": "finale",
+      "content": {
+        "title": "Debug operativo",
+        "summary": [
+          { "number": "01", "label": "Contexto", "body": "Que hacias y que fallo." },
+          { "number": "02", "label": "Limite", "body": "Que no debe tocar." },
+          { "number": "03", "label": "Test", "body": "Como se comprueba." }
+        ],
+        "cta": "Ejercicio: cp-b06-error-to-fix."
+      },
+      "subtitles": [
+        { "text": "Contexto, limite y test. Asi se arreglan bugs con Copilot.", "startMs": 66000, "endMs": 89000 }
+      ]
+    }
+  ]
+}

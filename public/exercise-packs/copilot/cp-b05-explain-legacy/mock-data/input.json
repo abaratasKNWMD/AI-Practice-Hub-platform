@@ -1,0 +1,21 @@
+{
+  "vendor": "copilot",
+  "exerciseId": "cp-b05-explain-legacy",
+  "title": "Explain de codigo legacy",
+  "surface": "Copilot Chat VS Code",
+  "recommendedModel": "Modelo incluido / Ask",
+  "permissionMode": "read-only",
+  "estimatedCost": "Bajo",
+  "intentionalErrors": [
+    "briefing demasiado amplio",
+    "falta de evidencia",
+    "coste sin registrar"
+  ],
+  "expectedArtifacts": [
+    "prompt",
+    "resultado",
+    "evidencia",
+    "coste",
+    "decision"
+  ]
+}

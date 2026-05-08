@@ -1,0 +1,21 @@
+{
+  "vendor": "codex",
+  "exerciseId": "cx-b04-bug-login",
+  "title": "Bug login con plan antes de patch",
+  "surface": "CLI + tests",
+  "recommendedModel": "GPT-5.4",
+  "permissionMode": "workspace-write",
+  "estimatedCost": "Medio-bajo: exploracion, patch y tests",
+  "intentionalErrors": [
+    "briefing demasiado amplio",
+    "falta de evidencia",
+    "coste sin registrar"
+  ],
+  "expectedArtifacts": [
+    "prompt",
+    "resultado",
+    "evidencia",
+    "coste",
+    "decision"
+  ]
+}

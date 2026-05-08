@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 760" role="img" aria-labelledby="title desc">
+  <title id="title">Copilot tools permission gate</title>
+  <desc id="desc">An agent asking permission before using read, write, test and external tools.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#07111f"/>
+      <stop offset="1" stop-color="#0b1d1a"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" x2="1">
+      <stop offset="0" stop-color="#5ddcff"/>
+      <stop offset="1" stop-color="#62e6a2"/>
+    </linearGradient>
+    <style>
+      .title{font:900 34px Inter,Segoe UI,sans-serif;fill:#f8fbff}
+      .label{font:800 20px Inter,Segoe UI,sans-serif;fill:#f8fbff}
+      .small{font:700 15px Inter,Segoe UI,sans-serif;fill:#aebbd0}
+      .mono{font:600 16px ui-monospace,SFMono-Regular,Consolas,monospace;fill:#dce8f7}
+      .card{fill:#ffffff;fill-opacity:.07;stroke:#ffffff;stroke-opacity:.14}
+    </style>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M0 0L10 5L0 10Z" fill="#77e6d0"/>
+    </marker>
+  </defs>
+  <rect width="1200" height="760" rx="34" fill="url(#bg)"/>
+  <text x="70" y="88" class="title">Herramientas: potencia con puerta de permisos</text>
+  <text x="72" y="122" class="small">Cuando Copilot puede actuar, el curso debe ensenar a aprobar con cabeza.</text>
+
+  <g transform="translate(92 224)">
+    <rect width="260" height="238" rx="28" class="card"/>
+    <text x="34" y="54" class="label">Agent</text>
+    <text x="34" y="92" class="small">Planifica pasos</text>
+    <text x="34" y="122" class="small">elige tools</text>
+    <text x="34" y="152" class="small">y propone cambios</text>
+    <rect x="34" y="178" width="176" height="38" rx="14" fill="#5ddcff" fill-opacity=".13" stroke="#5ddcff" stroke-opacity=".36"/>
+    <text x="54" y="203" class="mono">needs approval</text>
+  </g>
+
+  <path d="M370 344H492" stroke="#77e6d0" stroke-width="6" stroke-linecap="round" marker-end="url(#arrow)"/>
+
+  <g transform="translate(500 174)">
+    <rect width="220" height="338" rx="30" fill="#ffffff" fill-opacity=".08" stroke="url(#accent)" stroke-width="2"/>
+    <text x="44" y="58" class="label">Permission</text>
+    <text x="72" y="91" class="label">Gate</text>
+    <rect x="38" y="134" width="144" height="58" rx="18" fill="#62e6a2" fill-opacity=".16" stroke="#62e6a2" stroke-opacity=".44"/>
+    <text x="74" y="170" class="small">Approve</text>
+    <rect x="38" y="216" width="144" height="58" rx="18" fill="#ff8fab" fill-opacity=".12" stroke="#ff8fab" stroke-opacity=".4"/>
+    <text x="86" y="252" class="small">Deny</text>
+  </g>
+
+  <path d="M734 344H856" stroke="#77e6d0" stroke-width="6" stroke-linecap="round" marker-end="url(#arrow)"/>
+
+  <g transform="translate(856 192)">
+    <rect width="260" height="310" rx="28" class="card"/>
+    <text x="34" y="50" class="label">Tools</text>
+    <g transform="translate(34 84)">
+      <rect width="190" height="42" rx="14" fill="#5ddcff" fill-opacity=".12" stroke="#5ddcff" stroke-opacity=".32"/>
+      <text x="20" y="27" class="mono">read file</text>
+      <rect y="58" width="190" height="42" rx="14" fill="#ffffff" fill-opacity=".07" stroke="#ffffff" stroke-opacity=".14"/>
+      <text x="20" y="85" class="mono">edit file</text>
+      <rect y="116" width="190" height="42" rx="14" fill="#62e6a2" fill-opacity=".12" stroke="#62e6a2" stroke-opacity=".32"/>
+      <text x="20" y="143" class="mono">run tests</text>
+      <rect y="174" width="190" height="42" rx="14" fill="#f8c96a" fill-opacity=".12" stroke="#f8c96a" stroke-opacity=".32"/>
+      <text x="20" y="201" class="mono">external API</text>
+    </g>
+  </g>
+
+  <g transform="translate(264 610)">
+    <rect width="672" height="72" rx="24" fill="#ffffff" fill-opacity=".07" stroke="#ffffff" stroke-opacity=".14"/>
+    <text x="34" y="45" class="small">Antes de aprobar: alcance, ficheros afectados, datos sensibles, coste y rollback.</text>
+  </g>
+</svg>

@@ -1,0 +1,21 @@
+{
+  "vendor": "claude",
+  "exerciseId": "cl-s03-agent-review-json",
+  "title": "Review JSON estable",
+  "surface": "Structured output",
+  "recommendedModel": "Sonnet",
+  "permissionMode": "local sdk",
+  "estimatedCost": "medio",
+  "intentionalErrors": [
+    "briefing demasiado amplio",
+    "falta de evidencia",
+    "coste sin registrar"
+  ],
+  "expectedArtifacts": [
+    "prompt",
+    "resultado",
+    "evidencia",
+    "coste",
+    "decision"
+  ]
+}

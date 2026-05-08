@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="620" viewBox="0 0 1100 620" role="img" aria-labelledby="title desc">
+  <title id="title">Subagent costume meme</title>
+  <desc id="desc">Humorous warning about subagents that only change names.</desc>
+  <rect width="1100" height="620" rx="34" fill="#11100f"/>
+  <text x="92" y="112" font-family="Inter, Arial, sans-serif" font-size="34" font-weight="900" fill="#fff7f0">Subagente con disfraz</text>
+  <text x="92" y="148" font-family="Inter, Arial, sans-serif" font-size="18" fill="#b9aea3">Si todo es igual, solo cambiaste la etiqueta.</text>
+  <g transform="translate(130 220)" font-family="Inter, Arial, sans-serif">
+    <rect width="260" height="220" rx="26" fill="#211713" stroke="#ff9aad" stroke-opacity="0.42"/>
+    <text x="130" y="70" text-anchor="middle" font-size="24" font-weight="900" fill="#ffdfe5">agent A</text>
+    <text x="130" y="112" text-anchor="middle" font-size="15" fill="#b9aea3">tools: all</text>
+    <text x="130" y="145" text-anchor="middle" font-size="15" fill="#b9aea3">model: same</text>
+    <text x="130" y="178" text-anchor="middle" font-size="15" fill="#b9aea3">prompt: same</text>
+    <rect x="315" width="260" height="220" rx="26" fill="#211713" stroke="#ff9aad" stroke-opacity="0.42"/>
+    <text x="445" y="70" text-anchor="middle" font-size="24" font-weight="900" fill="#ffdfe5">agent B</text>
+    <text x="445" y="112" text-anchor="middle" font-size="15" fill="#b9aea3">tools: all</text>
+    <text x="445" y="145" text-anchor="middle" font-size="15" fill="#b9aea3">model: same</text>
+    <text x="445" y="178" text-anchor="middle" font-size="15" fill="#b9aea3">prompt: same</text>
+    <rect x="630" width="260" height="220" rx="26" fill="#111817" stroke="#75e6c0" stroke-opacity="0.42"/>
+    <text x="760" y="70" text-anchor="middle" font-size="24" font-weight="900" fill="#c9fff0">agente real</text>
+    <text x="760" y="112" text-anchor="middle" font-size="15" fill="#b9aea3">tools acotadas</text>
+    <text x="760" y="145" text-anchor="middle" font-size="15" fill="#b9aea3">criterio propio</text>
+    <text x="760" y="178" text-anchor="middle" font-size="15" fill="#b9aea3">salida definida</text>
+  </g>
+</svg>

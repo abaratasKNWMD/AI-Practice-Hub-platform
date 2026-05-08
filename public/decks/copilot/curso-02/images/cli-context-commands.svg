@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 760" role="img" aria-labelledby="title desc">
+  <title id="title">CLI context commands</title>
+  <desc id="desc">A terminal dashboard showing usage, context and compact commands as operational hygiene.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#07111f"/>
+      <stop offset="1" stop-color="#121827"/>
+    </linearGradient>
+    <style>
+      .title{font:900 34px Inter,Segoe UI,sans-serif;fill:#f8fbff}
+      .label{font:850 20px Inter,Segoe UI,sans-serif;fill:#f8fbff}
+      .small{font:700 15px Inter,Segoe UI,sans-serif;fill:#aebbd0}
+      .mono{font:650 18px ui-monospace,SFMono-Regular,Consolas,monospace;fill:#dce8f7}
+      .green{fill:#62e6a2}
+      .blue{fill:#5ddcff}
+      .card{fill:#ffffff;fill-opacity:.07;stroke:#ffffff;stroke-opacity:.14}
+    </style>
+  </defs>
+  <rect width="1200" height="760" rx="34" fill="url(#bg)"/>
+  <text x="70" y="88" class="title">Higiene de contexto en CLI</text>
+  <text x="72" y="122" class="small">Medir, mirar y compactar son habitos, no comandos exoticos.</text>
+  <g transform="translate(156 180)">
+    <rect width="888" height="414" rx="30" class="card"/>
+    <rect width="888" height="58" rx="30" fill="#ffffff" fill-opacity=".08"/>
+    <circle cx="34" cy="30" r="8" fill="#ff6b83"/>
+    <circle cx="62" cy="30" r="8" fill="#f8c96a"/>
+    <circle cx="90" cy="30" r="8" fill="#62e6a2"/>
+    <text x="126" y="37" class="small">copilot-cli</text>
+    <g transform="translate(48 106)">
+      <text x="0" y="0" class="mono green">$ copilot</text>
+      <text x="0" y="52" class="mono blue">/usage</text>
+      <text x="180" y="52" class="mono">tokens, requests, sesion</text>
+      <text x="0" y="112" class="mono blue">/context</text>
+      <text x="180" y="112" class="mono">que sabe ahora mismo</text>
+      <text x="0" y="172" class="mono blue">/compact</text>
+      <text x="180" y="172" class="mono">reduce ruido antes de seguir</text>
+      <rect y="226" width="792" height="48" rx="18" fill="#62e6a2" fill-opacity=".12" stroke="#62e6a2" stroke-opacity=".36"/>
+      <text x="24" y="257" class="small">Regla: compacta antes de que la conversacion se convierta en mochila.</text>
+    </g>
+  </g>
+</svg>

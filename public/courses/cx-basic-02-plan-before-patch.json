@@ -1,0 +1,100 @@
+{
+  "id": "cx-basic-02-plan-before-patch",
+  "title": "Codex Basic 02 - Plan Before Patch",
+  "description": "Disciplina minima para arreglar bugs con Codex sin abrir cambios laterales.",
+  "template": "technical",
+  "durationPreset": 5,
+  "durationMs": 90000,
+  "voice": "es-ES-AlvaroNeural",
+  "author": "AI Practice Hub",
+  "createdAt": "2026-05-07T00:00:00.000Z",
+  "chapters": [
+    { "id": "start", "label": "Bug", "startMs": 0 },
+    { "id": "plan", "label": "Plan", "startMs": 8000 },
+    { "id": "patch", "label": "Patch", "startMs": 42000 },
+    { "id": "close", "label": "Cierre", "startMs": 70000 }
+  ],
+  "scenes": [
+    {
+      "id": "title",
+      "name": "Apertura",
+      "startMs": 0,
+      "endMs": 8000,
+      "type": "title",
+      "content": {
+        "title": "Plan antes de patch",
+        "subtitle": "La forma mas barata de evitar cambios enormes.",
+        "tag": "Codex Basic"
+      },
+      "subtitles": [
+        { "text": "La prisa produce diffs grandes.", "startMs": 1000, "endMs": 3800 },
+        { "text": "El plan obliga a Codex a pensar con alcance.", "startMs": 4000, "endMs": 7600 }
+      ]
+    },
+    {
+      "id": "thinking",
+      "name": "Planificando",
+      "startMs": 8000,
+      "endMs": 42000,
+      "type": "thinking",
+      "content": {
+        "tag": "Debug protocol",
+        "title": "Codex antes de tocar login...",
+        "thoughts": [
+          { "ms": 0, "text": "Leer rutas de autenticacion y tests existentes", "done": false },
+          { "ms": 6000, "text": "Reproducir fallo o identificar condicion exacta", "done": false },
+          { "ms": 12000, "text": "Aislar causa probable en un archivo", "done": false },
+          { "ms": 18000, "text": "Proponer patch minimo", "done": false },
+          { "ms": 26000, "text": "Validar con test o caso manual", "done": true }
+        ]
+      },
+      "subtitles": [
+        { "text": "Un plan no tiene que ser largo.", "startMs": 9000, "endMs": 14000 },
+        { "text": "Tiene que ordenar diagnostico, patch y verificacion.", "startMs": 14500, "endMs": 26000 },
+        { "text": "Sin ese orden, Codex puede arreglar un sintoma.", "startMs": 26500, "endMs": 40500 }
+      ]
+    },
+    {
+      "id": "coding",
+      "name": "Checklist",
+      "startMs": 42000,
+      "endMs": 70000,
+      "type": "coding",
+      "content": {
+        "tag": "Checklist de cierre",
+        "filename": "docs/codex-debug-checklist.md",
+        "code": "## Antes de editar\\n- Que archivo parece responsable?\\n- Que evidencia apunta a el?\\n- Que no vamos a tocar?\\n\\n## Patch\\n- Cambio minimo.\\n- Sin refactor lateral.\\n- Sin formateo masivo.\\n\\n## Cierre\\n- Test ejecutado.\\n- Causa raiz explicada.\\n- Riesgo residual declarado.",
+        "commentary": [
+          { "atLine": 1, "text": "Fase de diagnostico" },
+          { "atLine": 6, "text": "Fase de edicion" },
+          { "atLine": 11, "text": "Fase de verificacion" }
+        ]
+      },
+      "subtitles": [
+        { "text": "Esta checklist cabe en cualquier equipo.", "startMs": 43000, "endMs": 50000 },
+        { "text": "Antes, durante y despues del patch.", "startMs": 50500, "endMs": 60000 },
+        { "text": "Eso es lo que el alumno debe practicar.", "startMs": 60500, "endMs": 69000 }
+      ]
+    },
+    {
+      "id": "finale",
+      "name": "Cierre",
+      "startMs": 70000,
+      "endMs": 90000,
+      "type": "finale",
+      "content": {
+        "title": "El diff debe contar una historia",
+        "summary": [
+          { "number": "01", "label": "Causa", "body": "Por que fallaba." },
+          { "number": "02", "label": "Cambio", "body": "Que se toco y que no." },
+          { "number": "03", "label": "Prueba", "body": "Como sabemos que funciona." }
+        ],
+        "cta": "Ejercicio asociado: cx-b04-bug-login."
+      },
+      "subtitles": [
+        { "text": "Causa, cambio y prueba.", "startMs": 70500, "endMs": 79000 },
+        { "text": "Ese es el cierre profesional con Codex.", "startMs": 79500, "endMs": 89500 }
+      ]
+    }
+  ]
+}

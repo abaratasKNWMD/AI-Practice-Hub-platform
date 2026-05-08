@@ -1,0 +1,9 @@
+{
+  "name": "codex-pr-swarm-local",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "review": "node src/orchestrator.mjs fixtures/diff-with-bug.patch",
+    "test": "node --test"
+  }
+}

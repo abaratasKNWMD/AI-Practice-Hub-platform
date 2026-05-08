@@ -1,0 +1,296 @@
+[
+  {
+    "id": "cx-masterclass-10m-codex-operating-system",
+    "vendor": "codex",
+    "status": "implemented",
+    "durationMin": 10,
+    "playerSlug": "cx-masterclass-10m-codex-operating-system",
+    "purpose": "Video largo inicial de aterrizaje para abrir la ruta Codex antes de decks y labs.",
+    "scenes": [
+      "Apertura: Codex como sistema operativo",
+      "Mapa de superficies",
+      "Mal pedido vs operacion profesional",
+      "Primer lab read-only",
+      "Loop mapa-plan-patch-evidencia",
+      "AGENTS.md minimo",
+      "Modelo, razonamiento y coste",
+      "Permisos como gate",
+      "Ruta de activacion",
+      "Cierre y siguiente accion"
+    ],
+    "acceptanceCriteria": [
+      "Debe reproducirse en /player/cx-masterclass-10m-codex-operating-system.",
+      "Debe aparecer como primer video de Codex Orientation.",
+      "Debe explicar coste, modelos, permisos y ejercicios."
+    ]
+  },
+  {
+    "id": "cp-masterclass-10m-copilot-workbench",
+    "vendor": "copilot",
+    "status": "implemented",
+    "durationMin": 10,
+    "playerSlug": "cp-masterclass-10m-copilot-workbench",
+    "purpose": "Video largo inicial para convertir Copilot de autocomplete a banco de trabajo de equipo.",
+    "scenes": [
+      "Apertura: Copilot como workbench",
+      "Mentalidad de modos",
+      "Ask vs Edit vs Agent",
+      "Workshop error-to-fix",
+      "Instructions y prompt files",
+      "copilot-instructions.md",
+      "Premium requests y coste",
+      "Agent runaway",
+      "Ruta CP0-CP4",
+      "Cierre y siguiente accion"
+    ],
+    "acceptanceCriteria": [
+      "Debe reproducirse en /player/cp-masterclass-10m-copilot-workbench.",
+      "Debe aparecer como primer video de Git/GitHub Survival.",
+      "Debe explicar VS Code, Ask/Edit/Agent, instrucciones, PR y coste."
+    ]
+  },
+  {
+    "id": "cl-masterclass-10m-claude-operating-model",
+    "vendor": "claude",
+    "status": "implemented",
+    "durationMin": 10,
+    "playerSlug": "cl-masterclass-10m-claude-operating-model",
+    "purpose": "Video largo inicial para explicar Claude Code como sistema de memoria, contexto, herramientas y controles.",
+    "scenes": [
+      "Apertura: Claude como plataforma",
+      "Memoria y CLAUDE.md",
+      "Chat vs plataforma",
+      "Primer lab de contexto",
+      "Dieta de contexto",
+      "CLAUDE.md minimo",
+      "Skills, subagentes, MCP",
+      "Hooks y guardrails",
+      "Ruta CL0-CL4",
+      "Cierre y siguiente accion"
+    ],
+    "acceptanceCriteria": [
+      "Debe reproducirse en /player/cl-masterclass-10m-claude-operating-model.",
+      "Debe aparecer como primer video de Claude Code Orientation.",
+      "Debe explicar memoria, contexto, coste, skills, MCP y hooks."
+    ]
+  },
+  {
+    "id": "cx-workshop-30m-first-real-task",
+    "vendor": "codex",
+    "status": "implemented",
+    "durationMin": 30,
+    "playerSlug": "cx-workshop-30m-first-real-task",
+    "purpose": "Workshop guiado para simular una tarea real: repo map, AGENTS.md, bugfix, test, diff y handoff.",
+    "scenes": [
+      "Briefing del reto",
+      "Prompt inicial con objetivo y restricciones",
+      "Respuesta simulada de Codex read-only",
+      "Decision humana sobre plan",
+      "Patch simulado con diff",
+      "Test barato y fallo intencionado",
+      "Correccion y cierre",
+      "Handoff para tutoria"
+    ],
+    "acceptanceCriteria": [
+      "Debe tener respuestas simuladas de Codex por escena.",
+      "Debe enlazar materiales reales del curso 1.",
+      "Debe durar minimo 25 minutos de cadencia de aula."
+    ]
+  },
+  {
+    "id": "cp-workshop-30m-error-to-pr",
+    "vendor": "copilot",
+    "status": "implemented",
+    "durationMin": 30,
+    "playerSlug": "cp-workshop-30m-error-to-pr",
+    "purpose": "Workshop Copilot de error a PR: Ask, Edit, Agent, instructions y review de diff.",
+    "scenes": [
+      "Error inicial en VS Code mockeado",
+      "Ask: explicar el fallo",
+      "Edit: aplicar cambio acotado",
+      "Agent: completar test y docs",
+      "PR: descripcion y checklist",
+      "Premium request budget",
+      "Review humana y cierre"
+    ],
+    "acceptanceCriteria": [
+      "Debe mostrar prompts y respuestas simuladas.",
+      "Debe diferenciar Ask, Edit y Agent con claridad visual.",
+      "Debe cerrar con PR contract."
+    ]
+  },
+  {
+    "id": "cl-workshop-30m-memory-to-hook",
+    "vendor": "claude",
+    "status": "implemented",
+    "durationMin": 30,
+    "playerSlug": "cl-workshop-30m-memory-to-hook",
+    "purpose": "Workshop Claude de memoria a automatizacion: CLAUDE.md, /context, skill, subagent y hook anti secretos.",
+    "scenes": [
+      "CLAUDE.md inicial",
+      "Auditoria de contexto",
+      "Skill para fix-tests",
+      "Subagent explorer",
+      "MCP readonly",
+      "Hook anti secretos",
+      "Cierre con handoff"
+    ],
+    "acceptanceCriteria": [
+      "Debe enseñar memoria antes de automatizacion.",
+      "Debe contener un hook deterministico como punto fuerte.",
+      "Debe enlazar curso 1, 2 y 3 de Claude."
+    ]
+  },
+  {
+    "id": "hub-operating-model-60m",
+    "vendor": "platform",
+    "status": "implemented",
+    "durationMin": 60,
+    "playerSlug": "hub-operating-model-60m",
+    "purpose": "Video central para explicar flipping training, tutorias, consumo asinc, workshops, coste y adopcion enterprise.",
+    "scenes": [
+      "Problema de demanda formativa",
+      "Modelo autoconsumo + tutoria",
+      "Como se empaqueta un curso",
+      "Como se empaqueta un workshop",
+      "Como se mide coste y uso",
+      "Roles del equipo formador",
+      "Cadencia mensual",
+      "Backlog de sprints"
+    ],
+    "acceptanceCriteria": [
+      "Debe poder verlo un sponsor no tecnico.",
+      "Debe explicar la plataforma como sistema de adopcion.",
+      "Debe cerrar con plan de implantacion de 90 dias."
+    ]
+  },
+  {
+    "id": "cx-workshop-60m-first-task-to-pr",
+    "vendor": "codex",
+    "status": "implemented",
+    "durationMin": 60,
+    "playerSlug": "cx-workshop-60m-first-task-to-pr",
+    "purpose": "Workshop Codex de 1 hora para llevar un task ambiguo a PR revisable con plan, patch, tests, review y coste.",
+    "scenes": [
+      "Contrato de la sesion",
+      "Intake del task",
+      "Mapa readonly del repo",
+      "Decision de modelo y permisos",
+      "Plan antes del patch",
+      "Patch minimo",
+      "Test de regresion",
+      "Prompt de rescate",
+      "Review del diff",
+      "Cost ledger",
+      "Narrativa de PR",
+      "Retro y handoff"
+    ],
+    "acceptanceCriteria": [
+      "Debe durar 60 minutos exactos.",
+      "Debe enlazar pack instructor.",
+      "Debe producir diff, test, PR body y cost ledger."
+    ]
+  },
+  {
+    "id": "cp-workshop-60m-vscode-to-pr-review",
+    "vendor": "copilot",
+    "status": "implemented",
+    "durationMin": 60,
+    "playerSlug": "cp-workshop-60m-vscode-to-pr-review",
+    "purpose": "Workshop Copilot de 1 hora para practicar Ask, Edit, Agent, instrucciones, tests y PR review en VS Code.",
+    "scenes": [
+      "Apertura VS Code",
+      "Issue delegable",
+      "Mapa Ask/Edit/Agent",
+      "Ask diagnostico",
+      "Instrucciones de repo",
+      "Edit localizado",
+      "Tests",
+      "Agent handoff",
+      "PR review",
+      "Premium budget",
+      "Plantilla de equipo",
+      "Cierre"
+    ],
+    "acceptanceCriteria": [
+      "Debe diferenciar superficies Copilot.",
+      "Debe incluir stop rule para Agent.",
+      "Debe cerrar con review y presupuesto."
+    ]
+  },
+  {
+    "id": "cl-workshop-60m-memory-to-automation",
+    "vendor": "claude",
+    "status": "implemented",
+    "durationMin": 60,
+    "playerSlug": "cl-workshop-60m-memory-to-automation",
+    "purpose": "Workshop Claude de 1 hora para convertir memoria repetida en skill, subagente, MCP readonly, hook y eval.",
+    "scenes": [
+      "Apertura memory sprint",
+      "Triage de contexto",
+      "Auditoria de CLAUDE.md",
+      "Skill fix-tests",
+      "Subagente explorer",
+      "MCP readonly",
+      "Hook anti secretos",
+      "Eval minima",
+      "Routing de modelos",
+      "Rollout de plugin",
+      "Pack final",
+      "Cierre"
+    ],
+    "acceptanceCriteria": [
+      "Debe separar memoria, skill, subagente y hook.",
+      "Debe incluir control deterministico.",
+      "Debe cerrar con pack de rollout."
+    ]
+  },
+  {
+    "id": "hub-workshop-60m-vendor-selection",
+    "vendor": "platform",
+    "status": "implemented",
+    "durationMin": 60,
+    "playerSlug": "hub-workshop-60m-vendor-selection",
+    "purpose": "Workshop transversal de 1 hora para elegir Codex, Copilot o Claude segun caso, coste, permisos, riesgo y evidencia.",
+    "scenes": [
+      "Apertura transversal",
+      "Mapa de fortalezas",
+      "Caso bug pequeno",
+      "Caso activacion masiva",
+      "Caso automatizacion interna",
+      "Permisos y riesgo",
+      "Coste por outcome",
+      "Ruta de formacion",
+      "Demo de routing",
+      "Feedback loops",
+      "Release ops",
+      "Decision final"
+    ],
+    "acceptanceCriteria": [
+      "Debe evitar guerra de marcas.",
+      "Debe terminar en decision tree.",
+      "Debe enlazar release ops y feedback loops."
+    ]
+  },
+  {
+    "id": "vendor-comparison-20m",
+    "vendor": "platform",
+    "status": "planned",
+    "durationMin": 20,
+    "purpose": "Video transversal para decidir Codex vs Copilot vs Claude segun entorno, tarea, coste y gobierno.",
+    "scenes": [
+      "Mapa de vendors",
+      "Superficies y fricciones",
+      "Memoria e instrucciones",
+      "Agentes y automatizacion",
+      "MCP y extensibilidad",
+      "Coste y control",
+      "Decision matrix"
+    ],
+    "acceptanceCriteria": [
+      "Debe evitar guerra de marcas.",
+      "Debe terminar en matriz de decision.",
+      "Debe enlazar las tres rutas."
+    ]
+  }
+]

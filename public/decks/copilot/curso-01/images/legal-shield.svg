@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 760" role="img" aria-labelledby="title desc">
+  <title id="title">Legal and policy shield</title>
+  <desc id="desc">A shield protecting code with license, secrets and review controls.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#111827"/>
+      <stop offset="1" stop-color="#061b18"/>
+    </linearGradient>
+    <linearGradient id="shield" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#5ddcff"/>
+      <stop offset="1" stop-color="#62e6a2"/>
+    </linearGradient>
+    <style>
+      .title{font:900 34px Inter,Segoe UI,sans-serif;fill:#f8fbff}
+      .label{font:800 20px Inter,Segoe UI,sans-serif;fill:#f8fbff}
+      .small{font:700 15px Inter,Segoe UI,sans-serif;fill:#b6c2d2}
+      .mono{font:600 16px ui-monospace,SFMono-Regular,Consolas,monospace;fill:#dce8f7}
+      .card{fill:#ffffff;fill-opacity:.07;stroke:#ffffff;stroke-opacity:.14}
+    </style>
+  </defs>
+  <rect width="1200" height="760" rx="34" fill="url(#bg)"/>
+  <text x="70" y="88" class="title">Legalidad: Copilot ayuda, el criterio sigue siendo tuyo</text>
+  <text x="72" y="122" class="small">Codigo generado no significa codigo aceptado. Hay que pasar puertas de seguridad.</text>
+
+  <g transform="translate(76 192)">
+    <rect width="306" height="356" rx="26" class="card"/>
+    <text x="30" y="46" class="label">Riesgo tipico</text>
+    <rect x="30" y="82" width="246" height="206" rx="18" fill="#07101e" stroke="#ff8fab" stroke-opacity=".35"/>
+    <text x="50" y="122" class="mono">function auth() {</text>
+    <text x="50" y="158" class="mono">  // looks familiar</text>
+    <text x="50" y="194" class="mono">  return snippet;</text>
+    <text x="50" y="230" class="mono">}</text>
+    <text x="30" y="330" class="small">Aceptar sin revisar es convertir velocidad en deuda.</text>
+  </g>
+
+  <g transform="translate(452 160)">
+    <path d="M148 0C214 42 276 52 336 58v180c0 126-74 215-188 266C34 453-40 364-40 238V58C20 52 82 42 148 0Z" fill="url(#shield)" opacity=".22" stroke="url(#shield)" stroke-width="5"/>
+    <path d="M66 230l52 54 126-142" fill="none" stroke="#f8fbff" stroke-width="20" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="54" y="356" class="label" font-size="30">POLICY</text>
+    <text x="37" y="390" class="small">matching, secretos, licencia</text>
+  </g>
+
+  <g transform="translate(820 192)">
+    <rect width="306" height="356" rx="26" class="card"/>
+    <text x="30" y="46" class="label">Practica responsable</text>
+    <g transform="translate(34 88)">
+      <circle cx="12" cy="12" r="10" fill="#62e6a2"/><text x="36" y="18" class="small">Revisar diff</text>
+      <circle cx="12" cy="70" r="10" fill="#62e6a2"/><text x="36" y="76" class="small">No pegar secretos</text>
+      <circle cx="12" cy="128" r="10" fill="#62e6a2"/><text x="36" y="134" class="small">Validar licencias</text>
+      <circle cx="12" cy="186" r="10" fill="#62e6a2"/><text x="36" y="192" class="small">Aplicar politica</text>
+      <circle cx="12" cy="244" r="10" fill="#62e6a2"/><text x="36" y="250" class="small">Documentar decision</text>
+    </g>
+  </g>
+
+  <g transform="translate(250 612)">
+    <rect width="700" height="72" rx="24" fill="#ffffff" fill-opacity=".07" stroke="#ffffff" stroke-opacity=".14"/>
+    <text x="34" y="45" class="small">Regla de oro: Copilot propone. El equipo acepta despues de entender, probar y revisar.</text>
+  </g>
+</svg>

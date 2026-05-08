@@ -1,0 +1,21 @@
+{
+  "vendor": "claude",
+  "exerciseId": "cl-a03-plugin-team-review",
+  "title": "Plugin team-review",
+  "surface": "Plugins",
+  "recommendedModel": "Sonnet",
+  "permissionMode": "plugin workspace",
+  "estimatedCost": "medio-alto: empaquetado + prueba",
+  "intentionalErrors": [
+    "briefing demasiado amplio",
+    "falta de evidencia",
+    "coste sin registrar"
+  ],
+  "expectedArtifacts": [
+    "prompt",
+    "resultado",
+    "evidencia",
+    "coste",
+    "decision"
+  ]
+}

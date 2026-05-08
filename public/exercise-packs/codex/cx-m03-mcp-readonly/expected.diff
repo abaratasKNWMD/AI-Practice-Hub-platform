@@ -1,0 +1,9 @@
+diff --git a/README.md b/README.md
+--- a/README.md
++++ b/README.md
+@@
++# Evidencia de ejercicio
++- Ejercicio: cx-m03-mcp-readonly
++- Resultado: salida verificable
++- Coste: Medio: mas contexto recuperado, pocas ediciones
++- Permisos: read-only con conectores

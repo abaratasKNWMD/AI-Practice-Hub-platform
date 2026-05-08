@@ -1,0 +1,385 @@
+{
+  "id": "cx-workshop-30m-first-real-task",
+  "title": "Codex Workshop 30m - First Real Task",
+  "description": "Workshop simulado de 30 minutos para pasar de repo desconocido a bugfix verificable con AGENTS.md, prompts, permisos, tests y handoff.",
+  "vendor": "codex",
+  "template": "technical",
+  "durationMin": 30,
+  "voice": "es-ES-AlvaroNeural",
+  "author": "AI Practice Hub",
+  "createdAt": "2026-05-08T00:00:00.000Z",
+  "chapters": [
+    { "id": "briefing", "label": "Briefing", "sceneId": "title" },
+    { "id": "map", "label": "Mapa read-only", "sceneId": "repo-map-prompt" },
+    { "id": "agents", "label": "AGENTS.md", "sceneId": "agents-md" },
+    { "id": "bugfix", "label": "Bugfix", "sceneId": "patch-plan" },
+    { "id": "close", "label": "Cierre", "sceneId": "handoff" }
+  ],
+  "scenes": [
+    {
+      "id": "title",
+      "name": "Apertura del workshop",
+      "chapterId": "briefing",
+      "kind": "title",
+      "durationSec": 150,
+      "screen": {
+        "visual": "full-screen title + repo map background",
+        "presenterCue": "Abrir con la promesa: aqui no vemos Codex, lo dirigimos.",
+        "content": {
+          "title": "Codex: primera tarea real",
+          "subtitle": "30 minutos para mapear, planificar, editar poco, verificar y cerrar.",
+          "tag": "Workshop / Codex"
+        }
+      },
+      "voiceover": [
+        "Este workshop simula una primera tarea real con Codex.",
+        "No empezamos pidiendo codigo: empezamos pidiendo mapa, limites y evidencia.",
+        "El resultado esperado es un handoff que cualquier compañero pueda revisar."
+      ],
+      "action": {
+        "type": "narrate",
+        "label": "Contexto inicial",
+        "detail": "Presentar repo mock, objetivo del bug y reglas de seguridad."
+      }
+    },
+    {
+      "id": "workshop-ticket",
+      "name": "Ticket del reto",
+      "chapterId": "briefing",
+      "kind": "linear",
+      "durationSec": 150,
+      "screen": {
+        "visual": "ticket card",
+        "content": {
+          "ticketId": "CX-W01",
+          "title": "Login bloquea usuarios validos",
+          "project": "AI Practice Hub Labs",
+          "priority": "High",
+          "assignee": "Participante + Codex",
+          "status": "Ready",
+          "labels": ["bugfix", "auth", "read-only-first"],
+          "description": "Un usuario valido no puede entrar si el email contiene mayusculas. El objetivo es diagnosticar, proponer plan, aplicar cambio minimo y validar con test cercano. No tocar .env, no refactorizar auth completa y no cambiar API publica."
+        }
+      },
+      "voiceover": [
+        "El ticket es pequeno a proposito.",
+        "Un reto pequeno deja ver si el metodo funciona.",
+        "La restriccion mas importante es no ampliar scope."
+      ],
+      "action": {
+        "type": "human-decision",
+        "label": "Aceptar alcance",
+        "detail": "El participante confirma rutas permitidas y criterios de done.",
+        "expectedOutput": "Scope: auth/login, test cercano, sin refactor global."
+      }
+    },
+    {
+      "id": "repo-map-prompt",
+      "name": "Prompt de mapa",
+      "chapterId": "map",
+      "kind": "coding",
+      "durationSec": 150,
+      "screen": {
+        "visual": "terminal prompt",
+        "content": {
+          "filename": "prompts/cx-workshop-map.md",
+          "language": "markdown",
+          "code": "Necesito diagnosticar un bug de login.\n\nLee solo rutas relacionadas con auth/login y tests cercanos.\nNo edites archivos.\nDevuelve:\n1. mapa de flujo\n2. archivos candidatos\n3. hipotesis del fallo\n4. check barato para validar\n\nSi necesitas mas contexto, pidelo antes de leer carpetas completas."
+        }
+      },
+      "voiceover": [
+        "Este es el primer prompt que queremos normalizar.",
+        "La orden explicita es no editar.",
+        "Codex debe devolver mapa, no solucion prematura."
+      ],
+      "action": {
+        "type": "prompt",
+        "label": "Enviar prompt read-only",
+        "detail": "El alumno copia el prompt y espera mapa antes de autorizar patch."
+      }
+    },
+    {
+      "id": "simulated-map-response",
+      "name": "Respuesta simulada",
+      "chapterId": "map",
+      "kind": "concept",
+      "durationSec": 150,
+      "screen": {
+        "visual": "Codex response panel",
+        "content": {
+          "tag": "Respuesta simulada",
+          "title": "Codex encuentra el punto de decision",
+          "body": "El flujo pasa por normalizeEmail(), validateCredentials() y createSession(). La hipotesis principal es que el login compara email original contra una fixture normalizada. El test mas barato es auth/login.spec.ts con un email mixto.",
+          "highlight": "Todavia no hay patch: solo mapa, hipotesis y test.",
+          "points": [
+            "Archivo candidato: src/auth/validate-login.ts",
+            "Test cercano: tests/auth/login.spec.ts",
+            "Riesgo: romper usuarios legacy con espacios",
+            "Siguiente paso: plan de dos cambios maximo"
+          ]
+        }
+      },
+      "voiceover": [
+        "Esta respuesta es buena porque no toca codigo.",
+        "Nos da una hipotesis y una ruta de validacion.",
+        "Ahora el humano decide si autoriza un plan de patch."
+      ],
+      "action": {
+        "type": "simulated-response",
+        "label": "Validar respuesta",
+        "detail": "El facilitador pide al alumno distinguir evidencia de suposicion."
+      }
+    },
+    {
+      "id": "agents-md",
+      "name": "Crear AGENTS.md",
+      "chapterId": "agents",
+      "kind": "coding",
+      "durationSec": 150,
+      "screen": {
+        "visual": "AGENTS.md editor",
+        "content": {
+          "filename": "AGENTS.md",
+          "language": "markdown",
+          "code": "# AGENTS.md\n\n## Objetivo del lab\nResolver cambios pequenos y verificables en auth.\n\n## Reglas\n- No leer ni escribir .env*.\n- No editar fuera de src/auth y tests/auth sin pedir permiso.\n- Proponer plan antes de patch.\n- Cerrar con diff, comando ejecutado y riesgo.\n\n## Checks\n- pnpm test -- auth/login.spec.ts"
+        }
+      },
+      "voiceover": [
+        "Antes de editar, dejamos memoria local del lab.",
+        "AGENTS.md evita repetir reglas y reduce coste de contexto.",
+        "Tambien marca limites de permisos."
+      ],
+      "action": {
+        "type": "tool-run",
+        "label": "Crear archivo",
+        "detail": "Guardar AGENTS.md en el starter repo.",
+        "expectedOutput": "Reglas locales disponibles para el resto del workshop."
+      }
+    },
+    {
+      "id": "patch-plan",
+      "name": "Plan antes de patch",
+      "chapterId": "bugfix",
+      "kind": "compare",
+      "durationSec": 150,
+      "screen": {
+        "visual": "good vs bad plan",
+        "content": {
+          "tag": "Plan de patch",
+          "left": {
+            "label": "Plan vago",
+            "color": "destructive",
+            "steps": [
+              { "icon": "AlertTriangle", "text": "Voy a mejorar login" },
+              { "icon": "Code", "text": "Refactorizo validacion" },
+              { "icon": "GitPullRequest", "text": "Luego vemos tests" }
+            ],
+            "total": "No aprobable"
+          },
+          "right": {
+            "label": "Plan aprobable",
+            "color": "accent",
+            "steps": [
+              { "icon": "Check", "text": "Normalizar email antes de comparar" },
+              { "icon": "Check", "text": "Añadir test con mayusculas" },
+              { "icon": "Check", "text": "Ejecutar auth/login.spec.ts" }
+            ],
+            "total": "Aprobable"
+          }
+        }
+      },
+      "voiceover": [
+        "El plan tiene que ser pequeño y revisable.",
+        "Si Codex propone refactor global, lo reconducimos.",
+        "El humano aprueba el plan, no la intencion."
+      ],
+      "action": {
+        "type": "human-decision",
+        "label": "Aprobar plan",
+        "detail": "Autorizar solo el plan de tres pasos y pedir parada si aparece scope nuevo."
+      }
+    },
+    {
+      "id": "diff-review",
+      "name": "Diff esperado",
+      "chapterId": "bugfix",
+      "kind": "coding",
+      "durationSec": 150,
+      "screen": {
+        "visual": "diff view",
+        "content": {
+          "filename": "src/auth/validate-login.ts",
+          "language": "diff",
+          "code": "- const candidateEmail = input.email\n+ const candidateEmail = input.email.trim().toLowerCase()\n\n- return user.email === candidateEmail && verifyPassword(input.password, user.passwordHash)\n+ return user.email.toLowerCase() === candidateEmail && verifyPassword(input.password, user.passwordHash)"
+        }
+      },
+      "voiceover": [
+        "El diff es pequeño.",
+        "No toca la API publica.",
+        "La pregunta ahora no es si compila, sino si cubre el caso y no rompe otro."
+      ],
+      "action": {
+        "type": "diff-review",
+        "label": "Revisar diff",
+        "detail": "Buscar cambios colaterales, normalizacion doble y riesgo con espacios."
+      }
+    },
+    {
+      "id": "test-run",
+      "name": "Validacion",
+      "chapterId": "bugfix",
+      "kind": "error",
+      "durationSec": 150,
+      "screen": {
+        "visual": "test terminal",
+        "content": {
+          "tag": "Test primero falla, luego pasa",
+          "sentry": {
+            "id": "TEST-CX-W01",
+            "title": "Expected mixed-case email login to succeed",
+            "file": "tests/auth/login.spec.ts",
+            "line": 34,
+            "occurrences": 1,
+            "users": 1,
+            "first": "en workshop",
+            "trace": ["pnpm test -- auth/login.spec.ts", "mixed-case email login", "expected session, received null"],
+            "context": "El test falla antes del patch y pasa despues del cambio minimo."
+          },
+          "linearFix": {
+            "ticketId": "CX-W01",
+            "title": "Validar email case-insensitive",
+            "description": "Añadir test de email con mayusculas y aplicar normalizacion antes de comparar."
+          },
+          "fix": "pnpm test -- auth/login.spec.ts\n\nResultado esperado:\n- antes: 1 failing\n- despues: 4 passing"
+        }
+      },
+      "voiceover": [
+        "La evidencia buena muestra antes y despues.",
+        "No necesitamos ejecutar todo el mundo para un cambio pequeño.",
+        "Necesitamos el check mas cercano y honesto."
+      ],
+      "action": {
+        "type": "tool-run",
+        "label": "Ejecutar test",
+        "detail": "Lanzar test cercano y registrar resultado.",
+        "expectedOutput": "4 passing en auth/login.spec.ts."
+      }
+    },
+    {
+      "id": "cost-permission",
+      "name": "Coste y permisos",
+      "chapterId": "bugfix",
+      "kind": "concept",
+      "durationSec": 150,
+      "screen": {
+        "visual": "cost budget strip",
+        "content": {
+          "tag": "Gobierno del workshop",
+          "title": "El coste se controla por bucles",
+          "body": "El workshop usa tres bucles cortos: mapa read-only, patch acotado y validacion cercana. Asi se evita que Codex lea media aplicacion o convierta un bug en refactor.",
+          "highlight": "La unidad de coste no es el prompt: es el rework evitado.",
+          "points": [
+            "Modelo recomendado: equilibrado para bugfix pequeño.",
+            "Permiso: read-only primero, write solo tras plan.",
+            "Comando: test cercano, no suite global de entrada.",
+            "Cierre: registrar coste estimado y riesgo."
+          ]
+        }
+      },
+      "voiceover": [
+        "Esta es la parte que hace sostenible la adopcion.",
+        "No prohibimos potencia: la dosificamos.",
+        "Cada ejercicio debe enseñar una decision de coste."
+      ],
+      "action": {
+        "type": "narrate",
+        "label": "Registrar presupuesto",
+        "detail": "Apuntar modelo, permisos y checks ejecutados."
+      }
+    },
+    {
+      "id": "handoff",
+      "name": "Handoff final",
+      "chapterId": "close",
+      "kind": "coding",
+      "durationSec": 150,
+      "screen": {
+        "visual": "handoff markdown",
+        "content": {
+          "filename": "handoff.md",
+          "language": "markdown",
+          "code": "## Handoff CX-W01\n\nObjetivo: login case-insensitive.\nArchivos leidos: src/auth/validate-login.ts, tests/auth/login.spec.ts.\nArchivos modificados: src/auth/validate-login.ts, tests/auth/login.spec.ts.\nCambio: normalizacion trim/lowercase antes de comparar.\nCheck: pnpm test -- auth/login.spec.ts -> passing.\nCoste: bajo; 1 mapa read-only + 1 patch + 1 test.\nRiesgo: revisar comportamiento con emails legacy con espacios.\nSiguiente accion: PR pequeño con descripcion del caso cubierto."
+        }
+      },
+      "voiceover": [
+        "El cierre no es decoracion.",
+        "Es lo que permite tutorias utiles y continuidad entre sesiones.",
+        "Si el alumno no puede escribir esto, todavia no ha terminado."
+      ],
+      "action": {
+        "type": "handoff",
+        "label": "Entregar handoff",
+        "detail": "El participante pega el handoff en la ficha del ejercicio o PR."
+      }
+    },
+    {
+      "id": "facilitator-review",
+      "name": "Revision del facilitador",
+      "chapterId": "close",
+      "kind": "preview",
+      "durationSec": 150,
+      "screen": {
+        "visual": "rubric dashboard",
+        "content": {
+          "title": "Rubrica del workshop",
+          "description": "El formador evalua metodo, no solo si el codigo funciona.",
+          "items": [
+            { "label": "Mapa antes de patch", "value": "OK" },
+            { "label": "Scope controlado", "value": "OK" },
+            { "label": "Check cercano", "value": "OK" },
+            { "label": "Handoff legible", "value": "OK" }
+          ]
+        }
+      },
+      "voiceover": [
+        "La revision debe premiar comportamiento repetible.",
+        "Un patch correcto con mal metodo no escala.",
+        "Un metodo bueno convierte la tutoria en conversacion tecnica."
+      ],
+      "action": {
+        "type": "human-decision",
+        "label": "Puntuar rubrica",
+        "detail": "El facilitador marca evidencias y decide si el alumno pasa al siguiente bloque."
+      }
+    },
+    {
+      "id": "finale",
+      "name": "Cierre",
+      "chapterId": "close",
+      "kind": "finale",
+      "durationSec": 150,
+      "screen": {
+        "visual": "summary cards",
+        "content": {
+          "title": "Primer workshop completado",
+          "summary": [
+            { "number": "01", "label": "Mapa", "body": "Codex explora antes de editar." },
+            { "number": "02", "label": "Patch", "body": "El cambio es pequeño, revisable y con test." },
+            { "number": "03", "label": "Handoff", "body": "La evidencia permite tutoria y continuidad." }
+          ],
+          "cta": "Siguiente: Codex Potente con modelos, MCP readonly y skills."
+        }
+      },
+      "voiceover": [
+        "Este workshop instala el reflejo base.",
+        "A partir de aqui ya podemos hablar de MCP, skills y swarms.",
+        "Sin esta base, lo avanzado solo produce ruido mas rapido."
+      ],
+      "action": {
+        "type": "handoff",
+        "label": "Cerrar workshop",
+        "detail": "Guardar prompt, diff, test y handoff como evidencia."
+      }
+    }
+  ]
+}

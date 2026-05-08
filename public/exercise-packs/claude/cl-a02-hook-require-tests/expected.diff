@@ -1,0 +1,9 @@
+diff --git a/README.md b/README.md
+--- a/README.md
++++ b/README.md
+@@
++# Evidencia de ejercicio
++- Ejercicio: cl-a02-hook-require-tests
++- Resultado: salida verificable
++- Coste: medio
++- Permisos: write hook script

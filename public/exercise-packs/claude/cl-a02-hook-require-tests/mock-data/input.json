@@ -1,0 +1,21 @@
+{
+  "vendor": "claude",
+  "exerciseId": "cl-a02-hook-require-tests",
+  "title": "Hook Stop de verificacion",
+  "surface": "Hooks",
+  "recommendedModel": "Sonnet",
+  "permissionMode": "write hook script",
+  "estimatedCost": "medio",
+  "intentionalErrors": [
+    "briefing demasiado amplio",
+    "falta de evidencia",
+    "coste sin registrar"
+  ],
+  "expectedArtifacts": [
+    "prompt",
+    "resultado",
+    "evidencia",
+    "coste",
+    "decision"
+  ]
+}

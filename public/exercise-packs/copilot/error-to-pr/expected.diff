@@ -1,0 +1,21 @@
+diff --git a/src/cart/total.ts b/src/cart/total.ts
+--- a/src/cart/total.ts
++++ b/src/cart/total.ts
+@@
+-  return items.reduce((sum, item) => sum + item.price.amount * item.quantity, 0)
++  return items.reduce((sum, item) => {
++    const amount = item.price?.amount ?? 0
++    return sum + amount * item.quantity
++  }, 0)
+diff --git a/tests/cart/total.spec.ts b/tests/cart/total.spec.ts
+--- a/tests/cart/total.spec.ts
++++ b/tests/cart/total.spec.ts
+@@
++it('treats legacy items without price as zero', () => {
++  const total = calculateTotal([
++    { id: 'legacy-1', quantity: 2 },
++    { id: 'sku-2', quantity: 1, price: { amount: 1250, currency: 'EUR' } },
++  ])
++
++  expect(total).toBe(1250)
++})

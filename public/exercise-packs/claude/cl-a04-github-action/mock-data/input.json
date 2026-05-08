@@ -1,0 +1,21 @@
+{
+  "vendor": "claude",
+  "exerciseId": "cl-a04-github-action",
+  "title": "Claude en GitHub Actions",
+  "surface": "GitHub Actions",
+  "recommendedModel": "Sonnet",
+  "permissionMode": "CI read + PR comment",
+  "estimatedCost": "medio-alto: CI + tokens + reintentos",
+  "intentionalErrors": [
+    "briefing demasiado amplio",
+    "falta de evidencia",
+    "coste sin registrar"
+  ],
+  "expectedArtifacts": [
+    "prompt",
+    "resultado",
+    "evidencia",
+    "coste",
+    "decision"
+  ]
+}

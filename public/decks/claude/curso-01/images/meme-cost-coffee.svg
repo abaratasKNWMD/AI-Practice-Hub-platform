@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="620" viewBox="0 0 1100 620" role="img" aria-labelledby="title desc">
+  <title id="title">Token coffee meme</title>
+  <desc id="desc">A humorous cost awareness visual using a coffee cup shaped like a usage meter.</desc>
+  <rect width="1100" height="620" rx="34" fill="#11100f"/>
+  <text x="105" y="112" font-family="Inter, Arial, sans-serif" font-size="34" font-weight="900" fill="#fff7f0">El cafe de tokens</text>
+  <text x="105" y="148" font-family="Inter, Arial, sans-serif" font-size="18" fill="#b9aea3">Una cosita mas... dentro de una sesion enorme.</text>
+  <g transform="translate(170 205)" font-family="Inter, Arial, sans-serif">
+    <rect x="0" y="40" width="380" height="250" rx="34" fill="#211713" stroke="#ffd27a" stroke-opacity="0.42"/>
+    <rect x="70" y="80" width="200" height="160" rx="24" fill="#f8f3eb"/>
+    <path d="M270 112H318C350 112 350 208 318 208H270" fill="none" stroke="#f8f3eb" stroke-width="22" stroke-linecap="round"/>
+    <rect x="88" y="104" width="164" height="32" rx="16" fill="#75e6c0"/>
+    <rect x="88" y="148" width="164" height="32" rx="16" fill="#ffd27a"/>
+    <rect x="88" y="192" width="164" height="32" rx="16" fill="#ff9aad"/>
+    <text x="190" y="330" text-anchor="middle" font-size="17" font-weight="800" fill="#ffe6ad">/usage antes del refill</text>
+    <rect x="500" y="40" width="330" height="250" rx="34" fill="#111817" stroke="#75e6c0" stroke-opacity="0.42"/>
+    <text x="665" y="112" text-anchor="middle" font-size="24" font-weight="900" fill="#c9fff0">Decision rapida</text>
+    <text x="665" y="160" text-anchor="middle" font-size="16" fill="#b9aea3">Sigue la misma tarea?</text>
+    <text x="665" y="198" text-anchor="middle" font-size="16" fill="#b9aea3">/compact</text>
+    <text x="665" y="238" text-anchor="middle" font-size="16" fill="#b9aea3">Cambio de tema?</text>
+    <text x="665" y="276" text-anchor="middle" font-size="16" fill="#b9aea3">/clear</text>
+  </g>
+</svg>

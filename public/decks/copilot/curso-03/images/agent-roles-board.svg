@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 760" role="img" aria-labelledby="title desc">
+  <title id="title">Custom agent roles board</title>
+  <desc id="desc">A board of specialized Copilot agents for explaining, planning, implementing, reviewing and security.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#081225"/>
+      <stop offset="1" stop-color="#071f1b"/>
+    </linearGradient>
+    <style>
+      .title{font:900 34px Inter,Segoe UI,sans-serif;fill:#f8fbff}
+      .label{font:850 20px Inter,Segoe UI,sans-serif;fill:#f8fbff}
+      .small{font:700 15px Inter,Segoe UI,sans-serif;fill:#aebbd0}
+      .mono{font:650 16px ui-monospace,SFMono-Regular,Consolas,monospace;fill:#dce8f7}
+      .card{fill:#ffffff;fill-opacity:.07;stroke:#ffffff;stroke-opacity:.14}
+    </style>
+  </defs>
+  <rect width="1200" height="760" rx="34" fill="url(#bg)"/>
+  <text x="70" y="88" class="title">Agentes personalizados: rol + limite + salida</text>
+  <text x="72" y="122" class="small">Un agente bueno reduce ambiguedad; un catalogo infinito solo cambia el ruido de sitio.</text>
+  <g transform="translate(124 182)">
+    <rect width="952" height="418" rx="32" class="card"/>
+    <g transform="translate(56 70)">
+      <rect width="240" height="118" rx="24" fill="#5ddcff" fill-opacity=".13" stroke="#5ddcff" stroke-opacity=".36"/>
+      <text x="28" y="44" class="label">Explainer</text>
+      <text x="28" y="76" class="small">no edita, aclara</text>
+      <rect x="300" width="240" height="118" rx="24" fill="#62e6a2" fill-opacity=".13" stroke="#62e6a2" stroke-opacity=".36"/>
+      <text x="328" y="44" class="label">Planner</text>
+      <text x="328" y="76" class="small">alcance y riesgo</text>
+      <rect x="600" width="240" height="118" rx="24" fill="#f8c96a" fill-opacity=".13" stroke="#f8c96a" stroke-opacity=".36"/>
+      <text x="628" y="44" class="label">Implementer</text>
+      <text x="628" y="76" class="small">edita con limites</text>
+      <rect x="150" y="166" width="240" height="118" rx="24" fill="#ffffff" fill-opacity=".08" stroke="#ffffff" stroke-opacity=".16"/>
+      <text x="178" y="210" class="label">Reviewer</text>
+      <text x="178" y="242" class="small">findings concretos</text>
+      <rect x="450" y="166" width="240" height="118" rx="24" fill="#ffffff" fill-opacity=".08" stroke="#ffffff" stroke-opacity=".16"/>
+      <text x="478" y="210" class="label">Security</text>
+      <text x="478" y="242" class="small">secrets, auth, data</text>
+    </g>
+  </g>
+</svg>

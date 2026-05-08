@@ -1,0 +1,52 @@
+# Ejemplo de config Codex Ultra.
+# Copiar a .codex/config.toml solo en proyectos de confianza.
+
+model = "gpt-5.5"
+model_reasoning_effort = "medium"
+model_verbosity = "low"
+sandbox_mode = "workspace-write"
+approval_policy = "on-request"
+tool_output_token_limit = 20000
+
+[agents]
+max_threads = 6
+max_depth = 1
+job_max_runtime_seconds = 1800
+
+[mcp_servers.openaiDeveloperDocs]
+url = "https://developers.openai.com/mcp"
+enabled = true
+tool_timeout_sec = 45
+
+[mcp_servers.local_code_rag]
+command = "node"
+args = ["materiales/ejemplos/rag-ast-mini/src/mcp-mock.mjs"]
+cwd = "."
+enabled = false
+startup_timeout_sec = 10
+tool_timeout_sec = 30
+enabled_tools = ["search_symbol", "find_related_tests"]
+
+[[skills.config]]
+path = "materiales/skills/pr-swarm-codex"
+enabled = true
+
+[permissions.ultra_readonly.filesystem]
+":project_roots" = "read"
+"**/.env*" = "none"
+"**/*secret*" = "none"
+
+[permissions.ultra_workspace.filesystem]
+":project_roots" = "write"
+"**/.env*" = "none"
+"**/*secret*" = "none"
+
+[profiles.review]
+model = "gpt-5.5"
+model_reasoning_effort = "high"
+sandbox_mode = "read-only"
+
+[profiles.fast_triage]
+model = "gpt-5.4-mini"
+model_reasoning_effort = "low"
+sandbox_mode = "read-only"

@@ -1,0 +1,21 @@
+{
+  "vendor": "claude",
+  "exerciseId": "cl-o06-model-routing",
+  "title": "Routing de modelos por coste",
+  "surface": "Model picker",
+  "recommendedModel": "Haiku + Sonnet + Opus",
+  "permissionMode": "governance",
+  "estimatedCost": "bajo: diseño de politica",
+  "intentionalErrors": [
+    "briefing demasiado amplio",
+    "falta de evidencia",
+    "coste sin registrar"
+  ],
+  "expectedArtifacts": [
+    "prompt",
+    "resultado",
+    "evidencia",
+    "coste",
+    "decision"
+  ]
+}

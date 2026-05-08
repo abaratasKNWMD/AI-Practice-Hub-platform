@@ -1,0 +1,21 @@
+{
+  "vendor": "codex",
+  "exerciseId": "cx-e02-mcp-policy",
+  "title": "Politica MCP enterprise",
+  "surface": "MCP governance",
+  "recommendedModel": "GPT-5.4",
+  "permissionMode": "read-only",
+  "estimatedCost": "Bajo: diseno de politica",
+  "intentionalErrors": [
+    "briefing demasiado amplio",
+    "falta de evidencia",
+    "coste sin registrar"
+  ],
+  "expectedArtifacts": [
+    "prompt",
+    "resultado",
+    "evidencia",
+    "coste",
+    "decision"
+  ]
+}

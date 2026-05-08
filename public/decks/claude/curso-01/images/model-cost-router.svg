@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="620" viewBox="0 0 1100 620" role="img" aria-labelledby="title desc">
+  <title id="title">Model cost router</title>
+  <desc id="desc">Model routing based on complexity, risk and cost.</desc>
+  <rect width="1100" height="620" rx="34" fill="#0d0b0a"/>
+  <text x="92" y="110" font-family="Inter, Arial, sans-serif" font-size="34" font-weight="900" fill="#fff7f0">Router de modelos</text>
+  <text x="92" y="146" font-family="Inter, Arial, sans-serif" font-size="18" fill="#b9aea3">Elegir potencia segun dificultad, riesgo y retorno.</text>
+  <g transform="translate(110 225)" font-family="Inter, Arial, sans-serif">
+    <rect width="250" height="220" rx="26" fill="#111817" stroke="#75e6c0" stroke-opacity="0.45"/>
+    <text x="125" y="62" text-anchor="middle" font-size="25" font-weight="900" fill="#c9fff0">Rapido</text>
+    <text x="125" y="102" text-anchor="middle" font-size="15" fill="#b9aea3">lectura</text>
+    <text x="125" y="132" text-anchor="middle" font-size="15" fill="#b9aea3">clasificar</text>
+    <text x="125" y="162" text-anchor="middle" font-size="15" fill="#b9aea3">resumir</text>
+    <rect x="315" width="250" height="220" rx="26" fill="#171313" stroke="#ffd27a" stroke-opacity="0.45"/>
+    <text x="440" y="62" text-anchor="middle" font-size="25" font-weight="900" fill="#ffe6ad">Diario</text>
+    <text x="440" y="102" text-anchor="middle" font-size="15" fill="#b9aea3">bugfix</text>
+    <text x="440" y="132" text-anchor="middle" font-size="15" fill="#b9aea3">tests</text>
+    <text x="440" y="162" text-anchor="middle" font-size="15" fill="#b9aea3">refactor corto</text>
+    <rect x="630" width="250" height="220" rx="26" fill="#211713" stroke="#ff9aad" stroke-opacity="0.45"/>
+    <text x="755" y="62" text-anchor="middle" font-size="25" font-weight="900" fill="#ffdfe5">Fuerte</text>
+    <text x="755" y="102" text-anchor="middle" font-size="15" fill="#b9aea3">arquitectura</text>
+    <text x="755" y="132" text-anchor="middle" font-size="15" fill="#b9aea3">riesgo alto</text>
+    <text x="755" y="162" text-anchor="middle" font-size="15" fill="#b9aea3">ambiguedad</text>
+    <path d="M250 110H315M565 110H630" stroke="#fff" stroke-opacity="0.28" stroke-width="4" stroke-linecap="round"/>
+  </g>
+</svg>

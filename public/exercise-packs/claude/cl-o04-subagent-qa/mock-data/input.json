@@ -1,0 +1,21 @@
+{
+  "vendor": "claude",
+  "exerciseId": "cl-o04-subagent-qa",
+  "title": "Subagente QA reviewer",
+  "surface": ".claude/agents",
+  "recommendedModel": "Sonnet",
+  "permissionMode": "read + bash tests",
+  "estimatedCost": "medio: revision focalizada",
+  "intentionalErrors": [
+    "briefing demasiado amplio",
+    "falta de evidencia",
+    "coste sin registrar"
+  ],
+  "expectedArtifacts": [
+    "prompt",
+    "resultado",
+    "evidencia",
+    "coste",
+    "decision"
+  ]
+}

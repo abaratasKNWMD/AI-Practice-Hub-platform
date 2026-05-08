@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 760" role="img" aria-labelledby="title desc">
+  <title id="title">Prompt file workbench</title>
+  <desc id="desc">A prompt file workbench showing YAML header, mode, model, tools and reusable task body.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#081225"/>
+      <stop offset="1" stop-color="#071a18"/>
+    </linearGradient>
+    <style>
+      .title{font:900 34px Inter,Segoe UI,sans-serif;fill:#f8fbff}
+      .label{font:850 20px Inter,Segoe UI,sans-serif;fill:#f8fbff}
+      .small{font:700 15px Inter,Segoe UI,sans-serif;fill:#aebbd0}
+      .mono{font:650 17px ui-monospace,SFMono-Regular,Consolas,monospace;fill:#dce8f7}
+      .green{fill:#62e6a2}
+      .blue{fill:#5ddcff}
+      .card{fill:#ffffff;fill-opacity:.07;stroke:#ffffff;stroke-opacity:.14}
+    </style>
+  </defs>
+  <rect width="1200" height="760" rx="34" fill="url(#bg)"/>
+  <text x="70" y="88" class="title">Prompt files: workflows que se invocan</text>
+  <text x="72" y="122" class="small">Si una tarea se repite, el prompt deja de vivir en la cabeza de alguien.</text>
+  <g transform="translate(132 174)">
+    <rect width="936" height="430" rx="30" class="card"/>
+    <rect width="936" height="58" rx="30" fill="#ffffff" fill-opacity=".08"/>
+    <text x="34" y="37" class="small">.github/prompts/update-readme.prompt.md</text>
+    <g transform="translate(54 104)">
+      <text x="0" y="0" class="mono blue">---</text>
+      <text x="0" y="38" class="mono">mode: agent</text>
+      <text x="0" y="76" class="mono">model: balanced</text>
+      <text x="0" y="114" class="mono">tools: ['codebase', 'markdownlint']</text>
+      <text x="0" y="152" class="mono">description: Update README after changes</text>
+      <text x="0" y="190" class="mono blue">---</text>
+      <text x="0" y="244" class="mono green">Use the existing README structure.</text>
+      <text x="0" y="282" class="mono green">Summarize changed behavior and tests.</text>
+    </g>
+    <g transform="translate(656 106)">
+      <rect width="216" height="66" rx="20" fill="#5ddcff" fill-opacity=".13" stroke="#5ddcff" stroke-opacity=".34"/>
+      <text x="28" y="41" class="label">Modo</text>
+      <rect y="96" width="216" height="66" rx="20" fill="#62e6a2" fill-opacity=".13" stroke="#62e6a2" stroke-opacity=".34"/>
+      <text x="28" y="137" class="label">Modelo</text>
+      <rect y="192" width="216" height="66" rx="20" fill="#f8c96a" fill-opacity=".13" stroke="#f8c96a" stroke-opacity=".34"/>
+      <text x="28" y="233" class="label">Tools</text>
+    </g>
+  </g>
+</svg>

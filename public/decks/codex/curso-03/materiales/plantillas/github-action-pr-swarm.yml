@@ -1,0 +1,42 @@
+name: codex-pr-swarm
+
+on:
+  pull_request:
+    types: [opened, synchronize, reopened]
+
+permissions:
+  contents: read
+  pull-requests: write
+  checks: write
+
+jobs:
+  swarm:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Build diff bundle
+        run: |
+          mkdir -p .codex-artifacts
+          git diff origin/${{ github.base_ref }}...HEAD > .codex-artifacts/pr.diff
+
+      - name: Run local PR swarm prototype
+        run: |
+          cd curso-codex-ultra-avanzado-web/materiales/ejemplos/pr-swarm-local
+          npm ci
+          npm test
+          npm run review -- ../../../../.codex-artifacts/pr.diff
+
+      - name: Upload findings
+        uses: actions/upload-artifact@v4
+        with:
+          name: codex-pr-swarm-findings
+          path: curso-codex-ultra-avanzado-web/materiales/ejemplos/pr-swarm-local/out/review.json
+
+      # En produccion, anade un paso que convierta review.json en comentario PR.
+      # Gate recomendado:
+      # - high finding => request changes o escalate
+      # - medium finding => human review
+      # - no findings + tests verdes => approve summary

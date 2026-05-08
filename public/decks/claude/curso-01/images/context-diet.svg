@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" role="img" aria-labelledby="title desc">
+  <title id="title">Dieta de contexto para Claude</title>
+  <desc id="desc">Infografia sobre contexto suficiente frente a contexto excesivo en Claude Code.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#fbf4ec"/>
+      <stop offset="1" stop-color="#dfece7"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="16" stdDeviation="16" flood-color="#1f1710" flood-opacity="0.16"/>
+    </filter>
+  </defs>
+  <rect width="1280" height="720" rx="36" fill="url(#bg)"/>
+  <text x="84" y="86" font-family="Inter, Arial, sans-serif" font-size="44" font-weight="900" fill="#251c15">Dieta de contexto</text>
+  <text x="84" y="124" font-family="Inter, Arial, sans-serif" font-size="22" fill="#6f5c49">Claude rinde mejor con contexto suficiente, no con todo el universo.</text>
+  <g filter="url(#shadow)">
+    <rect x="84" y="182" width="312" height="114" rx="26" fill="#fff8ee"/>
+    <rect x="84" y="326" width="312" height="114" rx="26" fill="#fff8ee"/>
+    <rect x="84" y="470" width="312" height="114" rx="26" fill="#fff8ee"/>
+    <rect x="884" y="214" width="312" height="114" rx="26" fill="#f3fbf7"/>
+    <rect x="884" y="390" width="312" height="114" rx="26" fill="#f3fbf7"/>
+  </g>
+  <g font-family="Inter, Arial, sans-serif" fill="#2a2119">
+    <text x="124" y="226" font-size="26" font-weight="900">Entra siempre</text>
+    <text x="124" y="260" font-size="19">objetivo, alcance y criterio de cierre</text>
+    <text x="124" y="370" font-size="26" font-weight="900">Entra si desbloquea</text>
+    <text x="124" y="404" font-size="19">logs, docs, tickets, capturas</text>
+    <text x="124" y="514" font-size="26" font-weight="900">No entra por rutina</text>
+    <text x="124" y="548" font-size="19">repo completo, .env, historia eterna</text>
+    <text x="924" y="258" font-size="26" font-weight="900">Memoria estable</text>
+    <text x="924" y="292" font-size="19">CLAUDE.md, rules, skills</text>
+    <text x="924" y="434" font-size="26" font-weight="900">Contexto puntual</text>
+    <text x="924" y="468" font-size="19">lo que decide esta tarea</text>
+  </g>
+  <path d="M444 240 C540 218 584 246 640 318 C696 246 740 218 836 240" fill="none" stroke="#8b6f54" stroke-width="7" stroke-linecap="round"/>
+  <path d="M444 386 C540 364 584 392 640 464 C696 392 740 364 836 386" fill="none" stroke="#8b6f54" stroke-width="7" stroke-linecap="round"/>
+  <path d="M640 278 L728 428 L552 428 Z" fill="#1d1d1d"/>
+  <rect x="546" y="428" width="188" height="106" rx="22" fill="#1d1d1d"/>
+  <text x="640" y="390" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="27" font-weight="900" fill="#fff">Claude</text>
+  <text x="640" y="472" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="22" font-weight="800" fill="#f5d7a8">decide mejor</text>
+  <text x="640" y="502" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="17" fill="#e8ded4">cuando filtramos</text>
+  <circle cx="640" cy="596" r="38" fill="#e76f51"/>
+  <text x="640" y="603" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="34" font-weight="900" fill="#fff">!</text>
+  <text x="704" y="604" font-family="Inter, Arial, sans-serif" font-size="20" font-weight="800" fill="#47382b">Cada token que no decide, distrae.</text>
+</svg>

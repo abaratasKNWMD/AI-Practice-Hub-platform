@@ -1,0 +1,9 @@
+diff --git a/README.md b/README.md
+--- a/README.md
++++ b/README.md
+@@
++# Evidencia de ejercicio
++- Ejercicio: cx-b04-bug-login
++- Resultado: salida verificable
++- Coste: Medio-bajo: exploracion, patch y tests
++- Permisos: workspace-write

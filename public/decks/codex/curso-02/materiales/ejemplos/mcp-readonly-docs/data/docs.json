@@ -1,0 +1,17 @@
+[
+  {
+    "id": "deploy-checklist",
+    "title": "Checklist de despliegue",
+    "body": "Antes de desplegar, ejecutar tests, revisar variables, confirmar migraciones y preparar rollback."
+  },
+  {
+    "id": "auth-runbook",
+    "title": "Runbook de autenticacion",
+    "body": "Los cambios de auth requieren revision de seguridad, tests de refresh token y validacion de sesiones expiradas."
+  },
+  {
+    "id": "ui-qa",
+    "title": "QA visual",
+    "body": "Para bugs visuales, adjuntar captura actual, captura esperada, viewport y ruta del componente."
+  }
+]

@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="620" viewBox="0 0 1100 620" role="img" aria-labelledby="title desc">
+  <title id="title">Skill workbench</title>
+  <desc id="desc">Claude skill folder with SKILL.md, references and scripts.</desc>
+  <rect width="1100" height="620" rx="34" fill="#0c0a09"/>
+  <text x="92" y="110" font-family="Inter, Arial, sans-serif" font-size="34" font-weight="900" fill="#fff7f0">Skill workbench</text>
+  <text x="92" y="146" font-family="Inter, Arial, sans-serif" font-size="18" fill="#b9aea3">Instrucciones, referencias y scripts que se cargan cuando aportan valor.</text>
+  <g transform="translate(120 210)" font-family="Inter, Arial, sans-serif">
+    <rect width="860" height="290" rx="26" fill="#15110f" stroke="#fff" stroke-opacity="0.12"/>
+    <rect x="36" y="40" width="250" height="210" rx="20" fill="#211713" stroke="#ff9aad" stroke-opacity="0.4"/>
+    <text x="64" y="84" font-size="22" font-weight="900" fill="#ffdfe5">SKILL.md</text>
+    <text x="64" y="122" font-size="15" fill="#b9aea3">trigger</text>
+    <text x="64" y="154" font-size="15" fill="#b9aea3">steps</text>
+    <text x="64" y="186" font-size="15" fill="#b9aea3">output contract</text>
+    <rect x="324" y="40" width="220" height="210" rx="20" fill="#171313" stroke="#ffd27a" stroke-opacity="0.4"/>
+    <text x="352" y="84" font-size="22" font-weight="900" fill="#ffe6ad">references</text>
+    <text x="352" y="122" font-size="15" fill="#b9aea3">rubrics</text>
+    <text x="352" y="154" font-size="15" fill="#b9aea3">examples</text>
+    <text x="352" y="186" font-size="15" fill="#b9aea3">policies</text>
+    <rect x="582" y="40" width="240" height="210" rx="20" fill="#111817" stroke="#75e6c0" stroke-opacity="0.4"/>
+    <text x="610" y="84" font-size="22" font-weight="900" fill="#c9fff0">scripts</text>
+    <text x="610" y="122" font-size="15" fill="#b9aea3">test wrappers</text>
+    <text x="610" y="154" font-size="15" fill="#b9aea3">format checks</text>
+    <text x="610" y="186" font-size="15" fill="#b9aea3">small tools</text>
+  </g>
+</svg>

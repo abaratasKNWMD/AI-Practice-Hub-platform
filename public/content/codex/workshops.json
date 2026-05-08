@@ -1,0 +1,84 @@
+[
+  {
+    "id": "codex-workshop-basic-activation",
+    "title": "Workshop 01 - Activacion Codex para equipos sin IA",
+    "duration": "2h",
+    "audience": "Desarrolladores que conocen el repo pero aun no trabajan con Codex de forma habitual.",
+    "challengeIds": ["cx-b01-repo-map", "cx-b02-prompt-4-piezas", "cx-b04-bug-login", "cx-b05-review-diff"],
+    "videoSlugs": ["cx-workshop-30m-first-real-task", "cx-orientation-01-surface-map", "cx-orientation-02-first-task", "cx-basic-02-plan-before-patch"],
+    "facilitatorNotes": [
+      "La sesion empieza despues de que los alumnos hayan consumido los microvideos.",
+      "El profesor no explica git ni conceptos base: valida criterio, desbloquea dudas y fuerza evidencia.",
+      "El cierre debe producir una lista de prompts reutilizables por equipo."
+    ],
+    "outputs": [
+      "Mapa del repo con rutas criticas.",
+      "Prompt de cuatro piezas adaptado al equipo.",
+      "Bug resuelto o diagnostico verificable.",
+      "Review de diff con findings accionables."
+    ]
+  },
+  {
+    "id": "codex-workshop-potente-operacion",
+    "title": "Workshop 02 - Codex potente en operacion real",
+    "duration": "3h",
+    "audience": "Equipos que ya usan Codex y necesitan modelos, permisos, MCPs, skills y QA.",
+    "challengeIds": ["cx-m01-config-safe", "cx-m02-modelos-coste", "cx-m03-mcp-readonly", "cx-m04-skill-qa", "cx-m06-debug-ui"],
+    "videoSlugs": ["cx-medium-01-model-picker", "cx-medium-02-mcp-readonly", "cx-medium-03-skill-qa-visual"],
+    "facilitatorNotes": [
+      "El foco no es demostrar potencia, sino convertir potencia en habito repetible.",
+      "Forzar registro de coste por ejercicio para que el equipo aprenda a escalar modelo con cabeza.",
+      "Cerrar con una skill o checklist que se pueda copiar al repo real."
+    ],
+    "outputs": [
+      "Politica local de modelos y esfuerzo.",
+      "Inventario MCP con riesgo y valor.",
+      "Skill QA visual adaptada.",
+      "Registro de coste de una sesion real."
+    ]
+  },
+  {
+    "id": "codex-workshop-ultra-platform",
+    "title": "Workshop 03 - Plataforma Codex ultra y swarms",
+    "duration": "4h",
+    "audience": "Tech leads, platform engineers y responsables de adopcion IA.",
+    "challengeIds": ["cx-a01-github-action", "cx-a02-output-schema", "cx-u01-pr-swarm", "cx-u02-rag-ast", "cx-u04-jueces-evals", "cx-e01-cost-budget"],
+    "videoSlugs": ["cx-ultra-01-github-action", "cx-ultra-02-pr-swarm", "cx-medium-01-model-picker"],
+    "facilitatorNotes": [
+      "Trabajar con un PR o repo realista, no con ejemplos de juguete si el grupo es senior.",
+      "Limitar el swarm a roles utiles y salidas estructuradas.",
+      "Cerrar con decision de gobierno: que se automatiza, que queda humano y cuanto cuesta."
+    ],
+    "outputs": [
+      "Workflow PR swarm con limites de coste.",
+      "Schema de salida para findings.",
+      "Diseno RAG AST para codigo legacy.",
+      "Rubrica de evaluacion con LLM-as-a-Judge.",
+      "Presupuesto operativo por tipo de tarea."
+    ]
+  },
+  {
+    "id": "codex-workshop-1h-first-task-to-pr",
+    "title": "Workshop 1h - Codex first task to PR",
+    "duration": "1h",
+    "audience": "Desarrolladores que ya han visto la ruta basica y necesitan practicar un flujo completo con Codex.",
+    "challengeIds": ["cx-b01-repo-map", "cx-b04-bug-login", "cx-b05-review-diff", "cx-m02-modelos-coste"],
+    "videoSlugs": ["cx-workshop-60m-first-task-to-pr", "cx-workshop-30m-first-real-task", "cx-basic-02-plan-before-patch"],
+    "instructorPackHref": "/workshop-packs/codex/cx-workshop-60m-first-task-to-pr/README.md",
+    "minuteGuideHref": "/workshop-packs/codex/cx-workshop-60m-first-task-to-pr/minute-by-minute.md",
+    "demoHref": "/workshop-packs/codex/cx-workshop-60m-first-task-to-pr/demo-simulated.md",
+    "promptsHref": "/workshop-packs/codex/cx-workshop-60m-first-task-to-pr/prompts.md",
+    "facilitatorNotes": [
+      "No explicar Git ni setup: derivar dudas basicas al material previo.",
+      "Separar explorer readonly, plan, patch, test, review y PR body.",
+      "Cerrar con cost ledger y una duda real para tutoria."
+    ],
+    "outputs": [
+      "Briefing de 4 piezas.",
+      "Mapa readonly del repo.",
+      "Diff minimo con test.",
+      "Review estructurada.",
+      "PR body y registro de coste."
+    ]
+  }
+]

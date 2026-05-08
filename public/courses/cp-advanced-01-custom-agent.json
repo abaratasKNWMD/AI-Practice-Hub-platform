@@ -1,0 +1,75 @@
+{
+  "id": "cp-advanced-01-custom-agent",
+  "title": "Copilot Advanced 01 - Custom Agent",
+  "description": "Custom agents con herramientas acotadas para planificar, implementar y revisar.",
+  "template": "technical",
+  "durationPreset": 5,
+  "durationMs": 90000,
+  "voice": "es-ES-AlvaroNeural",
+  "author": "AI Practice Hub",
+  "createdAt": "2026-05-07T00:00:00.000Z",
+  "chapters": [
+    { "id": "start", "label": "Agent", "startMs": 0 },
+    { "id": "code", "label": ".agent.md", "startMs": 9000 },
+    { "id": "close", "label": "Roles", "startMs": 65000 }
+  ],
+  "scenes": [
+    {
+      "id": "title",
+      "name": "Apertura",
+      "startMs": 0,
+      "endMs": 9000,
+      "type": "title",
+      "content": {
+        "title": "Custom agents",
+        "subtitle": "Un agente no es un prompt largo: es un rol con herramientas.",
+        "tag": "Copilot Advanced"
+      },
+      "subtitles": [
+        { "text": "Custom agents sirven para separar responsabilidades y limitar herramientas.", "startMs": 1000, "endMs": 8200 }
+      ]
+    },
+    {
+      "id": "coding",
+      "name": "Agent profile",
+      "startMs": 9000,
+      "endMs": 65000,
+      "type": "coding",
+      "content": {
+        "tag": ".github/agents",
+        "filename": "planner.agent.md",
+        "code": "---\nname: Planner\ndescription: \"Plans implementation work without editing files.\"\ntarget: vscode\ntools: [\"read\", \"search\"]\n---\n\n# Planner agent\n\nInspect relevant files, propose a short plan, name risks and verification steps.\n\nDo not edit files. Do not run destructive commands.",
+        "commentary": [
+          { "atLine": 3, "text": "Para invocacion" },
+          { "atLine": 4, "text": "Entorno" },
+          { "atLine": 5, "text": "Tools acotadas" },
+          { "atLine": 12, "text": "Limite duro" }
+        ]
+      },
+      "subtitles": [
+        { "text": "El planner solo lee y busca.", "startMs": 10000, "endMs": 23000 },
+        { "text": "El implementer puede editar y ejecutar.", "startMs": 24000, "endMs": 37000 },
+        { "text": "El reviewer vuelve a read-only y findings.", "startMs": 38000, "endMs": 62000 }
+      ]
+    },
+    {
+      "id": "finale",
+      "name": "Cierre",
+      "startMs": 65000,
+      "endMs": 90000,
+      "type": "finale",
+      "content": {
+        "title": "Agentes con frontera",
+        "summary": [
+          { "number": "01", "label": "Planner", "body": "Lee y planifica." },
+          { "number": "02", "label": "Implementer", "body": "Edita y verifica." },
+          { "number": "03", "label": "Reviewer", "body": "Evalua con evidencia." }
+        ],
+        "cta": "Ejercicio: cp-a02-custom-planner-agent."
+      },
+      "subtitles": [
+        { "text": "Buenos agentes tienen frontera. Sin frontera, solo hay ruido.", "startMs": 66000, "endMs": 89000 }
+      ]
+    }
+  ]
+}

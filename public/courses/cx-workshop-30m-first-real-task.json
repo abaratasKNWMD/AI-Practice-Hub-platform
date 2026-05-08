@@ -1,0 +1,3277 @@
+{
+  "id": "cx-workshop-30m-first-real-task",
+  "title": "Codex Workshop 30m - First Real Task",
+  "description": "Workshop simulado de 30 minutos para pasar de repo desconocido a bugfix verificable con AGENTS.md, prompts, permisos, tests y handoff.",
+  "template": "technical",
+  "durationPreset": 30,
+  "durationMs": 1800000,
+  "voice": "es-ES-AlvaroNeural",
+  "author": "AI Practice Hub",
+  "createdAt": "2026-05-08T00:00:00.000Z",
+  "chapters": [
+    {
+      "id": "briefing",
+      "label": "Briefing",
+      "startMs": 0
+    },
+    {
+      "id": "map",
+      "label": "Mapa read-only",
+      "startMs": 300000
+    },
+    {
+      "id": "agents",
+      "label": "AGENTS.md",
+      "startMs": 600000
+    },
+    {
+      "id": "bugfix",
+      "label": "Bugfix",
+      "startMs": 750000
+    },
+    {
+      "id": "close",
+      "label": "Cierre",
+      "startMs": 1350000
+    }
+  ],
+  "scenes": [
+    {
+      "id": "title__beat-01",
+      "name": "Apertura del workshop / Prompt",
+      "startMs": 0,
+      "endMs": 75000,
+      "type": "prompt",
+      "content": {
+        "mode": "prompt",
+        "vendor": "codex",
+        "title": "Apertura del workshop",
+        "eyebrow": "Codex Workshop 30m - First Real Task / Apertura del workshop",
+        "label": "Prompt",
+        "presenterCue": "Abrir con la promesa: aqui no vemos Codex, lo dirigimos.",
+        "actionLabel": "Contexto inicial",
+        "actionDetail": "Presentar repo mock, objetivo del bug y reglas de seguridad.",
+        "prompt": "Presentar repo mock, objetivo del bug y reglas de seguridad.",
+        "response": [
+          "Respuesta simulada con salida verificable.",
+          "Se cita evidencia, se limita alcance y se deja una decision humana clara.",
+          "El cierre declara siguiente paso, coste aproximado y riesgo residual."
+        ],
+        "diff": [
+          "- cambio ambiguo sin criterio de aceptacion",
+          "+ cambio acotado con test, owner y evidencia",
+          "+ registro de modelo, permiso y coste"
+        ],
+        "terminal": [
+          "$ pnpm test -- --runInBand",
+          "✓ test relevante pasa",
+          "✓ no hay errores de consola",
+          "i coste relativo registrado"
+        ],
+        "review": [
+          {
+            "severity": "blocker",
+            "text": "No hay criterios bloqueantes pendientes."
+          },
+          {
+            "severity": "medium",
+            "text": "Presentar repo mock, objetivo del bug y reglas de seguridad."
+          },
+          {
+            "severity": "note",
+            "text": "El humano firma el criterio final."
+          }
+        ],
+        "cost": {
+          "model": "modelo rapido",
+          "tokens": "bajo",
+          "permission": "readonly/workspace segun fase",
+          "stopRule": "Parar si no hay evidencia nueva en el siguiente intento."
+        },
+        "decision": {
+          "question": "Que debe decidir la persona antes de continuar?",
+          "options": [
+            "seguir con alcance actual",
+            "pedir mas contexto",
+            "subir modelo",
+            "bloquear y llevar a tutoria"
+          ],
+          "selected": 0
+        },
+        "risk": {
+          "items": [
+            "Permisos",
+            "Coste",
+            "Contexto",
+            "Calidad",
+            "Responsabilidad humana"
+          ],
+          "level": "bajo"
+        },
+        "branch": {
+          "steps": [
+            "Issue",
+            "Branch",
+            "Plan",
+            "Patch",
+            "Tests",
+            "Review",
+            "PR"
+          ],
+          "active": 2
+        },
+        "quiz": {
+          "question": "Cual es la evidencia minima para cerrar esta pantalla?",
+          "answers": [
+            "Una respuesta convincente",
+            "Un diff probado o decision documentada",
+            "Un prompt mas largo"
+          ],
+          "correct": 1
+        },
+        "source": {
+          "title": "Codex: primera tarea real",
+          "subtitle": "30 minutos para mapear, planificar, editar poco, verificar y cerrar.",
+          "tag": "Workshop / Codex"
+        }
+      },
+      "subtitles": [
+        {
+          "text": "Pantalla de accion: Este workshop simula una primera tarea real con Codex.",
+          "startMs": 400,
+          "endMs": 37200
+        },
+        {
+          "text": "Presentar repo mock, objetivo del bug y reglas de seguridad.",
+          "startMs": 37900,
+          "endMs": 74500
+        }
+      ],
+      "voiceover": [
+        "Pantalla de accion: Este workshop simula una primera tarea real con Codex.",
+        "Presentar repo mock, objetivo del bug y reglas de seguridad."
+      ],
+      "screen": {
+        "mode": "prompt",
+        "title": "Apertura del workshop",
+        "visual": "prompt"
+      },
+      "blueprintAction": {
+        "type": "narrate",
+        "label": "Contexto inicial",
+        "detail": "Presentar repo mock, objetivo del bug y reglas de seguridad."
+      }
+    },
+    {
+      "id": "title__beat-02",
+      "name": "Apertura del workshop / Respuesta",
+      "startMs": 75000,
+      "endMs": 150000,
+      "type": "streaming",
+      "content": {
+        "mode": "streaming",
+        "vendor": "codex",
+        "title": "Apertura del workshop",
+        "eyebrow": "Codex Workshop 30m - First Real Task / Apertura del workshop",
+        "label": "Respuesta",
+        "presenterCue": "Abrir con la promesa: aqui no vemos Codex, lo dirigimos.",
+        "actionLabel": "Contexto inicial",
+        "actionDetail": "Presentar repo mock, objetivo del bug y reglas de seguridad.",
+        "prompt": "Presentar repo mock, objetivo del bug y reglas de seguridad.",
+        "response": [
+          "Respuesta simulada con salida verificable.",
+          "Se cita evidencia, se limita alcance y se deja una decision humana clara.",
+          "El cierre declara siguiente paso, coste aproximado y riesgo residual."
+        ],
+        "diff": [
+          "- cambio ambiguo sin criterio de aceptacion",
+          "+ cambio acotado con test, owner y evidencia",
+          "+ registro de modelo, permiso y coste"
+        ],
+        "terminal": [
+          "$ pnpm test -- --runInBand",
+          "✓ test relevante pasa",
+          "✓ no hay errores de consola",
+          "i coste relativo registrado"
+        ],
+        "review": [
+          {
+            "severity": "blocker",
+            "text": "No hay criterios bloqueantes pendientes."
+          },
+          {
+            "severity": "medium",
+            "text": "Presentar repo mock, objetivo del bug y reglas de seguridad."
+          },
+          {
+            "severity": "note",
+            "text": "El humano firma el criterio final."
+          }
+        ],
+        "cost": {
+          "model": "modelo estandar",
+          "tokens": "medio",
+          "permission": "readonly/workspace segun fase",
+          "stopRule": "Parar si no hay evidencia nueva en el siguiente intento."
+        },
+        "decision": {
+          "question": "Que debe decidir la persona antes de continuar?",
+          "options": [
+            "seguir con alcance actual",
+            "pedir mas contexto",
+            "subir modelo",
+            "bloquear y llevar a tutoria"
+          ],
+          "selected": 1
+        },
+        "risk": {
+          "items": [
+            "Permisos",
+            "Coste",
+            "Contexto",
+            "Calidad",
+            "Responsabilidad humana"
+          ],
+          "level": "medio"
+        },
+        "branch": {
+          "steps": [
+            "Issue",
+            "Branch",
+            "Plan",
+            "Patch",
+            "Tests",
+            "Review",
+            "PR"
+          ],
+          "active": 3
+        },
+        "quiz": {
+          "question": "Cual es la evidencia minima para cerrar esta pantalla?",
+          "answers": [
+            "Una respuesta convincente",
+            "Un diff probado o decision documentada",
+            "Un prompt mas largo"
+          ],
+          "correct": 1
+        },
+        "source": {
+          "title": "Codex: primera tarea real",
+          "subtitle": "30 minutos para mapear, planificar, editar poco, verificar y cerrar.",
+          "tag": "Workshop / Codex"
+        }
+      },
+      "subtitles": [
+        {
+          "text": "Respuesta simulada: No empezamos pidiendo codigo: empezamos pidiendo mapa, limites y evidencia.",
+          "startMs": 75400,
+          "endMs": 112200
+        },
+        {
+          "text": "Presentar repo mock, objetivo del bug y reglas de seguridad.",
+          "startMs": 112900,
+          "endMs": 149500
+        }
+      ],
+      "voiceover": [
+        "Respuesta simulada: No empezamos pidiendo codigo: empezamos pidiendo mapa, limites y evidencia.",
+        "Presentar repo mock, objetivo del bug y reglas de seguridad."
+      ],
+      "screen": {
+        "mode": "streaming",
+        "title": "Apertura del workshop",
+        "visual": "streaming"
+      },
+      "blueprintAction": {
+        "type": "narrate",
+        "label": "Contexto inicial",
+        "detail": "Presentar repo mock, objetivo del bug y reglas de seguridad."
+      }
+    },
+    {
+      "id": "workshop-ticket__beat-01",
+      "name": "Ticket del reto / Prompt",
+      "startMs": 150000,
+      "endMs": 225000,
+      "type": "branch",
+      "content": {
+        "mode": "branch",
+        "vendor": "codex",
+        "title": "Ticket del reto",
+        "eyebrow": "Codex Workshop 30m - First Real Task / Ticket del reto",
+        "label": "Prompt",
+        "actionLabel": "Aceptar alcance",
+        "actionDetail": "El participante confirma rutas permitidas y criterios de done.",
+        "expectedOutput": "Scope: auth/login, test cercano, sin refactor global.",
+        "prompt": "El participante confirma rutas permitidas y criterios de done.",
+        "response": [
+          "Scope: auth/login, test cercano, sin refactor global.",
+          "Se cita evidencia, se limita alcance y se deja una decision humana clara.",
+          "El cierre declara siguiente paso, coste aproximado y riesgo residual."
+        ],
+        "diff": [
+          "- cambio ambiguo sin criterio de aceptacion",
+          "+ cambio acotado con test, owner y evidencia",
+          "+ registro de modelo, permiso y coste"
+        ],
+        "terminal": [
+          "$ pnpm test -- --runInBand",
+          "✓ test relevante pasa",
+          "✓ no hay errores de consola",
+          "i coste relativo registrado"
+        ],
+        "review": [
+          {
+            "severity": "blocker",
+            "text": "No hay criterios bloqueantes pendientes."
+          },
+          {
+            "severity": "medium",
+            "text": "El participante confirma rutas permitidas y criterios de done."
+          },
+          {
+            "severity": "note",
+            "text": "El humano firma el criterio final."
+          }
+        ],
+        "cost": {
+          "model": "modelo rapido",
+          "tokens": "bajo",
+          "permission": "readonly/workspace segun fase",
+          "stopRule": "Parar si no hay evidencia nueva en el siguiente intento."
+        },
+        "decision": {
+          "question": "Que debe decidir la persona antes de continuar?",
+          "options": [
+            "seguir con alcance actual",
+            "pedir mas contexto",
+            "subir modelo",
+            "bloquear y llevar a tutoria"
+          ],
+          "selected": 0
+        },
+        "risk": {
+          "items": [
+            "Permisos",
+            "Coste",
+            "Contexto",
+            "Calidad",
+            "Responsabilidad humana"
+          ],
+          "level": "bajo"
+        },
+        "branch": {
+          "steps": [
+            "Issue",
+            "Branch",
+            "Plan",
+            "Patch",
+            "Tests",
+            "Review",
+            "PR"
+          ],
+          "active": 2
+        },
+        "quiz": {
+          "question": "Cual es la evidencia minima para cerrar esta pantalla?",
+          "answers": [
+            "Una respuesta convincente",
+            "Un diff probado o decision documentada",
+            "Un prompt mas largo"
+          ],
+          "correct": 1
+        },
+        "source": {
+          "ticketId": "CX-W01",
+          "title": "Login bloquea usuarios validos",
+          "project": "AI Practice Hub Labs",
+          "priority": "High",
+          "assignee": "Participante + Codex",
+          "status": "Ready",
+          "labels": [
+            "bugfix",
+            "auth",
+            "read-only-first"
+          ],
+          "description": "Un usuario valido no puede entrar si el email contiene mayusculas. El objetivo es diagnosticar, proponer plan, aplicar cambio minimo y validar con test cercano. No tocar .env, no refactorizar auth completa y no cambiar API publica."
+        }
+      },
+      "subtitles": [
+        {
+          "text": "Pantalla de accion: El ticket es pequeno a proposito.",
+          "startMs": 150400,
+          "endMs": 187200
+        },
+        {
+          "text": "El participante confirma rutas permitidas y criterios de done.",
+          "startMs": 187900,
+          "endMs": 224500
+        }
+      ],
+      "voiceover": [
+        "Pantalla de accion: El ticket es pequeno a proposito.",
+        "El participante confirma rutas permitidas y criterios de done."
+      ],
+      "screen": {
+        "mode": "branch",
+        "title": "Ticket del reto",
+        "visual": "branch"
+      },
+      "blueprintAction": {
+        "type": "human-decision",
+        "label": "Aceptar alcance",
+        "detail": "El participante confirma rutas permitidas y criterios de done.",
+        "expectedOutput": "Scope: auth/login, test cercano, sin refactor global."
+      }
+    },
+    {
+      "id": "workshop-ticket__beat-02",
+      "name": "Ticket del reto / Respuesta",
+      "startMs": 225000,
+      "endMs": 300000,
+      "type": "decision",
+      "content": {
+        "mode": "decision",
+        "vendor": "codex",
+        "title": "Ticket del reto",
+        "eyebrow": "Codex Workshop 30m - First Real Task / Ticket del reto",
+        "label": "Respuesta",
+        "actionLabel": "Aceptar alcance",
+        "actionDetail": "El participante confirma rutas permitidas y criterios de done.",
+        "expectedOutput": "Scope: auth/login, test cercano, sin refactor global.",
+        "prompt": "El participante confirma rutas permitidas y criterios de done.",
+        "response": [
+          "Scope: auth/login, test cercano, sin refactor global.",
+          "Se cita evidencia, se limita alcance y se deja una decision humana clara.",
+          "El cierre declara siguiente paso, coste aproximado y riesgo residual."
+        ],
+        "diff": [
+          "- cambio ambiguo sin criterio de aceptacion",
+          "+ cambio acotado con test, owner y evidencia",
+          "+ registro de modelo, permiso y coste"
+        ],
+        "terminal": [
+          "$ pnpm test -- --runInBand",
+          "✓ test relevante pasa",
+          "✓ no hay errores de consola",
+          "i coste relativo registrado"
+        ],
+        "review": [
+          {
+            "severity": "blocker",
+            "text": "No hay criterios bloqueantes pendientes."
+          },
+          {
+            "severity": "medium",
+            "text": "El participante confirma rutas permitidas y criterios de done."
+          },
+          {
+            "severity": "note",
+            "text": "El humano firma el criterio final."
+          }
+        ],
+        "cost": {
+          "model": "modelo estandar",
+          "tokens": "medio",
+          "permission": "readonly/workspace segun fase",
+          "stopRule": "Parar si no hay evidencia nueva en el siguiente intento."
+        },
+        "decision": {
+          "question": "Que debe decidir la persona antes de continuar?",
+          "options": [
+            "seguir con alcance actual",
+            "pedir mas contexto",
+            "subir modelo",
+            "bloquear y llevar a tutoria"
+          ],
+          "selected": 1
+        },
+        "risk": {
+          "items": [
+            "Permisos",
+            "Coste",
+            "Contexto",
+            "Calidad",
+            "Responsabilidad humana"
+          ],
+          "level": "medio"
+        },
+        "branch": {
+          "steps": [
+            "Issue",
+            "Branch",
+            "Plan",
+            "Patch",
+            "Tests",
+            "Review",
+            "PR"
+          ],
+          "active": 3
+        },
+        "quiz": {
+          "question": "Cual es la evidencia minima para cerrar esta pantalla?",
+          "answers": [
+            "Una respuesta convincente",
+            "Un diff probado o decision documentada",
+            "Un prompt mas largo"
+          ],
+          "correct": 1
+        },
+        "source": {
+          "ticketId": "CX-W01",
+          "title": "Login bloquea usuarios validos",
+          "project": "AI Practice Hub Labs",
+          "priority": "High",
+          "assignee": "Participante + Codex",
+          "status": "Ready",
+          "labels": [
+            "bugfix",
+            "auth",
+            "read-only-first"
+          ],
+          "description": "Un usuario valido no puede entrar si el email contiene mayusculas. El objetivo es diagnosticar, proponer plan, aplicar cambio minimo y validar con test cercano. No tocar .env, no refactorizar auth completa y no cambiar API publica."
+        }
+      },
+      "subtitles": [
+        {
+          "text": "Respuesta simulada: Un reto pequeno deja ver si el metodo funciona.",
+          "startMs": 225400,
+          "endMs": 262200
+        },
+        {
+          "text": "El participante confirma rutas permitidas y criterios de done.",
+          "startMs": 262900,
+          "endMs": 299500
+        }
+      ],
+      "voiceover": [
+        "Respuesta simulada: Un reto pequeno deja ver si el metodo funciona.",
+        "El participante confirma rutas permitidas y criterios de done."
+      ],
+      "screen": {
+        "mode": "decision",
+        "title": "Ticket del reto",
+        "visual": "decision"
+      },
+      "blueprintAction": {
+        "type": "human-decision",
+        "label": "Aceptar alcance",
+        "detail": "El participante confirma rutas permitidas y criterios de done.",
+        "expectedOutput": "Scope: auth/login, test cercano, sin refactor global."
+      }
+    },
+    {
+      "id": "repo-map-prompt__beat-01",
+      "name": "Prompt de mapa / Prompt",
+      "startMs": 300000,
+      "endMs": 375000,
+      "type": "prompt",
+      "content": {
+        "mode": "prompt",
+        "vendor": "codex",
+        "title": "Prompt de mapa",
+        "eyebrow": "Codex Workshop 30m - First Real Task / Prompt de mapa",
+        "label": "Prompt",
+        "actionLabel": "Enviar prompt read-only",
+        "actionDetail": "El alumno copia el prompt y espera mapa antes de autorizar patch.",
+        "prompt": "El alumno copia el prompt y espera mapa antes de autorizar patch.",
+        "response": [
+          "Respuesta simulada con salida verificable.",
+          "Se cita evidencia, se limita alcance y se deja una decision humana clara.",
+          "El cierre declara siguiente paso, coste aproximado y riesgo residual."
+        ],
+        "diff": [
+          "- cambio ambiguo sin criterio de aceptacion",
+          "+ cambio acotado con test, owner y evidencia",
+          "+ registro de modelo, permiso y coste"
+        ],
+        "terminal": [
+          "$ pnpm test -- --runInBand",
+          "✓ test relevante pasa",
+          "✓ no hay errores de consola",
+          "i coste relativo registrado"
+        ],
+        "review": [
+          {
+            "severity": "blocker",
+            "text": "No hay criterios bloqueantes pendientes."
+          },
+          {
+            "severity": "medium",
+            "text": "El alumno copia el prompt y espera mapa antes de autorizar patch."
+          },
+          {
+            "severity": "note",
+            "text": "El humano firma el criterio final."
+          }
+        ],
+        "cost": {
+          "model": "modelo rapido",
+          "tokens": "bajo",
+          "permission": "readonly/workspace segun fase",
+          "stopRule": "Parar si no hay evidencia nueva en el siguiente intento."
+        },
+        "decision": {
+          "question": "Que debe decidir la persona antes de continuar?",
+          "options": [
+            "seguir con alcance actual",
+            "pedir mas contexto",
+            "subir modelo",
+            "bloquear y llevar a tutoria"
+          ],
+          "selected": 0
+        },
+        "risk": {
+          "items": [
+            "Permisos",
+            "Coste",
+            "Contexto",
+            "Calidad",
+            "Responsabilidad humana"
+          ],
+          "level": "bajo"
+        },
+        "branch": {
+          "steps": [
+            "Issue",
+            "Branch",
+            "Plan",
+            "Patch",
+            "Tests",
+            "Review",
+            "PR"
+          ],
+          "active": 2
+        },
+        "quiz": {
+          "question": "Cual es la evidencia minima para cerrar esta pantalla?",
+          "answers": [
+            "Una respuesta convincente",
+            "Un diff probado o decision documentada",
+            "Un prompt mas largo"
+          ],
+          "correct": 1
+        },
+        "source": {
+          "filename": "prompts/cx-workshop-map.md",
+          "language": "markdown",
+          "code": "Necesito diagnosticar un bug de login.\n\nLee solo rutas relacionadas con auth/login y tests cercanos.\nNo edites archivos.\nDevuelve:\n1. mapa de flujo\n2. archivos candidatos\n3. hipotesis del fallo\n4. check barato para validar\n\nSi necesitas mas contexto, pidelo antes de leer carpetas completas."
+        }
+      },
+      "subtitles": [
+        {
+          "text": "Pantalla de accion: Este es el primer prompt que queremos normalizar.",
+          "startMs": 300400,
+          "endMs": 337200
+        },
+        {
+          "text": "El alumno copia el prompt y espera mapa antes de autorizar patch.",
+          "startMs": 337900,
+          "endMs": 374500
+        }
+      ],
+      "voiceover": [
+        "Pantalla de accion: Este es el primer prompt que queremos normalizar.",
+        "El alumno copia el prompt y espera mapa antes de autorizar patch."
+      ],
+      "screen": {
+        "mode": "prompt",
+        "title": "Prompt de mapa",
+        "visual": "prompt"
+      },
+      "blueprintAction": {
+        "type": "prompt",
+        "label": "Enviar prompt read-only",
+        "detail": "El alumno copia el prompt y espera mapa antes de autorizar patch."
+      }
+    },
+    {
+      "id": "repo-map-prompt__beat-02",
+      "name": "Prompt de mapa / Respuesta",
+      "startMs": 375000,
+      "endMs": 450000,
+      "type": "streaming",
+      "content": {
+        "mode": "streaming",
+        "vendor": "codex",
+        "title": "Prompt de mapa",
+        "eyebrow": "Codex Workshop 30m - First Real Task / Prompt de mapa",
+        "label": "Respuesta",
+        "actionLabel": "Enviar prompt read-only",
+        "actionDetail": "El alumno copia el prompt y espera mapa antes de autorizar patch.",
+        "prompt": "El alumno copia el prompt y espera mapa antes de autorizar patch.",
+        "response": [
+          "Respuesta simulada con salida verificable.",
+          "Se cita evidencia, se limita alcance y se deja una decision humana clara.",
+          "El cierre declara siguiente paso, coste aproximado y riesgo residual."
+        ],
+        "diff": [
+          "- cambio ambiguo sin criterio de aceptacion",
+          "+ cambio acotado con test, owner y evidencia",
+          "+ registro de modelo, permiso y coste"
+        ],
+        "terminal": [
+          "$ pnpm test -- --runInBand",
+          "✓ test relevante pasa",
+          "✓ no hay errores de consola",
+          "i coste relativo registrado"
+        ],
+        "review": [
+          {
+            "severity": "blocker",
+            "text": "No hay criterios bloqueantes pendientes."
+          },
+          {
+            "severity": "medium",
+            "text": "El alumno copia el prompt y espera mapa antes de autorizar patch."
+          },
+          {
+            "severity": "note",
+            "text": "El humano firma el criterio final."
+          }
+        ],
+        "cost": {
+          "model": "modelo estandar",
+          "tokens": "medio",
+          "permission": "readonly/workspace segun fase",
+          "stopRule": "Parar si no hay evidencia nueva en el siguiente intento."
+        },
+        "decision": {
+          "question": "Que debe decidir la persona antes de continuar?",
+          "options": [
+            "seguir con alcance actual",
+            "pedir mas contexto",
+            "subir modelo",
+            "bloquear y llevar a tutoria"
+          ],
+          "selected": 1
+        },
+        "risk": {
+          "items": [
+            "Permisos",
+            "Coste",
+            "Contexto",
+            "Calidad",
+            "Responsabilidad humana"
+          ],
+          "level": "medio"
+        },
+        "branch": {
+          "steps": [
+            "Issue",
+            "Branch",
+            "Plan",
+            "Patch",
+            "Tests",
+            "Review",
+            "PR"
+          ],
+          "active": 3
+        },
+        "quiz": {
+          "question": "Cual es la evidencia minima para cerrar esta pantalla?",
+          "answers": [
+            "Una respuesta convincente",
+            "Un diff probado o decision documentada",
+            "Un prompt mas largo"
+          ],
+          "correct": 1
+        },
+        "source": {
+          "filename": "prompts/cx-workshop-map.md",
+          "language": "markdown",
+          "code": "Necesito diagnosticar un bug de login.\n\nLee solo rutas relacionadas con auth/login y tests cercanos.\nNo edites archivos.\nDevuelve:\n1. mapa de flujo\n2. archivos candidatos\n3. hipotesis del fallo\n4. check barato para validar\n\nSi necesitas mas contexto, pidelo antes de leer carpetas completas."
+        }
+      },
+      "subtitles": [
+        {
+          "text": "Respuesta simulada: La orden explicita es no editar.",
+          "startMs": 375400,
+          "endMs": 412200
+        },
+        {
+          "text": "El alumno copia el prompt y espera mapa antes de autorizar patch.",
+          "startMs": 412900,
+          "endMs": 449500
+        }
+      ],
+      "voiceover": [
+        "Respuesta simulada: La orden explicita es no editar.",
+        "El alumno copia el prompt y espera mapa antes de autorizar patch."
+      ],
+      "screen": {
+        "mode": "streaming",
+        "title": "Prompt de mapa",
+        "visual": "streaming"
+      },
+      "blueprintAction": {
+        "type": "prompt",
+        "label": "Enviar prompt read-only",
+        "detail": "El alumno copia el prompt y espera mapa antes de autorizar patch."
+      }
+    },
+    {
+      "id": "simulated-map-response__beat-01",
+      "name": "Respuesta simulada / Prompt",
+      "startMs": 450000,
+      "endMs": 525000,
+      "type": "prompt",
+      "content": {
+        "mode": "prompt",
+        "vendor": "codex",
+        "title": "Respuesta simulada",
+        "eyebrow": "Codex Workshop 30m - First Real Task / Respuesta simulada",
+        "label": "Prompt",
+        "actionLabel": "Validar respuesta",
+        "actionDetail": "El facilitador pide al alumno distinguir evidencia de suposicion.",
+        "prompt": "El facilitador pide al alumno distinguir evidencia de suposicion.",
+        "response": [
+          "Respuesta simulada con salida verificable.",
+          "Se cita evidencia, se limita alcance y se deja una decision humana clara.",
+          "El cierre declara siguiente paso, coste aproximado y riesgo residual."
+        ],
+        "diff": [
+          "- cambio ambiguo sin criterio de aceptacion",
+          "+ cambio acotado con test, owner y evidencia",
+          "+ registro de modelo, permiso y coste"
+        ],
+        "terminal": [
+          "$ pnpm test -- --runInBand",
+          "✓ test relevante pasa",
+          "✓ no hay errores de consola",
+          "i coste relativo registrado"
+        ],
+        "review": [
+          {
+            "severity": "blocker",
+            "text": "No hay criterios bloqueantes pendientes."
+          },
+          {
+            "severity": "medium",
+            "text": "El facilitador pide al alumno distinguir evidencia de suposicion."
+          },
+          {
+            "severity": "note",
+            "text": "El humano firma el criterio final."
+          }
+        ],
+        "cost": {
+          "model": "modelo rapido",
+          "tokens": "bajo",
+          "permission": "readonly/workspace segun fase",
+          "stopRule": "Parar si no hay evidencia nueva en el siguiente intento."
+        },
+        "decision": {
+          "question": "Que debe decidir la persona antes de continuar?",
+          "options": [
+            "seguir con alcance actual",
+            "pedir mas contexto",
+            "subir modelo",
+            "bloquear y llevar a tutoria"
+          ],
+          "selected": 0
+        },
+        "risk": {
+          "items": [
+            "Permisos",
+            "Coste",
+            "Contexto",
+            "Calidad",
+            "Responsabilidad humana"
+          ],
+          "level": "bajo"
+        },
+        "branch": {
+          "steps": [
+            "Issue",
+            "Branch",
+            "Plan",
+            "Patch",
+            "Tests",
+            "Review",
+            "PR"
+          ],
+          "active": 2
+        },
+        "quiz": {
+          "question": "Cual es la evidencia minima para cerrar esta pantalla?",
+          "answers": [
+            "Una respuesta convincente",
+            "Un diff probado o decision documentada",
+            "Un prompt mas largo"
+          ],
+          "correct": 1
+        },
+        "source": {
+          "tag": "Respuesta simulada",
+          "title": "Codex encuentra el punto de decision",
+          "body": "El flujo pasa por normalizeEmail(), validateCredentials() y createSession(). La hipotesis principal es que el login compara email original contra una fixture normalizada. El test mas barato es auth/login.spec.ts con un email mixto.",
+          "highlight": "Todavia no hay patch: solo mapa, hipotesis y test.",
+          "points": [
+            "Archivo candidato: src/auth/validate-login.ts",
+            "Test cercano: tests/auth/login.spec.ts",
+            "Riesgo: romper usuarios legacy con espacios",
+            "Siguiente paso: plan de dos cambios maximo"
+          ]
+        }
+      },
+      "subtitles": [
+        {
+          "text": "Pantalla de accion: Esta respuesta es buena porque no toca codigo.",
+          "startMs": 450400,
+          "endMs": 487200
+        },
+        {
+          "text": "El facilitador pide al alumno distinguir evidencia de suposicion.",
+          "startMs": 487900,
+          "endMs": 524500
+        }
+      ],
+      "voiceover": [
+        "Pantalla de accion: Esta respuesta es buena porque no toca codigo.",
+        "El facilitador pide al alumno distinguir evidencia de suposicion."
+      ],
+      "screen": {
+        "mode": "prompt",
+        "title": "Respuesta simulada",
+        "visual": "prompt"
+      },
+      "blueprintAction": {
+        "type": "simulated-response",
+        "label": "Validar respuesta",
+        "detail": "El facilitador pide al alumno distinguir evidencia de suposicion."
+      }
+    },
+    {
+      "id": "simulated-map-response__beat-02",
+      "name": "Respuesta simulada / Respuesta",
+      "startMs": 525000,
+      "endMs": 600000,
+      "type": "streaming",
+      "content": {
+        "mode": "streaming",
+        "vendor": "codex",
+        "title": "Respuesta simulada",
+        "eyebrow": "Codex Workshop 30m - First Real Task / Respuesta simulada",
+        "label": "Respuesta",
+        "actionLabel": "Validar respuesta",
+        "actionDetail": "El facilitador pide al alumno distinguir evidencia de suposicion.",
+        "prompt": "El facilitador pide al alumno distinguir evidencia de suposicion.",
+        "response": [
+          "Respuesta simulada con salida verificable.",
+          "Se cita evidencia, se limita alcance y se deja una decision humana clara.",
+          "El cierre declara siguiente paso, coste aproximado y riesgo residual."
+        ],
+        "diff": [
+          "- cambio ambiguo sin criterio de aceptacion",
+          "+ cambio acotado con test, owner y evidencia",
+          "+ registro de modelo, permiso y coste"
+        ],
+        "terminal": [
+          "$ pnpm test -- --runInBand",
+          "✓ test relevante pasa",
+          "✓ no hay errores de consola",
+          "i coste relativo registrado"
+        ],
+        "review": [
+          {
+            "severity": "blocker",
+            "text": "No hay criterios bloqueantes pendientes."
+          },
+          {
+            "severity": "medium",
+            "text": "El facilitador pide al alumno distinguir evidencia de suposicion."
+          },
+          {
+            "severity": "note",
+            "text": "El humano firma el criterio final."
+          }
+        ],
+        "cost": {
+          "model": "modelo estandar",
+          "tokens": "medio",
+          "permission": "readonly/workspace segun fase",
+          "stopRule": "Parar si no hay evidencia nueva en el siguiente intento."
+        },
+        "decision": {
+          "question": "Que debe decidir la persona antes de continuar?",
+          "options": [
+            "seguir con alcance actual",
+            "pedir mas contexto",
+            "subir modelo",
+            "bloquear y llevar a tutoria"
+          ],
+          "selected": 1
+        },
+        "risk": {
+          "items": [
+            "Permisos",
+            "Coste",
+            "Contexto",
+            "Calidad",
+            "Responsabilidad humana"
+          ],
+          "level": "medio"
+        },
+        "branch": {
+          "steps": [
+            "Issue",
+            "Branch",
+            "Plan",
+            "Patch",
+            "Tests",
+            "Review",
+            "PR"
+          ],
+          "active": 3
+        },
+        "quiz": {
+          "question": "Cual es la evidencia minima para cerrar esta pantalla?",
+          "answers": [
+            "Una respuesta convincente",
+            "Un diff probado o decision documentada",
+            "Un prompt mas largo"
+          ],
+          "correct": 1
+        },
+        "source": {
+          "tag": "Respuesta simulada",
+          "title": "Codex encuentra el punto de decision",
+          "body": "El flujo pasa por normalizeEmail(), validateCredentials() y createSession(). La hipotesis principal es que el login compara email original contra una fixture normalizada. El test mas barato es auth/login.spec.ts con un email mixto.",
+          "highlight": "Todavia no hay patch: solo mapa, hipotesis y test.",
+          "points": [
+            "Archivo candidato: src/auth/validate-login.ts",
+            "Test cercano: tests/auth/login.spec.ts",
+            "Riesgo: romper usuarios legacy con espacios",
+            "Siguiente paso: plan de dos cambios maximo"
+          ]
+        }
+      },
+      "subtitles": [
+        {
+          "text": "Respuesta simulada: Nos da una hipotesis y una ruta de validacion.",
+          "startMs": 525400,
+          "endMs": 562200
+        },
+        {
+          "text": "El facilitador pide al alumno distinguir evidencia de suposicion.",
+          "startMs": 562900,
+          "endMs": 599500
+        }
+      ],
+      "voiceover": [
+        "Respuesta simulada: Nos da una hipotesis y una ruta de validacion.",
+        "El facilitador pide al alumno distinguir evidencia de suposicion."
+      ],
+      "screen": {
+        "mode": "streaming",
+        "title": "Respuesta simulada",
+        "visual": "streaming"
+      },
+      "blueprintAction": {
+        "type": "simulated-response",
+        "label": "Validar respuesta",
+        "detail": "El facilitador pide al alumno distinguir evidencia de suposicion."
+      }
+    },
+    {
+      "id": "agents-md__beat-01",
+      "name": "Crear AGENTS.md / Prompt",
+      "startMs": 600000,
+      "endMs": 675000,
+      "type": "prompt",
+      "content": {
+        "mode": "prompt",
+        "vendor": "codex",
+        "title": "Crear AGENTS.md",
+        "eyebrow": "Codex Workshop 30m - First Real Task / Crear AGENTS.md",
+        "label": "Prompt",
+        "actionLabel": "Crear archivo",
+        "actionDetail": "Guardar AGENTS.md en el starter repo.",
+        "expectedOutput": "Reglas locales disponibles para el resto del workshop.",
+        "prompt": "Guardar AGENTS.md en el starter repo.",
+        "response": [
+          "Reglas locales disponibles para el resto del workshop.",
+          "Se cita evidencia, se limita alcance y se deja una decision humana clara.",
+          "El cierre declara siguiente paso, coste aproximado y riesgo residual."
+        ],
+        "diff": [
+          "- cambio ambiguo sin criterio de aceptacion",
+          "+ cambio acotado con test, owner y evidencia",
+          "+ registro de modelo, permiso y coste"
+        ],
+        "terminal": [
+          "$ pnpm test -- --runInBand",
+          "✓ test relevante pasa",
+          "✓ no hay errores de consola",
+          "i coste relativo registrado"
+        ],
+        "review": [
+          {
+            "severity": "blocker",
+            "text": "No hay criterios bloqueantes pendientes."
+          },
+          {
+            "severity": "medium",
+            "text": "Guardar AGENTS.md en el starter repo."
+          },
+          {
+            "severity": "note",
+            "text": "El humano firma el criterio final."
+          }
+        ],
+        "cost": {
+          "model": "modelo rapido",
+          "tokens": "bajo",
+          "permission": "ejecucion acotada",
+          "stopRule": "Parar si no hay evidencia nueva en el siguiente intento."
+        },
+        "decision": {
+          "question": "Que debe decidir la persona antes de continuar?",
+          "options": [
+            "seguir con alcance actual",
+            "pedir mas contexto",
+            "subir modelo",
+            "bloquear y llevar a tutoria"
+          ],
+          "selected": 0
+        },
+        "risk": {
+          "items": [
+            "Permisos",
+            "Coste",
+            "Contexto",
+            "Calidad",
+            "Responsabilidad humana"
+          ],
+          "level": "bajo"
+        },
+        "branch": {
+          "steps": [
+            "Issue",
+            "Branch",
+            "Plan",
+            "Patch",
+            "Tests",
+            "Review",
+            "PR"
+          ],
+          "active": 2
+        },
+        "quiz": {
+          "question": "Cual es la evidencia minima para cerrar esta pantalla?",
+          "answers": [
+            "Una respuesta convincente",
+            "Un diff probado o decision documentada",
+            "Un prompt mas largo"
+          ],
+          "correct": 1
+        },
+        "source": {
+          "filename": "AGENTS.md",
+          "language": "markdown",
+          "code": "# AGENTS.md\n\n## Objetivo del lab\nResolver cambios pequenos y verificables en auth.\n\n## Reglas\n- No leer ni escribir .env*.\n- No editar fuera de src/auth y tests/auth sin pedir permiso.\n- Proponer plan antes de patch.\n- Cerrar con diff, comando ejecutado y riesgo.\n\n## Checks\n- pnpm test -- auth/login.spec.ts"
+        }
+      },
+      "subtitles": [
+        {
+          "text": "Pantalla de accion: Antes de editar, dejamos memoria local del lab.",
+          "startMs": 600400,
+          "endMs": 637200
+        },
+        {
+          "text": "Guardar AGENTS.md en el starter repo.",
+          "startMs": 637900,
+          "endMs": 674500
+        }
+      ],
+      "voiceover": [
+        "Pantalla de accion: Antes de editar, dejamos memoria local del lab.",
+        "Guardar AGENTS.md en el starter repo."
+      ],
+      "screen": {
+        "mode": "prompt",
+        "title": "Crear AGENTS.md",
+        "visual": "prompt"
+      },
+      "blueprintAction": {
+        "type": "tool-run",
+        "label": "Crear archivo",
+        "detail": "Guardar AGENTS.md en el starter repo.",
+        "expectedOutput": "Reglas locales disponibles para el resto del workshop."
+      }
+    },
+    {
+      "id": "agents-md__beat-02",
+      "name": "Crear AGENTS.md / Respuesta",
+      "startMs": 675000,
+      "endMs": 750000,
+      "type": "streaming",
+      "content": {
+        "mode": "streaming",
+        "vendor": "codex",
+        "title": "Crear AGENTS.md",
+        "eyebrow": "Codex Workshop 30m - First Real Task / Crear AGENTS.md",
+        "label": "Respuesta",
+        "actionLabel": "Crear archivo",
+        "actionDetail": "Guardar AGENTS.md en el starter repo.",
+        "expectedOutput": "Reglas locales disponibles para el resto del workshop.",
+        "prompt": "Guardar AGENTS.md en el starter repo.",
+        "response": [
+          "Reglas locales disponibles para el resto del workshop.",
+          "Se cita evidencia, se limita alcance y se deja una decision humana clara.",
+          "El cierre declara siguiente paso, coste aproximado y riesgo residual."
+        ],
+        "diff": [
+          "- cambio ambiguo sin criterio de aceptacion",
+          "+ cambio acotado con test, owner y evidencia",
+          "+ registro de modelo, permiso y coste"
+        ],
+        "terminal": [
+          "$ pnpm test -- --runInBand",
+          "✓ test relevante pasa",
+          "✓ no hay errores de consola",
+          "i coste relativo registrado"
+        ],
+        "review": [
+          {
+            "severity": "blocker",
+            "text": "No hay criterios bloqueantes pendientes."
+          },
+          {
+            "severity": "medium",
+            "text": "Guardar AGENTS.md en el starter repo."
+          },
+          {
+            "severity": "note",
+            "text": "El humano firma el criterio final."
+          }
+        ],
+        "cost": {
+          "model": "modelo estandar",
+          "tokens": "medio",
+          "permission": "ejecucion acotada",
+          "stopRule": "Parar si no hay evidencia nueva en el siguiente intento."
+        },
+        "decision": {
+          "question": "Que debe decidir la persona antes de continuar?",
+          "options": [
+            "seguir con alcance actual",
+            "pedir mas contexto",
+            "subir modelo",
+            "bloquear y llevar a tutoria"
+          ],
+          "selected": 1
+        },
+        "risk": {
+          "items": [
+            "Permisos",
+            "Coste",
+            "Contexto",
+            "Calidad",
+            "Responsabilidad humana"
+          ],
+          "level": "medio"
+        },
+        "branch": {
+          "steps": [
+            "Issue",
+            "Branch",
+            "Plan",
+            "Patch",
+            "Tests",
+            "Review",
+            "PR"
+          ],
+          "active": 3
+        },
+        "quiz": {
+          "question": "Cual es la evidencia minima para cerrar esta pantalla?",
+          "answers": [
+            "Una respuesta convincente",
+            "Un diff probado o decision documentada",
+            "Un prompt mas largo"
+          ],
+          "correct": 1
+        },
+        "source": {
+          "filename": "AGENTS.md",
+          "language": "markdown",
+          "code": "# AGENTS.md\n\n## Objetivo del lab\nResolver cambios pequenos y verificables en auth.\n\n## Reglas\n- No leer ni escribir .env*.\n- No editar fuera de src/auth y tests/auth sin pedir permiso.\n- Proponer plan antes de patch.\n- Cerrar con diff, comando ejecutado y riesgo.\n\n## Checks\n- pnpm test -- auth/login.spec.ts"
+        }
+      },
+      "subtitles": [
+        {
+          "text": "Respuesta simulada: AGENTS.md evita repetir reglas y reduce coste de contexto.",
+          "startMs": 675400,
+          "endMs": 712200
+        },
+        {
+          "text": "Guardar AGENTS.md en el starter repo.",
+          "startMs": 712900,
+          "endMs": 749500
+        }
+      ],
+      "voiceover": [
+        "Respuesta simulada: AGENTS.md evita repetir reglas y reduce coste de contexto.",
+        "Guardar AGENTS.md en el starter repo."
+      ],
+      "screen": {
+        "mode": "streaming",
+        "title": "Crear AGENTS.md",
+        "visual": "streaming"
+      },
+      "blueprintAction": {
+        "type": "tool-run",
+        "label": "Crear archivo",
+        "detail": "Guardar AGENTS.md en el starter repo.",
+        "expectedOutput": "Reglas locales disponibles para el resto del workshop."
+      }
+    },
+    {
+      "id": "patch-plan__beat-01",
+      "name": "Plan antes de patch / Prompt",
+      "startMs": 750000,
+      "endMs": 825000,
+      "type": "decision",
+      "content": {
+        "mode": "decision",
+        "vendor": "codex",
+        "title": "Plan antes de patch",
+        "eyebrow": "Codex Workshop 30m - First Real Task / Plan antes de patch",
+        "label": "Prompt",
+        "actionLabel": "Aprobar plan",
+        "actionDetail": "Autorizar solo el plan de tres pasos y pedir parada si aparece scope nuevo.",
+        "prompt": "Autorizar solo el plan de tres pasos y pedir parada si aparece scope nuevo.",
+        "response": [
+          "Respuesta simulada con salida verificable.",
+          "Se cita evidencia, se limita alcance y se deja una decision humana clara.",
+          "El cierre declara siguiente paso, coste aproximado y riesgo residual."
+        ],
+        "diff": [
+          "- cambio ambiguo sin criterio de aceptacion",
+          "+ cambio acotado con test, owner y evidencia",
+          "+ registro de modelo, permiso y coste"
+        ],
+        "terminal": [
+          "$ pnpm test -- --runInBand",
+          "✓ test relevante pasa",
+          "✓ no hay errores de consola",
+          "i coste relativo registrado"
+        ],
+        "review": [
+          {
+            "severity": "blocker",
+            "text": "No hay criterios bloqueantes pendientes."
+          },
+          {
+            "severity": "medium",
+            "text": "Autorizar solo el plan de tres pasos y pedir parada si aparece scope nuevo."
+          },
+          {
+            "severity": "note",
+            "text": "El humano firma el criterio final."
+          }
+        ],
+        "cost": {
+          "model": "modelo rapido",
+          "tokens": "bajo",
+          "permission": "readonly/workspace segun fase",
+          "stopRule": "Parar si no hay evidencia nueva en el siguiente intento."
+        },
+        "decision": {
+          "question": "Que debe decidir la persona antes de continuar?",
+          "options": [
+            "seguir con alcance actual",
+            "pedir mas contexto",
+            "subir modelo",
+            "bloquear y llevar a tutoria"
+          ],
+          "selected": 0
+        },
+        "risk": {
+          "items": [
+            "Permisos",
+            "Coste",
+            "Contexto",
+            "Calidad",
+            "Responsabilidad humana"
+          ],
+          "level": "bajo"
+        },
+        "branch": {
+          "steps": [
+            "Issue",
+            "Branch",
+            "Plan",
+            "Patch",
+            "Tests",
+            "Review",
+            "PR"
+          ],
+          "active": 2
+        },
+        "quiz": {
+          "question": "Cual es la evidencia minima para cerrar esta pantalla?",
+          "answers": [
+            "Una respuesta convincente",
+            "Un diff probado o decision documentada",
+            "Un prompt mas largo"
+          ],
+          "correct": 1
+        },
+        "source": {
+          "tag": "Plan de patch",
+          "left": {
+            "label": "Plan vago",
+            "color": "destructive",
+            "steps": [
+              {
+                "icon": "AlertTriangle",
+                "text": "Voy a mejorar login"
+              },
+              {
+                "icon": "Code",
+                "text": "Refactorizo validacion"
+              },
+              {
+                "icon": "GitPullRequest",
+                "text": "Luego vemos tests"
+              }
+            ],
+            "total": "No aprobable"
+          },
+          "right": {
+            "label": "Plan aprobable",
+            "color": "accent",
+            "steps": [
+              {
+                "icon": "Check",
+                "text": "Normalizar email antes de comparar"
+              },
+              {
+                "icon": "Check",
+                "text": "Añadir test con mayusculas"
+              },
+              {
+                "icon": "Check",
+                "text": "Ejecutar auth/login.spec.ts"
+              }
+            ],
+            "total": "Aprobable"
+          }
+        }
+      },
+      "subtitles": [
+        {
+          "text": "Pantalla de accion: El plan tiene que ser pequeño y revisable.",
+          "startMs": 750400,
+          "endMs": 787200
+        },
+        {
+          "text": "Autorizar solo el plan de tres pasos y pedir parada si aparece scope nuevo.",
+          "startMs": 787900,
+          "endMs": 824500
+        }
+      ],
+      "voiceover": [
+        "Pantalla de accion: El plan tiene que ser pequeño y revisable.",
+        "Autorizar solo el plan de tres pasos y pedir parada si aparece scope nuevo."
+      ],
+      "screen": {
+        "mode": "decision",
+        "title": "Plan antes de patch",
+        "visual": "decision"
+      },
+      "blueprintAction": {
+        "type": "human-decision",
+        "label": "Aprobar plan",
+        "detail": "Autorizar solo el plan de tres pasos y pedir parada si aparece scope nuevo."
+      }
+    },
+    {
+      "id": "patch-plan__beat-02",
+      "name": "Plan antes de patch / Respuesta",
+      "startMs": 825000,
+      "endMs": 900000,
+      "type": "risk",
+      "content": {
+        "mode": "risk",
+        "vendor": "codex",
+        "title": "Plan antes de patch",
+        "eyebrow": "Codex Workshop 30m - First Real Task / Plan antes de patch",
+        "label": "Respuesta",
+        "actionLabel": "Aprobar plan",
+        "actionDetail": "Autorizar solo el plan de tres pasos y pedir parada si aparece scope nuevo.",
+        "prompt": "Autorizar solo el plan de tres pasos y pedir parada si aparece scope nuevo.",
+        "response": [
+          "Respuesta simulada con salida verificable.",
+          "Se cita evidencia, se limita alcance y se deja una decision humana clara.",
+          "El cierre declara siguiente paso, coste aproximado y riesgo residual."
+        ],
+        "diff": [
+          "- cambio ambiguo sin criterio de aceptacion",
+          "+ cambio acotado con test, owner y evidencia",
+          "+ registro de modelo, permiso y coste"
+        ],
+        "terminal": [
+          "$ pnpm test -- --runInBand",
+          "✓ test relevante pasa",
+          "✓ no hay errores de consola",
+          "i coste relativo registrado"
+        ],
+        "review": [
+          {
+            "severity": "blocker",
+            "text": "No hay criterios bloqueantes pendientes."
+          },
+          {
+            "severity": "medium",
+            "text": "Autorizar solo el plan de tres pasos y pedir parada si aparece scope nuevo."
+          },
+          {
+            "severity": "note",
+            "text": "El humano firma el criterio final."
+          }
+        ],
+        "cost": {
+          "model": "modelo estandar",
+          "tokens": "medio",
+          "permission": "readonly/workspace segun fase",
+          "stopRule": "Parar si no hay evidencia nueva en el siguiente intento."
+        },
+        "decision": {
+          "question": "Que debe decidir la persona antes de continuar?",
+          "options": [
+            "seguir con alcance actual",
+            "pedir mas contexto",
+            "subir modelo",
+            "bloquear y llevar a tutoria"
+          ],
+          "selected": 1
+        },
+        "risk": {
+          "items": [
+            "Permisos",
+            "Coste",
+            "Contexto",
+            "Calidad",
+            "Responsabilidad humana"
+          ],
+          "level": "medio"
+        },
+        "branch": {
+          "steps": [
+            "Issue",
+            "Branch",
+            "Plan",
+            "Patch",
+            "Tests",
+            "Review",
+            "PR"
+          ],
+          "active": 3
+        },
+        "quiz": {
+          "question": "Cual es la evidencia minima para cerrar esta pantalla?",
+          "answers": [
+            "Una respuesta convincente",
+            "Un diff probado o decision documentada",
+            "Un prompt mas largo"
+          ],
+          "correct": 1
+        },
+        "source": {
+          "tag": "Plan de patch",
+          "left": {
+            "label": "Plan vago",
+            "color": "destructive",
+            "steps": [
+              {
+                "icon": "AlertTriangle",
+                "text": "Voy a mejorar login"
+              },
+              {
+                "icon": "Code",
+                "text": "Refactorizo validacion"
+              },
+              {
+                "icon": "GitPullRequest",
+                "text": "Luego vemos tests"
+              }
+            ],
+            "total": "No aprobable"
+          },
+          "right": {
+            "label": "Plan aprobable",
+            "color": "accent",
+            "steps": [
+              {
+                "icon": "Check",
+                "text": "Normalizar email antes de comparar"
+              },
+              {
+                "icon": "Check",
+                "text": "Añadir test con mayusculas"
+              },
+              {
+                "icon": "Check",
+                "text": "Ejecutar auth/login.spec.ts"
+              }
+            ],
+            "total": "Aprobable"
+          }
+        }
+      },
+      "subtitles": [
+        {
+          "text": "Respuesta simulada: Si Codex propone refactor global, lo reconducimos.",
+          "startMs": 825400,
+          "endMs": 862200
+        },
+        {
+          "text": "Autorizar solo el plan de tres pasos y pedir parada si aparece scope nuevo.",
+          "startMs": 862900,
+          "endMs": 899500
+        }
+      ],
+      "voiceover": [
+        "Respuesta simulada: Si Codex propone refactor global, lo reconducimos.",
+        "Autorizar solo el plan de tres pasos y pedir parada si aparece scope nuevo."
+      ],
+      "screen": {
+        "mode": "risk",
+        "title": "Plan antes de patch",
+        "visual": "risk"
+      },
+      "blueprintAction": {
+        "type": "human-decision",
+        "label": "Aprobar plan",
+        "detail": "Autorizar solo el plan de tres pasos y pedir parada si aparece scope nuevo."
+      }
+    },
+    {
+      "id": "diff-review__beat-01",
+      "name": "Diff esperado / Prompt",
+      "startMs": 900000,
+      "endMs": 975000,
+      "type": "prompt",
+      "content": {
+        "mode": "prompt",
+        "vendor": "codex",
+        "title": "Diff esperado",
+        "eyebrow": "Codex Workshop 30m - First Real Task / Diff esperado",
+        "label": "Prompt",
+        "actionLabel": "Revisar diff",
+        "actionDetail": "Buscar cambios colaterales, normalizacion doble y riesgo con espacios.",
+        "prompt": "Buscar cambios colaterales, normalizacion doble y riesgo con espacios.",
+        "response": [
+          "Respuesta simulada con salida verificable.",
+          "Se cita evidencia, se limita alcance y se deja una decision humana clara.",
+          "El cierre declara siguiente paso, coste aproximado y riesgo residual."
+        ],
+        "diff": [
+          "- cambio ambiguo sin criterio de aceptacion",
+          "+ cambio acotado con test, owner y evidencia",
+          "+ registro de modelo, permiso y coste"
+        ],
+        "terminal": [
+          "$ pnpm test -- --runInBand",
+          "✓ test relevante pasa",
+          "✓ no hay errores de consola",
+          "i coste relativo registrado"
+        ],
+        "review": [
+          {
+            "severity": "blocker",
+            "text": "No hay criterios bloqueantes pendientes."
+          },
+          {
+            "severity": "medium",
+            "text": "Buscar cambios colaterales, normalizacion doble y riesgo con espacios."
+          },
+          {
+            "severity": "note",
+            "text": "El humano firma el criterio final."
+          }
+        ],
+        "cost": {
+          "model": "modelo rapido",
+          "tokens": "bajo",
+          "permission": "readonly/workspace segun fase",
+          "stopRule": "Parar si no hay evidencia nueva en el siguiente intento."
+        },
+        "decision": {
+          "question": "Que debe decidir la persona antes de continuar?",
+          "options": [
+            "seguir con alcance actual",
+            "pedir mas contexto",
+            "subir modelo",
+            "bloquear y llevar a tutoria"
+          ],
+          "selected": 0
+        },
+        "risk": {
+          "items": [
+            "Permisos",
+            "Coste",
+            "Contexto",
+            "Calidad",
+            "Responsabilidad humana"
+          ],
+          "level": "bajo"
+        },
+        "branch": {
+          "steps": [
+            "Issue",
+            "Branch",
+            "Plan",
+            "Patch",
+            "Tests",
+            "Review",
+            "PR"
+          ],
+          "active": 2
+        },
+        "quiz": {
+          "question": "Cual es la evidencia minima para cerrar esta pantalla?",
+          "answers": [
+            "Una respuesta convincente",
+            "Un diff probado o decision documentada",
+            "Un prompt mas largo"
+          ],
+          "correct": 1
+        },
+        "source": {
+          "filename": "src/auth/validate-login.ts",
+          "language": "diff",
+          "code": "- const candidateEmail = input.email\n+ const candidateEmail = input.email.trim().toLowerCase()\n\n- return user.email === candidateEmail && verifyPassword(input.password, user.passwordHash)\n+ return user.email.toLowerCase() === candidateEmail && verifyPassword(input.password, user.passwordHash)"
+        }
+      },
+      "subtitles": [
+        {
+          "text": "Pantalla de accion: El diff es pequeño.",
+          "startMs": 900400,
+          "endMs": 937200
+        },
+        {
+          "text": "Buscar cambios colaterales, normalizacion doble y riesgo con espacios.",
+          "startMs": 937900,
+          "endMs": 974500
+        }
+      ],
+      "voiceover": [
+        "Pantalla de accion: El diff es pequeño.",
+        "Buscar cambios colaterales, normalizacion doble y riesgo con espacios."
+      ],
+      "screen": {
+        "mode": "prompt",
+        "title": "Diff esperado",
+        "visual": "prompt"
+      },
+      "blueprintAction": {
+        "type": "diff-review",
+        "label": "Revisar diff",
+        "detail": "Buscar cambios colaterales, normalizacion doble y riesgo con espacios."
+      }
+    },
+    {
+      "id": "diff-review__beat-02",
+      "name": "Diff esperado / Respuesta",
+      "startMs": 975000,
+      "endMs": 1050000,
+      "type": "streaming",
+      "content": {
+        "mode": "streaming",
+        "vendor": "codex",
+        "title": "Diff esperado",
+        "eyebrow": "Codex Workshop 30m - First Real Task / Diff esperado",
+        "label": "Respuesta",
+        "actionLabel": "Revisar diff",
+        "actionDetail": "Buscar cambios colaterales, normalizacion doble y riesgo con espacios.",
+        "prompt": "Buscar cambios colaterales, normalizacion doble y riesgo con espacios.",
+        "response": [
+          "Respuesta simulada con salida verificable.",
+          "Se cita evidencia, se limita alcance y se deja una decision humana clara.",
+          "El cierre declara siguiente paso, coste aproximado y riesgo residual."
+        ],
+        "diff": [
+          "- cambio ambiguo sin criterio de aceptacion",
+          "+ cambio acotado con test, owner y evidencia",
+          "+ registro de modelo, permiso y coste"
+        ],
+        "terminal": [
+          "$ pnpm test -- --runInBand",
+          "✓ test relevante pasa",
+          "✓ no hay errores de consola",
+          "i coste relativo registrado"
+        ],
+        "review": [
+          {
+            "severity": "blocker",
+            "text": "No hay criterios bloqueantes pendientes."
+          },
+          {
+            "severity": "medium",
+            "text": "Buscar cambios colaterales, normalizacion doble y riesgo con espacios."
+          },
+          {
+            "severity": "note",
+            "text": "El humano firma el criterio final."
+          }
+        ],
+        "cost": {
+          "model": "modelo estandar",
+          "tokens": "medio",
+          "permission": "readonly/workspace segun fase",
+          "stopRule": "Parar si no hay evidencia nueva en el siguiente intento."
+        },
+        "decision": {
+          "question": "Que debe decidir la persona antes de continuar?",
+          "options": [
+            "seguir con alcance actual",
+            "pedir mas contexto",
+            "subir modelo",
+            "bloquear y llevar a tutoria"
+          ],
+          "selected": 1
+        },
+        "risk": {
+          "items": [
+            "Permisos",
+            "Coste",
+            "Contexto",
+            "Calidad",
+            "Responsabilidad humana"
+          ],
+          "level": "medio"
+        },
+        "branch": {
+          "steps": [
+            "Issue",
+            "Branch",
+            "Plan",
+            "Patch",
+            "Tests",
+            "Review",
+            "PR"
+          ],
+          "active": 3
+        },
+        "quiz": {
+          "question": "Cual es la evidencia minima para cerrar esta pantalla?",
+          "answers": [
+            "Una respuesta convincente",
+            "Un diff probado o decision documentada",
+            "Un prompt mas largo"
+          ],
+          "correct": 1
+        },
+        "source": {
+          "filename": "src/auth/validate-login.ts",
+          "language": "diff",
+          "code": "- const candidateEmail = input.email\n+ const candidateEmail = input.email.trim().toLowerCase()\n\n- return user.email === candidateEmail && verifyPassword(input.password, user.passwordHash)\n+ return user.email.toLowerCase() === candidateEmail && verifyPassword(input.password, user.passwordHash)"
+        }
+      },
+      "subtitles": [
+        {
+          "text": "Respuesta simulada: No toca la API publica.",
+          "startMs": 975400,
+          "endMs": 1012200
+        },
+        {
+          "text": "Buscar cambios colaterales, normalizacion doble y riesgo con espacios.",
+          "startMs": 1012900,
+          "endMs": 1049500
+        }
+      ],
+      "voiceover": [
+        "Respuesta simulada: No toca la API publica.",
+        "Buscar cambios colaterales, normalizacion doble y riesgo con espacios."
+      ],
+      "screen": {
+        "mode": "streaming",
+        "title": "Diff esperado",
+        "visual": "streaming"
+      },
+      "blueprintAction": {
+        "type": "diff-review",
+        "label": "Revisar diff",
+        "detail": "Buscar cambios colaterales, normalizacion doble y riesgo con espacios."
+      }
+    },
+    {
+      "id": "test-run__beat-01",
+      "name": "Validacion / Prompt",
+      "startMs": 1050000,
+      "endMs": 1125000,
+      "type": "terminal",
+      "content": {
+        "mode": "terminal",
+        "vendor": "codex",
+        "title": "Validacion",
+        "eyebrow": "Codex Workshop 30m - First Real Task / Validacion",
+        "label": "Prompt",
+        "actionLabel": "Ejecutar test",
+        "actionDetail": "Lanzar test cercano y registrar resultado.",
+        "expectedOutput": "4 passing en auth/login.spec.ts.",
+        "prompt": "Lanzar test cercano y registrar resultado.",
+        "response": [
+          "4 passing en auth/login.spec.ts.",
+          "Se cita evidencia, se limita alcance y se deja una decision humana clara.",
+          "El cierre declara siguiente paso, coste aproximado y riesgo residual."
+        ],
+        "diff": [
+          "- cambio ambiguo sin criterio de aceptacion",
+          "+ cambio acotado con test, owner y evidencia",
+          "+ registro de modelo, permiso y coste"
+        ],
+        "terminal": [
+          "$ pnpm test -- --runInBand",
+          "✓ test relevante pasa",
+          "✓ no hay errores de consola",
+          "i coste relativo registrado"
+        ],
+        "review": [
+          {
+            "severity": "blocker",
+            "text": "No hay criterios bloqueantes pendientes."
+          },
+          {
+            "severity": "medium",
+            "text": "Lanzar test cercano y registrar resultado."
+          },
+          {
+            "severity": "note",
+            "text": "El humano firma el criterio final."
+          }
+        ],
+        "cost": {
+          "model": "modelo rapido",
+          "tokens": "bajo",
+          "permission": "ejecucion acotada",
+          "stopRule": "Parar si no hay evidencia nueva en el siguiente intento."
+        },
+        "decision": {
+          "question": "Que debe decidir la persona antes de continuar?",
+          "options": [
+            "seguir con alcance actual",
+            "pedir mas contexto",
+            "subir modelo",
+            "bloquear y llevar a tutoria"
+          ],
+          "selected": 0
+        },
+        "risk": {
+          "items": [
+            "Permisos",
+            "Coste",
+            "Contexto",
+            "Calidad",
+            "Responsabilidad humana"
+          ],
+          "level": "bajo"
+        },
+        "branch": {
+          "steps": [
+            "Issue",
+            "Branch",
+            "Plan",
+            "Patch",
+            "Tests",
+            "Review",
+            "PR"
+          ],
+          "active": 2
+        },
+        "quiz": {
+          "question": "Cual es la evidencia minima para cerrar esta pantalla?",
+          "answers": [
+            "Una respuesta convincente",
+            "Un diff probado o decision documentada",
+            "Un prompt mas largo"
+          ],
+          "correct": 1
+        },
+        "source": {
+          "tag": "Test primero falla, luego pasa",
+          "sentry": {
+            "id": "TEST-CX-W01",
+            "title": "Expected mixed-case email login to succeed",
+            "file": "tests/auth/login.spec.ts",
+            "line": 34,
+            "occurrences": 1,
+            "users": 1,
+            "first": "en workshop",
+            "trace": [
+              "pnpm test -- auth/login.spec.ts",
+              "mixed-case email login",
+              "expected session, received null"
+            ],
+            "context": "El test falla antes del patch y pasa despues del cambio minimo."
+          },
+          "linearFix": {
+            "ticketId": "CX-W01",
+            "title": "Validar email case-insensitive",
+            "description": "Añadir test de email con mayusculas y aplicar normalizacion antes de comparar."
+          },
+          "fix": "pnpm test -- auth/login.spec.ts\n\nResultado esperado:\n- antes: 1 failing\n- despues: 4 passing"
+        }
+      },
+      "subtitles": [
+        {
+          "text": "Pantalla de accion: La evidencia buena muestra antes y despues.",
+          "startMs": 1050400,
+          "endMs": 1087200
+        },
+        {
+          "text": "Lanzar test cercano y registrar resultado.",
+          "startMs": 1087900,
+          "endMs": 1124500
+        }
+      ],
+      "voiceover": [
+        "Pantalla de accion: La evidencia buena muestra antes y despues.",
+        "Lanzar test cercano y registrar resultado."
+      ],
+      "screen": {
+        "mode": "terminal",
+        "title": "Validacion",
+        "visual": "terminal"
+      },
+      "blueprintAction": {
+        "type": "tool-run",
+        "label": "Ejecutar test",
+        "detail": "Lanzar test cercano y registrar resultado.",
+        "expectedOutput": "4 passing en auth/login.spec.ts."
+      }
+    },
+    {
+      "id": "test-run__beat-02",
+      "name": "Validacion / Respuesta",
+      "startMs": 1125000,
+      "endMs": 1200000,
+      "type": "risk",
+      "content": {
+        "mode": "risk",
+        "vendor": "codex",
+        "title": "Validacion",
+        "eyebrow": "Codex Workshop 30m - First Real Task / Validacion",
+        "label": "Respuesta",
+        "actionLabel": "Ejecutar test",
+        "actionDetail": "Lanzar test cercano y registrar resultado.",
+        "expectedOutput": "4 passing en auth/login.spec.ts.",
+        "prompt": "Lanzar test cercano y registrar resultado.",
+        "response": [
+          "4 passing en auth/login.spec.ts.",
+          "Se cita evidencia, se limita alcance y se deja una decision humana clara.",
+          "El cierre declara siguiente paso, coste aproximado y riesgo residual."
+        ],
+        "diff": [
+          "- cambio ambiguo sin criterio de aceptacion",
+          "+ cambio acotado con test, owner y evidencia",
+          "+ registro de modelo, permiso y coste"
+        ],
+        "terminal": [
+          "$ pnpm test -- --runInBand",
+          "✓ test relevante pasa",
+          "✓ no hay errores de consola",
+          "i coste relativo registrado"
+        ],
+        "review": [
+          {
+            "severity": "blocker",
+            "text": "No hay criterios bloqueantes pendientes."
+          },
+          {
+            "severity": "medium",
+            "text": "Lanzar test cercano y registrar resultado."
+          },
+          {
+            "severity": "note",
+            "text": "El humano firma el criterio final."
+          }
+        ],
+        "cost": {
+          "model": "modelo estandar",
+          "tokens": "medio",
+          "permission": "ejecucion acotada",
+          "stopRule": "Parar si no hay evidencia nueva en el siguiente intento."
+        },
+        "decision": {
+          "question": "Que debe decidir la persona antes de continuar?",
+          "options": [
+            "seguir con alcance actual",
+            "pedir mas contexto",
+            "subir modelo",
+            "bloquear y llevar a tutoria"
+          ],
+          "selected": 1
+        },
+        "risk": {
+          "items": [
+            "Permisos",
+            "Coste",
+            "Contexto",
+            "Calidad",
+            "Responsabilidad humana"
+          ],
+          "level": "medio"
+        },
+        "branch": {
+          "steps": [
+            "Issue",
+            "Branch",
+            "Plan",
+            "Patch",
+            "Tests",
+            "Review",
+            "PR"
+          ],
+          "active": 3
+        },
+        "quiz": {
+          "question": "Cual es la evidencia minima para cerrar esta pantalla?",
+          "answers": [
+            "Una respuesta convincente",
+            "Un diff probado o decision documentada",
+            "Un prompt mas largo"
+          ],
+          "correct": 1
+        },
+        "source": {
+          "tag": "Test primero falla, luego pasa",
+          "sentry": {
+            "id": "TEST-CX-W01",
+            "title": "Expected mixed-case email login to succeed",
+            "file": "tests/auth/login.spec.ts",
+            "line": 34,
+            "occurrences": 1,
+            "users": 1,
+            "first": "en workshop",
+            "trace": [
+              "pnpm test -- auth/login.spec.ts",
+              "mixed-case email login",
+              "expected session, received null"
+            ],
+            "context": "El test falla antes del patch y pasa despues del cambio minimo."
+          },
+          "linearFix": {
+            "ticketId": "CX-W01",
+            "title": "Validar email case-insensitive",
+            "description": "Añadir test de email con mayusculas y aplicar normalizacion antes de comparar."
+          },
+          "fix": "pnpm test -- auth/login.spec.ts\n\nResultado esperado:\n- antes: 1 failing\n- despues: 4 passing"
+        }
+      },
+      "subtitles": [
+        {
+          "text": "Respuesta simulada: No necesitamos ejecutar todo el mundo para un cambio pequeño.",
+          "startMs": 1125400,
+          "endMs": 1162200
+        },
+        {
+          "text": "Lanzar test cercano y registrar resultado.",
+          "startMs": 1162900,
+          "endMs": 1199500
+        }
+      ],
+      "voiceover": [
+        "Respuesta simulada: No necesitamos ejecutar todo el mundo para un cambio pequeño.",
+        "Lanzar test cercano y registrar resultado."
+      ],
+      "screen": {
+        "mode": "risk",
+        "title": "Validacion",
+        "visual": "risk"
+      },
+      "blueprintAction": {
+        "type": "tool-run",
+        "label": "Ejecutar test",
+        "detail": "Lanzar test cercano y registrar resultado.",
+        "expectedOutput": "4 passing en auth/login.spec.ts."
+      }
+    },
+    {
+      "id": "cost-permission__beat-01",
+      "name": "Coste y permisos / Prompt",
+      "startMs": 1200000,
+      "endMs": 1275000,
+      "type": "prompt",
+      "content": {
+        "mode": "prompt",
+        "vendor": "codex",
+        "title": "Coste y permisos",
+        "eyebrow": "Codex Workshop 30m - First Real Task / Coste y permisos",
+        "label": "Prompt",
+        "actionLabel": "Registrar presupuesto",
+        "actionDetail": "Apuntar modelo, permisos y checks ejecutados.",
+        "prompt": "Apuntar modelo, permisos y checks ejecutados.",
+        "response": [
+          "Respuesta simulada con salida verificable.",
+          "Se cita evidencia, se limita alcance y se deja una decision humana clara.",
+          "El cierre declara siguiente paso, coste aproximado y riesgo residual."
+        ],
+        "diff": [
+          "- cambio ambiguo sin criterio de aceptacion",
+          "+ cambio acotado con test, owner y evidencia",
+          "+ registro de modelo, permiso y coste"
+        ],
+        "terminal": [
+          "$ pnpm test -- --runInBand",
+          "✓ test relevante pasa",
+          "✓ no hay errores de consola",
+          "i coste relativo registrado"
+        ],
+        "review": [
+          {
+            "severity": "blocker",
+            "text": "No hay criterios bloqueantes pendientes."
+          },
+          {
+            "severity": "medium",
+            "text": "Apuntar modelo, permisos y checks ejecutados."
+          },
+          {
+            "severity": "note",
+            "text": "El humano firma el criterio final."
+          }
+        ],
+        "cost": {
+          "model": "modelo rapido",
+          "tokens": "bajo",
+          "permission": "readonly/workspace segun fase",
+          "stopRule": "Parar si no hay evidencia nueva en el siguiente intento."
+        },
+        "decision": {
+          "question": "Que debe decidir la persona antes de continuar?",
+          "options": [
+            "seguir con alcance actual",
+            "pedir mas contexto",
+            "subir modelo",
+            "bloquear y llevar a tutoria"
+          ],
+          "selected": 0
+        },
+        "risk": {
+          "items": [
+            "Permisos",
+            "Coste",
+            "Contexto",
+            "Calidad",
+            "Responsabilidad humana"
+          ],
+          "level": "bajo"
+        },
+        "branch": {
+          "steps": [
+            "Issue",
+            "Branch",
+            "Plan",
+            "Patch",
+            "Tests",
+            "Review",
+            "PR"
+          ],
+          "active": 2
+        },
+        "quiz": {
+          "question": "Cual es la evidencia minima para cerrar esta pantalla?",
+          "answers": [
+            "Una respuesta convincente",
+            "Un diff probado o decision documentada",
+            "Un prompt mas largo"
+          ],
+          "correct": 1
+        },
+        "source": {
+          "tag": "Gobierno del workshop",
+          "title": "El coste se controla por bucles",
+          "body": "El workshop usa tres bucles cortos: mapa read-only, patch acotado y validacion cercana. Asi se evita que Codex lea media aplicacion o convierta un bug en refactor.",
+          "highlight": "La unidad de coste no es el prompt: es el rework evitado.",
+          "points": [
+            "Modelo recomendado: equilibrado para bugfix pequeño.",
+            "Permiso: read-only primero, write solo tras plan.",
+            "Comando: test cercano, no suite global de entrada.",
+            "Cierre: registrar coste estimado y riesgo."
+          ]
+        }
+      },
+      "subtitles": [
+        {
+          "text": "Pantalla de accion: Esta es la parte que hace sostenible la adopcion.",
+          "startMs": 1200400,
+          "endMs": 1237200
+        },
+        {
+          "text": "Apuntar modelo, permisos y checks ejecutados.",
+          "startMs": 1237900,
+          "endMs": 1274500
+        }
+      ],
+      "voiceover": [
+        "Pantalla de accion: Esta es la parte que hace sostenible la adopcion.",
+        "Apuntar modelo, permisos y checks ejecutados."
+      ],
+      "screen": {
+        "mode": "prompt",
+        "title": "Coste y permisos",
+        "visual": "prompt"
+      },
+      "blueprintAction": {
+        "type": "narrate",
+        "label": "Registrar presupuesto",
+        "detail": "Apuntar modelo, permisos y checks ejecutados."
+      }
+    },
+    {
+      "id": "cost-permission__beat-02",
+      "name": "Coste y permisos / Respuesta",
+      "startMs": 1275000,
+      "endMs": 1350000,
+      "type": "streaming",
+      "content": {
+        "mode": "streaming",
+        "vendor": "codex",
+        "title": "Coste y permisos",
+        "eyebrow": "Codex Workshop 30m - First Real Task / Coste y permisos",
+        "label": "Respuesta",
+        "actionLabel": "Registrar presupuesto",
+        "actionDetail": "Apuntar modelo, permisos y checks ejecutados.",
+        "prompt": "Apuntar modelo, permisos y checks ejecutados.",
+        "response": [
+          "Respuesta simulada con salida verificable.",
+          "Se cita evidencia, se limita alcance y se deja una decision humana clara.",
+          "El cierre declara siguiente paso, coste aproximado y riesgo residual."
+        ],
+        "diff": [
+          "- cambio ambiguo sin criterio de aceptacion",
+          "+ cambio acotado con test, owner y evidencia",
+          "+ registro de modelo, permiso y coste"
+        ],
+        "terminal": [
+          "$ pnpm test -- --runInBand",
+          "✓ test relevante pasa",
+          "✓ no hay errores de consola",
+          "i coste relativo registrado"
+        ],
+        "review": [
+          {
+            "severity": "blocker",
+            "text": "No hay criterios bloqueantes pendientes."
+          },
+          {
+            "severity": "medium",
+            "text": "Apuntar modelo, permisos y checks ejecutados."
+          },
+          {
+            "severity": "note",
+            "text": "El humano firma el criterio final."
+          }
+        ],
+        "cost": {
+          "model": "modelo estandar",
+          "tokens": "medio",
+          "permission": "readonly/workspace segun fase",
+          "stopRule": "Parar si no hay evidencia nueva en el siguiente intento."
+        },
+        "decision": {
+          "question": "Que debe decidir la persona antes de continuar?",
+          "options": [
+            "seguir con alcance actual",
+            "pedir mas contexto",
+            "subir modelo",
+            "bloquear y llevar a tutoria"
+          ],
+          "selected": 1
+        },
+        "risk": {
+          "items": [
+            "Permisos",
+            "Coste",
+            "Contexto",
+            "Calidad",
+            "Responsabilidad humana"
+          ],
+          "level": "medio"
+        },
+        "branch": {
+          "steps": [
+            "Issue",
+            "Branch",
+            "Plan",
+            "Patch",
+            "Tests",
+            "Review",
+            "PR"
+          ],
+          "active": 3
+        },
+        "quiz": {
+          "question": "Cual es la evidencia minima para cerrar esta pantalla?",
+          "answers": [
+            "Una respuesta convincente",
+            "Un diff probado o decision documentada",
+            "Un prompt mas largo"
+          ],
+          "correct": 1
+        },
+        "source": {
+          "tag": "Gobierno del workshop",
+          "title": "El coste se controla por bucles",
+          "body": "El workshop usa tres bucles cortos: mapa read-only, patch acotado y validacion cercana. Asi se evita que Codex lea media aplicacion o convierta un bug en refactor.",
+          "highlight": "La unidad de coste no es el prompt: es el rework evitado.",
+          "points": [
+            "Modelo recomendado: equilibrado para bugfix pequeño.",
+            "Permiso: read-only primero, write solo tras plan.",
+            "Comando: test cercano, no suite global de entrada.",
+            "Cierre: registrar coste estimado y riesgo."
+          ]
+        }
+      },
+      "subtitles": [
+        {
+          "text": "Respuesta simulada: No prohibimos potencia: la dosificamos.",
+          "startMs": 1275400,
+          "endMs": 1312200
+        },
+        {
+          "text": "Apuntar modelo, permisos y checks ejecutados.",
+          "startMs": 1312900,
+          "endMs": 1349500
+        }
+      ],
+      "voiceover": [
+        "Respuesta simulada: No prohibimos potencia: la dosificamos.",
+        "Apuntar modelo, permisos y checks ejecutados."
+      ],
+      "screen": {
+        "mode": "streaming",
+        "title": "Coste y permisos",
+        "visual": "streaming"
+      },
+      "blueprintAction": {
+        "type": "narrate",
+        "label": "Registrar presupuesto",
+        "detail": "Apuntar modelo, permisos y checks ejecutados."
+      }
+    },
+    {
+      "id": "handoff__beat-01",
+      "name": "Handoff final / Prompt",
+      "startMs": 1350000,
+      "endMs": 1425000,
+      "type": "prompt",
+      "content": {
+        "mode": "prompt",
+        "vendor": "codex",
+        "title": "Handoff final",
+        "eyebrow": "Codex Workshop 30m - First Real Task / Handoff final",
+        "label": "Prompt",
+        "actionLabel": "Entregar handoff",
+        "actionDetail": "El participante pega el handoff en la ficha del ejercicio o PR.",
+        "prompt": "El participante pega el handoff en la ficha del ejercicio o PR.",
+        "response": [
+          "Respuesta simulada con salida verificable.",
+          "Se cita evidencia, se limita alcance y se deja una decision humana clara.",
+          "El cierre declara siguiente paso, coste aproximado y riesgo residual."
+        ],
+        "diff": [
+          "- cambio ambiguo sin criterio de aceptacion",
+          "+ cambio acotado con test, owner y evidencia",
+          "+ registro de modelo, permiso y coste"
+        ],
+        "terminal": [
+          "$ pnpm test -- --runInBand",
+          "✓ test relevante pasa",
+          "✓ no hay errores de consola",
+          "i coste relativo registrado"
+        ],
+        "review": [
+          {
+            "severity": "blocker",
+            "text": "No hay criterios bloqueantes pendientes."
+          },
+          {
+            "severity": "medium",
+            "text": "El participante pega el handoff en la ficha del ejercicio o PR."
+          },
+          {
+            "severity": "note",
+            "text": "El humano firma el criterio final."
+          }
+        ],
+        "cost": {
+          "model": "modelo rapido",
+          "tokens": "bajo",
+          "permission": "readonly/workspace segun fase",
+          "stopRule": "Parar si no hay evidencia nueva en el siguiente intento."
+        },
+        "decision": {
+          "question": "Que debe decidir la persona antes de continuar?",
+          "options": [
+            "seguir con alcance actual",
+            "pedir mas contexto",
+            "subir modelo",
+            "bloquear y llevar a tutoria"
+          ],
+          "selected": 0
+        },
+        "risk": {
+          "items": [
+            "Permisos",
+            "Coste",
+            "Contexto",
+            "Calidad",
+            "Responsabilidad humana"
+          ],
+          "level": "bajo"
+        },
+        "branch": {
+          "steps": [
+            "Issue",
+            "Branch",
+            "Plan",
+            "Patch",
+            "Tests",
+            "Review",
+            "PR"
+          ],
+          "active": 2
+        },
+        "quiz": {
+          "question": "Cual es la evidencia minima para cerrar esta pantalla?",
+          "answers": [
+            "Una respuesta convincente",
+            "Un diff probado o decision documentada",
+            "Un prompt mas largo"
+          ],
+          "correct": 1
+        },
+        "source": {
+          "filename": "handoff.md",
+          "language": "markdown",
+          "code": "## Handoff CX-W01\n\nObjetivo: login case-insensitive.\nArchivos leidos: src/auth/validate-login.ts, tests/auth/login.spec.ts.\nArchivos modificados: src/auth/validate-login.ts, tests/auth/login.spec.ts.\nCambio: normalizacion trim/lowercase antes de comparar.\nCheck: pnpm test -- auth/login.spec.ts -> passing.\nCoste: bajo; 1 mapa read-only + 1 patch + 1 test.\nRiesgo: revisar comportamiento con emails legacy con espacios.\nSiguiente accion: PR pequeño con descripcion del caso cubierto."
+        }
+      },
+      "subtitles": [
+        {
+          "text": "Pantalla de accion: El cierre no es decoracion.",
+          "startMs": 1350400,
+          "endMs": 1387200
+        },
+        {
+          "text": "El participante pega el handoff en la ficha del ejercicio o PR.",
+          "startMs": 1387900,
+          "endMs": 1424500
+        }
+      ],
+      "voiceover": [
+        "Pantalla de accion: El cierre no es decoracion.",
+        "El participante pega el handoff en la ficha del ejercicio o PR."
+      ],
+      "screen": {
+        "mode": "prompt",
+        "title": "Handoff final",
+        "visual": "prompt"
+      },
+      "blueprintAction": {
+        "type": "handoff",
+        "label": "Entregar handoff",
+        "detail": "El participante pega el handoff en la ficha del ejercicio o PR."
+      }
+    },
+    {
+      "id": "handoff__beat-02",
+      "name": "Handoff final / Respuesta",
+      "startMs": 1425000,
+      "endMs": 1500000,
+      "type": "streaming",
+      "content": {
+        "mode": "streaming",
+        "vendor": "codex",
+        "title": "Handoff final",
+        "eyebrow": "Codex Workshop 30m - First Real Task / Handoff final",
+        "label": "Respuesta",
+        "actionLabel": "Entregar handoff",
+        "actionDetail": "El participante pega el handoff en la ficha del ejercicio o PR.",
+        "prompt": "El participante pega el handoff en la ficha del ejercicio o PR.",
+        "response": [
+          "Respuesta simulada con salida verificable.",
+          "Se cita evidencia, se limita alcance y se deja una decision humana clara.",
+          "El cierre declara siguiente paso, coste aproximado y riesgo residual."
+        ],
+        "diff": [
+          "- cambio ambiguo sin criterio de aceptacion",
+          "+ cambio acotado con test, owner y evidencia",
+          "+ registro de modelo, permiso y coste"
+        ],
+        "terminal": [
+          "$ pnpm test -- --runInBand",
+          "✓ test relevante pasa",
+          "✓ no hay errores de consola",
+          "i coste relativo registrado"
+        ],
+        "review": [
+          {
+            "severity": "blocker",
+            "text": "No hay criterios bloqueantes pendientes."
+          },
+          {
+            "severity": "medium",
+            "text": "El participante pega el handoff en la ficha del ejercicio o PR."
+          },
+          {
+            "severity": "note",
+            "text": "El humano firma el criterio final."
+          }
+        ],
+        "cost": {
+          "model": "modelo estandar",
+          "tokens": "medio",
+          "permission": "readonly/workspace segun fase",
+          "stopRule": "Parar si no hay evidencia nueva en el siguiente intento."
+        },
+        "decision": {
+          "question": "Que debe decidir la persona antes de continuar?",
+          "options": [
+            "seguir con alcance actual",
+            "pedir mas contexto",
+            "subir modelo",
+            "bloquear y llevar a tutoria"
+          ],
+          "selected": 1
+        },
+        "risk": {
+          "items": [
+            "Permisos",
+            "Coste",
+            "Contexto",
+            "Calidad",
+            "Responsabilidad humana"
+          ],
+          "level": "medio"
+        },
+        "branch": {
+          "steps": [
+            "Issue",
+            "Branch",
+            "Plan",
+            "Patch",
+            "Tests",
+            "Review",
+            "PR"
+          ],
+          "active": 3
+        },
+        "quiz": {
+          "question": "Cual es la evidencia minima para cerrar esta pantalla?",
+          "answers": [
+            "Una respuesta convincente",
+            "Un diff probado o decision documentada",
+            "Un prompt mas largo"
+          ],
+          "correct": 1
+        },
+        "source": {
+          "filename": "handoff.md",
+          "language": "markdown",
+          "code": "## Handoff CX-W01\n\nObjetivo: login case-insensitive.\nArchivos leidos: src/auth/validate-login.ts, tests/auth/login.spec.ts.\nArchivos modificados: src/auth/validate-login.ts, tests/auth/login.spec.ts.\nCambio: normalizacion trim/lowercase antes de comparar.\nCheck: pnpm test -- auth/login.spec.ts -> passing.\nCoste: bajo; 1 mapa read-only + 1 patch + 1 test.\nRiesgo: revisar comportamiento con emails legacy con espacios.\nSiguiente accion: PR pequeño con descripcion del caso cubierto."
+        }
+      },
+      "subtitles": [
+        {
+          "text": "Respuesta simulada: Es lo que permite tutorias utiles y continuidad entre sesiones.",
+          "startMs": 1425400,
+          "endMs": 1462200
+        },
+        {
+          "text": "El participante pega el handoff en la ficha del ejercicio o PR.",
+          "startMs": 1462900,
+          "endMs": 1499500
+        }
+      ],
+      "voiceover": [
+        "Respuesta simulada: Es lo que permite tutorias utiles y continuidad entre sesiones.",
+        "El participante pega el handoff en la ficha del ejercicio o PR."
+      ],
+      "screen": {
+        "mode": "streaming",
+        "title": "Handoff final",
+        "visual": "streaming"
+      },
+      "blueprintAction": {
+        "type": "handoff",
+        "label": "Entregar handoff",
+        "detail": "El participante pega el handoff en la ficha del ejercicio o PR."
+      }
+    },
+    {
+      "id": "facilitator-review__beat-01",
+      "name": "Revision del facilitador / Prompt",
+      "startMs": 1500000,
+      "endMs": 1575000,
+      "type": "pr-review",
+      "content": {
+        "mode": "pr-review",
+        "vendor": "codex",
+        "title": "Revision del facilitador",
+        "eyebrow": "Codex Workshop 30m - First Real Task / Revision del facilitador",
+        "label": "Prompt",
+        "actionLabel": "Puntuar rubrica",
+        "actionDetail": "El facilitador marca evidencias y decide si el alumno pasa al siguiente bloque.",
+        "prompt": "El facilitador marca evidencias y decide si el alumno pasa al siguiente bloque.",
+        "response": [
+          "Respuesta simulada con salida verificable.",
+          "Se cita evidencia, se limita alcance y se deja una decision humana clara.",
+          "El cierre declara siguiente paso, coste aproximado y riesgo residual."
+        ],
+        "diff": [
+          "- cambio ambiguo sin criterio de aceptacion",
+          "+ cambio acotado con test, owner y evidencia",
+          "+ registro de modelo, permiso y coste"
+        ],
+        "terminal": [
+          "$ pnpm test -- --runInBand",
+          "✓ test relevante pasa",
+          "✓ no hay errores de consola",
+          "i coste relativo registrado"
+        ],
+        "review": [
+          {
+            "severity": "blocker",
+            "text": "No hay criterios bloqueantes pendientes."
+          },
+          {
+            "severity": "medium",
+            "text": "El facilitador marca evidencias y decide si el alumno pasa al siguiente bloque."
+          },
+          {
+            "severity": "note",
+            "text": "El humano firma el criterio final."
+          }
+        ],
+        "cost": {
+          "model": "modelo rapido",
+          "tokens": "bajo",
+          "permission": "readonly/workspace segun fase",
+          "stopRule": "Parar si no hay evidencia nueva en el siguiente intento."
+        },
+        "decision": {
+          "question": "Que debe decidir la persona antes de continuar?",
+          "options": [
+            "seguir con alcance actual",
+            "pedir mas contexto",
+            "subir modelo",
+            "bloquear y llevar a tutoria"
+          ],
+          "selected": 0
+        },
+        "risk": {
+          "items": [
+            "Permisos",
+            "Coste",
+            "Contexto",
+            "Calidad",
+            "Responsabilidad humana"
+          ],
+          "level": "bajo"
+        },
+        "branch": {
+          "steps": [
+            "Issue",
+            "Branch",
+            "Plan",
+            "Patch",
+            "Tests",
+            "Review",
+            "PR"
+          ],
+          "active": 2
+        },
+        "quiz": {
+          "question": "Cual es la evidencia minima para cerrar esta pantalla?",
+          "answers": [
+            "Una respuesta convincente",
+            "Un diff probado o decision documentada",
+            "Un prompt mas largo"
+          ],
+          "correct": 1
+        },
+        "source": {
+          "title": "Rubrica del workshop",
+          "description": "El formador evalua metodo, no solo si el codigo funciona.",
+          "items": [
+            {
+              "label": "Mapa antes de patch",
+              "value": "OK"
+            },
+            {
+              "label": "Scope controlado",
+              "value": "OK"
+            },
+            {
+              "label": "Check cercano",
+              "value": "OK"
+            },
+            {
+              "label": "Handoff legible",
+              "value": "OK"
+            }
+          ]
+        }
+      },
+      "subtitles": [
+        {
+          "text": "Pantalla de accion: La revision debe premiar comportamiento repetible.",
+          "startMs": 1500400,
+          "endMs": 1537200
+        },
+        {
+          "text": "El facilitador marca evidencias y decide si el alumno pasa al siguiente bloque.",
+          "startMs": 1537900,
+          "endMs": 1574500
+        }
+      ],
+      "voiceover": [
+        "Pantalla de accion: La revision debe premiar comportamiento repetible.",
+        "El facilitador marca evidencias y decide si el alumno pasa al siguiente bloque."
+      ],
+      "screen": {
+        "mode": "pr-review",
+        "title": "Revision del facilitador",
+        "visual": "pr-review"
+      },
+      "blueprintAction": {
+        "type": "human-decision",
+        "label": "Puntuar rubrica",
+        "detail": "El facilitador marca evidencias y decide si el alumno pasa al siguiente bloque."
+      }
+    },
+    {
+      "id": "facilitator-review__beat-02",
+      "name": "Revision del facilitador / Respuesta",
+      "startMs": 1575000,
+      "endMs": 1650000,
+      "type": "terminal",
+      "content": {
+        "mode": "terminal",
+        "vendor": "codex",
+        "title": "Revision del facilitador",
+        "eyebrow": "Codex Workshop 30m - First Real Task / Revision del facilitador",
+        "label": "Respuesta",
+        "actionLabel": "Puntuar rubrica",
+        "actionDetail": "El facilitador marca evidencias y decide si el alumno pasa al siguiente bloque.",
+        "prompt": "El facilitador marca evidencias y decide si el alumno pasa al siguiente bloque.",
+        "response": [
+          "Respuesta simulada con salida verificable.",
+          "Se cita evidencia, se limita alcance y se deja una decision humana clara.",
+          "El cierre declara siguiente paso, coste aproximado y riesgo residual."
+        ],
+        "diff": [
+          "- cambio ambiguo sin criterio de aceptacion",
+          "+ cambio acotado con test, owner y evidencia",
+          "+ registro de modelo, permiso y coste"
+        ],
+        "terminal": [
+          "$ pnpm test -- --runInBand",
+          "✓ test relevante pasa",
+          "✓ no hay errores de consola",
+          "i coste relativo registrado"
+        ],
+        "review": [
+          {
+            "severity": "blocker",
+            "text": "No hay criterios bloqueantes pendientes."
+          },
+          {
+            "severity": "medium",
+            "text": "El facilitador marca evidencias y decide si el alumno pasa al siguiente bloque."
+          },
+          {
+            "severity": "note",
+            "text": "El humano firma el criterio final."
+          }
+        ],
+        "cost": {
+          "model": "modelo estandar",
+          "tokens": "medio",
+          "permission": "readonly/workspace segun fase",
+          "stopRule": "Parar si no hay evidencia nueva en el siguiente intento."
+        },
+        "decision": {
+          "question": "Que debe decidir la persona antes de continuar?",
+          "options": [
+            "seguir con alcance actual",
+            "pedir mas contexto",
+            "subir modelo",
+            "bloquear y llevar a tutoria"
+          ],
+          "selected": 1
+        },
+        "risk": {
+          "items": [
+            "Permisos",
+            "Coste",
+            "Contexto",
+            "Calidad",
+            "Responsabilidad humana"
+          ],
+          "level": "medio"
+        },
+        "branch": {
+          "steps": [
+            "Issue",
+            "Branch",
+            "Plan",
+            "Patch",
+            "Tests",
+            "Review",
+            "PR"
+          ],
+          "active": 3
+        },
+        "quiz": {
+          "question": "Cual es la evidencia minima para cerrar esta pantalla?",
+          "answers": [
+            "Una respuesta convincente",
+            "Un diff probado o decision documentada",
+            "Un prompt mas largo"
+          ],
+          "correct": 1
+        },
+        "source": {
+          "title": "Rubrica del workshop",
+          "description": "El formador evalua metodo, no solo si el codigo funciona.",
+          "items": [
+            {
+              "label": "Mapa antes de patch",
+              "value": "OK"
+            },
+            {
+              "label": "Scope controlado",
+              "value": "OK"
+            },
+            {
+              "label": "Check cercano",
+              "value": "OK"
+            },
+            {
+              "label": "Handoff legible",
+              "value": "OK"
+            }
+          ]
+        }
+      },
+      "subtitles": [
+        {
+          "text": "Respuesta simulada: Un patch correcto con mal metodo no escala.",
+          "startMs": 1575400,
+          "endMs": 1612200
+        },
+        {
+          "text": "El facilitador marca evidencias y decide si el alumno pasa al siguiente bloque.",
+          "startMs": 1612900,
+          "endMs": 1649500
+        }
+      ],
+      "voiceover": [
+        "Respuesta simulada: Un patch correcto con mal metodo no escala.",
+        "El facilitador marca evidencias y decide si el alumno pasa al siguiente bloque."
+      ],
+      "screen": {
+        "mode": "terminal",
+        "title": "Revision del facilitador",
+        "visual": "terminal"
+      },
+      "blueprintAction": {
+        "type": "human-decision",
+        "label": "Puntuar rubrica",
+        "detail": "El facilitador marca evidencias y decide si el alumno pasa al siguiente bloque."
+      }
+    },
+    {
+      "id": "finale__beat-01",
+      "name": "Cierre / Prompt",
+      "startMs": 1650000,
+      "endMs": 1725000,
+      "type": "quiz",
+      "content": {
+        "mode": "quiz",
+        "vendor": "codex",
+        "title": "Cierre",
+        "eyebrow": "Codex Workshop 30m - First Real Task / Cierre",
+        "label": "Prompt",
+        "actionLabel": "Cerrar workshop",
+        "actionDetail": "Guardar prompt, diff, test y handoff como evidencia.",
+        "prompt": "Guardar prompt, diff, test y handoff como evidencia.",
+        "response": [
+          "Respuesta simulada con salida verificable.",
+          "Se cita evidencia, se limita alcance y se deja una decision humana clara.",
+          "El cierre declara siguiente paso, coste aproximado y riesgo residual."
+        ],
+        "diff": [
+          "- cambio ambiguo sin criterio de aceptacion",
+          "+ cambio acotado con test, owner y evidencia",
+          "+ registro de modelo, permiso y coste"
+        ],
+        "terminal": [
+          "$ pnpm test -- --runInBand",
+          "✓ test relevante pasa",
+          "✓ no hay errores de consola",
+          "i coste relativo registrado"
+        ],
+        "review": [
+          {
+            "severity": "blocker",
+            "text": "No hay criterios bloqueantes pendientes."
+          },
+          {
+            "severity": "medium",
+            "text": "Guardar prompt, diff, test y handoff como evidencia."
+          },
+          {
+            "severity": "note",
+            "text": "El humano firma el criterio final."
+          }
+        ],
+        "cost": {
+          "model": "modelo rapido",
+          "tokens": "bajo",
+          "permission": "readonly/workspace segun fase",
+          "stopRule": "Parar si no hay evidencia nueva en el siguiente intento."
+        },
+        "decision": {
+          "question": "Que debe decidir la persona antes de continuar?",
+          "options": [
+            "seguir con alcance actual",
+            "pedir mas contexto",
+            "subir modelo",
+            "bloquear y llevar a tutoria"
+          ],
+          "selected": 0
+        },
+        "risk": {
+          "items": [
+            "Permisos",
+            "Coste",
+            "Contexto",
+            "Calidad",
+            "Responsabilidad humana"
+          ],
+          "level": "bajo"
+        },
+        "branch": {
+          "steps": [
+            "Issue",
+            "Branch",
+            "Plan",
+            "Patch",
+            "Tests",
+            "Review",
+            "PR"
+          ],
+          "active": 2
+        },
+        "quiz": {
+          "question": "Cual es la evidencia minima para cerrar esta pantalla?",
+          "answers": [
+            "Una respuesta convincente",
+            "Un diff probado o decision documentada",
+            "Un prompt mas largo"
+          ],
+          "correct": 1
+        },
+        "source": {
+          "title": "Primer workshop completado",
+          "summary": [
+            {
+              "number": "01",
+              "label": "Mapa",
+              "body": "Codex explora antes de editar."
+            },
+            {
+              "number": "02",
+              "label": "Patch",
+              "body": "El cambio es pequeño, revisable y con test."
+            },
+            {
+              "number": "03",
+              "label": "Handoff",
+              "body": "La evidencia permite tutoria y continuidad."
+            }
+          ],
+          "cta": "Siguiente: Codex Potente con modelos, MCP readonly y skills."
+        }
+      },
+      "subtitles": [
+        {
+          "text": "Pantalla de accion: Este workshop instala el reflejo base.",
+          "startMs": 1650400,
+          "endMs": 1687200
+        },
+        {
+          "text": "Guardar prompt, diff, test y handoff como evidencia.",
+          "startMs": 1687900,
+          "endMs": 1724500
+        }
+      ],
+      "voiceover": [
+        "Pantalla de accion: Este workshop instala el reflejo base.",
+        "Guardar prompt, diff, test y handoff como evidencia."
+      ],
+      "screen": {
+        "mode": "quiz",
+        "title": "Cierre",
+        "visual": "quiz"
+      },
+      "blueprintAction": {
+        "type": "handoff",
+        "label": "Cerrar workshop",
+        "detail": "Guardar prompt, diff, test y handoff como evidencia."
+      }
+    },
+    {
+      "id": "finale__beat-02",
+      "name": "Cierre / Respuesta",
+      "startMs": 1725000,
+      "endMs": 1800000,
+      "type": "pr-review",
+      "content": {
+        "mode": "pr-review",
+        "vendor": "codex",
+        "title": "Cierre",
+        "eyebrow": "Codex Workshop 30m - First Real Task / Cierre",
+        "label": "Respuesta",
+        "actionLabel": "Cerrar workshop",
+        "actionDetail": "Guardar prompt, diff, test y handoff como evidencia.",
+        "prompt": "Guardar prompt, diff, test y handoff como evidencia.",
+        "response": [
+          "Respuesta simulada con salida verificable.",
+          "Se cita evidencia, se limita alcance y se deja una decision humana clara.",
+          "El cierre declara siguiente paso, coste aproximado y riesgo residual."
+        ],
+        "diff": [
+          "- cambio ambiguo sin criterio de aceptacion",
+          "+ cambio acotado con test, owner y evidencia",
+          "+ registro de modelo, permiso y coste"
+        ],
+        "terminal": [
+          "$ pnpm test -- --runInBand",
+          "✓ test relevante pasa",
+          "✓ no hay errores de consola",
+          "i coste relativo registrado"
+        ],
+        "review": [
+          {
+            "severity": "blocker",
+            "text": "No hay criterios bloqueantes pendientes."
+          },
+          {
+            "severity": "medium",
+            "text": "Guardar prompt, diff, test y handoff como evidencia."
+          },
+          {
+            "severity": "note",
+            "text": "El humano firma el criterio final."
+          }
+        ],
+        "cost": {
+          "model": "modelo estandar",
+          "tokens": "medio",
+          "permission": "readonly/workspace segun fase",
+          "stopRule": "Parar si no hay evidencia nueva en el siguiente intento."
+        },
+        "decision": {
+          "question": "Que debe decidir la persona antes de continuar?",
+          "options": [
+            "seguir con alcance actual",
+            "pedir mas contexto",
+            "subir modelo",
+            "bloquear y llevar a tutoria"
+          ],
+          "selected": 1
+        },
+        "risk": {
+          "items": [
+            "Permisos",
+            "Coste",
+            "Contexto",
+            "Calidad",
+            "Responsabilidad humana"
+          ],
+          "level": "medio"
+        },
+        "branch": {
+          "steps": [
+            "Issue",
+            "Branch",
+            "Plan",
+            "Patch",
+            "Tests",
+            "Review",
+            "PR"
+          ],
+          "active": 3
+        },
+        "quiz": {
+          "question": "Cual es la evidencia minima para cerrar esta pantalla?",
+          "answers": [
+            "Una respuesta convincente",
+            "Un diff probado o decision documentada",
+            "Un prompt mas largo"
+          ],
+          "correct": 1
+        },
+        "source": {
+          "title": "Primer workshop completado",
+          "summary": [
+            {
+              "number": "01",
+              "label": "Mapa",
+              "body": "Codex explora antes de editar."
+            },
+            {
+              "number": "02",
+              "label": "Patch",
+              "body": "El cambio es pequeño, revisable y con test."
+            },
+            {
+              "number": "03",
+              "label": "Handoff",
+              "body": "La evidencia permite tutoria y continuidad."
+            }
+          ],
+          "cta": "Siguiente: Codex Potente con modelos, MCP readonly y skills."
+        }
+      },
+      "subtitles": [
+        {
+          "text": "Respuesta simulada: A partir de aqui ya podemos hablar de MCP, skills y swarms.",
+          "startMs": 1725400,
+          "endMs": 1762200
+        },
+        {
+          "text": "Guardar prompt, diff, test y handoff como evidencia.",
+          "startMs": 1762900,
+          "endMs": 1799500
+        }
+      ],
+      "voiceover": [
+        "Respuesta simulada: A partir de aqui ya podemos hablar de MCP, skills y swarms.",
+        "Guardar prompt, diff, test y handoff como evidencia."
+      ],
+      "screen": {
+        "mode": "pr-review",
+        "title": "Cierre",
+        "visual": "pr-review"
+      },
+      "blueprintAction": {
+        "type": "handoff",
+        "label": "Cerrar workshop",
+        "detail": "Guardar prompt, diff, test y handoff como evidencia."
+      }
+    }
+  ],
+  "generatedFrom": "public/video-blueprints/cx-workshop-30m-first-real-task.json"
+}

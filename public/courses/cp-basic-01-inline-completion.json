@@ -1,0 +1,74 @@
+{
+  "id": "cp-basic-01-inline-completion",
+  "title": "Copilot Basic 01 - Inline Completion",
+  "description": "Ghost text bien usado: contexto cercano, nombres claros y revision antes de aceptar.",
+  "template": "technical",
+  "durationPreset": 5,
+  "durationMs": 90000,
+  "voice": "es-ES-AlvaroNeural",
+  "author": "AI Practice Hub",
+  "createdAt": "2026-05-07T00:00:00.000Z",
+  "chapters": [
+    { "id": "start", "label": "Ghost text", "startMs": 0 },
+    { "id": "code", "label": "Contexto", "startMs": 9000 },
+    { "id": "close", "label": "Criterio", "startMs": 65000 }
+  ],
+  "scenes": [
+    {
+      "id": "title",
+      "name": "Apertura",
+      "startMs": 0,
+      "endMs": 9000,
+      "type": "title",
+      "content": {
+        "title": "Ghost text con criterio",
+        "subtitle": "Aceptar rapido no significa aceptar sin mirar.",
+        "tag": "Copilot Basic"
+      },
+      "subtitles": [
+        { "text": "El autocompletado de Copilot es rapido, pero el criterio sigue siendo humano.", "startMs": 1000, "endMs": 8200 }
+      ]
+    },
+    {
+      "id": "coding",
+      "name": "Codigo",
+      "startMs": 9000,
+      "endMs": 65000,
+      "type": "coding",
+      "content": {
+        "tag": "Inline completion",
+        "filename": "src/price.js",
+        "code": "// Mal contexto: Copilot adivina demasiado\nfunction calc(x) {\n  // aplicar descuento\n}\n\n// Buen contexto: nombres y contrato\nfunction applyDiscount(priceInCents, discountPercent) {\n  if (discountPercent < 0 || discountPercent > 100) {\n    throw new Error('Invalid discount')\n  }\n\n  return Math.round(priceInCents * (1 - discountPercent / 100))\n}",
+        "commentary": [
+          { "atLine": 1, "text": "Contexto pobre" },
+          { "atLine": 6, "text": "Nombres utiles" },
+          { "atLine": 7, "text": "Edge case explicito" }
+        ]
+      },
+      "subtitles": [
+        { "text": "Copilot no lee tu mente: lee nombres, comentarios y archivos abiertos.", "startMs": 10000, "endMs": 25000 },
+        { "text": "Con buen contexto, la sugerencia mejora mucho.", "startMs": 26000, "endMs": 43000 },
+        { "text": "Aun asi hay que revisar edge cases.", "startMs": 44000, "endMs": 62000 }
+      ]
+    },
+    {
+      "id": "finale",
+      "name": "Cierre",
+      "startMs": 65000,
+      "endMs": 90000,
+      "type": "finale",
+      "content": {
+        "title": "Completion profesional",
+        "summary": [
+          { "number": "01", "label": "Contexto", "body": "Archivo, nombres y comentario." },
+          { "number": "02", "label": "Revision", "body": "No aceptar a ciegas." },
+          { "number": "03", "label": "Test", "body": "Comprobar edge cases." }
+        ],
+        "cta": "Ejercicio: cp-b02-inline-completion."
+      },
+      "subtitles": [
+        { "text": "Contexto, revision y test. Esa es la completion profesional.", "startMs": 66000, "endMs": 89000 }
+      ]
+    }
+  ]
+}

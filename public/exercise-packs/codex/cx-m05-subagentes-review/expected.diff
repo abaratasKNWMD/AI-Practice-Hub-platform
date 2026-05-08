@@ -1,0 +1,9 @@
+diff --git a/README.md b/README.md
+--- a/README.md
++++ b/README.md
+@@
++# Evidencia de ejercicio
++- Ejercicio: cx-m05-subagentes-review
++- Resultado: salida verificable
++- Coste: Medio-alto: varias ramas de analisis
++- Permisos: read-only para exploradores

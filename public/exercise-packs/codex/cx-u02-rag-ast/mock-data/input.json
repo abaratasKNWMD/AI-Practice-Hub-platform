@@ -1,0 +1,21 @@
+{
+  "vendor": "codex",
+  "exerciseId": "cx-u02-rag-ast",
+  "title": "Enterprise RAG con AST",
+  "surface": "AST parsers + embeddings",
+  "recommendedModel": "GPT-5.5 para diseno, embeddings para indice",
+  "permissionMode": "read-only sobre codigo fuente",
+  "estimatedCost": "Alto inicial, bajo por consulta si se cachea",
+  "intentionalErrors": [
+    "briefing demasiado amplio",
+    "falta de evidencia",
+    "coste sin registrar"
+  ],
+  "expectedArtifacts": [
+    "prompt",
+    "resultado",
+    "evidencia",
+    "coste",
+    "decision"
+  ]
+}

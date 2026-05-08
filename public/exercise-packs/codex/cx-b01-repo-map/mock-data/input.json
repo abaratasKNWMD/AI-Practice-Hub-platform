@@ -1,0 +1,21 @@
+{
+  "vendor": "codex",
+  "exerciseId": "cx-b01-repo-map",
+  "title": "Mapa express del repositorio",
+  "surface": "CLI + editor",
+  "recommendedModel": "GPT-5.4 Mini",
+  "permissionMode": "read-only",
+  "estimatedCost": "Bajo: 1 exploracion corta, sin reintentos largos",
+  "intentionalErrors": [
+    "briefing demasiado amplio",
+    "falta de evidencia",
+    "coste sin registrar"
+  ],
+  "expectedArtifacts": [
+    "prompt",
+    "resultado",
+    "evidencia",
+    "coste",
+    "decision"
+  ]
+}

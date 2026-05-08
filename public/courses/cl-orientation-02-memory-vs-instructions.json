@@ -1,0 +1,80 @@
+{
+  "id": "cl-orientation-02-memory-vs-instructions",
+  "title": "Claude Orientation 02 - Memory vs Instructions",
+  "description": "Decidir que va a memoria, rules, skills o contexto temporal.",
+  "template": "technical",
+  "durationPreset": 5,
+  "durationMs": 90000,
+  "voice": "es-ES-AlvaroNeural",
+  "author": "AI Practice Hub",
+  "createdAt": "2026-05-07T00:00:00.000Z",
+  "chapters": [
+    { "id": "start", "label": "Decision", "startMs": 0 },
+    { "id": "compare", "label": "Comparativa", "startMs": 9000 },
+    { "id": "close", "label": "Matriz", "startMs": 65000 }
+  ],
+  "scenes": [
+    {
+      "id": "title",
+      "name": "Apertura",
+      "startMs": 0,
+      "endMs": 9000,
+      "type": "title",
+      "content": { "title": "Memoria o instrucciones?", "subtitle": "La diferencia entre contexto util y mochila llena de piedras.", "tag": "Claude Orientation" },
+      "subtitles": [{ "text": "Una ruta Claude potente empieza sabiendo donde vive cada regla.", "startMs": 1000, "endMs": 8200 }]
+    },
+    {
+      "id": "compare",
+      "name": "Comparativa",
+      "startMs": 9000,
+      "endMs": 65000,
+      "type": "compare",
+      "content": {
+        "tag": "Contexto con criterio",
+        "left": {
+          "label": "Todo en un prompt",
+          "color": "destructive",
+          "steps": [
+            { "icon": "AlertTriangle", "text": "Repeticion en cada sesion" },
+            { "icon": "FileText", "text": "CLAUDE.md gigante" },
+            { "icon": "Wallet", "text": "Mas tokens para menos precision" }
+          ],
+          "total": "Cansancio"
+        },
+        "right": {
+          "label": "Capas Claude",
+          "color": "accent",
+          "steps": [
+            { "icon": "BookOpen", "text": "Memoria estable" },
+            { "icon": "FolderTree", "text": "Rules por area" },
+            { "icon": "Wrench", "text": "Skills bajo demanda" }
+          ],
+          "total": "Operacion"
+        }
+      },
+      "subtitles": [
+        { "text": "Si todo vive en el prompt, todo cuesta siempre.", "startMs": 10000, "endMs": 26000 },
+        { "text": "Las capas permiten cargar solo lo que toca.", "startMs": 27000, "endMs": 46000 },
+        { "text": "Eso es entrenamiento autoconsumible convertido en sistema.", "startMs": 47000, "endMs": 63000 }
+      ]
+    },
+    {
+      "id": "finale",
+      "name": "Cierre",
+      "startMs": 65000,
+      "endMs": 90000,
+      "type": "finale",
+      "content": {
+        "title": "Matriz rapida",
+        "summary": [
+          { "number": "Global", "label": "CLAUDE.md", "body": "Arquitectura, comandos y reglas base." },
+          { "number": "Local", "label": "Rules", "body": "Frontend, backend, tests y seguridad." },
+          { "number": "Repetible", "label": "Skills", "body": "Procesos que se invocan muchas veces." }
+        ],
+        "cta": "Ejercicio: cl0-e03-memory-audit."
+      },
+      "subtitles": [{ "text": "La buena memoria no lo recuerda todo. Recuerda lo correcto.", "startMs": 66000, "endMs": 89000 }]
+    }
+  ]
+}
+

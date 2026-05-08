@@ -1,0 +1,3249 @@
+{
+  "id": "cp-workshop-30m-error-to-pr",
+  "title": "Copilot Workshop 30m - Error to PR",
+  "description": "Workshop simulado de 30 minutos para pasar de error en VS Code a PR revisable con Ask, Edit, Agent, instructions y presupuesto de premium requests.",
+  "template": "technical",
+  "durationPreset": 30,
+  "durationMs": 1800000,
+  "voice": "es-ES-AlvaroNeural",
+  "author": "AI Practice Hub",
+  "createdAt": "2026-05-08T00:00:00.000Z",
+  "chapters": [
+    {
+      "id": "briefing",
+      "label": "Briefing",
+      "startMs": 0
+    },
+    {
+      "id": "ask",
+      "label": "Ask",
+      "startMs": 300000
+    },
+    {
+      "id": "edit",
+      "label": "Edit",
+      "startMs": 600000
+    },
+    {
+      "id": "agent",
+      "label": "Agent",
+      "startMs": 900000
+    },
+    {
+      "id": "pr",
+      "label": "PR",
+      "startMs": 1350000
+    }
+  ],
+  "scenes": [
+    {
+      "id": "title__beat-01",
+      "name": "Apertura / Prompt",
+      "startMs": 0,
+      "endMs": 75000,
+      "type": "prompt",
+      "content": {
+        "mode": "prompt",
+        "vendor": "copilot",
+        "title": "Apertura",
+        "eyebrow": "Copilot Workshop 30m - Error to PR / Apertura",
+        "label": "Prompt",
+        "actionLabel": "Presentar modos",
+        "actionDetail": "Explicar Ask, Edit y Agent como niveles de autonomia.",
+        "prompt": "Explicar Ask, Edit y Agent como niveles de autonomia.",
+        "response": [
+          "Respuesta simulada con salida verificable.",
+          "Se cita evidencia, se limita alcance y se deja una decision humana clara.",
+          "El cierre declara siguiente paso, coste aproximado y riesgo residual."
+        ],
+        "diff": [
+          "- cambio ambiguo sin criterio de aceptacion",
+          "+ cambio acotado con test, owner y evidencia",
+          "+ registro de modelo, permiso y coste"
+        ],
+        "terminal": [
+          "$ pnpm test -- --runInBand",
+          "✓ test relevante pasa",
+          "✓ no hay errores de consola",
+          "i coste relativo registrado"
+        ],
+        "review": [
+          {
+            "severity": "blocker",
+            "text": "No hay criterios bloqueantes pendientes."
+          },
+          {
+            "severity": "medium",
+            "text": "Explicar Ask, Edit y Agent como niveles de autonomia."
+          },
+          {
+            "severity": "note",
+            "text": "El humano firma el criterio final."
+          }
+        ],
+        "cost": {
+          "model": "modelo rapido",
+          "tokens": "bajo",
+          "permission": "readonly/workspace segun fase",
+          "stopRule": "Parar si no hay evidencia nueva en el siguiente intento."
+        },
+        "decision": {
+          "question": "Que debe decidir la persona antes de continuar?",
+          "options": [
+            "seguir con alcance actual",
+            "pedir mas contexto",
+            "subir modelo",
+            "bloquear y llevar a tutoria"
+          ],
+          "selected": 0
+        },
+        "risk": {
+          "items": [
+            "Permisos",
+            "Coste",
+            "Contexto",
+            "Calidad",
+            "Responsabilidad humana"
+          ],
+          "level": "bajo"
+        },
+        "branch": {
+          "steps": [
+            "Issue",
+            "Branch",
+            "Plan",
+            "Patch",
+            "Tests",
+            "Review",
+            "PR"
+          ],
+          "active": 2
+        },
+        "quiz": {
+          "question": "Cual es la evidencia minima para cerrar esta pantalla?",
+          "answers": [
+            "Una respuesta convincente",
+            "Un diff probado o decision documentada",
+            "Un prompt mas largo"
+          ],
+          "correct": 1
+        },
+        "source": {
+          "title": "Copilot: de error a PR",
+          "subtitle": "Ask para entender, Edit para corregir, Agent para completar y PR para revisar.",
+          "tag": "Workshop / GitHub Copilot"
+        }
+      },
+      "subtitles": [
+        {
+          "text": "Pantalla de accion: En este workshop Copilot no es autocomplete.",
+          "startMs": 400,
+          "endMs": 37200
+        },
+        {
+          "text": "Explicar Ask, Edit y Agent como niveles de autonomia.",
+          "startMs": 37900,
+          "endMs": 74500
+        }
+      ],
+      "voiceover": [
+        "Pantalla de accion: En este workshop Copilot no es autocomplete.",
+        "Explicar Ask, Edit y Agent como niveles de autonomia."
+      ],
+      "screen": {
+        "mode": "prompt",
+        "title": "Apertura",
+        "visual": "prompt"
+      },
+      "blueprintAction": {
+        "type": "narrate",
+        "label": "Presentar modos",
+        "detail": "Explicar Ask, Edit y Agent como niveles de autonomia."
+      }
+    },
+    {
+      "id": "title__beat-02",
+      "name": "Apertura / Respuesta",
+      "startMs": 75000,
+      "endMs": 150000,
+      "type": "streaming",
+      "content": {
+        "mode": "streaming",
+        "vendor": "copilot",
+        "title": "Apertura",
+        "eyebrow": "Copilot Workshop 30m - Error to PR / Apertura",
+        "label": "Respuesta",
+        "actionLabel": "Presentar modos",
+        "actionDetail": "Explicar Ask, Edit y Agent como niveles de autonomia.",
+        "prompt": "Explicar Ask, Edit y Agent como niveles de autonomia.",
+        "response": [
+          "Respuesta simulada con salida verificable.",
+          "Se cita evidencia, se limita alcance y se deja una decision humana clara.",
+          "El cierre declara siguiente paso, coste aproximado y riesgo residual."
+        ],
+        "diff": [
+          "- cambio ambiguo sin criterio de aceptacion",
+          "+ cambio acotado con test, owner y evidencia",
+          "+ registro de modelo, permiso y coste"
+        ],
+        "terminal": [
+          "$ pnpm test -- --runInBand",
+          "✓ test relevante pasa",
+          "✓ no hay errores de consola",
+          "i coste relativo registrado"
+        ],
+        "review": [
+          {
+            "severity": "blocker",
+            "text": "No hay criterios bloqueantes pendientes."
+          },
+          {
+            "severity": "medium",
+            "text": "Explicar Ask, Edit y Agent como niveles de autonomia."
+          },
+          {
+            "severity": "note",
+            "text": "El humano firma el criterio final."
+          }
+        ],
+        "cost": {
+          "model": "modelo estandar",
+          "tokens": "medio",
+          "permission": "readonly/workspace segun fase",
+          "stopRule": "Parar si no hay evidencia nueva en el siguiente intento."
+        },
+        "decision": {
+          "question": "Que debe decidir la persona antes de continuar?",
+          "options": [
+            "seguir con alcance actual",
+            "pedir mas contexto",
+            "subir modelo",
+            "bloquear y llevar a tutoria"
+          ],
+          "selected": 1
+        },
+        "risk": {
+          "items": [
+            "Permisos",
+            "Coste",
+            "Contexto",
+            "Calidad",
+            "Responsabilidad humana"
+          ],
+          "level": "medio"
+        },
+        "branch": {
+          "steps": [
+            "Issue",
+            "Branch",
+            "Plan",
+            "Patch",
+            "Tests",
+            "Review",
+            "PR"
+          ],
+          "active": 3
+        },
+        "quiz": {
+          "question": "Cual es la evidencia minima para cerrar esta pantalla?",
+          "answers": [
+            "Una respuesta convincente",
+            "Un diff probado o decision documentada",
+            "Un prompt mas largo"
+          ],
+          "correct": 1
+        },
+        "source": {
+          "title": "Copilot: de error a PR",
+          "subtitle": "Ask para entender, Edit para corregir, Agent para completar y PR para revisar.",
+          "tag": "Workshop / GitHub Copilot"
+        }
+      },
+      "subtitles": [
+        {
+          "text": "Respuesta simulada: Es un banco de trabajo con modos.",
+          "startMs": 75400,
+          "endMs": 112200
+        },
+        {
+          "text": "Explicar Ask, Edit y Agent como niveles de autonomia.",
+          "startMs": 112900,
+          "endMs": 149500
+        }
+      ],
+      "voiceover": [
+        "Respuesta simulada: Es un banco de trabajo con modos.",
+        "Explicar Ask, Edit y Agent como niveles de autonomia."
+      ],
+      "screen": {
+        "mode": "streaming",
+        "title": "Apertura",
+        "visual": "streaming"
+      },
+      "blueprintAction": {
+        "type": "narrate",
+        "label": "Presentar modos",
+        "detail": "Explicar Ask, Edit y Agent como niveles de autonomia."
+      }
+    },
+    {
+      "id": "error-ticket__beat-01",
+      "name": "Error inicial / Prompt",
+      "startMs": 150000,
+      "endMs": 225000,
+      "type": "terminal",
+      "content": {
+        "mode": "terminal",
+        "vendor": "copilot",
+        "title": "Error inicial",
+        "eyebrow": "Copilot Workshop 30m - Error to PR / Error inicial",
+        "label": "Prompt",
+        "actionLabel": "No editar aun",
+        "actionDetail": "El participante confirma que empieza con Ask, no Agent.",
+        "prompt": "El participante confirma que empieza con Ask, no Agent.",
+        "response": [
+          "Respuesta simulada con salida verificable.",
+          "Se cita evidencia, se limita alcance y se deja una decision humana clara.",
+          "El cierre declara siguiente paso, coste aproximado y riesgo residual."
+        ],
+        "diff": [
+          "- cambio ambiguo sin criterio de aceptacion",
+          "+ cambio acotado con test, owner y evidencia",
+          "+ registro de modelo, permiso y coste"
+        ],
+        "terminal": [
+          "$ pnpm test -- --runInBand",
+          "✓ test relevante pasa",
+          "✓ no hay errores de consola",
+          "i coste relativo registrado"
+        ],
+        "review": [
+          {
+            "severity": "blocker",
+            "text": "No hay criterios bloqueantes pendientes."
+          },
+          {
+            "severity": "medium",
+            "text": "El participante confirma que empieza con Ask, no Agent."
+          },
+          {
+            "severity": "note",
+            "text": "El humano firma el criterio final."
+          }
+        ],
+        "cost": {
+          "model": "modelo rapido",
+          "tokens": "bajo",
+          "permission": "readonly/workspace segun fase",
+          "stopRule": "Parar si no hay evidencia nueva en el siguiente intento."
+        },
+        "decision": {
+          "question": "Que debe decidir la persona antes de continuar?",
+          "options": [
+            "seguir con alcance actual",
+            "pedir mas contexto",
+            "subir modelo",
+            "bloquear y llevar a tutoria"
+          ],
+          "selected": 0
+        },
+        "risk": {
+          "items": [
+            "Permisos",
+            "Coste",
+            "Contexto",
+            "Calidad",
+            "Responsabilidad humana"
+          ],
+          "level": "bajo"
+        },
+        "branch": {
+          "steps": [
+            "Issue",
+            "Branch",
+            "Plan",
+            "Patch",
+            "Tests",
+            "Review",
+            "PR"
+          ],
+          "active": 2
+        },
+        "quiz": {
+          "question": "Cual es la evidencia minima para cerrar esta pantalla?",
+          "answers": [
+            "Una respuesta convincente",
+            "Un diff probado o decision documentada",
+            "Un prompt mas largo"
+          ],
+          "correct": 1
+        },
+        "source": {
+          "tag": "Error mockeado",
+          "sentry": {
+            "id": "CP-W01",
+            "title": "TypeError: cannot read properties of undefined",
+            "file": "src/cart/total.ts",
+            "line": 17,
+            "occurrences": 1,
+            "users": 1,
+            "first": "en workshop",
+            "trace": [
+              "calculateTotal(items)",
+              "item.price.amount",
+              "item.price is undefined"
+            ],
+            "context": "Un item legacy llega sin price y rompe el total del carrito."
+          },
+          "linearFix": {
+            "ticketId": "CP-W01",
+            "title": "Hacer calculateTotal tolerante a price missing",
+            "description": "Diagnosticar con Ask, aplicar cambio minimo con Edit y crear test de caso legacy."
+          },
+          "fix": "No aplicar fix todavia. Primero pedir explicacion con Ask."
+        }
+      },
+      "subtitles": [
+        {
+          "text": "Pantalla de accion: El error es concreto y reproducible.",
+          "startMs": 150400,
+          "endMs": 187200
+        },
+        {
+          "text": "El participante confirma que empieza con Ask, no Agent.",
+          "startMs": 187900,
+          "endMs": 224500
+        }
+      ],
+      "voiceover": [
+        "Pantalla de accion: El error es concreto y reproducible.",
+        "El participante confirma que empieza con Ask, no Agent."
+      ],
+      "screen": {
+        "mode": "terminal",
+        "title": "Error inicial",
+        "visual": "terminal"
+      },
+      "blueprintAction": {
+        "type": "human-decision",
+        "label": "No editar aun",
+        "detail": "El participante confirma que empieza con Ask, no Agent."
+      }
+    },
+    {
+      "id": "error-ticket__beat-02",
+      "name": "Error inicial / Respuesta",
+      "startMs": 225000,
+      "endMs": 300000,
+      "type": "risk",
+      "content": {
+        "mode": "risk",
+        "vendor": "copilot",
+        "title": "Error inicial",
+        "eyebrow": "Copilot Workshop 30m - Error to PR / Error inicial",
+        "label": "Respuesta",
+        "actionLabel": "No editar aun",
+        "actionDetail": "El participante confirma que empieza con Ask, no Agent.",
+        "prompt": "El participante confirma que empieza con Ask, no Agent.",
+        "response": [
+          "Respuesta simulada con salida verificable.",
+          "Se cita evidencia, se limita alcance y se deja una decision humana clara.",
+          "El cierre declara siguiente paso, coste aproximado y riesgo residual."
+        ],
+        "diff": [
+          "- cambio ambiguo sin criterio de aceptacion",
+          "+ cambio acotado con test, owner y evidencia",
+          "+ registro de modelo, permiso y coste"
+        ],
+        "terminal": [
+          "$ pnpm test -- --runInBand",
+          "✓ test relevante pasa",
+          "✓ no hay errores de consola",
+          "i coste relativo registrado"
+        ],
+        "review": [
+          {
+            "severity": "blocker",
+            "text": "No hay criterios bloqueantes pendientes."
+          },
+          {
+            "severity": "medium",
+            "text": "El participante confirma que empieza con Ask, no Agent."
+          },
+          {
+            "severity": "note",
+            "text": "El humano firma el criterio final."
+          }
+        ],
+        "cost": {
+          "model": "modelo estandar",
+          "tokens": "medio",
+          "permission": "readonly/workspace segun fase",
+          "stopRule": "Parar si no hay evidencia nueva en el siguiente intento."
+        },
+        "decision": {
+          "question": "Que debe decidir la persona antes de continuar?",
+          "options": [
+            "seguir con alcance actual",
+            "pedir mas contexto",
+            "subir modelo",
+            "bloquear y llevar a tutoria"
+          ],
+          "selected": 1
+        },
+        "risk": {
+          "items": [
+            "Permisos",
+            "Coste",
+            "Contexto",
+            "Calidad",
+            "Responsabilidad humana"
+          ],
+          "level": "medio"
+        },
+        "branch": {
+          "steps": [
+            "Issue",
+            "Branch",
+            "Plan",
+            "Patch",
+            "Tests",
+            "Review",
+            "PR"
+          ],
+          "active": 3
+        },
+        "quiz": {
+          "question": "Cual es la evidencia minima para cerrar esta pantalla?",
+          "answers": [
+            "Una respuesta convincente",
+            "Un diff probado o decision documentada",
+            "Un prompt mas largo"
+          ],
+          "correct": 1
+        },
+        "source": {
+          "tag": "Error mockeado",
+          "sentry": {
+            "id": "CP-W01",
+            "title": "TypeError: cannot read properties of undefined",
+            "file": "src/cart/total.ts",
+            "line": 17,
+            "occurrences": 1,
+            "users": 1,
+            "first": "en workshop",
+            "trace": [
+              "calculateTotal(items)",
+              "item.price.amount",
+              "item.price is undefined"
+            ],
+            "context": "Un item legacy llega sin price y rompe el total del carrito."
+          },
+          "linearFix": {
+            "ticketId": "CP-W01",
+            "title": "Hacer calculateTotal tolerante a price missing",
+            "description": "Diagnosticar con Ask, aplicar cambio minimo con Edit y crear test de caso legacy."
+          },
+          "fix": "No aplicar fix todavia. Primero pedir explicacion con Ask."
+        }
+      },
+      "subtitles": [
+        {
+          "text": "Respuesta simulada: No vamos a pedir que Copilot lo arregle de golpe.",
+          "startMs": 225400,
+          "endMs": 262200
+        },
+        {
+          "text": "El participante confirma que empieza con Ask, no Agent.",
+          "startMs": 262900,
+          "endMs": 299500
+        }
+      ],
+      "voiceover": [
+        "Respuesta simulada: No vamos a pedir que Copilot lo arregle de golpe.",
+        "El participante confirma que empieza con Ask, no Agent."
+      ],
+      "screen": {
+        "mode": "risk",
+        "title": "Error inicial",
+        "visual": "risk"
+      },
+      "blueprintAction": {
+        "type": "human-decision",
+        "label": "No editar aun",
+        "detail": "El participante confirma que empieza con Ask, no Agent."
+      }
+    },
+    {
+      "id": "ask-prompt__beat-01",
+      "name": "Prompt Ask / Prompt",
+      "startMs": 300000,
+      "endMs": 375000,
+      "type": "prompt",
+      "content": {
+        "mode": "prompt",
+        "vendor": "copilot",
+        "title": "Prompt Ask",
+        "eyebrow": "Copilot Workshop 30m - Error to PR / Prompt Ask",
+        "label": "Prompt",
+        "actionLabel": "Enviar Ask",
+        "actionDetail": "Usar Copilot Ask sin modificar archivos.",
+        "prompt": "Usar Copilot Ask sin modificar archivos.",
+        "response": [
+          "Respuesta simulada con salida verificable.",
+          "Se cita evidencia, se limita alcance y se deja una decision humana clara.",
+          "El cierre declara siguiente paso, coste aproximado y riesgo residual."
+        ],
+        "diff": [
+          "- cambio ambiguo sin criterio de aceptacion",
+          "+ cambio acotado con test, owner y evidencia",
+          "+ registro de modelo, permiso y coste"
+        ],
+        "terminal": [
+          "$ pnpm test -- --runInBand",
+          "✓ test relevante pasa",
+          "✓ no hay errores de consola",
+          "i coste relativo registrado"
+        ],
+        "review": [
+          {
+            "severity": "blocker",
+            "text": "No hay criterios bloqueantes pendientes."
+          },
+          {
+            "severity": "medium",
+            "text": "Usar Copilot Ask sin modificar archivos."
+          },
+          {
+            "severity": "note",
+            "text": "El humano firma el criterio final."
+          }
+        ],
+        "cost": {
+          "model": "modelo rapido",
+          "tokens": "bajo",
+          "permission": "readonly/workspace segun fase",
+          "stopRule": "Parar si no hay evidencia nueva en el siguiente intento."
+        },
+        "decision": {
+          "question": "Que debe decidir la persona antes de continuar?",
+          "options": [
+            "seguir con alcance actual",
+            "pedir mas contexto",
+            "subir modelo",
+            "bloquear y llevar a tutoria"
+          ],
+          "selected": 0
+        },
+        "risk": {
+          "items": [
+            "Permisos",
+            "Coste",
+            "Contexto",
+            "Calidad",
+            "Responsabilidad humana"
+          ],
+          "level": "bajo"
+        },
+        "branch": {
+          "steps": [
+            "Issue",
+            "Branch",
+            "Plan",
+            "Patch",
+            "Tests",
+            "Review",
+            "PR"
+          ],
+          "active": 2
+        },
+        "quiz": {
+          "question": "Cual es la evidencia minima para cerrar esta pantalla?",
+          "answers": [
+            "Una respuesta convincente",
+            "Un diff probado o decision documentada",
+            "Un prompt mas largo"
+          ],
+          "correct": 1
+        },
+        "source": {
+          "filename": "prompts/copilot-ask.md",
+          "language": "markdown",
+          "code": "@workspace Explica este error sin editar archivos.\n\nContexto:\n- Falla calculateTotal en src/cart/total.ts\n- El stack dice item.price is undefined\n\nDevuelve:\n1. hipotesis principal\n2. archivos que debo revisar\n3. test minimo que cubriria el caso\n4. que NO deberia cambiar"
+        }
+      },
+      "subtitles": [
+        {
+          "text": "Pantalla de accion: Ask es perfecto para diagnostico.",
+          "startMs": 300400,
+          "endMs": 337200
+        },
+        {
+          "text": "Usar Copilot Ask sin modificar archivos.",
+          "startMs": 337900,
+          "endMs": 374500
+        }
+      ],
+      "voiceover": [
+        "Pantalla de accion: Ask es perfecto para diagnostico.",
+        "Usar Copilot Ask sin modificar archivos."
+      ],
+      "screen": {
+        "mode": "prompt",
+        "title": "Prompt Ask",
+        "visual": "prompt"
+      },
+      "blueprintAction": {
+        "type": "prompt",
+        "label": "Enviar Ask",
+        "detail": "Usar Copilot Ask sin modificar archivos."
+      }
+    },
+    {
+      "id": "ask-prompt__beat-02",
+      "name": "Prompt Ask / Respuesta",
+      "startMs": 375000,
+      "endMs": 450000,
+      "type": "streaming",
+      "content": {
+        "mode": "streaming",
+        "vendor": "copilot",
+        "title": "Prompt Ask",
+        "eyebrow": "Copilot Workshop 30m - Error to PR / Prompt Ask",
+        "label": "Respuesta",
+        "actionLabel": "Enviar Ask",
+        "actionDetail": "Usar Copilot Ask sin modificar archivos.",
+        "prompt": "Usar Copilot Ask sin modificar archivos.",
+        "response": [
+          "Respuesta simulada con salida verificable.",
+          "Se cita evidencia, se limita alcance y se deja una decision humana clara.",
+          "El cierre declara siguiente paso, coste aproximado y riesgo residual."
+        ],
+        "diff": [
+          "- cambio ambiguo sin criterio de aceptacion",
+          "+ cambio acotado con test, owner y evidencia",
+          "+ registro de modelo, permiso y coste"
+        ],
+        "terminal": [
+          "$ pnpm test -- --runInBand",
+          "✓ test relevante pasa",
+          "✓ no hay errores de consola",
+          "i coste relativo registrado"
+        ],
+        "review": [
+          {
+            "severity": "blocker",
+            "text": "No hay criterios bloqueantes pendientes."
+          },
+          {
+            "severity": "medium",
+            "text": "Usar Copilot Ask sin modificar archivos."
+          },
+          {
+            "severity": "note",
+            "text": "El humano firma el criterio final."
+          }
+        ],
+        "cost": {
+          "model": "modelo estandar",
+          "tokens": "medio",
+          "permission": "readonly/workspace segun fase",
+          "stopRule": "Parar si no hay evidencia nueva en el siguiente intento."
+        },
+        "decision": {
+          "question": "Que debe decidir la persona antes de continuar?",
+          "options": [
+            "seguir con alcance actual",
+            "pedir mas contexto",
+            "subir modelo",
+            "bloquear y llevar a tutoria"
+          ],
+          "selected": 1
+        },
+        "risk": {
+          "items": [
+            "Permisos",
+            "Coste",
+            "Contexto",
+            "Calidad",
+            "Responsabilidad humana"
+          ],
+          "level": "medio"
+        },
+        "branch": {
+          "steps": [
+            "Issue",
+            "Branch",
+            "Plan",
+            "Patch",
+            "Tests",
+            "Review",
+            "PR"
+          ],
+          "active": 3
+        },
+        "quiz": {
+          "question": "Cual es la evidencia minima para cerrar esta pantalla?",
+          "answers": [
+            "Una respuesta convincente",
+            "Un diff probado o decision documentada",
+            "Un prompt mas largo"
+          ],
+          "correct": 1
+        },
+        "source": {
+          "filename": "prompts/copilot-ask.md",
+          "language": "markdown",
+          "code": "@workspace Explica este error sin editar archivos.\n\nContexto:\n- Falla calculateTotal en src/cart/total.ts\n- El stack dice item.price is undefined\n\nDevuelve:\n1. hipotesis principal\n2. archivos que debo revisar\n3. test minimo que cubriria el caso\n4. que NO deberia cambiar"
+        }
+      },
+      "subtitles": [
+        {
+          "text": "Respuesta simulada: Le pedimos hipotesis, archivos y test.",
+          "startMs": 375400,
+          "endMs": 412200
+        },
+        {
+          "text": "Usar Copilot Ask sin modificar archivos.",
+          "startMs": 412900,
+          "endMs": 449500
+        }
+      ],
+      "voiceover": [
+        "Respuesta simulada: Le pedimos hipotesis, archivos y test.",
+        "Usar Copilot Ask sin modificar archivos."
+      ],
+      "screen": {
+        "mode": "streaming",
+        "title": "Prompt Ask",
+        "visual": "streaming"
+      },
+      "blueprintAction": {
+        "type": "prompt",
+        "label": "Enviar Ask",
+        "detail": "Usar Copilot Ask sin modificar archivos."
+      }
+    },
+    {
+      "id": "ask-response__beat-01",
+      "name": "Respuesta Ask / Prompt",
+      "startMs": 450000,
+      "endMs": 525000,
+      "type": "prompt",
+      "content": {
+        "mode": "prompt",
+        "vendor": "copilot",
+        "title": "Respuesta Ask",
+        "eyebrow": "Copilot Workshop 30m - Error to PR / Respuesta Ask",
+        "label": "Prompt",
+        "actionLabel": "Validar diagnostico",
+        "actionDetail": "El facilitador pregunta que evidencia falta antes de patch.",
+        "prompt": "El facilitador pregunta que evidencia falta antes de patch.",
+        "response": [
+          "Respuesta simulada con salida verificable.",
+          "Se cita evidencia, se limita alcance y se deja una decision humana clara.",
+          "El cierre declara siguiente paso, coste aproximado y riesgo residual."
+        ],
+        "diff": [
+          "- cambio ambiguo sin criterio de aceptacion",
+          "+ cambio acotado con test, owner y evidencia",
+          "+ registro de modelo, permiso y coste"
+        ],
+        "terminal": [
+          "$ pnpm test -- --runInBand",
+          "✓ test relevante pasa",
+          "✓ no hay errores de consola",
+          "i coste relativo registrado"
+        ],
+        "review": [
+          {
+            "severity": "blocker",
+            "text": "No hay criterios bloqueantes pendientes."
+          },
+          {
+            "severity": "medium",
+            "text": "El facilitador pregunta que evidencia falta antes de patch."
+          },
+          {
+            "severity": "note",
+            "text": "El humano firma el criterio final."
+          }
+        ],
+        "cost": {
+          "model": "modelo rapido",
+          "tokens": "bajo",
+          "permission": "readonly/workspace segun fase",
+          "stopRule": "Parar si no hay evidencia nueva en el siguiente intento."
+        },
+        "decision": {
+          "question": "Que debe decidir la persona antes de continuar?",
+          "options": [
+            "seguir con alcance actual",
+            "pedir mas contexto",
+            "subir modelo",
+            "bloquear y llevar a tutoria"
+          ],
+          "selected": 0
+        },
+        "risk": {
+          "items": [
+            "Permisos",
+            "Coste",
+            "Contexto",
+            "Calidad",
+            "Responsabilidad humana"
+          ],
+          "level": "bajo"
+        },
+        "branch": {
+          "steps": [
+            "Issue",
+            "Branch",
+            "Plan",
+            "Patch",
+            "Tests",
+            "Review",
+            "PR"
+          ],
+          "active": 2
+        },
+        "quiz": {
+          "question": "Cual es la evidencia minima para cerrar esta pantalla?",
+          "answers": [
+            "Una respuesta convincente",
+            "Un diff probado o decision documentada",
+            "Un prompt mas largo"
+          ],
+          "correct": 1
+        },
+        "source": {
+          "tag": "Respuesta simulada",
+          "title": "Copilot separa causa, alcance y test",
+          "body": "La causa probable es que calculateTotal asume price.amount en todos los items. El fix no deberia cambiar el contrato de carrito ni el formato de moneda. El test minimo crea un item legacy sin price y espera que se ignore o compute como cero.",
+          "highlight": "Ask nos da criterio sin tocar el repo.",
+          "points": [
+            "Archivo: src/cart/total.ts",
+            "Test: tests/cart/total.spec.ts",
+            "No cambiar: schema publico de CartItem",
+            "Riesgo: ocultar datos corruptos sin logging"
+          ]
+        }
+      },
+      "subtitles": [
+        {
+          "text": "Pantalla de accion: Esta respuesta ya permite decidir.",
+          "startMs": 450400,
+          "endMs": 487200
+        },
+        {
+          "text": "El facilitador pregunta que evidencia falta antes de patch.",
+          "startMs": 487900,
+          "endMs": 524500
+        }
+      ],
+      "voiceover": [
+        "Pantalla de accion: Esta respuesta ya permite decidir.",
+        "El facilitador pregunta que evidencia falta antes de patch."
+      ],
+      "screen": {
+        "mode": "prompt",
+        "title": "Respuesta Ask",
+        "visual": "prompt"
+      },
+      "blueprintAction": {
+        "type": "simulated-response",
+        "label": "Validar diagnostico",
+        "detail": "El facilitador pregunta que evidencia falta antes de patch."
+      }
+    },
+    {
+      "id": "ask-response__beat-02",
+      "name": "Respuesta Ask / Respuesta",
+      "startMs": 525000,
+      "endMs": 600000,
+      "type": "streaming",
+      "content": {
+        "mode": "streaming",
+        "vendor": "copilot",
+        "title": "Respuesta Ask",
+        "eyebrow": "Copilot Workshop 30m - Error to PR / Respuesta Ask",
+        "label": "Respuesta",
+        "actionLabel": "Validar diagnostico",
+        "actionDetail": "El facilitador pregunta que evidencia falta antes de patch.",
+        "prompt": "El facilitador pregunta que evidencia falta antes de patch.",
+        "response": [
+          "Respuesta simulada con salida verificable.",
+          "Se cita evidencia, se limita alcance y se deja una decision humana clara.",
+          "El cierre declara siguiente paso, coste aproximado y riesgo residual."
+        ],
+        "diff": [
+          "- cambio ambiguo sin criterio de aceptacion",
+          "+ cambio acotado con test, owner y evidencia",
+          "+ registro de modelo, permiso y coste"
+        ],
+        "terminal": [
+          "$ pnpm test -- --runInBand",
+          "✓ test relevante pasa",
+          "✓ no hay errores de consola",
+          "i coste relativo registrado"
+        ],
+        "review": [
+          {
+            "severity": "blocker",
+            "text": "No hay criterios bloqueantes pendientes."
+          },
+          {
+            "severity": "medium",
+            "text": "El facilitador pregunta que evidencia falta antes de patch."
+          },
+          {
+            "severity": "note",
+            "text": "El humano firma el criterio final."
+          }
+        ],
+        "cost": {
+          "model": "modelo estandar",
+          "tokens": "medio",
+          "permission": "readonly/workspace segun fase",
+          "stopRule": "Parar si no hay evidencia nueva en el siguiente intento."
+        },
+        "decision": {
+          "question": "Que debe decidir la persona antes de continuar?",
+          "options": [
+            "seguir con alcance actual",
+            "pedir mas contexto",
+            "subir modelo",
+            "bloquear y llevar a tutoria"
+          ],
+          "selected": 1
+        },
+        "risk": {
+          "items": [
+            "Permisos",
+            "Coste",
+            "Contexto",
+            "Calidad",
+            "Responsabilidad humana"
+          ],
+          "level": "medio"
+        },
+        "branch": {
+          "steps": [
+            "Issue",
+            "Branch",
+            "Plan",
+            "Patch",
+            "Tests",
+            "Review",
+            "PR"
+          ],
+          "active": 3
+        },
+        "quiz": {
+          "question": "Cual es la evidencia minima para cerrar esta pantalla?",
+          "answers": [
+            "Una respuesta convincente",
+            "Un diff probado o decision documentada",
+            "Un prompt mas largo"
+          ],
+          "correct": 1
+        },
+        "source": {
+          "tag": "Respuesta simulada",
+          "title": "Copilot separa causa, alcance y test",
+          "body": "La causa probable es que calculateTotal asume price.amount en todos los items. El fix no deberia cambiar el contrato de carrito ni el formato de moneda. El test minimo crea un item legacy sin price y espera que se ignore o compute como cero.",
+          "highlight": "Ask nos da criterio sin tocar el repo.",
+          "points": [
+            "Archivo: src/cart/total.ts",
+            "Test: tests/cart/total.spec.ts",
+            "No cambiar: schema publico de CartItem",
+            "Riesgo: ocultar datos corruptos sin logging"
+          ]
+        }
+      },
+      "subtitles": [
+        {
+          "text": "Respuesta simulada: No hay diff todavia.",
+          "startMs": 525400,
+          "endMs": 562200
+        },
+        {
+          "text": "El facilitador pregunta que evidencia falta antes de patch.",
+          "startMs": 562900,
+          "endMs": 599500
+        }
+      ],
+      "voiceover": [
+        "Respuesta simulada: No hay diff todavia.",
+        "El facilitador pregunta que evidencia falta antes de patch."
+      ],
+      "screen": {
+        "mode": "streaming",
+        "title": "Respuesta Ask",
+        "visual": "streaming"
+      },
+      "blueprintAction": {
+        "type": "simulated-response",
+        "label": "Validar diagnostico",
+        "detail": "El facilitador pregunta que evidencia falta antes de patch."
+      }
+    },
+    {
+      "id": "edit-patch__beat-01",
+      "name": "Inline Edit / Prompt",
+      "startMs": 600000,
+      "endMs": 675000,
+      "type": "prompt",
+      "content": {
+        "mode": "prompt",
+        "vendor": "copilot",
+        "title": "Inline Edit",
+        "eyebrow": "Copilot Workshop 30m - Error to PR / Inline Edit",
+        "label": "Prompt",
+        "actionLabel": "Aceptar o ajustar diff",
+        "actionDetail": "Revisar optional chaining, default a cero y semantica del negocio.",
+        "prompt": "Revisar optional chaining, default a cero y semantica del negocio.",
+        "response": [
+          "Respuesta simulada con salida verificable.",
+          "Se cita evidencia, se limita alcance y se deja una decision humana clara.",
+          "El cierre declara siguiente paso, coste aproximado y riesgo residual."
+        ],
+        "diff": [
+          "- cambio ambiguo sin criterio de aceptacion",
+          "+ cambio acotado con test, owner y evidencia",
+          "+ registro de modelo, permiso y coste"
+        ],
+        "terminal": [
+          "$ pnpm test -- --runInBand",
+          "✓ test relevante pasa",
+          "✓ no hay errores de consola",
+          "i coste relativo registrado"
+        ],
+        "review": [
+          {
+            "severity": "blocker",
+            "text": "No hay criterios bloqueantes pendientes."
+          },
+          {
+            "severity": "medium",
+            "text": "Revisar optional chaining, default a cero y semantica del negocio."
+          },
+          {
+            "severity": "note",
+            "text": "El humano firma el criterio final."
+          }
+        ],
+        "cost": {
+          "model": "modelo rapido",
+          "tokens": "bajo",
+          "permission": "readonly/workspace segun fase",
+          "stopRule": "Parar si no hay evidencia nueva en el siguiente intento."
+        },
+        "decision": {
+          "question": "Que debe decidir la persona antes de continuar?",
+          "options": [
+            "seguir con alcance actual",
+            "pedir mas contexto",
+            "subir modelo",
+            "bloquear y llevar a tutoria"
+          ],
+          "selected": 0
+        },
+        "risk": {
+          "items": [
+            "Permisos",
+            "Coste",
+            "Contexto",
+            "Calidad",
+            "Responsabilidad humana"
+          ],
+          "level": "bajo"
+        },
+        "branch": {
+          "steps": [
+            "Issue",
+            "Branch",
+            "Plan",
+            "Patch",
+            "Tests",
+            "Review",
+            "PR"
+          ],
+          "active": 2
+        },
+        "quiz": {
+          "question": "Cual es la evidencia minima para cerrar esta pantalla?",
+          "answers": [
+            "Una respuesta convincente",
+            "Un diff probado o decision documentada",
+            "Un prompt mas largo"
+          ],
+          "correct": 1
+        },
+        "source": {
+          "filename": "src/cart/total.ts",
+          "language": "diff",
+          "code": "- return items.reduce((sum, item) => sum + item.price.amount * item.quantity, 0)\n+ return items.reduce((sum, item) => {\n+   const amount = item.price?.amount ?? 0\n+   return sum + amount * item.quantity\n+ }, 0)"
+        }
+      },
+      "subtitles": [
+        {
+          "text": "Pantalla de accion: Edit debe tocar lo minimo.",
+          "startMs": 600400,
+          "endMs": 637200
+        },
+        {
+          "text": "Revisar optional chaining, default a cero y semantica del negocio.",
+          "startMs": 637900,
+          "endMs": 674500
+        }
+      ],
+      "voiceover": [
+        "Pantalla de accion: Edit debe tocar lo minimo.",
+        "Revisar optional chaining, default a cero y semantica del negocio."
+      ],
+      "screen": {
+        "mode": "prompt",
+        "title": "Inline Edit",
+        "visual": "prompt"
+      },
+      "blueprintAction": {
+        "type": "diff-review",
+        "label": "Aceptar o ajustar diff",
+        "detail": "Revisar optional chaining, default a cero y semantica del negocio."
+      }
+    },
+    {
+      "id": "edit-patch__beat-02",
+      "name": "Inline Edit / Respuesta",
+      "startMs": 675000,
+      "endMs": 750000,
+      "type": "streaming",
+      "content": {
+        "mode": "streaming",
+        "vendor": "copilot",
+        "title": "Inline Edit",
+        "eyebrow": "Copilot Workshop 30m - Error to PR / Inline Edit",
+        "label": "Respuesta",
+        "actionLabel": "Aceptar o ajustar diff",
+        "actionDetail": "Revisar optional chaining, default a cero y semantica del negocio.",
+        "prompt": "Revisar optional chaining, default a cero y semantica del negocio.",
+        "response": [
+          "Respuesta simulada con salida verificable.",
+          "Se cita evidencia, se limita alcance y se deja una decision humana clara.",
+          "El cierre declara siguiente paso, coste aproximado y riesgo residual."
+        ],
+        "diff": [
+          "- cambio ambiguo sin criterio de aceptacion",
+          "+ cambio acotado con test, owner y evidencia",
+          "+ registro de modelo, permiso y coste"
+        ],
+        "terminal": [
+          "$ pnpm test -- --runInBand",
+          "✓ test relevante pasa",
+          "✓ no hay errores de consola",
+          "i coste relativo registrado"
+        ],
+        "review": [
+          {
+            "severity": "blocker",
+            "text": "No hay criterios bloqueantes pendientes."
+          },
+          {
+            "severity": "medium",
+            "text": "Revisar optional chaining, default a cero y semantica del negocio."
+          },
+          {
+            "severity": "note",
+            "text": "El humano firma el criterio final."
+          }
+        ],
+        "cost": {
+          "model": "modelo estandar",
+          "tokens": "medio",
+          "permission": "readonly/workspace segun fase",
+          "stopRule": "Parar si no hay evidencia nueva en el siguiente intento."
+        },
+        "decision": {
+          "question": "Que debe decidir la persona antes de continuar?",
+          "options": [
+            "seguir con alcance actual",
+            "pedir mas contexto",
+            "subir modelo",
+            "bloquear y llevar a tutoria"
+          ],
+          "selected": 1
+        },
+        "risk": {
+          "items": [
+            "Permisos",
+            "Coste",
+            "Contexto",
+            "Calidad",
+            "Responsabilidad humana"
+          ],
+          "level": "medio"
+        },
+        "branch": {
+          "steps": [
+            "Issue",
+            "Branch",
+            "Plan",
+            "Patch",
+            "Tests",
+            "Review",
+            "PR"
+          ],
+          "active": 3
+        },
+        "quiz": {
+          "question": "Cual es la evidencia minima para cerrar esta pantalla?",
+          "answers": [
+            "Una respuesta convincente",
+            "Un diff probado o decision documentada",
+            "Un prompt mas largo"
+          ],
+          "correct": 1
+        },
+        "source": {
+          "filename": "src/cart/total.ts",
+          "language": "diff",
+          "code": "- return items.reduce((sum, item) => sum + item.price.amount * item.quantity, 0)\n+ return items.reduce((sum, item) => {\n+   const amount = item.price?.amount ?? 0\n+   return sum + amount * item.quantity\n+ }, 0)"
+        }
+      },
+      "subtitles": [
+        {
+          "text": "Respuesta simulada: El diff es facil de leer.",
+          "startMs": 675400,
+          "endMs": 712200
+        },
+        {
+          "text": "Revisar optional chaining, default a cero y semantica del negocio.",
+          "startMs": 712900,
+          "endMs": 749500
+        }
+      ],
+      "voiceover": [
+        "Respuesta simulada: El diff es facil de leer.",
+        "Revisar optional chaining, default a cero y semantica del negocio."
+      ],
+      "screen": {
+        "mode": "streaming",
+        "title": "Inline Edit",
+        "visual": "streaming"
+      },
+      "blueprintAction": {
+        "type": "diff-review",
+        "label": "Aceptar o ajustar diff",
+        "detail": "Revisar optional chaining, default a cero y semantica del negocio."
+      }
+    },
+    {
+      "id": "test-generation__beat-01",
+      "name": "Test con Copilot / Prompt",
+      "startMs": 750000,
+      "endMs": 825000,
+      "type": "prompt",
+      "content": {
+        "mode": "prompt",
+        "vendor": "copilot",
+        "title": "Test con Copilot",
+        "eyebrow": "Copilot Workshop 30m - Error to PR / Test con Copilot",
+        "label": "Prompt",
+        "actionLabel": "Ejecutar test cercano",
+        "actionDetail": "pnpm test -- total.spec.ts",
+        "expectedOutput": "El test legacy pasa y no rompe casos existentes.",
+        "prompt": "pnpm test -- total.spec.ts",
+        "response": [
+          "El test legacy pasa y no rompe casos existentes.",
+          "Se cita evidencia, se limita alcance y se deja una decision humana clara.",
+          "El cierre declara siguiente paso, coste aproximado y riesgo residual."
+        ],
+        "diff": [
+          "- cambio ambiguo sin criterio de aceptacion",
+          "+ cambio acotado con test, owner y evidencia",
+          "+ registro de modelo, permiso y coste"
+        ],
+        "terminal": [
+          "$ pnpm test -- --runInBand",
+          "✓ test relevante pasa",
+          "✓ no hay errores de consola",
+          "i coste relativo registrado"
+        ],
+        "review": [
+          {
+            "severity": "blocker",
+            "text": "No hay criterios bloqueantes pendientes."
+          },
+          {
+            "severity": "medium",
+            "text": "pnpm test -- total.spec.ts"
+          },
+          {
+            "severity": "note",
+            "text": "El humano firma el criterio final."
+          }
+        ],
+        "cost": {
+          "model": "modelo rapido",
+          "tokens": "bajo",
+          "permission": "ejecucion acotada",
+          "stopRule": "Parar si no hay evidencia nueva en el siguiente intento."
+        },
+        "decision": {
+          "question": "Que debe decidir la persona antes de continuar?",
+          "options": [
+            "seguir con alcance actual",
+            "pedir mas contexto",
+            "subir modelo",
+            "bloquear y llevar a tutoria"
+          ],
+          "selected": 0
+        },
+        "risk": {
+          "items": [
+            "Permisos",
+            "Coste",
+            "Contexto",
+            "Calidad",
+            "Responsabilidad humana"
+          ],
+          "level": "bajo"
+        },
+        "branch": {
+          "steps": [
+            "Issue",
+            "Branch",
+            "Plan",
+            "Patch",
+            "Tests",
+            "Review",
+            "PR"
+          ],
+          "active": 2
+        },
+        "quiz": {
+          "question": "Cual es la evidencia minima para cerrar esta pantalla?",
+          "answers": [
+            "Una respuesta convincente",
+            "Un diff probado o decision documentada",
+            "Un prompt mas largo"
+          ],
+          "correct": 1
+        },
+        "source": {
+          "filename": "tests/cart/total.spec.ts",
+          "language": "typescript",
+          "code": "it('treats legacy items without price as zero', () => {\n  const total = calculateTotal([\n    { id: 'legacy-1', quantity: 2 },\n    { id: 'sku-2', quantity: 1, price: { amount: 1250, currency: 'EUR' } },\n  ])\n\n  expect(total).toBe(1250)\n})"
+        }
+      },
+      "subtitles": [
+        {
+          "text": "Pantalla de accion: Ahora generamos el test que justifica el cambio.",
+          "startMs": 750400,
+          "endMs": 787200
+        },
+        {
+          "text": "pnpm test -- total.spec.ts",
+          "startMs": 787900,
+          "endMs": 824500
+        }
+      ],
+      "voiceover": [
+        "Pantalla de accion: Ahora generamos el test que justifica el cambio.",
+        "pnpm test -- total.spec.ts"
+      ],
+      "screen": {
+        "mode": "prompt",
+        "title": "Test con Copilot",
+        "visual": "prompt"
+      },
+      "blueprintAction": {
+        "type": "tool-run",
+        "label": "Ejecutar test cercano",
+        "detail": "pnpm test -- total.spec.ts",
+        "expectedOutput": "El test legacy pasa y no rompe casos existentes."
+      }
+    },
+    {
+      "id": "test-generation__beat-02",
+      "name": "Test con Copilot / Respuesta",
+      "startMs": 825000,
+      "endMs": 900000,
+      "type": "streaming",
+      "content": {
+        "mode": "streaming",
+        "vendor": "copilot",
+        "title": "Test con Copilot",
+        "eyebrow": "Copilot Workshop 30m - Error to PR / Test con Copilot",
+        "label": "Respuesta",
+        "actionLabel": "Ejecutar test cercano",
+        "actionDetail": "pnpm test -- total.spec.ts",
+        "expectedOutput": "El test legacy pasa y no rompe casos existentes.",
+        "prompt": "pnpm test -- total.spec.ts",
+        "response": [
+          "El test legacy pasa y no rompe casos existentes.",
+          "Se cita evidencia, se limita alcance y se deja una decision humana clara.",
+          "El cierre declara siguiente paso, coste aproximado y riesgo residual."
+        ],
+        "diff": [
+          "- cambio ambiguo sin criterio de aceptacion",
+          "+ cambio acotado con test, owner y evidencia",
+          "+ registro de modelo, permiso y coste"
+        ],
+        "terminal": [
+          "$ pnpm test -- --runInBand",
+          "✓ test relevante pasa",
+          "✓ no hay errores de consola",
+          "i coste relativo registrado"
+        ],
+        "review": [
+          {
+            "severity": "blocker",
+            "text": "No hay criterios bloqueantes pendientes."
+          },
+          {
+            "severity": "medium",
+            "text": "pnpm test -- total.spec.ts"
+          },
+          {
+            "severity": "note",
+            "text": "El humano firma el criterio final."
+          }
+        ],
+        "cost": {
+          "model": "modelo estandar",
+          "tokens": "medio",
+          "permission": "ejecucion acotada",
+          "stopRule": "Parar si no hay evidencia nueva en el siguiente intento."
+        },
+        "decision": {
+          "question": "Que debe decidir la persona antes de continuar?",
+          "options": [
+            "seguir con alcance actual",
+            "pedir mas contexto",
+            "subir modelo",
+            "bloquear y llevar a tutoria"
+          ],
+          "selected": 1
+        },
+        "risk": {
+          "items": [
+            "Permisos",
+            "Coste",
+            "Contexto",
+            "Calidad",
+            "Responsabilidad humana"
+          ],
+          "level": "medio"
+        },
+        "branch": {
+          "steps": [
+            "Issue",
+            "Branch",
+            "Plan",
+            "Patch",
+            "Tests",
+            "Review",
+            "PR"
+          ],
+          "active": 3
+        },
+        "quiz": {
+          "question": "Cual es la evidencia minima para cerrar esta pantalla?",
+          "answers": [
+            "Una respuesta convincente",
+            "Un diff probado o decision documentada",
+            "Un prompt mas largo"
+          ],
+          "correct": 1
+        },
+        "source": {
+          "filename": "tests/cart/total.spec.ts",
+          "language": "typescript",
+          "code": "it('treats legacy items without price as zero', () => {\n  const total = calculateTotal([\n    { id: 'legacy-1', quantity: 2 },\n    { id: 'sku-2', quantity: 1, price: { amount: 1250, currency: 'EUR' } },\n  ])\n\n  expect(total).toBe(1250)\n})"
+        }
+      },
+      "subtitles": [
+        {
+          "text": "Respuesta simulada: El test nombra el caso legacy.",
+          "startMs": 825400,
+          "endMs": 862200
+        },
+        {
+          "text": "pnpm test -- total.spec.ts",
+          "startMs": 862900,
+          "endMs": 899500
+        }
+      ],
+      "voiceover": [
+        "Respuesta simulada: El test nombra el caso legacy.",
+        "pnpm test -- total.spec.ts"
+      ],
+      "screen": {
+        "mode": "streaming",
+        "title": "Test con Copilot",
+        "visual": "streaming"
+      },
+      "blueprintAction": {
+        "type": "tool-run",
+        "label": "Ejecutar test cercano",
+        "detail": "pnpm test -- total.spec.ts",
+        "expectedOutput": "El test legacy pasa y no rompe casos existentes."
+      }
+    },
+    {
+      "id": "agent-contract__beat-01",
+      "name": "Cuando usar Agent / Prompt",
+      "startMs": 900000,
+      "endMs": 975000,
+      "type": "decision",
+      "content": {
+        "mode": "decision",
+        "vendor": "copilot",
+        "title": "Cuando usar Agent",
+        "eyebrow": "Copilot Workshop 30m - Error to PR / Cuando usar Agent",
+        "label": "Prompt",
+        "actionLabel": "Subir a Agent",
+        "actionDetail": "Autorizar Agent solo para completar test, docs y PR summary.",
+        "prompt": "Autorizar Agent solo para completar test, docs y PR summary.",
+        "response": [
+          "Respuesta simulada con salida verificable.",
+          "Se cita evidencia, se limita alcance y se deja una decision humana clara.",
+          "El cierre declara siguiente paso, coste aproximado y riesgo residual."
+        ],
+        "diff": [
+          "- cambio ambiguo sin criterio de aceptacion",
+          "+ cambio acotado con test, owner y evidencia",
+          "+ registro de modelo, permiso y coste"
+        ],
+        "terminal": [
+          "$ pnpm test -- --runInBand",
+          "✓ test relevante pasa",
+          "✓ no hay errores de consola",
+          "i coste relativo registrado"
+        ],
+        "review": [
+          {
+            "severity": "blocker",
+            "text": "No hay criterios bloqueantes pendientes."
+          },
+          {
+            "severity": "medium",
+            "text": "Autorizar Agent solo para completar test, docs y PR summary."
+          },
+          {
+            "severity": "note",
+            "text": "El humano firma el criterio final."
+          }
+        ],
+        "cost": {
+          "model": "modelo rapido",
+          "tokens": "bajo",
+          "permission": "readonly/workspace segun fase",
+          "stopRule": "Parar si no hay evidencia nueva en el siguiente intento."
+        },
+        "decision": {
+          "question": "Que debe decidir la persona antes de continuar?",
+          "options": [
+            "seguir con alcance actual",
+            "pedir mas contexto",
+            "subir modelo",
+            "bloquear y llevar a tutoria"
+          ],
+          "selected": 0
+        },
+        "risk": {
+          "items": [
+            "Permisos",
+            "Coste",
+            "Contexto",
+            "Calidad",
+            "Responsabilidad humana"
+          ],
+          "level": "bajo"
+        },
+        "branch": {
+          "steps": [
+            "Issue",
+            "Branch",
+            "Plan",
+            "Patch",
+            "Tests",
+            "Review",
+            "PR"
+          ],
+          "active": 2
+        },
+        "quiz": {
+          "question": "Cual es la evidencia minima para cerrar esta pantalla?",
+          "answers": [
+            "Una respuesta convincente",
+            "Un diff probado o decision documentada",
+            "Un prompt mas largo"
+          ],
+          "correct": 1
+        },
+        "source": {
+          "tag": "Agent mode",
+          "left": {
+            "label": "Mal uso",
+            "color": "destructive",
+            "steps": [
+              {
+                "icon": "AlertTriangle",
+                "text": "Haz robusto el carrito"
+              },
+              {
+                "icon": "Code",
+                "text": "Toca pricing, checkout y UI"
+              },
+              {
+                "icon": "GitPullRequest",
+                "text": "PR grande y ambigua"
+              }
+            ],
+            "total": "Premium requests mal gastadas"
+          },
+          "right": {
+            "label": "Buen uso",
+            "color": "accent",
+            "steps": [
+              {
+                "icon": "Check",
+                "text": "Completa test y docs del caso"
+              },
+              {
+                "icon": "Check",
+                "text": "No cambies API publica"
+              },
+              {
+                "icon": "Check",
+                "text": "Para si aparece scope nuevo"
+              }
+            ],
+            "total": "Autonomia con contrato"
+          }
+        }
+      },
+      "subtitles": [
+        {
+          "text": "Pantalla de accion: Agent entra cuando hay varios pasos.",
+          "startMs": 900400,
+          "endMs": 937200
+        },
+        {
+          "text": "Autorizar Agent solo para completar test, docs y PR summary.",
+          "startMs": 937900,
+          "endMs": 974500
+        }
+      ],
+      "voiceover": [
+        "Pantalla de accion: Agent entra cuando hay varios pasos.",
+        "Autorizar Agent solo para completar test, docs y PR summary."
+      ],
+      "screen": {
+        "mode": "decision",
+        "title": "Cuando usar Agent",
+        "visual": "decision"
+      },
+      "blueprintAction": {
+        "type": "human-decision",
+        "label": "Subir a Agent",
+        "detail": "Autorizar Agent solo para completar test, docs y PR summary."
+      }
+    },
+    {
+      "id": "agent-contract__beat-02",
+      "name": "Cuando usar Agent / Respuesta",
+      "startMs": 975000,
+      "endMs": 1050000,
+      "type": "risk",
+      "content": {
+        "mode": "risk",
+        "vendor": "copilot",
+        "title": "Cuando usar Agent",
+        "eyebrow": "Copilot Workshop 30m - Error to PR / Cuando usar Agent",
+        "label": "Respuesta",
+        "actionLabel": "Subir a Agent",
+        "actionDetail": "Autorizar Agent solo para completar test, docs y PR summary.",
+        "prompt": "Autorizar Agent solo para completar test, docs y PR summary.",
+        "response": [
+          "Respuesta simulada con salida verificable.",
+          "Se cita evidencia, se limita alcance y se deja una decision humana clara.",
+          "El cierre declara siguiente paso, coste aproximado y riesgo residual."
+        ],
+        "diff": [
+          "- cambio ambiguo sin criterio de aceptacion",
+          "+ cambio acotado con test, owner y evidencia",
+          "+ registro de modelo, permiso y coste"
+        ],
+        "terminal": [
+          "$ pnpm test -- --runInBand",
+          "✓ test relevante pasa",
+          "✓ no hay errores de consola",
+          "i coste relativo registrado"
+        ],
+        "review": [
+          {
+            "severity": "blocker",
+            "text": "No hay criterios bloqueantes pendientes."
+          },
+          {
+            "severity": "medium",
+            "text": "Autorizar Agent solo para completar test, docs y PR summary."
+          },
+          {
+            "severity": "note",
+            "text": "El humano firma el criterio final."
+          }
+        ],
+        "cost": {
+          "model": "modelo estandar",
+          "tokens": "medio",
+          "permission": "readonly/workspace segun fase",
+          "stopRule": "Parar si no hay evidencia nueva en el siguiente intento."
+        },
+        "decision": {
+          "question": "Que debe decidir la persona antes de continuar?",
+          "options": [
+            "seguir con alcance actual",
+            "pedir mas contexto",
+            "subir modelo",
+            "bloquear y llevar a tutoria"
+          ],
+          "selected": 1
+        },
+        "risk": {
+          "items": [
+            "Permisos",
+            "Coste",
+            "Contexto",
+            "Calidad",
+            "Responsabilidad humana"
+          ],
+          "level": "medio"
+        },
+        "branch": {
+          "steps": [
+            "Issue",
+            "Branch",
+            "Plan",
+            "Patch",
+            "Tests",
+            "Review",
+            "PR"
+          ],
+          "active": 3
+        },
+        "quiz": {
+          "question": "Cual es la evidencia minima para cerrar esta pantalla?",
+          "answers": [
+            "Una respuesta convincente",
+            "Un diff probado o decision documentada",
+            "Un prompt mas largo"
+          ],
+          "correct": 1
+        },
+        "source": {
+          "tag": "Agent mode",
+          "left": {
+            "label": "Mal uso",
+            "color": "destructive",
+            "steps": [
+              {
+                "icon": "AlertTriangle",
+                "text": "Haz robusto el carrito"
+              },
+              {
+                "icon": "Code",
+                "text": "Toca pricing, checkout y UI"
+              },
+              {
+                "icon": "GitPullRequest",
+                "text": "PR grande y ambigua"
+              }
+            ],
+            "total": "Premium requests mal gastadas"
+          },
+          "right": {
+            "label": "Buen uso",
+            "color": "accent",
+            "steps": [
+              {
+                "icon": "Check",
+                "text": "Completa test y docs del caso"
+              },
+              {
+                "icon": "Check",
+                "text": "No cambies API publica"
+              },
+              {
+                "icon": "Check",
+                "text": "Para si aparece scope nuevo"
+              }
+            ],
+            "total": "Autonomia con contrato"
+          }
+        }
+      },
+      "subtitles": [
+        {
+          "text": "Respuesta simulada: Pero entra con contrato.",
+          "startMs": 975400,
+          "endMs": 1012200
+        },
+        {
+          "text": "Autorizar Agent solo para completar test, docs y PR summary.",
+          "startMs": 1012900,
+          "endMs": 1049500
+        }
+      ],
+      "voiceover": [
+        "Respuesta simulada: Pero entra con contrato.",
+        "Autorizar Agent solo para completar test, docs y PR summary."
+      ],
+      "screen": {
+        "mode": "risk",
+        "title": "Cuando usar Agent",
+        "visual": "risk"
+      },
+      "blueprintAction": {
+        "type": "human-decision",
+        "label": "Subir a Agent",
+        "detail": "Autorizar Agent solo para completar test, docs y PR summary."
+      }
+    },
+    {
+      "id": "instructions__beat-01",
+      "name": "Instructions / Prompt",
+      "startMs": 1050000,
+      "endMs": 1125000,
+      "type": "prompt",
+      "content": {
+        "mode": "prompt",
+        "vendor": "copilot",
+        "title": "Instructions",
+        "eyebrow": "Copilot Workshop 30m - Error to PR / Instructions",
+        "label": "Prompt",
+        "actionLabel": "Guardar instructions",
+        "actionDetail": "Actualizar la carpeta .github del starter repo.",
+        "prompt": "Actualizar la carpeta .github del starter repo.",
+        "response": [
+          "Respuesta simulada con salida verificable.",
+          "Se cita evidencia, se limita alcance y se deja una decision humana clara.",
+          "El cierre declara siguiente paso, coste aproximado y riesgo residual."
+        ],
+        "diff": [
+          "- cambio ambiguo sin criterio de aceptacion",
+          "+ cambio acotado con test, owner y evidencia",
+          "+ registro de modelo, permiso y coste"
+        ],
+        "terminal": [
+          "$ pnpm test -- --runInBand",
+          "✓ test relevante pasa",
+          "✓ no hay errores de consola",
+          "i coste relativo registrado"
+        ],
+        "review": [
+          {
+            "severity": "blocker",
+            "text": "No hay criterios bloqueantes pendientes."
+          },
+          {
+            "severity": "medium",
+            "text": "Actualizar la carpeta .github del starter repo."
+          },
+          {
+            "severity": "note",
+            "text": "El humano firma el criterio final."
+          }
+        ],
+        "cost": {
+          "model": "modelo rapido",
+          "tokens": "bajo",
+          "permission": "ejecucion acotada",
+          "stopRule": "Parar si no hay evidencia nueva en el siguiente intento."
+        },
+        "decision": {
+          "question": "Que debe decidir la persona antes de continuar?",
+          "options": [
+            "seguir con alcance actual",
+            "pedir mas contexto",
+            "subir modelo",
+            "bloquear y llevar a tutoria"
+          ],
+          "selected": 0
+        },
+        "risk": {
+          "items": [
+            "Permisos",
+            "Coste",
+            "Contexto",
+            "Calidad",
+            "Responsabilidad humana"
+          ],
+          "level": "bajo"
+        },
+        "branch": {
+          "steps": [
+            "Issue",
+            "Branch",
+            "Plan",
+            "Patch",
+            "Tests",
+            "Review",
+            "PR"
+          ],
+          "active": 2
+        },
+        "quiz": {
+          "question": "Cual es la evidencia minima para cerrar esta pantalla?",
+          "answers": [
+            "Una respuesta convincente",
+            "Un diff probado o decision documentada",
+            "Un prompt mas largo"
+          ],
+          "correct": 1
+        },
+        "source": {
+          "filename": ".github/copilot-instructions.md",
+          "language": "markdown",
+          "code": "# Copilot Instructions\n\n- Para bugs, explica hipotesis antes de editar.\n- Mantén diffs pequenos y con test cercano.\n- No cambies contratos publicos sin pedir confirmacion.\n- Cierra con resumen de riesgo y comando ejecutado.\n- Si una tarea puede gastar premium requests, declara presupuesto."
+        }
+      },
+      "subtitles": [
+        {
+          "text": "Pantalla de accion: Las instrucciones convierten el workshop en habito.",
+          "startMs": 1050400,
+          "endMs": 1087200
+        },
+        {
+          "text": "Actualizar la carpeta .github del starter repo.",
+          "startMs": 1087900,
+          "endMs": 1124500
+        }
+      ],
+      "voiceover": [
+        "Pantalla de accion: Las instrucciones convierten el workshop en habito.",
+        "Actualizar la carpeta .github del starter repo."
+      ],
+      "screen": {
+        "mode": "prompt",
+        "title": "Instructions",
+        "visual": "prompt"
+      },
+      "blueprintAction": {
+        "type": "tool-run",
+        "label": "Guardar instructions",
+        "detail": "Actualizar la carpeta .github del starter repo."
+      }
+    },
+    {
+      "id": "instructions__beat-02",
+      "name": "Instructions / Respuesta",
+      "startMs": 1125000,
+      "endMs": 1200000,
+      "type": "streaming",
+      "content": {
+        "mode": "streaming",
+        "vendor": "copilot",
+        "title": "Instructions",
+        "eyebrow": "Copilot Workshop 30m - Error to PR / Instructions",
+        "label": "Respuesta",
+        "actionLabel": "Guardar instructions",
+        "actionDetail": "Actualizar la carpeta .github del starter repo.",
+        "prompt": "Actualizar la carpeta .github del starter repo.",
+        "response": [
+          "Respuesta simulada con salida verificable.",
+          "Se cita evidencia, se limita alcance y se deja una decision humana clara.",
+          "El cierre declara siguiente paso, coste aproximado y riesgo residual."
+        ],
+        "diff": [
+          "- cambio ambiguo sin criterio de aceptacion",
+          "+ cambio acotado con test, owner y evidencia",
+          "+ registro de modelo, permiso y coste"
+        ],
+        "terminal": [
+          "$ pnpm test -- --runInBand",
+          "✓ test relevante pasa",
+          "✓ no hay errores de consola",
+          "i coste relativo registrado"
+        ],
+        "review": [
+          {
+            "severity": "blocker",
+            "text": "No hay criterios bloqueantes pendientes."
+          },
+          {
+            "severity": "medium",
+            "text": "Actualizar la carpeta .github del starter repo."
+          },
+          {
+            "severity": "note",
+            "text": "El humano firma el criterio final."
+          }
+        ],
+        "cost": {
+          "model": "modelo estandar",
+          "tokens": "medio",
+          "permission": "ejecucion acotada",
+          "stopRule": "Parar si no hay evidencia nueva en el siguiente intento."
+        },
+        "decision": {
+          "question": "Que debe decidir la persona antes de continuar?",
+          "options": [
+            "seguir con alcance actual",
+            "pedir mas contexto",
+            "subir modelo",
+            "bloquear y llevar a tutoria"
+          ],
+          "selected": 1
+        },
+        "risk": {
+          "items": [
+            "Permisos",
+            "Coste",
+            "Contexto",
+            "Calidad",
+            "Responsabilidad humana"
+          ],
+          "level": "medio"
+        },
+        "branch": {
+          "steps": [
+            "Issue",
+            "Branch",
+            "Plan",
+            "Patch",
+            "Tests",
+            "Review",
+            "PR"
+          ],
+          "active": 3
+        },
+        "quiz": {
+          "question": "Cual es la evidencia minima para cerrar esta pantalla?",
+          "answers": [
+            "Una respuesta convincente",
+            "Un diff probado o decision documentada",
+            "Un prompt mas largo"
+          ],
+          "correct": 1
+        },
+        "source": {
+          "filename": ".github/copilot-instructions.md",
+          "language": "markdown",
+          "code": "# Copilot Instructions\n\n- Para bugs, explica hipotesis antes de editar.\n- Mantén diffs pequenos y con test cercano.\n- No cambies contratos publicos sin pedir confirmacion.\n- Cierra con resumen de riesgo y comando ejecutado.\n- Si una tarea puede gastar premium requests, declara presupuesto."
+        }
+      },
+      "subtitles": [
+        {
+          "text": "Respuesta simulada: No son decoracion.",
+          "startMs": 1125400,
+          "endMs": 1162200
+        },
+        {
+          "text": "Actualizar la carpeta .github del starter repo.",
+          "startMs": 1162900,
+          "endMs": 1199500
+        }
+      ],
+      "voiceover": [
+        "Respuesta simulada: No son decoracion.",
+        "Actualizar la carpeta .github del starter repo."
+      ],
+      "screen": {
+        "mode": "streaming",
+        "title": "Instructions",
+        "visual": "streaming"
+      },
+      "blueprintAction": {
+        "type": "tool-run",
+        "label": "Guardar instructions",
+        "detail": "Actualizar la carpeta .github del starter repo."
+      }
+    },
+    {
+      "id": "premium-budget__beat-01",
+      "name": "Budget / Prompt",
+      "startMs": 1200000,
+      "endMs": 1275000,
+      "type": "prompt",
+      "content": {
+        "mode": "prompt",
+        "vendor": "copilot",
+        "title": "Budget",
+        "eyebrow": "Copilot Workshop 30m - Error to PR / Budget",
+        "label": "Prompt",
+        "actionLabel": "Registrar budget",
+        "actionDetail": "Anotar modo usado, motivo y resultado.",
+        "prompt": "Anotar modo usado, motivo y resultado.",
+        "response": [
+          "Respuesta simulada con salida verificable.",
+          "Se cita evidencia, se limita alcance y se deja una decision humana clara.",
+          "El cierre declara siguiente paso, coste aproximado y riesgo residual."
+        ],
+        "diff": [
+          "- cambio ambiguo sin criterio de aceptacion",
+          "+ cambio acotado con test, owner y evidencia",
+          "+ registro de modelo, permiso y coste"
+        ],
+        "terminal": [
+          "$ pnpm test -- --runInBand",
+          "✓ test relevante pasa",
+          "✓ no hay errores de consola",
+          "i coste relativo registrado"
+        ],
+        "review": [
+          {
+            "severity": "blocker",
+            "text": "No hay criterios bloqueantes pendientes."
+          },
+          {
+            "severity": "medium",
+            "text": "Anotar modo usado, motivo y resultado."
+          },
+          {
+            "severity": "note",
+            "text": "El humano firma el criterio final."
+          }
+        ],
+        "cost": {
+          "model": "modelo rapido",
+          "tokens": "bajo",
+          "permission": "readonly/workspace segun fase",
+          "stopRule": "Parar si no hay evidencia nueva en el siguiente intento."
+        },
+        "decision": {
+          "question": "Que debe decidir la persona antes de continuar?",
+          "options": [
+            "seguir con alcance actual",
+            "pedir mas contexto",
+            "subir modelo",
+            "bloquear y llevar a tutoria"
+          ],
+          "selected": 0
+        },
+        "risk": {
+          "items": [
+            "Permisos",
+            "Coste",
+            "Contexto",
+            "Calidad",
+            "Responsabilidad humana"
+          ],
+          "level": "bajo"
+        },
+        "branch": {
+          "steps": [
+            "Issue",
+            "Branch",
+            "Plan",
+            "Patch",
+            "Tests",
+            "Review",
+            "PR"
+          ],
+          "active": 2
+        },
+        "quiz": {
+          "question": "Cual es la evidencia minima para cerrar esta pantalla?",
+          "answers": [
+            "Una respuesta convincente",
+            "Un diff probado o decision documentada",
+            "Un prompt mas largo"
+          ],
+          "correct": 1
+        },
+        "source": {
+          "tag": "Coste",
+          "title": "Premium requests con sentido",
+          "body": "El coste de Agent se justifica si reduce trabajo humano real y deja una PR revisable. Si la tarea es diagnostico, Ask es mas barato. Si el cambio es pequeño, Edit es suficiente.",
+          "highlight": "Agent para autonomia; Ask para pensar; Edit para patch acotado.",
+          "points": [
+            "Ask: diagnostico barato.",
+            "Edit: cambio localizado.",
+            "Agent: varios pasos con contrato.",
+            "Cloud: tareas delegables desde issue claro."
+          ]
+        }
+      },
+      "subtitles": [
+        {
+          "text": "Pantalla de accion: El alumno tiene que elegir modo con presupuesto.",
+          "startMs": 1200400,
+          "endMs": 1237200
+        },
+        {
+          "text": "Anotar modo usado, motivo y resultado.",
+          "startMs": 1237900,
+          "endMs": 1274500
+        }
+      ],
+      "voiceover": [
+        "Pantalla de accion: El alumno tiene que elegir modo con presupuesto.",
+        "Anotar modo usado, motivo y resultado."
+      ],
+      "screen": {
+        "mode": "prompt",
+        "title": "Budget",
+        "visual": "prompt"
+      },
+      "blueprintAction": {
+        "type": "narrate",
+        "label": "Registrar budget",
+        "detail": "Anotar modo usado, motivo y resultado."
+      }
+    },
+    {
+      "id": "premium-budget__beat-02",
+      "name": "Budget / Respuesta",
+      "startMs": 1275000,
+      "endMs": 1350000,
+      "type": "streaming",
+      "content": {
+        "mode": "streaming",
+        "vendor": "copilot",
+        "title": "Budget",
+        "eyebrow": "Copilot Workshop 30m - Error to PR / Budget",
+        "label": "Respuesta",
+        "actionLabel": "Registrar budget",
+        "actionDetail": "Anotar modo usado, motivo y resultado.",
+        "prompt": "Anotar modo usado, motivo y resultado.",
+        "response": [
+          "Respuesta simulada con salida verificable.",
+          "Se cita evidencia, se limita alcance y se deja una decision humana clara.",
+          "El cierre declara siguiente paso, coste aproximado y riesgo residual."
+        ],
+        "diff": [
+          "- cambio ambiguo sin criterio de aceptacion",
+          "+ cambio acotado con test, owner y evidencia",
+          "+ registro de modelo, permiso y coste"
+        ],
+        "terminal": [
+          "$ pnpm test -- --runInBand",
+          "✓ test relevante pasa",
+          "✓ no hay errores de consola",
+          "i coste relativo registrado"
+        ],
+        "review": [
+          {
+            "severity": "blocker",
+            "text": "No hay criterios bloqueantes pendientes."
+          },
+          {
+            "severity": "medium",
+            "text": "Anotar modo usado, motivo y resultado."
+          },
+          {
+            "severity": "note",
+            "text": "El humano firma el criterio final."
+          }
+        ],
+        "cost": {
+          "model": "modelo estandar",
+          "tokens": "medio",
+          "permission": "readonly/workspace segun fase",
+          "stopRule": "Parar si no hay evidencia nueva en el siguiente intento."
+        },
+        "decision": {
+          "question": "Que debe decidir la persona antes de continuar?",
+          "options": [
+            "seguir con alcance actual",
+            "pedir mas contexto",
+            "subir modelo",
+            "bloquear y llevar a tutoria"
+          ],
+          "selected": 1
+        },
+        "risk": {
+          "items": [
+            "Permisos",
+            "Coste",
+            "Contexto",
+            "Calidad",
+            "Responsabilidad humana"
+          ],
+          "level": "medio"
+        },
+        "branch": {
+          "steps": [
+            "Issue",
+            "Branch",
+            "Plan",
+            "Patch",
+            "Tests",
+            "Review",
+            "PR"
+          ],
+          "active": 3
+        },
+        "quiz": {
+          "question": "Cual es la evidencia minima para cerrar esta pantalla?",
+          "answers": [
+            "Una respuesta convincente",
+            "Un diff probado o decision documentada",
+            "Un prompt mas largo"
+          ],
+          "correct": 1
+        },
+        "source": {
+          "tag": "Coste",
+          "title": "Premium requests con sentido",
+          "body": "El coste de Agent se justifica si reduce trabajo humano real y deja una PR revisable. Si la tarea es diagnostico, Ask es mas barato. Si el cambio es pequeño, Edit es suficiente.",
+          "highlight": "Agent para autonomia; Ask para pensar; Edit para patch acotado.",
+          "points": [
+            "Ask: diagnostico barato.",
+            "Edit: cambio localizado.",
+            "Agent: varios pasos con contrato.",
+            "Cloud: tareas delegables desde issue claro."
+          ]
+        }
+      },
+      "subtitles": [
+        {
+          "text": "Respuesta simulada: No por miedo, sino por eficiencia.",
+          "startMs": 1275400,
+          "endMs": 1312200
+        },
+        {
+          "text": "Anotar modo usado, motivo y resultado.",
+          "startMs": 1312900,
+          "endMs": 1349500
+        }
+      ],
+      "voiceover": [
+        "Respuesta simulada: No por miedo, sino por eficiencia.",
+        "Anotar modo usado, motivo y resultado."
+      ],
+      "screen": {
+        "mode": "streaming",
+        "title": "Budget",
+        "visual": "streaming"
+      },
+      "blueprintAction": {
+        "type": "narrate",
+        "label": "Registrar budget",
+        "detail": "Anotar modo usado, motivo y resultado."
+      }
+    },
+    {
+      "id": "pr-contract__beat-01",
+      "name": "Contrato de PR / Prompt",
+      "startMs": 1350000,
+      "endMs": 1425000,
+      "type": "prompt",
+      "content": {
+        "mode": "prompt",
+        "vendor": "copilot",
+        "title": "Contrato de PR",
+        "eyebrow": "Copilot Workshop 30m - Error to PR / Contrato de PR",
+        "label": "Prompt",
+        "actionLabel": "Abrir PR",
+        "actionDetail": "Usar la plantilla como salida del workshop.",
+        "prompt": "Usar la plantilla como salida del workshop.",
+        "response": [
+          "Respuesta simulada con salida verificable.",
+          "Se cita evidencia, se limita alcance y se deja una decision humana clara.",
+          "El cierre declara siguiente paso, coste aproximado y riesgo residual."
+        ],
+        "diff": [
+          "- cambio ambiguo sin criterio de aceptacion",
+          "+ cambio acotado con test, owner y evidencia",
+          "+ registro de modelo, permiso y coste"
+        ],
+        "terminal": [
+          "$ pnpm test -- --runInBand",
+          "✓ test relevante pasa",
+          "✓ no hay errores de consola",
+          "i coste relativo registrado"
+        ],
+        "review": [
+          {
+            "severity": "blocker",
+            "text": "No hay criterios bloqueantes pendientes."
+          },
+          {
+            "severity": "medium",
+            "text": "Usar la plantilla como salida del workshop."
+          },
+          {
+            "severity": "note",
+            "text": "El humano firma el criterio final."
+          }
+        ],
+        "cost": {
+          "model": "modelo rapido",
+          "tokens": "bajo",
+          "permission": "readonly/workspace segun fase",
+          "stopRule": "Parar si no hay evidencia nueva en el siguiente intento."
+        },
+        "decision": {
+          "question": "Que debe decidir la persona antes de continuar?",
+          "options": [
+            "seguir con alcance actual",
+            "pedir mas contexto",
+            "subir modelo",
+            "bloquear y llevar a tutoria"
+          ],
+          "selected": 0
+        },
+        "risk": {
+          "items": [
+            "Permisos",
+            "Coste",
+            "Contexto",
+            "Calidad",
+            "Responsabilidad humana"
+          ],
+          "level": "bajo"
+        },
+        "branch": {
+          "steps": [
+            "Issue",
+            "Branch",
+            "Plan",
+            "Patch",
+            "Tests",
+            "Review",
+            "PR"
+          ],
+          "active": 2
+        },
+        "quiz": {
+          "question": "Cual es la evidencia minima para cerrar esta pantalla?",
+          "answers": [
+            "Una respuesta convincente",
+            "Un diff probado o decision documentada",
+            "Un prompt mas largo"
+          ],
+          "correct": 1
+        },
+        "source": {
+          "filename": "pull_request.md",
+          "language": "markdown",
+          "code": "## Cambio\ncalculateTotal tolera items legacy sin price y los computa como cero.\n\n## Evidencia\n- pnpm test -- total.spec.ts -> passing\n\n## Riesgos\n- Confirmar si item sin price debe ignorarse o bloquearse aguas arriba.\n\n## Copilot usage\n- Ask para diagnostico.\n- Edit para patch.\n- Agent para test y resumen.\n- Premium budget: bajo."
+        }
+      },
+      "subtitles": [
+        {
+          "text": "Pantalla de accion: La PR explica como se uso Copilot.",
+          "startMs": 1350400,
+          "endMs": 1387200
+        },
+        {
+          "text": "Usar la plantilla como salida del workshop.",
+          "startMs": 1387900,
+          "endMs": 1424500
+        }
+      ],
+      "voiceover": [
+        "Pantalla de accion: La PR explica como se uso Copilot.",
+        "Usar la plantilla como salida del workshop."
+      ],
+      "screen": {
+        "mode": "prompt",
+        "title": "Contrato de PR",
+        "visual": "prompt"
+      },
+      "blueprintAction": {
+        "type": "handoff",
+        "label": "Abrir PR",
+        "detail": "Usar la plantilla como salida del workshop."
+      }
+    },
+    {
+      "id": "pr-contract__beat-02",
+      "name": "Contrato de PR / Respuesta",
+      "startMs": 1425000,
+      "endMs": 1500000,
+      "type": "streaming",
+      "content": {
+        "mode": "streaming",
+        "vendor": "copilot",
+        "title": "Contrato de PR",
+        "eyebrow": "Copilot Workshop 30m - Error to PR / Contrato de PR",
+        "label": "Respuesta",
+        "actionLabel": "Abrir PR",
+        "actionDetail": "Usar la plantilla como salida del workshop.",
+        "prompt": "Usar la plantilla como salida del workshop.",
+        "response": [
+          "Respuesta simulada con salida verificable.",
+          "Se cita evidencia, se limita alcance y se deja una decision humana clara.",
+          "El cierre declara siguiente paso, coste aproximado y riesgo residual."
+        ],
+        "diff": [
+          "- cambio ambiguo sin criterio de aceptacion",
+          "+ cambio acotado con test, owner y evidencia",
+          "+ registro de modelo, permiso y coste"
+        ],
+        "terminal": [
+          "$ pnpm test -- --runInBand",
+          "✓ test relevante pasa",
+          "✓ no hay errores de consola",
+          "i coste relativo registrado"
+        ],
+        "review": [
+          {
+            "severity": "blocker",
+            "text": "No hay criterios bloqueantes pendientes."
+          },
+          {
+            "severity": "medium",
+            "text": "Usar la plantilla como salida del workshop."
+          },
+          {
+            "severity": "note",
+            "text": "El humano firma el criterio final."
+          }
+        ],
+        "cost": {
+          "model": "modelo estandar",
+          "tokens": "medio",
+          "permission": "readonly/workspace segun fase",
+          "stopRule": "Parar si no hay evidencia nueva en el siguiente intento."
+        },
+        "decision": {
+          "question": "Que debe decidir la persona antes de continuar?",
+          "options": [
+            "seguir con alcance actual",
+            "pedir mas contexto",
+            "subir modelo",
+            "bloquear y llevar a tutoria"
+          ],
+          "selected": 1
+        },
+        "risk": {
+          "items": [
+            "Permisos",
+            "Coste",
+            "Contexto",
+            "Calidad",
+            "Responsabilidad humana"
+          ],
+          "level": "medio"
+        },
+        "branch": {
+          "steps": [
+            "Issue",
+            "Branch",
+            "Plan",
+            "Patch",
+            "Tests",
+            "Review",
+            "PR"
+          ],
+          "active": 3
+        },
+        "quiz": {
+          "question": "Cual es la evidencia minima para cerrar esta pantalla?",
+          "answers": [
+            "Una respuesta convincente",
+            "Un diff probado o decision documentada",
+            "Un prompt mas largo"
+          ],
+          "correct": 1
+        },
+        "source": {
+          "filename": "pull_request.md",
+          "language": "markdown",
+          "code": "## Cambio\ncalculateTotal tolera items legacy sin price y los computa como cero.\n\n## Evidencia\n- pnpm test -- total.spec.ts -> passing\n\n## Riesgos\n- Confirmar si item sin price debe ignorarse o bloquearse aguas arriba.\n\n## Copilot usage\n- Ask para diagnostico.\n- Edit para patch.\n- Agent para test y resumen.\n- Premium budget: bajo."
+        }
+      },
+      "subtitles": [
+        {
+          "text": "Respuesta simulada: Esto no es burocracia.",
+          "startMs": 1425400,
+          "endMs": 1462200
+        },
+        {
+          "text": "Usar la plantilla como salida del workshop.",
+          "startMs": 1462900,
+          "endMs": 1499500
+        }
+      ],
+      "voiceover": [
+        "Respuesta simulada: Esto no es burocracia.",
+        "Usar la plantilla como salida del workshop."
+      ],
+      "screen": {
+        "mode": "streaming",
+        "title": "Contrato de PR",
+        "visual": "streaming"
+      },
+      "blueprintAction": {
+        "type": "handoff",
+        "label": "Abrir PR",
+        "detail": "Usar la plantilla como salida del workshop."
+      }
+    },
+    {
+      "id": "rubric__beat-01",
+      "name": "Rubrica / Prompt",
+      "startMs": 1500000,
+      "endMs": 1575000,
+      "type": "pr-review",
+      "content": {
+        "mode": "pr-review",
+        "vendor": "copilot",
+        "title": "Rubrica",
+        "eyebrow": "Copilot Workshop 30m - Error to PR / Rubrica",
+        "label": "Prompt",
+        "actionLabel": "Evaluar",
+        "actionDetail": "El facilitador marca la rubrica y decide siguiente lab.",
+        "prompt": "El facilitador marca la rubrica y decide siguiente lab.",
+        "response": [
+          "Respuesta simulada con salida verificable.",
+          "Se cita evidencia, se limita alcance y se deja una decision humana clara.",
+          "El cierre declara siguiente paso, coste aproximado y riesgo residual."
+        ],
+        "diff": [
+          "- cambio ambiguo sin criterio de aceptacion",
+          "+ cambio acotado con test, owner y evidencia",
+          "+ registro de modelo, permiso y coste"
+        ],
+        "terminal": [
+          "$ pnpm test -- --runInBand",
+          "✓ test relevante pasa",
+          "✓ no hay errores de consola",
+          "i coste relativo registrado"
+        ],
+        "review": [
+          {
+            "severity": "blocker",
+            "text": "No hay criterios bloqueantes pendientes."
+          },
+          {
+            "severity": "medium",
+            "text": "El facilitador marca la rubrica y decide siguiente lab."
+          },
+          {
+            "severity": "note",
+            "text": "El humano firma el criterio final."
+          }
+        ],
+        "cost": {
+          "model": "modelo rapido",
+          "tokens": "bajo",
+          "permission": "readonly/workspace segun fase",
+          "stopRule": "Parar si no hay evidencia nueva en el siguiente intento."
+        },
+        "decision": {
+          "question": "Que debe decidir la persona antes de continuar?",
+          "options": [
+            "seguir con alcance actual",
+            "pedir mas contexto",
+            "subir modelo",
+            "bloquear y llevar a tutoria"
+          ],
+          "selected": 0
+        },
+        "risk": {
+          "items": [
+            "Permisos",
+            "Coste",
+            "Contexto",
+            "Calidad",
+            "Responsabilidad humana"
+          ],
+          "level": "bajo"
+        },
+        "branch": {
+          "steps": [
+            "Issue",
+            "Branch",
+            "Plan",
+            "Patch",
+            "Tests",
+            "Review",
+            "PR"
+          ],
+          "active": 2
+        },
+        "quiz": {
+          "question": "Cual es la evidencia minima para cerrar esta pantalla?",
+          "answers": [
+            "Una respuesta convincente",
+            "Un diff probado o decision documentada",
+            "Un prompt mas largo"
+          ],
+          "correct": 1
+        },
+        "source": {
+          "title": "Rubrica de Copilot",
+          "description": "El workshop se aprueba si el alumno eligio modo con criterio.",
+          "items": [
+            {
+              "label": "Ask antes de Edit",
+              "value": "OK"
+            },
+            {
+              "label": "Diff pequeno",
+              "value": "OK"
+            },
+            {
+              "label": "Test cercano",
+              "value": "OK"
+            },
+            {
+              "label": "PR clara",
+              "value": "OK"
+            }
+          ]
+        }
+      },
+      "subtitles": [
+        {
+          "text": "Pantalla de accion: La rubrica evalua decisiones.",
+          "startMs": 1500400,
+          "endMs": 1537200
+        },
+        {
+          "text": "El facilitador marca la rubrica y decide siguiente lab.",
+          "startMs": 1537900,
+          "endMs": 1574500
+        }
+      ],
+      "voiceover": [
+        "Pantalla de accion: La rubrica evalua decisiones.",
+        "El facilitador marca la rubrica y decide siguiente lab."
+      ],
+      "screen": {
+        "mode": "pr-review",
+        "title": "Rubrica",
+        "visual": "pr-review"
+      },
+      "blueprintAction": {
+        "type": "human-decision",
+        "label": "Evaluar",
+        "detail": "El facilitador marca la rubrica y decide siguiente lab."
+      }
+    },
+    {
+      "id": "rubric__beat-02",
+      "name": "Rubrica / Respuesta",
+      "startMs": 1575000,
+      "endMs": 1650000,
+      "type": "terminal",
+      "content": {
+        "mode": "terminal",
+        "vendor": "copilot",
+        "title": "Rubrica",
+        "eyebrow": "Copilot Workshop 30m - Error to PR / Rubrica",
+        "label": "Respuesta",
+        "actionLabel": "Evaluar",
+        "actionDetail": "El facilitador marca la rubrica y decide siguiente lab.",
+        "prompt": "El facilitador marca la rubrica y decide siguiente lab.",
+        "response": [
+          "Respuesta simulada con salida verificable.",
+          "Se cita evidencia, se limita alcance y se deja una decision humana clara.",
+          "El cierre declara siguiente paso, coste aproximado y riesgo residual."
+        ],
+        "diff": [
+          "- cambio ambiguo sin criterio de aceptacion",
+          "+ cambio acotado con test, owner y evidencia",
+          "+ registro de modelo, permiso y coste"
+        ],
+        "terminal": [
+          "$ pnpm test -- --runInBand",
+          "✓ test relevante pasa",
+          "✓ no hay errores de consola",
+          "i coste relativo registrado"
+        ],
+        "review": [
+          {
+            "severity": "blocker",
+            "text": "No hay criterios bloqueantes pendientes."
+          },
+          {
+            "severity": "medium",
+            "text": "El facilitador marca la rubrica y decide siguiente lab."
+          },
+          {
+            "severity": "note",
+            "text": "El humano firma el criterio final."
+          }
+        ],
+        "cost": {
+          "model": "modelo estandar",
+          "tokens": "medio",
+          "permission": "readonly/workspace segun fase",
+          "stopRule": "Parar si no hay evidencia nueva en el siguiente intento."
+        },
+        "decision": {
+          "question": "Que debe decidir la persona antes de continuar?",
+          "options": [
+            "seguir con alcance actual",
+            "pedir mas contexto",
+            "subir modelo",
+            "bloquear y llevar a tutoria"
+          ],
+          "selected": 1
+        },
+        "risk": {
+          "items": [
+            "Permisos",
+            "Coste",
+            "Contexto",
+            "Calidad",
+            "Responsabilidad humana"
+          ],
+          "level": "medio"
+        },
+        "branch": {
+          "steps": [
+            "Issue",
+            "Branch",
+            "Plan",
+            "Patch",
+            "Tests",
+            "Review",
+            "PR"
+          ],
+          "active": 3
+        },
+        "quiz": {
+          "question": "Cual es la evidencia minima para cerrar esta pantalla?",
+          "answers": [
+            "Una respuesta convincente",
+            "Un diff probado o decision documentada",
+            "Un prompt mas largo"
+          ],
+          "correct": 1
+        },
+        "source": {
+          "title": "Rubrica de Copilot",
+          "description": "El workshop se aprueba si el alumno eligio modo con criterio.",
+          "items": [
+            {
+              "label": "Ask antes de Edit",
+              "value": "OK"
+            },
+            {
+              "label": "Diff pequeno",
+              "value": "OK"
+            },
+            {
+              "label": "Test cercano",
+              "value": "OK"
+            },
+            {
+              "label": "PR clara",
+              "value": "OK"
+            }
+          ]
+        }
+      },
+      "subtitles": [
+        {
+          "text": "Respuesta simulada: No queremos usuarios que acepten sugerencias.",
+          "startMs": 1575400,
+          "endMs": 1612200
+        },
+        {
+          "text": "El facilitador marca la rubrica y decide siguiente lab.",
+          "startMs": 1612900,
+          "endMs": 1649500
+        }
+      ],
+      "voiceover": [
+        "Respuesta simulada: No queremos usuarios que acepten sugerencias.",
+        "El facilitador marca la rubrica y decide siguiente lab."
+      ],
+      "screen": {
+        "mode": "terminal",
+        "title": "Rubrica",
+        "visual": "terminal"
+      },
+      "blueprintAction": {
+        "type": "human-decision",
+        "label": "Evaluar",
+        "detail": "El facilitador marca la rubrica y decide siguiente lab."
+      }
+    },
+    {
+      "id": "finale__beat-01",
+      "name": "Cierre / Prompt",
+      "startMs": 1650000,
+      "endMs": 1725000,
+      "type": "quiz",
+      "content": {
+        "mode": "quiz",
+        "vendor": "copilot",
+        "title": "Cierre",
+        "eyebrow": "Copilot Workshop 30m - Error to PR / Cierre",
+        "label": "Prompt",
+        "actionLabel": "Cerrar workshop",
+        "actionDetail": "Guardar PR, test y decision de modo.",
+        "prompt": "Guardar PR, test y decision de modo.",
+        "response": [
+          "Respuesta simulada con salida verificable.",
+          "Se cita evidencia, se limita alcance y se deja una decision humana clara.",
+          "El cierre declara siguiente paso, coste aproximado y riesgo residual."
+        ],
+        "diff": [
+          "- cambio ambiguo sin criterio de aceptacion",
+          "+ cambio acotado con test, owner y evidencia",
+          "+ registro de modelo, permiso y coste"
+        ],
+        "terminal": [
+          "$ pnpm test -- --runInBand",
+          "✓ test relevante pasa",
+          "✓ no hay errores de consola",
+          "i coste relativo registrado"
+        ],
+        "review": [
+          {
+            "severity": "blocker",
+            "text": "No hay criterios bloqueantes pendientes."
+          },
+          {
+            "severity": "medium",
+            "text": "Guardar PR, test y decision de modo."
+          },
+          {
+            "severity": "note",
+            "text": "El humano firma el criterio final."
+          }
+        ],
+        "cost": {
+          "model": "modelo rapido",
+          "tokens": "bajo",
+          "permission": "readonly/workspace segun fase",
+          "stopRule": "Parar si no hay evidencia nueva en el siguiente intento."
+        },
+        "decision": {
+          "question": "Que debe decidir la persona antes de continuar?",
+          "options": [
+            "seguir con alcance actual",
+            "pedir mas contexto",
+            "subir modelo",
+            "bloquear y llevar a tutoria"
+          ],
+          "selected": 0
+        },
+        "risk": {
+          "items": [
+            "Permisos",
+            "Coste",
+            "Contexto",
+            "Calidad",
+            "Responsabilidad humana"
+          ],
+          "level": "bajo"
+        },
+        "branch": {
+          "steps": [
+            "Issue",
+            "Branch",
+            "Plan",
+            "Patch",
+            "Tests",
+            "Review",
+            "PR"
+          ],
+          "active": 2
+        },
+        "quiz": {
+          "question": "Cual es la evidencia minima para cerrar esta pantalla?",
+          "answers": [
+            "Una respuesta convincente",
+            "Un diff probado o decision documentada",
+            "Un prompt mas largo"
+          ],
+          "correct": 1
+        },
+        "source": {
+          "title": "De error a PR revisable",
+          "summary": [
+            {
+              "number": "01",
+              "label": "Ask",
+              "body": "Entender antes de tocar."
+            },
+            {
+              "number": "02",
+              "label": "Edit",
+              "body": "Cambiar poco y con test."
+            },
+            {
+              "number": "03",
+              "label": "Agent",
+              "body": "Delegar solo con contrato y presupuesto."
+            }
+          ],
+          "cta": "Siguiente: Copilot Medium con instructions y prompt files de equipo."
+        }
+      },
+      "subtitles": [
+        {
+          "text": "Pantalla de accion: Este workshop da una cadencia repetible.",
+          "startMs": 1650400,
+          "endMs": 1687200
+        },
+        {
+          "text": "Guardar PR, test y decision de modo.",
+          "startMs": 1687900,
+          "endMs": 1724500
+        }
+      ],
+      "voiceover": [
+        "Pantalla de accion: Este workshop da una cadencia repetible.",
+        "Guardar PR, test y decision de modo."
+      ],
+      "screen": {
+        "mode": "quiz",
+        "title": "Cierre",
+        "visual": "quiz"
+      },
+      "blueprintAction": {
+        "type": "handoff",
+        "label": "Cerrar workshop",
+        "detail": "Guardar PR, test y decision de modo."
+      }
+    },
+    {
+      "id": "finale__beat-02",
+      "name": "Cierre / Respuesta",
+      "startMs": 1725000,
+      "endMs": 1800000,
+      "type": "pr-review",
+      "content": {
+        "mode": "pr-review",
+        "vendor": "copilot",
+        "title": "Cierre",
+        "eyebrow": "Copilot Workshop 30m - Error to PR / Cierre",
+        "label": "Respuesta",
+        "actionLabel": "Cerrar workshop",
+        "actionDetail": "Guardar PR, test y decision de modo.",
+        "prompt": "Guardar PR, test y decision de modo.",
+        "response": [
+          "Respuesta simulada con salida verificable.",
+          "Se cita evidencia, se limita alcance y se deja una decision humana clara.",
+          "El cierre declara siguiente paso, coste aproximado y riesgo residual."
+        ],
+        "diff": [
+          "- cambio ambiguo sin criterio de aceptacion",
+          "+ cambio acotado con test, owner y evidencia",
+          "+ registro de modelo, permiso y coste"
+        ],
+        "terminal": [
+          "$ pnpm test -- --runInBand",
+          "✓ test relevante pasa",
+          "✓ no hay errores de consola",
+          "i coste relativo registrado"
+        ],
+        "review": [
+          {
+            "severity": "blocker",
+            "text": "No hay criterios bloqueantes pendientes."
+          },
+          {
+            "severity": "medium",
+            "text": "Guardar PR, test y decision de modo."
+          },
+          {
+            "severity": "note",
+            "text": "El humano firma el criterio final."
+          }
+        ],
+        "cost": {
+          "model": "modelo estandar",
+          "tokens": "medio",
+          "permission": "readonly/workspace segun fase",
+          "stopRule": "Parar si no hay evidencia nueva en el siguiente intento."
+        },
+        "decision": {
+          "question": "Que debe decidir la persona antes de continuar?",
+          "options": [
+            "seguir con alcance actual",
+            "pedir mas contexto",
+            "subir modelo",
+            "bloquear y llevar a tutoria"
+          ],
+          "selected": 1
+        },
+        "risk": {
+          "items": [
+            "Permisos",
+            "Coste",
+            "Contexto",
+            "Calidad",
+            "Responsabilidad humana"
+          ],
+          "level": "medio"
+        },
+        "branch": {
+          "steps": [
+            "Issue",
+            "Branch",
+            "Plan",
+            "Patch",
+            "Tests",
+            "Review",
+            "PR"
+          ],
+          "active": 3
+        },
+        "quiz": {
+          "question": "Cual es la evidencia minima para cerrar esta pantalla?",
+          "answers": [
+            "Una respuesta convincente",
+            "Un diff probado o decision documentada",
+            "Un prompt mas largo"
+          ],
+          "correct": 1
+        },
+        "source": {
+          "title": "De error a PR revisable",
+          "summary": [
+            {
+              "number": "01",
+              "label": "Ask",
+              "body": "Entender antes de tocar."
+            },
+            {
+              "number": "02",
+              "label": "Edit",
+              "body": "Cambiar poco y con test."
+            },
+            {
+              "number": "03",
+              "label": "Agent",
+              "body": "Delegar solo con contrato y presupuesto."
+            }
+          ],
+          "cta": "Siguiente: Copilot Medium con instructions y prompt files de equipo."
+        }
+      },
+      "subtitles": [
+        {
+          "text": "Respuesta simulada: Error, diagnostico, patch, test y PR.",
+          "startMs": 1725400,
+          "endMs": 1762200
+        },
+        {
+          "text": "Guardar PR, test y decision de modo.",
+          "startMs": 1762900,
+          "endMs": 1799500
+        }
+      ],
+      "voiceover": [
+        "Respuesta simulada: Error, diagnostico, patch, test y PR.",
+        "Guardar PR, test y decision de modo."
+      ],
+      "screen": {
+        "mode": "pr-review",
+        "title": "Cierre",
+        "visual": "pr-review"
+      },
+      "blueprintAction": {
+        "type": "handoff",
+        "label": "Cerrar workshop",
+        "detail": "Guardar PR, test y decision de modo."
+      }
+    }
+  ],
+  "generatedFrom": "public/video-blueprints/cp-workshop-30m-error-to-pr.json"
+}

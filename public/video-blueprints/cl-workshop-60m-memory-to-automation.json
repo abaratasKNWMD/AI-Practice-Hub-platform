@@ -1,0 +1,326 @@
+{
+  "id": "cl-workshop-60m-memory-to-automation",
+  "title": "Workshop 1h Claude - De memoria a automatizacion controlada",
+  "description": "Sesion de 60 minutos para transformar conocimiento repetido en CLAUDE.md, skills, subagentes, MCP readonly, hooks y una politica de coste aplicable.",
+  "vendor": "claude",
+  "template": "technical",
+  "durationMin": 60,
+  "voice": "es-ES-AlvaroNeural",
+  "author": "AI Practice Hub",
+  "createdAt": "2026-05-08",
+  "chapters": [
+    { "id": "memory", "label": "Memoria util", "sceneId": "opening-memory" },
+    { "id": "skills", "label": "Skills y subagentes", "sceneId": "claude-md-audit" },
+    { "id": "controls", "label": "MCP y hooks", "sceneId": "mcp-readonly" },
+    { "id": "evals", "label": "Evals y coste", "sceneId": "hook-policy" },
+    { "id": "rollout", "label": "Rollout", "sceneId": "rollout-pack" }
+  ],
+  "scenes": [
+    {
+      "id": "opening-memory",
+      "name": "Apertura memory sprint",
+      "kind": "title",
+      "durationSec": 300,
+      "screen": {
+        "title": "Claude no necesita mas charla, necesita memoria operativa",
+        "content": {
+          "headline": "De repetir contexto a automatizar criterio",
+          "outputs": ["CLAUDE.md podado", "skill fix-tests", "subagente explorer", "hook anti secretos", "eval minima"]
+        },
+        "presenterCue": "Deja claro que memoria no es volcar documentacion."
+      },
+      "voiceover": [
+        "Claude brilla cuando el equipo convierte conocimiento repetido en sistema.",
+        "En una hora vamos a separar memoria, skill, subagente, MCP y hook.",
+        "El objetivo no es tener mas archivos, es reducir repeticion y aumentar control."
+      ],
+      "action": {
+        "type": "narrate",
+        "label": "Contrato Claude",
+        "detail": "Mostrar outputs y explicar que se revisan como artefactos de plataforma."
+      }
+    },
+    {
+      "id": "context-triage",
+      "name": "Triage de contexto",
+      "kind": "compare",
+      "durationSec": 300,
+      "screen": {
+        "title": "Memoria, rules o skill",
+        "content": {
+          "matrix": [
+            ["CLAUDE.md", "reglas estables del repo"],
+            ["rules por carpeta", "convencion local"],
+            ["skill", "procedimiento repetible"],
+            ["subagente", "rol especializado"]
+          ],
+          "question": "Donde vive cada conocimiento?"
+        },
+        "presenterCue": "Pedir ejemplos del equipo y ubicarlos en la matriz."
+      },
+      "voiceover": [
+        "No todo lo que sabemos debe ir en CLAUDE.md.",
+        "Si una instruccion es estable, vive en memoria. Si es un procedimiento, probablemente es una skill.",
+        "Si requiere rol y criterio independiente, empieza a parecer subagente."
+      ],
+      "action": {
+        "type": "human-decision",
+        "label": "Clasificar conocimiento",
+        "detail": "El grupo clasifica cinco piezas de contexto en memoria, rule, skill o subagente."
+      }
+    },
+    {
+      "id": "claude-md-audit",
+      "name": "Auditoria de CLAUDE.md",
+      "kind": "coding",
+      "durationSec": 300,
+      "screen": {
+        "title": "CLAUDE.md podado",
+        "content": {
+          "bad": "Documento largo con arquitectura, normas, endpoints y deseos mezclados.",
+          "good": ["Objetivo del repo", "Comandos", "Convenciones", "No tocar", "Politica de tests"],
+          "prompt": "Audita este CLAUDE.md. Separa memoria estable, basura y candidatos a skill."
+        },
+        "presenterCue": "La poda es una victoria, no una perdida."
+      },
+      "voiceover": [
+        "La memoria larga no siempre ayuda. A veces diluye lo importante.",
+        "Pedimos a Claude que audite la memoria como un documento vivo.",
+        "El resultado debe ser mas corto, mas accionable y mas facil de mantener."
+      ],
+      "action": {
+        "type": "prompt",
+        "label": "Auditar memoria",
+        "detail": "Simular respuesta con tabla keep, move-to-skill y delete."
+      }
+    },
+    {
+      "id": "skill-fix-tests",
+      "name": "Skill fix-tests",
+      "kind": "coding",
+      "durationSec": 300,
+      "screen": {
+        "title": "SKILL.md",
+        "content": {
+          "filename": ".claude/skills/fix-tests/SKILL.md",
+          "sections": ["When to use", "Inputs", "Workflow", "Stop conditions", "Output"],
+          "rule": "Una skill debe ahorrar explicacion, no ocultar criterio."
+        },
+        "presenterCue": "La skill es un procedimiento, no un prompt bonito."
+      },
+      "voiceover": [
+        "Cuando repetimos el mismo flujo tres veces, probablemente merece una skill.",
+        "La skill fix-tests define cuando se usa, que lee, que puede editar y cuando se detiene.",
+        "Esto permite escalar practica sin depender del profesor."
+      ],
+      "action": {
+        "type": "diff-review",
+        "label": "Crear skill",
+        "detail": "Mostrar estructura de skill y pedir al grupo revisar stop conditions."
+      }
+    },
+    {
+      "id": "subagent-explorer",
+      "name": "Subagente explorer",
+      "kind": "thinking",
+      "durationSec": 300,
+      "screen": {
+        "title": "Explorer agent",
+        "content": {
+          "role": "Lee codigo, no edita. Devuelve rutas, hipotesis y riesgos.",
+          "model": "rapido para exploracion; fuerte solo si el dominio lo pide",
+          "handoff": "No bloquear al agente principal con busquedas repetitivas."
+        },
+        "presenterCue": "Subagente no es teatro: debe tener propiedad y limite."
+      },
+      "voiceover": [
+        "Un subagente es util cuando separa responsabilidad.",
+        "El explorer no escribe codigo. Quita ruido del agente principal y entrega un mapa verificable.",
+        "Si no tiene limites, no es arquitectura, es confusion con nombre elegante."
+      ],
+      "action": {
+        "type": "handoff",
+        "label": "Delegar explorer",
+        "detail": "Simular respuesta del subagente con archivos y riesgos."
+      }
+    },
+    {
+      "id": "mcp-readonly",
+      "name": "MCP readonly",
+      "kind": "linear",
+      "durationSec": 300,
+      "screen": {
+        "title": "Inventario MCP",
+        "content": {
+          "connectors": [
+            ["docs", "readonly", "bajo"],
+            ["issues", "readonly", "medio"],
+            ["repo", "write", "alto"]
+          ],
+          "policy": "Activar escritura solo con caso y aprobacion."
+        },
+        "presenterCue": "MCP no se activa por entusiasmo, se inventaria."
+      },
+      "voiceover": [
+        "MCP da contexto y accion, por eso requiere politica.",
+        "El default del workshop es readonly.",
+        "La escritura se reserva para casos concretos, auditables y con responsable."
+      ],
+      "action": {
+        "type": "human-decision",
+        "label": "Aprobar MCP",
+        "detail": "Clasificar conectores por valor, riesgo y permiso."
+      }
+    },
+    {
+      "id": "hook-policy",
+      "name": "Hook anti secretos",
+      "kind": "coding",
+      "durationSec": 300,
+      "screen": {
+        "title": "Hook deterministic",
+        "content": {
+          "filename": ".claude/hooks/scripts/block-secrets.js",
+          "rule": "Bloquear si el diff contiene API_KEY, SECRET o token=",
+          "message": "No dependemos de que el modelo se acuerde."
+        },
+        "presenterCue": "Hooks son controles deterministicos, no recomendaciones."
+      },
+      "voiceover": [
+        "Hay reglas que no deben depender del humor del modelo.",
+        "Un hook anti secretos bloquea antes de que el error llegue al PR.",
+        "La IA ayuda, pero el guardrail debe ser determinista."
+      ],
+      "action": {
+        "type": "tool-run",
+        "label": "Simular hook",
+        "detail": "Mostrar un intento bloqueado y una salida segura."
+      }
+    },
+    {
+      "id": "eval-mini",
+      "name": "Eval minima",
+      "kind": "preview",
+      "durationSec": 300,
+      "screen": {
+        "title": "LLM-as-a-Judge con contrato",
+        "content": {
+          "input": "diff + criterio",
+          "schema": ["severity", "finding", "evidence", "recommendation"],
+          "pass": "sin bloqueantes y tests presentes"
+        },
+        "presenterCue": "No vender juez infalible: vender comparabilidad."
+      },
+      "voiceover": [
+        "Una eval no convierte el modelo en juez perfecto.",
+        "Pero crea una comparacion repetible entre salidas.",
+        "El truco es exigir contrato de salida, evidencia y criterio de aprobado."
+      ],
+      "action": {
+        "type": "simulated-response",
+        "label": "Evaluar salida",
+        "detail": "Simular JSON de evaluacion con un finding menor."
+      }
+    },
+    {
+      "id": "cost-routing",
+      "name": "Routing de modelos",
+      "kind": "compare",
+      "durationSec": 300,
+      "screen": {
+        "title": "Modelo por tarea",
+        "content": {
+          "routing": [
+            ["explorer", "modelo rapido", "barato"],
+            ["implementacion", "modelo medio/fuerte", "segun riesgo"],
+            ["review final", "modelo fuerte si hay impacto"]
+          ],
+          "rule": "Subir potencia por riesgo, no por costumbre."
+        },
+        "presenterCue": "Conectar coste con incertidumbre."
+      },
+      "voiceover": [
+        "La potencia se reserva para incertidumbre y riesgo.",
+        "Explorar con un modelo caro puede ser desperdicio. Revisar un cambio critico con un modelo debil puede ser falso ahorro.",
+        "La politica debe ser simple para que el equipo la use."
+      ],
+      "action": {
+        "type": "human-decision",
+        "label": "Elegir routing",
+        "detail": "Completar tabla de modelo por rol."
+      }
+    },
+    {
+      "id": "plugin-rollout",
+      "name": "Rollout de plugin",
+      "kind": "linear",
+      "durationSec": 300,
+      "screen": {
+        "title": "Distribucion interna",
+        "content": {
+          "rings": ["sandbox", "equipo piloto", "area", "organizacion"],
+          "gates": ["QA", "seguridad", "feedback", "version"]
+        },
+        "presenterCue": "No distribuir skills sin versionado y propietario."
+      },
+      "voiceover": [
+        "Cuando una skill o hook funciona, aparece la tentacion de distribuirlo a todo el mundo.",
+        "El rollout por anillos evita que una buena idea se convierta en incidente.",
+        "Cada anillo necesita feedback y version."
+      ],
+      "action": {
+        "type": "handoff",
+        "label": "Plan de rollout",
+        "detail": "Crear una tabla de anillos, gates y responsable."
+      }
+    },
+    {
+      "id": "rollout-pack",
+      "name": "Pack final Claude",
+      "kind": "coding",
+      "durationSec": 300,
+      "screen": {
+        "title": "Pack de salida",
+        "content": {
+          "files": ["CLAUDE.md", ".claude/skills/fix-tests/SKILL.md", ".claude/agents/explorer.md", ".claude/hooks/hooks.json", "eval-review.json"],
+          "owner": "platform + equipo piloto"
+        },
+        "presenterCue": "Cada archivo debe tener razon de existir."
+      },
+      "voiceover": [
+        "El workshop termina con un pack, no con apuntes sueltos.",
+        "Cada archivo representa una decision: memoria, procedimiento, rol, control o evaluacion.",
+        "Este pack es el minimo viable para empezar un piloto serio."
+      ],
+      "action": {
+        "type": "handoff",
+        "label": "Entregar pack",
+        "detail": "Mostrar archivos y criterios de aceptacion."
+      }
+    },
+    {
+      "id": "close",
+      "name": "Cierre Claude",
+      "kind": "finale",
+      "durationSec": 300,
+      "screen": {
+        "title": "De uso individual a sistema",
+        "content": {
+          "outputs": ["memoria podada", "skill", "subagente", "hook", "eval", "routing"],
+          "next": "Probar el pack con un repositorio piloto."
+        },
+        "presenterCue": "Cerrar preguntando que repeticion desaparece manana."
+      },
+      "voiceover": [
+        "Claude aterriza cuando deja de ser una conversacion brillante y se convierte en sistema compartido.",
+        "La memoria reduce repeticion, las skills capturan procedimiento y los hooks protegen limites.",
+        "El siguiente paso es probarlo con un caso real y medir si reduce dudas de tutoria."
+      ],
+      "action": {
+        "type": "handoff",
+        "label": "Cierre",
+        "detail": "Recoger outputs y decidir piloto."
+      }
+    }
+  ]
+}

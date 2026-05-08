@@ -1,0 +1,21 @@
+{
+  "vendor": "claude",
+  "exerciseId": "cl-b06-handoff",
+  "title": "Handoff listo para tutoria",
+  "surface": "Handoff",
+  "recommendedModel": "Haiku",
+  "permissionMode": "read-only",
+  "estimatedCost": "bajo",
+  "intentionalErrors": [
+    "briefing demasiado amplio",
+    "falta de evidencia",
+    "coste sin registrar"
+  ],
+  "expectedArtifacts": [
+    "prompt",
+    "resultado",
+    "evidencia",
+    "coste",
+    "decision"
+  ]
+}

@@ -1,0 +1,3245 @@
+{
+  "id": "cl-workshop-30m-memory-to-hook",
+  "title": "Claude Workshop 30m - Memory to Hook",
+  "description": "Workshop simulado de 30 minutos para pasar de CLAUDE.md y contexto a skill, subagent, MCP readonly y hook anti secretos.",
+  "template": "technical",
+  "durationPreset": 30,
+  "durationMs": 1800000,
+  "voice": "es-ES-AlvaroNeural",
+  "author": "AI Practice Hub",
+  "createdAt": "2026-05-08T00:00:00.000Z",
+  "chapters": [
+    {
+      "id": "briefing",
+      "label": "Briefing",
+      "startMs": 0
+    },
+    {
+      "id": "memory",
+      "label": "Memoria",
+      "startMs": 150000
+    },
+    {
+      "id": "operator",
+      "label": "Skills y subagentes",
+      "startMs": 600000
+    },
+    {
+      "id": "guardrails",
+      "label": "Hooks",
+      "startMs": 1050000
+    },
+    {
+      "id": "close",
+      "label": "Cierre",
+      "startMs": 1350000
+    }
+  ],
+  "scenes": [
+    {
+      "id": "title__beat-01",
+      "name": "Apertura / Prompt",
+      "startMs": 0,
+      "endMs": 75000,
+      "type": "prompt",
+      "content": {
+        "mode": "prompt",
+        "vendor": "claude",
+        "title": "Apertura",
+        "eyebrow": "Claude Workshop 30m - Memory to Hook / Apertura",
+        "label": "Prompt",
+        "actionLabel": "Aterrizaje",
+        "actionDetail": "Explicar por que no empezamos por hooks sino por memoria.",
+        "prompt": "Explicar por que no empezamos por hooks sino por memoria.",
+        "response": [
+          "Respuesta simulada con salida verificable.",
+          "Se cita evidencia, se limita alcance y se deja una decision humana clara.",
+          "El cierre declara siguiente paso, coste aproximado y riesgo residual."
+        ],
+        "diff": [
+          "- cambio ambiguo sin criterio de aceptacion",
+          "+ cambio acotado con test, owner y evidencia",
+          "+ registro de modelo, permiso y coste"
+        ],
+        "terminal": [
+          "$ pnpm test -- --runInBand",
+          "✓ test relevante pasa",
+          "✓ no hay errores de consola",
+          "i coste relativo registrado"
+        ],
+        "review": [
+          {
+            "severity": "blocker",
+            "text": "No hay criterios bloqueantes pendientes."
+          },
+          {
+            "severity": "medium",
+            "text": "Explicar por que no empezamos por hooks sino por memoria."
+          },
+          {
+            "severity": "note",
+            "text": "El humano firma el criterio final."
+          }
+        ],
+        "cost": {
+          "model": "modelo rapido",
+          "tokens": "bajo",
+          "permission": "readonly/workspace segun fase",
+          "stopRule": "Parar si no hay evidencia nueva en el siguiente intento."
+        },
+        "decision": {
+          "question": "Que debe decidir la persona antes de continuar?",
+          "options": [
+            "seguir con alcance actual",
+            "pedir mas contexto",
+            "subir modelo",
+            "bloquear y llevar a tutoria"
+          ],
+          "selected": 0
+        },
+        "risk": {
+          "items": [
+            "Permisos",
+            "Coste",
+            "Contexto",
+            "Calidad",
+            "Responsabilidad humana"
+          ],
+          "level": "bajo"
+        },
+        "branch": {
+          "steps": [
+            "Issue",
+            "Branch",
+            "Plan",
+            "Patch",
+            "Tests",
+            "Review",
+            "PR"
+          ],
+          "active": 2
+        },
+        "quiz": {
+          "question": "Cual es la evidencia minima para cerrar esta pantalla?",
+          "answers": [
+            "Una respuesta convincente",
+            "Un diff probado o decision documentada",
+            "Un prompt mas largo"
+          ],
+          "correct": 1
+        },
+        "source": {
+          "title": "Claude: de memoria a hook",
+          "subtitle": "30 minutos para convertir criterio en contexto, skill, subagente y control deterministicos.",
+          "tag": "Workshop / Claude Code"
+        }
+      },
+      "subtitles": [
+        {
+          "text": "Pantalla de accion: Claude se opera por capas.",
+          "startMs": 400,
+          "endMs": 37200
+        },
+        {
+          "text": "Explicar por que no empezamos por hooks sino por memoria.",
+          "startMs": 37900,
+          "endMs": 74500
+        }
+      ],
+      "voiceover": [
+        "Pantalla de accion: Claude se opera por capas.",
+        "Explicar por que no empezamos por hooks sino por memoria."
+      ],
+      "screen": {
+        "mode": "prompt",
+        "title": "Apertura",
+        "visual": "prompt"
+      },
+      "blueprintAction": {
+        "type": "narrate",
+        "label": "Aterrizaje",
+        "detail": "Explicar por que no empezamos por hooks sino por memoria."
+      }
+    },
+    {
+      "id": "title__beat-02",
+      "name": "Apertura / Respuesta",
+      "startMs": 75000,
+      "endMs": 150000,
+      "type": "streaming",
+      "content": {
+        "mode": "streaming",
+        "vendor": "claude",
+        "title": "Apertura",
+        "eyebrow": "Claude Workshop 30m - Memory to Hook / Apertura",
+        "label": "Respuesta",
+        "actionLabel": "Aterrizaje",
+        "actionDetail": "Explicar por que no empezamos por hooks sino por memoria.",
+        "prompt": "Explicar por que no empezamos por hooks sino por memoria.",
+        "response": [
+          "Respuesta simulada con salida verificable.",
+          "Se cita evidencia, se limita alcance y se deja una decision humana clara.",
+          "El cierre declara siguiente paso, coste aproximado y riesgo residual."
+        ],
+        "diff": [
+          "- cambio ambiguo sin criterio de aceptacion",
+          "+ cambio acotado con test, owner y evidencia",
+          "+ registro de modelo, permiso y coste"
+        ],
+        "terminal": [
+          "$ pnpm test -- --runInBand",
+          "✓ test relevante pasa",
+          "✓ no hay errores de consola",
+          "i coste relativo registrado"
+        ],
+        "review": [
+          {
+            "severity": "blocker",
+            "text": "No hay criterios bloqueantes pendientes."
+          },
+          {
+            "severity": "medium",
+            "text": "Explicar por que no empezamos por hooks sino por memoria."
+          },
+          {
+            "severity": "note",
+            "text": "El humano firma el criterio final."
+          }
+        ],
+        "cost": {
+          "model": "modelo estandar",
+          "tokens": "medio",
+          "permission": "readonly/workspace segun fase",
+          "stopRule": "Parar si no hay evidencia nueva en el siguiente intento."
+        },
+        "decision": {
+          "question": "Que debe decidir la persona antes de continuar?",
+          "options": [
+            "seguir con alcance actual",
+            "pedir mas contexto",
+            "subir modelo",
+            "bloquear y llevar a tutoria"
+          ],
+          "selected": 1
+        },
+        "risk": {
+          "items": [
+            "Permisos",
+            "Coste",
+            "Contexto",
+            "Calidad",
+            "Responsabilidad humana"
+          ],
+          "level": "medio"
+        },
+        "branch": {
+          "steps": [
+            "Issue",
+            "Branch",
+            "Plan",
+            "Patch",
+            "Tests",
+            "Review",
+            "PR"
+          ],
+          "active": 3
+        },
+        "quiz": {
+          "question": "Cual es la evidencia minima para cerrar esta pantalla?",
+          "answers": [
+            "Una respuesta convincente",
+            "Un diff probado o decision documentada",
+            "Un prompt mas largo"
+          ],
+          "correct": 1
+        },
+        "source": {
+          "title": "Claude: de memoria a hook",
+          "subtitle": "30 minutos para convertir criterio en contexto, skill, subagente y control deterministicos.",
+          "tag": "Workshop / Claude Code"
+        }
+      },
+      "subtitles": [
+        {
+          "text": "Respuesta simulada: Primero memoria, despues contexto, luego skills y subagentes.",
+          "startMs": 75400,
+          "endMs": 112200
+        },
+        {
+          "text": "Explicar por que no empezamos por hooks sino por memoria.",
+          "startMs": 112900,
+          "endMs": 149500
+        }
+      ],
+      "voiceover": [
+        "Respuesta simulada: Primero memoria, despues contexto, luego skills y subagentes.",
+        "Explicar por que no empezamos por hooks sino por memoria."
+      ],
+      "screen": {
+        "mode": "streaming",
+        "title": "Apertura",
+        "visual": "streaming"
+      },
+      "blueprintAction": {
+        "type": "narrate",
+        "label": "Aterrizaje",
+        "detail": "Explicar por que no empezamos por hooks sino por memoria."
+      }
+    },
+    {
+      "id": "claude-md__beat-01",
+      "name": "CLAUDE.md minimo / Prompt",
+      "startMs": 150000,
+      "endMs": 225000,
+      "type": "prompt",
+      "content": {
+        "mode": "prompt",
+        "vendor": "claude",
+        "title": "CLAUDE.md minimo",
+        "eyebrow": "Claude Workshop 30m - Memory to Hook / CLAUDE.md minimo",
+        "label": "Prompt",
+        "actionLabel": "Crear memoria",
+        "actionDetail": "Guardar CLAUDE.md en starter repo.",
+        "prompt": "Guardar CLAUDE.md en starter repo.",
+        "response": [
+          "Respuesta simulada con salida verificable.",
+          "Se cita evidencia, se limita alcance y se deja una decision humana clara.",
+          "El cierre declara siguiente paso, coste aproximado y riesgo residual."
+        ],
+        "diff": [
+          "- cambio ambiguo sin criterio de aceptacion",
+          "+ cambio acotado con test, owner y evidencia",
+          "+ registro de modelo, permiso y coste"
+        ],
+        "terminal": [
+          "$ pnpm test -- --runInBand",
+          "✓ test relevante pasa",
+          "✓ no hay errores de consola",
+          "i coste relativo registrado"
+        ],
+        "review": [
+          {
+            "severity": "blocker",
+            "text": "No hay criterios bloqueantes pendientes."
+          },
+          {
+            "severity": "medium",
+            "text": "Guardar CLAUDE.md en starter repo."
+          },
+          {
+            "severity": "note",
+            "text": "El humano firma el criterio final."
+          }
+        ],
+        "cost": {
+          "model": "modelo rapido",
+          "tokens": "bajo",
+          "permission": "ejecucion acotada",
+          "stopRule": "Parar si no hay evidencia nueva en el siguiente intento."
+        },
+        "decision": {
+          "question": "Que debe decidir la persona antes de continuar?",
+          "options": [
+            "seguir con alcance actual",
+            "pedir mas contexto",
+            "subir modelo",
+            "bloquear y llevar a tutoria"
+          ],
+          "selected": 0
+        },
+        "risk": {
+          "items": [
+            "Permisos",
+            "Coste",
+            "Contexto",
+            "Calidad",
+            "Responsabilidad humana"
+          ],
+          "level": "bajo"
+        },
+        "branch": {
+          "steps": [
+            "Issue",
+            "Branch",
+            "Plan",
+            "Patch",
+            "Tests",
+            "Review",
+            "PR"
+          ],
+          "active": 2
+        },
+        "quiz": {
+          "question": "Cual es la evidencia minima para cerrar esta pantalla?",
+          "answers": [
+            "Una respuesta convincente",
+            "Un diff probado o decision documentada",
+            "Un prompt mas largo"
+          ],
+          "correct": 1
+        },
+        "source": {
+          "filename": "CLAUDE.md",
+          "language": "markdown",
+          "code": "# CLAUDE.md\n\n## Objetivo\nAyudar en cambios pequenos y verificables.\n\n## Reglas\n- Lee contexto antes de editar.\n- No leas ni escribas .env*.\n- Usa /context y /usage en sesiones largas.\n- Cierra con diff, checks y handoff.\n\n## Comandos\n- pnpm lint\n- pnpm test"
+        }
+      },
+      "subtitles": [
+        {
+          "text": "Pantalla de accion: El archivo es corto a proposito.",
+          "startMs": 150400,
+          "endMs": 187200
+        },
+        {
+          "text": "Guardar CLAUDE.md en starter repo.",
+          "startMs": 187900,
+          "endMs": 224500
+        }
+      ],
+      "voiceover": [
+        "Pantalla de accion: El archivo es corto a proposito.",
+        "Guardar CLAUDE.md en starter repo."
+      ],
+      "screen": {
+        "mode": "prompt",
+        "title": "CLAUDE.md minimo",
+        "visual": "prompt"
+      },
+      "blueprintAction": {
+        "type": "tool-run",
+        "label": "Crear memoria",
+        "detail": "Guardar CLAUDE.md en starter repo."
+      }
+    },
+    {
+      "id": "claude-md__beat-02",
+      "name": "CLAUDE.md minimo / Respuesta",
+      "startMs": 225000,
+      "endMs": 300000,
+      "type": "streaming",
+      "content": {
+        "mode": "streaming",
+        "vendor": "claude",
+        "title": "CLAUDE.md minimo",
+        "eyebrow": "Claude Workshop 30m - Memory to Hook / CLAUDE.md minimo",
+        "label": "Respuesta",
+        "actionLabel": "Crear memoria",
+        "actionDetail": "Guardar CLAUDE.md en starter repo.",
+        "prompt": "Guardar CLAUDE.md en starter repo.",
+        "response": [
+          "Respuesta simulada con salida verificable.",
+          "Se cita evidencia, se limita alcance y se deja una decision humana clara.",
+          "El cierre declara siguiente paso, coste aproximado y riesgo residual."
+        ],
+        "diff": [
+          "- cambio ambiguo sin criterio de aceptacion",
+          "+ cambio acotado con test, owner y evidencia",
+          "+ registro de modelo, permiso y coste"
+        ],
+        "terminal": [
+          "$ pnpm test -- --runInBand",
+          "✓ test relevante pasa",
+          "✓ no hay errores de consola",
+          "i coste relativo registrado"
+        ],
+        "review": [
+          {
+            "severity": "blocker",
+            "text": "No hay criterios bloqueantes pendientes."
+          },
+          {
+            "severity": "medium",
+            "text": "Guardar CLAUDE.md en starter repo."
+          },
+          {
+            "severity": "note",
+            "text": "El humano firma el criterio final."
+          }
+        ],
+        "cost": {
+          "model": "modelo estandar",
+          "tokens": "medio",
+          "permission": "ejecucion acotada",
+          "stopRule": "Parar si no hay evidencia nueva en el siguiente intento."
+        },
+        "decision": {
+          "question": "Que debe decidir la persona antes de continuar?",
+          "options": [
+            "seguir con alcance actual",
+            "pedir mas contexto",
+            "subir modelo",
+            "bloquear y llevar a tutoria"
+          ],
+          "selected": 1
+        },
+        "risk": {
+          "items": [
+            "Permisos",
+            "Coste",
+            "Contexto",
+            "Calidad",
+            "Responsabilidad humana"
+          ],
+          "level": "medio"
+        },
+        "branch": {
+          "steps": [
+            "Issue",
+            "Branch",
+            "Plan",
+            "Patch",
+            "Tests",
+            "Review",
+            "PR"
+          ],
+          "active": 3
+        },
+        "quiz": {
+          "question": "Cual es la evidencia minima para cerrar esta pantalla?",
+          "answers": [
+            "Una respuesta convincente",
+            "Un diff probado o decision documentada",
+            "Un prompt mas largo"
+          ],
+          "correct": 1
+        },
+        "source": {
+          "filename": "CLAUDE.md",
+          "language": "markdown",
+          "code": "# CLAUDE.md\n\n## Objetivo\nAyudar en cambios pequenos y verificables.\n\n## Reglas\n- Lee contexto antes de editar.\n- No leas ni escribas .env*.\n- Usa /context y /usage en sesiones largas.\n- Cierra con diff, checks y handoff.\n\n## Comandos\n- pnpm lint\n- pnpm test"
+        }
+      },
+      "subtitles": [
+        {
+          "text": "Respuesta simulada: No es una novela de arquitectura.",
+          "startMs": 225400,
+          "endMs": 262200
+        },
+        {
+          "text": "Guardar CLAUDE.md en starter repo.",
+          "startMs": 262900,
+          "endMs": 299500
+        }
+      ],
+      "voiceover": [
+        "Respuesta simulada: No es una novela de arquitectura.",
+        "Guardar CLAUDE.md en starter repo."
+      ],
+      "screen": {
+        "mode": "streaming",
+        "title": "CLAUDE.md minimo",
+        "visual": "streaming"
+      },
+      "blueprintAction": {
+        "type": "tool-run",
+        "label": "Crear memoria",
+        "detail": "Guardar CLAUDE.md en starter repo."
+      }
+    },
+    {
+      "id": "context-audit__beat-01",
+      "name": "Auditoria de contexto / Prompt",
+      "startMs": 300000,
+      "endMs": 375000,
+      "type": "prompt",
+      "content": {
+        "mode": "prompt",
+        "vendor": "claude",
+        "title": "Auditoria de contexto",
+        "eyebrow": "Claude Workshop 30m - Memory to Hook / Auditoria de contexto",
+        "label": "Prompt",
+        "actionLabel": "Ejecutar higiene",
+        "actionDetail": "/context, /usage y decision de compactar o seguir.",
+        "prompt": "/context, /usage y decision de compactar o seguir.",
+        "response": [
+          "Respuesta simulada con salida verificable.",
+          "Se cita evidencia, se limita alcance y se deja una decision humana clara.",
+          "El cierre declara siguiente paso, coste aproximado y riesgo residual."
+        ],
+        "diff": [
+          "- cambio ambiguo sin criterio de aceptacion",
+          "+ cambio acotado con test, owner y evidencia",
+          "+ registro de modelo, permiso y coste"
+        ],
+        "terminal": [
+          "$ pnpm test -- --runInBand",
+          "✓ test relevante pasa",
+          "✓ no hay errores de consola",
+          "i coste relativo registrado"
+        ],
+        "review": [
+          {
+            "severity": "blocker",
+            "text": "No hay criterios bloqueantes pendientes."
+          },
+          {
+            "severity": "medium",
+            "text": "/context, /usage y decision de compactar o seguir."
+          },
+          {
+            "severity": "note",
+            "text": "El humano firma el criterio final."
+          }
+        ],
+        "cost": {
+          "model": "modelo rapido",
+          "tokens": "bajo",
+          "permission": "ejecucion acotada",
+          "stopRule": "Parar si no hay evidencia nueva en el siguiente intento."
+        },
+        "decision": {
+          "question": "Que debe decidir la persona antes de continuar?",
+          "options": [
+            "seguir con alcance actual",
+            "pedir mas contexto",
+            "subir modelo",
+            "bloquear y llevar a tutoria"
+          ],
+          "selected": 0
+        },
+        "risk": {
+          "items": [
+            "Permisos",
+            "Coste",
+            "Contexto",
+            "Calidad",
+            "Responsabilidad humana"
+          ],
+          "level": "bajo"
+        },
+        "branch": {
+          "steps": [
+            "Issue",
+            "Branch",
+            "Plan",
+            "Patch",
+            "Tests",
+            "Review",
+            "PR"
+          ],
+          "active": 2
+        },
+        "quiz": {
+          "question": "Cual es la evidencia minima para cerrar esta pantalla?",
+          "answers": [
+            "Una respuesta convincente",
+            "Un diff probado o decision documentada",
+            "Un prompt mas largo"
+          ],
+          "correct": 1
+        },
+        "source": {
+          "tag": "Context diet",
+          "title": "Antes de seguir, miramos contexto",
+          "body": "El alumno ejecuta /context y /usage para ver si la sesion esta limpia. Si el contexto esta lleno de logs o exploraciones antiguas, se pide handoff y /clear o /compact.",
+          "highlight": "Contexto maximo no es contexto perfecto.",
+          "points": [
+            "Que ocupa memoria permanente.",
+            "Que viene del prompt actual.",
+            "Que herramientas o MCPs añaden ruido.",
+            "Cuando compactar antes de seguir."
+          ]
+        }
+      },
+      "subtitles": [
+        {
+          "text": "Pantalla de accion: Claude puede manejar mucho contexto.",
+          "startMs": 300400,
+          "endMs": 337200
+        },
+        {
+          "text": "/context, /usage y decision de compactar o seguir.",
+          "startMs": 337900,
+          "endMs": 374500
+        }
+      ],
+      "voiceover": [
+        "Pantalla de accion: Claude puede manejar mucho contexto.",
+        "/context, /usage y decision de compactar o seguir."
+      ],
+      "screen": {
+        "mode": "prompt",
+        "title": "Auditoria de contexto",
+        "visual": "prompt"
+      },
+      "blueprintAction": {
+        "type": "tool-run",
+        "label": "Ejecutar higiene",
+        "detail": "/context, /usage y decision de compactar o seguir."
+      }
+    },
+    {
+      "id": "context-audit__beat-02",
+      "name": "Auditoria de contexto / Respuesta",
+      "startMs": 375000,
+      "endMs": 450000,
+      "type": "streaming",
+      "content": {
+        "mode": "streaming",
+        "vendor": "claude",
+        "title": "Auditoria de contexto",
+        "eyebrow": "Claude Workshop 30m - Memory to Hook / Auditoria de contexto",
+        "label": "Respuesta",
+        "actionLabel": "Ejecutar higiene",
+        "actionDetail": "/context, /usage y decision de compactar o seguir.",
+        "prompt": "/context, /usage y decision de compactar o seguir.",
+        "response": [
+          "Respuesta simulada con salida verificable.",
+          "Se cita evidencia, se limita alcance y se deja una decision humana clara.",
+          "El cierre declara siguiente paso, coste aproximado y riesgo residual."
+        ],
+        "diff": [
+          "- cambio ambiguo sin criterio de aceptacion",
+          "+ cambio acotado con test, owner y evidencia",
+          "+ registro de modelo, permiso y coste"
+        ],
+        "terminal": [
+          "$ pnpm test -- --runInBand",
+          "✓ test relevante pasa",
+          "✓ no hay errores de consola",
+          "i coste relativo registrado"
+        ],
+        "review": [
+          {
+            "severity": "blocker",
+            "text": "No hay criterios bloqueantes pendientes."
+          },
+          {
+            "severity": "medium",
+            "text": "/context, /usage y decision de compactar o seguir."
+          },
+          {
+            "severity": "note",
+            "text": "El humano firma el criterio final."
+          }
+        ],
+        "cost": {
+          "model": "modelo estandar",
+          "tokens": "medio",
+          "permission": "ejecucion acotada",
+          "stopRule": "Parar si no hay evidencia nueva en el siguiente intento."
+        },
+        "decision": {
+          "question": "Que debe decidir la persona antes de continuar?",
+          "options": [
+            "seguir con alcance actual",
+            "pedir mas contexto",
+            "subir modelo",
+            "bloquear y llevar a tutoria"
+          ],
+          "selected": 1
+        },
+        "risk": {
+          "items": [
+            "Permisos",
+            "Coste",
+            "Contexto",
+            "Calidad",
+            "Responsabilidad humana"
+          ],
+          "level": "medio"
+        },
+        "branch": {
+          "steps": [
+            "Issue",
+            "Branch",
+            "Plan",
+            "Patch",
+            "Tests",
+            "Review",
+            "PR"
+          ],
+          "active": 3
+        },
+        "quiz": {
+          "question": "Cual es la evidencia minima para cerrar esta pantalla?",
+          "answers": [
+            "Una respuesta convincente",
+            "Un diff probado o decision documentada",
+            "Un prompt mas largo"
+          ],
+          "correct": 1
+        },
+        "source": {
+          "tag": "Context diet",
+          "title": "Antes de seguir, miramos contexto",
+          "body": "El alumno ejecuta /context y /usage para ver si la sesion esta limpia. Si el contexto esta lleno de logs o exploraciones antiguas, se pide handoff y /clear o /compact.",
+          "highlight": "Contexto maximo no es contexto perfecto.",
+          "points": [
+            "Que ocupa memoria permanente.",
+            "Que viene del prompt actual.",
+            "Que herramientas o MCPs añaden ruido.",
+            "Cuando compactar antes de seguir."
+          ]
+        }
+      },
+      "subtitles": [
+        {
+          "text": "Respuesta simulada: Pero un equipo maduro no abusa de eso.",
+          "startMs": 375400,
+          "endMs": 412200
+        },
+        {
+          "text": "/context, /usage y decision de compactar o seguir.",
+          "startMs": 412900,
+          "endMs": 449500
+        }
+      ],
+      "voiceover": [
+        "Respuesta simulada: Pero un equipo maduro no abusa de eso.",
+        "/context, /usage y decision de compactar o seguir."
+      ],
+      "screen": {
+        "mode": "streaming",
+        "title": "Auditoria de contexto",
+        "visual": "streaming"
+      },
+      "blueprintAction": {
+        "type": "tool-run",
+        "label": "Ejecutar higiene",
+        "detail": "/context, /usage y decision de compactar o seguir."
+      }
+    },
+    {
+      "id": "memory-routing__beat-01",
+      "name": "Donde vive cada regla / Prompt",
+      "startMs": 450000,
+      "endMs": 525000,
+      "type": "decision",
+      "content": {
+        "mode": "decision",
+        "vendor": "claude",
+        "title": "Donde vive cada regla",
+        "eyebrow": "Claude Workshop 30m - Memory to Hook / Donde vive cada regla",
+        "label": "Prompt",
+        "actionLabel": "Clasificar reglas",
+        "actionDetail": "El alumno decide que va a CLAUDE.md, rule, skill o prompt puntual.",
+        "prompt": "El alumno decide que va a CLAUDE.md, rule, skill o prompt puntual.",
+        "response": [
+          "Respuesta simulada con salida verificable.",
+          "Se cita evidencia, se limita alcance y se deja una decision humana clara.",
+          "El cierre declara siguiente paso, coste aproximado y riesgo residual."
+        ],
+        "diff": [
+          "- cambio ambiguo sin criterio de aceptacion",
+          "+ cambio acotado con test, owner y evidencia",
+          "+ registro de modelo, permiso y coste"
+        ],
+        "terminal": [
+          "$ pnpm test -- --runInBand",
+          "✓ test relevante pasa",
+          "✓ no hay errores de consola",
+          "i coste relativo registrado"
+        ],
+        "review": [
+          {
+            "severity": "blocker",
+            "text": "No hay criterios bloqueantes pendientes."
+          },
+          {
+            "severity": "medium",
+            "text": "El alumno decide que va a CLAUDE.md, rule, skill o prompt puntual."
+          },
+          {
+            "severity": "note",
+            "text": "El humano firma el criterio final."
+          }
+        ],
+        "cost": {
+          "model": "modelo rapido",
+          "tokens": "bajo",
+          "permission": "readonly/workspace segun fase",
+          "stopRule": "Parar si no hay evidencia nueva en el siguiente intento."
+        },
+        "decision": {
+          "question": "Que debe decidir la persona antes de continuar?",
+          "options": [
+            "seguir con alcance actual",
+            "pedir mas contexto",
+            "subir modelo",
+            "bloquear y llevar a tutoria"
+          ],
+          "selected": 0
+        },
+        "risk": {
+          "items": [
+            "Permisos",
+            "Coste",
+            "Contexto",
+            "Calidad",
+            "Responsabilidad humana"
+          ],
+          "level": "bajo"
+        },
+        "branch": {
+          "steps": [
+            "Issue",
+            "Branch",
+            "Plan",
+            "Patch",
+            "Tests",
+            "Review",
+            "PR"
+          ],
+          "active": 2
+        },
+        "quiz": {
+          "question": "Cual es la evidencia minima para cerrar esta pantalla?",
+          "answers": [
+            "Una respuesta convincente",
+            "Un diff probado o decision documentada",
+            "Un prompt mas largo"
+          ],
+          "correct": 1
+        },
+        "source": {
+          "tag": "Routing",
+          "left": {
+            "label": "Mal routing",
+            "color": "destructive",
+            "steps": [
+              {
+                "icon": "FileText",
+                "text": "Todo a CLAUDE.md"
+              },
+              {
+                "icon": "AlertTriangle",
+                "text": "Archivo largo y caro"
+              },
+              {
+                "icon": "MessageSquare",
+                "text": "Claude ignora matices"
+              }
+            ],
+            "total": "Memoria pesada"
+          },
+          "right": {
+            "label": "Buen routing",
+            "color": "accent",
+            "steps": [
+              {
+                "icon": "FileText",
+                "text": "CLAUDE.md para reglas globales"
+              },
+              {
+                "icon": "Code",
+                "text": "Rules por carpeta"
+              },
+              {
+                "icon": "Workflow",
+                "text": "Skills para procedimientos"
+              }
+            ],
+            "total": "Memoria gobernada"
+          }
+        }
+      },
+      "subtitles": [
+        {
+          "text": "Pantalla de accion: El punto no es recordar todo.",
+          "startMs": 450400,
+          "endMs": 487200
+        },
+        {
+          "text": "El alumno decide que va a CLAUDE.md, rule, skill o prompt puntual.",
+          "startMs": 487900,
+          "endMs": 524500
+        }
+      ],
+      "voiceover": [
+        "Pantalla de accion: El punto no es recordar todo.",
+        "El alumno decide que va a CLAUDE.md, rule, skill o prompt puntual."
+      ],
+      "screen": {
+        "mode": "decision",
+        "title": "Donde vive cada regla",
+        "visual": "decision"
+      },
+      "blueprintAction": {
+        "type": "human-decision",
+        "label": "Clasificar reglas",
+        "detail": "El alumno decide que va a CLAUDE.md, rule, skill o prompt puntual."
+      }
+    },
+    {
+      "id": "memory-routing__beat-02",
+      "name": "Donde vive cada regla / Respuesta",
+      "startMs": 525000,
+      "endMs": 600000,
+      "type": "risk",
+      "content": {
+        "mode": "risk",
+        "vendor": "claude",
+        "title": "Donde vive cada regla",
+        "eyebrow": "Claude Workshop 30m - Memory to Hook / Donde vive cada regla",
+        "label": "Respuesta",
+        "actionLabel": "Clasificar reglas",
+        "actionDetail": "El alumno decide que va a CLAUDE.md, rule, skill o prompt puntual.",
+        "prompt": "El alumno decide que va a CLAUDE.md, rule, skill o prompt puntual.",
+        "response": [
+          "Respuesta simulada con salida verificable.",
+          "Se cita evidencia, se limita alcance y se deja una decision humana clara.",
+          "El cierre declara siguiente paso, coste aproximado y riesgo residual."
+        ],
+        "diff": [
+          "- cambio ambiguo sin criterio de aceptacion",
+          "+ cambio acotado con test, owner y evidencia",
+          "+ registro de modelo, permiso y coste"
+        ],
+        "terminal": [
+          "$ pnpm test -- --runInBand",
+          "✓ test relevante pasa",
+          "✓ no hay errores de consola",
+          "i coste relativo registrado"
+        ],
+        "review": [
+          {
+            "severity": "blocker",
+            "text": "No hay criterios bloqueantes pendientes."
+          },
+          {
+            "severity": "medium",
+            "text": "El alumno decide que va a CLAUDE.md, rule, skill o prompt puntual."
+          },
+          {
+            "severity": "note",
+            "text": "El humano firma el criterio final."
+          }
+        ],
+        "cost": {
+          "model": "modelo estandar",
+          "tokens": "medio",
+          "permission": "readonly/workspace segun fase",
+          "stopRule": "Parar si no hay evidencia nueva en el siguiente intento."
+        },
+        "decision": {
+          "question": "Que debe decidir la persona antes de continuar?",
+          "options": [
+            "seguir con alcance actual",
+            "pedir mas contexto",
+            "subir modelo",
+            "bloquear y llevar a tutoria"
+          ],
+          "selected": 1
+        },
+        "risk": {
+          "items": [
+            "Permisos",
+            "Coste",
+            "Contexto",
+            "Calidad",
+            "Responsabilidad humana"
+          ],
+          "level": "medio"
+        },
+        "branch": {
+          "steps": [
+            "Issue",
+            "Branch",
+            "Plan",
+            "Patch",
+            "Tests",
+            "Review",
+            "PR"
+          ],
+          "active": 3
+        },
+        "quiz": {
+          "question": "Cual es la evidencia minima para cerrar esta pantalla?",
+          "answers": [
+            "Una respuesta convincente",
+            "Un diff probado o decision documentada",
+            "Un prompt mas largo"
+          ],
+          "correct": 1
+        },
+        "source": {
+          "tag": "Routing",
+          "left": {
+            "label": "Mal routing",
+            "color": "destructive",
+            "steps": [
+              {
+                "icon": "FileText",
+                "text": "Todo a CLAUDE.md"
+              },
+              {
+                "icon": "AlertTriangle",
+                "text": "Archivo largo y caro"
+              },
+              {
+                "icon": "MessageSquare",
+                "text": "Claude ignora matices"
+              }
+            ],
+            "total": "Memoria pesada"
+          },
+          "right": {
+            "label": "Buen routing",
+            "color": "accent",
+            "steps": [
+              {
+                "icon": "FileText",
+                "text": "CLAUDE.md para reglas globales"
+              },
+              {
+                "icon": "Code",
+                "text": "Rules por carpeta"
+              },
+              {
+                "icon": "Workflow",
+                "text": "Skills para procedimientos"
+              }
+            ],
+            "total": "Memoria gobernada"
+          }
+        }
+      },
+      "subtitles": [
+        {
+          "text": "Respuesta simulada: El punto es recordar en la capa correcta.",
+          "startMs": 525400,
+          "endMs": 562200
+        },
+        {
+          "text": "El alumno decide que va a CLAUDE.md, rule, skill o prompt puntual.",
+          "startMs": 562900,
+          "endMs": 599500
+        }
+      ],
+      "voiceover": [
+        "Respuesta simulada: El punto es recordar en la capa correcta.",
+        "El alumno decide que va a CLAUDE.md, rule, skill o prompt puntual."
+      ],
+      "screen": {
+        "mode": "risk",
+        "title": "Donde vive cada regla",
+        "visual": "risk"
+      },
+      "blueprintAction": {
+        "type": "human-decision",
+        "label": "Clasificar reglas",
+        "detail": "El alumno decide que va a CLAUDE.md, rule, skill o prompt puntual."
+      }
+    },
+    {
+      "id": "skill__beat-01",
+      "name": "Primera skill / Prompt",
+      "startMs": 600000,
+      "endMs": 675000,
+      "type": "prompt",
+      "content": {
+        "mode": "prompt",
+        "vendor": "claude",
+        "title": "Primera skill",
+        "eyebrow": "Claude Workshop 30m - Memory to Hook / Primera skill",
+        "label": "Prompt",
+        "actionLabel": "Crear skill",
+        "actionDetail": "Guardar skill fix-tests en el repo de practica.",
+        "prompt": "Guardar skill fix-tests en el repo de practica.",
+        "response": [
+          "Respuesta simulada con salida verificable.",
+          "Se cita evidencia, se limita alcance y se deja una decision humana clara.",
+          "El cierre declara siguiente paso, coste aproximado y riesgo residual."
+        ],
+        "diff": [
+          "- cambio ambiguo sin criterio de aceptacion",
+          "+ cambio acotado con test, owner y evidencia",
+          "+ registro de modelo, permiso y coste"
+        ],
+        "terminal": [
+          "$ pnpm test -- --runInBand",
+          "✓ test relevante pasa",
+          "✓ no hay errores de consola",
+          "i coste relativo registrado"
+        ],
+        "review": [
+          {
+            "severity": "blocker",
+            "text": "No hay criterios bloqueantes pendientes."
+          },
+          {
+            "severity": "medium",
+            "text": "Guardar skill fix-tests en el repo de practica."
+          },
+          {
+            "severity": "note",
+            "text": "El humano firma el criterio final."
+          }
+        ],
+        "cost": {
+          "model": "modelo rapido",
+          "tokens": "bajo",
+          "permission": "ejecucion acotada",
+          "stopRule": "Parar si no hay evidencia nueva en el siguiente intento."
+        },
+        "decision": {
+          "question": "Que debe decidir la persona antes de continuar?",
+          "options": [
+            "seguir con alcance actual",
+            "pedir mas contexto",
+            "subir modelo",
+            "bloquear y llevar a tutoria"
+          ],
+          "selected": 0
+        },
+        "risk": {
+          "items": [
+            "Permisos",
+            "Coste",
+            "Contexto",
+            "Calidad",
+            "Responsabilidad humana"
+          ],
+          "level": "bajo"
+        },
+        "branch": {
+          "steps": [
+            "Issue",
+            "Branch",
+            "Plan",
+            "Patch",
+            "Tests",
+            "Review",
+            "PR"
+          ],
+          "active": 2
+        },
+        "quiz": {
+          "question": "Cual es la evidencia minima para cerrar esta pantalla?",
+          "answers": [
+            "Una respuesta convincente",
+            "Un diff probado o decision documentada",
+            "Un prompt mas largo"
+          ],
+          "correct": 1
+        },
+        "source": {
+          "filename": ".claude/skills/fix-tests/SKILL.md",
+          "language": "markdown",
+          "code": "---\nname: fix-tests\ndescription: Reparar tests pequenos con diagnostico, patch minimo y evidencia.\n---\n\n1. Lee el fallo y el test cercano.\n2. No cambies codigo productivo hasta explicar hipotesis.\n3. Aplica el cambio minimo.\n4. Ejecuta el test cercano.\n5. Cierra con diff, comando y riesgo."
+        }
+      },
+      "subtitles": [
+        {
+          "text": "Pantalla de accion: Una skill captura un procedimiento que se repite.",
+          "startMs": 600400,
+          "endMs": 637200
+        },
+        {
+          "text": "Guardar skill fix-tests en el repo de practica.",
+          "startMs": 637900,
+          "endMs": 674500
+        }
+      ],
+      "voiceover": [
+        "Pantalla de accion: Una skill captura un procedimiento que se repite.",
+        "Guardar skill fix-tests en el repo de practica."
+      ],
+      "screen": {
+        "mode": "prompt",
+        "title": "Primera skill",
+        "visual": "prompt"
+      },
+      "blueprintAction": {
+        "type": "tool-run",
+        "label": "Crear skill",
+        "detail": "Guardar skill fix-tests en el repo de practica."
+      }
+    },
+    {
+      "id": "skill__beat-02",
+      "name": "Primera skill / Respuesta",
+      "startMs": 675000,
+      "endMs": 750000,
+      "type": "streaming",
+      "content": {
+        "mode": "streaming",
+        "vendor": "claude",
+        "title": "Primera skill",
+        "eyebrow": "Claude Workshop 30m - Memory to Hook / Primera skill",
+        "label": "Respuesta",
+        "actionLabel": "Crear skill",
+        "actionDetail": "Guardar skill fix-tests en el repo de practica.",
+        "prompt": "Guardar skill fix-tests en el repo de practica.",
+        "response": [
+          "Respuesta simulada con salida verificable.",
+          "Se cita evidencia, se limita alcance y se deja una decision humana clara.",
+          "El cierre declara siguiente paso, coste aproximado y riesgo residual."
+        ],
+        "diff": [
+          "- cambio ambiguo sin criterio de aceptacion",
+          "+ cambio acotado con test, owner y evidencia",
+          "+ registro de modelo, permiso y coste"
+        ],
+        "terminal": [
+          "$ pnpm test -- --runInBand",
+          "✓ test relevante pasa",
+          "✓ no hay errores de consola",
+          "i coste relativo registrado"
+        ],
+        "review": [
+          {
+            "severity": "blocker",
+            "text": "No hay criterios bloqueantes pendientes."
+          },
+          {
+            "severity": "medium",
+            "text": "Guardar skill fix-tests en el repo de practica."
+          },
+          {
+            "severity": "note",
+            "text": "El humano firma el criterio final."
+          }
+        ],
+        "cost": {
+          "model": "modelo estandar",
+          "tokens": "medio",
+          "permission": "ejecucion acotada",
+          "stopRule": "Parar si no hay evidencia nueva en el siguiente intento."
+        },
+        "decision": {
+          "question": "Que debe decidir la persona antes de continuar?",
+          "options": [
+            "seguir con alcance actual",
+            "pedir mas contexto",
+            "subir modelo",
+            "bloquear y llevar a tutoria"
+          ],
+          "selected": 1
+        },
+        "risk": {
+          "items": [
+            "Permisos",
+            "Coste",
+            "Contexto",
+            "Calidad",
+            "Responsabilidad humana"
+          ],
+          "level": "medio"
+        },
+        "branch": {
+          "steps": [
+            "Issue",
+            "Branch",
+            "Plan",
+            "Patch",
+            "Tests",
+            "Review",
+            "PR"
+          ],
+          "active": 3
+        },
+        "quiz": {
+          "question": "Cual es la evidencia minima para cerrar esta pantalla?",
+          "answers": [
+            "Una respuesta convincente",
+            "Un diff probado o decision documentada",
+            "Un prompt mas largo"
+          ],
+          "correct": 1
+        },
+        "source": {
+          "filename": ".claude/skills/fix-tests/SKILL.md",
+          "language": "markdown",
+          "code": "---\nname: fix-tests\ndescription: Reparar tests pequenos con diagnostico, patch minimo y evidencia.\n---\n\n1. Lee el fallo y el test cercano.\n2. No cambies codigo productivo hasta explicar hipotesis.\n3. Aplica el cambio minimo.\n4. Ejecuta el test cercano.\n5. Cierra con diff, comando y riesgo."
+        }
+      },
+      "subtitles": [
+        {
+          "text": "Respuesta simulada: No se carga siempre como memoria.",
+          "startMs": 675400,
+          "endMs": 712200
+        },
+        {
+          "text": "Guardar skill fix-tests en el repo de practica.",
+          "startMs": 712900,
+          "endMs": 749500
+        }
+      ],
+      "voiceover": [
+        "Respuesta simulada: No se carga siempre como memoria.",
+        "Guardar skill fix-tests en el repo de practica."
+      ],
+      "screen": {
+        "mode": "streaming",
+        "title": "Primera skill",
+        "visual": "streaming"
+      },
+      "blueprintAction": {
+        "type": "tool-run",
+        "label": "Crear skill",
+        "detail": "Guardar skill fix-tests en el repo de practica."
+      }
+    },
+    {
+      "id": "subagent__beat-01",
+      "name": "Subagente explorer / Prompt",
+      "startMs": 750000,
+      "endMs": 825000,
+      "type": "prompt",
+      "content": {
+        "mode": "prompt",
+        "vendor": "claude",
+        "title": "Subagente explorer",
+        "eyebrow": "Claude Workshop 30m - Memory to Hook / Subagente explorer",
+        "label": "Prompt",
+        "actionLabel": "Crear subagente",
+        "actionDetail": "Añadir explorer read-only.",
+        "prompt": "Añadir explorer read-only.",
+        "response": [
+          "Respuesta simulada con salida verificable.",
+          "Se cita evidencia, se limita alcance y se deja una decision humana clara.",
+          "El cierre declara siguiente paso, coste aproximado y riesgo residual."
+        ],
+        "diff": [
+          "- cambio ambiguo sin criterio de aceptacion",
+          "+ cambio acotado con test, owner y evidencia",
+          "+ registro de modelo, permiso y coste"
+        ],
+        "terminal": [
+          "$ pnpm test -- --runInBand",
+          "✓ test relevante pasa",
+          "✓ no hay errores de consola",
+          "i coste relativo registrado"
+        ],
+        "review": [
+          {
+            "severity": "blocker",
+            "text": "No hay criterios bloqueantes pendientes."
+          },
+          {
+            "severity": "medium",
+            "text": "Añadir explorer read-only."
+          },
+          {
+            "severity": "note",
+            "text": "El humano firma el criterio final."
+          }
+        ],
+        "cost": {
+          "model": "modelo rapido",
+          "tokens": "bajo",
+          "permission": "ejecucion acotada",
+          "stopRule": "Parar si no hay evidencia nueva en el siguiente intento."
+        },
+        "decision": {
+          "question": "Que debe decidir la persona antes de continuar?",
+          "options": [
+            "seguir con alcance actual",
+            "pedir mas contexto",
+            "subir modelo",
+            "bloquear y llevar a tutoria"
+          ],
+          "selected": 0
+        },
+        "risk": {
+          "items": [
+            "Permisos",
+            "Coste",
+            "Contexto",
+            "Calidad",
+            "Responsabilidad humana"
+          ],
+          "level": "bajo"
+        },
+        "branch": {
+          "steps": [
+            "Issue",
+            "Branch",
+            "Plan",
+            "Patch",
+            "Tests",
+            "Review",
+            "PR"
+          ],
+          "active": 2
+        },
+        "quiz": {
+          "question": "Cual es la evidencia minima para cerrar esta pantalla?",
+          "answers": [
+            "Una respuesta convincente",
+            "Un diff probado o decision documentada",
+            "Un prompt mas largo"
+          ],
+          "correct": 1
+        },
+        "source": {
+          "filename": ".claude/agents/explorer.md",
+          "language": "markdown",
+          "code": "---\nname: explorer\ndescription: Explora codigo en read-only y devuelve mapa, riesgos y preguntas.\ntools: Read, Grep, Glob\n---\n\nNo edites archivos.\nDevuelve rutas relevantes, comandos de validacion y dudas bloqueantes.\nSi necesitas escribir o ejecutar comandos, pide permiso."
+        }
+      },
+      "subtitles": [
+        {
+          "text": "Pantalla de accion: El subagente explorer reduce riesgo.",
+          "startMs": 750400,
+          "endMs": 787200
+        },
+        {
+          "text": "Añadir explorer read-only.",
+          "startMs": 787900,
+          "endMs": 824500
+        }
+      ],
+      "voiceover": [
+        "Pantalla de accion: El subagente explorer reduce riesgo.",
+        "Añadir explorer read-only."
+      ],
+      "screen": {
+        "mode": "prompt",
+        "title": "Subagente explorer",
+        "visual": "prompt"
+      },
+      "blueprintAction": {
+        "type": "tool-run",
+        "label": "Crear subagente",
+        "detail": "Añadir explorer read-only."
+      }
+    },
+    {
+      "id": "subagent__beat-02",
+      "name": "Subagente explorer / Respuesta",
+      "startMs": 825000,
+      "endMs": 900000,
+      "type": "streaming",
+      "content": {
+        "mode": "streaming",
+        "vendor": "claude",
+        "title": "Subagente explorer",
+        "eyebrow": "Claude Workshop 30m - Memory to Hook / Subagente explorer",
+        "label": "Respuesta",
+        "actionLabel": "Crear subagente",
+        "actionDetail": "Añadir explorer read-only.",
+        "prompt": "Añadir explorer read-only.",
+        "response": [
+          "Respuesta simulada con salida verificable.",
+          "Se cita evidencia, se limita alcance y se deja una decision humana clara.",
+          "El cierre declara siguiente paso, coste aproximado y riesgo residual."
+        ],
+        "diff": [
+          "- cambio ambiguo sin criterio de aceptacion",
+          "+ cambio acotado con test, owner y evidencia",
+          "+ registro de modelo, permiso y coste"
+        ],
+        "terminal": [
+          "$ pnpm test -- --runInBand",
+          "✓ test relevante pasa",
+          "✓ no hay errores de consola",
+          "i coste relativo registrado"
+        ],
+        "review": [
+          {
+            "severity": "blocker",
+            "text": "No hay criterios bloqueantes pendientes."
+          },
+          {
+            "severity": "medium",
+            "text": "Añadir explorer read-only."
+          },
+          {
+            "severity": "note",
+            "text": "El humano firma el criterio final."
+          }
+        ],
+        "cost": {
+          "model": "modelo estandar",
+          "tokens": "medio",
+          "permission": "ejecucion acotada",
+          "stopRule": "Parar si no hay evidencia nueva en el siguiente intento."
+        },
+        "decision": {
+          "question": "Que debe decidir la persona antes de continuar?",
+          "options": [
+            "seguir con alcance actual",
+            "pedir mas contexto",
+            "subir modelo",
+            "bloquear y llevar a tutoria"
+          ],
+          "selected": 1
+        },
+        "risk": {
+          "items": [
+            "Permisos",
+            "Coste",
+            "Contexto",
+            "Calidad",
+            "Responsabilidad humana"
+          ],
+          "level": "medio"
+        },
+        "branch": {
+          "steps": [
+            "Issue",
+            "Branch",
+            "Plan",
+            "Patch",
+            "Tests",
+            "Review",
+            "PR"
+          ],
+          "active": 3
+        },
+        "quiz": {
+          "question": "Cual es la evidencia minima para cerrar esta pantalla?",
+          "answers": [
+            "Una respuesta convincente",
+            "Un diff probado o decision documentada",
+            "Un prompt mas largo"
+          ],
+          "correct": 1
+        },
+        "source": {
+          "filename": ".claude/agents/explorer.md",
+          "language": "markdown",
+          "code": "---\nname: explorer\ndescription: Explora codigo en read-only y devuelve mapa, riesgos y preguntas.\ntools: Read, Grep, Glob\n---\n\nNo edites archivos.\nDevuelve rutas relevantes, comandos de validacion y dudas bloqueantes.\nSi necesitas escribir o ejecutar comandos, pide permiso."
+        }
+      },
+      "subtitles": [
+        {
+          "text": "Respuesta simulada: Tiene herramientas acotadas.",
+          "startMs": 825400,
+          "endMs": 862200
+        },
+        {
+          "text": "Añadir explorer read-only.",
+          "startMs": 862900,
+          "endMs": 899500
+        }
+      ],
+      "voiceover": [
+        "Respuesta simulada: Tiene herramientas acotadas.",
+        "Añadir explorer read-only."
+      ],
+      "screen": {
+        "mode": "streaming",
+        "title": "Subagente explorer",
+        "visual": "streaming"
+      },
+      "blueprintAction": {
+        "type": "tool-run",
+        "label": "Crear subagente",
+        "detail": "Añadir explorer read-only."
+      }
+    },
+    {
+      "id": "mcp-readonly__beat-01",
+      "name": "MCP readonly / Prompt",
+      "startMs": 900000,
+      "endMs": 975000,
+      "type": "prompt",
+      "content": {
+        "mode": "prompt",
+        "vendor": "claude",
+        "title": "MCP readonly",
+        "eyebrow": "Claude Workshop 30m - Memory to Hook / MCP readonly",
+        "label": "Prompt",
+        "actionLabel": "Aprobar MCP",
+        "actionDetail": "El alumno decide si el MCP aporta valor suficiente.",
+        "prompt": "El alumno decide si el MCP aporta valor suficiente.",
+        "response": [
+          "Respuesta simulada con salida verificable.",
+          "Se cita evidencia, se limita alcance y se deja una decision humana clara.",
+          "El cierre declara siguiente paso, coste aproximado y riesgo residual."
+        ],
+        "diff": [
+          "- cambio ambiguo sin criterio de aceptacion",
+          "+ cambio acotado con test, owner y evidencia",
+          "+ registro de modelo, permiso y coste"
+        ],
+        "terminal": [
+          "$ pnpm test -- --runInBand",
+          "✓ test relevante pasa",
+          "✓ no hay errores de consola",
+          "i coste relativo registrado"
+        ],
+        "review": [
+          {
+            "severity": "blocker",
+            "text": "No hay criterios bloqueantes pendientes."
+          },
+          {
+            "severity": "medium",
+            "text": "El alumno decide si el MCP aporta valor suficiente."
+          },
+          {
+            "severity": "note",
+            "text": "El humano firma el criterio final."
+          }
+        ],
+        "cost": {
+          "model": "modelo rapido",
+          "tokens": "bajo",
+          "permission": "readonly/workspace segun fase",
+          "stopRule": "Parar si no hay evidencia nueva en el siguiente intento."
+        },
+        "decision": {
+          "question": "Que debe decidir la persona antes de continuar?",
+          "options": [
+            "seguir con alcance actual",
+            "pedir mas contexto",
+            "subir modelo",
+            "bloquear y llevar a tutoria"
+          ],
+          "selected": 0
+        },
+        "risk": {
+          "items": [
+            "Permisos",
+            "Coste",
+            "Contexto",
+            "Calidad",
+            "Responsabilidad humana"
+          ],
+          "level": "bajo"
+        },
+        "branch": {
+          "steps": [
+            "Issue",
+            "Branch",
+            "Plan",
+            "Patch",
+            "Tests",
+            "Review",
+            "PR"
+          ],
+          "active": 2
+        },
+        "quiz": {
+          "question": "Cual es la evidencia minima para cerrar esta pantalla?",
+          "answers": [
+            "Una respuesta convincente",
+            "Un diff probado o decision documentada",
+            "Un prompt mas largo"
+          ],
+          "correct": 1
+        },
+        "source": {
+          "tag": "MCP",
+          "title": "Conectar solo lo que desbloquea decision",
+          "body": "El workshop simula un MCP de issues en modo readonly. Antes de activarlo se documenta owner, datos expuestos, permisos, coste de contexto y motivo.",
+          "highlight": "MCP sin inventario es deuda operativa.",
+          "points": [
+            "Owner: plataforma.",
+            "Permiso: readonly.",
+            "Datos: issues y labels, no secretos.",
+            "Uso: enriquecer diagnostico antes de patch."
+          ]
+        }
+      },
+      "subtitles": [
+        {
+          "text": "Pantalla de accion: MCP no es barra libre.",
+          "startMs": 900400,
+          "endMs": 937200
+        },
+        {
+          "text": "El alumno decide si el MCP aporta valor suficiente.",
+          "startMs": 937900,
+          "endMs": 974500
+        }
+      ],
+      "voiceover": [
+        "Pantalla de accion: MCP no es barra libre.",
+        "El alumno decide si el MCP aporta valor suficiente."
+      ],
+      "screen": {
+        "mode": "prompt",
+        "title": "MCP readonly",
+        "visual": "prompt"
+      },
+      "blueprintAction": {
+        "type": "human-decision",
+        "label": "Aprobar MCP",
+        "detail": "El alumno decide si el MCP aporta valor suficiente."
+      }
+    },
+    {
+      "id": "mcp-readonly__beat-02",
+      "name": "MCP readonly / Respuesta",
+      "startMs": 975000,
+      "endMs": 1050000,
+      "type": "streaming",
+      "content": {
+        "mode": "streaming",
+        "vendor": "claude",
+        "title": "MCP readonly",
+        "eyebrow": "Claude Workshop 30m - Memory to Hook / MCP readonly",
+        "label": "Respuesta",
+        "actionLabel": "Aprobar MCP",
+        "actionDetail": "El alumno decide si el MCP aporta valor suficiente.",
+        "prompt": "El alumno decide si el MCP aporta valor suficiente.",
+        "response": [
+          "Respuesta simulada con salida verificable.",
+          "Se cita evidencia, se limita alcance y se deja una decision humana clara.",
+          "El cierre declara siguiente paso, coste aproximado y riesgo residual."
+        ],
+        "diff": [
+          "- cambio ambiguo sin criterio de aceptacion",
+          "+ cambio acotado con test, owner y evidencia",
+          "+ registro de modelo, permiso y coste"
+        ],
+        "terminal": [
+          "$ pnpm test -- --runInBand",
+          "✓ test relevante pasa",
+          "✓ no hay errores de consola",
+          "i coste relativo registrado"
+        ],
+        "review": [
+          {
+            "severity": "blocker",
+            "text": "No hay criterios bloqueantes pendientes."
+          },
+          {
+            "severity": "medium",
+            "text": "El alumno decide si el MCP aporta valor suficiente."
+          },
+          {
+            "severity": "note",
+            "text": "El humano firma el criterio final."
+          }
+        ],
+        "cost": {
+          "model": "modelo estandar",
+          "tokens": "medio",
+          "permission": "readonly/workspace segun fase",
+          "stopRule": "Parar si no hay evidencia nueva en el siguiente intento."
+        },
+        "decision": {
+          "question": "Que debe decidir la persona antes de continuar?",
+          "options": [
+            "seguir con alcance actual",
+            "pedir mas contexto",
+            "subir modelo",
+            "bloquear y llevar a tutoria"
+          ],
+          "selected": 1
+        },
+        "risk": {
+          "items": [
+            "Permisos",
+            "Coste",
+            "Contexto",
+            "Calidad",
+            "Responsabilidad humana"
+          ],
+          "level": "medio"
+        },
+        "branch": {
+          "steps": [
+            "Issue",
+            "Branch",
+            "Plan",
+            "Patch",
+            "Tests",
+            "Review",
+            "PR"
+          ],
+          "active": 3
+        },
+        "quiz": {
+          "question": "Cual es la evidencia minima para cerrar esta pantalla?",
+          "answers": [
+            "Una respuesta convincente",
+            "Un diff probado o decision documentada",
+            "Un prompt mas largo"
+          ],
+          "correct": 1
+        },
+        "source": {
+          "tag": "MCP",
+          "title": "Conectar solo lo que desbloquea decision",
+          "body": "El workshop simula un MCP de issues en modo readonly. Antes de activarlo se documenta owner, datos expuestos, permisos, coste de contexto y motivo.",
+          "highlight": "MCP sin inventario es deuda operativa.",
+          "points": [
+            "Owner: plataforma.",
+            "Permiso: readonly.",
+            "Datos: issues y labels, no secretos.",
+            "Uso: enriquecer diagnostico antes de patch."
+          ]
+        }
+      },
+      "subtitles": [
+        {
+          "text": "Respuesta simulada: Es una integracion que debe tener owner.",
+          "startMs": 975400,
+          "endMs": 1012200
+        },
+        {
+          "text": "El alumno decide si el MCP aporta valor suficiente.",
+          "startMs": 1012900,
+          "endMs": 1049500
+        }
+      ],
+      "voiceover": [
+        "Respuesta simulada: Es una integracion que debe tener owner.",
+        "El alumno decide si el MCP aporta valor suficiente."
+      ],
+      "screen": {
+        "mode": "streaming",
+        "title": "MCP readonly",
+        "visual": "streaming"
+      },
+      "blueprintAction": {
+        "type": "human-decision",
+        "label": "Aprobar MCP",
+        "detail": "El alumno decide si el MCP aporta valor suficiente."
+      }
+    },
+    {
+      "id": "hook__beat-01",
+      "name": "Hook anti secretos / Prompt",
+      "startMs": 1050000,
+      "endMs": 1125000,
+      "type": "prompt",
+      "content": {
+        "mode": "prompt",
+        "vendor": "claude",
+        "title": "Hook anti secretos",
+        "eyebrow": "Claude Workshop 30m - Memory to Hook / Hook anti secretos",
+        "label": "Prompt",
+        "actionLabel": "Instalar hook",
+        "actionDetail": "Añadir hook PreToolUse al starter repo.",
+        "prompt": "Añadir hook PreToolUse al starter repo.",
+        "response": [
+          "Respuesta simulada con salida verificable.",
+          "Se cita evidencia, se limita alcance y se deja una decision humana clara.",
+          "El cierre declara siguiente paso, coste aproximado y riesgo residual."
+        ],
+        "diff": [
+          "- cambio ambiguo sin criterio de aceptacion",
+          "+ cambio acotado con test, owner y evidencia",
+          "+ registro de modelo, permiso y coste"
+        ],
+        "terminal": [
+          "$ pnpm test -- --runInBand",
+          "✓ test relevante pasa",
+          "✓ no hay errores de consola",
+          "i coste relativo registrado"
+        ],
+        "review": [
+          {
+            "severity": "blocker",
+            "text": "No hay criterios bloqueantes pendientes."
+          },
+          {
+            "severity": "medium",
+            "text": "Añadir hook PreToolUse al starter repo."
+          },
+          {
+            "severity": "note",
+            "text": "El humano firma el criterio final."
+          }
+        ],
+        "cost": {
+          "model": "modelo rapido",
+          "tokens": "bajo",
+          "permission": "ejecucion acotada",
+          "stopRule": "Parar si no hay evidencia nueva en el siguiente intento."
+        },
+        "decision": {
+          "question": "Que debe decidir la persona antes de continuar?",
+          "options": [
+            "seguir con alcance actual",
+            "pedir mas contexto",
+            "subir modelo",
+            "bloquear y llevar a tutoria"
+          ],
+          "selected": 0
+        },
+        "risk": {
+          "items": [
+            "Permisos",
+            "Coste",
+            "Contexto",
+            "Calidad",
+            "Responsabilidad humana"
+          ],
+          "level": "bajo"
+        },
+        "branch": {
+          "steps": [
+            "Issue",
+            "Branch",
+            "Plan",
+            "Patch",
+            "Tests",
+            "Review",
+            "PR"
+          ],
+          "active": 2
+        },
+        "quiz": {
+          "question": "Cual es la evidencia minima para cerrar esta pantalla?",
+          "answers": [
+            "Una respuesta convincente",
+            "Un diff probado o decision documentada",
+            "Un prompt mas largo"
+          ],
+          "correct": 1
+        },
+        "source": {
+          "filename": ".claude/hooks/pretooluse-block-secrets.js",
+          "language": "javascript",
+          "code": "const input = JSON.parse(process.argv[2] ?? '{}')\nconst target = `${input.tool ?? ''} ${JSON.stringify(input.args ?? {})}`\n\nif (/\\.env|secret|token|credential/i.test(target)) {\n  console.error('Blocked: secret-like path or argument')\n  process.exit(2)\n}\n\nprocess.exit(0)"
+        }
+      },
+      "subtitles": [
+        {
+          "text": "Pantalla de accion: Ahora convertimos una regla en control.",
+          "startMs": 1050400,
+          "endMs": 1087200
+        },
+        {
+          "text": "Añadir hook PreToolUse al starter repo.",
+          "startMs": 1087900,
+          "endMs": 1124500
+        }
+      ],
+      "voiceover": [
+        "Pantalla de accion: Ahora convertimos una regla en control.",
+        "Añadir hook PreToolUse al starter repo."
+      ],
+      "screen": {
+        "mode": "prompt",
+        "title": "Hook anti secretos",
+        "visual": "prompt"
+      },
+      "blueprintAction": {
+        "type": "tool-run",
+        "label": "Instalar hook",
+        "detail": "Añadir hook PreToolUse al starter repo."
+      }
+    },
+    {
+      "id": "hook__beat-02",
+      "name": "Hook anti secretos / Respuesta",
+      "startMs": 1125000,
+      "endMs": 1200000,
+      "type": "streaming",
+      "content": {
+        "mode": "streaming",
+        "vendor": "claude",
+        "title": "Hook anti secretos",
+        "eyebrow": "Claude Workshop 30m - Memory to Hook / Hook anti secretos",
+        "label": "Respuesta",
+        "actionLabel": "Instalar hook",
+        "actionDetail": "Añadir hook PreToolUse al starter repo.",
+        "prompt": "Añadir hook PreToolUse al starter repo.",
+        "response": [
+          "Respuesta simulada con salida verificable.",
+          "Se cita evidencia, se limita alcance y se deja una decision humana clara.",
+          "El cierre declara siguiente paso, coste aproximado y riesgo residual."
+        ],
+        "diff": [
+          "- cambio ambiguo sin criterio de aceptacion",
+          "+ cambio acotado con test, owner y evidencia",
+          "+ registro de modelo, permiso y coste"
+        ],
+        "terminal": [
+          "$ pnpm test -- --runInBand",
+          "✓ test relevante pasa",
+          "✓ no hay errores de consola",
+          "i coste relativo registrado"
+        ],
+        "review": [
+          {
+            "severity": "blocker",
+            "text": "No hay criterios bloqueantes pendientes."
+          },
+          {
+            "severity": "medium",
+            "text": "Añadir hook PreToolUse al starter repo."
+          },
+          {
+            "severity": "note",
+            "text": "El humano firma el criterio final."
+          }
+        ],
+        "cost": {
+          "model": "modelo estandar",
+          "tokens": "medio",
+          "permission": "ejecucion acotada",
+          "stopRule": "Parar si no hay evidencia nueva en el siguiente intento."
+        },
+        "decision": {
+          "question": "Que debe decidir la persona antes de continuar?",
+          "options": [
+            "seguir con alcance actual",
+            "pedir mas contexto",
+            "subir modelo",
+            "bloquear y llevar a tutoria"
+          ],
+          "selected": 1
+        },
+        "risk": {
+          "items": [
+            "Permisos",
+            "Coste",
+            "Contexto",
+            "Calidad",
+            "Responsabilidad humana"
+          ],
+          "level": "medio"
+        },
+        "branch": {
+          "steps": [
+            "Issue",
+            "Branch",
+            "Plan",
+            "Patch",
+            "Tests",
+            "Review",
+            "PR"
+          ],
+          "active": 3
+        },
+        "quiz": {
+          "question": "Cual es la evidencia minima para cerrar esta pantalla?",
+          "answers": [
+            "Una respuesta convincente",
+            "Un diff probado o decision documentada",
+            "Un prompt mas largo"
+          ],
+          "correct": 1
+        },
+        "source": {
+          "filename": ".claude/hooks/pretooluse-block-secrets.js",
+          "language": "javascript",
+          "code": "const input = JSON.parse(process.argv[2] ?? '{}')\nconst target = `${input.tool ?? ''} ${JSON.stringify(input.args ?? {})}`\n\nif (/\\.env|secret|token|credential/i.test(target)) {\n  console.error('Blocked: secret-like path or argument')\n  process.exit(2)\n}\n\nprocess.exit(0)"
+        }
+      },
+      "subtitles": [
+        {
+          "text": "Respuesta simulada: El hook bloquea rutas o argumentos sensibles.",
+          "startMs": 1125400,
+          "endMs": 1162200
+        },
+        {
+          "text": "Añadir hook PreToolUse al starter repo.",
+          "startMs": 1162900,
+          "endMs": 1199500
+        }
+      ],
+      "voiceover": [
+        "Respuesta simulada: El hook bloquea rutas o argumentos sensibles.",
+        "Añadir hook PreToolUse al starter repo."
+      ],
+      "screen": {
+        "mode": "streaming",
+        "title": "Hook anti secretos",
+        "visual": "streaming"
+      },
+      "blueprintAction": {
+        "type": "tool-run",
+        "label": "Instalar hook",
+        "detail": "Añadir hook PreToolUse al starter repo."
+      }
+    },
+    {
+      "id": "hook-test__beat-01",
+      "name": "Probar hook / Prompt",
+      "startMs": 1200000,
+      "endMs": 1275000,
+      "type": "terminal",
+      "content": {
+        "mode": "terminal",
+        "vendor": "claude",
+        "title": "Probar hook",
+        "eyebrow": "Claude Workshop 30m - Memory to Hook / Probar hook",
+        "label": "Prompt",
+        "actionLabel": "Probar guardrail",
+        "actionDetail": "Ejecutar caso bloqueado y caso permitido.",
+        "prompt": "Ejecutar caso bloqueado y caso permitido.",
+        "response": [
+          "Respuesta simulada con salida verificable.",
+          "Se cita evidencia, se limita alcance y se deja una decision humana clara.",
+          "El cierre declara siguiente paso, coste aproximado y riesgo residual."
+        ],
+        "diff": [
+          "- cambio ambiguo sin criterio de aceptacion",
+          "+ cambio acotado con test, owner y evidencia",
+          "+ registro de modelo, permiso y coste"
+        ],
+        "terminal": [
+          "$ pnpm test -- --runInBand",
+          "✓ test relevante pasa",
+          "✓ no hay errores de consola",
+          "i coste relativo registrado"
+        ],
+        "review": [
+          {
+            "severity": "blocker",
+            "text": "No hay criterios bloqueantes pendientes."
+          },
+          {
+            "severity": "medium",
+            "text": "Ejecutar caso bloqueado y caso permitido."
+          },
+          {
+            "severity": "note",
+            "text": "El humano firma el criterio final."
+          }
+        ],
+        "cost": {
+          "model": "modelo rapido",
+          "tokens": "bajo",
+          "permission": "ejecucion acotada",
+          "stopRule": "Parar si no hay evidencia nueva en el siguiente intento."
+        },
+        "decision": {
+          "question": "Que debe decidir la persona antes de continuar?",
+          "options": [
+            "seguir con alcance actual",
+            "pedir mas contexto",
+            "subir modelo",
+            "bloquear y llevar a tutoria"
+          ],
+          "selected": 0
+        },
+        "risk": {
+          "items": [
+            "Permisos",
+            "Coste",
+            "Contexto",
+            "Calidad",
+            "Responsabilidad humana"
+          ],
+          "level": "bajo"
+        },
+        "branch": {
+          "steps": [
+            "Issue",
+            "Branch",
+            "Plan",
+            "Patch",
+            "Tests",
+            "Review",
+            "PR"
+          ],
+          "active": 2
+        },
+        "quiz": {
+          "question": "Cual es la evidencia minima para cerrar esta pantalla?",
+          "answers": [
+            "Una respuesta convincente",
+            "Un diff probado o decision documentada",
+            "Un prompt mas largo"
+          ],
+          "correct": 1
+        },
+        "source": {
+          "tag": "Control deterministico",
+          "sentry": {
+            "id": "CL-W01",
+            "title": "Read(.env) bloqueado",
+            "file": ".claude/hooks/pretooluse-block-secrets.js",
+            "line": 5,
+            "occurrences": 1,
+            "users": 1,
+            "first": "en workshop",
+            "trace": [
+              "Tool request: Read .env",
+              "PreToolUse hook",
+              "Blocked: secret-like path"
+            ],
+            "context": "El hook evita que una decision de seguridad dependa solo de memoria textual."
+          },
+          "linearFix": {
+            "ticketId": "CL-W01",
+            "title": "Validar hook anti secretos",
+            "description": "Probar que bloquea .env y permite Read(src/**)."
+          },
+          "fix": "Caso bloqueado: Read(.env)\nCaso permitido: Read(src/auth/login.ts)\nResultado: control operativo OK"
+        }
+      },
+      "subtitles": [
+        {
+          "text": "Pantalla de accion: Un hook que no se prueba es solo una intencion.",
+          "startMs": 1200400,
+          "endMs": 1237200
+        },
+        {
+          "text": "Ejecutar caso bloqueado y caso permitido.",
+          "startMs": 1237900,
+          "endMs": 1274500
+        }
+      ],
+      "voiceover": [
+        "Pantalla de accion: Un hook que no se prueba es solo una intencion.",
+        "Ejecutar caso bloqueado y caso permitido."
+      ],
+      "screen": {
+        "mode": "terminal",
+        "title": "Probar hook",
+        "visual": "terminal"
+      },
+      "blueprintAction": {
+        "type": "tool-run",
+        "label": "Probar guardrail",
+        "detail": "Ejecutar caso bloqueado y caso permitido."
+      }
+    },
+    {
+      "id": "hook-test__beat-02",
+      "name": "Probar hook / Respuesta",
+      "startMs": 1275000,
+      "endMs": 1350000,
+      "type": "risk",
+      "content": {
+        "mode": "risk",
+        "vendor": "claude",
+        "title": "Probar hook",
+        "eyebrow": "Claude Workshop 30m - Memory to Hook / Probar hook",
+        "label": "Respuesta",
+        "actionLabel": "Probar guardrail",
+        "actionDetail": "Ejecutar caso bloqueado y caso permitido.",
+        "prompt": "Ejecutar caso bloqueado y caso permitido.",
+        "response": [
+          "Respuesta simulada con salida verificable.",
+          "Se cita evidencia, se limita alcance y se deja una decision humana clara.",
+          "El cierre declara siguiente paso, coste aproximado y riesgo residual."
+        ],
+        "diff": [
+          "- cambio ambiguo sin criterio de aceptacion",
+          "+ cambio acotado con test, owner y evidencia",
+          "+ registro de modelo, permiso y coste"
+        ],
+        "terminal": [
+          "$ pnpm test -- --runInBand",
+          "✓ test relevante pasa",
+          "✓ no hay errores de consola",
+          "i coste relativo registrado"
+        ],
+        "review": [
+          {
+            "severity": "blocker",
+            "text": "No hay criterios bloqueantes pendientes."
+          },
+          {
+            "severity": "medium",
+            "text": "Ejecutar caso bloqueado y caso permitido."
+          },
+          {
+            "severity": "note",
+            "text": "El humano firma el criterio final."
+          }
+        ],
+        "cost": {
+          "model": "modelo estandar",
+          "tokens": "medio",
+          "permission": "ejecucion acotada",
+          "stopRule": "Parar si no hay evidencia nueva en el siguiente intento."
+        },
+        "decision": {
+          "question": "Que debe decidir la persona antes de continuar?",
+          "options": [
+            "seguir con alcance actual",
+            "pedir mas contexto",
+            "subir modelo",
+            "bloquear y llevar a tutoria"
+          ],
+          "selected": 1
+        },
+        "risk": {
+          "items": [
+            "Permisos",
+            "Coste",
+            "Contexto",
+            "Calidad",
+            "Responsabilidad humana"
+          ],
+          "level": "medio"
+        },
+        "branch": {
+          "steps": [
+            "Issue",
+            "Branch",
+            "Plan",
+            "Patch",
+            "Tests",
+            "Review",
+            "PR"
+          ],
+          "active": 3
+        },
+        "quiz": {
+          "question": "Cual es la evidencia minima para cerrar esta pantalla?",
+          "answers": [
+            "Una respuesta convincente",
+            "Un diff probado o decision documentada",
+            "Un prompt mas largo"
+          ],
+          "correct": 1
+        },
+        "source": {
+          "tag": "Control deterministico",
+          "sentry": {
+            "id": "CL-W01",
+            "title": "Read(.env) bloqueado",
+            "file": ".claude/hooks/pretooluse-block-secrets.js",
+            "line": 5,
+            "occurrences": 1,
+            "users": 1,
+            "first": "en workshop",
+            "trace": [
+              "Tool request: Read .env",
+              "PreToolUse hook",
+              "Blocked: secret-like path"
+            ],
+            "context": "El hook evita que una decision de seguridad dependa solo de memoria textual."
+          },
+          "linearFix": {
+            "ticketId": "CL-W01",
+            "title": "Validar hook anti secretos",
+            "description": "Probar que bloquea .env y permite Read(src/**)."
+          },
+          "fix": "Caso bloqueado: Read(.env)\nCaso permitido: Read(src/auth/login.ts)\nResultado: control operativo OK"
+        }
+      },
+      "subtitles": [
+        {
+          "text": "Respuesta simulada: Probamos bloqueo y caso permitido.",
+          "startMs": 1275400,
+          "endMs": 1312200
+        },
+        {
+          "text": "Ejecutar caso bloqueado y caso permitido.",
+          "startMs": 1312900,
+          "endMs": 1349500
+        }
+      ],
+      "voiceover": [
+        "Respuesta simulada: Probamos bloqueo y caso permitido.",
+        "Ejecutar caso bloqueado y caso permitido."
+      ],
+      "screen": {
+        "mode": "risk",
+        "title": "Probar hook",
+        "visual": "risk"
+      },
+      "blueprintAction": {
+        "type": "tool-run",
+        "label": "Probar guardrail",
+        "detail": "Ejecutar caso bloqueado y caso permitido."
+      }
+    },
+    {
+      "id": "handoff__beat-01",
+      "name": "Handoff / Prompt",
+      "startMs": 1350000,
+      "endMs": 1425000,
+      "type": "prompt",
+      "content": {
+        "mode": "prompt",
+        "vendor": "claude",
+        "title": "Handoff",
+        "eyebrow": "Claude Workshop 30m - Memory to Hook / Handoff",
+        "label": "Prompt",
+        "actionLabel": "Entregar handoff",
+        "actionDetail": "Guardar salida final para tutoria.",
+        "prompt": "Guardar salida final para tutoria.",
+        "response": [
+          "Respuesta simulada con salida verificable.",
+          "Se cita evidencia, se limita alcance y se deja una decision humana clara.",
+          "El cierre declara siguiente paso, coste aproximado y riesgo residual."
+        ],
+        "diff": [
+          "- cambio ambiguo sin criterio de aceptacion",
+          "+ cambio acotado con test, owner y evidencia",
+          "+ registro de modelo, permiso y coste"
+        ],
+        "terminal": [
+          "$ pnpm test -- --runInBand",
+          "✓ test relevante pasa",
+          "✓ no hay errores de consola",
+          "i coste relativo registrado"
+        ],
+        "review": [
+          {
+            "severity": "blocker",
+            "text": "No hay criterios bloqueantes pendientes."
+          },
+          {
+            "severity": "medium",
+            "text": "Guardar salida final para tutoria."
+          },
+          {
+            "severity": "note",
+            "text": "El humano firma el criterio final."
+          }
+        ],
+        "cost": {
+          "model": "modelo rapido",
+          "tokens": "bajo",
+          "permission": "readonly/workspace segun fase",
+          "stopRule": "Parar si no hay evidencia nueva en el siguiente intento."
+        },
+        "decision": {
+          "question": "Que debe decidir la persona antes de continuar?",
+          "options": [
+            "seguir con alcance actual",
+            "pedir mas contexto",
+            "subir modelo",
+            "bloquear y llevar a tutoria"
+          ],
+          "selected": 0
+        },
+        "risk": {
+          "items": [
+            "Permisos",
+            "Coste",
+            "Contexto",
+            "Calidad",
+            "Responsabilidad humana"
+          ],
+          "level": "bajo"
+        },
+        "branch": {
+          "steps": [
+            "Issue",
+            "Branch",
+            "Plan",
+            "Patch",
+            "Tests",
+            "Review",
+            "PR"
+          ],
+          "active": 2
+        },
+        "quiz": {
+          "question": "Cual es la evidencia minima para cerrar esta pantalla?",
+          "answers": [
+            "Una respuesta convincente",
+            "Un diff probado o decision documentada",
+            "Un prompt mas largo"
+          ],
+          "correct": 1
+        },
+        "source": {
+          "filename": "handoff.md",
+          "language": "markdown",
+          "code": "## Handoff CL-W01\n\nMemoria: CLAUDE.md minimo creado.\nContexto: /context revisado; sin compact necesario.\nSkill: fix-tests creada.\nSubagente: explorer read-only creado.\nMCP: issues readonly aprobado con owner plataforma.\nHook: anti secretos instalado y probado.\nCoste: bajo/medio; tareas read-only separadas de implementacion.\nRiesgo: revisar falsos positivos del hook antes de rollout."
+        }
+      },
+      "subtitles": [
+        {
+          "text": "Pantalla de accion: El handoff conecta todas las capas.",
+          "startMs": 1350400,
+          "endMs": 1387200
+        },
+        {
+          "text": "Guardar salida final para tutoria.",
+          "startMs": 1387900,
+          "endMs": 1424500
+        }
+      ],
+      "voiceover": [
+        "Pantalla de accion: El handoff conecta todas las capas.",
+        "Guardar salida final para tutoria."
+      ],
+      "screen": {
+        "mode": "prompt",
+        "title": "Handoff",
+        "visual": "prompt"
+      },
+      "blueprintAction": {
+        "type": "handoff",
+        "label": "Entregar handoff",
+        "detail": "Guardar salida final para tutoria."
+      }
+    },
+    {
+      "id": "handoff__beat-02",
+      "name": "Handoff / Respuesta",
+      "startMs": 1425000,
+      "endMs": 1500000,
+      "type": "streaming",
+      "content": {
+        "mode": "streaming",
+        "vendor": "claude",
+        "title": "Handoff",
+        "eyebrow": "Claude Workshop 30m - Memory to Hook / Handoff",
+        "label": "Respuesta",
+        "actionLabel": "Entregar handoff",
+        "actionDetail": "Guardar salida final para tutoria.",
+        "prompt": "Guardar salida final para tutoria.",
+        "response": [
+          "Respuesta simulada con salida verificable.",
+          "Se cita evidencia, se limita alcance y se deja una decision humana clara.",
+          "El cierre declara siguiente paso, coste aproximado y riesgo residual."
+        ],
+        "diff": [
+          "- cambio ambiguo sin criterio de aceptacion",
+          "+ cambio acotado con test, owner y evidencia",
+          "+ registro de modelo, permiso y coste"
+        ],
+        "terminal": [
+          "$ pnpm test -- --runInBand",
+          "✓ test relevante pasa",
+          "✓ no hay errores de consola",
+          "i coste relativo registrado"
+        ],
+        "review": [
+          {
+            "severity": "blocker",
+            "text": "No hay criterios bloqueantes pendientes."
+          },
+          {
+            "severity": "medium",
+            "text": "Guardar salida final para tutoria."
+          },
+          {
+            "severity": "note",
+            "text": "El humano firma el criterio final."
+          }
+        ],
+        "cost": {
+          "model": "modelo estandar",
+          "tokens": "medio",
+          "permission": "readonly/workspace segun fase",
+          "stopRule": "Parar si no hay evidencia nueva en el siguiente intento."
+        },
+        "decision": {
+          "question": "Que debe decidir la persona antes de continuar?",
+          "options": [
+            "seguir con alcance actual",
+            "pedir mas contexto",
+            "subir modelo",
+            "bloquear y llevar a tutoria"
+          ],
+          "selected": 1
+        },
+        "risk": {
+          "items": [
+            "Permisos",
+            "Coste",
+            "Contexto",
+            "Calidad",
+            "Responsabilidad humana"
+          ],
+          "level": "medio"
+        },
+        "branch": {
+          "steps": [
+            "Issue",
+            "Branch",
+            "Plan",
+            "Patch",
+            "Tests",
+            "Review",
+            "PR"
+          ],
+          "active": 3
+        },
+        "quiz": {
+          "question": "Cual es la evidencia minima para cerrar esta pantalla?",
+          "answers": [
+            "Una respuesta convincente",
+            "Un diff probado o decision documentada",
+            "Un prompt mas largo"
+          ],
+          "correct": 1
+        },
+        "source": {
+          "filename": "handoff.md",
+          "language": "markdown",
+          "code": "## Handoff CL-W01\n\nMemoria: CLAUDE.md minimo creado.\nContexto: /context revisado; sin compact necesario.\nSkill: fix-tests creada.\nSubagente: explorer read-only creado.\nMCP: issues readonly aprobado con owner plataforma.\nHook: anti secretos instalado y probado.\nCoste: bajo/medio; tareas read-only separadas de implementacion.\nRiesgo: revisar falsos positivos del hook antes de rollout."
+        }
+      },
+      "subtitles": [
+        {
+          "text": "Respuesta simulada: No es un resumen bonito.",
+          "startMs": 1425400,
+          "endMs": 1462200
+        },
+        {
+          "text": "Guardar salida final para tutoria.",
+          "startMs": 1462900,
+          "endMs": 1499500
+        }
+      ],
+      "voiceover": [
+        "Respuesta simulada: No es un resumen bonito.",
+        "Guardar salida final para tutoria."
+      ],
+      "screen": {
+        "mode": "streaming",
+        "title": "Handoff",
+        "visual": "streaming"
+      },
+      "blueprintAction": {
+        "type": "handoff",
+        "label": "Entregar handoff",
+        "detail": "Guardar salida final para tutoria."
+      }
+    },
+    {
+      "id": "rubric__beat-01",
+      "name": "Rubrica / Prompt",
+      "startMs": 1500000,
+      "endMs": 1575000,
+      "type": "pr-review",
+      "content": {
+        "mode": "pr-review",
+        "vendor": "claude",
+        "title": "Rubrica",
+        "eyebrow": "Claude Workshop 30m - Memory to Hook / Rubrica",
+        "label": "Prompt",
+        "actionLabel": "Evaluar",
+        "actionDetail": "El facilitador valida cada capa y sus evidencias.",
+        "prompt": "El facilitador valida cada capa y sus evidencias.",
+        "response": [
+          "Respuesta simulada con salida verificable.",
+          "Se cita evidencia, se limita alcance y se deja una decision humana clara.",
+          "El cierre declara siguiente paso, coste aproximado y riesgo residual."
+        ],
+        "diff": [
+          "- cambio ambiguo sin criterio de aceptacion",
+          "+ cambio acotado con test, owner y evidencia",
+          "+ registro de modelo, permiso y coste"
+        ],
+        "terminal": [
+          "$ pnpm test -- --runInBand",
+          "✓ test relevante pasa",
+          "✓ no hay errores de consola",
+          "i coste relativo registrado"
+        ],
+        "review": [
+          {
+            "severity": "blocker",
+            "text": "No hay criterios bloqueantes pendientes."
+          },
+          {
+            "severity": "medium",
+            "text": "El facilitador valida cada capa y sus evidencias."
+          },
+          {
+            "severity": "note",
+            "text": "El humano firma el criterio final."
+          }
+        ],
+        "cost": {
+          "model": "modelo rapido",
+          "tokens": "bajo",
+          "permission": "readonly/workspace segun fase",
+          "stopRule": "Parar si no hay evidencia nueva en el siguiente intento."
+        },
+        "decision": {
+          "question": "Que debe decidir la persona antes de continuar?",
+          "options": [
+            "seguir con alcance actual",
+            "pedir mas contexto",
+            "subir modelo",
+            "bloquear y llevar a tutoria"
+          ],
+          "selected": 0
+        },
+        "risk": {
+          "items": [
+            "Permisos",
+            "Coste",
+            "Contexto",
+            "Calidad",
+            "Responsabilidad humana"
+          ],
+          "level": "bajo"
+        },
+        "branch": {
+          "steps": [
+            "Issue",
+            "Branch",
+            "Plan",
+            "Patch",
+            "Tests",
+            "Review",
+            "PR"
+          ],
+          "active": 2
+        },
+        "quiz": {
+          "question": "Cual es la evidencia minima para cerrar esta pantalla?",
+          "answers": [
+            "Una respuesta convincente",
+            "Un diff probado o decision documentada",
+            "Un prompt mas largo"
+          ],
+          "correct": 1
+        },
+        "source": {
+          "title": "Rubrica Claude",
+          "description": "El workshop se aprueba si cada capa tiene una decision clara.",
+          "items": [
+            {
+              "label": "Memoria corta",
+              "value": "OK"
+            },
+            {
+              "label": "Skill util",
+              "value": "OK"
+            },
+            {
+              "label": "Subagente acotado",
+              "value": "OK"
+            },
+            {
+              "label": "Hook probado",
+              "value": "OK"
+            }
+          ]
+        }
+      },
+      "subtitles": [
+        {
+          "text": "Pantalla de accion: La rubrica evita confundir sofisticacion con calidad.",
+          "startMs": 1500400,
+          "endMs": 1537200
+        },
+        {
+          "text": "El facilitador valida cada capa y sus evidencias.",
+          "startMs": 1537900,
+          "endMs": 1574500
+        }
+      ],
+      "voiceover": [
+        "Pantalla de accion: La rubrica evita confundir sofisticacion con calidad.",
+        "El facilitador valida cada capa y sus evidencias."
+      ],
+      "screen": {
+        "mode": "pr-review",
+        "title": "Rubrica",
+        "visual": "pr-review"
+      },
+      "blueprintAction": {
+        "type": "human-decision",
+        "label": "Evaluar",
+        "detail": "El facilitador valida cada capa y sus evidencias."
+      }
+    },
+    {
+      "id": "rubric__beat-02",
+      "name": "Rubrica / Respuesta",
+      "startMs": 1575000,
+      "endMs": 1650000,
+      "type": "terminal",
+      "content": {
+        "mode": "terminal",
+        "vendor": "claude",
+        "title": "Rubrica",
+        "eyebrow": "Claude Workshop 30m - Memory to Hook / Rubrica",
+        "label": "Respuesta",
+        "actionLabel": "Evaluar",
+        "actionDetail": "El facilitador valida cada capa y sus evidencias.",
+        "prompt": "El facilitador valida cada capa y sus evidencias.",
+        "response": [
+          "Respuesta simulada con salida verificable.",
+          "Se cita evidencia, se limita alcance y se deja una decision humana clara.",
+          "El cierre declara siguiente paso, coste aproximado y riesgo residual."
+        ],
+        "diff": [
+          "- cambio ambiguo sin criterio de aceptacion",
+          "+ cambio acotado con test, owner y evidencia",
+          "+ registro de modelo, permiso y coste"
+        ],
+        "terminal": [
+          "$ pnpm test -- --runInBand",
+          "✓ test relevante pasa",
+          "✓ no hay errores de consola",
+          "i coste relativo registrado"
+        ],
+        "review": [
+          {
+            "severity": "blocker",
+            "text": "No hay criterios bloqueantes pendientes."
+          },
+          {
+            "severity": "medium",
+            "text": "El facilitador valida cada capa y sus evidencias."
+          },
+          {
+            "severity": "note",
+            "text": "El humano firma el criterio final."
+          }
+        ],
+        "cost": {
+          "model": "modelo estandar",
+          "tokens": "medio",
+          "permission": "readonly/workspace segun fase",
+          "stopRule": "Parar si no hay evidencia nueva en el siguiente intento."
+        },
+        "decision": {
+          "question": "Que debe decidir la persona antes de continuar?",
+          "options": [
+            "seguir con alcance actual",
+            "pedir mas contexto",
+            "subir modelo",
+            "bloquear y llevar a tutoria"
+          ],
+          "selected": 1
+        },
+        "risk": {
+          "items": [
+            "Permisos",
+            "Coste",
+            "Contexto",
+            "Calidad",
+            "Responsabilidad humana"
+          ],
+          "level": "medio"
+        },
+        "branch": {
+          "steps": [
+            "Issue",
+            "Branch",
+            "Plan",
+            "Patch",
+            "Tests",
+            "Review",
+            "PR"
+          ],
+          "active": 3
+        },
+        "quiz": {
+          "question": "Cual es la evidencia minima para cerrar esta pantalla?",
+          "answers": [
+            "Una respuesta convincente",
+            "Un diff probado o decision documentada",
+            "Un prompt mas largo"
+          ],
+          "correct": 1
+        },
+        "source": {
+          "title": "Rubrica Claude",
+          "description": "El workshop se aprueba si cada capa tiene una decision clara.",
+          "items": [
+            {
+              "label": "Memoria corta",
+              "value": "OK"
+            },
+            {
+              "label": "Skill util",
+              "value": "OK"
+            },
+            {
+              "label": "Subagente acotado",
+              "value": "OK"
+            },
+            {
+              "label": "Hook probado",
+              "value": "OK"
+            }
+          ]
+        }
+      },
+      "subtitles": [
+        {
+          "text": "Respuesta simulada: Queremos pocas piezas bien gobernadas.",
+          "startMs": 1575400,
+          "endMs": 1612200
+        },
+        {
+          "text": "El facilitador valida cada capa y sus evidencias.",
+          "startMs": 1612900,
+          "endMs": 1649500
+        }
+      ],
+      "voiceover": [
+        "Respuesta simulada: Queremos pocas piezas bien gobernadas.",
+        "El facilitador valida cada capa y sus evidencias."
+      ],
+      "screen": {
+        "mode": "terminal",
+        "title": "Rubrica",
+        "visual": "terminal"
+      },
+      "blueprintAction": {
+        "type": "human-decision",
+        "label": "Evaluar",
+        "detail": "El facilitador valida cada capa y sus evidencias."
+      }
+    },
+    {
+      "id": "finale__beat-01",
+      "name": "Cierre / Prompt",
+      "startMs": 1650000,
+      "endMs": 1725000,
+      "type": "quiz",
+      "content": {
+        "mode": "quiz",
+        "vendor": "claude",
+        "title": "Cierre",
+        "eyebrow": "Claude Workshop 30m - Memory to Hook / Cierre",
+        "label": "Prompt",
+        "actionLabel": "Cerrar workshop",
+        "actionDetail": "Guardar evidencia para siguiente sprint.",
+        "prompt": "Guardar evidencia para siguiente sprint.",
+        "response": [
+          "Respuesta simulada con salida verificable.",
+          "Se cita evidencia, se limita alcance y se deja una decision humana clara.",
+          "El cierre declara siguiente paso, coste aproximado y riesgo residual."
+        ],
+        "diff": [
+          "- cambio ambiguo sin criterio de aceptacion",
+          "+ cambio acotado con test, owner y evidencia",
+          "+ registro de modelo, permiso y coste"
+        ],
+        "terminal": [
+          "$ pnpm test -- --runInBand",
+          "✓ test relevante pasa",
+          "✓ no hay errores de consola",
+          "i coste relativo registrado"
+        ],
+        "review": [
+          {
+            "severity": "blocker",
+            "text": "No hay criterios bloqueantes pendientes."
+          },
+          {
+            "severity": "medium",
+            "text": "Guardar evidencia para siguiente sprint."
+          },
+          {
+            "severity": "note",
+            "text": "El humano firma el criterio final."
+          }
+        ],
+        "cost": {
+          "model": "modelo rapido",
+          "tokens": "bajo",
+          "permission": "readonly/workspace segun fase",
+          "stopRule": "Parar si no hay evidencia nueva en el siguiente intento."
+        },
+        "decision": {
+          "question": "Que debe decidir la persona antes de continuar?",
+          "options": [
+            "seguir con alcance actual",
+            "pedir mas contexto",
+            "subir modelo",
+            "bloquear y llevar a tutoria"
+          ],
+          "selected": 0
+        },
+        "risk": {
+          "items": [
+            "Permisos",
+            "Coste",
+            "Contexto",
+            "Calidad",
+            "Responsabilidad humana"
+          ],
+          "level": "bajo"
+        },
+        "branch": {
+          "steps": [
+            "Issue",
+            "Branch",
+            "Plan",
+            "Patch",
+            "Tests",
+            "Review",
+            "PR"
+          ],
+          "active": 2
+        },
+        "quiz": {
+          "question": "Cual es la evidencia minima para cerrar esta pantalla?",
+          "answers": [
+            "Una respuesta convincente",
+            "Un diff probado o decision documentada",
+            "Un prompt mas largo"
+          ],
+          "correct": 1
+        },
+        "source": {
+          "title": "De memoria a control",
+          "summary": [
+            {
+              "number": "01",
+              "label": "Memoria",
+              "body": "CLAUDE.md y contexto limpios."
+            },
+            {
+              "number": "02",
+              "label": "Operacion",
+              "body": "Skill, subagente y MCP con owner."
+            },
+            {
+              "number": "03",
+              "label": "Guardrail",
+              "body": "Hook probado para secretos."
+            }
+          ],
+          "cta": "Siguiente: Claude Advanced Automation y plugins internos."
+        }
+      },
+      "subtitles": [
+        {
+          "text": "Pantalla de accion: Ahora Claude ya no depende solo de prompts.",
+          "startMs": 1650400,
+          "endMs": 1687200
+        },
+        {
+          "text": "Guardar evidencia para siguiente sprint.",
+          "startMs": 1687900,
+          "endMs": 1724500
+        }
+      ],
+      "voiceover": [
+        "Pantalla de accion: Ahora Claude ya no depende solo de prompts.",
+        "Guardar evidencia para siguiente sprint."
+      ],
+      "screen": {
+        "mode": "quiz",
+        "title": "Cierre",
+        "visual": "quiz"
+      },
+      "blueprintAction": {
+        "type": "handoff",
+        "label": "Cerrar workshop",
+        "detail": "Guardar evidencia para siguiente sprint."
+      }
+    },
+    {
+      "id": "finale__beat-02",
+      "name": "Cierre / Respuesta",
+      "startMs": 1725000,
+      "endMs": 1800000,
+      "type": "pr-review",
+      "content": {
+        "mode": "pr-review",
+        "vendor": "claude",
+        "title": "Cierre",
+        "eyebrow": "Claude Workshop 30m - Memory to Hook / Cierre",
+        "label": "Respuesta",
+        "actionLabel": "Cerrar workshop",
+        "actionDetail": "Guardar evidencia para siguiente sprint.",
+        "prompt": "Guardar evidencia para siguiente sprint.",
+        "response": [
+          "Respuesta simulada con salida verificable.",
+          "Se cita evidencia, se limita alcance y se deja una decision humana clara.",
+          "El cierre declara siguiente paso, coste aproximado y riesgo residual."
+        ],
+        "diff": [
+          "- cambio ambiguo sin criterio de aceptacion",
+          "+ cambio acotado con test, owner y evidencia",
+          "+ registro de modelo, permiso y coste"
+        ],
+        "terminal": [
+          "$ pnpm test -- --runInBand",
+          "✓ test relevante pasa",
+          "✓ no hay errores de consola",
+          "i coste relativo registrado"
+        ],
+        "review": [
+          {
+            "severity": "blocker",
+            "text": "No hay criterios bloqueantes pendientes."
+          },
+          {
+            "severity": "medium",
+            "text": "Guardar evidencia para siguiente sprint."
+          },
+          {
+            "severity": "note",
+            "text": "El humano firma el criterio final."
+          }
+        ],
+        "cost": {
+          "model": "modelo estandar",
+          "tokens": "medio",
+          "permission": "readonly/workspace segun fase",
+          "stopRule": "Parar si no hay evidencia nueva en el siguiente intento."
+        },
+        "decision": {
+          "question": "Que debe decidir la persona antes de continuar?",
+          "options": [
+            "seguir con alcance actual",
+            "pedir mas contexto",
+            "subir modelo",
+            "bloquear y llevar a tutoria"
+          ],
+          "selected": 1
+        },
+        "risk": {
+          "items": [
+            "Permisos",
+            "Coste",
+            "Contexto",
+            "Calidad",
+            "Responsabilidad humana"
+          ],
+          "level": "medio"
+        },
+        "branch": {
+          "steps": [
+            "Issue",
+            "Branch",
+            "Plan",
+            "Patch",
+            "Tests",
+            "Review",
+            "PR"
+          ],
+          "active": 3
+        },
+        "quiz": {
+          "question": "Cual es la evidencia minima para cerrar esta pantalla?",
+          "answers": [
+            "Una respuesta convincente",
+            "Un diff probado o decision documentada",
+            "Un prompt mas largo"
+          ],
+          "correct": 1
+        },
+        "source": {
+          "title": "De memoria a control",
+          "summary": [
+            {
+              "number": "01",
+              "label": "Memoria",
+              "body": "CLAUDE.md y contexto limpios."
+            },
+            {
+              "number": "02",
+              "label": "Operacion",
+              "body": "Skill, subagente y MCP con owner."
+            },
+            {
+              "number": "03",
+              "label": "Guardrail",
+              "body": "Hook probado para secretos."
+            }
+          ],
+          "cta": "Siguiente: Claude Advanced Automation y plugins internos."
+        }
+      },
+      "subtitles": [
+        {
+          "text": "Respuesta simulada: Tenemos memoria, capacidades y controles.",
+          "startMs": 1725400,
+          "endMs": 1762200
+        },
+        {
+          "text": "Guardar evidencia para siguiente sprint.",
+          "startMs": 1762900,
+          "endMs": 1799500
+        }
+      ],
+      "voiceover": [
+        "Respuesta simulada: Tenemos memoria, capacidades y controles.",
+        "Guardar evidencia para siguiente sprint."
+      ],
+      "screen": {
+        "mode": "pr-review",
+        "title": "Cierre",
+        "visual": "pr-review"
+      },
+      "blueprintAction": {
+        "type": "handoff",
+        "label": "Cerrar workshop",
+        "detail": "Guardar evidencia para siguiente sprint."
+      }
+    }
+  ],
+  "generatedFrom": "public/video-blueprints/cl-workshop-30m-memory-to-hook.json"
+}

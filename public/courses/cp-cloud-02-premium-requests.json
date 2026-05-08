@@ -1,0 +1,76 @@
+{
+  "id": "cp-cloud-02-premium-requests",
+  "title": "Copilot Cloud 02 - Premium Requests",
+  "description": "Coste, premium requests, modelos y Actions minutes explicados sin sustos.",
+  "template": "technical",
+  "durationPreset": 5,
+  "durationMs": 90000,
+  "voice": "es-ES-AlvaroNeural",
+  "author": "AI Practice Hub",
+  "createdAt": "2026-05-07T00:00:00.000Z",
+  "chapters": [
+    { "id": "start", "label": "Coste", "startMs": 0 },
+    { "id": "concept", "label": "Requests", "startMs": 9000 },
+    { "id": "close", "label": "Budget", "startMs": 65000 }
+  ],
+  "scenes": [
+    {
+      "id": "title",
+      "name": "Apertura",
+      "startMs": 0,
+      "endMs": 9000,
+      "type": "title",
+      "content": {
+        "title": "Premium requests",
+        "subtitle": "El coste se explica antes de que aparezca en la factura.",
+        "tag": "Copilot Governance"
+      },
+      "subtitles": [
+        { "text": "Copilot no cuesta solo por usarlo: depende de feature, modelo y plan.", "startMs": 1000, "endMs": 8200 }
+      ]
+    },
+    {
+      "id": "concept",
+      "name": "Requests",
+      "startMs": 9000,
+      "endMs": 65000,
+      "type": "concept",
+      "content": {
+        "tag": "Cost governance",
+        "title": "Incluido, premium y cloud no son lo mismo",
+        "body": "En planes de pago puede haber interacciones incluidas con determinados modelos, y premium requests para modelos o funciones avanzadas. Cloud agent tambien puede consumir premium requests y minutos de GitHub Actions.\n\nLos modelos, multiplicadores y politicas cambian: el curso ensena a mirar el panel y decidir, no a memorizar una cifra.",
+        "highlight": "Mide coste por resultado util, no por prompt.",
+        "points": [
+          "Usa modelos incluidos para tareas rutinarias cuando basten.",
+          "Escala modelo si hay riesgo, ambiguedad o impacto.",
+          "No lances agent/cloud sin issue y presupuesto.",
+          "Registra feature, modelo, prompts y resultado."
+        ]
+      },
+      "subtitles": [
+        { "text": "Incluido, premium y cloud no son la misma bolsa.", "startMs": 10000, "endMs": 25000 },
+        { "text": "Los detalles cambian, asi que ensenamos criterio.", "startMs": 26000, "endMs": 42000 },
+        { "text": "Coste por resultado util, no coste por prompt.", "startMs": 43000, "endMs": 62000 }
+      ]
+    },
+    {
+      "id": "finale",
+      "name": "Cierre",
+      "startMs": 65000,
+      "endMs": 90000,
+      "type": "finale",
+      "content": {
+        "title": "Budget Copilot",
+        "summary": [
+          { "number": "01", "label": "Feature", "body": "VS Code, PR review, CLI o cloud." },
+          { "number": "02", "label": "Modelo", "body": "Incluido o premium." },
+          { "number": "03", "label": "Resultado", "body": "Valor obtenido y reintentos." }
+        ],
+        "cta": "Ejercicio: cp-a05-premium-budget."
+      },
+      "subtitles": [
+        { "text": "Feature, modelo y resultado. Ese es el log minimo.", "startMs": 66000, "endMs": 89000 }
+      ]
+    }
+  ]
+}

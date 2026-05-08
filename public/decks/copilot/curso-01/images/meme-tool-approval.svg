@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 760" role="img" aria-labelledby="title desc">
+  <title id="title">Tool approval pause</title>
+  <desc id="desc">A tool approval dialog reminding users to pause and inspect before approving tool calls.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#111827"/>
+      <stop offset="1" stop-color="#071a18"/>
+    </linearGradient>
+    <style>
+      .title{font:900 34px Inter,Segoe UI,sans-serif;fill:#f8fbff}
+      .label{font:850 22px Inter,Segoe UI,sans-serif;fill:#f8fbff}
+      .small{font:700 15px Inter,Segoe UI,sans-serif;fill:#aebbd0}
+      .mono{font:700 17px ui-monospace,SFMono-Regular,Consolas,monospace;fill:#dce8f7}
+      .card{fill:#ffffff;fill-opacity:.07;stroke:#ffffff;stroke-opacity:.14}
+    </style>
+  </defs>
+  <rect width="1200" height="760" rx="34" fill="url(#bg)"/>
+  <text x="70" y="88" class="title">Antes de aprobar una tool: pausa dramatica</text>
+  <text x="72" y="122" class="small">Ese click ya no es una respuesta de chat: es una decision operativa.</text>
+  <g transform="translate(176 174)">
+    <rect width="848" height="438" rx="34" class="card"/>
+    <rect x="84" y="78" width="680" height="104" rx="28" fill="#f8c96a" fill-opacity=".13" stroke="#f8c96a" stroke-opacity=".4"/>
+    <text x="120" y="126" class="mono">Tool wants to edit: src/auth/permissions.ts</text>
+    <text x="120" y="156" class="small">Action: write file + run tests</text>
+    <g transform="translate(118 230)">
+      <circle cx="12" cy="12" r="10" fill="#62e6a2"/><text x="38" y="18" class="small">Entiendo que va a tocar</text>
+      <circle cx="12" cy="58" r="10" fill="#62e6a2"/><text x="38" y="64" class="small">El archivo entra en el alcance</text>
+      <circle cx="12" cy="104" r="10" fill="#62e6a2"/><text x="38" y="110" class="small">No hay secretos ni rutas raras</text>
+      <circle cx="12" cy="150" r="10" fill="#62e6a2"/><text x="38" y="156" class="small">Puedo revisar diff y revertir</text>
+    </g>
+    <rect x="560" y="292" width="170" height="62" rx="22" fill="#62e6a2" fill-opacity=".16" stroke="#62e6a2" stroke-opacity=".42"/>
+    <text x="606" y="332" class="label">Approve</text>
+  </g>
+</svg>

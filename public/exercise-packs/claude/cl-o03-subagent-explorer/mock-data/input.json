@@ -1,0 +1,21 @@
+{
+  "vendor": "claude",
+  "exerciseId": "cl-o03-subagent-explorer",
+  "title": "Subagente explorer read-only",
+  "surface": ".claude/agents",
+  "recommendedModel": "Haiku",
+  "permissionMode": "read-only tools",
+  "estimatedCost": "bajo: separacion de contexto",
+  "intentionalErrors": [
+    "briefing demasiado amplio",
+    "falta de evidencia",
+    "coste sin registrar"
+  ],
+  "expectedArtifacts": [
+    "prompt",
+    "resultado",
+    "evidencia",
+    "coste",
+    "decision"
+  ]
+}

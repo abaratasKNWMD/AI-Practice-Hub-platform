@@ -1,0 +1,9 @@
+diff --git a/README.md b/README.md
+--- a/README.md
++++ b/README.md
+@@
++# Evidencia de ejercicio
++- Ejercicio: cx-u03-dataset-sintetico
++- Resultado: salida verificable
++- Coste: Alto: generacion mas evaluacion
++- Permisos: read-only con datos anonimizados

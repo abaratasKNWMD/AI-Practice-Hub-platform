@@ -1,0 +1,21 @@
+{
+  "vendor": "copilot",
+  "exerciseId": "cp-m04-repo-instructions",
+  "title": "Copilot instructions de repositorio",
+  "surface": ".github/copilot-instructions.md",
+  "recommendedModel": "Modelo incluido",
+  "permissionMode": "workspace-write",
+  "estimatedCost": "Bajo",
+  "intentionalErrors": [
+    "briefing demasiado amplio",
+    "falta de evidencia",
+    "coste sin registrar"
+  ],
+  "expectedArtifacts": [
+    "prompt",
+    "resultado",
+    "evidencia",
+    "coste",
+    "decision"
+  ]
+}

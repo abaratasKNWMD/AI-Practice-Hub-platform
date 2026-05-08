@@ -1,0 +1,9 @@
+diff --git a/README.md b/README.md
+--- a/README.md
++++ b/README.md
+@@
++# Evidencia de ejercicio
++- Ejercicio: cp-c03-cloud-mcp-policy
++- Resultado: salida verificable
++- Coste: Medio/alto si se recupera mucho contexto
++- Permisos: readonly + secrets controlados

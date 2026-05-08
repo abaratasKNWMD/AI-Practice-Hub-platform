@@ -1,0 +1,21 @@
+{
+  "vendor": "codex",
+  "exerciseId": "cx-m03-mcp-readonly",
+  "title": "MCP read-only con contexto externo",
+  "surface": "MCP + docs + repo",
+  "recommendedModel": "GPT-5.4",
+  "permissionMode": "read-only con conectores",
+  "estimatedCost": "Medio: mas contexto recuperado, pocas ediciones",
+  "intentionalErrors": [
+    "briefing demasiado amplio",
+    "falta de evidencia",
+    "coste sin registrar"
+  ],
+  "expectedArtifacts": [
+    "prompt",
+    "resultado",
+    "evidencia",
+    "coste",
+    "decision"
+  ]
+}

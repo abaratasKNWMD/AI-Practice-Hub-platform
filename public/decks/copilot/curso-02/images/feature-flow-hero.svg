@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 760" role="img" aria-labelledby="title desc">
+  <title id="title">Copilot daily feature flow</title>
+  <desc id="desc">A daily workflow dashboard for Copilot completion, chat, context, CLI, smart actions and reviews.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#07111f"/>
+      <stop offset="0.52" stop-color="#0b1730"/>
+      <stop offset="1" stop-color="#071f1b"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" x2="1">
+      <stop offset="0" stop-color="#5ddcff"/>
+      <stop offset="1" stop-color="#62e6a2"/>
+    </linearGradient>
+    <style>
+      .title{font:900 38px Inter,Segoe UI,sans-serif;fill:#f8fbff}
+      .label{font:850 21px Inter,Segoe UI,sans-serif;fill:#f8fbff}
+      .small{font:700 15px Inter,Segoe UI,sans-serif;fill:#aebbd0}
+      .mono{font:650 16px ui-monospace,SFMono-Regular,Consolas,monospace;fill:#dce8f7}
+      .card{fill:#ffffff;fill-opacity:.07;stroke:#ffffff;stroke-opacity:.14}
+    </style>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0 0L10 5L0 10Z" fill="#77e6d0"/>
+    </marker>
+  </defs>
+  <rect width="1200" height="760" rx="34" fill="url(#bg)"/>
+  <circle cx="220" cy="170" r="160" fill="#5ddcff" opacity=".13"/>
+  <circle cx="960" cy="570" r="190" fill="#62e6a2" opacity=".12"/>
+  <text x="70" y="92" class="title">Copilot en flujo diario</text>
+  <text x="72" y="126" class="small">Del autocompletado al review: seis superficies, una misma disciplina de contexto.</text>
+
+  <g transform="translate(118 205)">
+    <rect width="210" height="126" rx="26" class="card"/>
+    <text x="28" y="48" class="label">Completion</text>
+    <text x="28" y="82" class="small">Intencion visible</text>
+  </g>
+  <g transform="translate(495 172)">
+    <rect width="210" height="126" rx="26" class="card"/>
+    <text x="28" y="48" class="label">Chat</text>
+    <text x="28" y="82" class="small">Ask, Plan, Agent</text>
+  </g>
+  <g transform="translate(872 205)">
+    <rect width="210" height="126" rx="26" class="card"/>
+    <text x="28" y="48" class="label">Contexto</text>
+    <text x="28" y="82" class="small">@ / # sin ruido</text>
+  </g>
+  <g transform="translate(118 468)">
+    <rect width="210" height="126" rx="26" class="card"/>
+    <text x="28" y="48" class="label">CLI</text>
+    <text x="28" y="82" class="small">Confianza y tools</text>
+  </g>
+  <g transform="translate(495 501)">
+    <rect width="210" height="126" rx="26" class="card"/>
+    <text x="28" y="48" class="label">Smart Actions</text>
+    <text x="28" y="82" class="small">Accion acotada</text>
+  </g>
+  <g transform="translate(872 468)">
+    <rect width="210" height="126" rx="26" class="card"/>
+    <text x="28" y="48" class="label">Review</text>
+    <text x="28" y="82" class="small">Evidencia y criterio</text>
+  </g>
+
+  <path d="M330 268C398 230 430 230 487 235" stroke="url(#accent)" stroke-width="6" fill="none" marker-end="url(#arrow)"/>
+  <path d="M708 235C778 230 812 238 864 268" stroke="url(#accent)" stroke-width="6" fill="none" marker-end="url(#arrow)"/>
+  <path d="M977 338C990 398 970 428 946 459" stroke="url(#accent)" stroke-width="6" fill="none" marker-end="url(#arrow)"/>
+  <path d="M858 531C790 570 764 570 713 565" stroke="url(#accent)" stroke-width="6" fill="none" marker-end="url(#arrow)"/>
+  <path d="M487 565C420 570 384 558 336 531" stroke="url(#accent)" stroke-width="6" fill="none" marker-end="url(#arrow)"/>
+  <path d="M221 459C196 412 196 380 221 338" stroke="url(#accent)" stroke-width="6" fill="none" marker-end="url(#arrow)"/>
+
+  <g transform="translate(421 335)">
+    <rect width="358" height="102" rx="28" fill="#ffffff" fill-opacity=".08" stroke="url(#accent)" stroke-width="2"/>
+    <text x="34" y="42" class="mono">regla: elegir superficie</text>
+    <text x="34" y="73" class="mono">antes de pedir velocidad</text>
+  </g>
+</svg>

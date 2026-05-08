@@ -1,0 +1,261 @@
+{
+  "id": "cl-masterclass-10m-claude-operating-model",
+  "title": "Claude Masterclass 10m - Operating Model",
+  "description": "Video largo inicial para explicar Claude Code como plataforma: memoria, contexto, skills, subagentes, MCP, hooks, plugins, coste y Agent SDK.",
+  "template": "technical",
+  "durationPreset": 10,
+  "durationMs": 600000,
+  "voice": "es-ES-AlvaroNeural",
+  "author": "AI Practice Hub",
+  "createdAt": "2026-05-08T00:00:00.000Z",
+  "chapters": [
+    { "id": "start", "label": "Claude como plataforma", "startMs": 0 },
+    { "id": "memory", "label": "Memoria y contexto", "startMs": 80000 },
+    { "id": "operator", "label": "Skills y subagentes", "startMs": 250000 },
+    { "id": "automation", "label": "Hooks y plugins", "startMs": 410000 },
+    { "id": "close", "label": "Activacion", "startMs": 535000 }
+  ],
+  "scenes": [
+    {
+      "id": "title",
+      "name": "Apertura",
+      "startMs": 0,
+      "endMs": 30000,
+      "type": "title",
+      "content": {
+        "title": "Claude como plataforma operativa",
+        "subtitle": "Diez minutos para entender memoria, contexto, skills, agentes y automatizacion.",
+        "tag": "Claude Code / Masterclass inicial"
+      },
+      "subtitles": [
+        { "text": "Claude Code no se aterriza como un prompt bonito.", "startMs": 2000, "endMs": 9000 },
+        { "text": "Se aterriza como un sistema de memoria, herramientas y controles.", "startMs": 10000, "endMs": 21000 },
+        { "text": "Ese es el mapa de esta ruta.", "startMs": 22000, "endMs": 29000 }
+      ]
+    },
+    {
+      "id": "concept-memory",
+      "name": "Memoria",
+      "startMs": 30000,
+      "endMs": 90000,
+      "type": "concept",
+      "content": {
+        "tag": "Base Claude",
+        "title": "Memoria corta, util y gobernada",
+        "body": "Claude brilla cuando no repetimos instrucciones en cada sesion. CLAUDE.md, reglas locales, memoria y skills deben separarse para no convertir el contexto en ruido permanente.",
+        "highlight": "Recordar mas no siempre es mejor. Recordar bien si.",
+        "points": [
+          "CLAUDE.md: normas estables de equipo.",
+          "Rules: instrucciones por carpeta o tecnologia.",
+          "Auto memory: aprendizaje local que debe auditarse.",
+          "Skills: procedimientos largos que se cargan bajo demanda."
+        ]
+      },
+      "subtitles": [
+        { "text": "La primera madurez en Claude es memoria.", "startMs": 35000, "endMs": 47000 },
+        { "text": "Pero memoria no significa meterlo todo en un archivo gigante.", "startMs": 48000, "endMs": 64000 },
+        { "text": "Significa poner cada instruccion en su capa.", "startMs": 65000, "endMs": 82000 }
+      ]
+    },
+    {
+      "id": "compare-chat-platform",
+      "name": "Chat vs plataforma",
+      "startMs": 90000,
+      "endMs": 155000,
+      "type": "compare",
+      "content": {
+        "tag": "Cambio de mentalidad",
+        "left": {
+          "label": "Claude como chat",
+          "color": "destructive",
+          "steps": [
+            { "icon": "MessageSquare", "text": "Prompts enormes cada dia" },
+            { "icon": "AlertTriangle", "text": "Sesiones largas sin compactar" },
+            { "icon": "Code", "text": "Permisos aceptados por inercia" }
+          ],
+          "total": "Mucho contexto, poca gobernanza"
+        },
+        "right": {
+          "label": "Claude como plataforma",
+          "color": "accent",
+          "steps": [
+            { "icon": "FileText", "text": "CLAUDE.md y rules versionadas" },
+            { "icon": "Workflow", "text": "Skills y subagentes por rol" },
+            { "icon": "Shield", "text": "Hooks, MCP readonly y coste visible" }
+          ],
+          "total": "Mas criterio y menos repeticion"
+        }
+      },
+      "subtitles": [
+        { "text": "Claude como chat impresiona rapido.", "startMs": 96000, "endMs": 106000 },
+        { "text": "Claude como plataforma cambia el trabajo del equipo.", "startMs": 107000, "endMs": 123000 },
+        { "text": "Los cursos estan disenos para ese segundo escenario.", "startMs": 124000, "endMs": 148000 }
+      ]
+    },
+    {
+      "id": "linear-first-lab",
+      "name": "Primer lab",
+      "startMs": 155000,
+      "endMs": 220000,
+      "type": "linear",
+      "content": {
+        "ticketId": "CL-100",
+        "title": "Primer reto: CLAUDE.md minimo y auditoria de contexto",
+        "project": "Claude Practice",
+        "priority": "High",
+        "assignee": "Participante",
+        "status": "Ready",
+        "labels": ["memory", "context", "cost"],
+        "description": "Crear un CLAUDE.md pequeno, ejecutar una sesion read-only, revisar /context y /usage, y cerrar con handoff de 8 lineas."
+      },
+      "subtitles": [
+        { "text": "El primer reto no pide magia.", "startMs": 160000, "endMs": 169000 },
+        { "text": "Pide higiene.", "startMs": 170000, "endMs": 176000 },
+        { "text": "Si la base esta limpia, las features avanzadas tienen sentido.", "startMs": 177000, "endMs": 207000 }
+      ]
+    },
+    {
+      "id": "thinking-context",
+      "name": "Dieta de contexto",
+      "startMs": 220000,
+      "endMs": 295000,
+      "type": "thinking",
+      "content": {
+        "tag": "Contexto",
+        "title": "Antes de seguir, Claude deberia preguntarse",
+        "thoughts": [
+          { "ms": 0, "text": "Que decision desbloquea este contexto?", "done": true },
+          { "ms": 12000, "text": "Esto deberia estar en CLAUDE.md, rule, skill o prompt?", "done": true },
+          { "ms": 28000, "text": "La sesion ya necesita /compact?", "done": true },
+          { "ms": 46000, "text": "El modelo elegido es proporcional al riesgo?", "done": false },
+          { "ms": 64000, "text": "El cierre dejara evidencia reutilizable?", "done": false }
+        ]
+      },
+      "subtitles": [
+        { "text": "La ventana de contexto no es un trastero.", "startMs": 225000, "endMs": 237000 },
+        { "text": "Cada cosa que entra debe ayudar a decidir.", "startMs": 238000, "endMs": 253000 },
+        { "text": "Ese habito ahorra tokens y mejora respuestas.", "startMs": 254000, "endMs": 278000 }
+      ]
+    },
+    {
+      "id": "coding-claude-md",
+      "name": "CLAUDE.md",
+      "startMs": 295000,
+      "endMs": 355000,
+      "type": "coding",
+      "content": {
+        "filename": "CLAUDE.md",
+        "language": "markdown",
+        "code": "# CLAUDE.md\n\n## Objetivo\nAyudar en cambios pequenos y verificables.\n\n## Comandos\n- pnpm lint\n- pnpm test\n\n## Reglas\n- Primero lee estructura y tests; no edites hasta proponer plan corto.\n- No leas ni escribas .env, secrets ni credenciales.\n- Usa /context y /usage en sesiones largas.\n- Cierra con diff, checks, riesgos y handoff."
+      },
+      "subtitles": [
+        { "text": "Un buen CLAUDE.md cabe en una pagina util.", "startMs": 300000, "endMs": 314000 },
+        { "text": "No intenta explicar toda la empresa.", "startMs": 315000, "endMs": 326000 },
+        { "text": "Intenta orientar decisiones repetidas.", "startMs": 327000, "endMs": 344000 }
+      ]
+    },
+    {
+      "id": "concept-operator",
+      "name": "Operator",
+      "startMs": 355000,
+      "endMs": 430000,
+      "type": "concept",
+      "content": {
+        "tag": "Curso 2 y 3",
+        "title": "De uso diario a operacion de equipo",
+        "body": "Cuando la base funciona, Claude se vuelve muy potente: skills para procedimientos, subagentes para roles, MCP para contexto externo, hooks para controles y plugins para distribuir practicas internas.",
+        "highlight": "Primero higiene. Luego automatizacion.",
+        "points": [
+          "Skills: procedimientos versionados y bajo demanda.",
+          "Subagentes: explorer, QA, security y architect.",
+          "MCP: contexto externo con inventario y permisos.",
+          "Hooks y plugins: automatizacion con controles deterministicos."
+        ]
+      },
+      "subtitles": [
+        { "text": "El curso dos convierte practicas repetidas en sistema.", "startMs": 361000, "endMs": 381000 },
+        { "text": "El curso tres lleva ese sistema a automatizacion avanzada.", "startMs": 382000, "endMs": 401000 },
+        { "text": "Pero ambos dependen de una base limpia.", "startMs": 402000, "endMs": 421000 }
+      ]
+    },
+    {
+      "id": "error-hooks",
+      "name": "Guardrails",
+      "startMs": 430000,
+      "endMs": 500000,
+      "type": "error",
+      "content": {
+        "tag": "Automatizacion con criterio",
+        "sentry": {
+          "id": "CL-HOOK-001",
+          "title": "Automatizacion sin guardrail",
+          "file": "hooks/pre-tool-use",
+          "line": 1,
+          "occurrences": 2,
+          "users": 1,
+          "first": "hace 4 minutos",
+          "trace": [
+            "Tool request touches .env",
+            "No deny rule catches it",
+            "Human catches risk too late"
+          ],
+          "context": "Los hooks no son decoracion avanzada: son el sitio donde el criterio se vuelve repetible."
+        },
+        "linearFix": {
+          "ticketId": "CL-101",
+          "title": "Hook anti secretos y test gate",
+          "description": "Crear PreToolUse para bloquear .env y PostToolUse para sugerir/verificar tests cuando se edita codigo productivo."
+        },
+        "fix": "PreToolUse:\n- bloquear Read(.env*)\n- bloquear Write(.env*)\n- pedir confirmacion para comandos con red\n\nPostToolUse:\n- si cambia src/**, exigir check cercano\n- cerrar con evidencia"
+      },
+      "subtitles": [
+        { "text": "Automatizar no significa confiar a ciegas.", "startMs": 436000, "endMs": 449000 },
+        { "text": "Significa convertir criterio en controles repetibles.", "startMs": 450000, "endMs": 467000 },
+        { "text": "Esa es la energia del curso avanzado.", "startMs": 468000, "endMs": 489000 }
+      ]
+    },
+    {
+      "id": "preview-route",
+      "name": "Ruta",
+      "startMs": 500000,
+      "endMs": 555000,
+      "type": "preview",
+      "content": {
+        "title": "Ruta Claude Practice",
+        "description": "De memoria y contexto a Agent SDK enterprise, con decks, labs, materiales y videos simulados.",
+        "items": [
+          { "label": "Cursos", "value": "CL0-CL4" },
+          { "label": "Labs", "value": "26" },
+          { "label": "Workshops", "value": "4" },
+          { "label": "Foco", "value": "memoria + controles" }
+        ]
+      },
+      "subtitles": [
+        { "text": "La ruta Claude se apoya en materiales copiables.", "startMs": 506000, "endMs": 521000 },
+        { "text": "CLAUDE.md, rules, skills, subagentes, hooks y plugins.", "startMs": 522000, "endMs": 541000 },
+        { "text": "Todo debe terminar en practica real.", "startMs": 542000, "endMs": 552000 }
+      ]
+    },
+    {
+      "id": "finale",
+      "name": "Cierre",
+      "startMs": 555000,
+      "endMs": 600000,
+      "type": "finale",
+      "content": {
+        "title": "Claude se opera, no se invoca",
+        "summary": [
+          { "number": "01", "label": "Memoria", "body": "Separar CLAUDE.md, rules, auto memory y skills." },
+          { "number": "02", "label": "Contexto", "body": "Usar /context, /usage, /compact y handoff con criterio." },
+          { "number": "03", "label": "Automatizacion", "body": "Subagentes, MCP, hooks y plugins solo despues de higiene." }
+        ],
+        "cta": "Siguiente paso: abrir Claude Code Orientation y completar el CLAUDE.md minimo."
+      },
+      "subtitles": [
+        { "text": "Claude es muy potente.", "startMs": 558000, "endMs": 565000 },
+        { "text": "Por eso necesita metodo.", "startMs": 566000, "endMs": 574000 },
+        { "text": "Ahora ya tenemos el mapa para empezar.", "startMs": 575000, "endMs": 596000 }
+      ]
+    }
+  ]
+}

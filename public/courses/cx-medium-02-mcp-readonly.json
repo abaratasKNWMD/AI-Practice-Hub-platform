@@ -1,0 +1,101 @@
+{
+  "id": "cx-medium-02-mcp-readonly",
+  "title": "Codex Medium 02 - MCP Readonly",
+  "description": "Uso de MCPs y conectores en modo seguro, con evidencia y politica de equipo.",
+  "template": "technical",
+  "durationPreset": 5,
+  "durationMs": 90000,
+  "voice": "es-ES-AlvaroNeural",
+  "author": "AI Practice Hub",
+  "createdAt": "2026-05-07T00:00:00.000Z",
+  "chapters": [
+    { "id": "start", "label": "MCP", "startMs": 0 },
+    { "id": "concept", "label": "Contexto", "startMs": 8000 },
+    { "id": "inventory", "label": "Inventario", "startMs": 42000 },
+    { "id": "close", "label": "Cierre", "startMs": 70000 }
+  ],
+  "scenes": [
+    {
+      "id": "title",
+      "name": "Apertura",
+      "startMs": 0,
+      "endMs": 8000,
+      "type": "title",
+      "content": {
+        "title": "MCP read-only",
+        "subtitle": "Contexto externo sin acciones peligrosas.",
+        "tag": "Codex / MCP"
+      },
+      "subtitles": [
+        { "text": "Un MCP amplia contexto.", "startMs": 1000, "endMs": 3500 },
+        { "text": "Pero contexto y permisos deben separarse.", "startMs": 3800, "endMs": 7600 }
+      ]
+    },
+    {
+      "id": "concept",
+      "name": "Contexto controlado",
+      "startMs": 8000,
+      "endMs": 42000,
+      "type": "concept",
+      "content": {
+        "tag": "Enterprise context",
+        "title": "Read-only es el modo docente por defecto",
+        "body": "Para formacion, un conector debe responder a una pregunta concreta: que incertidumbre reduce? Si no reduce incertidumbre, solo anade coste y riesgo.\n\nLa regla: conectar para leer, citar evidencia y decidir; no para ejecutar acciones de negocio durante el aprendizaje.",
+        "highlight": "Un MCP util debe tener owner, alcance, permisos y retirada.",
+        "points": [
+          "Fuente: que sistema lee.",
+          "Permiso: que puede hacer y que no.",
+          "Riesgo: que datos expone.",
+          "Valor: que decisiones mejora."
+        ]
+      },
+      "subtitles": [
+        { "text": "Read-only debe ser el default en aula.", "startMs": 9000, "endMs": 16000 },
+        { "text": "El valor esta en reducir incertidumbre.", "startMs": 16500, "endMs": 26000 },
+        { "text": "No en conectar cosas por conectar.", "startMs": 26500, "endMs": 40500 }
+      ]
+    },
+    {
+      "id": "linear",
+      "name": "Inventario",
+      "startMs": 42000,
+      "endMs": 70000,
+      "type": "linear",
+      "content": {
+        "ticketId": "MCP-INV",
+        "title": "Inventario de MCPs permitidos en formacion",
+        "project": "AI Practice Hub",
+        "priority": "High",
+        "assignee": "Platform Team",
+        "status": "Draft",
+        "labels": ["mcp", "security", "codex"],
+        "description": "Campos obligatorios por conector:\n- Nombre y owner.\n- Fuente de datos.\n- Permisos exactos.\n- Datos sensibles potenciales.\n- Casos de uso docentes.\n- Casos prohibidos.\n- Caducidad o revision.\n\nDecision: todo alumno empieza en read-only salvo excepcion aprobada."
+      },
+      "subtitles": [
+        { "text": "El inventario hace visible el riesgo.", "startMs": 43000, "endMs": 50000 },
+        { "text": "Owner, fuente, permiso y uso permitido.", "startMs": 50500, "endMs": 61000 },
+        { "text": "Sin inventario, no hay gobierno.", "startMs": 61500, "endMs": 69000 }
+      ]
+    },
+    {
+      "id": "finale",
+      "name": "Cierre",
+      "startMs": 70000,
+      "endMs": 90000,
+      "type": "finale",
+      "content": {
+        "title": "MCP con criterio",
+        "summary": [
+          { "number": "01", "label": "Fuente", "body": "Que lee exactamente." },
+          { "number": "02", "label": "Permiso", "body": "Que acciones puede hacer." },
+          { "number": "03", "label": "Evidencia", "body": "Que dato justifica la respuesta." }
+        ],
+        "cta": "Ejercicio asociado: cx-m03-mcp-readonly."
+      },
+      "subtitles": [
+        { "text": "Conectar contexto no significa abrir acciones.", "startMs": 70500, "endMs": 80500 },
+        { "text": "Read-only primero.", "startMs": 81000, "endMs": 89500 }
+      ]
+    }
+  ]
+}

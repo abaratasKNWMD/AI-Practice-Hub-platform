@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 760" role="img" aria-labelledby="title desc">
+  <title id="title">Context router</title>
+  <desc id="desc">A context router connecting participants, slash commands and variables to Copilot Chat.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#081225"/>
+      <stop offset="1" stop-color="#071a18"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" x2="1">
+      <stop offset="0" stop-color="#5ddcff"/>
+      <stop offset="1" stop-color="#62e6a2"/>
+    </linearGradient>
+    <style>
+      .title{font:900 34px Inter,Segoe UI,sans-serif;fill:#f8fbff}
+      .label{font:850 20px Inter,Segoe UI,sans-serif;fill:#f8fbff}
+      .small{font:700 15px Inter,Segoe UI,sans-serif;fill:#aebbd0}
+      .mono{font:650 18px ui-monospace,SFMono-Regular,Consolas,monospace;fill:#dce8f7}
+      .card{fill:#ffffff;fill-opacity:.07;stroke:#ffffff;stroke-opacity:.14}
+    </style>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0 0L10 5L0 10Z" fill="#77e6d0"/>
+    </marker>
+  </defs>
+  <rect width="1200" height="760" rx="34" fill="url(#bg)"/>
+  <text x="70" y="88" class="title">Contexto invocable: @, / y #</text>
+  <text x="72" y="122" class="small">El prompt deja de ser una frase suelta y se convierte en una ruta hacia informacion concreta.</text>
+  <g transform="translate(96 200)">
+    <rect width="248" height="96" rx="24" class="card"/>
+    <text x="28" y="42" class="mono">@workspace</text>
+    <text x="28" y="68" class="small">ambito del proyecto</text>
+    <rect y="138" width="248" height="96" rx="24" class="card"/>
+    <text x="28" y="180" class="mono">/explain</text>
+    <text x="28" y="206" class="small">intencion compacta</text>
+    <rect y="276" width="248" height="96" rx="24" class="card"/>
+    <text x="28" y="318" class="mono">#file</text>
+    <text x="28" y="344" class="small">referencia exacta</text>
+  </g>
+  <g transform="translate(478 246)">
+    <rect width="244" height="244" rx="40" fill="#ffffff" fill-opacity=".08" stroke="url(#accent)" stroke-width="2"/>
+    <text x="52" y="92" class="label">Context</text>
+    <text x="58" y="126" class="label">Router</text>
+    <text x="42" y="178" class="small">prioriza senales</text>
+  </g>
+  <g transform="translate(856 250)">
+    <rect width="250" height="238" rx="28" class="card"/>
+    <text x="30" y="50" class="label">Respuesta</text>
+    <text x="30" y="86" class="small">mas precisa</text>
+    <text x="30" y="118" class="small">menos ambigua</text>
+    <text x="30" y="150" class="small">mas verificable</text>
+    <rect x="30" y="180" width="170" height="34" rx="14" fill="#62e6a2" fill-opacity=".16" stroke="#62e6a2" stroke-opacity=".36"/>
+    <text x="52" y="203" class="small">menos ruido</text>
+  </g>
+  <path d="M360 248H468" stroke="url(#accent)" stroke-width="6" stroke-linecap="round" marker-end="url(#arrow)"/>
+  <path d="M360 386H468" stroke="url(#accent)" stroke-width="6" stroke-linecap="round" marker-end="url(#arrow)"/>
+  <path d="M360 524C432 548 474 526 510 493" stroke="url(#accent)" stroke-width="6" fill="none" marker-end="url(#arrow)"/>
+  <path d="M733 368H846" stroke="url(#accent)" stroke-width="6" stroke-linecap="round" marker-end="url(#arrow)"/>
+</svg>

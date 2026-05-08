@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" role="img" aria-labelledby="title desc">
+  <title id="title">Audit log de hooks</title>
+  <desc id="desc">Panel de auditoria de hooks con timestamp, accion, decision, coste y owner.</desc>
+  <rect width="1280" height="720" rx="36" fill="#eef5f2"/>
+  <text x="74" y="86" font-family="Inter, Arial, sans-serif" font-size="42" font-weight="900" fill="#17221e">Audit log de automatizacion</text>
+  <text x="74" y="124" font-family="Inter, Arial, sans-serif" font-size="21" fill="#52675f">Un hook enterprise deja trazabilidad: que intento, quien decidio, cuanto costo y por que.</text>
+  <rect x="78" y="178" width="1124" height="430" rx="24" fill="#101816"/>
+  <g font-family="Geist Mono, Consolas, monospace" font-size="18">
+    <text x="116" y="232" fill="#a7f3d0">time</text>
+    <text x="286" y="232" fill="#a7f3d0">hook</text>
+    <text x="486" y="232" fill="#a7f3d0">target</text>
+    <text x="756" y="232" fill="#a7f3d0">decision</text>
+    <text x="976" y="232" fill="#a7f3d0">owner</text>
+    <line x1="112" y1="252" x2="1168" y2="252" stroke="#2f4a41"/>
+    <text x="116" y="302" fill="#d1fae5">12:01:04</text>
+    <text x="286" y="302" fill="#e5e7eb">PreToolUse</text>
+    <text x="486" y="302" fill="#e5e7eb">Read .env</text>
+    <text x="756" y="302" fill="#fecaca">blocked</text>
+    <text x="976" y="302" fill="#e5e7eb">platform</text>
+    <text x="116" y="362" fill="#d1fae5">12:04:18</text>
+    <text x="286" y="362" fill="#e5e7eb">PostToolUse</text>
+    <text x="486" y="362" fill="#e5e7eb">Write src/auth</text>
+    <text x="756" y="362" fill="#fde68a">needs test</text>
+    <text x="976" y="362" fill="#e5e7eb">qa</text>
+    <text x="116" y="422" fill="#d1fae5">12:08:44</text>
+    <text x="286" y="422" fill="#e5e7eb">Stop</text>
+    <text x="486" y="422" fill="#e5e7eb">close task</text>
+    <text x="756" y="422" fill="#bbf7d0">allowed</text>
+    <text x="976" y="422" fill="#e5e7eb">lead</text>
+    <text x="116" y="512" fill="#93c5fd">cost=low</text>
+    <text x="286" y="512" fill="#93c5fd">session=pr-42</text>
+    <text x="486" y="512" fill="#93c5fd">model=sonnet</text>
+    <text x="756" y="512" fill="#93c5fd">checks=auth.spec</text>
+  </g>
+  <text x="640" y="666" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="22" font-weight="900" fill="#17221e">Sin log, la automatizacion solo es una historia bonita.</text>
+</svg>

@@ -1,0 +1,21 @@
+{
+  "vendor": "copilot",
+  "exerciseId": "cp-c03-cloud-mcp-policy",
+  "title": "MCP para cloud agent con allowlist",
+  "surface": "GitHub repository settings",
+  "recommendedModel": "Copilot cloud agent",
+  "permissionMode": "readonly + secrets controlados",
+  "estimatedCost": "Medio/alto si se recupera mucho contexto",
+  "intentionalErrors": [
+    "briefing demasiado amplio",
+    "falta de evidencia",
+    "coste sin registrar"
+  ],
+  "expectedArtifacts": [
+    "prompt",
+    "resultado",
+    "evidencia",
+    "coste",
+    "decision"
+  ]
+}

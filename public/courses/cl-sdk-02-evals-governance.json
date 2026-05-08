@@ -1,0 +1,79 @@
+{
+  "id": "cl-sdk-02-evals-governance",
+  "title": "Claude SDK 02 - Evals and Governance",
+  "description": "Evaluar agentes Claude con rubricas, coste y decisiones go/no-go.",
+  "template": "technical",
+  "durationPreset": 5,
+  "durationMs": 90000,
+  "voice": "es-ES-AlvaroNeural",
+  "author": "AI Practice Hub",
+  "createdAt": "2026-05-07T00:00:00.000Z",
+  "chapters": [
+    { "id": "start", "label": "Evals", "startMs": 0 },
+    { "id": "compare", "label": "Medicion", "startMs": 9000 },
+    { "id": "close", "label": "Piloto", "startMs": 65000 }
+  ],
+  "scenes": [
+    {
+      "id": "title",
+      "name": "Apertura",
+      "startMs": 0,
+      "endMs": 9000,
+      "type": "title",
+      "content": { "title": "Evals + governance", "subtitle": "El agente que no se mide no se despliega.", "tag": "Claude Enterprise" },
+      "subtitles": [{ "text": "En enterprise, una demo brillante no basta. Hay que medir.", "startMs": 1000, "endMs": 8200 }]
+    },
+    {
+      "id": "compare",
+      "name": "Medicion",
+      "startMs": 9000,
+      "endMs": 65000,
+      "type": "compare",
+      "content": {
+        "tag": "De demo a piloto",
+        "left": {
+          "label": "Demo",
+          "color": "destructive",
+          "steps": [
+            { "icon": "Sparkles", "text": "Parece inteligente" },
+            { "icon": "MessageSquare", "text": "Salida libre" },
+            { "icon": "HelpCircle", "text": "Sin metrica" }
+          ],
+          "total": "No escalable"
+        },
+        "right": {
+          "label": "Piloto evaluado",
+          "color": "accent",
+          "steps": [
+            { "icon": "FileJson", "text": "Contrato JSON" },
+            { "icon": "ClipboardCheck", "text": "Rubrica versionada" },
+            { "icon": "Wallet", "text": "Coste por ejecucion" }
+          ],
+          "total": "Gobernable"
+        }
+      },
+      "subtitles": [
+        { "text": "Medir no mata la magia. La vuelve confiable.", "startMs": 10000, "endMs": 28000 },
+        { "text": "El contrato JSON permite dashboards y comparaciones.", "startMs": 29000, "endMs": 48000 },
+        { "text": "El go/no-go depende de calidad, coste y riesgo.", "startMs": 49000, "endMs": 63000 }
+      ]
+    },
+    {
+      "id": "finale",
+      "name": "Cierre",
+      "startMs": 65000,
+      "endMs": 90000,
+      "type": "finale",
+      "content": {
+        "title": "Go/no-go",
+        "summary": [
+          { "number": "Quality", "label": "Calidad", "body": "Detecta lo que debe." },
+          { "number": "Cost", "label": "Coste", "body": "Previsible por ejecucion." },
+          { "number": "Risk", "label": "Riesgo", "body": "Permisos y datos controlados." }
+        ],
+        "cta": "Ejercicio: cl-s05-capstone-reviewer."
+      },
+      "subtitles": [{ "text": "El capstone no es hacer un agente. Es decidir si merece vivir.", "startMs": 66000, "endMs": 89000 }]
+    }
+  ]
+}

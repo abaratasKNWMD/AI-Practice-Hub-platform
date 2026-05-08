@@ -1,0 +1,21 @@
+{
+  "vendor": "claude",
+  "exerciseId": "cl-o01-skill-summarize",
+  "title": "Primera skill: summarize-changes",
+  "surface": ".claude/skills",
+  "recommendedModel": "Sonnet",
+  "permissionMode": "write skill",
+  "estimatedCost": "medio: diseño + prueba",
+  "intentionalErrors": [
+    "briefing demasiado amplio",
+    "falta de evidencia",
+    "coste sin registrar"
+  ],
+  "expectedArtifacts": [
+    "prompt",
+    "resultado",
+    "evidencia",
+    "coste",
+    "decision"
+  ]
+}

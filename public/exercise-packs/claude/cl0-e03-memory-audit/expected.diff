@@ -1,0 +1,9 @@
+diff --git a/README.md b/README.md
+--- a/README.md
++++ b/README.md
+@@
++# Evidencia de ejercicio
++- Ejercicio: cl0-e03-memory-audit
++- Resultado: salida verificable
++- Coste: bajo: clasificacion
++- Permisos: read-only

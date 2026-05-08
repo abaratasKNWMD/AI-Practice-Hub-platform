@@ -1,0 +1,26 @@
+[
+  {
+    "domain": "auth",
+    "owner": "identity-team",
+    "source": "src/auth/session.js",
+    "summary": "Session refresh loads a user and creates a new session.",
+    "question": "How does session refresh work?",
+    "difficulty": "medium"
+  },
+  {
+    "domain": "billing",
+    "owner": "payments-team",
+    "source": "src/billing/invoice.js",
+    "summary": "Invoice creation calculates tax and persists invoice records.",
+    "question": "Where is invoice tax calculated?",
+    "difficulty": "medium"
+  },
+  {
+    "domain": "architecture",
+    "owner": "platform-team",
+    "source": "",
+    "summary": "Provider registration is mostly tribal knowledge and needs a written ADR.",
+    "question": "How do I register a new provider?",
+    "difficulty": "hard"
+  }
+]

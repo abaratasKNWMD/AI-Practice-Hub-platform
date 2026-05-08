@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" role="img" aria-labelledby="title desc">
+  <title id="title">Matriz de permisos Claude</title>
+  <desc id="desc">Matriz para valorar permisos de lectura, escritura, comandos, red y secretos.</desc>
+  <rect width="1280" height="720" rx="38" fill="#f4efe8"/>
+  <text x="72" y="84" font-family="Inter, Arial, sans-serif" font-size="43" font-weight="900" fill="#211914">Matriz de permisos</text>
+  <text x="72" y="122" font-family="Inter, Arial, sans-serif" font-size="21" fill="#655443">Aprobar no es pulsar si. Es entender impacto, reversibilidad y evidencia.</text>
+  <g font-family="Inter, Arial, sans-serif" font-size="18" font-weight="800" fill="#2b2119">
+    <text x="208" y="190">bajo impacto</text>
+    <text x="560" y="190">controlado</text>
+    <text x="902" y="190">alto riesgo</text>
+    <text x="78" y="292">Leer</text>
+    <text x="78" y="386">Editar</text>
+    <text x="78" y="480">Ejecutar</text>
+    <text x="78" y="574">Conectar</text>
+  </g>
+  <g>
+    <rect x="182" y="220" width="300" height="78" rx="18" fill="#b7d3a8"/>
+    <rect x="514" y="220" width="300" height="78" rx="18" fill="#f4d58d"/>
+    <rect x="846" y="220" width="300" height="78" rx="18" fill="#ee9b83"/>
+    <rect x="182" y="314" width="300" height="78" rx="18" fill="#cce3de"/>
+    <rect x="514" y="314" width="300" height="78" rx="18" fill="#f4d58d"/>
+    <rect x="846" y="314" width="300" height="78" rx="18" fill="#ee9b83"/>
+    <rect x="182" y="408" width="300" height="78" rx="18" fill="#f4d58d"/>
+    <rect x="514" y="408" width="300" height="78" rx="18" fill="#ee9b83"/>
+    <rect x="846" y="408" width="300" height="78" rx="18" fill="#c74733"/>
+    <rect x="182" y="502" width="300" height="78" rx="18" fill="#f4d58d"/>
+    <rect x="514" y="502" width="300" height="78" rx="18" fill="#ee9b83"/>
+    <rect x="846" y="502" width="300" height="78" rx="18" fill="#c74733"/>
+  </g>
+  <g font-family="Inter, Arial, sans-serif" font-size="17" font-weight="800" fill="#211914">
+    <text x="332" y="266" text-anchor="middle">src/** readonly</text>
+    <text x="664" y="266" text-anchor="middle">logs internos</text>
+    <text x="996" y="266" text-anchor="middle">secrets / datos cliente</text>
+    <text x="332" y="360" text-anchor="middle">test pequeno</text>
+    <text x="664" y="360" text-anchor="middle">modulo acotado</text>
+    <text x="996" y="360" text-anchor="middle">migracion masiva</text>
+    <text x="332" y="454" text-anchor="middle">lint / unit test</text>
+    <text x="664" y="454" text-anchor="middle">script conocido</text>
+    <text x="996" y="454" text-anchor="middle" fill="#fff">curl | bash</text>
+    <text x="332" y="548" text-anchor="middle">MCP readonly</text>
+    <text x="664" y="548" text-anchor="middle">MCP con owner</text>
+    <text x="996" y="548" text-anchor="middle" fill="#fff">MCP sin inventario</text>
+  </g>
+  <rect x="182" y="622" width="964" height="54" rx="16" fill="#1f1f1f"/>
+  <text x="664" y="657" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="20" font-weight="900" fill="#fff">Curso 1: confirmar mas. Curso 2: automatizar con guardrails. Curso 3: hooks y CI.</text>
+</svg>

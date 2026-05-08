@@ -1,0 +1,9 @@
+{
+  "name": "codex-batch-jsonl-planner",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "build": "node src/build-batch.mjs tasks/refactor-tasks.json out/refactor.batch.jsonl",
+    "test": "node --test"
+  }
+}

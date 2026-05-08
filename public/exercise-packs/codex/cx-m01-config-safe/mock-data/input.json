@@ -1,0 +1,21 @@
+{
+  "vendor": "codex",
+  "exerciseId": "cx-m01-config-safe",
+  "title": "Config segura de Codex",
+  "surface": "config.toml + permisos",
+  "recommendedModel": "GPT-5.4",
+  "permissionMode": "workspace-write controlado",
+  "estimatedCost": "Bajo: edicion de plantilla y revision",
+  "intentionalErrors": [
+    "briefing demasiado amplio",
+    "falta de evidencia",
+    "coste sin registrar"
+  ],
+  "expectedArtifacts": [
+    "prompt",
+    "resultado",
+    "evidencia",
+    "coste",
+    "decision"
+  ]
+}

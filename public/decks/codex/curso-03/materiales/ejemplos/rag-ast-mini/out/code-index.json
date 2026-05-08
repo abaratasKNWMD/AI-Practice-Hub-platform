@@ -1,0 +1,59 @@
+{
+  "generated_at": "1970-01-01T00:00:00.000Z",
+  "chunks": [
+    {
+      "id": "src/auth/session.js#refreshSession",
+      "file": "src/auth/session.js",
+      "language": "javascript",
+      "kind": "function",
+      "symbol": "refreshSession",
+      "range": {
+        "start": 3,
+        "end": 10
+      },
+      "imports": [
+        "./store.js"
+      ],
+      "calls": [
+        "loadUser",
+        "createSession"
+      ],
+      "tests": [
+        "tests/auth/session.test.js"
+      ],
+      "owner": "identity-team",
+      "acl": "internal",
+      "freshness": "demo",
+      "risk": "high",
+      "embedding_text": "function refreshSession in src/auth/session.js. Imports: ./store.js. export async function refreshSession(userId) {\n  const user = await loadUser(userId);\n  if (!user.isActive) {\n    return null;\n  }\n  return createSession(user.id);\n}\n",
+      "display_text": "export async function refreshSession(userId) {\n  const user = await loadUser(userId);\n  if (!user.isActive) {\n    return null;\n  }\n  return createSession(user.id);\n}\n"
+    },
+    {
+      "id": "src/auth/session.js#SessionPolicy",
+      "file": "src/auth/session.js",
+      "language": "javascript",
+      "kind": "class",
+      "symbol": "SessionPolicy",
+      "range": {
+        "start": 11,
+        "end": 16
+      },
+      "imports": [
+        "./store.js"
+      ],
+      "calls": [
+        "canRefresh",
+        "Boolean"
+      ],
+      "tests": [
+        "tests/auth/session.test.js"
+      ],
+      "owner": "identity-team",
+      "acl": "internal",
+      "freshness": "demo",
+      "risk": "high",
+      "embedding_text": "class SessionPolicy in src/auth/session.js. Imports: ./store.js. export class SessionPolicy {\n  canRefresh(user) {\n    return Boolean(user && user.isActive);\n  }\n}\n",
+      "display_text": "export class SessionPolicy {\n  canRefresh(user) {\n    return Boolean(user && user.isActive);\n  }\n}\n"
+    }
+  ]
+}

@@ -1,0 +1,90 @@
+[
+  {
+    "id": "codex-orientation",
+    "code": "C0",
+    "title": "Codex Orientation",
+    "level": "orientation",
+    "duration": "45 min",
+    "summary": "Primer aterrizaje para entender superficies, permisos, contexto minimo, coste y primer uso responsable.",
+    "videoSlugs": ["cx-masterclass-10m-codex-operating-system", "cx-orientation-01-surface-map", "cx-orientation-02-first-task", "cx-orientation-03-permissions"],
+    "exerciseIds": ["cx-b01-repo-map", "cx-b02-prompt-4-piezas", "cx-b03-agents-md"],
+    "materialIds": ["c1-prompts", "c1-agents", "c1-coste"],
+    "status": "ready",
+    "outcomes": [
+      "Elegir app, IDE, CLI o cloud segun tarea.",
+      "Escribir un prompt con objetivo, contexto, restricciones y done when.",
+      "Reconocer permisos seguros antes de delegar trabajo."
+    ]
+  },
+  {
+    "id": "codex-basic",
+    "code": "C1",
+    "title": "Codex Basic",
+    "level": "basic",
+    "duration": "3 h",
+    "summary": "Ruta de activacion para resolver bugs pequenos, crear AGENTS.md, usar Plan mode, revisar diffs y validar con tests.",
+    "deckUrl": "/decks/codex/curso-01/index.html",
+    "videoSlugs": ["cx-basic-01-agents-md", "cx-basic-02-plan-before-patch"],
+    "exerciseIds": ["cx-b01-repo-map", "cx-b02-prompt-4-piezas", "cx-b03-agents-md", "cx-b04-bug-login", "cx-b05-review-diff"],
+    "materialIds": ["c1-lab-onboarding", "c1-lab-login", "c1-lab-review", "c1-prompts", "c1-agents", "c1-coste", "c1-mcp-inventory"],
+    "status": "ready",
+    "outcomes": [
+      "Pasar de prompt vago a tarea verificable.",
+      "Corregir un bug con test minimo.",
+      "Cerrar una tarea con diff, evidencias y coste."
+    ]
+  },
+  {
+    "id": "codex-potente",
+    "code": "C2",
+    "title": "Codex Potente",
+    "level": "medium",
+    "duration": "5 h",
+    "summary": "Curso para operar Codex con modelos, razonamiento, config.toml, MCP readonly, skills, subagentes y registros de coste.",
+    "deckUrl": "/decks/codex/curso-02/index.html",
+    "videoSlugs": ["cx-medium-01-model-picker", "cx-medium-02-mcp-readonly", "cx-medium-03-skill-qa-visual"],
+    "exerciseIds": ["cx-m01-config-safe", "cx-m02-modelos-coste", "cx-m03-mcp-readonly", "cx-m04-skill-qa", "cx-m05-subagentes-review", "cx-m06-debug-ui"],
+    "materialIds": ["c2-lab-modelos", "c2-lab-mcp", "c2-lab-skill", "c2-lab-subagentes", "c2-lab-debug-ui", "c2-agents", "c2-config", "c2-skill-qa", "c2-registro-coste"],
+    "status": "ready",
+    "outcomes": [
+      "Elegir modelo y esfuerzo segun riesgo.",
+      "Conectar MCP readonly sin abrir permisos innecesarios.",
+      "Crear una skill de equipo y usar subagentes con criterio."
+    ]
+  },
+  {
+    "id": "codex-ultra",
+    "code": "C3",
+    "title": "Codex Ultra",
+    "level": "ultra",
+    "duration": "6 h",
+    "summary": "Ruta enterprise para swarms, GitHub Action, API-first batch, datasets sinteticos, RAG AST, jueces y capstone.",
+    "deckUrl": "/decks/codex/curso-03/index.html",
+    "videoSlugs": ["cx-ultra-01-github-action", "cx-ultra-02-pr-swarm"],
+    "exerciseIds": ["cx-a01-github-action", "cx-a02-output-schema", "cx-u01-pr-swarm", "cx-u02-rag-ast", "cx-u03-dataset-sintetico", "cx-u04-jueces-evals"],
+    "materialIds": ["c3-lab-pr-swarm", "c3-lab-api-batch", "c3-lab-dataset", "c3-lab-rag", "c3-lab-evals", "c3-action", "c3-agents", "c3-skill-swarm", "c3-skill-rag", "c3-cost-budget"],
+    "status": "ready",
+    "outcomes": [
+      "Automatizar revision con GitHub Action.",
+      "Orquestar roles de arquitectura, desarrollo y QA.",
+      "Usar RAG, datos sinteticos y jueces como sistema de calidad."
+    ]
+  },
+  {
+    "id": "codex-operating-model",
+    "code": "C4",
+    "title": "Operating Model",
+    "level": "enterprise",
+    "duration": "2 h",
+    "summary": "Modelo de adopcion para flipping training, tutoria, presupuestos, politicas de modelos, MCPs, seguridad y workshops.",
+    "videoSlugs": ["cx-orientation-03-permissions", "cx-medium-01-model-picker", "cx-ultra-02-pr-swarm"],
+    "exerciseIds": ["cx-e01-cost-budget", "cx-e02-mcp-policy", "cx-e03-workshop-pack"],
+    "materialIds": ["audit-omega", "audit-codex", "c3-cost-budget", "c3-risk-register", "c3-action"],
+    "status": "ready",
+    "outcomes": [
+      "Definir una estrategia de autoconsumo y tutoria.",
+      "Crear politicas de coste, permisos, MCPs y revision humana.",
+      "Convertir formacion en un sistema de practica continua."
+    ]
+  }
+]

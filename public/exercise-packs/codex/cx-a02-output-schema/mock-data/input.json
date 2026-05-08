@@ -1,0 +1,21 @@
+{
+  "vendor": "codex",
+  "exerciseId": "cx-a02-output-schema",
+  "title": "Salida estructurada para agentes",
+  "surface": "JSON schema + evals",
+  "recommendedModel": "GPT-5.4",
+  "permissionMode": "read-only",
+  "estimatedCost": "Medio: varias validaciones de salida",
+  "intentionalErrors": [
+    "briefing demasiado amplio",
+    "falta de evidencia",
+    "coste sin registrar"
+  ],
+  "expectedArtifacts": [
+    "prompt",
+    "resultado",
+    "evidencia",
+    "coste",
+    "decision"
+  ]
+}

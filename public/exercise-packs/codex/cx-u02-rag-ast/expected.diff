@@ -1,0 +1,9 @@
+diff --git a/README.md b/README.md
+--- a/README.md
++++ b/README.md
+@@
++# Evidencia de ejercicio
++- Ejercicio: cx-u02-rag-ast
++- Resultado: salida verificable
++- Coste: Alto inicial, bajo por consulta si se cachea
++- Permisos: read-only sobre codigo fuente

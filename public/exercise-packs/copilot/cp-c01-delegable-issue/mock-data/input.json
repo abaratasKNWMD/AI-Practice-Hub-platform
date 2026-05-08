@@ -1,0 +1,21 @@
+{
+  "vendor": "copilot",
+  "exerciseId": "cp-c01-delegable-issue",
+  "title": "Issue delegable para cloud agent",
+  "surface": "GitHub issue",
+  "recommendedModel": "Copilot cloud agent",
+  "permissionMode": "repo policy + human review",
+  "estimatedCost": "Medio/alto: premium requests + Actions minutes",
+  "intentionalErrors": [
+    "briefing demasiado amplio",
+    "falta de evidencia",
+    "coste sin registrar"
+  ],
+  "expectedArtifacts": [
+    "prompt",
+    "resultado",
+    "evidencia",
+    "coste",
+    "decision"
+  ]
+}

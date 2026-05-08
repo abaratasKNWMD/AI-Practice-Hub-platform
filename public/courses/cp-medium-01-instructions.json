@@ -1,0 +1,74 @@
+{
+  "id": "cp-medium-01-instructions",
+  "title": "Copilot Medium 01 - Instructions",
+  "description": "Diferencia entre copilot-instructions e instruction files path-specific.",
+  "template": "technical",
+  "durationPreset": 5,
+  "durationMs": 90000,
+  "voice": "es-ES-AlvaroNeural",
+  "author": "AI Practice Hub",
+  "createdAt": "2026-05-07T00:00:00.000Z",
+  "chapters": [
+    { "id": "start", "label": "Instructions", "startMs": 0 },
+    { "id": "code", "label": ".github", "startMs": 9000 },
+    { "id": "close", "label": "Regla", "startMs": 65000 }
+  ],
+  "scenes": [
+    {
+      "id": "title",
+      "name": "Apertura",
+      "startMs": 0,
+      "endMs": 9000,
+      "type": "title",
+      "content": {
+        "title": "Instructions sin ruido",
+        "subtitle": "Global para lo estable. Path-specific para lo concreto.",
+        "tag": "Copilot Medium"
+      },
+      "subtitles": [
+        { "text": "Las instrucciones buenas reducen repeticion. Las malas meten ruido permanente.", "startMs": 1000, "endMs": 8200 }
+      ]
+    },
+    {
+      "id": "coding",
+      "name": "Tree",
+      "startMs": 9000,
+      "endMs": 65000,
+      "type": "coding",
+      "content": {
+        "tag": "Customization tree",
+        "filename": ".github/",
+        "code": ".github/\n  copilot-instructions.md\n  instructions/\n    frontend.instructions.md\n    backend.instructions.md\n    tests.instructions.md\n    review.instructions.md\n\n# copilot-instructions.md\n- Stack y comandos.\n- Seguridad.\n- Formato de cierre.\n\n# frontend.instructions.md\n---\napplyTo: \"components/**/*.{tsx,css}\"\n---\n- Accesibilidad.\n- Responsive.\n- No overlap.",
+        "commentary": [
+          { "atLine": 2, "text": "Siempre activo" },
+          { "atLine": 3, "text": "Especifico por path/tarea" },
+          { "atLine": 15, "text": "applyTo acota contexto" }
+        ]
+      },
+      "subtitles": [
+        { "text": "Copilot-instructions es para reglas siempre activas.", "startMs": 10000, "endMs": 26000 },
+        { "text": "Los instruction files aplican por path o por tarea.", "startMs": 27000, "endMs": 44000 },
+        { "text": "Separar capas mantiene el contexto limpio.", "startMs": 45000, "endMs": 62000 }
+      ]
+    },
+    {
+      "id": "finale",
+      "name": "Cierre",
+      "startMs": 65000,
+      "endMs": 90000,
+      "type": "finale",
+      "content": {
+        "title": "Regla de instructions",
+        "summary": [
+          { "number": "01", "label": "Global", "body": "Stack, comandos, seguridad." },
+          { "number": "02", "label": "Path", "body": "Frontend, backend, tests." },
+          { "number": "03", "label": "Corto", "body": "Si no cambia decisiones, sobra." }
+        ],
+        "cta": "Ejercicios: cp-m04 y cp-m05."
+      },
+      "subtitles": [
+        { "text": "Si una instruccion no cambia una decision de Copilot, probablemente sobra.", "startMs": 66000, "endMs": 89000 }
+      ]
+    }
+  ]
+}

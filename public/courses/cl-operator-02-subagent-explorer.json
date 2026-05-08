@@ -1,0 +1,80 @@
+{
+  "id": "cl-operator-02-subagent-explorer",
+  "title": "Claude Operator 02 - Subagent Explorer",
+  "description": "Separar exploracion, QA y seguridad con subagentes.",
+  "template": "technical",
+  "durationPreset": 5,
+  "durationMs": 90000,
+  "voice": "es-ES-AlvaroNeural",
+  "author": "AI Practice Hub",
+  "createdAt": "2026-05-07T00:00:00.000Z",
+  "chapters": [
+    { "id": "start", "label": "Subagentes", "startMs": 0 },
+    { "id": "compare", "label": "Separacion", "startMs": 9000 },
+    { "id": "close", "label": "Roles", "startMs": 65000 }
+  ],
+  "scenes": [
+    {
+      "id": "title",
+      "name": "Apertura",
+      "startMs": 0,
+      "endMs": 9000,
+      "type": "title",
+      "content": { "title": "Subagentes", "subtitle": "No todo tiene que vivir en el hilo principal.", "tag": "Claude Operator" },
+      "subtitles": [{ "text": "Los subagentes separan contexto, herramientas y responsabilidad.", "startMs": 1000, "endMs": 8200 }]
+    },
+    {
+      "id": "compare",
+      "name": "Separacion",
+      "startMs": 9000,
+      "endMs": 65000,
+      "type": "compare",
+      "content": {
+        "tag": "Un agente vs ecosistema",
+        "left": {
+          "label": "Hilo saturado",
+          "color": "destructive",
+          "steps": [
+            { "icon": "Search", "text": "Explora todo" },
+            { "icon": "Code", "text": "Implementa todo" },
+            { "icon": "ShieldAlert", "text": "Revisa todo tarde" }
+          ],
+          "total": "Contexto mezclado"
+        },
+        "right": {
+          "label": "Subagentes",
+          "color": "accent",
+          "steps": [
+            { "icon": "Eye", "text": "Explorer read-only" },
+            { "icon": "ClipboardCheck", "text": "QA reviewer" },
+            { "icon": "ShieldCheck", "text": "Security reviewer" }
+          ],
+          "total": "Contexto enfocado"
+        }
+      },
+      "subtitles": [
+        { "text": "Separar roles reduce ruido.", "startMs": 10000, "endMs": 25000 },
+        { "text": "Explorer puede ser barato y read-only.", "startMs": 26000, "endMs": 43000 },
+        { "text": "QA y seguridad entran cuando el riesgo lo merece.", "startMs": 44000, "endMs": 63000 }
+      ]
+    },
+    {
+      "id": "finale",
+      "name": "Cierre",
+      "startMs": 65000,
+      "endMs": 90000,
+      "type": "finale",
+      "content": {
+        "title": "Roles minimos",
+        "summary": [
+          { "number": "Explorer", "label": "Leer", "body": "Mapea repo y blast radius." },
+          { "number": "QA", "label": "Probar", "body": "Busca gaps y regresiones." },
+          { "number": "Security", "label": "Proteger", "body": "Audita permisos y secretos." }
+        ],
+        "cta": "Ejercicio: cl-o03-subagent-explorer."
+      },
+      "subtitles": [{ "text": "El equipo no necesita mas caos. Necesita roles claros.", "startMs": 66000, "endMs": 89000 }]
+    }
+  ]
+}
+

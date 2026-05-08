@@ -1,0 +1,21 @@
+{
+  "vendor": "copilot",
+  "exerciseId": "cp-m06-prompt-files",
+  "title": "Prompt files reutilizables",
+  "surface": ".github/prompts",
+  "recommendedModel": "Modelo incluido o Agent segun prompt",
+  "permissionMode": "read-only -> workspace-write",
+  "estimatedCost": "Medio: depende del modo y herramientas",
+  "intentionalErrors": [
+    "briefing demasiado amplio",
+    "falta de evidencia",
+    "coste sin registrar"
+  ],
+  "expectedArtifacts": [
+    "prompt",
+    "resultado",
+    "evidencia",
+    "coste",
+    "decision"
+  ]
+}

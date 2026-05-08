@@ -1,0 +1,64 @@
+{
+  "id": "cl-advanced-02-plugin-action",
+  "title": "Claude Advanced 02 - Plugin and Actions",
+  "description": "Plugins y GitHub Actions para distribuir practicas de equipo.",
+  "template": "technical",
+  "durationPreset": 5,
+  "durationMs": 90000,
+  "voice": "es-ES-AlvaroNeural",
+  "author": "AI Practice Hub",
+  "createdAt": "2026-05-07T00:00:00.000Z",
+  "chapters": [
+    { "id": "start", "label": "Plugin", "startMs": 0 },
+    { "id": "concept", "label": "Distribucion", "startMs": 9000 },
+    { "id": "close", "label": "CI", "startMs": 65000 }
+  ],
+  "scenes": [
+    {
+      "id": "title",
+      "name": "Apertura",
+      "startMs": 0,
+      "endMs": 9000,
+      "type": "title",
+      "content": { "title": "Plugins + Actions", "subtitle": "De buenas practicas sueltas a plataforma de equipo.", "tag": "Claude Advanced" },
+      "subtitles": [{ "text": "El salto enterprise es distribuir capacidades, no enviar un markdown por correo.", "startMs": 1000, "endMs": 8200 }]
+    },
+    {
+      "id": "concept",
+      "name": "Distribucion",
+      "startMs": 9000,
+      "endMs": 65000,
+      "type": "concept",
+      "content": {
+        "tag": "Pack reutilizable",
+        "title": "Un plugin empaqueta criterio",
+        "body": "Un plugin puede agrupar skills, subagentes, hooks y configuracion. Una GitHub Action puede invocar Claude en PRs con permisos minimos y una rubrica clara.\n\nLa pregunta no es si Claude puede comentar una PR. La pregunta es quien lo permite, con que coste, bajo que trigger y quien revisa el resultado.",
+        "highlight": "Automatizar sin governance solo mueve el problema a CI.",
+        "points": ["Manifest versionado", "Skills y agents empaquetados", "Hooks de seguridad", "PR trigger con permisos minimos"]
+      },
+      "subtitles": [
+        { "text": "Plugin es distribucion.", "startMs": 10000, "endMs": 22000 },
+        { "text": "Action es ejecucion repetible.", "startMs": 23000, "endMs": 41000 },
+        { "text": "Governance decide cuando se activa y quien responde.", "startMs": 42000, "endMs": 63000 }
+      ]
+    },
+    {
+      "id": "finale",
+      "name": "Cierre",
+      "startMs": 65000,
+      "endMs": 90000,
+      "type": "finale",
+      "content": {
+        "title": "Checklist automation",
+        "summary": [
+          { "number": "Pack", "label": "Plugin", "body": "Skills, agents y hooks." },
+          { "number": "Run", "label": "Action", "body": "Trigger y permisos minimos." },
+          { "number": "Own", "label": "Governance", "body": "Coste, owner y aprobacion." }
+        ],
+        "cta": "Ejercicio: cl-a03-plugin-team-review."
+      },
+      "subtitles": [{ "text": "La potencia real aparece cuando el criterio se puede instalar.", "startMs": 66000, "endMs": 89000 }]
+    }
+  ]
+}
+

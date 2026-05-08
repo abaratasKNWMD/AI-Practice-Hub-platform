@@ -1,0 +1,75 @@
+{
+  "id": "cp-medium-02-prompt-files",
+  "title": "Copilot Medium 02 - Prompt Files",
+  "description": "Prompt files para workflows repetibles: tests, review, refactor y PR.",
+  "template": "technical",
+  "durationPreset": 5,
+  "durationMs": 90000,
+  "voice": "es-ES-AlvaroNeural",
+  "author": "AI Practice Hub",
+  "createdAt": "2026-05-07T00:00:00.000Z",
+  "chapters": [
+    { "id": "start", "label": "Prompts", "startMs": 0 },
+    { "id": "code", "label": "Prompt file", "startMs": 9000 },
+    { "id": "close", "label": "Workflow", "startMs": 65000 }
+  ],
+  "scenes": [
+    {
+      "id": "title",
+      "name": "Apertura",
+      "startMs": 0,
+      "endMs": 9000,
+      "type": "title",
+      "content": {
+        "title": "Prompt files",
+        "subtitle": "No repitas el mismo ritual de tests, review y PR cada dia.",
+        "tag": "Copilot Medium"
+      },
+      "subtitles": [
+        { "text": "Un prompt file es una herramienta invocable, no una instruccion global.", "startMs": 1000, "endMs": 8200 }
+      ]
+    },
+    {
+      "id": "coding",
+      "name": "Prompt",
+      "startMs": 9000,
+      "endMs": 65000,
+      "type": "coding",
+      "content": {
+        "tag": ".github/prompts",
+        "filename": "generate-tests.prompt.md",
+        "code": "---\ndescription: \"Generate focused tests\"\nmode: \"agent\"\ntools: [\"read\", \"search\", \"edit\", \"execute\"]\n---\n\nFind the smallest behavior that needs test coverage.\n\nBefore editing:\n- Identify existing test conventions.\n- Name the file where tests should live.\n- State the missing behavior.\n\nThen add focused tests and run the relevant test command.",
+        "commentary": [
+          { "atLine": 2, "text": "Descripcion invocable" },
+          { "atLine": 3, "text": "Modo" },
+          { "atLine": 4, "text": "Tools" },
+          { "atLine": 9, "text": "Proceso" }
+        ]
+      },
+      "subtitles": [
+        { "text": "El frontmatter define descripcion, modo y herramientas.", "startMs": 10000, "endMs": 27000 },
+        { "text": "El cuerpo define el workflow.", "startMs": 28000, "endMs": 42000 },
+        { "text": "Esto convierte buenas practicas en atajos de equipo.", "startMs": 43000, "endMs": 62000 }
+      ]
+    },
+    {
+      "id": "finale",
+      "name": "Cierre",
+      "startMs": 65000,
+      "endMs": 90000,
+      "type": "finale",
+      "content": {
+        "title": "Prompt file bueno",
+        "summary": [
+          { "number": "01", "label": "Invocable", "body": "Se usa cuando toca." },
+          { "number": "02", "label": "Acotado", "body": "Tools y modo claros." },
+          { "number": "03", "label": "Verificable", "body": "Cierra con evidencia." }
+        ],
+        "cta": "Ejercicio: cp-m06-prompt-files."
+      },
+      "subtitles": [
+        { "text": "Invocable, acotado y verificable. Asi se disena un prompt file.", "startMs": 66000, "endMs": 89000 }
+      ]
+    }
+  ]
+}

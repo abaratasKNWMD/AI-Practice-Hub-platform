@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="620" viewBox="0 0 1100 620" role="img" aria-labelledby="title desc">
+  <title id="title">MCP risk inventory</title>
+  <desc id="desc">Risk inventory table for MCP servers.</desc>
+  <rect width="1100" height="620" rx="34" fill="#0b0a09"/>
+  <text x="95" y="110" font-family="Inter, Arial, sans-serif" font-size="34" font-weight="900" fill="#fff7f0">Inventario MCP</text>
+  <g transform="translate(110 180)" font-family="Inter, Arial, sans-serif">
+    <rect width="880" height="340" rx="24" fill="#15110f" stroke="#fff" stroke-opacity="0.12"/>
+    <rect width="880" height="58" rx="24" fill="#211713"/>
+    <text x="28" y="37" font-size="15" font-weight="900" fill="#ffdfe5">server</text>
+    <text x="210" y="37" font-size="15" font-weight="900" fill="#ffdfe5">datos</text>
+    <text x="390" y="37" font-size="15" font-weight="900" fill="#ffdfe5">permisos</text>
+    <text x="570" y="37" font-size="15" font-weight="900" fill="#ffdfe5">owner</text>
+    <text x="730" y="37" font-size="15" font-weight="900" fill="#ffdfe5">activar si</text>
+    <text x="28" y="108" font-size="15" fill="#b9aea3">docs</text>
+    <text x="210" y="108" font-size="15" fill="#b9aea3">manuales</text>
+    <text x="390" y="108" font-size="15" fill="#75e6c0">read</text>
+    <text x="570" y="108" font-size="15" fill="#b9aea3">platform</text>
+    <text x="730" y="108" font-size="15" fill="#b9aea3">falta contexto</text>
+    <path d="M0 142H880M0 226H880" stroke="#fff" stroke-opacity="0.08"/>
+    <text x="28" y="192" font-size="15" fill="#b9aea3">github</text>
+    <text x="210" y="192" font-size="15" fill="#b9aea3">issues / PR</text>
+    <text x="390" y="192" font-size="15" fill="#ffd27a">read / comment</text>
+    <text x="570" y="192" font-size="15" fill="#b9aea3">devex</text>
+    <text x="730" y="192" font-size="15" fill="#b9aea3">review PR</text>
+    <text x="28" y="276" font-size="15" fill="#b9aea3">db</text>
+    <text x="210" y="276" font-size="15" fill="#b9aea3">datos prod?</text>
+    <text x="390" y="276" font-size="15" fill="#ff9aad">bloqueado</text>
+    <text x="570" y="276" font-size="15" fill="#b9aea3">data</text>
+    <text x="730" y="276" font-size="15" fill="#b9aea3">sandbox</text>
+  </g>
+</svg>

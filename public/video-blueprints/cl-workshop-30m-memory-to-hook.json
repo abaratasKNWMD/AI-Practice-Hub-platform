@@ -1,0 +1,376 @@
+{
+  "id": "cl-workshop-30m-memory-to-hook",
+  "title": "Claude Workshop 30m - Memory to Hook",
+  "description": "Workshop simulado de 30 minutos para pasar de CLAUDE.md y contexto a skill, subagent, MCP readonly y hook anti secretos.",
+  "vendor": "claude",
+  "template": "technical",
+  "durationMin": 30,
+  "voice": "es-ES-AlvaroNeural",
+  "author": "AI Practice Hub",
+  "createdAt": "2026-05-08T00:00:00.000Z",
+  "chapters": [
+    { "id": "briefing", "label": "Briefing", "sceneId": "title" },
+    { "id": "memory", "label": "Memoria", "sceneId": "claude-md" },
+    { "id": "operator", "label": "Skills y subagentes", "sceneId": "skill" },
+    { "id": "guardrails", "label": "Hooks", "sceneId": "hook" },
+    { "id": "close", "label": "Cierre", "sceneId": "handoff" }
+  ],
+  "scenes": [
+    {
+      "id": "title",
+      "name": "Apertura",
+      "chapterId": "briefing",
+      "kind": "title",
+      "durationSec": 150,
+      "screen": {
+        "visual": "Claude console hero",
+        "content": {
+          "title": "Claude: de memoria a hook",
+          "subtitle": "30 minutos para convertir criterio en contexto, skill, subagente y control deterministicos.",
+          "tag": "Workshop / Claude Code"
+        }
+      },
+      "voiceover": [
+        "Claude se opera por capas.",
+        "Primero memoria, despues contexto, luego skills y subagentes.",
+        "El cierre avanzado es un hook que protege al equipo."
+      ],
+      "action": {
+        "type": "narrate",
+        "label": "Aterrizaje",
+        "detail": "Explicar por que no empezamos por hooks sino por memoria."
+      }
+    },
+    {
+      "id": "claude-md",
+      "name": "CLAUDE.md minimo",
+      "chapterId": "memory",
+      "kind": "coding",
+      "durationSec": 150,
+      "screen": {
+        "visual": "CLAUDE.md editor",
+        "content": {
+          "filename": "CLAUDE.md",
+          "language": "markdown",
+          "code": "# CLAUDE.md\n\n## Objetivo\nAyudar en cambios pequenos y verificables.\n\n## Reglas\n- Lee contexto antes de editar.\n- No leas ni escribas .env*.\n- Usa /context y /usage en sesiones largas.\n- Cierra con diff, checks y handoff.\n\n## Comandos\n- pnpm lint\n- pnpm test"
+        }
+      },
+      "voiceover": [
+        "El archivo es corto a proposito.",
+        "No es una novela de arquitectura.",
+        "Es una lista de decisiones repetidas que queremos estabilizar."
+      ],
+      "action": {
+        "type": "tool-run",
+        "label": "Crear memoria",
+        "detail": "Guardar CLAUDE.md en starter repo."
+      }
+    },
+    {
+      "id": "context-audit",
+      "name": "Auditoria de contexto",
+      "chapterId": "memory",
+      "kind": "concept",
+      "durationSec": 150,
+      "screen": {
+        "visual": "context gauge",
+        "content": {
+          "tag": "Context diet",
+          "title": "Antes de seguir, miramos contexto",
+          "body": "El alumno ejecuta /context y /usage para ver si la sesion esta limpia. Si el contexto esta lleno de logs o exploraciones antiguas, se pide handoff y /clear o /compact.",
+          "highlight": "Contexto maximo no es contexto perfecto.",
+          "points": [
+            "Que ocupa memoria permanente.",
+            "Que viene del prompt actual.",
+            "Que herramientas o MCPs añaden ruido.",
+            "Cuando compactar antes de seguir."
+          ]
+        }
+      },
+      "voiceover": [
+        "Claude puede manejar mucho contexto.",
+        "Pero un equipo maduro no abusa de eso.",
+        "Medir contexto se convierte en habito de coste."
+      ],
+      "action": {
+        "type": "tool-run",
+        "label": "Ejecutar higiene",
+        "detail": "/context, /usage y decision de compactar o seguir."
+      }
+    },
+    {
+      "id": "memory-routing",
+      "name": "Donde vive cada regla",
+      "chapterId": "memory",
+      "kind": "compare",
+      "durationSec": 150,
+      "screen": {
+        "visual": "memory routing board",
+        "content": {
+          "tag": "Routing",
+          "left": {
+            "label": "Mal routing",
+            "color": "destructive",
+            "steps": [
+              { "icon": "FileText", "text": "Todo a CLAUDE.md" },
+              { "icon": "AlertTriangle", "text": "Archivo largo y caro" },
+              { "icon": "MessageSquare", "text": "Claude ignora matices" }
+            ],
+            "total": "Memoria pesada"
+          },
+          "right": {
+            "label": "Buen routing",
+            "color": "accent",
+            "steps": [
+              { "icon": "FileText", "text": "CLAUDE.md para reglas globales" },
+              { "icon": "Code", "text": "Rules por carpeta" },
+              { "icon": "Workflow", "text": "Skills para procedimientos" }
+            ],
+            "total": "Memoria gobernada"
+          }
+        }
+      },
+      "voiceover": [
+        "El punto no es recordar todo.",
+        "El punto es recordar en la capa correcta.",
+        "Esto prepara el salto a skills."
+      ],
+      "action": {
+        "type": "human-decision",
+        "label": "Clasificar reglas",
+        "detail": "El alumno decide que va a CLAUDE.md, rule, skill o prompt puntual."
+      }
+    },
+    {
+      "id": "skill",
+      "name": "Primera skill",
+      "chapterId": "operator",
+      "kind": "coding",
+      "durationSec": 150,
+      "screen": {
+        "visual": "skill file tree",
+        "content": {
+          "filename": ".claude/skills/fix-tests/SKILL.md",
+          "language": "markdown",
+          "code": "---\nname: fix-tests\ndescription: Reparar tests pequenos con diagnostico, patch minimo y evidencia.\n---\n\n1. Lee el fallo y el test cercano.\n2. No cambies codigo productivo hasta explicar hipotesis.\n3. Aplica el cambio minimo.\n4. Ejecuta el test cercano.\n5. Cierra con diff, comando y riesgo."
+        }
+      },
+      "voiceover": [
+        "Una skill captura un procedimiento que se repite.",
+        "No se carga siempre como memoria.",
+        "Se invoca cuando la tarea lo necesita."
+      ],
+      "action": {
+        "type": "tool-run",
+        "label": "Crear skill",
+        "detail": "Guardar skill fix-tests en el repo de practica."
+      }
+    },
+    {
+      "id": "subagent",
+      "name": "Subagente explorer",
+      "chapterId": "operator",
+      "kind": "coding",
+      "durationSec": 150,
+      "screen": {
+        "visual": "subagent config",
+        "content": {
+          "filename": ".claude/agents/explorer.md",
+          "language": "markdown",
+          "code": "---\nname: explorer\ndescription: Explora codigo en read-only y devuelve mapa, riesgos y preguntas.\ntools: Read, Grep, Glob\n---\n\nNo edites archivos.\nDevuelve rutas relevantes, comandos de validacion y dudas bloqueantes.\nSi necesitas escribir o ejecutar comandos, pide permiso."
+        }
+      },
+      "voiceover": [
+        "El subagente explorer reduce riesgo.",
+        "Tiene herramientas acotadas.",
+        "Sirve para separar investigacion de implementacion."
+      ],
+      "action": {
+        "type": "tool-run",
+        "label": "Crear subagente",
+        "detail": "Añadir explorer read-only."
+      }
+    },
+    {
+      "id": "mcp-readonly",
+      "name": "MCP readonly",
+      "chapterId": "operator",
+      "kind": "concept",
+      "durationSec": 150,
+      "screen": {
+        "visual": "MCP inventory",
+        "content": {
+          "tag": "MCP",
+          "title": "Conectar solo lo que desbloquea decision",
+          "body": "El workshop simula un MCP de issues en modo readonly. Antes de activarlo se documenta owner, datos expuestos, permisos, coste de contexto y motivo.",
+          "highlight": "MCP sin inventario es deuda operativa.",
+          "points": [
+            "Owner: plataforma.",
+            "Permiso: readonly.",
+            "Datos: issues y labels, no secretos.",
+            "Uso: enriquecer diagnostico antes de patch."
+          ]
+        }
+      },
+      "voiceover": [
+        "MCP no es barra libre.",
+        "Es una integracion que debe tener owner.",
+        "En curso uno lo pensamos; aqui lo documentamos."
+      ],
+      "action": {
+        "type": "human-decision",
+        "label": "Aprobar MCP",
+        "detail": "El alumno decide si el MCP aporta valor suficiente."
+      }
+    },
+    {
+      "id": "hook",
+      "name": "Hook anti secretos",
+      "chapterId": "guardrails",
+      "kind": "coding",
+      "durationSec": 150,
+      "screen": {
+        "visual": "hook script",
+        "content": {
+          "filename": ".claude/hooks/pretooluse-block-secrets.js",
+          "language": "javascript",
+          "code": "const input = JSON.parse(process.argv[2] ?? '{}')\nconst target = `${input.tool ?? ''} ${JSON.stringify(input.args ?? {})}`\n\nif (/\\.env|secret|token|credential/i.test(target)) {\n  console.error('Blocked: secret-like path or argument')\n  process.exit(2)\n}\n\nprocess.exit(0)"
+        }
+      },
+      "voiceover": [
+        "Ahora convertimos una regla en control.",
+        "El hook bloquea rutas o argumentos sensibles.",
+        "Esto ya no depende de recordar una instruccion."
+      ],
+      "action": {
+        "type": "tool-run",
+        "label": "Instalar hook",
+        "detail": "Añadir hook PreToolUse al starter repo."
+      }
+    },
+    {
+      "id": "hook-test",
+      "name": "Probar hook",
+      "chapterId": "guardrails",
+      "kind": "error",
+      "durationSec": 150,
+      "screen": {
+        "visual": "blocked terminal",
+        "content": {
+          "tag": "Control deterministico",
+          "sentry": {
+            "id": "CL-W01",
+            "title": "Read(.env) bloqueado",
+            "file": ".claude/hooks/pretooluse-block-secrets.js",
+            "line": 5,
+            "occurrences": 1,
+            "users": 1,
+            "first": "en workshop",
+            "trace": ["Tool request: Read .env", "PreToolUse hook", "Blocked: secret-like path"],
+            "context": "El hook evita que una decision de seguridad dependa solo de memoria textual."
+          },
+          "linearFix": {
+            "ticketId": "CL-W01",
+            "title": "Validar hook anti secretos",
+            "description": "Probar que bloquea .env y permite Read(src/**)."
+          },
+          "fix": "Caso bloqueado: Read(.env)\nCaso permitido: Read(src/auth/login.ts)\nResultado: control operativo OK"
+        }
+      },
+      "voiceover": [
+        "Un hook que no se prueba es solo una intencion.",
+        "Probamos bloqueo y caso permitido.",
+        "Asi evitamos guardrails que molestan sin proteger."
+      ],
+      "action": {
+        "type": "tool-run",
+        "label": "Probar guardrail",
+        "detail": "Ejecutar caso bloqueado y caso permitido."
+      }
+    },
+    {
+      "id": "handoff",
+      "name": "Handoff",
+      "chapterId": "close",
+      "kind": "coding",
+      "durationSec": 150,
+      "screen": {
+        "visual": "handoff markdown",
+        "content": {
+          "filename": "handoff.md",
+          "language": "markdown",
+          "code": "## Handoff CL-W01\n\nMemoria: CLAUDE.md minimo creado.\nContexto: /context revisado; sin compact necesario.\nSkill: fix-tests creada.\nSubagente: explorer read-only creado.\nMCP: issues readonly aprobado con owner plataforma.\nHook: anti secretos instalado y probado.\nCoste: bajo/medio; tareas read-only separadas de implementacion.\nRiesgo: revisar falsos positivos del hook antes de rollout."
+        }
+      },
+      "voiceover": [
+        "El handoff conecta todas las capas.",
+        "No es un resumen bonito.",
+        "Es una checklist de adopcion real."
+      ],
+      "action": {
+        "type": "handoff",
+        "label": "Entregar handoff",
+        "detail": "Guardar salida final para tutoria."
+      }
+    },
+    {
+      "id": "rubric",
+      "name": "Rubrica",
+      "chapterId": "close",
+      "kind": "preview",
+      "durationSec": 150,
+      "screen": {
+        "visual": "rubric board",
+        "content": {
+          "title": "Rubrica Claude",
+          "description": "El workshop se aprueba si cada capa tiene una decision clara.",
+          "items": [
+            { "label": "Memoria corta", "value": "OK" },
+            { "label": "Skill util", "value": "OK" },
+            { "label": "Subagente acotado", "value": "OK" },
+            { "label": "Hook probado", "value": "OK" }
+          ]
+        }
+      },
+      "voiceover": [
+        "La rubrica evita confundir sofisticacion con calidad.",
+        "Queremos pocas piezas bien gobernadas.",
+        "Luego se escala a plugins y SDK."
+      ],
+      "action": {
+        "type": "human-decision",
+        "label": "Evaluar",
+        "detail": "El facilitador valida cada capa y sus evidencias."
+      }
+    },
+    {
+      "id": "finale",
+      "name": "Cierre",
+      "chapterId": "close",
+      "kind": "finale",
+      "durationSec": 150,
+      "screen": {
+        "visual": "summary cards",
+        "content": {
+          "title": "De memoria a control",
+          "summary": [
+            { "number": "01", "label": "Memoria", "body": "CLAUDE.md y contexto limpios." },
+            { "number": "02", "label": "Operacion", "body": "Skill, subagente y MCP con owner." },
+            { "number": "03", "label": "Guardrail", "body": "Hook probado para secretos." }
+          ],
+          "cta": "Siguiente: Claude Advanced Automation y plugins internos."
+        }
+      },
+      "voiceover": [
+        "Ahora Claude ya no depende solo de prompts.",
+        "Tenemos memoria, capacidades y controles.",
+        "Ese es el salto de curso a plataforma."
+      ],
+      "action": {
+        "type": "handoff",
+        "label": "Cerrar workshop",
+        "detail": "Guardar evidencia para siguiente sprint."
+      }
+    }
+  ]
+}

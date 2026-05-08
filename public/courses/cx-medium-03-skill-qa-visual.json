@@ -1,0 +1,98 @@
+{
+  "id": "cx-medium-03-skill-qa-visual",
+  "title": "Codex Medium 03 - Skill QA Visual",
+  "description": "Una skill reusable para verificar UI con Codex antes de cerrar un cambio.",
+  "template": "technical",
+  "durationPreset": 5,
+  "durationMs": 90000,
+  "voice": "es-ES-AlvaroNeural",
+  "author": "AI Practice Hub",
+  "createdAt": "2026-05-07T00:00:00.000Z",
+  "chapters": [
+    { "id": "start", "label": "Skill", "startMs": 0 },
+    { "id": "file", "label": "SKILL.md", "startMs": 8000 },
+    { "id": "qa", "label": "QA", "startMs": 42000 },
+    { "id": "close", "label": "Cierre", "startMs": 70000 }
+  ],
+  "scenes": [
+    {
+      "id": "title",
+      "name": "Apertura",
+      "startMs": 0,
+      "endMs": 8000,
+      "type": "title",
+      "content": {
+        "title": "Skill QA Visual",
+        "subtitle": "Convertir criterio repetible en una herramienta de Codex.",
+        "tag": "Codex / Skills"
+      },
+      "subtitles": [
+        { "text": "Una skill empaqueta una forma buena de trabajar.", "startMs": 1000, "endMs": 6500 }
+      ]
+    },
+    {
+      "id": "coding",
+      "name": "Skill",
+      "startMs": 8000,
+      "endMs": 42000,
+      "type": "coding",
+      "content": {
+        "tag": "SKILL.md",
+        "filename": "skills/qa-visual-codex/SKILL.md",
+        "code": "# QA visual Codex\\n\\nUsa esta skill despues de cambios frontend.\\n\\n## Workflow\\n1. Arranca la app si hace falta.\\n2. Abre la pantalla principal.\\n3. Revisa consola.\\n4. Comprueba desktop y mobile.\\n5. Busca textos cortados, overlap, scroll roto y CTAs invisibles.\\n6. Reporta evidencias y riesgo residual.\\n\\n## Cierre\\n- Captura o descripcion visual.\\n- Errores de consola.\\n- Cambios recomendados.",
+        "commentary": [
+          { "atLine": 3, "text": "Cuándo usarla" },
+          { "atLine": 6, "text": "Workflow concreto" },
+          { "atLine": 13, "text": "Cierre con evidencias" }
+        ]
+      },
+      "subtitles": [
+        { "text": "La skill dice cuando se activa.", "startMs": 9000, "endMs": 15000 },
+        { "text": "Y obliga a mirar consola, desktop y mobile.", "startMs": 15500, "endMs": 28500 },
+        { "text": "Esto reduce bugs visuales antes de la review humana.", "startMs": 29000, "endMs": 40500 }
+      ]
+    },
+    {
+      "id": "thinking",
+      "name": "Verificacion",
+      "startMs": 42000,
+      "endMs": 70000,
+      "type": "thinking",
+      "content": {
+        "tag": "QA loop",
+        "title": "Codex verificando pantalla...",
+        "thoughts": [
+          { "ms": 0, "text": "Pagina carga sin error 500", "done": false },
+          { "ms": 5000, "text": "Consola limpia", "done": false },
+          { "ms": 10000, "text": "Desktop sin overlap", "done": false },
+          { "ms": 16000, "text": "Mobile mantiene jerarquia y controles", "done": false },
+          { "ms": 23000, "text": "Findings listos con severidad", "done": true }
+        ]
+      },
+      "subtitles": [
+        { "text": "La verificacion no es mirar por encima.", "startMs": 43000, "endMs": 51000 },
+        { "text": "Es un loop reproducible.", "startMs": 51500, "endMs": 61000 },
+        { "text": "Y por eso merece ser skill.", "startMs": 61500, "endMs": 69000 }
+      ]
+    },
+    {
+      "id": "finale",
+      "name": "Cierre",
+      "startMs": 70000,
+      "endMs": 90000,
+      "type": "finale",
+      "content": {
+        "title": "Skills = operaciones reutilizables",
+        "summary": [
+          { "number": "01", "label": "Trigger", "body": "Cuando debe usarse." },
+          { "number": "02", "label": "Workflow", "body": "Pasos claros y verificables." },
+          { "number": "03", "label": "Cierre", "body": "Evidencia, findings y riesgo residual." }
+        ],
+        "cta": "Ejercicio asociado: cx-m04-skill-qa."
+      },
+      "subtitles": [
+        { "text": "Una skill convierte una buena costumbre en sistema.", "startMs": 70500, "endMs": 89500 }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,322 @@
+{
+  "id": "hub-workshop-60m-vendor-selection",
+  "title": "Workshop 1h Transversal - Elegir Codex, Copilot o Claude por caso",
+  "description": "Sesion transversal de 60 minutos para decidir que plataforma usar segun superficie, riesgo, permisos, coste, contexto, automatizacion y madurez del equipo.",
+  "vendor": "platform",
+  "template": "executive",
+  "durationMin": 60,
+  "voice": "es-ES-AlvaroNeural",
+  "author": "AI Practice Hub",
+  "createdAt": "2026-05-08",
+  "chapters": [
+    { "id": "decision", "label": "Decision tree", "sceneId": "opening-decision" },
+    { "id": "vendors", "label": "Fortalezas por vendor", "sceneId": "vendor-map" },
+    { "id": "cases", "label": "Casos practicos", "sceneId": "case-small-bug" },
+    { "id": "governance", "label": "Coste y gobierno", "sceneId": "risk-permission" },
+    { "id": "release", "label": "Salida de plataforma", "sceneId": "release-handoff" }
+  ],
+  "scenes": [
+    {
+      "id": "opening-decision",
+      "name": "Apertura transversal",
+      "kind": "title",
+      "durationSec": 300,
+      "screen": {
+        "title": "No hay vendor universal",
+        "content": {
+          "headline": "Elegir herramienta por caso, no por moda",
+          "axes": ["superficie", "contexto", "autonomia", "coste", "riesgo", "equipo"]
+        },
+        "presenterCue": "El objetivo es criterio de seleccion, no comparativa comercial."
+      },
+      "voiceover": [
+        "Este workshop existe para evitar una trampa clasica: discutir que herramienta es mejor en abstracto.",
+        "Codex, Copilot y Claude tienen fortalezas distintas.",
+        "La pregunta madura es que plataforma encaja con este caso, este equipo y este riesgo."
+      ],
+      "action": {
+        "type": "narrate",
+        "label": "Abrir decision tree",
+        "detail": "Presentar ejes de decision y outputs."
+      }
+    },
+    {
+      "id": "vendor-map",
+      "name": "Mapa de fortalezas",
+      "kind": "compare",
+      "durationSec": 300,
+      "screen": {
+        "title": "Fortaleza principal",
+        "content": {
+          "vendors": [
+            ["Codex", "agente de codigo con plan, patch y verificacion"],
+            ["Copilot", "flujo dentro de VS Code y GitHub"],
+            ["Claude", "memoria, skills, subagentes y automatizacion controlada"]
+          ],
+          "warning": "La fortaleza no elimina gobierno."
+        },
+        "presenterCue": "Evitar frases absolutas: todo depende del caso."
+      },
+      "voiceover": [
+        "Codex encaja muy bien cuando queremos convertir tareas de codigo en patches verificables.",
+        "Copilot encaja cuando el equipo ya vive en VS Code y GitHub y necesita activar uso masivo.",
+        "Claude encaja cuando repetimos contexto, roles y procedimientos y queremos empaquetarlos."
+      ],
+      "action": {
+        "type": "narrate",
+        "label": "Comparar vendors",
+        "detail": "Mostrar fortalezas y limites."
+      }
+    },
+    {
+      "id": "case-small-bug",
+      "name": "Caso 1: bug pequeno",
+      "kind": "concept",
+      "durationSec": 300,
+      "screen": {
+        "title": "Bug pequeno con test",
+        "content": {
+          "case": "validacion de login o calculo de total",
+          "bestFit": ["Codex si queremos plan-patch-test", "Copilot si el alumno esta en VS Code"],
+          "notFit": "Claude enterprise pack seria demasiado para empezar."
+        },
+        "presenterCue": "Hablar de coste de coordinacion."
+      },
+      "voiceover": [
+        "Para un bug pequeno, la herramienta mas sofisticada no siempre gana.",
+        "Si el objetivo es practicar flujo de codigo con evidencia, Codex o Copilot son naturales.",
+        "Claude puede hacerlo, pero tal vez no es el mejor uso de su capa de memoria y automatizacion."
+      ],
+      "action": {
+        "type": "human-decision",
+        "label": "Elegir vendor",
+        "detail": "El grupo decide Codex o Copilot y explica tradeoff."
+      }
+    },
+    {
+      "id": "case-team-activation",
+      "name": "Caso 2: activacion masiva",
+      "kind": "linear",
+      "durationSec": 300,
+      "screen": {
+        "title": "Equipo sin habito IA",
+        "content": {
+          "case": "50 desarrolladores con Copilot licenciado y uso irregular",
+          "bestFit": "Copilot por adopcion natural en VS Code/GitHub",
+          "support": "Codex/Claude como rutas avanzadas posteriores"
+        },
+        "presenterCue": "La mejor herramienta tambien depende de friccion de adopcion."
+      },
+      "voiceover": [
+        "Si el reto es activar a mucha gente que ya tiene Copilot, empezar fuera de su flujo puede crear friccion.",
+        "Copilot permite workshops muy practicos dentro de VS Code.",
+        "Luego se abre la puerta a Codex y Claude para escenarios mas avanzados."
+      ],
+      "action": {
+        "type": "handoff",
+        "label": "Seleccionar ruta",
+        "detail": "Mapear basic, medium y advanced segun madurez."
+      }
+    },
+    {
+      "id": "case-platform-automation",
+      "name": "Caso 3: automatizacion interna",
+      "kind": "thinking",
+      "durationSec": 300,
+      "screen": {
+        "title": "Automatizacion con memoria y guardrails",
+        "content": {
+          "case": "revisiones repetitivas, reglas internas, hooks y evaluaciones",
+          "bestFit": "Claude para skills/subagentes/hooks o Codex para PR swarms",
+          "question": "Necesitamos conversacion, patch o plataforma?"
+        },
+        "presenterCue": "Distinguir producto interno de demo."
+      },
+      "voiceover": [
+        "Cuando hablamos de automatizacion interna, ya no basta con un chat que responde bien.",
+        "Necesitamos artefactos: skills, hooks, schemas, evals y permisos.",
+        "Claude y Codex brillan aqui, cada uno con una forma distinta de operar."
+      ],
+      "action": {
+        "type": "human-decision",
+        "label": "Elegir arquitectura",
+        "detail": "Decidir entre skill/hook, PR swarm o flujo mixto."
+      }
+    },
+    {
+      "id": "risk-permission",
+      "name": "Permisos y riesgo",
+      "kind": "compare",
+      "durationSec": 300,
+      "screen": {
+        "title": "Permiso por superficie",
+        "content": {
+          "matrix": [
+            ["leer docs", "readonly", "bajo"],
+            ["editar repo", "workspace", "medio"],
+            ["crear PR", "write + review", "alto"],
+            ["conectar sistemas", "MCP/API", "alto"]
+          ],
+          "rule": "El permiso sigue al caso, no al entusiasmo."
+        },
+        "presenterCue": "Usar ejemplos concretos de cada vendor."
+      },
+      "voiceover": [
+        "La seleccion de vendor cambia tambien el mapa de permisos.",
+        "Leer documentacion, editar codigo, abrir PR o conectar sistemas no tienen el mismo riesgo.",
+        "Un buen workshop ensena a pedir el permiso minimo que produce evidencia."
+      ],
+      "action": {
+        "type": "human-decision",
+        "label": "Clasificar permiso",
+        "detail": "Completar matriz de riesgo por caso."
+      }
+    },
+    {
+      "id": "cost-model",
+      "name": "Coste por outcome",
+      "kind": "linear",
+      "durationSec": 300,
+      "screen": {
+        "title": "Cost ledger transversal",
+        "content": {
+          "columns": ["caso", "vendor", "modelo", "tiempo ahorrado", "riesgo", "evidencia"],
+          "rule": "No medir tokens aislados; medir coste por resultado fiable."
+        },
+        "presenterCue": "Aterrizar coste sin convertirlo en miedo."
+      },
+      "voiceover": [
+        "El coste se entiende mejor por outcome que por token suelto.",
+        "Un modelo caro puede ser barato si evita una mala decision en un PR critico.",
+        "Un modelo barato puede salir caro si genera tres iteraciones sin criterio."
+      ],
+      "action": {
+        "type": "handoff",
+        "label": "Completar ledger",
+        "detail": "Registrar una fila por caso discutido."
+      }
+    },
+    {
+      "id": "training-route",
+      "name": "Ruta de formacion",
+      "kind": "preview",
+      "durationSec": 300,
+      "screen": {
+        "title": "Basic, Medium, Advanced",
+        "content": {
+          "basic": "activar uso y vocabulario",
+          "medium": "instrucciones, modelos, MCP readonly",
+          "advanced": "automatizacion, evals y gobierno",
+          "tutoring": "dudas reales, no preguntas de setup"
+        },
+        "presenterCue": "Conectar con flipping training."
+      },
+      "voiceover": [
+        "La plataforma debe reducir horas de explicacion repetida.",
+        "Basic activa, Medium estabiliza, Advanced convierte practica en sistema.",
+        "La tutoria queda para casos reales y decisiones serias."
+      ],
+      "action": {
+        "type": "narrate",
+        "label": "Mostrar ruta",
+        "detail": "Relacionar cursos, ejercicios, videos y workshops."
+      }
+    },
+    {
+      "id": "demo-routing",
+      "name": "Demo simulada de routing",
+      "kind": "coding",
+      "durationSec": 300,
+      "screen": {
+        "title": "Router de casos",
+        "content": {
+          "prompt": "Tengo una tarea: crear hook anti secretos, revisar PR y formar 20 devs. Recomienda vendor, curso, workshop y primer ejercicio.",
+          "response": "Claude para hook, Codex/Copilot para PR segun superficie, Copilot basic para activacion."
+        },
+        "presenterCue": "Mostrar que el hub tambien puede prescribir ruta."
+      },
+      "voiceover": [
+        "La demo transversal simula un router de adopcion.",
+        "No devuelve una unica herramienta, devuelve una secuencia de trabajo.",
+        "Eso permite mezclar vendors sin perder gobierno."
+      ],
+      "action": {
+        "type": "simulated-response",
+        "label": "Simular router",
+        "detail": "Mostrar recomendacion con razon, coste y riesgo."
+      }
+    },
+    {
+      "id": "feedback-loop",
+      "name": "Feedback loops",
+      "kind": "linear",
+      "durationSec": 300,
+      "screen": {
+        "title": "Medir adopcion",
+        "content": {
+          "signals": ["videos completados", "ejercicios cerrados", "dudas de tutoria", "coste por ejercicio", "PRs asistidos"],
+          "decision": "Si la duda se repite, se convierte en microvideo o ejercicio."
+        },
+        "presenterCue": "La plataforma aprende del soporte."
+      },
+      "voiceover": [
+        "La demanda no se gestiona solo con mas clases.",
+        "Cada duda repetida debe convertirse en material autoconsumible.",
+        "Ese es el bucle que libera horas del equipo formador."
+      ],
+      "action": {
+        "type": "handoff",
+        "label": "Crear loop",
+        "detail": "Definir como convertir feedback en backlog."
+      }
+    },
+    {
+      "id": "release-handoff",
+      "name": "Handoff de release",
+      "kind": "coding",
+      "durationSec": 300,
+      "screen": {
+        "title": "Release ops",
+        "content": {
+          "checklist": ["build", "smoke test", "QA visual", "version", "feedback", "metricas"],
+          "owner": "AI Practice Hub Ops"
+        },
+        "presenterCue": "Cerrar con decision de version y fecha piloto."
+      },
+      "voiceover": [
+        "Una plataforma de formacion tambien necesita release.",
+        "Antes de abrirla a alumnos comprobamos build, rutas, visual, feedback y versionado.",
+        "La calidad no se improvisa el dia de la clase."
+      ],
+      "action": {
+        "type": "tool-run",
+        "label": "Ejecutar release ops",
+        "detail": "Mostrar comandos de smoke test y QA visual."
+      }
+    },
+    {
+      "id": "close",
+      "name": "Cierre transversal",
+      "kind": "finale",
+      "durationSec": 300,
+      "screen": {
+        "title": "Decision final",
+        "content": {
+          "outputs": ["decision tree", "cost ledger", "ruta recomendada", "feedback loop", "release checklist"],
+          "next": "Elegir cohort piloto y ejecutar Sprint 06."
+        },
+        "presenterCue": "Pedir a cada grupo un caso real para enrutar."
+      },
+      "voiceover": [
+        "Cerramos con una idea practica: no necesitamos una herramienta favorita, necesitamos una decision defendible.",
+        "El hub existe para transformar demanda dispersa en rutas, ejercicios, videos y workshops.",
+        "A partir de aqui cada caso debe poder aterrizarse con vendor, coste, permiso y evidencia."
+      ],
+      "action": {
+        "type": "handoff",
+        "label": "Cierre",
+        "detail": "Recoger decisiones y dudas para backlog."
+      }
+    }
+  ]
+}

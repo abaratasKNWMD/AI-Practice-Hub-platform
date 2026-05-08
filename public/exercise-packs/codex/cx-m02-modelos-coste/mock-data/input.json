@@ -1,0 +1,21 @@
+{
+  "vendor": "codex",
+  "exerciseId": "cx-m02-modelos-coste",
+  "title": "Selector de modelo y coste",
+  "surface": "model picker + cost log",
+  "recommendedModel": "GPT-5.4 Mini, GPT-5.4, GPT-5.5",
+  "permissionMode": "read-only",
+  "estimatedCost": "Variable: se compara barato, medio y premium",
+  "intentionalErrors": [
+    "briefing demasiado amplio",
+    "falta de evidencia",
+    "coste sin registrar"
+  ],
+  "expectedArtifacts": [
+    "prompt",
+    "resultado",
+    "evidencia",
+    "coste",
+    "decision"
+  ]
+}

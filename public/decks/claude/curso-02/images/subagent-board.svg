@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="620" viewBox="0 0 1100 620" role="img" aria-labelledby="title desc">
+  <title id="title">Subagent board</title>
+  <desc id="desc">Claude subagent board with explorer, QA, security and architect.</desc>
+  <rect width="1100" height="620" rx="34" fill="#0d0b0a"/>
+  <text x="92" y="110" font-family="Inter, Arial, sans-serif" font-size="34" font-weight="900" fill="#fff7f0">Subagentes por responsabilidad</text>
+  <text x="92" y="146" font-family="Inter, Arial, sans-serif" font-size="18" fill="#b9aea3">No son personajes. Son contratos de trabajo.</text>
+  <g transform="translate(120 215)" font-family="Inter, Arial, sans-serif">
+    <rect width="200" height="250" rx="24" fill="#111817" stroke="#75e6c0" stroke-opacity="0.42"/>
+    <text x="100" y="62" text-anchor="middle" font-size="23" font-weight="900" fill="#c9fff0">Explorer</text>
+    <text x="100" y="110" text-anchor="middle" font-size="15" fill="#b9aea3">Read only</text>
+    <text x="100" y="142" text-anchor="middle" font-size="15" fill="#b9aea3">Grep, Glob</text>
+    <text x="100" y="174" text-anchor="middle" font-size="15" fill="#b9aea3">mapa y dudas</text>
+    <rect x="230" width="200" height="250" rx="24" fill="#171313" stroke="#ffd27a" stroke-opacity="0.42"/>
+    <text x="330" y="62" text-anchor="middle" font-size="23" font-weight="900" fill="#ffe6ad">QA</text>
+    <text x="330" y="110" text-anchor="middle" font-size="15" fill="#b9aea3">tests</text>
+    <text x="330" y="142" text-anchor="middle" font-size="15" fill="#b9aea3">regresion</text>
+    <text x="330" y="174" text-anchor="middle" font-size="15" fill="#b9aea3">checks</text>
+    <rect x="460" width="200" height="250" rx="24" fill="#211713" stroke="#ff9aad" stroke-opacity="0.42"/>
+    <text x="560" y="62" text-anchor="middle" font-size="23" font-weight="900" fill="#ffdfe5">Security</text>
+    <text x="560" y="110" text-anchor="middle" font-size="15" fill="#b9aea3">secrets</text>
+    <text x="560" y="142" text-anchor="middle" font-size="15" fill="#b9aea3">auth</text>
+    <text x="560" y="174" text-anchor="middle" font-size="15" fill="#b9aea3">MCP risk</text>
+    <rect x="690" width="200" height="250" rx="24" fill="#101418" stroke="#7bd7ff" stroke-opacity="0.42"/>
+    <text x="790" y="62" text-anchor="middle" font-size="23" font-weight="900" fill="#d8f4ff">Architect</text>
+    <text x="790" y="110" text-anchor="middle" font-size="15" fill="#b9aea3">plan</text>
+    <text x="790" y="142" text-anchor="middle" font-size="15" fill="#b9aea3">tradeoffs</text>
+    <text x="790" y="174" text-anchor="middle" font-size="15" fill="#b9aea3">migracion</text>
+  </g>
+</svg>

@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 760" role="img" aria-labelledby="title desc">
+  <title id="title">Setup bingo</title>
+  <desc id="desc">A setup bingo board for Copilot workshop readiness checks.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#111827"/>
+      <stop offset="1" stop-color="#071f1b"/>
+    </linearGradient>
+    <style>
+      .title{font:900 34px Inter,Segoe UI,sans-serif;fill:#f8fbff}
+      .label{font:850 19px Inter,Segoe UI,sans-serif;fill:#f8fbff}
+      .small{font:700 14px Inter,Segoe UI,sans-serif;fill:#aebbd0}
+      .card{fill:#ffffff;fill-opacity:.07;stroke:#ffffff;stroke-opacity:.14}
+      .cell{fill:#ffffff;fill-opacity:.08;stroke:#ffffff;stroke-opacity:.14}
+    </style>
+  </defs>
+  <rect width="1200" height="760" rx="34" fill="url(#bg)"/>
+  <text x="70" y="88" class="title">Bingo de setup: mejor antes que durante</text>
+  <text x="72" y="122" class="small">Si sale en clase, roba minutos. Si sale en autoconsumo, crea autonomia.</text>
+  <g transform="translate(190 174)">
+    <rect width="820" height="430" rx="34" class="card"/>
+    <g transform="translate(56 64)">
+      <rect width="210" height="92" rx="22" class="cell"/><text x="28" y="38" class="label">Cuenta</text><text x="28" y="66" class="small">usuario correcto</text>
+      <rect x="250" width="210" height="92" rx="22" class="cell"/><text x="278" y="38" class="label">Licencia</text><text x="278" y="66" class="small">plan activo</text>
+      <rect x="500" width="210" height="92" rx="22" class="cell"/><text x="528" y="38" class="label">Extension</text><text x="528" y="66" class="small">habilitada</text>
+      <rect y="128" width="210" height="92" rx="22" class="cell"/><text x="28" y="166" class="label">Politica</text><text x="28" y="194" class="small">org revisada</text>
+      <rect x="250" y="128" width="210" height="92" rx="22" fill="#62e6a2" fill-opacity=".14" stroke="#62e6a2" stroke-opacity=".38"/><text x="278" y="166" class="label">FREE</text><text x="278" y="194" class="small">primer prompt OK</text>
+      <rect x="500" y="128" width="210" height="92" rx="22" class="cell"/><text x="528" y="166" class="label">Chat</text><text x="528" y="194" class="small">responde</text>
+      <rect y="256" width="210" height="92" rx="22" class="cell"/><text x="28" y="294" class="label">Settings</text><text x="28" y="322" class="small">sin sorpresas</text>
+      <rect x="250" y="256" width="210" height="92" rx="22" class="cell"/><text x="278" y="294" class="label">Repo demo</text><text x="278" y="322" class="small">abre bien</text>
+      <rect x="500" y="256" width="210" height="92" rx="22" class="cell"/><text x="528" y="294" class="label">Verificacion</text><text x="528" y="322" class="small">sin bloqueo</text>
+    </g>
+  </g>
+</svg>

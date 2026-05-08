@@ -1,0 +1,9 @@
+{
+  "scripts": {
+    "test": "vitest"
+  },
+  "devDependencies": {
+    "vitest": "latest",
+    "typescript": "latest"
+  }
+}

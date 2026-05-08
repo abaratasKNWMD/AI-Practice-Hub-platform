@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 760" role="img" aria-labelledby="title desc">
+  <title id="title">Model picker</title>
+  <desc id="desc">A model selection matrix balancing speed, depth, cost and risk.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#081225"/>
+      <stop offset="1" stop-color="#141827"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" x2="1">
+      <stop offset="0" stop-color="#5ddcff"/>
+      <stop offset="1" stop-color="#62e6a2"/>
+    </linearGradient>
+    <style>
+      .title{font:900 34px Inter,Segoe UI,sans-serif;fill:#f8fbff}
+      .label{font:800 20px Inter,Segoe UI,sans-serif;fill:#f8fbff}
+      .small{font:700 15px Inter,Segoe UI,sans-serif;fill:#aebbd0}
+      .tiny{font:800 13px Inter,Segoe UI,sans-serif;fill:#81e6d9;letter-spacing:.08em}
+      .card{fill:#ffffff;fill-opacity:.07;stroke:#ffffff;stroke-opacity:.14}
+    </style>
+  </defs>
+  <rect width="1200" height="760" rx="34" fill="url(#bg)"/>
+  <text x="70" y="88" class="title">Un modelo para cada cosa</text>
+  <text x="72" y="122" class="small">La pregunta madura no es "cual es el mas grande", sino "cual encaja con este riesgo".</text>
+
+  <g transform="translate(122 184)">
+    <rect width="956" height="414" rx="30" class="card"/>
+    <line x1="120" y1="70" x2="120" y2="348" stroke="#ffffff" stroke-opacity=".18" stroke-width="2"/>
+    <line x1="120" y1="348" x2="850" y2="348" stroke="#ffffff" stroke-opacity=".18" stroke-width="2"/>
+    <text x="24" y="76" class="tiny">PROFUNDIDAD</text>
+    <text x="792" y="386" class="tiny">COSTE / LATENCIA</text>
+    <g transform="translate(170 266)">
+      <rect width="190" height="58" rx="18" fill="#5ddcff" fill-opacity=".12" stroke="#5ddcff" stroke-opacity=".34"/>
+      <text x="24" y="36" class="label">Rapido</text>
+    </g>
+    <g transform="translate(380 202)">
+      <rect width="220" height="64" rx="18" fill="#62e6a2" fill-opacity=".13" stroke="#62e6a2" stroke-opacity=".36"/>
+      <text x="24" y="39" class="label">Equilibrado</text>
+    </g>
+    <g transform="translate(622 114)">
+      <rect width="230" height="72" rx="18" fill="#f8c96a" fill-opacity=".12" stroke="#f8c96a" stroke-opacity=".36"/>
+      <text x="24" y="43" class="label">Razonamiento</text>
+    </g>
+    <path d="M176 326C340 268 512 210 788 138" fill="none" stroke="url(#accent)" stroke-width="6" stroke-linecap="round"/>
+  </g>
+
+  <g transform="translate(210 640)">
+    <rect width="780" height="62" rx="22" fill="#ffffff" fill-opacity=".07" stroke="#ffffff" stroke-opacity=".14"/>
+    <text x="34" y="39" class="small">Regla practica: barato para iterar, profundo para decisiones caras, siempre con contexto y pruebas.</text>
+  </g>
+</svg>

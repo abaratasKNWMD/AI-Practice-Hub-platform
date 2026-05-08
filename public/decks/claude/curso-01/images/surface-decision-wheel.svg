@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" role="img" aria-labelledby="title desc">
+  <title id="title">Rueda de decision de superficies Claude</title>
+  <desc id="desc">Diagrama para elegir entre terminal, IDE, desktop, web y CI segun la intencion de trabajo.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f7efe3"/>
+      <stop offset="0.52" stop-color="#efe3d1"/>
+      <stop offset="1" stop-color="#d8e7e0"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="18" stdDeviation="18" flood-color="#3c2f24" flood-opacity="0.18"/>
+    </filter>
+  </defs>
+  <rect width="1280" height="720" rx="38" fill="url(#bg)"/>
+  <circle cx="640" cy="360" r="252" fill="#ffffff" opacity="0.78" filter="url(#shadow)"/>
+  <circle cx="640" cy="360" r="174" fill="#f5eee5" stroke="#8b6f54" stroke-width="2"/>
+  <circle cx="640" cy="360" r="78" fill="#171717"/>
+  <text x="640" y="348" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="29" font-weight="800" fill="#fff">Claude</text>
+  <text x="640" y="382" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="17" fill="#d9c9b7">intencion primero</text>
+  <g font-family="Inter, Arial, sans-serif" font-weight="800" fill="#2a2119">
+    <rect x="518" y="76" width="244" height="96" rx="24" fill="#e9c46a"/>
+    <text x="640" y="116" text-anchor="middle" font-size="24">Terminal</text>
+    <text x="640" y="145" text-anchor="middle" font-size="15" font-weight="600">cambio fino + comandos</text>
+    <rect x="848" y="190" width="252" height="96" rx="24" fill="#a8dadc"/>
+    <text x="974" y="231" text-anchor="middle" font-size="24">IDE</text>
+    <text x="974" y="260" text-anchor="middle" font-size="15" font-weight="600">diff visual + contexto local</text>
+    <rect x="842" y="454" width="270" height="96" rx="24" fill="#f4a261"/>
+    <text x="977" y="495" text-anchor="middle" font-size="24">Web / Desktop</text>
+    <text x="977" y="524" text-anchor="middle" font-size="15" font-weight="600">sesion larga + documentos</text>
+    <rect x="496" y="574" width="288" height="96" rx="24" fill="#b7d3a8"/>
+    <text x="640" y="615" text-anchor="middle" font-size="24">GitHub / CI</text>
+    <text x="640" y="644" text-anchor="middle" font-size="15" font-weight="600">automatizacion gobernada</text>
+    <rect x="178" y="338" width="252" height="96" rx="24" fill="#d7b9f8"/>
+    <text x="304" y="379" text-anchor="middle" font-size="24">Slack / Equipo</text>
+    <text x="304" y="408" text-anchor="middle" font-size="15" font-weight="600">triage + handoff</text>
+  </g>
+  <g stroke="#40342a" stroke-width="5" stroke-linecap="round" opacity="0.72">
+    <path d="M640 176 L640 76"/>
+    <path d="M784 250 L848 238"/>
+    <path d="M784 470 L842 500"/>
+    <path d="M640 534 L640 574"/>
+    <path d="M466 386 L430 386"/>
+  </g>
+  <text x="640" y="704" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="20" font-weight="700" fill="#3a3027">No eliges prompt primero. Eliges superficie, permisos y evidencia.</text>
+</svg>

@@ -1,0 +1,9 @@
+diff --git a/README.md b/README.md
+--- a/README.md
++++ b/README.md
+@@
++# Evidencia de ejercicio
++- Ejercicio: cl-s04-eval-harness
++- Resultado: salida verificable
++- Coste: medio-alto: dataset + judge
++- Permisos: local sdk

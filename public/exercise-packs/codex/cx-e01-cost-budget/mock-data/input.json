@@ -1,0 +1,21 @@
+{
+  "vendor": "codex",
+  "exerciseId": "cx-e01-cost-budget",
+  "title": "Presupuesto de coste por ruta Codex",
+  "surface": "governance + finance",
+  "recommendedModel": "GPT-5.4",
+  "permissionMode": "read-only",
+  "estimatedCost": "Bajo: analisis y plantilla",
+  "intentionalErrors": [
+    "briefing demasiado amplio",
+    "falta de evidencia",
+    "coste sin registrar"
+  ],
+  "expectedArtifacts": [
+    "prompt",
+    "resultado",
+    "evidencia",
+    "coste",
+    "decision"
+  ]
+}

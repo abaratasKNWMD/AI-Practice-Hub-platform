@@ -1,0 +1,64 @@
+{
+  "id": "cl-basic-02-compact-context",
+  "title": "Claude Basic 02 - Compact Context",
+  "description": "Compactar y hacer handoff sin perder decisiones.",
+  "template": "technical",
+  "durationPreset": 5,
+  "durationMs": 90000,
+  "voice": "es-ES-AlvaroNeural",
+  "author": "AI Practice Hub",
+  "createdAt": "2026-05-07T00:00:00.000Z",
+  "chapters": [
+    { "id": "start", "label": "Compact", "startMs": 0 },
+    { "id": "concept", "label": "Estado", "startMs": 9000 },
+    { "id": "close", "label": "Handoff", "startMs": 65000 }
+  ],
+  "scenes": [
+    {
+      "id": "title",
+      "name": "Apertura",
+      "startMs": 0,
+      "endMs": 9000,
+      "type": "title",
+      "content": { "title": "/compact sin drama", "subtitle": "Guardar estado, no novela.", "tag": "Claude Basic" },
+      "subtitles": [{ "text": "Compactar bien permite continuar sin volver a leer medio mundo.", "startMs": 1000, "endMs": 8200 }]
+    },
+    {
+      "id": "concept",
+      "name": "Estado",
+      "startMs": 9000,
+      "endMs": 65000,
+      "type": "concept",
+      "content": {
+        "tag": "Handoff tecnico",
+        "title": "Que debe sobrevivir?",
+        "body": "Una compactacion util guarda objetivo, ficheros tocados, decisiones, pruebas y riesgos. Todo lo demas es ruido.\n\nLa gracia es que la siguiente sesion pueda leer el diff y continuar. Si la compactacion no ayuda a actuar, es un resumen bonito pero inutil.",
+        "highlight": "Compactar no es resumir: es preservar capacidad de accion.",
+        "points": ["Objetivo del usuario", "Ficheros y razones", "Pruebas ejecutadas", "Riesgos pendientes"]
+      },
+      "subtitles": [
+        { "text": "No guardes la conversacion completa.", "startMs": 10000, "endMs": 25000 },
+        { "text": "Guarda los hechos que permiten continuar.", "startMs": 26000, "endMs": 47000 },
+        { "text": "Esto convierte tutoria en revision, no en interrogatorio.", "startMs": 48000, "endMs": 63000 }
+      ]
+    },
+    {
+      "id": "finale",
+      "name": "Cierre",
+      "startMs": 65000,
+      "endMs": 90000,
+      "type": "finale",
+      "content": {
+        "title": "Handoff minimo",
+        "summary": [
+          { "number": "Goal", "label": "Objetivo", "body": "Que se estaba intentando." },
+          { "number": "Diff", "label": "Cambios", "body": "Donde y por que." },
+          { "number": "Risk", "label": "Pendiente", "body": "Que queda por mirar." }
+        ],
+        "cta": "Ejercicio: cl-b05-context-compact."
+      },
+      "subtitles": [{ "text": "Una buena compactacion es una cuerda para seguir subiendo.", "startMs": 66000, "endMs": 89000 }]
+    }
+  ]
+}
+

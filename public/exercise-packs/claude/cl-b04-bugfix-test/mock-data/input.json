@@ -1,0 +1,21 @@
+{
+  "vendor": "claude",
+  "exerciseId": "cl-b04-bugfix-test",
+  "title": "Bugfix con test minimo",
+  "surface": "Claude Code edit loop",
+  "recommendedModel": "Sonnet",
+  "permissionMode": "workspace-write",
+  "estimatedCost": "medio: lectura + patch + test",
+  "intentionalErrors": [
+    "briefing demasiado amplio",
+    "falta de evidencia",
+    "coste sin registrar"
+  ],
+  "expectedArtifacts": [
+    "prompt",
+    "resultado",
+    "evidencia",
+    "coste",
+    "decision"
+  ]
+}

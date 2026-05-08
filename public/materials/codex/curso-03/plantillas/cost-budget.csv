@@ -1,0 +1,8 @@
+stage,model_class,reasoning,token_pressure,other_costs,human_gate,notes
+triage,mini,low,low,none,no,Fast classification and routing.
+architect,gpt-5.5,medium,medium,tools,yes,Use high only for cross-domain risk.
+security_judge,gpt-5.5,high,medium,tools,yes,No approve without evidence.
+batch_refactor,gpt-5.5,medium,high,batch,yes,Run pilot before full JSONL.
+rag_ingestion,embedding,none,medium,storage,no,Incremental indexing by commit.
+evals,mini_or_gpt-5.5,medium,medium,graders,yes,Sample costly judges.
+fine_tuning,o-series_or_supported,medium,high,training,yes,Only after eval baseline.

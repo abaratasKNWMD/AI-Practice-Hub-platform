@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="620" viewBox="0 0 1100 620" role="img" aria-labelledby="title desc">
+  <title id="title">Fix tests loop</title>
+  <desc id="desc">Loop for fixing tests with Claude.</desc>
+  <rect width="1100" height="620" rx="34" fill="#0b0a09"/>
+  <text x="96" y="112" font-family="Inter, Arial, sans-serif" font-size="34" font-weight="900" fill="#fff7f0">fix-tests loop</text>
+  <text x="96" y="148" font-family="Inter, Arial, sans-serif" font-size="18" fill="#b9aea3">Nada de arreglar antes de reproducir.</text>
+  <g transform="translate(155 220)" font-family="Inter, Arial, sans-serif">
+    <path d="M140 80H320M460 80H640M730 160C730 260 590 315 430 315C270 315 140 260 140 160" fill="none" stroke="#75e6c0" stroke-width="5" stroke-linecap="round" stroke-dasharray="7 14"/>
+    <rect width="150" height="120" rx="22" fill="#211713" stroke="#ff9aad" stroke-opacity="0.45"/>
+    <text x="75" y="52" text-anchor="middle" font-size="20" font-weight="900" fill="#ffdfe5">Reproduce</text>
+    <text x="75" y="84" text-anchor="middle" font-size="14" fill="#b9aea3">ver fallo</text>
+    <rect x="320" width="150" height="120" rx="22" fill="#171313" stroke="#ffd27a" stroke-opacity="0.45"/>
+    <text x="395" y="52" text-anchor="middle" font-size="20" font-weight="900" fill="#ffe6ad">Isolate</text>
+    <text x="395" y="84" text-anchor="middle" font-size="14" fill="#b9aea3">causa</text>
+    <rect x="640" width="150" height="120" rx="22" fill="#111817" stroke="#75e6c0" stroke-opacity="0.45"/>
+    <text x="715" y="52" text-anchor="middle" font-size="20" font-weight="900" fill="#c9fff0">Patch</text>
+    <text x="715" y="84" text-anchor="middle" font-size="14" fill="#b9aea3">minimo</text>
+    <rect x="480" y="250" width="150" height="120" rx="22" fill="#101418" stroke="#7bd7ff" stroke-opacity="0.45"/>
+    <text x="555" y="302" text-anchor="middle" font-size="20" font-weight="900" fill="#d8f4ff">Rerun</text>
+    <text x="555" y="334" text-anchor="middle" font-size="14" fill="#b9aea3">evidencia</text>
+    <rect x="170" y="250" width="150" height="120" rx="22" fill="#181310" stroke="#fff" stroke-opacity="0.18"/>
+    <text x="245" y="302" text-anchor="middle" font-size="20" font-weight="900" fill="#fff7f0">Report</text>
+    <text x="245" y="334" text-anchor="middle" font-size="14" fill="#b9aea3">riesgos</text>
+  </g>
+</svg>

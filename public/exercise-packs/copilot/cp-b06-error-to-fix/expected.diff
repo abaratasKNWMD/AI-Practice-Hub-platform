@@ -1,0 +1,9 @@
+diff --git a/README.md b/README.md
+--- a/README.md
++++ b/README.md
+@@
++# Evidencia de ejercicio
++- Ejercicio: cp-b06-error-to-fix
++- Resultado: salida verificable
++- Coste: Medio-bajo: un diagnostico y un patch
++- Permisos: workspace-write

@@ -1,0 +1,9 @@
+diff --git a/README.md b/README.md
+--- a/README.md
++++ b/README.md
+@@
++# Evidencia de ejercicio
++- Ejercicio: cp-b02-inline-completion
++- Resultado: salida verificable
++- Coste: Bajo: inline suggestions incluidas en planes de pago
++- Permisos: workspace-write

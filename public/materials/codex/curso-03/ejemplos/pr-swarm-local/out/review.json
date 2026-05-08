@@ -1,0 +1,38 @@
+{
+  "decision": "changes",
+  "summary": "3 finding(s): 2 high, 1 medium.",
+  "findings": [
+    {
+      "role": "architect",
+      "severity": "medium",
+      "file": "src/auth/session.js",
+      "line": null,
+      "title": "Auth path changed without tests in diff",
+      "evidence": "src/auth/session.js",
+      "recommendation": "Require an auth regression test or a clear reason why existing coverage is enough.",
+      "confidence": 0.74
+    },
+    {
+      "role": "qa",
+      "severity": "high",
+      "file": "src/auth/session.js",
+      "line": 4,
+      "title": "Async loader is called without await",
+      "evidence": "+   const user = loadUser(userId);",
+      "recommendation": "Await the async call and add a regression test for inactive users.",
+      "confidence": 0.91
+    },
+    {
+      "role": "security",
+      "severity": "high",
+      "file": "src/auth/session.js",
+      "line": 5,
+      "title": "Sensitive value may be logged",
+      "evidence": "+   console.log(\"refresh token\", token);",
+      "recommendation": "Remove the log or redact the value before it reaches logs.",
+      "confidence": 0.95
+    }
+  ],
+  "human_review_required": true,
+  "residual_risk": "Human reviewer should confirm evidence and remediation."
+}

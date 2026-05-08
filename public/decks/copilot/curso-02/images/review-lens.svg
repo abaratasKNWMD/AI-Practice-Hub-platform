@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 760" role="img" aria-labelledby="title desc">
+  <title id="title">Responsible AI code review lens</title>
+  <desc id="desc">A review lens highlighting evidence, risk, severity and verification on a code diff.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#111827"/>
+      <stop offset="1" stop-color="#071a18"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" x2="1">
+      <stop offset="0" stop-color="#5ddcff"/>
+      <stop offset="1" stop-color="#62e6a2"/>
+    </linearGradient>
+    <style>
+      .title{font:900 34px Inter,Segoe UI,sans-serif;fill:#f8fbff}
+      .label{font:850 20px Inter,Segoe UI,sans-serif;fill:#f8fbff}
+      .small{font:700 15px Inter,Segoe UI,sans-serif;fill:#aebbd0}
+      .mono{font:650 16px ui-monospace,SFMono-Regular,Consolas,monospace;fill:#dce8f7}
+      .card{fill:#ffffff;fill-opacity:.07;stroke:#ffffff;stroke-opacity:.14}
+    </style>
+  </defs>
+  <rect width="1200" height="760" rx="34" fill="url(#bg)"/>
+  <text x="70" y="88" class="title">Code Review con Copilot: lupa, no sello</text>
+  <text x="72" y="122" class="small">El valor esta en hallazgos concretos con evidencia, severidad y verificacion.</text>
+  <g transform="translate(112 180)">
+    <rect width="620" height="420" rx="30" class="card"/>
+    <rect width="620" height="58" rx="30" fill="#ffffff" fill-opacity=".08"/>
+    <text x="34" y="37" class="small">diff · checkout.ts</text>
+    <g transform="translate(40 102)">
+      <text x="0" y="0" class="mono">- if (plan.active) return true</text>
+      <text x="0" y="44" class="mono" fill="#62e6a2">+ if (plan.status === "active") {</text>
+      <text x="0" y="88" class="mono" fill="#62e6a2">+   return !isExpired(plan.expiresAt)</text>
+      <text x="0" y="132" class="mono" fill="#62e6a2">+ }</text>
+      <text x="0" y="196" class="mono">comment: falta test para plan legacy</text>
+    </g>
+  </g>
+  <circle cx="642" cy="348" r="92" fill="none" stroke="url(#accent)" stroke-width="18"/>
+  <path d="M704 414l120 112" stroke="url(#accent)" stroke-width="22" stroke-linecap="round"/>
+  <g transform="translate(804 212)">
+    <rect width="276" height="330" rx="28" class="card"/>
+    <text x="30" y="50" class="label">Finding bueno</text>
+    <text x="30" y="92" class="small">Archivo y linea</text>
+    <text x="30" y="128" class="small">Riesgo tecnico</text>
+    <text x="30" y="164" class="small">Severidad</text>
+    <text x="30" y="200" class="small">Sugerencia concreta</text>
+    <text x="30" y="236" class="small">Verificacion posterior</text>
+  </g>
+</svg>

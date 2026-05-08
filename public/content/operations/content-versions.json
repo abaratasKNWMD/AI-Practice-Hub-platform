@@ -1,0 +1,26 @@
+[
+  {
+    "vendor": "codex",
+    "contentVersion": "2026.05.v4",
+    "status": "active",
+    "lastReviewed": "2026-05-08",
+    "nextReview": "2026-08-08",
+    "notes": "Version posterior a Visual Excellence, Exercise Runtime y Operating Governance."
+  },
+  {
+    "vendor": "copilot",
+    "contentVersion": "2026.05.v4",
+    "status": "active",
+    "lastReviewed": "2026-05-08",
+    "nextReview": "2026-08-08",
+    "notes": "Version posterior a Visual Excellence, Exercise Runtime y Operating Governance."
+  },
+  {
+    "vendor": "claude",
+    "contentVersion": "2026.05.v4",
+    "status": "active",
+    "lastReviewed": "2026-05-08",
+    "nextReview": "2026-08-08",
+    "notes": "Version posterior a Visual Excellence, Exercise Runtime y Operating Governance."
+  }
+]

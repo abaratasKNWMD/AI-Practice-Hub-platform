@@ -1,0 +1,21 @@
+{
+  "vendor": "claude",
+  "exerciseId": "cl-b01-claude-md",
+  "title": "CLAUDE.md para un repo real",
+  "surface": "Project memory",
+  "recommendedModel": "Sonnet",
+  "permissionMode": "write memory file",
+  "estimatedCost": "bajo-medio: lectura de estructura + edicion",
+  "intentionalErrors": [
+    "briefing demasiado amplio",
+    "falta de evidencia",
+    "coste sin registrar"
+  ],
+  "expectedArtifacts": [
+    "prompt",
+    "resultado",
+    "evidencia",
+    "coste",
+    "decision"
+  ]
+}

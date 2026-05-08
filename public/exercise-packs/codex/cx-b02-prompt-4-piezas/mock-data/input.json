@@ -1,0 +1,21 @@
+{
+  "vendor": "codex",
+  "exerciseId": "cx-b02-prompt-4-piezas",
+  "title": "Prompt de cuatro piezas",
+  "surface": "chat Codex",
+  "recommendedModel": "GPT-5.4 Mini",
+  "permissionMode": "read-only",
+  "estimatedCost": "Muy bajo: una iteracion de prompt y una revision",
+  "intentionalErrors": [
+    "briefing demasiado amplio",
+    "falta de evidencia",
+    "coste sin registrar"
+  ],
+  "expectedArtifacts": [
+    "prompt",
+    "resultado",
+    "evidencia",
+    "coste",
+    "decision"
+  ]
+}

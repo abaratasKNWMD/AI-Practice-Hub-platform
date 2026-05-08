@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 760" role="img" aria-labelledby="title desc">
+  <title id="title">Workspace context is not telepathy</title>
+  <desc id="desc">A workspace context illustration showing visible files illuminated and missing files in darkness.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#07111f"/>
+      <stop offset="1" stop-color="#111827"/>
+    </linearGradient>
+    <radialGradient id="beam" cx="50%" cy="50%" r="60%">
+      <stop offset="0" stop-color="#62e6a2" stop-opacity=".35"/>
+      <stop offset="1" stop-color="#62e6a2" stop-opacity="0"/>
+    </radialGradient>
+    <style>
+      .title{font:900 34px Inter,Segoe UI,sans-serif;fill:#f8fbff}
+      .label{font:850 21px Inter,Segoe UI,sans-serif;fill:#f8fbff}
+      .small{font:700 15px Inter,Segoe UI,sans-serif;fill:#aebbd0}
+      .mono{font:700 17px ui-monospace,SFMono-Regular,Consolas,monospace;fill:#dce8f7}
+      .card{fill:#ffffff;fill-opacity:.07;stroke:#ffffff;stroke-opacity:.14}
+    </style>
+  </defs>
+  <rect width="1200" height="760" rx="34" fill="url(#bg)"/>
+  <text x="70" y="88" class="title">Workspace context no es telepatia</text>
+  <text x="72" y="122" class="small">Si el archivo clave no esta visible, no esperes precision de cirujano.</text>
+  <g transform="translate(126 176)">
+    <rect width="948" height="430" rx="34" class="card"/>
+    <circle cx="474" cy="215" r="210" fill="url(#beam)"/>
+    <g transform="translate(72 80)">
+      <text x="0" y="0" class="label">Iluminado</text>
+      <rect y="36" width="310" height="62" rx="20" fill="#5ddcff" fill-opacity=".13" stroke="#5ddcff" stroke-opacity=".34"/>
+      <text x="26" y="76" class="mono">cart.ts</text>
+      <rect y="118" width="310" height="62" rx="20" fill="#62e6a2" fill-opacity=".13" stroke="#62e6a2" stroke-opacity=".34"/>
+      <text x="26" y="158" class="mono">cart.spec.ts</text>
+      <rect y="200" width="310" height="62" rx="20" fill="#f8c96a" fill-opacity=".13" stroke="#f8c96a" stroke-opacity=".34"/>
+      <text x="26" y="240" class="mono">rules.md</text>
+    </g>
+    <g transform="translate(566 80)" opacity=".52">
+      <text x="0" y="0" class="label">A oscuras</text>
+      <rect y="36" width="310" height="62" rx="20" fill="#ffffff" fill-opacity=".05" stroke="#ffffff" stroke-opacity=".12"/>
+      <text x="26" y="76" class="mono">legacy-plan.ts</text>
+      <rect y="118" width="310" height="62" rx="20" fill="#ffffff" fill-opacity=".05" stroke="#ffffff" stroke-opacity=".12"/>
+      <text x="26" y="158" class="mono">billing-contract.md</text>
+      <rect y="200" width="310" height="62" rx="20" fill="#ffffff" fill-opacity=".05" stroke="#ffffff" stroke-opacity=".12"/>
+      <text x="26" y="240" class="mono">prod-error.log</text>
+    </g>
+  </g>
+</svg>

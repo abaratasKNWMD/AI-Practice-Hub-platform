@@ -1,0 +1,128 @@
+{
+  "baseUrl": "http://localhost:3001",
+  "browserPath": "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe",
+  "generatedAt": "2026-05-08T11:36:02.870Z",
+  "status": "passed",
+  "results": [
+    {
+      "id": "hub",
+      "path": "/",
+      "viewport": "desktop",
+      "width": 1440,
+      "height": 900,
+      "output": "/release-ops/qa/screenshots/hub-desktop.png",
+      "ok": true,
+      "bytes": 525931,
+      "ms": 6708,
+      "stderr": "DevTools listening on ws://127.0.0.1:55931/devtools/browser/d7b8c4cb-a0a6-41ad-8eec-a5285de4a2e0\r\n[3784:32816:0508/133519.002:ERROR:google_apis\\gcm\\engine\\registration_request.cc:291] Registration response error message: PHONE_REGISTRATION_ERROR\r\n[3784:32816:0508/133519.002:ERROR:google_apis\\gcm\\engine\\registration_request.cc:291] Registration response error message: PHONE_REGISTRATION_ERROR\r\n[3784:32816:0508/133519.006:ERROR:google_apis\\gcm\\engine\\registration_request.cc:291] Registration respo"
+    },
+    {
+      "id": "hub",
+      "path": "/",
+      "viewport": "mobile",
+      "width": 390,
+      "height": 844,
+      "output": "/release-ops/qa/screenshots/hub-mobile.png",
+      "ok": true,
+      "bytes": 153770,
+      "ms": 5492,
+      "stderr": "DevTools listening on ws://127.0.0.1:59092/devtools/browser/31155a93-98f5-4b42-9778-a443ab2336a0"
+    },
+    {
+      "id": "operaciones",
+      "path": "/operaciones",
+      "viewport": "desktop",
+      "width": 1440,
+      "height": 900,
+      "output": "/release-ops/qa/screenshots/operaciones-desktop.png",
+      "ok": true,
+      "bytes": 220081,
+      "ms": 6816,
+      "stderr": "DevTools listening on ws://127.0.0.1:54462/devtools/browser/c5c1576a-1d50-4c23-ba97-88b5250e7c24\r\n[32700:16360:0508/133529.454:ERROR:google_apis\\gcm\\engine\\registration_request.cc:291] Registration response error message: PHONE_REGISTRATION_ERROR\r\n[32700:16360:0508/133529.460:ERROR:google_apis\\gcm\\engine\\registration_request.cc:291] Registration response error message: PHONE_REGISTRATION_ERROR\r\n[32700:16360:0508/133529.461:ERROR:google_apis\\gcm\\engine\\registration_request.cc:291] Registration re"
+    },
+    {
+      "id": "operaciones",
+      "path": "/operaciones",
+      "viewport": "mobile",
+      "width": 390,
+      "height": 844,
+      "output": "/release-ops/qa/screenshots/operaciones-mobile.png",
+      "ok": true,
+      "bytes": 58242,
+      "ms": 6460,
+      "stderr": "DevTools listening on ws://127.0.0.1:58988/devtools/browser/6d0d8ba6-bbea-42f7-85aa-98a795ea2177\r\n[2700:1296:0508/133536.869:ERROR:google_apis\\gcm\\engine\\registration_request.cc:291] Registration response error message: DEPRECATED_ENDPOINT"
+    },
+    {
+      "id": "plataforma",
+      "path": "/plataforma",
+      "viewport": "desktop",
+      "width": 1440,
+      "height": 900,
+      "output": "/release-ops/qa/screenshots/plataforma-desktop.png",
+      "ok": true,
+      "bytes": 80007,
+      "ms": 3733,
+      "stderr": "DevTools listening on ws://127.0.0.1:57704/devtools/browser/7864c6ef-d2fa-4ade-ae6b-cfd357ea7f89"
+    },
+    {
+      "id": "plataforma",
+      "path": "/plataforma",
+      "viewport": "mobile",
+      "width": 390,
+      "height": 844,
+      "output": "/release-ops/qa/screenshots/plataforma-mobile.png",
+      "ok": true,
+      "bytes": 51792,
+      "ms": 3503,
+      "stderr": "DevTools listening on ws://127.0.0.1:61488/devtools/browser/d675d328-aea9-4270-ad9b-6afbd64608e3"
+    },
+    {
+      "id": "codex-track",
+      "path": "/tracks/codex",
+      "viewport": "desktop",
+      "width": 1440,
+      "height": 900,
+      "output": "/release-ops/qa/screenshots/codex-track-desktop.png",
+      "ok": true,
+      "bytes": 634247,
+      "ms": 4354,
+      "stderr": "DevTools listening on ws://127.0.0.1:50495/devtools/browser/36e0d830-c2a6-4507-9c1c-f3489af033b5\r\n[28012:13580:0508/133549.832:ERROR:google_apis\\gcm\\engine\\registration_request.cc:291] Registration response error message: PHONE_REGISTRATION_ERROR\r\n[28012:13580:0508/133549.832:ERROR:google_apis\\gcm\\engine\\registration_request.cc:291] Registration response error message: PHONE_REGISTRATION_ERROR\r\n[28012:13580:0508/133550.126:ERROR:google_apis\\gcm\\engine\\registration_request.cc:291] Registration re"
+    },
+    {
+      "id": "codex-track",
+      "path": "/tracks/codex",
+      "viewport": "mobile",
+      "width": 390,
+      "height": 844,
+      "output": "/release-ops/qa/screenshots/codex-track-mobile.png",
+      "ok": true,
+      "bytes": 113787,
+      "ms": 4815,
+      "stderr": "DevTools listening on ws://127.0.0.1:55178/devtools/browser/eac2d774-2fc5-45b6-85ca-5f9185fe9cd6\r\n[9848:14564:0508/133554.755:ERROR:google_apis\\gcm\\engine\\registration_request.cc:291] Registration response error message: PHONE_REGISTRATION_ERROR\r\n[9848:14564:0508/133554.756:ERROR:google_apis\\gcm\\engine\\registration_request.cc:291] Registration response error message: PHONE_REGISTRATION_ERROR\r\n[9848:14564:0508/133554.762:ERROR:google_apis\\gcm\\engine\\registration_request.cc:291] Registration respo"
+    },
+    {
+      "id": "player-60m",
+      "path": "/player/hub-workshop-60m-vendor-selection",
+      "viewport": "desktop",
+      "width": 1440,
+      "height": 900,
+      "output": "/release-ops/qa/screenshots/player-60m-desktop.png",
+      "ok": true,
+      "bytes": 39010,
+      "ms": 3808,
+      "stderr": "DevTools listening on ws://127.0.0.1:57612/devtools/browser/75ddc5f4-7740-4749-bf55-774cf798f5c9"
+    },
+    {
+      "id": "player-60m",
+      "path": "/player/hub-workshop-60m-vendor-selection",
+      "viewport": "mobile",
+      "width": 390,
+      "height": 844,
+      "output": "/release-ops/qa/screenshots/player-60m-mobile.png",
+      "ok": true,
+      "bytes": 27111,
+      "ms": 4001,
+      "stderr": "DevTools listening on ws://127.0.0.1:54893/devtools/browser/596b87aa-085c-4c84-a011-502450c82ac0"
+    }
+  ]
+}

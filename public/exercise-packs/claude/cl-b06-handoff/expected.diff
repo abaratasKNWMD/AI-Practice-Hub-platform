@@ -1,0 +1,9 @@
+diff --git a/README.md b/README.md
+--- a/README.md
++++ b/README.md
+@@
++# Evidencia de ejercicio
++- Ejercicio: cl-b06-handoff
++- Resultado: salida verificable
++- Coste: bajo
++- Permisos: read-only

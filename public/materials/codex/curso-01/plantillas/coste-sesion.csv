@@ -1,0 +1,3 @@
+fecha,tarea,superficie,modelo,razonamiento,contexto_usado,comandos,resultado,coste_cualitativo,nota
+2026-05-06,onboarding repo,CLI,por_definir,low,README + package files,rg + tests sugeridos,mapa obtenido,bajo,no hubo ediciones
+2026-05-06,bug login,IDE/CLI,por_definir,medium,error + src/auth + tests,node --test,fix validado,medio,evitar pegar logs completos

@@ -1,0 +1,21 @@
+{
+  "vendor": "copilot",
+  "exerciseId": "cp-m05-path-instructions",
+  "title": "Path-specific instructions",
+  "surface": ".github/instructions",
+  "recommendedModel": "Modelo incluido",
+  "permissionMode": "workspace-write",
+  "estimatedCost": "Bajo",
+  "intentionalErrors": [
+    "briefing demasiado amplio",
+    "falta de evidencia",
+    "coste sin registrar"
+  ],
+  "expectedArtifacts": [
+    "prompt",
+    "resultado",
+    "evidencia",
+    "coste",
+    "decision"
+  ]
+}

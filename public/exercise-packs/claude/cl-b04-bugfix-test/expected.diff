@@ -1,0 +1,9 @@
+diff --git a/README.md b/README.md
+--- a/README.md
++++ b/README.md
+@@
++# Evidencia de ejercicio
++- Ejercicio: cl-b04-bugfix-test
++- Resultado: salida verificable
++- Coste: medio: lectura + patch + test
++- Permisos: workspace-write

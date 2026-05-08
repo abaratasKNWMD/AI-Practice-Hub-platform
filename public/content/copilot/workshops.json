@@ -1,0 +1,102 @@
+[
+  {
+    "id": "copilot-workshop-activation",
+    "title": "Workshop Copilot 01 - Activacion masiva",
+    "duration": "2h",
+    "audience": "Desarrolladores que ya tienen Copilot pero lo usan como autocomplete o chat suelto.",
+    "challengeIds": ["cp0-e01-branch-pr", "cp-b02-inline-completion", "cp-b04-chat-ask-edit-agent", "cp-b06-error-to-fix"],
+    "videoSlugs": ["cp-workshop-30m-error-to-pr", "cp-git-01-fork-vs-branch", "cp-basic-01-inline-completion", "cp-basic-02-ask-edit-agent"],
+    "facilitatorNotes": [
+      "Pedir CP0 consumido antes de entrar a la sesion.",
+      "No explicar Git desde cero: derivar al material survival.",
+      "Forzar que cada alumno cierre con un diff y una evidencia."
+    ],
+    "outputs": [
+      "Setup validado.",
+      "Completion aceptada con criterio.",
+      "Tabla Ask/Edit/Agent.",
+      "Bug pequeno resuelto con verificacion."
+    ]
+  },
+  {
+    "id": "copilot-workshop-team-flow",
+    "title": "Workshop Copilot 02 - Flujo de equipo",
+    "duration": "3h",
+    "audience": "Equipos que quieren instrucciones, prompts y tests reutilizables.",
+    "challengeIds": ["cp-m02-generate-tests", "cp-m04-repo-instructions", "cp-m05-path-instructions", "cp-m06-prompt-files", "cp-a01-code-review"],
+    "videoSlugs": ["cp-medium-01-instructions", "cp-medium-02-prompt-files", "cp-advanced-02-mcp-code-review"],
+    "facilitatorNotes": [
+      "El foco es separar instrucciones siempre activas de prompts invocables.",
+      "Hacer revisar instructions por longitud y claridad.",
+      "Cerrar con una carpeta github lista para copiar."
+    ],
+    "outputs": [
+      "copilot-instructions.md de equipo.",
+      "Dos instruction files path-specific.",
+      "Dos prompt files reutilizables.",
+      "Review con politica y findings."
+    ]
+  },
+  {
+    "id": "copilot-workshop-advanced-agents",
+    "title": "Workshop Copilot 03 - Agents, MCP y coste",
+    "duration": "4h",
+    "audience": "Tech leads y devs avanzados que quieren agent mode, custom agents, MCP y presupuesto.",
+    "challengeIds": ["cp-a02-custom-planner-agent", "cp-a03-agent-handoff", "cp-a04-mcp-github", "cp-a05-premium-budget", "cp-c03-cloud-mcp-policy"],
+    "videoSlugs": ["cp-advanced-01-custom-agent", "cp-advanced-02-mcp-code-review", "cp-cloud-02-premium-requests"],
+    "facilitatorNotes": [
+      "No vender agent mode como solucion universal.",
+      "Cada agente debe declarar herramientas y limite.",
+      "El coste se mide por outcome, no por prompt."
+    ],
+    "outputs": [
+      "Planner, implementer y reviewer agents.",
+      "Inventario MCP readonly.",
+      "Budget de premium requests.",
+      "Politica de escalado de modelo."
+    ]
+  },
+  {
+    "id": "copilot-workshop-cloud-governance",
+    "title": "Workshop Copilot 04 - Cloud agent enterprise",
+    "duration": "4h",
+    "audience": "Responsables de plataforma, seguridad y adopcion Copilot.",
+    "challengeIds": ["cp-c01-delegable-issue", "cp-c02-review-agent-pr", "cp-c03-cloud-mcp-policy", "cp-c04-governance-pack"],
+    "videoSlugs": ["cp-cloud-01-cloud-agent-pr", "cp-cloud-02-premium-requests"],
+    "facilitatorNotes": [
+      "Trabajar con issue realista y repo demo.",
+      "Separar capacidad de disponibilidad: plan, politica y preview importan.",
+      "Cerrar con politicas de revision humana y presupuesto."
+    ],
+    "outputs": [
+      "Issue delegable.",
+      "Checklist de review para PR generada.",
+      "Politica MCP cloud.",
+      "Operating model Copilot."
+    ]
+  },
+  {
+    "id": "copilot-workshop-1h-vscode-to-pr-review",
+    "title": "Workshop 1h - Copilot VS Code to PR review",
+    "duration": "1h",
+    "audience": "Desarrolladores que usan Copilot de forma irregular y necesitan elegir Ask, Edit, Agent y Review con criterio.",
+    "challengeIds": ["cp-b04-chat-ask-edit-agent", "cp-b06-error-to-fix", "cp-m04-repo-instructions", "cp-a01-code-review"],
+    "videoSlugs": ["cp-workshop-60m-vscode-to-pr-review", "cp-workshop-30m-error-to-pr", "cp-basic-02-ask-edit-agent"],
+    "instructorPackHref": "/workshop-packs/copilot/cp-workshop-60m-vscode-to-pr-review/README.md",
+    "minuteGuideHref": "/workshop-packs/copilot/cp-workshop-60m-vscode-to-pr-review/minute-by-minute.md",
+    "demoHref": "/workshop-packs/copilot/cp-workshop-60m-vscode-to-pr-review/demo-simulated.md",
+    "promptsHref": "/workshop-packs/copilot/cp-workshop-60m-vscode-to-pr-review/prompts.md",
+    "facilitatorNotes": [
+      "Obligar a justificar modo antes de pedir a Copilot que actue.",
+      "Usar Agent solo con carriles, comandos y stop rule.",
+      "Cerrar con plantilla de instrucciones y prompts reutilizables."
+    ],
+    "outputs": [
+      "Tabla Ask/Edit/Agent.",
+      "Patch localizado.",
+      "Test de regresion.",
+      "Review de PR con rubrica.",
+      "Budget de premium requests."
+    ]
+  }
+]

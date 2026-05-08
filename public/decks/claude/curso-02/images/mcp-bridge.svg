@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="620" viewBox="0 0 1100 620" role="img" aria-labelledby="title desc">
+  <title id="title">MCP bridge</title>
+  <desc id="desc">MCP bridge from Claude to external tools.</desc>
+  <rect width="1100" height="620" rx="34" fill="#0b0a09"/>
+  <text x="95" y="112" font-family="Inter, Arial, sans-serif" font-size="34" font-weight="900" fill="#fff7f0">MCP como puente</text>
+  <g transform="translate(130 230)" font-family="Inter, Arial, sans-serif">
+    <rect width="260" height="180" rx="24" fill="#211713" stroke="#ff9aad" stroke-opacity="0.42"/>
+    <text x="130" y="102" text-anchor="middle" font-size="26" font-weight="900" fill="#ffdfe5">Claude</text>
+    <rect x="430" y="35" width="160" height="110" rx="24" fill="#171313" stroke="#ffd27a" stroke-opacity="0.42"/>
+    <text x="510" y="98" text-anchor="middle" font-size="24" font-weight="900" fill="#ffe6ad">MCP</text>
+    <rect x="630" width="260" height="180" rx="24" fill="#111817" stroke="#75e6c0" stroke-opacity="0.42"/>
+    <text x="760" y="74" text-anchor="middle" font-size="22" font-weight="900" fill="#c9fff0">Tools</text>
+    <text x="760" y="112" text-anchor="middle" font-size="15" fill="#b9aea3">docs, GitHub, DB</text>
+    <path d="M390 90H430M590 90H630" stroke="#75e6c0" stroke-width="6" stroke-linecap="round"/>
+  </g>
+</svg>

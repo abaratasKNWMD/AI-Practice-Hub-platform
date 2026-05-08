@@ -1,0 +1,114 @@
+{
+  "id": "cx-orientation-01-surface-map",
+  "title": "Codex Orientation 01 - Surface Map",
+  "description": "Mapa rapido de las superficies de Codex y como aterrizar una primera sesion sin tocar codigo.",
+  "template": "technical",
+  "durationPreset": 5,
+  "durationMs": 90000,
+  "voice": "es-ES-AlvaroNeural",
+  "author": "AI Practice Hub",
+  "createdAt": "2026-05-07T00:00:00.000Z",
+  "chapters": [
+    { "id": "start", "label": "Mapa", "startMs": 0 },
+    { "id": "surfaces", "label": "Superficies", "startMs": 8000 },
+    { "id": "workflow", "label": "Workflow", "startMs": 42000 },
+    { "id": "close", "label": "Cierre", "startMs": 70000 }
+  ],
+  "scenes": [
+    {
+      "id": "title",
+      "name": "Apertura",
+      "startMs": 0,
+      "endMs": 8000,
+      "type": "title",
+      "content": {
+        "title": "Codex en 90 segundos",
+        "subtitle": "No empieces pidiendo codigo. Empieza pidiendo mapa.",
+        "tag": "Orientation / Codex"
+      },
+      "subtitles": [
+        { "text": "Codex no es solo un chat.", "startMs": 800, "endMs": 2800 },
+        { "text": "Es una superficie de trabajo con contexto, herramientas y permisos.", "startMs": 3000, "endMs": 7000 }
+      ]
+    },
+    {
+      "id": "concept",
+      "name": "Mapa de superficie",
+      "startMs": 8000,
+      "endMs": 42000,
+      "type": "concept",
+      "content": {
+        "tag": "Superficie Codex",
+        "title": "Tres capas: conversacion, workspace y herramientas",
+        "body": "La conversacion sirve para formular objetivo y criterio. El workspace contiene archivos, estado local, scripts y cambios. Las herramientas permiten leer, editar, ejecutar, verificar, consultar docs o usar conectores.\n\nUn usuario avanzado no pide magia. Pide una operacion concreta sobre esas tres capas.",
+        "highlight": "La primera victoria es entender el terreno antes de tocarlo.",
+        "points": [
+          "Conversacion: objetivo, restricciones, definicion de terminado.",
+          "Workspace: archivos, tests, scripts, diffs y materiales.",
+          "Herramientas: shell, patch, docs, navegador, MCPs y skills.",
+          "Permisos: leer, escribir, ejecutar y conectar no son lo mismo."
+        ]
+      },
+      "subtitles": [
+        { "text": "Piensa Codex como tres capas.", "startMs": 9000, "endMs": 13000 },
+        { "text": "Conversacion, workspace y herramientas.", "startMs": 13500, "endMs": 17500 },
+        { "text": "El primer ejercicio es mapear esas capas en un repo real.", "startMs": 18000, "endMs": 28000 }
+      ]
+    },
+    {
+      "id": "compare",
+      "name": "Primer pedido",
+      "startMs": 42000,
+      "endMs": 70000,
+      "type": "compare",
+      "content": {
+        "tag": "Mal arranque vs buen arranque",
+        "left": {
+          "label": "Pedido impulsivo",
+          "color": "destructive",
+          "steps": [
+            { "icon": "AlertTriangle", "text": "Arregla esto rapido" },
+            { "icon": "Code", "text": "Codex toca archivos sin contexto suficiente" },
+            { "icon": "MessageSquare", "text": "El usuario revisa una solucion opaca" }
+          ],
+          "total": "Mas reintentos, mas coste"
+        },
+        "right": {
+          "label": "Pedido profesional",
+          "color": "accent",
+          "steps": [
+            { "icon": "Eye", "text": "Explora en read-only" },
+            { "icon": "FileText", "text": "Devuelve mapa con rutas y comandos" },
+            { "icon": "Check", "text": "Propone siguiente paso verificable" }
+          ],
+          "total": "Menos ruido, mejor control"
+        }
+      },
+      "subtitles": [
+        { "text": "El mal arranque pide solucion antes de diagnostico.", "startMs": 43000, "endMs": 48500 },
+        { "text": "El buen arranque pide mapa, evidencias y siguiente paso.", "startMs": 49000, "endMs": 56000 },
+        { "text": "Eso reduce coste y aumenta confianza.", "startMs": 56500, "endMs": 68500 }
+      ]
+    },
+    {
+      "id": "finale",
+      "name": "Cierre",
+      "startMs": 70000,
+      "endMs": 90000,
+      "type": "finale",
+      "content": {
+        "title": "Primera regla Codex",
+        "summary": [
+          { "number": "01", "label": "Explora", "body": "Pide un mapa del repo con rutas reales." },
+          { "number": "02", "label": "Pregunta", "body": "Haz que Codex declare supuestos y riesgos." },
+          { "number": "03", "label": "Actua", "body": "Solo despues de entender, autoriza cambios." }
+        ],
+        "cta": "Ejercicio asociado: cx-b01-repo-map."
+      },
+      "subtitles": [
+        { "text": "Explora, pregunta y despues actua.", "startMs": 70500, "endMs": 77500 },
+        { "text": "Ese orden convierte Codex en una herramienta de equipo.", "startMs": 78000, "endMs": 89500 }
+      ]
+    }
+  ]
+}

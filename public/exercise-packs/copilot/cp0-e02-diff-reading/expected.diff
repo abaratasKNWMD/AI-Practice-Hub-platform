@@ -1,0 +1,9 @@
+diff --git a/README.md b/README.md
+--- a/README.md
++++ b/README.md
+@@
++# Evidencia de ejercicio
++- Ejercicio: cp0-e02-diff-reading
++- Resultado: salida verificable
++- Coste: Muy bajo: una explicacion corta
++- Permisos: read-only

@@ -1,0 +1,76 @@
+[
+  {
+    "id": "claude-workshop-memory",
+    "title": "Workshop Claude Memory Sprint",
+    "duration": "2 h",
+    "audience": "Equipos que ya usan Claude de forma puntual y necesitan dejar de repetir contexto en cada sesion.",
+    "challengeIds": ["cl0-e02-claude-md", "cl0-e03-memory-audit", "cl-b03-folder-rules", "cl-b05-context-compact"],
+    "videoSlugs": ["cl-workshop-30m-memory-to-hook", "cl-orientation-01-claude-md", "cl-orientation-02-memory-vs-instructions", "cl-basic-02-compact-context"],
+    "facilitatorNotes": [
+      "Abrir con un ejemplo de CLAUDE.md demasiado largo y hacer poda en directo.",
+      "Convertir preguntas frecuentes en memoria, rules o skills segun corresponda.",
+      "Cerrar con una politica de compactacion para tutorias."
+    ],
+    "outputs": ["CLAUDE.md inicial", "Tabla memoria vs rules vs skills", "Politica de contexto", "Handoff de ejemplo"]
+  },
+  {
+    "id": "claude-workshop-operator",
+    "title": "Workshop Claude Operator",
+    "duration": "3 h",
+    "audience": "Desarrolladores que quieren pasar de chat manual a skills, subagentes y MCP controlado.",
+    "challengeIds": ["cl-o01-skill-summarize", "cl-o02-skill-fix-tests", "cl-o03-subagent-explorer", "cl-o05-mcp-project", "cl-o06-model-routing"],
+    "videoSlugs": ["cl-operator-01-first-skill", "cl-operator-02-subagent-explorer", "cl-operator-03-mcp-project"],
+    "facilitatorNotes": [
+      "Forzar el debate: que deberia ser skill y que deberia seguir como prompt.",
+      "Usar Haiku para explorer y reservar Sonnet para implementacion.",
+      "Activar MCP solo tras inventario de riesgo."
+    ],
+    "outputs": ["Skill de resumen", "Skill de tests", "Subagente explorer", "Inventario MCP", "Tabla de routing de modelos"]
+  },
+  {
+    "id": "claude-workshop-hooks-plugins",
+    "title": "Workshop Hooks + Plugins",
+    "duration": "4 h",
+    "audience": "Equipos platform, QA y seguridad que quieren distribuir guardrails y practicas de review.",
+    "challengeIds": ["cl-a01-hook-block-secrets", "cl-a02-hook-require-tests", "cl-a03-plugin-team-review", "cl-a05-pr-trigger"],
+    "videoSlugs": ["cl-advanced-01-hooks", "cl-advanced-02-plugin-action"],
+    "facilitatorNotes": [
+      "Explicar que hooks son controles deterministicos y plugins son distribucion.",
+      "Separar seguridad de productividad: un hook malo molesta; uno bueno previene incidentes.",
+      "Cerrar con checklist de instalacion interna."
+    ],
+    "outputs": ["Hook anti secretos", "Hook de verificacion", "Plugin team-review", "Matriz de PR triggers"]
+  },
+  {
+    "id": "claude-workshop-sdk-enterprise",
+    "title": "Workshop Agent SDK Enterprise",
+    "duration": "4 h",
+    "audience": "Arquitectos y equipos de plataforma que quieren convertir Claude Code en producto interno evaluable.",
+    "challengeIds": ["cl-s01-sdk-setup", "cl-s02-agent-reads-repo", "cl-s03-agent-review-json", "cl-s04-eval-harness", "cl-s05-capstone-reviewer"],
+    "videoSlugs": ["cl-sdk-01-agent-sdk", "cl-sdk-02-evals-governance"],
+    "facilitatorNotes": [
+      "No vender autonomia total: vender automatizacion trazable.",
+      "Pedir siempre contrato de salida y evaluacion.",
+      "Terminar con go/no-go de piloto real."
+    ],
+    "outputs": ["Agente SDK base", "Contrato JSON de review", "Mini eval harness", "Politica de coste", "Capstone enterprise"]
+  },
+  {
+    "id": "claude-workshop-1h-memory-to-automation",
+    "title": "Workshop 1h - Claude memory to automation",
+    "duration": "1 h",
+    "audience": "Equipos que ya usan Claude pero repiten contexto, prompts y revisiones en cada sesion.",
+    "challengeIds": ["cl0-e02-claude-md", "cl-b05-context-compact", "cl-o01-skill-summarize", "cl-a01-hook-block-secrets"],
+    "videoSlugs": ["cl-workshop-60m-memory-to-automation", "cl-workshop-30m-memory-to-hook", "cl-operator-01-first-skill"],
+    "instructorPackHref": "/workshop-packs/claude/cl-workshop-60m-memory-to-automation/README.md",
+    "minuteGuideHref": "/workshop-packs/claude/cl-workshop-60m-memory-to-automation/minute-by-minute.md",
+    "demoHref": "/workshop-packs/claude/cl-workshop-60m-memory-to-automation/demo-simulated.md",
+    "promptsHref": "/workshop-packs/claude/cl-workshop-60m-memory-to-automation/prompts.md",
+    "facilitatorNotes": [
+      "Insistir en que CLAUDE.md no debe convertirse en un vertedero de contexto.",
+      "Convertir repeticiones en skills solo cuando haya procedimiento estable.",
+      "Cerrar con hook, eval y plan de rollout por anillos."
+    ],
+    "outputs": ["CLAUDE.md podado", "Skill fix-tests", "Subagente explorer", "Hook anti secretos", "Eval JSON", "Routing de modelos"]
+  }
+]

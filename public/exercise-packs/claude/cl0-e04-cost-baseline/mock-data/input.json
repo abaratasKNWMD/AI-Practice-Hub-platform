@@ -1,0 +1,21 @@
+{
+  "vendor": "claude",
+  "exerciseId": "cl0-e04-cost-baseline",
+  "title": "Baseline de coste y contexto",
+  "surface": "/usage /context",
+  "recommendedModel": "Sonnet",
+  "permissionMode": "read-only",
+  "estimatedCost": "bajo: medicion inicial",
+  "intentionalErrors": [
+    "briefing demasiado amplio",
+    "falta de evidencia",
+    "coste sin registrar"
+  ],
+  "expectedArtifacts": [
+    "prompt",
+    "resultado",
+    "evidencia",
+    "coste",
+    "decision"
+  ]
+}

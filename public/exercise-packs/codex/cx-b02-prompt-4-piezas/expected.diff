@@ -1,0 +1,9 @@
+diff --git a/README.md b/README.md
+--- a/README.md
++++ b/README.md
+@@
++# Evidencia de ejercicio
++- Ejercicio: cx-b02-prompt-4-piezas
++- Resultado: salida verificable
++- Coste: Muy bajo: una iteracion de prompt y una revision
++- Permisos: read-only

@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 760" role="img" aria-labelledby="title desc">
+  <title id="title">CLI trust boundary</title>
+  <desc id="desc">A Copilot CLI trust boundary showing trusted folder, allow and deny gates and tool execution.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#111827"/>
+      <stop offset="1" stop-color="#071f1b"/>
+    </linearGradient>
+    <style>
+      .title{font:900 34px Inter,Segoe UI,sans-serif;fill:#f8fbff}
+      .label{font:850 20px Inter,Segoe UI,sans-serif;fill:#f8fbff}
+      .small{font:700 15px Inter,Segoe UI,sans-serif;fill:#aebbd0}
+      .mono{font:650 16px ui-monospace,SFMono-Regular,Consolas,monospace;fill:#dce8f7}
+      .card{fill:#ffffff;fill-opacity:.07;stroke:#ffffff;stroke-opacity:.14}
+    </style>
+  </defs>
+  <rect width="1200" height="760" rx="34" fill="url(#bg)"/>
+  <text x="70" y="88" class="title">Copilot CLI: frontera de confianza</text>
+  <text x="72" y="122" class="small">En terminal, contexto y permisos son seguridad operacional, no configuracion decorativa.</text>
+  <g transform="translate(126 184)">
+    <rect width="420" height="430" rx="32" class="card"/>
+    <text x="36" y="58" class="label">Directorio de confianza</text>
+    <rect x="42" y="100" width="336" height="230" rx="24" fill="#07101e" stroke="#5ddcff" stroke-opacity=".28"/>
+    <text x="66" y="144" class="mono">$ pwd</text>
+    <text x="66" y="186" class="mono">/repo/formacion-copilot</text>
+    <text x="66" y="244" class="mono">$ copilot</text>
+    <text x="66" y="286" class="mono">trust: workspace only</text>
+    <text x="42" y="380" class="small">No todas las carpetas merecen el mismo nivel de autonomia.</text>
+  </g>
+  <g transform="translate(654 184)">
+    <rect width="420" height="430" rx="32" class="card"/>
+    <text x="36" y="58" class="label">Puerta de herramientas</text>
+    <g transform="translate(52 104)">
+      <rect width="302" height="64" rx="20" fill="#62e6a2" fill-opacity=".14" stroke="#62e6a2" stroke-opacity=".38"/>
+      <text x="28" y="40" class="mono">allow: read, explain</text>
+      <rect y="92" width="302" height="64" rx="20" fill="#f8c96a" fill-opacity=".14" stroke="#f8c96a" stroke-opacity=".38"/>
+      <text x="28" y="132" class="mono">ask: edit, test</text>
+      <rect y="184" width="302" height="64" rx="20" fill="#ff8fab" fill-opacity=".13" stroke="#ff8fab" stroke-opacity=".38"/>
+      <text x="28" y="224" class="mono">deny: destructive ops</text>
+    </g>
+    <text x="52" y="380" class="small">El atajo peligroso es aprobar por cansancio.</text>
+  </g>
+</svg>

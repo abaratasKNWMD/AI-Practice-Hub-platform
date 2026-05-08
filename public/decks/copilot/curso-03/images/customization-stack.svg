@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 760" role="img" aria-labelledby="title desc">
+  <title id="title">Copilot customization stack</title>
+  <desc id="desc">A layered stack showing customizable behavior, roles, workflows, models and tools.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#081225"/>
+      <stop offset="1" stop-color="#111827"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" x2="1">
+      <stop offset="0" stop-color="#5ddcff"/>
+      <stop offset="1" stop-color="#62e6a2"/>
+    </linearGradient>
+    <style>
+      .title{font:900 34px Inter,Segoe UI,sans-serif;fill:#f8fbff}
+      .label{font:850 20px Inter,Segoe UI,sans-serif;fill:#f8fbff}
+      .small{font:700 15px Inter,Segoe UI,sans-serif;fill:#aebbd0}
+      .mono{font:650 17px ui-monospace,SFMono-Regular,Consolas,monospace;fill:#dce8f7}
+      .card{fill:#ffffff;fill-opacity:.07;stroke:#ffffff;stroke-opacity:.14}
+    </style>
+  </defs>
+  <rect width="1200" height="760" rx="34" fill="url(#bg)"/>
+  <text x="70" y="88" class="title">Que se puede customizar</text>
+  <text x="72" y="122" class="small">No se trata de decorar Copilot, sino de reducir repeticion y aumentar coherencia.</text>
+  <g transform="translate(174 182)">
+    <rect width="852" height="418" rx="32" class="card"/>
+    <g transform="translate(88 62)">
+      <rect width="676" height="58" rx="22" fill="#5ddcff" fill-opacity=".13" stroke="#5ddcff" stroke-opacity=".34"/>
+      <text x="28" y="37" class="label">Comportamiento</text>
+      <text x="314" y="37" class="small">estilo, patrones, seguridad</text>
+      <rect y="78" width="676" height="58" rx="22" fill="#62e6a2" fill-opacity=".13" stroke="#62e6a2" stroke-opacity=".34"/>
+      <text x="28" y="115" class="label">Roles</text>
+      <text x="314" y="115" class="small">planner, reviewer, security</text>
+      <rect y="156" width="676" height="58" rx="22" fill="#f8c96a" fill-opacity=".13" stroke="#f8c96a" stroke-opacity=".34"/>
+      <text x="28" y="193" class="label">Workflows</text>
+      <text x="314" y="193" class="small">prompts repetibles y auditables</text>
+      <rect y="234" width="676" height="58" rx="22" fill="#ffffff" fill-opacity=".08" stroke="#ffffff" stroke-opacity=".16"/>
+      <text x="28" y="271" class="label">Modelos</text>
+      <text x="314" y="271" class="small">calidad, coste, latencia</text>
+      <rect y="312" width="676" height="58" rx="22" fill="#ffffff" fill-opacity=".08" stroke="#ffffff" stroke-opacity=".16"/>
+      <text x="28" y="349" class="label">Tools y MCP</text>
+      <text x="314" y="349" class="small">capacidades externas con permiso</text>
+    </g>
+  </g>
+</svg>

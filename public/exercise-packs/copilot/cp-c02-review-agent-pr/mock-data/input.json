@@ -1,0 +1,21 @@
+{
+  "vendor": "copilot",
+  "exerciseId": "cp-c02-review-agent-pr",
+  "title": "Revisar PR generado por agente",
+  "surface": "GitHub PR",
+  "recommendedModel": "Copilot code review + humano",
+  "permissionMode": "review-only",
+  "estimatedCost": "Medio: review y re-review",
+  "intentionalErrors": [
+    "briefing demasiado amplio",
+    "falta de evidencia",
+    "coste sin registrar"
+  ],
+  "expectedArtifacts": [
+    "prompt",
+    "resultado",
+    "evidencia",
+    "coste",
+    "decision"
+  ]
+}

@@ -1,0 +1,87 @@
+{
+  "id": "cp-git-01-fork-vs-branch",
+  "title": "Copilot Git 01 - Fork vs Branch",
+  "description": "Git/GitHub survival para que Copilot no se convierta en una clase de ramas.",
+  "template": "technical",
+  "durationPreset": 5,
+  "durationMs": 90000,
+  "voice": "es-ES-AlvaroNeural",
+  "author": "AI Practice Hub",
+  "createdAt": "2026-05-07T00:00:00.000Z",
+  "chapters": [
+    { "id": "start", "label": "Git survival", "startMs": 0 },
+    { "id": "compare", "label": "Fork vs branch", "startMs": 9000 },
+    { "id": "close", "label": "Checklist", "startMs": 65000 }
+  ],
+  "scenes": [
+    {
+      "id": "title",
+      "name": "Apertura",
+      "startMs": 0,
+      "endMs": 9000,
+      "type": "title",
+      "content": {
+        "title": "Fork vs branch",
+        "subtitle": "Lo minimo de GitHub para trabajar con Copilot sin atascar el workshop.",
+        "tag": "Copilot CP0"
+      },
+      "subtitles": [
+        { "text": "Antes de pedir a Copilot que cambie codigo, hay que saber donde va el cambio.", "startMs": 1000, "endMs": 7600 }
+      ]
+    },
+    {
+      "id": "compare",
+      "name": "Comparativa",
+      "startMs": 9000,
+      "endMs": 65000,
+      "type": "compare",
+      "content": {
+        "tag": "GitHub survival",
+        "left": {
+          "label": "Fork",
+          "color": "destructive",
+          "steps": [
+            { "icon": "GitPullRequest", "text": "Copia del repo en otra cuenta u organizacion" },
+            { "icon": "AlertTriangle", "text": "Comun en open source y permisos externos" },
+            { "icon": "FileText", "text": "Puede confundir si el alumno solo necesita practicar" }
+          ],
+          "total": "Otro repo"
+        },
+        "right": {
+          "label": "Branch",
+          "color": "accent",
+          "steps": [
+            { "icon": "Code", "text": "Linea de trabajo dentro del mismo repo" },
+            { "icon": "Check", "text": "Ideal para labs y PRs internos" },
+            { "icon": "Eye", "text": "Diff claro para Copilot review" }
+          ],
+          "total": "Mismo repo, cambio aislado"
+        }
+      },
+      "subtitles": [
+        { "text": "Fork es otro repo. Branch es una linea de trabajo.", "startMs": 10000, "endMs": 19000 },
+        { "text": "Para formacion interna casi siempre queremos branch.", "startMs": 20000, "endMs": 33000 },
+        { "text": "Asi el PR, el diff y la review son faciles de seguir.", "startMs": 34000, "endMs": 62000 }
+      ]
+    },
+    {
+      "id": "finale",
+      "name": "Cierre",
+      "startMs": 65000,
+      "endMs": 90000,
+      "type": "finale",
+      "content": {
+        "title": "CP0 checklist",
+        "summary": [
+          { "number": "01", "label": "Branch", "body": "Aisla el trabajo." },
+          { "number": "02", "label": "Commit", "body": "Cuenta una unidad pequena." },
+          { "number": "03", "label": "PR", "body": "Convierte el cambio en conversacion." }
+        ],
+        "cta": "Ejercicio: cp0-e01-branch-pr."
+      },
+      "subtitles": [
+        { "text": "Branch, commit, PR. Con eso ya podemos practicar Copilot en serio.", "startMs": 66000, "endMs": 89000 }
+      ]
+    }
+  ]
+}

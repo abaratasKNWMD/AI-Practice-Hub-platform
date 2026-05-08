@@ -1,0 +1,128 @@
+[
+  {
+    "deck": "claude/curso-03",
+    "fileName": "reflection-automation-accountability.svg",
+    "title": "Automatizar no es abdicar",
+    "category": "reflection",
+    "href": "/decks/claude/curso-03/images/reflection-automation-accountability.svg"
+  },
+  {
+    "deck": "claude/curso-03",
+    "fileName": "reflection-human-signoff.svg",
+    "title": "Firma humana final",
+    "category": "reflection",
+    "href": "/decks/claude/curso-03/images/reflection-human-signoff.svg"
+  },
+  {
+    "deck": "claude/curso-03",
+    "fileName": "reflection-cost-shadow.svg",
+    "title": "El coste tambien deja sombra",
+    "category": "reflection",
+    "href": "/decks/claude/curso-03/images/reflection-cost-shadow.svg"
+  },
+  {
+    "deck": "claude/curso-03",
+    "fileName": "reflection-rollback-map.svg",
+    "title": "Rollback antes de rollout",
+    "category": "reflection",
+    "href": "/decks/claude/curso-03/images/reflection-rollback-map.svg"
+  },
+  {
+    "deck": "claude/curso-03",
+    "fileName": "meme-hook-panic-button.svg",
+    "title": "Hook no es boton de panico",
+    "category": "meme",
+    "href": "/decks/claude/curso-03/images/meme-hook-panic-button.svg"
+  },
+  {
+    "deck": "claude/curso-03",
+    "fileName": "meme-plugin-suitcase.svg",
+    "title": "Plugin maleta sin owner",
+    "category": "meme",
+    "href": "/decks/claude/curso-03/images/meme-plugin-suitcase.svg"
+  },
+  {
+    "deck": "claude/curso-03",
+    "fileName": "meme-action-confetti.svg",
+    "title": "No lances Actions como confeti",
+    "category": "meme",
+    "href": "/decks/claude/curso-03/images/meme-action-confetti.svg"
+  },
+  {
+    "deck": "claude/curso-02",
+    "fileName": "reflection-context-diet.svg",
+    "title": "Dieta de contexto",
+    "category": "reflection",
+    "href": "/decks/claude/curso-02/images/reflection-context-diet.svg"
+  },
+  {
+    "deck": "claude/curso-02",
+    "fileName": "reflection-skill-ownership.svg",
+    "title": "Skill con owner",
+    "category": "reflection",
+    "href": "/decks/claude/curso-02/images/reflection-skill-ownership.svg"
+  },
+  {
+    "deck": "claude/curso-02",
+    "fileName": "reflection-agent-boundary.svg",
+    "title": "Frontera del subagente",
+    "category": "reflection",
+    "href": "/decks/claude/curso-02/images/reflection-agent-boundary.svg"
+  },
+  {
+    "deck": "claude/curso-02",
+    "fileName": "diagram-skill-lifecycle.svg",
+    "title": "Lifecycle de una skill",
+    "category": "diagram",
+    "href": "/decks/claude/curso-02/images/diagram-skill-lifecycle.svg"
+  },
+  {
+    "deck": "claude/curso-02",
+    "fileName": "diagram-subagent-routing.svg",
+    "title": "Routing de subagentes",
+    "category": "diagram",
+    "href": "/decks/claude/curso-02/images/diagram-subagent-routing.svg"
+  },
+  {
+    "deck": "claude/curso-02",
+    "fileName": "diagram-mcp-governance-loop.svg",
+    "title": "Loop MCP gobernado",
+    "category": "diagram",
+    "href": "/decks/claude/curso-02/images/diagram-mcp-governance-loop.svg"
+  },
+  {
+    "deck": "copilot/curso-02",
+    "fileName": "diagram-ask-edit-agent-router.svg",
+    "title": "Router Ask/Edit/Agent",
+    "category": "diagram",
+    "href": "/decks/copilot/curso-02/images/diagram-ask-edit-agent-router.svg"
+  },
+  {
+    "deck": "copilot/curso-02",
+    "fileName": "diagram-context-signal-stack.svg",
+    "title": "Stack de senales de contexto",
+    "category": "diagram",
+    "href": "/decks/copilot/curso-02/images/diagram-context-signal-stack.svg"
+  },
+  {
+    "deck": "copilot/curso-02",
+    "fileName": "diagram-cli-permission-ladder.svg",
+    "title": "Escalera de permisos CLI",
+    "category": "diagram",
+    "href": "/decks/copilot/curso-02/images/diagram-cli-permission-ladder.svg"
+  },
+  {
+    "deck": "copilot/curso-02",
+    "fileName": "diagram-smart-action-flow.svg",
+    "title": "Flujo Smart Action",
+    "category": "diagram",
+    "href": "/decks/copilot/curso-02/images/diagram-smart-action-flow.svg"
+  },
+  {
+    "deck": "copilot/curso-02",
+    "fileName": "diagram-review-evidence-loop.svg",
+    "title": "Loop de review con evidencia",
+    "category": "diagram",
+    "href": "/decks/copilot/curso-02/images/diagram-review-evidence-loop.svg"
+  }
+]

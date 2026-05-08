@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 560" role="img" aria-labelledby="title desc">
+  <title id="title">Decision control</title>
+  <desc id="desc">Hook decision control allow deny reason.</desc>
+  <rect width="1000" height="560" rx="34" fill="#100f0e"/>
+  <text x="500" y="78" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="38" font-weight="850" fill="#fff4eb">Decision control</text>
+  <g font-family="Inter, Arial, sans-serif" text-anchor="middle">
+    <rect x="160" y="190" width="200" height="190" rx="26" fill="rgba(117,230,192,.14)" stroke="#75e6c0"/>
+    <text x="260" y="286" font-size="28" font-weight="850" fill="#d8fff1">allow</text>
+    <rect x="400" y="190" width="200" height="190" rx="26" fill="rgba(255,154,173,.14)" stroke="#ff9aad"/>
+    <text x="500" y="286" font-size="28" font-weight="850" fill="#ffdfe5">deny</text>
+    <rect x="640" y="190" width="200" height="190" rx="26" fill="rgba(255,210,122,.14)" stroke="#ffd27a"/>
+    <text x="740" y="286" font-size="28" font-weight="850" fill="#fff0c9">reason</text>
+  </g>
+  <text x="500" y="470" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="22" font-weight="850" fill="#fff4eb">Bloquear con razon educa el sistema.</text>
+</svg>

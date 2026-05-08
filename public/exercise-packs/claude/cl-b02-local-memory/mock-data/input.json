@@ -1,0 +1,21 @@
+{
+  "vendor": "claude",
+  "exerciseId": "cl-b02-local-memory",
+  "title": "CLAUDE.local.md sin contaminar el repo",
+  "surface": "Local memory",
+  "recommendedModel": "Haiku",
+  "permissionMode": "local-only",
+  "estimatedCost": "bajo",
+  "intentionalErrors": [
+    "briefing demasiado amplio",
+    "falta de evidencia",
+    "coste sin registrar"
+  ],
+  "expectedArtifacts": [
+    "prompt",
+    "resultado",
+    "evidencia",
+    "coste",
+    "decision"
+  ]
+}

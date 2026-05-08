@@ -1,0 +1,9 @@
+diff --git a/README.md b/README.md
+--- a/README.md
++++ b/README.md
+@@
++# Evidencia de ejercicio
++- Ejercicio: cl-s02-agent-reads-repo
++- Resultado: salida verificable
++- Coste: medio
++- Permisos: Read/Grep/Glob

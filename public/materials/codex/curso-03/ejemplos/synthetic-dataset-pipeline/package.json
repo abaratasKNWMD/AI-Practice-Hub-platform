@@ -1,0 +1,9 @@
+{
+  "name": "codex-synthetic-dataset-pipeline",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "build": "node src/build-dataset.mjs data/evidence.json out/onboarding.jsonl",
+    "test": "node --test"
+  }
+}

@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="620" viewBox="0 0 1100 620" role="img" aria-labelledby="title desc">
+  <title id="title">Compact and handoff</title>
+  <desc id="desc">A workflow from long session to handoff and compacted context.</desc>
+  <rect width="1100" height="620" rx="34" fill="#0d0b0a"/>
+  <text x="110" y="116" font-family="Inter, Arial, sans-serif" font-size="34" font-weight="900" fill="#fff7f0">Compactar con handoff</text>
+  <text x="110" y="150" font-family="Inter, Arial, sans-serif" font-size="18" fill="#b9aea3">Primero estado claro. Luego contexto limpio.</text>
+  <g transform="translate(110 220)" font-family="Inter, Arial, sans-serif">
+    <rect width="250" height="250" rx="24" fill="#211713" stroke="#ff9aad" stroke-opacity="0.42"/>
+    <text x="30" y="54" font-size="22" font-weight="800" fill="#ffdfe5">Sesion larga</text>
+    <text x="30" y="96" font-size="15" fill="#b9aea3">logs, intentos, dudas</text>
+    <text x="30" y="128" font-size="15" fill="#b9aea3">diff parcial</text>
+    <text x="30" y="160" font-size="15" fill="#b9aea3">tests fallidos</text>
+    <text x="30" y="192" font-size="15" fill="#b9aea3">decisiones mezcladas</text>
+    <path d="M285 125H405" stroke="#ffd27a" stroke-width="6" stroke-linecap="round"/>
+    <path d="M385 105L415 125L385 145" fill="none" stroke="#ffd27a" stroke-width="6" stroke-linecap="round"/>
+    <rect x="430" width="250" height="250" rx="24" fill="#171313" stroke="#ffd27a" stroke-opacity="0.42"/>
+    <text x="460" y="54" font-size="22" font-weight="800" fill="#ffe6ad">Handoff</text>
+    <text x="460" y="96" font-size="15" fill="#b9aea3">objetivo</text>
+    <text x="460" y="128" font-size="15" fill="#b9aea3">decisiones</text>
+    <text x="460" y="160" font-size="15" fill="#b9aea3">archivos</text>
+    <text x="460" y="192" font-size="15" fill="#b9aea3">checks y riesgos</text>
+    <path d="M715 125H835" stroke="#75e6c0" stroke-width="6" stroke-linecap="round"/>
+    <path d="M815 105L845 125L815 145" fill="none" stroke="#75e6c0" stroke-width="6" stroke-linecap="round"/>
+    <rect x="860" width="130" height="250" rx="24" fill="#111817" stroke="#75e6c0" stroke-opacity="0.42"/>
+    <text x="925" y="104" text-anchor="middle" font-size="22" font-weight="800" fill="#c9fff0">/compact</text>
+    <text x="925" y="140" text-anchor="middle" font-size="14" fill="#b9aea3">menos ruido</text>
+  </g>
+</svg>

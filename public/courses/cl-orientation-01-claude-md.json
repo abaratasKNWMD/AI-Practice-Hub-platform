@@ -1,0 +1,64 @@
+{
+  "id": "cl-orientation-01-claude-md",
+  "title": "Claude Orientation 01 - CLAUDE.md",
+  "description": "Por que la memoria de proyecto cambia la adopcion de Claude Code.",
+  "template": "technical",
+  "durationPreset": 5,
+  "durationMs": 90000,
+  "voice": "es-ES-AlvaroNeural",
+  "author": "AI Practice Hub",
+  "createdAt": "2026-05-07T00:00:00.000Z",
+  "chapters": [
+    { "id": "start", "label": "Memoria", "startMs": 0 },
+    { "id": "concept", "label": "Capas", "startMs": 9000 },
+    { "id": "close", "label": "Regla", "startMs": 65000 }
+  ],
+  "scenes": [
+    {
+      "id": "title",
+      "name": "Apertura",
+      "startMs": 0,
+      "endMs": 9000,
+      "type": "title",
+      "content": { "title": "CLAUDE.md", "subtitle": "La memoria que evita repetir el mismo briefing cada dia.", "tag": "Claude Orientation" },
+      "subtitles": [{ "text": "Claude Code no empieza de cero si el repositorio tiene memoria bien escrita.", "startMs": 1000, "endMs": 8200 }]
+    },
+    {
+      "id": "concept",
+      "name": "Capas",
+      "startMs": 9000,
+      "endMs": 65000,
+      "type": "concept",
+      "content": {
+        "tag": "Memoria operativa",
+        "title": "No todo va al prompt",
+        "body": "El error comun es pegar contexto una y otra vez. En Claude Code, el equipo puede mover informacion estable a CLAUDE.md, preferencias personales a CLAUDE.local.md, reglas especificas a .claude/rules y procedimientos repetidos a skills.\n\nEsto reduce coste, mejora consistencia y hace que la tutoria sea sobre decisiones reales, no sobre explicar de nuevo el repo.",
+        "highlight": "Memoria buena = menos repeticion, menos tokens, mejores decisiones.",
+        "points": ["CLAUDE.md: reglas estables de proyecto", "Rules: contexto por area", "Skills: procedimientos invocables", "Local memory: preferencias no versionadas"]
+      },
+      "subtitles": [
+        { "text": "La memoria no es un cajon para todo.", "startMs": 10000, "endMs": 22000 },
+        { "text": "Cada capa tiene una funcion y un coste.", "startMs": 23000, "endMs": 42000 },
+        { "text": "El objetivo es que la sesion arranque con contexto justo.", "startMs": 43000, "endMs": 63000 }
+      ]
+    },
+    {
+      "id": "finale",
+      "name": "Cierre",
+      "startMs": 65000,
+      "endMs": 90000,
+      "type": "finale",
+      "content": {
+        "title": "Regla de memoria",
+        "summary": [
+          { "number": "01", "label": "Estable", "body": "Va a CLAUDE.md." },
+          { "number": "02", "label": "Especifico", "body": "Va a rules o skills." },
+          { "number": "03", "label": "Personal", "body": "Va a CLAUDE.local.md." }
+        ],
+        "cta": "Ejercicio: cl0-e02-claude-md."
+      },
+      "subtitles": [{ "text": "Si una regla se repite cada semana, no la expliques: versionala.", "startMs": 66000, "endMs": 89000 }]
+    }
+  ]
+}
+

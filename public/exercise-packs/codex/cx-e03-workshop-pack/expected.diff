@@ -1,0 +1,9 @@
+diff --git a/README.md b/README.md
+--- a/README.md
++++ b/README.md
+@@
++# Evidencia de ejercicio
++- Ejercicio: cx-e03-workshop-pack
++- Resultado: salida verificable
++- Coste: Medio: creacion de materiales
++- Permisos: workspace-write

@@ -1,0 +1,9 @@
+diff --git a/README.md b/README.md
+--- a/README.md
++++ b/README.md
+@@
++# Evidencia de ejercicio
++- Ejercicio: cl-a03-plugin-team-review
++- Resultado: salida verificable
++- Coste: medio-alto: empaquetado + prueba
++- Permisos: plugin workspace

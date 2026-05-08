@@ -1,0 +1,74 @@
+{
+  "id": "cp-cloud-01-cloud-agent-pr",
+  "title": "Copilot Cloud 01 - Agent PR",
+  "description": "De issue delegable a PR generada por Copilot cloud agent.",
+  "template": "technical",
+  "durationPreset": 5,
+  "durationMs": 90000,
+  "voice": "es-ES-AlvaroNeural",
+  "author": "AI Practice Hub",
+  "createdAt": "2026-05-07T00:00:00.000Z",
+  "chapters": [
+    { "id": "start", "label": "Cloud", "startMs": 0 },
+    { "id": "flow", "label": "Issue -> PR", "startMs": 9000 },
+    { "id": "close", "label": "Review", "startMs": 65000 }
+  ],
+  "scenes": [
+    {
+      "id": "title",
+      "name": "Apertura",
+      "startMs": 0,
+      "endMs": 9000,
+      "type": "title",
+      "content": {
+        "title": "Cloud agent",
+        "subtitle": "Delegar no es abandonar: issue claro, PR revisada.",
+        "tag": "Copilot CP4"
+      },
+      "subtitles": [
+        { "text": "Cloud agent puede trabajar desde GitHub, pero necesita un issue delegable.", "startMs": 1000, "endMs": 8200 }
+      ]
+    },
+    {
+      "id": "linear",
+      "name": "Issue",
+      "startMs": 9000,
+      "endMs": 65000,
+      "type": "linear",
+      "content": {
+        "ticketId": "CP-CLOUD",
+        "title": "Issue delegable a Copilot cloud agent",
+        "project": "Enterprise Copilot",
+        "priority": "High",
+        "assignee": "Copilot cloud agent",
+        "status": "Ready",
+        "labels": ["cloud-agent", "governance", "ai"],
+        "description": "Goal: implementar cambio acotado.\n\nContexto: rutas y tests relevantes.\n\nConstraints: no tocar auth, no cambiar contratos publicos, no modificar secrets.\n\nAcceptance criteria: test actualizado, PR description, riesgo residual.\n\nBudget: premium requests medio y human review obligatoria."
+      },
+      "subtitles": [
+        { "text": "El issue debe incluir objetivo, contexto y restricciones.", "startMs": 10000, "endMs": 29000 },
+        { "text": "Tambien acceptance criteria y presupuesto.", "startMs": 30000, "endMs": 46000 },
+        { "text": "La PR generada siempre pasa por review humana.", "startMs": 47000, "endMs": 62000 }
+      ]
+    },
+    {
+      "id": "finale",
+      "name": "Cierre",
+      "startMs": 65000,
+      "endMs": 90000,
+      "type": "finale",
+      "content": {
+        "title": "Cloud agent gobernado",
+        "summary": [
+          { "number": "01", "label": "Issue", "body": "Delegable y acotado." },
+          { "number": "02", "label": "PR", "body": "Generada con evidencia." },
+          { "number": "03", "label": "Humano", "body": "Responsable del merge." }
+        ],
+        "cta": "Ejercicio: cp-c01-delegable-issue."
+      },
+      "subtitles": [
+        { "text": "Delegar bien significa revisar mejor, no dejar de revisar.", "startMs": 66000, "endMs": 89000 }
+      ]
+    }
+  ]
+}

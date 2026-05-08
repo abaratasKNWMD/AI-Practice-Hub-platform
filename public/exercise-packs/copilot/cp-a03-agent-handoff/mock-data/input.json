@@ -1,0 +1,21 @@
+{
+  "vendor": "copilot",
+  "exerciseId": "cp-a03-agent-handoff",
+  "title": "Handoff planner -> implementer -> reviewer",
+  "surface": "VS Code custom agents",
+  "recommendedModel": "Modelo premium si hay alta ambiguedad",
+  "permissionMode": "read-only por rol, write solo implementer",
+  "estimatedCost": "Medio-alto: varios agentes/iteraciones",
+  "intentionalErrors": [
+    "briefing demasiado amplio",
+    "falta de evidencia",
+    "coste sin registrar"
+  ],
+  "expectedArtifacts": [
+    "prompt",
+    "resultado",
+    "evidencia",
+    "coste",
+    "decision"
+  ]
+}

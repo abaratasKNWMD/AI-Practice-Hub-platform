@@ -1,0 +1,34 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Code RAG Chunk",
+  "type": "object",
+  "required": ["id", "file", "language", "kind", "symbol", "range", "embedding_text", "display_text"],
+  "properties": {
+    "id": { "type": "string" },
+    "file": { "type": "string" },
+    "language": { "type": "string" },
+    "kind": {
+      "type": "string",
+      "enum": ["function", "class", "endpoint", "test", "config", "doc", "unknown"]
+    },
+    "symbol": { "type": "string" },
+    "range": {
+      "type": "object",
+      "required": ["start", "end"],
+      "properties": {
+        "start": { "type": "integer" },
+        "end": { "type": "integer" }
+      }
+    },
+    "imports": { "type": "array", "items": { "type": "string" } },
+    "calls": { "type": "array", "items": { "type": "string" } },
+    "tests": { "type": "array", "items": { "type": "string" } },
+    "owner": { "type": "string" },
+    "acl": { "type": "string" },
+    "freshness": { "type": "string" },
+    "risk": { "type": "string", "enum": ["low", "medium", "high"] },
+    "embedding_text": { "type": "string" },
+    "display_text": { "type": "string" }
+  },
+  "additionalProperties": false
+}

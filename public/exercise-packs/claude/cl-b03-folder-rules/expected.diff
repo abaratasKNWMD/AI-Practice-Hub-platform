@@ -1,0 +1,9 @@
+diff --git a/README.md b/README.md
+--- a/README.md
++++ b/README.md
+@@
++# Evidencia de ejercicio
++- Ejercicio: cl-b03-folder-rules
++- Resultado: salida verificable
++- Coste: bajo-medio: edicion de 4 rules
++- Permisos: write project rules

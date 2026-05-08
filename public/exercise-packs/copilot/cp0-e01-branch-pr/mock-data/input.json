@@ -1,0 +1,21 @@
+{
+  "vendor": "copilot",
+  "exerciseId": "cp0-e01-branch-pr",
+  "title": "Rama, commit y PR sin bloquear la tutoria",
+  "surface": "GitHub + VS Code",
+  "recommendedModel": "Modelo incluido / Ask",
+  "permissionMode": "local demo",
+  "estimatedCost": "Muy bajo: sin premium requests si se trabaja con docs y comandos",
+  "intentionalErrors": [
+    "briefing demasiado amplio",
+    "falta de evidencia",
+    "coste sin registrar"
+  ],
+  "expectedArtifacts": [
+    "prompt",
+    "resultado",
+    "evidencia",
+    "coste",
+    "decision"
+  ]
+}

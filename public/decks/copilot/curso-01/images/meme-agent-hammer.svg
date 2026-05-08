@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 760" role="img" aria-labelledby="title desc">
+  <title id="title">Not every task needs Agent mode</title>
+  <desc id="desc">A humorous dashboard showing that not every Copilot task should use Agent mode.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#111827"/>
+      <stop offset="1" stop-color="#071a18"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" x2="1">
+      <stop offset="0" stop-color="#5ddcff"/>
+      <stop offset="1" stop-color="#62e6a2"/>
+    </linearGradient>
+    <style>
+      .title{font:900 34px Inter,Segoe UI,sans-serif;fill:#f8fbff}
+      .label{font:850 22px Inter,Segoe UI,sans-serif;fill:#f8fbff}
+      .small{font:700 15px Inter,Segoe UI,sans-serif;fill:#aebbd0}
+      .mono{font:700 17px ui-monospace,SFMono-Regular,Consolas,monospace;fill:#dce8f7}
+      .card{fill:#ffffff;fill-opacity:.07;stroke:#ffffff;stroke-opacity:.14}
+    </style>
+  </defs>
+  <rect width="1200" height="760" rx="34" fill="url(#bg)"/>
+  <text x="70" y="88" class="title">No todo merece Agent mode</text>
+  <text x="72" y="122" class="small">La madurez esta en elegir superficie, no en pulsar el boton mas potente.</text>
+  <g transform="translate(102 188)">
+    <rect width="446" height="396" rx="32" class="card"/>
+    <text x="38" y="58" class="label">Modo reflejo</text>
+    <rect x="64" y="104" width="318" height="92" rx="26" fill="#ff8fab" fill-opacity=".13" stroke="#ff8fab" stroke-opacity=".4"/>
+    <text x="102" y="158" class="mono">"Explica esta funcion"</text>
+    <rect x="112" y="244" width="220" height="88" rx="28" fill="#f8c96a" fill-opacity=".16" stroke="#f8c96a" stroke-opacity=".42"/>
+    <text x="162" y="298" class="label">AGENT</text>
+    <text x="54" y="362" class="small">Resultado: mas coste, mas permisos, misma duda.</text>
+  </g>
+  <g transform="translate(652 188)">
+    <rect width="446" height="396" rx="32" class="card"/>
+    <text x="38" y="58" class="label">Modo con criterio</text>
+    <g transform="translate(58 104)">
+      <rect width="330" height="62" rx="20" fill="#5ddcff" fill-opacity=".14" stroke="#5ddcff" stroke-opacity=".38"/>
+      <text x="28" y="40" class="mono">ASK: entender</text>
+      <rect y="86" width="330" height="62" rx="20" fill="#62e6a2" fill-opacity=".14" stroke="#62e6a2" stroke-opacity=".38"/>
+      <text x="28" y="126" class="mono">EDIT: cambio local</text>
+      <rect y="172" width="330" height="62" rx="20" fill="#f8c96a" fill-opacity=".14" stroke="#f8c96a" stroke-opacity=".38"/>
+      <text x="28" y="212" class="mono">AGENT: tarea multiarchivo</text>
+    </g>
+    <text x="54" y="362" class="small">Primero pregunta: que riesgo tiene esta tarea?</text>
+  </g>
+  <path d="M574 384h54" stroke="url(#accent)" stroke-width="8" stroke-linecap="round"/>
+</svg>

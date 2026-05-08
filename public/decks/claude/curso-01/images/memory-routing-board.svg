@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" role="img" aria-labelledby="title desc">
+  <title id="title">Tablero de enrutado de memoria Claude</title>
+  <desc id="desc">Visual para decidir si una instruccion va a CLAUDE.md, rules, skill, prompt o auto memory.</desc>
+  <rect width="1280" height="720" rx="38" fill="#f8efe4"/>
+  <text x="70" y="86" font-family="Inter, Arial, sans-serif" font-size="42" font-weight="900" fill="#221a14">Donde vive cada instruccion</text>
+  <text x="70" y="122" font-family="Inter, Arial, sans-serif" font-size="21" fill="#6a5744">El problema no es recordar mas. Es recordar en la capa correcta.</text>
+  <g font-family="Inter, Arial, sans-serif" font-weight="800">
+    <rect x="74" y="176" width="260" height="104" rx="24" fill="#f4d58d"/>
+    <text x="204" y="218" text-anchor="middle" font-size="24" fill="#271d14">CLAUDE.md</text>
+    <text x="204" y="248" text-anchor="middle" font-size="16" fill="#4f3e31">normas de equipo</text>
+    <rect x="390" y="176" width="260" height="104" rx="24" fill="#cce3de"/>
+    <text x="520" y="218" text-anchor="middle" font-size="24" fill="#271d14">Rules</text>
+    <text x="520" y="248" text-anchor="middle" font-size="16" fill="#4f3e31">contexto por carpeta</text>
+    <rect x="706" y="176" width="260" height="104" rx="24" fill="#d7b9f8"/>
+    <text x="836" y="218" text-anchor="middle" font-size="24" fill="#271d14">Skills</text>
+    <text x="836" y="248" text-anchor="middle" font-size="16" fill="#4f3e31">procedimientos largos</text>
+    <rect x="1022" y="176" width="184" height="104" rx="24" fill="#f4a261"/>
+    <text x="1114" y="218" text-anchor="middle" font-size="24" fill="#271d14">Prompt</text>
+    <text x="1114" y="248" text-anchor="middle" font-size="16" fill="#4f3e31">lo puntual</text>
+  </g>
+  <g font-family="Inter, Arial, sans-serif" font-size="18" fill="#251c15">
+    <rect x="116" y="354" width="250" height="74" rx="18" fill="#fffaf2" stroke="#d0b28a"/>
+    <text x="144" y="385" font-weight="800">"No tocar .env"</text>
+    <text x="144" y="412" fill="#6b5a49">regla global y estable</text>
+    <path d="M242 354 L210 280" stroke="#9a7b57" stroke-width="4" fill="none"/>
+    <rect x="424" y="354" width="250" height="74" rx="18" fill="#fffaf2" stroke="#9dbbb2"/>
+    <text x="452" y="385" font-weight="800">"Tests aqui usan msw"</text>
+    <text x="452" y="412" fill="#6b5a49">solo en frontend</text>
+    <path d="M548 354 L520 280" stroke="#5f8f82" stroke-width="4" fill="none"/>
+    <rect x="734" y="354" width="250" height="74" rx="18" fill="#fffaf2" stroke="#b59ad8"/>
+    <text x="762" y="385" font-weight="800">"Review visual QA"</text>
+    <text x="762" y="412" fill="#6b5a49">workflow reutilizable</text>
+    <path d="M856 354 L838 280" stroke="#8560ab" stroke-width="4" fill="none"/>
+    <rect x="892" y="506" width="270" height="74" rx="18" fill="#fffaf2" stroke="#df9854"/>
+    <text x="920" y="537" font-weight="800">"Mira este stacktrace"</text>
+    <text x="920" y="564" fill="#6b5a49">solo esta tarea</text>
+    <path d="M1046 506 L1112 280" stroke="#c47835" stroke-width="4" fill="none"/>
+  </g>
+  <rect x="98" y="526" width="608" height="78" rx="20" fill="#1f1f1f"/>
+  <text x="130" y="559" font-family="Inter, Arial, sans-serif" font-size="22" font-weight="900" fill="#fff">Regla practica</text>
+  <text x="130" y="589" font-family="Inter, Arial, sans-serif" font-size="18" fill="#eadccd">Si se repite y decide codigo, versionalo. Si solo desbloquea hoy, va al prompt.</text>
+</svg>

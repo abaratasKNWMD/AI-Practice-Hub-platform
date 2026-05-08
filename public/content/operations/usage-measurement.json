@@ -1,0 +1,29 @@
+{
+  "storage": "localStorage v1 + export JSON",
+  "events": [
+    "course_progress_changed",
+    "video_progress_changed",
+    "exercise_status_changed",
+    "exercise_pack_open",
+    "self_assessment_open",
+    "instructor_mode_open",
+    "feedback_submitted",
+    "exercise_feedback_submitted",
+    "workshop_feedback_submitted",
+    "tutoring_request_created",
+    "doubt_created",
+    "progress_exported"
+  ],
+  "metrics": [
+    "completion by vendor",
+    "blocked exercises",
+    "reviewed exercises",
+    "pack opens by exercise/vendor",
+    "self-assessment opens",
+    "instructor-mode opens",
+    "feedback score average",
+    "top repeated doubts",
+    "workshop readiness",
+    "video completion"
+  ]
+}

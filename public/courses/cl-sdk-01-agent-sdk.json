@@ -1,0 +1,64 @@
+{
+  "id": "cl-sdk-01-agent-sdk",
+  "title": "Claude SDK 01 - Agent SDK",
+  "description": "Convertir flujos Claude Code en agentes programaticos.",
+  "template": "technical",
+  "durationPreset": 5,
+  "durationMs": 90000,
+  "voice": "es-ES-AlvaroNeural",
+  "author": "AI Practice Hub",
+  "createdAt": "2026-05-07T00:00:00.000Z",
+  "chapters": [
+    { "id": "start", "label": "SDK", "startMs": 0 },
+    { "id": "concept", "label": "Agente", "startMs": 9000 },
+    { "id": "close", "label": "Contrato", "startMs": 65000 }
+  ],
+  "scenes": [
+    {
+      "id": "title",
+      "name": "Apertura",
+      "startMs": 0,
+      "endMs": 9000,
+      "type": "title",
+      "content": { "title": "Agent SDK", "subtitle": "Cuando Claude Code deja de ser sesion y se vuelve producto interno.", "tag": "Claude Enterprise" },
+      "subtitles": [{ "text": "El SDK permite llevar patrones de Claude Code a automatizaciones propias.", "startMs": 1000, "endMs": 8200 }]
+    },
+    {
+      "id": "concept",
+      "name": "Agente",
+      "startMs": 9000,
+      "endMs": 65000,
+      "type": "concept",
+      "content": {
+        "tag": "Programatico",
+        "title": "query, tools, agents, output",
+        "body": "Con Agent SDK puedes construir un flujo que lee un repo, llama subagentes y devuelve una salida controlada. El valor enterprise esta en contratos, evaluaciones y permisos.\n\nNo es un chatbot mas. Es una pieza de plataforma que debe poder medirse, auditarse y apagarse.",
+        "highlight": "SDK bueno = agente con herramientas acotadas y salida estable.",
+        "points": ["Prompt de tarea", "Allowed tools", "Subagentes", "Contrato de salida"]
+      },
+      "subtitles": [
+        { "text": "El SDK convierte una practica en software.", "startMs": 10000, "endMs": 27000 },
+        { "text": "Por eso necesita contrato de salida y permisos estrechos.", "startMs": 28000, "endMs": 49000 },
+        { "text": "El primer agente enterprise debe ser pequeño y evaluable.", "startMs": 50000, "endMs": 63000 }
+      ]
+    },
+    {
+      "id": "finale",
+      "name": "Cierre",
+      "startMs": 65000,
+      "endMs": 90000,
+      "type": "finale",
+      "content": {
+        "title": "SDK minimo",
+        "summary": [
+          { "number": "01", "label": "Tools", "body": "Solo lo necesario." },
+          { "number": "02", "label": "Agents", "body": "Roles separados." },
+          { "number": "03", "label": "Output", "body": "JSON consumible." }
+        ],
+        "cta": "Ejercicio: cl-s01-sdk-setup."
+      },
+      "subtitles": [{ "text": "El SDK no reemplaza governance. La obliga.", "startMs": 66000, "endMs": 89000 }]
+    }
+  ]
+}
+

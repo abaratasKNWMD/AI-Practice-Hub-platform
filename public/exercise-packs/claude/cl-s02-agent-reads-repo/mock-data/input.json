@@ -1,0 +1,21 @@
+{
+  "vendor": "claude",
+  "exerciseId": "cl-s02-agent-reads-repo",
+  "title": "Agente que lee repo con herramientas acotadas",
+  "surface": "Agent SDK tools",
+  "recommendedModel": "Sonnet",
+  "permissionMode": "Read/Grep/Glob",
+  "estimatedCost": "medio",
+  "intentionalErrors": [
+    "briefing demasiado amplio",
+    "falta de evidencia",
+    "coste sin registrar"
+  ],
+  "expectedArtifacts": [
+    "prompt",
+    "resultado",
+    "evidencia",
+    "coste",
+    "decision"
+  ]
+}

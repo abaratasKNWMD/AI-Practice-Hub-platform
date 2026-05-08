@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="620" viewBox="0 0 1100 620" role="img" aria-labelledby="title desc">
+  <title id="title">CLAUDE.md novel meme</title>
+  <desc id="desc">A humorous visual of an oversized CLAUDE.md document.</desc>
+  <rect width="1100" height="620" rx="34" fill="#11100f"/>
+  <text x="95" y="112" font-family="Inter, Arial, sans-serif" font-size="34" font-weight="900" fill="#fff7f0">CLAUDE.md: edicion novela</text>
+  <text x="95" y="148" font-family="Inter, Arial, sans-serif" font-size="18" fill="#b9aea3">Si pesa mas que el repo, algo se nos fue de las manos.</text>
+  <g transform="translate(150 205)" font-family="Inter, Arial, sans-serif">
+    <rect x="0" y="0" width="340" height="315" rx="24" fill="#211713" stroke="#ff9aad" stroke-opacity="0.42"/>
+    <rect x="30" y="36" width="280" height="240" rx="12" fill="#f8f3eb"/>
+    <text x="170" y="80" text-anchor="middle" font-size="24" font-weight="900" fill="#211713">CLAUDE.md</text>
+    <text x="60" y="126" font-size="13" fill="#5f5650">Capitulo I: Historia del repo...</text>
+    <text x="60" y="156" font-size="13" fill="#5f5650">Capitulo II: Filosofia de tabs...</text>
+    <text x="60" y="186" font-size="13" fill="#5f5650">Capitulo III: Todo sobre 2018...</text>
+    <text x="60" y="216" font-size="13" fill="#5f5650">Apendice A-Z: opiniones...</text>
+    <text x="60" y="246" font-size="13" fill="#5f5650">Epilogo: no rompas nada...</text>
+    <rect x="410" y="38" width="350" height="240" rx="24" fill="#111817" stroke="#75e6c0" stroke-opacity="0.42"/>
+    <text x="585" y="95" text-anchor="middle" font-size="24" font-weight="900" fill="#c9fff0">VERSION UTIL</text>
+    <text x="456" y="143" font-size="16" fill="#b9aea3">- comandos</text>
+    <text x="456" y="178" font-size="16" fill="#b9aea3">- arquitectura actual</text>
+    <text x="456" y="213" font-size="16" fill="#b9aea3">- reglas verificables</text>
+    <text x="456" y="248" font-size="16" fill="#b9aea3">- done criteria</text>
+  </g>
+</svg>

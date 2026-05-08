@@ -1,0 +1,64 @@
+{
+  "id": "cl-orientation-03-cost-context",
+  "title": "Claude Orientation 03 - Cost and Context",
+  "description": "Coste, contexto, modelos y limpieza de sesiones en Claude Code.",
+  "template": "technical",
+  "durationPreset": 5,
+  "durationMs": 90000,
+  "voice": "es-ES-AlvaroNeural",
+  "author": "AI Practice Hub",
+  "createdAt": "2026-05-07T00:00:00.000Z",
+  "chapters": [
+    { "id": "start", "label": "Coste", "startMs": 0 },
+    { "id": "concept", "label": "Controles", "startMs": 9000 },
+    { "id": "close", "label": "Modelo", "startMs": 65000 }
+  ],
+  "scenes": [
+    {
+      "id": "title",
+      "name": "Apertura",
+      "startMs": 0,
+      "endMs": 9000,
+      "type": "title",
+      "content": { "title": "Coste y contexto", "subtitle": "El agente potente no tiene que ser el agente caro.", "tag": "Claude Orientation" },
+      "subtitles": [{ "text": "La adopcion falla cuando nadie sabe cuanto cuesta una sesion larga.", "startMs": 1000, "endMs": 8200 }]
+    },
+    {
+      "id": "concept",
+      "name": "Controles",
+      "startMs": 9000,
+      "endMs": 65000,
+      "type": "concept",
+      "content": {
+        "tag": "Gobierno diario",
+        "title": "Mide antes de acelerar",
+        "body": "Claude Code ofrece controles para revisar uso y contexto. La disciplina consiste en limpiar contexto entre tareas, compactar antes de perder informacion y elegir modelo por riesgo.\n\nHaiku puede resumir o clasificar. Sonnet puede implementar la mayoria de tareas. Opus se reserva para arquitectura dificil, bugs profundos o decisiones de alto impacto.",
+        "highlight": "El coste real incluye modelo, contexto, herramientas y reintentos.",
+        "points": ["Usa /usage para gasto", "Usa /context para saturacion", "Usa /clear al cambiar de tarea", "Usa /compact antes de perder estado"]
+      },
+      "subtitles": [
+        { "text": "No es solo precio por modelo.", "startMs": 10000, "endMs": 22000 },
+        { "text": "El contexto viejo tambien cuesta y confunde.", "startMs": 23000, "endMs": 45000 },
+        { "text": "El routing de modelos es una competencia de equipo.", "startMs": 46000, "endMs": 63000 }
+      ]
+    },
+    {
+      "id": "finale",
+      "name": "Cierre",
+      "startMs": 65000,
+      "endMs": 90000,
+      "type": "finale",
+      "content": {
+        "title": "Modelo por tarea",
+        "summary": [
+          { "number": "Haiku", "label": "Clasificar", "body": "Resumen, inventario, checks baratos." },
+          { "number": "Sonnet", "label": "Construir", "body": "Implementacion diaria y reviews." },
+          { "number": "Opus", "label": "Decidir", "body": "Arquitectura o debugging critico." }
+        ],
+        "cta": "Ejercicio: cl0-e04-cost-baseline."
+      },
+      "subtitles": [{ "text": "Ser potente no es gastar mas. Es gastar donde importa.", "startMs": 66000, "endMs": 89000 }]
+    }
+  ]
+}
+

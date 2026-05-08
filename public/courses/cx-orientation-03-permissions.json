@@ -1,0 +1,113 @@
+{
+  "id": "cx-orientation-03-permissions",
+  "title": "Codex Orientation 03 - Permissions",
+  "description": "Permisos, coste y seguridad explicados para alumnos que empiezan a usar Codex.",
+  "template": "technical",
+  "durationPreset": 5,
+  "durationMs": 90000,
+  "voice": "es-ES-AlvaroNeural",
+  "author": "AI Practice Hub",
+  "createdAt": "2026-05-07T00:00:00.000Z",
+  "chapters": [
+    { "id": "start", "label": "Permisos", "startMs": 0 },
+    { "id": "compare", "label": "Modos", "startMs": 8000 },
+    { "id": "cost", "label": "Coste", "startMs": 42000 },
+    { "id": "close", "label": "Cierre", "startMs": 70000 }
+  ],
+  "scenes": [
+    {
+      "id": "title",
+      "name": "Apertura",
+      "startMs": 0,
+      "endMs": 8000,
+      "type": "title",
+      "content": {
+        "title": "Permisos sin drama",
+        "subtitle": "Leer, escribir, ejecutar y conectar son decisiones distintas.",
+        "tag": "Codex / Governance"
+      },
+      "subtitles": [
+        { "text": "Los permisos no son burocracia.", "startMs": 1000, "endMs": 3500 },
+        { "text": "Son el volante de seguridad de la sesion.", "startMs": 3800, "endMs": 7600 }
+      ]
+    },
+    {
+      "id": "compare",
+      "name": "Permisos",
+      "startMs": 8000,
+      "endMs": 42000,
+      "type": "compare",
+      "content": {
+        "tag": "Modos de trabajo",
+        "left": {
+          "label": "Todo abierto",
+          "color": "destructive",
+          "steps": [
+            { "icon": "Zap", "text": "Avanza muy rapido" },
+            { "icon": "AlertTriangle", "text": "Puede tocar mas de lo necesario" },
+            { "icon": "AlertTriangle", "text": "Dificil explicar coste y riesgo" }
+          ],
+          "total": "Comodo, pero opaco"
+        },
+        "right": {
+          "label": "Permiso por fase",
+          "color": "accent",
+          "steps": [
+            { "icon": "Eye", "text": "Read-only para entender" },
+            { "icon": "Code", "text": "Workspace-write para patch acotado" },
+            { "icon": "Check", "text": "Ejecucion solo con objetivo claro" }
+          ],
+          "total": "Control docente"
+        }
+      },
+      "subtitles": [
+        { "text": "No todo necesita permiso de escritura.", "startMs": 9000, "endMs": 15000 },
+        { "text": "Primero leer. Luego editar. Luego ejecutar.", "startMs": 15500, "endMs": 24500 },
+        { "text": "La progresion de permisos ensena criterio.", "startMs": 25000, "endMs": 40500 }
+      ]
+    },
+    {
+      "id": "concept",
+      "name": "Coste",
+      "startMs": 42000,
+      "endMs": 70000,
+      "type": "concept",
+      "content": {
+        "tag": "Conciencia de coste",
+        "title": "El gasto aparece por contexto, reintentos y modelo",
+        "body": "En formacion, el coste no debe esconderse. El alumno debe aprender que una tarea barata puede volverse cara por repetir sin diagnostico, meter contexto irrelevante o usar un modelo premium para una operacion mecanica.",
+        "highlight": "Coste por resultado, no coste por prompt.",
+        "points": [
+          "Usa modelos pequenos para exploracion simple.",
+          "Escala cuando haya arquitectura, ambiguedad o riesgo.",
+          "Registra reintentos y evidencia de cierre."
+        ]
+      },
+      "subtitles": [
+        { "text": "El coste se gestiona con habitos.", "startMs": 43000, "endMs": 49000 },
+        { "text": "Modelo correcto, contexto correcto, cierre verificable.", "startMs": 49500, "endMs": 61000 },
+        { "text": "Eso hace la plataforma sostenible.", "startMs": 61500, "endMs": 69000 }
+      ]
+    },
+    {
+      "id": "finale",
+      "name": "Cierre",
+      "startMs": 70000,
+      "endMs": 90000,
+      "type": "finale",
+      "content": {
+        "title": "Permisos = pedagogia",
+        "summary": [
+          { "number": "01", "label": "Read-only", "body": "Ideal para entender, auditar y revisar." },
+          { "number": "02", "label": "Write", "body": "Solo con plan y alcance." },
+          { "number": "03", "label": "Run", "body": "Ejecuta comandos que validan, no ruido." }
+        ],
+        "cta": "Ejercicio asociado: cx-m01-config-safe."
+      },
+      "subtitles": [
+        { "text": "Permisos bien usados aceleran el aprendizaje.", "startMs": 70500, "endMs": 82000 },
+        { "text": "No frenan Codex: lo encarrilan.", "startMs": 82500, "endMs": 89500 }
+      ]
+    }
+  ]
+}

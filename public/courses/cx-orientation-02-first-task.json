@@ -1,0 +1,101 @@
+{
+  "id": "cx-orientation-02-first-task",
+  "title": "Codex Orientation 02 - First Task",
+  "description": "Como convertir una primera tarea vaga en un briefing verificable para Codex.",
+  "template": "technical",
+  "durationPreset": 5,
+  "durationMs": 90000,
+  "voice": "es-ES-AlvaroNeural",
+  "author": "AI Practice Hub",
+  "createdAt": "2026-05-07T00:00:00.000Z",
+  "chapters": [
+    { "id": "start", "label": "Tarea", "startMs": 0 },
+    { "id": "brief", "label": "Briefing", "startMs": 8000 },
+    { "id": "prompt", "label": "Prompt", "startMs": 42000 },
+    { "id": "close", "label": "Cierre", "startMs": 70000 }
+  ],
+  "scenes": [
+    {
+      "id": "title",
+      "name": "Apertura",
+      "startMs": 0,
+      "endMs": 8000,
+      "type": "title",
+      "content": {
+        "title": "Tu primera tarea",
+        "subtitle": "Objetivo, contexto, restricciones y criterio de cierre.",
+        "tag": "Codex / Prompting"
+      },
+      "subtitles": [
+        { "text": "La primera tarea marca el tono de toda la sesion.", "startMs": 1000, "endMs": 5000 },
+        { "text": "Vamos a hacerla verificable.", "startMs": 5200, "endMs": 7600 }
+      ]
+    },
+    {
+      "id": "linear",
+      "name": "Briefing",
+      "startMs": 8000,
+      "endMs": 42000,
+      "type": "linear",
+      "content": {
+        "ticketId": "CX-001",
+        "title": "Arreglar bug de login sin tocar flujo completo",
+        "project": "Codex Practice Hub",
+        "priority": "Medium",
+        "assignee": "Codex",
+        "status": "Ready",
+        "labels": ["codex", "bug", "training"],
+        "description": "Objetivo: diagnosticar y corregir un fallo de login reproducible.\n\nContexto: el repo tiene tests y una pantalla de autenticacion.\n\nRestricciones: no reescribir autenticacion completa, no tocar estilos no relacionados, no cambiar contrato de API sin justificar.\n\nCriterio de cierre: explicar causa raiz, aplicar patch minimo, ejecutar test relevante o documentar bloqueo."
+      },
+      "subtitles": [
+        { "text": "Un briefing bueno cabe en cuatro piezas.", "startMs": 9000, "endMs": 15000 },
+        { "text": "Objetivo, contexto, restricciones y criterio de cierre.", "startMs": 15500, "endMs": 25000 },
+        { "text": "Asi Codex puede actuar sin inventar alcance.", "startMs": 25500, "endMs": 40500 }
+      ]
+    },
+    {
+      "id": "coding",
+      "name": "Prompt",
+      "startMs": 42000,
+      "endMs": 70000,
+      "type": "coding",
+      "content": {
+        "tag": "Prompt operativo",
+        "filename": "prompts/first-task.md",
+        "code": "Objetivo: arreglar el bug de login descrito en CX-001.\\n\\nContexto:\\n- Antes de editar, lee las rutas relevantes.\\n- Cita archivos y comandos que uses.\\n\\nRestricciones:\\n- No reescribas autenticacion completa.\\n- No toques estilos no relacionados.\\n- Mantén el diff pequeno.\\n\\nCierre:\\n- Explica causa raiz.\\n- Aplica patch minimo.\\n- Ejecuta test relevante o explica bloqueo.",
+        "commentary": [
+          { "atLine": 1, "text": "Objetivo claro" },
+          { "atLine": 4, "text": "Contexto con evidencia" },
+          { "atLine": 9, "text": "Limites de alcance" },
+          { "atLine": 14, "text": "Definicion de terminado" }
+        ]
+      },
+      "subtitles": [
+        { "text": "Este prompt no es largo por gusto.", "startMs": 43000, "endMs": 47000 },
+        { "text": "Es largo donde importa: restricciones y verificacion.", "startMs": 47500, "endMs": 56500 },
+        { "text": "Codex ahora sabe como cerrar.", "startMs": 57000, "endMs": 69000 }
+      ]
+    },
+    {
+      "id": "finale",
+      "name": "Cierre",
+      "startMs": 70000,
+      "endMs": 90000,
+      "type": "finale",
+      "content": {
+        "title": "Una tarea lista para Codex",
+        "summary": [
+          { "number": "01", "label": "Objetivo", "body": "Que queremos conseguir." },
+          { "number": "02", "label": "Contexto", "body": "Que debe mirar antes de tocar." },
+          { "number": "03", "label": "Restricciones", "body": "Que no debe cambiar." },
+          { "number": "04", "label": "Cierre", "body": "Como sabemos que esta terminado." }
+        ],
+        "cta": "Ejercicio asociado: cx-b02-prompt-4-piezas."
+      },
+      "subtitles": [
+        { "text": "La calidad de Codex empieza en la calidad de la tarea.", "startMs": 70500, "endMs": 82000 },
+        { "text": "Briefing bueno, menos reintentos.", "startMs": 82500, "endMs": 89500 }
+      ]
+    }
+  ]
+}

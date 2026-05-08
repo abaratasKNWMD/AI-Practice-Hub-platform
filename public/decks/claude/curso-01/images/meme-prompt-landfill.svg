@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="620" viewBox="0 0 1100 620" role="img" aria-labelledby="title desc">
+  <title id="title">Prompt landfill meme</title>
+  <desc id="desc">A comic-style warning about dumping too much context into a prompt.</desc>
+  <rect width="1100" height="620" rx="34" fill="#11100f"/>
+  <rect x="74" y="70" width="952" height="480" rx="30" fill="#181310" stroke="#fff" stroke-opacity="0.12"/>
+  <text x="112" y="130" font-family="Inter, Arial, sans-serif" font-size="34" font-weight="900" fill="#fff7f0">Prompt vertedero</text>
+  <text x="112" y="166" font-family="Inter, Arial, sans-serif" font-size="18" fill="#b9aea3">Cuando todo parece importante, nada lo es.</text>
+  <g transform="translate(112 218)" font-family="Inter, Arial, sans-serif">
+    <rect width="360" height="235" rx="20" fill="#0c0a09" stroke="#ff9aad" stroke-opacity="0.42"/>
+    <text x="26" y="46" font-size="18" font-weight="800" fill="#ffdfe5">PROMPT</text>
+    <text x="26" y="84" font-size="15" fill="#b9aea3">README + logs + architecture</text>
+    <text x="26" y="116" font-size="15" fill="#b9aea3">+ full database schema</text>
+    <text x="26" y="148" font-size="15" fill="#b9aea3">+ meeting notes + screenshots</text>
+    <text x="26" y="180" font-size="15" fill="#b9aea3">+ "hazlo bien porfa"</text>
+    <text x="26" y="216" font-size="14" fill="#ff9aad">resultado: contexto pesado</text>
+    <path d="M390 116H538" stroke="#ffd27a" stroke-width="6" stroke-linecap="round"/>
+    <path d="M520 96L548 116L520 136" fill="none" stroke="#ffd27a" stroke-width="6" stroke-linecap="round"/>
+  </g>
+  <g transform="translate(650 218)" font-family="Inter, Arial, sans-serif">
+    <rect width="310" height="235" rx="20" fill="#111817" stroke="#75e6c0" stroke-opacity="0.42"/>
+    <text x="26" y="46" font-size="18" font-weight="800" fill="#c9fff0">MEJOR</text>
+    <text x="26" y="84" font-size="15" fill="#b9aea3">CLAUDE.md: estable</text>
+    <text x="26" y="116" font-size="15" fill="#b9aea3">Skills: repetible</text>
+    <text x="26" y="148" font-size="15" fill="#b9aea3">Prompt: puntual</text>
+    <text x="26" y="180" font-size="15" fill="#b9aea3">MCP: con owner</text>
+    <text x="26" y="216" font-size="14" fill="#75e6c0">resultado: contexto util</text>
+  </g>
+</svg>

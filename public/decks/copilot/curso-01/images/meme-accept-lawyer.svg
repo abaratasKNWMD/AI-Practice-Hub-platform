@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 760" role="img" aria-labelledby="title desc">
+  <title id="title">Accept button responsibility</title>
+  <desc id="desc">A humorous legal responsibility reminder around accepting generated code.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#111827"/>
+      <stop offset="1" stop-color="#071a18"/>
+    </linearGradient>
+    <style>
+      .title{font:900 34px Inter,Segoe UI,sans-serif;fill:#f8fbff}
+      .label{font:850 22px Inter,Segoe UI,sans-serif;fill:#f8fbff}
+      .small{font:700 15px Inter,Segoe UI,sans-serif;fill:#aebbd0}
+      .mono{font:700 17px ui-monospace,SFMono-Regular,Consolas,monospace;fill:#dce8f7}
+      .card{fill:#ffffff;fill-opacity:.07;stroke:#ffffff;stroke-opacity:.14}
+    </style>
+  </defs>
+  <rect width="1200" height="760" rx="34" fill="url(#bg)"/>
+  <text x="70" y="88" class="title">El boton aceptar no transfiere responsabilidad</text>
+  <text x="72" y="122" class="small">Copilot propone. El equipo entiende, prueba, revisa y decide.</text>
+  <g transform="translate(150 178)">
+    <rect width="900" height="430" rx="34" class="card"/>
+    <g transform="translate(80 92)">
+      <rect width="320" height="220" rx="30" fill="#07101e" stroke="#5ddcff" stroke-opacity=".24"/>
+      <text x="34" y="54" class="mono">+ copiedSnippet()</text>
+      <text x="34" y="98" class="mono">+ looksUseful()</text>
+      <text x="34" y="142" class="mono">+ noTestsYet()</text>
+      <rect x="48" y="164" width="220" height="42" rx="18" fill="#62e6a2" fill-opacity=".16" stroke="#62e6a2" stroke-opacity=".38"/>
+      <text x="90" y="192" class="small">Accept</text>
+    </g>
+    <g transform="translate(500 78)">
+      <path d="M112 0c62 42 116 48 176 52v132c0 100-60 170-176 222C-4 354-64 284-64 184V52C-4 48 50 42 112 0z" fill="#62e6a2" fill-opacity=".14" stroke="#62e6a2" stroke-width="5"/>
+      <text x="30" y="134" class="label">REVISION</text>
+      <text x="-8" y="174" class="small">licencia, secretos, tests</text>
+    </g>
+    <text x="82" y="378" class="small">Idea incomoda pero util: la velocidad no cancela la responsabilidad tecnica ni legal.</text>
+  </g>
+</svg>

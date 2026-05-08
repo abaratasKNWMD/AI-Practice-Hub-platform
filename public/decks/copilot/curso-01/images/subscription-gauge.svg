@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 760" role="img" aria-labelledby="title desc">
+  <title id="title">Subscription and premium request gauge</title>
+  <desc id="desc">A subscription dashboard showing plans, limits and premium request awareness.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#081225"/>
+      <stop offset="1" stop-color="#0b1d1a"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" x2="1">
+      <stop offset="0" stop-color="#5ddcff"/>
+      <stop offset=".55" stop-color="#62e6a2"/>
+      <stop offset="1" stop-color="#f8c96a"/>
+    </linearGradient>
+    <style>
+      .title{font:900 34px Inter,Segoe UI,sans-serif;fill:#f8fbff}
+      .label{font:800 20px Inter,Segoe UI,sans-serif;fill:#f8fbff}
+      .small{font:700 15px Inter,Segoe UI,sans-serif;fill:#aebbd0}
+      .number{font:900 44px Inter,Segoe UI,sans-serif;fill:#f8fbff}
+      .card{fill:#ffffff;fill-opacity:.07;stroke:#ffffff;stroke-opacity:.14}
+    </style>
+  </defs>
+  <rect width="1200" height="760" rx="34" fill="url(#bg)"/>
+  <text x="70" y="88" class="title">Planes y coste: la potencia tambien se gobierna</text>
+  <text x="72" y="122" class="small">El plan habilita capacidades; el uso inteligente evita quemar premium requests sin retorno.</text>
+
+  <g transform="translate(84 182)">
+    <rect width="232" height="188" rx="24" class="card"/>
+    <text x="26" y="48" class="label">Free / Student</text>
+    <text x="26" y="94" class="number">Start</text>
+    <text x="26" y="136" class="small">Entrada, limites claros</text>
+  </g>
+  <g transform="translate(346 182)">
+    <rect width="232" height="188" rx="24" class="card"/>
+    <text x="26" y="48" class="label">Pro / Pro+</text>
+    <text x="26" y="94" class="number">More</text>
+    <text x="26" y="136" class="small">Mas capacidad personal</text>
+  </g>
+  <g transform="translate(608 182)">
+    <rect width="232" height="188" rx="24" class="card"/>
+    <text x="26" y="48" class="label">Business</text>
+    <text x="26" y="94" class="number">Team</text>
+    <text x="26" y="136" class="small">Politicas y gestion</text>
+  </g>
+  <g transform="translate(870 182)">
+    <rect width="232" height="188" rx="24" class="card"/>
+    <text x="26" y="48" class="label">Enterprise</text>
+    <text x="26" y="94" class="number">Gov</text>
+    <text x="26" y="136" class="small">Metricas y seguridad</text>
+  </g>
+
+  <g transform="translate(216 458)">
+    <rect width="768" height="172" rx="30" fill="#ffffff" fill-opacity=".07" stroke="#ffffff" stroke-opacity=".14"/>
+    <text x="34" y="46" class="label">Premium requests</text>
+    <rect x="34" y="78" width="700" height="24" rx="12" fill="#ffffff" fill-opacity=".10"/>
+    <rect x="34" y="78" width="468" height="24" rx="12" fill="url(#accent)"/>
+    <text x="34" y="138" class="small">Pregunta practica: este modelo caro aporta valor aqui, o basta uno rapido?</text>
+  </g>
+</svg>

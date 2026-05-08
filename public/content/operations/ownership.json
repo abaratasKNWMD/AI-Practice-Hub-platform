@@ -1,0 +1,296 @@
+{
+  "courses": [
+    {
+      "vendor": "codex",
+      "id": "codex-orientation",
+      "title": "Codex Orientation",
+      "owner": "codex-practice-owner",
+      "backupOwner": "ai-practice-hub",
+      "reviewCadence": "quarterly",
+      "lastReviewed": "2026-05-08",
+      "nextReview": "2026-08-08"
+    },
+    {
+      "vendor": "codex",
+      "id": "codex-basic",
+      "title": "Codex Basic",
+      "owner": "codex-practice-owner",
+      "backupOwner": "ai-practice-hub",
+      "reviewCadence": "quarterly",
+      "lastReviewed": "2026-05-08",
+      "nextReview": "2026-08-08"
+    },
+    {
+      "vendor": "codex",
+      "id": "codex-potente",
+      "title": "Codex Potente",
+      "owner": "codex-practice-owner",
+      "backupOwner": "ai-practice-hub",
+      "reviewCadence": "quarterly",
+      "lastReviewed": "2026-05-08",
+      "nextReview": "2026-08-08"
+    },
+    {
+      "vendor": "codex",
+      "id": "codex-ultra",
+      "title": "Codex Ultra",
+      "owner": "codex-practice-owner",
+      "backupOwner": "ai-practice-hub",
+      "reviewCadence": "quarterly",
+      "lastReviewed": "2026-05-08",
+      "nextReview": "2026-08-08"
+    },
+    {
+      "vendor": "codex",
+      "id": "codex-operating-model",
+      "title": "Operating Model",
+      "owner": "codex-practice-owner",
+      "backupOwner": "ai-practice-hub",
+      "reviewCadence": "quarterly",
+      "lastReviewed": "2026-05-08",
+      "nextReview": "2026-08-08"
+    },
+    {
+      "vendor": "copilot",
+      "id": "copilot-git-survival",
+      "title": "Git/GitHub Survival para IA",
+      "owner": "copilot-practice-owner",
+      "backupOwner": "ai-practice-hub",
+      "reviewCadence": "quarterly",
+      "lastReviewed": "2026-05-08",
+      "nextReview": "2026-08-08"
+    },
+    {
+      "vendor": "copilot",
+      "id": "copilot-basic",
+      "title": "Copilot Basic",
+      "owner": "copilot-practice-owner",
+      "backupOwner": "ai-practice-hub",
+      "reviewCadence": "quarterly",
+      "lastReviewed": "2026-05-08",
+      "nextReview": "2026-08-08"
+    },
+    {
+      "vendor": "copilot",
+      "id": "copilot-medium",
+      "title": "Copilot Medium",
+      "owner": "copilot-practice-owner",
+      "backupOwner": "ai-practice-hub",
+      "reviewCadence": "quarterly",
+      "lastReviewed": "2026-05-08",
+      "nextReview": "2026-08-08"
+    },
+    {
+      "vendor": "copilot",
+      "id": "copilot-advanced",
+      "title": "Copilot Advanced",
+      "owner": "copilot-practice-owner",
+      "backupOwner": "ai-practice-hub",
+      "reviewCadence": "quarterly",
+      "lastReviewed": "2026-05-08",
+      "nextReview": "2026-08-08"
+    },
+    {
+      "vendor": "copilot",
+      "id": "copilot-cloud-enterprise",
+      "title": "Copilot Cloud Agent Enterprise",
+      "owner": "copilot-practice-owner",
+      "backupOwner": "ai-practice-hub",
+      "reviewCadence": "quarterly",
+      "lastReviewed": "2026-05-08",
+      "nextReview": "2026-08-08"
+    },
+    {
+      "vendor": "claude",
+      "id": "claude-orientation",
+      "title": "Claude Code Orientation",
+      "owner": "claude-practice-owner",
+      "backupOwner": "ai-practice-hub",
+      "reviewCadence": "quarterly",
+      "lastReviewed": "2026-05-08",
+      "nextReview": "2026-08-08"
+    },
+    {
+      "vendor": "claude",
+      "id": "claude-basic",
+      "title": "Claude Basic",
+      "owner": "claude-practice-owner",
+      "backupOwner": "ai-practice-hub",
+      "reviewCadence": "quarterly",
+      "lastReviewed": "2026-05-08",
+      "nextReview": "2026-08-08"
+    },
+    {
+      "vendor": "claude",
+      "id": "claude-operator",
+      "title": "Claude Operator",
+      "owner": "claude-practice-owner",
+      "backupOwner": "ai-practice-hub",
+      "reviewCadence": "quarterly",
+      "lastReviewed": "2026-05-08",
+      "nextReview": "2026-08-08"
+    },
+    {
+      "vendor": "claude",
+      "id": "claude-advanced-automation",
+      "title": "Claude Advanced Automation",
+      "owner": "claude-practice-owner",
+      "backupOwner": "ai-practice-hub",
+      "reviewCadence": "quarterly",
+      "lastReviewed": "2026-05-08",
+      "nextReview": "2026-08-08"
+    },
+    {
+      "vendor": "claude",
+      "id": "claude-agent-sdk-enterprise",
+      "title": "Claude Agent SDK Enterprise",
+      "owner": "claude-practice-owner",
+      "backupOwner": "ai-practice-hub",
+      "reviewCadence": "quarterly",
+      "lastReviewed": "2026-05-08",
+      "nextReview": "2026-08-08"
+    }
+  ],
+  "workshops": [
+    {
+      "vendor": "codex",
+      "id": "codex-workshop-basic-activation",
+      "title": "Workshop 01 - Activacion Codex para equipos sin IA",
+      "owner": "codex-workshop-owner",
+      "backupOwner": "ai-practice-hub",
+      "reviewCadence": "quarterly",
+      "lastReviewed": "2026-05-08",
+      "nextReview": "2026-08-08"
+    },
+    {
+      "vendor": "codex",
+      "id": "codex-workshop-potente-operacion",
+      "title": "Workshop 02 - Codex potente en operacion real",
+      "owner": "codex-workshop-owner",
+      "backupOwner": "ai-practice-hub",
+      "reviewCadence": "quarterly",
+      "lastReviewed": "2026-05-08",
+      "nextReview": "2026-08-08"
+    },
+    {
+      "vendor": "codex",
+      "id": "codex-workshop-ultra-platform",
+      "title": "Workshop 03 - Plataforma Codex ultra y swarms",
+      "owner": "codex-workshop-owner",
+      "backupOwner": "ai-practice-hub",
+      "reviewCadence": "quarterly",
+      "lastReviewed": "2026-05-08",
+      "nextReview": "2026-08-08"
+    },
+    {
+      "vendor": "codex",
+      "id": "codex-workshop-1h-first-task-to-pr",
+      "title": "Workshop 1h - Codex first task to PR",
+      "owner": "codex-workshop-owner",
+      "backupOwner": "ai-practice-hub",
+      "reviewCadence": "quarterly",
+      "lastReviewed": "2026-05-08",
+      "nextReview": "2026-08-08"
+    },
+    {
+      "vendor": "copilot",
+      "id": "copilot-workshop-activation",
+      "title": "Workshop Copilot 01 - Activacion masiva",
+      "owner": "copilot-workshop-owner",
+      "backupOwner": "ai-practice-hub",
+      "reviewCadence": "quarterly",
+      "lastReviewed": "2026-05-08",
+      "nextReview": "2026-08-08"
+    },
+    {
+      "vendor": "copilot",
+      "id": "copilot-workshop-team-flow",
+      "title": "Workshop Copilot 02 - Flujo de equipo",
+      "owner": "copilot-workshop-owner",
+      "backupOwner": "ai-practice-hub",
+      "reviewCadence": "quarterly",
+      "lastReviewed": "2026-05-08",
+      "nextReview": "2026-08-08"
+    },
+    {
+      "vendor": "copilot",
+      "id": "copilot-workshop-advanced-agents",
+      "title": "Workshop Copilot 03 - Agents, MCP y coste",
+      "owner": "copilot-workshop-owner",
+      "backupOwner": "ai-practice-hub",
+      "reviewCadence": "quarterly",
+      "lastReviewed": "2026-05-08",
+      "nextReview": "2026-08-08"
+    },
+    {
+      "vendor": "copilot",
+      "id": "copilot-workshop-cloud-governance",
+      "title": "Workshop Copilot 04 - Cloud agent enterprise",
+      "owner": "copilot-workshop-owner",
+      "backupOwner": "ai-practice-hub",
+      "reviewCadence": "quarterly",
+      "lastReviewed": "2026-05-08",
+      "nextReview": "2026-08-08"
+    },
+    {
+      "vendor": "copilot",
+      "id": "copilot-workshop-1h-vscode-to-pr-review",
+      "title": "Workshop 1h - Copilot VS Code to PR review",
+      "owner": "copilot-workshop-owner",
+      "backupOwner": "ai-practice-hub",
+      "reviewCadence": "quarterly",
+      "lastReviewed": "2026-05-08",
+      "nextReview": "2026-08-08"
+    },
+    {
+      "vendor": "claude",
+      "id": "claude-workshop-memory",
+      "title": "Workshop Claude Memory Sprint",
+      "owner": "claude-workshop-owner",
+      "backupOwner": "ai-practice-hub",
+      "reviewCadence": "quarterly",
+      "lastReviewed": "2026-05-08",
+      "nextReview": "2026-08-08"
+    },
+    {
+      "vendor": "claude",
+      "id": "claude-workshop-operator",
+      "title": "Workshop Claude Operator",
+      "owner": "claude-workshop-owner",
+      "backupOwner": "ai-practice-hub",
+      "reviewCadence": "quarterly",
+      "lastReviewed": "2026-05-08",
+      "nextReview": "2026-08-08"
+    },
+    {
+      "vendor": "claude",
+      "id": "claude-workshop-hooks-plugins",
+      "title": "Workshop Hooks + Plugins",
+      "owner": "claude-workshop-owner",
+      "backupOwner": "ai-practice-hub",
+      "reviewCadence": "quarterly",
+      "lastReviewed": "2026-05-08",
+      "nextReview": "2026-08-08"
+    },
+    {
+      "vendor": "claude",
+      "id": "claude-workshop-sdk-enterprise",
+      "title": "Workshop Agent SDK Enterprise",
+      "owner": "claude-workshop-owner",
+      "backupOwner": "ai-practice-hub",
+      "reviewCadence": "quarterly",
+      "lastReviewed": "2026-05-08",
+      "nextReview": "2026-08-08"
+    },
+    {
+      "vendor": "claude",
+      "id": "claude-workshop-1h-memory-to-automation",
+      "title": "Workshop 1h - Claude memory to automation",
+      "owner": "claude-workshop-owner",
+      "backupOwner": "ai-practice-hub",
+      "reviewCadence": "quarterly",
+      "lastReviewed": "2026-05-08",
+      "nextReview": "2026-08-08"
+    }
+  ]
+}

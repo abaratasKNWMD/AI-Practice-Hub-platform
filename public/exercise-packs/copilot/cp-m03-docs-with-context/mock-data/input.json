@@ -1,0 +1,21 @@
+{
+  "vendor": "copilot",
+  "exerciseId": "cp-m03-docs-with-context",
+  "title": "Documentacion util, no relleno",
+  "surface": "VS Code Chat/Edit",
+  "recommendedModel": "Modelo incluido",
+  "permissionMode": "workspace-write",
+  "estimatedCost": "Bajo",
+  "intentionalErrors": [
+    "briefing demasiado amplio",
+    "falta de evidencia",
+    "coste sin registrar"
+  ],
+  "expectedArtifacts": [
+    "prompt",
+    "resultado",
+    "evidencia",
+    "coste",
+    "decision"
+  ]
+}

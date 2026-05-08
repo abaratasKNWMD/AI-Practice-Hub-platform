@@ -1,0 +1,325 @@
+{
+  "id": "cx-workshop-60m-first-task-to-pr",
+  "title": "Workshop 1h Codex - Del primer task al PR revisable",
+  "description": "Sesion de 60 minutos para convertir una peticion ambigua en un diff probado, revisado y listo para PR usando Codex con conciencia de coste, permisos y modelo.",
+  "vendor": "codex",
+  "template": "technical",
+  "durationMin": 60,
+  "voice": "es-ES-AlvaroNeural",
+  "author": "AI Practice Hub",
+  "createdAt": "2026-05-08",
+  "chapters": [
+    { "id": "setup", "label": "Setup y contrato", "sceneId": "opening-contract" },
+    { "id": "context", "label": "Contexto y plan", "sceneId": "repo-map" },
+    { "id": "implementation", "label": "Implementacion guiada", "sceneId": "plan-before-patch" },
+    { "id": "verification", "label": "Pruebas y review", "sceneId": "tests-first" },
+    { "id": "pr", "label": "PR y cierre", "sceneId": "pr-narrative" }
+  ],
+  "scenes": [
+    {
+      "id": "opening-contract",
+      "name": "Contrato de la sesion",
+      "kind": "title",
+      "durationSec": 300,
+      "screen": {
+        "title": "De peticion ambigua a PR revisable",
+        "visual": "hero-codex-workshop",
+        "content": {
+          "headline": "1 hora, 1 tarea, 1 diff defendible",
+          "bullets": ["No explicar Git", "No resolver por intuicion", "Producir evidencia", "Medir coste y permisos"],
+          "timer": "00:00-05:00"
+        },
+        "presenterCue": "Aterriza el objetivo: nadie sale con teoria suelta, todos salen con un flujo repetible."
+      },
+      "voiceover": [
+        "Este workshop empieza con una regla sencilla: Codex no es magia, es una forma de convertir contexto en cambios verificables.",
+        "Durante una hora vamos a pasar de un task ambiguo a un PR que otro desarrollador pueda revisar sin pedirnos una reunion.",
+        "La metrica no es velocidad de escritura. La metrica es claridad, coste razonable, permisos controlados y evidencia."
+      ],
+      "action": {
+        "type": "narrate",
+        "label": "Abrir contrato",
+        "detail": "Mostrar objetivos, entregables y restriccion de coste antes de tocar codigo."
+      }
+    },
+    {
+      "id": "task-intake",
+      "name": "Intake del task",
+      "kind": "concept",
+      "durationSec": 300,
+      "screen": {
+        "title": "Briefing minimo",
+        "content": {
+          "task": "El login acepta usuarios inactivos cuando el flag active=false.",
+          "constraints": ["No tocar UI", "Mantener compatibilidad", "Agregar prueba", "No usar red"],
+          "acceptance": ["inactive -> rejected", "active -> accepted", "diff pequeno"]
+        },
+        "presenterCue": "Insiste en que el briefing reduce tokens porque evita vueltas."
+      },
+      "voiceover": [
+        "El primer gasto inutil de tokens aparece cuando le damos a Codex una tarea con mas deseo que criterio.",
+        "Antes de abrir el agente dejamos cuatro piezas: problema, restricciones, aceptacion y evidencia esperada.",
+        "Esto no ralentiza. Ahorra iteraciones, evita cambios laterales y hace que el modelo elija mejor donde mirar."
+      ],
+      "action": {
+        "type": "human-decision",
+        "label": "Congelar alcance",
+        "detail": "El instructor pide al grupo que elimine cualquier requisito que no sea necesario para cerrar el bug."
+      }
+    },
+    {
+      "id": "repo-map",
+      "name": "Mapa del repo antes de pedir cambios",
+      "kind": "coding",
+      "durationSec": 300,
+      "screen": {
+        "title": "Prompt de exploracion readonly",
+        "content": {
+          "filename": "prompts/repo-map.md",
+          "code": "Actua como explorer. Lee solo lo necesario para localizar validacion de login, tests relacionados y puntos de riesgo. No edites archivos. Devuelve rutas, hipotesis y siguiente pregunta.",
+          "expected": ["src/auth/validate-login.ts", "tests/auth/login.spec.ts", "riesgo: usuarios sin active"]
+        },
+        "presenterCue": "Enfatiza readonly: primero contexto, despues permiso de editar."
+      },
+      "voiceover": [
+        "Codex rinde mejor cuando separamos exploracion de escritura.",
+        "En esta escena pedimos un mapa, no una solucion. El agente debe leer, sintetizar y proponer el siguiente paso.",
+        "Si ya empieza editando, probablemente hemos mezclado dos trabajos distintos."
+      ],
+      "action": {
+        "type": "prompt",
+        "label": "Enviar prompt explorer",
+        "detail": "Simular una respuesta con rutas relevantes y una hipotesis de bug.",
+        "expectedOutput": "Mapa de archivos, riesgo y propuesta de plan."
+      }
+    },
+    {
+      "id": "model-permission-choice",
+      "name": "Modelo, esfuerzo y permisos",
+      "kind": "compare",
+      "durationSec": 300,
+      "screen": {
+        "title": "Decision operativa",
+        "content": {
+          "options": [
+            { "label": "modelo rapido", "use": "leer tests y validar hipotesis" },
+            { "label": "modelo fuerte", "use": "refactor compartido o fallo ambiguo" },
+            { "label": "permiso readonly", "use": "explorar y planear" },
+            { "label": "permiso workspace", "use": "editar con tests acotados" }
+          ],
+          "costRule": "Subir modelo solo si la incertidumbre lo justifica."
+        },
+        "presenterCue": "Pide que verbalicen por que no empiezan con el modelo mas caro."
+      },
+      "voiceover": [
+        "La decision de modelo no es estetica, es economia aplicada.",
+        "Para un bug pequeno empezamos con lectura y plan. Subimos potencia si el acoplamiento, el fallo o el dominio lo piden.",
+        "Tambien separamos permisos: leer no es editar, editar no es ejecutar cualquier cosa."
+      ],
+      "action": {
+        "type": "human-decision",
+        "label": "Elegir modo",
+        "detail": "Seleccionar modelo recomendado, effort y permiso antes del patch."
+      }
+    },
+    {
+      "id": "plan-before-patch",
+      "name": "Plan antes del patch",
+      "kind": "thinking",
+      "durationSec": 300,
+      "screen": {
+        "title": "Plan de 5 lineas",
+        "content": {
+          "plan": ["Confirmar contrato de User", "Agregar caso inactive=false", "Corregir guard clause", "Ejecutar test unitario", "Explicar diff"],
+          "antiPattern": "Hazlo todo y ya vemos"
+        },
+        "presenterCue": "El plan debe ser breve y falsable."
+      },
+      "voiceover": [
+        "Antes del patch pedimos un plan tan corto que pueda rechazarse en treinta segundos.",
+        "Un buen plan no narra entusiasmo; enumera cambios verificables.",
+        "Si el plan no menciona pruebas, todavia no hay permiso de implementar."
+      ],
+      "action": {
+        "type": "simulated-response",
+        "label": "Respuesta de Codex",
+        "detail": "Mostrar plan numerado, archivos y test objetivo."
+      }
+    },
+    {
+      "id": "patch-minimal",
+      "name": "Patch minimo",
+      "kind": "coding",
+      "durationSec": 300,
+      "screen": {
+        "title": "Diff esperado",
+        "content": {
+          "filename": "src/auth/validate-login.ts",
+          "diff": "+ if (user.active === false) return { ok: false, reason: 'inactive-user' }",
+          "rule": "Cambiar la menor superficie que satisfaga aceptacion."
+        },
+        "presenterCue": "No celebrar lineas de codigo: celebrar superficie pequena."
+      },
+      "voiceover": [
+        "Ahora si pedimos editar, pero con una restriccion: minimo cambio que cierre el criterio.",
+        "Codex debe devolver el diff y no una reforma completa del modulo.",
+        "La calidad aqui se ve en lo que no toca."
+      ],
+      "action": {
+        "type": "diff-review",
+        "label": "Aplicar patch",
+        "detail": "Mostrar patch pequeno y pedir al grupo que busque efectos laterales."
+      }
+    },
+    {
+      "id": "tests-first",
+      "name": "Test que captura el bug",
+      "kind": "coding",
+      "durationSec": 300,
+      "screen": {
+        "title": "Prueba de regresion",
+        "content": {
+          "filename": "tests/auth/login.spec.ts",
+          "code": "it('rejects inactive users', () => { expect(validateLogin({ active: false })).toEqual({ ok: false, reason: 'inactive-user' }) })",
+          "command": "pnpm test -- login.spec.ts"
+        },
+        "presenterCue": "Si el test no fallaba antes del fix, no protege la regresion."
+      },
+      "voiceover": [
+        "La prueba no es burocracia, es el recibo de compra del cambio.",
+        "Pedimos que Codex explique que caso cubre y que comando lo verifica.",
+        "Una solucion sin evidencia vuelve a consumir tiempo en la tutoria."
+      ],
+      "action": {
+        "type": "tool-run",
+        "label": "Ejecutar tests",
+        "detail": "Simular salida verde y una salida roja alternativa para explicar rescate.",
+        "expectedOutput": "1 failing antes del patch, 0 failing despues."
+      }
+    },
+    {
+      "id": "rescue-loop",
+      "name": "Prompt de rescate",
+      "kind": "error",
+      "durationSec": 300,
+      "screen": {
+        "title": "Cuando el test falla",
+        "content": {
+          "prompt": "No cambies mas codigo. Explica por que falla este test, que hipotesis tienes y que informacion minima necesitas.",
+          "signals": ["error exacto", "archivo afectado", "siguiente experimento"]
+        },
+        "presenterCue": "La pausa aqui es pedagogica: no convertir el fallo en una catarata de ediciones."
+      },
+      "voiceover": [
+        "El fallo no es una derrota, es informacion cara.",
+        "El error tipico es pedir otro patch encima del patch. Eso multiplica coste y confunde el diff.",
+        "El rescate correcto pide diagnostico, no velocidad."
+      ],
+      "action": {
+        "type": "prompt",
+        "label": "Enviar rescate",
+        "detail": "Simular respuesta con causa raiz y siguiente cambio unico."
+      }
+    },
+    {
+      "id": "review-diff",
+      "name": "Review del diff",
+      "kind": "preview",
+      "durationSec": 300,
+      "screen": {
+        "title": "Checklist de review",
+        "content": {
+          "checks": ["Alcance", "Tests", "Compatibilidad", "Nombres", "Coste de mantenimiento"],
+          "output": "findings accionables con severidad"
+        },
+        "presenterCue": "Diferencia opinion de finding: todo finding necesita accion."
+      },
+      "voiceover": [
+        "Antes de PR usamos Codex como reviewer de su propio trabajo, pero con una rubrica concreta.",
+        "No queremos una bendicion generica. Queremos findings, riesgos y una recomendacion de merge o no merge.",
+        "El reviewer tambien debe decir que ha comprobado y que no."
+      ],
+      "action": {
+        "type": "simulated-response",
+        "label": "Review estructurada",
+        "detail": "Mostrar findings: ninguno bloqueante, una mejora de naming opcional."
+      }
+    },
+    {
+      "id": "cost-ledger",
+      "name": "Registro de coste",
+      "kind": "linear",
+      "durationSec": 300,
+      "screen": {
+        "title": "Cost ledger",
+        "content": {
+          "rows": [
+            ["explorer", "modelo rapido", "readonly", "bajo"],
+            ["patch", "modelo medio", "workspace", "medio"],
+            ["review", "modelo rapido", "readonly", "bajo"]
+          ],
+          "decision": "El coste se justifica por evidencia y ahorro de tutoria."
+        },
+        "presenterCue": "Esto prepara el habito de presupuesto por outcome."
+      },
+      "voiceover": [
+        "En equipos reales no basta con que funcione. Hay que saber cuanto ha costado llegar ahi.",
+        "Registramos modelo, permiso, objetivo y resultado.",
+        "Con tres sesiones asi ya se puede hablar de patrones, no de sensaciones."
+      ],
+      "action": {
+        "type": "handoff",
+        "label": "Actualizar registro",
+        "detail": "Completar una fila de coste por cada intervencion de Codex."
+      }
+    },
+    {
+      "id": "pr-narrative",
+      "name": "Narrativa de PR",
+      "kind": "coding",
+      "durationSec": 300,
+      "screen": {
+        "title": "PR body",
+        "content": {
+          "template": ["Contexto", "Cambio", "Pruebas", "Riesgo", "Rollback"],
+          "example": "Fix inactive login validation. Adds regression test. No UI impact."
+        },
+        "presenterCue": "El PR no debe ocultar ayuda IA; debe mostrar criterio humano."
+      },
+      "voiceover": [
+        "El PR es el punto donde la ayuda de Codex se convierte en trabajo de equipo.",
+        "Una buena descripcion reduce el coste de revision humana.",
+        "Codex puede proponer la narrativa, pero el humano firma el criterio."
+      ],
+      "action": {
+        "type": "simulated-response",
+        "label": "Generar PR body",
+        "detail": "Mostrar descripcion breve con pruebas y riesgos."
+      }
+    },
+    {
+      "id": "retro-handoff",
+      "name": "Retro y handoff",
+      "kind": "finale",
+      "durationSec": 300,
+      "screen": {
+        "title": "Cierre de 5 minutos",
+        "content": {
+          "outputs": ["prompt reutilizable", "diff probado", "PR body", "cost ledger", "duda para tutoria"],
+          "next": "Repetir con un bug del repo real."
+        },
+        "presenterCue": "Cerrar con accion concreta para que el alumno no vuelva a consumo pasivo."
+      },
+      "voiceover": [
+        "Terminamos con una pregunta: que parte del flujo puede copiar manana el equipo sin profesor.",
+        "Si la respuesta es solo el codigo, hemos fallado. Si la respuesta incluye briefing, plan, pruebas, review y coste, el workshop ha funcionado.",
+        "Codex aterriza cuando deja de ser una demo y se convierte en un ritual de trabajo."
+      ],
+      "action": {
+        "type": "handoff",
+        "label": "Entregar pack",
+        "detail": "Compartir guion, prompts, solucion y checklist de PR."
+      }
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+diff --git a/README.md b/README.md
+--- a/README.md
++++ b/README.md
+@@
++# Evidencia de ejercicio
++- Ejercicio: cp-a02-custom-planner-agent
++- Resultado: salida verificable
++- Coste: Medio: planificacion con contexto
++- Permisos: read/search

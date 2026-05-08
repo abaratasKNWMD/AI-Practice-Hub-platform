@@ -1,0 +1,64 @@
+{
+  "id": "cl-operator-03-mcp-project",
+  "title": "Claude Operator 03 - MCP Project",
+  "description": "Conectar MCP con inventario, permisos y coste.",
+  "template": "technical",
+  "durationPreset": 5,
+  "durationMs": 90000,
+  "voice": "es-ES-AlvaroNeural",
+  "author": "AI Practice Hub",
+  "createdAt": "2026-05-07T00:00:00.000Z",
+  "chapters": [
+    { "id": "start", "label": "MCP", "startMs": 0 },
+    { "id": "concept", "label": "Riesgo", "startMs": 9000 },
+    { "id": "close", "label": "Inventario", "startMs": 65000 }
+  ],
+  "scenes": [
+    {
+      "id": "title",
+      "name": "Apertura",
+      "startMs": 0,
+      "endMs": 9000,
+      "type": "title",
+      "content": { "title": "MCP sin sustos", "subtitle": "Conectar herramientas no significa abrir todas las puertas.", "tag": "Claude Operator" },
+      "subtitles": [{ "text": "MCP es potencia, pero tambien superficie de riesgo.", "startMs": 1000, "endMs": 8200 }]
+    },
+    {
+      "id": "concept",
+      "name": "Riesgo",
+      "startMs": 9000,
+      "endMs": 65000,
+      "type": "concept",
+      "content": {
+        "tag": ".mcp.json",
+        "title": "Readonly primero",
+        "body": "Un servidor MCP puede traer docs, issues, bases de datos o sistemas internos. Por eso el ejercicio no es solo configurarlo: es inventariar owner, permisos, variables, coste y modo de uso.\n\nEn formacion, empieza con read-only. La escritura se gana con politica, no con entusiasmo.",
+        "highlight": "MCP amplifica capacidades; el inventario evita sorpresas.",
+        "points": ["Owner del servidor", "Permisos y variables", "Riesgo por herramienta", "Criterio de activacion"]
+      },
+      "subtitles": [
+        { "text": "El MCP bueno es explicito.", "startMs": 10000, "endMs": 25000 },
+        { "text": "El MCP peligroso aparece como magia sin owner.", "startMs": 26000, "endMs": 46000 },
+        { "text": "Readonly primero mantiene el aprendizaje bajo control.", "startMs": 47000, "endMs": 63000 }
+      ]
+    },
+    {
+      "id": "finale",
+      "name": "Cierre",
+      "startMs": 65000,
+      "endMs": 90000,
+      "type": "finale",
+      "content": {
+        "title": "Inventario MCP",
+        "summary": [
+          { "number": "Owner", "label": "Responsable", "body": "Quien mantiene el servidor." },
+          { "number": "Perms", "label": "Permisos", "body": "Read, write o admin." },
+          { "number": "Cost", "label": "Coste", "body": "Contexto y llamadas externas." }
+        ],
+        "cta": "Ejercicio: cl-o05-mcp-project."
+      },
+      "subtitles": [{ "text": "MCP sin inventario no es plataforma. Es apuesta.", "startMs": 66000, "endMs": 89000 }]
+    }
+  ]
+}
+

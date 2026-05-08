@@ -1,0 +1,556 @@
+[
+  {
+    "id": "cx-b01-repo-map",
+    "title": "Mapa express del repositorio",
+    "level": "basic",
+    "courseId": "codex-basic",
+    "durationMin": 25,
+    "surface": "CLI + editor",
+    "recommendedModel": "GPT-5.4 Mini",
+    "permissionMode": "read-only",
+    "estimatedCost": "Bajo: 1 exploracion corta, sin reintentos largos",
+    "briefing": "El alumno pide a Codex que entienda una base de codigo antes de tocar nada. El objetivo es salir con un mapa fiable de carpetas, puntos de entrada, tests y riesgos.",
+    "tasks": [
+      "Abrir el repo de practica y pedir un mapa de arquitectura en 10 bullets.",
+      "Pedir a Codex que localice scripts de test, build y lint.",
+      "Identificar tres archivos criticos y justificar por que.",
+      "Cerrar con una lista de preguntas que un desarrollador senior haria antes de cambiar codigo."
+    ],
+    "hints": [
+      "Empieza con read-only para demostrar que no hace falta permiso de escritura para aprender.",
+      "Pide evidencias con rutas de archivo, no solo explicaciones genericas.",
+      "Si Codex responde demasiado largo, limita el formato a tabla corta."
+    ],
+    "solution": "Un buen resultado incluye un mapa de carpetas, los comandos del proyecto, las rutas de entrada, los puntos de riesgo y una propuesta de siguiente paso. La clave docente es insistir en que Codex primero mira, despues piensa y solo al final toca.",
+    "materialIds": ["c1-lab-onboarding", "c1-prompts", "c1-coste"],
+    "videoSlug": "cx-orientation-01-surface-map",
+    "difficulty": "starter",
+    "type": "lab"
+  },
+  {
+    "id": "cx-b02-prompt-4-piezas",
+    "title": "Prompt de cuatro piezas",
+    "level": "basic",
+    "courseId": "codex-basic",
+    "durationMin": 20,
+    "surface": "chat Codex",
+    "recommendedModel": "GPT-5.4 Mini",
+    "permissionMode": "read-only",
+    "estimatedCost": "Muy bajo: una iteracion de prompt y una revision",
+    "briefing": "Transformar una peticion vaga en un briefing accionable: objetivo, contexto, restricciones y criterio de aceptacion.",
+    "tasks": [
+      "Escribir una peticion vaga tipo arregla el login.",
+      "Reescribirla con objetivo, contexto, restricciones y definicion de terminado.",
+      "Comparar las dos respuestas de Codex.",
+      "Guardar el prompt final en la plantilla de prompts."
+    ],
+    "hints": [
+      "No busques el prompt perfecto; busca un prompt que se pueda verificar.",
+      "Incluye siempre que Codex cite archivos y comandos.",
+      "El criterio de aceptacion debe ser medible."
+    ],
+    "solution": "El prompt final debe indicar que se analice antes de editar, que no se cambie comportamiento no relacionado, que se proponga un plan y que se valide con tests o explicacion de por que no se pudieron ejecutar.",
+    "materialIds": ["c1-prompts", "c1-lab-onboarding"],
+    "videoSlug": "cx-orientation-02-first-task",
+    "difficulty": "starter",
+    "type": "template"
+  },
+  {
+    "id": "cx-b03-agents-md",
+    "title": "AGENTS.md minimo para un equipo",
+    "level": "basic",
+    "courseId": "codex-basic",
+    "durationMin": 30,
+    "surface": "workspace Codex",
+    "recommendedModel": "GPT-5.4",
+    "permissionMode": "workspace-write",
+    "estimatedCost": "Bajo: lectura del repo y una edicion pequena",
+    "briefing": "Crear un AGENTS.md que convierta normas tacitas del equipo en instrucciones persistentes para Codex.",
+    "tasks": [
+      "Revisar la plantilla AGENTS.example.md.",
+      "Adaptarla al repo con comandos reales y convenciones locales.",
+      "Anadir limites: no tocar secretos, no reordenar imports masivos, no reescribir tests sin motivo.",
+      "Pedir a Codex que critique el AGENTS.md como si fuera onboarding de un nuevo dev."
+    ],
+    "hints": [
+      "Menos instrucciones, mas accionables.",
+      "Incluye comandos exactos del repo.",
+      "Distingue reglas fuertes de preferencias."
+    ],
+    "solution": "La solucion esperada es un AGENTS.md breve, con comandos de verificacion, convenciones de edicion, politicas de permisos y un protocolo de cierre. No debe ser una novela: debe ayudar a Codex a tomar mejores decisiones.",
+    "materialIds": ["c1-agents", "c1-prompts", "c1-mcp-inventory"],
+    "videoSlug": "cx-basic-01-agents-md",
+    "difficulty": "practice",
+    "type": "template"
+  },
+  {
+    "id": "cx-b04-bug-login",
+    "title": "Bug login con plan antes de patch",
+    "level": "basic",
+    "courseId": "codex-basic",
+    "durationMin": 45,
+    "surface": "CLI + tests",
+    "recommendedModel": "GPT-5.4",
+    "permissionMode": "workspace-write",
+    "estimatedCost": "Medio-bajo: exploracion, patch y tests",
+    "briefing": "Resolver un bug acotado de login sin saltarse la disciplina: reproducir, aislar, proponer plan, editar y verificar.",
+    "tasks": [
+      "Pedir a Codex que reproduzca o explique como reproduciria el bug.",
+      "Exigir un plan de dos o tres pasos antes del patch.",
+      "Aplicar la correccion minima.",
+      "Ejecutar el test relevante o documentar el bloqueo."
+    ],
+    "hints": [
+      "No aceptes una solucion que cambie toda la autenticacion.",
+      "Pide un diff pequeno y facil de revisar.",
+      "El cierre debe incluir que se ha probado."
+    ],
+    "solution": "Codex debe localizar el punto de fallo, aplicar una correccion pequena y demostrarla con test o caso manual. El valor pedagogico esta en que el alumno vea que planificar reduce coste y evita cambios laterales.",
+    "materialIds": ["c1-pack-basic-login", "c1-lab-login", "c1-prompts", "c1-coste"],
+    "videoSlug": "cx-basic-02-plan-before-patch",
+    "difficulty": "practice",
+    "type": "lab"
+  },
+  {
+    "id": "cx-b05-review-diff",
+    "title": "Review de diff con evidencia",
+    "level": "basic",
+    "courseId": "codex-basic",
+    "durationMin": 35,
+    "surface": "git diff + chat Codex",
+    "recommendedModel": "GPT-5.4",
+    "permissionMode": "read-only",
+    "estimatedCost": "Bajo: una revision enfocada",
+    "briefing": "Usar Codex como reviewer para detectar riesgos reales, no para opinar sobre estilo sin contexto.",
+    "tasks": [
+      "Generar o abrir un diff pequeno.",
+      "Pedir findings ordenados por severidad con rutas y lineas.",
+      "Separar bugs, preguntas y sugerencias.",
+      "Convertir un finding en una tarea accionable."
+    ],
+    "hints": [
+      "Prohibe comentarios cosmeticos salvo que afecten mantenimiento.",
+      "Pide que Codex diga si no encuentra problemas.",
+      "Pide que marque gaps de test."
+    ],
+    "solution": "La respuesta buena prioriza bugs y regresiones, cita archivos, evita relleno y propone una verificacion. El instructor puede comparar una review vaga frente a una review operativa.",
+    "materialIds": ["c1-lab-review", "c1-prompts"],
+    "difficulty": "practice",
+    "type": "review"
+  },
+  {
+    "id": "cx-m01-config-safe",
+    "title": "Config segura de Codex",
+    "level": "medium",
+    "courseId": "codex-potente",
+    "durationMin": 35,
+    "surface": "config.toml + permisos",
+    "recommendedModel": "GPT-5.4",
+    "permissionMode": "workspace-write controlado",
+    "estimatedCost": "Bajo: edicion de plantilla y revision",
+    "briefing": "Convertir una configuracion informal en perfiles claros de uso: lectura, escritura, ejecucion de tests y uso de red.",
+    "tasks": [
+      "Revisar config-codex.example.toml.",
+      "Definir perfil alumno, perfil profesor y perfil automatizacion.",
+      "Marcar comandos permitidos y comandos que requieren revision humana.",
+      "Crear una checklist de arranque de sesion."
+    ],
+    "hints": [
+      "La configuracion no sustituye el criterio humano.",
+      "Separa comodidad de seguridad.",
+      "Para formacion, favorece permisos estrechos al principio."
+    ],
+    "solution": "La configuracion final debe permitir avanzar sin pedir aprobacion por todo, pero mantener limites claros en operaciones destructivas, red, secretos y cambios masivos.",
+    "materialIds": ["c2-config", "c2-agents", "c2-registro-coste"],
+    "videoSlug": "cx-orientation-03-permissions",
+    "difficulty": "practice",
+    "type": "template"
+  },
+  {
+    "id": "cx-m02-modelos-coste",
+    "title": "Selector de modelo y coste",
+    "level": "medium",
+    "courseId": "codex-potente",
+    "durationMin": 40,
+    "surface": "model picker + cost log",
+    "recommendedModel": "GPT-5.4 Mini, GPT-5.4, GPT-5.5",
+    "permissionMode": "read-only",
+    "estimatedCost": "Variable: se compara barato, medio y premium",
+    "briefing": "Aprender a elegir modelo por riesgo, no por ego: rapido para tareas mecanicas, fuerte para arquitectura, multimodal para UI.",
+    "tasks": [
+      "Clasificar 10 tareas por modelo recomendado.",
+      "Estimar coste relativo antes de ejecutar.",
+      "Registrar resultado, calidad y si hubo reintento.",
+      "Definir una politica de escalado de modelo."
+    ],
+    "hints": [
+      "El modelo caro no arregla un briefing malo.",
+      "Escala modelo cuando hay ambiguedad, impacto o contexto dificil.",
+      "Baja modelo cuando la tarea es mecanica y verificable."
+    ],
+    "solution": "El alumno debe terminar con una matriz de decision: Mini para lectura y cambios pequenos, GPT-5.4 para implementacion estandar, GPT-5.5 para arquitectura, bugs profundos, multimodal y tareas de alto riesgo.",
+    "materialIds": ["c2-lab-modelos", "c2-registro-coste", "c3-cost-budget"],
+    "videoSlug": "cx-medium-01-model-picker",
+    "difficulty": "practice",
+    "type": "lab"
+  },
+  {
+    "id": "cx-m03-mcp-readonly",
+    "title": "MCP read-only con contexto externo",
+    "level": "medium",
+    "courseId": "codex-potente",
+    "durationMin": 45,
+    "surface": "MCP + docs + repo",
+    "recommendedModel": "GPT-5.4",
+    "permissionMode": "read-only con conectores",
+    "estimatedCost": "Medio: mas contexto recuperado, pocas ediciones",
+    "briefing": "Conectar fuentes externas sin abrir puertas innecesarias. El alumno practica inventario, alcance y evidencias.",
+    "tasks": [
+      "Completar el inventario MCP con fuente, permisos y riesgo.",
+      "Simular una consulta a documentacion externa.",
+      "Pedir a Codex que distinga evidencia de inferencia.",
+      "Crear una regla de uso para el equipo."
+    ],
+    "hints": [
+      "Un MCP no es bueno por existir; es bueno si reduce incertidumbre.",
+      "Prefiere read-only para aprendizaje y auditoria.",
+      "Anota que datos salen del repo."
+    ],
+    "solution": "El resultado valido es una decision documentada: que MCP se usa, para que, con que permisos, que datos toca y como se verifica la respuesta.",
+    "materialIds": ["c2-lab-mcp", "c1-mcp-inventory", "c2-agents"],
+    "videoSlug": "cx-medium-02-mcp-readonly",
+    "difficulty": "pro",
+    "type": "lab"
+  },
+  {
+    "id": "cx-m04-skill-qa",
+    "title": "Skill QA visual",
+    "level": "medium",
+    "courseId": "codex-potente",
+    "durationMin": 55,
+    "surface": "skills + browser verification",
+    "recommendedModel": "GPT-5.4",
+    "permissionMode": "workspace-write",
+    "estimatedCost": "Medio: una implementacion y una verificacion visual",
+    "briefing": "Convertir un checklist de QA visual en una skill reusable para que Codex verifique pantallas antes de cerrar.",
+    "tasks": [
+      "Leer la skill QA visual incluida.",
+      "Adaptar checklist a la aplicacion de practica.",
+      "Ejecutar una verificacion manual o automatizada.",
+      "Registrar findings y accion recomendada."
+    ],
+    "hints": [
+      "La skill debe decir cuando usarla y cuando no.",
+      "Incluye criterios visuales concretos: overlap, mobile, consola, CTA.",
+      "No conviertas QA en una lista infinita."
+    ],
+    "solution": "La skill final debe guiar a Codex para abrir la app, revisar consola, comprobar responsive, detectar textos solapados y cerrar con evidencias.",
+    "materialIds": ["c2-lab-skill", "c2-skill-qa", "c2-agents"],
+    "videoSlug": "cx-medium-03-skill-qa-visual",
+    "difficulty": "pro",
+    "type": "template"
+  },
+  {
+    "id": "cx-m05-subagentes-review",
+    "title": "Subagentes para review paralela",
+    "level": "medium",
+    "courseId": "codex-potente",
+    "durationMin": 50,
+    "surface": "subagentes Codex",
+    "recommendedModel": "GPT-5.5 para coordinacion, GPT-5.4 para exploracion",
+    "permissionMode": "read-only para exploradores",
+    "estimatedCost": "Medio-alto: varias ramas de analisis",
+    "briefing": "Aprender a delegar trabajo no bloqueante: un agente explora tests, otro arquitectura, otro UX o seguridad.",
+    "tasks": [
+      "Definir tres preguntas independientes.",
+      "Asignar a cada subagente un alcance cerrado.",
+      "Integrar findings sin duplicar trabajo.",
+      "Cerrar con decision del agente principal."
+    ],
+    "hints": [
+      "No delegues la tarea que te bloquea ahora mismo.",
+      "Cada subagente necesita una salida concreta.",
+      "Si dos subagentes pisan el mismo archivo, el diseno esta mal."
+    ],
+    "solution": "La practica termina cuando el alumno puede explicar que se delego, que se mantuvo local y como se integraron las respuestas en una decision unica.",
+    "materialIds": ["c2-lab-subagentes", "c2-agents", "c3-skill-swarm"],
+    "difficulty": "pro",
+    "type": "review"
+  },
+  {
+    "id": "cx-m06-debug-ui",
+    "title": "Debug multimodal de UI",
+    "level": "medium",
+    "courseId": "codex-potente",
+    "durationMin": 45,
+    "surface": "imagen + browser + codigo",
+    "recommendedModel": "GPT-5.5 multimodal",
+    "permissionMode": "workspace-write",
+    "estimatedCost": "Medio: imagen, contexto UI y patch",
+    "briefing": "Usar captura visual como evidencia para que Codex arregle un fallo de interfaz sin perseguir sintomas equivocados.",
+    "tasks": [
+      "Abrir la pantalla rota o revisar captura.",
+      "Pedir diagnostico visual con hipotesis verificables.",
+      "Aplicar un patch pequeno.",
+      "Revisar desktop y mobile."
+    ],
+    "hints": [
+      "Una imagen no sustituye el DOM ni la consola.",
+      "Pide a Codex que nombre el sintoma visible y el archivo probable.",
+      "Verifica despues con screenshot o navegador."
+    ],
+    "solution": "El resultado deseado es una correccion UI demostrada visualmente, con especial atencion a overflow, texto cortado, estados responsive y errores de consola.",
+    "materialIds": ["c2-lab-debug-ui", "c2-skill-qa", "c2-registro-coste"],
+    "videoSlug": "cx-medium-03-skill-qa-visual",
+    "difficulty": "pro",
+    "type": "lab"
+  },
+  {
+    "id": "cx-a01-github-action",
+    "title": "GitHub Action con Codex reviewer",
+    "level": "advanced",
+    "courseId": "codex-ultra",
+    "durationMin": 60,
+    "surface": "GitHub Actions + Codex",
+    "recommendedModel": "GPT-5.4",
+    "permissionMode": "CI read-only + comment",
+    "estimatedCost": "Medio-alto: ejecucion por PR",
+    "briefing": "Disenar una action que revise PRs con contexto, limite de coste y salida estructurada.",
+    "tasks": [
+      "Revisar la plantilla github-action-pr-swarm.yml.",
+      "Definir triggers y limites de ejecucion.",
+      "Configurar salida en comentario de PR o artifact.",
+      "Anadir guardas para evitar coste infinito."
+    ],
+    "hints": [
+      "No lances la action en cada push si no hace falta.",
+      "Limita paths, tamano de diff y numero de reintentos.",
+      "El CI debe fallar solo en criterios muy claros."
+    ],
+    "solution": "La action debe leer el diff, ejecutar revision con presupuesto, producir findings estructurados y no bloquear merges por opiniones blandas.",
+    "materialIds": ["c3-action", "c3-cost-budget", "c3-risk-register"],
+    "videoSlug": "cx-ultra-01-github-action",
+    "difficulty": "pro",
+    "type": "automation"
+  },
+  {
+    "id": "cx-a02-output-schema",
+    "title": "Salida estructurada para agentes",
+    "level": "advanced",
+    "courseId": "codex-ultra",
+    "durationMin": 45,
+    "surface": "JSON schema + evals",
+    "recommendedModel": "GPT-5.4",
+    "permissionMode": "read-only",
+    "estimatedCost": "Medio: varias validaciones de salida",
+    "briefing": "Evitar respuestas bonitas pero inutiles obligando a Codex a devolver findings, severidad, evidencia y acciones en un schema estable.",
+    "tasks": [
+      "Definir schema de findings para review.",
+      "Probarlo con un diff de ejemplo.",
+      "Validar campos obligatorios.",
+      "Crear una salida humana a partir del JSON."
+    ],
+    "hints": [
+      "El schema debe ser pequeno y estable.",
+      "Incluye evidencia y confianza.",
+      "No metas razonamiento interno en la salida."
+    ],
+    "solution": "El alumno termina con un contrato JSON usable en CI y un renderer humano. Esta pieza prepara swarms, jueces y automatizacion.",
+    "materialIds": ["c3-lab-evals", "c3-action", "c3-risk-register"],
+    "difficulty": "pro",
+    "type": "automation"
+  },
+  {
+    "id": "cx-u01-pr-swarm",
+    "title": "PR swarm con roles",
+    "level": "ultra",
+    "courseId": "codex-ultra",
+    "durationMin": 90,
+    "surface": "multi-agent orchestration",
+    "recommendedModel": "GPT-5.5",
+    "permissionMode": "read-only para agentes, write solo coordinador",
+    "estimatedCost": "Alto: varios agentes y sintesis",
+    "briefing": "Construir una revision de PR con roles: arquitecto, desarrollador, QA y orquestador. El foco es coordinacion, no teatralidad.",
+    "tasks": [
+      "Definir responsabilidades de cada rol.",
+      "Ejecutar analisis independiente sobre el mismo PR.",
+      "Resolver desacuerdos en una sintesis unica.",
+      "Emitir aprobado, cambios requeridos o preguntas."
+    ],
+    "hints": [
+      "Un swarm bueno reduce puntos ciegos, no multiplica ruido.",
+      "El orquestador decide, no copia respuestas.",
+      "Cada rol necesita criterios de calidad distintos."
+    ],
+    "solution": "La entrega es un informe de PR con consenso, disensos, severidad y evidencia. El coordinador debe mantener coste y alcance bajo control.",
+    "materialIds": ["c3-lab-pr-swarm", "c3-skill-swarm", "c3-action", "c3-cost-budget"],
+    "videoSlug": "cx-ultra-02-pr-swarm",
+    "difficulty": "enterprise",
+    "type": "capstone"
+  },
+  {
+    "id": "cx-u02-rag-ast",
+    "title": "Enterprise RAG con AST",
+    "level": "ultra",
+    "courseId": "codex-ultra",
+    "durationMin": 90,
+    "surface": "AST parsers + embeddings",
+    "recommendedModel": "GPT-5.5 para diseno, embeddings para indice",
+    "permissionMode": "read-only sobre codigo fuente",
+    "estimatedCost": "Alto inicial, bajo por consulta si se cachea",
+    "briefing": "Disenar un indice de codigo que no corte texto a ciegas, sino por unidades semanticas: funciones, clases, rutas y exports.",
+    "tasks": [
+      "Elegir estrategia de chunking por lenguaje.",
+      "Definir metadatos por chunk.",
+      "Crear consultas de prueba.",
+      "Evaluar si el contexto recuperado permite responder con evidencia."
+    ],
+    "hints": [
+      "El AST da fronteras tecnicas reales.",
+      "Los metadatos valen tanto como el vector.",
+      "Cachea y versiona indices por commit."
+    ],
+    "solution": "La solucion debe describir pipeline: parseo AST, chunking, embeddings, vector DB, retrieval, reranking y citas a rutas. En Codex, esto aterriza como contexto perfecto para repos legacy.",
+    "materialIds": ["c3-lab-rag", "c3-skill-rag", "audit-codex"],
+    "difficulty": "enterprise",
+    "type": "automation"
+  },
+  {
+    "id": "cx-u03-dataset-sintetico",
+    "title": "Dataset sintetico corporativo",
+    "level": "ultra",
+    "courseId": "codex-ultra",
+    "durationMin": 75,
+    "surface": "datos sinteticos + fine-tuning readiness",
+    "recommendedModel": "GPT-5.5 para generacion y juez",
+    "permissionMode": "read-only con datos anonimizados",
+    "estimatedCost": "Alto: generacion mas evaluacion",
+    "briefing": "Crear pares pregunta/respuesta y conversaciones senior-junior desde documentacion interna, sin filtrar secretos ni inventar normas.",
+    "tasks": [
+      "Seleccionar fuentes permitidas.",
+      "Generar ejemplos sinteticos con referencias.",
+      "Filtrar duplicados, secretos y respuestas no verificables.",
+      "Etiquetar por dominio, dificultad y riesgo."
+    ],
+    "hints": [
+      "La privacidad manda.",
+      "Todo ejemplo necesita fuente o razon para existir.",
+      "Un dataset pequeno bueno gana a uno gigante ruidoso."
+    ],
+    "solution": "El output es un dataset semilla con trazabilidad, politicas de limpieza y criterios de evaluacion. Sirve para SLMs, onboarding y agentes internos de Codex.",
+    "materialIds": ["c3-lab-dataset", "c3-risk-register", "audit-codex"],
+    "difficulty": "enterprise",
+    "type": "automation"
+  },
+  {
+    "id": "cx-u04-jueces-evals",
+    "title": "LLM-as-a-Judge y evals",
+    "level": "ultra",
+    "courseId": "codex-ultra",
+    "durationMin": 80,
+    "surface": "eval harness + rubrics",
+    "recommendedModel": "GPT-5.5 juez, GPT-5.4 candidato",
+    "permissionMode": "read-only",
+    "estimatedCost": "Alto si no se muestrea; medio con suite corta",
+    "briefing": "Construir una suite de evaluacion donde un modelo juez puntua codigo, respuesta y evidencias de otro agente.",
+    "tasks": [
+      "Definir rubrica con criterios ponderados.",
+      "Crear casos positivos, negativos y ambiguos.",
+      "Ejecutar juez sobre salidas de ejemplo.",
+      "Analizar falsos positivos y coste."
+    ],
+    "hints": [
+      "El juez tambien se evalua.",
+      "Una rubrica vaga produce notas decorativas.",
+      "Incluye casos donde la respuesta correcta es no tocar nada."
+    ],
+    "solution": "La practica queda resuelta cuando existe una rubrica ejecutable, ejemplos de calibracion y una decision de umbral para aprobar o escalar a humano.",
+    "materialIds": ["c3-lab-evals", "c3-cost-budget", "c3-risk-register"],
+    "difficulty": "enterprise",
+    "type": "automation"
+  },
+  {
+    "id": "cx-e01-cost-budget",
+    "title": "Presupuesto de coste por ruta Codex",
+    "level": "enterprise",
+    "courseId": "codex-operating-model",
+    "durationMin": 45,
+    "surface": "governance + finance",
+    "recommendedModel": "GPT-5.4",
+    "permissionMode": "read-only",
+    "estimatedCost": "Bajo: analisis y plantilla",
+    "briefing": "Convertir consumo de tokens en una politica comprensible para alumnos, profesores y responsables.",
+    "tasks": [
+      "Definir coste objetivo por curso.",
+      "Clasificar tareas por coste esperado.",
+      "Crear umbrales de alerta.",
+      "Preparar una transparencia de buenas practicas."
+    ],
+    "hints": [
+      "No ocultes coste: ensena a gestionarlo.",
+      "Coste por resultado importa mas que coste por prompt.",
+      "Mide reintentos, contexto y agentes."
+    ],
+    "solution": "El output es una hoja de presupuesto que indica cuando usar Mini, cuando escalar y cuando parar para pedir criterio humano.",
+    "materialIds": ["c3-cost-budget", "c2-registro-coste", "audit-omega"],
+    "videoSlug": "cx-medium-01-model-picker",
+    "difficulty": "enterprise",
+    "type": "template"
+  },
+  {
+    "id": "cx-e02-mcp-policy",
+    "title": "Politica MCP enterprise",
+    "level": "enterprise",
+    "courseId": "codex-operating-model",
+    "durationMin": 50,
+    "surface": "MCP governance",
+    "recommendedModel": "GPT-5.4",
+    "permissionMode": "read-only",
+    "estimatedCost": "Bajo: diseno de politica",
+    "briefing": "Definir que conectores se permiten, que datos pueden leer y que acciones quedan fuera del aula.",
+    "tasks": [
+      "Inventariar conectores disponibles.",
+      "Clasificar por riesgo y valor docente.",
+      "Definir permisos por nivel de curso.",
+      "Crear protocolo de excepciones."
+    ],
+    "hints": [
+      "Read-only debe ser el default docente.",
+      "Una excepcion debe tener owner y caducidad.",
+      "La politica debe caber en una pagina."
+    ],
+    "solution": "La politica final habilita aprendizaje con contexto real sin abrir acciones de negocio peligrosas. Incluye owner, alcance, logs y retirada.",
+    "materialIds": ["c1-mcp-inventory", "c2-lab-mcp", "c3-risk-register"],
+    "videoSlug": "cx-medium-02-mcp-readonly",
+    "difficulty": "enterprise",
+    "type": "template"
+  },
+  {
+    "id": "cx-e03-workshop-pack",
+    "title": "Pack autoconsumible de workshop",
+    "level": "enterprise",
+    "courseId": "codex-operating-model",
+    "durationMin": 60,
+    "surface": "course ops + workshops",
+    "recommendedModel": "GPT-5.4",
+    "permissionMode": "workspace-write",
+    "estimatedCost": "Medio: creacion de materiales",
+    "briefing": "Preparar un workshop que reduzca horas de formador: video corto, ejercicio, solucion, checklist y dudas para tutoria.",
+    "tasks": [
+      "Elegir un reto de Codex.",
+      "Asociar un microvideo y material de apoyo.",
+      "Escribir solucion guiada.",
+      "Definir que dudas pasan a tutoria y cuales no."
+    ],
+    "hints": [
+      "El alumno debe poder arrancar sin profesor.",
+      "La solucion no debe ocultar pasos incomodos.",
+      "La tutoria se reserva para criterio, no para explicar git desde cero."
+    ],
+    "solution": "La entrega es un paquete autoconsumible: briefing, repo, prompt, video, solucion, evidencias esperadas y preguntas de reflexion.",
+    "materialIds": ["audit-omega", "audit-codex", "c1-prompts"],
+    "videoSlug": "cx-orientation-02-first-task",
+    "difficulty": "enterprise",
+    "type": "capstone"
+  }
+]

@@ -1,0 +1,64 @@
+{
+  "id": "cl-basic-01-claude-md",
+  "title": "Claude Basic 01 - CLAUDE.md Real",
+  "description": "Crear memoria de proyecto sin convertirla en una enciclopedia.",
+  "template": "technical",
+  "durationPreset": 5,
+  "durationMs": 90000,
+  "voice": "es-ES-AlvaroNeural",
+  "author": "AI Practice Hub",
+  "createdAt": "2026-05-07T00:00:00.000Z",
+  "chapters": [
+    { "id": "start", "label": "Repo", "startMs": 0 },
+    { "id": "concept", "label": "Memoria", "startMs": 9000 },
+    { "id": "close", "label": "Checklist", "startMs": 65000 }
+  ],
+  "scenes": [
+    {
+      "id": "title",
+      "name": "Apertura",
+      "startMs": 0,
+      "endMs": 9000,
+      "type": "title",
+      "content": { "title": "CLAUDE.md real", "subtitle": "De plantilla bonita a herramienta que trabaja.", "tag": "Claude Basic" },
+      "subtitles": [{ "text": "Hoy no escribimos una slide. Escribimos memoria que el agente usara.", "startMs": 1000, "endMs": 8200 }]
+    },
+    {
+      "id": "concept",
+      "name": "Memoria",
+      "startMs": 9000,
+      "endMs": 65000,
+      "type": "concept",
+      "content": {
+        "tag": "Edicion con sentido",
+        "title": "Que necesita saber Claude antes de tocar codigo?",
+        "body": "Un buen CLAUDE.md responde a cuatro preguntas: que es este repo, como se ejecuta, que reglas no se negocian y como se verifica el trabajo.\n\nNo necesita listar cada fichero. No necesita repetir documentacion publica. Necesita decisiones locales que reducen incertidumbre.",
+        "highlight": "Comandos exactos vencen a instrucciones vagas.",
+        "points": ["Arquitectura breve", "Comandos reales", "Reglas de edicion", "Politica de verificacion"]
+      },
+      "subtitles": [
+        { "text": "La memoria sirve para bajar incertidumbre.", "startMs": 10000, "endMs": 26000 },
+        { "text": "Si la regla no se puede comprobar, probablemente sobra.", "startMs": 27000, "endMs": 47000 },
+        { "text": "La mejor memoria cabe en una pantalla y se mantiene viva.", "startMs": 48000, "endMs": 63000 }
+      ]
+    },
+    {
+      "id": "finale",
+      "name": "Cierre",
+      "startMs": 65000,
+      "endMs": 90000,
+      "type": "finale",
+      "content": {
+        "title": "Checklist CLAUDE.md",
+        "summary": [
+          { "number": "01", "label": "Repo", "body": "Mapa breve y scripts." },
+          { "number": "02", "label": "Reglas", "body": "Cosas que Claude debe respetar." },
+          { "number": "03", "label": "Verificacion", "body": "Como se demuestra que termino." }
+        ],
+        "cta": "Ejercicio: cl-b01-claude-md."
+      },
+      "subtitles": [{ "text": "Cuando el repo sabe explicarse, el equipo avanza mas rapido.", "startMs": 66000, "endMs": 89000 }]
+    }
+  ]
+}
+

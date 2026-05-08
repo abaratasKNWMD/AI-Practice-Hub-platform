@@ -1,0 +1,44 @@
+#:schema https://developers.openai.com/codex/config-schema.json
+
+# Ejemplo didáctico. Revisar contra la documentación oficial antes de usar en un repo real.
+
+model = "gpt-5.5"
+model_reasoning_effort = "medium"
+model_reasoning_summary = "concise"
+model_verbosity = "medium"
+
+# Para equipos nuevos, empezar conservador. Subir permisos solo si el workflow lo justifica.
+sandbox_mode = "workspace-write"
+approval_policy = "on-request"
+
+[sandbox_workspace_write]
+network_access = false
+
+# Perfil rápido para tareas ligeras, lectura y resúmenes.
+[profiles.fast-read]
+model = "gpt-5.4-mini"
+model_reasoning_effort = "low"
+
+# Perfil profundo para bugs ambiguos, seguridad, arquitectura o migraciones.
+[profiles.deep-work]
+model = "gpt-5.5"
+model_reasoning_effort = "high"
+
+# MCP local read-only de laboratorio. Ver materiales/ejemplos/mcp-readonly-docs.
+[mcp_servers.lab_docs]
+command = "node"
+args = ["./materiales/ejemplos/mcp-readonly-docs/server.mjs"]
+startup_timeout_sec = 10
+tool_timeout_sec = 30
+enabled_tools = ["search_docs", "read_doc"]
+enabled = true
+
+# Ejemplo de roles para subagentes. Ajustar según la versión de Codex y políticas del equipo.
+[agents.architect]
+description = "Explora arquitectura, contratos, riesgos de diseño e impacto entre módulos. No edita."
+
+[agents.qa]
+description = "Busca casos borde, tests relevantes y regresiones. Prefiere comandos de verificación antes de opinar."
+
+[agents.security]
+description = "Revisa secretos, auth, permisos, red, dependencias y datos sensibles. Escala hallazgos de alto riesgo."

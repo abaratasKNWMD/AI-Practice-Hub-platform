@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 560" role="img" aria-labelledby="title desc">
+  <title id="title">Agent handoff</title>
+  <desc id="desc">Structured handoff from a subagent to main thread.</desc>
+  <rect width="1000" height="560" rx="34" fill="#100f0e"/>
+  <text x="500" y="78" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="38" font-weight="850" fill="#fff4eb">Handoff entre agentes</text>
+  <rect x="130" y="180" width="250" height="220" rx="26" fill="#171311" stroke="#7bd7ff"/>
+  <rect x="620" y="180" width="250" height="220" rx="26" fill="#171311" stroke="#75e6c0"/>
+  <rect x="420" y="210" width="160" height="160" rx="24" fill="#171311" stroke="#ffd27a"/>
+  <g font-family="Inter, Arial, sans-serif" text-anchor="middle">
+    <text x="255" y="282" font-size="24" font-weight="850" fill="#dff7ff">Explorer</text>
+    <text x="500" y="276" font-size="20" font-weight="850" fill="#fff0c9">paths</text>
+    <text x="500" y="308" font-size="20" font-weight="850" fill="#fff0c9">risks</text>
+    <text x="745" y="282" font-size="24" font-weight="850" fill="#d8fff1">Principal</text>
+  </g>
+  <path d="M380 290H420M580 290H620" stroke="#75e6c0" stroke-width="6" stroke-linecap="round"/>
+</svg>

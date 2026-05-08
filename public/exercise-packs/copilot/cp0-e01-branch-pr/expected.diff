@@ -1,0 +1,9 @@
+diff --git a/README.md b/README.md
+--- a/README.md
++++ b/README.md
+@@
++# Evidencia de ejercicio
++- Ejercicio: cp0-e01-branch-pr
++- Resultado: salida verificable
++- Coste: Muy bajo: sin premium requests si se trabaja con docs y comandos
++- Permisos: local demo

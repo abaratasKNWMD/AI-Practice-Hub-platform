@@ -1,0 +1,9 @@
+diff --git a/README.md b/README.md
+--- a/README.md
++++ b/README.md
+@@
++# Evidencia de ejercicio
++- Ejercicio: cl-b01-claude-md
++- Resultado: salida verificable
++- Coste: bajo-medio: lectura de estructura + edicion
++- Permisos: write memory file

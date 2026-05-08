@@ -1,0 +1,9 @@
+diff --git a/README.md b/README.md
+--- a/README.md
++++ b/README.md
+@@
++# Evidencia de ejercicio
++- Ejercicio: cl-o05-mcp-project
++- Resultado: salida verificable
++- Coste: medio: conexion externa controlada
++- Permisos: read-only MCP

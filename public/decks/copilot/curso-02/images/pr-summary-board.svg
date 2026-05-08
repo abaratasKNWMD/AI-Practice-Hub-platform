@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 760" role="img" aria-labelledby="title desc">
+  <title id="title">Pull request summary board</title>
+  <desc id="desc">A pull request summary board with change, impact, tests and review sections.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#07111f"/>
+      <stop offset="1" stop-color="#111827"/>
+    </linearGradient>
+    <style>
+      .title{font:900 34px Inter,Segoe UI,sans-serif;fill:#f8fbff}
+      .label{font:850 20px Inter,Segoe UI,sans-serif;fill:#f8fbff}
+      .small{font:700 15px Inter,Segoe UI,sans-serif;fill:#aebbd0}
+      .mono{font:650 16px ui-monospace,SFMono-Regular,Consolas,monospace;fill:#dce8f7}
+      .card{fill:#ffffff;fill-opacity:.07;stroke:#ffffff;stroke-opacity:.14}
+    </style>
+  </defs>
+  <rect width="1200" height="760" rx="34" fill="url(#bg)"/>
+  <text x="70" y="88" class="title">PR summaries: acelerar la entrada al review</text>
+  <text x="72" y="122" class="small">Un buen resumen no vende el cambio: lo hace revisable.</text>
+  <g transform="translate(140 170)">
+    <rect width="920" height="458" rx="30" class="card"/>
+    <rect width="920" height="64" rx="30" fill="#ffffff" fill-opacity=".08"/>
+    <text x="34" y="40" class="label">Pull Request #248 · checkout validation</text>
+    <g transform="translate(44 104)">
+      <rect width="386" height="130" rx="22" fill="#5ddcff" fill-opacity=".12" stroke="#5ddcff" stroke-opacity=".34"/>
+      <text x="24" y="40" class="label">Que cambio</text>
+      <text x="24" y="72" class="small">Validacion de plan activo y expiracion.</text>
+      <text x="24" y="100" class="small">Refactor de checkout service.</text>
+      <rect x="446" width="386" height="130" rx="22" fill="#62e6a2" fill-opacity=".12" stroke="#62e6a2" stroke-opacity=".34"/>
+      <text x="470" y="40" class="label">Impacto</text>
+      <text x="470" y="72" class="small">Afecta acceso premium y errores 403.</text>
+      <text x="470" y="100" class="small">Riesgo: compatibilidad con planes legacy.</text>
+      <rect y="168" width="386" height="130" rx="22" fill="#f8c96a" fill-opacity=".12" stroke="#f8c96a" stroke-opacity=".34"/>
+      <text x="24" y="208" class="label">Testing</text>
+      <text x="24" y="240" class="small">Unit tests de edge cases.</text>
+      <text x="24" y="268" class="small">Smoke local checkout.</text>
+      <rect x="446" y="168" width="386" height="130" rx="22" fill="#ffffff" fill-opacity=".08" stroke="#ffffff" stroke-opacity=".16"/>
+      <text x="470" y="208" class="label">Review focus</text>
+      <text x="470" y="240" class="small">Mirar migracion y mensajes de error.</text>
+      <text x="470" y="268" class="small">Confirmar logging sin secretos.</text>
+    </g>
+  </g>
+</svg>

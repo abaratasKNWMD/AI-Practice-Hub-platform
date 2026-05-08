@@ -1,0 +1,21 @@
+{
+  "vendor": "copilot",
+  "exerciseId": "cp-b03-comment-to-code",
+  "title": "Comentario a codigo verificable",
+  "surface": "VS Code editor",
+  "recommendedModel": "Modelo incluido",
+  "permissionMode": "workspace-write",
+  "estimatedCost": "Bajo",
+  "intentionalErrors": [
+    "briefing demasiado amplio",
+    "falta de evidencia",
+    "coste sin registrar"
+  ],
+  "expectedArtifacts": [
+    "prompt",
+    "resultado",
+    "evidencia",
+    "coste",
+    "decision"
+  ]
+}

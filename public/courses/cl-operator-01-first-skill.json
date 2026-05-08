@@ -1,0 +1,64 @@
+{
+  "id": "cl-operator-01-first-skill",
+  "title": "Claude Operator 01 - First Skill",
+  "description": "Convertir un procedimiento repetido en una skill versionada.",
+  "template": "technical",
+  "durationPreset": 5,
+  "durationMs": 90000,
+  "voice": "es-ES-AlvaroNeural",
+  "author": "AI Practice Hub",
+  "createdAt": "2026-05-07T00:00:00.000Z",
+  "chapters": [
+    { "id": "start", "label": "Skill", "startMs": 0 },
+    { "id": "concept", "label": "Anatomia", "startMs": 9000 },
+    { "id": "close", "label": "Uso", "startMs": 65000 }
+  ],
+  "scenes": [
+    {
+      "id": "title",
+      "name": "Apertura",
+      "startMs": 0,
+      "endMs": 9000,
+      "type": "title",
+      "content": { "title": "Tu primera skill", "subtitle": "Cuando un prompt se repite tres veces, ya pide carpeta propia.", "tag": "Claude Operator" },
+      "subtitles": [{ "text": "Una skill convierte practica de equipo en capacidad reutilizable.", "startMs": 1000, "endMs": 8200 }]
+    },
+    {
+      "id": "concept",
+      "name": "Anatomia",
+      "startMs": 9000,
+      "endMs": 65000,
+      "type": "concept",
+      "content": {
+        "tag": "SKILL.md",
+        "title": "Procedimientos bajo demanda",
+        "body": "Una skill tiene una description que ayuda a Claude a decidir cuando usarla, instrucciones claras, referencias opcionales y, si hace falta, scripts.\n\nEl valor no esta en tener muchas skills. Esta en encapsular lo que el equipo hace cada semana.",
+        "highlight": "Skill buena = menos prompt manual, mas consistencia.",
+        "points": ["Description activadora", "Pasos concretos", "Referencias opcionales", "Scripts si reducen friccion"]
+      },
+      "subtitles": [
+        { "text": "La description es el disparador.", "startMs": 10000, "endMs": 25000 },
+        { "text": "Las referencias permiten profundidad sin cargarlo todo siempre.", "startMs": 26000, "endMs": 47000 },
+        { "text": "Esto es flipping training convertido en tooling.", "startMs": 48000, "endMs": 63000 }
+      ]
+    },
+    {
+      "id": "finale",
+      "name": "Cierre",
+      "startMs": 65000,
+      "endMs": 90000,
+      "type": "finale",
+      "content": {
+        "title": "Cuando crear una skill",
+        "summary": [
+          { "number": "Repite", "label": "Uso frecuente", "body": "Aparece en varias tareas." },
+          { "number": "Orden", "label": "Pasos fijos", "body": "Tiene secuencia clara." },
+          { "number": "Evidencia", "label": "Salida esperada", "body": "Debe producir algo verificable." }
+        ],
+        "cta": "Ejercicio: cl-o01-skill-summarize."
+      },
+      "subtitles": [{ "text": "No escribas el mismo prompt cada lunes. Hazlo skill.", "startMs": 66000, "endMs": 89000 }]
+    }
+  ]
+}
+

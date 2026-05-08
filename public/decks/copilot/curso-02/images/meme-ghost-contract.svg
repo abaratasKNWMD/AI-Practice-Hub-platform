@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 760" role="img" aria-labelledby="title desc">
+  <title id="title">Ghost text is not a contract</title>
+  <desc id="desc">A humorous reminder that Copilot ghost text must be reviewed before being accepted.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#07111f"/>
+      <stop offset="1" stop-color="#101827"/>
+    </linearGradient>
+    <style>
+      .title{font:900 34px Inter,Segoe UI,sans-serif;fill:#f8fbff}
+      .label{font:850 22px Inter,Segoe UI,sans-serif;fill:#f8fbff}
+      .small{font:700 15px Inter,Segoe UI,sans-serif;fill:#aebbd0}
+      .mono{font:700 17px ui-monospace,SFMono-Regular,Consolas,monospace;fill:#dce8f7}
+      .ghost{fill:#78e6d7;opacity:.56}
+      .card{fill:#ffffff;fill-opacity:.07;stroke:#ffffff;stroke-opacity:.14}
+    </style>
+  </defs>
+  <rect width="1200" height="760" rx="34" fill="url(#bg)"/>
+  <text x="70" y="88" class="title">Ghost text no es contrato</text>
+  <text x="72" y="122" class="small">La sugerencia aparece muy segura porque esta bien renderizada. Eso no la convierte en correcta.</text>
+  <g transform="translate(136 176)">
+    <rect width="928" height="428" rx="34" class="card"/>
+    <g transform="translate(70 80)">
+      <rect width="500" height="250" rx="28" fill="#07101e" stroke="#5ddcff" stroke-opacity=".24"/>
+      <text x="34" y="58" class="mono">function priceWithTax(price) {</text>
+      <text x="58" y="104" class="mono ghost">return price * 1.21</text>
+      <text x="34" y="150" class="mono">}</text>
+      <rect x="44" y="182" width="220" height="42" rx="18" fill="#62e6a2" fill-opacity=".15" stroke="#62e6a2" stroke-opacity=".38"/>
+      <text x="82" y="210" class="small">Accept suggestion</text>
+    </g>
+    <g transform="translate(650 90)">
+      <rect width="200" height="70" rx="22" fill="#f8c96a" fill-opacity=".14" stroke="#f8c96a" stroke-opacity=".38"/>
+      <text x="34" y="44" class="label">Leer</text>
+      <rect y="96" width="200" height="70" rx="22" fill="#5ddcff" fill-opacity=".14" stroke="#5ddcff" stroke-opacity=".38"/>
+      <text x="34" y="140" class="label">Probar</text>
+      <rect y="192" width="200" height="70" rx="22" fill="#62e6a2" fill-opacity=".14" stroke="#62e6a2" stroke-opacity=".38"/>
+      <text x="34" y="236" class="label">Aceptar</text>
+    </g>
+  </g>
+</svg>

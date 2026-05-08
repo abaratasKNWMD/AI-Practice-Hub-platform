@@ -1,0 +1,9 @@
+diff --git a/README.md b/README.md
+--- a/README.md
++++ b/README.md
+@@
++# Evidencia de ejercicio
++- Ejercicio: cx-b01-repo-map
++- Resultado: salida verificable
++- Coste: Bajo: 1 exploracion corta, sin reintentos largos
++- Permisos: read-only

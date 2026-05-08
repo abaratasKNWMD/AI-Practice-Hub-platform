@@ -1,0 +1,21 @@
+{
+  "vendor": "claude",
+  "exerciseId": "cl-a01-hook-block-secrets",
+  "title": "Hook PreToolUse anti secretos",
+  "surface": "Hooks",
+  "recommendedModel": "Sonnet",
+  "permissionMode": "write hook script",
+  "estimatedCost": "medio: script + prueba",
+  "intentionalErrors": [
+    "briefing demasiado amplio",
+    "falta de evidencia",
+    "coste sin registrar"
+  ],
+  "expectedArtifacts": [
+    "prompt",
+    "resultado",
+    "evidencia",
+    "coste",
+    "decision"
+  ]
+}

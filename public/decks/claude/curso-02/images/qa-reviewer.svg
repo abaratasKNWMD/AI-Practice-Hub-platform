@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="620" viewBox="0 0 1100 620" role="img" aria-labelledby="title desc">
+  <title id="title">QA reviewer lens</title>
+  <desc id="desc">QA reviewer lens over a diff with findings and checks.</desc>
+  <rect width="1100" height="620" rx="34" fill="#0b0a09"/>
+  <text x="95" y="112" font-family="Inter, Arial, sans-serif" font-size="34" font-weight="900" fill="#fff7f0">QA reviewer</text>
+  <g transform="translate(125 190)" font-family="Inter, Arial, sans-serif">
+    <rect width="540" height="330" rx="24" fill="#15110f" stroke="#fff" stroke-opacity="0.12"/>
+    <text x="34" y="56" font-size="20" font-weight="900" fill="#fff7f0">diff</text>
+    <rect x="34" y="90" width="440" height="24" rx="12" fill="#75e6c0" fill-opacity="0.22"/>
+    <rect x="34" y="138" width="380" height="24" rx="12" fill="#ff9aad" fill-opacity="0.22"/>
+    <rect x="34" y="186" width="470" height="24" rx="12" fill="#ffd27a" fill-opacity="0.22"/>
+    <circle cx="430" cy="184" r="96" fill="none" stroke="#7bd7ff" stroke-width="12" stroke-opacity="0.72"/>
+    <path d="M498 252L570 324" stroke="#7bd7ff" stroke-width="16" stroke-linecap="round"/>
+    <rect x="630" y="35" width="280" height="260" rx="24" fill="#101418" stroke="#7bd7ff" stroke-opacity="0.42"/>
+    <text x="664" y="88" font-size="20" font-weight="900" fill="#d8f4ff">findings</text>
+    <text x="664" y="132" font-size="16" fill="#b9aea3">severity</text>
+    <text x="664" y="168" font-size="16" fill="#b9aea3">test gap</text>
+    <text x="664" y="204" font-size="16" fill="#b9aea3">recommended check</text>
+  </g>
+</svg>

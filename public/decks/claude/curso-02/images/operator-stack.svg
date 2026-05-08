@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 560" role="img" aria-labelledby="title desc">
+  <title id="title">Claude Operator stack</title>
+  <desc id="desc">Stack of Claude Operator capabilities.</desc>
+  <rect width="1000" height="560" rx="34" fill="#0f0e0d"/>
+  <text x="500" y="78" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="38" font-weight="850" fill="#fff4eb">Stack Operator</text>
+  <g font-family="Inter, Arial, sans-serif">
+    <rect x="220" y="138" width="560" height="56" rx="18" fill="#211714" stroke="#ff9aad"/>
+    <text x="500" y="174" text-anchor="middle" font-size="20" font-weight="850" fill="#ffdfe5">CLAUDE.md y rules: memoria estable</text>
+    <rect x="250" y="214" width="500" height="56" rx="18" fill="#181411" stroke="#ffd27a"/>
+    <text x="500" y="250" text-anchor="middle" font-size="20" font-weight="850" fill="#fff0c9">Skills: procedimientos bajo demanda</text>
+    <rect x="280" y="290" width="440" height="56" rx="18" fill="#151713" stroke="#75e6c0"/>
+    <text x="500" y="326" text-anchor="middle" font-size="20" font-weight="850" fill="#d8fff1">Subagentes: especialidad y contexto aislado</text>
+    <rect x="310" y="366" width="380" height="56" rx="18" fill="#12171a" stroke="#7bd7ff"/>
+    <text x="500" y="402" text-anchor="middle" font-size="20" font-weight="850" fill="#dff7ff">MCP: datos y herramientas externas</text>
+    <rect x="340" y="442" width="320" height="56" rx="18" fill="#181411" stroke="#b9aea3"/>
+    <text x="500" y="478" text-anchor="middle" font-size="20" font-weight="850" fill="#fff4eb">Hooks: curso 3, enforcement</text>
+  </g>
+</svg>

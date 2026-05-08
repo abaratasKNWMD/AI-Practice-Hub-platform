@@ -1,0 +1,226 @@
+{
+  "generatedAt": "2026-05-08T11:31:11.747Z",
+  "status": "passed",
+  "minimums": {
+    "hero": 1,
+    "operativeDiagrams": 3,
+    "memes": 2,
+    "reflectionImages": 2
+  },
+  "decks": [
+    {
+      "vendor": "codex",
+      "course": "curso-01",
+      "slideCount": 34,
+      "totalImageFiles": 7,
+      "usedImageFiles": 7,
+      "unusedImageFiles": 0,
+      "unused": [],
+      "imageRefs": 7,
+      "hero": true,
+      "operativeDiagrams": 26,
+      "memes": 9,
+      "reflectionImages": 56,
+      "checks": {
+        "hero": true,
+        "operativeDiagrams": true,
+        "memes": true,
+        "reflectionImages": true
+      },
+      "status": "passed"
+    },
+    {
+      "vendor": "codex",
+      "course": "curso-02",
+      "slideCount": 83,
+      "totalImageFiles": 14,
+      "usedImageFiles": 14,
+      "unusedImageFiles": 0,
+      "unused": [],
+      "imageRefs": 14,
+      "hero": true,
+      "operativeDiagrams": 67,
+      "memes": 24,
+      "reflectionImages": 140,
+      "checks": {
+        "hero": true,
+        "operativeDiagrams": true,
+        "memes": true,
+        "reflectionImages": true
+      },
+      "status": "passed"
+    },
+    {
+      "vendor": "codex",
+      "course": "curso-03",
+      "slideCount": 81,
+      "totalImageFiles": 13,
+      "usedImageFiles": 13,
+      "unusedImageFiles": 0,
+      "unused": [],
+      "imageRefs": 13,
+      "hero": true,
+      "operativeDiagrams": 96,
+      "memes": 28,
+      "reflectionImages": 100,
+      "checks": {
+        "hero": true,
+        "operativeDiagrams": true,
+        "memes": true,
+        "reflectionImages": true
+      },
+      "status": "passed"
+    },
+    {
+      "vendor": "copilot",
+      "course": "curso-01",
+      "slideCount": 48,
+      "totalImageFiles": 17,
+      "usedImageFiles": 17,
+      "unusedImageFiles": 0,
+      "unused": [],
+      "imageRefs": 17,
+      "hero": true,
+      "operativeDiagrams": 13,
+      "memes": 30,
+      "reflectionImages": 46,
+      "checks": {
+        "hero": true,
+        "operativeDiagrams": true,
+        "memes": true,
+        "reflectionImages": true
+      },
+      "status": "passed"
+    },
+    {
+      "vendor": "copilot",
+      "course": "curso-02",
+      "slideCount": 54,
+      "totalImageFiles": 24,
+      "usedImageFiles": 24,
+      "unusedImageFiles": 0,
+      "unused": [],
+      "imageRefs": 24,
+      "hero": true,
+      "operativeDiagrams": 26,
+      "memes": 37,
+      "reflectionImages": 34,
+      "checks": {
+        "hero": true,
+        "operativeDiagrams": true,
+        "memes": true,
+        "reflectionImages": true
+      },
+      "status": "passed"
+    },
+    {
+      "vendor": "copilot",
+      "course": "curso-03",
+      "slideCount": 53,
+      "totalImageFiles": 22,
+      "usedImageFiles": 22,
+      "unusedImageFiles": 0,
+      "unused": [],
+      "imageRefs": 22,
+      "hero": true,
+      "operativeDiagrams": 15,
+      "memes": 39,
+      "reflectionImages": 29,
+      "checks": {
+        "hero": true,
+        "operativeDiagrams": true,
+        "memes": true,
+        "reflectionImages": true
+      },
+      "status": "passed"
+    },
+    {
+      "vendor": "claude",
+      "course": "curso-01",
+      "slideCount": 48,
+      "totalImageFiles": 20,
+      "usedImageFiles": 20,
+      "unusedImageFiles": 0,
+      "unused": [],
+      "imageRefs": 20,
+      "hero": true,
+      "operativeDiagrams": 22,
+      "memes": 16,
+      "reflectionImages": 57,
+      "checks": {
+        "hero": true,
+        "operativeDiagrams": true,
+        "memes": true,
+        "reflectionImages": true
+      },
+      "status": "passed"
+    },
+    {
+      "vendor": "claude",
+      "course": "curso-02",
+      "slideCount": 44,
+      "totalImageFiles": 37,
+      "usedImageFiles": 23,
+      "unusedImageFiles": 14,
+      "unused": [
+        "images/agent-handoff.svg",
+        "images/context-overhead-meter.svg",
+        "images/mcp-gateway.svg",
+        "images/mcp-scope-ladder.svg",
+        "images/meme-agent-costume.svg",
+        "images/meme-prompt-drawer.svg",
+        "images/meme-skill-postit.svg",
+        "images/operator-cost-panel.svg",
+        "images/qa-reviewer-lens.svg",
+        "images/skill-tool-gate.svg",
+        "images/skill-workbench.svg",
+        "images/skills-factory.svg",
+        "images/subagent-board.svg",
+        "images/supporting-files.svg"
+      ],
+      "imageRefs": 23,
+      "hero": true,
+      "operativeDiagrams": 18,
+      "memes": 12,
+      "reflectionImages": 58,
+      "checks": {
+        "hero": true,
+        "operativeDiagrams": true,
+        "memes": true,
+        "reflectionImages": true
+      },
+      "status": "passed"
+    },
+    {
+      "vendor": "claude",
+      "course": "curso-03",
+      "slideCount": 46,
+      "totalImageFiles": 34,
+      "usedImageFiles": 25,
+      "unusedImageFiles": 9,
+      "unused": [
+        "images/decision-control.svg",
+        "images/github-action-flow.svg",
+        "images/hooks-lifecycle.svg",
+        "images/meme-big-auto-button.svg",
+        "images/meme-hook-bouncer.svg",
+        "images/meme-plugin-nesting.svg",
+        "images/meme-pr-vibes.svg",
+        "images/pr-review-rubric.svg",
+        "images/subagent-hooks.svg"
+      ],
+      "imageRefs": 25,
+      "hero": true,
+      "operativeDiagrams": 17,
+      "memes": 17,
+      "reflectionImages": 59,
+      "checks": {
+        "hero": true,
+        "operativeDiagrams": true,
+        "memes": true,
+        "reflectionImages": true
+      },
+      "status": "passed"
+    }
+  ]
+}

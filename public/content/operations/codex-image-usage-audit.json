@@ -1,0 +1,28 @@
+[
+  {
+    "vendor": "codex",
+    "course": "curso-02",
+    "totalImageFiles": 14,
+    "usedImageFiles": 14,
+    "unusedImageFiles": 0,
+    "unused": [],
+    "imageRefs": 14,
+    "hero": true,
+    "operativeDiagrams": 67,
+    "memes": 24,
+    "reflectionImages": 140
+  },
+  {
+    "vendor": "codex",
+    "course": "curso-03",
+    "totalImageFiles": 13,
+    "usedImageFiles": 13,
+    "unusedImageFiles": 0,
+    "unused": [],
+    "imageRefs": 13,
+    "hero": true,
+    "operativeDiagrams": 96,
+    "memes": 28,
+    "reflectionImages": 100
+  }
+]

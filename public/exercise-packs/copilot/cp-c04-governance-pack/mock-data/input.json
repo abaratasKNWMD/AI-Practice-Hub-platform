@@ -1,0 +1,21 @@
+{
+  "vendor": "copilot",
+  "exerciseId": "cp-c04-governance-pack",
+  "title": "Governance pack Copilot",
+  "surface": "operating model",
+  "recommendedModel": "Modelo incluido / Ask",
+  "permissionMode": "read-only",
+  "estimatedCost": "Bajo: diseno de politica",
+  "intentionalErrors": [
+    "briefing demasiado amplio",
+    "falta de evidencia",
+    "coste sin registrar"
+  ],
+  "expectedArtifacts": [
+    "prompt",
+    "resultado",
+    "evidencia",
+    "coste",
+    "decision"
+  ]
+}

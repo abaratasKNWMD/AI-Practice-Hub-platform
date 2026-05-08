@@ -1,0 +1,377 @@
+{
+  "id": "cp-workshop-30m-error-to-pr",
+  "title": "Copilot Workshop 30m - Error to PR",
+  "description": "Workshop simulado de 30 minutos para pasar de error en VS Code a PR revisable con Ask, Edit, Agent, instructions y presupuesto de premium requests.",
+  "vendor": "copilot",
+  "template": "technical",
+  "durationMin": 30,
+  "voice": "es-ES-AlvaroNeural",
+  "author": "AI Practice Hub",
+  "createdAt": "2026-05-08T00:00:00.000Z",
+  "chapters": [
+    { "id": "briefing", "label": "Briefing", "sceneId": "title" },
+    { "id": "ask", "label": "Ask", "sceneId": "ask-prompt" },
+    { "id": "edit", "label": "Edit", "sceneId": "edit-patch" },
+    { "id": "agent", "label": "Agent", "sceneId": "agent-contract" },
+    { "id": "pr", "label": "PR", "sceneId": "pr-contract" }
+  ],
+  "scenes": [
+    {
+      "id": "title",
+      "name": "Apertura",
+      "chapterId": "briefing",
+      "kind": "title",
+      "durationSec": 150,
+      "screen": {
+        "visual": "VS Code glass hero",
+        "content": {
+          "title": "Copilot: de error a PR",
+          "subtitle": "Ask para entender, Edit para corregir, Agent para completar y PR para revisar.",
+          "tag": "Workshop / GitHub Copilot"
+        }
+      },
+      "voiceover": [
+        "En este workshop Copilot no es autocomplete.",
+        "Es un banco de trabajo con modos.",
+        "El objetivo es cerrar una PR pequeña que otra persona pueda revisar."
+      ],
+      "action": {
+        "type": "narrate",
+        "label": "Presentar modos",
+        "detail": "Explicar Ask, Edit y Agent como niveles de autonomia."
+      }
+    },
+    {
+      "id": "error-ticket",
+      "name": "Error inicial",
+      "chapterId": "briefing",
+      "kind": "error",
+      "durationSec": 150,
+      "screen": {
+        "visual": "VS Code terminal + problem matcher",
+        "content": {
+          "tag": "Error mockeado",
+          "sentry": {
+            "id": "CP-W01",
+            "title": "TypeError: cannot read properties of undefined",
+            "file": "src/cart/total.ts",
+            "line": 17,
+            "occurrences": 1,
+            "users": 1,
+            "first": "en workshop",
+            "trace": ["calculateTotal(items)", "item.price.amount", "item.price is undefined"],
+            "context": "Un item legacy llega sin price y rompe el total del carrito."
+          },
+          "linearFix": {
+            "ticketId": "CP-W01",
+            "title": "Hacer calculateTotal tolerante a price missing",
+            "description": "Diagnosticar con Ask, aplicar cambio minimo con Edit y crear test de caso legacy."
+          },
+          "fix": "No aplicar fix todavia. Primero pedir explicacion con Ask."
+        }
+      },
+      "voiceover": [
+        "El error es concreto y reproducible.",
+        "No vamos a pedir que Copilot lo arregle de golpe.",
+        "Primero usamos Ask para entender el fallo."
+      ],
+      "action": {
+        "type": "human-decision",
+        "label": "No editar aun",
+        "detail": "El participante confirma que empieza con Ask, no Agent."
+      }
+    },
+    {
+      "id": "ask-prompt",
+      "name": "Prompt Ask",
+      "chapterId": "ask",
+      "kind": "coding",
+      "durationSec": 150,
+      "screen": {
+        "visual": "Copilot Chat Ask",
+        "content": {
+          "filename": "prompts/copilot-ask.md",
+          "language": "markdown",
+          "code": "@workspace Explica este error sin editar archivos.\n\nContexto:\n- Falla calculateTotal en src/cart/total.ts\n- El stack dice item.price is undefined\n\nDevuelve:\n1. hipotesis principal\n2. archivos que debo revisar\n3. test minimo que cubriria el caso\n4. que NO deberia cambiar"
+        }
+      },
+      "voiceover": [
+        "Ask es perfecto para diagnostico.",
+        "Le pedimos hipotesis, archivos y test.",
+        "Tambien le pedimos que declare que no deberia cambiar."
+      ],
+      "action": {
+        "type": "prompt",
+        "label": "Enviar Ask",
+        "detail": "Usar Copilot Ask sin modificar archivos."
+      }
+    },
+    {
+      "id": "ask-response",
+      "name": "Respuesta Ask",
+      "chapterId": "ask",
+      "kind": "concept",
+      "durationSec": 150,
+      "screen": {
+        "visual": "Copilot response",
+        "content": {
+          "tag": "Respuesta simulada",
+          "title": "Copilot separa causa, alcance y test",
+          "body": "La causa probable es que calculateTotal asume price.amount en todos los items. El fix no deberia cambiar el contrato de carrito ni el formato de moneda. El test minimo crea un item legacy sin price y espera que se ignore o compute como cero.",
+          "highlight": "Ask nos da criterio sin tocar el repo.",
+          "points": [
+            "Archivo: src/cart/total.ts",
+            "Test: tests/cart/total.spec.ts",
+            "No cambiar: schema publico de CartItem",
+            "Riesgo: ocultar datos corruptos sin logging"
+          ]
+        }
+      },
+      "voiceover": [
+        "Esta respuesta ya permite decidir.",
+        "No hay diff todavia.",
+        "Ahora pasamos a Edit con alcance acotado."
+      ],
+      "action": {
+        "type": "simulated-response",
+        "label": "Validar diagnostico",
+        "detail": "El facilitador pregunta que evidencia falta antes de patch."
+      }
+    },
+    {
+      "id": "edit-patch",
+      "name": "Inline Edit",
+      "chapterId": "edit",
+      "kind": "coding",
+      "durationSec": 150,
+      "screen": {
+        "visual": "inline edit diff",
+        "content": {
+          "filename": "src/cart/total.ts",
+          "language": "diff",
+          "code": "- return items.reduce((sum, item) => sum + item.price.amount * item.quantity, 0)\n+ return items.reduce((sum, item) => {\n+   const amount = item.price?.amount ?? 0\n+   return sum + amount * item.quantity\n+ }, 0)"
+        }
+      },
+      "voiceover": [
+        "Edit debe tocar lo minimo.",
+        "El diff es facil de leer.",
+        "Si Copilot propone refactor de carrito completo, lo rechazamos."
+      ],
+      "action": {
+        "type": "diff-review",
+        "label": "Aceptar o ajustar diff",
+        "detail": "Revisar optional chaining, default a cero y semantica del negocio."
+      }
+    },
+    {
+      "id": "test-generation",
+      "name": "Test con Copilot",
+      "chapterId": "edit",
+      "kind": "coding",
+      "durationSec": 150,
+      "screen": {
+        "visual": "test file",
+        "content": {
+          "filename": "tests/cart/total.spec.ts",
+          "language": "typescript",
+          "code": "it('treats legacy items without price as zero', () => {\n  const total = calculateTotal([\n    { id: 'legacy-1', quantity: 2 },\n    { id: 'sku-2', quantity: 1, price: { amount: 1250, currency: 'EUR' } },\n  ])\n\n  expect(total).toBe(1250)\n})"
+        }
+      },
+      "voiceover": [
+        "Ahora generamos el test que justifica el cambio.",
+        "El test nombra el caso legacy.",
+        "No necesitamos cien tests nuevos, necesitamos el correcto."
+      ],
+      "action": {
+        "type": "tool-run",
+        "label": "Ejecutar test cercano",
+        "detail": "pnpm test -- total.spec.ts",
+        "expectedOutput": "El test legacy pasa y no rompe casos existentes."
+      }
+    },
+    {
+      "id": "agent-contract",
+      "name": "Cuando usar Agent",
+      "chapterId": "agent",
+      "kind": "compare",
+      "durationSec": 150,
+      "screen": {
+        "visual": "agent contract",
+        "content": {
+          "tag": "Agent mode",
+          "left": {
+            "label": "Mal uso",
+            "color": "destructive",
+            "steps": [
+              { "icon": "AlertTriangle", "text": "Haz robusto el carrito" },
+              { "icon": "Code", "text": "Toca pricing, checkout y UI" },
+              { "icon": "GitPullRequest", "text": "PR grande y ambigua" }
+            ],
+            "total": "Premium requests mal gastadas"
+          },
+          "right": {
+            "label": "Buen uso",
+            "color": "accent",
+            "steps": [
+              { "icon": "Check", "text": "Completa test y docs del caso" },
+              { "icon": "Check", "text": "No cambies API publica" },
+              { "icon": "Check", "text": "Para si aparece scope nuevo" }
+            ],
+            "total": "Autonomia con contrato"
+          }
+        }
+      },
+      "voiceover": [
+        "Agent entra cuando hay varios pasos.",
+        "Pero entra con contrato.",
+        "No usamos Agent para convertir una incidencia pequeña en proyecto."
+      ],
+      "action": {
+        "type": "human-decision",
+        "label": "Subir a Agent",
+        "detail": "Autorizar Agent solo para completar test, docs y PR summary."
+      }
+    },
+    {
+      "id": "instructions",
+      "name": "Instructions",
+      "chapterId": "agent",
+      "kind": "coding",
+      "durationSec": 150,
+      "screen": {
+        "visual": "copilot instructions",
+        "content": {
+          "filename": ".github/copilot-instructions.md",
+          "language": "markdown",
+          "code": "# Copilot Instructions\n\n- Para bugs, explica hipotesis antes de editar.\n- Mantén diffs pequenos y con test cercano.\n- No cambies contratos publicos sin pedir confirmacion.\n- Cierra con resumen de riesgo y comando ejecutado.\n- Si una tarea puede gastar premium requests, declara presupuesto."
+        }
+      },
+      "voiceover": [
+        "Las instrucciones convierten el workshop en habito.",
+        "No son decoracion.",
+        "Son la memoria del equipo para el siguiente error."
+      ],
+      "action": {
+        "type": "tool-run",
+        "label": "Guardar instructions",
+        "detail": "Actualizar la carpeta .github del starter repo."
+      }
+    },
+    {
+      "id": "premium-budget",
+      "name": "Budget",
+      "chapterId": "agent",
+      "kind": "concept",
+      "durationSec": 150,
+      "screen": {
+        "visual": "premium request meter",
+        "content": {
+          "tag": "Coste",
+          "title": "Premium requests con sentido",
+          "body": "El coste de Agent se justifica si reduce trabajo humano real y deja una PR revisable. Si la tarea es diagnostico, Ask es mas barato. Si el cambio es pequeño, Edit es suficiente.",
+          "highlight": "Agent para autonomia; Ask para pensar; Edit para patch acotado.",
+          "points": [
+            "Ask: diagnostico barato.",
+            "Edit: cambio localizado.",
+            "Agent: varios pasos con contrato.",
+            "Cloud: tareas delegables desde issue claro."
+          ]
+        }
+      },
+      "voiceover": [
+        "El alumno tiene que elegir modo con presupuesto.",
+        "No por miedo, sino por eficiencia.",
+        "El coste malo es una PR que nadie quiere revisar."
+      ],
+      "action": {
+        "type": "narrate",
+        "label": "Registrar budget",
+        "detail": "Anotar modo usado, motivo y resultado."
+      }
+    },
+    {
+      "id": "pr-contract",
+      "name": "Contrato de PR",
+      "chapterId": "pr",
+      "kind": "coding",
+      "durationSec": 150,
+      "screen": {
+        "visual": "PR markdown",
+        "content": {
+          "filename": "pull_request.md",
+          "language": "markdown",
+          "code": "## Cambio\ncalculateTotal tolera items legacy sin price y los computa como cero.\n\n## Evidencia\n- pnpm test -- total.spec.ts -> passing\n\n## Riesgos\n- Confirmar si item sin price debe ignorarse o bloquearse aguas arriba.\n\n## Copilot usage\n- Ask para diagnostico.\n- Edit para patch.\n- Agent para test y resumen.\n- Premium budget: bajo."
+        }
+      },
+      "voiceover": [
+        "La PR explica como se uso Copilot.",
+        "Esto no es burocracia.",
+        "Es trazabilidad para aprender y gobernar."
+      ],
+      "action": {
+        "type": "handoff",
+        "label": "Abrir PR",
+        "detail": "Usar la plantilla como salida del workshop."
+      }
+    },
+    {
+      "id": "rubric",
+      "name": "Rubrica",
+      "chapterId": "pr",
+      "kind": "preview",
+      "durationSec": 150,
+      "screen": {
+        "visual": "rubric board",
+        "content": {
+          "title": "Rubrica de Copilot",
+          "description": "El workshop se aprueba si el alumno eligio modo con criterio.",
+          "items": [
+            { "label": "Ask antes de Edit", "value": "OK" },
+            { "label": "Diff pequeno", "value": "OK" },
+            { "label": "Test cercano", "value": "OK" },
+            { "label": "PR clara", "value": "OK" }
+          ]
+        }
+      },
+      "voiceover": [
+        "La rubrica evalua decisiones.",
+        "No queremos usuarios que acepten sugerencias.",
+        "Queremos desarrolladores que dirijan Copilot."
+      ],
+      "action": {
+        "type": "human-decision",
+        "label": "Evaluar",
+        "detail": "El facilitador marca la rubrica y decide siguiente lab."
+      }
+    },
+    {
+      "id": "finale",
+      "name": "Cierre",
+      "chapterId": "pr",
+      "kind": "finale",
+      "durationSec": 150,
+      "screen": {
+        "visual": "summary cards",
+        "content": {
+          "title": "De error a PR revisable",
+          "summary": [
+            { "number": "01", "label": "Ask", "body": "Entender antes de tocar." },
+            { "number": "02", "label": "Edit", "body": "Cambiar poco y con test." },
+            { "number": "03", "label": "Agent", "body": "Delegar solo con contrato y presupuesto." }
+          ],
+          "cta": "Siguiente: Copilot Medium con instructions y prompt files de equipo."
+        }
+      },
+      "voiceover": [
+        "Este workshop da una cadencia repetible.",
+        "Error, diagnostico, patch, test y PR.",
+        "Eso es mucho mas valioso que una demo de autocomplete."
+      ],
+      "action": {
+        "type": "handoff",
+        "label": "Cerrar workshop",
+        "detail": "Guardar PR, test y decision de modo."
+      }
+    }
+  ]
+}

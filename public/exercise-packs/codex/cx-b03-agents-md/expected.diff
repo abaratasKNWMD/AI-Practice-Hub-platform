@@ -1,0 +1,9 @@
+diff --git a/README.md b/README.md
+--- a/README.md
++++ b/README.md
+@@
++# Evidencia de ejercicio
++- Ejercicio: cx-b03-agents-md
++- Resultado: salida verificable
++- Coste: Bajo: lectura del repo y una edicion pequena
++- Permisos: workspace-write

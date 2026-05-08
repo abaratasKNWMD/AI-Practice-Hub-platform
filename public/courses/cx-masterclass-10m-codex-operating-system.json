@@ -1,0 +1,262 @@
+{
+  "id": "cx-masterclass-10m-codex-operating-system",
+  "title": "Codex Masterclass 10m - Operating System",
+  "description": "Video largo inicial para presentar Codex como sistema operativo de trabajo: superficies, AGENTS.md, modelos, permisos, coste, ejercicios y workshops.",
+  "template": "technical",
+  "durationPreset": 10,
+  "durationMs": 600000,
+  "voice": "es-ES-AlvaroNeural",
+  "author": "AI Practice Hub",
+  "createdAt": "2026-05-08T00:00:00.000Z",
+  "chapters": [
+    { "id": "start", "label": "Aterrizaje", "startMs": 0 },
+    { "id": "surface", "label": "Superficies", "startMs": 60000 },
+    { "id": "method", "label": "Metodo", "startMs": 180000 },
+    { "id": "governance", "label": "Coste y permisos", "startMs": 360000 },
+    { "id": "close", "label": "Activacion", "startMs": 520000 }
+  ],
+  "scenes": [
+    {
+      "id": "title",
+      "name": "Apertura",
+      "startMs": 0,
+      "endMs": 30000,
+      "type": "title",
+      "content": {
+        "title": "Codex como sistema operativo",
+        "subtitle": "Diez minutos para aterrizar plataforma, metodo, coste y practica real.",
+        "tag": "Codex / Masterclass inicial"
+      },
+      "subtitles": [
+        { "text": "La idea no es aprender otro chat.", "startMs": 2000, "endMs": 7000 },
+        { "text": "La idea es convertir Codex en una forma repetible de trabajar con repos reales.", "startMs": 8000, "endMs": 19000 },
+        { "text": "Este video abre la ruta antes de entrar a decks y ejercicios.", "startMs": 20000, "endMs": 29000 }
+      ]
+    },
+    {
+      "id": "concept-platform",
+      "name": "Plataforma",
+      "startMs": 30000,
+      "endMs": 90000,
+      "type": "concept",
+      "content": {
+        "tag": "Mapa mental",
+        "title": "Codex no vive en una sola pantalla",
+        "body": "Codex aparece como experiencia web, CLI, IDE, cloud tasks y automatizaciones. Lo importante no es memorizar botones: es elegir la superficie que reduce friccion, riesgo y coste para la tarea actual.",
+        "highlight": "Superficie antes que prompt.",
+        "points": [
+          "IDE: cambios acotados y feedback visual.",
+          "CLI: repos, comandos, scripts y tareas reproducibles.",
+          "Cloud: delegacion paralela y PRs trazables.",
+          "Hub: cursos, labs, videos y workshops para que el equipo practique."
+        ]
+      },
+      "subtitles": [
+        { "text": "Elegir mal la superficie crea ruido.", "startMs": 35000, "endMs": 44000 },
+        { "text": "Elegir bien la superficie convierte Codex en una herramienta predecible.", "startMs": 45000, "endMs": 59000 },
+        { "text": "Ese es el primer habito del curso.", "startMs": 60000, "endMs": 72000 }
+      ]
+    },
+    {
+      "id": "compare-starts",
+      "name": "Arranque correcto",
+      "startMs": 90000,
+      "endMs": 150000,
+      "type": "compare",
+      "content": {
+        "tag": "Mal pedido vs operacion profesional",
+        "left": {
+          "label": "Pedido impulsivo",
+          "color": "destructive",
+          "steps": [
+            { "icon": "MessageSquare", "text": "Arregla esto rapido" },
+            { "icon": "Code", "text": "Codex edita sin mapa suficiente" },
+            { "icon": "AlertTriangle", "text": "El usuario revisa tarde y con poca evidencia" }
+          ],
+          "total": "Mas vueltas, mas tokens, mas dudas"
+        },
+        "right": {
+          "label": "Operacion Codex",
+          "color": "accent",
+          "steps": [
+            { "icon": "Eye", "text": "Explora rutas y tests en read-only" },
+            { "icon": "FileText", "text": "Propone plan corto y criterio de cierre" },
+            { "icon": "Check", "text": "Edita poco y verifica con evidencia" }
+          ],
+          "total": "Menos ruido, mas control"
+        }
+      },
+      "subtitles": [
+        { "text": "La diferencia esta en el orden.", "startMs": 94000, "endMs": 102000 },
+        { "text": "Primero mapa, despues plan, despues patch.", "startMs": 103000, "endMs": 113000 },
+        { "text": "Codex es potente cuando el humano define el marco.", "startMs": 114000, "endMs": 136000 }
+      ]
+    },
+    {
+      "id": "linear-first-lab",
+      "name": "Primer lab",
+      "startMs": 150000,
+      "endMs": 210000,
+      "type": "linear",
+      "content": {
+        "ticketId": "CX-100",
+        "title": "Primer reto: mapa de repo antes de tocar codigo",
+        "project": "Codex Practice Hub",
+        "priority": "High",
+        "assignee": "Participante",
+        "status": "Ready",
+        "labels": ["orientation", "read-only", "context"],
+        "description": "Abrir un repo de ejercicios y pedir a Codex: 1. mapa de carpetas relevantes, 2. comandos de validacion, 3. riesgos, 4. propuesta de siguiente paso sin editar archivos."
+      },
+      "subtitles": [
+        { "text": "El primer reto no es espectacular.", "startMs": 154000, "endMs": 163000 },
+        { "text": "Es deliberadamente read-only.", "startMs": 164000, "endMs": 172000 },
+        { "text": "Queremos crear criterio antes de crear diffs.", "startMs": 173000, "endMs": 194000 }
+      ]
+    },
+    {
+      "id": "thinking-plan",
+      "name": "Plan de trabajo",
+      "startMs": 210000,
+      "endMs": 285000,
+      "type": "thinking",
+      "content": {
+        "tag": "Loop Codex",
+        "title": "Como debe pensar una sesion buena",
+        "thoughts": [
+          { "ms": 0, "text": "Identificar objetivo y restricciones.", "done": true },
+          { "ms": 10000, "text": "Leer AGENTS.md y reglas locales.", "done": true },
+          { "ms": 22000, "text": "Explorar rutas candidatas sin editar.", "done": true },
+          { "ms": 36000, "text": "Proponer plan de 2-4 pasos.", "done": true },
+          { "ms": 52000, "text": "Aplicar patch pequeno y verificable.", "done": false },
+          { "ms": 66000, "text": "Cerrar con checks, riesgos y coste.", "done": false }
+        ]
+      },
+      "subtitles": [
+        { "text": "Esta cadencia se repite en todos los cursos.", "startMs": 215000, "endMs": 227000 },
+        { "text": "No es burocracia: es control tecnico.", "startMs": 228000, "endMs": 244000 },
+        { "text": "Cuando todos la usan, las tutorias cambian de nivel.", "startMs": 245000, "endMs": 270000 }
+      ]
+    },
+    {
+      "id": "coding-agents",
+      "name": "AGENTS.md",
+      "startMs": 285000,
+      "endMs": 345000,
+      "type": "coding",
+      "content": {
+        "filename": "AGENTS.md",
+        "language": "markdown",
+        "code": "# AGENTS.md\n\n## Objetivo\nAyudar en cambios pequenos, revisables y con evidencia.\n\n## Reglas\n- Antes de editar, lee estructura y tests cercanos.\n- No leas ni escribas .env, secrets o credenciales.\n- Propone plan corto antes de patch.\n- Cierra con diff, checks ejecutados, coste estimado y riesgos.\n\n## Comandos\n- pnpm lint\n- pnpm test\n- pnpm build"
+      },
+      "subtitles": [
+        { "text": "AGENTS.md reduce repeticion.", "startMs": 290000, "endMs": 298000 },
+        { "text": "Tambien reduce coste, porque evita explicar lo mismo cada vez.", "startMs": 299000, "endMs": 317000 },
+        { "text": "El archivo no debe ser una enciclopedia.", "startMs": 318000, "endMs": 334000 }
+      ]
+    },
+    {
+      "id": "concept-cost",
+      "name": "Modelos y coste",
+      "startMs": 345000,
+      "endMs": 420000,
+      "type": "concept",
+      "content": {
+        "tag": "Gobierno",
+        "title": "Modelo, razonamiento y coste se eligen",
+        "body": "Un equipo maduro no usa siempre la maxima potencia. Usa modelos y esfuerzo segun riesgo, ambiguedad, impacto y necesidad de verificacion. El coste malo suele venir del rework y del contexto sin filtrar.",
+        "highlight": "Coste visible no significa miedo: significa capacidad de decision.",
+        "points": [
+          "Tareas read-only y mapas: barato y rapido.",
+          "Cambios de arquitectura: modelo fuerte y plan controlado.",
+          "MCPs: solo si desbloquean una decision real.",
+          "Sesiones largas: compactar o reiniciar con handoff."
+        ]
+      },
+      "subtitles": [
+        { "text": "Coste no es solo dinero.", "startMs": 350000, "endMs": 359000 },
+        { "text": "Tambien es ruido, atencion y tiempo de revision.", "startMs": 360000, "endMs": 375000 },
+        { "text": "Por eso cada ejercicio declara modelo, permisos y coste esperado.", "startMs": 376000, "endMs": 404000 }
+      ]
+    },
+    {
+      "id": "error-permissions",
+      "name": "Permisos",
+      "startMs": 420000,
+      "endMs": 490000,
+      "type": "error",
+      "content": {
+        "tag": "Riesgo controlable",
+        "sentry": {
+          "id": "SAFE-401",
+          "title": "Permiso amplio sin alcance",
+          "file": "workspace",
+          "line": 1,
+          "occurrences": 3,
+          "users": 1,
+          "first": "hace 2 minutos",
+          "trace": [
+            "User approves command without plan",
+            "Agent reads unrelated folders",
+            "Context grows and diff becomes hard to review"
+          ],
+          "context": "El problema no es que Codex pueda actuar. El problema es permitir accion sin contrato."
+        },
+        "linearFix": {
+          "ticketId": "CX-101",
+          "title": "Anadir gate de permisos al prompt",
+          "description": "Antes de ejecutar comandos o editar muchos archivos, Codex debe explicar impacto, rutas, comando y check de salida."
+        },
+        "fix": "Antes de ejecutar, dime:\n- que comando quieres correr\n- por que es necesario\n- que archivos puede afectar\n- como sabremos si fue correcto\n\nSi el alcance crece, para y pregunta."
+      },
+      "subtitles": [
+        { "text": "Los permisos son una herramienta de diseno.", "startMs": 425000, "endMs": 438000 },
+        { "text": "No se trata de frenar Codex, sino de hacer su trabajo revisable.", "startMs": 439000, "endMs": 462000 },
+        { "text": "El hub entrena ese reflejo desde el primer dia.", "startMs": 463000, "endMs": 482000 }
+      ]
+    },
+    {
+      "id": "preview-activation",
+      "name": "Activacion",
+      "startMs": 490000,
+      "endMs": 555000,
+      "type": "preview",
+      "content": {
+        "title": "Ruta de activacion Codex",
+        "description": "El alumno consume el video, abre el deck, ejecuta un lab y llega a tutoria con un handoff.",
+        "items": [
+          { "label": "Cursos", "value": "C0-C4" },
+          { "label": "Labs", "value": "20" },
+          { "label": "Microvideos", "value": "10+" },
+          { "label": "Cierre", "value": "diff + checks + riesgos" }
+        ]
+      },
+      "subtitles": [
+        { "text": "La plataforma no intenta sustituir al profesor.", "startMs": 496000, "endMs": 511000 },
+        { "text": "Intenta quitarle las dudas repetidas.", "startMs": 512000, "endMs": 524000 },
+        { "text": "Asi la tutoria se dedica a decisiones reales.", "startMs": 525000, "endMs": 546000 }
+      ]
+    },
+    {
+      "id": "finale",
+      "name": "Cierre",
+      "startMs": 555000,
+      "endMs": 600000,
+      "type": "finale",
+      "content": {
+        "title": "Lo que queda activado",
+        "summary": [
+          { "number": "01", "label": "Metodo", "body": "Mapa, plan, patch y evidencia antes de escalar." },
+          { "number": "02", "label": "Gobierno", "body": "Modelo, permisos, contexto y coste se deciden explicitamente." },
+          { "number": "03", "label": "Practica", "body": "El hub convierte cada concepto en reto autoconsumible." }
+        ],
+        "cta": "Siguiente paso: abrir Codex Basic y completar el primer lab read-only."
+      },
+      "subtitles": [
+        { "text": "Codex no se adopta con una demo brillante.", "startMs": 558000, "endMs": 570000 },
+        { "text": "Se adopta con un metodo repetible.", "startMs": 571000, "endMs": 581000 },
+        { "text": "Ahora toca practicarlo.", "startMs": 582000, "endMs": 597000 }
+      ]
+    }
+  ]
+}

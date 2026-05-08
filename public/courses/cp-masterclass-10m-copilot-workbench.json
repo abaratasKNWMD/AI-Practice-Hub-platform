@@ -1,0 +1,261 @@
+{
+  "id": "cp-masterclass-10m-copilot-workbench",
+  "title": "Copilot Masterclass 10m - Workbench",
+  "description": "Video largo inicial para explicar GitHub Copilot como banco de trabajo: VS Code, Ask/Edit/Agent, instrucciones, PRs, premium requests y practica guiada.",
+  "template": "technical",
+  "durationPreset": 10,
+  "durationMs": 600000,
+  "voice": "es-ES-AlvaroNeural",
+  "author": "AI Practice Hub",
+  "createdAt": "2026-05-08T00:00:00.000Z",
+  "chapters": [
+    { "id": "start", "label": "Por que Copilot", "startMs": 0 },
+    { "id": "modes", "label": "Ask Edit Agent", "startMs": 90000 },
+    { "id": "instructions", "label": "Instrucciones", "startMs": 230000 },
+    { "id": "governance", "label": "PR y coste", "startMs": 390000 },
+    { "id": "close", "label": "Workshops", "startMs": 530000 }
+  ],
+  "scenes": [
+    {
+      "id": "title",
+      "name": "Apertura",
+      "startMs": 0,
+      "endMs": 30000,
+      "type": "title",
+      "content": {
+        "title": "Copilot como banco de trabajo",
+        "subtitle": "Diez minutos para pasar de autocomplete a practica de equipo.",
+        "tag": "GitHub Copilot / Masterclass inicial"
+      },
+      "subtitles": [
+        { "text": "Copilot no es solo sugerencia gris en el editor.", "startMs": 2000, "endMs": 9000 },
+        { "text": "Es una familia de modos para preguntar, editar, delegar y revisar.", "startMs": 10000, "endMs": 21000 },
+        { "text": "El curso ensena a elegir el modo correcto.", "startMs": 22000, "endMs": 29000 }
+      ]
+    },
+    {
+      "id": "concept-workbench",
+      "name": "Banco de trabajo",
+      "startMs": 30000,
+      "endMs": 90000,
+      "type": "concept",
+      "content": {
+        "tag": "Mentalidad",
+        "title": "Copilot amplifica el flujo del IDE",
+        "body": "La primera adopcion suele quedarse en aceptar completions. La adopcion madura usa chat, inline edit, agent mode, custom instructions, prompt files y PRs como partes de un mismo flujo de trabajo.",
+        "highlight": "Cada modo tiene un coste cognitivo y un riesgo distinto.",
+        "points": [
+          "Completion: velocidad local, supervision linea a linea.",
+          "Ask: explicacion y diagnostico sin tocar codigo.",
+          "Edit: cambios acotados sobre archivos concretos.",
+          "Agent: delegacion con plan, herramientas y revision humana."
+        ]
+      },
+      "subtitles": [
+        { "text": "La clave no es usar mas Copilot.", "startMs": 35000, "endMs": 44000 },
+        { "text": "La clave es usar el modo que corresponde a la tarea.", "startMs": 45000, "endMs": 59000 },
+        { "text": "Eso evita aceptar codigo sin criterio.", "startMs": 60000, "endMs": 73000 }
+      ]
+    },
+    {
+      "id": "compare-modes",
+      "name": "Ask Edit Agent",
+      "startMs": 90000,
+      "endMs": 160000,
+      "type": "compare",
+      "content": {
+        "tag": "Decision de modo",
+        "left": {
+          "label": "Uso confuso",
+          "color": "destructive",
+          "steps": [
+            { "icon": "AlertTriangle", "text": "Pedir refactors grandes en completion" },
+            { "icon": "MessageSquare", "text": "Usar Agent para dudas simples" },
+            { "icon": "Code", "text": "Aceptar cambios sin leer diff" }
+          ],
+          "total": "Mas sorpresas y premium requests"
+        },
+        "right": {
+          "label": "Uso profesional",
+          "color": "accent",
+          "steps": [
+            { "icon": "Search", "text": "Ask para entender" },
+            { "icon": "FileText", "text": "Edit para patch acotado" },
+            { "icon": "Workflow", "text": "Agent para tareas con varios pasos" }
+          ],
+          "total": "Mas control y mejor aprendizaje"
+        }
+      },
+      "subtitles": [
+        { "text": "Ask, Edit y Agent no compiten.", "startMs": 96000, "endMs": 106000 },
+        { "text": "Son tres niveles de autonomia.", "startMs": 107000, "endMs": 116000 },
+        { "text": "El curso entrena cuando subir o bajar de nivel.", "startMs": 117000, "endMs": 143000 }
+      ]
+    },
+    {
+      "id": "linear-first-workshop",
+      "name": "Primer workshop",
+      "startMs": 160000,
+      "endMs": 225000,
+      "type": "linear",
+      "content": {
+        "ticketId": "CP-100",
+        "title": "Workshop inicial: de error a fix revisable",
+        "project": "Copilot Practice",
+        "priority": "High",
+        "assignee": "Participante",
+        "status": "Ready",
+        "labels": ["vscode", "ask-edit-agent", "review"],
+        "description": "Partir de un error mockeado, pedir explicacion en Ask, aplicar patch con Edit y cerrar con diff, test y resumen de riesgo."
+      },
+      "subtitles": [
+        { "text": "El primer workshop evita la demo vacia.", "startMs": 166000, "endMs": 177000 },
+        { "text": "El alumno ve error, hipotesis, patch y evidencia.", "startMs": 178000, "endMs": 197000 },
+        { "text": "Eso se parece mucho mas al trabajo real.", "startMs": 198000, "endMs": 216000 }
+      ]
+    },
+    {
+      "id": "thinking-instructions",
+      "name": "Instrucciones",
+      "startMs": 225000,
+      "endMs": 300000,
+      "type": "thinking",
+      "content": {
+        "tag": "Memoria de equipo",
+        "title": "Que debe saber Copilot antes de responder",
+        "thoughts": [
+          { "ms": 0, "text": "Reglas globales del repo.", "done": true },
+          { "ms": 12000, "text": "Instrucciones por ruta o tecnologia.", "done": true },
+          { "ms": 26000, "text": "Prompt files para tareas repetidas.", "done": true },
+          { "ms": 42000, "text": "Custom agents para roles concretos.", "done": false },
+          { "ms": 60000, "text": "Politica de review y presupuesto.", "done": false }
+        ]
+      },
+      "subtitles": [
+        { "text": "Sin instrucciones, Copilot improvisa estilo.", "startMs": 230000, "endMs": 244000 },
+        { "text": "Con instrucciones, el equipo empieza a repetir calidad.", "startMs": 245000, "endMs": 265000 },
+        { "text": "Esta es una de las grandes piezas del curso dos.", "startMs": 266000, "endMs": 288000 }
+      ]
+    },
+    {
+      "id": "coding-instructions",
+      "name": "Copilot instructions",
+      "startMs": 300000,
+      "endMs": 360000,
+      "type": "coding",
+      "content": {
+        "filename": ".github/copilot-instructions.md",
+        "language": "markdown",
+        "code": "# Copilot Instructions\n\n## Estilo\n- Usa TypeScript estricto y componentes pequenos.\n- No cambies APIs publicas sin avisar.\n\n## Workflow\n- Antes de refactorizar, explica alcance y archivos.\n- Para bugs, propone hipotesis y test cercano.\n- Cierra con diff, tests ejecutados y riesgos.\n\n## Seguridad\n- No leas .env ni secretos.\n- No generes codigo que registre datos sensibles."
+      },
+      "subtitles": [
+        { "text": "Las instrucciones son el puente entre formacion y practica diaria.", "startMs": 306000, "endMs": 325000 },
+        { "text": "No tienen que ser largas.", "startMs": 326000, "endMs": 334000 },
+        { "text": "Tienen que decidir comportamiento.", "startMs": 335000, "endMs": 350000 }
+      ]
+    },
+    {
+      "id": "concept-premium",
+      "name": "Coste",
+      "startMs": 360000,
+      "endMs": 430000,
+      "type": "concept",
+      "content": {
+        "tag": "Premium requests",
+        "title": "Agent mode tambien necesita presupuesto",
+        "body": "Cuando el equipo adopta Agent y cloud agent, el gasto deja de ser anecdotico. Hay que medir premium requests, limitar tareas ambiguas y revisar PRs con criterio humano.",
+        "highlight": "La peor request premium es la que produce un PR que nadie entiende.",
+        "points": [
+          "Usar Agent cuando hay varios pasos y evidencia clara.",
+          "No delegar issues sin acceptance criteria.",
+          "Controlar MCP y herramientas conectadas.",
+          "Cerrar con PR revisable y explicacion de cambios."
+        ]
+      },
+      "subtitles": [
+        { "text": "La conciencia de coste no debe frenar la adopcion.", "startMs": 366000, "endMs": 382000 },
+        { "text": "Debe hacerla sostenible.", "startMs": 383000, "endMs": 392000 },
+        { "text": "Por eso cada reto declara coste y modo recomendado.", "startMs": 393000, "endMs": 416000 }
+      ]
+    },
+    {
+      "id": "error-agent-runaway",
+      "name": "Agent sin alcance",
+      "startMs": 430000,
+      "endMs": 500000,
+      "type": "error",
+      "content": {
+        "tag": "Pitfall",
+        "sentry": {
+          "id": "CP-AGENT-001",
+          "title": "Agent mode empieza a tocar demasiado",
+          "file": "src",
+          "line": 1,
+          "occurrences": 5,
+          "users": 2,
+          "first": "hace 7 minutos",
+          "trace": [
+            "Issue sin alcance",
+            "Agent modifica varias capas",
+            "PR dificil de revisar"
+          ],
+          "context": "La autonomia sin acceptance criteria genera diffs grandes y poca confianza."
+        },
+        "linearFix": {
+          "ticketId": "CP-101",
+          "title": "Convertir issue en contrato para agente",
+          "description": "Definir objetivo, rutas permitidas, no-go zones, tests esperados y formato de resumen antes de delegar."
+        },
+        "fix": "Antes de usar Agent:\n- objetivo en una frase\n- archivos permitidos\n- archivos prohibidos\n- test esperado\n- criterio de done\n- presupuesto de iteraciones"
+      },
+      "subtitles": [
+        { "text": "Agent mode es util cuando la tarea esta bien escrita.", "startMs": 436000, "endMs": 452000 },
+        { "text": "Si el issue es vago, la PR sera vaga.", "startMs": 453000, "endMs": 466000 },
+        { "text": "El workshop corrige esto con contratos de PR.", "startMs": 467000, "endMs": 488000 }
+      ]
+    },
+    {
+      "id": "preview-route",
+      "name": "Ruta",
+      "startMs": 500000,
+      "endMs": 555000,
+      "type": "preview",
+      "content": {
+        "title": "Ruta Copilot Practice",
+        "description": "Del survival Git/GitHub al cloud agent enterprise, con decks, labs y videos simulados.",
+        "items": [
+          { "label": "Cursos", "value": "CP0-CP4" },
+          { "label": "Labs", "value": "23" },
+          { "label": "Workshops", "value": "4" },
+          { "label": "Foco", "value": "VS Code + PR" }
+        ]
+      },
+      "subtitles": [
+        { "text": "Copilot se aprende mejor haciendo.", "startMs": 506000, "endMs": 516000 },
+        { "text": "Por eso el hub combina decks, retos y simulaciones.", "startMs": 517000, "endMs": 538000 },
+        { "text": "El objetivo es llegar a tutoria con PRs y dudas reales.", "startMs": 539000, "endMs": 552000 }
+      ]
+    },
+    {
+      "id": "finale",
+      "name": "Cierre",
+      "startMs": 555000,
+      "endMs": 600000,
+      "type": "finale",
+      "content": {
+        "title": "Lo que activa Copilot",
+        "summary": [
+          { "number": "01", "label": "Modo correcto", "body": "Ask, Edit y Agent se eligen por riesgo y autonomia." },
+          { "number": "02", "label": "Memoria de equipo", "body": "Instructions y prompt files convierten practica en estandar." },
+          { "number": "03", "label": "PR revisable", "body": "Cloud y Agent solo funcionan si el cierre deja evidencia." }
+        ],
+        "cta": "Siguiente paso: abrir Copilot Basic y completar el reto de error-to-fix."
+      },
+      "subtitles": [
+        { "text": "Copilot aporta velocidad.", "startMs": 558000, "endMs": 565000 },
+        { "text": "El curso aporta criterio.", "startMs": 566000, "endMs": 574000 },
+        { "text": "La combinacion es lo que escala.", "startMs": 575000, "endMs": 596000 }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 560" role="img" aria-labelledby="title desc">
+  <title id="title">MCP scope ladder</title>
+  <desc id="desc">Ladder of MCP scopes local, project and user.</desc>
+  <rect width="1000" height="560" rx="34" fill="#100f0e"/>
+  <text x="500" y="78" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="38" font-weight="850" fill="#fff4eb">Scopes MCP</text>
+  <g font-family="Inter, Arial, sans-serif" font-weight="850">
+    <rect x="250" y="340" width="500" height="70" rx="18" fill="rgba(255,154,173,.14)" stroke="#ff9aad"/>
+    <text x="500" y="384" text-anchor="middle" font-size="22" fill="#ffdfe5">local: laboratorio / personal</text>
+    <rect x="300" y="250" width="400" height="70" rx="18" fill="rgba(255,210,122,.14)" stroke="#ffd27a"/>
+    <text x="500" y="294" text-anchor="middle" font-size="22" fill="#fff0c9">project: equipo</text>
+    <rect x="350" y="160" width="300" height="70" rx="18" fill="rgba(117,230,192,.14)" stroke="#75e6c0"/>
+    <text x="500" y="204" text-anchor="middle" font-size="22" fill="#d8fff1">user: recurrente</text>
+  </g>
+</svg>

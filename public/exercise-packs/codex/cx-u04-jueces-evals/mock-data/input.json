@@ -1,0 +1,21 @@
+{
+  "vendor": "codex",
+  "exerciseId": "cx-u04-jueces-evals",
+  "title": "LLM-as-a-Judge y evals",
+  "surface": "eval harness + rubrics",
+  "recommendedModel": "GPT-5.5 juez, GPT-5.4 candidato",
+  "permissionMode": "read-only",
+  "estimatedCost": "Alto si no se muestrea; medio con suite corta",
+  "intentionalErrors": [
+    "briefing demasiado amplio",
+    "falta de evidencia",
+    "coste sin registrar"
+  ],
+  "expectedArtifacts": [
+    "prompt",
+    "resultado",
+    "evidencia",
+    "coste",
+    "decision"
+  ]
+}

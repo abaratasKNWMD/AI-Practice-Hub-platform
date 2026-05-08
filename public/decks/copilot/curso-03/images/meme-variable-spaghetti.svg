@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 760" role="img" aria-labelledby="title desc">
+  <title id="title">Prompt variable spaghetti</title>
+  <desc id="desc">A prompt variables diagram warning against adding variables without workflow design.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#111827"/>
+      <stop offset="1" stop-color="#071f1b"/>
+    </linearGradient>
+    <style>
+      .title{font:900 34px Inter,Segoe UI,sans-serif;fill:#f8fbff}
+      .label{font:850 21px Inter,Segoe UI,sans-serif;fill:#f8fbff}
+      .small{font:700 15px Inter,Segoe UI,sans-serif;fill:#aebbd0}
+      .mono{font:700 16px ui-monospace,SFMono-Regular,Consolas,monospace;fill:#dce8f7}
+      .card{fill:#ffffff;fill-opacity:.07;stroke:#ffffff;stroke-opacity:.14}
+    </style>
+  </defs>
+  <rect width="1200" height="760" rx="34" fill="url(#bg)"/>
+  <text x="70" y="88" class="title">Variables sin diseno: spaghetti con llaves</text>
+  <text x="72" y="122" class="small">Parametrizar no es meter todas las variables posibles. Es pedir justo lo que decide la tarea.</text>
+  <g transform="translate(132 184)">
+    <rect width="936" height="398" rx="34" class="card"/>
+    <path d="M160 110C280 40 330 230 454 120S650 250 780 102" fill="none" stroke="#ff8fab" stroke-opacity=".75" stroke-width="8" stroke-linecap="round"/>
+    <path d="M160 230C300 120 420 300 550 206S690 130 790 266" fill="none" stroke="#f8c96a" stroke-opacity=".75" stroke-width="8" stroke-linecap="round"/>
+    <text x="76" y="118" class="mono">${file}</text>
+    <text x="720" y="112" class="mono">${selection}</text>
+    <text x="88" y="270" class="mono">${workspace}</text>
+    <text x="704" y="312" class="mono">${input}</text>
+    <rect x="314" y="292" width="308" height="64" rx="22" fill="#62e6a2" fill-opacity=".14" stroke="#62e6a2" stroke-opacity=".38"/>
+    <text x="352" y="332" class="label">Primero workflow, luego variables</text>
+  </g>
+</svg>

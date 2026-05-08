@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 560" role="img" aria-labelledby="title desc">
+  <title id="title">PR review rubric</title>
+  <desc id="desc">PR review rubric with severity, file, issue and fix.</desc>
+  <rect width="1000" height="560" rx="34" fill="#100f0e"/>
+  <text x="500" y="78" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="38" font-weight="850" fill="#fff4eb">Rubrica de PR</text>
+  <rect x="130" y="150" width="740" height="300" rx="26" fill="#171311" stroke="rgba(255,255,255,.15)"/>
+  <g font-family="Inter, Arial, sans-serif" font-size="18" font-weight="850">
+    <text x="180" y="210" fill="#ff9aad">severity</text>
+    <text x="340" y="210" fill="#ffd27a">file</text>
+    <text x="500" y="210" fill="#75e6c0">issue</text>
+    <text x="710" y="210" fill="#7bd7ff">fix</text>
+    <path d="M170 232H830" stroke="rgba(255,255,255,.18)"/>
+    <text x="180" y="290" fill="#b9aea3">high</text>
+    <text x="340" y="290" fill="#b9aea3">auth.ts</text>
+    <text x="500" y="290" fill="#b9aea3">missing check</text>
+    <text x="710" y="290" fill="#b9aea3">add test</text>
+    <text x="180" y="350" fill="#b9aea3">medium</text>
+    <text x="340" y="350" fill="#b9aea3">api.ts</text>
+    <text x="500" y="350" fill="#b9aea3">error path</text>
+    <text x="710" y="350" fill="#b9aea3">handle 401</text>
+  </g>
+</svg>

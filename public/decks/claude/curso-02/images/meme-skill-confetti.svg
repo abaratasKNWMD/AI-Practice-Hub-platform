@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="620" viewBox="0 0 1100 620" role="img" aria-labelledby="title desc">
+  <title id="title">Skill confetti meme</title>
+  <desc id="desc">Humorous warning about creating too many skills.</desc>
+  <rect width="1100" height="620" rx="34" fill="#11100f"/>
+  <text x="95" y="112" font-family="Inter, Arial, sans-serif" font-size="34" font-weight="900" fill="#fff7f0">Skills como confeti</text>
+  <text x="95" y="148" font-family="Inter, Arial, sans-serif" font-size="18" fill="#b9aea3">Si todo es skill, nada es criterio.</text>
+  <g font-family="Inter, Arial, sans-serif" font-size="15" font-weight="900">
+    <rect x="140" y="230" width="160" height="54" rx="16" fill="#ff9aad"/><text x="220" y="264" text-anchor="middle" fill="#311018">skill-01</text>
+    <rect x="340" y="210" width="160" height="54" rx="16" fill="#75e6c0"/><text x="420" y="244" text-anchor="middle" fill="#09251d">skill-02</text>
+    <rect x="540" y="245" width="160" height="54" rx="16" fill="#ffd27a"/><text x="620" y="279" text-anchor="middle" fill="#332409">skill-03</text>
+    <rect x="740" y="220" width="180" height="54" rx="16" fill="#7bd7ff"/><text x="830" y="254" text-anchor="middle" fill="#082435">skill-final-final</text>
+    <rect x="270" y="340" width="220" height="72" rx="20" fill="#181310" stroke="#fff" stroke-opacity="0.14"/>
+    <text x="380" y="384" text-anchor="middle" fill="#fff7f0">owner?</text>
+    <rect x="550" y="340" width="220" height="72" rx="20" fill="#181310" stroke="#fff" stroke-opacity="0.14"/>
+    <text x="660" y="384" text-anchor="middle" fill="#fff7f0">caso real?</text>
+  </g>
+</svg>

@@ -1,0 +1,22 @@
+{
+  "model": "gpt-5.5",
+  "reasoning_effort": "medium",
+  "goal": "Refactor callbacks to async/await without changing behavior.",
+  "acceptance": [
+    "Keep public function names.",
+    "Preserve error handling.",
+    "Return a patch plan, not a patch."
+  ],
+  "files": [
+    {
+      "path": "src/auth/session.js",
+      "risk": "high",
+      "tests": ["tests/auth/session.test.js"]
+    },
+    {
+      "path": "src/billing/invoice.js",
+      "risk": "medium",
+      "tests": ["tests/billing/invoice.test.js"]
+    }
+  ]
+}

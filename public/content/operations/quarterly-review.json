@@ -1,0 +1,15 @@
+{
+  "id": "quarterly-model-price-permission-review",
+  "status": "scheduled",
+  "cadence": "quarterly",
+  "nextReview": "2026-08-08",
+  "agenda": [
+    "Modelos disponibles y recomendados por dificultad.",
+    "Coste por ruta, workshop y ejercicio.",
+    "Permisos permitidos por nivel de alumno.",
+    "MCPs activos y owners.",
+    "Skills/plugins/hooks con cambios desde la ultima revision.",
+    "Incidencias de QA visual o feedback."
+  ],
+  "output": "Actualizar content-versions.json, ownership.json, release notes y auditoria de excelencia."
+}

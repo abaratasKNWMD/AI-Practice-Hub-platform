@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="620" viewBox="0 0 1100 620" role="img" aria-labelledby="title desc">
+  <title id="title">Explorer read-only</title>
+  <desc id="desc">Explorer subagent reads a repository without editing.</desc>
+  <rect width="1100" height="620" rx="34" fill="#0d0b0a"/>
+  <text x="95" y="112" font-family="Inter, Arial, sans-serif" font-size="34" font-weight="900" fill="#fff7f0">Explorer read-only</text>
+  <g transform="translate(130 205)" font-family="Inter, Arial, sans-serif">
+    <rect width="360" height="300" rx="24" fill="#111817" stroke="#75e6c0" stroke-opacity="0.45"/>
+    <text x="30" y="58" font-size="23" font-weight="900" fill="#c9fff0">allowed tools</text>
+    <text x="30" y="106" font-size="17" fill="#b9aea3">Read</text>
+    <text x="30" y="146" font-size="17" fill="#b9aea3">Grep</text>
+    <text x="30" y="186" font-size="17" fill="#b9aea3">Glob</text>
+    <text x="30" y="244" font-size="16" fill="#75e6c0">no write, no bash mutation</text>
+    <rect x="470" width="360" height="300" rx="24" fill="#181310" stroke="#fff" stroke-opacity="0.14"/>
+    <text x="500" y="58" font-size="23" font-weight="900" fill="#fff7f0">output</text>
+    <text x="500" y="106" font-size="17" fill="#b9aea3">relevant paths</text>
+    <text x="500" y="146" font-size="17" fill="#b9aea3">architecture notes</text>
+    <text x="500" y="186" font-size="17" fill="#b9aea3">risk areas</text>
+    <text x="500" y="226" font-size="17" fill="#b9aea3">questions before edit</text>
+  </g>
+</svg>

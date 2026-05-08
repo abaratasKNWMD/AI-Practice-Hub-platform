@@ -1,0 +1,21 @@
+{
+  "vendor": "claude",
+  "exerciseId": "cl0-e03-memory-audit",
+  "title": "Auditoria memoria vs instrucciones",
+  "surface": "Memory",
+  "recommendedModel": "Haiku",
+  "permissionMode": "read-only",
+  "estimatedCost": "bajo: clasificacion",
+  "intentionalErrors": [
+    "briefing demasiado amplio",
+    "falta de evidencia",
+    "coste sin registrar"
+  ],
+  "expectedArtifacts": [
+    "prompt",
+    "resultado",
+    "evidencia",
+    "coste",
+    "decision"
+  ]
+}

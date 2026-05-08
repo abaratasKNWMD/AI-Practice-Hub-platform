@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 760" role="img" aria-labelledby="title desc">
+  <title id="title">Shortcut conflict</title>
+  <desc id="desc">A playful keyboard shortcut traffic light showing shortcut conflicts and calm fallback paths.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#111827"/>
+      <stop offset="1" stop-color="#061b18"/>
+    </linearGradient>
+    <style>
+      .title{font:900 34px Inter,Segoe UI,sans-serif;fill:#f8fbff}
+      .label{font:850 22px Inter,Segoe UI,sans-serif;fill:#f8fbff}
+      .small{font:700 15px Inter,Segoe UI,sans-serif;fill:#aebbd0}
+      .key{font:900 28px Inter,Segoe UI,sans-serif;fill:#f8fbff}
+      .card{fill:#ffffff;fill-opacity:.07;stroke:#ffffff;stroke-opacity:.14}
+    </style>
+  </defs>
+  <rect width="1200" height="760" rx="34" fill="url(#bg)"/>
+  <text x="70" y="88" class="title">Atajos: utiles, pero no montemos una novela</text>
+  <text x="72" y="122" class="small">Si Tab no acepta la sugerencia, hay vida despues de Tab: Command Palette, settings y calma.</text>
+  <g transform="translate(130 186)">
+    <rect width="420" height="390" rx="32" class="card"/>
+    <text x="38" y="56" class="label">Modo bloqueo</text>
+    <g transform="translate(58 112)">
+      <rect width="126" height="82" rx="20" fill="#ffffff" fill-opacity=".09" stroke="#ffffff" stroke-opacity=".16"/>
+      <text x="36" y="52" class="key">TAB</text>
+      <rect x="156" width="126" height="82" rx="20" fill="#ffffff" fill-opacity=".09" stroke="#ffffff" stroke-opacity=".16"/>
+      <text x="186" y="52" class="key">TAB</text>
+      <rect x="78" y="118" width="126" height="82" rx="20" fill="#ff8fab" fill-opacity=".14" stroke="#ff8fab" stroke-opacity=".42"/>
+      <text x="104" y="170" class="key">TAB?</text>
+    </g>
+    <text x="42" y="342" class="small">Cinco minutos despues nadie recuerda que extension gano.</text>
+  </g>
+  <g transform="translate(650 186)">
+    <rect width="420" height="390" rx="32" class="card"/>
+    <text x="38" y="56" class="label">Modo profesional</text>
+    <g transform="translate(60 106)">
+      <circle cx="36" cy="36" r="24" fill="#62e6a2"/><text x="84" y="43" class="small">Probar atajo</text>
+      <circle cx="36" cy="104" r="24" fill="#5ddcff"/><text x="84" y="111" class="small">Command Palette</text>
+      <circle cx="36" cy="172" r="24" fill="#f8c96a"/><text x="84" y="179" class="small">Documentar cambio</text>
+      <circle cx="36" cy="240" r="24" fill="#62e6a2"/><text x="84" y="247" class="small">Volver al ejercicio</text>
+    </g>
+  </g>
+</svg>

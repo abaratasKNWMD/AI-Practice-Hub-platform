@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 560" role="img" aria-labelledby="title desc">
+  <title id="title">Skill tool gate</title>
+  <desc id="desc">Gate for preapproved tools in a Claude skill.</desc>
+  <rect width="1000" height="560" rx="34" fill="#0d0b0a"/>
+  <text x="500" y="78" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="38" font-weight="850" fill="#fff4eb">allowed-tools con respeto</text>
+  <rect x="180" y="166" width="640" height="260" rx="28" fill="#171311" stroke="rgba(255,255,255,.14)"/>
+  <g font-family="Inter, Arial, sans-serif" text-anchor="middle" font-weight="850">
+    <rect x="230" y="234" width="120" height="80" rx="18" fill="rgba(117,230,192,.15)" stroke="#75e6c0"/>
+    <text x="290" y="282" font-size="20" fill="#d8fff1">Read</text>
+    <rect x="390" y="234" width="120" height="80" rx="18" fill="rgba(117,230,192,.15)" stroke="#75e6c0"/>
+    <text x="450" y="282" font-size="20" fill="#d8fff1">Grep</text>
+    <rect x="550" y="234" width="120" height="80" rx="18" fill="rgba(255,210,122,.15)" stroke="#ffd27a"/>
+    <text x="610" y="282" font-size="20" fill="#fff0c9">Bash</text>
+    <rect x="690" y="234" width="80" height="80" rx="18" fill="rgba(255,154,173,.15)" stroke="#ff9aad"/>
+    <text x="730" y="282" font-size="20" fill="#ffdfe5">?</text>
+  </g>
+  <text x="500" y="488" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="20" font-weight="850" fill="#fff4eb">Preaprobar lo necesario. Preguntar lo sensible.</text>
+</svg>

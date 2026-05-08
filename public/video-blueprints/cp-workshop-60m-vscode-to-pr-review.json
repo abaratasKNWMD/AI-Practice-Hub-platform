@@ -1,0 +1,320 @@
+{
+  "id": "cp-workshop-60m-vscode-to-pr-review",
+  "title": "Workshop 1h Copilot - De VS Code al PR review",
+  "description": "Sesion de 60 minutos para usar Copilot en VS Code con Ask, Edit, Agent, instrucciones, tests y review de PR sin perder control de coste ni criterio.",
+  "vendor": "copilot",
+  "template": "technical",
+  "durationMin": 60,
+  "voice": "es-ES-AlvaroNeural",
+  "author": "AI Practice Hub",
+  "createdAt": "2026-05-08",
+  "chapters": [
+    { "id": "setup", "label": "Setup VS Code", "sceneId": "opening-vscode" },
+    { "id": "modes", "label": "Ask, Edit y Agent", "sceneId": "mode-map" },
+    { "id": "instructions", "label": "Instrucciones y prompts", "sceneId": "instructions" },
+    { "id": "review", "label": "Tests y PR review", "sceneId": "generate-tests" },
+    { "id": "close", "label": "Coste y cierre", "sceneId": "premium-budget" }
+  ],
+  "scenes": [
+    {
+      "id": "opening-vscode",
+      "name": "Apertura en VS Code",
+      "kind": "title",
+      "durationSec": 300,
+      "screen": {
+        "title": "Copilot como mesa de trabajo",
+        "content": {
+          "headline": "1 hora para pasar de ayuda suelta a flujo de equipo",
+          "surfaces": ["Inline completion", "Chat Ask", "Edit", "Agent mode", "PR review"],
+          "timer": "00:00-05:00"
+        },
+        "presenterCue": "El objetivo no es ensenar botones; es elegir superficie segun tarea."
+      },
+      "voiceover": [
+        "Copilot falla menos cuando dejamos de tratarlo como un unico boton.",
+        "En esta hora vamos a usar VS Code como una mesa de trabajo: preguntar, editar, delegar y revisar.",
+        "Cada modo tiene un coste cognitivo y operativo distinto."
+      ],
+      "action": {
+        "type": "narrate",
+        "label": "Presentar mapa",
+        "detail": "Mostrar las superficies y el output final: PR revisable."
+      }
+    },
+    {
+      "id": "issue-intake",
+      "name": "Issue delegable",
+      "kind": "concept",
+      "durationSec": 300,
+      "screen": {
+        "title": "Issue pequeno, criterio claro",
+        "content": {
+          "issue": "El carrito suma items sin precio y rompe checkout.",
+          "acceptance": ["items sin price se ignoran", "test de regresion", "sin cambios de UI"],
+          "question": "Que modo de Copilot usarias primero?"
+        },
+        "presenterCue": "Forzar decision antes de abrir Agent."
+      },
+      "voiceover": [
+        "El workshop empieza con una issue que parece pequena, pero permite hablar de criterio.",
+        "Si abrimos Agent demasiado pronto, tal vez delegamos un problema que aun no entendemos.",
+        "Primero decidimos si necesitamos explicacion, edicion localizada o ejecucion completa."
+      ],
+      "action": {
+        "type": "human-decision",
+        "label": "Elegir primer modo",
+        "detail": "El grupo vota Ask, Edit o Agent y justifica la decision."
+      }
+    },
+    {
+      "id": "mode-map",
+      "name": "Mapa Ask/Edit/Agent",
+      "kind": "compare",
+      "durationSec": 300,
+      "screen": {
+        "title": "Modo correcto por incertidumbre",
+        "content": {
+          "matrix": [
+            ["Ask", "entender", "sin cambios"],
+            ["Edit", "patch localizado", "control alto"],
+            ["Agent", "tarea multiarchivo", "requiere revision"]
+          ],
+          "rule": "A mas autonomia, mas rubrica y verificacion."
+        },
+        "presenterCue": "Relacionar autonomia con coste de supervision."
+      },
+      "voiceover": [
+        "Ask compra entendimiento. Edit compra velocidad localizada. Agent compra coordinacion.",
+        "No hay modo ganador para todo.",
+        "La madurez esta en cambiar de modo cuando cambia la incertidumbre."
+      ],
+      "action": {
+        "type": "narrate",
+        "label": "Explicar matriz",
+        "detail": "Mostrar casos concretos para cada modo."
+      }
+    },
+    {
+      "id": "ask-diagnosis",
+      "name": "Ask para diagnostico",
+      "kind": "coding",
+      "durationSec": 300,
+      "screen": {
+        "title": "Prompt Ask",
+        "content": {
+          "prompt": "Explica donde se calcula el total del carrito, que supuestos hace el codigo y que test minimo cubriria items sin price. No edites.",
+          "expected": ["ruta src/cart/total.ts", "supuesto price obligatorio", "test de item sin price"]
+        },
+        "presenterCue": "Ask no debe terminar en patch; debe terminar en entendimiento."
+      },
+      "voiceover": [
+        "Ask es barato cuando lo usamos para orientar la lectura.",
+        "Le pedimos a Copilot que explique supuestos y test minimo, no que cambie archivos.",
+        "Este paso reduce el riesgo de aceptar una completion bonita pero incorrecta."
+      ],
+      "action": {
+        "type": "prompt",
+        "label": "Enviar Ask",
+        "detail": "Simular diagnostico con ruta, supuesto roto y prueba minima."
+      }
+    },
+    {
+      "id": "instructions",
+      "name": "Instrucciones de repo",
+      "kind": "linear",
+      "durationSec": 300,
+      "screen": {
+        "title": "copilot-instructions.md",
+        "content": {
+          "rules": ["Preferir cambios pequenos", "Agregar tests para bugs", "No modificar snapshots sin pedir permiso", "Explicar comandos"],
+          "scope": "Reglas siempre activas, no prompts de una sola vez."
+        },
+        "presenterCue": "Separar instrucciones estables de peticiones temporales."
+      },
+      "voiceover": [
+        "Las instrucciones son memoria de equipo, no una novela.",
+        "Copilot debe recibir reglas estables: estilo, pruebas, limites y convenciones.",
+        "Si una instruccion solo aplica a esta tarea, va en prompt file, no en memoria global."
+      ],
+      "action": {
+        "type": "handoff",
+        "label": "Crear instruccion",
+        "detail": "Mostrar una version corta y revisable de copilot-instructions."
+      }
+    },
+    {
+      "id": "edit-patch",
+      "name": "Edit para patch localizado",
+      "kind": "coding",
+      "durationSec": 300,
+      "screen": {
+        "title": "Copilot Edit",
+        "content": {
+          "selection": "calculateTotal(items)",
+          "instruction": "Ignora items sin price, conserva currency EUR y agrega test.",
+          "diff": "+ if (!item.price) return sum"
+        },
+        "presenterCue": "Edit funciona bien cuando el alcance esta seleccionado."
+      },
+      "voiceover": [
+        "Ahora usamos Edit porque ya sabemos la zona de cambio.",
+        "Seleccionar contexto es una forma de ahorrar tokens y evitar que Copilot toque de mas.",
+        "El patch debe ser pequeno y explicable."
+      ],
+      "action": {
+        "type": "diff-review",
+        "label": "Aplicar Edit",
+        "detail": "Mostrar diff y comprobar que no cambio firmas publicas."
+      }
+    },
+    {
+      "id": "generate-tests",
+      "name": "Tests con Copilot",
+      "kind": "coding",
+      "durationSec": 300,
+      "screen": {
+        "title": "Test de regresion",
+        "content": {
+          "prompt": "Genera un test que falle antes del fix y pase despues. No cubras casos no relacionados.",
+          "command": "pnpm test -- total.spec.ts",
+          "evidence": "red -> green"
+        },
+        "presenterCue": "El test debe demostrar el bug, no inflar cobertura sin foco."
+      },
+      "voiceover": [
+        "Copilot puede generar muchos tests, pero nosotros queremos uno que capture el bug.",
+        "La evidencia buena tiene historia: antes falla, despues pasa.",
+        "Sin esa historia, la prueba puede ser decorativa."
+      ],
+      "action": {
+        "type": "tool-run",
+        "label": "Ejecutar test",
+        "detail": "Simular fallo inicial y resultado verde tras el patch."
+      }
+    },
+    {
+      "id": "agent-handoff",
+      "name": "Agent solo cuando compensa",
+      "kind": "thinking",
+      "durationSec": 300,
+      "screen": {
+        "title": "Handoff a Agent",
+        "content": {
+          "handoff": ["Objetivo", "Rutas permitidas", "Comandos", "Criterio de parada"],
+          "stopRule": "Si el agente quiere tocar mas de 3 archivos, pedir confirmacion."
+        },
+        "presenterCue": "Agent necesita carriles, no carta blanca."
+      },
+      "voiceover": [
+        "Agent mode es potente, pero no deberia ser el primer martillo de cada tarea.",
+        "Cuando lo usamos, le damos carriles: que tocar, que no tocar, como verificar y cuando parar.",
+        "La autonomia sin stop rule se convierte en deuda de revision."
+      ],
+      "action": {
+        "type": "prompt",
+        "label": "Enviar handoff",
+        "detail": "Mostrar un prompt de Agent con limites y criterio de parada."
+      }
+    },
+    {
+      "id": "pr-review",
+      "name": "Review de PR con Copilot",
+      "kind": "preview",
+      "durationSec": 300,
+      "screen": {
+        "title": "PR review rubric",
+        "content": {
+          "rubric": ["correctness", "tests", "scope", "maintainability", "security"],
+          "output": "findings con severidad y propuesta concreta"
+        },
+        "presenterCue": "Copilot review no sustituye el criterio; prepara la conversacion."
+      },
+      "voiceover": [
+        "El review asistido sirve para elevar la calidad antes de pedir tiempo a otra persona.",
+        "La rubrica evita respuestas genericas.",
+        "Queremos findings accionables, no una palmadita."
+      ],
+      "action": {
+        "type": "simulated-response",
+        "label": "Review estructurado",
+        "detail": "Mostrar un finding menor y una aprobacion condicionada a tests."
+      }
+    },
+    {
+      "id": "premium-budget",
+      "name": "Premium requests y coste",
+      "kind": "linear",
+      "durationSec": 300,
+      "screen": {
+        "title": "Coste por outcome",
+        "content": {
+          "budget": [
+            ["Ask", "bajo", "diagnostico"],
+            ["Edit", "medio", "patch localizado"],
+            ["Agent", "alto", "multiarchivo"]
+          ],
+          "rule": "No gastar modo caro en tareas sin criterio."
+        },
+        "presenterCue": "Hablar de premium requests sin miedo ni obsesion."
+      },
+      "voiceover": [
+        "El coste no se controla usando menos IA, se controla usando la superficie correcta.",
+        "Un Agent bien usado puede ahorrar una hora. Un Agent mal usado crea una hora de review.",
+        "Medimos outcome, no solo consumo."
+      ],
+      "action": {
+        "type": "handoff",
+        "label": "Completar budget",
+        "detail": "Registrar modo, motivo y resultado de la sesion."
+      }
+    },
+    {
+      "id": "team-template",
+      "name": "Plantilla de equipo",
+      "kind": "coding",
+      "durationSec": 300,
+      "screen": {
+        "title": "Pack reutilizable",
+        "content": {
+          "files": [".github/copilot-instructions.md", ".github/prompts/fix-bug.prompt.md", ".github/prompts/review-pr.prompt.md"],
+          "owner": "equipo, no instructor"
+        },
+        "presenterCue": "El workshop debe dejar algo copiable al repo real."
+      },
+      "voiceover": [
+        "El valor final no es haber visto Copilot funcionar.",
+        "El valor es llevarnos instrucciones y prompts que el equipo pueda usar manana.",
+        "Si cada alumno acaba improvisando prompts, no hemos construido plataforma."
+      ],
+      "action": {
+        "type": "handoff",
+        "label": "Entregar plantilla",
+        "detail": "Mostrar los archivos que el grupo copia a su repo demo."
+      }
+    },
+    {
+      "id": "close",
+      "name": "Cierre Copilot",
+      "kind": "finale",
+      "durationSec": 300,
+      "screen": {
+        "title": "Checklist de salida",
+        "content": {
+          "outputs": ["issue entendida", "patch localizado", "test", "PR review", "budget", "plantilla"],
+          "next": "Repetir con una issue real del equipo."
+        },
+        "presenterCue": "Cerrar preguntando que modo van a usar menos y cual mejor."
+      },
+      "voiceover": [
+        "Copilot se vuelve serio cuando cada modo tiene una razon de uso.",
+        "El alumno sale con una issue resuelta, una review y una plantilla.",
+        "A partir de aqui la tutoria ya no resuelve dudas basicas: trabaja casos reales."
+      ],
+      "action": {
+        "type": "handoff",
+        "label": "Cierre",
+        "detail": "Recoger outputs y dudas para tutoria."
+      }
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "vendor": "codex",
+  "exerciseId": "cx-m06-debug-ui",
+  "title": "Debug multimodal de UI",
+  "surface": "imagen + browser + codigo",
+  "recommendedModel": "GPT-5.5 multimodal",
+  "permissionMode": "workspace-write",
+  "estimatedCost": "Medio: imagen, contexto UI y patch",
+  "intentionalErrors": [
+    "briefing demasiado amplio",
+    "falta de evidencia",
+    "coste sin registrar"
+  ],
+  "expectedArtifacts": [
+    "prompt",
+    "resultado",
+    "evidencia",
+    "coste",
+    "decision"
+  ]
+}

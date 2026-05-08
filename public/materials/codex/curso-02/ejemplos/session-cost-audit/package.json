@@ -1,0 +1,10 @@
+{
+  "name": "codex-session-cost-audit",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "audit": "node audit-cost.mjs sessions/sample-session.json",
+    "test": "node --test"
+  }
+}

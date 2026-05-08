@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 760" role="img" aria-labelledby="title desc">
+  <title id="title">Do not skip maturity steps</title>
+  <desc id="desc">A maturity staircase warning against jumping directly to MCP and swarms before basic Copilot practices work.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#081225"/>
+      <stop offset="1" stop-color="#071a18"/>
+    </linearGradient>
+    <style>
+      .title{font:900 34px Inter,Segoe UI,sans-serif;fill:#f8fbff}
+      .label{font:850 20px Inter,Segoe UI,sans-serif;fill:#f8fbff}
+      .small{font:700 15px Inter,Segoe UI,sans-serif;fill:#aebbd0}
+      .mono{font:700 16px ui-monospace,SFMono-Regular,Consolas,monospace;fill:#dce8f7}
+      .card{fill:#ffffff;fill-opacity:.07;stroke:#ffffff;stroke-opacity:.14}
+    </style>
+  </defs>
+  <rect width="1200" height="760" rx="34" fill="url(#bg)"/>
+  <text x="70" y="88" class="title">Saltarse peldaños sale caro</text>
+  <text x="72" y="122" class="small">No empieces por MCP con escritura si aun no hay instrucciones, review y coste bajo control.</text>
+  <g transform="translate(150 514)">
+    <rect width="150" height="70" rx="20" fill="#5ddcff" fill-opacity=".13" stroke="#5ddcff" stroke-opacity=".34"/><text x="24" y="44" class="label">Base</text>
+    <rect x="152" y="-70" width="150" height="140" rx="20" fill="#62e6a2" fill-opacity=".13" stroke="#62e6a2" stroke-opacity=".34"/><text x="176" y="2" class="label">Rules</text>
+    <rect x="304" y="-140" width="150" height="210" rx="20" fill="#f8c96a" fill-opacity=".13" stroke="#f8c96a" stroke-opacity=".34"/><text x="328" y="-32" class="label">Agents</text>
+    <rect x="456" y="-210" width="150" height="280" rx="20" fill="#ffffff" fill-opacity=".08" stroke="#ffffff" stroke-opacity=".16"/><text x="480" y="-70" class="label">Prompts</text>
+    <rect x="608" y="-280" width="150" height="350" rx="20" fill="#ffffff" fill-opacity=".08" stroke="#ffffff" stroke-opacity=".16"/><text x="632" y="-104" class="label">MCP</text>
+    <path d="M140-18C420-242 670-242 890-340" fill="none" stroke="#ff8fab" stroke-width="10" stroke-linecap="round" stroke-dasharray="18 20"/>
+    <text x="708" y="-358" class="mono">jump to swarms?</text>
+  </g>
+</svg>

@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 560" role="img" aria-labelledby="title desc">
+  <title id="title">Hooks lifecycle</title>
+  <desc id="desc">Hook lifecycle around Claude Code tool use.</desc>
+  <rect width="1000" height="560" rx="34" fill="#0e1112"/>
+  <text x="500" y="78" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="38" font-weight="850" fill="#fff4eb">Lifecycle de hooks</text>
+  <circle cx="500" cy="302" r="150" fill="none" stroke="#2f2925" stroke-width="16"/>
+  <path d="M500 152A150 150 0 0 1 650 302" stroke="#ff9aad" stroke-width="16" fill="none" stroke-linecap="round"/>
+  <path d="M650 302A150 150 0 0 1 500 452" stroke="#ffd27a" stroke-width="16" fill="none" stroke-linecap="round"/>
+  <path d="M500 452A150 150 0 0 1 350 302" stroke="#75e6c0" stroke-width="16" fill="none" stroke-linecap="round"/>
+  <path d="M350 302A150 150 0 0 1 500 152" stroke="#7bd7ff" stroke-width="16" fill="none" stroke-linecap="round"/>
+  <g font-family="Inter, Arial, sans-serif" text-anchor="middle" font-weight="850">
+    <text x="500" y="142" font-size="18" fill="#ffdfe5">PreToolUse</text>
+    <text x="690" y="308" font-size="18" fill="#fff0c9">PostToolUse</text>
+    <text x="500" y="486" font-size="18" fill="#d8fff1">Stop</text>
+    <text x="300" y="308" font-size="18" fill="#dff7ff">Subagent</text>
+    <text x="500" y="308" font-size="28" fill="#fff4eb">Claude loop</text>
+  </g>
+</svg>

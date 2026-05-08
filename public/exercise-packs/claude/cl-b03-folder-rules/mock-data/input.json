@@ -1,0 +1,21 @@
+{
+  "vendor": "claude",
+  "exerciseId": "cl-b03-folder-rules",
+  "title": "Rules por carpeta",
+  "surface": ".claude/rules",
+  "recommendedModel": "Sonnet",
+  "permissionMode": "write project rules",
+  "estimatedCost": "bajo-medio: edicion de 4 rules",
+  "intentionalErrors": [
+    "briefing demasiado amplio",
+    "falta de evidencia",
+    "coste sin registrar"
+  ],
+  "expectedArtifacts": [
+    "prompt",
+    "resultado",
+    "evidencia",
+    "coste",
+    "decision"
+  ]
+}

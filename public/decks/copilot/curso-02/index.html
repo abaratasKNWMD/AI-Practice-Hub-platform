@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>GitHub Copilot Funcionalidades Básicas</title>
+    <link rel="stylesheet" href="../curso-01/styles.css" />
+  </head>
+  <body>
+    <div class="app-shell">
+      <header class="topbar">
+        <a class="brand-lockup" href="/tracks/copilot" aria-label="Volver a la ruta Copilot">
+          <span class="brand-mark" aria-hidden="true">CP</span>
+          <div>
+            <span class="eyebrow">Curso web · Funciones</span>
+            <strong>Copilot: funcionalidades básicas</strong>
+          </div>
+        </a>
+        <nav class="module-tabs" aria-label="Modulos del curso" id="moduleTabs"></nav>
+        <div class="deck-actions">
+          <a class="text-button" href="../knm-github-copilot-3-feature-basic.v1.2.pptx" title="Abrir PPT fuente">PPT</a>
+          <button type="button" class="icon-button" id="mapToggle" title="Mapa de slides" aria-label="Mapa de slides">
+            <span aria-hidden="true">☰</span>
+          </button>
+          <button type="button" class="icon-button" id="notesToggle" title="Notas del creador" aria-label="Notas del creador">
+            <span aria-hidden="true">N</span>
+          </button>
+          <button type="button" class="icon-button" id="fullscreenToggle" title="Pantalla completa (F5)" aria-label="Pantalla completa (F5)">
+            <span aria-hidden="true">⛶</span>
+          </button>
+        </div>
+      </header>
+
+      <main class="workspace">
+        <aside class="slide-map" id="slideMap" aria-label="Indice de diapositivas"></aside>
+        <section class="stage-column" aria-live="polite">
+          <div class="slide-frame" id="slideFrame"></div>
+          <footer class="player-bar">
+            <button type="button" class="nav-button" id="prevSlide" aria-label="Diapositiva anterior">
+              <span aria-hidden="true">‹</span>
+            </button>
+            <div class="progress-wrap" aria-hidden="true">
+              <div class="progress-track">
+                <div class="progress-fill" id="progressFill"></div>
+              </div>
+              <span id="slideCounter"></span>
+            </div>
+            <button type="button" class="nav-button" id="nextSlide" aria-label="Diapositiva siguiente">
+              <span aria-hidden="true">›</span>
+            </button>
+          </footer>
+        </section>
+        <aside class="speaker-notes" id="speakerNotes" aria-label="Notas del creador"></aside>
+      </main>
+    </div>
+
+    <script src="./assets.js"></script>
+    <script src="../curso-01/app.js"></script>
+  </body>
+</html>

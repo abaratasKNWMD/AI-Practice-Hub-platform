@@ -1,0 +1,21 @@
+diff --git a/src/auth/validate-login.ts b/src/auth/validate-login.ts
+--- a/src/auth/validate-login.ts
++++ b/src/auth/validate-login.ts
+@@
+-  const candidateEmail = input.email
++  const candidateEmail = input.email.trim().toLowerCase()
+@@
+-  return user.email === candidateEmail && verifyPassword(input.password, user.passwordHash)
++  return user.email.toLowerCase() === candidateEmail && verifyPassword(input.password, user.passwordHash)
+diff --git a/tests/auth/login.spec.ts b/tests/auth/login.spec.ts
+--- a/tests/auth/login.spec.ts
++++ b/tests/auth/login.spec.ts
+@@
++it('allows valid users with mixed-case email', () => {
++  const result = validateLogin({
++    email: 'ADA@EXAMPLE.COM',
++    password: 'correct-password'
++  })
++
++  expect(result.ok).toBe(true)
++})

@@ -1,0 +1,9 @@
+diff --git a/README.md b/README.md
+--- a/README.md
++++ b/README.md
+@@
++# Evidencia de ejercicio
++- Ejercicio: cl-b02-local-memory
++- Resultado: salida verificable
++- Coste: bajo
++- Permisos: local-only

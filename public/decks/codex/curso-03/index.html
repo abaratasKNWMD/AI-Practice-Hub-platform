@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Codex Ultra Avanzado</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="app">
+      <aside class="side" aria-label="Modulos">
+        <div class="logo">
+          <span>CU</span>
+          <div>
+            <strong>Codex Ultra</strong>
+            <small>Fase avanzada</small>
+          </div>
+        </div>
+        <div id="modules" class="modules"></div>
+      </aside>
+
+      <main class="main">
+        <header class="bar">
+          <button id="toggleSide" class="btn" type="button">Indice</button>
+          <div class="bar-title">
+            <span id="moduleName">Modulo</span>
+            <strong id="slideName">Slide</strong>
+          </div>
+          <div class="bar-actions">
+            <button id="toggleNotes" class="btn" type="button">Notas</button>
+            <button id="toggleMap" class="btn" type="button">Mapa</button>
+            <button id="toggleFullscreen" class="btn" type="button" title="Pantalla completa (F5)" aria-label="Pantalla completa (F5)">Pantalla</button>
+          </div>
+        </header>
+
+        <section class="canvas">
+          <article id="slide" class="slide"></article>
+        </section>
+
+        <footer class="nav">
+          <button id="prev" class="btn" type="button">Anterior</button>
+          <div class="meter">
+            <div class="meter-copy"><span id="count">1 / 1</span><span id="time">0 min</span></div>
+            <div class="meter-track"><span id="fill"></span></div>
+          </div>
+          <button id="next" class="btn accent" type="button">Siguiente</button>
+        </footer>
+      </main>
+
+      <aside id="notes" class="notes" aria-label="Notas del creador">
+        <div class="notes-head">
+          <strong>Notas del creador</strong>
+          <button id="closeNotes" class="icon" type="button" aria-label="Cerrar">x</button>
+        </div>
+        <div id="notesContent" class="notes-content"></div>
+      </aside>
+    </div>
+
+    <div id="map" class="map" aria-hidden="true">
+      <div class="map-panel">
+        <div class="map-head">
+          <strong>Mapa del curso</strong>
+          <button id="closeMap" class="icon" type="button" aria-label="Cerrar">x</button>
+        </div>
+        <div id="mapGrid" class="map-grid"></div>
+      </div>
+    </div>
+
+    <script src="assets.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>

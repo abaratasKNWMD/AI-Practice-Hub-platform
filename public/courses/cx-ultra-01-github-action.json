@@ -1,0 +1,100 @@
+{
+  "id": "cx-ultra-01-github-action",
+  "title": "Codex Ultra 01 - GitHub Action",
+  "description": "Como pensar una GitHub Action con Codex reviewer, limites de coste y salida estructurada.",
+  "template": "technical",
+  "durationPreset": 5,
+  "durationMs": 90000,
+  "voice": "es-ES-AlvaroNeural",
+  "author": "AI Practice Hub",
+  "createdAt": "2026-05-07T00:00:00.000Z",
+  "chapters": [
+    { "id": "start", "label": "CI", "startMs": 0 },
+    { "id": "workflow", "label": "Workflow", "startMs": 8000 },
+    { "id": "guards", "label": "Guardas", "startMs": 42000 },
+    { "id": "close", "label": "Cierre", "startMs": 70000 }
+  ],
+  "scenes": [
+    {
+      "id": "title",
+      "name": "Apertura",
+      "startMs": 0,
+      "endMs": 8000,
+      "type": "title",
+      "content": {
+        "title": "Codex en CI",
+        "subtitle": "Review automatizada, pero con presupuesto y criterio.",
+        "tag": "Codex Ultra"
+      },
+      "subtitles": [
+        { "text": "Automatizar Codex en CI exige limites.", "startMs": 1000, "endMs": 6500 }
+      ]
+    },
+    {
+      "id": "coding",
+      "name": "Workflow",
+      "startMs": 8000,
+      "endMs": 42000,
+      "type": "coding",
+      "content": {
+        "tag": "GitHub Action",
+        "filename": ".github/workflows/codex-pr-review.yml",
+        "code": "name: Codex PR Review\\n\\non:\\n  pull_request:\\n    types: [opened, synchronize, reopened]\\n\\npermissions:\\n  contents: read\\n  pull-requests: write\\n\\njobs:\\n  review:\\n    runs-on: ubuntu-latest\\n    timeout-minutes: 15\\n    steps:\\n      - uses: actions/checkout@v4\\n      - name: Build PR context\\n        run: git diff --name-only origin/main...HEAD > changed-files.txt\\n      - name: Run Codex reviewer\\n        run: node scripts/codex-review.mjs --budget medium --schema findings.json",
+        "commentary": [
+          { "atLine": 3, "text": "Trigger acotado" },
+          { "atLine": 7, "text": "Permisos minimos" },
+          { "atLine": 13, "text": "Timeout" },
+          { "atLine": 18, "text": "Budget explicito" }
+        ]
+      },
+      "subtitles": [
+        { "text": "El workflow empieza con permisos minimos.", "startMs": 9000, "endMs": 16500 },
+        { "text": "Luego limita tiempo, diff y presupuesto.", "startMs": 17000, "endMs": 28500 },
+        { "text": "La salida debe ser estructurada.", "startMs": 29000, "endMs": 40500 }
+      ]
+    },
+    {
+      "id": "concept",
+      "name": "Guardas",
+      "startMs": 42000,
+      "endMs": 70000,
+      "type": "concept",
+      "content": {
+        "tag": "CI guardrails",
+        "title": "La automatizacion falla cuando no sabe parar",
+        "body": "Una action de Codex debe tener limite de coste, limite de tiempo, limite de tamano de diff y criterio de fallo. Si no, puede convertirse en ruido caro en cada PR.",
+        "highlight": "No bloquees merges por opiniones. Bloquea por bugs verificables.",
+        "points": [
+          "Timeout y budget por ejecucion.",
+          "Paths incluidos y excluidos.",
+          "Schema de findings.",
+          "Politica de fallo estricta."
+        ]
+      },
+      "subtitles": [
+        { "text": "La action no debe opinar sin criterio.", "startMs": 43000, "endMs": 51500 },
+        { "text": "Debe producir findings verificables.", "startMs": 52000, "endMs": 61000 },
+        { "text": "Y parar antes de gastar de mas.", "startMs": 61500, "endMs": 69000 }
+      ]
+    },
+    {
+      "id": "finale",
+      "name": "Cierre",
+      "startMs": 70000,
+      "endMs": 90000,
+      "type": "finale",
+      "content": {
+        "title": "CI con Codex",
+        "summary": [
+          { "number": "01", "label": "Permisos minimos", "body": "Read y comentario, no mas." },
+          { "number": "02", "label": "Budget", "body": "Coste y timeout visibles." },
+          { "number": "03", "label": "Schema", "body": "Findings que una maquina puede leer." }
+        ],
+        "cta": "Ejercicio asociado: cx-a01-github-action."
+      },
+      "subtitles": [
+        { "text": "Codex en CI es potente cuando esta acotado.", "startMs": 70500, "endMs": 89500 }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" role="img" aria-labelledby="title desc">
+  <title id="title">Loop de aprendizaje Claude</title>
+  <desc id="desc">Flujo de autoconsumo, reto, handoff y tutoria para formacion Claude.</desc>
+  <rect width="1280" height="720" rx="38" fill="#f7efe4"/>
+  <text x="76" y="86" font-family="Inter, Arial, sans-serif" font-size="42" font-weight="900" fill="#211914">Flipping training para Claude</text>
+  <text x="76" y="122" font-family="Inter, Arial, sans-serif" font-size="21" fill="#655443">El curso no reemplaza al formador: limpia lo basico para que la tutoria sea interesante.</text>
+  <circle cx="640" cy="374" r="224" fill="#fff9f0" stroke="#d6ba92" stroke-width="2"/>
+  <g font-family="Inter, Arial, sans-serif" font-weight="900" fill="#211914">
+    <rect x="476" y="118" width="328" height="82" rx="24" fill="#f4d58d"/>
+    <text x="640" y="169" text-anchor="middle" font-size="24">1 Material guiado</text>
+    <rect x="846" y="312" width="328" height="82" rx="24" fill="#b7d3a8"/>
+    <text x="1010" y="363" text-anchor="middle" font-size="24">2 Reto autoconsumo</text>
+    <rect x="476" y="548" width="328" height="82" rx="24" fill="#a8dadc"/>
+    <text x="640" y="599" text-anchor="middle" font-size="24">3 Handoff</text>
+    <rect x="106" y="312" width="328" height="82" rx="24" fill="#d7b9f8"/>
+    <text x="270" y="363" text-anchor="middle" font-size="24">4 Tutoria real</text>
+  </g>
+  <g stroke="#47382d" stroke-width="6" fill="none" stroke-linecap="round">
+    <path d="M804 164 C944 190 1014 238 1034 300"/>
+    <path d="M1012 394 C980 492 892 560 812 584"/>
+    <path d="M470 584 C356 554 282 486 264 404"/>
+    <path d="M272 308 C310 214 398 170 466 160"/>
+  </g>
+  <g fill="#47382d">
+    <path d="M1038 304 l-18 -11 2 24 Z"/>
+    <path d="M808 586 l16 -14 5 24 Z"/>
+    <path d="M262 400 l15 15 -24 4 Z"/>
+    <path d="M468 158 l-18 12 -2 -24 Z"/>
+  </g>
+  <rect x="444" y="304" width="392" height="118" rx="28" fill="#1f1f1f"/>
+  <text x="640" y="348" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="27" font-weight="900" fill="#fff">Objetivo operativo</text>
+  <text x="640" y="383" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="18" fill="#eadccb">menos dudas basicas</text>
+  <text x="640" y="409" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="18" fill="#eadccb">mas conversaciones de criterio</text>
+</svg>

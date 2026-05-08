@@ -1,0 +1,9 @@
+diff --git a/README.md b/README.md
+--- a/README.md
++++ b/README.md
+@@
++# Evidencia de ejercicio
++- Ejercicio: cp-b01-setup-vscode
++- Resultado: salida verificable
++- Coste: Muy bajo: setup y comprobacion
++- Permisos: configuracion local

@@ -1,0 +1,9 @@
+diff --git a/README.md b/README.md
+--- a/README.md
++++ b/README.md
+@@
++# Evidencia de ejercicio
++- Ejercicio: cl-b05-context-compact
++- Resultado: salida verificable
++- Coste: bajo: control de contexto
++- Permisos: chat command

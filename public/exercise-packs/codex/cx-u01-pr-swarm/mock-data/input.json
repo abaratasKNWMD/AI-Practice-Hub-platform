@@ -1,0 +1,21 @@
+{
+  "vendor": "codex",
+  "exerciseId": "cx-u01-pr-swarm",
+  "title": "PR swarm con roles",
+  "surface": "multi-agent orchestration",
+  "recommendedModel": "GPT-5.5",
+  "permissionMode": "read-only para agentes, write solo coordinador",
+  "estimatedCost": "Alto: varios agentes y sintesis",
+  "intentionalErrors": [
+    "briefing demasiado amplio",
+    "falta de evidencia",
+    "coste sin registrar"
+  ],
+  "expectedArtifacts": [
+    "prompt",
+    "resultado",
+    "evidencia",
+    "coste",
+    "decision"
+  ]
+}

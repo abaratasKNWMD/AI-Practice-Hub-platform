@@ -1,0 +1,21 @@
+{
+  "vendor": "copilot",
+  "exerciseId": "cp-a02-custom-planner-agent",
+  "title": "Custom planner agent read-only",
+  "surface": ".github/agents",
+  "recommendedModel": "Modelo incluido o premium por politica",
+  "permissionMode": "read/search",
+  "estimatedCost": "Medio: planificacion con contexto",
+  "intentionalErrors": [
+    "briefing demasiado amplio",
+    "falta de evidencia",
+    "coste sin registrar"
+  ],
+  "expectedArtifacts": [
+    "prompt",
+    "resultado",
+    "evidencia",
+    "coste",
+    "decision"
+  ]
+}

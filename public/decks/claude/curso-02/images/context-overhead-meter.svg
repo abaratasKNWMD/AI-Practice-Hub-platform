@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 560" role="img" aria-labelledby="title desc">
+  <title id="title">Context overhead meter</title>
+  <desc id="desc">Context overhead meter for memory, skills, MCP and subagents.</desc>
+  <rect width="1000" height="560" rx="34" fill="#100f0e"/>
+  <text x="500" y="78" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="38" font-weight="850" fill="#fff4eb">/context antes de culpar al modelo</text>
+  <rect x="180" y="190" width="640" height="160" rx="28" fill="#171311" stroke="rgba(255,255,255,.15)"/>
+  <rect x="220" y="240" width="150" height="60" rx="18" fill="#ff9aad"/>
+  <rect x="380" y="240" width="130" height="60" rx="18" fill="#ffd27a"/>
+  <rect x="520" y="240" width="110" height="60" rx="18" fill="#75e6c0"/>
+  <rect x="640" y="240" width="140" height="60" rx="18" fill="#7bd7ff"/>
+  <g font-family="Inter, Arial, sans-serif" font-size="15" font-weight="850" text-anchor="middle" fill="#11100f">
+    <text x="295" y="276">memory</text>
+    <text x="445" y="276">skills</text>
+    <text x="575" y="276">MCP</text>
+    <text x="710" y="276">agents</text>
+  </g>
+  <text x="500" y="450" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="22" font-weight="850" fill="#d8fff1">Menos ruido suele ganar a mas potencia.</text>
+</svg>
