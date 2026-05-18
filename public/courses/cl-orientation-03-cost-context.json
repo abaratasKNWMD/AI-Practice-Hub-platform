@@ -9,56 +9,283 @@
   "author": "AI Practice Hub",
   "createdAt": "2026-05-07T00:00:00.000Z",
   "chapters": [
-    { "id": "start", "label": "Coste", "startMs": 0 },
-    { "id": "concept", "label": "Controles", "startMs": 9000 },
-    { "id": "close", "label": "Modelo", "startMs": 65000 }
+    {
+      "id": "start",
+      "label": "Coste",
+      "startMs": 0
+    },
+    {
+      "id": "concept",
+      "label": "Controles",
+      "startMs": 30000
+    },
+    {
+      "id": "close",
+      "label": "Modelo",
+      "startMs": 65000
+    }
   ],
   "scenes": [
     {
       "id": "title",
       "name": "Apertura",
       "startMs": 0,
-      "endMs": 9000,
+      "endMs": 30000,
       "type": "title",
-      "content": { "title": "Coste y contexto", "subtitle": "El agente potente no tiene que ser el agente caro.", "tag": "Claude Orientation" },
-      "subtitles": [{ "text": "La adopcion falla cuando nadie sabe cuanto cuesta una sesion larga.", "startMs": 1000, "endMs": 8200 }]
+      "content": {
+        "title": "Coste y contexto",
+        "subtitle": "Objetivo: resolver Claude Orientation 03 - Cost and Context con criterio practico.",
+        "tag": "Claude Orientation",
+        "narrativeContract": {
+          "objective": "resolver Claude Orientation 03 - Cost and Context con criterio practico.",
+          "outcome": "quedarte con una regla de uso y un ejemplo repetible.",
+          "route": "concepto, ejemplo y cierre.",
+          "decision": "cuando aplicar esta tecnica en tu propio repositorio."
+        }
+      },
+      "subtitles": [
+        {
+          "text": "Objetivo de esta clase:",
+          "startMs": 450,
+          "endMs": 3038
+        },
+        {
+          "text": "resolver Claude Orientation 03 - Cost and Context con criterio practico.",
+          "startMs": 3218,
+          "endMs": 8998
+        },
+        {
+          "text": "Al final debes poder quedarte con una regla de uso y un ejemplo repetible.",
+          "startMs": 9178,
+          "endMs": 14094
+        },
+        {
+          "text": "La ruta sera: concepto, ejemplo y cierre.",
+          "startMs": 14274,
+          "endMs": 18302
+        },
+        {
+          "text": "Durante el video mira esta decision:",
+          "startMs": 18482,
+          "endMs": 21502
+        },
+        {
+          "text": "cuando aplicar esta tecnica en tu propio repositorio.",
+          "startMs": 21682,
+          "endMs": 25422
+        }
+      ],
+      "voiceover": [
+        "Objetivo de esta clase:",
+        "resolver Claude Orientation 03 - Cost and Context con criterio practico.",
+        "Al final debes poder quedarte con una regla de uso y un ejemplo repetible.",
+        "La ruta sera: concepto, ejemplo y cierre.",
+        "Durante el video mira esta decision:",
+        "cuando aplicar esta tecnica en tu propio repositorio."
+      ],
+      "blueprintAction": {
+        "learningRubric": {
+          "learns": "Distingue decision humana de ejecucion automatizada en Claude.",
+          "does": "Comprueba la salida contra prueba, owner o captura.",
+          "decides": "Aceptar solo si la evidencia queda visible para otra persona.",
+          "vendor": "claude",
+          "usefulnessScore": 82,
+          "memoryCheck": "Puede repetir el prompt inicial con criterio de cierre.",
+          "productionPass": "2000-final-direction"
+        }
+      },
+      "production": {
+        "audioVersion": "audio-prod-v2-2026-05-18",
+        "voiceProfileId": "claudeNarrator",
+        "voice": "es-ES-AlvaroNeural",
+        "rate": "+5%",
+        "pitch": "+0Hz",
+        "energy": "calmada",
+        "emphasis": "memoria, skill, hook y MCP",
+        "pauseMs": 220,
+        "role": "narrator",
+        "reviewRubric": {
+          "learns": "Distingue decision humana de ejecucion automatizada en Claude.",
+          "does": "Comprueba la salida contra prueba, owner o captura.",
+          "decides": "Aceptar solo si la evidencia queda visible para otra persona.",
+          "memoryCheck": "Puede repetir el prompt inicial con criterio de cierre."
+        },
+        "prosodyNotes": {
+          "pace": "+5%",
+          "pause": "220ms antes de la decision",
+          "emphasis": "memoria, skill, hook y M C P",
+          "energy": "calmada"
+        },
+        "pronunciationPass": "spain-voice-units-v1"
+      }
     },
     {
       "id": "concept",
       "name": "Controles",
-      "startMs": 9000,
-      "endMs": 65000,
+      "startMs": 30000,
+      "endMs": 60000,
       "type": "concept",
       "content": {
         "tag": "Gobierno diario",
         "title": "Mide antes de acelerar",
-        "body": "Claude Code ofrece controles para revisar uso y contexto. La disciplina consiste en limpiar contexto entre tareas, compactar antes de perder informacion y elegir modelo por riesgo.\n\nHaiku puede resumir o clasificar. Sonnet puede implementar la mayoria de tareas. Opus se reserva para arquitectura dificil, bugs profundos o decisiones de alto impacto.",
+        "body": "Claude Code ofrece controles para revisar uso y contexto. La disciplina consiste en limpiar contexto entre tareas, compactar antes de perder informacion y elegir modelo por riesgo. Haiku puede resumir o clasificar. Sonnet puede implementar la mayoria de tareas. Opus se reserva para arquitectura dificil, bugs profundos o decisiones de alto impacto.",
         "highlight": "El coste real incluye modelo, contexto, herramientas y reintentos.",
-        "points": ["Usa /usage para gasto", "Usa /context para saturacion", "Usa /clear al cambiar de tarea", "Usa /compact antes de perder estado"]
+        "points": [
+          "Usa /usage para gasto",
+          "Usa /context para saturacion",
+          "Usa /clear al cambiar de tarea",
+          "Usa /compact antes de perder estado"
+        ]
       },
       "subtitles": [
-        { "text": "No es solo precio por modelo.", "startMs": 10000, "endMs": 22000 },
-        { "text": "El contexto viejo tambien cuesta y confunde.", "startMs": 23000, "endMs": 45000 },
-        { "text": "El routing de modelos es una competencia de equipo.", "startMs": 46000, "endMs": 63000 }
-      ]
+        {
+          "text": "No es solo precio por modelo.",
+          "startMs": 30450,
+          "endMs": 33230
+        },
+        {
+          "text": "El contexto viejo tambien cuesta y confunde.",
+          "startMs": 33410,
+          "endMs": 37006
+        },
+        {
+          "text": "El routing de modelos es una competencia de equipo.",
+          "startMs": 37186,
+          "endMs": 40926
+        }
+      ],
+      "voiceover": [
+        "No es solo precio por modelo.",
+        "El contexto viejo tambien cuesta y confunde.",
+        "El routing de modelos es una competencia de equipo."
+      ],
+      "blueprintAction": {
+        "learningRubric": {
+          "learns": "Ubica coste, permiso y criterio antes de aceptar la salida.",
+          "does": "Registra el criterio que permitiria repetir el paso sin instructor.",
+          "decides": "Seguir, pedir mas contexto, escalar modelo o bloquear.",
+          "vendor": "claude",
+          "usefulnessScore": 84,
+          "memoryCheck": "Puede explicar el paso en una frase de menos de 20 segundos.",
+          "productionPass": "2000-final-direction"
+        }
+      },
+      "production": {
+        "audioVersion": "audio-prod-v2-2026-05-18",
+        "voiceProfileId": "claudeNarrator",
+        "voice": "es-ES-AlvaroNeural",
+        "rate": "+5%",
+        "pitch": "+0Hz",
+        "energy": "calmada",
+        "emphasis": "memoria, skill, hook y MCP",
+        "pauseMs": 220,
+        "role": "narrator",
+        "reviewRubric": {
+          "learns": "Ubica coste, permiso y criterio antes de aceptar la salida.",
+          "does": "Registra el criterio que permitiria repetir el paso sin instructor.",
+          "decides": "Seguir, pedir mas contexto, escalar modelo o bloquear.",
+          "memoryCheck": "Puede explicar el paso en una frase de menos de 20 segundos."
+        },
+        "prosodyNotes": {
+          "pace": "+5%",
+          "pause": "220ms antes de la decision",
+          "emphasis": "memoria, skill, hook y M C P",
+          "energy": "calmada"
+        },
+        "pronunciationPass": "spain-voice-units-v1"
+      }
     },
     {
       "id": "finale",
       "name": "Cierre",
-      "startMs": 65000,
+      "startMs": 60000,
       "endMs": 90000,
       "type": "finale",
       "content": {
         "title": "Modelo por tarea",
         "summary": [
-          { "number": "Haiku", "label": "Clasificar", "body": "Resumen, inventario, checks baratos." },
-          { "number": "Sonnet", "label": "Construir", "body": "Implementacion diaria y reviews." },
-          { "number": "Opus", "label": "Decidir", "body": "Arquitectura o debugging critico." }
+          {
+            "number": "Haiku",
+            "label": "Clasificar",
+            "body": "Resumen, inventario, checks baratos."
+          },
+          {
+            "number": "Sonnet",
+            "label": "Construir",
+            "body": "Implementacion diaria y reviews."
+          },
+          {
+            "number": "Opus",
+            "label": "Decidir",
+            "body": "Arquitectura o debugging critico."
+          }
         ],
         "cta": "Ejercicio: cl0-e04-cost-baseline."
       },
-      "subtitles": [{ "text": "Ser potente no es gastar mas. Es gastar donde importa.", "startMs": 66000, "endMs": 89000 }]
+      "subtitles": [
+        {
+          "text": "Ser potente no es gastar mas. Es gastar donde importa.",
+          "startMs": 60450,
+          "endMs": 65846
+        },
+        {
+          "text": "Evidencia minuto 1: skill versionada, hook probado y owner claro.",
+          "startMs": 66026,
+          "endMs": 71302
+        },
+        {
+          "text": "Accion minuto 1: parar si \"Modelo por tarea\" no produce evidencia nueva.",
+          "startMs": 71482,
+          "endMs": 76878
+        }
+      ],
+      "voiceover": [
+        "Ser potente no es gastar mas. Es gastar donde importa.",
+        "Evidencia minuto 1: skill versionada, hook probado y owner claro.",
+        "Accion minuto 1: parar si \"Modelo por tarea\" no produce evidencia nueva."
+      ],
+      "blueprintAction": {
+        "learningRubric": {
+          "learns": "Reconoce por que \"Modelo por tarea\" necesita evidencia y no solo respuesta.",
+          "does": "Formula una peticion verificable con limite de alcance.",
+          "decides": "Convertir la duda en material de tutoria si se repite.",
+          "vendor": "claude",
+          "usefulnessScore": 86,
+          "memoryCheck": "Puede nombrar el riesgo principal sin mirar la slide.",
+          "productionPass": "2000-final-direction"
+        }
+      },
+      "production": {
+        "audioVersion": "audio-prod-v2-2026-05-18",
+        "voiceProfileId": "claudeSafety",
+        "voice": "es-ES-AlvaroNeural",
+        "rate": "+2%",
+        "pitch": "+0Hz",
+        "energy": "deliberada",
+        "emphasis": "permiso, bloqueo y rollback",
+        "pauseMs": 300,
+        "role": "reflection",
+        "reviewRubric": {
+          "learns": "Reconoce por que \"Modelo por tarea\" necesita evidencia y no solo respuesta.",
+          "does": "Formula una peticion verificable con limite de alcance.",
+          "decides": "Convertir la duda en material de tutoria si se repite.",
+          "memoryCheck": "Puede nombrar el riesgo principal sin mirar la slide."
+        },
+        "prosodyNotes": {
+          "pace": "+2%",
+          "pause": "300ms antes de la decision",
+          "emphasis": "permiso, bloqueo y rollback",
+          "energy": "deliberada"
+        },
+        "pronunciationPass": "spain-voice-units-v1"
+      }
     }
-  ]
+  ],
+  "production": {
+    "audioProductionVersion": "audio-prod-v2-2026-05-18",
+    "productionPass": "2000-final-direction",
+    "vendor": "claude",
+    "narrativePass": "teacher-contract-v1",
+    "pronunciationPass": "spain-voice-units-v1"
+  }
 }
-

@@ -1,0 +1,52 @@
+1
+00:00:00,450 --> 00:00:06,662
+Objetivo de esta clase: resolver Copilot Medium 02 - Prompt Files con criterio practico.
+
+2
+00:00:06,842 --> 00:00:11,686
+Al final debes poder quedarte con una regla de uso y un ejemplo repetible.
+
+3
+00:00:11,866 --> 00:00:15,822
+La ruta sera: concepto, ejemplo y cierre.
+
+4
+00:00:16,002 --> 00:00:18,974
+Durante el video mira esta decision:
+
+5
+00:00:19,154 --> 00:00:22,846
+cuando aplicar esta tecnica en tu propio repositorio.
+
+6
+00:00:30,450 --> 00:00:34,718
+El frontmatter define descripcion, modo y herramientas.
+
+7
+00:00:34,898 --> 00:00:37,486
+El cuerpo define el workflow.
+
+8
+00:00:37,666 --> 00:00:41,454
+Esto convierte buenas practicas en atajos de equipo.
+
+9
+00:01:00,450 --> 00:01:06,350
+Invocable, acotado y verificable. Asi se disena un prompt file.
+
+10
+00:01:06,530 --> 00:01:11,134
+Evidencia minuto 1: "Prompt file bueno" no se cierra sin test
+
+11
+00:01:11,314 --> 00:01:14,094
+captura o criterio escrito.
+
+12
+00:01:14,274 --> 00:01:20,366
+Accion minuto 1: pedir salida pequena verificable y con owner. (Copilot
+
+13
+00:01:20,546 --> 00:01:22,990
+minuto 1 paso 10)
+

@@ -1,7 +1,7 @@
 {
   "id": "cp-git-02-pr-as-contract",
-  "title": "Copilot Git 02 - PR as Contract",
-  "description": "Como leer un PR y un diff antes de pedir review a Copilot.",
+  "title": "Copilot Git 02 - pull request as Contract",
+  "description": "Como leer un pull request y un diff antes de pedir review a Copilot.",
   "template": "technical",
   "durationPreset": 5,
   "durationMs": 90000,
@@ -9,67 +9,303 @@
   "author": "AI Practice Hub",
   "createdAt": "2026-05-07T00:00:00.000Z",
   "chapters": [
-    { "id": "start", "label": "PR", "startMs": 0 },
-    { "id": "ticket", "label": "Contrato", "startMs": 9000 },
-    { "id": "close", "label": "Review", "startMs": 65000 }
+    {
+      "id": "start",
+      "label": "pull request",
+      "startMs": 0
+    },
+    {
+      "id": "ticket",
+      "label": "Contrato",
+      "startMs": 9000
+    },
+    {
+      "id": "close",
+      "label": "Review",
+      "startMs": 65000
+    }
   ],
   "scenes": [
     {
       "id": "title",
       "name": "Apertura",
       "startMs": 0,
-      "endMs": 9000,
+      "endMs": 30000,
       "type": "title",
       "content": {
-        "title": "El PR es el contrato",
-        "subtitle": "Copilot review funciona mejor cuando el cambio tiene intencion clara.",
-        "tag": "Copilot CP0"
+        "title": "El pull request es el contrato",
+        "subtitle": "Objetivo: resolver Copilot Git 02 - pull request as Contract con criterio practico.",
+        "tag": "Copilot CP0",
+        "narrativeContract": {
+          "objective": "resolver Copilot Git 02 - pull request as Contract con criterio practico.",
+          "outcome": "quedarte con una regla de uso y un ejemplo repetible.",
+          "route": "concepto, ejemplo y cierre.",
+          "decision": "cuando aplicar esta tecnica en tu propio repositorio."
+        }
       },
       "subtitles": [
-        { "text": "Un PR no es solo un boton antes del merge.", "startMs": 1000, "endMs": 5000 },
-        { "text": "Es el contrato que Copilot y el humano van a revisar.", "startMs": 5200, "endMs": 8500 }
-      ]
+        {
+          "text": "Objetivo de esta clase:",
+          "startMs": 450,
+          "endMs": 2990
+        },
+        {
+          "text": "resolver Copilot Git 02 - pull request as Contract con criterio practico.",
+          "startMs": 3170,
+          "endMs": 8446
+        },
+        {
+          "text": "Al final debes poder quedarte con una regla de uso y un ejemplo repetible.",
+          "startMs": 8626,
+          "endMs": 13470
+        },
+        {
+          "text": "La ruta sera: concepto, ejemplo y cierre.",
+          "startMs": 13650,
+          "endMs": 17606
+        },
+        {
+          "text": "Durante el video mira esta decision:",
+          "startMs": 17786,
+          "endMs": 20758
+        },
+        {
+          "text": "cuando aplicar esta tecnica en tu propio repositorio.",
+          "startMs": 20938,
+          "endMs": 24630
+        }
+      ],
+      "voiceover": [
+        "Objetivo de esta clase:",
+        "resolver Copilot Git 02 - pull request as Contract con criterio practico.",
+        "Al final debes poder quedarte con una regla de uso y un ejemplo repetible.",
+        "La ruta sera: concepto, ejemplo y cierre.",
+        "Durante el video mira esta decision:",
+        "cuando aplicar esta tecnica en tu propio repositorio."
+      ],
+      "blueprintAction": {
+        "learningRubric": {
+          "learns": "Ubica coste, permiso y criterio antes de aceptar la salida.",
+          "does": "Registra el criterio que permitiria repetir el paso sin instructor.",
+          "decides": "Seguir, pedir mas contexto, escalar modelo o bloquear.",
+          "vendor": "copilot",
+          "usefulnessScore": 82,
+          "memoryCheck": "Puede explicar el paso en una frase de menos de 20 segundos.",
+          "productionPass": "2000-final-direction"
+        }
+      },
+      "production": {
+        "audioVersion": "audio-prod-v2-2026-05-18",
+        "voiceProfileId": "copilotNarrator",
+        "voice": "es-ES-AlvaroNeural",
+        "rate": "+7%",
+        "pitch": "+0Hz",
+        "energy": "practica",
+        "emphasis": "modo, contexto y PR",
+        "pauseMs": 180,
+        "role": "narrator",
+        "reviewRubric": {
+          "learns": "Ubica coste, permiso y criterio antes de aceptar la salida.",
+          "does": "Registra el criterio que permitiria repetir el paso sin instructor.",
+          "decides": "Seguir, pedir mas contexto, escalar modelo o bloquear.",
+          "memoryCheck": "Puede explicar el paso en una frase de menos de 20 segundos."
+        },
+        "prosodyNotes": {
+          "pace": "+7%",
+          "pause": "180ms antes de la decision",
+          "emphasis": "modo, contexto y pull request",
+          "energy": "practica"
+        },
+        "pronunciationPass": "spain-voice-units-v1"
+      }
     },
     {
       "id": "linear",
-      "name": "PR contract",
-      "startMs": 9000,
-      "endMs": 65000,
+      "name": "pull request contract",
+      "startMs": 30000,
+      "endMs": 60000,
       "type": "linear",
       "content": {
-        "ticketId": "CP-PR",
-        "title": "PR apto para Copilot review",
+        "ticketId": "CP-pull request",
+        "title": "pull request apto para Copilot review",
         "project": "GitHub Copilot Practice",
         "priority": "Medium",
         "assignee": "Developer + Copilot",
         "status": "Ready for review",
-        "labels": ["diff", "review", "training"],
-        "description": "Objetivo: explicar que cambia y por que.\n\nContexto: archivos tocados y comportamiento esperado.\n\nNo alcance: que no debe revisarse como parte de este PR.\n\nVerificacion: comandos ejecutados o motivo por el que no se ejecutaron.\n\nPregunta para Copilot: revisa bugs, seguridad, tests y regresiones. Evita comentarios cosmeticos."
+        "labels": [
+          "diff",
+          "review",
+          "training"
+        ],
+        "description": "Objetivo: explicar que cambia y por que. Contexto: archivos tocados y comportamiento esperado. No alcance: que no debe revisarse como parte de este pull request. Verificacion: comandos ejecutados o motivo por el que no se ejecutaron. Pregunta para Copilot: revisa bugs, seguridad, tests y regresiones. Evita comentarios cosmeticos."
       },
       "subtitles": [
-        { "text": "El PR bueno dice objetivo, contexto, no alcance y verificacion.", "startMs": 10000, "endMs": 25000 },
-        { "text": "La pregunta a Copilot review tambien debe tener criterio.", "startMs": 26000, "endMs": 42000 },
-        { "text": "Sin contrato, la review se llena de ruido.", "startMs": 43000, "endMs": 62000 }
-      ]
+        {
+          "text": "El pull request bueno dice objetivo, contexto, no alcance y verificacion.",
+          "startMs": 30450,
+          "endMs": 35822
+        },
+        {
+          "text": "La pregunta a Copilot review tambien debe tener criterio.",
+          "startMs": 36002,
+          "endMs": 39934
+        },
+        {
+          "text": "Sin contrato, la review se llena de ruido.",
+          "startMs": 40114,
+          "endMs": 43710
+        }
+      ],
+      "voiceover": [
+        "El pull request bueno dice objetivo, contexto, no alcance y verificacion.",
+        "La pregunta a Copilot review tambien debe tener criterio.",
+        "Sin contrato, la review se llena de ruido."
+      ],
+      "blueprintAction": {
+        "learningRubric": {
+          "learns": "Reconoce por que \"pull request apto para Copilot review\" necesita evidencia y no solo respuesta.",
+          "does": "Formula una peticion verificable con limite de alcance.",
+          "decides": "Convertir la duda en material de tutoria si se repite.",
+          "vendor": "copilot",
+          "usefulnessScore": 84,
+          "memoryCheck": "Puede nombrar el riesgo principal sin mirar la slide.",
+          "productionPass": "2000-final-direction"
+        }
+      },
+      "production": {
+        "audioVersion": "audio-prod-v2-2026-05-18",
+        "voiceProfileId": "copilotNarrator",
+        "voice": "es-ES-AlvaroNeural",
+        "rate": "+7%",
+        "pitch": "+0Hz",
+        "energy": "practica",
+        "emphasis": "modo, contexto y PR",
+        "pauseMs": 180,
+        "role": "narrator",
+        "reviewRubric": {
+          "learns": "Reconoce por que \"pull request apto para Copilot review\" necesita evidencia y no solo respuesta.",
+          "does": "Formula una peticion verificable con limite de alcance.",
+          "decides": "Convertir la duda en material de tutoria si se repite.",
+          "memoryCheck": "Puede nombrar el riesgo principal sin mirar la slide."
+        },
+        "prosodyNotes": {
+          "pace": "+7%",
+          "pause": "180ms antes de la decision",
+          "emphasis": "modo, contexto y pull request",
+          "energy": "practica"
+        },
+        "pronunciationPass": "spain-voice-units-v1"
+      }
     },
     {
       "id": "finale",
       "name": "Cierre",
-      "startMs": 65000,
+      "startMs": 60000,
       "endMs": 90000,
       "type": "finale",
       "content": {
         "title": "Review que sirve",
         "summary": [
-          { "number": "01", "label": "Diff", "body": "Que cambio exactamente." },
-          { "number": "02", "label": "Riesgo", "body": "Que puede romper." },
-          { "number": "03", "label": "Evidencia", "body": "Como se verifico." }
+          {
+            "number": "01",
+            "label": "Diff",
+            "body": "Que cambio exactamente."
+          },
+          {
+            "number": "02",
+            "label": "Riesgo",
+            "body": "Que puede romper."
+          },
+          {
+            "number": "03",
+            "label": "Evidencia",
+            "body": "Como se verifico."
+          }
         ],
         "cta": "Ejercicio: cp0-e02-diff-reading."
       },
       "subtitles": [
-        { "text": "Diff, riesgo y evidencia. Esa es la base de una review buena.", "startMs": 66000, "endMs": 89000 }
-      ]
+        {
+          "text": "Diff, riesgo y evidencia. Esa es la base de una review buena.",
+          "startMs": 60450,
+          "endMs": 66278
+        },
+        {
+          "text": "Evidencia minuto 1:",
+          "startMs": 66458,
+          "endMs": 68926
+        },
+        {
+          "text": "hay una salida que otro perfil puede revisar sin rehacer el contexto.",
+          "startMs": 69106,
+          "endMs": 73806
+        },
+        {
+          "text": "Accion minuto 1: comparar la respuesta con el criterio de cierre",
+          "startMs": 73986,
+          "endMs": 78686
+        },
+        {
+          "text": "no con la sensacion de velocidad.",
+          "startMs": 78866,
+          "endMs": 81718
+        },
+        {
+          "text": "no con la sensacion de velocidad. (Copilot, minuto 1, paso 15)",
+          "startMs": 81898,
+          "endMs": 88110
+        }
+      ],
+      "voiceover": [
+        "Diff, riesgo y evidencia. Esa es la base de una review buena.",
+        "Evidencia minuto 1:",
+        "hay una salida que otro perfil puede revisar sin rehacer el contexto.",
+        "Accion minuto 1: comparar la respuesta con el criterio de cierre",
+        "no con la sensacion de velocidad.",
+        "no con la sensacion de velocidad. (Copilot, minuto 1, paso 15)"
+      ],
+      "blueprintAction": {
+        "learningRubric": {
+          "learns": "Distingue decision humana de ejecucion automatizada en Copilot.",
+          "does": "Comprueba la salida contra prueba, owner o captura.",
+          "decides": "Aceptar solo si la evidencia queda visible para otra persona.",
+          "vendor": "copilot",
+          "usefulnessScore": 86,
+          "memoryCheck": "Puede repetir el prompt inicial con criterio de cierre.",
+          "productionPass": "2000-final-direction"
+        }
+      },
+      "production": {
+        "audioVersion": "audio-prod-v2-2026-05-18",
+        "voiceProfileId": "copilotReview",
+        "voice": "es-ES-AlvaroNeural",
+        "rate": "+4%",
+        "pitch": "+0Hz",
+        "energy": "critica",
+        "emphasis": "finding, severidad y prueba",
+        "pauseMs": 240,
+        "role": "reflection",
+        "reviewRubric": {
+          "learns": "Distingue decision humana de ejecucion automatizada en Copilot.",
+          "does": "Comprueba la salida contra prueba, owner o captura.",
+          "decides": "Aceptar solo si la evidencia queda visible para otra persona.",
+          "memoryCheck": "Puede repetir el prompt inicial con criterio de cierre."
+        },
+        "prosodyNotes": {
+          "pace": "+4%",
+          "pause": "240ms antes de la decision",
+          "emphasis": "finding, severidad y prueba",
+          "energy": "critica"
+        },
+        "pronunciationPass": "spain-voice-units-v1"
+      }
     }
-  ]
+  ],
+  "production": {
+    "audioProductionVersion": "audio-prod-v2-2026-05-18",
+    "productionPass": "2000-final-direction",
+    "vendor": "copilot",
+    "narrativePass": "teacher-contract-v1",
+    "pronunciationPass": "spain-voice-units-v1"
+  }
 }

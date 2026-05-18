@@ -2,10 +2,17 @@
 
 import { useState, useEffect, useCallback, useRef } from 'react'
 import { MOVIE_SCRIPT, TOTAL_DURATION_MS, type Scene, type Subtitle } from '@/lib/movie-script'
+import { audioEntryKey, type CourseAudioEntry, type CourseAudioManifest } from '@/lib/audio-manifest'
 
 interface UseMoviePlayerOptions {
   script?: Scene[]
   totalDurationMs?: number
+  audioManifest?: CourseAudioManifest | null
+}
+
+interface LocatedSubtitle {
+  subtitle: Subtitle
+  index: number
 }
 
 export function useMoviePlayer(options: UseMoviePlayerOptions = {}) {
@@ -27,14 +34,19 @@ export function useMoviePlayer(options: UseMoviePlayerOptions = {}) {
   const voiceEnabledRef = useRef(true)
   const spokenSubtitleRef = useRef<string | null>(null)
   const audioRef = useRef<HTMLAudioElement | null>(null)
-  // Pre-fetch cache: text -> blob URL
+  // Pre-fetch cache: voice/rate/text -> blob URL
   const audioCacheRef = useRef<Map<string, string>>(new Map())
   const scriptRef = useRef(script)
   const totalDurationRef = useRef(totalDurationMs)
+  const audioEntriesRef = useRef<Map<string, CourseAudioEntry>>(new Map())
 
   useEffect(() => {
     scriptRef.current = script
     totalDurationRef.current = totalDurationMs
+    audioEntriesRef.current = new Map((options.audioManifest?.entries ?? []).map(entry => [
+      audioEntryKey(entry.sceneId, entry.subtitleIndex),
+      entry,
+    ]))
     pausedAtRef.current = 0
     startTimeRef.current = Date.now()
     spokenSubtitleRef.current = null
@@ -42,20 +54,33 @@ export function useMoviePlayer(options: UseMoviePlayerOptions = {}) {
     setCurrentTimeMs(0)
     setCurrentScene(script[0])
     setCurrentSubtitle(null)
-  }, [script, totalDurationMs])
+  }, [script, totalDurationMs, options.audioManifest])
+
+  const runtimeTtsUrl = useCallback((text: string, entry?: CourseAudioEntry) => {
+    const params = new URLSearchParams({ text })
+    if (entry?.voice) params.set('voice', entry.voice)
+    if (entry?.rate) params.set('rate', entry.rate)
+    if (entry?.pitch) params.set('pitch', entry.pitch)
+    return `/api/tts?${params.toString()}`
+  }, [])
+
+  const runtimeCacheKey = useCallback((text: string, entry?: CourseAudioEntry) => (
+    `${entry?.voice ?? 'default'}|${entry?.rate ?? '+5%'}|${entry?.pitch ?? '+0Hz'}|${text}`
+  ), [])
 
   // Pre-fetch audio for a subtitle text in the background
   const prefetch = useCallback((text: string) => {
-    if (!text || audioCacheRef.current.has(text)) return
+    const cacheKey = runtimeCacheKey(text)
+    if (!text || audioCacheRef.current.has(cacheKey)) return
     // Mark as in-flight immediately to avoid duplicate fetches
-    audioCacheRef.current.set(text, '')
-    fetch(`/api/tts?text=${encodeURIComponent(text)}`)
+    audioCacheRef.current.set(cacheKey, '')
+    fetch(runtimeTtsUrl(text))
       .then(r => r.blob())
       .then(blob => {
-        audioCacheRef.current.set(text, URL.createObjectURL(blob))
+        audioCacheRef.current.set(cacheKey, URL.createObjectURL(blob))
       })
-      .catch(() => audioCacheRef.current.delete(text))
-  }, [])
+      .catch(() => audioCacheRef.current.delete(cacheKey))
+  }, [runtimeCacheKey, runtimeTtsUrl])
 
   // Pre-fetch the next N subtitles ahead of current time
   const prefetchAhead = useCallback((timeMs: number) => {
@@ -80,37 +105,57 @@ export function useMoviePlayer(options: UseMoviePlayerOptions = {}) {
     spokenSubtitleRef.current = null
   }, [])
 
-  const speakSubtitle = useCallback((text: string) => {
-    if (!voiceEnabledRef.current) return
-    if (spokenSubtitleRef.current === text) return
-    spokenSubtitleRef.current = text
-
-    stopVoice()
-
-    const cached = audioCacheRef.current.get(text)
+  const speakWithRuntimeTts = useCallback((text: string, entry?: CourseAudioEntry) => {
+    const cacheKey = runtimeCacheKey(text, entry)
+    const cached = audioCacheRef.current.get(cacheKey)
     if (cached) {
       if (!audioRef.current) {
         audioRef.current = new Audio()
       }
       audioRef.current.src = cached
       audioRef.current.play().catch(() => {})
-    } else {
-      // Fallback: fetch now (will be slightly delayed first time)
-      fetch(`/api/tts?text=${encodeURIComponent(text)}`)
-        .then(r => r.blob())
-        .then(blob => {
-          const url = URL.createObjectURL(blob)
-          audioCacheRef.current.set(text, url)
-          // Only play if this subtitle is still active
-          if (spokenSubtitleRef.current === text && voiceEnabledRef.current) {
-            if (!audioRef.current) audioRef.current = new Audio()
-            audioRef.current.src = url
-            audioRef.current.play().catch(() => {})
-          }
-        })
-        .catch(() => {})
+      return
     }
-  }, [stopVoice])
+
+    fetch(runtimeTtsUrl(text, entry))
+      .then(r => r.blob())
+      .then(blob => {
+        const url = URL.createObjectURL(blob)
+        audioCacheRef.current.set(cacheKey, url)
+        if (spokenSubtitleRef.current?.endsWith(`::${text}`) && voiceEnabledRef.current) {
+          if (!audioRef.current) audioRef.current = new Audio()
+          audioRef.current.src = url
+          audioRef.current.play().catch(() => {})
+        }
+      })
+      .catch(() => {})
+  }, [runtimeCacheKey, runtimeTtsUrl])
+
+  const speakSubtitle = useCallback((scene: Scene, located: LocatedSubtitle) => {
+    if (!voiceEnabledRef.current) return
+    const text = located.subtitle.text
+    const key = `${scene.id}::${located.index}::${text}`
+    if (spokenSubtitleRef.current === key) return
+    spokenSubtitleRef.current = key
+
+    stopVoice()
+
+    const manifestEntry = audioEntriesRef.current.get(audioEntryKey(scene.id, located.index))
+    if (manifestEntry?.audioUrl) {
+      if (!audioRef.current) {
+        audioRef.current = new Audio()
+      }
+      audioRef.current.onerror = () => {
+        if (spokenSubtitleRef.current === key && voiceEnabledRef.current) speakWithRuntimeTts(text, manifestEntry)
+      }
+      audioRef.current.src = manifestEntry.audioUrl
+      audioRef.current.preload = 'auto'
+      audioRef.current.play().catch(() => {})
+      return
+    }
+
+    speakWithRuntimeTts(text)
+  }, [speakWithRuntimeTts, stopVoice])
 
   const findCurrentScene = useCallback((timeMs: number): Scene => {
     const currentScript = scriptRef.current
@@ -120,16 +165,18 @@ export function useMoviePlayer(options: UseMoviePlayerOptions = {}) {
     return currentScript[0]
   }, [])
 
-  const findCurrentSubtitle = useCallback((scene: Scene, timeMs: number): Subtitle | null => {
-    for (const sub of scene.subtitles) {
-      if (timeMs >= sub.startMs && timeMs <= sub.endMs) return sub
+  const findCurrentSubtitle = useCallback((scene: Scene, timeMs: number): LocatedSubtitle | null => {
+    for (let index = 0; index < scene.subtitles.length; index += 1) {
+      const sub = scene.subtitles[index]
+      if (timeMs >= sub.startMs && timeMs <= sub.endMs) return { subtitle: sub, index }
     }
     return null
   }, [])
 
   const updateState = useCallback((timeMs: number) => {
     const scene = findCurrentScene(timeMs)
-    const sub = findCurrentSubtitle(scene, timeMs)
+    const locatedSubtitle = findCurrentSubtitle(scene, timeMs)
+    const sub = locatedSubtitle?.subtitle ?? null
 
     setCurrentScene(scene)
     setCurrentTimeMs(timeMs)
@@ -138,7 +185,7 @@ export function useMoviePlayer(options: UseMoviePlayerOptions = {}) {
     if (sub?.text !== currentSubtitleRef.current?.text) {
       currentSubtitleRef.current = sub
       setCurrentSubtitle(sub)
-      if (sub) speakSubtitle(sub.text)
+      if (sub && locatedSubtitle) speakSubtitle(scene, locatedSubtitle)
       else stopVoice()
     }
   }, [findCurrentScene, findCurrentSubtitle, prefetchAhead, speakSubtitle, stopVoice])

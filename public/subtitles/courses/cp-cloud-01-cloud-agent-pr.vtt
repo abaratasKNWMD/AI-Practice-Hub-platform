@@ -1,0 +1,52 @@
+WEBVTT
+
+NOTE cp-cloud-01-cloud-agent-pr - Copilot Cloud 01 - Agent pull request
+
+1
+00:00:00.450 --> 00:00:02.990
+Objetivo de esta clase:
+
+2
+00:00:03.170 --> 00:00:08.398
+resolver Copilot Cloud 01 - Agent pull request con criterio practico.
+
+3
+00:00:08.578 --> 00:00:13.422
+Al final debes poder quedarte con una regla de uso y un ejemplo repetible.
+
+4
+00:00:13.602 --> 00:00:17.558
+La ruta sera: concepto, ejemplo y cierre.
+
+5
+00:00:17.738 --> 00:00:20.710
+Durante el video mira esta decision:
+
+6
+00:00:20.890 --> 00:00:24.582
+cuando aplicar esta tecnica en tu propio repositorio.
+
+7
+00:00:30.450 --> 00:00:34.694
+El issue debe incluir objetivo, contexto y restricciones.
+
+8
+00:00:34.874 --> 00:00:38.206
+Tambien acceptance criteria y presupuesto.
+
+9
+00:00:38.386 --> 00:00:42.366
+La pull request generada siempre pasa por review humana.
+
+10
+00:01:00.450 --> 00:01:05.126
+Delegar bien significa revisar mejor, no dejar de revisar.
+
+11
+00:01:05.306 --> 00:01:10.414
+Evidencia minuto 1: patch local, test y comentario de pull request.
+
+12
+00:01:10.594 --> 00:01:16.230
+Accion minuto 1: parar si "Cloud agent gobernado" no produce evidencia nueva.
+

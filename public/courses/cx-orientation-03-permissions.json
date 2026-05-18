@@ -9,33 +9,126 @@
   "author": "AI Practice Hub",
   "createdAt": "2026-05-07T00:00:00.000Z",
   "chapters": [
-    { "id": "start", "label": "Permisos", "startMs": 0 },
-    { "id": "compare", "label": "Modos", "startMs": 8000 },
-    { "id": "cost", "label": "Coste", "startMs": 42000 },
-    { "id": "close", "label": "Cierre", "startMs": 70000 }
+    {
+      "id": "start",
+      "label": "Permisos",
+      "startMs": 0
+    },
+    {
+      "id": "compare",
+      "label": "Modos",
+      "startMs": 22500
+    },
+    {
+      "id": "cost",
+      "label": "Coste",
+      "startMs": 42000
+    },
+    {
+      "id": "close",
+      "label": "Cierre",
+      "startMs": 70000
+    }
   ],
   "scenes": [
     {
       "id": "title",
       "name": "Apertura",
       "startMs": 0,
-      "endMs": 8000,
+      "endMs": 22500,
       "type": "title",
       "content": {
         "title": "Permisos sin drama",
-        "subtitle": "Leer, escribir, ejecutar y conectar son decisiones distintas.",
-        "tag": "Codex / Governance"
+        "subtitle": "Objetivo: resolver Codex Orientation 03 - Permissions con criterio practico.",
+        "tag": "Codex / Governance",
+        "narrativeContract": {
+          "objective": "resolver Codex Orientation 03 - Permissions con criterio practico.",
+          "outcome": "quedarte con una regla de uso y un ejemplo repetible.",
+          "route": "concepto, ejemplo y cierre.",
+          "decision": "cuando aplicar esta tecnica en tu propio repositorio."
+        }
       },
       "subtitles": [
-        { "text": "Los permisos no son burocracia.", "startMs": 1000, "endMs": 3500 },
-        { "text": "Son el volante de seguridad de la sesion.", "startMs": 3800, "endMs": 7600 }
-      ]
+        {
+          "text": "Objetivo de esta clase:",
+          "startMs": 450,
+          "endMs": 2966
+        },
+        {
+          "text": "resolver Codex Orientation 03 - Permissions con criterio practico.",
+          "startMs": 3011,
+          "endMs": 8335
+        },
+        {
+          "text": "Al final debes poder quedarte con una regla de uso y un ejemplo repetible.",
+          "startMs": 8380,
+          "endMs": 13176
+        },
+        {
+          "text": "La ruta sera: concepto, ejemplo y cierre.",
+          "startMs": 13221,
+          "endMs": 17129
+        },
+        {
+          "text": "Durante el video mira esta decision:",
+          "startMs": 17174,
+          "endMs": 20122
+        },
+        {
+          "text": "cuando aplicar esta tecnica en tu propio repositorio.",
+          "startMs": 18776,
+          "endMs": 22420
+        }
+      ],
+      "voiceover": [
+        "Objetivo de esta clase:",
+        "resolver Codex Orientation 03 - Permissions con criterio practico.",
+        "Al final debes poder quedarte con una regla de uso y un ejemplo repetible.",
+        "La ruta sera: concepto, ejemplo y cierre.",
+        "Durante el video mira esta decision:",
+        "cuando aplicar esta tecnica en tu propio repositorio."
+      ],
+      "blueprintAction": {
+        "learningRubric": {
+          "learns": "Distingue decision humana de ejecucion automatizada en Codex.",
+          "does": "Comprueba la salida contra prueba, owner o captura.",
+          "decides": "Aceptar solo si la evidencia queda visible para otra persona.",
+          "vendor": "codex",
+          "usefulnessScore": 82,
+          "memoryCheck": "Puede repetir el prompt inicial con criterio de cierre.",
+          "productionPass": "2000-final-direction"
+        }
+      },
+      "production": {
+        "audioVersion": "audio-prod-v2-2026-05-18",
+        "voiceProfileId": "codexNarrator",
+        "voice": "es-ES-AlvaroNeural",
+        "rate": "+8%",
+        "pitch": "+0Hz",
+        "energy": "precisa",
+        "emphasis": "plan, patch, test y coste",
+        "pauseMs": 180,
+        "role": "narrator",
+        "reviewRubric": {
+          "learns": "Distingue decision humana de ejecucion automatizada en Codex.",
+          "does": "Comprueba la salida contra prueba, owner o captura.",
+          "decides": "Aceptar solo si la evidencia queda visible para otra persona.",
+          "memoryCheck": "Puede repetir el prompt inicial con criterio de cierre."
+        },
+        "prosodyNotes": {
+          "pace": "+8%",
+          "pause": "180ms antes de la decision",
+          "emphasis": "plan, patch, test y coste",
+          "energy": "precisa"
+        },
+        "pronunciationPass": "spain-voice-units-v1"
+      }
     },
     {
       "id": "compare",
       "name": "Permisos",
-      "startMs": 8000,
-      "endMs": 42000,
+      "startMs": 22500,
+      "endMs": 45000,
       "type": "compare",
       "content": {
         "tag": "Modos de trabajo",
@@ -43,9 +136,22 @@
           "label": "Todo abierto",
           "color": "destructive",
           "steps": [
-            { "icon": "Zap", "text": "Avanza muy rapido" },
-            { "icon": "AlertTriangle", "text": "Puede tocar mas de lo necesario" },
-            { "icon": "AlertTriangle", "text": "Dificil explicar coste y riesgo" }
+            {
+              "icon": "Zap",
+              "text": "Avanza muy rapido"
+            },
+            {
+              "icon": "AlertTriangle",
+              "text": "Puede tocar mas de lo necesario"
+            },
+            {
+              "icon": "AlertTriangle",
+              "text": "Dificil explicar coste y riesgo"
+            },
+            {
+              "icon": "AlertTriangle",
+              "text": "Sin evidencia, la decision vuelve a tutoria."
+            }
           ],
           "total": "Comodo, pero opaco"
         },
@@ -53,24 +159,90 @@
           "label": "Permiso por fase",
           "color": "accent",
           "steps": [
-            { "icon": "Eye", "text": "Read-only para entender" },
-            { "icon": "Code", "text": "Workspace-write para patch acotado" },
-            { "icon": "Check", "text": "Ejecucion solo con objetivo claro" }
+            {
+              "icon": "Eye",
+              "text": "Read-only para entender"
+            },
+            {
+              "icon": "Code",
+              "text": "Workspace-write para patch acotado"
+            },
+            {
+              "icon": "Check",
+              "text": "Ejecucion solo con objetivo claro"
+            },
+            {
+              "icon": "Check",
+              "text": "Cerrar con criterio, coste y validacion."
+            }
           ],
           "total": "Control docente"
-        }
+        },
+        "auditNote": "Comparativa enriquecida para explicar cuando usar, cuando no usar y como cerrar."
       },
       "subtitles": [
-        { "text": "No todo necesita permiso de escritura.", "startMs": 9000, "endMs": 15000 },
-        { "text": "Primero leer. Luego editar. Luego ejecutar.", "startMs": 15500, "endMs": 24500 },
-        { "text": "La progresion de permisos ensena criterio.", "startMs": 25000, "endMs": 40500 }
-      ]
+        {
+          "text": "No todo necesita permiso de escritura.",
+          "startMs": 22950,
+          "endMs": 26138
+        },
+        {
+          "text": "Primero leer. Luego editar. Luego ejecutar.",
+          "startMs": 26318,
+          "endMs": 31762
+        },
+        {
+          "text": "La progresion de permisos ensena criterio.",
+          "startMs": 31942,
+          "endMs": 35274
+        }
+      ],
+      "voiceover": [
+        "No todo necesita permiso de escritura.",
+        "Primero leer. Luego editar. Luego ejecutar.",
+        "La progresion de permisos ensena criterio."
+      ],
+      "blueprintAction": {
+        "learningRubric": {
+          "learns": "Ubica coste, permiso y criterio antes de aceptar la salida.",
+          "does": "Registra el criterio que permitiria repetir el paso sin instructor.",
+          "decides": "Seguir, pedir mas contexto, escalar modelo o bloquear.",
+          "vendor": "codex",
+          "usefulnessScore": 84,
+          "memoryCheck": "Puede explicar el paso en una frase de menos de 20 segundos.",
+          "productionPass": "2000-final-direction"
+        }
+      },
+      "production": {
+        "audioVersion": "audio-prod-v2-2026-05-18",
+        "voiceProfileId": "codexNarrator",
+        "voice": "es-ES-AlvaroNeural",
+        "rate": "+8%",
+        "pitch": "+0Hz",
+        "energy": "precisa",
+        "emphasis": "plan, patch, test y coste",
+        "pauseMs": 180,
+        "role": "narrator",
+        "reviewRubric": {
+          "learns": "Ubica coste, permiso y criterio antes de aceptar la salida.",
+          "does": "Registra el criterio que permitiria repetir el paso sin instructor.",
+          "decides": "Seguir, pedir mas contexto, escalar modelo o bloquear.",
+          "memoryCheck": "Puede explicar el paso en una frase de menos de 20 segundos."
+        },
+        "prosodyNotes": {
+          "pace": "+8%",
+          "pause": "180ms antes de la decision",
+          "emphasis": "plan, patch, test y coste",
+          "energy": "precisa"
+        },
+        "pronunciationPass": "spain-voice-units-v1"
+      }
     },
     {
       "id": "concept",
       "name": "Coste",
-      "startMs": 42000,
-      "endMs": 70000,
+      "startMs": 45000,
+      "endMs": 67500,
       "type": "concept",
       "content": {
         "tag": "Conciencia de coste",
@@ -80,34 +252,166 @@
         "points": [
           "Usa modelos pequenos para exploracion simple.",
           "Escala cuando haya arquitectura, ambiguedad o riesgo.",
-          "Registra reintentos y evidencia de cierre."
+          "Registra reintentos y evidencia de cierre.",
+          "Coste: elegir modelo y contexto antes de pedir otra iteracion.",
+          "Cierre: evidencia, decision y siguiente accion visible."
         ]
       },
       "subtitles": [
-        { "text": "El coste se gestiona con habitos.", "startMs": 43000, "endMs": 49000 },
-        { "text": "Modelo correcto, contexto correcto, cierre verificable.", "startMs": 49500, "endMs": 61000 },
-        { "text": "Eso hace la plataforma sostenible.", "startMs": 61500, "endMs": 69000 }
-      ]
+        {
+          "text": "El coste se gestiona con habitos.",
+          "startMs": 45450,
+          "endMs": 48398
+        },
+        {
+          "text": "Modelo correcto, contexto correcto, cierre verificable.",
+          "startMs": 48578,
+          "endMs": 53326
+        },
+        {
+          "text": "Eso hace la plataforma sostenible.",
+          "startMs": 53506,
+          "endMs": 56478
+        }
+      ],
+      "voiceover": [
+        "El coste se gestiona con habitos.",
+        "Modelo correcto, contexto correcto, cierre verificable.",
+        "Eso hace la plataforma sostenible."
+      ],
+      "blueprintAction": {
+        "learningRubric": {
+          "learns": "Reconoce por que \"El gasto aparece por contexto, reintentos y modelo\" necesita evidencia y no solo respuesta.",
+          "does": "Formula una peticion verificable con limite de alcance.",
+          "decides": "Convertir la duda en material de tutoria si se repite.",
+          "vendor": "codex",
+          "usefulnessScore": 86,
+          "memoryCheck": "Puede nombrar el riesgo principal sin mirar la slide.",
+          "productionPass": "2000-final-direction"
+        }
+      },
+      "production": {
+        "audioVersion": "audio-prod-v2-2026-05-18",
+        "voiceProfileId": "codexNarrator",
+        "voice": "es-ES-AlvaroNeural",
+        "rate": "+8%",
+        "pitch": "+0Hz",
+        "energy": "precisa",
+        "emphasis": "plan, patch, test y coste",
+        "pauseMs": 180,
+        "role": "narrator",
+        "reviewRubric": {
+          "learns": "Reconoce por que \"El gasto aparece por contexto, reintentos y modelo\" necesita evidencia y no solo respuesta.",
+          "does": "Formula una peticion verificable con limite de alcance.",
+          "decides": "Convertir la duda en material de tutoria si se repite.",
+          "memoryCheck": "Puede nombrar el riesgo principal sin mirar la slide."
+        },
+        "prosodyNotes": {
+          "pace": "+8%",
+          "pause": "180ms antes de la decision",
+          "emphasis": "plan, patch, test y coste",
+          "energy": "precisa"
+        },
+        "pronunciationPass": "spain-voice-units-v1"
+      }
     },
     {
       "id": "finale",
       "name": "Cierre",
-      "startMs": 70000,
+      "startMs": 67500,
       "endMs": 90000,
       "type": "finale",
       "content": {
         "title": "Permisos = pedagogia",
         "summary": [
-          { "number": "01", "label": "Read-only", "body": "Ideal para entender, auditar y revisar." },
-          { "number": "02", "label": "Write", "body": "Solo con plan y alcance." },
-          { "number": "03", "label": "Run", "body": "Ejecuta comandos que validan, no ruido." }
+          {
+            "number": "01",
+            "label": "Read-only",
+            "body": "Ideal para entender, auditar y revisar."
+          },
+          {
+            "number": "02",
+            "label": "Write",
+            "body": "Solo con plan y alcance."
+          },
+          {
+            "number": "03",
+            "label": "Run",
+            "body": "Ejecuta comandos que validan, no ruido."
+          }
         ],
         "cta": "Ejercicio asociado: cx-m01-config-safe."
       },
       "subtitles": [
-        { "text": "Permisos bien usados aceleran el aprendizaje.", "startMs": 70500, "endMs": 82000 },
-        { "text": "No frenan Codex: lo encarrilan.", "startMs": 82500, "endMs": 89500 }
-      ]
+        {
+          "text": "Permisos bien usados aceleran el aprendizaje.",
+          "startMs": 67950,
+          "endMs": 71642
+        },
+        {
+          "text": "No frenan Codex: lo encarrilan.",
+          "startMs": 71822,
+          "endMs": 75058
+        },
+        {
+          "text": "Evidencia minuto 1: \"Permisos = pedagogia\" queda ligado a prueba, owner y decision.",
+          "startMs": 75238,
+          "endMs": 81570
+        },
+        {
+          "text": "Accion minuto 1: nombrar modelo, permiso y limite antes de iterar.",
+          "startMs": 81750,
+          "endMs": 86978
+        }
+      ],
+      "voiceover": [
+        "Permisos bien usados aceleran el aprendizaje.",
+        "No frenan Codex: lo encarrilan.",
+        "Evidencia minuto 1: \"Permisos = pedagogia\" queda ligado a prueba, owner y decision.",
+        "Accion minuto 1: nombrar modelo, permiso y limite antes de iterar."
+      ],
+      "blueprintAction": {
+        "learningRubric": {
+          "learns": "Distingue decision humana de ejecucion automatizada en Codex.",
+          "does": "Comprueba la salida contra prueba, owner o captura.",
+          "decides": "Aceptar solo si la evidencia queda visible para otra persona.",
+          "vendor": "codex",
+          "usefulnessScore": 88,
+          "memoryCheck": "Puede repetir el prompt inicial con criterio de cierre.",
+          "productionPass": "2000-final-direction"
+        }
+      },
+      "production": {
+        "audioVersion": "audio-prod-v2-2026-05-18",
+        "voiceProfileId": "codexReflection",
+        "voice": "es-ES-AlvaroNeural",
+        "rate": "+3%",
+        "pitch": "+0Hz",
+        "energy": "reflexiva",
+        "emphasis": "riesgo, permiso y evidencia",
+        "pauseMs": 260,
+        "role": "reflection",
+        "reviewRubric": {
+          "learns": "Distingue decision humana de ejecucion automatizada en Codex.",
+          "does": "Comprueba la salida contra prueba, owner o captura.",
+          "decides": "Aceptar solo si la evidencia queda visible para otra persona.",
+          "memoryCheck": "Puede repetir el prompt inicial con criterio de cierre."
+        },
+        "prosodyNotes": {
+          "pace": "+3%",
+          "pause": "260ms antes de la decision",
+          "emphasis": "riesgo, permiso y evidencia",
+          "energy": "reflexiva"
+        },
+        "pronunciationPass": "spain-voice-units-v1"
+      }
     }
-  ]
+  ],
+  "production": {
+    "audioProductionVersion": "audio-prod-v2-2026-05-18",
+    "productionPass": "2000-final-direction",
+    "vendor": "codex",
+    "narrativePass": "teacher-contract-v1",
+    "pronunciationPass": "spain-voice-units-v1"
+  }
 }

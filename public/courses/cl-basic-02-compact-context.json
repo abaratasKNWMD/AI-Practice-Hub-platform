@@ -9,56 +9,301 @@
   "author": "AI Practice Hub",
   "createdAt": "2026-05-07T00:00:00.000Z",
   "chapters": [
-    { "id": "start", "label": "Compact", "startMs": 0 },
-    { "id": "concept", "label": "Estado", "startMs": 9000 },
-    { "id": "close", "label": "Handoff", "startMs": 65000 }
+    {
+      "id": "start",
+      "label": "Compact",
+      "startMs": 0
+    },
+    {
+      "id": "concept",
+      "label": "Estado",
+      "startMs": 30000
+    },
+    {
+      "id": "close",
+      "label": "Handoff",
+      "startMs": 65000
+    }
   ],
   "scenes": [
     {
       "id": "title",
       "name": "Apertura",
       "startMs": 0,
-      "endMs": 9000,
+      "endMs": 30000,
       "type": "title",
-      "content": { "title": "/compact sin drama", "subtitle": "Guardar estado, no novela.", "tag": "Claude Basic" },
-      "subtitles": [{ "text": "Compactar bien permite continuar sin volver a leer medio mundo.", "startMs": 1000, "endMs": 8200 }]
+      "content": {
+        "title": "/compact sin drama",
+        "subtitle": "Objetivo: resolver Claude Basic 02 - Compact Context con criterio practico.",
+        "tag": "Claude Basic",
+        "narrativeContract": {
+          "objective": "resolver Claude Basic 02 - Compact Context con criterio practico.",
+          "outcome": "quedarte con una regla de uso y un ejemplo repetible.",
+          "route": "concepto, ejemplo y cierre.",
+          "decision": "cuando aplicar esta tecnica en tu propio repositorio."
+        }
+      },
+      "subtitles": [
+        {
+          "text": "Objetivo de esta clase:",
+          "startMs": 450,
+          "endMs": 3038
+        },
+        {
+          "text": "resolver Claude Basic 02 - Compact Context con criterio practico.",
+          "startMs": 3218,
+          "endMs": 8494
+        },
+        {
+          "text": "Al final debes poder quedarte con una regla de uso y un ejemplo repetible.",
+          "startMs": 8674,
+          "endMs": 13590
+        },
+        {
+          "text": "La ruta sera: concepto, ejemplo y cierre.",
+          "startMs": 13770,
+          "endMs": 17798
+        },
+        {
+          "text": "Durante el video mira esta decision:",
+          "startMs": 17978,
+          "endMs": 20998
+        },
+        {
+          "text": "cuando aplicar esta tecnica en tu propio repositorio.",
+          "startMs": 21178,
+          "endMs": 24918
+        }
+      ],
+      "voiceover": [
+        "Objetivo de esta clase:",
+        "resolver Claude Basic 02 - Compact Context con criterio practico.",
+        "Al final debes poder quedarte con una regla de uso y un ejemplo repetible.",
+        "La ruta sera: concepto, ejemplo y cierre.",
+        "Durante el video mira esta decision:",
+        "cuando aplicar esta tecnica en tu propio repositorio."
+      ],
+      "blueprintAction": {
+        "learningRubric": {
+          "learns": "Reconoce por que \"/compact sin drama\" necesita evidencia y no solo respuesta.",
+          "does": "Formula una peticion verificable con limite de alcance.",
+          "decides": "Convertir la duda en material de tutoria si se repite.",
+          "vendor": "claude",
+          "usefulnessScore": 82,
+          "memoryCheck": "Puede nombrar el riesgo principal sin mirar la slide.",
+          "productionPass": "2000-final-direction"
+        }
+      },
+      "production": {
+        "audioVersion": "audio-prod-v2-2026-05-18",
+        "voiceProfileId": "claudeNarrator",
+        "voice": "es-ES-AlvaroNeural",
+        "rate": "+5%",
+        "pitch": "+0Hz",
+        "energy": "calmada",
+        "emphasis": "memoria, skill, hook y MCP",
+        "pauseMs": 220,
+        "role": "narrator",
+        "reviewRubric": {
+          "learns": "Reconoce por que \"/compact sin drama\" necesita evidencia y no solo respuesta.",
+          "does": "Formula una peticion verificable con limite de alcance.",
+          "decides": "Convertir la duda en material de tutoria si se repite.",
+          "memoryCheck": "Puede nombrar el riesgo principal sin mirar la slide."
+        },
+        "prosodyNotes": {
+          "pace": "+5%",
+          "pause": "220ms antes de la decision",
+          "emphasis": "memoria, skill, hook y M C P",
+          "energy": "calmada"
+        },
+        "pronunciationPass": "spain-voice-units-v1"
+      }
     },
     {
       "id": "concept",
       "name": "Estado",
-      "startMs": 9000,
-      "endMs": 65000,
+      "startMs": 30000,
+      "endMs": 60000,
       "type": "concept",
       "content": {
         "tag": "Handoff tecnico",
         "title": "Que debe sobrevivir?",
-        "body": "Una compactacion util guarda objetivo, ficheros tocados, decisiones, pruebas y riesgos. Todo lo demas es ruido.\n\nLa gracia es que la siguiente sesion pueda leer el diff y continuar. Si la compactacion no ayuda a actuar, es un resumen bonito pero inutil.",
+        "body": "Una compactacion util guarda objetivo, ficheros tocados, decisiones, pruebas y riesgos. Todo lo demas es ruido. La gracia es que la siguiente sesion pueda leer el diff y continuar. Si la compactacion no ayuda a actuar, es un resumen bonito pero inutil.",
         "highlight": "Compactar no es resumir: es preservar capacidad de accion.",
-        "points": ["Objetivo del usuario", "Ficheros y razones", "Pruebas ejecutadas", "Riesgos pendientes"]
+        "points": [
+          "Objetivo del usuario",
+          "Ficheros y razones",
+          "Pruebas ejecutadas",
+          "Riesgos pendientes"
+        ]
       },
       "subtitles": [
-        { "text": "No guardes la conversacion completa.", "startMs": 10000, "endMs": 25000 },
-        { "text": "Guarda los hechos que permiten continuar.", "startMs": 26000, "endMs": 47000 },
-        { "text": "Esto convierte tutoria en revision, no en interrogatorio.", "startMs": 48000, "endMs": 63000 }
-      ]
+        {
+          "text": "No guardes la conversacion completa.",
+          "startMs": 30450,
+          "endMs": 33638
+        },
+        {
+          "text": "Guarda los hechos que permiten continuar.",
+          "startMs": 33818,
+          "endMs": 37054
+        },
+        {
+          "text": "Esto convierte tutoria en revision, no en interrogatorio.",
+          "startMs": 37234,
+          "endMs": 41646
+        }
+      ],
+      "voiceover": [
+        "No guardes la conversacion completa.",
+        "Guarda los hechos que permiten continuar.",
+        "Esto convierte tutoria en revision, no en interrogatorio."
+      ],
+      "blueprintAction": {
+        "learningRubric": {
+          "learns": "Distingue decision humana de ejecucion automatizada en Claude.",
+          "does": "Comprueba la salida contra prueba, owner o captura.",
+          "decides": "Aceptar solo si la evidencia queda visible para otra persona.",
+          "vendor": "claude",
+          "usefulnessScore": 84,
+          "memoryCheck": "Puede repetir el prompt inicial con criterio de cierre.",
+          "productionPass": "2000-final-direction"
+        }
+      },
+      "production": {
+        "audioVersion": "audio-prod-v2-2026-05-18",
+        "voiceProfileId": "claudeNarrator",
+        "voice": "es-ES-AlvaroNeural",
+        "rate": "+5%",
+        "pitch": "+0Hz",
+        "energy": "calmada",
+        "emphasis": "memoria, skill, hook y MCP",
+        "pauseMs": 220,
+        "role": "narrator",
+        "reviewRubric": {
+          "learns": "Distingue decision humana de ejecucion automatizada en Claude.",
+          "does": "Comprueba la salida contra prueba, owner o captura.",
+          "decides": "Aceptar solo si la evidencia queda visible para otra persona.",
+          "memoryCheck": "Puede repetir el prompt inicial con criterio de cierre."
+        },
+        "prosodyNotes": {
+          "pace": "+5%",
+          "pause": "220ms antes de la decision",
+          "emphasis": "memoria, skill, hook y M C P",
+          "energy": "calmada"
+        },
+        "pronunciationPass": "spain-voice-units-v1"
+      }
     },
     {
       "id": "finale",
       "name": "Cierre",
-      "startMs": 65000,
+      "startMs": 60000,
       "endMs": 90000,
       "type": "finale",
       "content": {
         "title": "Handoff minimo",
         "summary": [
-          { "number": "Goal", "label": "Objetivo", "body": "Que se estaba intentando." },
-          { "number": "Diff", "label": "Cambios", "body": "Donde y por que." },
-          { "number": "Risk", "label": "Pendiente", "body": "Que queda por mirar." }
+          {
+            "number": "Goal",
+            "label": "Objetivo",
+            "body": "Que se estaba intentando."
+          },
+          {
+            "number": "Diff",
+            "label": "Cambios",
+            "body": "Donde y por que."
+          },
+          {
+            "number": "Risk",
+            "label": "Pendiente",
+            "body": "Que queda por mirar."
+          }
         ],
         "cta": "Ejercicio: cl-b05-context-compact."
       },
-      "subtitles": [{ "text": "Una buena compactacion es una cuerda para seguir subiendo.", "startMs": 66000, "endMs": 89000 }]
+      "subtitles": [
+        {
+          "text": "Una buena compactacion es una cuerda para seguir subiendo.",
+          "startMs": 60450,
+          "endMs": 64622
+        },
+        {
+          "text": "Evidencia minuto 1:",
+          "startMs": 64802,
+          "endMs": 67318
+        },
+        {
+          "text": "hay una salida que otro perfil puede revisar sin rehacer el contexto.",
+          "startMs": 67498,
+          "endMs": 72294
+        },
+        {
+          "text": "Accion minuto 1: comparar la respuesta con el criterio de cierre",
+          "startMs": 72474,
+          "endMs": 77270
+        },
+        {
+          "text": "no con la sensacion de velocidad.",
+          "startMs": 77450,
+          "endMs": 80350
+        },
+        {
+          "text": "no con la sensacion de velocidad. (Claude, minuto 1, paso 1)",
+          "startMs": 80530,
+          "endMs": 86646
+        }
+      ],
+      "voiceover": [
+        "Una buena compactacion es una cuerda para seguir subiendo.",
+        "Evidencia minuto 1:",
+        "hay una salida que otro perfil puede revisar sin rehacer el contexto.",
+        "Accion minuto 1: comparar la respuesta con el criterio de cierre",
+        "no con la sensacion de velocidad.",
+        "no con la sensacion de velocidad. (Claude, minuto 1, paso 1)"
+      ],
+      "blueprintAction": {
+        "learningRubric": {
+          "learns": "Ubica coste, permiso y criterio antes de aceptar la salida.",
+          "does": "Registra el criterio que permitiria repetir el paso sin instructor.",
+          "decides": "Seguir, pedir mas contexto, escalar modelo o bloquear.",
+          "vendor": "claude",
+          "usefulnessScore": 86,
+          "memoryCheck": "Puede explicar el paso en una frase de menos de 20 segundos.",
+          "productionPass": "2000-final-direction"
+        }
+      },
+      "production": {
+        "audioVersion": "audio-prod-v2-2026-05-18",
+        "voiceProfileId": "claudeSafety",
+        "voice": "es-ES-AlvaroNeural",
+        "rate": "+2%",
+        "pitch": "+0Hz",
+        "energy": "deliberada",
+        "emphasis": "permiso, bloqueo y rollback",
+        "pauseMs": 300,
+        "role": "reflection",
+        "reviewRubric": {
+          "learns": "Ubica coste, permiso y criterio antes de aceptar la salida.",
+          "does": "Registra el criterio que permitiria repetir el paso sin instructor.",
+          "decides": "Seguir, pedir mas contexto, escalar modelo o bloquear.",
+          "memoryCheck": "Puede explicar el paso en una frase de menos de 20 segundos."
+        },
+        "prosodyNotes": {
+          "pace": "+2%",
+          "pause": "300ms antes de la decision",
+          "emphasis": "permiso, bloqueo y rollback",
+          "energy": "deliberada"
+        },
+        "pronunciationPass": "spain-voice-units-v1"
+      }
     }
-  ]
+  ],
+  "production": {
+    "audioProductionVersion": "audio-prod-v2-2026-05-18",
+    "productionPass": "2000-final-direction",
+    "vendor": "claude",
+    "narrativePass": "teacher-contract-v1",
+    "pronunciationPass": "spain-voice-units-v1"
+  }
 }
-

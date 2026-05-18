@@ -1,7 +1,7 @@
 {
   "id": "cl-operator-03-mcp-project",
-  "title": "Claude Operator 03 - MCP Project",
-  "description": "Conectar MCP con inventario, permisos y coste.",
+  "title": "Claude Operator 03 - M C P Project",
+  "description": "Conectar M C P con inventario, permisos y coste.",
   "template": "technical",
   "durationPreset": 5,
   "durationMs": 90000,
@@ -9,56 +9,313 @@
   "author": "AI Practice Hub",
   "createdAt": "2026-05-07T00:00:00.000Z",
   "chapters": [
-    { "id": "start", "label": "MCP", "startMs": 0 },
-    { "id": "concept", "label": "Riesgo", "startMs": 9000 },
-    { "id": "close", "label": "Inventario", "startMs": 65000 }
+    {
+      "id": "start",
+      "label": "M C P",
+      "startMs": 0
+    },
+    {
+      "id": "concept",
+      "label": "Riesgo",
+      "startMs": 30000
+    },
+    {
+      "id": "close",
+      "label": "Inventario",
+      "startMs": 65000
+    }
   ],
   "scenes": [
     {
       "id": "title",
       "name": "Apertura",
       "startMs": 0,
-      "endMs": 9000,
+      "endMs": 30000,
       "type": "title",
-      "content": { "title": "MCP sin sustos", "subtitle": "Conectar herramientas no significa abrir todas las puertas.", "tag": "Claude Operator" },
-      "subtitles": [{ "text": "MCP es potencia, pero tambien superficie de riesgo.", "startMs": 1000, "endMs": 8200 }]
+      "content": {
+        "title": "M C P sin sustos",
+        "subtitle": "Objetivo: resolver Claude Operator 03 - M C P Project con criterio practico.",
+        "tag": "Claude Operator",
+        "narrativeContract": {
+          "objective": "resolver Claude Operator 03 - M C P Project con criterio practico.",
+          "outcome": "quedarte con una regla de uso y un ejemplo repetible.",
+          "route": "concepto, ejemplo y cierre.",
+          "decision": "cuando aplicar esta tecnica en tu propio repositorio."
+        }
+      },
+      "subtitles": [
+        {
+          "text": "Objetivo de esta clase:",
+          "startMs": 450,
+          "endMs": 3038
+        },
+        {
+          "text": "resolver Claude Operator 03 - M C P Project con criterio practico.",
+          "startMs": 3218,
+          "endMs": 8734
+        },
+        {
+          "text": "Al final debes poder quedarte con una regla de uso y un ejemplo repetible.",
+          "startMs": 8914,
+          "endMs": 13830
+        },
+        {
+          "text": "La ruta sera: concepto, ejemplo y cierre.",
+          "startMs": 14010,
+          "endMs": 18038
+        },
+        {
+          "text": "Durante el video mira esta decision:",
+          "startMs": 18218,
+          "endMs": 21238
+        },
+        {
+          "text": "cuando aplicar esta tecnica en tu propio repositorio.",
+          "startMs": 21418,
+          "endMs": 25158
+        }
+      ],
+      "voiceover": [
+        "Objetivo de esta clase:",
+        "resolver Claude Operator 03 - M C P Project con criterio practico.",
+        "Al final debes poder quedarte con una regla de uso y un ejemplo repetible.",
+        "La ruta sera: concepto, ejemplo y cierre.",
+        "Durante el video mira esta decision:",
+        "cuando aplicar esta tecnica en tu propio repositorio."
+      ],
+      "blueprintAction": {
+        "learningRubric": {
+          "learns": "Distingue decision humana de ejecucion automatizada en Claude.",
+          "does": "Comprueba la salida contra prueba, owner o captura.",
+          "decides": "Aceptar solo si la evidencia queda visible para otra persona.",
+          "vendor": "claude",
+          "usefulnessScore": 82,
+          "memoryCheck": "Puede repetir el prompt inicial con criterio de cierre.",
+          "productionPass": "2000-final-direction"
+        }
+      },
+      "production": {
+        "audioVersion": "audio-prod-v2-2026-05-18",
+        "voiceProfileId": "claudeNarrator",
+        "voice": "es-ES-AlvaroNeural",
+        "rate": "+5%",
+        "pitch": "+0Hz",
+        "energy": "calmada",
+        "emphasis": "memoria, skill, hook y MCP",
+        "pauseMs": 220,
+        "role": "narrator",
+        "reviewRubric": {
+          "learns": "Distingue decision humana de ejecucion automatizada en Claude.",
+          "does": "Comprueba la salida contra prueba, owner o captura.",
+          "decides": "Aceptar solo si la evidencia queda visible para otra persona.",
+          "memoryCheck": "Puede repetir el prompt inicial con criterio de cierre."
+        },
+        "prosodyNotes": {
+          "pace": "+5%",
+          "pause": "220ms antes de la decision",
+          "emphasis": "memoria, skill, hook y M C P",
+          "energy": "calmada"
+        },
+        "pronunciationPass": "spain-voice-units-v1"
+      }
     },
     {
       "id": "concept",
       "name": "Riesgo",
-      "startMs": 9000,
-      "endMs": 65000,
+      "startMs": 30000,
+      "endMs": 60000,
       "type": "concept",
       "content": {
         "tag": ".mcp.json",
         "title": "Readonly primero",
-        "body": "Un servidor MCP puede traer docs, issues, bases de datos o sistemas internos. Por eso el ejercicio no es solo configurarlo: es inventariar owner, permisos, variables, coste y modo de uso.\n\nEn formacion, empieza con read-only. La escritura se gana con politica, no con entusiasmo.",
-        "highlight": "MCP amplifica capacidades; el inventario evita sorpresas.",
-        "points": ["Owner del servidor", "Permisos y variables", "Riesgo por herramienta", "Criterio de activacion"]
+        "body": "Un servidor M C P puede traer docs, issues, bases de datos o sistemas internos. Por eso el ejercicio no es solo configurarlo: es inventariar owner, permisos, variables, coste y modo de uso. En formacion, empieza con read-only. La escritura se gana con politica, no con entusiasmo.",
+        "highlight": "M C P amplifica capacidades; el inventario evita sorpresas.",
+        "points": [
+          "Owner del servidor",
+          "Permisos y variables",
+          "Riesgo por herramienta",
+          "Criterio de activacion"
+        ]
       },
       "subtitles": [
-        { "text": "El MCP bueno es explicito.", "startMs": 10000, "endMs": 25000 },
-        { "text": "El MCP peligroso aparece como magia sin owner.", "startMs": 26000, "endMs": 46000 },
-        { "text": "Readonly primero mantiene el aprendizaje bajo control.", "startMs": 47000, "endMs": 63000 }
-      ]
+        {
+          "text": "El M C P bueno es explicito.",
+          "startMs": 30450,
+          "endMs": 33446
+        },
+        {
+          "text": "El M C P peligroso aparece como magia sin owner.",
+          "startMs": 33626,
+          "endMs": 37558
+        },
+        {
+          "text": "Readonly primero mantiene el aprendizaje bajo control.",
+          "startMs": 37738,
+          "endMs": 41742
+        }
+      ],
+      "voiceover": [
+        "El M C P bueno es explicito.",
+        "El M C P peligroso aparece como magia sin owner.",
+        "Readonly primero mantiene el aprendizaje bajo control."
+      ],
+      "blueprintAction": {
+        "learningRubric": {
+          "learns": "Ubica coste, permiso y criterio antes de aceptar la salida.",
+          "does": "Registra el criterio que permitiria repetir el paso sin instructor.",
+          "decides": "Seguir, pedir mas contexto, escalar modelo o bloquear.",
+          "vendor": "claude",
+          "usefulnessScore": 84,
+          "memoryCheck": "Puede explicar el paso en una frase de menos de 20 segundos.",
+          "productionPass": "2000-final-direction"
+        }
+      },
+      "production": {
+        "audioVersion": "audio-prod-v2-2026-05-18",
+        "voiceProfileId": "claudeNarrator",
+        "voice": "es-ES-AlvaroNeural",
+        "rate": "+5%",
+        "pitch": "+0Hz",
+        "energy": "calmada",
+        "emphasis": "memoria, skill, hook y MCP",
+        "pauseMs": 220,
+        "role": "narrator",
+        "reviewRubric": {
+          "learns": "Ubica coste, permiso y criterio antes de aceptar la salida.",
+          "does": "Registra el criterio que permitiria repetir el paso sin instructor.",
+          "decides": "Seguir, pedir mas contexto, escalar modelo o bloquear.",
+          "memoryCheck": "Puede explicar el paso en una frase de menos de 20 segundos."
+        },
+        "prosodyNotes": {
+          "pace": "+5%",
+          "pause": "220ms antes de la decision",
+          "emphasis": "memoria, skill, hook y M C P",
+          "energy": "calmada"
+        },
+        "pronunciationPass": "spain-voice-units-v1"
+      }
     },
     {
       "id": "finale",
       "name": "Cierre",
-      "startMs": 65000,
+      "startMs": 60000,
       "endMs": 90000,
       "type": "finale",
       "content": {
-        "title": "Inventario MCP",
+        "title": "Inventario M C P",
         "summary": [
-          { "number": "Owner", "label": "Responsable", "body": "Quien mantiene el servidor." },
-          { "number": "Perms", "label": "Permisos", "body": "Read, write o admin." },
-          { "number": "Cost", "label": "Coste", "body": "Contexto y llamadas externas." }
+          {
+            "number": "Owner",
+            "label": "Responsable",
+            "body": "Quien mantiene el servidor."
+          },
+          {
+            "number": "Perms",
+            "label": "Permisos",
+            "body": "Read, write o admin."
+          },
+          {
+            "number": "Cost",
+            "label": "Coste",
+            "body": "Contexto y llamadas externas."
+          }
         ],
         "cta": "Ejercicio: cl-o05-mcp-project."
       },
-      "subtitles": [{ "text": "MCP sin inventario no es plataforma. Es apuesta.", "startMs": 66000, "endMs": 89000 }]
+      "subtitles": [
+        {
+          "text": "M C P sin inventario no es plataforma. Es apuesta.",
+          "startMs": 60450,
+          "endMs": 65726
+        },
+        {
+          "text": "Evidencia minuto 1: el artefacto muestra que se controlo contexto infinito",
+          "startMs": 65771,
+          "endMs": 71263
+        },
+        {
+          "text": "permisos y automatizacion sin rollback.",
+          "startMs": 71308,
+          "endMs": 74688
+        },
+        {
+          "text": "permisos y automatizacion sin rollback. (Claude, minuto 1, paso 3)",
+          "startMs": 74733,
+          "endMs": 81497
+        },
+        {
+          "text": "Accion minuto 1: pedir salida pequena verificable y con owner. (Claude",
+          "startMs": 81542,
+          "endMs": 87826
+        },
+        {
+          "text": "minuto 1 paso 4)",
+          "startMs": 87356,
+          "endMs": 89920
+        },
+        {
+          "text": "skill o M C P en una decision que se pueda ensenar en tutoria. (Claude",
+          "startMs": 83996,
+          "endMs": 89920
+        },
+        {
+          "text": "minuto 1 paso 4)",
+          "startMs": 87356,
+          "endMs": 89920
+        }
+      ],
+      "voiceover": [
+        "M C P sin inventario no es plataforma. Es apuesta.",
+        "Evidencia minuto 1: el artefacto muestra que se controlo contexto infinito",
+        "permisos y automatizacion sin rollback.",
+        "permisos y automatizacion sin rollback. (Claude, minuto 1, paso 3)",
+        "Accion minuto 1: pedir salida pequena verificable y con owner. (Claude",
+        "minuto 1 paso 4)",
+        "skill o M C P en una decision que se pueda ensenar en tutoria. (Claude",
+        "minuto 1 paso 4)"
+      ],
+      "blueprintAction": {
+        "learningRubric": {
+          "learns": "Reconoce por que \"Inventario M C P\" necesita evidencia y no solo respuesta.",
+          "does": "Formula una peticion verificable con limite de alcance.",
+          "decides": "Convertir la duda en material de tutoria si se repite.",
+          "vendor": "claude",
+          "usefulnessScore": 86,
+          "memoryCheck": "Puede nombrar el riesgo principal sin mirar la slide.",
+          "productionPass": "2000-final-direction"
+        }
+      },
+      "production": {
+        "audioVersion": "audio-prod-v2-2026-05-18",
+        "voiceProfileId": "claudeSafety",
+        "voice": "es-ES-AlvaroNeural",
+        "rate": "+2%",
+        "pitch": "+0Hz",
+        "energy": "deliberada",
+        "emphasis": "permiso, bloqueo y rollback",
+        "pauseMs": 300,
+        "role": "reflection",
+        "reviewRubric": {
+          "learns": "Reconoce por que \"Inventario M C P\" necesita evidencia y no solo respuesta.",
+          "does": "Formula una peticion verificable con limite de alcance.",
+          "decides": "Convertir la duda en material de tutoria si se repite.",
+          "memoryCheck": "Puede nombrar el riesgo principal sin mirar la slide."
+        },
+        "prosodyNotes": {
+          "pace": "+2%",
+          "pause": "300ms antes de la decision",
+          "emphasis": "permiso, bloqueo y rollback",
+          "energy": "deliberada"
+        },
+        "pronunciationPass": "spain-voice-units-v1"
+      }
     }
-  ]
+  ],
+  "production": {
+    "audioProductionVersion": "audio-prod-v2-2026-05-18",
+    "productionPass": "2000-final-direction",
+    "vendor": "claude",
+    "narrativePass": "teacher-contract-v1",
+    "pronunciationPass": "spain-voice-units-v1"
+  }
 }
-

@@ -1,0 +1,60 @@
+WEBVTT
+
+NOTE cp-advanced-02-mcp-code-review - Copilot Advanced 02 - M C P and Review
+
+1
+00:00:00.450 --> 00:00:02.990
+Objetivo de esta clase:
+
+2
+00:00:03.170 --> 00:00:08.590
+resolver Copilot Advanced 02 - M C P and Review con criterio practico.
+
+3
+00:00:08.770 --> 00:00:13.614
+Al final debes poder quedarte con una regla de uso y un ejemplo repetible.
+
+4
+00:00:13.794 --> 00:00:17.750
+La ruta sera: concepto, ejemplo y cierre.
+
+5
+00:00:17.930 --> 00:00:20.902
+Durante el video mira esta decision:
+
+6
+00:00:21.082 --> 00:00:24.774
+cuando aplicar esta tecnica en tu propio repositorio.
+
+7
+00:00:30.450 --> 00:00:33.158
+No actives todo por comodidad.
+
+8
+00:00:33.338 --> 00:00:36.454
+Empieza readonly y documenta tools.
+
+9
+00:00:36.634 --> 00:00:40.278
+Despues usa review con politica y evidencia.
+
+10
+00:01:00.450 --> 00:01:06.398
+Readonly, allowlist y review policy. Ese es el triangulo seguro.
+
+11
+00:01:06.578 --> 00:01:11.878
+Evidencia minuto 1: "M C P y review sin sustos" no se cierra sin test
+
+12
+00:01:12.058 --> 00:01:14.838
+captura o criterio escrito.
+
+13
+00:01:15.018 --> 00:01:21.302
+captura o criterio escrito. (Copilot, minuto 1, paso 19)
+
+14
+00:01:21.482 --> 00:01:27.502
+Accion minuto 1: parar si "M C P y review sin sustos" no produce evidencia nueva.
+

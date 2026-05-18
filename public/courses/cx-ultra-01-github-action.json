@@ -9,60 +9,212 @@
   "author": "AI Practice Hub",
   "createdAt": "2026-05-07T00:00:00.000Z",
   "chapters": [
-    { "id": "start", "label": "CI", "startMs": 0 },
-    { "id": "workflow", "label": "Workflow", "startMs": 8000 },
-    { "id": "guards", "label": "Guardas", "startMs": 42000 },
-    { "id": "close", "label": "Cierre", "startMs": 70000 }
+    {
+      "id": "start",
+      "label": "CI",
+      "startMs": 0
+    },
+    {
+      "id": "workflow",
+      "label": "Workflow",
+      "startMs": 8000
+    },
+    {
+      "id": "guards",
+      "label": "Guardas",
+      "startMs": 42000
+    },
+    {
+      "id": "close",
+      "label": "Cierre",
+      "startMs": 70000
+    }
   ],
   "scenes": [
     {
       "id": "title",
       "name": "Apertura",
       "startMs": 0,
-      "endMs": 8000,
+      "endMs": 22500,
       "type": "title",
       "content": {
         "title": "Codex en CI",
-        "subtitle": "Review automatizada, pero con presupuesto y criterio.",
-        "tag": "Codex Ultra"
+        "subtitle": "Objetivo: resolver Codex Ultra 01 - GitHub Action con criterio practico.",
+        "tag": "Codex Ultra",
+        "narrativeContract": {
+          "objective": "resolver Codex Ultra 01 - GitHub Action con criterio practico.",
+          "outcome": "quedarte con una regla de uso y un ejemplo repetible.",
+          "route": "concepto, ejemplo y cierre.",
+          "decision": "cuando aplicar esta tecnica en tu propio repositorio."
+        }
       },
       "subtitles": [
-        { "text": "Automatizar Codex en CI exige limites.", "startMs": 1000, "endMs": 6500 }
-      ]
+        {
+          "text": "Objetivo de esta clase: resolver Codex Ultra 01 - GitHub Action con criterio practico.",
+          "startMs": 450,
+          "endMs": 6782
+        },
+        {
+          "text": "Al final debes poder quedarte con una regla de uso y un ejemplo repetible.",
+          "startMs": 6827,
+          "endMs": 11623
+        },
+        {
+          "text": "La ruta sera: concepto, ejemplo y cierre.",
+          "startMs": 11668,
+          "endMs": 15576
+        },
+        {
+          "text": "Durante el video mira esta decision:",
+          "startMs": 15621,
+          "endMs": 18569
+        },
+        {
+          "text": "cuando aplicar esta tecnica en tu propio repositorio.",
+          "startMs": 18614,
+          "endMs": 22258
+        }
+      ],
+      "voiceover": [
+        "Objetivo de esta clase: resolver Codex Ultra 01 - GitHub Action con criterio practico.",
+        "Al final debes poder quedarte con una regla de uso y un ejemplo repetible.",
+        "La ruta sera: concepto, ejemplo y cierre.",
+        "Durante el video mira esta decision:",
+        "cuando aplicar esta tecnica en tu propio repositorio."
+      ],
+      "blueprintAction": {
+        "learningRubric": {
+          "learns": "Ubica coste, permiso y criterio antes de aceptar la salida.",
+          "does": "Registra el criterio que permitiria repetir el paso sin instructor.",
+          "decides": "Seguir, pedir mas contexto, escalar modelo o bloquear.",
+          "vendor": "codex",
+          "usefulnessScore": 82,
+          "memoryCheck": "Puede explicar el paso en una frase de menos de 20 segundos.",
+          "productionPass": "2000-final-direction"
+        }
+      },
+      "production": {
+        "audioVersion": "audio-prod-v2-2026-05-18",
+        "voiceProfileId": "codexNarrator",
+        "voice": "es-ES-AlvaroNeural",
+        "rate": "+8%",
+        "pitch": "+0Hz",
+        "energy": "precisa",
+        "emphasis": "plan, patch, test y coste",
+        "pauseMs": 180,
+        "role": "narrator",
+        "reviewRubric": {
+          "learns": "Ubica coste, permiso y criterio antes de aceptar la salida.",
+          "does": "Registra el criterio que permitiria repetir el paso sin instructor.",
+          "decides": "Seguir, pedir mas contexto, escalar modelo o bloquear.",
+          "memoryCheck": "Puede explicar el paso en una frase de menos de 20 segundos."
+        },
+        "prosodyNotes": {
+          "pace": "+8%",
+          "pause": "180ms antes de la decision",
+          "emphasis": "plan, patch, test y coste",
+          "energy": "precisa"
+        },
+        "pronunciationPass": "spain-voice-units-v1"
+      }
     },
     {
       "id": "coding",
       "name": "Workflow",
-      "startMs": 8000,
-      "endMs": 42000,
+      "startMs": 22500,
+      "endMs": 45000,
       "type": "coding",
       "content": {
         "tag": "GitHub Action",
         "filename": ".github/workflows/codex-pr-review.yml",
-        "code": "name: Codex PR Review\\n\\non:\\n  pull_request:\\n    types: [opened, synchronize, reopened]\\n\\npermissions:\\n  contents: read\\n  pull-requests: write\\n\\njobs:\\n  review:\\n    runs-on: ubuntu-latest\\n    timeout-minutes: 15\\n    steps:\\n      - uses: actions/checkout@v4\\n      - name: Build PR context\\n        run: git diff --name-only origin/main...HEAD > changed-files.txt\\n      - name: Run Codex reviewer\\n        run: node scripts/codex-review.mjs --budget medium --schema findings.json",
+        "code": "name: Codex pull request Review\\n\\non:\\n pull_request:\\n types: [opened, synchronize, reopened]\\n\\npermissions:\\n contents: read\\n pull-requests: write\\n\\njobs:\\n review:\\n runs-on: ubuntu-latest\\n timeout-minutes: 15\\n steps:\\n - uses: actions/checkout@v4\\n - name: Build pull request context\\n run: git diff --name-only origin/main.HEAD > changed-files.txt\\n - name: Run Codex reviewer\\n run: node scripts/codex-review.mjs --budget medium --schema findings.json # Cierre operativo done_when: evidencia + coste + owner stop_rule: parar si no hay senal nueva",
         "commentary": [
-          { "atLine": 3, "text": "Trigger acotado" },
-          { "atLine": 7, "text": "Permisos minimos" },
-          { "atLine": 13, "text": "Timeout" },
-          { "atLine": 18, "text": "Budget explicito" }
+          {
+            "atLine": 3,
+            "text": "Trigger acotado"
+          },
+          {
+            "atLine": 7,
+            "text": "Permisos minimos"
+          },
+          {
+            "atLine": 13,
+            "text": "Timeout"
+          },
+          {
+            "atLine": 18,
+            "text": "Budget explicito"
+          }
         ]
       },
       "subtitles": [
-        { "text": "El workflow empieza con permisos minimos.", "startMs": 9000, "endMs": 16500 },
-        { "text": "Luego limita tiempo, diff y presupuesto.", "startMs": 17000, "endMs": 28500 },
-        { "text": "La salida debe ser estructurada.", "startMs": 29000, "endMs": 40500 }
-      ]
+        {
+          "text": "El workflow empieza con permisos minimos.",
+          "startMs": 22950,
+          "endMs": 26354
+        },
+        {
+          "text": "Luego limita tiempo, diff y presupuesto.",
+          "startMs": 26534,
+          "endMs": 29914
+        },
+        {
+          "text": "La salida debe ser estructurada.",
+          "startMs": 30094,
+          "endMs": 32970
+        }
+      ],
+      "voiceover": [
+        "El workflow empieza con permisos minimos.",
+        "Luego limita tiempo, diff y presupuesto.",
+        "La salida debe ser estructurada."
+      ],
+      "blueprintAction": {
+        "learningRubric": {
+          "learns": "Reconoce por que \"Workflow\" necesita evidencia y no solo respuesta.",
+          "does": "Formula una peticion verificable con limite de alcance.",
+          "decides": "Convertir la duda en material de tutoria si se repite.",
+          "vendor": "codex",
+          "usefulnessScore": 84,
+          "memoryCheck": "Puede nombrar el riesgo principal sin mirar la slide.",
+          "productionPass": "2000-final-direction"
+        }
+      },
+      "production": {
+        "audioVersion": "audio-prod-v2-2026-05-18",
+        "voiceProfileId": "codexNarrator",
+        "voice": "es-ES-AlvaroNeural",
+        "rate": "+8%",
+        "pitch": "+0Hz",
+        "energy": "precisa",
+        "emphasis": "plan, patch, test y coste",
+        "pauseMs": 180,
+        "role": "narrator",
+        "reviewRubric": {
+          "learns": "Reconoce por que \"Workflow\" necesita evidencia y no solo respuesta.",
+          "does": "Formula una peticion verificable con limite de alcance.",
+          "decides": "Convertir la duda en material de tutoria si se repite.",
+          "memoryCheck": "Puede nombrar el riesgo principal sin mirar la slide."
+        },
+        "prosodyNotes": {
+          "pace": "+8%",
+          "pause": "180ms antes de la decision",
+          "emphasis": "plan, patch, test y coste",
+          "energy": "precisa"
+        },
+        "pronunciationPass": "spain-voice-units-v1"
+      }
     },
     {
       "id": "concept",
       "name": "Guardas",
-      "startMs": 42000,
-      "endMs": 70000,
+      "startMs": 45000,
+      "endMs": 67500,
       "type": "concept",
       "content": {
         "tag": "CI guardrails",
         "title": "La automatizacion falla cuando no sabe parar",
-        "body": "Una action de Codex debe tener limite de coste, limite de tiempo, limite de tamano de diff y criterio de fallo. Si no, puede convertirse en ruido caro en cada PR.",
+        "body": "Una action de Codex debe tener limite de coste, limite de tiempo, limite de tamano de diff y criterio de fallo. Si no, puede convertirse en ruido caro en cada pull request.",
         "highlight": "No bloquees merges por opiniones. Bloquea por bugs verificables.",
         "points": [
           "Timeout y budget por ejecucion.",
@@ -72,29 +224,160 @@
         ]
       },
       "subtitles": [
-        { "text": "La action no debe opinar sin criterio.", "startMs": 43000, "endMs": 51500 },
-        { "text": "Debe producir findings verificables.", "startMs": 52000, "endMs": 61000 },
-        { "text": "Y parar antes de gastar de mas.", "startMs": 61500, "endMs": 69000 }
-      ]
+        {
+          "text": "La action no debe opinar sin criterio.",
+          "startMs": 45450,
+          "endMs": 48566
+        },
+        {
+          "text": "Debe producir findings verificables.",
+          "startMs": 48746,
+          "endMs": 52006
+        },
+        {
+          "text": "Y parar antes de gastar de mas.",
+          "startMs": 52186,
+          "endMs": 55038
+        }
+      ],
+      "voiceover": [
+        "La action no debe opinar sin criterio.",
+        "Debe producir findings verificables.",
+        "Y parar antes de gastar de mas."
+      ],
+      "blueprintAction": {
+        "learningRubric": {
+          "learns": "Distingue decision humana de ejecucion automatizada en Codex.",
+          "does": "Comprueba la salida contra prueba, owner o captura.",
+          "decides": "Aceptar solo si la evidencia queda visible para otra persona.",
+          "vendor": "codex",
+          "usefulnessScore": 86,
+          "memoryCheck": "Puede repetir el prompt inicial con criterio de cierre.",
+          "productionPass": "2000-final-direction"
+        }
+      },
+      "production": {
+        "audioVersion": "audio-prod-v2-2026-05-18",
+        "voiceProfileId": "codexNarrator",
+        "voice": "es-ES-AlvaroNeural",
+        "rate": "+8%",
+        "pitch": "+0Hz",
+        "energy": "precisa",
+        "emphasis": "plan, patch, test y coste",
+        "pauseMs": 180,
+        "role": "narrator",
+        "reviewRubric": {
+          "learns": "Distingue decision humana de ejecucion automatizada en Codex.",
+          "does": "Comprueba la salida contra prueba, owner o captura.",
+          "decides": "Aceptar solo si la evidencia queda visible para otra persona.",
+          "memoryCheck": "Puede repetir el prompt inicial con criterio de cierre."
+        },
+        "prosodyNotes": {
+          "pace": "+8%",
+          "pause": "180ms antes de la decision",
+          "emphasis": "plan, patch, test y coste",
+          "energy": "precisa"
+        },
+        "pronunciationPass": "spain-voice-units-v1"
+      }
     },
     {
       "id": "finale",
       "name": "Cierre",
-      "startMs": 70000,
+      "startMs": 67500,
       "endMs": 90000,
       "type": "finale",
       "content": {
         "title": "CI con Codex",
         "summary": [
-          { "number": "01", "label": "Permisos minimos", "body": "Read y comentario, no mas." },
-          { "number": "02", "label": "Budget", "body": "Coste y timeout visibles." },
-          { "number": "03", "label": "Schema", "body": "Findings que una maquina puede leer." }
+          {
+            "number": "01",
+            "label": "Permisos minimos",
+            "body": "Read y comentario, no mas."
+          },
+          {
+            "number": "02",
+            "label": "Budget",
+            "body": "Coste y timeout visibles."
+          },
+          {
+            "number": "03",
+            "label": "Schema",
+            "body": "Findings que una maquina puede leer."
+          }
         ],
         "cta": "Ejercicio asociado: cx-a01-github-action."
       },
       "subtitles": [
-        { "text": "Codex en CI es potente cuando esta acotado.", "startMs": 70500, "endMs": 89500 }
-      ]
+        {
+          "text": "Codex en CI es potente cuando esta acotado.",
+          "startMs": 67950,
+          "endMs": 71786
+        },
+        {
+          "text": "Evidencia minuto 1: \"CI con Codex\" no se cierra sin test, captura o criterio escrito.",
+          "startMs": 71966,
+          "endMs": 78370
+        },
+        {
+          "text": "Accion minuto 1: pedir salida pequena verificable y con owner. (Codex",
+          "startMs": 78550,
+          "endMs": 84834
+        },
+        {
+          "text": "minuto 1 paso 11)",
+          "startMs": 85014,
+          "endMs": 87578
+        }
+      ],
+      "voiceover": [
+        "Codex en CI es potente cuando esta acotado.",
+        "Evidencia minuto 1: \"CI con Codex\" no se cierra sin test, captura o criterio escrito.",
+        "Accion minuto 1: pedir salida pequena verificable y con owner. (Codex",
+        "minuto 1 paso 11)"
+      ],
+      "blueprintAction": {
+        "learningRubric": {
+          "learns": "Ubica coste, permiso y criterio antes de aceptar la salida.",
+          "does": "Registra el criterio que permitiria repetir el paso sin instructor.",
+          "decides": "Seguir, pedir mas contexto, escalar modelo o bloquear.",
+          "vendor": "codex",
+          "usefulnessScore": 88,
+          "memoryCheck": "Puede explicar el paso en una frase de menos de 20 segundos.",
+          "productionPass": "2000-final-direction"
+        }
+      },
+      "production": {
+        "audioVersion": "audio-prod-v2-2026-05-18",
+        "voiceProfileId": "codexReflection",
+        "voice": "es-ES-AlvaroNeural",
+        "rate": "+3%",
+        "pitch": "+0Hz",
+        "energy": "reflexiva",
+        "emphasis": "riesgo, permiso y evidencia",
+        "pauseMs": 260,
+        "role": "reflection",
+        "reviewRubric": {
+          "learns": "Ubica coste, permiso y criterio antes de aceptar la salida.",
+          "does": "Registra el criterio que permitiria repetir el paso sin instructor.",
+          "decides": "Seguir, pedir mas contexto, escalar modelo o bloquear.",
+          "memoryCheck": "Puede explicar el paso en una frase de menos de 20 segundos."
+        },
+        "prosodyNotes": {
+          "pace": "+3%",
+          "pause": "260ms antes de la decision",
+          "emphasis": "riesgo, permiso y evidencia",
+          "energy": "reflexiva"
+        },
+        "pronunciationPass": "spain-voice-units-v1"
+      }
     }
-  ]
+  ],
+  "production": {
+    "audioProductionVersion": "audio-prod-v2-2026-05-18",
+    "productionPass": "2000-final-direction",
+    "vendor": "codex",
+    "narrativePass": "teacher-contract-v1",
+    "pronunciationPass": "spain-voice-units-v1"
+  }
 }

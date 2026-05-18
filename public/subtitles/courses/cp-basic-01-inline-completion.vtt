@@ -1,0 +1,76 @@
+WEBVTT
+
+NOTE cp-basic-01-inline-completion - Copilot Basic 01 - Inline Completion
+
+1
+00:00:00.450 --> 00:00:02.990
+Objetivo de esta clase:
+
+2
+00:00:03.170 --> 00:00:08.566
+resolver Copilot Basic 01 - Inline Completion con criterio practico.
+
+3
+00:00:08.746 --> 00:00:13.590
+Al final debes poder quedarte con una regla de uso y un ejemplo repetible.
+
+4
+00:00:13.770 --> 00:00:17.726
+La ruta sera: concepto, ejemplo y cierre.
+
+5
+00:00:17.906 --> 00:00:20.878
+Durante el video mira esta decision:
+
+6
+00:00:21.058 --> 00:00:24.750
+cuando aplicar esta tecnica en tu propio repositorio.
+
+7
+00:00:30.450 --> 00:00:35.750
+Copilot no lee tu mente: lee nombres, comentarios y archivos abiertos.
+
+8
+00:00:35.930 --> 00:00:39.718
+Con buen contexto, la sugerencia mejora mucho.
+
+9
+00:00:39.898 --> 00:00:42.894
+Aun asi hay que revisar edge cases.
+
+10
+00:01:00.450 --> 00:01:06.158
+Contexto, revision y test. Esa es la completion profesional.
+
+11
+00:01:06.203 --> 00:01:11.455
+Evidencia minuto 1: el artefacto muestra que se controlo modo equivocado
+
+12
+00:01:11.500 --> 00:01:14.496
+contexto pobre y review floja.
+
+13
+00:01:14.541 --> 00:01:20.705
+contexto pobre y review floja. (Copilot, minuto 1, paso 1)
+
+14
+00:01:20.750 --> 00:01:26.842
+Accion minuto 1: pedir salida pequena verificable y con owner. (Copilot
+
+15
+00:01:26.887 --> 00:01:29.427
+minuto 1 paso 7)
+
+16
+00:01:24.596 --> 00:01:29.920
+convertir workspace de Visual Studio Code en una decision que se pueda ensenar en
+
+17
+00:01:28.172 --> 00:01:29.920
+tutoria.
+
+18
+00:01:27.068 --> 00:01:29.920
+(Copilot minuto 1 paso 2)
+

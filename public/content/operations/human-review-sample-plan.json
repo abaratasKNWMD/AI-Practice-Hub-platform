@@ -1,0 +1,41 @@
+{
+  "generatedAt": "2026-05-18T13:01:23.593Z",
+  "status": "ready-for-real-student-sample",
+  "limitation": "No se puede completar la medicion con alumnos reales desde el repositorio; queda preparado el protocolo y la captura de datos.",
+  "sample": {
+    "size": 9,
+    "roles": [
+      "developer",
+      "qa",
+      "tech lead"
+    ],
+    "vendors": [
+      "codex",
+      "copilot",
+      "claude"
+    ],
+    "format": "3 personas por vendor, 20 minutos por persona"
+  },
+  "protocol": [
+    "Ver 1 masterclass de 10m o un tramo de workshop de 12m.",
+    "Pausar en dos media-breaks y pedir que verbalicen la regla recordada.",
+    "Ejecutar un micro-reto asociado sin mirar la solucion.",
+    "Medir si entregan evidencia: prompt, diff, test, comentario o decision.",
+    "Registrar aburrimiento, claridad, memoria y accion con escala 1-5."
+  ],
+  "metrics": [
+    "recall_24h",
+    "exercise_completion",
+    "evidence_quality",
+    "token_cost_awareness",
+    "model_permission_decision",
+    "dropoff_minute",
+    "confusion_points"
+  ],
+  "passCriteria": {
+    "recall24h": ">= 4/5",
+    "exerciseCompletion": ">= 80%",
+    "evidenceQuality": ">= 4/5",
+    "boringMoments": "<= 2 por video largo"
+  }
+}

@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720">
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#0b1020"/>
+      <stop offset="1" stop-color="#020617"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="18" stdDeviation="22" flood-color="#000" flood-opacity=".42"/>
+    </filter>
+  </defs>
+  <rect width="1280" height="720" fill="url(#bg)"/>
+  <circle cx="1120" cy="110" r="190" fill="#22d3ee" opacity=".14"/>
+  <rect x="52" y="54" width="1176" height="612" rx="22" fill="#0f172a" stroke="#ffffff" stroke-opacity=".12" filter="url(#shadow)"/>
+  <rect x="52" y="54" width="1176" height="48" rx="22" fill="#111827"/>
+  <circle cx="86" cy="78" r="7" fill="#fb7185"/><circle cx="112" cy="78" r="7" fill="#fbbf24"/><circle cx="138" cy="78" r="7" fill="#34d399"/>
+  <text x="640" y="84" text-anchor="middle" fill="#94a3b8" font-family="Inter, Arial" font-size="18">CODEX / Codex CLI con plan, patch y coste</text>
+  <text x="86" y="152" fill="#f8fafc" font-family="Inter, Arial" font-size="34" font-weight="700">Codex CLI con plan, patch y coste</text>
+  <text x="86" y="188" fill="#cbd5e1" font-family="Inter, Arial" font-size="20">Cloud task -> branch -> diff -> test -> resumen</text>
+  <g>
+    <rect x="68" y="232" width="148" height="108" rx="14" fill="#22d3ee" opacity=".22" stroke="#22d3ee" stroke-opacity=".55"/>
+    <text x="142" y="292" text-anchor="middle" fill="#f8fafc" font-family="JetBrains Mono, Consolas, monospace" font-size="15" font-weight="700">AGENTS.md</text>
+  </g><g>
+    <rect x="242" y="232" width="148" height="108" rx="14" fill="#22d3ee" opacity=".11" stroke="#22d3ee" stroke-opacity=".55"/>
+    <text x="316" y="292" text-anchor="middle" fill="#f8fafc" font-family="JetBrains Mono, Consolas, monospace" font-size="15" font-weight="700">src/auth/login.ts</text>
+  </g><g>
+    <rect x="416" y="232" width="148" height="108" rx="14" fill="#22d3ee" opacity=".11" stroke="#22d3ee" stroke-opacity=".55"/>
+    <text x="490" y="292" text-anchor="middle" fill="#f8fafc" font-family="JetBrains Mono, Consolas, monospace" font-size="15" font-weight="700">tests/login.spec.ts</text>
+  </g><g>
+    <rect x="590" y="232" width="148" height="108" rx="14" fill="#22d3ee" opacity=".11" stroke="#22d3ee" stroke-opacity=".55"/>
+    <text x="664" y="292" text-anchor="middle" fill="#f8fafc" font-family="JetBrains Mono, Consolas, monospace" font-size="15" font-weight="700">cost-ledger.toml</text>
+  </g>
+  <rect x="72" y="388" width="640" height="212" rx="16" fill="#020617" stroke="#ffffff" stroke-opacity=".12"/>
+  <text x="102" y="432" fill="#22d3ee" font-family="JetBrains Mono, Consolas, monospace" font-size="20">$ codex task "fix login"</text><text x="102" y="470" fill="#d1d5db" font-family="JetBrains Mono, Consolas, monospace" font-size="20">plan: 3 pasos, permiso workspace-write</text><text x="102" y="508" fill="#d1d5db" font-family="JetBrains Mono, Consolas, monospace" font-size="20">patch: 2 files changed</text><text x="102" y="546" fill="#d1d5db" font-family="JetBrains Mono, Consolas, monospace" font-size="20">tests: PASS auth/login.spec.ts</text>
+  <rect x="770" y="236" width="390" height="364" rx="18" fill="#020617" stroke="#22d3ee" stroke-opacity=".42"/>
+  <text x="806" y="286" fill="#f8fafc" font-family="Inter, Arial" font-size="25" font-weight="700">Decision visible</text>
+  <text x="806" y="334" fill="#cbd5e1" font-family="Inter, Arial" font-size="18">1. mirar contexto</text>
+  <text x="806" y="374" fill="#cbd5e1" font-family="Inter, Arial" font-size="18">2. limitar permiso</text>
+  <text x="806" y="414" fill="#cbd5e1" font-family="Inter, Arial" font-size="18">3. pedir evidencia</text>
+  <text x="806" y="454" fill="#cbd5e1" font-family="Inter, Arial" font-size="18">4. firmar o bloquear</text>
+  <rect x="806" y="504" width="292" height="48" rx="12" fill="#22d3ee" opacity=".22"/>
+  <text x="952" y="535" text-anchor="middle" fill="#f8fafc" font-family="Inter, Arial" font-size="18" font-weight="700">output revisable</text>
+</svg>

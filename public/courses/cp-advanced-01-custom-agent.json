@@ -9,67 +9,344 @@
   "author": "AI Practice Hub",
   "createdAt": "2026-05-07T00:00:00.000Z",
   "chapters": [
-    { "id": "start", "label": "Agent", "startMs": 0 },
-    { "id": "code", "label": ".agent.md", "startMs": 9000 },
-    { "id": "close", "label": "Roles", "startMs": 65000 }
+    {
+      "id": "start",
+      "label": "Agent",
+      "startMs": 0
+    },
+    {
+      "id": "code",
+      "label": ".agent.md",
+      "startMs": 9000
+    },
+    {
+      "id": "close",
+      "label": "Roles",
+      "startMs": 65000
+    }
   ],
   "scenes": [
     {
       "id": "title",
       "name": "Apertura",
       "startMs": 0,
-      "endMs": 9000,
+      "endMs": 30000,
       "type": "title",
       "content": {
         "title": "Custom agents",
-        "subtitle": "Un agente no es un prompt largo: es un rol con herramientas.",
-        "tag": "Copilot Advanced"
+        "subtitle": "Objetivo: resolver Copilot Advanced 01 - Custom Agent con criterio practico.",
+        "tag": "Copilot Advanced",
+        "narrativeContract": {
+          "objective": "resolver Copilot Advanced 01 - Custom Agent con criterio practico.",
+          "outcome": "quedarte con una regla de uso y un ejemplo repetible.",
+          "route": "concepto, ejemplo y cierre.",
+          "decision": "cuando aplicar esta tecnica en tu propio repositorio."
+        }
       },
       "subtitles": [
-        { "text": "Custom agents sirven para separar responsabilidades y limitar herramientas.", "startMs": 1000, "endMs": 8200 }
-      ]
+        {
+          "text": "Objetivo de esta clase:",
+          "startMs": 450,
+          "endMs": 2990
+        },
+        {
+          "text": "resolver Copilot Advanced 01 - Custom Agent con criterio practico.",
+          "startMs": 3170,
+          "endMs": 8278
+        },
+        {
+          "text": "Al final debes poder quedarte con una regla de uso y un ejemplo repetible.",
+          "startMs": 8458,
+          "endMs": 13302
+        },
+        {
+          "text": "La ruta sera: concepto, ejemplo y cierre.",
+          "startMs": 13482,
+          "endMs": 17438
+        },
+        {
+          "text": "Durante el video mira esta decision:",
+          "startMs": 17618,
+          "endMs": 20590
+        },
+        {
+          "text": "cuando aplicar esta tecnica en tu propio repositorio.",
+          "startMs": 20770,
+          "endMs": 24462
+        }
+      ],
+      "voiceover": [
+        "Objetivo de esta clase:",
+        "resolver Copilot Advanced 01 - Custom Agent con criterio practico.",
+        "Al final debes poder quedarte con una regla de uso y un ejemplo repetible.",
+        "La ruta sera: concepto, ejemplo y cierre.",
+        "Durante el video mira esta decision:",
+        "cuando aplicar esta tecnica en tu propio repositorio."
+      ],
+      "blueprintAction": {
+        "learningRubric": {
+          "learns": "Reconoce por que \"Custom agents\" necesita evidencia y no solo respuesta.",
+          "does": "Formula una peticion verificable con limite de alcance.",
+          "decides": "Convertir la duda en material de tutoria si se repite.",
+          "vendor": "copilot",
+          "usefulnessScore": 82,
+          "memoryCheck": "Puede nombrar el riesgo principal sin mirar la slide.",
+          "productionPass": "2000-final-direction"
+        }
+      },
+      "production": {
+        "audioVersion": "audio-prod-v2-2026-05-18",
+        "voiceProfileId": "copilotNarrator",
+        "voice": "es-ES-AlvaroNeural",
+        "rate": "+7%",
+        "pitch": "+0Hz",
+        "energy": "practica",
+        "emphasis": "modo, contexto y PR",
+        "pauseMs": 180,
+        "role": "narrator",
+        "reviewRubric": {
+          "learns": "Reconoce por que \"Custom agents\" necesita evidencia y no solo respuesta.",
+          "does": "Formula una peticion verificable con limite de alcance.",
+          "decides": "Convertir la duda en material de tutoria si se repite.",
+          "memoryCheck": "Puede nombrar el riesgo principal sin mirar la slide."
+        },
+        "prosodyNotes": {
+          "pace": "+7%",
+          "pause": "180ms antes de la decision",
+          "emphasis": "modo, contexto y pull request",
+          "energy": "practica"
+        },
+        "pronunciationPass": "spain-voice-units-v1"
+      }
     },
     {
       "id": "coding",
-      "name": "Agent profile",
-      "startMs": 9000,
-      "endMs": 65000,
-      "type": "coding",
+      "name": "Media break / meme",
+      "startMs": 30000,
+      "endMs": 60000,
+      "type": "media-break",
       "content": {
-        "tag": ".github/agents",
-        "filename": "planner.agent.md",
-        "code": "---\nname: Planner\ndescription: \"Plans implementation work without editing files.\"\ntarget: vscode\ntools: [\"read\", \"search\"]\n---\n\n# Planner agent\n\nInspect relevant files, propose a short plan, name risks and verification steps.\n\nDo not edit files. Do not run destructive commands.",
-        "commentary": [
-          { "atLine": 3, "text": "Para invocacion" },
-          { "atLine": 4, "text": "Entorno" },
-          { "atLine": 5, "text": "Tools acotadas" },
-          { "atLine": 12, "text": "Limite duro" }
-        ]
+        "source": "sprint-cd-media-breaks",
+        "vendor": "copilot",
+        "kind": "meme",
+        "title": "Cuando \"Agent profile\" se va de las manos",
+        "imageUrl": "/decks/copilot/curso-03/images/meme-agent-catalog.svg",
+        "alt": "copilot meme asset",
+        "caption": "Humor util: si te hace sonreir, tambien debe recordarte una regla.",
+        "situation": "Situacion minuto 0: Copilot solo avanza si el siguiente humano entiende el por que.",
+        "tension": "Tension minuto 0: aceptar rapido puede esconder modo equivocado, contexto pobre y review floja.",
+        "example": "Ejemplo: convertir respuesta en artefacto de equipo.",
+        "action": "Accion minuto 0: nombrar modelo, permiso y limite antes de iterar.",
+        "evidence": "Evidencia minuto 0: el artefacto muestra que se controlo modo equivocado, contexto pobre y review floja.",
+        "decision": "Decision minuto 0: guardar la duda como material reutilizable si se repite.",
+        "rubric": {
+          "learns": "Copilot rinde cuando se elige superficie, no solo prompt.",
+          "does": "Conecta instrucciones, contexto y review.",
+          "decides": "Cuando usar Ask, Edit, Agent o pull request."
+        }
       },
       "subtitles": [
-        { "text": "El planner solo lee y busca.", "startMs": 10000, "endMs": 23000 },
-        { "text": "El implementer puede editar y ejecutar.", "startMs": 24000, "endMs": 37000 },
-        { "text": "El reviewer vuelve a read-only y findings.", "startMs": 38000, "endMs": 62000 }
-      ]
+        {
+          "text": "Situacion minuto 0: la pantalla no busca impresionar;",
+          "startMs": 30450,
+          "endMs": 34862
+        },
+        {
+          "text": "busca cerrar \"Cuando Agent profile se va de las manos\" con evidencia.",
+          "startMs": 34907,
+          "endMs": 39727
+        },
+        {
+          "text": "busca cerrar \"Cuando Agent profile se va de las manos\" con evidencia.",
+          "startMs": 39772,
+          "endMs": 44592
+        },
+        {
+          "text": "Tension minuto 0: el agente puede avanzar mas rapido que nuestra capacidad de revisar.",
+          "startMs": 44637,
+          "endMs": 50417
+        },
+        {
+          "text": "Accion minuto 0: pedir salida pequena verificable y con owner. (Copilot",
+          "startMs": 50462,
+          "endMs": 56602
+        },
+        {
+          "text": "minuto 0 paso 7)",
+          "startMs": 56647,
+          "endMs": 59379
+        },
+        {
+          "text": "convertir workspace de Visual Studio Code en una decision que se pueda ensenar en",
+          "startMs": 54596,
+          "endMs": 59920
+        },
+        {
+          "text": "tutoria.",
+          "startMs": 58172,
+          "endMs": 59920
+        },
+        {
+          "text": "(Copilot minuto 0 paso 1)",
+          "startMs": 56972,
+          "endMs": 59920
+        },
+        {
+          "text": "Evidencia minuto 0:",
+          "startMs": 57428,
+          "endMs": 59920
+        },
+        {
+          "text": "hay una salida que otro perfil puede revisar sin rehacer el contexto.",
+          "startMs": 55220,
+          "endMs": 59920
+        }
+      ],
+      "voiceover": [
+        "Situacion minuto 0: la pantalla no busca impresionar;",
+        "busca cerrar \"Cuando Agent profile se va de las manos\" con evidencia.",
+        "busca cerrar \"Cuando Agent profile se va de las manos\" con evidencia.",
+        "Tension minuto 0: el agente puede avanzar mas rapido que nuestra capacidad de revisar.",
+        "Accion minuto 0: pedir salida pequena verificable y con owner. (Copilot",
+        "minuto 0 paso 7)",
+        "convertir workspace de Visual Studio Code en una decision que se pueda ensenar en",
+        "tutoria.",
+        "(Copilot minuto 0 paso 1)",
+        "Evidencia minuto 0:",
+        "hay una salida que otro perfil puede revisar sin rehacer el contexto."
+      ],
+      "blueprintAction": {
+        "learningRubric": {
+          "learns": "Distingue decision humana de ejecucion automatizada en Copilot.",
+          "does": "Comprueba la salida contra prueba, owner o captura.",
+          "decides": "Aceptar solo si la evidencia queda visible para otra persona.",
+          "vendor": "copilot",
+          "usefulnessScore": 98,
+          "memoryCheck": "Puede repetir el prompt inicial con criterio de cierre.",
+          "productionPass": "2000-final-direction"
+        }
+      },
+      "screen": {
+        "mode": "media-break",
+        "title": "Cuando \"Agent profile\" se va de las manos",
+        "visual": "/decks/copilot/curso-03/images/meme-agent-catalog.svg"
+      },
+      "production": {
+        "audioVersion": "audio-prod-v2-2026-05-18",
+        "voiceProfileId": "copilotReview",
+        "voice": "es-ES-AlvaroNeural",
+        "rate": "+4%",
+        "pitch": "+0Hz",
+        "energy": "critica",
+        "emphasis": "finding, severidad y prueba",
+        "pauseMs": 240,
+        "role": "reflection",
+        "reviewRubric": {
+          "learns": "Distingue decision humana de ejecucion automatizada en Copilot.",
+          "does": "Comprueba la salida contra prueba, owner o captura.",
+          "decides": "Aceptar solo si la evidencia queda visible para otra persona.",
+          "memoryCheck": "Puede repetir el prompt inicial con criterio de cierre."
+        },
+        "prosodyNotes": {
+          "pace": "+4%",
+          "pause": "240ms antes de la decision",
+          "emphasis": "finding, severidad y prueba",
+          "energy": "critica"
+        },
+        "pronunciationPass": "spain-voice-units-v1"
+      }
     },
     {
       "id": "finale",
       "name": "Cierre",
-      "startMs": 65000,
+      "startMs": 60000,
       "endMs": 90000,
       "type": "finale",
       "content": {
         "title": "Agentes con frontera",
         "summary": [
-          { "number": "01", "label": "Planner", "body": "Lee y planifica." },
-          { "number": "02", "label": "Implementer", "body": "Edita y verifica." },
-          { "number": "03", "label": "Reviewer", "body": "Evalua con evidencia." }
+          {
+            "number": "01",
+            "label": "Planner",
+            "body": "Lee y planifica."
+          },
+          {
+            "number": "02",
+            "label": "Implementer",
+            "body": "Edita y verifica."
+          },
+          {
+            "number": "03",
+            "label": "Reviewer",
+            "body": "Evalua con evidencia."
+          }
         ],
         "cta": "Ejercicio: cp-a02-custom-planner-agent."
       },
       "subtitles": [
-        { "text": "Buenos agentes tienen frontera. Sin frontera, solo hay ruido.", "startMs": 66000, "endMs": 89000 }
-      ]
+        {
+          "text": "Buenos agentes tienen frontera. Sin frontera, solo hay ruido.",
+          "startMs": 60450,
+          "endMs": 66278
+        },
+        {
+          "text": "Evidencia minuto 1: patch local, test y comentario de pull request.",
+          "startMs": 66458,
+          "endMs": 71566
+        },
+        {
+          "text": "Accion minuto 1: parar si \"Agentes con frontera\" no produce evidencia nueva.",
+          "startMs": 71746,
+          "endMs": 77286
+        }
+      ],
+      "voiceover": [
+        "Buenos agentes tienen frontera. Sin frontera, solo hay ruido.",
+        "Evidencia minuto 1: patch local, test y comentario de pull request.",
+        "Accion minuto 1: parar si \"Agentes con frontera\" no produce evidencia nueva."
+      ],
+      "blueprintAction": {
+        "learningRubric": {
+          "learns": "Ubica coste, permiso y criterio antes de aceptar la salida.",
+          "does": "Registra el criterio que permitiria repetir el paso sin instructor.",
+          "decides": "Seguir, pedir mas contexto, escalar modelo o bloquear.",
+          "vendor": "copilot",
+          "usefulnessScore": 86,
+          "memoryCheck": "Puede explicar el paso en una frase de menos de 20 segundos.",
+          "productionPass": "2000-final-direction"
+        }
+      },
+      "production": {
+        "audioVersion": "audio-prod-v2-2026-05-18",
+        "voiceProfileId": "copilotReview",
+        "voice": "es-ES-AlvaroNeural",
+        "rate": "+4%",
+        "pitch": "+0Hz",
+        "energy": "critica",
+        "emphasis": "finding, severidad y prueba",
+        "pauseMs": 240,
+        "role": "reflection",
+        "reviewRubric": {
+          "learns": "Ubica coste, permiso y criterio antes de aceptar la salida.",
+          "does": "Registra el criterio que permitiria repetir el paso sin instructor.",
+          "decides": "Seguir, pedir mas contexto, escalar modelo o bloquear.",
+          "memoryCheck": "Puede explicar el paso en una frase de menos de 20 segundos."
+        },
+        "prosodyNotes": {
+          "pace": "+4%",
+          "pause": "240ms antes de la decision",
+          "emphasis": "finding, severidad y prueba",
+          "energy": "critica"
+        },
+        "pronunciationPass": "spain-voice-units-v1"
+      }
     }
-  ]
+  ],
+  "production": {
+    "audioProductionVersion": "audio-prod-v2-2026-05-18",
+    "productionPass": "2000-final-direction",
+    "vendor": "copilot",
+    "narrativePass": "teacher-contract-v1",
+    "pronunciationPass": "spain-voice-units-v1"
+  }
 }

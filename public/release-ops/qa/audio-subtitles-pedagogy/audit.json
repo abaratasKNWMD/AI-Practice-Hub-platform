@@ -1,0 +1,5455 @@
+{
+  "generatedAt": "2026-05-18T10:51:54.979Z",
+  "files": 44,
+  "vendor": {
+    "codex": 13,
+    "copilot": 14,
+    "claude": 15,
+    "hub": 2,
+    "other": 0
+  },
+  "total": {
+    "courses": 44,
+    "scenes": 961,
+    "durationMs": 28170000,
+    "subs": 3750,
+    "voiceoverScenes": 961,
+    "voiceoverLines": 3750,
+    "subChars": 241946,
+    "subWords": 39921,
+    "missingSubs": 0,
+    "missingVoice": 0,
+    "strictLong": 207,
+    "hardLong": 0,
+    "fast": 0,
+    "slow": 96,
+    "ttsTooLong": 91,
+    "ttsTooShort": 304,
+    "zeroAudioRisk": 0,
+    "gapsMs": 2187024,
+    "overlapMs": 0,
+    "imageRefs": 0,
+    "screenVisuals": 852,
+    "realAssetRefs": 0,
+    "quizScenes": 77,
+    "pauseScenes": 42,
+    "opsScenes": 825,
+    "visualTypes": [
+      "branch",
+      "coding",
+      "compare",
+      "concept",
+      "cost",
+      "decision",
+      "diff",
+      "error",
+      "finale",
+      "linear",
+      "pause",
+      "pr-review",
+      "prompt",
+      "quiz",
+      "risk",
+      "streaming",
+      "terminal",
+      "thinking",
+      "title"
+    ],
+    "durationMin": 469.5,
+    "avgSubtitleChars": 64.5,
+    "avgSubtitleWords": 10.6,
+    "gapMin": 36.5,
+    "overlapSec": 0
+  },
+  "sceneTypes": {
+    "title": 36,
+    "compare": 14,
+    "finale": 36,
+    "concept": 21,
+    "linear": 7,
+    "prompt": 88,
+    "streaming": 89,
+    "coding": 15,
+    "diff": 62,
+    "terminal": 79,
+    "decision": 107,
+    "cost": 85,
+    "risk": 72,
+    "branch": 66,
+    "quiz": 77,
+    "thinking": 6,
+    "pr-review": 58,
+    "pause": 42,
+    "error": 1
+  },
+  "repeats": [
+    [
+      "En AI Practice Hub, esta pantalla se aterriza en hub, workshops, metricas y tutorias.",
+      240
+    ],
+    [
+      "La evidencia esperada es decision de ruta, ejercicio y evidencia.",
+      240
+    ],
+    [
+      "En Claude, esta pantalla se aterriza en Claude Code, skills, hooks, subagentes y MCP.",
+      180
+    ],
+    [
+      "La evidencia esperada es skill, hook o patch con owner.",
+      180
+    ],
+    [
+      "En Copilot, esta pantalla se aterriza en VS Code Ask, Edit, Agent y PR review.",
+      180
+    ],
+    [
+      "La evidencia esperada es patch local, test y comentario de PR.",
+      180
+    ],
+    [
+      "En Codex, esta pantalla se aterriza en CLI, IDE y cloud task.",
+      180
+    ],
+    [
+      "La evidencia esperada es diff pequeno, tests y resumen de coste.",
+      180
+    ],
+    [
+      "Cierre: evidencia visible y decision humana antes de avanzar.",
+      72
+    ],
+    [
+      "La pantalla debe cerrar con criterio, evidencia y coste visible.",
+      66
+    ],
+    [
+      "El alumno debe poder repetir este paso sin ayuda del instructor.",
+      66
+    ],
+    [
+      "Modelo recomendado: modelo eficiente para clasificar y leer.",
+      16
+    ],
+    [
+      "Modelo recomendado: modelo rapido de Copilot Chat.",
+      16
+    ],
+    [
+      "Modelo recomendado: modelo rapido para leer y ubicar.",
+      16
+    ],
+    [
+      "Mostrar outputs y explicar que se revisan como artefactos de plataforma.",
+      10
+    ],
+    [
+      "El grupo clasifica cinco piezas de contexto en memoria, rule, skill o subagente.",
+      10
+    ],
+    [
+      "Simular respuesta con tabla keep, move-to-skill y delete.",
+      10
+    ],
+    [
+      "Mostrar estructura de skill y pedir al grupo revisar stop conditions.",
+      10
+    ],
+    [
+      "Simular respuesta del subagente con archivos y riesgos.",
+      10
+    ],
+    [
+      "Clasificar conectores por valor, riesgo y permiso.",
+      10
+    ],
+    [
+      "Mostrar un intento bloqueado y una salida segura.",
+      10
+    ],
+    [
+      "Simular JSON de evaluacion con un finding menor.",
+      10
+    ],
+    [
+      "Completar tabla de modelo por rol.",
+      10
+    ],
+    [
+      "Crear una tabla de anillos, gates y responsable.",
+      10
+    ],
+    [
+      "Mostrar archivos y criterios de aceptacion.",
+      10
+    ],
+    [
+      "Recoger outputs y decidir piloto.",
+      10
+    ],
+    [
+      "Mostrar las superficies y el output final: PR revisable.",
+      10
+    ],
+    [
+      "El grupo vota Ask, Edit o Agent y justifica la decision.",
+      10
+    ],
+    [
+      "Mostrar casos concretos para cada modo.",
+      10
+    ],
+    [
+      "Simular diagnostico con ruta, supuesto roto y prueba minima.",
+      10
+    ]
+  ],
+  "platformScore": {
+    "subtitles": 95,
+    "audio": 169,
+    "visual": 290,
+    "pedagogy": 414,
+    "ops": 265,
+    "total": 1233
+  },
+  "averageCourseScore": 84.8,
+  "courses": [
+    {
+      "id": "cl-workshop-60m-memory-to-automation",
+      "vendor": "claude",
+      "durationMin": 60,
+      "scenes": 120,
+      "subs": 480,
+      "voiceoverLines": 480,
+      "missingSubs": 0,
+      "missingVoice": 0,
+      "strictLong": 30,
+      "fast": 0,
+      "slow": 0,
+      "ttsTooLong": 14,
+      "ttsTooShort": 30,
+      "imageRefs": 0,
+      "screenVisuals": 120,
+      "quiz": 13,
+      "pause": 6,
+      "typeCounts": {
+        "prompt": 11,
+        "streaming": 12,
+        "decision": 14,
+        "branch": 11,
+        "cost": 12,
+        "risk": 12,
+        "diff": 8,
+        "terminal": 10,
+        "pause": 6,
+        "quiz": 13,
+        "pr-review": 11
+      },
+      "distinctTypes": 11,
+      "repetitionHits": 0,
+      "usefulnessSignals": 1708,
+      "score": 60,
+      "risks": [
+        "30 subtitulos >95c",
+        "14 ventanas TTS ajustadas",
+        "sin imagen/asset declarado"
+      ]
+    },
+    {
+      "id": "cp-workshop-60m-vscode-to-pr-review",
+      "vendor": "copilot",
+      "durationMin": 60,
+      "scenes": 120,
+      "subs": 480,
+      "voiceoverLines": 480,
+      "missingSubs": 0,
+      "missingVoice": 0,
+      "strictLong": 48,
+      "fast": 0,
+      "slow": 20,
+      "ttsTooLong": 16,
+      "ttsTooShort": 20,
+      "imageRefs": 0,
+      "screenVisuals": 120,
+      "quiz": 13,
+      "pause": 6,
+      "typeCounts": {
+        "prompt": 11,
+        "streaming": 12,
+        "decision": 13,
+        "branch": 11,
+        "cost": 12,
+        "risk": 12,
+        "diff": 9,
+        "terminal": 11,
+        "pause": 6,
+        "quiz": 13,
+        "pr-review": 10
+      },
+      "distinctTypes": 11,
+      "repetitionHits": 0,
+      "usefulnessSignals": 1484,
+      "score": 60,
+      "risks": [
+        "48 subtitulos >95c",
+        "16 ventanas TTS ajustadas",
+        "sin imagen/asset declarado"
+      ]
+    },
+    {
+      "id": "cx-workshop-60m-first-task-to-pr",
+      "vendor": "codex",
+      "durationMin": 60,
+      "scenes": 120,
+      "subs": 480,
+      "voiceoverLines": 480,
+      "missingSubs": 0,
+      "missingVoice": 0,
+      "strictLong": 70,
+      "fast": 0,
+      "slow": 0,
+      "ttsTooLong": 37,
+      "ttsTooShort": 0,
+      "imageRefs": 0,
+      "screenVisuals": 120,
+      "quiz": 13,
+      "pause": 7,
+      "typeCounts": {
+        "prompt": 11,
+        "streaming": 12,
+        "decision": 13,
+        "branch": 10,
+        "cost": 12,
+        "risk": 12,
+        "diff": 9,
+        "terminal": 12,
+        "pause": 7,
+        "quiz": 13,
+        "pr-review": 9
+      },
+      "distinctTypes": 11,
+      "repetitionHits": 0,
+      "usefulnessSignals": 1459,
+      "score": 60,
+      "risks": [
+        "70 subtitulos >95c",
+        "37 ventanas TTS ajustadas",
+        "sin imagen/asset declarado"
+      ]
+    },
+    {
+      "id": "hub-workshop-60m-vendor-selection",
+      "vendor": "hub",
+      "durationMin": 60,
+      "scenes": 120,
+      "subs": 480,
+      "voiceoverLines": 480,
+      "missingSubs": 0,
+      "missingVoice": 0,
+      "strictLong": 47,
+      "fast": 0,
+      "slow": 30,
+      "ttsTooLong": 16,
+      "ttsTooShort": 60,
+      "imageRefs": 0,
+      "screenVisuals": 120,
+      "quiz": 13,
+      "pause": 7,
+      "typeCounts": {
+        "prompt": 11,
+        "streaming": 12,
+        "decision": 14,
+        "branch": 11,
+        "cost": 12,
+        "risk": 12,
+        "diff": 8,
+        "terminal": 10,
+        "pause": 7,
+        "quiz": 13,
+        "pr-review": 10
+      },
+      "distinctTypes": 11,
+      "repetitionHits": 0,
+      "usefulnessSignals": 1546,
+      "score": 60,
+      "risks": [
+        "47 subtitulos >95c",
+        "16 ventanas TTS ajustadas",
+        "sin imagen/asset declarado"
+      ]
+    },
+    {
+      "id": "hub-operating-model-60m",
+      "vendor": "hub",
+      "durationMin": 60,
+      "scenes": 120,
+      "subs": 480,
+      "voiceoverLines": 480,
+      "missingSubs": 0,
+      "missingVoice": 0,
+      "strictLong": 12,
+      "fast": 0,
+      "slow": 12,
+      "ttsTooLong": 6,
+      "ttsTooShort": 54,
+      "imageRefs": 0,
+      "screenVisuals": 120,
+      "quiz": 13,
+      "pause": 10,
+      "typeCounts": {
+        "prompt": 11,
+        "streaming": 12,
+        "decision": 14,
+        "branch": 10,
+        "cost": 12,
+        "risk": 12,
+        "diff": 8,
+        "terminal": 10,
+        "pause": 10,
+        "quiz": 13,
+        "pr-review": 8
+      },
+      "distinctTypes": 11,
+      "repetitionHits": 0,
+      "usefulnessSignals": 1296,
+      "score": 65.2,
+      "risks": [
+        "12 subtitulos >95c",
+        "6 ventanas TTS ajustadas",
+        "sin imagen/asset declarado"
+      ]
+    },
+    {
+      "id": "cp-workshop-30m-error-to-pr",
+      "vendor": "copilot",
+      "durationMin": 30,
+      "scenes": 60,
+      "subs": 240,
+      "voiceoverLines": 240,
+      "missingSubs": 0,
+      "missingVoice": 0,
+      "strictLong": 0,
+      "fast": 0,
+      "slow": 18,
+      "ttsTooLong": 0,
+      "ttsTooShort": 24,
+      "imageRefs": 0,
+      "screenVisuals": 60,
+      "quiz": 2,
+      "pause": 1,
+      "typeCounts": {
+        "prompt": 10,
+        "streaming": 9,
+        "decision": 11,
+        "branch": 3,
+        "cost": 6,
+        "terminal": 7,
+        "risk": 3,
+        "diff": 6,
+        "quiz": 2,
+        "pr-review": 2,
+        "pause": 1
+      },
+      "distinctTypes": 11,
+      "repetitionHits": 0,
+      "usefulnessSignals": 722,
+      "score": 76,
+      "risks": [
+        "sin imagen/asset declarado"
+      ]
+    },
+    {
+      "id": "cl-basic-01-claude-md",
+      "vendor": "claude",
+      "durationMin": 1.5,
+      "scenes": 3,
+      "subs": 9,
+      "voiceoverLines": 9,
+      "missingSubs": 0,
+      "missingVoice": 0,
+      "strictLong": 0,
+      "fast": 0,
+      "slow": 0,
+      "ttsTooLong": 0,
+      "ttsTooShort": 0,
+      "imageRefs": 0,
+      "screenVisuals": 0,
+      "quiz": 0,
+      "pause": 0,
+      "typeCounts": {
+        "title": 1,
+        "concept": 1,
+        "finale": 1
+      },
+      "distinctTypes": 3,
+      "repetitionHits": 4,
+      "usefulnessSignals": 8,
+      "score": 82.2,
+      "risks": [
+        "4 frases repetidas",
+        "sin imagen/asset declarado"
+      ]
+    },
+    {
+      "id": "cl-basic-02-compact-context",
+      "vendor": "claude",
+      "durationMin": 1.5,
+      "scenes": 3,
+      "subs": 9,
+      "voiceoverLines": 9,
+      "missingSubs": 0,
+      "missingVoice": 0,
+      "strictLong": 0,
+      "fast": 0,
+      "slow": 0,
+      "ttsTooLong": 0,
+      "ttsTooShort": 0,
+      "imageRefs": 0,
+      "screenVisuals": 0,
+      "quiz": 0,
+      "pause": 0,
+      "typeCounts": {
+        "title": 1,
+        "concept": 1,
+        "finale": 1
+      },
+      "distinctTypes": 3,
+      "repetitionHits": 4,
+      "usefulnessSignals": 8,
+      "score": 82.2,
+      "risks": [
+        "4 frases repetidas",
+        "sin imagen/asset declarado"
+      ]
+    },
+    {
+      "id": "cp-basic-02-ask-edit-agent",
+      "vendor": "copilot",
+      "durationMin": 1.5,
+      "scenes": 3,
+      "subs": 9,
+      "voiceoverLines": 9,
+      "missingSubs": 0,
+      "missingVoice": 0,
+      "strictLong": 0,
+      "fast": 0,
+      "slow": 0,
+      "ttsTooLong": 0,
+      "ttsTooShort": 0,
+      "imageRefs": 0,
+      "screenVisuals": 0,
+      "quiz": 0,
+      "pause": 0,
+      "typeCounts": {
+        "title": 1,
+        "compare": 1,
+        "finale": 1
+      },
+      "distinctTypes": 3,
+      "repetitionHits": 4,
+      "usefulnessSignals": 9,
+      "score": 82.2,
+      "risks": [
+        "4 frases repetidas",
+        "sin imagen/asset declarado"
+      ]
+    },
+    {
+      "id": "cx-workshop-30m-first-real-task",
+      "vendor": "codex",
+      "durationMin": 30,
+      "scenes": 60,
+      "subs": 240,
+      "voiceoverLines": 240,
+      "missingSubs": 0,
+      "missingVoice": 0,
+      "strictLong": 0,
+      "fast": 0,
+      "slow": 8,
+      "ttsTooLong": 1,
+      "ttsTooShort": 12,
+      "imageRefs": 0,
+      "screenVisuals": 60,
+      "quiz": 2,
+      "pause": 1,
+      "typeCounts": {
+        "prompt": 10,
+        "streaming": 8,
+        "decision": 11,
+        "branch": 4,
+        "cost": 7,
+        "pr-review": 3,
+        "diff": 5,
+        "terminal": 6,
+        "risk": 3,
+        "quiz": 2,
+        "pause": 1
+      },
+      "distinctTypes": 11,
+      "repetitionHits": 0,
+      "usefulnessSignals": 727,
+      "score": 82.6,
+      "risks": [
+        "1 ventanas TTS ajustadas",
+        "sin imagen/asset declarado"
+      ]
+    },
+    {
+      "id": "cl-workshop-30m-memory-to-hook",
+      "vendor": "claude",
+      "durationMin": 30,
+      "scenes": 60,
+      "subs": 240,
+      "voiceoverLines": 240,
+      "missingSubs": 0,
+      "missingVoice": 0,
+      "strictLong": 0,
+      "fast": 0,
+      "slow": 8,
+      "ttsTooLong": 0,
+      "ttsTooShort": 36,
+      "imageRefs": 0,
+      "screenVisuals": 60,
+      "quiz": 2,
+      "pause": 1,
+      "typeCounts": {
+        "prompt": 10,
+        "streaming": 9,
+        "decision": 11,
+        "branch": 3,
+        "cost": 6,
+        "diff": 6,
+        "terminal": 7,
+        "risk": 3,
+        "quiz": 2,
+        "pr-review": 2,
+        "pause": 1
+      },
+      "distinctTypes": 11,
+      "repetitionHits": 0,
+      "usefulnessSignals": 857,
+      "score": 84.4,
+      "risks": [
+        "sin imagen/asset declarado"
+      ]
+    },
+    {
+      "id": "cl-advanced-01-hooks",
+      "vendor": "claude",
+      "durationMin": 1.5,
+      "scenes": 3,
+      "subs": 9,
+      "voiceoverLines": 9,
+      "missingSubs": 0,
+      "missingVoice": 0,
+      "strictLong": 0,
+      "fast": 0,
+      "slow": 0,
+      "ttsTooLong": 0,
+      "ttsTooShort": 0,
+      "imageRefs": 0,
+      "screenVisuals": 0,
+      "quiz": 0,
+      "pause": 0,
+      "typeCounts": {
+        "title": 1,
+        "compare": 1,
+        "finale": 1
+      },
+      "distinctTypes": 3,
+      "repetitionHits": 4,
+      "usefulnessSignals": 12,
+      "score": 87.2,
+      "risks": [
+        "4 frases repetidas",
+        "sin imagen/asset declarado"
+      ]
+    },
+    {
+      "id": "cl-advanced-02-plugin-action",
+      "vendor": "claude",
+      "durationMin": 1.5,
+      "scenes": 3,
+      "subs": 9,
+      "voiceoverLines": 9,
+      "missingSubs": 0,
+      "missingVoice": 0,
+      "strictLong": 0,
+      "fast": 0,
+      "slow": 0,
+      "ttsTooLong": 0,
+      "ttsTooShort": 0,
+      "imageRefs": 0,
+      "screenVisuals": 0,
+      "quiz": 0,
+      "pause": 0,
+      "typeCounts": {
+        "title": 1,
+        "concept": 1,
+        "finale": 1
+      },
+      "distinctTypes": 3,
+      "repetitionHits": 4,
+      "usefulnessSignals": 19,
+      "score": 87.2,
+      "risks": [
+        "4 frases repetidas",
+        "sin imagen/asset declarado"
+      ]
+    },
+    {
+      "id": "cl-operator-01-first-skill",
+      "vendor": "claude",
+      "durationMin": 1.5,
+      "scenes": 3,
+      "subs": 9,
+      "voiceoverLines": 9,
+      "missingSubs": 0,
+      "missingVoice": 0,
+      "strictLong": 0,
+      "fast": 0,
+      "slow": 0,
+      "ttsTooLong": 0,
+      "ttsTooShort": 0,
+      "imageRefs": 0,
+      "screenVisuals": 0,
+      "quiz": 0,
+      "pause": 0,
+      "typeCounts": {
+        "title": 1,
+        "concept": 1,
+        "finale": 1
+      },
+      "distinctTypes": 3,
+      "repetitionHits": 4,
+      "usefulnessSignals": 13,
+      "score": 87.2,
+      "risks": [
+        "4 frases repetidas",
+        "sin imagen/asset declarado"
+      ]
+    },
+    {
+      "id": "cl-operator-02-subagent-explorer",
+      "vendor": "claude",
+      "durationMin": 1.5,
+      "scenes": 3,
+      "subs": 9,
+      "voiceoverLines": 9,
+      "missingSubs": 0,
+      "missingVoice": 0,
+      "strictLong": 0,
+      "fast": 0,
+      "slow": 0,
+      "ttsTooLong": 0,
+      "ttsTooShort": 1,
+      "imageRefs": 0,
+      "screenVisuals": 0,
+      "quiz": 0,
+      "pause": 0,
+      "typeCounts": {
+        "title": 1,
+        "compare": 1,
+        "finale": 1
+      },
+      "distinctTypes": 3,
+      "repetitionHits": 4,
+      "usefulnessSignals": 11,
+      "score": 87.2,
+      "risks": [
+        "4 frases repetidas",
+        "sin imagen/asset declarado"
+      ]
+    },
+    {
+      "id": "cl-operator-03-mcp-project",
+      "vendor": "claude",
+      "durationMin": 1.5,
+      "scenes": 3,
+      "subs": 9,
+      "voiceoverLines": 9,
+      "missingSubs": 0,
+      "missingVoice": 0,
+      "strictLong": 0,
+      "fast": 0,
+      "slow": 0,
+      "ttsTooLong": 0,
+      "ttsTooShort": 0,
+      "imageRefs": 0,
+      "screenVisuals": 0,
+      "quiz": 0,
+      "pause": 0,
+      "typeCounts": {
+        "title": 1,
+        "concept": 1,
+        "finale": 1
+      },
+      "distinctTypes": 3,
+      "repetitionHits": 4,
+      "usefulnessSignals": 14,
+      "score": 87.2,
+      "risks": [
+        "4 frases repetidas",
+        "sin imagen/asset declarado"
+      ]
+    },
+    {
+      "id": "cl-orientation-01-claude-md",
+      "vendor": "claude",
+      "durationMin": 1.5,
+      "scenes": 3,
+      "subs": 9,
+      "voiceoverLines": 9,
+      "missingSubs": 0,
+      "missingVoice": 0,
+      "strictLong": 0,
+      "fast": 0,
+      "slow": 0,
+      "ttsTooLong": 0,
+      "ttsTooShort": 0,
+      "imageRefs": 0,
+      "screenVisuals": 0,
+      "quiz": 0,
+      "pause": 0,
+      "typeCounts": {
+        "title": 1,
+        "concept": 1,
+        "finale": 1
+      },
+      "distinctTypes": 3,
+      "repetitionHits": 4,
+      "usefulnessSignals": 13,
+      "score": 87.2,
+      "risks": [
+        "4 frases repetidas",
+        "sin imagen/asset declarado"
+      ]
+    },
+    {
+      "id": "cl-orientation-02-memory-vs-instructions",
+      "vendor": "claude",
+      "durationMin": 1.5,
+      "scenes": 3,
+      "subs": 9,
+      "voiceoverLines": 9,
+      "missingSubs": 0,
+      "missingVoice": 0,
+      "strictLong": 0,
+      "fast": 0,
+      "slow": 0,
+      "ttsTooLong": 0,
+      "ttsTooShort": 1,
+      "imageRefs": 0,
+      "screenVisuals": 0,
+      "quiz": 0,
+      "pause": 0,
+      "typeCounts": {
+        "title": 1,
+        "compare": 1,
+        "finale": 1
+      },
+      "distinctTypes": 3,
+      "repetitionHits": 4,
+      "usefulnessSignals": 15,
+      "score": 87.2,
+      "risks": [
+        "4 frases repetidas",
+        "sin imagen/asset declarado"
+      ]
+    },
+    {
+      "id": "cl-orientation-03-cost-context",
+      "vendor": "claude",
+      "durationMin": 1.5,
+      "scenes": 3,
+      "subs": 9,
+      "voiceoverLines": 9,
+      "missingSubs": 0,
+      "missingVoice": 0,
+      "strictLong": 0,
+      "fast": 0,
+      "slow": 0,
+      "ttsTooLong": 0,
+      "ttsTooShort": 0,
+      "imageRefs": 0,
+      "screenVisuals": 0,
+      "quiz": 0,
+      "pause": 0,
+      "typeCounts": {
+        "title": 1,
+        "concept": 1,
+        "finale": 1
+      },
+      "distinctTypes": 3,
+      "repetitionHits": 4,
+      "usefulnessSignals": 10,
+      "score": 87.2,
+      "risks": [
+        "4 frases repetidas",
+        "sin imagen/asset declarado"
+      ]
+    },
+    {
+      "id": "cl-sdk-01-agent-sdk",
+      "vendor": "claude",
+      "durationMin": 1.5,
+      "scenes": 3,
+      "subs": 9,
+      "voiceoverLines": 9,
+      "missingSubs": 0,
+      "missingVoice": 0,
+      "strictLong": 0,
+      "fast": 0,
+      "slow": 0,
+      "ttsTooLong": 0,
+      "ttsTooShort": 0,
+      "imageRefs": 0,
+      "screenVisuals": 0,
+      "quiz": 0,
+      "pause": 0,
+      "typeCounts": {
+        "title": 1,
+        "concept": 1,
+        "finale": 1
+      },
+      "distinctTypes": 3,
+      "repetitionHits": 4,
+      "usefulnessSignals": 10,
+      "score": 87.2,
+      "risks": [
+        "4 frases repetidas",
+        "sin imagen/asset declarado"
+      ]
+    },
+    {
+      "id": "cl-sdk-02-evals-governance",
+      "vendor": "claude",
+      "durationMin": 1.5,
+      "scenes": 3,
+      "subs": 9,
+      "voiceoverLines": 9,
+      "missingSubs": 0,
+      "missingVoice": 0,
+      "strictLong": 0,
+      "fast": 0,
+      "slow": 0,
+      "ttsTooLong": 0,
+      "ttsTooShort": 0,
+      "imageRefs": 0,
+      "screenVisuals": 0,
+      "quiz": 0,
+      "pause": 0,
+      "typeCounts": {
+        "title": 1,
+        "compare": 1,
+        "finale": 1
+      },
+      "distinctTypes": 3,
+      "repetitionHits": 4,
+      "usefulnessSignals": 13,
+      "score": 87.2,
+      "risks": [
+        "4 frases repetidas",
+        "sin imagen/asset declarado"
+      ]
+    },
+    {
+      "id": "cp-advanced-01-custom-agent",
+      "vendor": "copilot",
+      "durationMin": 1.5,
+      "scenes": 3,
+      "subs": 9,
+      "voiceoverLines": 9,
+      "missingSubs": 0,
+      "missingVoice": 0,
+      "strictLong": 0,
+      "fast": 0,
+      "slow": 0,
+      "ttsTooLong": 0,
+      "ttsTooShort": 1,
+      "imageRefs": 0,
+      "screenVisuals": 0,
+      "quiz": 0,
+      "pause": 0,
+      "typeCounts": {
+        "title": 1,
+        "coding": 1,
+        "finale": 1
+      },
+      "distinctTypes": 3,
+      "repetitionHits": 4,
+      "usefulnessSignals": 15,
+      "score": 87.2,
+      "risks": [
+        "4 frases repetidas",
+        "sin imagen/asset declarado"
+      ]
+    },
+    {
+      "id": "cp-advanced-02-mcp-code-review",
+      "vendor": "copilot",
+      "durationMin": 1.5,
+      "scenes": 3,
+      "subs": 9,
+      "voiceoverLines": 9,
+      "missingSubs": 0,
+      "missingVoice": 0,
+      "strictLong": 0,
+      "fast": 0,
+      "slow": 0,
+      "ttsTooLong": 0,
+      "ttsTooShort": 0,
+      "imageRefs": 0,
+      "screenVisuals": 0,
+      "quiz": 0,
+      "pause": 0,
+      "typeCounts": {
+        "title": 1,
+        "compare": 1,
+        "finale": 1
+      },
+      "distinctTypes": 3,
+      "repetitionHits": 4,
+      "usefulnessSignals": 16,
+      "score": 87.2,
+      "risks": [
+        "4 frases repetidas",
+        "sin imagen/asset declarado"
+      ]
+    },
+    {
+      "id": "cp-basic-01-inline-completion",
+      "vendor": "copilot",
+      "durationMin": 1.5,
+      "scenes": 3,
+      "subs": 9,
+      "voiceoverLines": 9,
+      "missingSubs": 0,
+      "missingVoice": 0,
+      "strictLong": 0,
+      "fast": 0,
+      "slow": 0,
+      "ttsTooLong": 0,
+      "ttsTooShort": 0,
+      "imageRefs": 0,
+      "screenVisuals": 0,
+      "quiz": 0,
+      "pause": 0,
+      "typeCounts": {
+        "title": 1,
+        "coding": 1,
+        "finale": 1
+      },
+      "distinctTypes": 3,
+      "repetitionHits": 4,
+      "usefulnessSignals": 11,
+      "score": 87.2,
+      "risks": [
+        "4 frases repetidas",
+        "sin imagen/asset declarado"
+      ]
+    },
+    {
+      "id": "cp-basic-03-error-to-fix",
+      "vendor": "copilot",
+      "durationMin": 1.5,
+      "scenes": 3,
+      "subs": 9,
+      "voiceoverLines": 9,
+      "missingSubs": 0,
+      "missingVoice": 0,
+      "strictLong": 0,
+      "fast": 0,
+      "slow": 0,
+      "ttsTooLong": 0,
+      "ttsTooShort": 0,
+      "imageRefs": 0,
+      "screenVisuals": 0,
+      "quiz": 0,
+      "pause": 0,
+      "typeCounts": {
+        "title": 1,
+        "error": 1,
+        "finale": 1
+      },
+      "distinctTypes": 3,
+      "repetitionHits": 4,
+      "usefulnessSignals": 12,
+      "score": 87.2,
+      "risks": [
+        "4 frases repetidas",
+        "sin imagen/asset declarado"
+      ]
+    },
+    {
+      "id": "cp-cloud-01-cloud-agent-pr",
+      "vendor": "copilot",
+      "durationMin": 1.5,
+      "scenes": 3,
+      "subs": 9,
+      "voiceoverLines": 9,
+      "missingSubs": 0,
+      "missingVoice": 0,
+      "strictLong": 0,
+      "fast": 0,
+      "slow": 0,
+      "ttsTooLong": 0,
+      "ttsTooShort": 0,
+      "imageRefs": 0,
+      "screenVisuals": 0,
+      "quiz": 0,
+      "pause": 0,
+      "typeCounts": {
+        "title": 1,
+        "linear": 1,
+        "finale": 1
+      },
+      "distinctTypes": 3,
+      "repetitionHits": 4,
+      "usefulnessSignals": 13,
+      "score": 87.2,
+      "risks": [
+        "4 frases repetidas",
+        "sin imagen/asset declarado"
+      ]
+    },
+    {
+      "id": "cp-cloud-02-premium-requests",
+      "vendor": "copilot",
+      "durationMin": 1.5,
+      "scenes": 3,
+      "subs": 9,
+      "voiceoverLines": 9,
+      "missingSubs": 0,
+      "missingVoice": 0,
+      "strictLong": 0,
+      "fast": 0,
+      "slow": 0,
+      "ttsTooLong": 0,
+      "ttsTooShort": 0,
+      "imageRefs": 0,
+      "screenVisuals": 0,
+      "quiz": 0,
+      "pause": 0,
+      "typeCounts": {
+        "title": 1,
+        "concept": 1,
+        "finale": 1
+      },
+      "distinctTypes": 3,
+      "repetitionHits": 4,
+      "usefulnessSignals": 17,
+      "score": 87.2,
+      "risks": [
+        "4 frases repetidas",
+        "sin imagen/asset declarado"
+      ]
+    },
+    {
+      "id": "cp-git-01-fork-vs-branch",
+      "vendor": "copilot",
+      "durationMin": 1.5,
+      "scenes": 3,
+      "subs": 9,
+      "voiceoverLines": 9,
+      "missingSubs": 0,
+      "missingVoice": 0,
+      "strictLong": 0,
+      "fast": 0,
+      "slow": 0,
+      "ttsTooLong": 0,
+      "ttsTooShort": 0,
+      "imageRefs": 0,
+      "screenVisuals": 0,
+      "quiz": 0,
+      "pause": 0,
+      "typeCounts": {
+        "title": 1,
+        "compare": 1,
+        "finale": 1
+      },
+      "distinctTypes": 3,
+      "repetitionHits": 4,
+      "usefulnessSignals": 16,
+      "score": 87.2,
+      "risks": [
+        "4 frases repetidas",
+        "sin imagen/asset declarado"
+      ]
+    },
+    {
+      "id": "cp-git-02-pr-as-contract",
+      "vendor": "copilot",
+      "durationMin": 1.5,
+      "scenes": 3,
+      "subs": 10,
+      "voiceoverLines": 10,
+      "missingSubs": 0,
+      "missingVoice": 0,
+      "strictLong": 0,
+      "fast": 0,
+      "slow": 0,
+      "ttsTooLong": 0,
+      "ttsTooShort": 0,
+      "imageRefs": 0,
+      "screenVisuals": 0,
+      "quiz": 0,
+      "pause": 0,
+      "typeCounts": {
+        "title": 1,
+        "linear": 1,
+        "finale": 1
+      },
+      "distinctTypes": 3,
+      "repetitionHits": 4,
+      "usefulnessSignals": 16,
+      "score": 87.2,
+      "risks": [
+        "4 frases repetidas",
+        "sin imagen/asset declarado"
+      ]
+    },
+    {
+      "id": "cp-medium-01-instructions",
+      "vendor": "copilot",
+      "durationMin": 1.5,
+      "scenes": 3,
+      "subs": 9,
+      "voiceoverLines": 9,
+      "missingSubs": 0,
+      "missingVoice": 0,
+      "strictLong": 0,
+      "fast": 0,
+      "slow": 0,
+      "ttsTooLong": 0,
+      "ttsTooShort": 0,
+      "imageRefs": 0,
+      "screenVisuals": 0,
+      "quiz": 0,
+      "pause": 0,
+      "typeCounts": {
+        "title": 1,
+        "coding": 1,
+        "finale": 1
+      },
+      "distinctTypes": 3,
+      "repetitionHits": 4,
+      "usefulnessSignals": 18,
+      "score": 87.2,
+      "risks": [
+        "4 frases repetidas",
+        "sin imagen/asset declarado"
+      ]
+    },
+    {
+      "id": "cp-medium-02-prompt-files",
+      "vendor": "copilot",
+      "durationMin": 1.5,
+      "scenes": 3,
+      "subs": 9,
+      "voiceoverLines": 9,
+      "missingSubs": 0,
+      "missingVoice": 0,
+      "strictLong": 0,
+      "fast": 0,
+      "slow": 0,
+      "ttsTooLong": 0,
+      "ttsTooShort": 0,
+      "imageRefs": 0,
+      "screenVisuals": 0,
+      "quiz": 0,
+      "pause": 0,
+      "typeCounts": {
+        "title": 1,
+        "coding": 1,
+        "finale": 1
+      },
+      "distinctTypes": 3,
+      "repetitionHits": 4,
+      "usefulnessSignals": 17,
+      "score": 87.2,
+      "risks": [
+        "4 frases repetidas",
+        "sin imagen/asset declarado"
+      ]
+    },
+    {
+      "id": "cx-basic-01-agents-md",
+      "vendor": "codex",
+      "durationMin": 1.5,
+      "scenes": 4,
+      "subs": 12,
+      "voiceoverLines": 12,
+      "missingSubs": 0,
+      "missingVoice": 0,
+      "strictLong": 0,
+      "fast": 0,
+      "slow": 0,
+      "ttsTooLong": 0,
+      "ttsTooShort": 0,
+      "imageRefs": 0,
+      "screenVisuals": 0,
+      "quiz": 0,
+      "pause": 0,
+      "typeCounts": {
+        "title": 1,
+        "concept": 1,
+        "coding": 1,
+        "finale": 1
+      },
+      "distinctTypes": 4,
+      "repetitionHits": 4,
+      "usefulnessSignals": 20,
+      "score": 91.2,
+      "risks": [
+        "4 frases repetidas",
+        "sin imagen/asset declarado"
+      ]
+    },
+    {
+      "id": "cx-basic-02-plan-before-patch",
+      "vendor": "codex",
+      "durationMin": 1.5,
+      "scenes": 4,
+      "subs": 14,
+      "voiceoverLines": 14,
+      "missingSubs": 0,
+      "missingVoice": 0,
+      "strictLong": 0,
+      "fast": 0,
+      "slow": 0,
+      "ttsTooLong": 0,
+      "ttsTooShort": 0,
+      "imageRefs": 0,
+      "screenVisuals": 0,
+      "quiz": 0,
+      "pause": 0,
+      "typeCounts": {
+        "title": 1,
+        "thinking": 1,
+        "coding": 1,
+        "finale": 1
+      },
+      "distinctTypes": 4,
+      "repetitionHits": 4,
+      "usefulnessSignals": 20,
+      "score": 91.2,
+      "risks": [
+        "4 frases repetidas",
+        "sin imagen/asset declarado"
+      ]
+    },
+    {
+      "id": "cx-medium-01-model-picker",
+      "vendor": "codex",
+      "durationMin": 1.5,
+      "scenes": 4,
+      "subs": 14,
+      "voiceoverLines": 14,
+      "missingSubs": 0,
+      "missingVoice": 0,
+      "strictLong": 0,
+      "fast": 0,
+      "slow": 0,
+      "ttsTooLong": 0,
+      "ttsTooShort": 0,
+      "imageRefs": 0,
+      "screenVisuals": 0,
+      "quiz": 0,
+      "pause": 0,
+      "typeCounts": {
+        "title": 1,
+        "compare": 1,
+        "concept": 1,
+        "finale": 1
+      },
+      "distinctTypes": 4,
+      "repetitionHits": 4,
+      "usefulnessSignals": 20,
+      "score": 91.2,
+      "risks": [
+        "4 frases repetidas",
+        "sin imagen/asset declarado"
+      ]
+    },
+    {
+      "id": "cx-medium-02-mcp-readonly",
+      "vendor": "codex",
+      "durationMin": 1.5,
+      "scenes": 4,
+      "subs": 14,
+      "voiceoverLines": 14,
+      "missingSubs": 0,
+      "missingVoice": 0,
+      "strictLong": 0,
+      "fast": 0,
+      "slow": 0,
+      "ttsTooLong": 0,
+      "ttsTooShort": 0,
+      "imageRefs": 0,
+      "screenVisuals": 0,
+      "quiz": 0,
+      "pause": 0,
+      "typeCounts": {
+        "title": 1,
+        "concept": 1,
+        "linear": 1,
+        "finale": 1
+      },
+      "distinctTypes": 4,
+      "repetitionHits": 4,
+      "usefulnessSignals": 21,
+      "score": 91.2,
+      "risks": [
+        "4 frases repetidas",
+        "sin imagen/asset declarado"
+      ]
+    },
+    {
+      "id": "cx-medium-03-skill-qa-visual",
+      "vendor": "codex",
+      "durationMin": 1.5,
+      "scenes": 4,
+      "subs": 12,
+      "voiceoverLines": 12,
+      "missingSubs": 0,
+      "missingVoice": 0,
+      "strictLong": 0,
+      "fast": 0,
+      "slow": 0,
+      "ttsTooLong": 0,
+      "ttsTooShort": 0,
+      "imageRefs": 0,
+      "screenVisuals": 0,
+      "quiz": 0,
+      "pause": 0,
+      "typeCounts": {
+        "title": 1,
+        "coding": 1,
+        "thinking": 1,
+        "finale": 1
+      },
+      "distinctTypes": 4,
+      "repetitionHits": 4,
+      "usefulnessSignals": 19,
+      "score": 91.2,
+      "risks": [
+        "4 frases repetidas",
+        "sin imagen/asset declarado"
+      ]
+    },
+    {
+      "id": "cx-orientation-01-surface-map",
+      "vendor": "codex",
+      "durationMin": 1.5,
+      "scenes": 4,
+      "subs": 14,
+      "voiceoverLines": 14,
+      "missingSubs": 0,
+      "missingVoice": 0,
+      "strictLong": 0,
+      "fast": 0,
+      "slow": 0,
+      "ttsTooLong": 0,
+      "ttsTooShort": 1,
+      "imageRefs": 0,
+      "screenVisuals": 0,
+      "quiz": 0,
+      "pause": 0,
+      "typeCounts": {
+        "title": 1,
+        "concept": 1,
+        "compare": 1,
+        "finale": 1
+      },
+      "distinctTypes": 4,
+      "repetitionHits": 4,
+      "usefulnessSignals": 21,
+      "score": 91.2,
+      "risks": [
+        "4 frases repetidas",
+        "sin imagen/asset declarado"
+      ]
+    },
+    {
+      "id": "cx-orientation-02-first-task",
+      "vendor": "codex",
+      "durationMin": 1.5,
+      "scenes": 4,
+      "subs": 14,
+      "voiceoverLines": 14,
+      "missingSubs": 0,
+      "missingVoice": 0,
+      "strictLong": 0,
+      "fast": 0,
+      "slow": 0,
+      "ttsTooLong": 0,
+      "ttsTooShort": 0,
+      "imageRefs": 0,
+      "screenVisuals": 0,
+      "quiz": 0,
+      "pause": 0,
+      "typeCounts": {
+        "title": 1,
+        "linear": 1,
+        "coding": 1,
+        "finale": 1
+      },
+      "distinctTypes": 4,
+      "repetitionHits": 4,
+      "usefulnessSignals": 20,
+      "score": 91.2,
+      "risks": [
+        "4 frases repetidas",
+        "sin imagen/asset declarado"
+      ]
+    },
+    {
+      "id": "cx-orientation-03-permissions",
+      "vendor": "codex",
+      "durationMin": 1.5,
+      "scenes": 4,
+      "subs": 14,
+      "voiceoverLines": 14,
+      "missingSubs": 0,
+      "missingVoice": 0,
+      "strictLong": 0,
+      "fast": 0,
+      "slow": 0,
+      "ttsTooLong": 0,
+      "ttsTooShort": 0,
+      "imageRefs": 0,
+      "screenVisuals": 0,
+      "quiz": 0,
+      "pause": 0,
+      "typeCounts": {
+        "title": 1,
+        "compare": 1,
+        "concept": 1,
+        "finale": 1
+      },
+      "distinctTypes": 4,
+      "repetitionHits": 4,
+      "usefulnessSignals": 20,
+      "score": 91.2,
+      "risks": [
+        "4 frases repetidas",
+        "sin imagen/asset declarado"
+      ]
+    },
+    {
+      "id": "cx-ultra-01-github-action",
+      "vendor": "codex",
+      "durationMin": 1.5,
+      "scenes": 4,
+      "subs": 12,
+      "voiceoverLines": 12,
+      "missingSubs": 0,
+      "missingVoice": 0,
+      "strictLong": 0,
+      "fast": 0,
+      "slow": 0,
+      "ttsTooLong": 0,
+      "ttsTooShort": 1,
+      "imageRefs": 0,
+      "screenVisuals": 0,
+      "quiz": 0,
+      "pause": 0,
+      "typeCounts": {
+        "title": 1,
+        "coding": 1,
+        "concept": 1,
+        "finale": 1
+      },
+      "distinctTypes": 4,
+      "repetitionHits": 4,
+      "usefulnessSignals": 23,
+      "score": 91.2,
+      "risks": [
+        "4 frases repetidas",
+        "sin imagen/asset declarado"
+      ]
+    },
+    {
+      "id": "cx-ultra-02-pr-swarm",
+      "vendor": "codex",
+      "durationMin": 1.5,
+      "scenes": 4,
+      "subs": 14,
+      "voiceoverLines": 14,
+      "missingSubs": 0,
+      "missingVoice": 0,
+      "strictLong": 0,
+      "fast": 0,
+      "slow": 0,
+      "ttsTooLong": 0,
+      "ttsTooShort": 0,
+      "imageRefs": 0,
+      "screenVisuals": 0,
+      "quiz": 0,
+      "pause": 0,
+      "typeCounts": {
+        "title": 1,
+        "compare": 1,
+        "thinking": 1,
+        "finale": 1
+      },
+      "distinctTypes": 4,
+      "repetitionHits": 4,
+      "usefulnessSignals": 16,
+      "score": 91.2,
+      "risks": [
+        "4 frases repetidas",
+        "sin imagen/asset declarado"
+      ]
+    },
+    {
+      "id": "cx-masterclass-10m-codex-operating-system",
+      "vendor": "codex",
+      "durationMin": 10,
+      "scenes": 24,
+      "subs": 96,
+      "voiceoverLines": 96,
+      "missingSubs": 0,
+      "missingVoice": 0,
+      "strictLong": 0,
+      "fast": 0,
+      "slow": 0,
+      "ttsTooLong": 1,
+      "ttsTooShort": 20,
+      "imageRefs": 0,
+      "screenVisuals": 24,
+      "quiz": 2,
+      "pause": 1,
+      "typeCounts": {
+        "title": 1,
+        "concept": 2,
+        "compare": 1,
+        "linear": 1,
+        "prompt": 1,
+        "streaming": 1,
+        "coding": 2,
+        "diff": 1,
+        "terminal": 2,
+        "decision": 2,
+        "cost": 2,
+        "risk": 1,
+        "branch": 1,
+        "quiz": 2,
+        "thinking": 1,
+        "pr-review": 1,
+        "pause": 1,
+        "finale": 1
+      },
+      "distinctTypes": 18,
+      "repetitionHits": 0,
+      "usefulnessSignals": 259,
+      "score": 92.2,
+      "risks": [
+        "1 ventanas TTS ajustadas",
+        "sin imagen/asset declarado"
+      ]
+    },
+    {
+      "id": "cl-masterclass-10m-claude-operating-model",
+      "vendor": "claude",
+      "durationMin": 10,
+      "scenes": 24,
+      "subs": 96,
+      "voiceoverLines": 96,
+      "missingSubs": 0,
+      "missingVoice": 0,
+      "strictLong": 0,
+      "fast": 0,
+      "slow": 0,
+      "ttsTooLong": 0,
+      "ttsTooShort": 22,
+      "imageRefs": 0,
+      "screenVisuals": 24,
+      "quiz": 2,
+      "pause": 1,
+      "typeCounts": {
+        "title": 1,
+        "concept": 2,
+        "compare": 1,
+        "linear": 1,
+        "prompt": 1,
+        "streaming": 1,
+        "coding": 2,
+        "diff": 1,
+        "terminal": 2,
+        "decision": 2,
+        "cost": 2,
+        "risk": 1,
+        "branch": 1,
+        "quiz": 2,
+        "thinking": 1,
+        "pr-review": 1,
+        "pause": 1,
+        "finale": 1
+      },
+      "distinctTypes": 18,
+      "repetitionHits": 0,
+      "usefulnessSignals": 284,
+      "score": 94,
+      "risks": [
+        "sin imagen/asset declarado"
+      ]
+    },
+    {
+      "id": "cp-masterclass-10m-copilot-workbench",
+      "vendor": "copilot",
+      "durationMin": 10,
+      "scenes": 24,
+      "subs": 96,
+      "voiceoverLines": 96,
+      "missingSubs": 0,
+      "missingVoice": 0,
+      "strictLong": 0,
+      "fast": 0,
+      "slow": 0,
+      "ttsTooLong": 0,
+      "ttsTooShort": 21,
+      "imageRefs": 0,
+      "screenVisuals": 24,
+      "quiz": 2,
+      "pause": 1,
+      "typeCounts": {
+        "title": 1,
+        "concept": 2,
+        "compare": 1,
+        "linear": 1,
+        "prompt": 1,
+        "streaming": 1,
+        "coding": 2,
+        "diff": 1,
+        "terminal": 2,
+        "decision": 2,
+        "cost": 2,
+        "risk": 1,
+        "branch": 1,
+        "quiz": 2,
+        "thinking": 1,
+        "pr-review": 1,
+        "pause": 1,
+        "finale": 1
+      },
+      "distinctTypes": 18,
+      "repetitionHits": 0,
+      "usefulnessSignals": 281,
+      "score": 94,
+      "risks": [
+        "sin imagen/asset declarado"
+      ]
+    }
+  ],
+  "strictIssues": [
+    {
+      "id": "cl-workshop-30m-memory-to-hook",
+      "scene": 4,
+      "type": "branch",
+      "kind": "subtitulo lento <6 cps",
+      "cps": 5.4,
+      "text": "Evidencia: Claude se opera por capas."
+    },
+    {
+      "id": "cl-workshop-30m-memory-to-hook",
+      "scene": 19,
+      "type": "quiz",
+      "kind": "subtitulo lento <6 cps",
+      "cps": 5.9,
+      "text": "Evidencia: El punto no es recordar todo."
+    },
+    {
+      "id": "cl-workshop-30m-memory-to-hook",
+      "scene": 36,
+      "type": "prompt",
+      "kind": "subtitulo lento <6 cps",
+      "cps": 5.9,
+      "text": "Añadir hook PreToolUse al starter repo."
+    },
+    {
+      "id": "cl-workshop-30m-memory-to-hook",
+      "scene": 37,
+      "type": "streaming",
+      "kind": "subtitulo lento <6 cps",
+      "cps": 5.9,
+      "text": "Añadir hook PreToolUse al starter repo."
+    },
+    {
+      "id": "cl-workshop-30m-memory-to-hook",
+      "scene": 38,
+      "type": "diff",
+      "kind": "subtitulo lento <6 cps",
+      "cps": 5.9,
+      "text": "Añadir hook PreToolUse al starter repo."
+    },
+    {
+      "id": "cl-workshop-30m-memory-to-hook",
+      "scene": 39,
+      "type": "terminal",
+      "kind": "subtitulo lento <6 cps",
+      "cps": 5.9,
+      "text": "Añadir hook PreToolUse al starter repo."
+    },
+    {
+      "id": "cl-workshop-30m-memory-to-hook",
+      "scene": 40,
+      "type": "decision",
+      "kind": "subtitulo lento <6 cps",
+      "cps": 5.9,
+      "text": "Añadir hook PreToolUse al starter repo."
+    },
+    {
+      "id": "cl-workshop-30m-memory-to-hook",
+      "scene": 50,
+      "type": "decision",
+      "kind": "subtitulo lento <6 cps",
+      "cps": 5.9,
+      "text": "Coste y riesgo: No es un resumen bonito."
+    },
+    {
+      "id": "cl-workshop-60m-memory-to-automation",
+      "scene": 3,
+      "type": "decision",
+      "kind": "subtitulo >95 caracteres",
+      "chars": 96,
+      "text": "Decision humana: El objetivo no es tener mas archivos, es reducir repeticion y aumentar control."
+    },
+    {
+      "id": "cl-workshop-60m-memory-to-automation",
+      "scene": 9,
+      "type": "pause",
+      "kind": "subtitulo >95 caracteres",
+      "chars": 96,
+      "text": "Decision humana: El objetivo no es tener mas archivos, es reducir repeticion y aumentar control."
+    },
+    {
+      "id": "cl-workshop-60m-memory-to-automation",
+      "scene": 12,
+      "type": "risk",
+      "kind": "subtitulo >95 caracteres",
+      "chars": 104,
+      "text": "Contexto visible: Si una instruccion es estable, vive en memoria. Si es un procedimiento, probablemen..."
+    },
+    {
+      "id": "cl-workshop-60m-memory-to-automation",
+      "scene": 15,
+      "type": "prompt",
+      "kind": "subtitulo >95 caracteres",
+      "chars": 102,
+      "text": "Coste y riesgo: Si una instruccion es estable, vive en memoria. Si es un procedimiento, probablemen..."
+    },
+    {
+      "id": "cl-workshop-60m-memory-to-automation",
+      "scene": 15,
+      "type": "prompt",
+      "kind": "audio estimado mas largo que ventana",
+      "est": 7.8,
+      "sec": 6.8,
+      "text": "Coste y riesgo: Si una instruccion es estable, vive en memoria. Si es un procedimiento, probablemen..."
+    },
+    {
+      "id": "cl-workshop-60m-memory-to-automation",
+      "scene": 18,
+      "type": "pause",
+      "kind": "subtitulo >95 caracteres",
+      "chars": 104,
+      "text": "Contexto visible: Si una instruccion es estable, vive en memoria. Si es un procedimiento, probablemen..."
+    },
+    {
+      "id": "cl-workshop-60m-memory-to-automation",
+      "scene": 32,
+      "type": "streaming",
+      "kind": "subtitulo >95 caracteres",
+      "chars": 104,
+      "text": "Contexto visible: La skill fix-tests define cuando se usa, que lee, que puede editar y cuando se deti..."
+    },
+    {
+      "id": "cl-workshop-60m-memory-to-automation",
+      "scene": 32,
+      "type": "streaming",
+      "kind": "audio estimado mas largo que ventana",
+      "est": 8.8,
+      "sec": 6.8,
+      "text": "Contexto visible: La skill fix-tests define cuando se usa, que lee, que puede editar y cuando se deti..."
+    },
+    {
+      "id": "cl-workshop-60m-memory-to-automation",
+      "scene": 35,
+      "type": "decision",
+      "kind": "subtitulo >95 caracteres",
+      "chars": 102,
+      "text": "Coste y riesgo: La skill fix-tests define cuando se usa, que lee, que puede editar y cuando se deti..."
+    },
+    {
+      "id": "cl-workshop-60m-memory-to-automation",
+      "scene": 35,
+      "type": "decision",
+      "kind": "audio estimado mas largo que ventana",
+      "est": 9.2,
+      "sec": 6.8,
+      "text": "Coste y riesgo: La skill fix-tests define cuando se usa, que lee, que puede editar y cuando se deti..."
+    },
+    {
+      "id": "cl-workshop-60m-memory-to-automation",
+      "scene": 38,
+      "type": "cost",
+      "kind": "subtitulo >95 caracteres",
+      "chars": 104,
+      "text": "Contexto visible: La skill fix-tests define cuando se usa, que lee, que puede editar y cuando se deti..."
+    },
+    {
+      "id": "cl-workshop-60m-memory-to-automation",
+      "scene": 38,
+      "type": "cost",
+      "kind": "audio estimado mas largo que ventana",
+      "est": 8.8,
+      "sec": 6.8,
+      "text": "Contexto visible: La skill fix-tests define cuando se usa, que lee, que puede editar y cuando se deti..."
+    },
+    {
+      "id": "cl-workshop-60m-memory-to-automation",
+      "scene": 42,
+      "type": "decision",
+      "kind": "subtitulo >95 caracteres",
+      "chars": 104,
+      "text": "Contexto visible: El explorer no escribe codigo. Quita ruido del agente principal y entrega un mapa v..."
+    },
+    {
+      "id": "cl-workshop-60m-memory-to-automation",
+      "scene": 42,
+      "type": "decision",
+      "kind": "audio estimado mas largo que ventana",
+      "est": 7.8,
+      "sec": 6.8,
+      "text": "Contexto visible: El explorer no escribe codigo. Quita ruido del agente principal y entrega un mapa v..."
+    },
+    {
+      "id": "cl-workshop-60m-memory-to-automation",
+      "scene": 45,
+      "type": "prompt",
+      "kind": "subtitulo >95 caracteres",
+      "chars": 102,
+      "text": "Coste y riesgo: El explorer no escribe codigo. Quita ruido del agente principal y entrega un mapa v..."
+    },
+    {
+      "id": "cl-workshop-60m-memory-to-automation",
+      "scene": 45,
+      "type": "prompt",
+      "kind": "audio estimado mas largo que ventana",
+      "est": 8.2,
+      "sec": 6.8,
+      "text": "Coste y riesgo: El explorer no escribe codigo. Quita ruido del agente principal y entrega un mapa v..."
+    },
+    {
+      "id": "cl-workshop-60m-memory-to-automation",
+      "scene": 48,
+      "type": "quiz",
+      "kind": "subtitulo >95 caracteres",
+      "chars": 104,
+      "text": "Contexto visible: El explorer no escribe codigo. Quita ruido del agente principal y entrega un mapa v..."
+    },
+    {
+      "id": "cl-workshop-60m-memory-to-automation",
+      "scene": 48,
+      "type": "quiz",
+      "kind": "audio estimado mas largo que ventana",
+      "est": 7.8,
+      "sec": 6.8,
+      "text": "Contexto visible: El explorer no escribe codigo. Quita ruido del agente principal y entrega un mapa v..."
+    },
+    {
+      "id": "cl-workshop-60m-memory-to-automation",
+      "scene": 82,
+      "type": "risk",
+      "kind": "subtitulo >95 caracteres",
+      "chars": 104,
+      "text": "Contexto visible: Explorar con un modelo caro puede ser desperdicio. Revisar un cambio critico con un..."
+    },
+    {
+      "id": "cl-workshop-60m-memory-to-automation",
+      "scene": 85,
+      "type": "prompt",
+      "kind": "subtitulo >95 caracteres",
+      "chars": 102,
+      "text": "Coste y riesgo: Explorar con un modelo caro puede ser desperdicio. Revisar un cambio critico con un..."
+    },
+    {
+      "id": "cl-workshop-60m-memory-to-automation",
+      "scene": 85,
+      "type": "prompt",
+      "kind": "audio estimado mas largo que ventana",
+      "est": 7.8,
+      "sec": 6.8,
+      "text": "Coste y riesgo: Explorar con un modelo caro puede ser desperdicio. Revisar un cambio critico con un..."
+    },
+    {
+      "id": "cl-workshop-60m-memory-to-automation",
+      "scene": 88,
+      "type": "pause",
+      "kind": "subtitulo >95 caracteres",
+      "chars": 104,
+      "text": "Contexto visible: Explorar con un modelo caro puede ser desperdicio. Revisar un cambio critico con un..."
+    },
+    {
+      "id": "cl-workshop-60m-memory-to-automation",
+      "scene": 91,
+      "type": "branch",
+      "kind": "subtitulo >95 caracteres",
+      "chars": 106,
+      "text": "Pantalla de accion: Cuando una skill o hook funciona, aparece la tentacion de distribuirlo a todo el mu..."
+    },
+    {
+      "id": "cl-workshop-60m-memory-to-automation",
+      "scene": 91,
+      "type": "branch",
+      "kind": "audio estimado mas largo que ventana",
+      "est": 8.2,
+      "sec": 6.8,
+      "text": "Pantalla de accion: Cuando una skill o hook funciona, aparece la tentacion de distribuirlo a todo el mu..."
+    },
+    {
+      "id": "cl-workshop-60m-memory-to-automation",
+      "scene": 94,
+      "type": "pr-review",
+      "kind": "subtitulo >95 caracteres",
+      "chars": 97,
+      "text": "Evidencia: Cuando una skill o hook funciona, aparece la tentacion de distribuirlo a todo el mu..."
+    },
+    {
+      "id": "cl-workshop-60m-memory-to-automation",
+      "scene": 97,
+      "type": "diff",
+      "kind": "subtitulo >95 caracteres",
+      "chars": 106,
+      "text": "Pantalla de accion: Cuando una skill o hook funciona, aparece la tentacion de distribuirlo a todo el mu..."
+    },
+    {
+      "id": "cl-workshop-60m-memory-to-automation",
+      "scene": 97,
+      "type": "diff",
+      "kind": "audio estimado mas largo que ventana",
+      "est": 8.2,
+      "sec": 6.8,
+      "text": "Pantalla de accion: Cuando una skill o hook funciona, aparece la tentacion de distribuirlo a todo el mu..."
+    },
+    {
+      "id": "cl-workshop-60m-memory-to-automation",
+      "scene": 100,
+      "type": "quiz",
+      "kind": "subtitulo >95 caracteres",
+      "chars": 97,
+      "text": "Evidencia: Cuando una skill o hook funciona, aparece la tentacion de distribuirlo a todo el mu..."
+    },
+    {
+      "id": "cl-workshop-60m-memory-to-automation",
+      "scene": 102,
+      "type": "streaming",
+      "kind": "subtitulo >95 caracteres",
+      "chars": 104,
+      "text": "Contexto visible: Cada archivo representa una decision: memoria, procedimiento, rol, control o evalua..."
+    },
+    {
+      "id": "cl-workshop-60m-memory-to-automation",
+      "scene": 105,
+      "type": "decision",
+      "kind": "subtitulo >95 caracteres",
+      "chars": 102,
+      "text": "Coste y riesgo: Cada archivo representa una decision: memoria, procedimiento, rol, control o evalua..."
+    },
+    {
+      "id": "cl-workshop-60m-memory-to-automation",
+      "scene": 108,
+      "type": "cost",
+      "kind": "subtitulo >95 caracteres",
+      "chars": 104,
+      "text": "Contexto visible: Cada archivo representa una decision: memoria, procedimiento, rol, control o evalua..."
+    },
+    {
+      "id": "cl-workshop-60m-memory-to-automation",
+      "scene": 111,
+      "type": "quiz",
+      "kind": "subtitulo >95 caracteres",
+      "chars": 106,
+      "text": "Pantalla de accion: Claude aterriza cuando deja de ser una conversacion brillante y se convierte en sis..."
+    },
+    {
+      "id": "cl-workshop-60m-memory-to-automation",
+      "scene": 111,
+      "type": "quiz",
+      "kind": "audio estimado mas largo que ventana",
+      "est": 7.6,
+      "sec": 6.8,
+      "text": "Pantalla de accion: Claude aterriza cuando deja de ser una conversacion brillante y se convierte en sis..."
+    },
+    {
+      "id": "cl-workshop-60m-memory-to-automation",
+      "scene": 112,
+      "type": "pr-review",
+      "kind": "subtitulo >95 caracteres",
+      "chars": 104,
+      "text": "Contexto visible: La memoria reduce repeticion, las skills capturan procedimiento y los hooks protege..."
+    },
+    {
+      "id": "cl-workshop-60m-memory-to-automation",
+      "scene": 113,
+      "type": "cost",
+      "kind": "subtitulo >95 caracteres",
+      "chars": 99,
+      "text": "Decision humana: El siguiente paso es probarlo con un caso real y medir si reduce dudas de tutoria."
+    },
+    {
+      "id": "cl-workshop-60m-memory-to-automation",
+      "scene": 113,
+      "type": "cost",
+      "kind": "audio estimado mas largo que ventana",
+      "est": 7.7,
+      "sec": 6.8,
+      "text": "Decision humana: El siguiente paso es probarlo con un caso real y medir si reduce dudas de tutoria."
+    },
+    {
+      "id": "cl-workshop-60m-memory-to-automation",
+      "scene": 114,
+      "type": "pause",
+      "kind": "subtitulo >95 caracteres",
+      "chars": 97,
+      "text": "Evidencia: Claude aterriza cuando deja de ser una conversacion brillante y se convierte en sis..."
+    },
+    {
+      "id": "cl-workshop-60m-memory-to-automation",
+      "scene": 115,
+      "type": "decision",
+      "kind": "subtitulo >95 caracteres",
+      "chars": 102,
+      "text": "Coste y riesgo: La memoria reduce repeticion, las skills capturan procedimiento y los hooks protege..."
+    },
+    {
+      "id": "cl-workshop-60m-memory-to-automation",
+      "scene": 117,
+      "type": "risk",
+      "kind": "subtitulo >95 caracteres",
+      "chars": 106,
+      "text": "Pantalla de accion: Claude aterriza cuando deja de ser una conversacion brillante y se convierte en sis..."
+    },
+    {
+      "id": "cl-workshop-60m-memory-to-automation",
+      "scene": 117,
+      "type": "risk",
+      "kind": "audio estimado mas largo que ventana",
+      "est": 7.6,
+      "sec": 6.8,
+      "text": "Pantalla de accion: Claude aterriza cuando deja de ser una conversacion brillante y se convierte en sis..."
+    },
+    {
+      "id": "cl-workshop-60m-memory-to-automation",
+      "scene": 118,
+      "type": "terminal",
+      "kind": "subtitulo >95 caracteres",
+      "chars": 104,
+      "text": "Contexto visible: La memoria reduce repeticion, las skills capturan procedimiento y los hooks protege..."
+    },
+    {
+      "id": "cl-workshop-60m-memory-to-automation",
+      "scene": 119,
+      "type": "streaming",
+      "kind": "subtitulo >95 caracteres",
+      "chars": 99,
+      "text": "Decision humana: El siguiente paso es probarlo con un caso real y medir si reduce dudas de tutoria."
+    },
+    {
+      "id": "cl-workshop-60m-memory-to-automation",
+      "scene": 119,
+      "type": "streaming",
+      "kind": "audio estimado mas largo que ventana",
+      "est": 7.7,
+      "sec": 6.8,
+      "text": "Decision humana: El siguiente paso es probarlo con un caso real y medir si reduce dudas de tutoria."
+    },
+    {
+      "id": "cl-workshop-60m-memory-to-automation",
+      "scene": 120,
+      "type": "quiz",
+      "kind": "subtitulo >95 caracteres",
+      "chars": 97,
+      "text": "Evidencia: Claude aterriza cuando deja de ser una conversacion brillante y se convierte en sis..."
+    },
+    {
+      "id": "cp-workshop-30m-error-to-pr",
+      "scene": 17,
+      "type": "streaming",
+      "kind": "subtitulo lento <6 cps",
+      "cps": 5.6,
+      "text": "Contexto visible: No hay diff todavia."
+    },
+    {
+      "id": "cp-workshop-30m-error-to-pr",
+      "scene": 20,
+      "type": "cost",
+      "kind": "subtitulo lento <6 cps",
+      "cps": 5.3,
+      "text": "Coste y riesgo: No hay diff todavia."
+    },
+    {
+      "id": "cp-workshop-30m-error-to-pr",
+      "scene": 24,
+      "type": "terminal",
+      "kind": "subtitulo lento <6 cps",
+      "cps": 5.4,
+      "text": "Evidencia: Edit debe tocar lo minimo."
+    },
+    {
+      "id": "cp-workshop-30m-error-to-pr",
+      "scene": 35,
+      "type": "prompt",
+      "kind": "subtitulo lento <6 cps",
+      "cps": 5.9,
+      "text": "Coste y riesgo: Pero entra con contrato."
+    },
+    {
+      "id": "cp-workshop-30m-error-to-pr",
+      "scene": 37,
+      "type": "streaming",
+      "kind": "subtitulo lento <6 cps",
+      "cps": 5.3,
+      "text": "Contexto visible: No son decoracion."
+    },
+    {
+      "id": "cp-workshop-30m-error-to-pr",
+      "scene": 41,
+      "type": "prompt",
+      "kind": "subtitulo lento <6 cps",
+      "cps": 5.8,
+      "text": "Anotar modo usado, motivo y resultado."
+    },
+    {
+      "id": "cp-workshop-30m-error-to-pr",
+      "scene": 42,
+      "type": "streaming",
+      "kind": "subtitulo lento <6 cps",
+      "cps": 5.8,
+      "text": "Anotar modo usado, motivo y resultado."
+    },
+    {
+      "id": "cp-workshop-30m-error-to-pr",
+      "scene": 43,
+      "type": "decision",
+      "kind": "subtitulo lento <6 cps",
+      "cps": 5.8,
+      "text": "Anotar modo usado, motivo y resultado."
+    },
+    {
+      "id": "cp-workshop-30m-error-to-pr",
+      "scene": 44,
+      "type": "branch",
+      "kind": "subtitulo lento <6 cps",
+      "cps": 5.8,
+      "text": "Anotar modo usado, motivo y resultado."
+    },
+    {
+      "id": "cp-workshop-30m-error-to-pr",
+      "scene": 45,
+      "type": "cost",
+      "kind": "subtitulo lento <6 cps",
+      "cps": 5.8,
+      "text": "Anotar modo usado, motivo y resultado."
+    },
+    {
+      "id": "cp-workshop-30m-error-to-pr",
+      "scene": 47,
+      "type": "streaming",
+      "kind": "subtitulo lento <6 cps",
+      "cps": 5.9,
+      "text": "Contexto visible: Esto no es burocracia."
+    },
+    {
+      "id": "cp-workshop-30m-error-to-pr",
+      "scene": 50,
+      "type": "decision",
+      "kind": "subtitulo lento <6 cps",
+      "cps": 5.6,
+      "text": "Coste y riesgo: Esto no es burocracia."
+    },
+    {
+      "id": "cp-workshop-30m-error-to-pr",
+      "scene": 54,
+      "type": "cost",
+      "kind": "subtitulo lento <6 cps",
+      "cps": 5.9,
+      "text": "Evidencia: La rubrica evalua decisiones."
+    },
+    {
+      "id": "cp-workshop-30m-error-to-pr",
+      "scene": 56,
+      "type": "quiz",
+      "kind": "subtitulo lento <6 cps",
+      "cps": 5.5,
+      "text": "Guardar PR, test y decision de modo."
+    },
+    {
+      "id": "cp-workshop-30m-error-to-pr",
+      "scene": 57,
+      "type": "pr-review",
+      "kind": "subtitulo lento <6 cps",
+      "cps": 5.5,
+      "text": "Guardar PR, test y decision de modo."
+    },
+    {
+      "id": "cp-workshop-30m-error-to-pr",
+      "scene": 58,
+      "type": "cost",
+      "kind": "subtitulo lento <6 cps",
+      "cps": 5.5,
+      "text": "Guardar PR, test y decision de modo."
+    },
+    {
+      "id": "cp-workshop-30m-error-to-pr",
+      "scene": 59,
+      "type": "pause",
+      "kind": "subtitulo lento <6 cps",
+      "cps": 5.5,
+      "text": "Guardar PR, test y decision de modo."
+    },
+    {
+      "id": "cp-workshop-30m-error-to-pr",
+      "scene": 60,
+      "type": "decision",
+      "kind": "subtitulo lento <6 cps",
+      "cps": 5.5,
+      "text": "Guardar PR, test y decision de modo."
+    },
+    {
+      "id": "cp-workshop-60m-vscode-to-pr-review",
+      "scene": 2,
+      "type": "streaming",
+      "kind": "subtitulo >95 caracteres",
+      "chars": 104,
+      "text": "Contexto visible: En esta hora vamos a usar VS Code como una mesa de trabajo: preguntar, editar, dele..."
+    },
+    {
+      "id": "cp-workshop-60m-vscode-to-pr-review",
+      "scene": 2,
+      "type": "streaming",
+      "kind": "audio estimado mas largo que ventana",
+      "est": 8.6,
+      "sec": 6.8,
+      "text": "Contexto visible: En esta hora vamos a usar VS Code como una mesa de trabajo: preguntar, editar, dele..."
+    },
+    {
+      "id": "cp-workshop-60m-vscode-to-pr-review",
+      "scene": 5,
+      "type": "cost",
+      "kind": "subtitulo >95 caracteres",
+      "chars": 102,
+      "text": "Coste y riesgo: En esta hora vamos a usar VS Code como una mesa de trabajo: preguntar, editar, dele..."
+    },
+    {
+      "id": "cp-workshop-60m-vscode-to-pr-review",
+      "scene": 5,
+      "type": "cost",
+      "kind": "audio estimado mas largo que ventana",
+      "est": 9,
+      "sec": 6.8,
+      "text": "Coste y riesgo: En esta hora vamos a usar VS Code como una mesa de trabajo: preguntar, editar, dele..."
+    },
+    {
+      "id": "cp-workshop-60m-vscode-to-pr-review",
+      "scene": 8,
+      "type": "terminal",
+      "kind": "subtitulo >95 caracteres",
+      "chars": 104,
+      "text": "Contexto visible: En esta hora vamos a usar VS Code como una mesa de trabajo: preguntar, editar, dele..."
+    },
+    {
+      "id": "cp-workshop-60m-vscode-to-pr-review",
+      "scene": 8,
+      "type": "terminal",
+      "kind": "audio estimado mas largo que ventana",
+      "est": 8.6,
+      "sec": 6.8,
+      "text": "Contexto visible: En esta hora vamos a usar VS Code como una mesa de trabajo: preguntar, editar, dele..."
+    },
+    {
+      "id": "cp-workshop-60m-vscode-to-pr-review",
+      "scene": 11,
+      "type": "prompt",
+      "kind": "subtitulo >95 caracteres",
+      "chars": 106,
+      "text": "Pantalla de accion: El workshop empieza con una issue que parece pequena, pero permite hablar de criterio."
+    },
+    {
+      "id": "cp-workshop-60m-vscode-to-pr-review",
+      "scene": 12,
+      "type": "streaming",
+      "kind": "subtitulo >95 caracteres",
+      "chars": 104,
+      "text": "Contexto visible: Si abrimos Agent demasiado pronto, tal vez delegamos un problema que aun no entende..."
+    },
+    {
+      "id": "cp-workshop-60m-vscode-to-pr-review",
+      "scene": 13,
+      "type": "decision",
+      "kind": "subtitulo >95 caracteres",
+      "chars": 103,
+      "text": "Decision humana: Primero decidimos si necesitamos explicacion, edicion localizada o ejecucion completa."
+    },
+    {
+      "id": "cp-workshop-60m-vscode-to-pr-review",
+      "scene": 14,
+      "type": "branch",
+      "kind": "subtitulo >95 caracteres",
+      "chars": 97,
+      "text": "Evidencia: El workshop empieza con una issue que parece pequena, pero permite hablar de criterio."
+    },
+    {
+      "id": "cp-workshop-60m-vscode-to-pr-review",
+      "scene": 15,
+      "type": "cost",
+      "kind": "subtitulo >95 caracteres",
+      "chars": 102,
+      "text": "Coste y riesgo: Si abrimos Agent demasiado pronto, tal vez delegamos un problema que aun no entende..."
+    },
+    {
+      "id": "cp-workshop-60m-vscode-to-pr-review",
+      "scene": 15,
+      "type": "cost",
+      "kind": "audio estimado mas largo que ventana",
+      "est": 7.8,
+      "sec": 6.8,
+      "text": "Coste y riesgo: Si abrimos Agent demasiado pronto, tal vez delegamos un problema que aun no entende..."
+    },
+    {
+      "id": "cp-workshop-60m-vscode-to-pr-review",
+      "scene": 16,
+      "type": "risk",
+      "kind": "subtitulo >95 caracteres",
+      "chars": 98,
+      "text": "Checkpoint: Primero decidimos si necesitamos explicacion, edicion localizada o ejecucion completa."
+    },
+    {
+      "id": "cp-workshop-60m-vscode-to-pr-review",
+      "scene": 17,
+      "type": "diff",
+      "kind": "subtitulo >95 caracteres",
+      "chars": 106,
+      "text": "Pantalla de accion: El workshop empieza con una issue que parece pequena, pero permite hablar de criterio."
+    },
+    {
+      "id": "cp-workshop-60m-vscode-to-pr-review",
+      "scene": 18,
+      "type": "terminal",
+      "kind": "subtitulo >95 caracteres",
+      "chars": 104,
+      "text": "Contexto visible: Si abrimos Agent demasiado pronto, tal vez delegamos un problema que aun no entende..."
+    },
+    {
+      "id": "cp-workshop-60m-vscode-to-pr-review",
+      "scene": 19,
+      "type": "pause",
+      "kind": "subtitulo >95 caracteres",
+      "chars": 103,
+      "text": "Decision humana: Primero decidimos si necesitamos explicacion, edicion localizada o ejecucion completa."
+    },
+    {
+      "id": "cp-workshop-60m-vscode-to-pr-review",
+      "scene": 20,
+      "type": "quiz",
+      "kind": "subtitulo >95 caracteres",
+      "chars": 97,
+      "text": "Evidencia: El workshop empieza con una issue que parece pequena, pero permite hablar de criterio."
+    },
+    {
+      "id": "cp-workshop-60m-vscode-to-pr-review",
+      "scene": 21,
+      "type": "decision",
+      "kind": "subtitulo >95 caracteres",
+      "chars": 106,
+      "text": "Pantalla de accion: Ask compra entendimiento. Edit compra velocidad localizada. Agent compra coordinacion."
+    },
+    {
+      "id": "cp-workshop-60m-vscode-to-pr-review",
+      "scene": 21,
+      "type": "decision",
+      "kind": "subtitulo lento <6 cps",
+      "cps": 5.9,
+      "text": "Mostrar casos concretos para cada modo."
+    },
+    {
+      "id": "cp-workshop-60m-vscode-to-pr-review",
+      "scene": 22,
+      "type": "risk",
+      "kind": "subtitulo lento <6 cps",
+      "cps": 5.9,
+      "text": "Mostrar casos concretos para cada modo."
+    },
+    {
+      "id": "cp-workshop-60m-vscode-to-pr-review",
+      "scene": 23,
+      "type": "cost",
+      "kind": "subtitulo lento <6 cps",
+      "cps": 5.9,
+      "text": "Mostrar casos concretos para cada modo."
+    },
+    {
+      "id": "cp-workshop-60m-vscode-to-pr-review",
+      "scene": 24,
+      "type": "quiz",
+      "kind": "subtitulo >95 caracteres",
+      "chars": 97,
+      "text": "Evidencia: Ask compra entendimiento. Edit compra velocidad localizada. Agent compra coordinacion."
+    },
+    {
+      "id": "cp-workshop-60m-vscode-to-pr-review",
+      "scene": 24,
+      "type": "quiz",
+      "kind": "subtitulo lento <6 cps",
+      "cps": 5.9,
+      "text": "Mostrar casos concretos para cada modo."
+    },
+    {
+      "id": "cp-workshop-60m-vscode-to-pr-review",
+      "scene": 25,
+      "type": "prompt",
+      "kind": "subtitulo lento <6 cps",
+      "cps": 5.9,
+      "text": "Mostrar casos concretos para cada modo."
+    },
+    {
+      "id": "cp-workshop-60m-vscode-to-pr-review",
+      "scene": 26,
+      "type": "streaming",
+      "kind": "subtitulo lento <6 cps",
+      "cps": 5.9,
+      "text": "Mostrar casos concretos para cada modo."
+    },
+    {
+      "id": "cp-workshop-60m-vscode-to-pr-review",
+      "scene": 27,
+      "type": "branch",
+      "kind": "subtitulo >95 caracteres",
+      "chars": 106,
+      "text": "Pantalla de accion: Ask compra entendimiento. Edit compra velocidad localizada. Agent compra coordinacion."
+    },
+    {
+      "id": "cp-workshop-60m-vscode-to-pr-review",
+      "scene": 27,
+      "type": "branch",
+      "kind": "subtitulo lento <6 cps",
+      "cps": 5.9,
+      "text": "Mostrar casos concretos para cada modo."
+    },
+    {
+      "id": "cp-workshop-60m-vscode-to-pr-review",
+      "scene": 28,
+      "type": "pause",
+      "kind": "subtitulo lento <6 cps",
+      "cps": 5.9,
+      "text": "Mostrar casos concretos para cada modo."
+    },
+    {
+      "id": "cp-workshop-60m-vscode-to-pr-review",
+      "scene": 29,
+      "type": "pr-review",
+      "kind": "subtitulo lento <6 cps",
+      "cps": 5.9,
+      "text": "Mostrar casos concretos para cada modo."
+    },
+    {
+      "id": "cp-workshop-60m-vscode-to-pr-review",
+      "scene": 30,
+      "type": "decision",
+      "kind": "subtitulo >95 caracteres",
+      "chars": 97,
+      "text": "Evidencia: Ask compra entendimiento. Edit compra velocidad localizada. Agent compra coordinacion."
+    },
+    {
+      "id": "cp-workshop-60m-vscode-to-pr-review",
+      "scene": 30,
+      "type": "decision",
+      "kind": "subtitulo lento <6 cps",
+      "cps": 5.9,
+      "text": "Mostrar casos concretos para cada modo."
+    },
+    {
+      "id": "cp-workshop-60m-vscode-to-pr-review",
+      "scene": 32,
+      "type": "streaming",
+      "kind": "subtitulo >95 caracteres",
+      "chars": 100,
+      "text": "Contexto visible: Le pedimos a Copilot que explique supuestos y test minimo, no que cambie archivos."
+    },
+    {
+      "id": "cp-workshop-60m-vscode-to-pr-review",
+      "scene": 35,
+      "type": "decision",
+      "kind": "subtitulo >95 caracteres",
+      "chars": 98,
+      "text": "Coste y riesgo: Le pedimos a Copilot que explique supuestos y test minimo, no que cambie archivos."
+    },
+    {
+      "id": "cp-workshop-60m-vscode-to-pr-review",
+      "scene": 38,
+      "type": "cost",
+      "kind": "subtitulo >95 caracteres",
+      "chars": 100,
+      "text": "Contexto visible: Le pedimos a Copilot que explique supuestos y test minimo, no que cambie archivos."
+    },
+    {
+      "id": "cp-workshop-60m-vscode-to-pr-review",
+      "scene": 42,
+      "type": "decision",
+      "kind": "subtitulo >95 caracteres",
+      "chars": 96,
+      "text": "Contexto visible: Copilot debe recibir reglas estables: estilo, pruebas, limites y convenciones."
+    },
+    {
+      "id": "cp-workshop-60m-vscode-to-pr-review",
+      "scene": 43,
+      "type": "cost",
+      "kind": "subtitulo >95 caracteres",
+      "chars": 102,
+      "text": "Decision humana: Si una instruccion solo aplica a esta tarea, va en prompt file, no en memoria global."
+    },
+    {
+      "id": "cp-workshop-60m-vscode-to-pr-review",
+      "scene": 43,
+      "type": "cost",
+      "kind": "audio estimado mas largo que ventana",
+      "est": 8,
+      "sec": 6.8,
+      "text": "Decision humana: Si una instruccion solo aplica a esta tarea, va en prompt file, no en memoria global."
+    },
+    {
+      "id": "cp-workshop-60m-vscode-to-pr-review",
+      "scene": 46,
+      "type": "streaming",
+      "kind": "subtitulo >95 caracteres",
+      "chars": 97,
+      "text": "Checkpoint: Si una instruccion solo aplica a esta tarea, va en prompt file, no en memoria global."
+    },
+    {
+      "id": "cp-workshop-60m-vscode-to-pr-review",
+      "scene": 46,
+      "type": "streaming",
+      "kind": "audio estimado mas largo que ventana",
+      "est": 7.6,
+      "sec": 6.8,
+      "text": "Checkpoint: Si una instruccion solo aplica a esta tarea, va en prompt file, no en memoria global."
+    },
+    {
+      "id": "cp-workshop-60m-vscode-to-pr-review",
+      "scene": 48,
+      "type": "terminal",
+      "kind": "subtitulo >95 caracteres",
+      "chars": 96,
+      "text": "Contexto visible: Copilot debe recibir reglas estables: estilo, pruebas, limites y convenciones."
+    },
+    {
+      "id": "cp-workshop-60m-vscode-to-pr-review",
+      "scene": 49,
+      "type": "risk",
+      "kind": "subtitulo >95 caracteres",
+      "chars": 102,
+      "text": "Decision humana: Si una instruccion solo aplica a esta tarea, va en prompt file, no en memoria global."
+    },
+    {
+      "id": "cp-workshop-60m-vscode-to-pr-review",
+      "scene": 49,
+      "type": "risk",
+      "kind": "audio estimado mas largo que ventana",
+      "est": 8,
+      "sec": 6.8,
+      "text": "Decision humana: Si una instruccion solo aplica a esta tarea, va en prompt file, no en memoria global."
+    },
+    {
+      "id": "cp-workshop-60m-vscode-to-pr-review",
+      "scene": 52,
+      "type": "streaming",
+      "kind": "subtitulo >95 caracteres",
+      "chars": 104,
+      "text": "Contexto visible: Seleccionar contexto es una forma de ahorrar tokens y evitar que Copilot toque de mas."
+    },
+    {
+      "id": "cp-workshop-60m-vscode-to-pr-review",
+      "scene": 55,
+      "type": "decision",
+      "kind": "subtitulo >95 caracteres",
+      "chars": 102,
+      "text": "Coste y riesgo: Seleccionar contexto es una forma de ahorrar tokens y evitar que Copilot toque de mas."
+    },
+    {
+      "id": "cp-workshop-60m-vscode-to-pr-review",
+      "scene": 55,
+      "type": "decision",
+      "kind": "audio estimado mas largo que ventana",
+      "est": 7.7,
+      "sec": 6.8,
+      "text": "Coste y riesgo: Seleccionar contexto es una forma de ahorrar tokens y evitar que Copilot toque de mas."
+    },
+    {
+      "id": "cp-workshop-60m-vscode-to-pr-review",
+      "scene": 58,
+      "type": "cost",
+      "kind": "subtitulo >95 caracteres",
+      "chars": 104,
+      "text": "Contexto visible: Seleccionar contexto es una forma de ahorrar tokens y evitar que Copilot toque de mas."
+    },
+    {
+      "id": "cp-workshop-60m-vscode-to-pr-review",
+      "scene": 61,
+      "type": "prompt",
+      "kind": "subtitulo >95 caracteres",
+      "chars": 102,
+      "text": "Pantalla de accion: Copilot puede generar muchos tests, pero nosotros queremos uno que capture el bug."
+    },
+    {
+      "id": "cp-workshop-60m-vscode-to-pr-review",
+      "scene": 67,
+      "type": "pr-review",
+      "kind": "subtitulo >95 caracteres",
+      "chars": 102,
+      "text": "Pantalla de accion: Copilot puede generar muchos tests, pero nosotros queremos uno que capture el bug."
+    },
+    {
+      "id": "cp-workshop-60m-vscode-to-pr-review",
+      "scene": 71,
+      "type": "streaming",
+      "kind": "subtitulo >95 caracteres",
+      "chars": 96,
+      "text": "Pantalla de accion: Agent mode es potente, pero no deberia ser el primer martillo de cada tarea."
+    },
+    {
+      "id": "cp-workshop-60m-vscode-to-pr-review",
+      "scene": 72,
+      "type": "decision",
+      "kind": "subtitulo >95 caracteres",
+      "chars": 104,
+      "text": "Contexto visible: Cuando lo usamos, le damos carriles: que tocar, que no tocar, como verificar y cuan..."
+    },
+    {
+      "id": "cp-workshop-60m-vscode-to-pr-review",
+      "scene": 72,
+      "type": "decision",
+      "kind": "audio estimado mas largo que ventana",
+      "est": 8.4,
+      "sec": 6.8,
+      "text": "Contexto visible: Cuando lo usamos, le damos carriles: que tocar, que no tocar, como verificar y cuan..."
+    },
+    {
+      "id": "cp-workshop-60m-vscode-to-pr-review",
+      "scene": 75,
+      "type": "prompt",
+      "kind": "subtitulo >95 caracteres",
+      "chars": 102,
+      "text": "Coste y riesgo: Cuando lo usamos, le damos carriles: que tocar, que no tocar, como verificar y cuan..."
+    },
+    {
+      "id": "cp-workshop-60m-vscode-to-pr-review",
+      "scene": 75,
+      "type": "prompt",
+      "kind": "audio estimado mas largo que ventana",
+      "est": 8.7,
+      "sec": 6.8,
+      "text": "Coste y riesgo: Cuando lo usamos, le damos carriles: que tocar, que no tocar, como verificar y cuan..."
+    },
+    {
+      "id": "cp-workshop-60m-vscode-to-pr-review",
+      "scene": 77,
+      "type": "risk",
+      "kind": "subtitulo >95 caracteres",
+      "chars": 96,
+      "text": "Pantalla de accion: Agent mode es potente, pero no deberia ser el primer martillo de cada tarea."
+    },
+    {
+      "id": "cp-workshop-60m-vscode-to-pr-review",
+      "scene": 78,
+      "type": "quiz",
+      "kind": "subtitulo >95 caracteres",
+      "chars": 104,
+      "text": "Contexto visible: Cuando lo usamos, le damos carriles: que tocar, que no tocar, como verificar y cuan..."
+    },
+    {
+      "id": "cp-workshop-60m-vscode-to-pr-review",
+      "scene": 78,
+      "type": "quiz",
+      "kind": "audio estimado mas largo que ventana",
+      "est": 8.4,
+      "sec": 6.8,
+      "text": "Contexto visible: Cuando lo usamos, le damos carriles: que tocar, que no tocar, como verificar y cuan..."
+    },
+    {
+      "id": "cp-workshop-60m-vscode-to-pr-review",
+      "scene": 81,
+      "type": "pr-review",
+      "kind": "subtitulo >95 caracteres",
+      "chars": 105,
+      "text": "Pantalla de accion: El review asistido sirve para elevar la calidad antes de pedir tiempo a otra persona."
+    },
+    {
+      "id": "cp-workshop-60m-vscode-to-pr-review",
+      "scene": 81,
+      "type": "pr-review",
+      "kind": "audio estimado mas largo que ventana",
+      "est": 7.7,
+      "sec": 6.8,
+      "text": "Pantalla de accion: El review asistido sirve para elevar la calidad antes de pedir tiempo a otra persona."
+    },
+    {
+      "id": "cp-workshop-60m-vscode-to-pr-review",
+      "scene": 84,
+      "type": "cost",
+      "kind": "subtitulo >95 caracteres",
+      "chars": 96,
+      "text": "Evidencia: El review asistido sirve para elevar la calidad antes de pedir tiempo a otra persona."
+    },
+    {
+      "id": "cp-workshop-60m-vscode-to-pr-review",
+      "scene": 87,
+      "type": "streaming",
+      "kind": "subtitulo >95 caracteres",
+      "chars": 105,
+      "text": "Pantalla de accion: El review asistido sirve para elevar la calidad antes de pedir tiempo a otra persona."
+    },
+    {
+      "id": "cp-workshop-60m-vscode-to-pr-review",
+      "scene": 87,
+      "type": "streaming",
+      "kind": "audio estimado mas largo que ventana",
+      "est": 7.7,
+      "sec": 6.8,
+      "text": "Pantalla de accion: El review asistido sirve para elevar la calidad antes de pedir tiempo a otra persona."
+    },
+    {
+      "id": "cp-workshop-60m-vscode-to-pr-review",
+      "scene": 90,
+      "type": "quiz",
+      "kind": "subtitulo >95 caracteres",
+      "chars": 96,
+      "text": "Evidencia: El review asistido sirve para elevar la calidad antes de pedir tiempo a otra persona."
+    },
+    {
+      "id": "cp-workshop-60m-vscode-to-pr-review",
+      "scene": 91,
+      "type": "branch",
+      "kind": "subtitulo >95 caracteres",
+      "chars": 103,
+      "text": "Pantalla de accion: El coste no se controla usando menos IA, se controla usando la superficie correcta."
+    },
+    {
+      "id": "cp-workshop-60m-vscode-to-pr-review",
+      "scene": 92,
+      "type": "decision",
+      "kind": "subtitulo >95 caracteres",
+      "chars": 104,
+      "text": "Contexto visible: Un Agent bien usado puede ahorrar una hora. Un Agent mal usado crea una hora de rev..."
+    },
+    {
+      "id": "cp-workshop-60m-vscode-to-pr-review",
+      "scene": 92,
+      "type": "decision",
+      "kind": "audio estimado mas largo que ventana",
+      "est": 8.6,
+      "sec": 6.8,
+      "text": "Contexto visible: Un Agent bien usado puede ahorrar una hora. Un Agent mal usado crea una hora de rev..."
+    },
+    {
+      "id": "cp-workshop-60m-vscode-to-pr-review",
+      "scene": 95,
+      "type": "prompt",
+      "kind": "subtitulo >95 caracteres",
+      "chars": 102,
+      "text": "Coste y riesgo: Un Agent bien usado puede ahorrar una hora. Un Agent mal usado crea una hora de rev..."
+    },
+    {
+      "id": "cp-workshop-60m-vscode-to-pr-review",
+      "scene": 95,
+      "type": "prompt",
+      "kind": "audio estimado mas largo que ventana",
+      "est": 9,
+      "sec": 6.8,
+      "text": "Coste y riesgo: Un Agent bien usado puede ahorrar una hora. Un Agent mal usado crea una hora de rev..."
+    },
+    {
+      "id": "cp-workshop-60m-vscode-to-pr-review",
+      "scene": 97,
+      "type": "diff",
+      "kind": "subtitulo >95 caracteres",
+      "chars": 103,
+      "text": "Pantalla de accion: El coste no se controla usando menos IA, se controla usando la superficie correcta."
+    },
+    {
+      "id": "cp-workshop-60m-vscode-to-pr-review",
+      "scene": 98,
+      "type": "terminal",
+      "kind": "subtitulo >95 caracteres",
+      "chars": 104,
+      "text": "Contexto visible: Un Agent bien usado puede ahorrar una hora. Un Agent mal usado crea una hora de rev..."
+    },
+    {
+      "id": "cp-workshop-60m-vscode-to-pr-review",
+      "scene": 98,
+      "type": "terminal",
+      "kind": "audio estimado mas largo que ventana",
+      "est": 8.6,
+      "sec": 6.8,
+      "text": "Contexto visible: Un Agent bien usado puede ahorrar una hora. Un Agent mal usado crea una hora de rev..."
+    },
+    {
+      "id": "cp-workshop-60m-vscode-to-pr-review",
+      "scene": 102,
+      "type": "streaming",
+      "kind": "subtitulo >95 caracteres",
+      "chars": 96,
+      "text": "Contexto visible: El valor es llevarnos instrucciones y prompts que el equipo pueda usar manana."
+    },
+    {
+      "id": "cp-workshop-60m-vscode-to-pr-review",
+      "scene": 108,
+      "type": "cost",
+      "kind": "subtitulo >95 caracteres",
+      "chars": 96,
+      "text": "Contexto visible: El valor es llevarnos instrucciones y prompts que el equipo pueda usar manana."
+    },
+    {
+      "id": "cp-workshop-60m-vscode-to-pr-review",
+      "scene": 111,
+      "type": "quiz",
+      "kind": "subtitulo lento <6 cps",
+      "cps": 5.6,
+      "text": "Recoger outputs y dudas para tutoria."
+    },
+    {
+      "id": "cp-workshop-60m-vscode-to-pr-review",
+      "scene": 112,
+      "type": "pr-review",
+      "kind": "subtitulo lento <6 cps",
+      "cps": 5.6,
+      "text": "Recoger outputs y dudas para tutoria."
+    },
+    {
+      "id": "cp-workshop-60m-vscode-to-pr-review",
+      "scene": 113,
+      "type": "cost",
+      "kind": "subtitulo >95 caracteres",
+      "chars": 96,
+      "text": "Decision humana: A partir de aqui la tutoria ya no resuelve dudas basicas: trabaja casos reales."
+    },
+    {
+      "id": "cp-workshop-60m-vscode-to-pr-review",
+      "scene": 113,
+      "type": "cost",
+      "kind": "subtitulo lento <6 cps",
+      "cps": 5.6,
+      "text": "Recoger outputs y dudas para tutoria."
+    },
+    {
+      "id": "cp-workshop-60m-vscode-to-pr-review",
+      "scene": 114,
+      "type": "pause",
+      "kind": "subtitulo lento <6 cps",
+      "cps": 5.6,
+      "text": "Recoger outputs y dudas para tutoria."
+    },
+    {
+      "id": "cp-workshop-60m-vscode-to-pr-review",
+      "scene": 115,
+      "type": "decision",
+      "kind": "subtitulo lento <6 cps",
+      "cps": 5.6,
+      "text": "Recoger outputs y dudas para tutoria."
+    },
+    {
+      "id": "cp-workshop-60m-vscode-to-pr-review",
+      "scene": 116,
+      "type": "branch",
+      "kind": "subtitulo lento <6 cps",
+      "cps": 5.6,
+      "text": "Recoger outputs y dudas para tutoria."
+    },
+    {
+      "id": "cp-workshop-60m-vscode-to-pr-review",
+      "scene": 117,
+      "type": "risk",
+      "kind": "subtitulo lento <6 cps",
+      "cps": 5.6,
+      "text": "Recoger outputs y dudas para tutoria."
+    },
+    {
+      "id": "cp-workshop-60m-vscode-to-pr-review",
+      "scene": 118,
+      "type": "terminal",
+      "kind": "subtitulo lento <6 cps",
+      "cps": 5.6,
+      "text": "Recoger outputs y dudas para tutoria."
+    },
+    {
+      "id": "cp-workshop-60m-vscode-to-pr-review",
+      "scene": 119,
+      "type": "streaming",
+      "kind": "subtitulo >95 caracteres",
+      "chars": 96,
+      "text": "Decision humana: A partir de aqui la tutoria ya no resuelve dudas basicas: trabaja casos reales."
+    },
+    {
+      "id": "cp-workshop-60m-vscode-to-pr-review",
+      "scene": 119,
+      "type": "streaming",
+      "kind": "subtitulo lento <6 cps",
+      "cps": 5.6,
+      "text": "Recoger outputs y dudas para tutoria."
+    },
+    {
+      "id": "cp-workshop-60m-vscode-to-pr-review",
+      "scene": 120,
+      "type": "quiz",
+      "kind": "subtitulo lento <6 cps",
+      "cps": 5.6,
+      "text": "Recoger outputs y dudas para tutoria."
+    },
+    {
+      "id": "cx-masterclass-10m-codex-operating-system",
+      "scene": 8,
+      "type": "diff",
+      "kind": "audio estimado mas largo que ventana",
+      "est": 7.1,
+      "sec": 5.7,
+      "text": "El cambio bueno se nota por lo que no toca y por el test que lo protege."
+    },
+    {
+      "id": "cx-workshop-30m-first-real-task",
+      "scene": 21,
+      "type": "prompt",
+      "kind": "subtitulo lento <6 cps",
+      "cps": 5.6,
+      "text": "Guardar AGENTS.md en el starter repo."
+    },
+    {
+      "id": "cx-workshop-30m-first-real-task",
+      "scene": 22,
+      "type": "streaming",
+      "kind": "subtitulo lento <6 cps",
+      "cps": 5.6,
+      "text": "Guardar AGENTS.md en el starter repo."
+    },
+    {
+      "id": "cx-workshop-30m-first-real-task",
+      "scene": 23,
+      "type": "diff",
+      "kind": "subtitulo lento <6 cps",
+      "cps": 5.6,
+      "text": "Guardar AGENTS.md en el starter repo."
+    },
+    {
+      "id": "cx-workshop-30m-first-real-task",
+      "scene": 24,
+      "type": "terminal",
+      "kind": "subtitulo lento <6 cps",
+      "cps": 5.6,
+      "text": "Guardar AGENTS.md en el starter repo."
+    },
+    {
+      "id": "cx-workshop-30m-first-real-task",
+      "scene": 25,
+      "type": "decision",
+      "kind": "subtitulo lento <6 cps",
+      "cps": 5.6,
+      "text": "Guardar AGENTS.md en el starter repo."
+    },
+    {
+      "id": "cx-workshop-30m-first-real-task",
+      "scene": 31,
+      "type": "prompt",
+      "kind": "subtitulo lento <6 cps",
+      "cps": 5.7,
+      "text": "Pantalla de accion: El diff es pequeño."
+    },
+    {
+      "id": "cx-workshop-30m-first-real-task",
+      "scene": 33,
+      "type": "diff",
+      "kind": "audio estimado mas largo que ventana",
+      "est": 7.8,
+      "sec": 6.8,
+      "text": "Decision humana: La pregunta ahora no es si compila, sino si cubre el caso y no rompe otro."
+    },
+    {
+      "id": "cx-workshop-30m-first-real-task",
+      "scene": 35,
+      "type": "decision",
+      "kind": "subtitulo lento <6 cps",
+      "cps": 5.7,
+      "text": "Coste y riesgo: No toca la API publica."
+    },
+    {
+      "id": "cx-workshop-30m-first-real-task",
+      "scene": 49,
+      "type": "terminal",
+      "kind": "subtitulo lento <6 cps",
+      "cps": 5.6,
+      "text": "Evidencia: El cierre no es decoracion."
+    },
+    {
+      "id": "cx-workshop-60m-first-task-to-pr",
+      "scene": 1,
+      "type": "prompt",
+      "kind": "subtitulo >95 caracteres",
+      "chars": 106,
+      "text": "Pantalla de accion: Este workshop empieza con una regla sencilla: Codex no es magia, es una forma de co..."
+    },
+    {
+      "id": "cx-workshop-60m-first-task-to-pr",
+      "scene": 1,
+      "type": "prompt",
+      "kind": "audio estimado mas largo que ventana",
+      "est": 8.8,
+      "sec": 6.8,
+      "text": "Pantalla de accion: Este workshop empieza con una regla sencilla: Codex no es magia, es una forma de co..."
+    },
+    {
+      "id": "cx-workshop-60m-first-task-to-pr",
+      "scene": 2,
+      "type": "streaming",
+      "kind": "subtitulo >95 caracteres",
+      "chars": 104,
+      "text": "Contexto visible: Durante una hora vamos a pasar de un task ambiguo a un PR que otro desarrollador pu..."
+    },
+    {
+      "id": "cx-workshop-60m-first-task-to-pr",
+      "scene": 2,
+      "type": "streaming",
+      "kind": "audio estimado mas largo que ventana",
+      "est": 8.4,
+      "sec": 6.8,
+      "text": "Contexto visible: Durante una hora vamos a pasar de un task ambiguo a un PR que otro desarrollador pu..."
+    },
+    {
+      "id": "cx-workshop-60m-first-task-to-pr",
+      "scene": 3,
+      "type": "decision",
+      "kind": "subtitulo >95 caracteres",
+      "chars": 103,
+      "text": "Decision humana: La metrica no es velocidad de escritura. La metrica es claridad, coste razonable, p..."
+    },
+    {
+      "id": "cx-workshop-60m-first-task-to-pr",
+      "scene": 3,
+      "type": "decision",
+      "kind": "audio estimado mas largo que ventana",
+      "est": 7.8,
+      "sec": 6.8,
+      "text": "Decision humana: La metrica no es velocidad de escritura. La metrica es claridad, coste razonable, p..."
+    },
+    {
+      "id": "cx-workshop-60m-first-task-to-pr",
+      "scene": 4,
+      "type": "branch",
+      "kind": "subtitulo >95 caracteres",
+      "chars": 97,
+      "text": "Evidencia: Este workshop empieza con una regla sencilla: Codex no es magia, es una forma de co..."
+    },
+    {
+      "id": "cx-workshop-60m-first-task-to-pr",
+      "scene": 4,
+      "type": "branch",
+      "kind": "audio estimado mas largo que ventana",
+      "est": 8,
+      "sec": 6.8,
+      "text": "Evidencia: Este workshop empieza con una regla sencilla: Codex no es magia, es una forma de co..."
+    },
+    {
+      "id": "cx-workshop-60m-first-task-to-pr",
+      "scene": 5,
+      "type": "cost",
+      "kind": "subtitulo >95 caracteres",
+      "chars": 102,
+      "text": "Coste y riesgo: Durante una hora vamos a pasar de un task ambiguo a un PR que otro desarrollador pu..."
+    },
+    {
+      "id": "cx-workshop-60m-first-task-to-pr",
+      "scene": 5,
+      "type": "cost",
+      "kind": "audio estimado mas largo que ventana",
+      "est": 8.8,
+      "sec": 6.8,
+      "text": "Coste y riesgo: Durante una hora vamos a pasar de un task ambiguo a un PR que otro desarrollador pu..."
+    },
+    {
+      "id": "cx-workshop-60m-first-task-to-pr",
+      "scene": 6,
+      "type": "risk",
+      "kind": "subtitulo >95 caracteres",
+      "chars": 98,
+      "text": "Checkpoint: La metrica no es velocidad de escritura. La metrica es claridad, coste razonable, p..."
+    },
+    {
+      "id": "cx-workshop-60m-first-task-to-pr",
+      "scene": 7,
+      "type": "diff",
+      "kind": "subtitulo >95 caracteres",
+      "chars": 106,
+      "text": "Pantalla de accion: Este workshop empieza con una regla sencilla: Codex no es magia, es una forma de co..."
+    },
+    {
+      "id": "cx-workshop-60m-first-task-to-pr",
+      "scene": 7,
+      "type": "diff",
+      "kind": "audio estimado mas largo que ventana",
+      "est": 8.8,
+      "sec": 6.8,
+      "text": "Pantalla de accion: Este workshop empieza con una regla sencilla: Codex no es magia, es una forma de co..."
+    },
+    {
+      "id": "cx-workshop-60m-first-task-to-pr",
+      "scene": 8,
+      "type": "terminal",
+      "kind": "subtitulo >95 caracteres",
+      "chars": 104,
+      "text": "Contexto visible: Durante una hora vamos a pasar de un task ambiguo a un PR que otro desarrollador pu..."
+    },
+    {
+      "id": "cx-workshop-60m-first-task-to-pr",
+      "scene": 8,
+      "type": "terminal",
+      "kind": "audio estimado mas largo que ventana",
+      "est": 8.4,
+      "sec": 6.8,
+      "text": "Contexto visible: Durante una hora vamos a pasar de un task ambiguo a un PR que otro desarrollador pu..."
+    },
+    {
+      "id": "cx-workshop-60m-first-task-to-pr",
+      "scene": 9,
+      "type": "pause",
+      "kind": "subtitulo >95 caracteres",
+      "chars": 103,
+      "text": "Decision humana: La metrica no es velocidad de escritura. La metrica es claridad, coste razonable, p..."
+    },
+    {
+      "id": "cx-workshop-60m-first-task-to-pr",
+      "scene": 9,
+      "type": "pause",
+      "kind": "audio estimado mas largo que ventana",
+      "est": 7.8,
+      "sec": 6.8,
+      "text": "Decision humana: La metrica no es velocidad de escritura. La metrica es claridad, coste razonable, p..."
+    },
+    {
+      "id": "cx-workshop-60m-first-task-to-pr",
+      "scene": 10,
+      "type": "quiz",
+      "kind": "subtitulo >95 caracteres",
+      "chars": 97,
+      "text": "Evidencia: Este workshop empieza con una regla sencilla: Codex no es magia, es una forma de co..."
+    },
+    {
+      "id": "cx-workshop-60m-first-task-to-pr",
+      "scene": 10,
+      "type": "quiz",
+      "kind": "audio estimado mas largo que ventana",
+      "est": 8,
+      "sec": 6.8,
+      "text": "Evidencia: Este workshop empieza con una regla sencilla: Codex no es magia, es una forma de co..."
+    },
+    {
+      "id": "cx-workshop-60m-first-task-to-pr",
+      "scene": 11,
+      "type": "prompt",
+      "kind": "subtitulo >95 caracteres",
+      "chars": 106,
+      "text": "Pantalla de accion: El primer gasto inutil de tokens aparece cuando le damos a Codex una tarea con mas ..."
+    },
+    {
+      "id": "cx-workshop-60m-first-task-to-pr",
+      "scene": 11,
+      "type": "prompt",
+      "kind": "audio estimado mas largo que ventana",
+      "est": 8.4,
+      "sec": 6.8,
+      "text": "Pantalla de accion: El primer gasto inutil de tokens aparece cuando le damos a Codex una tarea con mas ..."
+    },
+    {
+      "id": "cx-workshop-60m-first-task-to-pr",
+      "scene": 11,
+      "type": "prompt",
+      "kind": "subtitulo >95 caracteres",
+      "chars": 100,
+      "text": "El instructor pide al grupo que elimine cualquier requisito que no sea necesario para cerrar el bug."
+    },
+    {
+      "id": "cx-workshop-60m-first-task-to-pr",
+      "scene": 12,
+      "type": "streaming",
+      "kind": "subtitulo >95 caracteres",
+      "chars": 104,
+      "text": "Contexto visible: Antes de abrir el agente dejamos cuatro piezas: problema, restricciones, aceptacion..."
+    },
+    {
+      "id": "cx-workshop-60m-first-task-to-pr",
+      "scene": 12,
+      "type": "streaming",
+      "kind": "subtitulo >95 caracteres",
+      "chars": 100,
+      "text": "El instructor pide al grupo que elimine cualquier requisito que no sea necesario para cerrar el bug."
+    },
+    {
+      "id": "cx-workshop-60m-first-task-to-pr",
+      "scene": 13,
+      "type": "decision",
+      "kind": "subtitulo >95 caracteres",
+      "chars": 103,
+      "text": "Decision humana: Esto no ralentiza. Ahorra iteraciones, evita cambios laterales y hace que el modelo..."
+    },
+    {
+      "id": "cx-workshop-60m-first-task-to-pr",
+      "scene": 13,
+      "type": "decision",
+      "kind": "subtitulo >95 caracteres",
+      "chars": 100,
+      "text": "El instructor pide al grupo que elimine cualquier requisito que no sea necesario para cerrar el bug."
+    },
+    {
+      "id": "cx-workshop-60m-first-task-to-pr",
+      "scene": 14,
+      "type": "branch",
+      "kind": "subtitulo >95 caracteres",
+      "chars": 97,
+      "text": "Evidencia: El primer gasto inutil de tokens aparece cuando le damos a Codex una tarea con mas ..."
+    },
+    {
+      "id": "cx-workshop-60m-first-task-to-pr",
+      "scene": 14,
+      "type": "branch",
+      "kind": "audio estimado mas largo que ventana",
+      "est": 7.6,
+      "sec": 6.8,
+      "text": "Evidencia: El primer gasto inutil de tokens aparece cuando le damos a Codex una tarea con mas ..."
+    },
+    {
+      "id": "cx-workshop-60m-first-task-to-pr",
+      "scene": 14,
+      "type": "branch",
+      "kind": "subtitulo >95 caracteres",
+      "chars": 100,
+      "text": "El instructor pide al grupo que elimine cualquier requisito que no sea necesario para cerrar el bug."
+    },
+    {
+      "id": "cx-workshop-60m-first-task-to-pr",
+      "scene": 15,
+      "type": "cost",
+      "kind": "subtitulo >95 caracteres",
+      "chars": 102,
+      "text": "Coste y riesgo: Antes de abrir el agente dejamos cuatro piezas: problema, restricciones, aceptacion..."
+    },
+    {
+      "id": "cx-workshop-60m-first-task-to-pr",
+      "scene": 15,
+      "type": "cost",
+      "kind": "subtitulo >95 caracteres",
+      "chars": 100,
+      "text": "El instructor pide al grupo que elimine cualquier requisito que no sea necesario para cerrar el bug."
+    },
+    {
+      "id": "cx-workshop-60m-first-task-to-pr",
+      "scene": 16,
+      "type": "risk",
+      "kind": "subtitulo >95 caracteres",
+      "chars": 98,
+      "text": "Checkpoint: Esto no ralentiza. Ahorra iteraciones, evita cambios laterales y hace que el modelo..."
+    },
+    {
+      "id": "cx-workshop-60m-first-task-to-pr",
+      "scene": 16,
+      "type": "risk",
+      "kind": "subtitulo >95 caracteres",
+      "chars": 100,
+      "text": "El instructor pide al grupo que elimine cualquier requisito que no sea necesario para cerrar el bug."
+    },
+    {
+      "id": "cx-workshop-60m-first-task-to-pr",
+      "scene": 17,
+      "type": "diff",
+      "kind": "subtitulo >95 caracteres",
+      "chars": 106,
+      "text": "Pantalla de accion: El primer gasto inutil de tokens aparece cuando le damos a Codex una tarea con mas ..."
+    },
+    {
+      "id": "cx-workshop-60m-first-task-to-pr",
+      "scene": 17,
+      "type": "diff",
+      "kind": "audio estimado mas largo que ventana",
+      "est": 8.4,
+      "sec": 6.8,
+      "text": "Pantalla de accion: El primer gasto inutil de tokens aparece cuando le damos a Codex una tarea con mas ..."
+    },
+    {
+      "id": "cx-workshop-60m-first-task-to-pr",
+      "scene": 17,
+      "type": "diff",
+      "kind": "subtitulo >95 caracteres",
+      "chars": 100,
+      "text": "El instructor pide al grupo que elimine cualquier requisito que no sea necesario para cerrar el bug."
+    },
+    {
+      "id": "cx-workshop-60m-first-task-to-pr",
+      "scene": 18,
+      "type": "terminal",
+      "kind": "subtitulo >95 caracteres",
+      "chars": 104,
+      "text": "Contexto visible: Antes de abrir el agente dejamos cuatro piezas: problema, restricciones, aceptacion..."
+    },
+    {
+      "id": "cx-workshop-60m-first-task-to-pr",
+      "scene": 18,
+      "type": "terminal",
+      "kind": "subtitulo >95 caracteres",
+      "chars": 100,
+      "text": "El instructor pide al grupo que elimine cualquier requisito que no sea necesario para cerrar el bug."
+    },
+    {
+      "id": "cx-workshop-60m-first-task-to-pr",
+      "scene": 19,
+      "type": "pause",
+      "kind": "subtitulo >95 caracteres",
+      "chars": 103,
+      "text": "Decision humana: Esto no ralentiza. Ahorra iteraciones, evita cambios laterales y hace que el modelo..."
+    },
+    {
+      "id": "cx-workshop-60m-first-task-to-pr",
+      "scene": 19,
+      "type": "pause",
+      "kind": "subtitulo >95 caracteres",
+      "chars": 100,
+      "text": "El instructor pide al grupo que elimine cualquier requisito que no sea necesario para cerrar el bug."
+    },
+    {
+      "id": "cx-workshop-60m-first-task-to-pr",
+      "scene": 20,
+      "type": "quiz",
+      "kind": "subtitulo >95 caracteres",
+      "chars": 97,
+      "text": "Evidencia: El primer gasto inutil de tokens aparece cuando le damos a Codex una tarea con mas ..."
+    },
+    {
+      "id": "cx-workshop-60m-first-task-to-pr",
+      "scene": 20,
+      "type": "quiz",
+      "kind": "audio estimado mas largo que ventana",
+      "est": 7.6,
+      "sec": 6.8,
+      "text": "Evidencia: El primer gasto inutil de tokens aparece cuando le damos a Codex una tarea con mas ..."
+    },
+    {
+      "id": "cx-workshop-60m-first-task-to-pr",
+      "scene": 20,
+      "type": "quiz",
+      "kind": "subtitulo >95 caracteres",
+      "chars": 100,
+      "text": "El instructor pide al grupo que elimine cualquier requisito que no sea necesario para cerrar el bug."
+    },
+    {
+      "id": "cx-workshop-60m-first-task-to-pr",
+      "scene": 22,
+      "type": "streaming",
+      "kind": "subtitulo >95 caracteres",
+      "chars": 104,
+      "text": "Contexto visible: En esta escena pedimos un mapa, no una solucion. El agente debe leer, sintetizar y ..."
+    },
+    {
+      "id": "cx-workshop-60m-first-task-to-pr",
+      "scene": 22,
+      "type": "streaming",
+      "kind": "audio estimado mas largo que ventana",
+      "est": 8.2,
+      "sec": 6.8,
+      "text": "Contexto visible: En esta escena pedimos un mapa, no una solucion. El agente debe leer, sintetizar y ..."
+    },
+    {
+      "id": "cx-workshop-60m-first-task-to-pr",
+      "scene": 25,
+      "type": "decision",
+      "kind": "subtitulo >95 caracteres",
+      "chars": 102,
+      "text": "Coste y riesgo: En esta escena pedimos un mapa, no una solucion. El agente debe leer, sintetizar y ..."
+    },
+    {
+      "id": "cx-workshop-60m-first-task-to-pr",
+      "scene": 25,
+      "type": "decision",
+      "kind": "audio estimado mas largo que ventana",
+      "est": 8.6,
+      "sec": 6.8,
+      "text": "Coste y riesgo: En esta escena pedimos un mapa, no una solucion. El agente debe leer, sintetizar y ..."
+    },
+    {
+      "id": "cx-workshop-60m-first-task-to-pr",
+      "scene": 28,
+      "type": "cost",
+      "kind": "subtitulo >95 caracteres",
+      "chars": 104,
+      "text": "Contexto visible: En esta escena pedimos un mapa, no una solucion. El agente debe leer, sintetizar y ..."
+    },
+    {
+      "id": "cx-workshop-60m-first-task-to-pr",
+      "scene": 28,
+      "type": "cost",
+      "kind": "audio estimado mas largo que ventana",
+      "est": 8.2,
+      "sec": 6.8,
+      "text": "Contexto visible: En esta escena pedimos un mapa, no una solucion. El agente debe leer, sintetizar y ..."
+    },
+    {
+      "id": "cx-workshop-60m-first-task-to-pr",
+      "scene": 32,
+      "type": "risk",
+      "kind": "subtitulo >95 caracteres",
+      "chars": 104,
+      "text": "Contexto visible: Para un bug pequeno empezamos con lectura y plan. Subimos potencia si el acoplamien..."
+    },
+    {
+      "id": "cx-workshop-60m-first-task-to-pr",
+      "scene": 33,
+      "type": "cost",
+      "kind": "subtitulo >95 caracteres",
+      "chars": 101,
+      "text": "Decision humana: Tambien separamos permisos: leer no es editar, editar no es ejecutar cualquier cosa."
+    },
+    {
+      "id": "cx-workshop-60m-first-task-to-pr",
+      "scene": 35,
+      "type": "prompt",
+      "kind": "subtitulo >95 caracteres",
+      "chars": 102,
+      "text": "Coste y riesgo: Para un bug pequeno empezamos con lectura y plan. Subimos potencia si el acoplamien..."
+    },
+    {
+      "id": "cx-workshop-60m-first-task-to-pr",
+      "scene": 35,
+      "type": "prompt",
+      "kind": "audio estimado mas largo que ventana",
+      "est": 7.8,
+      "sec": 6.8,
+      "text": "Coste y riesgo: Para un bug pequeno empezamos con lectura y plan. Subimos potencia si el acoplamien..."
+    },
+    {
+      "id": "cx-workshop-60m-first-task-to-pr",
+      "scene": 36,
+      "type": "streaming",
+      "kind": "subtitulo >95 caracteres",
+      "chars": 96,
+      "text": "Checkpoint: Tambien separamos permisos: leer no es editar, editar no es ejecutar cualquier cosa."
+    },
+    {
+      "id": "cx-workshop-60m-first-task-to-pr",
+      "scene": 38,
+      "type": "pause",
+      "kind": "subtitulo >95 caracteres",
+      "chars": 104,
+      "text": "Contexto visible: Para un bug pequeno empezamos con lectura y plan. Subimos potencia si el acoplamien..."
+    },
+    {
+      "id": "cx-workshop-60m-first-task-to-pr",
+      "scene": 39,
+      "type": "pr-review",
+      "kind": "subtitulo >95 caracteres",
+      "chars": 101,
+      "text": "Decision humana: Tambien separamos permisos: leer no es editar, editar no es ejecutar cualquier cosa."
+    },
+    {
+      "id": "cx-workshop-60m-first-task-to-pr",
+      "scene": 41,
+      "type": "streaming",
+      "kind": "subtitulo >95 caracteres",
+      "chars": 103,
+      "text": "Pantalla de accion: Antes del patch pedimos un plan tan corto que pueda rechazarse en treinta segundos."
+    },
+    {
+      "id": "cx-workshop-60m-first-task-to-pr",
+      "scene": 47,
+      "type": "risk",
+      "kind": "subtitulo >95 caracteres",
+      "chars": 103,
+      "text": "Pantalla de accion: Antes del patch pedimos un plan tan corto que pueda rechazarse en treinta segundos."
+    },
+    {
+      "id": "cx-workshop-60m-first-task-to-pr",
+      "scene": 51,
+      "type": "prompt",
+      "kind": "subtitulo >95 caracteres",
+      "chars": 106,
+      "text": "Pantalla de accion: Ahora si pedimos editar, pero con una restriccion: minimo cambio que cierre el crit..."
+    },
+    {
+      "id": "cx-workshop-60m-first-task-to-pr",
+      "scene": 51,
+      "type": "prompt",
+      "kind": "audio estimado mas largo que ventana",
+      "est": 8,
+      "sec": 6.8,
+      "text": "Pantalla de accion: Ahora si pedimos editar, pero con una restriccion: minimo cambio que cierre el crit..."
+    },
+    {
+      "id": "cx-workshop-60m-first-task-to-pr",
+      "scene": 54,
+      "type": "terminal",
+      "kind": "subtitulo >95 caracteres",
+      "chars": 97,
+      "text": "Evidencia: Ahora si pedimos editar, pero con una restriccion: minimo cambio que cierre el crit..."
+    },
+    {
+      "id": "cx-workshop-60m-first-task-to-pr",
+      "scene": 57,
+      "type": "pr-review",
+      "kind": "subtitulo >95 caracteres",
+      "chars": 106,
+      "text": "Pantalla de accion: Ahora si pedimos editar, pero con una restriccion: minimo cambio que cierre el crit..."
+    },
+    {
+      "id": "cx-workshop-60m-first-task-to-pr",
+      "scene": 57,
+      "type": "pr-review",
+      "kind": "audio estimado mas largo que ventana",
+      "est": 8,
+      "sec": 6.8,
+      "text": "Pantalla de accion: Ahora si pedimos editar, pero con una restriccion: minimo cambio que cierre el crit..."
+    },
+    {
+      "id": "cx-workshop-60m-first-task-to-pr",
+      "scene": 60,
+      "type": "quiz",
+      "kind": "subtitulo >95 caracteres",
+      "chars": 97,
+      "text": "Evidencia: Ahora si pedimos editar, pero con una restriccion: minimo cambio que cierre el crit..."
+    },
+    {
+      "id": "cx-workshop-60m-first-task-to-pr",
+      "scene": 72,
+      "type": "risk",
+      "kind": "subtitulo >95 caracteres",
+      "chars": 104,
+      "text": "Contexto visible: El error tipico es pedir otro patch encima del patch. Eso multiplica coste y confun..."
+    },
+    {
+      "id": "cx-workshop-60m-first-task-to-pr",
+      "scene": 72,
+      "type": "risk",
+      "kind": "audio estimado mas largo que ventana",
+      "est": 7.8,
+      "sec": 6.8,
+      "text": "Contexto visible: El error tipico es pedir otro patch encima del patch. Eso multiplica coste y confun..."
+    },
+    {
+      "id": "cx-workshop-60m-first-task-to-pr",
+      "scene": 75,
+      "type": "diff",
+      "kind": "subtitulo >95 caracteres",
+      "chars": 102,
+      "text": "Coste y riesgo: El error tipico es pedir otro patch encima del patch. Eso multiplica coste y confun..."
+    },
+    {
+      "id": "cx-workshop-60m-first-task-to-pr",
+      "scene": 75,
+      "type": "diff",
+      "kind": "audio estimado mas largo que ventana",
+      "est": 8.2,
+      "sec": 6.8,
+      "text": "Coste y riesgo: El error tipico es pedir otro patch encima del patch. Eso multiplica coste y confun..."
+    },
+    {
+      "id": "cx-workshop-60m-first-task-to-pr",
+      "scene": 78,
+      "type": "terminal",
+      "kind": "subtitulo >95 caracteres",
+      "chars": 104,
+      "text": "Contexto visible: El error tipico es pedir otro patch encima del patch. Eso multiplica coste y confun..."
+    },
+    {
+      "id": "cx-workshop-60m-first-task-to-pr",
+      "scene": 78,
+      "type": "terminal",
+      "kind": "audio estimado mas largo que ventana",
+      "est": 7.8,
+      "sec": 6.8,
+      "text": "Contexto visible: El error tipico es pedir otro patch encima del patch. Eso multiplica coste y confun..."
+    },
+    {
+      "id": "cx-workshop-60m-first-task-to-pr",
+      "scene": 81,
+      "type": "pr-review",
+      "kind": "subtitulo >95 caracteres",
+      "chars": 106,
+      "text": "Pantalla de accion: Antes de PR usamos Codex como reviewer de su propio trabajo, pero con una rubrica c..."
+    },
+    {
+      "id": "cx-workshop-60m-first-task-to-pr",
+      "scene": 81,
+      "type": "pr-review",
+      "kind": "audio estimado mas largo que ventana",
+      "est": 8.6,
+      "sec": 6.8,
+      "text": "Pantalla de accion: Antes de PR usamos Codex como reviewer de su propio trabajo, pero con una rubrica c..."
+    },
+    {
+      "id": "cx-workshop-60m-first-task-to-pr",
+      "scene": 82,
+      "type": "terminal",
+      "kind": "subtitulo >95 caracteres",
+      "chars": 104,
+      "text": "Contexto visible: No queremos una bendicion generica. Queremos findings, riesgos y una recomendacion ..."
+    },
+    {
+      "id": "cx-workshop-60m-first-task-to-pr",
+      "scene": 84,
+      "type": "cost",
+      "kind": "subtitulo >95 caracteres",
+      "chars": 97,
+      "text": "Evidencia: Antes de PR usamos Codex como reviewer de su propio trabajo, pero con una rubrica c..."
+    },
+    {
+      "id": "cx-workshop-60m-first-task-to-pr",
+      "scene": 84,
+      "type": "cost",
+      "kind": "audio estimado mas largo que ventana",
+      "est": 7.8,
+      "sec": 6.8,
+      "text": "Evidencia: Antes de PR usamos Codex como reviewer de su propio trabajo, pero con una rubrica c..."
+    },
+    {
+      "id": "cx-workshop-60m-first-task-to-pr",
+      "scene": 85,
+      "type": "risk",
+      "kind": "subtitulo >95 caracteres",
+      "chars": 102,
+      "text": "Coste y riesgo: No queremos una bendicion generica. Queremos findings, riesgos y una recomendacion ..."
+    },
+    {
+      "id": "cx-workshop-60m-first-task-to-pr",
+      "scene": 87,
+      "type": "streaming",
+      "kind": "subtitulo >95 caracteres",
+      "chars": 106,
+      "text": "Pantalla de accion: Antes de PR usamos Codex como reviewer de su propio trabajo, pero con una rubrica c..."
+    },
+    {
+      "id": "cx-workshop-60m-first-task-to-pr",
+      "scene": 87,
+      "type": "streaming",
+      "kind": "audio estimado mas largo que ventana",
+      "est": 8.6,
+      "sec": 6.8,
+      "text": "Pantalla de accion: Antes de PR usamos Codex como reviewer de su propio trabajo, pero con una rubrica c..."
+    },
+    {
+      "id": "cx-workshop-60m-first-task-to-pr",
+      "scene": 88,
+      "type": "diff",
+      "kind": "subtitulo >95 caracteres",
+      "chars": 104,
+      "text": "Contexto visible: No queremos una bendicion generica. Queremos findings, riesgos y una recomendacion ..."
+    },
+    {
+      "id": "cx-workshop-60m-first-task-to-pr",
+      "scene": 90,
+      "type": "quiz",
+      "kind": "subtitulo >95 caracteres",
+      "chars": 97,
+      "text": "Evidencia: Antes de PR usamos Codex como reviewer de su propio trabajo, pero con una rubrica c..."
+    },
+    {
+      "id": "cx-workshop-60m-first-task-to-pr",
+      "scene": 90,
+      "type": "quiz",
+      "kind": "audio estimado mas largo que ventana",
+      "est": 7.8,
+      "sec": 6.8,
+      "text": "Evidencia: Antes de PR usamos Codex como reviewer de su propio trabajo, pero con una rubrica c..."
+    },
+    {
+      "id": "cx-workshop-60m-first-task-to-pr",
+      "scene": 91,
+      "type": "branch",
+      "kind": "subtitulo >95 caracteres",
+      "chars": 106,
+      "text": "Pantalla de accion: En equipos reales no basta con que funcione. Hay que saber cuanto ha costado llegar..."
+    },
+    {
+      "id": "cx-workshop-60m-first-task-to-pr",
+      "scene": 91,
+      "type": "branch",
+      "kind": "audio estimado mas largo que ventana",
+      "est": 8.2,
+      "sec": 6.8,
+      "text": "Pantalla de accion: En equipos reales no basta con que funcione. Hay que saber cuanto ha costado llegar..."
+    },
+    {
+      "id": "cx-workshop-60m-first-task-to-pr",
+      "scene": 94,
+      "type": "pr-review",
+      "kind": "subtitulo >95 caracteres",
+      "chars": 97,
+      "text": "Evidencia: En equipos reales no basta con que funcione. Hay que saber cuanto ha costado llegar..."
+    },
+    {
+      "id": "cx-workshop-60m-first-task-to-pr",
+      "scene": 97,
+      "type": "diff",
+      "kind": "subtitulo >95 caracteres",
+      "chars": 106,
+      "text": "Pantalla de accion: En equipos reales no basta con que funcione. Hay que saber cuanto ha costado llegar..."
+    },
+    {
+      "id": "cx-workshop-60m-first-task-to-pr",
+      "scene": 97,
+      "type": "diff",
+      "kind": "audio estimado mas largo que ventana",
+      "est": 8.2,
+      "sec": 6.8,
+      "text": "Pantalla de accion: En equipos reales no basta con que funcione. Hay que saber cuanto ha costado llegar..."
+    },
+    {
+      "id": "cx-workshop-60m-first-task-to-pr",
+      "scene": 100,
+      "type": "quiz",
+      "kind": "subtitulo >95 caracteres",
+      "chars": 97,
+      "text": "Evidencia: En equipos reales no basta con que funcione. Hay que saber cuanto ha costado llegar..."
+    },
+    {
+      "id": "cx-workshop-60m-first-task-to-pr",
+      "scene": 101,
+      "type": "prompt",
+      "kind": "subtitulo >95 caracteres",
+      "chars": 96,
+      "text": "Pantalla de accion: El PR es el punto donde la ayuda de Codex se convierte en trabajo de equipo."
+    },
+    {
+      "id": "cx-workshop-60m-first-task-to-pr",
+      "scene": 101,
+      "type": "prompt",
+      "kind": "audio estimado mas largo que ventana",
+      "est": 8.1,
+      "sec": 6.8,
+      "text": "Pantalla de accion: El PR es el punto donde la ayuda de Codex se convierte en trabajo de equipo."
+    },
+    {
+      "id": "cx-workshop-60m-first-task-to-pr",
+      "scene": 107,
+      "type": "pr-review",
+      "kind": "subtitulo >95 caracteres",
+      "chars": 96,
+      "text": "Pantalla de accion: El PR es el punto donde la ayuda de Codex se convierte en trabajo de equipo."
+    },
+    {
+      "id": "cx-workshop-60m-first-task-to-pr",
+      "scene": 107,
+      "type": "pr-review",
+      "kind": "audio estimado mas largo que ventana",
+      "est": 8.1,
+      "sec": 6.8,
+      "text": "Pantalla de accion: El PR es el punto donde la ayuda de Codex se convierte en trabajo de equipo."
+    },
+    {
+      "id": "cx-workshop-60m-first-task-to-pr",
+      "scene": 111,
+      "type": "quiz",
+      "kind": "subtitulo >95 caracteres",
+      "chars": 106,
+      "text": "Pantalla de accion: Terminamos con una pregunta: que parte del flujo puede copiar manana el equipo sin ..."
+    },
+    {
+      "id": "cx-workshop-60m-first-task-to-pr",
+      "scene": 111,
+      "type": "quiz",
+      "kind": "audio estimado mas largo que ventana",
+      "est": 7.8,
+      "sec": 6.8,
+      "text": "Pantalla de accion: Terminamos con una pregunta: que parte del flujo puede copiar manana el equipo sin ..."
+    },
+    {
+      "id": "cx-workshop-60m-first-task-to-pr",
+      "scene": 112,
+      "type": "pr-review",
+      "kind": "subtitulo >95 caracteres",
+      "chars": 104,
+      "text": "Contexto visible: Si la respuesta es solo el codigo, hemos fallado. Si la respuesta incluye briefing,..."
+    },
+    {
+      "id": "cx-workshop-60m-first-task-to-pr",
+      "scene": 112,
+      "type": "pr-review",
+      "kind": "audio estimado mas largo que ventana",
+      "est": 7.8,
+      "sec": 6.8,
+      "text": "Contexto visible: Si la respuesta es solo el codigo, hemos fallado. Si la respuesta incluye briefing,..."
+    },
+    {
+      "id": "cx-workshop-60m-first-task-to-pr",
+      "scene": 113,
+      "type": "cost",
+      "kind": "subtitulo >95 caracteres",
+      "chars": 99,
+      "text": "Decision humana: Codex aterriza cuando deja de ser una demo y se convierte en un ritual de trabajo."
+    },
+    {
+      "id": "cx-workshop-60m-first-task-to-pr",
+      "scene": 113,
+      "type": "cost",
+      "kind": "audio estimado mas largo que ventana",
+      "est": 7.7,
+      "sec": 6.8,
+      "text": "Decision humana: Codex aterriza cuando deja de ser una demo y se convierte en un ritual de trabajo."
+    },
+    {
+      "id": "cx-workshop-60m-first-task-to-pr",
+      "scene": 114,
+      "type": "pause",
+      "kind": "subtitulo >95 caracteres",
+      "chars": 97,
+      "text": "Evidencia: Terminamos con una pregunta: que parte del flujo puede copiar manana el equipo sin ..."
+    },
+    {
+      "id": "cx-workshop-60m-first-task-to-pr",
+      "scene": 115,
+      "type": "decision",
+      "kind": "subtitulo >95 caracteres",
+      "chars": 102,
+      "text": "Coste y riesgo: Si la respuesta es solo el codigo, hemos fallado. Si la respuesta incluye briefing,..."
+    },
+    {
+      "id": "cx-workshop-60m-first-task-to-pr",
+      "scene": 115,
+      "type": "decision",
+      "kind": "audio estimado mas largo que ventana",
+      "est": 8.2,
+      "sec": 6.8,
+      "text": "Coste y riesgo: Si la respuesta es solo el codigo, hemos fallado. Si la respuesta incluye briefing,..."
+    },
+    {
+      "id": "cx-workshop-60m-first-task-to-pr",
+      "scene": 117,
+      "type": "risk",
+      "kind": "subtitulo >95 caracteres",
+      "chars": 106,
+      "text": "Pantalla de accion: Terminamos con una pregunta: que parte del flujo puede copiar manana el equipo sin ..."
+    },
+    {
+      "id": "cx-workshop-60m-first-task-to-pr",
+      "scene": 117,
+      "type": "risk",
+      "kind": "audio estimado mas largo que ventana",
+      "est": 7.8,
+      "sec": 6.8,
+      "text": "Pantalla de accion: Terminamos con una pregunta: que parte del flujo puede copiar manana el equipo sin ..."
+    },
+    {
+      "id": "cx-workshop-60m-first-task-to-pr",
+      "scene": 118,
+      "type": "terminal",
+      "kind": "subtitulo >95 caracteres",
+      "chars": 104,
+      "text": "Contexto visible: Si la respuesta es solo el codigo, hemos fallado. Si la respuesta incluye briefing,..."
+    },
+    {
+      "id": "cx-workshop-60m-first-task-to-pr",
+      "scene": 118,
+      "type": "terminal",
+      "kind": "audio estimado mas largo que ventana",
+      "est": 7.8,
+      "sec": 6.8,
+      "text": "Contexto visible: Si la respuesta es solo el codigo, hemos fallado. Si la respuesta incluye briefing,..."
+    },
+    {
+      "id": "cx-workshop-60m-first-task-to-pr",
+      "scene": 119,
+      "type": "streaming",
+      "kind": "subtitulo >95 caracteres",
+      "chars": 99,
+      "text": "Decision humana: Codex aterriza cuando deja de ser una demo y se convierte en un ritual de trabajo."
+    },
+    {
+      "id": "cx-workshop-60m-first-task-to-pr",
+      "scene": 119,
+      "type": "streaming",
+      "kind": "audio estimado mas largo que ventana",
+      "est": 7.7,
+      "sec": 6.8,
+      "text": "Decision humana: Codex aterriza cuando deja de ser una demo y se convierte en un ritual de trabajo."
+    },
+    {
+      "id": "cx-workshop-60m-first-task-to-pr",
+      "scene": 120,
+      "type": "quiz",
+      "kind": "subtitulo >95 caracteres",
+      "chars": 97,
+      "text": "Evidencia: Terminamos con una pregunta: que parte del flujo puede copiar manana el equipo sin ..."
+    },
+    {
+      "id": "hub-operating-model-60m",
+      "scene": 2,
+      "type": "streaming",
+      "kind": "subtitulo >95 caracteres",
+      "chars": 102,
+      "text": "Contexto visible: El problema es que la demanda crece mas rapido que la capacidad del equipo formador."
+    },
+    {
+      "id": "hub-operating-model-60m",
+      "scene": 3,
+      "type": "decision",
+      "kind": "subtitulo >95 caracteres",
+      "chars": 103,
+      "text": "Decision humana: La respuesta es una plataforma de practica con videos, ejercicios, workshops y tuto..."
+    },
+    {
+      "id": "hub-operating-model-60m",
+      "scene": 5,
+      "type": "cost",
+      "kind": "subtitulo >95 caracteres",
+      "chars": 100,
+      "text": "Coste y riesgo: El problema es que la demanda crece mas rapido que la capacidad del equipo formador."
+    },
+    {
+      "id": "hub-operating-model-60m",
+      "scene": 5,
+      "type": "cost",
+      "kind": "audio estimado mas largo que ventana",
+      "est": 7.7,
+      "sec": 6.8,
+      "text": "Coste y riesgo: El problema es que la demanda crece mas rapido que la capacidad del equipo formador."
+    },
+    {
+      "id": "hub-operating-model-60m",
+      "scene": 6,
+      "type": "risk",
+      "kind": "subtitulo >95 caracteres",
+      "chars": 98,
+      "text": "Checkpoint: La respuesta es una plataforma de practica con videos, ejercicios, workshops y tuto..."
+    },
+    {
+      "id": "hub-operating-model-60m",
+      "scene": 8,
+      "type": "terminal",
+      "kind": "subtitulo >95 caracteres",
+      "chars": 102,
+      "text": "Contexto visible: El problema es que la demanda crece mas rapido que la capacidad del equipo formador."
+    },
+    {
+      "id": "hub-operating-model-60m",
+      "scene": 9,
+      "type": "pause",
+      "kind": "subtitulo >95 caracteres",
+      "chars": 103,
+      "text": "Decision humana: La respuesta es una plataforma de practica con videos, ejercicios, workshops y tuto..."
+    },
+    {
+      "id": "hub-operating-model-60m",
+      "scene": 13,
+      "type": "decision",
+      "kind": "subtitulo >95 caracteres",
+      "chars": 103,
+      "text": "Decision humana: Por eso el directo se llena de preguntas que podrian estar resueltas en material gu..."
+    },
+    {
+      "id": "hub-operating-model-60m",
+      "scene": 13,
+      "type": "decision",
+      "kind": "audio estimado mas largo que ventana",
+      "est": 7.6,
+      "sec": 6.8,
+      "text": "Decision humana: Por eso el directo se llena de preguntas que podrian estar resueltas en material gu..."
+    },
+    {
+      "id": "hub-operating-model-60m",
+      "scene": 16,
+      "type": "risk",
+      "kind": "subtitulo >95 caracteres",
+      "chars": 98,
+      "text": "Checkpoint: Por eso el directo se llena de preguntas que podrian estar resueltas en material gu..."
+    },
+    {
+      "id": "hub-operating-model-60m",
+      "scene": 19,
+      "type": "pause",
+      "kind": "subtitulo >95 caracteres",
+      "chars": 103,
+      "text": "Decision humana: Por eso el directo se llena de preguntas que podrian estar resueltas en material gu..."
+    },
+    {
+      "id": "hub-operating-model-60m",
+      "scene": 19,
+      "type": "pause",
+      "kind": "audio estimado mas largo que ventana",
+      "est": 7.6,
+      "sec": 6.8,
+      "text": "Decision humana: Por eso el directo se llena de preguntas que podrian estar resueltas en material gu..."
+    },
+    {
+      "id": "hub-operating-model-60m",
+      "scene": 24,
+      "type": "quiz",
+      "kind": "subtitulo lento <6 cps",
+      "cps": 5.4,
+      "text": "Evidencia: El modelo cambia el orden."
+    },
+    {
+      "id": "hub-operating-model-60m",
+      "scene": 30,
+      "type": "decision",
+      "kind": "subtitulo lento <6 cps",
+      "cps": 5.4,
+      "text": "Evidencia: El modelo cambia el orden."
+    },
+    {
+      "id": "hub-operating-model-60m",
+      "scene": 91,
+      "type": "pr-review",
+      "kind": "subtitulo lento <6 cps",
+      "cps": 5.6,
+      "text": "Mostrar sprint board y video roadmap."
+    },
+    {
+      "id": "hub-operating-model-60m",
+      "scene": 92,
+      "type": "terminal",
+      "kind": "subtitulo lento <6 cps",
+      "cps": 5.6,
+      "text": "Mostrar sprint board y video roadmap."
+    },
+    {
+      "id": "hub-operating-model-60m",
+      "scene": 93,
+      "type": "decision",
+      "kind": "subtitulo lento <6 cps",
+      "cps": 5.6,
+      "text": "Mostrar sprint board y video roadmap."
+    },
+    {
+      "id": "hub-operating-model-60m",
+      "scene": 94,
+      "type": "cost",
+      "kind": "subtitulo lento <6 cps",
+      "cps": 5.6,
+      "text": "Mostrar sprint board y video roadmap."
+    },
+    {
+      "id": "hub-operating-model-60m",
+      "scene": 95,
+      "type": "risk",
+      "kind": "subtitulo lento <6 cps",
+      "cps": 5.6,
+      "text": "Mostrar sprint board y video roadmap."
+    },
+    {
+      "id": "hub-operating-model-60m",
+      "scene": 96,
+      "type": "prompt",
+      "kind": "subtitulo lento <6 cps",
+      "cps": 5.6,
+      "text": "Mostrar sprint board y video roadmap."
+    },
+    {
+      "id": "hub-operating-model-60m",
+      "scene": 97,
+      "type": "streaming",
+      "kind": "subtitulo lento <6 cps",
+      "cps": 5.6,
+      "text": "Mostrar sprint board y video roadmap."
+    },
+    {
+      "id": "hub-operating-model-60m",
+      "scene": 98,
+      "type": "diff",
+      "kind": "subtitulo lento <6 cps",
+      "cps": 5.6,
+      "text": "Mostrar sprint board y video roadmap."
+    },
+    {
+      "id": "hub-operating-model-60m",
+      "scene": 99,
+      "type": "pause",
+      "kind": "subtitulo lento <6 cps",
+      "cps": 5.6,
+      "text": "Mostrar sprint board y video roadmap."
+    },
+    {
+      "id": "hub-operating-model-60m",
+      "scene": 100,
+      "type": "quiz",
+      "kind": "subtitulo lento <6 cps",
+      "cps": 5.6,
+      "text": "Mostrar sprint board y video roadmap."
+    },
+    {
+      "id": "hub-operating-model-60m",
+      "scene": 112,
+      "type": "pr-review",
+      "kind": "subtitulo >95 caracteres",
+      "chars": 100,
+      "text": "Contexto visible: La meta es que la gente se active con IA sin depender del formador para cada paso."
+    },
+    {
+      "id": "hub-operating-model-60m",
+      "scene": 112,
+      "type": "pr-review",
+      "kind": "audio estimado mas largo que ventana",
+      "est": 8.1,
+      "sec": 6.8,
+      "text": "Contexto visible: La meta es que la gente se active con IA sin depender del formador para cada paso."
+    },
+    {
+      "id": "hub-operating-model-60m",
+      "scene": 115,
+      "type": "decision",
+      "kind": "subtitulo >95 caracteres",
+      "chars": 98,
+      "text": "Coste y riesgo: La meta es que la gente se active con IA sin depender del formador para cada paso."
+    },
+    {
+      "id": "hub-operating-model-60m",
+      "scene": 115,
+      "type": "decision",
+      "kind": "audio estimado mas largo que ventana",
+      "est": 8.5,
+      "sec": 6.8,
+      "text": "Coste y riesgo: La meta es que la gente se active con IA sin depender del formador para cada paso."
+    },
+    {
+      "id": "hub-operating-model-60m",
+      "scene": 118,
+      "type": "terminal",
+      "kind": "subtitulo >95 caracteres",
+      "chars": 100,
+      "text": "Contexto visible: La meta es que la gente se active con IA sin depender del formador para cada paso."
+    },
+    {
+      "id": "hub-operating-model-60m",
+      "scene": 118,
+      "type": "terminal",
+      "kind": "audio estimado mas largo que ventana",
+      "est": 8.1,
+      "sec": 6.8,
+      "text": "Contexto visible: La meta es que la gente se active con IA sin depender del formador para cada paso."
+    },
+    {
+      "id": "hub-workshop-60m-vendor-selection",
+      "scene": 1,
+      "type": "prompt",
+      "kind": "subtitulo >95 caracteres",
+      "chars": 106,
+      "text": "Pantalla de accion: Este workshop existe para evitar una trampa clasica: discutir que herramienta es me..."
+    },
+    {
+      "id": "hub-workshop-60m-vendor-selection",
+      "scene": 1,
+      "type": "prompt",
+      "kind": "subtitulo lento <6 cps",
+      "cps": 5.6,
+      "text": "Presentar ejes de decision y outputs."
+    },
+    {
+      "id": "hub-workshop-60m-vendor-selection",
+      "scene": 2,
+      "type": "streaming",
+      "kind": "subtitulo lento <6 cps",
+      "cps": 5.6,
+      "text": "Presentar ejes de decision y outputs."
+    },
+    {
+      "id": "hub-workshop-60m-vendor-selection",
+      "scene": 3,
+      "type": "decision",
+      "kind": "subtitulo >95 caracteres",
+      "chars": 102,
+      "text": "Decision humana: La pregunta madura es que plataforma encaja con este caso, este equipo y este riesgo."
+    },
+    {
+      "id": "hub-workshop-60m-vendor-selection",
+      "scene": 3,
+      "type": "decision",
+      "kind": "subtitulo lento <6 cps",
+      "cps": 5.6,
+      "text": "Presentar ejes de decision y outputs."
+    },
+    {
+      "id": "hub-workshop-60m-vendor-selection",
+      "scene": 4,
+      "type": "branch",
+      "kind": "subtitulo >95 caracteres",
+      "chars": 97,
+      "text": "Evidencia: Este workshop existe para evitar una trampa clasica: discutir que herramienta es me..."
+    },
+    {
+      "id": "hub-workshop-60m-vendor-selection",
+      "scene": 4,
+      "type": "branch",
+      "kind": "subtitulo lento <6 cps",
+      "cps": 5.6,
+      "text": "Presentar ejes de decision y outputs."
+    },
+    {
+      "id": "hub-workshop-60m-vendor-selection",
+      "scene": 5,
+      "type": "cost",
+      "kind": "subtitulo lento <6 cps",
+      "cps": 5.6,
+      "text": "Presentar ejes de decision y outputs."
+    },
+    {
+      "id": "hub-workshop-60m-vendor-selection",
+      "scene": 6,
+      "type": "risk",
+      "kind": "subtitulo >95 caracteres",
+      "chars": 97,
+      "text": "Checkpoint: La pregunta madura es que plataforma encaja con este caso, este equipo y este riesgo."
+    },
+    {
+      "id": "hub-workshop-60m-vendor-selection",
+      "scene": 6,
+      "type": "risk",
+      "kind": "subtitulo lento <6 cps",
+      "cps": 5.6,
+      "text": "Presentar ejes de decision y outputs."
+    },
+    {
+      "id": "hub-workshop-60m-vendor-selection",
+      "scene": 7,
+      "type": "diff",
+      "kind": "subtitulo >95 caracteres",
+      "chars": 106,
+      "text": "Pantalla de accion: Este workshop existe para evitar una trampa clasica: discutir que herramienta es me..."
+    },
+    {
+      "id": "hub-workshop-60m-vendor-selection",
+      "scene": 7,
+      "type": "diff",
+      "kind": "subtitulo lento <6 cps",
+      "cps": 5.6,
+      "text": "Presentar ejes de decision y outputs."
+    },
+    {
+      "id": "hub-workshop-60m-vendor-selection",
+      "scene": 8,
+      "type": "terminal",
+      "kind": "subtitulo lento <6 cps",
+      "cps": 5.6,
+      "text": "Presentar ejes de decision y outputs."
+    },
+    {
+      "id": "hub-workshop-60m-vendor-selection",
+      "scene": 9,
+      "type": "pause",
+      "kind": "subtitulo >95 caracteres",
+      "chars": 102,
+      "text": "Decision humana: La pregunta madura es que plataforma encaja con este caso, este equipo y este riesgo."
+    },
+    {
+      "id": "hub-workshop-60m-vendor-selection",
+      "scene": 9,
+      "type": "pause",
+      "kind": "subtitulo lento <6 cps",
+      "cps": 5.6,
+      "text": "Presentar ejes de decision y outputs."
+    },
+    {
+      "id": "hub-workshop-60m-vendor-selection",
+      "scene": 10,
+      "type": "quiz",
+      "kind": "subtitulo >95 caracteres",
+      "chars": 97,
+      "text": "Evidencia: Este workshop existe para evitar una trampa clasica: discutir que herramienta es me..."
+    },
+    {
+      "id": "hub-workshop-60m-vendor-selection",
+      "scene": 10,
+      "type": "quiz",
+      "kind": "subtitulo lento <6 cps",
+      "cps": 5.6,
+      "text": "Presentar ejes de decision y outputs."
+    },
+    {
+      "id": "hub-workshop-60m-vendor-selection",
+      "scene": 11,
+      "type": "decision",
+      "kind": "subtitulo >95 caracteres",
+      "chars": 106,
+      "text": "Pantalla de accion: Codex encaja muy bien cuando queremos convertir tareas de codigo en patches verific..."
+    },
+    {
+      "id": "hub-workshop-60m-vendor-selection",
+      "scene": 12,
+      "type": "risk",
+      "kind": "subtitulo >95 caracteres",
+      "chars": 104,
+      "text": "Contexto visible: Copilot encaja cuando el equipo ya vive en VS Code y GitHub y necesita activar uso ..."
+    },
+    {
+      "id": "hub-workshop-60m-vendor-selection",
+      "scene": 12,
+      "type": "risk",
+      "kind": "audio estimado mas largo que ventana",
+      "est": 8,
+      "sec": 6.8,
+      "text": "Contexto visible: Copilot encaja cuando el equipo ya vive en VS Code y GitHub y necesita activar uso ..."
+    },
+    {
+      "id": "hub-workshop-60m-vendor-selection",
+      "scene": 13,
+      "type": "cost",
+      "kind": "subtitulo >95 caracteres",
+      "chars": 103,
+      "text": "Decision humana: Claude encaja cuando repetimos contexto, roles y procedimientos y queremos empaquet..."
+    },
+    {
+      "id": "hub-workshop-60m-vendor-selection",
+      "scene": 14,
+      "type": "quiz",
+      "kind": "subtitulo >95 caracteres",
+      "chars": 97,
+      "text": "Evidencia: Codex encaja muy bien cuando queremos convertir tareas de codigo en patches verific..."
+    },
+    {
+      "id": "hub-workshop-60m-vendor-selection",
+      "scene": 15,
+      "type": "prompt",
+      "kind": "subtitulo >95 caracteres",
+      "chars": 102,
+      "text": "Coste y riesgo: Copilot encaja cuando el equipo ya vive en VS Code y GitHub y necesita activar uso ..."
+    },
+    {
+      "id": "hub-workshop-60m-vendor-selection",
+      "scene": 15,
+      "type": "prompt",
+      "kind": "audio estimado mas largo que ventana",
+      "est": 8.4,
+      "sec": 6.8,
+      "text": "Coste y riesgo: Copilot encaja cuando el equipo ya vive en VS Code y GitHub y necesita activar uso ..."
+    },
+    {
+      "id": "hub-workshop-60m-vendor-selection",
+      "scene": 16,
+      "type": "streaming",
+      "kind": "subtitulo >95 caracteres",
+      "chars": 98,
+      "text": "Checkpoint: Claude encaja cuando repetimos contexto, roles y procedimientos y queremos empaquet..."
+    },
+    {
+      "id": "hub-workshop-60m-vendor-selection",
+      "scene": 17,
+      "type": "branch",
+      "kind": "subtitulo >95 caracteres",
+      "chars": 106,
+      "text": "Pantalla de accion: Codex encaja muy bien cuando queremos convertir tareas de codigo en patches verific..."
+    },
+    {
+      "id": "hub-workshop-60m-vendor-selection",
+      "scene": 18,
+      "type": "pause",
+      "kind": "subtitulo >95 caracteres",
+      "chars": 104,
+      "text": "Contexto visible: Copilot encaja cuando el equipo ya vive en VS Code y GitHub y necesita activar uso ..."
+    },
+    {
+      "id": "hub-workshop-60m-vendor-selection",
+      "scene": 18,
+      "type": "pause",
+      "kind": "audio estimado mas largo que ventana",
+      "est": 8,
+      "sec": 6.8,
+      "text": "Contexto visible: Copilot encaja cuando el equipo ya vive en VS Code y GitHub y necesita activar uso ..."
+    },
+    {
+      "id": "hub-workshop-60m-vendor-selection",
+      "scene": 19,
+      "type": "pr-review",
+      "kind": "subtitulo >95 caracteres",
+      "chars": 103,
+      "text": "Decision humana: Claude encaja cuando repetimos contexto, roles y procedimientos y queremos empaquet..."
+    },
+    {
+      "id": "hub-workshop-60m-vendor-selection",
+      "scene": 20,
+      "type": "decision",
+      "kind": "subtitulo >95 caracteres",
+      "chars": 97,
+      "text": "Evidencia: Codex encaja muy bien cuando queremos convertir tareas de codigo en patches verific..."
+    },
+    {
+      "id": "hub-workshop-60m-vendor-selection",
+      "scene": 22,
+      "type": "streaming",
+      "kind": "subtitulo >95 caracteres",
+      "chars": 104,
+      "text": "Contexto visible: Si el objetivo es practicar flujo de codigo con evidencia, Codex o Copilot son natu..."
+    },
+    {
+      "id": "hub-workshop-60m-vendor-selection",
+      "scene": 22,
+      "type": "streaming",
+      "kind": "audio estimado mas largo que ventana",
+      "est": 7.8,
+      "sec": 6.8,
+      "text": "Contexto visible: Si el objetivo es practicar flujo de codigo con evidencia, Codex o Copilot son natu..."
+    },
+    {
+      "id": "hub-workshop-60m-vendor-selection",
+      "scene": 23,
+      "type": "decision",
+      "kind": "subtitulo >95 caracteres",
+      "chars": 103,
+      "text": "Decision humana: Claude puede hacerlo, pero tal vez no es el mejor uso de su capa de memoria y autom..."
+    },
+    {
+      "id": "hub-workshop-60m-vendor-selection",
+      "scene": 23,
+      "type": "decision",
+      "kind": "audio estimado mas largo que ventana",
+      "est": 9,
+      "sec": 6.8,
+      "text": "Decision humana: Claude puede hacerlo, pero tal vez no es el mejor uso de su capa de memoria y autom..."
+    },
+    {
+      "id": "hub-workshop-60m-vendor-selection",
+      "scene": 25,
+      "type": "cost",
+      "kind": "subtitulo >95 caracteres",
+      "chars": 102,
+      "text": "Coste y riesgo: Si el objetivo es practicar flujo de codigo con evidencia, Codex o Copilot son natu..."
+    },
+    {
+      "id": "hub-workshop-60m-vendor-selection",
+      "scene": 25,
+      "type": "cost",
+      "kind": "audio estimado mas largo que ventana",
+      "est": 8.2,
+      "sec": 6.8,
+      "text": "Coste y riesgo: Si el objetivo es practicar flujo de codigo con evidencia, Codex o Copilot son natu..."
+    },
+    {
+      "id": "hub-workshop-60m-vendor-selection",
+      "scene": 26,
+      "type": "risk",
+      "kind": "subtitulo >95 caracteres",
+      "chars": 98,
+      "text": "Checkpoint: Claude puede hacerlo, pero tal vez no es el mejor uso de su capa de memoria y autom..."
+    },
+    {
+      "id": "hub-workshop-60m-vendor-selection",
+      "scene": 26,
+      "type": "risk",
+      "kind": "audio estimado mas largo que ventana",
+      "est": 8.6,
+      "sec": 6.8,
+      "text": "Checkpoint: Claude puede hacerlo, pero tal vez no es el mejor uso de su capa de memoria y autom..."
+    },
+    {
+      "id": "hub-workshop-60m-vendor-selection",
+      "scene": 28,
+      "type": "terminal",
+      "kind": "subtitulo >95 caracteres",
+      "chars": 104,
+      "text": "Contexto visible: Si el objetivo es practicar flujo de codigo con evidencia, Codex o Copilot son natu..."
+    },
+    {
+      "id": "hub-workshop-60m-vendor-selection",
+      "scene": 28,
+      "type": "terminal",
+      "kind": "audio estimado mas largo que ventana",
+      "est": 7.8,
+      "sec": 6.8,
+      "text": "Contexto visible: Si el objetivo es practicar flujo de codigo con evidencia, Codex o Copilot son natu..."
+    },
+    {
+      "id": "hub-workshop-60m-vendor-selection",
+      "scene": 29,
+      "type": "pause",
+      "kind": "subtitulo >95 caracteres",
+      "chars": 103,
+      "text": "Decision humana: Claude puede hacerlo, pero tal vez no es el mejor uso de su capa de memoria y autom..."
+    },
+    {
+      "id": "hub-workshop-60m-vendor-selection",
+      "scene": 29,
+      "type": "pause",
+      "kind": "audio estimado mas largo que ventana",
+      "est": 9,
+      "sec": 6.8,
+      "text": "Decision humana: Claude puede hacerlo, pero tal vez no es el mejor uso de su capa de memoria y autom..."
+    },
+    {
+      "id": "hub-workshop-60m-vendor-selection",
+      "scene": 31,
+      "type": "branch",
+      "kind": "subtitulo >95 caracteres",
+      "chars": 106,
+      "text": "Pantalla de accion: Si el reto es activar a mucha gente que ya tiene Copilot, empezar fuera de su flujo..."
+    },
+    {
+      "id": "hub-workshop-60m-vendor-selection",
+      "scene": 31,
+      "type": "branch",
+      "kind": "audio estimado mas largo que ventana",
+      "est": 9,
+      "sec": 6.8,
+      "text": "Pantalla de accion: Si el reto es activar a mucha gente que ya tiene Copilot, empezar fuera de su flujo..."
+    },
+    {
+      "id": "hub-workshop-60m-vendor-selection",
+      "scene": 34,
+      "type": "pr-review",
+      "kind": "subtitulo >95 caracteres",
+      "chars": 97,
+      "text": "Evidencia: Si el reto es activar a mucha gente que ya tiene Copilot, empezar fuera de su flujo..."
+    },
+    {
+      "id": "hub-workshop-60m-vendor-selection",
+      "scene": 34,
+      "type": "pr-review",
+      "kind": "audio estimado mas largo que ventana",
+      "est": 8.2,
+      "sec": 6.8,
+      "text": "Evidencia: Si el reto es activar a mucha gente que ya tiene Copilot, empezar fuera de su flujo..."
+    },
+    {
+      "id": "hub-workshop-60m-vendor-selection",
+      "scene": 37,
+      "type": "diff",
+      "kind": "subtitulo >95 caracteres",
+      "chars": 106,
+      "text": "Pantalla de accion: Si el reto es activar a mucha gente que ya tiene Copilot, empezar fuera de su flujo..."
+    },
+    {
+      "id": "hub-workshop-60m-vendor-selection",
+      "scene": 37,
+      "type": "diff",
+      "kind": "audio estimado mas largo que ventana",
+      "est": 9,
+      "sec": 6.8,
+      "text": "Pantalla de accion: Si el reto es activar a mucha gente que ya tiene Copilot, empezar fuera de su flujo..."
+    },
+    {
+      "id": "hub-workshop-60m-vendor-selection",
+      "scene": 40,
+      "type": "quiz",
+      "kind": "subtitulo >95 caracteres",
+      "chars": 97,
+      "text": "Evidencia: Si el reto es activar a mucha gente que ya tiene Copilot, empezar fuera de su flujo..."
+    },
+    {
+      "id": "hub-workshop-60m-vendor-selection",
+      "scene": 40,
+      "type": "quiz",
+      "kind": "audio estimado mas largo que ventana",
+      "est": 8.2,
+      "sec": 6.8,
+      "text": "Evidencia: Si el reto es activar a mucha gente que ya tiene Copilot, empezar fuera de su flujo..."
+    },
+    {
+      "id": "hub-workshop-60m-vendor-selection",
+      "scene": 41,
+      "type": "streaming",
+      "kind": "subtitulo >95 caracteres",
+      "chars": 105,
+      "text": "Pantalla de accion: Cuando hablamos de automatizacion interna, ya no basta con un chat que responde bien."
+    },
+    {
+      "id": "hub-workshop-60m-vendor-selection",
+      "scene": 44,
+      "type": "pause",
+      "kind": "subtitulo >95 caracteres",
+      "chars": 96,
+      "text": "Evidencia: Cuando hablamos de automatizacion interna, ya no basta con un chat que responde bien."
+    },
+    {
+      "id": "hub-workshop-60m-vendor-selection",
+      "scene": 47,
+      "type": "risk",
+      "kind": "subtitulo >95 caracteres",
+      "chars": 105,
+      "text": "Pantalla de accion: Cuando hablamos de automatizacion interna, ya no basta con un chat que responde bien."
+    },
+    {
+      "id": "hub-workshop-60m-vendor-selection",
+      "scene": 50,
+      "type": "pr-review",
+      "kind": "subtitulo >95 caracteres",
+      "chars": 96,
+      "text": "Evidencia: Cuando hablamos de automatizacion interna, ya no basta con un chat que responde bien."
+    },
+    {
+      "id": "hub-workshop-60m-vendor-selection",
+      "scene": 51,
+      "type": "decision",
+      "kind": "subtitulo lento <6 cps",
+      "cps": 5.5,
+      "text": "Completar matriz de riesgo por caso."
+    },
+    {
+      "id": "hub-workshop-60m-vendor-selection",
+      "scene": 52,
+      "type": "risk",
+      "kind": "subtitulo >95 caracteres",
+      "chars": 104,
+      "text": "Contexto visible: Leer documentacion, editar codigo, abrir PR o conectar sistemas no tienen el mismo ..."
+    },
+    {
+      "id": "hub-workshop-60m-vendor-selection",
+      "scene": 52,
+      "type": "risk",
+      "kind": "subtitulo lento <6 cps",
+      "cps": 5.5,
+      "text": "Completar matriz de riesgo por caso."
+    },
+    {
+      "id": "hub-workshop-60m-vendor-selection",
+      "scene": 53,
+      "type": "cost",
+      "kind": "subtitulo lento <6 cps",
+      "cps": 5.5,
+      "text": "Completar matriz de riesgo por caso."
+    },
+    {
+      "id": "hub-workshop-60m-vendor-selection",
+      "scene": 54,
+      "type": "quiz",
+      "kind": "subtitulo lento <6 cps",
+      "cps": 5.5,
+      "text": "Completar matriz de riesgo por caso."
+    },
+    {
+      "id": "hub-workshop-60m-vendor-selection",
+      "scene": 55,
+      "type": "prompt",
+      "kind": "subtitulo >95 caracteres",
+      "chars": 102,
+      "text": "Coste y riesgo: Leer documentacion, editar codigo, abrir PR o conectar sistemas no tienen el mismo ..."
+    },
+    {
+      "id": "hub-workshop-60m-vendor-selection",
+      "scene": 55,
+      "type": "prompt",
+      "kind": "subtitulo lento <6 cps",
+      "cps": 5.5,
+      "text": "Completar matriz de riesgo por caso."
+    },
+    {
+      "id": "hub-workshop-60m-vendor-selection",
+      "scene": 56,
+      "type": "streaming",
+      "kind": "subtitulo lento <6 cps",
+      "cps": 5.5,
+      "text": "Completar matriz de riesgo por caso."
+    },
+    {
+      "id": "hub-workshop-60m-vendor-selection",
+      "scene": 57,
+      "type": "branch",
+      "kind": "subtitulo lento <6 cps",
+      "cps": 5.5,
+      "text": "Completar matriz de riesgo por caso."
+    },
+    {
+      "id": "hub-workshop-60m-vendor-selection",
+      "scene": 58,
+      "type": "pause",
+      "kind": "subtitulo >95 caracteres",
+      "chars": 104,
+      "text": "Contexto visible: Leer documentacion, editar codigo, abrir PR o conectar sistemas no tienen el mismo ..."
+    },
+    {
+      "id": "hub-workshop-60m-vendor-selection",
+      "scene": 58,
+      "type": "pause",
+      "kind": "subtitulo lento <6 cps",
+      "cps": 5.5,
+      "text": "Completar matriz de riesgo por caso."
+    },
+    {
+      "id": "hub-workshop-60m-vendor-selection",
+      "scene": 59,
+      "type": "pr-review",
+      "kind": "subtitulo lento <6 cps",
+      "cps": 5.5,
+      "text": "Completar matriz de riesgo por caso."
+    },
+    {
+      "id": "hub-workshop-60m-vendor-selection",
+      "scene": 60,
+      "type": "decision",
+      "kind": "subtitulo lento <6 cps",
+      "cps": 5.5,
+      "text": "Completar matriz de riesgo por caso."
+    },
+    {
+      "id": "hub-workshop-60m-vendor-selection",
+      "scene": 61,
+      "type": "branch",
+      "kind": "subtitulo lento <6 cps",
+      "cps": 5.8,
+      "text": "Registrar una fila por caso discutido."
+    },
+    {
+      "id": "hub-workshop-60m-vendor-selection",
+      "scene": 62,
+      "type": "decision",
+      "kind": "subtitulo lento <6 cps",
+      "cps": 5.8,
+      "text": "Registrar una fila por caso discutido."
+    },
+    {
+      "id": "hub-workshop-60m-vendor-selection",
+      "scene": 63,
+      "type": "cost",
+      "kind": "subtitulo lento <6 cps",
+      "cps": 5.8,
+      "text": "Registrar una fila por caso discutido."
+    },
+    {
+      "id": "hub-workshop-60m-vendor-selection",
+      "scene": 64,
+      "type": "pr-review",
+      "kind": "subtitulo lento <6 cps",
+      "cps": 5.8,
+      "text": "Registrar una fila por caso discutido."
+    },
+    {
+      "id": "hub-workshop-60m-vendor-selection",
+      "scene": 65,
+      "type": "prompt",
+      "kind": "audio estimado mas largo que ventana",
+      "est": 7.7,
+      "sec": 6.8,
+      "text": "Coste y riesgo: Un modelo caro puede ser barato si evita una mala decision en un PR critico."
+    },
+    {
+      "id": "hub-workshop-60m-vendor-selection",
+      "scene": 65,
+      "type": "prompt",
+      "kind": "subtitulo lento <6 cps",
+      "cps": 5.8,
+      "text": "Registrar una fila por caso discutido."
+    },
+    {
+      "id": "hub-workshop-60m-vendor-selection",
+      "scene": 66,
+      "type": "streaming",
+      "kind": "subtitulo lento <6 cps",
+      "cps": 5.8,
+      "text": "Registrar una fila por caso discutido."
+    },
+    {
+      "id": "hub-workshop-60m-vendor-selection",
+      "scene": 67,
+      "type": "diff",
+      "kind": "subtitulo lento <6 cps",
+      "cps": 5.8,
+      "text": "Registrar una fila por caso discutido."
+    },
+    {
+      "id": "hub-workshop-60m-vendor-selection",
+      "scene": 68,
+      "type": "terminal",
+      "kind": "subtitulo lento <6 cps",
+      "cps": 5.8,
+      "text": "Registrar una fila por caso discutido."
+    },
+    {
+      "id": "hub-workshop-60m-vendor-selection",
+      "scene": 69,
+      "type": "risk",
+      "kind": "subtitulo lento <6 cps",
+      "cps": 5.8,
+      "text": "Registrar una fila por caso discutido."
+    },
+    {
+      "id": "hub-workshop-60m-vendor-selection",
+      "scene": 70,
+      "type": "quiz",
+      "kind": "subtitulo lento <6 cps",
+      "cps": 5.8,
+      "text": "Registrar una fila por caso discutido."
+    },
+    {
+      "id": "hub-workshop-60m-vendor-selection",
+      "scene": 102,
+      "type": "streaming",
+      "kind": "subtitulo >95 caracteres",
+      "chars": 101,
+      "text": "Contexto visible: Antes de abrirla a alumnos comprobamos build, rutas, visual, feedback y versionado."
+    },
+    {
+      "id": "hub-workshop-60m-vendor-selection",
+      "scene": 105,
+      "type": "decision",
+      "kind": "subtitulo >95 caracteres",
+      "chars": 99,
+      "text": "Coste y riesgo: Antes de abrirla a alumnos comprobamos build, rutas, visual, feedback y versionado."
+    },
+    {
+      "id": "hub-workshop-60m-vendor-selection",
+      "scene": 108,
+      "type": "cost",
+      "kind": "subtitulo >95 caracteres",
+      "chars": 101,
+      "text": "Contexto visible: Antes de abrirla a alumnos comprobamos build, rutas, visual, feedback y versionado."
+    },
+    {
+      "id": "hub-workshop-60m-vendor-selection",
+      "scene": 111,
+      "type": "quiz",
+      "kind": "subtitulo >95 caracteres",
+      "chars": 106,
+      "text": "Pantalla de accion: Cerramos con una idea practica: no necesitamos una herramienta favorita, necesitamo..."
+    },
+    {
+      "id": "hub-workshop-60m-vendor-selection",
+      "scene": 112,
+      "type": "pr-review",
+      "kind": "subtitulo >95 caracteres",
+      "chars": 104,
+      "text": "Contexto visible: El hub existe para transformar demanda dispersa en rutas, ejercicios, videos y work..."
+    },
+    {
+      "id": "hub-workshop-60m-vendor-selection",
+      "scene": 113,
+      "type": "cost",
+      "kind": "subtitulo >95 caracteres",
+      "chars": 103,
+      "text": "Decision humana: A partir de aqui cada caso debe poder aterrizarse con vendor, coste, permiso y evid..."
+    },
+    {
+      "id": "hub-workshop-60m-vendor-selection",
+      "scene": 113,
+      "type": "cost",
+      "kind": "audio estimado mas largo que ventana",
+      "est": 8,
+      "sec": 6.8,
+      "text": "Decision humana: A partir de aqui cada caso debe poder aterrizarse con vendor, coste, permiso y evid..."
+    },
+    {
+      "id": "hub-workshop-60m-vendor-selection",
+      "scene": 114,
+      "type": "pause",
+      "kind": "subtitulo >95 caracteres",
+      "chars": 97,
+      "text": "Evidencia: Cerramos con una idea practica: no necesitamos una herramienta favorita, necesitamo..."
+    },
+    {
+      "id": "hub-workshop-60m-vendor-selection",
+      "scene": 115,
+      "type": "decision",
+      "kind": "subtitulo >95 caracteres",
+      "chars": 102,
+      "text": "Coste y riesgo: El hub existe para transformar demanda dispersa en rutas, ejercicios, videos y work..."
+    },
+    {
+      "id": "hub-workshop-60m-vendor-selection",
+      "scene": 116,
+      "type": "branch",
+      "kind": "subtitulo >95 caracteres",
+      "chars": 98,
+      "text": "Checkpoint: A partir de aqui cada caso debe poder aterrizarse con vendor, coste, permiso y evid..."
+    },
+    {
+      "id": "hub-workshop-60m-vendor-selection",
+      "scene": 117,
+      "type": "risk",
+      "kind": "subtitulo >95 caracteres",
+      "chars": 106,
+      "text": "Pantalla de accion: Cerramos con una idea practica: no necesitamos una herramienta favorita, necesitamo..."
+    },
+    {
+      "id": "hub-workshop-60m-vendor-selection",
+      "scene": 118,
+      "type": "terminal",
+      "kind": "subtitulo >95 caracteres",
+      "chars": 104,
+      "text": "Contexto visible: El hub existe para transformar demanda dispersa en rutas, ejercicios, videos y work..."
+    },
+    {
+      "id": "hub-workshop-60m-vendor-selection",
+      "scene": 119,
+      "type": "streaming",
+      "kind": "subtitulo >95 caracteres",
+      "chars": 103,
+      "text": "Decision humana: A partir de aqui cada caso debe poder aterrizarse con vendor, coste, permiso y evid..."
+    },
+    {
+      "id": "hub-workshop-60m-vendor-selection",
+      "scene": 119,
+      "type": "streaming",
+      "kind": "audio estimado mas largo que ventana",
+      "est": 8,
+      "sec": 6.8,
+      "text": "Decision humana: A partir de aqui cada caso debe poder aterrizarse con vendor, coste, permiso y evid..."
+    },
+    {
+      "id": "hub-workshop-60m-vendor-selection",
+      "scene": 120,
+      "type": "quiz",
+      "kind": "subtitulo >95 caracteres",
+      "chars": 97,
+      "text": "Evidencia: Cerramos con una idea practica: no necesitamos una herramienta favorita, necesitamo..."
+    }
+  ],
+  "contentIssues": [
+    {
+      "id": "cl-advanced-01-hooks",
+      "scene": 1,
+      "type": "title",
+      "kind": "frase repetida/fabrica",
+      "hits": 2
+    },
+    {
+      "id": "cl-advanced-01-hooks",
+      "scene": 3,
+      "type": "finale",
+      "kind": "frase repetida/fabrica",
+      "hits": 2
+    },
+    {
+      "id": "cl-advanced-02-plugin-action",
+      "scene": 1,
+      "type": "title",
+      "kind": "frase repetida/fabrica",
+      "hits": 2
+    },
+    {
+      "id": "cl-advanced-02-plugin-action",
+      "scene": 3,
+      "type": "finale",
+      "kind": "frase repetida/fabrica",
+      "hits": 2
+    },
+    {
+      "id": "cl-basic-01-claude-md",
+      "scene": 1,
+      "type": "title",
+      "kind": "frase repetida/fabrica",
+      "hits": 2
+    },
+    {
+      "id": "cl-basic-01-claude-md",
+      "scene": 3,
+      "type": "finale",
+      "kind": "frase repetida/fabrica",
+      "hits": 2
+    },
+    {
+      "id": "cl-basic-02-compact-context",
+      "scene": 1,
+      "type": "title",
+      "kind": "frase repetida/fabrica",
+      "hits": 2
+    },
+    {
+      "id": "cl-basic-02-compact-context",
+      "scene": 3,
+      "type": "finale",
+      "kind": "frase repetida/fabrica",
+      "hits": 2
+    },
+    {
+      "id": "cl-operator-01-first-skill",
+      "scene": 1,
+      "type": "title",
+      "kind": "frase repetida/fabrica",
+      "hits": 2
+    },
+    {
+      "id": "cl-operator-01-first-skill",
+      "scene": 3,
+      "type": "finale",
+      "kind": "frase repetida/fabrica",
+      "hits": 2
+    },
+    {
+      "id": "cl-operator-02-subagent-explorer",
+      "scene": 1,
+      "type": "title",
+      "kind": "frase repetida/fabrica",
+      "hits": 2
+    },
+    {
+      "id": "cl-operator-02-subagent-explorer",
+      "scene": 3,
+      "type": "finale",
+      "kind": "frase repetida/fabrica",
+      "hits": 2
+    },
+    {
+      "id": "cl-operator-03-mcp-project",
+      "scene": 1,
+      "type": "title",
+      "kind": "frase repetida/fabrica",
+      "hits": 2
+    },
+    {
+      "id": "cl-operator-03-mcp-project",
+      "scene": 3,
+      "type": "finale",
+      "kind": "frase repetida/fabrica",
+      "hits": 2
+    },
+    {
+      "id": "cl-orientation-01-claude-md",
+      "scene": 1,
+      "type": "title",
+      "kind": "frase repetida/fabrica",
+      "hits": 2
+    },
+    {
+      "id": "cl-orientation-01-claude-md",
+      "scene": 3,
+      "type": "finale",
+      "kind": "frase repetida/fabrica",
+      "hits": 2
+    },
+    {
+      "id": "cl-orientation-02-memory-vs-instructions",
+      "scene": 1,
+      "type": "title",
+      "kind": "frase repetida/fabrica",
+      "hits": 2
+    },
+    {
+      "id": "cl-orientation-02-memory-vs-instructions",
+      "scene": 3,
+      "type": "finale",
+      "kind": "frase repetida/fabrica",
+      "hits": 2
+    },
+    {
+      "id": "cl-orientation-03-cost-context",
+      "scene": 1,
+      "type": "title",
+      "kind": "frase repetida/fabrica",
+      "hits": 2
+    },
+    {
+      "id": "cl-orientation-03-cost-context",
+      "scene": 3,
+      "type": "finale",
+      "kind": "frase repetida/fabrica",
+      "hits": 2
+    },
+    {
+      "id": "cl-sdk-01-agent-sdk",
+      "scene": 1,
+      "type": "title",
+      "kind": "frase repetida/fabrica",
+      "hits": 2
+    },
+    {
+      "id": "cl-sdk-01-agent-sdk",
+      "scene": 3,
+      "type": "finale",
+      "kind": "frase repetida/fabrica",
+      "hits": 2
+    },
+    {
+      "id": "cl-sdk-02-evals-governance",
+      "scene": 1,
+      "type": "title",
+      "kind": "frase repetida/fabrica",
+      "hits": 2
+    },
+    {
+      "id": "cl-sdk-02-evals-governance",
+      "scene": 3,
+      "type": "finale",
+      "kind": "frase repetida/fabrica",
+      "hits": 2
+    },
+    {
+      "id": "cp-advanced-01-custom-agent",
+      "scene": 1,
+      "type": "title",
+      "kind": "frase repetida/fabrica",
+      "hits": 2
+    },
+    {
+      "id": "cp-advanced-01-custom-agent",
+      "scene": 3,
+      "type": "finale",
+      "kind": "frase repetida/fabrica",
+      "hits": 2
+    },
+    {
+      "id": "cp-advanced-02-mcp-code-review",
+      "scene": 1,
+      "type": "title",
+      "kind": "frase repetida/fabrica",
+      "hits": 2
+    },
+    {
+      "id": "cp-advanced-02-mcp-code-review",
+      "scene": 3,
+      "type": "finale",
+      "kind": "frase repetida/fabrica",
+      "hits": 2
+    },
+    {
+      "id": "cp-basic-01-inline-completion",
+      "scene": 1,
+      "type": "title",
+      "kind": "frase repetida/fabrica",
+      "hits": 2
+    },
+    {
+      "id": "cp-basic-01-inline-completion",
+      "scene": 3,
+      "type": "finale",
+      "kind": "frase repetida/fabrica",
+      "hits": 2
+    },
+    {
+      "id": "cp-basic-02-ask-edit-agent",
+      "scene": 1,
+      "type": "title",
+      "kind": "frase repetida/fabrica",
+      "hits": 2
+    },
+    {
+      "id": "cp-basic-02-ask-edit-agent",
+      "scene": 3,
+      "type": "finale",
+      "kind": "frase repetida/fabrica",
+      "hits": 2
+    },
+    {
+      "id": "cp-basic-03-error-to-fix",
+      "scene": 1,
+      "type": "title",
+      "kind": "frase repetida/fabrica",
+      "hits": 2
+    },
+    {
+      "id": "cp-basic-03-error-to-fix",
+      "scene": 3,
+      "type": "finale",
+      "kind": "frase repetida/fabrica",
+      "hits": 2
+    },
+    {
+      "id": "cp-cloud-01-cloud-agent-pr",
+      "scene": 1,
+      "type": "title",
+      "kind": "frase repetida/fabrica",
+      "hits": 2
+    },
+    {
+      "id": "cp-cloud-01-cloud-agent-pr",
+      "scene": 3,
+      "type": "finale",
+      "kind": "frase repetida/fabrica",
+      "hits": 2
+    },
+    {
+      "id": "cp-cloud-02-premium-requests",
+      "scene": 1,
+      "type": "title",
+      "kind": "frase repetida/fabrica",
+      "hits": 2
+    },
+    {
+      "id": "cp-cloud-02-premium-requests",
+      "scene": 3,
+      "type": "finale",
+      "kind": "frase repetida/fabrica",
+      "hits": 2
+    },
+    {
+      "id": "cp-git-01-fork-vs-branch",
+      "scene": 1,
+      "type": "title",
+      "kind": "frase repetida/fabrica",
+      "hits": 2
+    },
+    {
+      "id": "cp-git-01-fork-vs-branch",
+      "scene": 3,
+      "type": "finale",
+      "kind": "frase repetida/fabrica",
+      "hits": 2
+    },
+    {
+      "id": "cp-git-02-pr-as-contract",
+      "scene": 1,
+      "type": "title",
+      "kind": "frase repetida/fabrica",
+      "hits": 2
+    },
+    {
+      "id": "cp-git-02-pr-as-contract",
+      "scene": 3,
+      "type": "finale",
+      "kind": "frase repetida/fabrica",
+      "hits": 2
+    },
+    {
+      "id": "cp-medium-01-instructions",
+      "scene": 1,
+      "type": "title",
+      "kind": "frase repetida/fabrica",
+      "hits": 2
+    },
+    {
+      "id": "cp-medium-01-instructions",
+      "scene": 3,
+      "type": "finale",
+      "kind": "frase repetida/fabrica",
+      "hits": 2
+    },
+    {
+      "id": "cp-medium-02-prompt-files",
+      "scene": 1,
+      "type": "title",
+      "kind": "frase repetida/fabrica",
+      "hits": 2
+    },
+    {
+      "id": "cp-medium-02-prompt-files",
+      "scene": 3,
+      "type": "finale",
+      "kind": "frase repetida/fabrica",
+      "hits": 2
+    },
+    {
+      "id": "cx-basic-01-agents-md",
+      "scene": 1,
+      "type": "title",
+      "kind": "frase repetida/fabrica",
+      "hits": 2
+    },
+    {
+      "id": "cx-basic-01-agents-md",
+      "scene": 4,
+      "type": "finale",
+      "kind": "frase repetida/fabrica",
+      "hits": 2
+    },
+    {
+      "id": "cx-basic-02-plan-before-patch",
+      "scene": 1,
+      "type": "title",
+      "kind": "frase repetida/fabrica",
+      "hits": 2
+    },
+    {
+      "id": "cx-basic-02-plan-before-patch",
+      "scene": 4,
+      "type": "finale",
+      "kind": "frase repetida/fabrica",
+      "hits": 2
+    },
+    {
+      "id": "cx-medium-01-model-picker",
+      "scene": 1,
+      "type": "title",
+      "kind": "frase repetida/fabrica",
+      "hits": 2
+    },
+    {
+      "id": "cx-medium-01-model-picker",
+      "scene": 4,
+      "type": "finale",
+      "kind": "frase repetida/fabrica",
+      "hits": 2
+    },
+    {
+      "id": "cx-medium-02-mcp-readonly",
+      "scene": 1,
+      "type": "title",
+      "kind": "frase repetida/fabrica",
+      "hits": 2
+    },
+    {
+      "id": "cx-medium-02-mcp-readonly",
+      "scene": 4,
+      "type": "finale",
+      "kind": "frase repetida/fabrica",
+      "hits": 2
+    },
+    {
+      "id": "cx-medium-03-skill-qa-visual",
+      "scene": 1,
+      "type": "title",
+      "kind": "frase repetida/fabrica",
+      "hits": 2
+    },
+    {
+      "id": "cx-medium-03-skill-qa-visual",
+      "scene": 4,
+      "type": "finale",
+      "kind": "frase repetida/fabrica",
+      "hits": 2
+    },
+    {
+      "id": "cx-orientation-01-surface-map",
+      "scene": 1,
+      "type": "title",
+      "kind": "frase repetida/fabrica",
+      "hits": 2
+    },
+    {
+      "id": "cx-orientation-01-surface-map",
+      "scene": 4,
+      "type": "finale",
+      "kind": "frase repetida/fabrica",
+      "hits": 2
+    },
+    {
+      "id": "cx-orientation-02-first-task",
+      "scene": 1,
+      "type": "title",
+      "kind": "frase repetida/fabrica",
+      "hits": 2
+    },
+    {
+      "id": "cx-orientation-02-first-task",
+      "scene": 4,
+      "type": "finale",
+      "kind": "frase repetida/fabrica",
+      "hits": 2
+    },
+    {
+      "id": "cx-orientation-03-permissions",
+      "scene": 1,
+      "type": "title",
+      "kind": "frase repetida/fabrica",
+      "hits": 2
+    },
+    {
+      "id": "cx-orientation-03-permissions",
+      "scene": 4,
+      "type": "finale",
+      "kind": "frase repetida/fabrica",
+      "hits": 2
+    },
+    {
+      "id": "cx-ultra-01-github-action",
+      "scene": 1,
+      "type": "title",
+      "kind": "frase repetida/fabrica",
+      "hits": 2
+    },
+    {
+      "id": "cx-ultra-01-github-action",
+      "scene": 4,
+      "type": "finale",
+      "kind": "frase repetida/fabrica",
+      "hits": 2
+    },
+    {
+      "id": "cx-ultra-02-pr-swarm",
+      "scene": 1,
+      "type": "title",
+      "kind": "frase repetida/fabrica",
+      "hits": 2
+    },
+    {
+      "id": "cx-ultra-02-pr-swarm",
+      "scene": 4,
+      "type": "finale",
+      "kind": "frase repetida/fabrica",
+      "hits": 2
+    }
+  ]
+}

@@ -1,0 +1,48 @@
+1
+00:00:00,450 --> 00:00:03,038
+Objetivo de esta clase:
+
+2
+00:00:03,218 --> 00:00:09,358
+resolver Claude Orientation 02 - Memory vs Instructions con criterio practico.
+
+3
+00:00:09,538 --> 00:00:14,454
+Al final debes poder quedarte con una regla de uso y un ejemplo repetible.
+
+4
+00:00:14,634 --> 00:00:18,662
+La ruta sera: concepto, ejemplo y cierre.
+
+5
+00:00:18,842 --> 00:00:21,862
+Durante el video mira esta decision:
+
+6
+00:00:22,042 --> 00:00:25,782
+cuando aplicar esta tecnica en tu propio repositorio.
+
+7
+00:00:30,450 --> 00:00:34,094
+Si todo vive en el prompt, todo cuesta siempre.
+
+8
+00:00:34,274 --> 00:00:37,774
+Las capas permiten cargar solo lo que toca.
+
+9
+00:00:37,954 --> 00:00:42,222
+Eso es entrenamiento autoconsumible convertido en sistema.
+
+10
+00:01:00,450 --> 00:01:05,774
+La buena memoria no lo recuerda todo. Recuerda lo correcto.
+
+11
+00:01:05,954 --> 00:01:11,758
+Evidencia minuto 1: "Matriz rapida" queda ligado a prueba, owner y decision.
+
+12
+00:01:11,938 --> 00:01:17,214
+Accion minuto 1: nombrar modelo, permiso y limite antes de iterar.
+

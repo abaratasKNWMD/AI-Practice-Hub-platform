@@ -9,31 +9,121 @@
   "author": "AI Practice Hub",
   "createdAt": "2026-05-07T00:00:00.000Z",
   "chapters": [
-    { "id": "start", "label": "Modos", "startMs": 0 },
-    { "id": "compare", "label": "Decision", "startMs": 9000 },
-    { "id": "close", "label": "Regla", "startMs": 65000 }
+    {
+      "id": "start",
+      "label": "Modos",
+      "startMs": 0
+    },
+    {
+      "id": "compare",
+      "label": "Decision",
+      "startMs": 30000
+    },
+    {
+      "id": "close",
+      "label": "Regla",
+      "startMs": 65000
+    }
   ],
   "scenes": [
     {
       "id": "title",
       "name": "Apertura",
       "startMs": 0,
-      "endMs": 9000,
+      "endMs": 30000,
       "type": "title",
       "content": {
         "title": "Ask, Edit, Agent",
-        "subtitle": "Tres velocidades. No uses siempre la mas grande.",
-        "tag": "Copilot Basic"
+        "subtitle": "Objetivo: resolver Copilot Basic 02 - Ask Edit Agent con criterio practico.",
+        "tag": "Copilot Basic",
+        "narrativeContract": {
+          "objective": "resolver Copilot Basic 02 - Ask Edit Agent con criterio practico.",
+          "outcome": "quedarte con una regla de uso y un ejemplo repetible.",
+          "route": "concepto, ejemplo y cierre.",
+          "decision": "cuando aplicar esta tecnica en tu propio repositorio."
+        }
       },
       "subtitles": [
-        { "text": "Copilot no es un unico boton. Tiene modos con riesgo distinto.", "startMs": 1000, "endMs": 8200 }
-      ]
+        {
+          "text": "Objetivo de esta clase:",
+          "startMs": 450,
+          "endMs": 2990
+        },
+        {
+          "text": "resolver Copilot Basic 02 - Ask Edit Agent con criterio practico.",
+          "startMs": 3170,
+          "endMs": 8350
+        },
+        {
+          "text": "Al final debes poder quedarte con una regla de uso y un ejemplo repetible.",
+          "startMs": 8530,
+          "endMs": 13374
+        },
+        {
+          "text": "La ruta sera: concepto, ejemplo y cierre.",
+          "startMs": 13554,
+          "endMs": 17510
+        },
+        {
+          "text": "Durante el video mira esta decision:",
+          "startMs": 17690,
+          "endMs": 20662
+        },
+        {
+          "text": "cuando aplicar esta tecnica en tu propio repositorio.",
+          "startMs": 20842,
+          "endMs": 24534
+        }
+      ],
+      "voiceover": [
+        "Objetivo de esta clase:",
+        "resolver Copilot Basic 02 - Ask Edit Agent con criterio practico.",
+        "Al final debes poder quedarte con una regla de uso y un ejemplo repetible.",
+        "La ruta sera: concepto, ejemplo y cierre.",
+        "Durante el video mira esta decision:",
+        "cuando aplicar esta tecnica en tu propio repositorio."
+      ],
+      "blueprintAction": {
+        "learningRubric": {
+          "learns": "Reconoce por que \"Ask, Edit, Agent\" necesita evidencia y no solo respuesta.",
+          "does": "Formula una peticion verificable con limite de alcance.",
+          "decides": "Convertir la duda en material de tutoria si se repite.",
+          "vendor": "copilot",
+          "usefulnessScore": 82,
+          "memoryCheck": "Puede nombrar el riesgo principal sin mirar la slide.",
+          "productionPass": "2000-final-direction"
+        }
+      },
+      "production": {
+        "audioVersion": "audio-prod-v2-2026-05-18",
+        "voiceProfileId": "copilotNarrator",
+        "voice": "es-ES-AlvaroNeural",
+        "rate": "+7%",
+        "pitch": "+0Hz",
+        "energy": "practica",
+        "emphasis": "modo, contexto y PR",
+        "pauseMs": 180,
+        "role": "narrator",
+        "reviewRubric": {
+          "learns": "Reconoce por que \"Ask, Edit, Agent\" necesita evidencia y no solo respuesta.",
+          "does": "Formula una peticion verificable con limite de alcance.",
+          "decides": "Convertir la duda en material de tutoria si se repite.",
+          "memoryCheck": "Puede nombrar el riesgo principal sin mirar la slide."
+        },
+        "prosodyNotes": {
+          "pace": "+7%",
+          "pause": "180ms antes de la decision",
+          "emphasis": "modo, contexto y pull request",
+          "energy": "practica"
+        },
+        "pronunciationPass": "spain-voice-units-v1"
+      }
     },
     {
       "id": "compare",
       "name": "Decision",
-      "startMs": 9000,
-      "endMs": 65000,
+      "startMs": 30000,
+      "endMs": 60000,
       "type": "compare",
       "content": {
         "tag": "Modo correcto",
@@ -41,9 +131,22 @@
           "label": "Modo mal elegido",
           "color": "destructive",
           "steps": [
-            { "icon": "AlertTriangle", "text": "Agent para una duda simple" },
-            { "icon": "Code", "text": "Edit sin seleccionar alcance" },
-            { "icon": "MessageSquare", "text": "Ask esperando que modifique archivos" }
+            {
+              "icon": "AlertTriangle",
+              "text": "Agent para una duda simple"
+            },
+            {
+              "icon": "Code",
+              "text": "Edit sin seleccionar alcance"
+            },
+            {
+              "icon": "MessageSquare",
+              "text": "Ask esperando que modifique archivos"
+            },
+            {
+              "icon": "AlertTriangle",
+              "text": "Sin evidencia, la decision vuelve a tutoria."
+            }
           ],
           "total": "Ruido y coste"
         },
@@ -51,37 +154,194 @@
           "label": "Modo con criterio",
           "color": "accent",
           "steps": [
-            { "icon": "Eye", "text": "Ask para entender" },
-            { "icon": "Code2", "text": "Edit para cambio acotado" },
-            { "icon": "GitPullRequest", "text": "Agent para tareas multiarchivo" }
+            {
+              "icon": "Eye",
+              "text": "Ask para entender"
+            },
+            {
+              "icon": "Code2",
+              "text": "Edit para cambio acotado"
+            },
+            {
+              "icon": "GitPullRequest",
+              "text": "Agent para tareas multiarchivo"
+            },
+            {
+              "icon": "Check",
+              "text": "Cerrar con criterio, coste y validacion."
+            }
           ],
           "total": "Control y velocidad"
-        }
+        },
+        "auditNote": "Comparativa enriquecida para explicar cuando usar, cuando no usar y como cerrar."
       },
       "subtitles": [
-        { "text": "Ask sirve para entender.", "startMs": 10000, "endMs": 19000 },
-        { "text": "Edit sirve para cambiar algo acotado.", "startMs": 20000, "endMs": 33000 },
-        { "text": "Agent solo merece la pena si hay plan, alcance y cierre.", "startMs": 34000, "endMs": 62000 }
-      ]
+        {
+          "text": "Ask sirve para entender.",
+          "startMs": 30450,
+          "endMs": 32966
+        },
+        {
+          "text": "Edit sirve para cambiar algo acotado.",
+          "startMs": 33146,
+          "endMs": 36358
+        },
+        {
+          "text": "Agent solo merece la pena si hay plan, alcance y cierre.",
+          "startMs": 36538,
+          "endMs": 40782
+        }
+      ],
+      "voiceover": [
+        "Ask sirve para entender.",
+        "Edit sirve para cambiar algo acotado.",
+        "Agent solo merece la pena si hay plan, alcance y cierre."
+      ],
+      "blueprintAction": {
+        "learningRubric": {
+          "learns": "Distingue decision humana de ejecucion automatizada en Copilot.",
+          "does": "Comprueba la salida contra prueba, owner o captura.",
+          "decides": "Aceptar solo si la evidencia queda visible para otra persona.",
+          "vendor": "copilot",
+          "usefulnessScore": 84,
+          "memoryCheck": "Puede repetir el prompt inicial con criterio de cierre.",
+          "productionPass": "2000-final-direction"
+        }
+      },
+      "production": {
+        "audioVersion": "audio-prod-v2-2026-05-18",
+        "voiceProfileId": "copilotNarrator",
+        "voice": "es-ES-AlvaroNeural",
+        "rate": "+7%",
+        "pitch": "+0Hz",
+        "energy": "practica",
+        "emphasis": "modo, contexto y PR",
+        "pauseMs": 180,
+        "role": "narrator",
+        "reviewRubric": {
+          "learns": "Distingue decision humana de ejecucion automatizada en Copilot.",
+          "does": "Comprueba la salida contra prueba, owner o captura.",
+          "decides": "Aceptar solo si la evidencia queda visible para otra persona.",
+          "memoryCheck": "Puede repetir el prompt inicial con criterio de cierre."
+        },
+        "prosodyNotes": {
+          "pace": "+7%",
+          "pause": "180ms antes de la decision",
+          "emphasis": "modo, contexto y pull request",
+          "energy": "practica"
+        },
+        "pronunciationPass": "spain-voice-units-v1"
+      }
     },
     {
       "id": "finale",
       "name": "Cierre",
-      "startMs": 65000,
+      "startMs": 60000,
       "endMs": 90000,
       "type": "finale",
       "content": {
         "title": "Regla de modo",
         "summary": [
-          { "number": "Ask", "label": "Entender", "body": "No edita, reduce incertidumbre." },
-          { "number": "Edit", "label": "Cambiar", "body": "Scope pequeno y visible." },
-          { "number": "Agent", "label": "Delegar", "body": "Tarea multiarchivo con done claro." }
+          {
+            "number": "Ask",
+            "label": "Entender",
+            "body": "No edita, reduce incertidumbre."
+          },
+          {
+            "number": "Edit",
+            "label": "Cambiar",
+            "body": "Scope pequeno y visible."
+          },
+          {
+            "number": "Agent",
+            "label": "Delegar",
+            "body": "Tarea multiarchivo con done claro."
+          }
         ],
         "cta": "Ejercicio: cp-b04-chat-ask-edit-agent."
       },
       "subtitles": [
-        { "text": "El modo correcto ahorra tiempo, coste y sustos.", "startMs": 66000, "endMs": 89000 }
-      ]
+        {
+          "text": "El modo correcto ahorra tiempo, coste y sustos.",
+          "startMs": 60450,
+          "endMs": 64430
+        },
+        {
+          "text": "Evidencia minuto 1:",
+          "startMs": 64610,
+          "endMs": 67078
+        },
+        {
+          "text": "hay una salida que otro perfil puede revisar sin rehacer el contexto.",
+          "startMs": 67258,
+          "endMs": 71958
+        },
+        {
+          "text": "Accion minuto 1: comparar la respuesta con el criterio de cierre",
+          "startMs": 72138,
+          "endMs": 76838
+        },
+        {
+          "text": "no con la sensacion de velocidad.",
+          "startMs": 77018,
+          "endMs": 79870
+        },
+        {
+          "text": "no con la sensacion de velocidad. (Copilot, minuto 1, paso 13)",
+          "startMs": 80050,
+          "endMs": 86214
+        }
+      ],
+      "voiceover": [
+        "El modo correcto ahorra tiempo, coste y sustos.",
+        "Evidencia minuto 1:",
+        "hay una salida que otro perfil puede revisar sin rehacer el contexto.",
+        "Accion minuto 1: comparar la respuesta con el criterio de cierre",
+        "no con la sensacion de velocidad.",
+        "no con la sensacion de velocidad. (Copilot, minuto 1, paso 13)"
+      ],
+      "blueprintAction": {
+        "learningRubric": {
+          "learns": "Ubica coste, permiso y criterio antes de aceptar la salida.",
+          "does": "Registra el criterio que permitiria repetir el paso sin instructor.",
+          "decides": "Seguir, pedir mas contexto, escalar modelo o bloquear.",
+          "vendor": "copilot",
+          "usefulnessScore": 86,
+          "memoryCheck": "Puede explicar el paso en una frase de menos de 20 segundos.",
+          "productionPass": "2000-final-direction"
+        }
+      },
+      "production": {
+        "audioVersion": "audio-prod-v2-2026-05-18",
+        "voiceProfileId": "copilotReview",
+        "voice": "es-ES-AlvaroNeural",
+        "rate": "+4%",
+        "pitch": "+0Hz",
+        "energy": "critica",
+        "emphasis": "finding, severidad y prueba",
+        "pauseMs": 240,
+        "role": "reflection",
+        "reviewRubric": {
+          "learns": "Ubica coste, permiso y criterio antes de aceptar la salida.",
+          "does": "Registra el criterio que permitiria repetir el paso sin instructor.",
+          "decides": "Seguir, pedir mas contexto, escalar modelo o bloquear.",
+          "memoryCheck": "Puede explicar el paso en una frase de menos de 20 segundos."
+        },
+        "prosodyNotes": {
+          "pace": "+4%",
+          "pause": "240ms antes de la decision",
+          "emphasis": "finding, severidad y prueba",
+          "energy": "critica"
+        },
+        "pronunciationPass": "spain-voice-units-v1"
+      }
     }
-  ]
+  ],
+  "production": {
+    "audioProductionVersion": "audio-prod-v2-2026-05-18",
+    "productionPass": "2000-final-direction",
+    "vendor": "copilot",
+    "narrativePass": "teacher-contract-v1",
+    "pronunciationPass": "spain-voice-units-v1"
+  }
 }

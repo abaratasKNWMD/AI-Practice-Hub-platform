@@ -1,0 +1,31 @@
+{
+  "generatedAt": "2026-05-18T13:01:23.593Z",
+  "audioProductionVersion": "audio-prod-v2-2026-05-18",
+  "versioning": {
+    "sourceOfTruth": "public/audio/courses/audio-release-manifest.json",
+    "immutableAssets": "/audio/courses/{courseId}/{scene}-{subtitle}.mp3",
+    "mutableIndexes": [
+      "/audio/courses/{courseId}/manifest.json",
+      "/audio/courses/audio-release-manifest.json"
+    ],
+    "checksum": "sha256 per audio entry and per course manifest"
+  },
+  "cache": {
+    "audio": "public, max-age=31536000, immutable",
+    "subtitles": "public, max-age=86400, stale-while-revalidate=604800",
+    "videoAssets": "public, max-age=31536000, immutable"
+  },
+  "regenerationPolicy": [
+    "Regenerar audio si cambia text, voice, rate, pitch o audioProductionVersion.",
+    "Regenerar VTT/SRT si cambia cualquier subtitulo o timing.",
+    "Invalidar CDN por manifest si cambia un curso completo.",
+    "No regenerar MP3 si checksum de buffer coincide con cache local."
+  ],
+  "releaseGate": [
+    "audio:qa pass=true",
+    "qa:player pass=true",
+    "qa:visual pass=true",
+    "release:smoke pass=true",
+    "auditoria 2000 >= 1980"
+  ]
+}

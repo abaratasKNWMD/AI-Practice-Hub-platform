@@ -1,261 +1,3480 @@
 {
   "id": "cl-masterclass-10m-claude-operating-model",
-  "title": "Claude Masterclass 10m - Operating Model",
-  "description": "Video largo inicial para explicar Claude Code como plataforma: memoria, contexto, skills, subagentes, MCP, hooks, plugins, coste y Agent SDK.",
+  "title": "Claude Masterclass 10 minutos - Operating Model",
+  "description": "Masterclass intensiva para explicar Claude como entorno de trabajo: CLAUDE.md, memoria, skills, hooks, M C P, subagentes, automatizacion y gobierno.",
   "template": "technical",
   "durationPreset": 10,
   "durationMs": 600000,
   "voice": "es-ES-AlvaroNeural",
   "author": "AI Practice Hub",
-  "createdAt": "2026-05-08T00:00:00.000Z",
+  "createdAt": "2026-05-15",
   "chapters": [
-    { "id": "start", "label": "Claude como plataforma", "startMs": 0 },
-    { "id": "memory", "label": "Memoria y contexto", "startMs": 80000 },
-    { "id": "operator", "label": "Skills y subagentes", "startMs": 250000 },
-    { "id": "automation", "label": "Hooks y plugins", "startMs": 410000 },
-    { "id": "close", "label": "Activacion", "startMs": 535000 }
+    {
+      "id": "start",
+      "label": "Aterrizaje",
+      "startMs": 0
+    },
+    {
+      "id": "surface",
+      "label": "Superficies",
+      "startMs": 100000
+    },
+    {
+      "id": "method",
+      "label": "Metodo",
+      "startMs": 225000
+    },
+    {
+      "id": "governance",
+      "label": "Coste y permisos",
+      "startMs": 350000
+    },
+    {
+      "id": "activation",
+      "label": "Activacion",
+      "startMs": 500000
+    }
   ],
   "scenes": [
     {
-      "id": "title",
-      "name": "Apertura",
+      "id": "01-claude-como-operating-model",
+      "name": "Claude como operating model",
       "startMs": 0,
-      "endMs": 30000,
+      "endMs": 25000,
       "type": "title",
       "content": {
-        "title": "Claude como plataforma operativa",
-        "subtitle": "Diez minutos para entender memoria, contexto, skills, agentes y automatizacion.",
-        "tag": "Claude Code / Masterclass inicial"
-      },
-      "subtitles": [
-        { "text": "Claude Code no se aterriza como un prompt bonito.", "startMs": 2000, "endMs": 9000 },
-        { "text": "Se aterriza como un sistema de memoria, herramientas y controles.", "startMs": 10000, "endMs": 21000 },
-        { "text": "Ese es el mapa de esta ruta.", "startMs": 22000, "endMs": 29000 }
-      ]
-    },
-    {
-      "id": "concept-memory",
-      "name": "Memoria",
-      "startMs": 30000,
-      "endMs": 90000,
-      "type": "concept",
-      "content": {
-        "tag": "Base Claude",
-        "title": "Memoria corta, util y gobernada",
-        "body": "Claude brilla cuando no repetimos instrucciones en cada sesion. CLAUDE.md, reglas locales, memoria y skills deben separarse para no convertir el contexto en ruido permanente.",
-        "highlight": "Recordar mas no siempre es mejor. Recordar bien si.",
-        "points": [
-          "CLAUDE.md: normas estables de equipo.",
-          "Rules: instrucciones por carpeta o tecnologia.",
-          "Auto memory: aprendizaje local que debe auditarse.",
-          "Skills: procedimientos largos que se cargan bajo demanda."
-        ]
-      },
-      "subtitles": [
-        { "text": "La primera madurez en Claude es memoria.", "startMs": 35000, "endMs": 47000 },
-        { "text": "Pero memoria no significa meterlo todo en un archivo gigante.", "startMs": 48000, "endMs": 64000 },
-        { "text": "Significa poner cada instruccion en su capa.", "startMs": 65000, "endMs": 82000 }
-      ]
-    },
-    {
-      "id": "compare-chat-platform",
-      "name": "Chat vs plataforma",
-      "startMs": 90000,
-      "endMs": 155000,
-      "type": "compare",
-      "content": {
-        "tag": "Cambio de mentalidad",
-        "left": {
-          "label": "Claude como chat",
-          "color": "destructive",
-          "steps": [
-            { "icon": "MessageSquare", "text": "Prompts enormes cada dia" },
-            { "icon": "AlertTriangle", "text": "Sesiones largas sin compactar" },
-            { "icon": "Code", "text": "Permisos aceptados por inercia" }
-          ],
-          "total": "Mucho contexto, poca gobernanza"
-        },
-        "right": {
-          "label": "Claude como plataforma",
-          "color": "accent",
-          "steps": [
-            { "icon": "FileText", "text": "CLAUDE.md y rules versionadas" },
-            { "icon": "Workflow", "text": "Skills y subagentes por rol" },
-            { "icon": "Shield", "text": "Hooks, MCP readonly y coste visible" }
-          ],
-          "total": "Mas criterio y menos repeticion"
+        "title": "Operating Model",
+        "subtitle": "Objetivo: entender el sistema operativo de Claude en 10 minutos.",
+        "tag": "Claude / Masterclass",
+        "narrativeContract": {
+          "objective": "entender el sistema operativo de Claude en 10 minutos.",
+          "outcome": "saber cuando usarlo, cuando no usarlo y que evidencia pedir.",
+          "route": "Aterrizaje, Superficies, Metodo y cierre operativo.",
+          "decision": "si la herramienta encaja con el trabajo real del equipo."
         }
       },
       "subtitles": [
-        { "text": "Claude como chat impresiona rapido.", "startMs": 96000, "endMs": 106000 },
-        { "text": "Claude como plataforma cambia el trabajo del equipo.", "startMs": 107000, "endMs": 123000 },
-        { "text": "Los cursos estan disenos para ese segundo escenario.", "startMs": 124000, "endMs": 148000 }
-      ]
-    },
-    {
-      "id": "linear-first-lab",
-      "name": "Primer lab",
-      "startMs": 155000,
-      "endMs": 220000,
-      "type": "linear",
-      "content": {
-        "ticketId": "CL-100",
-        "title": "Primer reto: CLAUDE.md minimo y auditoria de contexto",
-        "project": "Claude Practice",
-        "priority": "High",
-        "assignee": "Participante",
-        "status": "Ready",
-        "labels": ["memory", "context", "cost"],
-        "description": "Crear un CLAUDE.md pequeno, ejecutar una sesion read-only, revisar /context y /usage, y cerrar con handoff de 8 lineas."
+        {
+          "text": "Objetivo de esta clase: entender el sistema operativo de Claude en 10 minutos.",
+          "startMs": 450,
+          "endMs": 5894
+        },
+        {
+          "text": "Al final debes poder saber cuando usarlo, cuando no usarlo y que evidencia pedir.",
+          "startMs": 6074,
+          "endMs": 11446
+        },
+        {
+          "text": "La ruta sera: Aterrizaje, Superficies, Metodo y cierre operativo.",
+          "startMs": 11626,
+          "endMs": 17214
+        },
+        {
+          "text": "Durante el video mira esta decision:",
+          "startMs": 17394,
+          "endMs": 20414
+        },
+        {
+          "text": "si la herramienta encaja con el trabajo real del equipo.",
+          "startMs": 20594,
+          "endMs": 24574
+        }
+      ],
+      "voiceover": [
+        "Objetivo de esta clase: entender el sistema operativo de Claude en 10 minutos.",
+        "Al final debes poder saber cuando usarlo, cuando no usarlo y que evidencia pedir.",
+        "La ruta sera: Aterrizaje, Superficies, Metodo y cierre operativo.",
+        "Durante el video mira esta decision:",
+        "si la herramienta encaja con el trabajo real del equipo."
+      ],
+      "screen": {
+        "mode": "title",
+        "title": "Claude como operating model",
+        "visual": "claude-title"
       },
-      "subtitles": [
-        { "text": "El primer reto no pide magia.", "startMs": 160000, "endMs": 169000 },
-        { "text": "Pide higiene.", "startMs": 170000, "endMs": 176000 },
-        { "text": "Si la base esta limpia, las features avanzadas tienen sentido.", "startMs": 177000, "endMs": 207000 }
-      ]
-    },
-    {
-      "id": "thinking-context",
-      "name": "Dieta de contexto",
-      "startMs": 220000,
-      "endMs": 295000,
-      "type": "thinking",
-      "content": {
-        "tag": "Contexto",
-        "title": "Antes de seguir, Claude deberia preguntarse",
-        "thoughts": [
-          { "ms": 0, "text": "Que decision desbloquea este contexto?", "done": true },
-          { "ms": 12000, "text": "Esto deberia estar en CLAUDE.md, rule, skill o prompt?", "done": true },
-          { "ms": 28000, "text": "La sesion ya necesita /compact?", "done": true },
-          { "ms": 46000, "text": "El modelo elegido es proporcional al riesgo?", "done": false },
-          { "ms": 64000, "text": "El cierre dejara evidencia reutilizable?", "done": false }
-        ]
+      "blueprintAction": {
+        "learningRubric": {
+          "learns": "Distingue decision humana de ejecucion automatizada en Claude.",
+          "does": "Comprueba la salida contra prueba, owner o captura.",
+          "decides": "Aceptar solo si la evidencia queda visible para otra persona.",
+          "vendor": "claude",
+          "usefulnessScore": 82,
+          "memoryCheck": "Puede repetir el prompt inicial con criterio de cierre.",
+          "productionPass": "2000-final-direction"
+        }
       },
-      "subtitles": [
-        { "text": "La ventana de contexto no es un trastero.", "startMs": 225000, "endMs": 237000 },
-        { "text": "Cada cosa que entra debe ayudar a decidir.", "startMs": 238000, "endMs": 253000 },
-        { "text": "Ese habito ahorra tokens y mejora respuestas.", "startMs": 254000, "endMs": 278000 }
-      ]
+      "production": {
+        "audioVersion": "audio-prod-v2-2026-05-18",
+        "voiceProfileId": "claudeNarrator",
+        "voice": "es-ES-AlvaroNeural",
+        "rate": "+5%",
+        "pitch": "+0Hz",
+        "energy": "calmada",
+        "emphasis": "memoria, skill, hook y MCP",
+        "pauseMs": 220,
+        "role": "narrator",
+        "reviewRubric": {
+          "learns": "Distingue decision humana de ejecucion automatizada en Claude.",
+          "does": "Comprueba la salida contra prueba, owner o captura.",
+          "decides": "Aceptar solo si la evidencia queda visible para otra persona.",
+          "memoryCheck": "Puede repetir el prompt inicial con criterio de cierre."
+        },
+        "prosodyNotes": {
+          "pace": "+5%",
+          "pause": "220ms antes de la decision",
+          "emphasis": "memoria, skill, hook y M C P",
+          "energy": "calmada"
+        },
+        "pronunciationPass": "spain-voice-units-v1"
+      }
     },
     {
-      "id": "coding-claude-md",
-      "name": "CLAUDE.md",
-      "startMs": 295000,
-      "endMs": 355000,
-      "type": "coding",
-      "content": {
-        "filename": "CLAUDE.md",
-        "language": "markdown",
-        "code": "# CLAUDE.md\n\n## Objetivo\nAyudar en cambios pequenos y verificables.\n\n## Comandos\n- pnpm lint\n- pnpm test\n\n## Reglas\n- Primero lee estructura y tests; no edites hasta proponer plan corto.\n- No leas ni escribas .env, secrets ni credenciales.\n- Usa /context y /usage en sesiones largas.\n- Cierra con diff, checks, riesgos y handoff."
-      },
-      "subtitles": [
-        { "text": "Un buen CLAUDE.md cabe en una pagina util.", "startMs": 300000, "endMs": 314000 },
-        { "text": "No intenta explicar toda la empresa.", "startMs": 315000, "endMs": 326000 },
-        { "text": "Intenta orientar decisiones repetidas.", "startMs": 327000, "endMs": 344000 }
-      ]
-    },
-    {
-      "id": "concept-operator",
-      "name": "Operator",
-      "startMs": 355000,
-      "endMs": 430000,
+      "id": "02-superficies-claude",
+      "name": "Superficies Claude",
+      "startMs": 25000,
+      "endMs": 50000,
       "type": "concept",
       "content": {
-        "tag": "Curso 2 y 3",
-        "title": "De uso diario a operacion de equipo",
-        "body": "Cuando la base funciona, Claude se vuelve muy potente: skills para procedimientos, subagentes para roles, MCP para contexto externo, hooks para controles y plugins para distribuir practicas internas.",
-        "highlight": "Primero higiene. Luego automatizacion.",
+        "tag": "Claude / Masterclass",
+        "title": "Superficies Claude",
+        "body": "Project, Claude Code, M C P, skills y subagentes tienen trabajos distintos. La idea clave: convertir una pantalla de herramienta en un criterio repetible de trabajo. La persona no memoriza botones; aprende a decidir superficie, modelo, permiso, evidencia y cierre.",
+        "highlight": "No avanzar sin evidencia visible: CLAUDE.md, diff, test, coste u owner.",
         "points": [
-          "Skills: procedimientos versionados y bajo demanda.",
-          "Subagentes: explorer, QA, security y architect.",
-          "MCP: contexto externo con inventario y permisos.",
-          "Hooks y plugins: automatizacion con controles deterministicos."
+          "Superficie: Claude Code, Projects, skills, hooks, M C P y subagentes.",
+          "Modelo: modelo eficiente para clasificar y leer.",
+          "Artefacto: CLAUDE.md.",
+          "Validacion: pnpm test -- auth.spec.ts."
         ]
       },
       "subtitles": [
-        { "text": "El curso dos convierte practicas repetidas en sistema.", "startMs": 361000, "endMs": 381000 },
-        { "text": "El curso tres lleva ese sistema a automatizacion avanzada.", "startMs": 382000, "endMs": 401000 },
-        { "text": "Pero ambos dependen de una base limpia.", "startMs": 402000, "endMs": 421000 }
-      ]
+        {
+          "text": "Claude: Superficies Claude.",
+          "startMs": 25450,
+          "endMs": 28542
+        },
+        {
+          "text": "Project, Claude Code, M C P, skills y subagentes tienen trabajos distintos.",
+          "startMs": 28587,
+          "endMs": 34631
+        },
+        {
+          "text": "Modelo minuto 0: elegir por riesgo En Claude",
+          "startMs": 34676,
+          "endMs": 38752
+        },
+        {
+          "text": "valida \"Superficies Claude\" antes de iterar.",
+          "startMs": 38797,
+          "endMs": 42321
+        },
+        {
+          "text": "contexto y coste antes de pedir otra iteracion. En Claude",
+          "startMs": 42366,
+          "endMs": 47618
+        },
+        {
+          "text": "valida \"Superficies Claude\" antes de iterar.",
+          "startMs": 46396,
+          "endMs": 49920
+        },
+        {
+          "text": "Decision minuto 0: cerrar solo cuando skill versionada, hook probado y owner claro.",
+          "startMs": 43684,
+          "endMs": 49920
+        }
+      ],
+      "voiceover": [
+        "Claude: Superficies Claude.",
+        "Project, Claude Code, M C P, skills y subagentes tienen trabajos distintos.",
+        "Modelo minuto 0: elegir por riesgo En Claude",
+        "valida \"Superficies Claude\" antes de iterar.",
+        "contexto y coste antes de pedir otra iteracion. En Claude",
+        "valida \"Superficies Claude\" antes de iterar.",
+        "Decision minuto 0: cerrar solo cuando skill versionada, hook probado y owner claro."
+      ],
+      "screen": {
+        "mode": "concept",
+        "title": "Superficies Claude",
+        "visual": "claude-concept"
+      },
+      "blueprintAction": {
+        "learningRubric": {
+          "learns": "Ubica coste, permiso y criterio antes de aceptar la salida.",
+          "does": "Registra el criterio que permitiria repetir el paso sin instructor.",
+          "decides": "Seguir, pedir mas contexto, escalar modelo o bloquear.",
+          "vendor": "claude",
+          "usefulnessScore": 84,
+          "memoryCheck": "Puede explicar el paso en una frase de menos de 20 segundos.",
+          "productionPass": "2000-final-direction"
+        }
+      },
+      "production": {
+        "audioVersion": "audio-prod-v2-2026-05-18",
+        "voiceProfileId": "claudeNarrator",
+        "voice": "es-ES-AlvaroNeural",
+        "rate": "+5%",
+        "pitch": "+0Hz",
+        "energy": "calmada",
+        "emphasis": "memoria, skill, hook y MCP",
+        "pauseMs": 220,
+        "role": "narrator",
+        "reviewRubric": {
+          "learns": "Ubica coste, permiso y criterio antes de aceptar la salida.",
+          "does": "Registra el criterio que permitiria repetir el paso sin instructor.",
+          "decides": "Seguir, pedir mas contexto, escalar modelo o bloquear.",
+          "memoryCheck": "Puede explicar el paso en una frase de menos de 20 segundos."
+        },
+        "prosodyNotes": {
+          "pace": "+5%",
+          "pause": "220ms antes de la decision",
+          "emphasis": "memoria, skill, hook y M C P",
+          "energy": "calmada"
+        },
+        "pronunciationPass": "spain-voice-units-v1"
+      }
     },
     {
-      "id": "error-hooks",
-      "name": "Guardrails",
-      "startMs": 430000,
-      "endMs": 500000,
-      "type": "error",
+      "id": "03-memoria-mala-vs-memoria-util",
+      "name": "Memoria mala vs memoria util",
+      "startMs": 50000,
+      "endMs": 75000,
+      "type": "compare",
       "content": {
-        "tag": "Automatizacion con criterio",
-        "sentry": {
-          "id": "CL-HOOK-001",
-          "title": "Automatizacion sin guardrail",
-          "file": "hooks/pre-tool-use",
-          "line": 1,
-          "occurrences": 2,
-          "users": 1,
-          "first": "hace 4 minutos",
-          "trace": [
-            "Tool request touches .env",
-            "No deny rule catches it",
-            "Human catches risk too late"
+        "tag": "Claude / decision",
+        "left": {
+          "label": "Uso impulsivo",
+          "color": "destructive",
+          "steps": [
+            {
+              "icon": "MessageSquare",
+              "text": "Pedir resultado sin contexto ni limite."
+            },
+            {
+              "icon": "Code",
+              "text": "Aceptar salida porque parece razonable."
+            },
+            {
+              "icon": "AlertTriangle",
+              "text": "Descubrir tarde el coste o el riesgo."
+            }
           ],
-          "context": "Los hooks no son decoracion avanzada: son el sitio donde el criterio se vuelve repetible."
+          "total": "Mas vueltas y menos confianza"
         },
-        "linearFix": {
-          "ticketId": "CL-101",
-          "title": "Hook anti secretos y test gate",
-          "description": "Crear PreToolUse para bloquear .env y PostToolUse para sugerir/verificar tests cuando se edita codigo productivo."
-        },
-        "fix": "PreToolUse:\n- bloquear Read(.env*)\n- bloquear Write(.env*)\n- pedir confirmacion para comandos con red\n\nPostToolUse:\n- si cambia src/**, exigir check cercano\n- cerrar con evidencia"
+        "right": {
+          "label": "Uso profesional",
+          "color": "accent",
+          "steps": [
+            {
+              "icon": "Eye",
+              "text": "Elegir superficie y permiso minimo."
+            },
+            {
+              "icon": "FileText",
+              "text": "Pedir plan, evidencia y criterio de cierre."
+            },
+            {
+              "icon": "Check",
+              "text": "Validar con test, review o decision documentada."
+            }
+          ],
+          "total": "Menos ruido y mas transferencia"
+        }
       },
       "subtitles": [
-        { "text": "Automatizar no significa confiar a ciegas.", "startMs": 436000, "endMs": 449000 },
-        { "text": "Significa convertir criterio en controles repetibles.", "startMs": 450000, "endMs": 467000 },
-        { "text": "Esa es la energia del curso avanzado.", "startMs": 468000, "endMs": 489000 }
-      ]
+        {
+          "text": "Claude: Memoria mala vs memoria util.",
+          "startMs": 50450,
+          "endMs": 54118
+        },
+        {
+          "text": "Guardar todo no ayuda; guardar reglas estables reduce friccion.",
+          "startMs": 54163,
+          "endMs": 58863
+        },
+        {
+          "text": "Modelo minuto 0: elegir por riesgo En Claude",
+          "startMs": 58908,
+          "endMs": 62984
+        },
+        {
+          "text": "valida \"Memoria mala vs memoria util\" antes de iterar.",
+          "startMs": 63029,
+          "endMs": 67297
+        },
+        {
+          "text": "contexto y coste antes de pedir otra iteracion. En Claude",
+          "startMs": 67342,
+          "endMs": 72594
+        },
+        {
+          "text": "valida \"Memoria mala vs memoria util\" antes de iterar.",
+          "startMs": 70652,
+          "endMs": 74920
+        },
+        {
+          "text": "Decision minuto 0: seguir, pedir contexto, escalar modelo o bloquear.",
+          "startMs": 68900,
+          "endMs": 74920
+        }
+      ],
+      "voiceover": [
+        "Claude: Memoria mala vs memoria util.",
+        "Guardar todo no ayuda; guardar reglas estables reduce friccion.",
+        "Modelo minuto 0: elegir por riesgo En Claude",
+        "valida \"Memoria mala vs memoria util\" antes de iterar.",
+        "contexto y coste antes de pedir otra iteracion. En Claude",
+        "valida \"Memoria mala vs memoria util\" antes de iterar.",
+        "Decision minuto 0: seguir, pedir contexto, escalar modelo o bloquear."
+      ],
+      "screen": {
+        "mode": "compare",
+        "title": "Memoria mala vs memoria util",
+        "visual": "claude-compare"
+      },
+      "blueprintAction": {
+        "learningRubric": {
+          "learns": "Reconoce por que \"Memoria mala vs memoria util\" necesita evidencia y no solo respuesta.",
+          "does": "Formula una peticion verificable con limite de alcance.",
+          "decides": "Convertir la duda en material de tutoria si se repite.",
+          "vendor": "claude",
+          "usefulnessScore": 86,
+          "memoryCheck": "Puede nombrar el riesgo principal sin mirar la slide.",
+          "productionPass": "2000-final-direction"
+        }
+      },
+      "production": {
+        "audioVersion": "audio-prod-v2-2026-05-18",
+        "voiceProfileId": "claudeNarrator",
+        "voice": "es-ES-AlvaroNeural",
+        "rate": "+5%",
+        "pitch": "+0Hz",
+        "energy": "calmada",
+        "emphasis": "memoria, skill, hook y MCP",
+        "pauseMs": 220,
+        "role": "narrator",
+        "reviewRubric": {
+          "learns": "Reconoce por que \"Memoria mala vs memoria util\" necesita evidencia y no solo respuesta.",
+          "does": "Formula una peticion verificable con limite de alcance.",
+          "decides": "Convertir la duda en material de tutoria si se repite.",
+          "memoryCheck": "Puede nombrar el riesgo principal sin mirar la slide."
+        },
+        "prosodyNotes": {
+          "pace": "+5%",
+          "pause": "220ms antes de la decision",
+          "emphasis": "memoria, skill, hook y M C P",
+          "energy": "calmada"
+        },
+        "pronunciationPass": "spain-voice-units-v1"
+      }
     },
     {
-      "id": "preview-route",
-      "name": "Ruta",
-      "startMs": 500000,
-      "endMs": 555000,
-      "type": "preview",
+      "id": "04-brief-de-tarea",
+      "name": "Brief de tarea",
+      "startMs": 75000,
+      "endMs": 100000,
+      "type": "linear",
       "content": {
-        "title": "Ruta Claude Practice",
-        "description": "De memoria y contexto a Agent SDK enterprise, con decks, labs, materiales y videos simulados.",
-        "items": [
-          { "label": "Cursos", "value": "CL0-CL4" },
-          { "label": "Labs", "value": "26" },
-          { "label": "Workshops", "value": "4" },
-          { "label": "Foco", "value": "memoria + controles" }
+        "ticketId": "CL-103",
+        "title": "Brief de tarea",
+        "project": "Claude Practice Hub",
+        "priority": "High",
+        "assignee": "Participante",
+        "status": "Ready for practice",
+        "labels": [
+          "ai-practice",
+          "evidence",
+          "cost-aware"
+        ],
+        "description": "Separar objetivo, frontera, owner, evidencia y rollback. Entregable: explicar decision de superficie, modelo, permiso, coste y evidencia antes de cerrar la escena."
+      },
+      "subtitles": [
+        {
+          "text": "Claude: Brief de tarea.",
+          "startMs": 75450,
+          "endMs": 78182
+        },
+        {
+          "text": "Separar objetivo, frontera, owner, evidencia y rollback.",
+          "startMs": 78362,
+          "endMs": 83278
+        },
+        {
+          "text": "Modelo minuto 1: elegir por riesgo, contexto y coste antes de pedir otra iteracion.",
+          "startMs": 83458,
+          "endMs": 89550
+        },
+        {
+          "text": "Decision minuto 1: seguir, pedir contexto, escalar modelo o bloquear.",
+          "startMs": 89730,
+          "endMs": 95606
+        }
+      ],
+      "voiceover": [
+        "Claude: Brief de tarea.",
+        "Separar objetivo, frontera, owner, evidencia y rollback.",
+        "Modelo minuto 1: elegir por riesgo, contexto y coste antes de pedir otra iteracion.",
+        "Decision minuto 1: seguir, pedir contexto, escalar modelo o bloquear."
+      ],
+      "screen": {
+        "mode": "linear",
+        "title": "Brief de tarea",
+        "visual": "claude-linear"
+      },
+      "blueprintAction": {
+        "learningRubric": {
+          "learns": "Distingue decision humana de ejecucion automatizada en Claude.",
+          "does": "Comprueba la salida contra prueba, owner o captura.",
+          "decides": "Aceptar solo si la evidencia queda visible para otra persona.",
+          "vendor": "claude",
+          "usefulnessScore": 88,
+          "memoryCheck": "Puede repetir el prompt inicial con criterio de cierre.",
+          "productionPass": "2000-final-direction"
+        }
+      },
+      "production": {
+        "audioVersion": "audio-prod-v2-2026-05-18",
+        "voiceProfileId": "claudeNarrator",
+        "voice": "es-ES-AlvaroNeural",
+        "rate": "+5%",
+        "pitch": "+0Hz",
+        "energy": "calmada",
+        "emphasis": "memoria, skill, hook y MCP",
+        "pauseMs": 220,
+        "role": "narrator",
+        "reviewRubric": {
+          "learns": "Distingue decision humana de ejecucion automatizada en Claude.",
+          "does": "Comprueba la salida contra prueba, owner o captura.",
+          "decides": "Aceptar solo si la evidencia queda visible para otra persona.",
+          "memoryCheck": "Puede repetir el prompt inicial con criterio de cierre."
+        },
+        "prosodyNotes": {
+          "pace": "+5%",
+          "pause": "220ms antes de la decision",
+          "emphasis": "memoria, skill, hook y M C P",
+          "energy": "calmada"
+        },
+        "pronunciationPass": "spain-voice-units-v1"
+      }
+    },
+    {
+      "id": "05-prompt-de-skill",
+      "name": "Prompt de skill",
+      "startMs": 100000,
+      "endMs": 125000,
+      "type": "prompt",
+      "content": {
+        "mode": "prompt",
+        "vendor": "claude",
+        "title": "Prompt de skill",
+        "eyebrow": "Claude Masterclass 10 minutos - Operating Model / escena 05",
+        "label": "Una skill captura procedimiento repetible y evita reexplicar el trabajo.",
+        "presenterCue": "Relacionar Prompt de skill con una decision real del alumno.",
+        "actionLabel": "Mostrar artefacto",
+        "actionDetail": "Una skill captura procedimiento repetible y evita reexplicar el trabajo.",
+        "prompt": "Actua como Claude en Claude Code, Projects, skills, hooks, M C P y subagentes. Objetivo: Prompt de skill. Contexto: Una skill captura procedimiento repetible y evita reexplicar el trabajo.. Antes de editar, devuelve criterio de cierre, riesgo y coste esperado. No avances si falta evidencia verificable.",
+        "response": [
+          "Lectura: Prompt de skill se trata como decision operativa, no como teoria.",
+          "Artefacto: CLAUDE.md o el prompt asociado documenta la regla estable.",
+          "Evidencia minuto 1: skill versionada, hook probado y owner claro.",
+          "Siguiente paso: aplicar solo si el humano acepta riesgo y coste."
+        ],
+        "diff": [
+          "diff --git a/CLAUDE.md b/CLAUDE.md",
+          "- regla implicita: Prompt de skill",
+          "+ regla explicita: Una skill captura procedimiento repetible y evita reexplicar el trabajo.",
+          "+ done_when = \"prueba, review, coste y owner visibles\""
+        ],
+        "terminal": [
+          "$ pnpm test -- auth.spec.ts",
+          "PASS CLAUDE.md",
+          "checked: Prompt de skill",
+          "model: modelo eficiente para clasificar y leer",
+          "budget: dentro del limite de workshop"
+        ],
+        "review": [
+          {
+            "severity": "note",
+            "text": "Comprobar que Prompt de skill no se queda en recomendacion generica."
+          },
+          {
+            "severity": "medium",
+            "text": "Pedir evidencia: comando, diff, owner o decision documentada."
+          },
+          {
+            "severity": "note",
+            "text": "El instructor valida si el alumno puede repetirlo sin ayuda."
+          }
+        ],
+        "cost": {
+          "model": "modelo eficiente para clasificar y leer",
+          "tokens": "bajo/medio por contexto acotado",
+          "permission": "minimo permiso viable para esta escena",
+          "stopRule": "Parar tras dos iteraciones sin evidencia nueva."
+        },
+        "decision": {
+          "question": "Que decision tomas sobre Prompt de skill?",
+          "options": [
+            "seguir",
+            "pedir contexto",
+            "subir modelo",
+            "bloquear y llevar a tutoria"
+          ],
+          "selected": 0
+        },
+        "risk": {
+          "items": [
+            "Coste invisible",
+            "Permisos excesivos",
+            "Contexto flojo",
+            "Salida no verificable",
+            "Owner ausente"
+          ],
+          "level": "medio"
+        },
+        "branch": {
+          "steps": [
+            "Brief",
+            "Contexto",
+            "Plan",
+            "Artefacto",
+            "Validacion",
+            "Review",
+            "Cierre"
+          ],
+          "active": 4
+        },
+        "quiz": {
+          "question": "Que prueba que Prompt de skill esta entendido?",
+          "answers": [
+            "Un prompt mas largo",
+            "Una evidencia repetible",
+            "Una opinion del modelo"
+          ],
+          "correct": 1
+        }
+      },
+      "subtitles": [
+        {
+          "text": "Claude: Prompt de skill.",
+          "startMs": 100450,
+          "endMs": 103134
+        },
+        {
+          "text": "Una skill captura procedimiento repetible y evita reexplicar el trabajo.",
+          "startMs": 103314,
+          "endMs": 108158
+        },
+        {
+          "text": "Modelo minuto 1: elegir por riesgo, contexto y coste antes de pedir otra iteracion.",
+          "startMs": 108338,
+          "endMs": 114430
+        },
+        {
+          "text": "Decision minuto 1: si el riesgo supera la evidencia, entra instructor o tech lead.",
+          "startMs": 114610,
+          "endMs": 120294
+        }
+      ],
+      "voiceover": [
+        "Claude: Prompt de skill.",
+        "Una skill captura procedimiento repetible y evita reexplicar el trabajo.",
+        "Modelo minuto 1: elegir por riesgo, contexto y coste antes de pedir otra iteracion.",
+        "Decision minuto 1: si el riesgo supera la evidencia, entra instructor o tech lead."
+      ],
+      "screen": {
+        "mode": "prompt",
+        "title": "Prompt de skill",
+        "visual": "claude-prompt"
+      },
+      "blueprintAction": {
+        "learningRubric": {
+          "learns": "Ubica coste, permiso y criterio antes de aceptar la salida.",
+          "does": "Registra el criterio que permitiria repetir el paso sin instructor.",
+          "decides": "Seguir, pedir mas contexto, escalar modelo o bloquear.",
+          "vendor": "claude",
+          "usefulnessScore": 90,
+          "memoryCheck": "Puede explicar el paso en una frase de menos de 20 segundos.",
+          "productionPass": "2000-final-direction"
+        }
+      },
+      "production": {
+        "audioVersion": "audio-prod-v2-2026-05-18",
+        "voiceProfileId": "claudeNarrator",
+        "voice": "es-ES-AlvaroNeural",
+        "rate": "+5%",
+        "pitch": "+0Hz",
+        "energy": "calmada",
+        "emphasis": "memoria, skill, hook y MCP",
+        "pauseMs": 220,
+        "role": "narrator",
+        "reviewRubric": {
+          "learns": "Ubica coste, permiso y criterio antes de aceptar la salida.",
+          "does": "Registra el criterio que permitiria repetir el paso sin instructor.",
+          "decides": "Seguir, pedir mas contexto, escalar modelo o bloquear.",
+          "memoryCheck": "Puede explicar el paso en una frase de menos de 20 segundos."
+        },
+        "prosodyNotes": {
+          "pace": "+5%",
+          "pause": "220ms antes de la decision",
+          "emphasis": "memoria, skill, hook y M C P",
+          "energy": "calmada"
+        },
+        "pronunciationPass": "spain-voice-units-v1"
+      }
+    },
+    {
+      "id": "06-respuesta-esperada",
+      "name": "Respuesta esperada",
+      "startMs": 125000,
+      "endMs": 150000,
+      "type": "streaming",
+      "content": {
+        "mode": "streaming",
+        "vendor": "claude",
+        "title": "Respuesta esperada",
+        "eyebrow": "Claude Masterclass 10 minutos - Operating Model / escena 06",
+        "label": "Claude debe devolver pasos, riesgos y artefacto final, no entusiasmo.",
+        "presenterCue": "Relacionar Respuesta esperada con una decision real del alumno.",
+        "actionLabel": "Mostrar artefacto",
+        "actionDetail": "Claude debe devolver pasos, riesgos y artefacto final, no entusiasmo.",
+        "prompt": "Actua como Claude en Claude Code, Projects, skills, hooks, M C P y subagentes. Objetivo: Respuesta esperada. Contexto: Claude debe devolver pasos, riesgos y artefacto final, no entusiasmo.. Antes de editar, devuelve criterio de cierre, riesgo y coste esperado. No avances si falta evidencia verificable.",
+        "response": [
+          "Lectura: Respuesta esperada se trata como decision operativa, no como teoria.",
+          "Artefacto: CLAUDE.md o el prompt asociado documenta la regla estable.",
+          "Evidencia minuto 2: hay una salida que otro perfil puede revisar sin rehacer el contexto.",
+          "Siguiente paso: aplicar solo si el humano acepta riesgo y coste."
+        ],
+        "diff": [
+          "diff --git a/CLAUDE.md b/CLAUDE.md",
+          "- regla implicita: Respuesta esperada",
+          "+ regla explicita: Claude debe devolver pasos, riesgos y artefacto final, no entusiasmo.",
+          "+ done_when = \"prueba, review, coste y owner visibles\""
+        ],
+        "terminal": [
+          "$ pnpm test -- auth.spec.ts",
+          "PASS CLAUDE.md",
+          "checked: Respuesta esperada",
+          "model: modelo eficiente para clasificar y leer",
+          "budget: dentro del limite de workshop"
+        ],
+        "review": [
+          {
+            "severity": "note",
+            "text": "Comprobar que Respuesta esperada no se queda en recomendacion generica."
+          },
+          {
+            "severity": "medium",
+            "text": "Pedir evidencia: comando, diff, owner o decision documentada."
+          },
+          {
+            "severity": "note",
+            "text": "El instructor valida si el alumno puede repetirlo sin ayuda."
+          }
+        ],
+        "cost": {
+          "model": "modelo eficiente para clasificar y leer",
+          "tokens": "bajo/medio por contexto acotado",
+          "permission": "minimo permiso viable para esta escena",
+          "stopRule": "Parar tras dos iteraciones sin evidencia nueva."
+        },
+        "decision": {
+          "question": "Que decision tomas sobre Respuesta esperada?",
+          "options": [
+            "seguir",
+            "pedir contexto",
+            "subir modelo",
+            "bloquear y llevar a tutoria"
+          ],
+          "selected": 1
+        },
+        "risk": {
+          "items": [
+            "Coste invisible",
+            "Permisos excesivos",
+            "Contexto flojo",
+            "Salida no verificable",
+            "Owner ausente"
+          ],
+          "level": "alto"
+        },
+        "branch": {
+          "steps": [
+            "Brief",
+            "Contexto",
+            "Plan",
+            "Artefacto",
+            "Validacion",
+            "Review",
+            "Cierre"
+          ],
+          "active": 5
+        },
+        "quiz": {
+          "question": "Que prueba que Respuesta esperada esta entendido?",
+          "answers": [
+            "Un prompt mas largo",
+            "Una evidencia repetible",
+            "Una opinion del modelo"
+          ],
+          "correct": 1
+        }
+      },
+      "subtitles": [
+        {
+          "text": "Claude: Respuesta esperada.",
+          "startMs": 125450,
+          "endMs": 128422
+        },
+        {
+          "text": "Claude debe devolver pasos, riesgos y artefacto final, no entusiasmo.",
+          "startMs": 128602,
+          "endMs": 133950
+        },
+        {
+          "text": "Modelo minuto 2: elegir por riesgo, contexto y coste antes de pedir otra iteracion.",
+          "startMs": 134130,
+          "endMs": 140270
+        },
+        {
+          "text": "Decision minuto 2: guardar la duda como material reutilizable si se repite.",
+          "startMs": 140450,
+          "endMs": 145846
+        }
+      ],
+      "voiceover": [
+        "Claude: Respuesta esperada.",
+        "Claude debe devolver pasos, riesgos y artefacto final, no entusiasmo.",
+        "Modelo minuto 2: elegir por riesgo, contexto y coste antes de pedir otra iteracion.",
+        "Decision minuto 2: guardar la duda como material reutilizable si se repite."
+      ],
+      "screen": {
+        "mode": "streaming",
+        "title": "Respuesta esperada",
+        "visual": "claude-streaming"
+      },
+      "blueprintAction": {
+        "learningRubric": {
+          "learns": "Reconoce por que \"Respuesta esperada\" necesita evidencia y no solo respuesta.",
+          "does": "Formula una peticion verificable con limite de alcance.",
+          "decides": "Convertir la duda en material de tutoria si se repite.",
+          "vendor": "claude",
+          "usefulnessScore": 92,
+          "memoryCheck": "Puede nombrar el riesgo principal sin mirar la slide.",
+          "productionPass": "2000-final-direction"
+        }
+      },
+      "production": {
+        "audioVersion": "audio-prod-v2-2026-05-18",
+        "voiceProfileId": "claudeNarrator",
+        "voice": "es-ES-AlvaroNeural",
+        "rate": "+5%",
+        "pitch": "+0Hz",
+        "energy": "calmada",
+        "emphasis": "memoria, skill, hook y MCP",
+        "pauseMs": 220,
+        "role": "narrator",
+        "reviewRubric": {
+          "learns": "Reconoce por que \"Respuesta esperada\" necesita evidencia y no solo respuesta.",
+          "does": "Formula una peticion verificable con limite de alcance.",
+          "decides": "Convertir la duda en material de tutoria si se repite.",
+          "memoryCheck": "Puede nombrar el riesgo principal sin mirar la slide."
+        },
+        "prosodyNotes": {
+          "pace": "+5%",
+          "pause": "220ms antes de la decision",
+          "emphasis": "memoria, skill, hook y M C P",
+          "energy": "calmada"
+        },
+        "pronunciationPass": "spain-voice-units-v1"
+      }
+    },
+    {
+      "id": "07-claude-md",
+      "name": "Media break / screenshot",
+      "startMs": 150000,
+      "endMs": 175000,
+      "type": "media-break",
+      "content": {
+        "source": "sprint-cd-media-breaks",
+        "vendor": "claude",
+        "kind": "screenshot",
+        "title": "Captura mental: Claude Code, skills, hooks y M C P",
+        "imageUrl": "/video-assets/vendor-mockups/claude-skills-mcp.svg",
+        "alt": "claude screenshot asset",
+        "caption": "La imagen fija una decision que despues se practica con el agente.",
+        "situation": "Situacion minuto 2: Claude recibe \"Captura mental: Claude Code, skills, hooks y M C P\" y debe convertirlo en trabajo revisable.",
+        "tension": "Tension minuto 2: mas contexto puede sonar mejor y decidir peor.",
+        "example": "Ejemplo: Skill versionada, hook probado y owner claro.",
+        "action": "Accion minuto 2: comparar la respuesta con el criterio de cierre, no con la sensacion de velocidad.",
+        "evidence": "Evidencia minuto 2: \"Captura mental: Claude Code, skills, hooks y M C P\" no se cierra sin test, captura o criterio escrito.",
+        "decision": "Decision minuto 2: seguir, pedir contexto, escalar modelo o bloquear.",
+        "rubric": {
+          "learns": "Claude escala cuando empaqueta criterio, no cuando acumula texto.",
+          "does": "Define CLAUDE.md, skill y gate de seguridad.",
+          "decides": "Que queda en memoria, que va a skill y que bloquea el hook."
+        }
+      },
+      "subtitles": [
+        {
+          "text": "Situacion minuto 2: alguien tendra que mantener esta salida despues de la demo.",
+          "startMs": 150450,
+          "endMs": 155918
+        },
+        {
+          "text": "Tension minuto 2: el agente puede avanzar mas rapido que nuestra capacidad de revisar.",
+          "startMs": 155963,
+          "endMs": 161863
+        },
+        {
+          "text": "Accion minuto 2: pedir salida pequena, verificable y con owner.",
+          "startMs": 161908,
+          "endMs": 167232
+        },
+        {
+          "text": "Evidencia minuto 2: \"Captura mental: Claude Code skills",
+          "startMs": 167277,
+          "endMs": 172073
+        },
+        {
+          "text": "hooks y M C P\" queda ligado a prueba owner y decision.",
+          "startMs": 170484,
+          "endMs": 174920
+        }
+      ],
+      "voiceover": [
+        "Situacion minuto 2: alguien tendra que mantener esta salida despues de la demo.",
+        "Tension minuto 2: el agente puede avanzar mas rapido que nuestra capacidad de revisar.",
+        "Accion minuto 2: pedir salida pequena, verificable y con owner.",
+        "Evidencia minuto 2: \"Captura mental: Claude Code skills",
+        "hooks y M C P\" queda ligado a prueba owner y decision."
+      ],
+      "screen": {
+        "mode": "media-break",
+        "title": "Captura mental: Claude Code, skills, hooks y M C P",
+        "visual": "/video-assets/vendor-mockups/claude-skills-mcp.svg"
+      },
+      "blueprintAction": {
+        "learningRubric": {
+          "learns": "Distingue decision humana de ejecucion automatizada en Claude.",
+          "does": "Comprueba la salida contra prueba, owner o captura.",
+          "decides": "Aceptar solo si la evidencia queda visible para otra persona.",
+          "vendor": "claude",
+          "usefulnessScore": 82,
+          "memoryCheck": "Puede repetir el prompt inicial con criterio de cierre.",
+          "productionPass": "2000-final-direction"
+        }
+      },
+      "production": {
+        "audioVersion": "audio-prod-v2-2026-05-18",
+        "voiceProfileId": "claudeSafety",
+        "voice": "es-ES-AlvaroNeural",
+        "rate": "+2%",
+        "pitch": "+0Hz",
+        "energy": "deliberada",
+        "emphasis": "permiso, bloqueo y rollback",
+        "pauseMs": 300,
+        "role": "reflection",
+        "reviewRubric": {
+          "learns": "Distingue decision humana de ejecucion automatizada en Claude.",
+          "does": "Comprueba la salida contra prueba, owner o captura.",
+          "decides": "Aceptar solo si la evidencia queda visible para otra persona.",
+          "memoryCheck": "Puede repetir el prompt inicial con criterio de cierre."
+        },
+        "prosodyNotes": {
+          "pace": "+2%",
+          "pause": "300ms antes de la decision",
+          "emphasis": "permiso, bloqueo y rollback",
+          "energy": "deliberada"
+        },
+        "pronunciationPass": "spain-voice-units-v1"
+      }
+    },
+    {
+      "id": "08-hook-gobernado",
+      "name": "Hook gobernado",
+      "startMs": 175000,
+      "endMs": 200000,
+      "type": "diff",
+      "content": {
+        "mode": "diff",
+        "vendor": "claude",
+        "title": "Hook gobernado",
+        "eyebrow": "Claude Masterclass 10 minutos - Operating Model / escena 08",
+        "label": "Un hook bueno bloquea con criterio y ofrece salida, no con susto.",
+        "presenterCue": "Relacionar Hook gobernado con una decision real del alumno.",
+        "actionLabel": "Mostrar artefacto",
+        "actionDetail": "Un hook bueno bloquea con criterio y ofrece salida, no con susto.",
+        "prompt": "Actua como Claude en Claude Code, Projects, skills, hooks, M C P y subagentes. Objetivo: Hook gobernado. Contexto: Un hook bueno bloquea con criterio y ofrece salida, no con susto.. Antes de editar, devuelve criterio de cierre, riesgo y coste esperado. No avances si falta evidencia verificable.",
+        "response": [
+          "Lectura: Hook gobernado se trata como decision operativa, no como teoria.",
+          "Artefacto: CLAUDE.md o el prompt asociado documenta la regla estable.",
+          "Evidencia minuto 2: \"Hook gobernado\" queda ligado a prueba, owner y decision.",
+          "Siguiente paso: aplicar solo si el humano acepta riesgo y coste."
+        ],
+        "diff": [
+          "diff --git a/CLAUDE.md b/CLAUDE.md",
+          "- regla implicita: Hook gobernado",
+          "+ regla explicita: Un hook bueno bloquea con criterio y ofrece salida, no con susto.",
+          "+ done_when = \"prueba, review, coste y owner visibles\""
+        ],
+        "terminal": [
+          "$ pnpm test -- auth.spec.ts",
+          "PASS CLAUDE.md",
+          "checked: Hook gobernado",
+          "model: modelo eficiente para clasificar y leer",
+          "budget: dentro del limite de workshop"
+        ],
+        "review": [
+          {
+            "severity": "high",
+            "text": "Comprobar que Hook gobernado no se queda en recomendacion generica."
+          },
+          {
+            "severity": "medium",
+            "text": "Pedir evidencia: comando, diff, owner o decision documentada."
+          },
+          {
+            "severity": "note",
+            "text": "El instructor valida si el alumno puede repetirlo sin ayuda."
+          }
+        ],
+        "cost": {
+          "model": "modelo eficiente para clasificar y leer",
+          "tokens": "bajo/medio por contexto acotado",
+          "permission": "minimo permiso viable para esta escena",
+          "stopRule": "Parar tras dos iteraciones sin evidencia nueva."
+        },
+        "decision": {
+          "question": "Que decision tomas sobre Hook gobernado?",
+          "options": [
+            "seguir",
+            "pedir contexto",
+            "subir modelo",
+            "bloquear y llevar a tutoria"
+          ],
+          "selected": 0
+        },
+        "risk": {
+          "items": [
+            "Coste invisible",
+            "Permisos excesivos",
+            "Contexto flojo",
+            "Salida no verificable",
+            "Owner ausente"
+          ],
+          "level": "bajo"
+        },
+        "branch": {
+          "steps": [
+            "Brief",
+            "Contexto",
+            "Plan",
+            "Artefacto",
+            "Validacion",
+            "Review",
+            "Cierre"
+          ],
+          "active": 0
+        },
+        "quiz": {
+          "question": "Que prueba que Hook gobernado esta entendido?",
+          "answers": [
+            "Un prompt mas largo",
+            "Una evidencia repetible",
+            "Una opinion del modelo"
+          ],
+          "correct": 1
+        }
+      },
+      "subtitles": [
+        {
+          "text": "Claude: Hook gobernado.",
+          "startMs": 175450,
+          "endMs": 178278
+        },
+        {
+          "text": "Un hook bueno bloquea con criterio y ofrece salida, no con susto.",
+          "startMs": 178458,
+          "endMs": 183278
+        },
+        {
+          "text": "Modelo minuto 2: elegir por riesgo, contexto y coste antes de pedir otra iteracion.",
+          "startMs": 183458,
+          "endMs": 189598
+        },
+        {
+          "text": "Decision minuto 2: cerrar solo cuando skill versionada, hook probado y owner claro.",
+          "startMs": 189778,
+          "endMs": 195846
+        }
+      ],
+      "voiceover": [
+        "Claude: Hook gobernado.",
+        "Un hook bueno bloquea con criterio y ofrece salida, no con susto.",
+        "Modelo minuto 2: elegir por riesgo, contexto y coste antes de pedir otra iteracion.",
+        "Decision minuto 2: cerrar solo cuando skill versionada, hook probado y owner claro."
+      ],
+      "screen": {
+        "mode": "diff",
+        "title": "Hook gobernado",
+        "visual": "claude-diff"
+      },
+      "blueprintAction": {
+        "learningRubric": {
+          "learns": "Ubica coste, permiso y criterio antes de aceptar la salida.",
+          "does": "Registra el criterio que permitiria repetir el paso sin instructor.",
+          "decides": "Seguir, pedir mas contexto, escalar modelo o bloquear.",
+          "vendor": "claude",
+          "usefulnessScore": 96,
+          "memoryCheck": "Puede explicar el paso en una frase de menos de 20 segundos.",
+          "productionPass": "2000-final-direction"
+        }
+      },
+      "production": {
+        "audioVersion": "audio-prod-v2-2026-05-18",
+        "voiceProfileId": "claudeNarrator",
+        "voice": "es-ES-AlvaroNeural",
+        "rate": "+5%",
+        "pitch": "+0Hz",
+        "energy": "calmada",
+        "emphasis": "memoria, skill, hook y MCP",
+        "pauseMs": 220,
+        "role": "narrator",
+        "reviewRubric": {
+          "learns": "Ubica coste, permiso y criterio antes de aceptar la salida.",
+          "does": "Registra el criterio que permitiria repetir el paso sin instructor.",
+          "decides": "Seguir, pedir mas contexto, escalar modelo o bloquear.",
+          "memoryCheck": "Puede explicar el paso en una frase de menos de 20 segundos."
+        },
+        "prosodyNotes": {
+          "pace": "+5%",
+          "pause": "220ms antes de la decision",
+          "emphasis": "memoria, skill, hook y M C P",
+          "energy": "calmada"
+        },
+        "pronunciationPass": "spain-voice-units-v1"
+      }
+    },
+    {
+      "id": "09-terminal-y-evidencia",
+      "name": "Terminal y evidencia",
+      "startMs": 200000,
+      "endMs": 225000,
+      "type": "terminal",
+      "content": {
+        "mode": "terminal",
+        "vendor": "claude",
+        "title": "Terminal y evidencia",
+        "eyebrow": "Claude Masterclass 10 minutos - Operating Model / escena 09",
+        "label": "Cada automatizacion necesita salida legible y rollback probado.",
+        "presenterCue": "Relacionar Terminal y evidencia con una decision real del alumno.",
+        "actionLabel": "Mostrar artefacto",
+        "actionDetail": "Cada automatizacion necesita salida legible y rollback probado.",
+        "prompt": "Actua como Claude en Claude Code, Projects, skills, hooks, M C P y subagentes. Objetivo: Terminal y evidencia. Contexto: Cada automatizacion necesita salida legible y rollback probado.. Antes de editar, devuelve criterio de cierre, riesgo y coste esperado. No avances si falta evidencia verificable.",
+        "response": [
+          "Lectura: Terminal y evidencia se trata como decision operativa, no como teoria.",
+          "Artefacto: CLAUDE.md o el prompt asociado documenta la regla estable.",
+          "Evidencia minuto 3: el artefacto muestra que se controlo contexto infinito, permisos y automatizacion sin rollback.",
+          "Siguiente paso: aplicar solo si el humano acepta riesgo y coste."
+        ],
+        "diff": [
+          "diff --git a/CLAUDE.md b/CLAUDE.md",
+          "- regla implicita: Terminal y evidencia",
+          "+ regla explicita: Cada automatizacion necesita salida legible y rollback probado.",
+          "+ done_when = \"prueba, review, coste y owner visibles\""
+        ],
+        "terminal": [
+          "$ pnpm test -- auth.spec.ts",
+          "PASS CLAUDE.md",
+          "checked: Terminal y evidencia",
+          "model: modelo eficiente para clasificar y leer",
+          "budget: dentro del limite de workshop"
+        ],
+        "review": [
+          {
+            "severity": "note",
+            "text": "Comprobar que Terminal y evidencia no se queda en recomendacion generica."
+          },
+          {
+            "severity": "medium",
+            "text": "Pedir evidencia: comando, diff, owner o decision documentada."
+          },
+          {
+            "severity": "note",
+            "text": "El instructor valida si el alumno puede repetirlo sin ayuda."
+          }
+        ],
+        "cost": {
+          "model": "modelo eficiente para clasificar y leer",
+          "tokens": "bajo/medio por contexto acotado",
+          "permission": "minimo permiso viable para esta escena",
+          "stopRule": "Parar tras dos iteraciones sin evidencia nueva."
+        },
+        "decision": {
+          "question": "Que decision tomas sobre Terminal y evidencia?",
+          "options": [
+            "seguir",
+            "pedir contexto",
+            "subir modelo",
+            "bloquear y llevar a tutoria"
+          ],
+          "selected": 1
+        },
+        "risk": {
+          "items": [
+            "Coste invisible",
+            "Permisos excesivos",
+            "Contexto flojo",
+            "Salida no verificable",
+            "Owner ausente"
+          ],
+          "level": "bajo"
+        },
+        "branch": {
+          "steps": [
+            "Brief",
+            "Contexto",
+            "Plan",
+            "Artefacto",
+            "Validacion",
+            "Review",
+            "Cierre"
+          ],
+          "active": 1
+        },
+        "quiz": {
+          "question": "Que prueba que Terminal y evidencia esta entendido?",
+          "answers": [
+            "Un prompt mas largo",
+            "Una evidencia repetible",
+            "Una opinion del modelo"
+          ],
+          "correct": 1
+        }
+      },
+      "subtitles": [
+        {
+          "text": "Claude: Terminal y evidencia.",
+          "startMs": 200450,
+          "endMs": 203662
+        },
+        {
+          "text": "Cada automatizacion necesita salida legible y rollback probado.",
+          "startMs": 203842,
+          "endMs": 208446
+        },
+        {
+          "text": "Modelo minuto 3: elegir por riesgo, contexto y coste antes de pedir otra iteracion.",
+          "startMs": 208626,
+          "endMs": 214862
+        },
+        {
+          "text": "Decision minuto 3: seguir, pedir contexto, escalar modelo o bloquear.",
+          "startMs": 215042,
+          "endMs": 221014
+        }
+      ],
+      "voiceover": [
+        "Claude: Terminal y evidencia.",
+        "Cada automatizacion necesita salida legible y rollback probado.",
+        "Modelo minuto 3: elegir por riesgo, contexto y coste antes de pedir otra iteracion.",
+        "Decision minuto 3: seguir, pedir contexto, escalar modelo o bloquear."
+      ],
+      "screen": {
+        "mode": "terminal",
+        "title": "Terminal y evidencia",
+        "visual": "claude-terminal"
+      },
+      "blueprintAction": {
+        "learningRubric": {
+          "learns": "Reconoce por que \"Terminal y evidencia\" necesita evidencia y no solo respuesta.",
+          "does": "Formula una peticion verificable con limite de alcance.",
+          "decides": "Convertir la duda en material de tutoria si se repite.",
+          "vendor": "claude",
+          "usefulnessScore": 98,
+          "memoryCheck": "Puede nombrar el riesgo principal sin mirar la slide.",
+          "productionPass": "2000-final-direction"
+        }
+      },
+      "production": {
+        "audioVersion": "audio-prod-v2-2026-05-18",
+        "voiceProfileId": "claudeNarrator",
+        "voice": "es-ES-AlvaroNeural",
+        "rate": "+5%",
+        "pitch": "+0Hz",
+        "energy": "calmada",
+        "emphasis": "memoria, skill, hook y MCP",
+        "pauseMs": 220,
+        "role": "narrator",
+        "reviewRubric": {
+          "learns": "Reconoce por que \"Terminal y evidencia\" necesita evidencia y no solo respuesta.",
+          "does": "Formula una peticion verificable con limite de alcance.",
+          "decides": "Convertir la duda en material de tutoria si se repite.",
+          "memoryCheck": "Puede nombrar el riesgo principal sin mirar la slide."
+        },
+        "prosodyNotes": {
+          "pace": "+5%",
+          "pause": "220ms antes de la decision",
+          "emphasis": "memoria, skill, hook y M C P",
+          "energy": "calmada"
+        },
+        "pronunciationPass": "spain-voice-units-v1"
+      }
+    },
+    {
+      "id": "10-decision-de-modelo",
+      "name": "Decision de modelo",
+      "startMs": 225000,
+      "endMs": 250000,
+      "type": "decision",
+      "content": {
+        "mode": "decision",
+        "vendor": "claude",
+        "title": "Decision de modelo",
+        "eyebrow": "Claude Masterclass 10 minutos - Operating Model / escena 10",
+        "label": "Usar potencia segun ambiguedad, no por costumbre.",
+        "presenterCue": "Relacionar Decision de modelo con una decision real del alumno.",
+        "actionLabel": "Mostrar artefacto",
+        "actionDetail": "Usar potencia segun ambiguedad, no por costumbre.",
+        "prompt": "Actua como Claude en Claude Code, Projects, skills, hooks, M C P y subagentes. Objetivo: Decision de modelo. Contexto: Usar potencia segun ambiguedad, no por costumbre.. Antes de editar, devuelve criterio de cierre, riesgo y coste esperado. No avances si falta evidencia verificable.",
+        "response": [
+          "Lectura: Decision de modelo se trata como decision operativa, no como teoria.",
+          "Artefacto: CLAUDE.md o el prompt asociado documenta la regla estable.",
+          "Evidencia minuto 3: skill versionada, hook probado y owner claro.",
+          "Siguiente paso: aplicar solo si el humano acepta riesgo y coste."
+        ],
+        "diff": [
+          "diff --git a/CLAUDE.md b/CLAUDE.md",
+          "- regla implicita: Decision de modelo",
+          "+ regla explicita: Usar potencia segun ambiguedad, no por costumbre.",
+          "+ done_when = \"prueba, review, coste y owner visibles\""
+        ],
+        "terminal": [
+          "$ pnpm test -- auth.spec.ts",
+          "PASS CLAUDE.md",
+          "checked: Decision de modelo",
+          "model: modelo fuerte para arquitectura o automatizacion",
+          "budget: dentro del limite de workshop"
+        ],
+        "review": [
+          {
+            "severity": "note",
+            "text": "Comprobar que Decision de modelo no se queda en recomendacion generica."
+          },
+          {
+            "severity": "medium",
+            "text": "Pedir evidencia: comando, diff, owner o decision documentada."
+          },
+          {
+            "severity": "note",
+            "text": "El instructor valida si el alumno puede repetirlo sin ayuda."
+          }
+        ],
+        "cost": {
+          "model": "modelo fuerte para arquitectura o automatizacion",
+          "tokens": "alto controlado",
+          "permission": "minimo permiso viable para esta escena",
+          "stopRule": "Parar tras dos iteraciones sin evidencia nueva."
+        },
+        "decision": {
+          "question": "Que decision tomas sobre Decision de modelo?",
+          "options": [
+            "seguir",
+            "pedir contexto",
+            "subir modelo",
+            "bloquear y llevar a tutoria"
+          ],
+          "selected": 2
+        },
+        "risk": {
+          "items": [
+            "Coste invisible",
+            "Permisos excesivos",
+            "Contexto flojo",
+            "Salida no verificable",
+            "Owner ausente"
+          ],
+          "level": "medio"
+        },
+        "branch": {
+          "steps": [
+            "Brief",
+            "Contexto",
+            "Plan",
+            "Artefacto",
+            "Validacion",
+            "Review",
+            "Cierre"
+          ],
+          "active": 2
+        },
+        "quiz": {
+          "question": "Que prueba que Decision de modelo esta entendido?",
+          "answers": [
+            "Un prompt mas largo",
+            "Una evidencia repetible",
+            "Una opinion del modelo"
+          ],
+          "correct": 1
+        }
+      },
+      "subtitles": [
+        {
+          "text": "Claude: Decision de modelo.",
+          "startMs": 225450,
+          "endMs": 228518
+        },
+        {
+          "text": "Usar potencia segun ambiguedad, no por costumbre.",
+          "startMs": 228698,
+          "endMs": 232774
+        },
+        {
+          "text": "Modelo minuto 3: elegir por riesgo, contexto y coste antes de pedir otra iteracion.",
+          "startMs": 232954,
+          "endMs": 239358
+        },
+        {
+          "text": "Decision minuto 3: si el riesgo supera la evidencia, entra instructor o tech lead.",
+          "startMs": 239538,
+          "endMs": 245510
+        }
+      ],
+      "voiceover": [
+        "Claude: Decision de modelo.",
+        "Usar potencia segun ambiguedad, no por costumbre.",
+        "Modelo minuto 3: elegir por riesgo, contexto y coste antes de pedir otra iteracion.",
+        "Decision minuto 3: si el riesgo supera la evidencia, entra instructor o tech lead."
+      ],
+      "screen": {
+        "mode": "decision",
+        "title": "Decision de modelo",
+        "visual": "claude-decision"
+      },
+      "blueprintAction": {
+        "learningRubric": {
+          "learns": "Distingue decision humana de ejecucion automatizada en Claude.",
+          "does": "Comprueba la salida contra prueba, owner o captura.",
+          "decides": "Aceptar solo si la evidencia queda visible para otra persona.",
+          "vendor": "claude",
+          "usefulnessScore": 82,
+          "memoryCheck": "Puede repetir el prompt inicial con criterio de cierre.",
+          "productionPass": "2000-final-direction"
+        }
+      },
+      "production": {
+        "audioVersion": "audio-prod-v2-2026-05-18",
+        "voiceProfileId": "claudeSafety",
+        "voice": "es-ES-AlvaroNeural",
+        "rate": "+2%",
+        "pitch": "+0Hz",
+        "energy": "deliberada",
+        "emphasis": "permiso, bloqueo y rollback",
+        "pauseMs": 300,
+        "role": "reflection",
+        "reviewRubric": {
+          "learns": "Distingue decision humana de ejecucion automatizada en Claude.",
+          "does": "Comprueba la salida contra prueba, owner o captura.",
+          "decides": "Aceptar solo si la evidencia queda visible para otra persona.",
+          "memoryCheck": "Puede repetir el prompt inicial con criterio de cierre."
+        },
+        "prosodyNotes": {
+          "pace": "+2%",
+          "pause": "300ms antes de la decision",
+          "emphasis": "permiso, bloqueo y rollback",
+          "energy": "deliberada"
+        },
+        "pronunciationPass": "spain-voice-units-v1"
+      }
+    },
+    {
+      "id": "11-coste-por-automatizacion",
+      "name": "Media break / screenshot",
+      "startMs": 250000,
+      "endMs": 275000,
+      "type": "media-break",
+      "content": {
+        "source": "sprint-cd-media-breaks",
+        "vendor": "claude",
+        "kind": "screenshot",
+        "title": "Captura mental: Claude Code, skills, hooks y M C P",
+        "imageUrl": "/video-assets/vendor-mockups/claude-hooks-ci.svg",
+        "alt": "claude screenshot asset",
+        "caption": "La imagen fija una decision que despues se practica con el agente.",
+        "situation": "Situacion minuto 4: alguien tendra que mantener esta salida despues de la demo.",
+        "tension": "Tension minuto 4: el agente puede avanzar mas rapido que nuestra capacidad de revisar.",
+        "example": "Ejemplo: mirar permiso, modelo y salida antes de seguir.",
+        "action": "Accion minuto 4: parar si \"Captura mental: Claude Code, skills, hooks y M C P\" no produce evidencia nueva.",
+        "evidence": "Evidencia minuto 4: hay una salida que otro perfil puede revisar sin rehacer el contexto.",
+        "decision": "Decision minuto 4: cerrar solo cuando skill versionada, hook probado y owner claro.",
+        "rubric": {
+          "learns": "Claude escala cuando empaqueta criterio, no cuando acumula texto.",
+          "does": "Define CLAUDE.md, skill y gate de seguridad.",
+          "decides": "Que queda en memoria, que va a skill y que bloquea el hook."
+        }
+      },
+      "subtitles": [
+        {
+          "text": "Situacion minuto 4: el equipo mira \"Captura mental: Claude Code skills",
+          "startMs": 250450,
+          "endMs": 256278
+        },
+        {
+          "text": "hooks y M C P\" dentro del memoria skill o M C P con coste y permiso visibles.",
+          "startMs": 256323,
+          "endMs": 262055
+        },
+        {
+          "text": "hooks y M C P\" dentro del memoria skill o M C P con coste y permiso visibles.",
+          "startMs": 262100,
+          "endMs": 267832
+        },
+        {
+          "text": "Tension minuto 4: el coste malo suele aparecer cuando nadie define el cierre.",
+          "startMs": 267877,
+          "endMs": 273513
+        },
+        {
+          "text": "Accion minuto 4: convertir memoria",
+          "startMs": 271084,
+          "endMs": 274920
+        },
+        {
+          "text": "skill o M C P en una decision que se pueda ensenar en tutoria.",
+          "startMs": 270364,
+          "endMs": 274920
+        },
+        {
+          "text": "no con la sensacion de velocidad. (Claude, minuto 4, paso 2)",
+          "startMs": 268564,
+          "endMs": 274920
+        },
+        {
+          "text": "Evidencia minuto 4: \"Captura mental: Claude Code skills",
+          "startMs": 269932,
+          "endMs": 274920
+        },
+        {
+          "text": "hooks y M C P\" queda ligado a prueba owner y decision.",
+          "startMs": 270484,
+          "endMs": 274920
+        },
+        {
+          "text": "hooks y M C P\" no se cierra sin test captura o criterio escrito.",
+          "startMs": 269932,
+          "endMs": 274920
+        }
+      ],
+      "voiceover": [
+        "Situacion minuto 4: el equipo mira \"Captura mental: Claude Code skills",
+        "hooks y M C P\" dentro del memoria skill o M C P con coste y permiso visibles.",
+        "hooks y M C P\" dentro del memoria skill o M C P con coste y permiso visibles.",
+        "Tension minuto 4: el coste malo suele aparecer cuando nadie define el cierre.",
+        "Accion minuto 4: convertir memoria",
+        "skill o M C P en una decision que se pueda ensenar en tutoria.",
+        "no con la sensacion de velocidad. (Claude, minuto 4, paso 2)",
+        "Evidencia minuto 4: \"Captura mental: Claude Code skills",
+        "hooks y M C P\" queda ligado a prueba owner y decision.",
+        "hooks y M C P\" no se cierra sin test captura o criterio escrito."
+      ],
+      "screen": {
+        "mode": "media-break",
+        "title": "Captura mental: Claude Code, skills, hooks y M C P",
+        "visual": "/video-assets/vendor-mockups/claude-hooks-ci.svg"
+      },
+      "blueprintAction": {
+        "learningRubric": {
+          "learns": "Ubica coste, permiso y criterio antes de aceptar la salida.",
+          "does": "Registra el criterio que permitiria repetir el paso sin instructor.",
+          "decides": "Seguir, pedir mas contexto, escalar modelo o bloquear.",
+          "vendor": "claude",
+          "usefulnessScore": 84,
+          "memoryCheck": "Puede explicar el paso en una frase de menos de 20 segundos.",
+          "productionPass": "2000-final-direction"
+        }
+      },
+      "production": {
+        "audioVersion": "audio-prod-v2-2026-05-18",
+        "voiceProfileId": "claudeSafety",
+        "voice": "es-ES-AlvaroNeural",
+        "rate": "+2%",
+        "pitch": "+0Hz",
+        "energy": "deliberada",
+        "emphasis": "permiso, bloqueo y rollback",
+        "pauseMs": 300,
+        "role": "reflection",
+        "reviewRubric": {
+          "learns": "Ubica coste, permiso y criterio antes de aceptar la salida.",
+          "does": "Registra el criterio que permitiria repetir el paso sin instructor.",
+          "decides": "Seguir, pedir mas contexto, escalar modelo o bloquear.",
+          "memoryCheck": "Puede explicar el paso en una frase de menos de 20 segundos."
+        },
+        "prosodyNotes": {
+          "pace": "+2%",
+          "pause": "300ms antes de la decision",
+          "emphasis": "permiso, bloqueo y rollback",
+          "energy": "deliberada"
+        },
+        "pronunciationPass": "spain-voice-units-v1"
+      }
+    },
+    {
+      "id": "12-permisos-mcp",
+      "name": "Permisos M C P",
+      "startMs": 275000,
+      "endMs": 300000,
+      "type": "risk",
+      "content": {
+        "mode": "risk",
+        "vendor": "claude",
+        "title": "Permisos M C P",
+        "eyebrow": "Claude Masterclass 10 minutos - Operating Model / escena 12",
+        "label": "Inventario, scope, lectura, escritura y owner antes de conectar fuentes.",
+        "presenterCue": "Relacionar Permisos M C P con una decision real del alumno.",
+        "actionLabel": "Mostrar artefacto",
+        "actionDetail": "Inventario, scope, lectura, escritura y owner antes de conectar fuentes.",
+        "prompt": "Actua como Claude en Claude Code, Projects, skills, hooks, M C P y subagentes. Objetivo: Permisos M C P. Contexto: Inventario, scope, lectura, escritura y owner antes de conectar fuentes.. Antes de editar, devuelve criterio de cierre, riesgo y coste esperado. No avances si falta evidencia verificable.",
+        "response": [
+          "Lectura: Permisos M C P se trata como decision operativa, no como teoria.",
+          "Artefacto: CLAUDE.md o el prompt asociado documenta la regla estable.",
+          "Evidencia minuto 4: \"Permisos M C P\" no se cierra sin test, captura o criterio escrito.",
+          "Siguiente paso: aplicar solo si el humano acepta riesgo y coste."
+        ],
+        "diff": [
+          "diff --git a/CLAUDE.md b/CLAUDE.md",
+          "- regla implicita: Permisos M C P",
+          "+ regla explicita: Inventario, scope, lectura, escritura y owner antes de conectar fuentes.",
+          "+ done_when = \"prueba, review, coste y owner visibles\""
+        ],
+        "terminal": [
+          "$ pnpm test -- auth.spec.ts",
+          "PASS CLAUDE.md",
+          "checked: Permisos M C P",
+          "model: modelo eficiente para clasificar y leer",
+          "budget: dentro del limite de workshop"
+        ],
+        "review": [
+          {
+            "severity": "note",
+            "text": "Comprobar que Permisos M C P no se queda en recomendacion generica."
+          },
+          {
+            "severity": "medium",
+            "text": "Pedir evidencia: comando, diff, owner o decision documentada."
+          },
+          {
+            "severity": "note",
+            "text": "El instructor valida si el alumno puede repetirlo sin ayuda."
+          }
+        ],
+        "cost": {
+          "model": "modelo eficiente para clasificar y leer",
+          "tokens": "bajo/medio por contexto acotado",
+          "permission": "minimo permiso viable para esta escena",
+          "stopRule": "Parar tras dos iteraciones sin evidencia nueva."
+        },
+        "decision": {
+          "question": "Que decision tomas sobre Permisos M C P?",
+          "options": [
+            "seguir",
+            "pedir contexto",
+            "subir modelo",
+            "bloquear y llevar a tutoria"
+          ],
+          "selected": 0
+        },
+        "risk": {
+          "items": [
+            "Coste invisible",
+            "Permisos excesivos",
+            "Contexto flojo",
+            "Salida no verificable",
+            "Owner ausente"
+          ],
+          "level": "medio"
+        },
+        "branch": {
+          "steps": [
+            "Brief",
+            "Contexto",
+            "Plan",
+            "Artefacto",
+            "Validacion",
+            "Review",
+            "Cierre"
+          ],
+          "active": 4
+        },
+        "quiz": {
+          "question": "Que prueba que Permisos M C P esta entendido?",
+          "answers": [
+            "Un prompt mas largo",
+            "Una evidencia repetible",
+            "Una opinion del modelo"
+          ],
+          "correct": 1
+        }
+      },
+      "subtitles": [
+        {
+          "text": "Claude: Permisos M C P.",
+          "startMs": 275450,
+          "endMs": 278614
+        },
+        {
+          "text": "Inventario, scope, lectura, escritura y owner antes de conectar fuentes.",
+          "startMs": 278794,
+          "endMs": 284742
+        },
+        {
+          "text": "Modelo minuto 4: elegir por riesgo, contexto y coste antes de pedir otra iteracion.",
+          "startMs": 284922,
+          "endMs": 291326
+        },
+        {
+          "text": "Decision minuto 4: si no se puede auditar, vuelve a briefing.",
+          "startMs": 291506,
+          "endMs": 296494
+        }
+      ],
+      "voiceover": [
+        "Claude: Permisos M C P.",
+        "Inventario, scope, lectura, escritura y owner antes de conectar fuentes.",
+        "Modelo minuto 4: elegir por riesgo, contexto y coste antes de pedir otra iteracion.",
+        "Decision minuto 4: si no se puede auditar, vuelve a briefing."
+      ],
+      "screen": {
+        "mode": "risk",
+        "title": "Permisos M C P",
+        "visual": "claude-risk"
+      },
+      "blueprintAction": {
+        "learningRubric": {
+          "learns": "Reconoce por que \"Permisos M C P\" necesita evidencia y no solo respuesta.",
+          "does": "Formula una peticion verificable con limite de alcance.",
+          "decides": "Convertir la duda en material de tutoria si se repite.",
+          "vendor": "claude",
+          "usefulnessScore": 86,
+          "memoryCheck": "Puede nombrar el riesgo principal sin mirar la slide.",
+          "productionPass": "2000-final-direction"
+        }
+      },
+      "production": {
+        "audioVersion": "audio-prod-v2-2026-05-18",
+        "voiceProfileId": "claudeSafety",
+        "voice": "es-ES-AlvaroNeural",
+        "rate": "+2%",
+        "pitch": "+0Hz",
+        "energy": "deliberada",
+        "emphasis": "permiso, bloqueo y rollback",
+        "pauseMs": 300,
+        "role": "safety",
+        "reviewRubric": {
+          "learns": "Reconoce por que \"Permisos M C P\" necesita evidencia y no solo respuesta.",
+          "does": "Formula una peticion verificable con limite de alcance.",
+          "decides": "Convertir la duda en material de tutoria si se repite.",
+          "memoryCheck": "Puede nombrar el riesgo principal sin mirar la slide."
+        },
+        "prosodyNotes": {
+          "pace": "+2%",
+          "pause": "300ms antes de la decision",
+          "emphasis": "permiso, bloqueo y rollback",
+          "energy": "deliberada"
+        },
+        "pronunciationPass": "spain-voice-units-v1"
+      }
+    },
+    {
+      "id": "13-timeline-claude",
+      "name": "Timeline Claude",
+      "startMs": 300000,
+      "endMs": 325000,
+      "type": "branch",
+      "content": {
+        "mode": "branch",
+        "vendor": "claude",
+        "title": "Timeline Claude",
+        "eyebrow": "Claude Masterclass 10 minutos - Operating Model / escena 13",
+        "label": "Brief, CLAUDE.md, Skill, Hook, M C P, Eval y Signoff.",
+        "presenterCue": "Relacionar Timeline Claude con una decision real del alumno.",
+        "actionLabel": "Mostrar artefacto",
+        "actionDetail": "Brief, CLAUDE.md, Skill, Hook, M C P, Eval y Signoff.",
+        "prompt": "Actua como Claude en Claude Code, Projects, skills, hooks, M C P y subagentes. Objetivo: Timeline Claude. Contexto: Brief, CLAUDE.md, Skill, Hook, M C P, Eval y Signoff.. Antes de editar, devuelve criterio de cierre, riesgo y coste esperado. No avances si falta evidencia verificable.",
+        "response": [
+          "Lectura: Timeline Claude se trata como decision operativa, no como teoria.",
+          "Artefacto: CLAUDE.md o el prompt asociado documenta la regla estable.",
+          "Evidencia minuto 5: \"Timeline Claude\" queda ligado a prueba, owner y decision.",
+          "Siguiente paso: aplicar solo si el humano acepta riesgo y coste."
+        ],
+        "diff": [
+          "diff --git a/CLAUDE.md b/CLAUDE.md",
+          "- regla implicita: Timeline Claude",
+          "+ regla explicita: Brief, CLAUDE.md, Skill, Hook, M C P, Eval y Signoff.",
+          "+ done_when = \"prueba, review, coste y owner visibles\""
+        ],
+        "terminal": [
+          "$ pnpm test -- auth.spec.ts",
+          "PASS CLAUDE.md",
+          "checked: Timeline Claude",
+          "model: modelo fuerte para arquitectura o automatizacion",
+          "budget: dentro del limite de workshop"
+        ],
+        "review": [
+          {
+            "severity": "note",
+            "text": "Comprobar que Timeline Claude no se queda en recomendacion generica."
+          },
+          {
+            "severity": "medium",
+            "text": "Pedir evidencia: comando, diff, owner o decision documentada."
+          },
+          {
+            "severity": "note",
+            "text": "El instructor valida si el alumno puede repetirlo sin ayuda."
+          }
+        ],
+        "cost": {
+          "model": "modelo fuerte para arquitectura o automatizacion",
+          "tokens": "alto controlado",
+          "permission": "minimo permiso viable para esta escena",
+          "stopRule": "Parar tras dos iteraciones sin evidencia nueva."
+        },
+        "decision": {
+          "question": "Que decision tomas sobre Timeline Claude?",
+          "options": [
+            "seguir",
+            "pedir contexto",
+            "subir modelo",
+            "bloquear y llevar a tutoria"
+          ],
+          "selected": 1
+        },
+        "risk": {
+          "items": [
+            "Coste invisible",
+            "Permisos excesivos",
+            "Contexto flojo",
+            "Salida no verificable",
+            "Owner ausente"
+          ],
+          "level": "alto"
+        },
+        "branch": {
+          "steps": [
+            "Brief",
+            "Contexto",
+            "Plan",
+            "Artefacto",
+            "Validacion",
+            "Review",
+            "Cierre"
+          ],
+          "active": 5
+        },
+        "quiz": {
+          "question": "Que prueba que Timeline Claude esta entendido?",
+          "answers": [
+            "Un prompt mas largo",
+            "Una evidencia repetible",
+            "Una opinion del modelo"
+          ],
+          "correct": 1
+        }
+      },
+      "subtitles": [
+        {
+          "text": "Claude: Timeline Claude.",
+          "startMs": 300450,
+          "endMs": 303302
+        },
+        {
+          "text": "Brief, CLAUDE.md, Skill, Hook, M C P, Eval y Signoff.",
+          "startMs": 303347,
+          "endMs": 309391
+        },
+        {
+          "text": "Modelo minuto 5: elegir por riesgo En Claude, valida \"Timeline Claude\" antes de iterar.",
+          "startMs": 309436,
+          "endMs": 315672
+        },
+        {
+          "text": "contexto y coste antes de pedir otra iteracion. En Claude",
+          "startMs": 315717,
+          "endMs": 320969
+        },
+        {
+          "text": "valida \"Timeline Claude\" antes de iterar.",
+          "startMs": 321014,
+          "endMs": 324322
+        },
+        {
+          "text": "Decision minuto 5: seguir, pedir contexto, escalar modelo o bloquear.",
+          "startMs": 318900,
+          "endMs": 324920
+        }
+      ],
+      "voiceover": [
+        "Claude: Timeline Claude.",
+        "Brief, CLAUDE.md, Skill, Hook, M C P, Eval y Signoff.",
+        "Modelo minuto 5: elegir por riesgo En Claude, valida \"Timeline Claude\" antes de iterar.",
+        "contexto y coste antes de pedir otra iteracion. En Claude",
+        "valida \"Timeline Claude\" antes de iterar.",
+        "Decision minuto 5: seguir, pedir contexto, escalar modelo o bloquear."
+      ],
+      "screen": {
+        "mode": "branch",
+        "title": "Timeline Claude",
+        "visual": "claude-branch"
+      },
+      "blueprintAction": {
+        "learningRubric": {
+          "learns": "Distingue decision humana de ejecucion automatizada en Claude.",
+          "does": "Comprueba la salida contra prueba, owner o captura.",
+          "decides": "Aceptar solo si la evidencia queda visible para otra persona.",
+          "vendor": "claude",
+          "usefulnessScore": 88,
+          "memoryCheck": "Puede repetir el prompt inicial con criterio de cierre.",
+          "productionPass": "2000-final-direction"
+        }
+      },
+      "production": {
+        "audioVersion": "audio-prod-v2-2026-05-18",
+        "voiceProfileId": "claudeNarrator",
+        "voice": "es-ES-AlvaroNeural",
+        "rate": "+5%",
+        "pitch": "+0Hz",
+        "energy": "calmada",
+        "emphasis": "memoria, skill, hook y MCP",
+        "pauseMs": 220,
+        "role": "narrator",
+        "reviewRubric": {
+          "learns": "Distingue decision humana de ejecucion automatizada en Claude.",
+          "does": "Comprueba la salida contra prueba, owner o captura.",
+          "decides": "Aceptar solo si la evidencia queda visible para otra persona.",
+          "memoryCheck": "Puede repetir el prompt inicial con criterio de cierre."
+        },
+        "prosodyNotes": {
+          "pace": "+5%",
+          "pause": "220ms antes de la decision",
+          "emphasis": "memoria, skill, hook y M C P",
+          "energy": "calmada"
+        },
+        "pronunciationPass": "spain-voice-units-v1"
+      }
+    },
+    {
+      "id": "14-checkpoint",
+      "name": "Checkpoint",
+      "startMs": 325000,
+      "endMs": 350000,
+      "type": "quiz",
+      "content": {
+        "mode": "quiz",
+        "vendor": "claude",
+        "title": "Checkpoint",
+        "eyebrow": "Claude Masterclass 10 minutos - Operating Model / escena 14",
+        "label": "El alumno decide si esto debe ser memoria, skill, hook o M C P.",
+        "presenterCue": "Relacionar Checkpoint con una decision real del alumno.",
+        "actionLabel": "Mostrar artefacto",
+        "actionDetail": "El alumno decide si esto debe ser memoria, skill, hook o M C P.",
+        "prompt": "Actua como Claude en Claude Code, Projects, skills, hooks, M C P y subagentes. Objetivo: Checkpoint. Contexto: El alumno decide si esto debe ser memoria, skill, hook o M C P.. Antes de editar, devuelve criterio de cierre, riesgo y coste esperado. No avances si falta evidencia verificable.",
+        "response": [
+          "Lectura: Checkpoint se trata como decision operativa, no como teoria.",
+          "Artefacto: CLAUDE.md o el prompt asociado documenta la regla estable.",
+          "Evidencia minuto 5: el artefacto muestra que se controlo contexto infinito, permisos y automatizacion sin rollback.",
+          "Siguiente paso: aplicar solo si el humano acepta riesgo y coste."
+        ],
+        "diff": [
+          "diff --git a/CLAUDE.md b/CLAUDE.md",
+          "- regla implicita: Checkpoint",
+          "+ regla explicita: El alumno decide si esto debe ser memoria, skill, hook o M C P.",
+          "+ done_when = \"prueba, review, coste y owner visibles\""
+        ],
+        "terminal": [
+          "$ pnpm test -- auth.spec.ts",
+          "PASS CLAUDE.md",
+          "checked: Checkpoint",
+          "model: modelo eficiente para clasificar y leer",
+          "budget: dentro del limite de workshop"
+        ],
+        "review": [
+          {
+            "severity": "note",
+            "text": "Comprobar que Checkpoint no se queda en recomendacion generica."
+          },
+          {
+            "severity": "medium",
+            "text": "Pedir evidencia: comando, diff, owner o decision documentada."
+          },
+          {
+            "severity": "note",
+            "text": "El instructor valida si el alumno puede repetirlo sin ayuda."
+          }
+        ],
+        "cost": {
+          "model": "modelo eficiente para clasificar y leer",
+          "tokens": "bajo/medio por contexto acotado",
+          "permission": "minimo permiso viable para esta escena",
+          "stopRule": "Parar tras dos iteraciones sin evidencia nueva."
+        },
+        "decision": {
+          "question": "Que decision tomas sobre Checkpoint?",
+          "options": [
+            "seguir",
+            "pedir contexto",
+            "subir modelo",
+            "bloquear y llevar a tutoria"
+          ],
+          "selected": 2
+        },
+        "risk": {
+          "items": [
+            "Coste invisible",
+            "Permisos excesivos",
+            "Contexto flojo",
+            "Salida no verificable",
+            "Owner ausente"
+          ],
+          "level": "alto"
+        },
+        "branch": {
+          "steps": [
+            "Brief",
+            "Contexto",
+            "Plan",
+            "Artefacto",
+            "Validacion",
+            "Review",
+            "Cierre"
+          ],
+          "active": 6
+        },
+        "quiz": {
+          "question": "Que prueba que Checkpoint esta entendido?",
+          "answers": [
+            "Un prompt mas largo",
+            "Una evidencia repetible",
+            "Una opinion del modelo"
+          ],
+          "correct": 1
+        }
+      },
+      "subtitles": [
+        {
+          "text": "Claude: Checkpoint.",
+          "startMs": 325450,
+          "endMs": 327966
+        },
+        {
+          "text": "El alumno decide si esto debe ser memoria, skill, hook o M C P.",
+          "startMs": 328011,
+          "endMs": 333311
+        },
+        {
+          "text": "Modelo minuto 5: elegir por riesgo En Claude, valida \"Checkpoint\" antes de iterar.",
+          "startMs": 333356,
+          "endMs": 339472
+        },
+        {
+          "text": "contexto y coste antes de pedir otra iteracion. En Claude",
+          "startMs": 339517,
+          "endMs": 344913
+        },
+        {
+          "text": "valida \"Checkpoint\" antes de iterar.",
+          "startMs": 344958,
+          "endMs": 348122
+        },
+        {
+          "text": "Decision minuto 5: si el riesgo supera la evidencia, entra instructor o tech lead.",
+          "startMs": 343948,
+          "endMs": 349920
+        }
+      ],
+      "voiceover": [
+        "Claude: Checkpoint.",
+        "El alumno decide si esto debe ser memoria, skill, hook o M C P.",
+        "Modelo minuto 5: elegir por riesgo En Claude, valida \"Checkpoint\" antes de iterar.",
+        "contexto y coste antes de pedir otra iteracion. En Claude",
+        "valida \"Checkpoint\" antes de iterar.",
+        "Decision minuto 5: si el riesgo supera la evidencia, entra instructor o tech lead."
+      ],
+      "screen": {
+        "mode": "quiz",
+        "title": "Checkpoint",
+        "visual": "claude-quiz"
+      },
+      "blueprintAction": {
+        "learningRubric": {
+          "learns": "Ubica coste, permiso y criterio antes de aceptar la salida.",
+          "does": "Registra el criterio que permitiria repetir el paso sin instructor.",
+          "decides": "Seguir, pedir mas contexto, escalar modelo o bloquear.",
+          "vendor": "claude",
+          "usefulnessScore": 90,
+          "memoryCheck": "Puede explicar el paso en una frase de menos de 20 segundos.",
+          "productionPass": "2000-final-direction"
+        }
+      },
+      "production": {
+        "audioVersion": "audio-prod-v2-2026-05-18",
+        "voiceProfileId": "claudeSafety",
+        "voice": "es-ES-AlvaroNeural",
+        "rate": "+2%",
+        "pitch": "+0Hz",
+        "energy": "deliberada",
+        "emphasis": "permiso, bloqueo y rollback",
+        "pauseMs": 300,
+        "role": "reflection",
+        "reviewRubric": {
+          "learns": "Ubica coste, permiso y criterio antes de aceptar la salida.",
+          "does": "Registra el criterio que permitiria repetir el paso sin instructor.",
+          "decides": "Seguir, pedir mas contexto, escalar modelo o bloquear.",
+          "memoryCheck": "Puede explicar el paso en una frase de menos de 20 segundos."
+        },
+        "prosodyNotes": {
+          "pace": "+2%",
+          "pause": "300ms antes de la decision",
+          "emphasis": "permiso, bloqueo y rollback",
+          "energy": "deliberada"
+        },
+        "pronunciationPass": "spain-voice-units-v1"
+      }
+    },
+    {
+      "id": "15-pensamiento-claude",
+      "name": "Pensamiento Claude",
+      "startMs": 350000,
+      "endMs": 375000,
+      "type": "thinking",
+      "content": {
+        "tag": "Claude / razonamiento operativo",
+        "title": "Pensamiento Claude",
+        "thoughts": [
+          {
+            "ms": 0,
+            "text": "Identificar objetivo real y restriccion principal.",
+            "done": true
+          },
+          {
+            "ms": 5000,
+            "text": "Consultar CLAUDE.md o regla estable equivalente.",
+            "done": true
+          },
+          {
+            "ms": 10000,
+            "text": "Elegir modelo y permiso por riesgo.",
+            "done": true
+          },
+          {
+            "ms": 15000,
+            "text": "Pedir artefacto verificable, no narrativa.",
+            "done": false
+          },
+          {
+            "ms": 20000,
+            "text": "Cerrar con coste, owner y siguiente accion.",
+            "done": false
+          }
         ]
       },
       "subtitles": [
-        { "text": "La ruta Claude se apoya en materiales copiables.", "startMs": 506000, "endMs": 521000 },
-        { "text": "CLAUDE.md, rules, skills, subagentes, hooks y plugins.", "startMs": 522000, "endMs": 541000 },
-        { "text": "Todo debe terminar en practica real.", "startMs": 542000, "endMs": 552000 }
-      ]
+        {
+          "text": "Claude: Pensamiento Claude.",
+          "startMs": 350450,
+          "endMs": 353566
+        },
+        {
+          "text": "La frontera del agente importa mas que la longitud del prompt.",
+          "startMs": 353611,
+          "endMs": 357735
+        },
+        {
+          "text": "Modelo minuto 5: elegir por riesgo En Claude",
+          "startMs": 357780,
+          "endMs": 362024
+        },
+        {
+          "text": "valida \"Pensamiento Claude\" antes de iterar.",
+          "startMs": 362069,
+          "endMs": 365641
+        },
+        {
+          "text": "contexto y coste antes de pedir otra iteracion. En Claude",
+          "startMs": 365686,
+          "endMs": 371082
+        },
+        {
+          "text": "valida \"Pensamiento Claude\" antes de iterar.",
+          "startMs": 371127,
+          "endMs": 374699
+        },
+        {
+          "text": "Decision minuto 5: guardar la duda como material reutilizable si se repite.",
+          "startMs": 369284,
+          "endMs": 374920
+        }
+      ],
+      "voiceover": [
+        "Claude: Pensamiento Claude.",
+        "La frontera del agente importa mas que la longitud del prompt.",
+        "Modelo minuto 5: elegir por riesgo En Claude",
+        "valida \"Pensamiento Claude\" antes de iterar.",
+        "contexto y coste antes de pedir otra iteracion. En Claude",
+        "valida \"Pensamiento Claude\" antes de iterar.",
+        "Decision minuto 5: guardar la duda como material reutilizable si se repite."
+      ],
+      "screen": {
+        "mode": "thinking",
+        "title": "Pensamiento Claude",
+        "visual": "claude-thinking"
+      },
+      "blueprintAction": {
+        "learningRubric": {
+          "learns": "Reconoce por que \"Pensamiento Claude\" necesita evidencia y no solo respuesta.",
+          "does": "Formula una peticion verificable con limite de alcance.",
+          "decides": "Convertir la duda en material de tutoria si se repite.",
+          "vendor": "claude",
+          "usefulnessScore": 92,
+          "memoryCheck": "Puede nombrar el riesgo principal sin mirar la slide.",
+          "productionPass": "2000-final-direction"
+        }
+      },
+      "production": {
+        "audioVersion": "audio-prod-v2-2026-05-18",
+        "voiceProfileId": "claudeSafety",
+        "voice": "es-ES-AlvaroNeural",
+        "rate": "+2%",
+        "pitch": "+0Hz",
+        "energy": "deliberada",
+        "emphasis": "permiso, bloqueo y rollback",
+        "pauseMs": 300,
+        "role": "reflection",
+        "reviewRubric": {
+          "learns": "Reconoce por que \"Pensamiento Claude\" necesita evidencia y no solo respuesta.",
+          "does": "Formula una peticion verificable con limite de alcance.",
+          "decides": "Convertir la duda en material de tutoria si se repite.",
+          "memoryCheck": "Puede nombrar el riesgo principal sin mirar la slide."
+        },
+        "prosodyNotes": {
+          "pace": "+2%",
+          "pause": "300ms antes de la decision",
+          "emphasis": "permiso, bloqueo y rollback",
+          "energy": "deliberada"
+        },
+        "pronunciationPass": "spain-voice-units-v1"
+      }
     },
     {
-      "id": "finale",
-      "name": "Cierre",
-      "startMs": 555000,
+      "id": "16-review-de-automatizacion",
+      "name": "Media break / screenshot",
+      "startMs": 375000,
+      "endMs": 400000,
+      "type": "media-break",
+      "content": {
+        "source": "sprint-cd-media-breaks",
+        "vendor": "claude",
+        "kind": "screenshot",
+        "title": "Captura mental: Claude Code, skills, hooks y M C P",
+        "imageUrl": "/video-assets/vendor-mockups/claude-subagent-board.svg",
+        "alt": "claude screenshot asset",
+        "caption": "La imagen fija una decision que despues se practica con el agente.",
+        "situation": "Situacion minuto 6: alguien tendra que mantener esta salida despues de la demo.",
+        "tension": "Tension minuto 6: el agente puede avanzar mas rapido que nuestra capacidad de revisar.",
+        "example": "Ejemplo: convertir respuesta en artefacto de equipo.",
+        "action": "Accion minuto 6: parar si \"Captura mental: Claude Code, skills, hooks y M C P\" no produce evidencia nueva.",
+        "evidence": "Evidencia minuto 6: hay una salida que otro perfil puede revisar sin rehacer el contexto.",
+        "decision": "Decision minuto 6: cerrar solo cuando skill versionada, hook probado y owner claro.",
+        "rubric": {
+          "learns": "Claude escala cuando empaqueta criterio, no cuando acumula texto.",
+          "does": "Define CLAUDE.md, skill y gate de seguridad.",
+          "decides": "Que queda en memoria, que va a skill y que bloquea el hook."
+        }
+      },
+      "subtitles": [
+        {
+          "text": "Situacion minuto 6: el equipo mira \"Captura mental: Claude Code skills",
+          "startMs": 375450,
+          "endMs": 381182
+        },
+        {
+          "text": "hooks y M C P\" dentro del memoria skill o M C P con coste y permiso visibles.",
+          "startMs": 381227,
+          "endMs": 386959
+        },
+        {
+          "text": "hooks y M C P\" dentro del memoria skill o M C P con coste y permiso visibles.",
+          "startMs": 387004,
+          "endMs": 392736
+        },
+        {
+          "text": "Tension minuto 6: el coste malo suele aparecer cuando nadie define el cierre.",
+          "startMs": 392781,
+          "endMs": 398369
+        },
+        {
+          "text": "Accion minuto 6: convertir memoria",
+          "startMs": 396156,
+          "endMs": 399920
+        },
+        {
+          "text": "skill o M C P en una decision que se pueda ensenar en tutoria.",
+          "startMs": 395364,
+          "endMs": 399920
+        },
+        {
+          "text": "no con la sensacion de velocidad. (Claude, minuto 6, paso 3)",
+          "startMs": 393516,
+          "endMs": 399920
+        },
+        {
+          "text": "Evidencia minuto 6: \"Captura mental: Claude Code skills",
+          "startMs": 395052,
+          "endMs": 399920
+        },
+        {
+          "text": "hooks y M C P\" queda ligado a prueba owner y decision.",
+          "startMs": 395484,
+          "endMs": 399920
+        },
+        {
+          "text": "hooks y M C P\" no se cierra sin test captura o criterio escrito.",
+          "startMs": 394932,
+          "endMs": 399920
+        }
+      ],
+      "voiceover": [
+        "Situacion minuto 6: el equipo mira \"Captura mental: Claude Code skills",
+        "hooks y M C P\" dentro del memoria skill o M C P con coste y permiso visibles.",
+        "hooks y M C P\" dentro del memoria skill o M C P con coste y permiso visibles.",
+        "Tension minuto 6: el coste malo suele aparecer cuando nadie define el cierre.",
+        "Accion minuto 6: convertir memoria",
+        "skill o M C P en una decision que se pueda ensenar en tutoria.",
+        "no con la sensacion de velocidad. (Claude, minuto 6, paso 3)",
+        "Evidencia minuto 6: \"Captura mental: Claude Code skills",
+        "hooks y M C P\" queda ligado a prueba owner y decision.",
+        "hooks y M C P\" no se cierra sin test captura o criterio escrito."
+      ],
+      "screen": {
+        "mode": "media-break",
+        "title": "Captura mental: Claude Code, skills, hooks y M C P",
+        "visual": "/video-assets/vendor-mockups/claude-subagent-board.svg"
+      },
+      "blueprintAction": {
+        "learningRubric": {
+          "learns": "Distingue decision humana de ejecucion automatizada en Claude.",
+          "does": "Comprueba la salida contra prueba, owner o captura.",
+          "decides": "Aceptar solo si la evidencia queda visible para otra persona.",
+          "vendor": "claude",
+          "usefulnessScore": 86,
+          "memoryCheck": "Puede repetir el prompt inicial con criterio de cierre.",
+          "productionPass": "2000-final-direction"
+        }
+      },
+      "production": {
+        "audioVersion": "audio-prod-v2-2026-05-18",
+        "voiceProfileId": "claudeSafety",
+        "voice": "es-ES-AlvaroNeural",
+        "rate": "+2%",
+        "pitch": "+0Hz",
+        "energy": "deliberada",
+        "emphasis": "permiso, bloqueo y rollback",
+        "pauseMs": 300,
+        "role": "reflection",
+        "reviewRubric": {
+          "learns": "Distingue decision humana de ejecucion automatizada en Claude.",
+          "does": "Comprueba la salida contra prueba, owner o captura.",
+          "decides": "Aceptar solo si la evidencia queda visible para otra persona.",
+          "memoryCheck": "Puede repetir el prompt inicial con criterio de cierre."
+        },
+        "prosodyNotes": {
+          "pace": "+2%",
+          "pause": "300ms antes de la decision",
+          "emphasis": "permiso, bloqueo y rollback",
+          "energy": "deliberada"
+        },
+        "pronunciationPass": "spain-voice-units-v1"
+      }
+    },
+    {
+      "id": "17-pausa-instructor",
+      "name": "Pausa instructor",
+      "startMs": 400000,
+      "endMs": 425000,
+      "type": "pause",
+      "content": {
+        "mode": "pause",
+        "vendor": "claude",
+        "title": "Pausa instructor",
+        "eyebrow": "Claude Masterclass 10 minutos - Operating Model / escena 17",
+        "label": "Parar y preguntar: que pasa si esto falla a las 3 de la manana?",
+        "presenterCue": "Relacionar Pausa instructor con una decision real del alumno.",
+        "actionLabel": "Parar y debatir",
+        "actionDetail": "Parar y preguntar: que pasa si esto falla a las 3 de la manana?",
+        "prompt": "Actua como Claude en Claude Code, Projects, skills, hooks, M C P y subagentes. Objetivo: Pausa instructor. Contexto: Parar y preguntar: que pasa si esto falla a las 3 de la manana?. Antes de editar, devuelve criterio de cierre, riesgo y coste esperado. No avances si falta evidencia verificable.",
+        "response": [
+          "Lectura: Pausa instructor se trata como decision operativa, no como teoria.",
+          "Artefacto: CLAUDE.md o el prompt asociado documenta la regla estable.",
+          "Evidencia minuto 6: \"Pausa instructor\" no se cierra sin test, captura o criterio escrito.",
+          "Siguiente paso: aplicar solo si el humano acepta riesgo y coste."
+        ],
+        "diff": [
+          "diff --git a/CLAUDE.md b/CLAUDE.md",
+          "- regla implicita: Pausa instructor",
+          "+ regla explicita: Parar y preguntar: que pasa si esto falla a las 3 de la manana?",
+          "+ done_when = \"prueba, review, coste y owner visibles\""
+        ],
+        "terminal": [
+          "$ pnpm test -- auth.spec.ts",
+          "PASS CLAUDE.md",
+          "checked: Pausa instructor",
+          "model: modelo eficiente para clasificar y leer",
+          "budget: dentro del limite de workshop"
+        ],
+        "review": [
+          {
+            "severity": "note",
+            "text": "Comprobar que Pausa instructor no se queda en recomendacion generica."
+          },
+          {
+            "severity": "medium",
+            "text": "Pedir evidencia: comando, diff, owner o decision documentada."
+          },
+          {
+            "severity": "note",
+            "text": "El instructor valida si el alumno puede repetirlo sin ayuda."
+          }
+        ],
+        "cost": {
+          "model": "modelo eficiente para clasificar y leer",
+          "tokens": "bajo/medio por contexto acotado",
+          "permission": "minimo permiso viable para esta escena",
+          "stopRule": "Parar tras dos iteraciones sin evidencia nueva."
+        },
+        "decision": {
+          "question": "Que decision tomas sobre Pausa instructor?",
+          "options": [
+            "seguir",
+            "pedir contexto",
+            "subir modelo",
+            "bloquear y llevar a tutoria"
+          ],
+          "selected": 2
+        },
+        "risk": {
+          "items": [
+            "Coste invisible",
+            "Permisos excesivos",
+            "Contexto flojo",
+            "Salida no verificable",
+            "Owner ausente"
+          ],
+          "level": "medio"
+        },
+        "branch": {
+          "steps": [
+            "Brief",
+            "Contexto",
+            "Plan",
+            "Artefacto",
+            "Validacion",
+            "Review",
+            "Cierre"
+          ],
+          "active": 2
+        },
+        "quiz": {
+          "question": "Que prueba que Pausa instructor esta entendido?",
+          "answers": [
+            "Un prompt mas largo",
+            "Una evidencia repetible",
+            "Una opinion del modelo"
+          ],
+          "correct": 1
+        }
+      },
+      "subtitles": [
+        {
+          "text": "Claude: Pausa instructor.",
+          "startMs": 400450,
+          "endMs": 403446
+        },
+        {
+          "text": "Parar y preguntar: que pasa si esto falla a las 3 de la manana?",
+          "startMs": 403626,
+          "endMs": 408278
+        },
+        {
+          "text": "Modelo minuto 6: elegir por riesgo, contexto y coste antes de pedir otra iteracion.",
+          "startMs": 408458,
+          "endMs": 414862
+        },
+        {
+          "text": "Decision minuto 6: si no se puede auditar, vuelve a briefing.",
+          "startMs": 415042,
+          "endMs": 420030
+        }
+      ],
+      "voiceover": [
+        "Claude: Pausa instructor.",
+        "Parar y preguntar: que pasa si esto falla a las 3 de la manana?",
+        "Modelo minuto 6: elegir por riesgo, contexto y coste antes de pedir otra iteracion.",
+        "Decision minuto 6: si no se puede auditar, vuelve a briefing."
+      ],
+      "screen": {
+        "mode": "pause",
+        "title": "Pausa instructor",
+        "visual": "claude-pause"
+      },
+      "blueprintAction": {
+        "learningRubric": {
+          "learns": "Ubica coste, permiso y criterio antes de aceptar la salida.",
+          "does": "Registra el criterio que permitiria repetir el paso sin instructor.",
+          "decides": "Seguir, pedir mas contexto, escalar modelo o bloquear.",
+          "vendor": "claude",
+          "usefulnessScore": 96,
+          "memoryCheck": "Puede explicar el paso en una frase de menos de 20 segundos.",
+          "productionPass": "2000-final-direction"
+        }
+      },
+      "production": {
+        "audioVersion": "audio-prod-v2-2026-05-18",
+        "voiceProfileId": "claudeSafety",
+        "voice": "es-ES-AlvaroNeural",
+        "rate": "+2%",
+        "pitch": "+0Hz",
+        "energy": "deliberada",
+        "emphasis": "permiso, bloqueo y rollback",
+        "pauseMs": 300,
+        "role": "reflection",
+        "reviewRubric": {
+          "learns": "Ubica coste, permiso y criterio antes de aceptar la salida.",
+          "does": "Registra el criterio que permitiria repetir el paso sin instructor.",
+          "decides": "Seguir, pedir mas contexto, escalar modelo o bloquear.",
+          "memoryCheck": "Puede explicar el paso en una frase de menos de 20 segundos."
+        },
+        "prosodyNotes": {
+          "pace": "+2%",
+          "pause": "300ms antes de la decision",
+          "emphasis": "permiso, bloqueo y rollback",
+          "energy": "deliberada"
+        },
+        "pronunciationPass": "spain-voice-units-v1"
+      }
+    },
+    {
+      "id": "18-subagentes",
+      "name": "Subagentes",
+      "startMs": 425000,
+      "endMs": 450000,
+      "type": "concept",
+      "content": {
+        "tag": "Claude / Masterclass",
+        "title": "Subagentes",
+        "body": "Explorer, calidad, security y architect tienen coste y permisos distintos. La idea clave: convertir una pantalla de herramienta en un criterio repetible de trabajo. La persona no memoriza botones; aprende a decidir superficie, modelo, permiso, evidencia y cierre.",
+        "highlight": "No avanzar sin evidencia visible: CLAUDE.md, diff, test, coste u owner.",
+        "points": [
+          "Superficie: Claude Code, Projects, skills, hooks, M C P y subagentes.",
+          "Modelo: modelo eficiente para clasificar y leer.",
+          "Artefacto: CLAUDE.md.",
+          "Validacion: pnpm test -- auth.spec.ts."
+        ]
+      },
+      "subtitles": [
+        {
+          "text": "Claude: Subagentes.",
+          "startMs": 425450,
+          "endMs": 428182
+        },
+        {
+          "text": "Explorer, calidad, security y architect tienen coste y permisos distintos.",
+          "startMs": 428362,
+          "endMs": 433902
+        },
+        {
+          "text": "Modelo minuto 7: elegir por riesgo, contexto y coste antes de pedir otra iteracion.",
+          "startMs": 434082,
+          "endMs": 440294
+        },
+        {
+          "text": "Decision minuto 7: cerrar solo cuando skill versionada, hook probado y owner claro.",
+          "startMs": 440474,
+          "endMs": 446590
+        }
+      ],
+      "voiceover": [
+        "Claude: Subagentes.",
+        "Explorer, calidad, security y architect tienen coste y permisos distintos.",
+        "Modelo minuto 7: elegir por riesgo, contexto y coste antes de pedir otra iteracion.",
+        "Decision minuto 7: cerrar solo cuando skill versionada, hook probado y owner claro."
+      ],
+      "screen": {
+        "mode": "concept",
+        "title": "Subagentes",
+        "visual": "claude-concept"
+      },
+      "blueprintAction": {
+        "learningRubric": {
+          "learns": "Reconoce por que \"Subagentes\" necesita evidencia y no solo respuesta.",
+          "does": "Formula una peticion verificable con limite de alcance.",
+          "decides": "Convertir la duda en material de tutoria si se repite.",
+          "vendor": "claude",
+          "usefulnessScore": 98,
+          "memoryCheck": "Puede nombrar el riesgo principal sin mirar la slide.",
+          "productionPass": "2000-final-direction"
+        }
+      },
+      "production": {
+        "audioVersion": "audio-prod-v2-2026-05-18",
+        "voiceProfileId": "claudeNarrator",
+        "voice": "es-ES-AlvaroNeural",
+        "rate": "+5%",
+        "pitch": "+0Hz",
+        "energy": "calmada",
+        "emphasis": "memoria, skill, hook y MCP",
+        "pauseMs": 220,
+        "role": "narrator",
+        "reviewRubric": {
+          "learns": "Reconoce por que \"Subagentes\" necesita evidencia y no solo respuesta.",
+          "does": "Formula una peticion verificable con limite de alcance.",
+          "decides": "Convertir la duda en material de tutoria si se repite.",
+          "memoryCheck": "Puede nombrar el riesgo principal sin mirar la slide."
+        },
+        "prosodyNotes": {
+          "pace": "+5%",
+          "pause": "220ms antes de la decision",
+          "emphasis": "memoria, skill, hook y M C P",
+          "energy": "calmada"
+        },
+        "pronunciationPass": "spain-voice-units-v1"
+      }
+    },
+    {
+      "id": "19-evals",
+      "name": "Media break / diagram",
+      "startMs": 450000,
+      "endMs": 475000,
+      "type": "media-break",
+      "content": {
+        "source": "sprint-cd-media-breaks",
+        "vendor": "claude",
+        "kind": "diagram",
+        "title": "Mapa operativo: Claude Code, skills, hooks y M C P",
+        "imageUrl": "/decks/claude/curso-02/images/diagram-mcp-governance-loop.svg",
+        "alt": "claude diagram asset",
+        "caption": "La imagen fija una decision que despues se practica con el agente.",
+        "situation": "Situacion minuto 7: Claude solo avanza si el siguiente humano entiende el por que.",
+        "tension": "Tension minuto 7: aceptar rapido puede esconder contexto infinito, permisos y automatizacion sin rollback.",
+        "example": "Ejemplo: Skill versionada, hook probado y owner claro.",
+        "action": "Accion minuto 7: nombrar modelo, permiso y limite antes de iterar.",
+        "evidence": "Evidencia minuto 7: el artefacto muestra que se controlo contexto infinito, permisos y automatizacion sin rollback.",
+        "decision": "Decision minuto 7: guardar la duda como material reutilizable si se repite.",
+        "rubric": {
+          "learns": "Claude escala cuando empaqueta criterio, no cuando acumula texto.",
+          "does": "Define CLAUDE.md, skill y gate de seguridad.",
+          "decides": "Que queda en memoria, que va a skill y que bloquea el hook."
+        }
+      },
+      "subtitles": [
+        {
+          "text": "Situacion minuto 7: la pantalla no busca impresionar;",
+          "startMs": 450450,
+          "endMs": 454934
+        },
+        {
+          "text": "busca cerrar \"Mapa operativo: Claude Code skills",
+          "startMs": 454979,
+          "endMs": 459295
+        },
+        {
+          "text": "hooks y M C P\" con evidencia.",
+          "startMs": 459340,
+          "endMs": 462528
+        },
+        {
+          "text": "busca cerrar \"Mapa operativo: Claude Code skills",
+          "startMs": 462573,
+          "endMs": 466889
+        },
+        {
+          "text": "hooks y M C P\" con evidencia.",
+          "startMs": 466934,
+          "endMs": 470122
+        },
+        {
+          "text": "Tension minuto 7: aceptar rapido puede esconder contexto infinito",
+          "startMs": 469644,
+          "endMs": 474920
+        },
+        {
+          "text": "permisos y automatizacion sin rollback.",
+          "startMs": 471540,
+          "endMs": 474920
+        },
+        {
+          "text": "Accion minuto 7: parar si \"Mapa operativo: Claude Code skills",
+          "startMs": 469500,
+          "endMs": 474920
+        },
+        {
+          "text": "hooks y M C P\" no produce evidencia nueva.",
+          "startMs": 471084,
+          "endMs": 474920
+        },
+        {
+          "text": "skill o M C P en una decision que se pueda ensenar en tutoria. (Claude",
+          "startMs": 468996,
+          "endMs": 474920
+        },
+        {
+          "text": "minuto 7 paso 3)",
+          "startMs": 472116,
+          "endMs": 474920
+        },
+        {
+          "text": "Evidencia minuto 7: el artefacto muestra que se controlo contexto infinito",
+          "startMs": 469356,
+          "endMs": 474920
+        },
+        {
+          "text": "permisos y automatizacion sin rollback.",
+          "startMs": 471540,
+          "endMs": 474920
+        },
+        {
+          "text": "hooks y M C P\" no se cierra sin test captura o criterio escrito.",
+          "startMs": 469932,
+          "endMs": 474920
+        }
+      ],
+      "voiceover": [
+        "Situacion minuto 7: la pantalla no busca impresionar;",
+        "busca cerrar \"Mapa operativo: Claude Code skills",
+        "hooks y M C P\" con evidencia.",
+        "busca cerrar \"Mapa operativo: Claude Code skills",
+        "hooks y M C P\" con evidencia.",
+        "Tension minuto 7: aceptar rapido puede esconder contexto infinito",
+        "permisos y automatizacion sin rollback.",
+        "Accion minuto 7: parar si \"Mapa operativo: Claude Code skills",
+        "hooks y M C P\" no produce evidencia nueva.",
+        "skill o M C P en una decision que se pueda ensenar en tutoria. (Claude",
+        "minuto 7 paso 3)",
+        "Evidencia minuto 7: el artefacto muestra que se controlo contexto infinito",
+        "permisos y automatizacion sin rollback.",
+        "hooks y M C P\" no se cierra sin test captura o criterio escrito."
+      ],
+      "screen": {
+        "mode": "media-break",
+        "title": "Mapa operativo: Claude Code, skills, hooks y M C P",
+        "visual": "/decks/claude/curso-02/images/diagram-mcp-governance-loop.svg"
+      },
+      "blueprintAction": {
+        "learningRubric": {
+          "learns": "Distingue decision humana de ejecucion automatizada en Claude.",
+          "does": "Comprueba la salida contra prueba, owner o captura.",
+          "decides": "Aceptar solo si la evidencia queda visible para otra persona.",
+          "vendor": "claude",
+          "usefulnessScore": 88,
+          "memoryCheck": "Puede repetir el prompt inicial con criterio de cierre.",
+          "productionPass": "2000-final-direction"
+        }
+      },
+      "production": {
+        "audioVersion": "audio-prod-v2-2026-05-18",
+        "voiceProfileId": "claudeSafety",
+        "voice": "es-ES-AlvaroNeural",
+        "rate": "+2%",
+        "pitch": "+0Hz",
+        "energy": "deliberada",
+        "emphasis": "permiso, bloqueo y rollback",
+        "pauseMs": 300,
+        "role": "reflection",
+        "reviewRubric": {
+          "learns": "Distingue decision humana de ejecucion automatizada en Claude.",
+          "does": "Comprueba la salida contra prueba, owner o captura.",
+          "decides": "Aceptar solo si la evidencia queda visible para otra persona.",
+          "memoryCheck": "Puede repetir el prompt inicial con criterio de cierre."
+        },
+        "prosodyNotes": {
+          "pace": "+2%",
+          "pause": "300ms antes de la decision",
+          "emphasis": "permiso, bloqueo y rollback",
+          "energy": "deliberada"
+        },
+        "pronunciationPass": "spain-voice-units-v1"
+      }
+    },
+    {
+      "id": "20-ci-controlada",
+      "name": "CI controlada",
+      "startMs": 475000,
+      "endMs": 500000,
+      "type": "terminal",
+      "content": {
+        "mode": "terminal",
+        "vendor": "claude",
+        "title": "CI controlada",
+        "eyebrow": "Claude Masterclass 10 minutos - Operating Model / escena 20",
+        "label": "Automatizar PRs exige label, max retries, logs y firma humana.",
+        "presenterCue": "Relacionar CI controlada con una decision real del alumno.",
+        "actionLabel": "Mostrar artefacto",
+        "actionDetail": "Automatizar PRs exige label, max retries, logs y firma humana.",
+        "prompt": "Actua como Claude en Claude Code, Projects, skills, hooks, M C P y subagentes. Objetivo: CI controlada. Contexto: Automatizar PRs exige label, max retries, logs y firma humana.. Antes de editar, devuelve criterio de cierre, riesgo y coste esperado. No avances si falta evidencia verificable.",
+        "response": [
+          "Lectura: CI controlada se trata como decision operativa, no como teoria.",
+          "Artefacto: CLAUDE.md o el prompt asociado documenta la regla estable.",
+          "Evidencia minuto 7: skill versionada, hook probado y owner claro.",
+          "Siguiente paso: aplicar solo si el humano acepta riesgo y coste."
+        ],
+        "diff": [
+          "diff --git a/CLAUDE.md b/CLAUDE.md",
+          "- regla implicita: CI controlada",
+          "+ regla explicita: Automatizar PRs exige label, max retries, logs y firma humana.",
+          "+ done_when = \"prueba, review, coste y owner visibles\""
+        ],
+        "terminal": [
+          "$ pnpm test -- auth.spec.ts",
+          "PASS CLAUDE.md",
+          "checked: CI controlada",
+          "model: modelo eficiente para clasificar y leer",
+          "budget: dentro del limite de workshop"
+        ],
+        "review": [
+          {
+            "severity": "note",
+            "text": "Comprobar que CI controlada no se queda en recomendacion generica."
+          },
+          {
+            "severity": "medium",
+            "text": "Pedir evidencia: comando, diff, owner o decision documentada."
+          },
+          {
+            "severity": "note",
+            "text": "El instructor valida si el alumno puede repetirlo sin ayuda."
+          }
+        ],
+        "cost": {
+          "model": "modelo eficiente para clasificar y leer",
+          "tokens": "bajo/medio por contexto acotado",
+          "permission": "minimo permiso viable para esta escena",
+          "stopRule": "Parar tras dos iteraciones sin evidencia nueva."
+        },
+        "decision": {
+          "question": "Que decision tomas sobre CI controlada?",
+          "options": [
+            "seguir",
+            "pedir contexto",
+            "subir modelo",
+            "bloquear y llevar a tutoria"
+          ],
+          "selected": 1
+        },
+        "risk": {
+          "items": [
+            "Coste invisible",
+            "Permisos excesivos",
+            "Contexto flojo",
+            "Salida no verificable",
+            "Owner ausente"
+          ],
+          "level": "alto"
+        },
+        "branch": {
+          "steps": [
+            "Brief",
+            "Contexto",
+            "Plan",
+            "Artefacto",
+            "Validacion",
+            "Review",
+            "Cierre"
+          ],
+          "active": 5
+        },
+        "quiz": {
+          "question": "Que prueba que CI controlada esta entendido?",
+          "answers": [
+            "Un prompt mas largo",
+            "Una evidencia repetible",
+            "Una opinion del modelo"
+          ],
+          "correct": 1
+        }
+      },
+      "subtitles": [
+        {
+          "text": "Claude: CI controlada.",
+          "startMs": 475450,
+          "endMs": 478302
+        },
+        {
+          "text": "Automatizar PRs exige label, max retries, logs y firma humana.",
+          "startMs": 478482,
+          "endMs": 484190
+        },
+        {
+          "text": "Modelo minuto 7: elegir por riesgo, contexto y coste antes de pedir otra iteracion.",
+          "startMs": 484370,
+          "endMs": 490582
+        },
+        {
+          "text": "Decision minuto 7: si el riesgo supera la evidencia, entra instructor o tech lead.",
+          "startMs": 490762,
+          "endMs": 496590
+        }
+      ],
+      "voiceover": [
+        "Claude: CI controlada.",
+        "Automatizar PRs exige label, max retries, logs y firma humana.",
+        "Modelo minuto 7: elegir por riesgo, contexto y coste antes de pedir otra iteracion.",
+        "Decision minuto 7: si el riesgo supera la evidencia, entra instructor o tech lead."
+      ],
+      "screen": {
+        "mode": "terminal",
+        "title": "CI controlada",
+        "visual": "claude-terminal"
+      },
+      "blueprintAction": {
+        "learningRubric": {
+          "learns": "Ubica coste, permiso y criterio antes de aceptar la salida.",
+          "does": "Registra el criterio que permitiria repetir el paso sin instructor.",
+          "decides": "Seguir, pedir mas contexto, escalar modelo o bloquear.",
+          "vendor": "claude",
+          "usefulnessScore": 84,
+          "memoryCheck": "Puede explicar el paso en una frase de menos de 20 segundos.",
+          "productionPass": "2000-final-direction"
+        }
+      },
+      "production": {
+        "audioVersion": "audio-prod-v2-2026-05-18",
+        "voiceProfileId": "claudeNarrator",
+        "voice": "es-ES-AlvaroNeural",
+        "rate": "+5%",
+        "pitch": "+0Hz",
+        "energy": "calmada",
+        "emphasis": "memoria, skill, hook y MCP",
+        "pauseMs": 220,
+        "role": "narrator",
+        "reviewRubric": {
+          "learns": "Ubica coste, permiso y criterio antes de aceptar la salida.",
+          "does": "Registra el criterio que permitiria repetir el paso sin instructor.",
+          "decides": "Seguir, pedir mas contexto, escalar modelo o bloquear.",
+          "memoryCheck": "Puede explicar el paso en una frase de menos de 20 segundos."
+        },
+        "prosodyNotes": {
+          "pace": "+5%",
+          "pause": "220ms antes de la decision",
+          "emphasis": "memoria, skill, hook y M C P",
+          "energy": "calmada"
+        },
+        "pronunciationPass": "spain-voice-units-v1"
+      }
+    },
+    {
+      "id": "21-go-no-go",
+      "name": "Go / No-Go",
+      "startMs": 500000,
+      "endMs": 525000,
+      "type": "decision",
+      "content": {
+        "mode": "decision",
+        "vendor": "claude",
+        "title": "Go / No-Go",
+        "eyebrow": "Claude Masterclass 10 minutos - Operating Model / escena 21",
+        "label": "Claude ayuda mucho cuando hay procedimiento; no sustituye ownership.",
+        "presenterCue": "Relacionar Go / No-Go con una decision real del alumno.",
+        "actionLabel": "Mostrar artefacto",
+        "actionDetail": "Claude ayuda mucho cuando hay procedimiento; no sustituye ownership.",
+        "prompt": "Actua como Claude en Claude Code, Projects, skills, hooks, M C P y subagentes. Objetivo: Go / No-Go. Contexto: Claude ayuda mucho cuando hay procedimiento; no sustituye ownership.. Antes de editar, devuelve criterio de cierre, riesgo y coste esperado. No avances si falta evidencia verificable.",
+        "response": [
+          "Lectura: Go / No-Go se trata como decision operativa, no como teoria.",
+          "Artefacto: CLAUDE.md o el prompt asociado documenta la regla estable.",
+          "Evidencia minuto 8: hay una salida que otro perfil puede revisar sin rehacer el contexto.",
+          "Siguiente paso: aplicar solo si el humano acepta riesgo y coste."
+        ],
+        "diff": [
+          "diff --git a/CLAUDE.md b/CLAUDE.md",
+          "- regla implicita: Go / No-Go",
+          "+ regla explicita: Claude ayuda mucho cuando hay procedimiento; no sustituye ownership.",
+          "+ done_when = \"prueba, review, coste y owner visibles\""
+        ],
+        "terminal": [
+          "$ pnpm test -- auth.spec.ts",
+          "PASS CLAUDE.md",
+          "checked: Go / No-Go",
+          "model: modelo eficiente para clasificar y leer",
+          "budget: dentro del limite de workshop"
+        ],
+        "review": [
+          {
+            "severity": "note",
+            "text": "Comprobar que Go / No-Go no se queda en recomendacion generica."
+          },
+          {
+            "severity": "medium",
+            "text": "Pedir evidencia: comando, diff, owner o decision documentada."
+          },
+          {
+            "severity": "note",
+            "text": "El instructor valida si el alumno puede repetirlo sin ayuda."
+          }
+        ],
+        "cost": {
+          "model": "modelo eficiente para clasificar y leer",
+          "tokens": "bajo/medio por contexto acotado",
+          "permission": "minimo permiso viable para esta escena",
+          "stopRule": "Parar tras dos iteraciones sin evidencia nueva."
+        },
+        "decision": {
+          "question": "Que decision tomas sobre Go / No-Go?",
+          "options": [
+            "seguir",
+            "pedir contexto",
+            "subir modelo",
+            "bloquear y llevar a tutoria"
+          ],
+          "selected": 2
+        },
+        "risk": {
+          "items": [
+            "Coste invisible",
+            "Permisos excesivos",
+            "Contexto flojo",
+            "Salida no verificable",
+            "Owner ausente"
+          ],
+          "level": "alto"
+        },
+        "branch": {
+          "steps": [
+            "Brief",
+            "Contexto",
+            "Plan",
+            "Artefacto",
+            "Validacion",
+            "Review",
+            "Cierre"
+          ],
+          "active": 6
+        },
+        "quiz": {
+          "question": "Que prueba que Go / No-Go esta entendido?",
+          "answers": [
+            "Un prompt mas largo",
+            "Una evidencia repetible",
+            "Una opinion del modelo"
+          ],
+          "correct": 1
+        }
+      },
+      "subtitles": [
+        {
+          "text": "Claude: Go / No-Go.",
+          "startMs": 500450,
+          "endMs": 503782
+        },
+        {
+          "text": "Claude ayuda mucho cuando hay procedimiento; no sustituye ownership.",
+          "startMs": 503962,
+          "endMs": 508782
+        },
+        {
+          "text": "Modelo minuto 8: elegir por riesgo, contexto y coste antes de pedir otra iteracion.",
+          "startMs": 508962,
+          "endMs": 515342
+        },
+        {
+          "text": "Decision minuto 8: guardar la duda como material reutilizable si se repite.",
+          "startMs": 515522,
+          "endMs": 521110
+        }
+      ],
+      "voiceover": [
+        "Claude: Go / No-Go.",
+        "Claude ayuda mucho cuando hay procedimiento; no sustituye ownership.",
+        "Modelo minuto 8: elegir por riesgo, contexto y coste antes de pedir otra iteracion.",
+        "Decision minuto 8: guardar la duda como material reutilizable si se repite."
+      ],
+      "screen": {
+        "mode": "decision",
+        "title": "Go / No-Go",
+        "visual": "claude-decision"
+      },
+      "blueprintAction": {
+        "learningRubric": {
+          "learns": "Reconoce por que \"Go / No-Go\" necesita evidencia y no solo respuesta.",
+          "does": "Formula una peticion verificable con limite de alcance.",
+          "decides": "Convertir la duda en material de tutoria si se repite.",
+          "vendor": "claude",
+          "usefulnessScore": 86,
+          "memoryCheck": "Puede nombrar el riesgo principal sin mirar la slide.",
+          "productionPass": "2000-final-direction"
+        }
+      },
+      "production": {
+        "audioVersion": "audio-prod-v2-2026-05-18",
+        "voiceProfileId": "claudeSafety",
+        "voice": "es-ES-AlvaroNeural",
+        "rate": "+2%",
+        "pitch": "+0Hz",
+        "energy": "deliberada",
+        "emphasis": "permiso, bloqueo y rollback",
+        "pauseMs": 300,
+        "role": "reflection",
+        "reviewRubric": {
+          "learns": "Reconoce por que \"Go / No-Go\" necesita evidencia y no solo respuesta.",
+          "does": "Formula una peticion verificable con limite de alcance.",
+          "decides": "Convertir la duda en material de tutoria si se repite.",
+          "memoryCheck": "Puede nombrar el riesgo principal sin mirar la slide."
+        },
+        "prosodyNotes": {
+          "pace": "+2%",
+          "pause": "300ms antes de la decision",
+          "emphasis": "permiso, bloqueo y rollback",
+          "energy": "deliberada"
+        },
+        "pronunciationPass": "spain-voice-units-v1"
+      }
+    },
+    {
+      "id": "22-presupuesto",
+      "name": "Presupuesto",
+      "startMs": 525000,
+      "endMs": 550000,
+      "type": "cost",
+      "content": {
+        "mode": "cost",
+        "vendor": "claude",
+        "title": "Presupuesto",
+        "eyebrow": "Claude Masterclass 10 minutos - Operating Model / escena 22",
+        "label": "Contexto largo sin dieta se convierte en coste invisible.",
+        "presenterCue": "Relacionar Presupuesto con una decision real del alumno.",
+        "actionLabel": "Mostrar artefacto",
+        "actionDetail": "Contexto largo sin dieta se convierte en coste invisible.",
+        "prompt": "Actua como Claude en Claude Code, Projects, skills, hooks, M C P y subagentes. Objetivo: Presupuesto. Contexto: Contexto largo sin dieta se convierte en coste invisible.. Antes de editar, devuelve criterio de cierre, riesgo y coste esperado. No avances si falta evidencia verificable.",
+        "response": [
+          "Lectura: Presupuesto se trata como decision operativa, no como teoria.",
+          "Artefacto: CLAUDE.md o el prompt asociado documenta la regla estable.",
+          "Evidencia minuto 8: \"Presupuesto\" no se cierra sin test, captura o criterio escrito.",
+          "Siguiente paso: aplicar solo si el humano acepta riesgo y coste."
+        ],
+        "diff": [
+          "diff --git a/CLAUDE.md b/CLAUDE.md",
+          "- regla implicita: Presupuesto",
+          "+ regla explicita: Contexto largo sin dieta se convierte en coste invisible.",
+          "+ done_when = \"prueba, review, coste y owner visibles\""
+        ],
+        "terminal": [
+          "$ pnpm test -- auth.spec.ts",
+          "PASS CLAUDE.md",
+          "checked: Presupuesto",
+          "model: modelo fuerte para arquitectura o automatizacion",
+          "budget: dentro del limite de workshop"
+        ],
+        "review": [
+          {
+            "severity": "high",
+            "text": "Comprobar que Presupuesto no se queda en recomendacion generica."
+          },
+          {
+            "severity": "medium",
+            "text": "Pedir evidencia: comando, diff, owner o decision documentada."
+          },
+          {
+            "severity": "note",
+            "text": "El instructor valida si el alumno puede repetirlo sin ayuda."
+          }
+        ],
+        "cost": {
+          "model": "modelo fuerte para arquitectura o automatizacion",
+          "tokens": "alto controlado",
+          "permission": "minimo permiso viable para esta escena",
+          "stopRule": "Parar tras dos iteraciones sin evidencia nueva."
+        },
+        "decision": {
+          "question": "Que decision tomas sobre Presupuesto?",
+          "options": [
+            "seguir",
+            "pedir contexto",
+            "subir modelo",
+            "bloquear y llevar a tutoria"
+          ],
+          "selected": 0
+        },
+        "risk": {
+          "items": [
+            "Coste invisible",
+            "Permisos excesivos",
+            "Contexto flojo",
+            "Salida no verificable",
+            "Owner ausente"
+          ],
+          "level": "bajo"
+        },
+        "branch": {
+          "steps": [
+            "Brief",
+            "Contexto",
+            "Plan",
+            "Artefacto",
+            "Validacion",
+            "Review",
+            "Cierre"
+          ],
+          "active": 0
+        },
+        "quiz": {
+          "question": "Que prueba que Presupuesto esta entendido?",
+          "answers": [
+            "Un prompt mas largo",
+            "Una evidencia repetible",
+            "Una opinion del modelo"
+          ],
+          "correct": 1
+        }
+      },
+      "subtitles": [
+        {
+          "text": "Claude: Presupuesto.",
+          "startMs": 525450,
+          "endMs": 528230
+        },
+        {
+          "text": "Contexto largo sin dieta se convierte en coste invisible.",
+          "startMs": 528410,
+          "endMs": 532702
+        },
+        {
+          "text": "Modelo minuto 8: elegir por riesgo, contexto y coste antes de pedir otra iteracion.",
+          "startMs": 532882,
+          "endMs": 539262
+        },
+        {
+          "text": "Decision minuto 8: si no se puede auditar, vuelve a briefing.",
+          "startMs": 539442,
+          "endMs": 544382
+        }
+      ],
+      "voiceover": [
+        "Claude: Presupuesto.",
+        "Contexto largo sin dieta se convierte en coste invisible.",
+        "Modelo minuto 8: elegir por riesgo, contexto y coste antes de pedir otra iteracion.",
+        "Decision minuto 8: si no se puede auditar, vuelve a briefing."
+      ],
+      "screen": {
+        "mode": "cost",
+        "title": "Presupuesto",
+        "visual": "claude-cost"
+      },
+      "blueprintAction": {
+        "learningRubric": {
+          "learns": "Distingue decision humana de ejecucion automatizada en Claude.",
+          "does": "Comprueba la salida contra prueba, owner o captura.",
+          "decides": "Aceptar solo si la evidencia queda visible para otra persona.",
+          "vendor": "claude",
+          "usefulnessScore": 88,
+          "memoryCheck": "Puede repetir el prompt inicial con criterio de cierre.",
+          "productionPass": "2000-final-direction"
+        }
+      },
+      "production": {
+        "audioVersion": "audio-prod-v2-2026-05-18",
+        "voiceProfileId": "claudeSafety",
+        "voice": "es-ES-AlvaroNeural",
+        "rate": "+2%",
+        "pitch": "+0Hz",
+        "energy": "deliberada",
+        "emphasis": "permiso, bloqueo y rollback",
+        "pauseMs": 300,
+        "role": "safety",
+        "reviewRubric": {
+          "learns": "Distingue decision humana de ejecucion automatizada en Claude.",
+          "does": "Comprueba la salida contra prueba, owner o captura.",
+          "decides": "Aceptar solo si la evidencia queda visible para otra persona.",
+          "memoryCheck": "Puede repetir el prompt inicial con criterio de cierre."
+        },
+        "prosodyNotes": {
+          "pace": "+2%",
+          "pause": "300ms antes de la decision",
+          "emphasis": "permiso, bloqueo y rollback",
+          "energy": "deliberada"
+        },
+        "pronunciationPass": "spain-voice-units-v1"
+      }
+    },
+    {
+      "id": "23-activacion",
+      "name": "Activacion",
+      "startMs": 550000,
+      "endMs": 575000,
+      "type": "quiz",
+      "content": {
+        "mode": "quiz",
+        "vendor": "claude",
+        "title": "Activacion",
+        "eyebrow": "Claude Masterclass 10 minutos - Operating Model / escena 23",
+        "label": "Primer reto: convertir una rutina repetida en skill con prueba.",
+        "presenterCue": "Relacionar Activacion con una decision real del alumno.",
+        "actionLabel": "Mostrar artefacto",
+        "actionDetail": "Primer reto: convertir una rutina repetida en skill con prueba.",
+        "prompt": "Actua como Claude en Claude Code, Projects, skills, hooks, M C P y subagentes. Objetivo: Activacion. Contexto: Primer reto: convertir una rutina repetida en skill con prueba.. Antes de editar, devuelve criterio de cierre, riesgo y coste esperado. No avances si falta evidencia verificable.",
+        "response": [
+          "Lectura: Activacion se trata como decision operativa, no como teoria.",
+          "Artefacto: CLAUDE.md o el prompt asociado documenta la regla estable.",
+          "Evidencia minuto 9: \"Activacion\" queda ligado a prueba, owner y decision.",
+          "Siguiente paso: aplicar solo si el humano acepta riesgo y coste."
+        ],
+        "diff": [
+          "diff --git a/CLAUDE.md b/CLAUDE.md",
+          "- regla implicita: Activacion",
+          "+ regla explicita: Primer reto: convertir una rutina repetida en skill con prueba.",
+          "+ done_when = \"prueba, review, coste y owner visibles\""
+        ],
+        "terminal": [
+          "$ pnpm test -- auth.spec.ts",
+          "PASS CLAUDE.md",
+          "checked: Activacion",
+          "model: modelo eficiente para clasificar y leer",
+          "budget: dentro del limite de workshop"
+        ],
+        "review": [
+          {
+            "severity": "note",
+            "text": "Comprobar que Activacion no se queda en recomendacion generica."
+          },
+          {
+            "severity": "medium",
+            "text": "Pedir evidencia: comando, diff, owner o decision documentada."
+          },
+          {
+            "severity": "note",
+            "text": "El instructor valida si el alumno puede repetirlo sin ayuda."
+          }
+        ],
+        "cost": {
+          "model": "modelo eficiente para clasificar y leer",
+          "tokens": "bajo/medio por contexto acotado",
+          "permission": "minimo permiso viable para esta escena",
+          "stopRule": "Parar tras dos iteraciones sin evidencia nueva."
+        },
+        "decision": {
+          "question": "Que decision tomas sobre Activacion?",
+          "options": [
+            "seguir",
+            "pedir contexto",
+            "subir modelo",
+            "bloquear y llevar a tutoria"
+          ],
+          "selected": 1
+        },
+        "risk": {
+          "items": [
+            "Coste invisible",
+            "Permisos excesivos",
+            "Contexto flojo",
+            "Salida no verificable",
+            "Owner ausente"
+          ],
+          "level": "bajo"
+        },
+        "branch": {
+          "steps": [
+            "Brief",
+            "Contexto",
+            "Plan",
+            "Artefacto",
+            "Validacion",
+            "Review",
+            "Cierre"
+          ],
+          "active": 1
+        },
+        "quiz": {
+          "question": "Que prueba que Activacion esta entendido?",
+          "answers": [
+            "Un prompt mas largo",
+            "Una evidencia repetible",
+            "Una opinion del modelo"
+          ],
+          "correct": 1
+        }
+      },
+      "subtitles": [
+        {
+          "text": "Claude: Activacion.",
+          "startMs": 550450,
+          "endMs": 553134
+        },
+        {
+          "text": "Primer reto: convertir una rutina repetida en skill con prueba.",
+          "startMs": 553314,
+          "endMs": 558086
+        },
+        {
+          "text": "Modelo minuto 9: elegir por riesgo, contexto y coste antes de pedir otra iteracion.",
+          "startMs": 558266,
+          "endMs": 564598
+        },
+        {
+          "text": "Decision minuto 9: cerrar solo cuando skill versionada, hook probado y owner claro.",
+          "startMs": 564778,
+          "endMs": 571038
+        }
+      ],
+      "voiceover": [
+        "Claude: Activacion.",
+        "Primer reto: convertir una rutina repetida en skill con prueba.",
+        "Modelo minuto 9: elegir por riesgo, contexto y coste antes de pedir otra iteracion.",
+        "Decision minuto 9: cerrar solo cuando skill versionada, hook probado y owner claro."
+      ],
+      "screen": {
+        "mode": "quiz",
+        "title": "Activacion",
+        "visual": "claude-quiz"
+      },
+      "blueprintAction": {
+        "learningRubric": {
+          "learns": "Ubica coste, permiso y criterio antes de aceptar la salida.",
+          "does": "Registra el criterio que permitiria repetir el paso sin instructor.",
+          "decides": "Seguir, pedir mas contexto, escalar modelo o bloquear.",
+          "vendor": "claude",
+          "usefulnessScore": 90,
+          "memoryCheck": "Puede explicar el paso en una frase de menos de 20 segundos.",
+          "productionPass": "2000-final-direction"
+        }
+      },
+      "production": {
+        "audioVersion": "audio-prod-v2-2026-05-18",
+        "voiceProfileId": "claudeSafety",
+        "voice": "es-ES-AlvaroNeural",
+        "rate": "+2%",
+        "pitch": "+0Hz",
+        "energy": "deliberada",
+        "emphasis": "permiso, bloqueo y rollback",
+        "pauseMs": 300,
+        "role": "reflection",
+        "reviewRubric": {
+          "learns": "Ubica coste, permiso y criterio antes de aceptar la salida.",
+          "does": "Registra el criterio que permitiria repetir el paso sin instructor.",
+          "decides": "Seguir, pedir mas contexto, escalar modelo o bloquear.",
+          "memoryCheck": "Puede explicar el paso en una frase de menos de 20 segundos."
+        },
+        "prosodyNotes": {
+          "pace": "+2%",
+          "pause": "300ms antes de la decision",
+          "emphasis": "permiso, bloqueo y rollback",
+          "energy": "deliberada"
+        },
+        "pronunciationPass": "spain-voice-units-v1"
+      }
+    },
+    {
+      "id": "24-resumen",
+      "name": "Resumen",
+      "startMs": 575000,
       "endMs": 600000,
       "type": "finale",
       "content": {
-        "title": "Claude se opera, no se invoca",
+        "title": "Lo que debe quedar despues de Claude",
         "summary": [
-          { "number": "01", "label": "Memoria", "body": "Separar CLAUDE.md, rules, auto memory y skills." },
-          { "number": "02", "label": "Contexto", "body": "Usar /context, /usage, /compact y handoff con criterio." },
-          { "number": "03", "label": "Automatizacion", "body": "Subagentes, MCP, hooks y plugins solo despues de higiene." }
+          {
+            "number": "01",
+            "label": "Superficie",
+            "body": "Elegir Claude Code, Projects, skills, hooks, M C P y subagentes segun tarea."
+          },
+          {
+            "number": "02",
+            "label": "Criterio",
+            "body": "Definir alcance, aceptacion y evidencia."
+          },
+          {
+            "number": "03",
+            "label": "Coste",
+            "body": "Modelo, contexto y permiso visibles."
+          },
+          {
+            "number": "04",
+            "label": "Practica",
+            "body": "Ejercicio asociado y cierre revisable."
+          }
         ],
-        "cta": "Siguiente paso: abrir Claude Code Orientation y completar el CLAUDE.md minimo."
+        "cta": "El alumno sale entendiendo Claude como sistema gobernado de memoria, herramientas y automatizacion."
       },
       "subtitles": [
-        { "text": "Claude es muy potente.", "startMs": 558000, "endMs": 565000 },
-        { "text": "Por eso necesita metodo.", "startMs": 566000, "endMs": 574000 },
-        { "text": "Ahora ya tenemos el mapa para empezar.", "startMs": 575000, "endMs": 596000 }
-      ]
+        {
+          "text": "Claude: Resumen.",
+          "startMs": 575450,
+          "endMs": 578062
+        },
+        {
+          "text": "Claude funciona cuando memoria, tools y agentes tienen gobierno.",
+          "startMs": 578242,
+          "endMs": 583038
+        },
+        {
+          "text": "Modelo minuto 9: elegir por riesgo, contexto y coste antes de pedir otra iteracion.",
+          "startMs": 583218,
+          "endMs": 589550
+        },
+        {
+          "text": "Decision minuto 9: seguir, pedir contexto, escalar modelo o bloquear.",
+          "startMs": 589730,
+          "endMs": 595846
+        }
+      ],
+      "voiceover": [
+        "Claude: Resumen.",
+        "Claude funciona cuando memoria, tools y agentes tienen gobierno.",
+        "Modelo minuto 9: elegir por riesgo, contexto y coste antes de pedir otra iteracion.",
+        "Decision minuto 9: seguir, pedir contexto, escalar modelo o bloquear."
+      ],
+      "screen": {
+        "mode": "finale",
+        "title": "Resumen",
+        "visual": "claude-finale"
+      },
+      "blueprintAction": {
+        "learningRubric": {
+          "learns": "Reconoce por que \"Lo que debe quedar despues de Claude\" necesita evidencia y no solo respuesta.",
+          "does": "Formula una peticion verificable con limite de alcance.",
+          "decides": "Convertir la duda en material de tutoria si se repite.",
+          "vendor": "claude",
+          "usefulnessScore": 92,
+          "memoryCheck": "Puede nombrar el riesgo principal sin mirar la slide.",
+          "productionPass": "2000-final-direction"
+        }
+      },
+      "production": {
+        "audioVersion": "audio-prod-v2-2026-05-18",
+        "voiceProfileId": "claudeSafety",
+        "voice": "es-ES-AlvaroNeural",
+        "rate": "+2%",
+        "pitch": "+0Hz",
+        "energy": "deliberada",
+        "emphasis": "permiso, bloqueo y rollback",
+        "pauseMs": 300,
+        "role": "reflection",
+        "reviewRubric": {
+          "learns": "Reconoce por que \"Lo que debe quedar despues de Claude\" necesita evidencia y no solo respuesta.",
+          "does": "Formula una peticion verificable con limite de alcance.",
+          "decides": "Convertir la duda en material de tutoria si se repite.",
+          "memoryCheck": "Puede nombrar el riesgo principal sin mirar la slide."
+        },
+        "prosodyNotes": {
+          "pace": "+2%",
+          "pause": "300ms antes de la decision",
+          "emphasis": "permiso, bloqueo y rollback",
+          "energy": "deliberada"
+        },
+        "pronunciationPass": "spain-voice-units-v1"
+      }
     }
-  ]
+  ],
+  "generatedFrom": "scripts/rebuild-masterclass-videos.mjs",
+  "production": {
+    "audioProductionVersion": "audio-prod-v2-2026-05-18",
+    "productionPass": "2000-final-direction",
+    "vendor": "claude",
+    "narrativePass": "teacher-contract-v1",
+    "pronunciationPass": "spain-voice-units-v1"
+  }
 }

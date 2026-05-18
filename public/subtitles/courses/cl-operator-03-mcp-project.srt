@@ -1,0 +1,68 @@
+1
+00:00:00,450 --> 00:00:03,038
+Objetivo de esta clase:
+
+2
+00:00:03,218 --> 00:00:08,734
+resolver Claude Operator 03 - M C P Project con criterio practico.
+
+3
+00:00:08,914 --> 00:00:13,830
+Al final debes poder quedarte con una regla de uso y un ejemplo repetible.
+
+4
+00:00:14,010 --> 00:00:18,038
+La ruta sera: concepto, ejemplo y cierre.
+
+5
+00:00:18,218 --> 00:00:21,238
+Durante el video mira esta decision:
+
+6
+00:00:21,418 --> 00:00:25,158
+cuando aplicar esta tecnica en tu propio repositorio.
+
+7
+00:00:30,450 --> 00:00:33,446
+El M C P bueno es explicito.
+
+8
+00:00:33,626 --> 00:00:37,558
+El M C P peligroso aparece como magia sin owner.
+
+9
+00:00:37,738 --> 00:00:41,742
+Readonly primero mantiene el aprendizaje bajo control.
+
+10
+00:01:00,450 --> 00:01:05,726
+M C P sin inventario no es plataforma. Es apuesta.
+
+11
+00:01:05,771 --> 00:01:11,263
+Evidencia minuto 1: el artefacto muestra que se controlo contexto infinito
+
+12
+00:01:11,308 --> 00:01:14,688
+permisos y automatizacion sin rollback.
+
+13
+00:01:14,733 --> 00:01:21,497
+permisos y automatizacion sin rollback. (Claude, minuto 1, paso 3)
+
+14
+00:01:21,542 --> 00:01:27,826
+Accion minuto 1: pedir salida pequena verificable y con owner. (Claude
+
+15
+00:01:27,356 --> 00:01:29,920
+minuto 1 paso 4)
+
+16
+00:01:23,996 --> 00:01:29,920
+skill o M C P en una decision que se pueda ensenar en tutoria. (Claude
+
+17
+00:01:27,356 --> 00:01:29,920
+minuto 1 paso 4)
+

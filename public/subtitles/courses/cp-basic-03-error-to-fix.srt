@@ -1,0 +1,44 @@
+1
+00:00:00,450 --> 00:00:07,046
+Objetivo de esta clase: resolver Copilot Basic 03 - Error to Fix con criterio practico.
+
+2
+00:00:07,226 --> 00:00:12,070
+Al final debes poder quedarte con una regla de uso y un ejemplo repetible.
+
+3
+00:00:12,250 --> 00:00:16,206
+La ruta sera: concepto, ejemplo y cierre.
+
+4
+00:00:16,386 --> 00:00:19,358
+Durante el video mira esta decision:
+
+5
+00:00:19,538 --> 00:00:23,230
+cuando aplicar esta tecnica en tu propio repositorio.
+
+6
+00:00:30,450 --> 00:00:35,462
+El prompt bueno dice que estaba pasando, donde falla y que no queremos tocar.
+
+7
+00:00:35,642 --> 00:00:38,734
+Despues pedimos patch minimo y test.
+
+8
+00:00:38,914 --> 00:00:42,822
+Copilot arregla mejor cuando el cierre esta definido.
+
+9
+00:01:00,450 --> 00:01:05,894
+Contexto, limite y test. Asi se arreglan bugs con Copilot.
+
+10
+00:01:06,074 --> 00:01:11,854
+Evidencia minuto 1: "Debug operativo" queda ligado a prueba, owner y decision.
+
+11
+00:01:12,034 --> 00:01:17,214
+Accion minuto 1: nombrar modelo, permiso y limite antes de iterar.
+

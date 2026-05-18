@@ -1,7 +1,7 @@
 {
   "id": "cp-medium-02-prompt-files",
   "title": "Copilot Medium 02 - Prompt Files",
-  "description": "Prompt files para workflows repetibles: tests, review, refactor y PR.",
+  "description": "Prompt files para workflows repetibles: tests, review, refactor y pull request.",
   "template": "technical",
   "durationPreset": 5,
   "durationMs": 90000,
@@ -9,67 +9,300 @@
   "author": "AI Practice Hub",
   "createdAt": "2026-05-07T00:00:00.000Z",
   "chapters": [
-    { "id": "start", "label": "Prompts", "startMs": 0 },
-    { "id": "code", "label": "Prompt file", "startMs": 9000 },
-    { "id": "close", "label": "Workflow", "startMs": 65000 }
+    {
+      "id": "start",
+      "label": "Prompts",
+      "startMs": 0
+    },
+    {
+      "id": "code",
+      "label": "Prompt file",
+      "startMs": 9000
+    },
+    {
+      "id": "close",
+      "label": "Workflow",
+      "startMs": 65000
+    }
   ],
   "scenes": [
     {
       "id": "title",
       "name": "Apertura",
       "startMs": 0,
-      "endMs": 9000,
+      "endMs": 30000,
       "type": "title",
       "content": {
         "title": "Prompt files",
-        "subtitle": "No repitas el mismo ritual de tests, review y PR cada dia.",
-        "tag": "Copilot Medium"
+        "subtitle": "Objetivo: resolver Copilot Medium 02 - Prompt Files con criterio practico.",
+        "tag": "Copilot Medium",
+        "narrativeContract": {
+          "objective": "resolver Copilot Medium 02 - Prompt Files con criterio practico.",
+          "outcome": "quedarte con una regla de uso y un ejemplo repetible.",
+          "route": "concepto, ejemplo y cierre.",
+          "decision": "cuando aplicar esta tecnica en tu propio repositorio."
+        }
       },
       "subtitles": [
-        { "text": "Un prompt file es una herramienta invocable, no una instruccion global.", "startMs": 1000, "endMs": 8200 }
-      ]
+        {
+          "text": "Objetivo de esta clase: resolver Copilot Medium 02 - Prompt Files con criterio practico.",
+          "startMs": 450,
+          "endMs": 6662
+        },
+        {
+          "text": "Al final debes poder quedarte con una regla de uso y un ejemplo repetible.",
+          "startMs": 6842,
+          "endMs": 11686
+        },
+        {
+          "text": "La ruta sera: concepto, ejemplo y cierre.",
+          "startMs": 11866,
+          "endMs": 15822
+        },
+        {
+          "text": "Durante el video mira esta decision:",
+          "startMs": 16002,
+          "endMs": 18974
+        },
+        {
+          "text": "cuando aplicar esta tecnica en tu propio repositorio.",
+          "startMs": 19154,
+          "endMs": 22846
+        }
+      ],
+      "voiceover": [
+        "Objetivo de esta clase: resolver Copilot Medium 02 - Prompt Files con criterio practico.",
+        "Al final debes poder quedarte con una regla de uso y un ejemplo repetible.",
+        "La ruta sera: concepto, ejemplo y cierre.",
+        "Durante el video mira esta decision:",
+        "cuando aplicar esta tecnica en tu propio repositorio."
+      ],
+      "blueprintAction": {
+        "learningRubric": {
+          "learns": "Ubica coste, permiso y criterio antes de aceptar la salida.",
+          "does": "Registra el criterio que permitiria repetir el paso sin instructor.",
+          "decides": "Seguir, pedir mas contexto, escalar modelo o bloquear.",
+          "vendor": "copilot",
+          "usefulnessScore": 82,
+          "memoryCheck": "Puede explicar el paso en una frase de menos de 20 segundos.",
+          "productionPass": "2000-final-direction"
+        }
+      },
+      "production": {
+        "audioVersion": "audio-prod-v2-2026-05-18",
+        "voiceProfileId": "copilotNarrator",
+        "voice": "es-ES-AlvaroNeural",
+        "rate": "+7%",
+        "pitch": "+0Hz",
+        "energy": "practica",
+        "emphasis": "modo, contexto y PR",
+        "pauseMs": 180,
+        "role": "narrator",
+        "reviewRubric": {
+          "learns": "Ubica coste, permiso y criterio antes de aceptar la salida.",
+          "does": "Registra el criterio que permitiria repetir el paso sin instructor.",
+          "decides": "Seguir, pedir mas contexto, escalar modelo o bloquear.",
+          "memoryCheck": "Puede explicar el paso en una frase de menos de 20 segundos."
+        },
+        "prosodyNotes": {
+          "pace": "+7%",
+          "pause": "180ms antes de la decision",
+          "emphasis": "modo, contexto y pull request",
+          "energy": "practica"
+        },
+        "pronunciationPass": "spain-voice-units-v1"
+      }
     },
     {
       "id": "coding",
       "name": "Prompt",
-      "startMs": 9000,
-      "endMs": 65000,
+      "startMs": 30000,
+      "endMs": 60000,
       "type": "coding",
       "content": {
         "tag": ".github/prompts",
         "filename": "generate-tests.prompt.md",
-        "code": "---\ndescription: \"Generate focused tests\"\nmode: \"agent\"\ntools: [\"read\", \"search\", \"edit\", \"execute\"]\n---\n\nFind the smallest behavior that needs test coverage.\n\nBefore editing:\n- Identify existing test conventions.\n- Name the file where tests should live.\n- State the missing behavior.\n\nThen add focused tests and run the relevant test command.",
+        "code": "--- description: \"Generate focused tests\" mode: \"agent\" tools: [\"read\", \"search\", \"edit\", \"execute\"] --- Find the smallest behavior that needs test coverage. Before editing: - Identify existing test conventions. - Name the file where tests should live. - State the missing behavior. Then add focused tests and run the relevant test command. # Cierre operativo done_when: evidencia + coste + owner stop_rule: parar si no hay senal nueva",
         "commentary": [
-          { "atLine": 2, "text": "Descripcion invocable" },
-          { "atLine": 3, "text": "Modo" },
-          { "atLine": 4, "text": "Tools" },
-          { "atLine": 9, "text": "Proceso" }
+          {
+            "atLine": 2,
+            "text": "Descripcion invocable"
+          },
+          {
+            "atLine": 3,
+            "text": "Modo"
+          },
+          {
+            "atLine": 4,
+            "text": "Tools"
+          },
+          {
+            "atLine": 9,
+            "text": "Proceso"
+          }
         ]
       },
       "subtitles": [
-        { "text": "El frontmatter define descripcion, modo y herramientas.", "startMs": 10000, "endMs": 27000 },
-        { "text": "El cuerpo define el workflow.", "startMs": 28000, "endMs": 42000 },
-        { "text": "Esto convierte buenas practicas en atajos de equipo.", "startMs": 43000, "endMs": 62000 }
-      ]
+        {
+          "text": "El frontmatter define descripcion, modo y herramientas.",
+          "startMs": 30450,
+          "endMs": 34718
+        },
+        {
+          "text": "El cuerpo define el workflow.",
+          "startMs": 34898,
+          "endMs": 37486
+        },
+        {
+          "text": "Esto convierte buenas practicas en atajos de equipo.",
+          "startMs": 37666,
+          "endMs": 41454
+        }
+      ],
+      "voiceover": [
+        "El frontmatter define descripcion, modo y herramientas.",
+        "El cuerpo define el workflow.",
+        "Esto convierte buenas practicas en atajos de equipo."
+      ],
+      "blueprintAction": {
+        "learningRubric": {
+          "learns": "Reconoce por que \"Prompt\" necesita evidencia y no solo respuesta.",
+          "does": "Formula una peticion verificable con limite de alcance.",
+          "decides": "Convertir la duda en material de tutoria si se repite.",
+          "vendor": "copilot",
+          "usefulnessScore": 84,
+          "memoryCheck": "Puede nombrar el riesgo principal sin mirar la slide.",
+          "productionPass": "2000-final-direction"
+        }
+      },
+      "production": {
+        "audioVersion": "audio-prod-v2-2026-05-18",
+        "voiceProfileId": "copilotNarrator",
+        "voice": "es-ES-AlvaroNeural",
+        "rate": "+7%",
+        "pitch": "+0Hz",
+        "energy": "practica",
+        "emphasis": "modo, contexto y PR",
+        "pauseMs": 180,
+        "role": "narrator",
+        "reviewRubric": {
+          "learns": "Reconoce por que \"Prompt\" necesita evidencia y no solo respuesta.",
+          "does": "Formula una peticion verificable con limite de alcance.",
+          "decides": "Convertir la duda en material de tutoria si se repite.",
+          "memoryCheck": "Puede nombrar el riesgo principal sin mirar la slide."
+        },
+        "prosodyNotes": {
+          "pace": "+7%",
+          "pause": "180ms antes de la decision",
+          "emphasis": "modo, contexto y pull request",
+          "energy": "practica"
+        },
+        "pronunciationPass": "spain-voice-units-v1"
+      }
     },
     {
       "id": "finale",
       "name": "Cierre",
-      "startMs": 65000,
+      "startMs": 60000,
       "endMs": 90000,
       "type": "finale",
       "content": {
         "title": "Prompt file bueno",
         "summary": [
-          { "number": "01", "label": "Invocable", "body": "Se usa cuando toca." },
-          { "number": "02", "label": "Acotado", "body": "Tools y modo claros." },
-          { "number": "03", "label": "Verificable", "body": "Cierra con evidencia." }
+          {
+            "number": "01",
+            "label": "Invocable",
+            "body": "Se usa cuando toca."
+          },
+          {
+            "number": "02",
+            "label": "Acotado",
+            "body": "Tools y modo claros."
+          },
+          {
+            "number": "03",
+            "label": "Verificable",
+            "body": "Cierra con evidencia."
+          }
         ],
         "cta": "Ejercicio: cp-m06-prompt-files."
       },
       "subtitles": [
-        { "text": "Invocable, acotado y verificable. Asi se disena un prompt file.", "startMs": 66000, "endMs": 89000 }
-      ]
+        {
+          "text": "Invocable, acotado y verificable. Asi se disena un prompt file.",
+          "startMs": 60450,
+          "endMs": 66350
+        },
+        {
+          "text": "Evidencia minuto 1: \"Prompt file bueno\" no se cierra sin test",
+          "startMs": 66530,
+          "endMs": 71134
+        },
+        {
+          "text": "captura o criterio escrito.",
+          "startMs": 71314,
+          "endMs": 74094
+        },
+        {
+          "text": "Accion minuto 1: pedir salida pequena verificable y con owner. (Copilot",
+          "startMs": 74274,
+          "endMs": 80366
+        },
+        {
+          "text": "minuto 1 paso 10)",
+          "startMs": 80546,
+          "endMs": 82990
+        }
+      ],
+      "voiceover": [
+        "Invocable, acotado y verificable. Asi se disena un prompt file.",
+        "Evidencia minuto 1: \"Prompt file bueno\" no se cierra sin test",
+        "captura o criterio escrito.",
+        "Accion minuto 1: pedir salida pequena verificable y con owner. (Copilot",
+        "minuto 1 paso 10)"
+      ],
+      "blueprintAction": {
+        "learningRubric": {
+          "learns": "Distingue decision humana de ejecucion automatizada en Copilot.",
+          "does": "Comprueba la salida contra prueba, owner o captura.",
+          "decides": "Aceptar solo si la evidencia queda visible para otra persona.",
+          "vendor": "copilot",
+          "usefulnessScore": 86,
+          "memoryCheck": "Puede repetir el prompt inicial con criterio de cierre.",
+          "productionPass": "2000-final-direction"
+        }
+      },
+      "production": {
+        "audioVersion": "audio-prod-v2-2026-05-18",
+        "voiceProfileId": "copilotReview",
+        "voice": "es-ES-AlvaroNeural",
+        "rate": "+4%",
+        "pitch": "+0Hz",
+        "energy": "critica",
+        "emphasis": "finding, severidad y prueba",
+        "pauseMs": 240,
+        "role": "reflection",
+        "reviewRubric": {
+          "learns": "Distingue decision humana de ejecucion automatizada en Copilot.",
+          "does": "Comprueba la salida contra prueba, owner o captura.",
+          "decides": "Aceptar solo si la evidencia queda visible para otra persona.",
+          "memoryCheck": "Puede repetir el prompt inicial con criterio de cierre."
+        },
+        "prosodyNotes": {
+          "pace": "+4%",
+          "pause": "240ms antes de la decision",
+          "emphasis": "finding, severidad y prueba",
+          "energy": "critica"
+        },
+        "pronunciationPass": "spain-voice-units-v1"
+      }
     }
-  ]
+  ],
+  "production": {
+    "audioProductionVersion": "audio-prod-v2-2026-05-18",
+    "productionPass": "2000-final-direction",
+    "vendor": "copilot",
+    "narrativePass": "teacher-contract-v1",
+    "pronunciationPass": "spain-voice-units-v1"
+  }
 }

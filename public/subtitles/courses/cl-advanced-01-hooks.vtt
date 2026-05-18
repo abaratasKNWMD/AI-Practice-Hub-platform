@@ -1,0 +1,48 @@
+WEBVTT
+
+NOTE cl-advanced-01-hooks - Claude Advanced 01 - Hooks
+
+1
+00:00:00.450 --> 00:00:06.638
+Objetivo de esta clase: resolver Claude Advanced 01 - Hooks con criterio practico.
+
+2
+00:00:06.818 --> 00:00:11.734
+Al final debes poder quedarte con una regla de uso y un ejemplo repetible.
+
+3
+00:00:11.914 --> 00:00:15.942
+La ruta sera: concepto, ejemplo y cierre.
+
+4
+00:00:16.122 --> 00:00:19.142
+Durante el video mira esta decision:
+
+5
+00:00:19.322 --> 00:00:23.062
+cuando aplicar esta tecnica en tu propio repositorio.
+
+6
+00:00:30.450 --> 00:00:35.582
+Un hook no convence al modelo. Controla la herramienta.
+
+7
+00:00:35.762 --> 00:00:39.022
+Eso es lo que lo hace util para seguridad.
+
+8
+00:00:39.202 --> 00:00:42.654
+La clave es fallar claro y con poco ruido.
+
+9
+00:01:00.450 --> 00:01:05.870
+Los hooks buenos no hacen teatro. Evitan errores reales.
+
+10
+00:01:06.050 --> 00:01:11.326
+Evidencia minuto 1: skill versionada, hook probado y owner claro.
+
+11
+00:01:11.506 --> 00:01:16.854
+Accion minuto 1: parar si "Eventos basicos" no produce evidencia nueva.
+

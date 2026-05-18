@@ -9,36 +9,126 @@
   "author": "AI Practice Hub",
   "createdAt": "2026-05-07T00:00:00.000Z",
   "chapters": [
-    { "id": "start", "label": "Coste", "startMs": 0 },
-    { "id": "concept", "label": "Requests", "startMs": 9000 },
-    { "id": "close", "label": "Budget", "startMs": 65000 }
+    {
+      "id": "start",
+      "label": "Coste",
+      "startMs": 0
+    },
+    {
+      "id": "concept",
+      "label": "Requests",
+      "startMs": 30000
+    },
+    {
+      "id": "close",
+      "label": "Budget",
+      "startMs": 65000
+    }
   ],
   "scenes": [
     {
       "id": "title",
       "name": "Apertura",
       "startMs": 0,
-      "endMs": 9000,
+      "endMs": 30000,
       "type": "title",
       "content": {
         "title": "Premium requests",
-        "subtitle": "El coste se explica antes de que aparezca en la factura.",
-        "tag": "Copilot Governance"
+        "subtitle": "Objetivo: resolver Copilot Cloud 02 - Premium Requests con criterio practico.",
+        "tag": "Copilot Governance",
+        "narrativeContract": {
+          "objective": "resolver Copilot Cloud 02 - Premium Requests con criterio practico.",
+          "outcome": "quedarte con una regla de uso y un ejemplo repetible.",
+          "route": "concepto, ejemplo y cierre.",
+          "decision": "cuando aplicar esta tecnica en tu propio repositorio."
+        }
       },
       "subtitles": [
-        { "text": "Copilot no cuesta solo por usarlo: depende de feature, modelo y plan.", "startMs": 1000, "endMs": 8200 }
-      ]
+        {
+          "text": "Objetivo de esta clase:",
+          "startMs": 450,
+          "endMs": 2990
+        },
+        {
+          "text": "resolver Copilot Cloud 02 - Premium Requests con criterio practico.",
+          "startMs": 3170,
+          "endMs": 8350
+        },
+        {
+          "text": "Al final debes poder quedarte con una regla de uso y un ejemplo repetible.",
+          "startMs": 8530,
+          "endMs": 13374
+        },
+        {
+          "text": "La ruta sera: concepto, ejemplo y cierre.",
+          "startMs": 13554,
+          "endMs": 17510
+        },
+        {
+          "text": "Durante el video mira esta decision:",
+          "startMs": 17690,
+          "endMs": 20662
+        },
+        {
+          "text": "cuando aplicar esta tecnica en tu propio repositorio.",
+          "startMs": 20842,
+          "endMs": 24534
+        }
+      ],
+      "voiceover": [
+        "Objetivo de esta clase:",
+        "resolver Copilot Cloud 02 - Premium Requests con criterio practico.",
+        "Al final debes poder quedarte con una regla de uso y un ejemplo repetible.",
+        "La ruta sera: concepto, ejemplo y cierre.",
+        "Durante el video mira esta decision:",
+        "cuando aplicar esta tecnica en tu propio repositorio."
+      ],
+      "blueprintAction": {
+        "learningRubric": {
+          "learns": "Reconoce por que \"Premium requests\" necesita evidencia y no solo respuesta.",
+          "does": "Formula una peticion verificable con limite de alcance.",
+          "decides": "Convertir la duda en material de tutoria si se repite.",
+          "vendor": "copilot",
+          "usefulnessScore": 82,
+          "memoryCheck": "Puede nombrar el riesgo principal sin mirar la slide.",
+          "productionPass": "2000-final-direction"
+        }
+      },
+      "production": {
+        "audioVersion": "audio-prod-v2-2026-05-18",
+        "voiceProfileId": "copilotNarrator",
+        "voice": "es-ES-AlvaroNeural",
+        "rate": "+7%",
+        "pitch": "+0Hz",
+        "energy": "practica",
+        "emphasis": "modo, contexto y PR",
+        "pauseMs": 180,
+        "role": "narrator",
+        "reviewRubric": {
+          "learns": "Reconoce por que \"Premium requests\" necesita evidencia y no solo respuesta.",
+          "does": "Formula una peticion verificable con limite de alcance.",
+          "decides": "Convertir la duda en material de tutoria si se repite.",
+          "memoryCheck": "Puede nombrar el riesgo principal sin mirar la slide."
+        },
+        "prosodyNotes": {
+          "pace": "+7%",
+          "pause": "180ms antes de la decision",
+          "emphasis": "modo, contexto y pull request",
+          "energy": "practica"
+        },
+        "pronunciationPass": "spain-voice-units-v1"
+      }
     },
     {
       "id": "concept",
       "name": "Requests",
-      "startMs": 9000,
-      "endMs": 65000,
+      "startMs": 30000,
+      "endMs": 60000,
       "type": "concept",
       "content": {
         "tag": "Cost governance",
         "title": "Incluido, premium y cloud no son lo mismo",
-        "body": "En planes de pago puede haber interacciones incluidas con determinados modelos, y premium requests para modelos o funciones avanzadas. Cloud agent tambien puede consumir premium requests y minutos de GitHub Actions.\n\nLos modelos, multiplicadores y politicas cambian: el curso ensena a mirar el panel y decidir, no a memorizar una cifra.",
+        "body": "En planes de pago puede haber interacciones incluidas con determinados modelos, y premium requests para modelos o funciones avanzadas. Cloud agent tambien puede consumir premium requests y minutos de GitHub Actions. Los modelos, multiplicadores y politicas cambian: el curso ensena a mirar el panel y decidir, no a memorizar una cifra.",
         "highlight": "Mide coste por resultado util, no por prompt.",
         "points": [
           "Usa modelos incluidos para tareas rutinarias cuando basten.",
@@ -48,29 +138,160 @@
         ]
       },
       "subtitles": [
-        { "text": "Incluido, premium y cloud no son la misma bolsa.", "startMs": 10000, "endMs": 25000 },
-        { "text": "Los detalles cambian, asi que ensenamos criterio.", "startMs": 26000, "endMs": 42000 },
-        { "text": "Coste por resultado util, no coste por prompt.", "startMs": 43000, "endMs": 62000 }
-      ]
+        {
+          "text": "Incluido, premium y cloud no son la misma bolsa.",
+          "startMs": 30450,
+          "endMs": 34454
+        },
+        {
+          "text": "Los detalles cambian, asi que ensenamos criterio.",
+          "startMs": 34634,
+          "endMs": 38470
+        },
+        {
+          "text": "Coste por resultado util, no coste por prompt.",
+          "startMs": 38650,
+          "endMs": 42342
+        }
+      ],
+      "voiceover": [
+        "Incluido, premium y cloud no son la misma bolsa.",
+        "Los detalles cambian, asi que ensenamos criterio.",
+        "Coste por resultado util, no coste por prompt."
+      ],
+      "blueprintAction": {
+        "learningRubric": {
+          "learns": "Distingue decision humana de ejecucion automatizada en Copilot.",
+          "does": "Comprueba la salida contra prueba, owner o captura.",
+          "decides": "Aceptar solo si la evidencia queda visible para otra persona.",
+          "vendor": "copilot",
+          "usefulnessScore": 84,
+          "memoryCheck": "Puede repetir el prompt inicial con criterio de cierre.",
+          "productionPass": "2000-final-direction"
+        }
+      },
+      "production": {
+        "audioVersion": "audio-prod-v2-2026-05-18",
+        "voiceProfileId": "copilotNarrator",
+        "voice": "es-ES-AlvaroNeural",
+        "rate": "+7%",
+        "pitch": "+0Hz",
+        "energy": "practica",
+        "emphasis": "modo, contexto y PR",
+        "pauseMs": 180,
+        "role": "narrator",
+        "reviewRubric": {
+          "learns": "Distingue decision humana de ejecucion automatizada en Copilot.",
+          "does": "Comprueba la salida contra prueba, owner o captura.",
+          "decides": "Aceptar solo si la evidencia queda visible para otra persona.",
+          "memoryCheck": "Puede repetir el prompt inicial con criterio de cierre."
+        },
+        "prosodyNotes": {
+          "pace": "+7%",
+          "pause": "180ms antes de la decision",
+          "emphasis": "modo, contexto y pull request",
+          "energy": "practica"
+        },
+        "pronunciationPass": "spain-voice-units-v1"
+      }
     },
     {
       "id": "finale",
       "name": "Cierre",
-      "startMs": 65000,
+      "startMs": 60000,
       "endMs": 90000,
       "type": "finale",
       "content": {
         "title": "Budget Copilot",
         "summary": [
-          { "number": "01", "label": "Feature", "body": "VS Code, PR review, CLI o cloud." },
-          { "number": "02", "label": "Modelo", "body": "Incluido o premium." },
-          { "number": "03", "label": "Resultado", "body": "Valor obtenido y reintentos." }
+          {
+            "number": "01",
+            "label": "Feature",
+            "body": "Visual Studio Code, revision de pull request, terminal o cloud."
+          },
+          {
+            "number": "02",
+            "label": "Modelo",
+            "body": "Incluido o premium."
+          },
+          {
+            "number": "03",
+            "label": "Resultado",
+            "body": "Valor obtenido y reintentos."
+          }
         ],
         "cta": "Ejercicio: cp-a05-premium-budget."
       },
       "subtitles": [
-        { "text": "Feature, modelo y resultado. Ese es el log minimo.", "startMs": 66000, "endMs": 89000 }
-      ]
+        {
+          "text": "Feature, modelo y resultado. Ese es el log minimo.",
+          "startMs": 60450,
+          "endMs": 65726
+        },
+        {
+          "text": "Evidencia minuto 1: \"Budget Copilot\" no se cierra sin test, captura o criterio escrito.",
+          "startMs": 65906,
+          "endMs": 72070
+        },
+        {
+          "text": "Accion minuto 1: pedir salida pequena verificable y con owner. (Copilot",
+          "startMs": 72250,
+          "endMs": 78342
+        },
+        {
+          "text": "minuto 1 paso 8)",
+          "startMs": 78522,
+          "endMs": 81038
+        }
+      ],
+      "voiceover": [
+        "Feature, modelo y resultado. Ese es el log minimo.",
+        "Evidencia minuto 1: \"Budget Copilot\" no se cierra sin test, captura o criterio escrito.",
+        "Accion minuto 1: pedir salida pequena verificable y con owner. (Copilot",
+        "minuto 1 paso 8)"
+      ],
+      "blueprintAction": {
+        "learningRubric": {
+          "learns": "Ubica coste, permiso y criterio antes de aceptar la salida.",
+          "does": "Registra el criterio que permitiria repetir el paso sin instructor.",
+          "decides": "Seguir, pedir mas contexto, escalar modelo o bloquear.",
+          "vendor": "copilot",
+          "usefulnessScore": 86,
+          "memoryCheck": "Puede explicar el paso en una frase de menos de 20 segundos.",
+          "productionPass": "2000-final-direction"
+        }
+      },
+      "production": {
+        "audioVersion": "audio-prod-v2-2026-05-18",
+        "voiceProfileId": "copilotReview",
+        "voice": "es-ES-AlvaroNeural",
+        "rate": "+4%",
+        "pitch": "+0Hz",
+        "energy": "critica",
+        "emphasis": "finding, severidad y prueba",
+        "pauseMs": 240,
+        "role": "reflection",
+        "reviewRubric": {
+          "learns": "Ubica coste, permiso y criterio antes de aceptar la salida.",
+          "does": "Registra el criterio que permitiria repetir el paso sin instructor.",
+          "decides": "Seguir, pedir mas contexto, escalar modelo o bloquear.",
+          "memoryCheck": "Puede explicar el paso en una frase de menos de 20 segundos."
+        },
+        "prosodyNotes": {
+          "pace": "+4%",
+          "pause": "240ms antes de la decision",
+          "emphasis": "finding, severidad y prueba",
+          "energy": "critica"
+        },
+        "pronunciationPass": "spain-voice-units-v1"
+      }
     }
-  ]
+  ],
+  "production": {
+    "audioProductionVersion": "audio-prod-v2-2026-05-18",
+    "productionPass": "2000-final-direction",
+    "vendor": "copilot",
+    "narrativePass": "teacher-contract-v1",
+    "pronunciationPass": "spain-voice-units-v1"
+  }
 }

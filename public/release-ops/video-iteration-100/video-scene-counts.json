@@ -1,0 +1,286 @@
+{
+  "generatedAt": "2026-05-15T08:03:02.870Z",
+  "generated": [
+    {
+      "id": "cx-masterclass-10m-codex-operating-system",
+      "scenes": 24,
+      "minutes": 10
+    },
+    {
+      "id": "cp-masterclass-10m-copilot-workbench",
+      "scenes": 24,
+      "minutes": 10
+    },
+    {
+      "id": "cl-masterclass-10m-claude-operating-model",
+      "scenes": 24,
+      "minutes": 10
+    }
+  ],
+  "summary": [
+    {
+      "id": "cl-advanced-01-hooks",
+      "minutes": 1.5,
+      "scenes": 3,
+      "avgSec": 30
+    },
+    {
+      "id": "cl-advanced-02-plugin-action",
+      "minutes": 1.5,
+      "scenes": 3,
+      "avgSec": 30
+    },
+    {
+      "id": "cl-basic-01-claude-md",
+      "minutes": 1.5,
+      "scenes": 3,
+      "avgSec": 30
+    },
+    {
+      "id": "cl-basic-02-compact-context",
+      "minutes": 1.5,
+      "scenes": 3,
+      "avgSec": 30
+    },
+    {
+      "id": "cl-masterclass-10m-claude-operating-model",
+      "minutes": 10,
+      "scenes": 24,
+      "avgSec": 25
+    },
+    {
+      "id": "cl-operator-01-first-skill",
+      "minutes": 1.5,
+      "scenes": 3,
+      "avgSec": 30
+    },
+    {
+      "id": "cl-operator-02-subagent-explorer",
+      "minutes": 1.5,
+      "scenes": 3,
+      "avgSec": 30
+    },
+    {
+      "id": "cl-operator-03-mcp-project",
+      "minutes": 1.5,
+      "scenes": 3,
+      "avgSec": 30
+    },
+    {
+      "id": "cl-orientation-01-claude-md",
+      "minutes": 1.5,
+      "scenes": 3,
+      "avgSec": 30
+    },
+    {
+      "id": "cl-orientation-02-memory-vs-instructions",
+      "minutes": 1.5,
+      "scenes": 3,
+      "avgSec": 30
+    },
+    {
+      "id": "cl-orientation-03-cost-context",
+      "minutes": 1.5,
+      "scenes": 3,
+      "avgSec": 30
+    },
+    {
+      "id": "cl-sdk-01-agent-sdk",
+      "minutes": 1.5,
+      "scenes": 3,
+      "avgSec": 30
+    },
+    {
+      "id": "cl-sdk-02-evals-governance",
+      "minutes": 1.5,
+      "scenes": 3,
+      "avgSec": 30
+    },
+    {
+      "id": "cl-workshop-30m-memory-to-hook",
+      "minutes": 30,
+      "scenes": 60,
+      "avgSec": 30
+    },
+    {
+      "id": "cl-workshop-60m-memory-to-automation",
+      "minutes": 60,
+      "scenes": 120,
+      "avgSec": 30
+    },
+    {
+      "id": "cp-advanced-01-custom-agent",
+      "minutes": 1.5,
+      "scenes": 3,
+      "avgSec": 30
+    },
+    {
+      "id": "cp-advanced-02-mcp-code-review",
+      "minutes": 1.5,
+      "scenes": 3,
+      "avgSec": 30
+    },
+    {
+      "id": "cp-basic-01-inline-completion",
+      "minutes": 1.5,
+      "scenes": 3,
+      "avgSec": 30
+    },
+    {
+      "id": "cp-basic-02-ask-edit-agent",
+      "minutes": 1.5,
+      "scenes": 3,
+      "avgSec": 30
+    },
+    {
+      "id": "cp-basic-03-error-to-fix",
+      "minutes": 1.5,
+      "scenes": 3,
+      "avgSec": 30
+    },
+    {
+      "id": "cp-cloud-01-cloud-agent-pr",
+      "minutes": 1.5,
+      "scenes": 3,
+      "avgSec": 30
+    },
+    {
+      "id": "cp-cloud-02-premium-requests",
+      "minutes": 1.5,
+      "scenes": 3,
+      "avgSec": 30
+    },
+    {
+      "id": "cp-git-01-fork-vs-branch",
+      "minutes": 1.5,
+      "scenes": 3,
+      "avgSec": 30
+    },
+    {
+      "id": "cp-git-02-pr-as-contract",
+      "minutes": 1.5,
+      "scenes": 3,
+      "avgSec": 30
+    },
+    {
+      "id": "cp-masterclass-10m-copilot-workbench",
+      "minutes": 10,
+      "scenes": 24,
+      "avgSec": 25
+    },
+    {
+      "id": "cp-medium-01-instructions",
+      "minutes": 1.5,
+      "scenes": 3,
+      "avgSec": 30
+    },
+    {
+      "id": "cp-medium-02-prompt-files",
+      "minutes": 1.5,
+      "scenes": 3,
+      "avgSec": 30
+    },
+    {
+      "id": "cp-workshop-30m-error-to-pr",
+      "minutes": 30,
+      "scenes": 60,
+      "avgSec": 30
+    },
+    {
+      "id": "cp-workshop-60m-vscode-to-pr-review",
+      "minutes": 60,
+      "scenes": 120,
+      "avgSec": 30
+    },
+    {
+      "id": "cx-basic-01-agents-md",
+      "minutes": 1.5,
+      "scenes": 4,
+      "avgSec": 23
+    },
+    {
+      "id": "cx-basic-02-plan-before-patch",
+      "minutes": 1.5,
+      "scenes": 4,
+      "avgSec": 23
+    },
+    {
+      "id": "cx-masterclass-10m-codex-operating-system",
+      "minutes": 10,
+      "scenes": 24,
+      "avgSec": 25
+    },
+    {
+      "id": "cx-medium-01-model-picker",
+      "minutes": 1.5,
+      "scenes": 4,
+      "avgSec": 23
+    },
+    {
+      "id": "cx-medium-02-mcp-readonly",
+      "minutes": 1.5,
+      "scenes": 4,
+      "avgSec": 23
+    },
+    {
+      "id": "cx-medium-03-skill-qa-visual",
+      "minutes": 1.5,
+      "scenes": 4,
+      "avgSec": 23
+    },
+    {
+      "id": "cx-orientation-01-surface-map",
+      "minutes": 1.5,
+      "scenes": 4,
+      "avgSec": 23
+    },
+    {
+      "id": "cx-orientation-02-first-task",
+      "minutes": 1.5,
+      "scenes": 4,
+      "avgSec": 23
+    },
+    {
+      "id": "cx-orientation-03-permissions",
+      "minutes": 1.5,
+      "scenes": 4,
+      "avgSec": 23
+    },
+    {
+      "id": "cx-ultra-01-github-action",
+      "minutes": 1.5,
+      "scenes": 4,
+      "avgSec": 23
+    },
+    {
+      "id": "cx-ultra-02-pr-swarm",
+      "minutes": 1.5,
+      "scenes": 4,
+      "avgSec": 23
+    },
+    {
+      "id": "cx-workshop-30m-first-real-task",
+      "minutes": 30,
+      "scenes": 60,
+      "avgSec": 30
+    },
+    {
+      "id": "cx-workshop-60m-first-task-to-pr",
+      "minutes": 60,
+      "scenes": 120,
+      "avgSec": 30
+    },
+    {
+      "id": "hub-operating-model-60m",
+      "minutes": 60,
+      "scenes": 120,
+      "avgSec": 30
+    },
+    {
+      "id": "hub-workshop-60m-vendor-selection",
+      "minutes": 60,
+      "scenes": 120,
+      "avgSec": 30
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+1
+00:00:00,450 --> 00:00:07,070
+Objetivo de esta clase: resolver Codex Medium 02 - M C P Readonly con criterio practico.
+
+2
+00:00:07,115 --> 00:00:11,911
+Al final debes poder quedarte con una regla de uso y un ejemplo repetible.
+
+3
+00:00:11,956 --> 00:00:15,864
+La ruta sera: concepto, ejemplo y cierre.
+
+4
+00:00:15,909 --> 00:00:18,857
+Durante el video mira esta decision:
+
+5
+00:00:18,776 --> 00:00:22,420
+cuando aplicar esta tecnica en tu propio repositorio.
+
+6
+00:00:22,950 --> 00:00:26,090
+Read-only debe ser el default en aula.
+
+7
+00:00:26,270 --> 00:00:29,458
+El valor esta en reducir incertidumbre.
+
+8
+00:00:29,638 --> 00:00:32,586
+No en conectar cosas por conectar.
+
+9
+00:00:45,450 --> 00:00:48,542
+El inventario hace visible el riesgo.
+
+10
+00:00:48,722 --> 00:00:52,582
+Owner, fuente, permiso y uso permitido.
+
+11
+00:00:52,762 --> 00:00:55,854
+Sin inventario, no hay gobierno.
+
+12
+00:01:07,950 --> 00:01:11,810
+Conectar contexto no significa abrir acciones.
+
+13
+00:01:11,990 --> 00:01:14,218
+Read-only primero.
+
+14
+00:01:14,398 --> 00:01:19,434
+Evidencia minuto 1: diff minimo, test verde y coste registrado.
+
+15
+00:01:19,614 --> 00:01:25,298
+Accion minuto 1: parar si "M C P con criterio" no produce evidencia nueva.
+

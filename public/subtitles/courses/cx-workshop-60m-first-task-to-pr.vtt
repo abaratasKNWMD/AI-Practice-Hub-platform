@@ -1,0 +1,4200 @@
+WEBVTT
+
+NOTE cx-workshop-60m-first-task-to-pr - Workshop 1 hora Codex - Del primer task al pull request revisable
+
+1
+00:00:00.450 --> 00:00:02.966
+Objetivo de esta clase:
+
+2
+00:00:03.146 --> 00:00:07.510
+pasar de una peticion ambigua a un pull request revisable con Codex.
+
+3
+00:00:07.690 --> 00:00:13.950
+Al final debes poder salir con briefing, AGENTS, plan, diff, tests y coste defendible.
+
+4
+00:00:14.130 --> 00:00:19.982
+La ruta sera: briefing, mapa del repo, plan, patch, pruebas y handoff.
+
+5
+00:00:20.162 --> 00:00:23.110
+Durante el video mira esta decision:
+
+6
+00:00:23.290 --> 00:00:27.822
+si Codex esta produciendo evidencia o solo texto convincente.
+
+7
+00:00:30.450 --> 00:00:35.534
+Contexto minuto 0: mira primero el alcance que condiciona esta salida.
+
+8
+00:00:35.579 --> 00:00:40.231
+Durante una hora vamos a pasar de un task ambiguo a un pull request que otro
+
+9
+00:00:40.276 --> 00:00:42.552
+desarrollador pu.
+
+10
+00:00:42.597 --> 00:00:47.801
+Situacion minuto 0: alguien tendra que mantener esta salida despues de la demo.
+
+11
+00:00:47.846 --> 00:00:53.650
+Evidencia minuto 0: "De peticion ambigua a pull request revisable" no se cierra sin test
+
+12
+00:00:53.695 --> 00:00:56.379
+captura o criterio escrito.
+
+13
+00:00:53.540 --> 00:00:59.920
+captura o criterio escrito. (Codex, minuto 0, paso 38)
+
+14
+00:00:56.300 --> 00:00:59.920
+Codex minuto 0: Mostrar objetivos
+
+15
+00:00:54.644 --> 00:00:59.920
+entregables y restriccion de coste antes de tocar codigo para "De peticion ambigua a
+
+16
+00:00:58.100 --> 00:00:59.920
+pull request
+
+17
+00:00:58.196 --> 00:00:59.920
+(Codex
+
+18
+00:00:57.284 --> 00:00:59.920
+minuto 0 paso 2)
+
+19
+00:00:54.620 --> 00:00:59.920
+revisable". (Codex, minuto 0, paso 2)
+
+20
+00:01:00.450 --> 00:01:04.910
+Decision humana: La metrica no es velocidad de escritura.
+
+21
+00:01:04.955 --> 00:01:08.575
+La metrica es claridad coste razonable p.
+
+22
+00:01:08.620 --> 00:01:11.232
+Situacion minuto 1:
+
+23
+00:01:11.277 --> 00:01:16.889
+Codex recibe "De peticion ambigua a pull request revisable" y debe convertirlo en
+
+24
+00:01:16.934 --> 00:01:18.706
+trabajo
+
+25
+00:01:18.751 --> 00:01:20.787
+revisable.
+
+26
+00:01:20.832 --> 00:01:26.444
+Codex recibe "De peticion ambigua a pull request revisable" y debe convertirlo en
+
+27
+00:01:26.489 --> 00:01:28.261
+trabajo
+
+28
+00:01:24.500 --> 00:01:29.920
+revisable. (Codex, minuto 1, paso 6)
+
+29
+00:01:23.852 --> 00:01:29.920
+Evidencia minuto 1: el artefacto muestra que se controlo permiso, alcance y modelo.
+
+30
+00:01:24.164 --> 00:01:29.920
+owner y decision. (Codex, minuto 1, paso 12)
+
+31
+00:01:26.276 --> 00:01:29.920
+Codex minuto 1: Mostrar objetivos
+
+32
+00:01:24.404 --> 00:01:29.920
+entregables y restriccion de coste antes de tocar codigo para "De peticion ambigua a
+
+33
+00:01:28.028 --> 00:01:29.920
+pull request
+
+34
+00:01:28.124 --> 00:01:29.920
+(Codex
+
+35
+00:01:27.380 --> 00:01:29.920
+minuto 1 paso 3)
+
+36
+00:01:24.380 --> 00:01:29.920
+revisable". (Codex, minuto 1, paso 3)
+
+37
+00:01:30.450 --> 00:01:35.270
+Evidencia minuto 1: diff minimo, test verde y coste registrado.
+
+38
+00:01:35.315 --> 00:01:37.783
+es una forma de co.
+
+39
+00:01:37.828 --> 00:01:42.000
+Situacion minuto 1: la pantalla no busca impresionar;
+
+40
+00:01:42.045 --> 00:01:46.961
+busca cerrar "De peticion ambigua a pull request revisable" con evidencia.
+
+41
+00:01:47.006 --> 00:01:51.922
+busca cerrar "De peticion ambigua a pull request revisable" con evidencia.
+
+42
+00:01:51.967 --> 00:01:57.699
+Evidencia minuto 1: "De peticion ambigua a pull request revisable" no se cierra sin test
+
+43
+00:01:57.236 --> 00:01:59.920
+captura o criterio escrito.
+
+44
+00:01:56.420 --> 00:01:59.920
+Codex minuto 1: Mostrar objetivos
+
+45
+00:01:54.644 --> 00:01:59.920
+entregables y restriccion de coste antes de tocar codigo para "De peticion ambigua a
+
+46
+00:01:58.100 --> 00:01:59.920
+pull request
+
+47
+00:01:58.196 --> 00:01:59.920
+(Codex
+
+48
+00:01:57.476 --> 00:01:59.920
+minuto 1 paso 4)
+
+49
+00:01:54.692 --> 00:01:59.920
+revisable". (Codex, minuto 1, paso 4)
+
+50
+00:02:00.450 --> 00:02:05.222
+Coste y riesgo: (Codex, minuto 2, paso 4)
+
+51
+00:02:05.267 --> 00:02:10.135
+Durante una hora vamos a pasar de un task ambiguo a un pull request que otro
+
+52
+00:02:10.180 --> 00:02:12.528
+desarrollador pu.
+
+53
+00:02:12.573 --> 00:02:18.113
+Situacion minuto 2: Codex solo avanza si el siguiente humano entiende el por que.
+
+54
+00:02:18.158 --> 00:02:23.266
+Evidencia minuto 2: diff minimo, test verde y coste registrado.
+
+55
+00:02:23.311 --> 00:02:27.051
+Codex minuto 2: Mostrar objetivos
+
+56
+00:02:24.404 --> 00:02:29.920
+entregables y restriccion de coste antes de tocar codigo para "De peticion ambigua a
+
+57
+00:02:28.028 --> 00:02:29.920
+pull request
+
+58
+00:02:28.124 --> 00:02:29.920
+(Codex
+
+59
+00:02:27.140 --> 00:02:29.920
+minuto 2 paso 5)
+
+60
+00:02:24.404 --> 00:02:29.920
+revisable". (Codex, minuto 2, paso 5)
+
+61
+00:02:30.450 --> 00:02:34.430
+Checkpoint: La metrica no es velocidad de escritura.
+
+62
+00:02:34.475 --> 00:02:38.095
+La metrica es claridad coste razonable p.
+
+63
+00:02:38.140 --> 00:02:40.752
+Situacion minuto 2:
+
+64
+00:02:40.797 --> 00:02:46.025
+el equipo mira "De peticion ambigua a pull request revisable" dentro del repo
+
+65
+00:02:46.070 --> 00:02:49.042
+con coste y permiso visibles.
+
+66
+00:02:49.087 --> 00:02:54.315
+el equipo mira "De peticion ambigua a pull request revisable" dentro del repo
+
+67
+00:02:53.372 --> 00:02:59.920
+con coste y permiso visibles. (Codex, minuto 2, paso 60)
+
+68
+00:02:53.900 --> 00:02:59.920
+Evidencia minuto 2: "De peticion ambigua a pull request revisable" no se cierra sin test
+
+69
+00:02:57.116 --> 00:02:59.920
+captura o criterio escrito.
+
+70
+00:02:56.180 --> 00:02:59.920
+Codex minuto 2: Mostrar objetivos
+
+71
+00:02:54.404 --> 00:02:59.920
+entregables y restriccion de coste antes de tocar codigo para "De peticion ambigua a
+
+72
+00:02:58.028 --> 00:02:59.920
+pull request
+
+73
+00:02:58.124 --> 00:02:59.920
+(Codex
+
+74
+00:02:57.188 --> 00:02:59.920
+minuto 2 paso 6)
+
+75
+00:02:54.428 --> 00:02:59.920
+revisable". (Codex, minuto 2, paso 6)
+
+76
+00:03:00.450 --> 00:03:05.054
+Pantalla de accion: Este workshop empieza con una regla sencilla:
+
+77
+00:03:05.099 --> 00:03:08.455
+Codex no es magia es una forma de co.
+
+78
+00:03:08.500 --> 00:03:13.728
+Situacion minuto 3: alguien tendra que mantener esta salida despues de la demo.
+
+79
+00:03:13.773 --> 00:03:19.625
+Evidencia minuto 3: "De peticion ambigua a pull request revisable" no se cierra sin test
+
+80
+00:03:19.670 --> 00:03:22.354
+captura o criterio escrito.
+
+81
+00:03:22.399 --> 00:03:28.755
+captura o criterio escrito. (Codex, minuto 3, paso 39)
+
+82
+00:03:26.348 --> 00:03:29.920
+Codex minuto 3: Mostrar objetivos
+
+83
+00:03:24.644 --> 00:03:29.920
+entregables y restriccion de coste antes de tocar codigo para "De peticion ambigua a
+
+84
+00:03:28.100 --> 00:03:29.920
+pull request
+
+85
+00:03:28.196 --> 00:03:29.920
+(Codex
+
+86
+00:03:27.284 --> 00:03:29.920
+minuto 3 paso 7)
+
+87
+00:03:24.596 --> 00:03:29.920
+revisable". (Codex, minuto 3, paso 7)
+
+88
+00:03:30.450 --> 00:03:35.582
+Contexto minuto 3: mira primero el alcance que condiciona esta salida.
+
+89
+00:03:35.627 --> 00:03:40.279
+Durante una hora vamos a pasar de un task ambiguo a un pull request que otro
+
+90
+00:03:40.324 --> 00:03:42.600
+desarrollador pu.
+
+91
+00:03:42.645 --> 00:03:45.185
+Situacion minuto 3:
+
+92
+00:03:45.230 --> 00:03:50.602
+Codex recibe "De peticion ambigua a pull request revisable" y debe convertirlo en
+
+93
+00:03:50.647 --> 00:03:52.347
+trabajo
+
+94
+00:03:52.392 --> 00:03:54.332
+revisable.
+
+95
+00:03:54.377 --> 00:03:59.749
+Codex recibe "De peticion ambigua a pull request revisable" y debe convertirlo en
+
+96
+00:03:58.220 --> 00:03:59.920
+trabajo
+
+97
+00:03:54.620 --> 00:03:59.920
+revisable. (Codex, minuto 3, paso 7)
+
+98
+00:03:54.140 --> 00:03:59.920
+Evidencia minuto 3: el artefacto muestra que se controlo permiso, alcance y modelo.
+
+99
+00:03:54.356 --> 00:03:59.920
+owner y decision. (Codex, minuto 3, paso 13)
+
+100
+00:03:56.348 --> 00:03:59.920
+Codex minuto 3: Mostrar objetivos
+
+101
+00:03:54.644 --> 00:03:59.920
+entregables y restriccion de coste antes de tocar codigo para "De peticion ambigua a
+
+102
+00:03:58.100 --> 00:03:59.920
+pull request
+
+103
+00:03:58.196 --> 00:03:59.920
+(Codex
+
+104
+00:03:57.284 --> 00:03:59.920
+minuto 3 paso 8)
+
+105
+00:03:54.644 --> 00:03:59.920
+revisable". (Codex, minuto 3, paso 8)
+
+106
+00:04:00.450 --> 00:04:04.910
+Decision humana: La metrica no es velocidad de escritura.
+
+107
+00:04:04.955 --> 00:04:08.575
+La metrica es claridad coste razonable p.
+
+108
+00:04:08.620 --> 00:04:13.104
+Situacion minuto 4: la pantalla no busca impresionar;
+
+109
+00:04:13.149 --> 00:04:18.305
+busca cerrar "De peticion ambigua a pull request revisable" con evidencia.
+
+110
+00:04:18.350 --> 00:04:23.506
+busca cerrar "De peticion ambigua a pull request revisable" con evidencia.
+
+111
+00:04:23.551 --> 00:04:29.619
+Evidencia minuto 4: "De peticion ambigua a pull request revisable" no se cierra sin test
+
+112
+00:04:27.116 --> 00:04:29.920
+captura o criterio escrito.
+
+113
+00:04:26.180 --> 00:04:29.920
+Codex minuto 4: Mostrar objetivos
+
+114
+00:04:24.404 --> 00:04:29.920
+entregables y restriccion de coste antes de tocar codigo para "De peticion ambigua a
+
+115
+00:04:28.028 --> 00:04:29.920
+pull request
+
+116
+00:04:28.124 --> 00:04:29.920
+(Codex
+
+117
+00:04:27.140 --> 00:04:29.920
+minuto 4 paso 9)
+
+118
+00:04:24.380 --> 00:04:29.920
+revisable". (Codex, minuto 4, paso 9)
+
+119
+00:04:30.450 --> 00:04:36.278
+Situacion minuto 4: la pantalla no busca impresionar; busca cerrar "Pausa:
+
+120
+00:04:36.323 --> 00:04:39.991
+que estamos aceptando aqui?" con evidencia.
+
+121
+00:04:40.036 --> 00:04:43.704
+que estamos aceptando aqui?" con evidencia.
+
+122
+00:04:43.749 --> 00:04:49.673
+Tension minuto 4: el agente puede avanzar mas rapido que nuestra capacidad de revisar.
+
+123
+00:04:49.718 --> 00:04:55.114
+Accion minuto 4: pedir salida pequena, verificable y con owner.
+
+124
+00:04:53.708 --> 00:04:59.920
+Evidencia minuto 4: "Pausa: que estamos aceptando aqui?" queda ligado a prueba
+
+125
+00:04:57.620 --> 00:04:59.920
+owner y decision.
+
+126
+00:05:00.450 --> 00:05:05.966
+Accion minuto 5: convertir repo en una decision que se pueda ensenar en tutoria.
+
+127
+00:05:06.011 --> 00:05:11.359
+El primer gasto inutil de tokens aparece cuando le damos a Codex una tarea con mas.
+
+128
+00:05:11.404 --> 00:05:16.464
+Situacion minuto 5: el equipo mira "Briefing minimo" dentro del repo
+
+129
+00:05:16.509 --> 00:05:19.361
+con coste y permiso visibles.
+
+130
+00:05:19.406 --> 00:05:25.954
+con coste y permiso visibles. (Codex, minuto 5, paso 61)
+
+131
+00:05:24.020 --> 00:05:29.920
+Evidencia minuto 5: el artefacto muestra que se controlo permiso, alcance y modelo.
+
+132
+00:05:27.548 --> 00:05:29.920
+Codex minuto 5:
+
+133
+00:05:27.548 --> 00:05:29.920
+Codex minuto 5:
+
+134
+00:05:24.764 --> 00:05:29.920
+El instructor pide al grupo que elimine cualquier requisito que no sea necesario para
+
+135
+00:05:27.476 --> 00:05:29.920
+durante "Briefing minimo".
+
+136
+00:05:24.140 --> 00:05:29.920
+durante "Briefing minimo". (Codex, minuto 5, paso 1)
+
+137
+00:05:24.572 --> 00:05:29.920
+cerrar el bug. (Codex, minuto 5, paso 1)
+
+138
+00:05:30.450 --> 00:05:35.750
+Contexto visible: Antes de abrir el agente dejamos cuatro piezas: problema
+
+139
+00:05:35.795 --> 00:05:38.479
+restricciones aceptacion.
+
+140
+00:05:38.524 --> 00:05:43.776
+Situacion minuto 5: alguien tendra que mantener esta salida despues de la demo.
+
+141
+00:05:43.821 --> 00:05:49.817
+Evidencia minuto 5: "Briefing minimo" no se cierra sin test, captura o criterio escrito.
+
+142
+00:05:49.862 --> 00:05:52.234
+Codex minuto 5:
+
+143
+00:05:52.279 --> 00:05:54.651
+Codex minuto 5:
+
+144
+00:05:54.696 --> 00:05:59.852
+El instructor pide al grupo que elimine cualquier requisito que no sea necesario para
+
+145
+00:05:57.476 --> 00:05:59.920
+durante "Briefing minimo".
+
+146
+00:05:54.116 --> 00:05:59.920
+durante "Briefing minimo". (Codex, minuto 5, paso 2)
+
+147
+00:05:54.548 --> 00:05:59.920
+cerrar el bug. (Codex, minuto 5, paso 2)
+
+148
+00:06:00.450 --> 00:06:05.942
+Decision humana: Esto no ralentiza. Ahorra iteraciones
+
+149
+00:06:05.987 --> 00:06:09.535
+evita cambios laterales y hace que el modelo.
+
+150
+00:06:09.580 --> 00:06:12.264
+Situacion minuto 6:
+
+151
+00:06:12.309 --> 00:06:17.297
+Codex recibe "Briefing minimo" y debe convertirlo en trabajo revisable.
+
+152
+00:06:17.342 --> 00:06:23.050
+Evidencia minuto 6: "Briefing minimo" queda ligado a prueba, owner y decision.
+
+153
+00:06:23.095 --> 00:06:25.587
+Codex minuto 6:
+
+154
+00:06:25.632 --> 00:06:28.124
+Codex minuto 6:
+
+155
+00:06:24.548 --> 00:06:29.920
+El instructor pide al grupo que elimine cualquier requisito que no sea necesario para
+
+156
+00:06:27.380 --> 00:06:29.920
+durante "Briefing minimo".
+
+157
+00:06:23.828 --> 00:06:29.920
+durante "Briefing minimo". (Codex, minuto 6, paso 3)
+
+158
+00:06:24.284 --> 00:06:29.920
+cerrar el bug. (Codex, minuto 6, paso 3)
+
+159
+00:06:30.450 --> 00:06:35.366
+Evidencia minuto 6: diff minimo, test verde y coste registrado.
+
+160
+00:06:35.411 --> 00:06:40.759
+El primer gasto inutil de tokens aparece cuando le damos a Codex una tarea con mas.
+
+161
+00:06:40.804 --> 00:06:45.072
+Situacion minuto 6: la pantalla no busca impresionar;
+
+162
+00:06:45.117 --> 00:06:48.689
+busca cerrar "Briefing minimo" con evidencia.
+
+163
+00:06:48.734 --> 00:06:52.306
+busca cerrar "Briefing minimo" con evidencia.
+
+164
+00:06:52.351 --> 00:06:58.371
+Evidencia minuto 6: "Briefing minimo" no se cierra sin test, captura o criterio escrito.
+
+165
+00:06:57.548 --> 00:06:59.920
+Codex minuto 6:
+
+166
+00:06:57.548 --> 00:06:59.920
+Codex minuto 6:
+
+167
+00:06:54.764 --> 00:06:59.920
+El instructor pide al grupo que elimine cualquier requisito que no sea necesario para
+
+168
+00:06:57.476 --> 00:06:59.920
+durante "Briefing minimo".
+
+169
+00:06:54.116 --> 00:06:59.920
+durante "Briefing minimo". (Codex, minuto 6, paso 4)
+
+170
+00:06:54.548 --> 00:06:59.920
+cerrar el bug. (Codex, minuto 6, paso 4)
+
+171
+00:07:00.450 --> 00:07:05.822
+Coste y riesgo: Antes de abrir el agente dejamos cuatro piezas: problema
+
+172
+00:07:05.867 --> 00:07:08.671
+restricciones aceptacion.
+
+173
+00:07:08.716 --> 00:07:14.352
+Situacion minuto 7: Codex solo avanza si el siguiente humano entiende el por que.
+
+174
+00:07:14.397 --> 00:07:19.577
+Evidencia minuto 7: diff minimo, test verde y coste registrado.
+
+175
+00:07:19.622 --> 00:07:22.018
+Codex minuto 7:
+
+176
+00:07:22.063 --> 00:07:24.459
+Codex minuto 7:
+
+177
+00:07:24.504 --> 00:07:29.876
+El instructor pide al grupo que elimine cualquier requisito que no sea necesario para
+
+178
+00:07:27.380 --> 00:07:29.920
+durante "Briefing minimo".
+
+179
+00:07:23.732 --> 00:07:29.920
+durante "Briefing minimo". (Codex, minuto 7, paso 5)
+
+180
+00:07:24.164 --> 00:07:29.920
+cerrar el bug. (Codex, minuto 7, paso 5)
+
+181
+00:07:30.450 --> 00:07:35.534
+Checkpoint: Esto no ralentiza. Ahorra iteraciones
+
+182
+00:07:35.579 --> 00:07:39.127
+evita cambios laterales y hace que el modelo.
+
+183
+00:07:39.172 --> 00:07:44.496
+Situacion minuto 7: el equipo mira "Briefing minimo" dentro del repo
+
+184
+00:07:44.541 --> 00:07:47.513
+con coste y permiso visibles.
+
+185
+00:07:47.558 --> 00:07:54.370
+con coste y permiso visibles. (Codex, minuto 7, paso 62)
+
+186
+00:07:53.780 --> 00:07:59.920
+Evidencia minuto 7: el artefacto muestra que se controlo permiso, alcance y modelo.
+
+187
+00:07:57.524 --> 00:07:59.920
+Codex minuto 7:
+
+188
+00:07:57.524 --> 00:07:59.920
+Codex minuto 7:
+
+189
+00:07:54.548 --> 00:07:59.920
+El instructor pide al grupo que elimine cualquier requisito que no sea necesario para
+
+190
+00:07:57.380 --> 00:07:59.920
+durante "Briefing minimo".
+
+191
+00:07:53.780 --> 00:07:59.920
+durante "Briefing minimo". (Codex, minuto 7, paso 6)
+
+192
+00:07:54.236 --> 00:07:59.920
+cerrar el bug. (Codex, minuto 7, paso 6)
+
+193
+00:08:00.450 --> 00:08:04.934
+Situacion minuto 8: el equipo mira "Captura mental:
+
+194
+00:08:04.979 --> 00:08:10.111
+Codex terminal y cloud task" dentro del repo con coste y permiso visibles.
+
+195
+00:08:10.156 --> 00:08:15.288
+Codex terminal y cloud task" dentro del repo con coste y permiso visibles.
+
+196
+00:08:15.333 --> 00:08:20.873
+Tension minuto 8: el coste malo suele aparecer cuando nadie define el cierre.
+
+197
+00:08:20.918 --> 00:08:26.578
+Accion minuto 8: convertir repo en una decision que se pueda ensenar en tutoria.
+
+198
+00:08:23.492 --> 00:08:29.920
+no con la sensacion de velocidad. (Codex, minuto 8, paso 30)
+
+199
+00:08:26.300 --> 00:08:29.920
+Evidencia minuto 8: "Captura mental:
+
+200
+00:08:25.196 --> 00:08:29.920
+Codex terminal y cloud task" queda ligado a prueba owner y decision.
+
+201
+00:08:24.596 --> 00:08:29.920
+Codex terminal y cloud task" no se cierra sin test captura o criterio escrito.
+
+202
+00:08:30.450 --> 00:08:35.750
+Contexto visible: Antes de abrir el agente dejamos cuatro piezas: problema
+
+203
+00:08:35.795 --> 00:08:38.479
+restricciones aceptacion.
+
+204
+00:08:38.524 --> 00:08:41.016
+Situacion minuto 8:
+
+205
+00:08:41.061 --> 00:08:45.833
+Codex recibe "Briefing minimo" y debe convertirlo en trabajo revisable.
+
+206
+00:08:45.878 --> 00:08:51.346
+Evidencia minuto 8: "Briefing minimo" queda ligado a prueba, owner y decision.
+
+207
+00:08:51.391 --> 00:08:53.643
+Codex minuto 8:
+
+208
+00:08:53.688 --> 00:08:55.940
+Codex minuto 8:
+
+209
+00:08:54.764 --> 00:08:59.920
+El instructor pide al grupo que elimine cualquier requisito que no sea necesario para
+
+210
+00:08:57.476 --> 00:08:59.920
+durante "Briefing minimo".
+
+211
+00:08:54.092 --> 00:08:59.920
+durante "Briefing minimo". (Codex, minuto 8, paso 7)
+
+212
+00:08:54.524 --> 00:08:59.920
+cerrar el bug. (Codex, minuto 8, paso 7)
+
+213
+00:09:00.450 --> 00:09:05.942
+Decision humana: Esto no ralentiza. Ahorra iteraciones
+
+214
+00:09:05.987 --> 00:09:09.535
+evita cambios laterales y hace que el modelo.
+
+215
+00:09:09.580 --> 00:09:13.944
+Situacion minuto 9: la pantalla no busca impresionar;
+
+216
+00:09:13.989 --> 00:09:17.729
+busca cerrar "Briefing minimo" con evidencia.
+
+217
+00:09:17.774 --> 00:09:21.514
+busca cerrar "Briefing minimo" con evidencia.
+
+218
+00:09:21.559 --> 00:09:27.747
+Evidencia minuto 9: "Briefing minimo" no se cierra sin test, captura o criterio escrito.
+
+219
+00:09:27.524 --> 00:09:29.920
+Codex minuto 9:
+
+220
+00:09:27.524 --> 00:09:29.920
+Codex minuto 9:
+
+221
+00:09:24.548 --> 00:09:29.920
+El instructor pide al grupo que elimine cualquier requisito que no sea necesario para
+
+222
+00:09:27.380 --> 00:09:29.920
+durante "Briefing minimo".
+
+223
+00:09:23.924 --> 00:09:29.920
+durante "Briefing minimo". (Codex, minuto 9, paso 8)
+
+224
+00:09:24.380 --> 00:09:29.920
+cerrar el bug. (Codex, minuto 9, paso 8)
+
+225
+00:09:30.450 --> 00:09:33.038
+Evidencia minuto 9:
+
+226
+00:09:33.083 --> 00:09:37.831
+hay una salida que otro perfil puede revisar sin rehacer el contexto.
+
+227
+00:09:37.876 --> 00:09:43.464
+El primer gasto inutil de tokens aparece cuando le damos a Codex una tarea con mas.
+
+228
+00:09:43.509 --> 00:09:49.073
+Situacion minuto 9: Codex solo avanza si el siguiente humano entiende el por que.
+
+229
+00:09:49.118 --> 00:09:54.202
+Evidencia minuto 9: diff minimo, test verde y coste registrado.
+
+230
+00:09:54.247 --> 00:09:56.643
+Codex minuto 9:
+
+231
+00:09:56.688 --> 00:09:59.084
+Codex minuto 9:
+
+232
+00:09:54.548 --> 00:09:59.920
+El instructor pide al grupo que elimine cualquier requisito que no sea necesario para
+
+233
+00:09:57.380 --> 00:09:59.920
+durante "Briefing minimo".
+
+234
+00:09:53.924 --> 00:09:59.920
+durante "Briefing minimo". (Codex, minuto 9, paso 9)
+
+235
+00:09:54.380 --> 00:09:59.920
+cerrar el bug. (Codex, minuto 9, paso 9)
+
+236
+00:10:00.450 --> 00:10:05.774
+Pantalla de accion: Codex rinde mejor cuando separamos exploracion de escritura.
+
+237
+00:10:05.819 --> 00:10:08.407
+Situacion 10 minutos:
+
+238
+00:10:08.452 --> 00:10:13.896
+Codex recibe "Prompt de exploracion readonly" y debe convertirlo en trabajo revisable.
+
+239
+00:10:13.941 --> 00:10:19.385
+Codex recibe "Prompt de exploracion readonly" y debe convertirlo en trabajo revisable.
+
+240
+00:10:19.430 --> 00:10:21.970
+Evidencia 10 minutos:
+
+241
+00:10:22.015 --> 00:10:26.571
+hay una salida que otro perfil puede revisar sin rehacer el contexto.
+
+242
+00:10:26.616 --> 00:10:29.012
+Codex 10 minutos:
+
+243
+00:10:27.524 --> 00:10:29.920
+Codex 10 minutos:
+
+244
+00:10:24.620 --> 00:10:29.920
+Simular una respuesta con rutas relevantes y una hipotesis de bug para "Prompt de para
+
+245
+00:10:27.236 --> 00:10:29.920
+"Prompt de exploracion readonly".
+
+246
+00:10:24.212 --> 00:10:29.920
+exploracion readonly". (Codex, 10 minutos, paso 1)
+
+247
+00:10:30.450 --> 00:10:35.174
+Contexto visible: En esta escena pedimos un mapa no una solucion.
+
+248
+00:10:35.219 --> 00:10:38.191
+El agente debe leer sintetizar y.
+
+249
+00:10:38.236 --> 00:10:43.440
+Situacion 10 minutos: alguien tendra que mantener esta salida despues de la demo.
+
+250
+00:10:43.485 --> 00:10:48.569
+Evidencia 10 minutos: "Prompt de exploracion readonly" no se cierra sin test
+
+251
+00:10:48.614 --> 00:10:51.298
+captura o criterio escrito.
+
+252
+00:10:51.343 --> 00:10:57.507
+captura o criterio escrito. (Codex, 10 minutos, paso 40)
+
+253
+00:10:57.524 --> 00:10:59.920
+Codex 10 minutos:
+
+254
+00:10:57.524 --> 00:10:59.920
+Codex 10 minutos:
+
+255
+00:10:54.620 --> 00:10:59.920
+Simular una respuesta con rutas relevantes y una hipotesis de bug para "Prompt de para
+
+256
+00:10:57.236 --> 00:10:59.920
+"Prompt de exploracion readonly".
+
+257
+00:10:54.188 --> 00:10:59.920
+exploracion readonly". (Codex, 10 minutos, paso 2)
+
+258
+00:11:00.450 --> 00:11:03.902
+Decision humana: Si ya empieza editando
+
+259
+00:11:03.947 --> 00:11:07.831
+probablemente hemos mezclado dos trabajos distintos.
+
+260
+00:11:07.876 --> 00:11:10.440
+Situacion 11 minutos:
+
+261
+00:11:10.485 --> 00:11:15.929
+Codex recibe "Prompt de exploracion readonly" y debe convertirlo en trabajo revisable.
+
+262
+00:11:15.974 --> 00:11:21.418
+Codex recibe "Prompt de exploracion readonly" y debe convertirlo en trabajo revisable.
+
+263
+00:11:21.463 --> 00:11:24.027
+Evidencia 11 minutos:
+
+264
+00:11:24.072 --> 00:11:28.628
+hay una salida que otro perfil puede revisar sin rehacer el contexto.
+
+265
+00:11:27.500 --> 00:11:29.920
+Codex 11 minutos:
+
+266
+00:11:27.500 --> 00:11:29.920
+Codex 11 minutos:
+
+267
+00:11:24.620 --> 00:11:29.920
+Simular una respuesta con rutas relevantes y una hipotesis de bug para "Prompt de para
+
+268
+00:11:27.236 --> 00:11:29.920
+"Prompt de exploracion readonly".
+
+269
+00:11:24.188 --> 00:11:29.920
+exploracion readonly". (Codex, 11 minutos, paso 3)
+
+270
+00:11:30.450 --> 00:11:35.414
+Evidencia 11 minutos: diff minimo, test verde y coste registrado.
+
+271
+00:11:35.459 --> 00:11:38.023
+Situacion 11 minutos:
+
+272
+00:11:38.068 --> 00:11:42.360
+el equipo mira "Prompt de exploracion readonly" dentro del repo
+
+273
+00:11:42.405 --> 00:11:45.257
+con coste y permiso visibles.
+
+274
+00:11:45.302 --> 00:11:49.594
+el equipo mira "Prompt de exploracion readonly" dentro del repo
+
+275
+00:11:49.639 --> 00:11:56.163
+con coste y permiso visibles. (Codex, 11 minutos, paso 63)
+
+276
+00:11:54.788 --> 00:11:59.920
+Evidencia 11 minutos: "Prompt de exploracion readonly" no se cierra sin test
+
+277
+00:11:57.236 --> 00:11:59.920
+captura o criterio escrito.
+
+278
+00:11:57.500 --> 00:11:59.920
+Codex 11 minutos:
+
+279
+00:11:57.500 --> 00:11:59.920
+Codex 11 minutos:
+
+280
+00:11:54.620 --> 00:11:59.920
+Simular una respuesta con rutas relevantes y una hipotesis de bug para "Prompt de para
+
+281
+00:11:57.236 --> 00:11:59.920
+"Prompt de exploracion readonly".
+
+282
+00:11:54.188 --> 00:11:59.920
+exploracion readonly". (Codex, 11 minutos, paso 4)
+
+283
+00:12:00.450 --> 00:12:05.246
+Coste y riesgo: En esta escena pedimos un mapa no una solucion.
+
+284
+00:12:05.291 --> 00:12:08.383
+El agente debe leer sintetizar y.
+
+285
+00:12:08.428 --> 00:12:14.040
+Situacion 12 minutos: Codex solo avanza si el siguiente humano entiende el por que.
+
+286
+00:12:14.085 --> 00:12:19.217
+Evidencia 12 minutos: diff minimo, test verde y coste registrado.
+
+287
+00:12:19.262 --> 00:12:21.730
+Codex 12 minutos:
+
+288
+00:12:21.775 --> 00:12:24.243
+Codex 12 minutos:
+
+289
+00:12:24.288 --> 00:12:29.828
+Simular una respuesta con rutas relevantes y una hipotesis de bug para "Prompt de para
+
+290
+00:12:27.116 --> 00:12:29.920
+"Prompt de exploracion readonly".
+
+291
+00:12:23.876 --> 00:12:29.920
+exploracion readonly". (Codex, 12 minutos, paso 5)
+
+292
+00:12:30.450 --> 00:12:36.062
+Situacion 12 minutos: Codex solo avanza si el siguiente humano entiende el por que.
+
+293
+00:12:36.107 --> 00:12:42.103
+Tension 12 minutos: aceptar rapido puede esconder permiso, alcance y modelo.
+
+294
+00:12:42.148 --> 00:12:44.688
+Accion 12 minutos:
+
+295
+00:12:44.733 --> 00:12:50.369
+parar si "Cuando Prompt de exploracion readonly se va de las manos" no produce evidencia
+
+296
+00:12:50.414 --> 00:12:52.114
+nueva.
+
+297
+00:12:52.159 --> 00:12:57.795
+parar si "Cuando Prompt de exploracion readonly se va de las manos" no produce evidencia
+
+298
+00:12:57.840 --> 00:12:59.540
+nueva.
+
+299
+00:12:57.284 --> 00:12:59.920
+Evidencia 12 minutos:
+
+300
+00:12:54.932 --> 00:12:59.920
+"Cuando Prompt de exploracion readonly se va de las manos" no se cierra sin test
+
+301
+00:12:57.116 --> 00:12:59.920
+captura o criterio escrito.
+
+302
+00:13:00.450 --> 00:13:06.014
+Pantalla de accion: Codex rinde mejor cuando separamos exploracion de escritura.
+
+303
+00:13:06.059 --> 00:13:10.639
+Situacion 13 minutos: la pantalla no busca impresionar;
+
+304
+00:13:10.684 --> 00:13:15.096
+busca cerrar "Prompt de exploracion readonly" con evidencia.
+
+305
+00:13:15.141 --> 00:13:19.553
+busca cerrar "Prompt de exploracion readonly" con evidencia.
+
+306
+00:13:19.598 --> 00:13:25.018
+Evidencia 13 minutos: "Prompt de exploracion readonly" no se cierra sin test
+
+307
+00:13:25.063 --> 00:13:27.867
+captura o criterio escrito.
+
+308
+00:13:27.332 --> 00:13:29.920
+Codex 13 minutos:
+
+309
+00:13:27.332 --> 00:13:29.920
+Codex 13 minutos:
+
+310
+00:13:24.380 --> 00:13:29.920
+Simular una respuesta con rutas relevantes y una hipotesis de bug para "Prompt de para
+
+311
+00:13:27.116 --> 00:13:29.920
+"Prompt de exploracion readonly".
+
+312
+00:13:23.876 --> 00:13:29.920
+exploracion readonly". (Codex, 13 minutos, paso 6)
+
+313
+00:13:30.450 --> 00:13:35.390
+Contexto visible: En esta escena pedimos un mapa no una solucion.
+
+314
+00:13:35.435 --> 00:13:38.527
+El agente debe leer sintetizar y.
+
+315
+00:13:38.572 --> 00:13:41.376
+Situacion 13 minutos:
+
+316
+00:13:41.421 --> 00:13:47.105
+Codex recibe "Prompt de exploracion readonly" y debe convertirlo en trabajo revisable.
+
+317
+00:13:47.150 --> 00:13:52.834
+Codex recibe "Prompt de exploracion readonly" y debe convertirlo en trabajo revisable.
+
+318
+00:13:52.879 --> 00:13:55.635
+Evidencia 13 minutos:
+
+319
+00:13:55.172 --> 00:13:59.920
+hay una salida que otro perfil puede revisar sin rehacer el contexto.
+
+320
+00:13:57.332 --> 00:13:59.920
+Codex 13 minutos:
+
+321
+00:13:57.332 --> 00:13:59.920
+Codex 13 minutos:
+
+322
+00:13:54.380 --> 00:13:59.920
+Simular una respuesta con rutas relevantes y una hipotesis de bug para "Prompt de para
+
+323
+00:13:57.116 --> 00:13:59.920
+"Prompt de exploracion readonly".
+
+324
+00:13:53.756 --> 00:13:59.920
+exploracion readonly". (Codex, 13 minutos, paso 7)
+
+325
+00:14:00.450 --> 00:14:03.902
+Decision humana: Si ya empieza editando
+
+326
+00:14:03.947 --> 00:14:07.831
+probablemente hemos mezclado dos trabajos distintos.
+
+327
+00:14:07.876 --> 00:14:12.384
+Situacion 14 minutos: la pantalla no busca impresionar;
+
+328
+00:14:12.429 --> 00:14:16.649
+busca cerrar "Prompt de exploracion readonly" con evidencia.
+
+329
+00:14:16.694 --> 00:14:20.914
+busca cerrar "Prompt de exploracion readonly" con evidencia.
+
+330
+00:14:20.959 --> 00:14:26.235
+Evidencia 14 minutos: "Prompt de exploracion readonly" no se cierra sin test
+
+331
+00:14:26.280 --> 00:14:28.964
+captura o criterio escrito.
+
+332
+00:14:27.356 --> 00:14:29.920
+Codex 14 minutos:
+
+333
+00:14:27.356 --> 00:14:29.920
+Codex 14 minutos:
+
+334
+00:14:24.620 --> 00:14:29.920
+Simular una respuesta con rutas relevantes y una hipotesis de bug para "Prompt de para
+
+335
+00:14:27.236 --> 00:14:29.920
+"Prompt de exploracion readonly".
+
+336
+00:14:23.996 --> 00:14:29.920
+exploracion readonly". (Codex, 14 minutos, paso 8)
+
+337
+00:14:30.450 --> 00:14:33.254
+Evidencia 14 minutos:
+
+338
+00:14:33.299 --> 00:14:38.047
+hay una salida que otro perfil puede revisar sin rehacer el contexto.
+
+339
+00:14:38.092 --> 00:14:43.776
+Situacion 14 minutos: alguien tendra que mantener esta salida despues de la demo.
+
+340
+00:14:43.821 --> 00:14:49.337
+Evidencia 14 minutos: "Prompt de exploracion readonly" no se cierra sin test
+
+341
+00:14:49.382 --> 00:14:52.186
+captura o criterio escrito.
+
+342
+00:14:52.231 --> 00:14:58.995
+captura o criterio escrito. (Codex, 14 minutos, paso 41)
+
+343
+00:14:57.260 --> 00:14:59.920
+Codex 14 minutos:
+
+344
+00:14:57.260 --> 00:14:59.920
+Codex 14 minutos:
+
+345
+00:14:54.380 --> 00:14:59.920
+Simular una respuesta con rutas relevantes y una hipotesis de bug para "Prompt de para
+
+346
+00:14:57.116 --> 00:14:59.920
+"Prompt de exploracion readonly".
+
+347
+00:14:53.756 --> 00:14:59.920
+exploracion readonly". (Codex, 14 minutos, paso 9)
+
+348
+00:15:00.450 --> 00:15:06.158
+Pantalla de accion: La decision de modelo no es estetica, es economia aplicada.
+
+349
+00:15:06.203 --> 00:15:08.983
+Situacion 15 minutos:
+
+350
+00:15:09.028 --> 00:15:14.376
+Codex recibe "Decision operativa" y debe convertirlo en trabajo revisable.
+
+351
+00:15:14.421 --> 00:15:19.769
+Codex recibe "Decision operativa" y debe convertirlo en trabajo revisable.
+
+352
+00:15:19.814 --> 00:15:22.546
+Evidencia 15 minutos:
+
+353
+00:15:22.591 --> 00:15:27.339
+hay una salida que otro perfil puede revisar sin rehacer el contexto.
+
+354
+00:15:25.460 --> 00:15:29.920
+Codex 15 minutos: Seleccionar modelo recomendado
+
+355
+00:15:22.244 --> 00:15:29.920
+effort y permiso antes del patch para "Decision operativa". (Codex, 15 minutos, paso 1)
+
+356
+00:15:30.450 --> 00:15:35.390
+Contexto visible: Para un bug pequeno empezamos con lectura y plan.
+
+357
+00:15:35.435 --> 00:15:38.575
+Subimos potencia si el acoplamien.
+
+358
+00:15:38.620 --> 00:15:44.208
+Situacion 15 minutos: alguien tendra que mantener esta salida despues de la demo.
+
+359
+00:15:44.253 --> 00:15:49.337
+Evidencia 15 minutos: "Decision operativa" no se cierra sin test
+
+360
+00:15:49.382 --> 00:15:52.186
+captura o criterio escrito.
+
+361
+00:15:52.231 --> 00:15:56.691
+Codex 15 minutos: Seleccionar modelo recomendado
+
+362
+00:15:52.244 --> 00:15:59.920
+effort y permiso antes del patch para "Decision operativa". (Codex, 15 minutos, paso 2)
+
+363
+00:16:00.450 --> 00:16:06.182
+Situacion 16 minutos: alguien tendra que mantener esta salida despues de la demo.
+
+364
+00:16:06.227 --> 00:16:12.343
+Tension 16 minutos: el agente puede avanzar mas rapido que nuestra capacidad de revisar.
+
+365
+00:16:12.388 --> 00:16:17.904
+Accion 16 minutos: pedir salida pequena, verificable y con owner.
+
+366
+00:16:17.949 --> 00:16:21.857
+Evidencia 16 minutos: "Mapa operativo:
+
+367
+00:16:21.902 --> 00:16:26.626
+Codex terminal y cloud task" queda ligado a prueba owner y decision.
+
+368
+00:16:25.196 --> 00:16:29.920
+Codex terminal y cloud task" queda ligado a prueba owner y decision.
+
+369
+00:16:30.450 --> 00:16:35.822
+Evidencia 16 minutos: diff minimo, test verde y coste registrado.
+
+370
+00:16:35.867 --> 00:16:41.431
+Situacion 16 minutos: el equipo mira "Decision operativa" dentro del repo
+
+371
+00:16:41.476 --> 00:16:44.448
+con coste y permiso visibles.
+
+372
+00:16:44.493 --> 00:16:51.617
+con coste y permiso visibles. (Codex, 16 minutos, paso 64)
+
+373
+00:16:51.662 --> 00:16:58.018
+Evidencia 16 minutos: el artefacto muestra que se controlo permiso, alcance y modelo.
+
+374
+00:16:55.268 --> 00:16:59.920
+Codex 16 minutos: Seleccionar modelo recomendado
+
+375
+00:16:52.028 --> 00:16:59.920
+effort y permiso antes del patch para "Decision operativa". (Codex, 16 minutos, paso 3)
+
+376
+00:17:00.450 --> 00:17:05.006
+Coste y riesgo: Para un bug pequeno empezamos con lectura y plan.
+
+377
+00:17:05.051 --> 00:17:08.071
+Subimos potencia si el acoplamien.
+
+378
+00:17:08.116 --> 00:17:13.728
+Situacion 17 minutos: Codex solo avanza si el siguiente humano entiende el por que.
+
+379
+00:17:13.773 --> 00:17:18.953
+Evidencia 17 minutos: diff minimo, test verde y coste registrado.
+
+380
+00:17:18.998 --> 00:17:23.530
+Codex 17 minutos: Seleccionar modelo recomendado
+
+381
+00:17:22.316 --> 00:17:29.920
+effort y permiso antes del patch para "Decision operativa". (Codex, 17 minutos, paso 4)
+
+382
+00:17:30.450 --> 00:17:34.934
+Checkpoint: Tambien separamos permisos: leer no es editar
+
+383
+00:17:34.979 --> 00:17:38.143
+editar no es ejecutar cualquier cosa.
+
+384
+00:17:38.188 --> 00:17:43.608
+Situacion 17 minutos: el equipo mira "Decision operativa" dentro del repo
+
+385
+00:17:43.653 --> 00:17:46.505
+con coste y permiso visibles.
+
+386
+00:17:46.550 --> 00:17:53.386
+con coste y permiso visibles. (Codex, 17 minutos, paso 65)
+
+387
+00:17:53.431 --> 00:17:59.571
+Evidencia 17 minutos: el artefacto muestra que se controlo permiso, alcance y modelo.
+
+388
+00:17:55.388 --> 00:17:59.920
+Codex 17 minutos: Seleccionar modelo recomendado
+
+389
+00:17:52.292 --> 00:17:59.920
+effort y permiso antes del patch para "Decision operativa". (Codex, 17 minutos, paso 5)
+
+390
+00:18:00.450 --> 00:18:05.918
+Pantalla de accion: La decision de modelo no es estetica, es economia aplicada.
+
+391
+00:18:05.963 --> 00:18:10.519
+Situacion 18 minutos: la pantalla no busca impresionar;
+
+392
+00:18:10.564 --> 00:18:14.376
+busca cerrar "Decision operativa" con evidencia.
+
+393
+00:18:14.421 --> 00:18:18.233
+busca cerrar "Decision operativa" con evidencia.
+
+394
+00:18:18.278 --> 00:18:23.218
+Evidencia 18 minutos: "Decision operativa" no se cierra sin test
+
+395
+00:18:23.263 --> 00:18:25.947
+captura o criterio escrito.
+
+396
+00:18:25.484 --> 00:18:29.920
+Codex 18 minutos: Seleccionar modelo recomendado
+
+397
+00:18:22.412 --> 00:18:29.920
+effort y permiso antes del patch para "Decision operativa". (Codex, 18 minutos, paso 6)
+
+398
+00:18:30.450 --> 00:18:35.390
+Contexto visible: Para un bug pequeno empezamos con lectura y plan.
+
+399
+00:18:35.435 --> 00:18:38.575
+Subimos potencia si el acoplamien.
+
+400
+00:18:38.620 --> 00:18:41.520
+Situacion 18 minutos:
+
+401
+00:18:41.565 --> 00:18:46.913
+Codex recibe "Decision operativa" y debe convertirlo en trabajo revisable.
+
+402
+00:18:46.958 --> 00:18:52.306
+Codex recibe "Decision operativa" y debe convertirlo en trabajo revisable.
+
+403
+00:18:52.351 --> 00:18:55.227
+Evidencia 18 minutos:
+
+404
+00:18:55.172 --> 00:18:59.920
+hay una salida que otro perfil puede revisar sin rehacer el contexto.
+
+405
+00:18:55.292 --> 00:18:59.920
+Codex 18 minutos: Seleccionar modelo recomendado
+
+406
+00:18:52.004 --> 00:18:59.920
+effort y permiso antes del patch para "Decision operativa". (Codex, 18 minutos, paso 7)
+
+407
+00:19:00.450 --> 00:19:05.534
+Decision humana: Tambien separamos permisos: leer no es editar
+
+408
+00:19:05.579 --> 00:19:08.887
+editar no es ejecutar cualquier cosa.
+
+409
+00:19:08.932 --> 00:19:13.704
+Situacion 19 minutos: la pantalla no busca impresionar;
+
+410
+00:19:13.749 --> 00:19:17.729
+busca cerrar "Decision operativa" con evidencia.
+
+411
+00:19:17.774 --> 00:19:21.754
+busca cerrar "Decision operativa" con evidencia.
+
+412
+00:19:21.799 --> 00:19:27.027
+Evidencia 19 minutos: "Decision operativa" no se cierra sin test
+
+413
+00:19:27.072 --> 00:19:29.876
+captura o criterio escrito.
+
+414
+00:19:25.244 --> 00:19:29.920
+Codex 19 minutos: Seleccionar modelo recomendado
+
+415
+00:19:22.124 --> 00:19:29.920
+effort y permiso antes del patch para "Decision operativa". (Codex, 19 minutos, paso 8)
+
+416
+00:19:30.450 --> 00:19:33.422
+Evidencia 19 minutos:
+
+417
+00:19:33.467 --> 00:19:38.215
+hay una salida que otro perfil puede revisar sin rehacer el contexto.
+
+418
+00:19:38.260 --> 00:19:43.968
+Situacion 19 minutos: alguien tendra que mantener esta salida despues de la demo.
+
+419
+00:19:44.013 --> 00:19:49.241
+Evidencia 19 minutos: "Decision operativa" no se cierra sin test
+
+420
+00:19:49.286 --> 00:19:52.090
+captura o criterio escrito.
+
+421
+00:19:52.135 --> 00:19:56.811
+Codex 19 minutos: Seleccionar modelo recomendado
+
+422
+00:19:52.052 --> 00:19:59.920
+effort y permiso antes del patch para "Decision operativa". (Codex, 19 minutos, paso 9)
+
+423
+00:20:00.450 --> 00:20:05.966
+Accion 20 minutos: convertir repo en una decision que se pueda ensenar en tutoria.
+
+424
+00:20:06.011 --> 00:20:11.047
+Antes del patch pedimos un plan tan corto que pueda rechazarse en treinta segundos.
+
+425
+00:20:11.092 --> 00:20:16.464
+Situacion 20 minutos: el equipo mira "Plan de 5 lineas" dentro del repo
+
+426
+00:20:16.509 --> 00:20:19.361
+con coste y permiso visibles.
+
+427
+00:20:19.406 --> 00:20:26.026
+con coste y permiso visibles. (Codex, 20 minutos, paso 66)
+
+428
+00:20:24.068 --> 00:20:29.920
+Evidencia 20 minutos: el artefacto muestra que se controlo permiso, alcance y modelo.
+
+429
+00:20:26.180 --> 00:20:29.920
+Codex 20 minutos: Mostrar plan numerado
+
+430
+00:20:26.012 --> 00:20:29.920
+archivos y test objetivo para "Plan de 5 lineas".
+
+431
+00:20:30.450 --> 00:20:34.502
+Situacion 20 minutos: el equipo mira "Pausa:
+
+432
+00:20:34.547 --> 00:20:39.775
+que estamos aceptando aqui?" dentro del repo con coste y permiso visibles.
+
+433
+00:20:39.820 --> 00:20:45.048
+que estamos aceptando aqui?" dentro del repo con coste y permiso visibles.
+
+434
+00:20:45.093 --> 00:20:50.681
+Tension 20 minutos: el coste malo suele aparecer cuando nadie define el cierre.
+
+435
+00:20:50.726 --> 00:20:56.482
+Accion 20 minutos: convertir repo en una decision que se pueda ensenar en tutoria.
+
+436
+00:20:53.228 --> 00:20:59.920
+no con la sensacion de velocidad. (Codex, 20 minutos, paso 31)
+
+437
+00:20:53.732 --> 00:20:59.920
+Evidencia 20 minutos: "Pausa: que estamos aceptando aqui?" queda ligado a prueba
+
+438
+00:20:57.620 --> 00:20:59.920
+owner y decision.
+
+439
+00:20:53.228 --> 00:20:59.920
+captura o criterio escrito. (Codex, 20 minutos, paso 42)
+
+440
+00:21:00.450 --> 00:21:06.230
+Decision humana: Si el plan no menciona pruebas, todavia no hay permiso de implementar.
+
+441
+00:21:06.410 --> 00:21:12.190
+Situacion 21 minutos: Codex solo avanza si el siguiente humano entiende el por que.
+
+442
+00:21:12.370 --> 00:21:17.622
+Evidencia 21 minutos: diff minimo, test verde y coste registrado.
+
+443
+00:21:17.802 --> 00:21:21.782
+Codex 21 minutos: Mostrar plan numerado
+
+444
+00:21:21.962 --> 00:21:26.038
+archivos y test objetivo para "Plan de 5 lineas".
+
+445
+00:21:30.450 --> 00:21:35.702
+Evidencia 21 minutos: diff minimo, test verde y coste registrado.
+
+446
+00:21:35.747 --> 00:21:41.023
+Antes del patch pedimos un plan tan corto que pueda rechazarse en treinta segundos.
+
+447
+00:21:41.068 --> 00:21:45.768
+Situacion 21 minutos: la pantalla no busca impresionar;
+
+448
+00:21:45.813 --> 00:21:49.817
+busca cerrar "Plan de 5 lineas" con evidencia.
+
+449
+00:21:49.862 --> 00:21:53.866
+busca cerrar "Plan de 5 lineas" con evidencia.
+
+450
+00:21:53.911 --> 00:21:59.043
+Evidencia 21 minutos: "Plan de 5 lineas" no se cierra sin test
+
+451
+00:21:57.116 --> 00:21:59.920
+captura o criterio escrito.
+
+452
+00:21:55.940 --> 00:21:59.920
+Codex 21 minutos: Mostrar plan numerado
+
+453
+00:21:55.844 --> 00:21:59.920
+archivos y test objetivo para "Plan de 5 lineas".
+
+454
+00:22:00.450 --> 00:22:06.014
+Coste y riesgo: Un buen plan no narra entusiasmo; enumera cambios verificables.
+
+455
+00:22:06.194 --> 00:22:11.638
+Situacion 22 minutos: alguien tendra que mantener esta salida despues de la demo.
+
+456
+00:22:11.818 --> 00:22:16.734
+Evidencia 22 minutos: "Plan de 5 lineas" no se cierra sin test
+
+457
+00:22:16.914 --> 00:22:19.598
+captura o criterio escrito.
+
+458
+00:22:19.778 --> 00:22:23.638
+Codex 22 minutos: Mostrar plan numerado
+
+459
+00:22:23.818 --> 00:22:27.726
+archivos y test objetivo para "Plan de 5 lineas".
+
+460
+00:22:30.450 --> 00:22:35.654
+Checkpoint: Si el plan no menciona pruebas, todavia no hay permiso de implementar.
+
+461
+00:22:35.834 --> 00:22:38.566
+Situacion 22 minutos:
+
+462
+00:22:38.746 --> 00:22:43.782
+Codex recibe "Plan de 5 lineas" y debe convertirlo en trabajo revisable.
+
+463
+00:22:43.962 --> 00:22:49.982
+Evidencia 22 minutos: "Plan de 5 lineas" queda ligado a prueba, owner y decision.
+
+464
+00:22:50.162 --> 00:22:54.022
+Codex 22 minutos: Mostrar plan numerado
+
+465
+00:22:54.202 --> 00:22:58.110
+archivos y test objetivo para "Plan de 5 lineas".
+
+466
+00:23:00.450 --> 00:23:06.494
+Accion 23 minutos: parar si "Plan de 5 lineas" no produce evidencia nueva.
+
+467
+00:23:06.539 --> 00:23:11.815
+Antes del patch pedimos un plan tan corto que pueda rechazarse en treinta segundos.
+
+468
+00:23:11.860 --> 00:23:17.592
+Situacion 23 minutos: alguien tendra que mantener esta salida despues de la demo.
+
+469
+00:23:17.637 --> 00:23:22.865
+Evidencia 23 minutos: "Plan de 5 lineas" no se cierra sin test
+
+470
+00:23:22.910 --> 00:23:25.714
+captura o criterio escrito.
+
+471
+00:23:25.748 --> 00:23:29.920
+Codex 23 minutos: Mostrar plan numerado
+
+472
+00:23:25.844 --> 00:23:29.920
+archivos y test objetivo para "Plan de 5 lineas".
+
+473
+00:23:30.450 --> 00:23:36.374
+Contexto visible: Un buen plan no narra entusiasmo; enumera cambios verificables.
+
+474
+00:23:36.554 --> 00:23:42.454
+Situacion 23 minutos: Codex solo avanza si el siguiente humano entiende el por que.
+
+475
+00:23:42.634 --> 00:23:48.054
+Evidencia 23 minutos: diff minimo, test verde y coste registrado.
+
+476
+00:23:48.234 --> 00:23:52.406
+Codex 23 minutos: Mostrar plan numerado
+
+477
+00:23:52.586 --> 00:23:56.662
+archivos y test objetivo para "Plan de 5 lineas".
+
+478
+00:24:00.450 --> 00:24:05.966
+Decision humana: Si el plan no menciona pruebas, todavia no hay permiso de implementar.
+
+479
+00:24:06.011 --> 00:24:11.623
+Situacion 24 minutos: el equipo mira "Plan de 5 lineas" dentro del repo
+
+480
+00:24:11.668 --> 00:24:14.520
+con coste y permiso visibles.
+
+481
+00:24:14.565 --> 00:24:21.473
+con coste y permiso visibles. (Codex, 24 minutos, paso 67)
+
+482
+00:24:21.518 --> 00:24:27.682
+Evidencia 24 minutos: el artefacto muestra que se controlo permiso, alcance y modelo.
+
+483
+00:24:25.868 --> 00:24:29.920
+Codex 24 minutos: Mostrar plan numerado
+
+484
+00:24:26.012 --> 00:24:29.920
+archivos y test objetivo para "Plan de 5 lineas".
+
+485
+00:24:30.450 --> 00:24:35.294
+Situacion 24 minutos: la pantalla no busca impresionar;
+
+486
+00:24:35.339 --> 00:24:40.639
+busca cerrar "Captura mental: Codex terminal y cloud task" con evidencia.
+
+487
+00:24:40.684 --> 00:24:45.984
+busca cerrar "Captura mental: Codex terminal y cloud task" con evidencia.
+
+488
+00:24:46.029 --> 00:24:52.289
+Tension 24 minutos: el agente puede avanzar mas rapido que nuestra capacidad de revisar.
+
+489
+00:24:52.334 --> 00:24:57.994
+Accion 24 minutos: pedir salida pequena, verificable y con owner.
+
+490
+00:24:55.988 --> 00:24:59.920
+Evidencia 24 minutos: "Captura mental:
+
+491
+00:24:55.196 --> 00:24:59.920
+Codex terminal y cloud task" queda ligado a prueba owner y decision.
+
+492
+00:25:00.450 --> 00:25:05.126
+Pantalla de accion: Ahora si pedimos editar pero con una restriccion:
+
+493
+00:25:05.171 --> 00:25:08.023
+minimo cambio que cierre el crit.
+
+494
+00:25:08.068 --> 00:25:13.296
+Situacion 25 minutos: el equipo mira "Diff esperado" dentro del repo
+
+495
+00:25:13.341 --> 00:25:16.193
+con coste y permiso visibles.
+
+496
+00:25:16.238 --> 00:25:23.074
+con coste y permiso visibles. (Codex, 25 minutos, paso 68)
+
+497
+00:25:23.119 --> 00:25:29.259
+Evidencia 25 minutos: el artefacto muestra que se controlo permiso, alcance y modelo.
+
+498
+00:25:27.236 --> 00:25:29.920
+Codex 25 minutos:
+
+499
+00:25:27.236 --> 00:25:29.920
+Codex 25 minutos:
+
+500
+00:25:24.932 --> 00:25:29.920
+Mostrar patch pequeno y pedir al grupo que busque efectos laterales para "Diff para
+
+501
+00:25:27.932 --> 00:25:29.920
+"Diff esperado".
+
+502
+00:25:24.524 --> 00:25:29.920
+esperado". (Codex, 25 minutos, paso 1)
+
+503
+00:25:30.450 --> 00:25:35.846
+Contexto visible: Codex debe devolver el diff y no una reforma completa del modulo.
+
+504
+00:25:35.891 --> 00:25:40.519
+Situacion 25 minutos: la pantalla no busca impresionar;
+
+505
+00:25:40.564 --> 00:25:44.064
+busca cerrar "Diff esperado" con evidencia.
+
+506
+00:25:44.109 --> 00:25:47.609
+busca cerrar "Diff esperado" con evidencia.
+
+507
+00:25:47.654 --> 00:25:53.938
+Evidencia 25 minutos: "Diff esperado" no se cierra sin test, captura o criterio escrito.
+
+508
+00:25:53.983 --> 00:25:56.667
+Codex 25 minutos:
+
+509
+00:25:56.712 --> 00:25:59.396
+Codex 25 minutos:
+
+510
+00:25:54.932 --> 00:25:59.920
+Mostrar patch pequeno y pedir al grupo que busque efectos laterales para "Diff para
+
+511
+00:25:57.932 --> 00:25:59.920
+"Diff esperado".
+
+512
+00:25:54.476 --> 00:25:59.920
+esperado". (Codex, 25 minutos, paso 2)
+
+513
+00:26:00.450 --> 00:26:04.502
+Decision humana: La calidad aqui se ve en lo que no toca.
+
+514
+00:26:04.547 --> 00:26:10.135
+Situacion 26 minutos: Codex solo avanza si el siguiente humano entiende el por que.
+
+515
+00:26:10.180 --> 00:26:15.312
+Evidencia 26 minutos: diff minimo, test verde y coste registrado.
+
+516
+00:26:15.357 --> 00:26:17.969
+Codex 26 minutos:
+
+517
+00:26:18.014 --> 00:26:20.626
+Codex 26 minutos:
+
+518
+00:26:20.671 --> 00:26:25.659
+Mostrar patch pequeno y pedir al grupo que busque efectos laterales para "Diff para
+
+519
+00:26:25.704 --> 00:26:27.692
+"Diff esperado".
+
+520
+00:26:24.428 --> 00:26:29.920
+esperado". (Codex, 26 minutos, paso 3)
+
+521
+00:26:30.450 --> 00:26:35.582
+Evidencia 26 minutos: diff minimo, test verde y coste registrado.
+
+522
+00:26:35.627 --> 00:26:38.479
+minimo cambio que cierre el crit.
+
+523
+00:26:38.524 --> 00:26:43.080
+Situacion 26 minutos: la pantalla no busca impresionar;
+
+524
+00:26:43.125 --> 00:26:46.625
+busca cerrar "Diff esperado" con evidencia.
+
+525
+00:26:46.670 --> 00:26:50.170
+busca cerrar "Diff esperado" con evidencia.
+
+526
+00:26:50.215 --> 00:26:56.427
+Evidencia 26 minutos: "Diff esperado" no se cierra sin test, captura o criterio escrito.
+
+527
+00:26:56.472 --> 00:26:59.084
+Codex 26 minutos:
+
+528
+00:26:57.308 --> 00:26:59.920
+Codex 26 minutos:
+
+529
+00:26:54.932 --> 00:26:59.920
+Mostrar patch pequeno y pedir al grupo que busque efectos laterales para "Diff para
+
+530
+00:26:57.932 --> 00:26:59.920
+"Diff esperado".
+
+531
+00:26:54.452 --> 00:26:59.920
+esperado". (Codex, 26 minutos, paso 4)
+
+532
+00:27:00.450 --> 00:27:05.966
+Coste y riesgo: Codex debe devolver el diff y no una reforma completa del modulo.
+
+533
+00:27:06.011 --> 00:27:11.815
+Situacion 27 minutos: alguien tendra que mantener esta salida despues de la demo.
+
+534
+00:27:11.860 --> 00:27:18.456
+Evidencia 27 minutos: "Diff esperado" no se cierra sin test, captura o criterio escrito.
+
+535
+00:27:18.501 --> 00:27:21.329
+Codex 27 minutos:
+
+536
+00:27:21.374 --> 00:27:24.202
+Codex 27 minutos:
+
+537
+00:27:24.247 --> 00:27:29.451
+Mostrar patch pequeno y pedir al grupo que busque efectos laterales para "Diff para
+
+538
+00:27:27.836 --> 00:27:29.920
+"Diff esperado".
+
+539
+00:27:24.092 --> 00:27:29.920
+esperado". (Codex, 27 minutos, paso 5)
+
+540
+00:27:30.450 --> 00:27:34.310
+Checkpoint: La calidad aqui se ve en lo que no toca.
+
+541
+00:27:34.355 --> 00:27:37.351
+Situacion 27 minutos:
+
+542
+00:27:37.396 --> 00:27:42.384
+Codex recibe "Diff esperado" y debe convertirlo en trabajo revisable.
+
+543
+00:27:42.429 --> 00:27:48.473
+Evidencia 27 minutos: "Diff esperado" queda ligado a prueba, owner y decision.
+
+544
+00:27:48.518 --> 00:27:51.346
+Codex 27 minutos:
+
+545
+00:27:51.391 --> 00:27:54.219
+Codex 27 minutos:
+
+546
+00:27:54.264 --> 00:27:59.468
+Mostrar patch pequeno y pedir al grupo que busque efectos laterales para "Diff para
+
+547
+00:27:57.836 --> 00:27:59.920
+"Diff esperado".
+
+548
+00:27:54.188 --> 00:27:59.920
+esperado". (Codex, 27 minutos, paso 6)
+
+549
+00:28:00.450 --> 00:28:03.374
+Situacion 28 minutos:
+
+550
+00:28:03.419 --> 00:28:08.263
+el equipo mira "Cuando Diff esperado se va de las manos" dentro del repo
+
+551
+00:28:08.308 --> 00:28:11.280
+con coste y permiso visibles.
+
+552
+00:28:11.325 --> 00:28:16.169
+el equipo mira "Cuando Diff esperado se va de las manos" dentro del repo
+
+553
+00:28:16.214 --> 00:28:23.290
+con coste y permiso visibles. (Codex, 28 minutos, paso 69)
+
+554
+00:28:23.335 --> 00:28:29.475
+Tension 28 minutos: el agente puede avanzar mas rapido que nuestra capacidad de revisar.
+
+555
+00:28:24.308 --> 00:28:29.920
+Accion 28 minutos: pedir salida pequena, verificable y con owner.
+
+556
+00:28:23.060 --> 00:28:29.920
+no con la sensacion de velocidad. (Codex, 28 minutos, paso 32)
+
+557
+00:28:27.068 --> 00:28:29.920
+Evidencia 28 minutos:
+
+558
+00:28:25.172 --> 00:28:29.920
+hay una salida que otro perfil puede revisar sin rehacer el contexto.
+
+559
+00:28:25.652 --> 00:28:29.920
+"Cuando Diff esperado se va de las manos" no se cierra sin test
+
+560
+00:28:22.964 --> 00:28:29.920
+captura o criterio escrito. (Codex, 28 minutos, paso 43)
+
+561
+00:28:30.450 --> 00:28:36.086
+Contexto visible: Codex debe devolver el diff y no una reforma completa del modulo.
+
+562
+00:28:36.131 --> 00:28:42.007
+Situacion 28 minutos: Codex solo avanza si el siguiente humano entiende el por que.
+
+563
+00:28:42.052 --> 00:28:47.424
+Evidencia 28 minutos: diff minimo, test verde y coste registrado.
+
+564
+00:28:47.469 --> 00:28:50.177
+Codex 28 minutos:
+
+565
+00:28:50.222 --> 00:28:52.930
+Codex 28 minutos:
+
+566
+00:28:52.975 --> 00:28:58.179
+Mostrar patch pequeno y pedir al grupo que busque efectos laterales para "Diff para
+
+567
+00:28:57.836 --> 00:28:59.920
+"Diff esperado".
+
+568
+00:28:54.140 --> 00:28:59.920
+esperado". (Codex, 28 minutos, paso 7)
+
+569
+00:29:00.450 --> 00:29:04.502
+Decision humana: La calidad aqui se ve en lo que no toca.
+
+570
+00:29:04.547 --> 00:29:09.751
+Situacion 29 minutos: el equipo mira "Diff esperado" dentro del repo
+
+571
+00:29:09.796 --> 00:29:12.648
+con coste y permiso visibles.
+
+572
+00:29:12.693 --> 00:29:19.289
+con coste y permiso visibles. (Codex, 29 minutos, paso 70)
+
+573
+00:29:19.334 --> 00:29:25.402
+Evidencia 29 minutos: el artefacto muestra que se controlo permiso, alcance y modelo.
+
+574
+00:29:25.447 --> 00:29:28.131
+Codex 29 minutos:
+
+575
+00:29:27.236 --> 00:29:29.920
+Codex 29 minutos:
+
+576
+00:29:24.932 --> 00:29:29.920
+Mostrar patch pequeno y pedir al grupo que busque efectos laterales para "Diff para
+
+577
+00:29:27.932 --> 00:29:29.920
+"Diff esperado".
+
+578
+00:29:24.452 --> 00:29:29.920
+esperado". (Codex, 29 minutos, paso 8)
+
+579
+00:29:30.450 --> 00:29:33.398
+Evidencia 29 minutos:
+
+580
+00:29:33.443 --> 00:29:38.191
+hay una salida que otro perfil puede revisar sin rehacer el contexto.
+
+581
+00:29:38.236 --> 00:29:41.208
+minimo cambio que cierre el crit.
+
+582
+00:29:41.253 --> 00:29:47.129
+Situacion 29 minutos: Codex solo avanza si el siguiente humano entiende el por que.
+
+583
+00:29:47.174 --> 00:29:52.594
+Evidencia 29 minutos: diff minimo, test verde y coste registrado.
+
+584
+00:29:52.639 --> 00:29:55.443
+Codex 29 minutos:
+
+585
+00:29:55.488 --> 00:29:58.292
+Codex 29 minutos:
+
+586
+00:29:54.716 --> 00:29:59.920
+Mostrar patch pequeno y pedir al grupo que busque efectos laterales para "Diff para
+
+587
+00:29:57.836 --> 00:29:59.920
+"Diff esperado".
+
+588
+00:29:54.164 --> 00:29:59.920
+esperado". (Codex, 29 minutos, paso 9)
+
+589
+00:30:00.450 --> 00:30:05.942
+Pantalla de accion: La prueba no es burocracia, es el recibo de compra del cambio.
+
+590
+00:30:05.987 --> 00:30:08.623
+Situacion 30 minutos:
+
+591
+00:30:08.668 --> 00:30:13.800
+Codex recibe "Prueba de regresion" y debe convertirlo en trabajo revisable.
+
+592
+00:30:13.845 --> 00:30:18.977
+Codex recibe "Prueba de regresion" y debe convertirlo en trabajo revisable.
+
+593
+00:30:19.022 --> 00:30:21.634
+Evidencia 30 minutos:
+
+594
+00:30:21.679 --> 00:30:26.235
+hay una salida que otro perfil puede revisar sin rehacer el contexto.
+
+595
+00:30:26.280 --> 00:30:28.724
+Codex 30 minutos:
+
+596
+00:30:27.476 --> 00:30:29.920
+Codex 30 minutos:
+
+597
+00:30:24.164 --> 00:30:29.920
+Simular salida verde y una salida roja alternativa para explicar rescate para "Prueba de
+
+598
+00:30:27.380 --> 00:30:29.920
+para "Prueba de regresion".
+
+599
+00:30:24.596 --> 00:30:29.920
+regresion". (Codex, 30 minutos, paso 1)
+
+600
+00:30:30.450 --> 00:30:36.086
+Contexto visible: Pedimos que Codex explique que caso cubre y que comando lo verifica.
+
+601
+00:30:36.131 --> 00:30:40.591
+Situacion 30 minutos: la pantalla no busca impresionar;
+
+602
+00:30:40.636 --> 00:30:44.424
+busca cerrar "Prueba de regresion" con evidencia.
+
+603
+00:30:44.469 --> 00:30:48.257
+busca cerrar "Prueba de regresion" con evidencia.
+
+604
+00:30:48.302 --> 00:30:53.050
+Evidencia 30 minutos: "Prueba de regresion" no se cierra sin test
+
+605
+00:30:53.095 --> 00:30:55.779
+captura o criterio escrito.
+
+606
+00:30:55.824 --> 00:30:58.268
+Codex 30 minutos:
+
+607
+00:30:57.476 --> 00:30:59.920
+Codex 30 minutos:
+
+608
+00:30:54.164 --> 00:30:59.920
+Simular salida verde y una salida roja alternativa para explicar rescate para "Prueba de
+
+609
+00:30:57.380 --> 00:30:59.920
+para "Prueba de regresion".
+
+610
+00:30:54.548 --> 00:30:59.920
+regresion". (Codex, 30 minutos, paso 2)
+
+611
+00:31:00.450 --> 00:31:05.726
+Decision humana: Una solucion sin evidencia vuelve a consumir tiempo en la tutoria.
+
+612
+00:31:05.771 --> 00:31:11.407
+Situacion 31 minutos: Codex solo avanza si el siguiente humano entiende el por que.
+
+613
+00:31:11.452 --> 00:31:16.656
+Evidencia 31 minutos: diff minimo, test verde y coste registrado.
+
+614
+00:31:16.701 --> 00:31:19.337
+Codex 31 minutos:
+
+615
+00:31:19.382 --> 00:31:22.018
+Codex 31 minutos:
+
+616
+00:31:22.063 --> 00:31:27.819
+Simular salida verde y una salida roja alternativa para explicar rescate para "Prueba de
+
+617
+00:31:27.380 --> 00:31:29.920
+para "Prueba de regresion".
+
+618
+00:31:24.380 --> 00:31:29.920
+regresion". (Codex, 31 minutos, paso 3)
+
+619
+00:31:30.450 --> 00:31:35.654
+Evidencia 31 minutos: diff minimo, test verde y coste registrado.
+
+620
+00:31:35.699 --> 00:31:41.143
+Situacion 31 minutos: el equipo mira "Prueba de regresion" dentro del repo
+
+621
+00:31:41.188 --> 00:31:44.040
+con coste y permiso visibles.
+
+622
+00:31:44.085 --> 00:31:50.753
+con coste y permiso visibles. (Codex, 31 minutos, paso 71)
+
+623
+00:31:50.798 --> 00:31:56.866
+Evidencia 31 minutos: el artefacto muestra que se controlo permiso, alcance y modelo.
+
+624
+00:31:56.911 --> 00:31:59.547
+Codex 31 minutos:
+
+625
+00:31:57.284 --> 00:31:59.920
+Codex 31 minutos:
+
+626
+00:31:54.164 --> 00:31:59.920
+Simular salida verde y una salida roja alternativa para explicar rescate para "Prueba de
+
+627
+00:31:57.380 --> 00:31:59.920
+para "Prueba de regresion".
+
+628
+00:31:54.332 --> 00:31:59.920
+regresion". (Codex, 31 minutos, paso 4)
+
+629
+00:32:00.450 --> 00:32:06.230
+Coste y riesgo: Pedimos que Codex explique que caso cubre y que comando lo verifica.
+
+630
+00:32:06.275 --> 00:32:12.079
+Situacion 32 minutos: alguien tendra que mantener esta salida despues de la demo.
+
+631
+00:32:12.124 --> 00:32:17.304
+Evidencia 32 minutos: "Prueba de regresion" no se cierra sin test
+
+632
+00:32:17.349 --> 00:32:20.153
+captura o criterio escrito.
+
+633
+00:32:20.198 --> 00:32:23.002
+Codex 32 minutos:
+
+634
+00:32:23.047 --> 00:32:25.851
+Codex 32 minutos:
+
+635
+00:32:23.900 --> 00:32:29.920
+Simular salida verde y una salida roja alternativa para explicar rescate para "Prueba de
+
+636
+00:32:27.284 --> 00:32:29.920
+para "Prueba de regresion".
+
+637
+00:32:24.116 --> 00:32:29.920
+regresion". (Codex, 32 minutos, paso 5)
+
+638
+00:32:30.450 --> 00:32:36.398
+Situacion 32 minutos: Codex solo avanza si el siguiente humano entiende el por que.
+
+639
+00:32:36.443 --> 00:32:42.727
+Tension 32 minutos: aceptar rapido puede esconder permiso, alcance y modelo.
+
+640
+00:32:42.772 --> 00:32:47.040
+Accion 32 minutos: parar si "Mapa operativo:
+
+641
+00:32:47.085 --> 00:32:51.329
+Codex terminal y cloud task" no produce evidencia nueva.
+
+642
+00:32:51.374 --> 00:32:55.618
+Codex terminal y cloud task" no produce evidencia nueva.
+
+643
+00:32:53.540 --> 00:32:59.920
+Evidencia 32 minutos: el artefacto muestra que se controlo permiso, alcance y modelo.
+
+644
+00:33:00.450 --> 00:33:06.182
+Pantalla de accion: La prueba no es burocracia, es el recibo de compra del cambio.
+
+645
+00:33:06.227 --> 00:33:11.119
+Situacion 33 minutos: la pantalla no busca impresionar;
+
+646
+00:33:11.164 --> 00:33:15.120
+busca cerrar "Prueba de regresion" con evidencia.
+
+647
+00:33:15.165 --> 00:33:19.121
+busca cerrar "Prueba de regresion" con evidencia.
+
+648
+00:33:19.166 --> 00:33:24.418
+Evidencia 33 minutos: "Prueba de regresion" no se cierra sin test
+
+649
+00:33:24.463 --> 00:33:27.267
+captura o criterio escrito.
+
+650
+00:33:27.044 --> 00:33:29.920
+Codex 33 minutos:
+
+651
+00:33:27.044 --> 00:33:29.920
+Codex 33 minutos:
+
+652
+00:33:23.900 --> 00:33:29.920
+Simular salida verde y una salida roja alternativa para explicar rescate para "Prueba de
+
+653
+00:33:27.284 --> 00:33:29.920
+para "Prueba de regresion".
+
+654
+00:33:24.020 --> 00:33:29.920
+regresion". (Codex, 33 minutos, paso 6)
+
+655
+00:33:30.450 --> 00:33:36.350
+Contexto visible: Pedimos que Codex explique que caso cubre y que comando lo verifica.
+
+656
+00:33:36.395 --> 00:33:42.415
+Situacion 33 minutos: Codex solo avanza si el siguiente humano entiende el por que.
+
+657
+00:33:42.460 --> 00:33:48.000
+Evidencia 33 minutos: diff minimo, test verde y coste registrado.
+
+658
+00:33:48.045 --> 00:33:50.921
+Codex 33 minutos:
+
+659
+00:33:50.966 --> 00:33:53.842
+Codex 33 minutos:
+
+660
+00:33:53.887 --> 00:33:59.907
+Simular salida verde y una salida roja alternativa para explicar rescate para "Prueba de
+
+661
+00:33:57.284 --> 00:33:59.920
+para "Prueba de regresion".
+
+662
+00:33:53.900 --> 00:33:59.920
+regresion". (Codex, 33 minutos, paso 7)
+
+663
+00:34:00.450 --> 00:34:05.726
+Decision humana: Una solucion sin evidencia vuelve a consumir tiempo en la tutoria.
+
+664
+00:34:05.771 --> 00:34:11.407
+Situacion 34 minutos: el equipo mira "Prueba de regresion" dentro del repo
+
+665
+00:34:11.452 --> 00:34:14.304
+con coste y permiso visibles.
+
+666
+00:34:14.349 --> 00:34:21.185
+con coste y permiso visibles. (Codex, 34 minutos, paso 72)
+
+667
+00:34:21.230 --> 00:34:27.466
+Evidencia 34 minutos: el artefacto muestra que se controlo permiso, alcance y modelo.
+
+668
+00:34:27.164 --> 00:34:29.920
+Codex 34 minutos:
+
+669
+00:34:27.164 --> 00:34:29.920
+Codex 34 minutos:
+
+670
+00:34:24.164 --> 00:34:29.920
+Simular salida verde y una salida roja alternativa para explicar rescate para "Prueba de
+
+671
+00:34:27.380 --> 00:34:29.920
+para "Prueba de regresion".
+
+672
+00:34:24.212 --> 00:34:29.920
+regresion". (Codex, 34 minutos, paso 8)
+
+673
+00:34:30.450 --> 00:34:33.518
+Evidencia 34 minutos:
+
+674
+00:34:33.563 --> 00:34:38.311
+hay una salida que otro perfil puede revisar sin rehacer el contexto.
+
+675
+00:34:38.356 --> 00:34:44.304
+Situacion 34 minutos: alguien tendra que mantener esta salida despues de la demo.
+
+676
+00:34:44.349 --> 00:34:49.673
+Evidencia 34 minutos: "Prueba de regresion" no se cierra sin test
+
+677
+00:34:49.718 --> 00:34:52.522
+captura o criterio escrito.
+
+678
+00:34:52.567 --> 00:34:55.443
+Codex 34 minutos:
+
+679
+00:34:55.488 --> 00:34:58.364
+Codex 34 minutos:
+
+680
+00:34:53.900 --> 00:34:59.920
+Simular salida verde y una salida roja alternativa para explicar rescate para "Prueba de
+
+681
+00:34:57.284 --> 00:34:59.920
+para "Prueba de regresion".
+
+682
+00:34:53.924 --> 00:34:59.920
+regresion". (Codex, 34 minutos, paso 9)
+
+683
+00:35:00.450 --> 00:35:05.318
+Pantalla de accion: El fallo no es una derrota, es informacion cara.
+
+684
+00:35:05.363 --> 00:35:08.335
+Situacion 35 minutos:
+
+685
+00:35:08.380 --> 00:35:13.272
+Codex recibe "Cuando el test falla" y debe convertirlo en trabajo revisable.
+
+686
+00:35:13.317 --> 00:35:18.209
+Codex recibe "Cuando el test falla" y debe convertirlo en trabajo revisable.
+
+687
+00:35:18.254 --> 00:35:21.154
+Evidencia 35 minutos:
+
+688
+00:35:21.199 --> 00:35:25.755
+hay una salida que otro perfil puede revisar sin rehacer el contexto.
+
+689
+00:35:25.800 --> 00:35:28.604
+Codex 35 minutos:
+
+690
+00:35:27.116 --> 00:35:29.920
+Codex 35 minutos:
+
+691
+00:35:24.596 --> 00:35:29.920
+Simular respuesta con causa raiz y siguiente cambio unico para "Cuando el test falla"
+
+692
+00:35:27.476 --> 00:35:29.920
+para "Cuando el test falla".
+
+693
+00:35:30.450 --> 00:35:35.510
+Contexto visible: El error tipico es pedir otro patch encima del patch.
+
+694
+00:35:35.555 --> 00:35:38.575
+Eso multiplica coste y confun.
+
+695
+00:35:38.620 --> 00:35:44.520
+Situacion 35 minutos: alguien tendra que mantener esta salida despues de la demo.
+
+696
+00:35:44.565 --> 00:35:49.793
+Evidencia 35 minutos: "Cuando el test falla" no se cierra sin test
+
+697
+00:35:49.838 --> 00:35:52.642
+captura o criterio escrito.
+
+698
+00:35:52.687 --> 00:35:55.611
+Codex 35 minutos:
+
+699
+00:35:55.656 --> 00:35:58.580
+Codex 35 minutos:
+
+700
+00:35:54.356 --> 00:35:59.920
+Simular respuesta con causa raiz y siguiente cambio unico para "Cuando el test falla"
+
+701
+00:35:57.380 --> 00:35:59.920
+para "Cuando el test falla".
+
+702
+00:36:00.450 --> 00:36:06.326
+Situacion 36 minutos: alguien tendra que mantener esta salida despues de la demo.
+
+703
+00:36:06.371 --> 00:36:12.655
+Tension 36 minutos: el agente puede avanzar mas rapido que nuestra capacidad de revisar.
+
+704
+00:36:12.700 --> 00:36:18.432
+Accion 36 minutos: pedir salida pequena, verificable y con owner.
+
+705
+00:36:18.477 --> 00:36:24.977
+Evidencia 36 minutos: "Pausa: que estamos aceptando aqui?" queda ligado a prueba
+
+706
+00:36:25.022 --> 00:36:27.322
+owner y decision.
+
+707
+00:36:23.612 --> 00:36:29.920
+owner y decision. (Codex, 36 minutos, paso 14)
+
+708
+00:36:30.450 --> 00:36:35.750
+Evidencia 36 minutos: diff minimo, test verde y coste registrado.
+
+709
+00:36:35.795 --> 00:36:41.287
+Situacion 36 minutos: el equipo mira "Cuando el test falla" dentro del repo
+
+710
+00:36:41.332 --> 00:36:44.184
+con coste y permiso visibles.
+
+711
+00:36:44.229 --> 00:36:51.041
+con coste y permiso visibles. (Codex, 36 minutos, paso 73)
+
+712
+00:36:51.086 --> 00:36:57.274
+Evidencia 36 minutos: el artefacto muestra que se controlo permiso, alcance y modelo.
+
+713
+00:36:57.188 --> 00:36:59.920
+Codex 36 minutos:
+
+714
+00:36:57.188 --> 00:36:59.920
+Codex 36 minutos:
+
+715
+00:36:54.596 --> 00:36:59.920
+Simular respuesta con causa raiz y siguiente cambio unico para "Cuando el test falla"
+
+716
+00:36:57.476 --> 00:36:59.920
+para "Cuando el test falla".
+
+717
+00:37:00.450 --> 00:37:05.174
+Coste y riesgo: El error tipico es pedir otro patch encima del patch.
+
+718
+00:37:05.219 --> 00:37:08.119
+Eso multiplica coste y confun.
+
+719
+00:37:08.164 --> 00:37:13.992
+Situacion 37 minutos: Codex solo avanza si el siguiente humano entiende el por que.
+
+720
+00:37:14.037 --> 00:37:19.313
+Evidencia 37 minutos: diff minimo, test verde y coste registrado.
+
+721
+00:37:19.358 --> 00:37:22.162
+Codex 37 minutos:
+
+722
+00:37:22.207 --> 00:37:25.011
+Codex 37 minutos:
+
+723
+00:37:24.596 --> 00:37:29.920
+Simular respuesta con causa raiz y siguiente cambio unico para "Cuando el test falla"
+
+724
+00:37:27.476 --> 00:37:29.920
+para "Cuando el test falla".
+
+725
+00:37:30.450 --> 00:37:35.342
+Checkpoint: El rescate correcto pide diagnostico, no velocidad.
+
+726
+00:37:35.387 --> 00:37:38.455
+Situacion 37 minutos:
+
+727
+00:37:38.500 --> 00:37:43.632
+Codex recibe "Cuando el test falla" y debe convertirlo en trabajo revisable.
+
+728
+00:37:43.677 --> 00:37:48.809
+Codex recibe "Cuando el test falla" y debe convertirlo en trabajo revisable.
+
+729
+00:37:48.854 --> 00:37:51.898
+Evidencia 37 minutos:
+
+730
+00:37:51.943 --> 00:37:56.691
+hay una salida que otro perfil puede revisar sin rehacer el contexto.
+
+731
+00:37:56.736 --> 00:37:59.660
+Codex 37 minutos:
+
+732
+00:37:56.996 --> 00:37:59.920
+Codex 37 minutos:
+
+733
+00:37:54.356 --> 00:37:59.920
+Simular respuesta con causa raiz y siguiente cambio unico para "Cuando el test falla"
+
+734
+00:37:57.380 --> 00:37:59.920
+para "Cuando el test falla".
+
+735
+00:38:00.450 --> 00:38:05.534
+Pantalla de accion: El fallo no es una derrota, es informacion cara.
+
+736
+00:38:05.579 --> 00:38:10.495
+Situacion 38 minutos: la pantalla no busca impresionar;
+
+737
+00:38:10.540 --> 00:38:14.520
+busca cerrar "Cuando el test falla" con evidencia.
+
+738
+00:38:14.565 --> 00:38:18.545
+busca cerrar "Cuando el test falla" con evidencia.
+
+739
+00:38:18.590 --> 00:38:23.722
+Evidencia 38 minutos: "Cuando el test falla" no se cierra sin test
+
+740
+00:38:23.767 --> 00:38:26.571
+captura o criterio escrito.
+
+741
+00:38:26.616 --> 00:38:29.516
+Codex 38 minutos:
+
+742
+00:38:27.020 --> 00:38:29.920
+Codex 38 minutos:
+
+743
+00:38:24.356 --> 00:38:29.920
+Simular respuesta con causa raiz y siguiente cambio unico para "Cuando el test falla"
+
+744
+00:38:27.380 --> 00:38:29.920
+para "Cuando el test falla".
+
+745
+00:38:30.450 --> 00:38:35.294
+Contexto visible: El error tipico es pedir otro patch encima del patch.
+
+746
+00:38:35.339 --> 00:38:38.239
+Eso multiplica coste y confun.
+
+747
+00:38:38.284 --> 00:38:41.208
+Situacion 38 minutos:
+
+748
+00:38:41.253 --> 00:38:46.145
+Codex recibe "Cuando el test falla" y debe convertirlo en trabajo revisable.
+
+749
+00:38:46.190 --> 00:38:51.082
+Codex recibe "Cuando el test falla" y debe convertirlo en trabajo revisable.
+
+750
+00:38:51.127 --> 00:38:54.003
+Evidencia 38 minutos:
+
+751
+00:38:54.048 --> 00:38:58.604
+hay una salida que otro perfil puede revisar sin rehacer el contexto.
+
+752
+00:38:57.140 --> 00:38:59.920
+Codex 38 minutos:
+
+753
+00:38:57.140 --> 00:38:59.920
+Codex 38 minutos:
+
+754
+00:38:54.596 --> 00:38:59.920
+Simular respuesta con causa raiz y siguiente cambio unico para "Cuando el test falla"
+
+755
+00:38:57.476 --> 00:38:59.920
+para "Cuando el test falla".
+
+756
+00:39:00.450 --> 00:39:05.702
+Decision humana: El rescate correcto pide diagnostico, no velocidad.
+
+757
+00:39:05.747 --> 00:39:11.575
+Situacion 39 minutos: el equipo mira "Cuando el test falla" dentro del repo
+
+758
+00:39:11.620 --> 00:39:14.592
+con coste y permiso visibles.
+
+759
+00:39:14.637 --> 00:39:21.785
+con coste y permiso visibles. (Codex, 39 minutos, paso 74)
+
+760
+00:39:21.830 --> 00:39:28.306
+Evidencia 39 minutos: el artefacto muestra que se controlo permiso, alcance y modelo.
+
+761
+00:39:27.044 --> 00:39:29.920
+Codex 39 minutos:
+
+762
+00:39:27.044 --> 00:39:29.920
+Codex 39 minutos:
+
+763
+00:39:24.356 --> 00:39:29.920
+Simular respuesta con causa raiz y siguiente cambio unico para "Cuando el test falla"
+
+764
+00:39:27.380 --> 00:39:29.920
+para "Cuando el test falla".
+
+765
+00:39:30.450 --> 00:39:33.518
+Evidencia 39 minutos:
+
+766
+00:39:33.563 --> 00:39:38.311
+hay una salida que otro perfil puede revisar sin rehacer el contexto.
+
+767
+00:39:38.356 --> 00:39:44.208
+Situacion 39 minutos: alguien tendra que mantener esta salida despues de la demo.
+
+768
+00:39:44.253 --> 00:39:49.433
+Evidencia 39 minutos: "Cuando el test falla" no se cierra sin test
+
+769
+00:39:49.478 --> 00:39:52.282
+captura o criterio escrito.
+
+770
+00:39:52.327 --> 00:39:55.203
+Codex 39 minutos:
+
+771
+00:39:55.248 --> 00:39:58.124
+Codex 39 minutos:
+
+772
+00:39:54.356 --> 00:39:59.920
+Simular respuesta con causa raiz y siguiente cambio unico para "Cuando el test falla"
+
+773
+00:39:57.380 --> 00:39:59.920
+para "Cuando el test falla".
+
+774
+00:40:00.450 --> 00:40:06.206
+Situacion 40 minutos: Codex solo avanza si el siguiente humano entiende el por que.
+
+775
+00:40:06.251 --> 00:40:12.391
+Tension 40 minutos: aceptar rapido puede esconder permiso, alcance y modelo.
+
+776
+00:40:12.436 --> 00:40:16.560
+Accion 40 minutos: parar si "Captura mental:
+
+777
+00:40:16.605 --> 00:40:20.849
+Codex terminal y cloud task" no produce evidencia nueva.
+
+778
+00:40:20.894 --> 00:40:25.138
+Codex terminal y cloud task" no produce evidencia nueva.
+
+779
+00:40:23.684 --> 00:40:29.920
+Evidencia 40 minutos: el artefacto muestra que se controlo permiso, alcance y modelo.
+
+780
+00:40:30.450 --> 00:40:36.398
+Contexto visible: No queremos una bendicion generica. Queremos findings
+
+781
+00:40:36.443 --> 00:40:39.223
+riesgos y una recomendacion.
+
+782
+00:40:39.268 --> 00:40:44.616
+Situacion 40 minutos: alguien tendra que mantener esta salida despues de la demo.
+
+783
+00:40:44.661 --> 00:40:49.433
+Evidencia 40 minutos: "Checklist de review" no se cierra sin test
+
+784
+00:40:49.478 --> 00:40:52.162
+captura o criterio escrito.
+
+785
+00:40:52.207 --> 00:40:57.027
+Codex 40 minutos: Mostrar findings: ninguno bloqueante
+
+786
+00:40:52.604 --> 00:40:59.920
+una mejora de naming opcional para "Checklist de review". (Codex, 40 minutos, paso 1)
+
+787
+00:41:00.450 --> 00:41:05.462
+Decision humana: El reviewer tambien debe decir que ha comprobado y que no.
+
+788
+00:41:05.507 --> 00:41:11.431
+Situacion 41 minutos: Codex solo avanza si el siguiente humano entiende el por que.
+
+789
+00:41:11.476 --> 00:41:16.968
+Evidencia 41 minutos: diff minimo, test verde y coste registrado.
+
+790
+00:41:17.013 --> 00:41:22.193
+Codex 41 minutos: Mostrar findings: ninguno bloqueante
+
+791
+00:41:22.076 --> 00:41:29.920
+una mejora de naming opcional para "Checklist de review". (Codex, 41 minutos, paso 2)
+
+792
+00:41:30.450 --> 00:41:35.942
+Evidencia 41 minutos: diff minimo, test verde y coste registrado.
+
+793
+00:41:35.987 --> 00:41:38.575
+pero con una rubrica c.
+
+794
+00:41:38.620 --> 00:41:43.440
+Situacion 41 minutos: la pantalla no busca impresionar;
+
+795
+00:41:43.485 --> 00:41:47.345
+busca cerrar "Checklist de review" con evidencia.
+
+796
+00:41:47.390 --> 00:41:51.250
+busca cerrar "Checklist de review" con evidencia.
+
+797
+00:41:51.295 --> 00:41:56.427
+Evidencia 41 minutos: "Checklist de review" no se cierra sin test
+
+798
+00:41:56.472 --> 00:41:59.276
+captura o criterio escrito.
+
+799
+00:41:54.740 --> 00:41:59.920
+Codex 41 minutos: Mostrar findings: ninguno bloqueante
+
+800
+00:41:52.052 --> 00:41:59.920
+una mejora de naming opcional para "Checklist de review". (Codex, 41 minutos, paso 3)
+
+801
+00:42:00.450 --> 00:42:06.542
+Coste y riesgo: No queremos una bendicion generica. Queremos findings
+
+802
+00:42:06.587 --> 00:42:09.487
+riesgos y una recomendacion.
+
+803
+00:42:09.532 --> 00:42:15.504
+Situacion 42 minutos: Codex solo avanza si el siguiente humano entiende el por que.
+
+804
+00:42:15.549 --> 00:42:21.065
+Evidencia 42 minutos: diff minimo, test verde y coste registrado.
+
+805
+00:42:21.110 --> 00:42:26.386
+Codex 42 minutos: Mostrar findings: ninguno bloqueante
+
+806
+00:42:21.956 --> 00:42:29.920
+una mejora de naming opcional para "Checklist de review". (Codex, 42 minutos, paso 4)
+
+807
+00:42:30.450 --> 00:42:34.838
+Checkpoint: El reviewer tambien debe decir que ha comprobado y que no.
+
+808
+00:42:34.883 --> 00:42:37.807
+Situacion 42 minutos:
+
+809
+00:42:37.852 --> 00:42:42.744
+Codex recibe "Checklist de review" y debe convertirlo en trabajo revisable.
+
+810
+00:42:42.789 --> 00:42:47.681
+Codex recibe "Checklist de review" y debe convertirlo en trabajo revisable.
+
+811
+00:42:47.726 --> 00:42:50.602
+Evidencia 42 minutos:
+
+812
+00:42:50.647 --> 00:42:55.203
+hay una salida que otro perfil puede revisar sin rehacer el contexto.
+
+813
+00:42:54.884 --> 00:42:59.920
+Codex 42 minutos: Mostrar findings: ninguno bloqueante
+
+814
+00:42:52.364 --> 00:42:59.920
+una mejora de naming opcional para "Checklist de review". (Codex, 42 minutos, paso 5)
+
+815
+00:43:00.450 --> 00:43:06.014
+Accion 43 minutos: parar si "Checklist de review" no produce evidencia nueva.
+
+816
+00:43:06.059 --> 00:43:10.543
+Antes de pull request usamos Codex como reviewer de su propio trabajo
+
+817
+00:43:10.588 --> 00:43:13.080
+pero con una rubrica c.
+
+818
+00:43:13.125 --> 00:43:18.881
+Situacion 43 minutos: Codex solo avanza si el siguiente humano entiende el por que.
+
+819
+00:43:18.926 --> 00:43:24.274
+Evidencia 43 minutos: diff minimo, test verde y coste registrado.
+
+820
+00:43:24.319 --> 00:43:29.451
+Codex 43 minutos: Mostrar findings: ninguno bloqueante
+
+821
+00:43:22.244 --> 00:43:29.920
+una mejora de naming opcional para "Checklist de review". (Codex, 43 minutos, paso 6)
+
+822
+00:43:30.450 --> 00:43:36.398
+Contexto visible: No queremos una bendicion generica. Queremos findings
+
+823
+00:43:36.443 --> 00:43:39.223
+riesgos y una recomendacion.
+
+824
+00:43:39.268 --> 00:43:42.216
+Situacion 43 minutos:
+
+825
+00:43:42.261 --> 00:43:47.153
+Codex recibe "Checklist de review" y debe convertirlo en trabajo revisable.
+
+826
+00:43:47.198 --> 00:43:52.090
+Codex recibe "Checklist de review" y debe convertirlo en trabajo revisable.
+
+827
+00:43:52.135 --> 00:43:55.107
+Evidencia 43 minutos:
+
+828
+00:43:55.152 --> 00:43:59.708
+hay una salida que otro perfil puede revisar sin rehacer el contexto.
+
+829
+00:43:54.788 --> 00:43:59.920
+Codex 43 minutos: Mostrar findings: ninguno bloqueante
+
+830
+00:43:52.196 --> 00:43:59.920
+una mejora de naming opcional para "Checklist de review". (Codex, 43 minutos, paso 7)
+
+831
+00:44:00.450 --> 00:44:05.390
+Situacion 44 minutos: Codex recibe "Captura mental:
+
+832
+00:44:05.435 --> 00:44:10.255
+Codex terminal y cloud task" y debe convertirlo en trabajo revisable.
+
+833
+00:44:10.300 --> 00:44:15.120
+Codex terminal y cloud task" y debe convertirlo en trabajo revisable.
+
+834
+00:44:15.165 --> 00:44:21.905
+Tension 44 minutos: sin evidencia, la IA parece productiva pero no deja confianza.
+
+835
+00:44:21.950 --> 00:44:27.322
+Accion 44 minutos: comparar la respuesta con el criterio de cierre
+
+836
+00:44:27.044 --> 00:44:29.920
+no con la sensacion de velocidad.
+
+837
+00:44:25.796 --> 00:44:29.920
+Evidencia 44 minutos: "Captura mental:
+
+838
+00:44:24.596 --> 00:44:29.920
+Codex terminal y cloud task" no se cierra sin test captura o criterio escrito.
+
+839
+00:44:30.450 --> 00:44:33.566
+Evidencia 44 minutos:
+
+840
+00:44:33.611 --> 00:44:38.359
+hay una salida que otro perfil puede revisar sin rehacer el contexto.
+
+841
+00:44:38.404 --> 00:44:40.992
+pero con una rubrica c.
+
+842
+00:44:41.037 --> 00:44:47.129
+Situacion 44 minutos: Codex solo avanza si el siguiente humano entiende el por que.
+
+843
+00:44:47.174 --> 00:44:52.810
+Evidencia 44 minutos: diff minimo, test verde y coste registrado.
+
+844
+00:44:52.855 --> 00:44:58.251
+Codex 44 minutos: Mostrar findings: ninguno bloqueante
+
+845
+00:44:51.860 --> 00:44:59.920
+una mejora de naming opcional para "Checklist de review". (Codex, 44 minutos, paso 8)
+
+846
+00:45:00.450 --> 00:45:04.838
+Pantalla de accion: En equipos reales no basta con que funcione.
+
+847
+00:45:04.883 --> 00:45:07.927
+Hay que saber cuanto ha costado llegar.
+
+848
+00:45:07.972 --> 00:45:13.416
+Situacion 45 minutos: el equipo mira "Cost ledger" dentro del repo
+
+849
+00:45:13.461 --> 00:45:16.313
+con coste y permiso visibles.
+
+850
+00:45:16.358 --> 00:45:23.434
+con coste y permiso visibles. (Codex, 45 minutos, paso 75)
+
+851
+00:45:23.479 --> 00:45:29.811
+Evidencia 45 minutos: el artefacto muestra que se controlo permiso, alcance y modelo.
+
+852
+00:45:22.148 --> 00:45:29.920
+Completar una fila de coste por cada intervencion de Codex. (Codex, 45 minutos, paso 1)
+
+853
+00:45:30.450 --> 00:45:36.254
+Contexto visible: Registramos modelo, permiso, objetivo y resultado.
+
+854
+00:45:36.299 --> 00:45:41.311
+Situacion 45 minutos: la pantalla no busca impresionar;
+
+855
+00:45:41.356 --> 00:45:44.976
+busca cerrar "Cost ledger" con evidencia.
+
+856
+00:45:45.021 --> 00:45:48.641
+busca cerrar "Cost ledger" con evidencia.
+
+857
+00:45:48.686 --> 00:45:55.330
+Evidencia 45 minutos: "Cost ledger" no se cierra sin test, captura o criterio escrito.
+
+858
+00:45:51.740 --> 00:45:59.920
+Completar una fila de coste por cada intervencion de Codex. (Codex, 45 minutos, paso 2)
+
+859
+00:46:00.450 --> 00:46:05.462
+Decision humana: Con tres sesiones asi ya se puede hablar de patrones
+
+860
+00:46:05.507 --> 00:46:07.975
+no de sensaciones.
+
+861
+00:46:08.020 --> 00:46:11.088
+Situacion 46 minutos:
+
+862
+00:46:11.133 --> 00:46:16.073
+Codex recibe "Cost ledger" y debe convertirlo en trabajo revisable.
+
+863
+00:46:16.118 --> 00:46:22.162
+Evidencia 46 minutos: "Cost ledger" queda ligado a prueba, owner y decision.
+
+864
+00:46:21.716 --> 00:46:29.920
+Completar una fila de coste por cada intervencion de Codex. (Codex, 46 minutos, paso 3)
+
+865
+00:46:30.450 --> 00:46:36.038
+Evidencia 46 minutos: diff minimo, test verde y coste registrado.
+
+866
+00:46:36.083 --> 00:46:39.247
+Hay que saber cuanto ha costado llegar.
+
+867
+00:46:39.292 --> 00:46:44.232
+Situacion 46 minutos: la pantalla no busca impresionar;
+
+868
+00:46:44.277 --> 00:46:47.897
+busca cerrar "Cost ledger" con evidencia.
+
+869
+00:46:47.942 --> 00:46:51.562
+busca cerrar "Cost ledger" con evidencia.
+
+870
+00:46:51.607 --> 00:46:58.203
+Evidencia 46 minutos: "Cost ledger" no se cierra sin test, captura o criterio escrito.
+
+871
+00:46:51.644 --> 00:46:59.920
+Completar una fila de coste por cada intervencion de Codex. (Codex, 46 minutos, paso 4)
+
+872
+00:47:00.450 --> 00:47:05.750
+Coste y riesgo: Registramos modelo, permiso, objetivo y resultado.
+
+873
+00:47:05.930 --> 00:47:11.566
+Situacion 47 minutos: alguien tendra que mantener esta salida despues de la demo.
+
+874
+00:47:11.746 --> 00:47:18.078
+Evidencia 47 minutos: "Cost ledger" no se cierra sin test, captura o criterio escrito.
+
+875
+00:47:18.258 --> 00:47:26.150
+Completar una fila de coste por cada intervencion de Codex. (Codex, 47 minutos, paso 5)
+
+876
+00:47:30.450 --> 00:47:36.542
+Situacion 47 minutos: Codex solo avanza si el siguiente humano entiende el por que.
+
+877
+00:47:36.587 --> 00:47:43.039
+Tension 47 minutos: aceptar rapido puede esconder permiso, alcance y modelo.
+
+878
+00:47:43.084 --> 00:47:47.544
+Accion 47 minutos: parar si "Captura mental:
+
+879
+00:47:47.589 --> 00:47:51.833
+Codex terminal y cloud task" no produce evidencia nueva.
+
+880
+00:47:51.878 --> 00:47:56.122
+Codex terminal y cloud task" no produce evidencia nueva.
+
+881
+00:47:53.324 --> 00:47:59.920
+Evidencia 47 minutos: el artefacto muestra que se controlo permiso, alcance y modelo.
+
+882
+00:48:00.450 --> 00:48:04.838
+Pantalla de accion: En equipos reales no basta con que funcione.
+
+883
+00:48:05.018 --> 00:48:08.062
+Hay que saber cuanto ha costado llegar.
+
+884
+00:48:08.242 --> 00:48:13.878
+Situacion 48 minutos: alguien tendra que mantener esta salida despues de la demo.
+
+885
+00:48:14.058 --> 00:48:20.342
+Evidencia 48 minutos: "Cost ledger" no se cierra sin test, captura o criterio escrito.
+
+886
+00:48:20.522 --> 00:48:28.318
+Completar una fila de coste por cada intervencion de Codex. (Codex, 48 minutos, paso 6)
+
+887
+00:48:30.450 --> 00:48:35.990
+Contexto visible: Registramos modelo, permiso, objetivo y resultado.
+
+888
+00:48:36.170 --> 00:48:41.926
+Situacion 48 minutos: Codex solo avanza si el siguiente humano entiende el por que.
+
+889
+00:48:42.106 --> 00:48:47.406
+Evidencia 48 minutos: diff minimo, test verde y coste registrado.
+
+890
+00:48:47.586 --> 00:48:55.406
+Completar una fila de coste por cada intervencion de Codex. (Codex, 48 minutos, paso 7)
+
+891
+00:49:00.450 --> 00:49:05.462
+Decision humana: Con tres sesiones asi ya se puede hablar de patrones
+
+892
+00:49:05.507 --> 00:49:07.975
+no de sensaciones.
+
+893
+00:49:08.020 --> 00:49:12.984
+Situacion 49 minutos: la pantalla no busca impresionar;
+
+894
+00:49:13.029 --> 00:49:16.649
+busca cerrar "Cost ledger" con evidencia.
+
+895
+00:49:16.694 --> 00:49:20.314
+busca cerrar "Cost ledger" con evidencia.
+
+896
+00:49:20.359 --> 00:49:26.979
+Evidencia 49 minutos: "Cost ledger" no se cierra sin test, captura o criterio escrito.
+
+897
+00:49:21.692 --> 00:49:29.920
+Completar una fila de coste por cada intervencion de Codex. (Codex, 49 minutos, paso 8)
+
+898
+00:49:30.450 --> 00:49:33.542
+Evidencia 49 minutos:
+
+899
+00:49:33.587 --> 00:49:38.335
+hay una salida que otro perfil puede revisar sin rehacer el contexto.
+
+900
+00:49:38.380 --> 00:49:41.544
+Hay que saber cuanto ha costado llegar.
+
+901
+00:49:41.589 --> 00:49:47.657
+Situacion 49 minutos: Codex solo avanza si el siguiente humano entiende el por que.
+
+902
+00:49:47.702 --> 00:49:53.338
+Evidencia 49 minutos: diff minimo, test verde y coste registrado.
+
+903
+00:49:51.668 --> 00:49:59.920
+Completar una fila de coste por cada intervencion de Codex. (Codex, 49 minutos, paso 9)
+
+904
+00:50:00.450 --> 00:50:06.110
+Accion 50 minutos: convertir repo en una decision que se pueda ensenar en tutoria.
+
+905
+00:50:06.155 --> 00:50:11.263
+El pull request es el punto donde la ayuda de Codex se convierte en trabajo de equipo.
+
+906
+00:50:11.308 --> 00:50:16.584
+Situacion 50 minutos: el equipo mira "pull request body" dentro del repo
+
+907
+00:50:16.629 --> 00:50:19.481
+con coste y permiso visibles.
+
+908
+00:50:19.526 --> 00:50:22.258
+Evidencia 50 minutos:
+
+909
+00:50:22.303 --> 00:50:26.859
+hay una salida que otro perfil puede revisar sin rehacer el contexto.
+
+910
+00:50:26.904 --> 00:50:29.492
+Codex 50 minutos:
+
+911
+00:50:25.244 --> 00:50:29.920
+Mostrar descripcion breve con pruebas y riesgos para "pull request body".
+
+912
+00:50:30.450 --> 00:50:35.438
+Contexto visible: Una buena descripcion reduce el coste de revision humana.
+
+913
+00:50:35.618 --> 00:50:40.174
+Situacion 50 minutos: la pantalla no busca impresionar;
+
+914
+00:50:40.354 --> 00:50:44.070
+busca cerrar "pull request body" con evidencia.
+
+915
+00:50:44.250 --> 00:50:50.270
+Evidencia 50 minutos: el artefacto muestra que se controlo permiso, alcance y modelo.
+
+916
+00:50:50.450 --> 00:50:53.038
+Codex 50 minutos:
+
+917
+00:50:53.218 --> 00:50:57.894
+Mostrar descripcion breve con pruebas y riesgos para "pull request body".
+
+918
+00:51:00.450 --> 00:51:05.990
+Decision humana: Codex puede proponer la narrativa, pero el humano firma el criterio.
+
+919
+00:51:06.170 --> 00:51:11.902
+Situacion 51 minutos: Codex solo avanza si el siguiente humano entiende el por que.
+
+920
+00:51:12.082 --> 00:51:17.382
+Evidencia 51 minutos: diff minimo, test verde y coste registrado.
+
+921
+00:51:17.562 --> 00:51:20.342
+Codex 51 minutos:
+
+922
+00:51:20.522 --> 00:51:25.198
+Mostrar descripcion breve con pruebas y riesgos para "pull request body".
+
+923
+00:51:30.450 --> 00:51:35.750
+Evidencia 51 minutos: diff minimo, test verde y coste registrado.
+
+924
+00:51:35.795 --> 00:51:41.239
+Situacion 51 minutos: el equipo mira "pull request body" dentro del repo
+
+925
+00:51:41.284 --> 00:51:44.136
+con coste y permiso visibles.
+
+926
+00:51:44.181 --> 00:51:47.057
+Evidencia 51 minutos:
+
+927
+00:51:47.102 --> 00:51:51.658
+hay una salida que otro perfil puede revisar sin rehacer el contexto.
+
+928
+00:51:51.703 --> 00:51:54.483
+Codex 51 minutos:
+
+929
+00:51:54.528 --> 00:51:59.204
+Mostrar descripcion breve con pruebas y riesgos para "pull request body".
+
+930
+00:52:00.450 --> 00:52:06.710
+Situacion 52 minutos: la pantalla no busca impresionar; busca cerrar "Pausa:
+
+931
+00:52:06.755 --> 00:52:10.423
+que estamos aceptando aqui?" con evidencia.
+
+932
+00:52:10.468 --> 00:52:14.136
+que estamos aceptando aqui?" con evidencia.
+
+933
+00:52:14.181 --> 00:52:20.489
+Tension 52 minutos: el agente puede avanzar mas rapido que nuestra capacidad de revisar.
+
+934
+00:52:20.534 --> 00:52:26.266
+Accion 52 minutos: pedir salida pequena, verificable y con owner.
+
+935
+00:52:23.396 --> 00:52:29.920
+Evidencia 52 minutos: "Pausa: que estamos aceptando aqui?" queda ligado a prueba
+
+936
+00:52:27.620 --> 00:52:29.920
+owner y decision.
+
+937
+00:52:30.450 --> 00:52:35.894
+Checkpoint: Codex puede proponer la narrativa, pero el humano firma el criterio.
+
+938
+00:52:36.074 --> 00:52:39.190
+Situacion 52 minutos:
+
+939
+00:52:39.370 --> 00:52:44.502
+Codex recibe "pull request body" y debe convertirlo en trabajo revisable.
+
+940
+00:52:44.682 --> 00:52:50.966
+Evidencia 52 minutos: "pull request body" queda ligado a prueba, owner y decision.
+
+941
+00:52:51.146 --> 00:52:54.094
+Codex 52 minutos:
+
+942
+00:52:54.274 --> 00:52:59.166
+Mostrar descripcion breve con pruebas y riesgos para "pull request body".
+
+943
+00:53:00.450 --> 00:53:06.470
+Accion 53 minutos: parar si "pull request body" no produce evidencia nueva.
+
+944
+00:53:06.515 --> 00:53:11.863
+El pull request es el punto donde la ayuda de Codex se convierte en trabajo de equipo.
+
+945
+00:53:11.908 --> 00:53:17.880
+Situacion 53 minutos: alguien tendra que mantener esta salida despues de la demo.
+
+946
+00:53:17.925 --> 00:53:23.177
+Evidencia 53 minutos: "pull request body" no se cierra sin test
+
+947
+00:53:23.222 --> 00:53:26.026
+captura o criterio escrito.
+
+948
+00:53:26.071 --> 00:53:29.091
+Codex 53 minutos:
+
+949
+00:53:25.028 --> 00:53:29.920
+Mostrar descripcion breve con pruebas y riesgos para "pull request body".
+
+950
+00:53:30.450 --> 00:53:35.678
+Contexto visible: Una buena descripcion reduce el coste de revision humana.
+
+951
+00:53:35.858 --> 00:53:41.974
+Situacion 53 minutos: Codex solo avanza si el siguiente humano entiende el por que.
+
+952
+00:53:42.154 --> 00:53:47.790
+Evidencia 53 minutos: diff minimo, test verde y coste registrado.
+
+953
+00:53:47.970 --> 00:53:50.990
+Codex 53 minutos:
+
+954
+00:53:51.170 --> 00:53:56.062
+Mostrar descripcion breve con pruebas y riesgos para "pull request body".
+
+955
+00:54:00.450 --> 00:54:05.990
+Decision humana: Codex puede proponer la narrativa, pero el humano firma el criterio.
+
+956
+00:54:06.035 --> 00:54:11.647
+Situacion 54 minutos: el equipo mira "pull request body" dentro del repo
+
+957
+00:54:11.692 --> 00:54:14.544
+con coste y permiso visibles.
+
+958
+00:54:14.589 --> 00:54:17.633
+Evidencia 54 minutos:
+
+959
+00:54:17.678 --> 00:54:22.234
+hay una salida que otro perfil puede revisar sin rehacer el contexto.
+
+960
+00:54:22.279 --> 00:54:25.203
+Codex 54 minutos:
+
+961
+00:54:25.244 --> 00:54:29.920
+Mostrar descripcion breve con pruebas y riesgos para "pull request body".
+
+962
+00:54:30.450 --> 00:54:33.638
+Evidencia 54 minutos:
+
+963
+00:54:33.683 --> 00:54:38.431
+hay una salida que otro perfil puede revisar sin rehacer el contexto.
+
+964
+00:54:38.476 --> 00:54:44.496
+Situacion 54 minutos: alguien tendra que mantener esta salida despues de la demo.
+
+965
+00:54:44.541 --> 00:54:49.889
+Evidencia 54 minutos: "pull request body" no se cierra sin test
+
+966
+00:54:49.934 --> 00:54:52.738
+captura o criterio escrito.
+
+967
+00:54:52.783 --> 00:54:55.851
+Codex 54 minutos:
+
+968
+00:54:55.028 --> 00:54:59.920
+Mostrar descripcion breve con pruebas y riesgos para "pull request body".
+
+969
+00:55:00.450 --> 00:55:04.478
+Pantalla de accion: Terminamos con una pregunta:
+
+970
+00:55:04.523 --> 00:55:08.599
+que parte del flujo puede copiar manana el equipo sin.
+
+971
+00:55:08.644 --> 00:55:14.880
+Situacion 55 minutos: el equipo mira "Cierre de 5 minutos" dentro del repo
+
+972
+00:55:14.925 --> 00:55:17.897
+con coste y permiso visibles.
+
+973
+00:55:17.942 --> 00:55:25.306
+con coste y permiso visibles. (Codex, 55 minutos, paso 76)
+
+974
+00:55:23.252 --> 00:55:29.920
+Evidencia 55 minutos: el artefacto muestra que se controlo permiso, alcance y modelo.
+
+975
+00:55:24.380 --> 00:55:29.920
+Compartir guion prompts solucion y checklist de pull request. (Codex
+
+976
+00:55:26.708 --> 00:55:29.920
+55 minutos paso 1)
+
+977
+00:55:30.450 --> 00:55:35.102
+Situacion 55 minutos: el equipo mira "Pausa:
+
+978
+00:55:35.147 --> 00:55:40.375
+que estamos aceptando aqui?" dentro del repo con coste y permiso visibles.
+
+979
+00:55:40.420 --> 00:55:45.648
+que estamos aceptando aqui?" dentro del repo con coste y permiso visibles.
+
+980
+00:55:45.693 --> 00:55:51.809
+Tension 55 minutos: el coste malo suele aparecer cuando nadie define el cierre.
+
+981
+00:55:51.854 --> 00:55:58.114
+Accion 55 minutos: convertir repo en una decision que se pueda ensenar en tutoria.
+
+982
+00:55:52.652 --> 00:55:59.920
+no con la sensacion de velocidad. (Codex, 55 minutos, paso 33)
+
+983
+00:55:53.180 --> 00:55:59.920
+Evidencia 55 minutos: "Pausa: que estamos aceptando aqui?" queda ligado a prueba
+
+984
+00:55:57.620 --> 00:55:59.920
+owner y decision.
+
+985
+00:55:52.652 --> 00:55:59.920
+captura o criterio escrito. (Codex, 55 minutos, paso 44)
+
+986
+00:56:00.450 --> 00:56:06.902
+Decision 56 minutos: cerrar solo cuando diff minimo, test verde y coste registrado.
+
+987
+00:56:06.947 --> 00:56:12.367
+Codex aterriza cuando deja de ser una demo y se convierte en un ritual de trabajo.
+
+988
+00:56:12.412 --> 00:56:15.552
+Situacion 56 minutos:
+
+989
+00:56:15.597 --> 00:56:21.041
+Codex recibe "Cierre de 5 minutos" y debe convertirlo en trabajo revisable.
+
+990
+00:56:21.086 --> 00:56:26.530
+Codex recibe "Cierre de 5 minutos" y debe convertirlo en trabajo revisable.
+
+991
+00:56:26.575 --> 00:56:29.691
+Evidencia 56 minutos:
+
+992
+00:56:25.172 --> 00:56:29.920
+hay una salida que otro perfil puede revisar sin rehacer el contexto.
+
+993
+00:56:24.380 --> 00:56:29.920
+Compartir guion prompts solucion y checklist de pull request. (Codex
+
+994
+00:56:26.708 --> 00:56:29.920
+56 minutos paso 2)
+
+995
+00:56:30.450 --> 00:56:36.086
+Evidencia 56 minutos: diff minimo, test verde y coste registrado.
+
+996
+00:56:36.131 --> 00:56:40.207
+que parte del flujo puede copiar manana el equipo sin.
+
+997
+00:56:40.252 --> 00:56:45.264
+Situacion 56 minutos: la pantalla no busca impresionar;
+
+998
+00:56:45.309 --> 00:56:49.529
+busca cerrar "Cierre de 5 minutos" con evidencia.
+
+999
+00:56:49.574 --> 00:56:53.794
+busca cerrar "Cierre de 5 minutos" con evidencia.
+
+1000
+00:56:53.839 --> 00:56:59.379
+Evidencia 56 minutos: "Cierre de 5 minutos" no se cierra sin test
+
+1001
+00:56:57.116 --> 00:56:59.920
+captura o criterio escrito.
+
+1002
+00:56:54.380 --> 00:56:59.920
+Compartir guion prompts solucion y checklist de pull request. (Codex
+
+1003
+00:56:56.732 --> 00:56:59.920
+56 minutos paso 3)
+
+1004
+00:57:00.450 --> 00:57:05.126
+Coste y riesgo: Si la respuesta es solo el codigo hemos fallado.
+
+1005
+00:57:05.306 --> 00:57:08.206
+Si la respuesta incluye briefing,.
+
+1006
+00:57:08.386 --> 00:57:14.550
+Situacion 57 minutos: Codex solo avanza si el siguiente humano entiende el por que.
+
+1007
+00:57:14.730 --> 00:57:20.366
+Evidencia 57 minutos: diff minimo, test verde y coste registrado.
+
+1008
+00:57:20.546 --> 00:57:26.086
+Compartir guion prompts solucion y checklist de pull request. (Codex
+
+1009
+00:57:26.266 --> 00:57:29.574
+57 minutos paso 4)
+
+1010
+00:57:30.450 --> 00:57:32.174
+Checkpoint:
+
+1011
+00:57:32.219 --> 00:57:37.423
+Codex aterriza cuando deja de ser una demo y se convierte en un ritual de trabajo.
+
+1012
+00:57:37.468 --> 00:57:43.392
+Situacion 57 minutos: el equipo mira "Cierre de 5 minutos" dentro del repo
+
+1013
+00:57:43.437 --> 00:57:46.289
+con coste y permiso visibles.
+
+1014
+00:57:46.334 --> 00:57:53.362
+con coste y permiso visibles. (Codex, 57 minutos, paso 77)
+
+1015
+00:57:53.407 --> 00:57:59.739
+Evidencia 57 minutos: el artefacto muestra que se controlo permiso, alcance y modelo.
+
+1016
+00:57:54.620 --> 00:57:59.920
+Compartir guion prompts solucion y checklist de pull request. (Codex
+
+1017
+00:57:56.756 --> 00:57:59.920
+57 minutos paso 5)
+
+1018
+00:58:00.450 --> 00:58:04.478
+Pantalla de accion: Terminamos con una pregunta:
+
+1019
+00:58:04.523 --> 00:58:08.599
+que parte del flujo puede copiar manana el equipo sin.
+
+1020
+00:58:08.644 --> 00:58:14.664
+Situacion 58 minutos: alguien tendra que mantener esta salida despues de la demo.
+
+1021
+00:58:14.709 --> 00:58:20.249
+Evidencia 58 minutos: "Cierre de 5 minutos" no se cierra sin test
+
+1022
+00:58:20.294 --> 00:58:23.098
+captura o criterio escrito.
+
+1023
+00:58:23.143 --> 00:58:28.683
+Compartir guion prompts solucion y checklist de pull request. (Codex
+
+1024
+00:58:26.660 --> 00:58:29.920
+58 minutos paso 6)
+
+1025
+00:58:30.450 --> 00:58:35.078
+Contexto visible: Si la respuesta es solo el codigo hemos fallado.
+
+1026
+00:58:35.123 --> 00:58:37.903
+Si la respuesta incluye briefing,.
+
+1027
+00:58:37.948 --> 00:58:40.968
+Situacion 58 minutos:
+
+1028
+00:58:41.013 --> 00:58:46.217
+Codex recibe "Cierre de 5 minutos" y debe convertirlo en trabajo revisable.
+
+1029
+00:58:46.262 --> 00:58:51.466
+Codex recibe "Cierre de 5 minutos" y debe convertirlo en trabajo revisable.
+
+1030
+00:58:51.511 --> 00:58:54.507
+Evidencia 58 minutos:
+
+1031
+00:58:54.552 --> 00:58:59.108
+hay una salida que otro perfil puede revisar sin rehacer el contexto.
+
+1032
+00:58:54.620 --> 00:58:59.920
+Compartir guion prompts solucion y checklist de pull request. (Codex
+
+1033
+00:58:56.780 --> 00:58:59.920
+58 minutos paso 7)
+
+1034
+00:59:00.450 --> 00:59:06.734
+Decision 59 minutos: seguir, pedir contexto, escalar modelo o bloquear.
+
+1035
+00:59:06.779 --> 00:59:11.983
+Codex aterriza cuando deja de ser una demo y se convierte en un ritual de trabajo.
+
+1036
+00:59:12.028 --> 00:59:16.872
+Situacion 59 minutos: la pantalla no busca impresionar;
+
+1037
+00:59:16.917 --> 00:59:20.945
+busca cerrar "Cierre de 5 minutos" con evidencia.
+
+1038
+00:59:20.990 --> 00:59:25.018
+busca cerrar "Cierre de 5 minutos" con evidencia.
+
+1039
+00:59:24.596 --> 00:59:29.920
+Evidencia 59 minutos: "Cierre de 5 minutos" no se cierra sin test
+
+1040
+00:59:27.236 --> 00:59:29.920
+captura o criterio escrito.
+
+1041
+00:59:24.620 --> 00:59:29.920
+Compartir guion prompts solucion y checklist de pull request. (Codex
+
+1042
+00:59:26.756 --> 00:59:29.920
+59 minutos paso 8)
+
+1043
+00:59:30.450 --> 00:59:33.590
+Evidencia 59 minutos:
+
+1044
+00:59:33.635 --> 00:59:38.383
+hay una salida que otro perfil puede revisar sin rehacer el contexto.
+
+1045
+00:59:38.428 --> 00:59:42.504
+que parte del flujo puede copiar manana el equipo sin.
+
+1046
+00:59:42.549 --> 00:59:48.689
+Situacion 59 minutos: Codex solo avanza si el siguiente humano entiende el por que.
+
+1047
+00:59:48.734 --> 00:59:54.370
+Evidencia 59 minutos: diff minimo, test verde y coste registrado.
+
+1048
+00:59:54.380 --> 00:59:59.920
+Compartir guion prompts solucion y checklist de pull request. (Codex
+
+1049
+00:59:56.708 --> 00:59:59.920
+59 minutos paso 9)
+

@@ -1,0 +1,64 @@
+1
+00:00:00,450 --> 00:00:07,478
+Objetivo de esta clase: resolver Claude Basic 01 - CLAUDE.md Real con criterio practico.
+
+2
+00:00:07,658 --> 00:00:12,574
+Al final debes poder quedarte con una regla de uso y un ejemplo repetible.
+
+3
+00:00:12,754 --> 00:00:16,782
+La ruta sera: concepto, ejemplo y cierre.
+
+4
+00:00:16,962 --> 00:00:19,982
+Durante el video mira esta decision:
+
+5
+00:00:20,162 --> 00:00:23,902
+cuando aplicar esta tecnica en tu propio repositorio.
+
+6
+00:00:30,450 --> 00:00:33,878
+La memoria sirve para bajar incertidumbre.
+
+7
+00:00:34,058 --> 00:00:38,278
+Si la regla no se puede comprobar, probablemente sobra.
+
+8
+00:00:38,458 --> 00:00:42,606
+La mejor memoria cabe en una pantalla y se mantiene viva.
+
+9
+00:01:00,450 --> 00:01:05,102
+Cuando el repo sabe explicarse, el equipo avanza mas rapido.
+
+10
+00:01:05,147 --> 00:01:10,639
+Evidencia minuto 1: el artefacto muestra que se controlo contexto infinito
+
+11
+00:01:10,684 --> 00:01:14,064
+permisos y automatizacion sin rollback.
+
+12
+00:01:14,109 --> 00:01:20,705
+permisos y automatizacion sin rollback. (Claude, minuto 1, paso 1)
+
+13
+00:01:20,750 --> 00:01:27,034
+Accion minuto 1: pedir salida pequena verificable y con owner. (Claude
+
+14
+00:01:27,079 --> 00:01:29,571
+minuto 1 paso 2)
+
+15
+00:01:23,996 --> 00:01:29,920
+skill o M C P en una decision que se pueda ensenar en tutoria. (Claude
+
+16
+00:01:27,476 --> 00:01:29,920
+minuto 1 paso 1)
+

@@ -1,261 +1,3540 @@
 {
   "id": "cp-masterclass-10m-copilot-workbench",
-  "title": "Copilot Masterclass 10m - Workbench",
-  "description": "Video largo inicial para explicar GitHub Copilot como banco de trabajo: VS Code, Ask/Edit/Agent, instrucciones, PRs, premium requests y practica guiada.",
+  "title": "Copilot Masterclass 10 minutos - Workbench",
+  "description": "Masterclass intensiva para explicar Copilot como mesa de trabajo en Visual Studio Code: inline, Ask, Edit, Agent, instrucciones, prompt files, revision de pull request y premium requests.",
   "template": "technical",
   "durationPreset": 10,
   "durationMs": 600000,
   "voice": "es-ES-AlvaroNeural",
   "author": "AI Practice Hub",
-  "createdAt": "2026-05-08T00:00:00.000Z",
+  "createdAt": "2026-05-15",
   "chapters": [
-    { "id": "start", "label": "Por que Copilot", "startMs": 0 },
-    { "id": "modes", "label": "Ask Edit Agent", "startMs": 90000 },
-    { "id": "instructions", "label": "Instrucciones", "startMs": 230000 },
-    { "id": "governance", "label": "PR y coste", "startMs": 390000 },
-    { "id": "close", "label": "Workshops", "startMs": 530000 }
+    {
+      "id": "start",
+      "label": "Aterrizaje",
+      "startMs": 0
+    },
+    {
+      "id": "surface",
+      "label": "Superficies",
+      "startMs": 100000
+    },
+    {
+      "id": "method",
+      "label": "Metodo",
+      "startMs": 225000
+    },
+    {
+      "id": "governance",
+      "label": "Coste y permisos",
+      "startMs": 350000
+    },
+    {
+      "id": "activation",
+      "label": "Activacion",
+      "startMs": 500000
+    }
   ],
   "scenes": [
     {
-      "id": "title",
-      "name": "Apertura",
+      "id": "01-copilot-como-mesa-de-trabajo",
+      "name": "Copilot como mesa de trabajo",
       "startMs": 0,
-      "endMs": 30000,
+      "endMs": 25000,
       "type": "title",
       "content": {
-        "title": "Copilot como banco de trabajo",
-        "subtitle": "Diez minutos para pasar de autocomplete a practica de equipo.",
-        "tag": "GitHub Copilot / Masterclass inicial"
+        "title": "Workbench",
+        "subtitle": "Objetivo: entender el sistema operativo de Copilot en 10 minutos.",
+        "tag": "GitHub Copilot / Masterclass",
+        "narrativeContract": {
+          "objective": "entender el sistema operativo de Copilot en 10 minutos.",
+          "outcome": "saber cuando usarlo, cuando no usarlo y que evidencia pedir.",
+          "route": "Aterrizaje, Superficies, Metodo y cierre operativo.",
+          "decision": "si la herramienta encaja con el trabajo real del equipo."
+        }
       },
       "subtitles": [
-        { "text": "Copilot no es solo sugerencia gris en el editor.", "startMs": 2000, "endMs": 9000 },
-        { "text": "Es una familia de modos para preguntar, editar, delegar y revisar.", "startMs": 10000, "endMs": 21000 },
-        { "text": "El curso ensena a elegir el modo correcto.", "startMs": 22000, "endMs": 29000 }
-      ]
+        {
+          "text": "Objetivo de esta clase: entender el sistema operativo de Copilot en 10 minutos.",
+          "startMs": 450,
+          "endMs": 5942
+        },
+        {
+          "text": "Al final debes poder saber cuando usarlo, cuando no usarlo y que evidencia pedir.",
+          "startMs": 6122,
+          "endMs": 11398
+        },
+        {
+          "text": "La ruta sera: Aterrizaje, Superficies, Metodo y cierre operativo.",
+          "startMs": 11578,
+          "endMs": 17070
+        },
+        {
+          "text": "Durante el video mira esta decision:",
+          "startMs": 17250,
+          "endMs": 20222
+        },
+        {
+          "text": "si la herramienta encaja con el trabajo real del equipo.",
+          "startMs": 20402,
+          "endMs": 24310
+        }
+      ],
+      "voiceover": [
+        "Objetivo de esta clase: entender el sistema operativo de Copilot en 10 minutos.",
+        "Al final debes poder saber cuando usarlo, cuando no usarlo y que evidencia pedir.",
+        "La ruta sera: Aterrizaje, Superficies, Metodo y cierre operativo.",
+        "Durante el video mira esta decision:",
+        "si la herramienta encaja con el trabajo real del equipo."
+      ],
+      "screen": {
+        "mode": "title",
+        "title": "Copilot como mesa de trabajo",
+        "visual": "copilot-title"
+      },
+      "blueprintAction": {
+        "learningRubric": {
+          "learns": "Reconoce por que \"Workbench\" necesita evidencia y no solo respuesta.",
+          "does": "Formula una peticion verificable con limite de alcance.",
+          "decides": "Convertir la duda en material de tutoria si se repite.",
+          "vendor": "copilot",
+          "usefulnessScore": 82,
+          "memoryCheck": "Puede nombrar el riesgo principal sin mirar la slide.",
+          "productionPass": "2000-final-direction"
+        }
+      },
+      "production": {
+        "audioVersion": "audio-prod-v2-2026-05-18",
+        "voiceProfileId": "copilotNarrator",
+        "voice": "es-ES-AlvaroNeural",
+        "rate": "+7%",
+        "pitch": "+0Hz",
+        "energy": "practica",
+        "emphasis": "modo, contexto y PR",
+        "pauseMs": 180,
+        "role": "narrator",
+        "reviewRubric": {
+          "learns": "Reconoce por que \"Workbench\" necesita evidencia y no solo respuesta.",
+          "does": "Formula una peticion verificable con limite de alcance.",
+          "decides": "Convertir la duda en material de tutoria si se repite.",
+          "memoryCheck": "Puede nombrar el riesgo principal sin mirar la slide."
+        },
+        "prosodyNotes": {
+          "pace": "+7%",
+          "pause": "180ms antes de la decision",
+          "emphasis": "modo, contexto y pull request",
+          "energy": "practica"
+        },
+        "pronunciationPass": "spain-voice-units-v1"
+      }
     },
     {
-      "id": "concept-workbench",
-      "name": "Banco de trabajo",
-      "startMs": 30000,
-      "endMs": 90000,
+      "id": "02-superficies-en-vs-code",
+      "name": "Superficies en Visual Studio Code",
+      "startMs": 25000,
+      "endMs": 50000,
       "type": "concept",
       "content": {
-        "tag": "Mentalidad",
-        "title": "Copilot amplifica el flujo del IDE",
-        "body": "La primera adopcion suele quedarse en aceptar completions. La adopcion madura usa chat, inline edit, agent mode, custom instructions, prompt files y PRs como partes de un mismo flujo de trabajo.",
-        "highlight": "Cada modo tiene un coste cognitivo y un riesgo distinto.",
+        "tag": "GitHub Copilot / Masterclass",
+        "title": "Superficies en Visual Studio Code",
+        "body": "Inline sugiere, Ask explica, Edit cambia, Agent coordina y revision de pull request revisa. La idea clave: convertir una pantalla de herramienta en un criterio repetible de trabajo. La persona no memoriza botones; aprende a decidir superficie, modelo, permiso, evidencia y cierre.",
+        "highlight": "No avanzar sin evidencia visible: copilot-instructions.md, diff, test, coste u owner.",
         "points": [
-          "Completion: velocidad local, supervision linea a linea.",
-          "Ask: explicacion y diagnostico sin tocar codigo.",
-          "Edit: cambios acotados sobre archivos concretos.",
-          "Agent: delegacion con plan, herramientas y revision humana."
+          "Superficie: Visual Studio Code, GitHub, revision de pull request y Copilot Chat.",
+          "Modelo: modelo rapido de Copilot Chat.",
+          "Artefacto: copilot-instructions.md.",
+          "Validacion: pnpm test -- total.spec.ts."
         ]
       },
       "subtitles": [
-        { "text": "La clave no es usar mas Copilot.", "startMs": 35000, "endMs": 44000 },
-        { "text": "La clave es usar el modo que corresponde a la tarea.", "startMs": 45000, "endMs": 59000 },
-        { "text": "Eso evita aceptar codigo sin criterio.", "startMs": 60000, "endMs": 73000 }
-      ]
+        {
+          "text": "Copilot: Superficies en Visual Studio Code.",
+          "startMs": 25450,
+          "endMs": 29118
+        },
+        {
+          "text": "Inline sugiere Ask explica Edit cambia",
+          "startMs": 29163,
+          "endMs": 32567
+        },
+        {
+          "text": "Agent coordina y revision de pull request revisa.",
+          "startMs": 32612,
+          "endMs": 36352
+        },
+        {
+          "text": "Modelo minuto 0: elegir por riesgo En Copilot",
+          "startMs": 36397,
+          "endMs": 40305
+        },
+        {
+          "text": "valida \"Superficies en Visual Studio Code\" antes de iterar.",
+          "startMs": 40350,
+          "endMs": 44666
+        },
+        {
+          "text": "contexto y coste antes de pedir otra iteracion. En Copilot",
+          "startMs": 44711,
+          "endMs": 49819
+        },
+        {
+          "text": "valida \"Superficies en Visual Studio Code\" antes de iterar.",
+          "startMs": 45604,
+          "endMs": 49920
+        },
+        {
+          "text": "Decision minuto 0: cerrar solo cuando patch local, test y comentario de pull request.",
+          "startMs": 43948,
+          "endMs": 49920
+        }
+      ],
+      "voiceover": [
+        "Copilot: Superficies en Visual Studio Code.",
+        "Inline sugiere Ask explica Edit cambia",
+        "Agent coordina y revision de pull request revisa.",
+        "Modelo minuto 0: elegir por riesgo En Copilot",
+        "valida \"Superficies en Visual Studio Code\" antes de iterar.",
+        "contexto y coste antes de pedir otra iteracion. En Copilot",
+        "valida \"Superficies en Visual Studio Code\" antes de iterar.",
+        "Decision minuto 0: cerrar solo cuando patch local, test y comentario de pull request."
+      ],
+      "screen": {
+        "mode": "concept",
+        "title": "Superficies en Visual Studio Code",
+        "visual": "copilot-concept"
+      },
+      "blueprintAction": {
+        "learningRubric": {
+          "learns": "Distingue decision humana de ejecucion automatizada en Copilot.",
+          "does": "Comprueba la salida contra prueba, owner o captura.",
+          "decides": "Aceptar solo si la evidencia queda visible para otra persona.",
+          "vendor": "copilot",
+          "usefulnessScore": 84,
+          "memoryCheck": "Puede repetir el prompt inicial con criterio de cierre.",
+          "productionPass": "2000-final-direction"
+        }
+      },
+      "production": {
+        "audioVersion": "audio-prod-v2-2026-05-18",
+        "voiceProfileId": "copilotNarrator",
+        "voice": "es-ES-AlvaroNeural",
+        "rate": "+7%",
+        "pitch": "+0Hz",
+        "energy": "practica",
+        "emphasis": "modo, contexto y PR",
+        "pauseMs": 180,
+        "role": "narrator",
+        "reviewRubric": {
+          "learns": "Distingue decision humana de ejecucion automatizada en Copilot.",
+          "does": "Comprueba la salida contra prueba, owner o captura.",
+          "decides": "Aceptar solo si la evidencia queda visible para otra persona.",
+          "memoryCheck": "Puede repetir el prompt inicial con criterio de cierre."
+        },
+        "prosodyNotes": {
+          "pace": "+7%",
+          "pause": "180ms antes de la decision",
+          "emphasis": "modo, contexto y pull request",
+          "energy": "practica"
+        },
+        "pronunciationPass": "spain-voice-units-v1"
+      }
     },
     {
-      "id": "compare-modes",
-      "name": "Ask Edit Agent",
-      "startMs": 90000,
-      "endMs": 160000,
+      "id": "03-mal-uso-vs-buen-uso",
+      "name": "Mal uso vs buen uso",
+      "startMs": 50000,
+      "endMs": 75000,
       "type": "compare",
       "content": {
-        "tag": "Decision de modo",
+        "tag": "Copilot / decision",
         "left": {
-          "label": "Uso confuso",
+          "label": "Uso impulsivo",
           "color": "destructive",
           "steps": [
-            { "icon": "AlertTriangle", "text": "Pedir refactors grandes en completion" },
-            { "icon": "MessageSquare", "text": "Usar Agent para dudas simples" },
-            { "icon": "Code", "text": "Aceptar cambios sin leer diff" }
+            {
+              "icon": "MessageSquare",
+              "text": "Pedir resultado sin contexto ni limite."
+            },
+            {
+              "icon": "Code",
+              "text": "Aceptar salida porque parece razonable."
+            },
+            {
+              "icon": "AlertTriangle",
+              "text": "Descubrir tarde el coste o el riesgo."
+            }
           ],
-          "total": "Mas sorpresas y premium requests"
+          "total": "Mas vueltas y menos confianza"
         },
         "right": {
           "label": "Uso profesional",
           "color": "accent",
           "steps": [
-            { "icon": "Search", "text": "Ask para entender" },
-            { "icon": "FileText", "text": "Edit para patch acotado" },
-            { "icon": "Workflow", "text": "Agent para tareas con varios pasos" }
+            {
+              "icon": "Eye",
+              "text": "Elegir superficie y permiso minimo."
+            },
+            {
+              "icon": "FileText",
+              "text": "Pedir plan, evidencia y criterio de cierre."
+            },
+            {
+              "icon": "Check",
+              "text": "Validar con test, review o decision documentada."
+            }
           ],
-          "total": "Mas control y mejor aprendizaje"
+          "total": "Menos ruido y mas transferencia"
         }
       },
       "subtitles": [
-        { "text": "Ask, Edit y Agent no compiten.", "startMs": 96000, "endMs": 106000 },
-        { "text": "Son tres niveles de autonomia.", "startMs": 107000, "endMs": 116000 },
-        { "text": "El curso entrena cuando subir o bajar de nivel.", "startMs": 117000, "endMs": 143000 }
-      ]
+        {
+          "text": "Copilot: Mal uso vs buen uso.",
+          "startMs": 50450,
+          "endMs": 53758
+        },
+        {
+          "text": "Aceptar sugerencias al vuelo no equivale a entregar software.",
+          "startMs": 53803,
+          "endMs": 57903
+        },
+        {
+          "text": "Modelo minuto 0: elegir por riesgo En Copilot",
+          "startMs": 57948,
+          "endMs": 61856
+        },
+        {
+          "text": "valida \"Mal uso vs buen uso\" antes de iterar.",
+          "startMs": 61901,
+          "endMs": 65617
+        },
+        {
+          "text": "contexto y coste antes de pedir otra iteracion. En Copilot",
+          "startMs": 65662,
+          "endMs": 70770
+        },
+        {
+          "text": "valida \"Mal uso vs buen uso\" antes de iterar.",
+          "startMs": 70815,
+          "endMs": 74531
+        },
+        {
+          "text": "Decision minuto 0: seguir, pedir contexto, escalar modelo o bloquear.",
+          "startMs": 68996,
+          "endMs": 74920
+        }
+      ],
+      "voiceover": [
+        "Copilot: Mal uso vs buen uso.",
+        "Aceptar sugerencias al vuelo no equivale a entregar software.",
+        "Modelo minuto 0: elegir por riesgo En Copilot",
+        "valida \"Mal uso vs buen uso\" antes de iterar.",
+        "contexto y coste antes de pedir otra iteracion. En Copilot",
+        "valida \"Mal uso vs buen uso\" antes de iterar.",
+        "Decision minuto 0: seguir, pedir contexto, escalar modelo o bloquear."
+      ],
+      "screen": {
+        "mode": "compare",
+        "title": "Mal uso vs buen uso",
+        "visual": "copilot-compare"
+      },
+      "blueprintAction": {
+        "learningRubric": {
+          "learns": "Ubica coste, permiso y criterio antes de aceptar la salida.",
+          "does": "Registra el criterio que permitiria repetir el paso sin instructor.",
+          "decides": "Seguir, pedir mas contexto, escalar modelo o bloquear.",
+          "vendor": "copilot",
+          "usefulnessScore": 86,
+          "memoryCheck": "Puede explicar el paso en una frase de menos de 20 segundos.",
+          "productionPass": "2000-final-direction"
+        }
+      },
+      "production": {
+        "audioVersion": "audio-prod-v2-2026-05-18",
+        "voiceProfileId": "copilotNarrator",
+        "voice": "es-ES-AlvaroNeural",
+        "rate": "+7%",
+        "pitch": "+0Hz",
+        "energy": "practica",
+        "emphasis": "modo, contexto y PR",
+        "pauseMs": 180,
+        "role": "narrator",
+        "reviewRubric": {
+          "learns": "Ubica coste, permiso y criterio antes de aceptar la salida.",
+          "does": "Registra el criterio que permitiria repetir el paso sin instructor.",
+          "decides": "Seguir, pedir mas contexto, escalar modelo o bloquear.",
+          "memoryCheck": "Puede explicar el paso en una frase de menos de 20 segundos."
+        },
+        "prosodyNotes": {
+          "pace": "+7%",
+          "pause": "180ms antes de la decision",
+          "emphasis": "modo, contexto y pull request",
+          "energy": "practica"
+        },
+        "pronunciationPass": "spain-voice-units-v1"
+      }
     },
     {
-      "id": "linear-first-workshop",
-      "name": "Primer workshop",
-      "startMs": 160000,
-      "endMs": 225000,
+      "id": "04-issue-pequeno",
+      "name": "Issue pequeno",
+      "startMs": 75000,
+      "endMs": 100000,
       "type": "linear",
       "content": {
-        "ticketId": "CP-100",
-        "title": "Workshop inicial: de error a fix revisable",
-        "project": "Copilot Practice",
+        "ticketId": "CO-103",
+        "title": "Issue pequeno",
+        "project": "Copilot Practice Hub",
         "priority": "High",
         "assignee": "Participante",
-        "status": "Ready",
-        "labels": ["vscode", "ask-edit-agent", "review"],
-        "description": "Partir de un error mockeado, pedir explicacion en Ask, aplicar patch con Edit y cerrar con diff, test y resumen de riesgo."
+        "status": "Ready for practice",
+        "labels": [
+          "ai-practice",
+          "evidence",
+          "cost-aware"
+        ],
+        "description": "Un bug de checkout permite practicar modo, contexto, test y pull request. Entregable: explicar decision de superficie, modelo, permiso, coste y evidencia antes de cerrar la escena."
       },
       "subtitles": [
-        { "text": "El primer workshop evita la demo vacia.", "startMs": 166000, "endMs": 177000 },
-        { "text": "El alumno ve error, hipotesis, patch y evidencia.", "startMs": 178000, "endMs": 197000 },
-        { "text": "Eso se parece mucho mas al trabajo real.", "startMs": 198000, "endMs": 216000 }
-      ]
+        {
+          "text": "Copilot: Issue pequeno.",
+          "startMs": 75450,
+          "endMs": 78110
+        },
+        {
+          "text": "Un bug de checkout permite practicar modo, contexto, test y pull request.",
+          "startMs": 78290,
+          "endMs": 83518
+        },
+        {
+          "text": "Modelo minuto 1: elegir por riesgo, contexto y coste antes de pedir otra iteracion.",
+          "startMs": 83698,
+          "endMs": 89670
+        },
+        {
+          "text": "Decision minuto 1: seguir, pedir contexto, escalar modelo o bloquear.",
+          "startMs": 89850,
+          "endMs": 95606
+        }
+      ],
+      "voiceover": [
+        "Copilot: Issue pequeno.",
+        "Un bug de checkout permite practicar modo, contexto, test y pull request.",
+        "Modelo minuto 1: elegir por riesgo, contexto y coste antes de pedir otra iteracion.",
+        "Decision minuto 1: seguir, pedir contexto, escalar modelo o bloquear."
+      ],
+      "screen": {
+        "mode": "linear",
+        "title": "Issue pequeno",
+        "visual": "copilot-linear"
+      },
+      "blueprintAction": {
+        "learningRubric": {
+          "learns": "Reconoce por que \"Issue pequeno\" necesita evidencia y no solo respuesta.",
+          "does": "Formula una peticion verificable con limite de alcance.",
+          "decides": "Convertir la duda en material de tutoria si se repite.",
+          "vendor": "copilot",
+          "usefulnessScore": 88,
+          "memoryCheck": "Puede nombrar el riesgo principal sin mirar la slide.",
+          "productionPass": "2000-final-direction"
+        }
+      },
+      "production": {
+        "audioVersion": "audio-prod-v2-2026-05-18",
+        "voiceProfileId": "copilotNarrator",
+        "voice": "es-ES-AlvaroNeural",
+        "rate": "+7%",
+        "pitch": "+0Hz",
+        "energy": "practica",
+        "emphasis": "modo, contexto y PR",
+        "pauseMs": 180,
+        "role": "narrator",
+        "reviewRubric": {
+          "learns": "Reconoce por que \"Issue pequeno\" necesita evidencia y no solo respuesta.",
+          "does": "Formula una peticion verificable con limite de alcance.",
+          "decides": "Convertir la duda en material de tutoria si se repite.",
+          "memoryCheck": "Puede nombrar el riesgo principal sin mirar la slide."
+        },
+        "prosodyNotes": {
+          "pace": "+7%",
+          "pause": "180ms antes de la decision",
+          "emphasis": "modo, contexto y pull request",
+          "energy": "practica"
+        },
+        "pronunciationPass": "spain-voice-units-v1"
+      }
     },
     {
-      "id": "thinking-instructions",
-      "name": "Instrucciones",
+      "id": "05-prompt-ask",
+      "name": "Prompt Ask",
+      "startMs": 100000,
+      "endMs": 125000,
+      "type": "prompt",
+      "content": {
+        "mode": "prompt",
+        "vendor": "copilot",
+        "title": "Prompt Ask",
+        "eyebrow": "Copilot Masterclass 10 minutos - Workbench / escena 05",
+        "label": "Preguntar primero donde esta el calculo y que supuesto se rompe.",
+        "presenterCue": "Relacionar Prompt Ask con una decision real del alumno.",
+        "actionLabel": "Mostrar artefacto",
+        "actionDetail": "Preguntar primero donde esta el calculo y que supuesto se rompe.",
+        "prompt": "Actua como Copilot en Visual Studio Code, GitHub, revision de pull request y Copilot Chat. Objetivo: Prompt Ask. Contexto: Preguntar primero donde esta el calculo y que supuesto se rompe.. Antes de editar, devuelve criterio de cierre, riesgo y coste esperado. No avances si falta evidencia verificable.",
+        "response": [
+          "Lectura: Prompt Ask se trata como decision operativa, no como teoria.",
+          "Artefacto: copilot-instructions.md o el prompt asociado documenta la regla estable.",
+          "Evidencia minuto 1: patch local, test y comentario de pull request.",
+          "Siguiente paso: aplicar solo si el humano acepta riesgo y coste."
+        ],
+        "diff": [
+          "diff --git a/copilot-instructions.md b/copilot-instructions.md",
+          "- regla implicita: Prompt Ask",
+          "+ regla explicita: Preguntar primero donde esta el calculo y que supuesto se rompe.",
+          "+ done_when = \"prueba, review, coste y owner visibles\""
+        ],
+        "terminal": [
+          "$ pnpm test -- total.spec.ts",
+          "PASS copilot-instructions.md",
+          "checked: Prompt Ask",
+          "model: modelo rapido de Copilot Chat",
+          "budget: dentro del limite de workshop"
+        ],
+        "review": [
+          {
+            "severity": "note",
+            "text": "Comprobar que Prompt Ask no se queda en recomendacion generica."
+          },
+          {
+            "severity": "medium",
+            "text": "Pedir evidencia: comando, diff, owner o decision documentada."
+          },
+          {
+            "severity": "note",
+            "text": "El instructor valida si el alumno puede repetirlo sin ayuda."
+          }
+        ],
+        "cost": {
+          "model": "modelo rapido de Copilot Chat",
+          "tokens": "bajo/medio por contexto acotado",
+          "permission": "minimo permiso viable para esta escena",
+          "stopRule": "Parar tras dos iteraciones sin evidencia nueva."
+        },
+        "decision": {
+          "question": "Que decision tomas sobre Prompt Ask?",
+          "options": [
+            "seguir",
+            "pedir contexto",
+            "subir modelo",
+            "bloquear y llevar a tutoria"
+          ],
+          "selected": 0
+        },
+        "risk": {
+          "items": [
+            "Coste invisible",
+            "Permisos excesivos",
+            "Contexto flojo",
+            "Salida no verificable",
+            "Owner ausente"
+          ],
+          "level": "medio"
+        },
+        "branch": {
+          "steps": [
+            "Brief",
+            "Contexto",
+            "Plan",
+            "Artefacto",
+            "Validacion",
+            "Review",
+            "Cierre"
+          ],
+          "active": 4
+        },
+        "quiz": {
+          "question": "Que prueba que Prompt Ask esta entendido?",
+          "answers": [
+            "Un prompt mas largo",
+            "Una evidencia repetible",
+            "Una opinion del modelo"
+          ],
+          "correct": 1
+        }
+      },
+      "subtitles": [
+        {
+          "text": "Copilot: Prompt Ask.",
+          "startMs": 100450,
+          "endMs": 102942
+        },
+        {
+          "text": "Preguntar primero donde esta el calculo y que supuesto se rompe.",
+          "startMs": 103122,
+          "endMs": 107438
+        },
+        {
+          "text": "Modelo minuto 1: elegir por riesgo, contexto y coste antes de pedir otra iteracion.",
+          "startMs": 107618,
+          "endMs": 113590
+        },
+        {
+          "text": "Decision minuto 1: si el riesgo supera la evidencia, entra instructor o tech lead.",
+          "startMs": 113770,
+          "endMs": 119358
+        }
+      ],
+      "voiceover": [
+        "Copilot: Prompt Ask.",
+        "Preguntar primero donde esta el calculo y que supuesto se rompe.",
+        "Modelo minuto 1: elegir por riesgo, contexto y coste antes de pedir otra iteracion.",
+        "Decision minuto 1: si el riesgo supera la evidencia, entra instructor o tech lead."
+      ],
+      "screen": {
+        "mode": "prompt",
+        "title": "Prompt Ask",
+        "visual": "copilot-prompt"
+      },
+      "blueprintAction": {
+        "learningRubric": {
+          "learns": "Distingue decision humana de ejecucion automatizada en Copilot.",
+          "does": "Comprueba la salida contra prueba, owner o captura.",
+          "decides": "Aceptar solo si la evidencia queda visible para otra persona.",
+          "vendor": "copilot",
+          "usefulnessScore": 90,
+          "memoryCheck": "Puede repetir el prompt inicial con criterio de cierre.",
+          "productionPass": "2000-final-direction"
+        }
+      },
+      "production": {
+        "audioVersion": "audio-prod-v2-2026-05-18",
+        "voiceProfileId": "copilotNarrator",
+        "voice": "es-ES-AlvaroNeural",
+        "rate": "+7%",
+        "pitch": "+0Hz",
+        "energy": "practica",
+        "emphasis": "modo, contexto y PR",
+        "pauseMs": 180,
+        "role": "narrator",
+        "reviewRubric": {
+          "learns": "Distingue decision humana de ejecucion automatizada en Copilot.",
+          "does": "Comprueba la salida contra prueba, owner o captura.",
+          "decides": "Aceptar solo si la evidencia queda visible para otra persona.",
+          "memoryCheck": "Puede repetir el prompt inicial con criterio de cierre."
+        },
+        "prosodyNotes": {
+          "pace": "+7%",
+          "pause": "180ms antes de la decision",
+          "emphasis": "modo, contexto y pull request",
+          "energy": "practica"
+        },
+        "pronunciationPass": "spain-voice-units-v1"
+      }
+    },
+    {
+      "id": "06-diagnostico",
+      "name": "Diagnostico",
+      "startMs": 125000,
+      "endMs": 150000,
+      "type": "streaming",
+      "content": {
+        "mode": "streaming",
+        "vendor": "copilot",
+        "title": "Diagnostico",
+        "eyebrow": "Copilot Masterclass 10 minutos - Workbench / escena 06",
+        "label": "Copilot debe ubicar ruta, supuesto y test minimo antes de editar.",
+        "presenterCue": "Relacionar Diagnostico con una decision real del alumno.",
+        "actionLabel": "Mostrar artefacto",
+        "actionDetail": "Copilot debe ubicar ruta, supuesto y test minimo antes de editar.",
+        "prompt": "Actua como Copilot en Visual Studio Code, GitHub, revision de pull request y Copilot Chat. Objetivo: Diagnostico. Contexto: Copilot debe ubicar ruta, supuesto y test minimo antes de editar.. Antes de editar, devuelve criterio de cierre, riesgo y coste esperado. No avances si falta evidencia verificable.",
+        "response": [
+          "Lectura: Diagnostico se trata como decision operativa, no como teoria.",
+          "Artefacto: copilot-instructions.md o el prompt asociado documenta la regla estable.",
+          "Evidencia minuto 2: hay una salida que otro perfil puede revisar sin rehacer el contexto.",
+          "Siguiente paso: aplicar solo si el humano acepta riesgo y coste."
+        ],
+        "diff": [
+          "diff --git a/copilot-instructions.md b/copilot-instructions.md",
+          "- regla implicita: Diagnostico",
+          "+ regla explicita: Copilot debe ubicar ruta, supuesto y test minimo antes de editar.",
+          "+ done_when = \"prueba, review, coste y owner visibles\""
+        ],
+        "terminal": [
+          "$ pnpm test -- total.spec.ts",
+          "PASS copilot-instructions.md",
+          "checked: Diagnostico",
+          "model: modelo rapido de Copilot Chat",
+          "budget: dentro del limite de workshop"
+        ],
+        "review": [
+          {
+            "severity": "note",
+            "text": "Comprobar que Diagnostico no se queda en recomendacion generica."
+          },
+          {
+            "severity": "medium",
+            "text": "Pedir evidencia: comando, diff, owner o decision documentada."
+          },
+          {
+            "severity": "note",
+            "text": "El instructor valida si el alumno puede repetirlo sin ayuda."
+          }
+        ],
+        "cost": {
+          "model": "modelo rapido de Copilot Chat",
+          "tokens": "bajo/medio por contexto acotado",
+          "permission": "minimo permiso viable para esta escena",
+          "stopRule": "Parar tras dos iteraciones sin evidencia nueva."
+        },
+        "decision": {
+          "question": "Que decision tomas sobre Diagnostico?",
+          "options": [
+            "seguir",
+            "pedir contexto",
+            "subir modelo",
+            "bloquear y llevar a tutoria"
+          ],
+          "selected": 1
+        },
+        "risk": {
+          "items": [
+            "Coste invisible",
+            "Permisos excesivos",
+            "Contexto flojo",
+            "Salida no verificable",
+            "Owner ausente"
+          ],
+          "level": "alto"
+        },
+        "branch": {
+          "steps": [
+            "Brief",
+            "Contexto",
+            "Plan",
+            "Artefacto",
+            "Validacion",
+            "Review",
+            "Cierre"
+          ],
+          "active": 5
+        },
+        "quiz": {
+          "question": "Que prueba que Diagnostico esta entendido?",
+          "answers": [
+            "Un prompt mas largo",
+            "Una evidencia repetible",
+            "Una opinion del modelo"
+          ],
+          "correct": 1
+        }
+      },
+      "subtitles": [
+        {
+          "text": "Copilot: Diagnostico.",
+          "startMs": 125450,
+          "endMs": 128134
+        },
+        {
+          "text": "Copilot debe ubicar ruta, supuesto y test minimo antes de editar.",
+          "startMs": 128314,
+          "endMs": 133038
+        },
+        {
+          "text": "Modelo minuto 2: elegir por riesgo, contexto y coste antes de pedir otra iteracion.",
+          "startMs": 133218,
+          "endMs": 139238
+        },
+        {
+          "text": "Decision minuto 2: guardar la duda como material reutilizable si se repite.",
+          "startMs": 139418,
+          "endMs": 144718
+        }
+      ],
+      "voiceover": [
+        "Copilot: Diagnostico.",
+        "Copilot debe ubicar ruta, supuesto y test minimo antes de editar.",
+        "Modelo minuto 2: elegir por riesgo, contexto y coste antes de pedir otra iteracion.",
+        "Decision minuto 2: guardar la duda como material reutilizable si se repite."
+      ],
+      "screen": {
+        "mode": "streaming",
+        "title": "Diagnostico",
+        "visual": "copilot-streaming"
+      },
+      "blueprintAction": {
+        "learningRubric": {
+          "learns": "Ubica coste, permiso y criterio antes de aceptar la salida.",
+          "does": "Registra el criterio que permitiria repetir el paso sin instructor.",
+          "decides": "Seguir, pedir mas contexto, escalar modelo o bloquear.",
+          "vendor": "copilot",
+          "usefulnessScore": 92,
+          "memoryCheck": "Puede explicar el paso en una frase de menos de 20 segundos.",
+          "productionPass": "2000-final-direction"
+        }
+      },
+      "production": {
+        "audioVersion": "audio-prod-v2-2026-05-18",
+        "voiceProfileId": "copilotNarrator",
+        "voice": "es-ES-AlvaroNeural",
+        "rate": "+7%",
+        "pitch": "+0Hz",
+        "energy": "practica",
+        "emphasis": "modo, contexto y PR",
+        "pauseMs": 180,
+        "role": "narrator",
+        "reviewRubric": {
+          "learns": "Ubica coste, permiso y criterio antes de aceptar la salida.",
+          "does": "Registra el criterio que permitiria repetir el paso sin instructor.",
+          "decides": "Seguir, pedir mas contexto, escalar modelo o bloquear.",
+          "memoryCheck": "Puede explicar el paso en una frase de menos de 20 segundos."
+        },
+        "prosodyNotes": {
+          "pace": "+7%",
+          "pause": "180ms antes de la decision",
+          "emphasis": "modo, contexto y pull request",
+          "energy": "practica"
+        },
+        "pronunciationPass": "spain-voice-units-v1"
+      }
+    },
+    {
+      "id": "07-instrucciones",
+      "name": "Media break / meme",
+      "startMs": 150000,
+      "endMs": 175000,
+      "type": "media-break",
+      "content": {
+        "source": "sprint-cd-media-breaks",
+        "vendor": "copilot",
+        "kind": "meme",
+        "title": "Cuando \"Instrucciones\" se va de las manos",
+        "imageUrl": "/decks/copilot/curso-03/images/meme-agent-costume.svg",
+        "alt": "copilot meme asset",
+        "caption": "Humor util: si te hace sonreir, tambien debe recordarte una regla.",
+        "situation": "Situacion minuto 2: Copilot recibe \"Cuando Instrucciones se va de las manos\" y debe convertirlo en trabajo revisable.",
+        "tension": "Tension minuto 2: mas contexto puede sonar mejor y decidir peor.",
+        "example": "Ejemplo: Patch local, test y comentario de pull request.",
+        "action": "Accion minuto 2: comparar la respuesta con el criterio de cierre, no con la sensacion de velocidad.",
+        "evidence": "Evidencia minuto 2: \"Cuando Instrucciones se va de las manos\" no se cierra sin test, captura o criterio escrito.",
+        "decision": "Decision minuto 2: seguir, pedir contexto, escalar modelo o bloquear.",
+        "rubric": {
+          "learns": "Copilot rinde cuando se elige superficie, no solo prompt.",
+          "does": "Conecta instrucciones, contexto y review.",
+          "decides": "Cuando usar Ask, Edit, Agent o pull request."
+        }
+      },
+      "subtitles": [
+        {
+          "text": "Situacion minuto 2: alguien tendra que mantener esta salida despues de la demo.",
+          "startMs": 150450,
+          "endMs": 155822
+        },
+        {
+          "text": "Tension minuto 2: el agente puede avanzar mas rapido que nuestra capacidad de revisar.",
+          "startMs": 155867,
+          "endMs": 161647
+        },
+        {
+          "text": "Accion minuto 2: pedir salida pequena, verificable y con owner.",
+          "startMs": 161692,
+          "endMs": 166920
+        },
+        {
+          "text": "Evidencia minuto 2:",
+          "startMs": 166965,
+          "endMs": 169481
+        },
+        {
+          "text": "\"Cuando Instrucciones se va de las manos\" queda ligado a prueba",
+          "startMs": 169526,
+          "endMs": 173698
+        },
+        {
+          "text": "owner y decision.",
+          "startMs": 172644,
+          "endMs": 174920
+        },
+        {
+          "text": "\"Cuando Instrucciones se va de las manos\" queda ligado a prueba",
+          "startMs": 170748,
+          "endMs": 174920
+        },
+        {
+          "text": "owner y decision. (Copilot, minuto 2, paso 7)",
+          "startMs": 169260,
+          "endMs": 174920
+        }
+      ],
+      "voiceover": [
+        "Situacion minuto 2: alguien tendra que mantener esta salida despues de la demo.",
+        "Tension minuto 2: el agente puede avanzar mas rapido que nuestra capacidad de revisar.",
+        "Accion minuto 2: pedir salida pequena, verificable y con owner.",
+        "Evidencia minuto 2:",
+        "\"Cuando Instrucciones se va de las manos\" queda ligado a prueba",
+        "owner y decision.",
+        "\"Cuando Instrucciones se va de las manos\" queda ligado a prueba",
+        "owner y decision. (Copilot, minuto 2, paso 7)"
+      ],
+      "screen": {
+        "mode": "media-break",
+        "title": "Cuando \"Instrucciones\" se va de las manos",
+        "visual": "/decks/copilot/curso-03/images/meme-agent-costume.svg"
+      },
+      "blueprintAction": {
+        "learningRubric": {
+          "learns": "Reconoce por que \"Cuando Instrucciones se va de las manos\" necesita evidencia y no solo respuesta.",
+          "does": "Formula una peticion verificable con limite de alcance.",
+          "decides": "Convertir la duda en material de tutoria si se repite.",
+          "vendor": "copilot",
+          "usefulnessScore": 82,
+          "memoryCheck": "Puede nombrar el riesgo principal sin mirar la slide.",
+          "productionPass": "2000-final-direction"
+        }
+      },
+      "production": {
+        "audioVersion": "audio-prod-v2-2026-05-18",
+        "voiceProfileId": "copilotReview",
+        "voice": "es-ES-AlvaroNeural",
+        "rate": "+4%",
+        "pitch": "+0Hz",
+        "energy": "critica",
+        "emphasis": "finding, severidad y prueba",
+        "pauseMs": 240,
+        "role": "reflection",
+        "reviewRubric": {
+          "learns": "Reconoce por que \"Cuando Instrucciones se va de las manos\" necesita evidencia y no solo respuesta.",
+          "does": "Formula una peticion verificable con limite de alcance.",
+          "decides": "Convertir la duda en material de tutoria si se repite.",
+          "memoryCheck": "Puede nombrar el riesgo principal sin mirar la slide."
+        },
+        "prosodyNotes": {
+          "pace": "+4%",
+          "pause": "240ms antes de la decision",
+          "emphasis": "finding, severidad y prueba",
+          "energy": "critica"
+        },
+        "pronunciationPass": "spain-voice-units-v1"
+      }
+    },
+    {
+      "id": "08-edit-localizado",
+      "name": "Edit localizado",
+      "startMs": 175000,
+      "endMs": 200000,
+      "type": "diff",
+      "content": {
+        "mode": "diff",
+        "vendor": "copilot",
+        "title": "Edit localizado",
+        "eyebrow": "Copilot Masterclass 10 minutos - Workbench / escena 08",
+        "label": "Seleccionar contexto reduce ruido y evita cambios multiarchivo innecesarios.",
+        "presenterCue": "Relacionar Edit localizado con una decision real del alumno.",
+        "actionLabel": "Mostrar artefacto",
+        "actionDetail": "Seleccionar contexto reduce ruido y evita cambios multiarchivo innecesarios.",
+        "prompt": "Actua como Copilot en Visual Studio Code, GitHub, revision de pull request y Copilot Chat. Objetivo: Edit localizado. Contexto: Seleccionar contexto reduce ruido y evita cambios multiarchivo innecesarios.. Antes de editar, devuelve criterio de cierre, riesgo y coste esperado. No avances si falta evidencia verificable.",
+        "response": [
+          "Lectura: Edit localizado se trata como decision operativa, no como teoria.",
+          "Artefacto: copilot-instructions.md o el prompt asociado documenta la regla estable.",
+          "Evidencia minuto 2: \"Edit localizado\" queda ligado a prueba, owner y decision.",
+          "Siguiente paso: aplicar solo si el humano acepta riesgo y coste."
+        ],
+        "diff": [
+          "diff --git a/copilot-instructions.md b/copilot-instructions.md",
+          "- regla implicita: Edit localizado",
+          "+ regla explicita: Seleccionar contexto reduce ruido y evita cambios multiarchivo innecesarios.",
+          "+ done_when = \"prueba, review, coste y owner visibles\""
+        ],
+        "terminal": [
+          "$ pnpm test -- total.spec.ts",
+          "PASS copilot-instructions.md",
+          "checked: Edit localizado",
+          "model: modelo rapido de Copilot Chat",
+          "budget: dentro del limite de workshop"
+        ],
+        "review": [
+          {
+            "severity": "high",
+            "text": "Comprobar que Edit localizado no se queda en recomendacion generica."
+          },
+          {
+            "severity": "medium",
+            "text": "Pedir evidencia: comando, diff, owner o decision documentada."
+          },
+          {
+            "severity": "note",
+            "text": "El instructor valida si el alumno puede repetirlo sin ayuda."
+          }
+        ],
+        "cost": {
+          "model": "modelo rapido de Copilot Chat",
+          "tokens": "bajo/medio por contexto acotado",
+          "permission": "minimo permiso viable para esta escena",
+          "stopRule": "Parar tras dos iteraciones sin evidencia nueva."
+        },
+        "decision": {
+          "question": "Que decision tomas sobre Edit localizado?",
+          "options": [
+            "seguir",
+            "pedir contexto",
+            "subir modelo",
+            "bloquear y llevar a tutoria"
+          ],
+          "selected": 0
+        },
+        "risk": {
+          "items": [
+            "Coste invisible",
+            "Permisos excesivos",
+            "Contexto flojo",
+            "Salida no verificable",
+            "Owner ausente"
+          ],
+          "level": "bajo"
+        },
+        "branch": {
+          "steps": [
+            "Brief",
+            "Contexto",
+            "Plan",
+            "Artefacto",
+            "Validacion",
+            "Review",
+            "Cierre"
+          ],
+          "active": 0
+        },
+        "quiz": {
+          "question": "Que prueba que Edit localizado esta entendido?",
+          "answers": [
+            "Un prompt mas largo",
+            "Una evidencia repetible",
+            "Una opinion del modelo"
+          ],
+          "correct": 1
+        }
+      },
+      "subtitles": [
+        {
+          "text": "Copilot: Edit localizado.",
+          "startMs": 175450,
+          "endMs": 178278
+        },
+        {
+          "text": "Seleccionar contexto reduce ruido y evita cambios multiarchivo innecesarios.",
+          "startMs": 178458,
+          "endMs": 183686
+        },
+        {
+          "text": "Modelo minuto 2: elegir por riesgo, contexto y coste antes de pedir otra iteracion.",
+          "startMs": 183866,
+          "endMs": 189886
+        },
+        {
+          "text": "Decision minuto 2: cerrar solo cuando patch local, test y comentario de pull request.",
+          "startMs": 190066,
+          "endMs": 195846
+        }
+      ],
+      "voiceover": [
+        "Copilot: Edit localizado.",
+        "Seleccionar contexto reduce ruido y evita cambios multiarchivo innecesarios.",
+        "Modelo minuto 2: elegir por riesgo, contexto y coste antes de pedir otra iteracion.",
+        "Decision minuto 2: cerrar solo cuando patch local, test y comentario de pull request."
+      ],
+      "screen": {
+        "mode": "diff",
+        "title": "Edit localizado",
+        "visual": "copilot-diff"
+      },
+      "blueprintAction": {
+        "learningRubric": {
+          "learns": "Distingue decision humana de ejecucion automatizada en Copilot.",
+          "does": "Comprueba la salida contra prueba, owner o captura.",
+          "decides": "Aceptar solo si la evidencia queda visible para otra persona.",
+          "vendor": "copilot",
+          "usefulnessScore": 96,
+          "memoryCheck": "Puede repetir el prompt inicial con criterio de cierre.",
+          "productionPass": "2000-final-direction"
+        }
+      },
+      "production": {
+        "audioVersion": "audio-prod-v2-2026-05-18",
+        "voiceProfileId": "copilotNarrator",
+        "voice": "es-ES-AlvaroNeural",
+        "rate": "+7%",
+        "pitch": "+0Hz",
+        "energy": "practica",
+        "emphasis": "modo, contexto y PR",
+        "pauseMs": 180,
+        "role": "narrator",
+        "reviewRubric": {
+          "learns": "Distingue decision humana de ejecucion automatizada en Copilot.",
+          "does": "Comprueba la salida contra prueba, owner o captura.",
+          "decides": "Aceptar solo si la evidencia queda visible para otra persona.",
+          "memoryCheck": "Puede repetir el prompt inicial con criterio de cierre."
+        },
+        "prosodyNotes": {
+          "pace": "+7%",
+          "pause": "180ms antes de la decision",
+          "emphasis": "modo, contexto y pull request",
+          "energy": "practica"
+        },
+        "pronunciationPass": "spain-voice-units-v1"
+      }
+    },
+    {
+      "id": "09-terminal-de-prueba",
+      "name": "Terminal de prueba",
+      "startMs": 200000,
+      "endMs": 225000,
+      "type": "terminal",
+      "content": {
+        "mode": "terminal",
+        "vendor": "copilot",
+        "title": "Terminal de prueba",
+        "eyebrow": "Copilot Masterclass 10 minutos - Workbench / escena 09",
+        "label": "El test demuestra red -> green, no solo cobertura decorativa.",
+        "presenterCue": "Relacionar Terminal de prueba con una decision real del alumno.",
+        "actionLabel": "Mostrar artefacto",
+        "actionDetail": "El test demuestra red -> green, no solo cobertura decorativa.",
+        "prompt": "Actua como Copilot en Visual Studio Code, GitHub, revision de pull request y Copilot Chat. Objetivo: Terminal de prueba. Contexto: El test demuestra red -> green, no solo cobertura decorativa.. Antes de editar, devuelve criterio de cierre, riesgo y coste esperado. No avances si falta evidencia verificable.",
+        "response": [
+          "Lectura: Terminal de prueba se trata como decision operativa, no como teoria.",
+          "Artefacto: copilot-instructions.md o el prompt asociado documenta la regla estable.",
+          "Evidencia minuto 3: el artefacto muestra que se controlo modo equivocado, contexto pobre y review floja.",
+          "Siguiente paso: aplicar solo si el humano acepta riesgo y coste."
+        ],
+        "diff": [
+          "diff --git a/copilot-instructions.md b/copilot-instructions.md",
+          "- regla implicita: Terminal de prueba",
+          "+ regla explicita: El test demuestra red -> green, no solo cobertura decorativa.",
+          "+ done_when = \"prueba, review, coste y owner visibles\""
+        ],
+        "terminal": [
+          "$ pnpm test -- total.spec.ts",
+          "PASS copilot-instructions.md",
+          "checked: Terminal de prueba",
+          "model: modelo rapido de Copilot Chat",
+          "budget: dentro del limite de workshop"
+        ],
+        "review": [
+          {
+            "severity": "note",
+            "text": "Comprobar que Terminal de prueba no se queda en recomendacion generica."
+          },
+          {
+            "severity": "medium",
+            "text": "Pedir evidencia: comando, diff, owner o decision documentada."
+          },
+          {
+            "severity": "note",
+            "text": "El instructor valida si el alumno puede repetirlo sin ayuda."
+          }
+        ],
+        "cost": {
+          "model": "modelo rapido de Copilot Chat",
+          "tokens": "bajo/medio por contexto acotado",
+          "permission": "minimo permiso viable para esta escena",
+          "stopRule": "Parar tras dos iteraciones sin evidencia nueva."
+        },
+        "decision": {
+          "question": "Que decision tomas sobre Terminal de prueba?",
+          "options": [
+            "seguir",
+            "pedir contexto",
+            "subir modelo",
+            "bloquear y llevar a tutoria"
+          ],
+          "selected": 1
+        },
+        "risk": {
+          "items": [
+            "Coste invisible",
+            "Permisos excesivos",
+            "Contexto flojo",
+            "Salida no verificable",
+            "Owner ausente"
+          ],
+          "level": "bajo"
+        },
+        "branch": {
+          "steps": [
+            "Brief",
+            "Contexto",
+            "Plan",
+            "Artefacto",
+            "Validacion",
+            "Review",
+            "Cierre"
+          ],
+          "active": 1
+        },
+        "quiz": {
+          "question": "Que prueba que Terminal de prueba esta entendido?",
+          "answers": [
+            "Un prompt mas largo",
+            "Una evidencia repetible",
+            "Una opinion del modelo"
+          ],
+          "correct": 1
+        }
+      },
+      "subtitles": [
+        {
+          "text": "Copilot: Terminal de prueba.",
+          "startMs": 200450,
+          "endMs": 203374
+        },
+        {
+          "text": "El test demuestra red -> green, no solo cobertura decorativa.",
+          "startMs": 203554,
+          "endMs": 207846
+        },
+        {
+          "text": "Modelo minuto 3: elegir por riesgo, contexto y coste antes de pedir otra iteracion.",
+          "startMs": 208026,
+          "endMs": 214142
+        },
+        {
+          "text": "Decision minuto 3: seguir, pedir contexto, escalar modelo o bloquear.",
+          "startMs": 214322,
+          "endMs": 220198
+        }
+      ],
+      "voiceover": [
+        "Copilot: Terminal de prueba.",
+        "El test demuestra red -> green, no solo cobertura decorativa.",
+        "Modelo minuto 3: elegir por riesgo, contexto y coste antes de pedir otra iteracion.",
+        "Decision minuto 3: seguir, pedir contexto, escalar modelo o bloquear."
+      ],
+      "screen": {
+        "mode": "terminal",
+        "title": "Terminal de prueba",
+        "visual": "copilot-terminal"
+      },
+      "blueprintAction": {
+        "learningRubric": {
+          "learns": "Ubica coste, permiso y criterio antes de aceptar la salida.",
+          "does": "Registra el criterio que permitiria repetir el paso sin instructor.",
+          "decides": "Seguir, pedir mas contexto, escalar modelo o bloquear.",
+          "vendor": "copilot",
+          "usefulnessScore": 98,
+          "memoryCheck": "Puede explicar el paso en una frase de menos de 20 segundos.",
+          "productionPass": "2000-final-direction"
+        }
+      },
+      "production": {
+        "audioVersion": "audio-prod-v2-2026-05-18",
+        "voiceProfileId": "copilotNarrator",
+        "voice": "es-ES-AlvaroNeural",
+        "rate": "+7%",
+        "pitch": "+0Hz",
+        "energy": "practica",
+        "emphasis": "modo, contexto y PR",
+        "pauseMs": 180,
+        "role": "narrator",
+        "reviewRubric": {
+          "learns": "Ubica coste, permiso y criterio antes de aceptar la salida.",
+          "does": "Registra el criterio que permitiria repetir el paso sin instructor.",
+          "decides": "Seguir, pedir mas contexto, escalar modelo o bloquear.",
+          "memoryCheck": "Puede explicar el paso en una frase de menos de 20 segundos."
+        },
+        "prosodyNotes": {
+          "pace": "+7%",
+          "pause": "180ms antes de la decision",
+          "emphasis": "modo, contexto y pull request",
+          "energy": "practica"
+        },
+        "pronunciationPass": "spain-voice-units-v1"
+      }
+    },
+    {
+      "id": "10-elegir-agent",
+      "name": "Elegir Agent",
       "startMs": 225000,
+      "endMs": 250000,
+      "type": "decision",
+      "content": {
+        "mode": "decision",
+        "vendor": "copilot",
+        "title": "Elegir Agent",
+        "eyebrow": "Copilot Masterclass 10 minutos - Workbench / escena 10",
+        "label": "Agent compensa cuando hay varias rutas y una rubrica clara.",
+        "presenterCue": "Relacionar Elegir Agent con una decision real del alumno.",
+        "actionLabel": "Mostrar artefacto",
+        "actionDetail": "Agent compensa cuando hay varias rutas y una rubrica clara.",
+        "prompt": "Actua como Copilot en Visual Studio Code, GitHub, revision de pull request y Copilot Chat. Objetivo: Elegir Agent. Contexto: Agent compensa cuando hay varias rutas y una rubrica clara.. Antes de editar, devuelve criterio de cierre, riesgo y coste esperado. No avances si falta evidencia verificable.",
+        "response": [
+          "Lectura: Elegir Agent se trata como decision operativa, no como teoria.",
+          "Artefacto: copilot-instructions.md o el prompt asociado documenta la regla estable.",
+          "Evidencia minuto 3: patch local, test y comentario de pull request.",
+          "Siguiente paso: aplicar solo si el humano acepta riesgo y coste."
+        ],
+        "diff": [
+          "diff --git a/copilot-instructions.md b/copilot-instructions.md",
+          "- regla implicita: Elegir Agent",
+          "+ regla explicita: Agent compensa cuando hay varias rutas y una rubrica clara.",
+          "+ done_when = \"prueba, review, coste y owner visibles\""
+        ],
+        "terminal": [
+          "$ pnpm test -- total.spec.ts",
+          "PASS copilot-instructions.md",
+          "checked: Elegir Agent",
+          "model: modelo avanzado para Agent o revision de pull request complejo",
+          "budget: dentro del limite de workshop"
+        ],
+        "review": [
+          {
+            "severity": "note",
+            "text": "Comprobar que Elegir Agent no se queda en recomendacion generica."
+          },
+          {
+            "severity": "medium",
+            "text": "Pedir evidencia: comando, diff, owner o decision documentada."
+          },
+          {
+            "severity": "note",
+            "text": "El instructor valida si el alumno puede repetirlo sin ayuda."
+          }
+        ],
+        "cost": {
+          "model": "modelo avanzado para Agent o revision de pull request complejo",
+          "tokens": "alto controlado",
+          "permission": "minimo permiso viable para esta escena",
+          "stopRule": "Parar tras dos iteraciones sin evidencia nueva."
+        },
+        "decision": {
+          "question": "Que decision tomas sobre Elegir Agent?",
+          "options": [
+            "seguir",
+            "pedir contexto",
+            "subir modelo",
+            "bloquear y llevar a tutoria"
+          ],
+          "selected": 2
+        },
+        "risk": {
+          "items": [
+            "Coste invisible",
+            "Permisos excesivos",
+            "Contexto flojo",
+            "Salida no verificable",
+            "Owner ausente"
+          ],
+          "level": "medio"
+        },
+        "branch": {
+          "steps": [
+            "Brief",
+            "Contexto",
+            "Plan",
+            "Artefacto",
+            "Validacion",
+            "Review",
+            "Cierre"
+          ],
+          "active": 2
+        },
+        "quiz": {
+          "question": "Que prueba que Elegir Agent esta entendido?",
+          "answers": [
+            "Un prompt mas largo",
+            "Una evidencia repetible",
+            "Una opinion del modelo"
+          ],
+          "correct": 1
+        }
+      },
+      "subtitles": [
+        {
+          "text": "Copilot: Elegir Agent.",
+          "startMs": 225450,
+          "endMs": 228110
+        },
+        {
+          "text": "Agent compensa cuando hay varias rutas y una rubrica clara.",
+          "startMs": 228290,
+          "endMs": 232606
+        },
+        {
+          "text": "Modelo minuto 3: elegir por riesgo, contexto y coste antes de pedir otra iteracion.",
+          "startMs": 232786,
+          "endMs": 239070
+        },
+        {
+          "text": "Decision minuto 3: si el riesgo supera la evidencia, entra instructor o tech lead.",
+          "startMs": 239250,
+          "endMs": 245126
+        }
+      ],
+      "voiceover": [
+        "Copilot: Elegir Agent.",
+        "Agent compensa cuando hay varias rutas y una rubrica clara.",
+        "Modelo minuto 3: elegir por riesgo, contexto y coste antes de pedir otra iteracion.",
+        "Decision minuto 3: si el riesgo supera la evidencia, entra instructor o tech lead."
+      ],
+      "screen": {
+        "mode": "decision",
+        "title": "Elegir Agent",
+        "visual": "copilot-decision"
+      },
+      "blueprintAction": {
+        "learningRubric": {
+          "learns": "Reconoce por que \"Elegir Agent\" necesita evidencia y no solo respuesta.",
+          "does": "Formula una peticion verificable con limite de alcance.",
+          "decides": "Convertir la duda en material de tutoria si se repite.",
+          "vendor": "copilot",
+          "usefulnessScore": 82,
+          "memoryCheck": "Puede nombrar el riesgo principal sin mirar la slide.",
+          "productionPass": "2000-final-direction"
+        }
+      },
+      "production": {
+        "audioVersion": "audio-prod-v2-2026-05-18",
+        "voiceProfileId": "copilotReview",
+        "voice": "es-ES-AlvaroNeural",
+        "rate": "+4%",
+        "pitch": "+0Hz",
+        "energy": "critica",
+        "emphasis": "finding, severidad y prueba",
+        "pauseMs": 240,
+        "role": "reflection",
+        "reviewRubric": {
+          "learns": "Reconoce por que \"Elegir Agent\" necesita evidencia y no solo respuesta.",
+          "does": "Formula una peticion verificable con limite de alcance.",
+          "decides": "Convertir la duda en material de tutoria si se repite.",
+          "memoryCheck": "Puede nombrar el riesgo principal sin mirar la slide."
+        },
+        "prosodyNotes": {
+          "pace": "+4%",
+          "pause": "240ms antes de la decision",
+          "emphasis": "finding, severidad y prueba",
+          "energy": "critica"
+        },
+        "pronunciationPass": "spain-voice-units-v1"
+      }
+    },
+    {
+      "id": "11-premium-requests",
+      "name": "Media break / meme",
+      "startMs": 250000,
+      "endMs": 275000,
+      "type": "media-break",
+      "content": {
+        "source": "sprint-cd-media-breaks",
+        "vendor": "copilot",
+        "kind": "meme",
+        "title": "Cuando \"Premium requests\" se va de las manos",
+        "imageUrl": "/decks/copilot/curso-03/images/meme-docker-magic.svg",
+        "alt": "copilot meme asset",
+        "caption": "Humor util: si te hace sonreir, tambien debe recordarte una regla.",
+        "situation": "Situacion minuto 4: alguien tendra que mantener esta salida despues de la demo.",
+        "tension": "Tension minuto 4: el agente puede avanzar mas rapido que nuestra capacidad de revisar.",
+        "example": "Ejemplo: mirar permiso, modelo y salida antes de seguir.",
+        "action": "Accion minuto 4: parar si \"Cuando Premium requests se va de las manos\" no produce evidencia nueva.",
+        "evidence": "Evidencia minuto 4: hay una salida que otro perfil puede revisar sin rehacer el contexto.",
+        "decision": "Decision minuto 4: cerrar solo cuando patch local, test y comentario de pull request.",
+        "rubric": {
+          "learns": "Copilot rinde cuando se elige superficie, no solo prompt.",
+          "does": "Conecta instrucciones, contexto y review.",
+          "decides": "Cuando usar Ask, Edit, Agent o pull request."
+        }
+      },
+      "subtitles": [
+        {
+          "text": "Situacion minuto 4:",
+          "startMs": 250450,
+          "endMs": 253110
+        },
+        {
+          "text": "el equipo mira \"Cuando Premium requests se va de las manos\" dentro del workspace de VS",
+          "startMs": 253155,
+          "endMs": 258815
+        },
+        {
+          "text": "Code",
+          "startMs": 258860,
+          "endMs": 260416
+        },
+        {
+          "text": "con coste y permiso visibles.",
+          "startMs": 260461,
+          "endMs": 263409
+        },
+        {
+          "text": "el equipo mira \"Cuando Premium requests se va de las manos\" dentro del workspace de VS",
+          "startMs": 263454,
+          "endMs": 269114
+        },
+        {
+          "text": "Code",
+          "startMs": 269159,
+          "endMs": 270715
+        },
+        {
+          "text": "con coste y permiso visibles. (Copilot, minuto 4, paso 10)",
+          "startMs": 268564,
+          "endMs": 274920
+        },
+        {
+          "text": "Tension minuto 4: aceptar rapido puede esconder modo equivocado",
+          "startMs": 269788,
+          "endMs": 274920
+        },
+        {
+          "text": "contexto pobre y review floja.",
+          "startMs": 271924,
+          "endMs": 274920
+        },
+        {
+          "text": "Accion minuto 4:",
+          "startMs": 272476,
+          "endMs": 274920
+        },
+        {
+          "text": "parar si \"Cuando Premium requests se va de las manos\" no produce evidencia nueva.",
+          "startMs": 269692,
+          "endMs": 274920
+        },
+        {
+          "text": "no con la sensacion de velocidad. (Copilot, minuto 4, paso 16)",
+          "startMs": 268468,
+          "endMs": 274920
+        },
+        {
+          "text": "Evidencia minuto 4: el artefacto muestra que se controlo modo equivocado",
+          "startMs": 269572,
+          "endMs": 274920
+        },
+        {
+          "text": "contexto pobre y review floja.",
+          "startMs": 271924,
+          "endMs": 274920
+        },
+        {
+          "text": "\"Cuando Premium requests se va de las manos\" no se cierra sin test",
+          "startMs": 270532,
+          "endMs": 274920
+        },
+        {
+          "text": "captura o criterio escrito. (Copilot, minuto 4, paso 21)",
+          "startMs": 268660,
+          "endMs": 274920
+        }
+      ],
+      "voiceover": [
+        "Situacion minuto 4:",
+        "el equipo mira \"Cuando Premium requests se va de las manos\" dentro del workspace de VS",
+        "Code",
+        "con coste y permiso visibles.",
+        "el equipo mira \"Cuando Premium requests se va de las manos\" dentro del workspace de VS",
+        "Code",
+        "con coste y permiso visibles. (Copilot, minuto 4, paso 10)",
+        "Tension minuto 4: aceptar rapido puede esconder modo equivocado",
+        "contexto pobre y review floja.",
+        "Accion minuto 4:",
+        "parar si \"Cuando Premium requests se va de las manos\" no produce evidencia nueva.",
+        "no con la sensacion de velocidad. (Copilot, minuto 4, paso 16)",
+        "Evidencia minuto 4: el artefacto muestra que se controlo modo equivocado",
+        "contexto pobre y review floja.",
+        "\"Cuando Premium requests se va de las manos\" no se cierra sin test",
+        "captura o criterio escrito. (Copilot, minuto 4, paso 21)"
+      ],
+      "screen": {
+        "mode": "media-break",
+        "title": "Cuando \"Premium requests\" se va de las manos",
+        "visual": "/decks/copilot/curso-03/images/meme-docker-magic.svg"
+      },
+      "blueprintAction": {
+        "learningRubric": {
+          "learns": "Distingue decision humana de ejecucion automatizada en Copilot.",
+          "does": "Comprueba la salida contra prueba, owner o captura.",
+          "decides": "Aceptar solo si la evidencia queda visible para otra persona.",
+          "vendor": "copilot",
+          "usefulnessScore": 84,
+          "memoryCheck": "Puede repetir el prompt inicial con criterio de cierre.",
+          "productionPass": "2000-final-direction"
+        }
+      },
+      "production": {
+        "audioVersion": "audio-prod-v2-2026-05-18",
+        "voiceProfileId": "copilotReview",
+        "voice": "es-ES-AlvaroNeural",
+        "rate": "+4%",
+        "pitch": "+0Hz",
+        "energy": "critica",
+        "emphasis": "finding, severidad y prueba",
+        "pauseMs": 240,
+        "role": "reflection",
+        "reviewRubric": {
+          "learns": "Distingue decision humana de ejecucion automatizada en Copilot.",
+          "does": "Comprueba la salida contra prueba, owner o captura.",
+          "decides": "Aceptar solo si la evidencia queda visible para otra persona.",
+          "memoryCheck": "Puede repetir el prompt inicial con criterio de cierre."
+        },
+        "prosodyNotes": {
+          "pace": "+4%",
+          "pause": "240ms antes de la decision",
+          "emphasis": "finding, severidad y prueba",
+          "energy": "critica"
+        },
+        "pronunciationPass": "spain-voice-units-v1"
+      }
+    },
+    {
+      "id": "12-permisos-y-contexto",
+      "name": "Permisos y contexto",
+      "startMs": 275000,
       "endMs": 300000,
+      "type": "risk",
+      "content": {
+        "mode": "risk",
+        "vendor": "copilot",
+        "title": "Permisos y contexto",
+        "eyebrow": "Copilot Masterclass 10 minutos - Workbench / escena 12",
+        "label": "Mas contexto no siempre es mejor; contexto irrelevante contamina la respuesta.",
+        "presenterCue": "Relacionar Permisos y contexto con una decision real del alumno.",
+        "actionLabel": "Mostrar artefacto",
+        "actionDetail": "Mas contexto no siempre es mejor; contexto irrelevante contamina la respuesta.",
+        "prompt": "Actua como Copilot en Visual Studio Code, GitHub, revision de pull request y Copilot Chat. Objetivo: Permisos y contexto. Contexto: Mas contexto no siempre es mejor; contexto irrelevante contamina la respuesta.. Antes de editar, devuelve criterio de cierre, riesgo y coste esperado. No avances si falta evidencia verificable.",
+        "response": [
+          "Lectura: Permisos y contexto se trata como decision operativa, no como teoria.",
+          "Artefacto: copilot-instructions.md o el prompt asociado documenta la regla estable.",
+          "Evidencia minuto 4: \"Permisos y contexto\" no se cierra sin test, captura o criterio escrito.",
+          "Siguiente paso: aplicar solo si el humano acepta riesgo y coste."
+        ],
+        "diff": [
+          "diff --git a/copilot-instructions.md b/copilot-instructions.md",
+          "- regla implicita: Permisos y contexto",
+          "+ regla explicita: Mas contexto no siempre es mejor; contexto irrelevante contamina la respuesta.",
+          "+ done_when = \"prueba, review, coste y owner visibles\""
+        ],
+        "terminal": [
+          "$ pnpm test -- total.spec.ts",
+          "PASS copilot-instructions.md",
+          "checked: Permisos y contexto",
+          "model: modelo rapido de Copilot Chat",
+          "budget: dentro del limite de workshop"
+        ],
+        "review": [
+          {
+            "severity": "note",
+            "text": "Comprobar que Permisos y contexto no se queda en recomendacion generica."
+          },
+          {
+            "severity": "medium",
+            "text": "Pedir evidencia: comando, diff, owner o decision documentada."
+          },
+          {
+            "severity": "note",
+            "text": "El instructor valida si el alumno puede repetirlo sin ayuda."
+          }
+        ],
+        "cost": {
+          "model": "modelo rapido de Copilot Chat",
+          "tokens": "bajo/medio por contexto acotado",
+          "permission": "minimo permiso viable para esta escena",
+          "stopRule": "Parar tras dos iteraciones sin evidencia nueva."
+        },
+        "decision": {
+          "question": "Que decision tomas sobre Permisos y contexto?",
+          "options": [
+            "seguir",
+            "pedir contexto",
+            "subir modelo",
+            "bloquear y llevar a tutoria"
+          ],
+          "selected": 0
+        },
+        "risk": {
+          "items": [
+            "Coste invisible",
+            "Permisos excesivos",
+            "Contexto flojo",
+            "Salida no verificable",
+            "Owner ausente"
+          ],
+          "level": "medio"
+        },
+        "branch": {
+          "steps": [
+            "Brief",
+            "Contexto",
+            "Plan",
+            "Artefacto",
+            "Validacion",
+            "Review",
+            "Cierre"
+          ],
+          "active": 4
+        },
+        "quiz": {
+          "question": "Que prueba que Permisos y contexto esta entendido?",
+          "answers": [
+            "Un prompt mas largo",
+            "Una evidencia repetible",
+            "Una opinion del modelo"
+          ],
+          "correct": 1
+        }
+      },
+      "subtitles": [
+        {
+          "text": "Copilot: Permisos y contexto.",
+          "startMs": 275450,
+          "endMs": 278662
+        },
+        {
+          "text": "Mas contexto no siempre es mejor; contexto irrelevante contamina la respuesta.",
+          "startMs": 278842,
+          "endMs": 284358
+        },
+        {
+          "text": "Modelo minuto 4: elegir por riesgo, contexto y coste antes de pedir otra iteracion.",
+          "startMs": 284538,
+          "endMs": 290822
+        },
+        {
+          "text": "Decision minuto 4: si no se puede auditar, vuelve a briefing.",
+          "startMs": 291002,
+          "endMs": 295894
+        }
+      ],
+      "voiceover": [
+        "Copilot: Permisos y contexto.",
+        "Mas contexto no siempre es mejor; contexto irrelevante contamina la respuesta.",
+        "Modelo minuto 4: elegir por riesgo, contexto y coste antes de pedir otra iteracion.",
+        "Decision minuto 4: si no se puede auditar, vuelve a briefing."
+      ],
+      "screen": {
+        "mode": "risk",
+        "title": "Permisos y contexto",
+        "visual": "copilot-risk"
+      },
+      "blueprintAction": {
+        "learningRubric": {
+          "learns": "Ubica coste, permiso y criterio antes de aceptar la salida.",
+          "does": "Registra el criterio que permitiria repetir el paso sin instructor.",
+          "decides": "Seguir, pedir mas contexto, escalar modelo o bloquear.",
+          "vendor": "copilot",
+          "usefulnessScore": 86,
+          "memoryCheck": "Puede explicar el paso en una frase de menos de 20 segundos.",
+          "productionPass": "2000-final-direction"
+        }
+      },
+      "production": {
+        "audioVersion": "audio-prod-v2-2026-05-18",
+        "voiceProfileId": "copilotReview",
+        "voice": "es-ES-AlvaroNeural",
+        "rate": "+4%",
+        "pitch": "+0Hz",
+        "energy": "critica",
+        "emphasis": "finding, severidad y prueba",
+        "pauseMs": 240,
+        "role": "safety",
+        "reviewRubric": {
+          "learns": "Ubica coste, permiso y criterio antes de aceptar la salida.",
+          "does": "Registra el criterio que permitiria repetir el paso sin instructor.",
+          "decides": "Seguir, pedir mas contexto, escalar modelo o bloquear.",
+          "memoryCheck": "Puede explicar el paso en una frase de menos de 20 segundos."
+        },
+        "prosodyNotes": {
+          "pace": "+4%",
+          "pause": "240ms antes de la decision",
+          "emphasis": "finding, severidad y prueba",
+          "energy": "critica"
+        },
+        "pronunciationPass": "spain-voice-units-v1"
+      }
+    },
+    {
+      "id": "13-timeline-de-trabajo",
+      "name": "Timeline de trabajo",
+      "startMs": 300000,
+      "endMs": 325000,
+      "type": "branch",
+      "content": {
+        "mode": "branch",
+        "vendor": "copilot",
+        "title": "Timeline de trabajo",
+        "eyebrow": "Copilot Masterclass 10 minutos - Workbench / escena 13",
+        "label": "Issue, Ask, Edit, Agent, Tests, Review y pull request.",
+        "presenterCue": "Relacionar Timeline de trabajo con una decision real del alumno.",
+        "actionLabel": "Mostrar artefacto",
+        "actionDetail": "Issue, Ask, Edit, Agent, Tests, Review y pull request.",
+        "prompt": "Actua como Copilot en Visual Studio Code, GitHub, revision de pull request y Copilot Chat. Objetivo: Timeline de trabajo. Contexto: Issue, Ask, Edit, Agent, Tests, Review y pull request.. Antes de editar, devuelve criterio de cierre, riesgo y coste esperado. No avances si falta evidencia verificable.",
+        "response": [
+          "Lectura: Timeline de trabajo se trata como decision operativa, no como teoria.",
+          "Artefacto: copilot-instructions.md o el prompt asociado documenta la regla estable.",
+          "Evidencia minuto 5: \"Timeline de trabajo\" queda ligado a prueba, owner y decision.",
+          "Siguiente paso: aplicar solo si el humano acepta riesgo y coste."
+        ],
+        "diff": [
+          "diff --git a/copilot-instructions.md b/copilot-instructions.md",
+          "- regla implicita: Timeline de trabajo",
+          "+ regla explicita: Issue, Ask, Edit, Agent, Tests, Review y pull request.",
+          "+ done_when = \"prueba, review, coste y owner visibles\""
+        ],
+        "terminal": [
+          "$ pnpm test -- total.spec.ts",
+          "PASS copilot-instructions.md",
+          "checked: Timeline de trabajo",
+          "model: modelo avanzado para Agent o revision de pull request complejo",
+          "budget: dentro del limite de workshop"
+        ],
+        "review": [
+          {
+            "severity": "note",
+            "text": "Comprobar que Timeline de trabajo no se queda en recomendacion generica."
+          },
+          {
+            "severity": "medium",
+            "text": "Pedir evidencia: comando, diff, owner o decision documentada."
+          },
+          {
+            "severity": "note",
+            "text": "El instructor valida si el alumno puede repetirlo sin ayuda."
+          }
+        ],
+        "cost": {
+          "model": "modelo avanzado para Agent o revision de pull request complejo",
+          "tokens": "alto controlado",
+          "permission": "minimo permiso viable para esta escena",
+          "stopRule": "Parar tras dos iteraciones sin evidencia nueva."
+        },
+        "decision": {
+          "question": "Que decision tomas sobre Timeline de trabajo?",
+          "options": [
+            "seguir",
+            "pedir contexto",
+            "subir modelo",
+            "bloquear y llevar a tutoria"
+          ],
+          "selected": 1
+        },
+        "risk": {
+          "items": [
+            "Coste invisible",
+            "Permisos excesivos",
+            "Contexto flojo",
+            "Salida no verificable",
+            "Owner ausente"
+          ],
+          "level": "alto"
+        },
+        "branch": {
+          "steps": [
+            "Brief",
+            "Contexto",
+            "Plan",
+            "Artefacto",
+            "Validacion",
+            "Review",
+            "Cierre"
+          ],
+          "active": 5
+        },
+        "quiz": {
+          "question": "Que prueba que Timeline de trabajo esta entendido?",
+          "answers": [
+            "Un prompt mas largo",
+            "Una evidencia repetible",
+            "Una opinion del modelo"
+          ],
+          "correct": 1
+        }
+      },
+      "subtitles": [
+        {
+          "text": "Copilot: Timeline de trabajo.",
+          "startMs": 300450,
+          "endMs": 303374
+        },
+        {
+          "text": "Issue, Ask, Edit, Agent, Tests, Review y pull request.",
+          "startMs": 303419,
+          "endMs": 308647
+        },
+        {
+          "text": "Modelo minuto 5: elegir por riesgo En Copilot",
+          "startMs": 308692,
+          "endMs": 312672
+        },
+        {
+          "text": "valida \"Timeline de trabajo\" antes de iterar.",
+          "startMs": 312717,
+          "endMs": 316169
+        },
+        {
+          "text": "contexto y coste antes de pedir otra iteracion. En Copilot",
+          "startMs": 316214,
+          "endMs": 321322
+        },
+        {
+          "text": "valida \"Timeline de trabajo\" antes de iterar.",
+          "startMs": 321367,
+          "endMs": 324819
+        },
+        {
+          "text": "Decision minuto 5: seguir, pedir contexto, escalar modelo o bloquear.",
+          "startMs": 318996,
+          "endMs": 324920
+        }
+      ],
+      "voiceover": [
+        "Copilot: Timeline de trabajo.",
+        "Issue, Ask, Edit, Agent, Tests, Review y pull request.",
+        "Modelo minuto 5: elegir por riesgo En Copilot",
+        "valida \"Timeline de trabajo\" antes de iterar.",
+        "contexto y coste antes de pedir otra iteracion. En Copilot",
+        "valida \"Timeline de trabajo\" antes de iterar.",
+        "Decision minuto 5: seguir, pedir contexto, escalar modelo o bloquear."
+      ],
+      "screen": {
+        "mode": "branch",
+        "title": "Timeline de trabajo",
+        "visual": "copilot-branch"
+      },
+      "blueprintAction": {
+        "learningRubric": {
+          "learns": "Reconoce por que \"Timeline de trabajo\" necesita evidencia y no solo respuesta.",
+          "does": "Formula una peticion verificable con limite de alcance.",
+          "decides": "Convertir la duda en material de tutoria si se repite.",
+          "vendor": "copilot",
+          "usefulnessScore": 88,
+          "memoryCheck": "Puede nombrar el riesgo principal sin mirar la slide.",
+          "productionPass": "2000-final-direction"
+        }
+      },
+      "production": {
+        "audioVersion": "audio-prod-v2-2026-05-18",
+        "voiceProfileId": "copilotNarrator",
+        "voice": "es-ES-AlvaroNeural",
+        "rate": "+7%",
+        "pitch": "+0Hz",
+        "energy": "practica",
+        "emphasis": "modo, contexto y PR",
+        "pauseMs": 180,
+        "role": "narrator",
+        "reviewRubric": {
+          "learns": "Reconoce por que \"Timeline de trabajo\" necesita evidencia y no solo respuesta.",
+          "does": "Formula una peticion verificable con limite de alcance.",
+          "decides": "Convertir la duda en material de tutoria si se repite.",
+          "memoryCheck": "Puede nombrar el riesgo principal sin mirar la slide."
+        },
+        "prosodyNotes": {
+          "pace": "+7%",
+          "pause": "180ms antes de la decision",
+          "emphasis": "modo, contexto y pull request",
+          "energy": "practica"
+        },
+        "pronunciationPass": "spain-voice-units-v1"
+      }
+    },
+    {
+      "id": "14-checkpoint",
+      "name": "Checkpoint",
+      "startMs": 325000,
+      "endMs": 350000,
+      "type": "quiz",
+      "content": {
+        "mode": "quiz",
+        "vendor": "copilot",
+        "title": "Checkpoint",
+        "eyebrow": "Copilot Masterclass 10 minutos - Workbench / escena 14",
+        "label": "El alumno decide modo segun incertidumbre y riesgo.",
+        "presenterCue": "Relacionar Checkpoint con una decision real del alumno.",
+        "actionLabel": "Mostrar artefacto",
+        "actionDetail": "El alumno decide modo segun incertidumbre y riesgo.",
+        "prompt": "Actua como Copilot en Visual Studio Code, GitHub, revision de pull request y Copilot Chat. Objetivo: Checkpoint. Contexto: El alumno decide modo segun incertidumbre y riesgo.. Antes de editar, devuelve criterio de cierre, riesgo y coste esperado. No avances si falta evidencia verificable.",
+        "response": [
+          "Lectura: Checkpoint se trata como decision operativa, no como teoria.",
+          "Artefacto: copilot-instructions.md o el prompt asociado documenta la regla estable.",
+          "Evidencia minuto 5: el artefacto muestra que se controlo modo equivocado, contexto pobre y review floja.",
+          "Siguiente paso: aplicar solo si el humano acepta riesgo y coste."
+        ],
+        "diff": [
+          "diff --git a/copilot-instructions.md b/copilot-instructions.md",
+          "- regla implicita: Checkpoint",
+          "+ regla explicita: El alumno decide modo segun incertidumbre y riesgo.",
+          "+ done_when = \"prueba, review, coste y owner visibles\""
+        ],
+        "terminal": [
+          "$ pnpm test -- total.spec.ts",
+          "PASS copilot-instructions.md",
+          "checked: Checkpoint",
+          "model: modelo rapido de Copilot Chat",
+          "budget: dentro del limite de workshop"
+        ],
+        "review": [
+          {
+            "severity": "note",
+            "text": "Comprobar que Checkpoint no se queda en recomendacion generica."
+          },
+          {
+            "severity": "medium",
+            "text": "Pedir evidencia: comando, diff, owner o decision documentada."
+          },
+          {
+            "severity": "note",
+            "text": "El instructor valida si el alumno puede repetirlo sin ayuda."
+          }
+        ],
+        "cost": {
+          "model": "modelo rapido de Copilot Chat",
+          "tokens": "bajo/medio por contexto acotado",
+          "permission": "minimo permiso viable para esta escena",
+          "stopRule": "Parar tras dos iteraciones sin evidencia nueva."
+        },
+        "decision": {
+          "question": "Que decision tomas sobre Checkpoint?",
+          "options": [
+            "seguir",
+            "pedir contexto",
+            "subir modelo",
+            "bloquear y llevar a tutoria"
+          ],
+          "selected": 2
+        },
+        "risk": {
+          "items": [
+            "Coste invisible",
+            "Permisos excesivos",
+            "Contexto flojo",
+            "Salida no verificable",
+            "Owner ausente"
+          ],
+          "level": "alto"
+        },
+        "branch": {
+          "steps": [
+            "Brief",
+            "Contexto",
+            "Plan",
+            "Artefacto",
+            "Validacion",
+            "Review",
+            "Cierre"
+          ],
+          "active": 6
+        },
+        "quiz": {
+          "question": "Que prueba que Checkpoint esta entendido?",
+          "answers": [
+            "Un prompt mas largo",
+            "Una evidencia repetible",
+            "Una opinion del modelo"
+          ],
+          "correct": 1
+        }
+      },
+      "subtitles": [
+        {
+          "text": "Copilot: Checkpoint.",
+          "startMs": 325450,
+          "endMs": 327846
+        },
+        {
+          "text": "El alumno decide modo segun incertidumbre y riesgo.",
+          "startMs": 327891,
+          "endMs": 331847
+        },
+        {
+          "text": "Modelo minuto 5: elegir por riesgo En Copilot, valida \"Checkpoint\" antes de iterar.",
+          "startMs": 331892,
+          "endMs": 337888
+        },
+        {
+          "text": "contexto y coste antes de pedir otra iteracion. En Copilot",
+          "startMs": 337933,
+          "endMs": 343161
+        },
+        {
+          "text": "valida \"Checkpoint\" antes de iterar.",
+          "startMs": 343206,
+          "endMs": 346322
+        },
+        {
+          "text": "Decision minuto 5: si el riesgo supera la evidencia, entra instructor o tech lead.",
+          "startMs": 344044,
+          "endMs": 349920
+        }
+      ],
+      "voiceover": [
+        "Copilot: Checkpoint.",
+        "El alumno decide modo segun incertidumbre y riesgo.",
+        "Modelo minuto 5: elegir por riesgo En Copilot, valida \"Checkpoint\" antes de iterar.",
+        "contexto y coste antes de pedir otra iteracion. En Copilot",
+        "valida \"Checkpoint\" antes de iterar.",
+        "Decision minuto 5: si el riesgo supera la evidencia, entra instructor o tech lead."
+      ],
+      "screen": {
+        "mode": "quiz",
+        "title": "Checkpoint",
+        "visual": "copilot-quiz"
+      },
+      "blueprintAction": {
+        "learningRubric": {
+          "learns": "Distingue decision humana de ejecucion automatizada en Copilot.",
+          "does": "Comprueba la salida contra prueba, owner o captura.",
+          "decides": "Aceptar solo si la evidencia queda visible para otra persona.",
+          "vendor": "copilot",
+          "usefulnessScore": 90,
+          "memoryCheck": "Puede repetir el prompt inicial con criterio de cierre.",
+          "productionPass": "2000-final-direction"
+        }
+      },
+      "production": {
+        "audioVersion": "audio-prod-v2-2026-05-18",
+        "voiceProfileId": "copilotReview",
+        "voice": "es-ES-AlvaroNeural",
+        "rate": "+4%",
+        "pitch": "+0Hz",
+        "energy": "critica",
+        "emphasis": "finding, severidad y prueba",
+        "pauseMs": 240,
+        "role": "reflection",
+        "reviewRubric": {
+          "learns": "Distingue decision humana de ejecucion automatizada en Copilot.",
+          "does": "Comprueba la salida contra prueba, owner o captura.",
+          "decides": "Aceptar solo si la evidencia queda visible para otra persona.",
+          "memoryCheck": "Puede repetir el prompt inicial con criterio de cierre."
+        },
+        "prosodyNotes": {
+          "pace": "+4%",
+          "pause": "240ms antes de la decision",
+          "emphasis": "finding, severidad y prueba",
+          "energy": "critica"
+        },
+        "pronunciationPass": "spain-voice-units-v1"
+      }
+    },
+    {
+      "id": "15-pensamiento-copilot",
+      "name": "Pensamiento Copilot",
+      "startMs": 350000,
+      "endMs": 375000,
       "type": "thinking",
       "content": {
-        "tag": "Memoria de equipo",
-        "title": "Que debe saber Copilot antes de responder",
+        "tag": "Copilot / razonamiento operativo",
+        "title": "Pensamiento Copilot",
         "thoughts": [
-          { "ms": 0, "text": "Reglas globales del repo.", "done": true },
-          { "ms": 12000, "text": "Instrucciones por ruta o tecnologia.", "done": true },
-          { "ms": 26000, "text": "Prompt files para tareas repetidas.", "done": true },
-          { "ms": 42000, "text": "Custom agents para roles concretos.", "done": false },
-          { "ms": 60000, "text": "Politica de review y presupuesto.", "done": false }
+          {
+            "ms": 0,
+            "text": "Identificar objetivo real y restriccion principal.",
+            "done": true
+          },
+          {
+            "ms": 5000,
+            "text": "Consultar copilot-instructions.md o regla estable equivalente.",
+            "done": true
+          },
+          {
+            "ms": 10000,
+            "text": "Elegir modelo y permiso por riesgo.",
+            "done": true
+          },
+          {
+            "ms": 15000,
+            "text": "Pedir artefacto verificable, no narrativa.",
+            "done": false
+          },
+          {
+            "ms": 20000,
+            "text": "Cerrar con coste, owner y siguiente accion.",
+            "done": false
+          }
         ]
       },
       "subtitles": [
-        { "text": "Sin instrucciones, Copilot improvisa estilo.", "startMs": 230000, "endMs": 244000 },
-        { "text": "Con instrucciones, el equipo empieza a repetir calidad.", "startMs": 245000, "endMs": 265000 },
-        { "text": "Esta es una de las grandes piezas del curso dos.", "startMs": 266000, "endMs": 288000 }
-      ]
+        {
+          "text": "Copilot: Pensamiento Copilot.",
+          "startMs": 350450,
+          "endMs": 353422
+        },
+        {
+          "text": "Cambiar de modo es madurez, no indecision.",
+          "startMs": 353467,
+          "endMs": 357231
+        },
+        {
+          "text": "Modelo minuto 5: elegir por riesgo En Copilot",
+          "startMs": 357276,
+          "endMs": 361376
+        },
+        {
+          "text": "valida \"Pensamiento Copilot\" antes de iterar.",
+          "startMs": 361421,
+          "endMs": 365041
+        },
+        {
+          "text": "contexto y coste antes de pedir otra iteracion. En Copilot",
+          "startMs": 365086,
+          "endMs": 370314
+        },
+        {
+          "text": "valida \"Pensamiento Copilot\" antes de iterar.",
+          "startMs": 370359,
+          "endMs": 373979
+        },
+        {
+          "text": "Decision minuto 5: guardar la duda como material reutilizable si se repite.",
+          "startMs": 369380,
+          "endMs": 374920
+        }
+      ],
+      "voiceover": [
+        "Copilot: Pensamiento Copilot.",
+        "Cambiar de modo es madurez, no indecision.",
+        "Modelo minuto 5: elegir por riesgo En Copilot",
+        "valida \"Pensamiento Copilot\" antes de iterar.",
+        "contexto y coste antes de pedir otra iteracion. En Copilot",
+        "valida \"Pensamiento Copilot\" antes de iterar.",
+        "Decision minuto 5: guardar la duda como material reutilizable si se repite."
+      ],
+      "screen": {
+        "mode": "thinking",
+        "title": "Pensamiento Copilot",
+        "visual": "copilot-thinking"
+      },
+      "blueprintAction": {
+        "learningRubric": {
+          "learns": "Ubica coste, permiso y criterio antes de aceptar la salida.",
+          "does": "Registra el criterio que permitiria repetir el paso sin instructor.",
+          "decides": "Seguir, pedir mas contexto, escalar modelo o bloquear.",
+          "vendor": "copilot",
+          "usefulnessScore": 92,
+          "memoryCheck": "Puede explicar el paso en una frase de menos de 20 segundos.",
+          "productionPass": "2000-final-direction"
+        }
+      },
+      "production": {
+        "audioVersion": "audio-prod-v2-2026-05-18",
+        "voiceProfileId": "copilotReview",
+        "voice": "es-ES-AlvaroNeural",
+        "rate": "+4%",
+        "pitch": "+0Hz",
+        "energy": "critica",
+        "emphasis": "finding, severidad y prueba",
+        "pauseMs": 240,
+        "role": "reflection",
+        "reviewRubric": {
+          "learns": "Ubica coste, permiso y criterio antes de aceptar la salida.",
+          "does": "Registra el criterio que permitiria repetir el paso sin instructor.",
+          "decides": "Seguir, pedir mas contexto, escalar modelo o bloquear.",
+          "memoryCheck": "Puede explicar el paso en una frase de menos de 20 segundos."
+        },
+        "prosodyNotes": {
+          "pace": "+4%",
+          "pause": "240ms antes de la decision",
+          "emphasis": "finding, severidad y prueba",
+          "energy": "critica"
+        },
+        "pronunciationPass": "spain-voice-units-v1"
+      }
     },
     {
-      "id": "coding-instructions",
-      "name": "Copilot instructions",
-      "startMs": 300000,
-      "endMs": 360000,
-      "type": "coding",
+      "id": "16-pr-review",
+      "name": "Media break / meme",
+      "startMs": 375000,
+      "endMs": 400000,
+      "type": "media-break",
       "content": {
-        "filename": ".github/copilot-instructions.md",
-        "language": "markdown",
-        "code": "# Copilot Instructions\n\n## Estilo\n- Usa TypeScript estricto y componentes pequenos.\n- No cambies APIs publicas sin avisar.\n\n## Workflow\n- Antes de refactorizar, explica alcance y archivos.\n- Para bugs, propone hipotesis y test cercano.\n- Cierra con diff, tests ejecutados y riesgos.\n\n## Seguridad\n- No leas .env ni secretos.\n- No generes codigo que registre datos sensibles."
+        "source": "sprint-cd-media-breaks",
+        "vendor": "copilot",
+        "kind": "meme",
+        "title": "Cuando \"revision de pull request\" se va de las manos",
+        "imageUrl": "/decks/copilot/curso-03/images/meme-instruction-lasagna.svg",
+        "alt": "copilot meme asset",
+        "caption": "Humor util: si te hace sonreir, tambien debe recordarte una regla.",
+        "situation": "Situacion minuto 6: alguien tendra que mantener esta salida despues de la demo.",
+        "tension": "Tension minuto 6: el agente puede avanzar mas rapido que nuestra capacidad de revisar.",
+        "example": "Ejemplo: convertir respuesta en artefacto de equipo.",
+        "action": "Accion minuto 6: parar si \"Cuando revision de pull request se va de las manos\" no produce evidencia nueva.",
+        "evidence": "Evidencia minuto 6: hay una salida que otro perfil puede revisar sin rehacer el contexto.",
+        "decision": "Decision minuto 6: cerrar solo cuando patch local, test y comentario de pull request.",
+        "rubric": {
+          "learns": "Copilot rinde cuando se elige superficie, no solo prompt.",
+          "does": "Conecta instrucciones, contexto y review.",
+          "decides": "Cuando usar Ask, Edit, Agent o pull request."
+        }
       },
       "subtitles": [
-        { "text": "Las instrucciones son el puente entre formacion y practica diaria.", "startMs": 306000, "endMs": 325000 },
-        { "text": "No tienen que ser largas.", "startMs": 326000, "endMs": 334000 },
-        { "text": "Tienen que decidir comportamiento.", "startMs": 335000, "endMs": 350000 }
-      ]
+        {
+          "text": "Situacion minuto 6:",
+          "startMs": 375450,
+          "endMs": 378110
+        },
+        {
+          "text": "el equipo mira \"Cuando revision de pull request se va de las manos\" dentro del workspace",
+          "startMs": 378155,
+          "endMs": 383575
+        },
+        {
+          "text": "de Visual Studio Code",
+          "startMs": 383620,
+          "endMs": 386184
+        },
+        {
+          "text": "con coste y permiso visibles.",
+          "startMs": 386229,
+          "endMs": 389177
+        },
+        {
+          "text": "el equipo mira \"Cuando revision de pull request se va de las manos\" dentro del workspace",
+          "startMs": 389222,
+          "endMs": 394642
+        },
+        {
+          "text": "de Visual Studio Code",
+          "startMs": 394687,
+          "endMs": 397251
+        },
+        {
+          "text": "con coste y permiso visibles. (Copilot, minuto 6, paso 11)",
+          "startMs": 393444,
+          "endMs": 399920
+        },
+        {
+          "text": "Tension minuto 6: el agente puede avanzar mas rapido que nuestra capacidad de revisar.",
+          "startMs": 394068,
+          "endMs": 399920
+        },
+        {
+          "text": "Accion minuto 6: pedir salida pequena, verificable y con owner.",
+          "startMs": 394596,
+          "endMs": 399920
+        },
+        {
+          "text": "no con la sensacion de velocidad. (Copilot, minuto 6, paso 17)",
+          "startMs": 393396,
+          "endMs": 399920
+        },
+        {
+          "text": "Evidencia minuto 6:",
+          "startMs": 397332,
+          "endMs": 399920
+        },
+        {
+          "text": "hay una salida que otro perfil puede revisar sin rehacer el contexto.",
+          "startMs": 395220,
+          "endMs": 399920
+        },
+        {
+          "text": "captura o criterio escrito. (Copilot, minuto 6, paso 22)",
+          "startMs": 393588,
+          "endMs": 399920
+        }
+      ],
+      "voiceover": [
+        "Situacion minuto 6:",
+        "el equipo mira \"Cuando revision de pull request se va de las manos\" dentro del workspace",
+        "de Visual Studio Code",
+        "con coste y permiso visibles.",
+        "el equipo mira \"Cuando revision de pull request se va de las manos\" dentro del workspace",
+        "de Visual Studio Code",
+        "con coste y permiso visibles. (Copilot, minuto 6, paso 11)",
+        "Tension minuto 6: el agente puede avanzar mas rapido que nuestra capacidad de revisar.",
+        "Accion minuto 6: pedir salida pequena, verificable y con owner.",
+        "no con la sensacion de velocidad. (Copilot, minuto 6, paso 17)",
+        "Evidencia minuto 6:",
+        "hay una salida que otro perfil puede revisar sin rehacer el contexto.",
+        "captura o criterio escrito. (Copilot, minuto 6, paso 22)"
+      ],
+      "screen": {
+        "mode": "media-break",
+        "title": "Cuando \"revision de pull request\" se va de las manos",
+        "visual": "/decks/copilot/curso-03/images/meme-instruction-lasagna.svg"
+      },
+      "blueprintAction": {
+        "learningRubric": {
+          "learns": "Reconoce por que \"Cuando revision de pull request se va de las manos\" necesita evidencia y no solo respuesta.",
+          "does": "Formula una peticion verificable con limite de alcance.",
+          "decides": "Convertir la duda en material de tutoria si se repite.",
+          "vendor": "copilot",
+          "usefulnessScore": 86,
+          "memoryCheck": "Puede nombrar el riesgo principal sin mirar la slide.",
+          "productionPass": "2000-final-direction"
+        }
+      },
+      "production": {
+        "audioVersion": "audio-prod-v2-2026-05-18",
+        "voiceProfileId": "copilotReview",
+        "voice": "es-ES-AlvaroNeural",
+        "rate": "+4%",
+        "pitch": "+0Hz",
+        "energy": "critica",
+        "emphasis": "finding, severidad y prueba",
+        "pauseMs": 240,
+        "role": "reflection",
+        "reviewRubric": {
+          "learns": "Reconoce por que \"Cuando revision de pull request se va de las manos\" necesita evidencia y no solo respuesta.",
+          "does": "Formula una peticion verificable con limite de alcance.",
+          "decides": "Convertir la duda en material de tutoria si se repite.",
+          "memoryCheck": "Puede nombrar el riesgo principal sin mirar la slide."
+        },
+        "prosodyNotes": {
+          "pace": "+4%",
+          "pause": "240ms antes de la decision",
+          "emphasis": "finding, severidad y prueba",
+          "energy": "critica"
+        },
+        "pronunciationPass": "spain-voice-units-v1"
+      }
     },
     {
-      "id": "concept-premium",
-      "name": "Coste",
-      "startMs": 360000,
-      "endMs": 430000,
+      "id": "17-pausa-instructor",
+      "name": "Pausa instructor",
+      "startMs": 400000,
+      "endMs": 425000,
+      "type": "pause",
+      "content": {
+        "mode": "pause",
+        "vendor": "copilot",
+        "title": "Pausa instructor",
+        "eyebrow": "Copilot Masterclass 10 minutos - Workbench / escena 17",
+        "label": "Antes de Agent, el grupo verbaliza alcance y stop rule.",
+        "presenterCue": "Relacionar Pausa instructor con una decision real del alumno.",
+        "actionLabel": "Parar y debatir",
+        "actionDetail": "Antes de Agent, el grupo verbaliza alcance y stop rule.",
+        "prompt": "Actua como Copilot en Visual Studio Code, GitHub, revision de pull request y Copilot Chat. Objetivo: Pausa instructor. Contexto: Antes de Agent, el grupo verbaliza alcance y stop rule.. Antes de editar, devuelve criterio de cierre, riesgo y coste esperado. No avances si falta evidencia verificable.",
+        "response": [
+          "Lectura: Pausa instructor se trata como decision operativa, no como teoria.",
+          "Artefacto: copilot-instructions.md o el prompt asociado documenta la regla estable.",
+          "Evidencia minuto 6: \"Pausa instructor\" no se cierra sin test, captura o criterio escrito.",
+          "Siguiente paso: aplicar solo si el humano acepta riesgo y coste."
+        ],
+        "diff": [
+          "diff --git a/copilot-instructions.md b/copilot-instructions.md",
+          "- regla implicita: Pausa instructor",
+          "+ regla explicita: Antes de Agent, el grupo verbaliza alcance y stop rule.",
+          "+ done_when = \"prueba, review, coste y owner visibles\""
+        ],
+        "terminal": [
+          "$ pnpm test -- total.spec.ts",
+          "PASS copilot-instructions.md",
+          "checked: Pausa instructor",
+          "model: modelo rapido de Copilot Chat",
+          "budget: dentro del limite de workshop"
+        ],
+        "review": [
+          {
+            "severity": "note",
+            "text": "Comprobar que Pausa instructor no se queda en recomendacion generica."
+          },
+          {
+            "severity": "medium",
+            "text": "Pedir evidencia: comando, diff, owner o decision documentada."
+          },
+          {
+            "severity": "note",
+            "text": "El instructor valida si el alumno puede repetirlo sin ayuda."
+          }
+        ],
+        "cost": {
+          "model": "modelo rapido de Copilot Chat",
+          "tokens": "bajo/medio por contexto acotado",
+          "permission": "minimo permiso viable para esta escena",
+          "stopRule": "Parar tras dos iteraciones sin evidencia nueva."
+        },
+        "decision": {
+          "question": "Que decision tomas sobre Pausa instructor?",
+          "options": [
+            "seguir",
+            "pedir contexto",
+            "subir modelo",
+            "bloquear y llevar a tutoria"
+          ],
+          "selected": 2
+        },
+        "risk": {
+          "items": [
+            "Coste invisible",
+            "Permisos excesivos",
+            "Contexto flojo",
+            "Salida no verificable",
+            "Owner ausente"
+          ],
+          "level": "medio"
+        },
+        "branch": {
+          "steps": [
+            "Brief",
+            "Contexto",
+            "Plan",
+            "Artefacto",
+            "Validacion",
+            "Review",
+            "Cierre"
+          ],
+          "active": 2
+        },
+        "quiz": {
+          "question": "Que prueba que Pausa instructor esta entendido?",
+          "answers": [
+            "Un prompt mas largo",
+            "Una evidencia repetible",
+            "Una opinion del modelo"
+          ],
+          "correct": 1
+        }
+      },
+      "subtitles": [
+        {
+          "text": "Copilot: Pausa instructor.",
+          "startMs": 400450,
+          "endMs": 403350
+        },
+        {
+          "text": "Antes de Agent, el grupo verbaliza alcance y stop rule.",
+          "startMs": 403530,
+          "endMs": 407798
+        },
+        {
+          "text": "Modelo minuto 6: elegir por riesgo, contexto y coste antes de pedir otra iteracion.",
+          "startMs": 407978,
+          "endMs": 414262
+        },
+        {
+          "text": "Decision minuto 6: si no se puede auditar, vuelve a briefing.",
+          "startMs": 414442,
+          "endMs": 419334
+        }
+      ],
+      "voiceover": [
+        "Copilot: Pausa instructor.",
+        "Antes de Agent, el grupo verbaliza alcance y stop rule.",
+        "Modelo minuto 6: elegir por riesgo, contexto y coste antes de pedir otra iteracion.",
+        "Decision minuto 6: si no se puede auditar, vuelve a briefing."
+      ],
+      "screen": {
+        "mode": "pause",
+        "title": "Pausa instructor",
+        "visual": "copilot-pause"
+      },
+      "blueprintAction": {
+        "learningRubric": {
+          "learns": "Distingue decision humana de ejecucion automatizada en Copilot.",
+          "does": "Comprueba la salida contra prueba, owner o captura.",
+          "decides": "Aceptar solo si la evidencia queda visible para otra persona.",
+          "vendor": "copilot",
+          "usefulnessScore": 96,
+          "memoryCheck": "Puede repetir el prompt inicial con criterio de cierre.",
+          "productionPass": "2000-final-direction"
+        }
+      },
+      "production": {
+        "audioVersion": "audio-prod-v2-2026-05-18",
+        "voiceProfileId": "copilotReview",
+        "voice": "es-ES-AlvaroNeural",
+        "rate": "+4%",
+        "pitch": "+0Hz",
+        "energy": "critica",
+        "emphasis": "finding, severidad y prueba",
+        "pauseMs": 240,
+        "role": "reflection",
+        "reviewRubric": {
+          "learns": "Distingue decision humana de ejecucion automatizada en Copilot.",
+          "does": "Comprueba la salida contra prueba, owner o captura.",
+          "decides": "Aceptar solo si la evidencia queda visible para otra persona.",
+          "memoryCheck": "Puede repetir el prompt inicial con criterio de cierre."
+        },
+        "prosodyNotes": {
+          "pace": "+4%",
+          "pause": "240ms antes de la decision",
+          "emphasis": "finding, severidad y prueba",
+          "energy": "critica"
+        },
+        "pronunciationPass": "spain-voice-units-v1"
+      }
+    },
+    {
+      "id": "18-prompt-files",
+      "name": "Prompt files",
+      "startMs": 425000,
+      "endMs": 450000,
       "type": "concept",
       "content": {
-        "tag": "Premium requests",
-        "title": "Agent mode tambien necesita presupuesto",
-        "body": "Cuando el equipo adopta Agent y cloud agent, el gasto deja de ser anecdotico. Hay que medir premium requests, limitar tareas ambiguas y revisar PRs con criterio humano.",
-        "highlight": "La peor request premium es la que produce un PR que nadie entiende.",
+        "tag": "GitHub Copilot / Masterclass",
+        "title": "Prompt files",
+        "body": "Prompts reutilizables para tareas repetidas y equipos grandes. La idea clave: convertir una pantalla de herramienta en un criterio repetible de trabajo. La persona no memoriza botones; aprende a decidir superficie, modelo, permiso, evidencia y cierre.",
+        "highlight": "No avanzar sin evidencia visible: copilot-instructions.md, diff, test, coste u owner.",
         "points": [
-          "Usar Agent cuando hay varios pasos y evidencia clara.",
-          "No delegar issues sin acceptance criteria.",
-          "Controlar MCP y herramientas conectadas.",
-          "Cerrar con PR revisable y explicacion de cambios."
+          "Superficie: Visual Studio Code, GitHub, revision de pull request y Copilot Chat.",
+          "Modelo: modelo rapido de Copilot Chat.",
+          "Artefacto: copilot-instructions.md.",
+          "Validacion: pnpm test -- total.spec.ts."
         ]
       },
       "subtitles": [
-        { "text": "La conciencia de coste no debe frenar la adopcion.", "startMs": 366000, "endMs": 382000 },
-        { "text": "Debe hacerla sostenible.", "startMs": 383000, "endMs": 392000 },
-        { "text": "Por eso cada reto declara coste y modo recomendado.", "startMs": 393000, "endMs": 416000 }
-      ]
+        {
+          "text": "Copilot: Prompt files.",
+          "startMs": 425450,
+          "endMs": 428062
+        },
+        {
+          "text": "Prompts reutilizables para tareas repetidas y equipos grandes.",
+          "startMs": 428242,
+          "endMs": 432534
+        },
+        {
+          "text": "Modelo minuto 7: elegir por riesgo, contexto y coste antes de pedir otra iteracion.",
+          "startMs": 432714,
+          "endMs": 438806
+        },
+        {
+          "text": "Decision minuto 7: cerrar solo cuando patch local, test y comentario de pull request.",
+          "startMs": 438986,
+          "endMs": 444862
+        }
+      ],
+      "voiceover": [
+        "Copilot: Prompt files.",
+        "Prompts reutilizables para tareas repetidas y equipos grandes.",
+        "Modelo minuto 7: elegir por riesgo, contexto y coste antes de pedir otra iteracion.",
+        "Decision minuto 7: cerrar solo cuando patch local, test y comentario de pull request."
+      ],
+      "screen": {
+        "mode": "concept",
+        "title": "Prompt files",
+        "visual": "copilot-concept"
+      },
+      "blueprintAction": {
+        "learningRubric": {
+          "learns": "Ubica coste, permiso y criterio antes de aceptar la salida.",
+          "does": "Registra el criterio que permitiria repetir el paso sin instructor.",
+          "decides": "Seguir, pedir mas contexto, escalar modelo o bloquear.",
+          "vendor": "copilot",
+          "usefulnessScore": 98,
+          "memoryCheck": "Puede explicar el paso en una frase de menos de 20 segundos.",
+          "productionPass": "2000-final-direction"
+        }
+      },
+      "production": {
+        "audioVersion": "audio-prod-v2-2026-05-18",
+        "voiceProfileId": "copilotNarrator",
+        "voice": "es-ES-AlvaroNeural",
+        "rate": "+7%",
+        "pitch": "+0Hz",
+        "energy": "practica",
+        "emphasis": "modo, contexto y PR",
+        "pauseMs": 180,
+        "role": "narrator",
+        "reviewRubric": {
+          "learns": "Ubica coste, permiso y criterio antes de aceptar la salida.",
+          "does": "Registra el criterio que permitiria repetir el paso sin instructor.",
+          "decides": "Seguir, pedir mas contexto, escalar modelo o bloquear.",
+          "memoryCheck": "Puede explicar el paso en una frase de menos de 20 segundos."
+        },
+        "prosodyNotes": {
+          "pace": "+7%",
+          "pause": "180ms antes de la decision",
+          "emphasis": "modo, contexto y pull request",
+          "energy": "practica"
+        },
+        "pronunciationPass": "spain-voice-units-v1"
+      }
     },
     {
-      "id": "error-agent-runaway",
-      "name": "Agent sin alcance",
-      "startMs": 430000,
+      "id": "19-custom-agents",
+      "name": "Media break / meme",
+      "startMs": 450000,
+      "endMs": 475000,
+      "type": "media-break",
+      "content": {
+        "source": "sprint-cd-media-breaks",
+        "vendor": "copilot",
+        "kind": "meme",
+        "title": "Cuando \"Custom agents\" se va de las manos",
+        "imageUrl": "/decks/copilot/curso-03/images/meme-instructions-wish.svg",
+        "alt": "copilot meme asset",
+        "caption": "Humor util: si te hace sonreir, tambien debe recordarte una regla.",
+        "situation": "Situacion minuto 7: Copilot solo avanza si el siguiente humano entiende el por que.",
+        "tension": "Tension minuto 7: aceptar rapido puede esconder modo equivocado, contexto pobre y review floja.",
+        "example": "Ejemplo: Patch local, test y comentario de pull request.",
+        "action": "Accion minuto 7: nombrar modelo, permiso y limite antes de iterar.",
+        "evidence": "Evidencia minuto 7: el artefacto muestra que se controlo modo equivocado, contexto pobre y review floja.",
+        "decision": "Decision minuto 7: guardar la duda como material reutilizable si se repite.",
+        "rubric": {
+          "learns": "Copilot rinde cuando se elige superficie, no solo prompt.",
+          "does": "Conecta instrucciones, contexto y review.",
+          "decides": "Cuando usar Ask, Edit, Agent o pull request."
+        }
+      },
+      "subtitles": [
+        {
+          "text": "Situacion minuto 7: la pantalla no busca impresionar;",
+          "startMs": 450450,
+          "endMs": 454838
+        },
+        {
+          "text": "busca cerrar \"Cuando Custom agents se va de las manos\" con evidencia.",
+          "startMs": 454883,
+          "endMs": 459703
+        },
+        {
+          "text": "busca cerrar \"Cuando Custom agents se va de las manos\" con evidencia.",
+          "startMs": 459748,
+          "endMs": 464568
+        },
+        {
+          "text": "Tension minuto 7: el agente puede avanzar mas rapido que nuestra capacidad de revisar.",
+          "startMs": 464613,
+          "endMs": 470465
+        },
+        {
+          "text": "Accion minuto 7: pedir salida pequena, verificable y con owner.",
+          "startMs": 469596,
+          "endMs": 474920
+        },
+        {
+          "text": "convertir workspace de Visual Studio Code en una decision que se pueda ensenar en",
+          "startMs": 469596,
+          "endMs": 474920
+        },
+        {
+          "text": "tutoria.",
+          "startMs": 473172,
+          "endMs": 474920
+        },
+        {
+          "text": "(Copilot minuto 7 paso 5)",
+          "startMs": 471756,
+          "endMs": 474920
+        },
+        {
+          "text": "Evidencia minuto 7:",
+          "startMs": 472356,
+          "endMs": 474920
+        },
+        {
+          "text": "hay una salida que otro perfil puede revisar sin rehacer el contexto.",
+          "startMs": 470220,
+          "endMs": 474920
+        }
+      ],
+      "voiceover": [
+        "Situacion minuto 7: la pantalla no busca impresionar;",
+        "busca cerrar \"Cuando Custom agents se va de las manos\" con evidencia.",
+        "busca cerrar \"Cuando Custom agents se va de las manos\" con evidencia.",
+        "Tension minuto 7: el agente puede avanzar mas rapido que nuestra capacidad de revisar.",
+        "Accion minuto 7: pedir salida pequena, verificable y con owner.",
+        "convertir workspace de Visual Studio Code en una decision que se pueda ensenar en",
+        "tutoria.",
+        "(Copilot minuto 7 paso 5)",
+        "Evidencia minuto 7:",
+        "hay una salida que otro perfil puede revisar sin rehacer el contexto."
+      ],
+      "screen": {
+        "mode": "media-break",
+        "title": "Cuando \"Custom agents\" se va de las manos",
+        "visual": "/decks/copilot/curso-03/images/meme-instructions-wish.svg"
+      },
+      "blueprintAction": {
+        "learningRubric": {
+          "learns": "Reconoce por que \"Cuando Custom agents se va de las manos\" necesita evidencia y no solo respuesta.",
+          "does": "Formula una peticion verificable con limite de alcance.",
+          "decides": "Convertir la duda en material de tutoria si se repite.",
+          "vendor": "copilot",
+          "usefulnessScore": 88,
+          "memoryCheck": "Puede nombrar el riesgo principal sin mirar la slide.",
+          "productionPass": "2000-final-direction"
+        }
+      },
+      "production": {
+        "audioVersion": "audio-prod-v2-2026-05-18",
+        "voiceProfileId": "copilotReview",
+        "voice": "es-ES-AlvaroNeural",
+        "rate": "+4%",
+        "pitch": "+0Hz",
+        "energy": "critica",
+        "emphasis": "finding, severidad y prueba",
+        "pauseMs": 240,
+        "role": "reflection",
+        "reviewRubric": {
+          "learns": "Reconoce por que \"Cuando Custom agents se va de las manos\" necesita evidencia y no solo respuesta.",
+          "does": "Formula una peticion verificable con limite de alcance.",
+          "decides": "Convertir la duda en material de tutoria si se repite.",
+          "memoryCheck": "Puede nombrar el riesgo principal sin mirar la slide."
+        },
+        "prosodyNotes": {
+          "pace": "+4%",
+          "pause": "240ms antes de la decision",
+          "emphasis": "finding, severidad y prueba",
+          "energy": "critica"
+        },
+        "pronunciationPass": "spain-voice-units-v1"
+      }
+    },
+    {
+      "id": "20-github-workflow",
+      "name": "GitHub workflow",
+      "startMs": 475000,
       "endMs": 500000,
-      "type": "error",
+      "type": "terminal",
       "content": {
-        "tag": "Pitfall",
-        "sentry": {
-          "id": "CP-AGENT-001",
-          "title": "Agent mode empieza a tocar demasiado",
-          "file": "src",
-          "line": 1,
-          "occurrences": 5,
-          "users": 2,
-          "first": "hace 7 minutos",
-          "trace": [
-            "Issue sin alcance",
-            "Agent modifica varias capas",
-            "PR dificil de revisar"
+        "mode": "terminal",
+        "vendor": "copilot",
+        "title": "GitHub workflow",
+        "eyebrow": "Copilot Masterclass 10 minutos - Workbench / escena 20",
+        "label": "Del commit al pull request con comentario claro, checks y trazabilidad.",
+        "presenterCue": "Relacionar GitHub workflow con una decision real del alumno.",
+        "actionLabel": "Mostrar artefacto",
+        "actionDetail": "Del commit al pull request con comentario claro, checks y trazabilidad.",
+        "prompt": "Actua como Copilot en Visual Studio Code, GitHub, revision de pull request y Copilot Chat. Objetivo: GitHub workflow. Contexto: Del commit al pull request con comentario claro, checks y trazabilidad.. Antes de editar, devuelve criterio de cierre, riesgo y coste esperado. No avances si falta evidencia verificable.",
+        "response": [
+          "Lectura: GitHub workflow se trata como decision operativa, no como teoria.",
+          "Artefacto: copilot-instructions.md o el prompt asociado documenta la regla estable.",
+          "Evidencia minuto 7: patch local, test y comentario de pull request.",
+          "Siguiente paso: aplicar solo si el humano acepta riesgo y coste."
+        ],
+        "diff": [
+          "diff --git a/copilot-instructions.md b/copilot-instructions.md",
+          "- regla implicita: GitHub workflow",
+          "+ regla explicita: Del commit al pull request con comentario claro, checks y trazabilidad.",
+          "+ done_when = \"prueba, review, coste y owner visibles\""
+        ],
+        "terminal": [
+          "$ pnpm test -- total.spec.ts",
+          "PASS copilot-instructions.md",
+          "checked: GitHub workflow",
+          "model: modelo rapido de Copilot Chat",
+          "budget: dentro del limite de workshop"
+        ],
+        "review": [
+          {
+            "severity": "note",
+            "text": "Comprobar que GitHub workflow no se queda en recomendacion generica."
+          },
+          {
+            "severity": "medium",
+            "text": "Pedir evidencia: comando, diff, owner o decision documentada."
+          },
+          {
+            "severity": "note",
+            "text": "El instructor valida si el alumno puede repetirlo sin ayuda."
+          }
+        ],
+        "cost": {
+          "model": "modelo rapido de Copilot Chat",
+          "tokens": "bajo/medio por contexto acotado",
+          "permission": "minimo permiso viable para esta escena",
+          "stopRule": "Parar tras dos iteraciones sin evidencia nueva."
+        },
+        "decision": {
+          "question": "Que decision tomas sobre GitHub workflow?",
+          "options": [
+            "seguir",
+            "pedir contexto",
+            "subir modelo",
+            "bloquear y llevar a tutoria"
           ],
-          "context": "La autonomia sin acceptance criteria genera diffs grandes y poca confianza."
+          "selected": 1
         },
-        "linearFix": {
-          "ticketId": "CP-101",
-          "title": "Convertir issue en contrato para agente",
-          "description": "Definir objetivo, rutas permitidas, no-go zones, tests esperados y formato de resumen antes de delegar."
+        "risk": {
+          "items": [
+            "Coste invisible",
+            "Permisos excesivos",
+            "Contexto flojo",
+            "Salida no verificable",
+            "Owner ausente"
+          ],
+          "level": "alto"
         },
-        "fix": "Antes de usar Agent:\n- objetivo en una frase\n- archivos permitidos\n- archivos prohibidos\n- test esperado\n- criterio de done\n- presupuesto de iteraciones"
+        "branch": {
+          "steps": [
+            "Brief",
+            "Contexto",
+            "Plan",
+            "Artefacto",
+            "Validacion",
+            "Review",
+            "Cierre"
+          ],
+          "active": 5
+        },
+        "quiz": {
+          "question": "Que prueba que GitHub workflow esta entendido?",
+          "answers": [
+            "Un prompt mas largo",
+            "Una evidencia repetible",
+            "Una opinion del modelo"
+          ],
+          "correct": 1
+        }
       },
       "subtitles": [
-        { "text": "Agent mode es util cuando la tarea esta bien escrita.", "startMs": 436000, "endMs": 452000 },
-        { "text": "Si el issue es vago, la PR sera vaga.", "startMs": 453000, "endMs": 466000 },
-        { "text": "El workshop corrige esto con contratos de PR.", "startMs": 467000, "endMs": 488000 }
-      ]
+        {
+          "text": "Copilot: GitHub workflow.",
+          "startMs": 475450,
+          "endMs": 478254
+        },
+        {
+          "text": "Del commit al pull request con comentario claro, checks y trazabilidad.",
+          "startMs": 478434,
+          "endMs": 483182
+        },
+        {
+          "text": "Modelo minuto 7: elegir por riesgo, contexto y coste antes de pedir otra iteracion.",
+          "startMs": 483362,
+          "endMs": 489454
+        },
+        {
+          "text": "Decision minuto 7: si el riesgo supera la evidencia, entra instructor o tech lead.",
+          "startMs": 489634,
+          "endMs": 495342
+        }
+      ],
+      "voiceover": [
+        "Copilot: GitHub workflow.",
+        "Del commit al pull request con comentario claro, checks y trazabilidad.",
+        "Modelo minuto 7: elegir por riesgo, contexto y coste antes de pedir otra iteracion.",
+        "Decision minuto 7: si el riesgo supera la evidencia, entra instructor o tech lead."
+      ],
+      "screen": {
+        "mode": "terminal",
+        "title": "GitHub workflow",
+        "visual": "copilot-terminal"
+      },
+      "blueprintAction": {
+        "learningRubric": {
+          "learns": "Distingue decision humana de ejecucion automatizada en Copilot.",
+          "does": "Comprueba la salida contra prueba, owner o captura.",
+          "decides": "Aceptar solo si la evidencia queda visible para otra persona.",
+          "vendor": "copilot",
+          "usefulnessScore": 84,
+          "memoryCheck": "Puede repetir el prompt inicial con criterio de cierre.",
+          "productionPass": "2000-final-direction"
+        }
+      },
+      "production": {
+        "audioVersion": "audio-prod-v2-2026-05-18",
+        "voiceProfileId": "copilotNarrator",
+        "voice": "es-ES-AlvaroNeural",
+        "rate": "+7%",
+        "pitch": "+0Hz",
+        "energy": "practica",
+        "emphasis": "modo, contexto y PR",
+        "pauseMs": 180,
+        "role": "narrator",
+        "reviewRubric": {
+          "learns": "Distingue decision humana de ejecucion automatizada en Copilot.",
+          "does": "Comprueba la salida contra prueba, owner o captura.",
+          "decides": "Aceptar solo si la evidencia queda visible para otra persona.",
+          "memoryCheck": "Puede repetir el prompt inicial con criterio de cierre."
+        },
+        "prosodyNotes": {
+          "pace": "+7%",
+          "pause": "180ms antes de la decision",
+          "emphasis": "modo, contexto y pull request",
+          "energy": "practica"
+        },
+        "pronunciationPass": "spain-voice-units-v1"
+      }
     },
     {
-      "id": "preview-route",
-      "name": "Ruta",
+      "id": "21-go-no-go",
+      "name": "Go / No-Go",
       "startMs": 500000,
-      "endMs": 555000,
-      "type": "preview",
+      "endMs": 525000,
+      "type": "decision",
       "content": {
-        "title": "Ruta Copilot Practice",
-        "description": "Del survival Git/GitHub al cloud agent enterprise, con decks, labs y videos simulados.",
-        "items": [
-          { "label": "Cursos", "value": "CP0-CP4" },
-          { "label": "Labs", "value": "23" },
-          { "label": "Workshops", "value": "4" },
-          { "label": "Foco", "value": "VS Code + PR" }
-        ]
+        "mode": "decision",
+        "vendor": "copilot",
+        "title": "Go / No-Go",
+        "eyebrow": "Copilot Masterclass 10 minutos - Workbench / escena 21",
+        "label": "Usar Copilot para acelerar criterio, no para saltarse revision.",
+        "presenterCue": "Relacionar Go / No-Go con una decision real del alumno.",
+        "actionLabel": "Mostrar artefacto",
+        "actionDetail": "Usar Copilot para acelerar criterio, no para saltarse revision.",
+        "prompt": "Actua como Copilot en Visual Studio Code, GitHub, revision de pull request y Copilot Chat. Objetivo: Go / No-Go. Contexto: Usar Copilot para acelerar criterio, no para saltarse revision.. Antes de editar, devuelve criterio de cierre, riesgo y coste esperado. No avances si falta evidencia verificable.",
+        "response": [
+          "Lectura: Go / No-Go se trata como decision operativa, no como teoria.",
+          "Artefacto: copilot-instructions.md o el prompt asociado documenta la regla estable.",
+          "Evidencia minuto 8: hay una salida que otro perfil puede revisar sin rehacer el contexto.",
+          "Siguiente paso: aplicar solo si el humano acepta riesgo y coste."
+        ],
+        "diff": [
+          "diff --git a/copilot-instructions.md b/copilot-instructions.md",
+          "- regla implicita: Go / No-Go",
+          "+ regla explicita: Usar Copilot para acelerar criterio, no para saltarse revision.",
+          "+ done_when = \"prueba, review, coste y owner visibles\""
+        ],
+        "terminal": [
+          "$ pnpm test -- total.spec.ts",
+          "PASS copilot-instructions.md",
+          "checked: Go / No-Go",
+          "model: modelo rapido de Copilot Chat",
+          "budget: dentro del limite de workshop"
+        ],
+        "review": [
+          {
+            "severity": "note",
+            "text": "Comprobar que Go / No-Go no se queda en recomendacion generica."
+          },
+          {
+            "severity": "medium",
+            "text": "Pedir evidencia: comando, diff, owner o decision documentada."
+          },
+          {
+            "severity": "note",
+            "text": "El instructor valida si el alumno puede repetirlo sin ayuda."
+          }
+        ],
+        "cost": {
+          "model": "modelo rapido de Copilot Chat",
+          "tokens": "bajo/medio por contexto acotado",
+          "permission": "minimo permiso viable para esta escena",
+          "stopRule": "Parar tras dos iteraciones sin evidencia nueva."
+        },
+        "decision": {
+          "question": "Que decision tomas sobre Go / No-Go?",
+          "options": [
+            "seguir",
+            "pedir contexto",
+            "subir modelo",
+            "bloquear y llevar a tutoria"
+          ],
+          "selected": 2
+        },
+        "risk": {
+          "items": [
+            "Coste invisible",
+            "Permisos excesivos",
+            "Contexto flojo",
+            "Salida no verificable",
+            "Owner ausente"
+          ],
+          "level": "alto"
+        },
+        "branch": {
+          "steps": [
+            "Brief",
+            "Contexto",
+            "Plan",
+            "Artefacto",
+            "Validacion",
+            "Review",
+            "Cierre"
+          ],
+          "active": 6
+        },
+        "quiz": {
+          "question": "Que prueba que Go / No-Go esta entendido?",
+          "answers": [
+            "Un prompt mas largo",
+            "Una evidencia repetible",
+            "Una opinion del modelo"
+          ],
+          "correct": 1
+        }
       },
       "subtitles": [
-        { "text": "Copilot se aprende mejor haciendo.", "startMs": 506000, "endMs": 516000 },
-        { "text": "Por eso el hub combina decks, retos y simulaciones.", "startMs": 517000, "endMs": 538000 },
-        { "text": "El objetivo es llegar a tutoria con PRs y dudas reales.", "startMs": 539000, "endMs": 552000 }
-      ]
+        {
+          "text": "Copilot: Go / No-Go.",
+          "startMs": 500450,
+          "endMs": 503710
+        },
+        {
+          "text": "Usar Copilot para acelerar criterio, no para saltarse revision.",
+          "startMs": 503890,
+          "endMs": 508686
+        },
+        {
+          "text": "Modelo minuto 8: elegir por riesgo, contexto y coste antes de pedir otra iteracion.",
+          "startMs": 508866,
+          "endMs": 515126
+        },
+        {
+          "text": "Decision minuto 8: guardar la duda como material reutilizable si se repite.",
+          "startMs": 515306,
+          "endMs": 520798
+        }
+      ],
+      "voiceover": [
+        "Copilot: Go / No-Go.",
+        "Usar Copilot para acelerar criterio, no para saltarse revision.",
+        "Modelo minuto 8: elegir por riesgo, contexto y coste antes de pedir otra iteracion.",
+        "Decision minuto 8: guardar la duda como material reutilizable si se repite."
+      ],
+      "screen": {
+        "mode": "decision",
+        "title": "Go / No-Go",
+        "visual": "copilot-decision"
+      },
+      "blueprintAction": {
+        "learningRubric": {
+          "learns": "Ubica coste, permiso y criterio antes de aceptar la salida.",
+          "does": "Registra el criterio que permitiria repetir el paso sin instructor.",
+          "decides": "Seguir, pedir mas contexto, escalar modelo o bloquear.",
+          "vendor": "copilot",
+          "usefulnessScore": 86,
+          "memoryCheck": "Puede explicar el paso en una frase de menos de 20 segundos.",
+          "productionPass": "2000-final-direction"
+        }
+      },
+      "production": {
+        "audioVersion": "audio-prod-v2-2026-05-18",
+        "voiceProfileId": "copilotReview",
+        "voice": "es-ES-AlvaroNeural",
+        "rate": "+4%",
+        "pitch": "+0Hz",
+        "energy": "critica",
+        "emphasis": "finding, severidad y prueba",
+        "pauseMs": 240,
+        "role": "reflection",
+        "reviewRubric": {
+          "learns": "Ubica coste, permiso y criterio antes de aceptar la salida.",
+          "does": "Registra el criterio que permitiria repetir el paso sin instructor.",
+          "decides": "Seguir, pedir mas contexto, escalar modelo o bloquear.",
+          "memoryCheck": "Puede explicar el paso en una frase de menos de 20 segundos."
+        },
+        "prosodyNotes": {
+          "pace": "+4%",
+          "pause": "240ms antes de la decision",
+          "emphasis": "finding, severidad y prueba",
+          "energy": "critica"
+        },
+        "pronunciationPass": "spain-voice-units-v1"
+      }
     },
     {
-      "id": "finale",
-      "name": "Cierre",
-      "startMs": 555000,
+      "id": "22-presupuesto",
+      "name": "Presupuesto",
+      "startMs": 525000,
+      "endMs": 550000,
+      "type": "cost",
+      "content": {
+        "mode": "cost",
+        "vendor": "copilot",
+        "title": "Presupuesto",
+        "eyebrow": "Copilot Masterclass 10 minutos - Workbench / escena 22",
+        "label": "Medir premium requests evita que la adopcion se vuelva caja negra.",
+        "presenterCue": "Relacionar Presupuesto con una decision real del alumno.",
+        "actionLabel": "Mostrar artefacto",
+        "actionDetail": "Medir premium requests evita que la adopcion se vuelva caja negra.",
+        "prompt": "Actua como Copilot en Visual Studio Code, GitHub, revision de pull request y Copilot Chat. Objetivo: Presupuesto. Contexto: Medir premium requests evita que la adopcion se vuelva caja negra.. Antes de editar, devuelve criterio de cierre, riesgo y coste esperado. No avances si falta evidencia verificable.",
+        "response": [
+          "Lectura: Presupuesto se trata como decision operativa, no como teoria.",
+          "Artefacto: copilot-instructions.md o el prompt asociado documenta la regla estable.",
+          "Evidencia minuto 8: \"Presupuesto\" no se cierra sin test, captura o criterio escrito.",
+          "Siguiente paso: aplicar solo si el humano acepta riesgo y coste."
+        ],
+        "diff": [
+          "diff --git a/copilot-instructions.md b/copilot-instructions.md",
+          "- regla implicita: Presupuesto",
+          "+ regla explicita: Medir premium requests evita que la adopcion se vuelva caja negra.",
+          "+ done_when = \"prueba, review, coste y owner visibles\""
+        ],
+        "terminal": [
+          "$ pnpm test -- total.spec.ts",
+          "PASS copilot-instructions.md",
+          "checked: Presupuesto",
+          "model: modelo avanzado para Agent o revision de pull request complejo",
+          "budget: dentro del limite de workshop"
+        ],
+        "review": [
+          {
+            "severity": "high",
+            "text": "Comprobar que Presupuesto no se queda en recomendacion generica."
+          },
+          {
+            "severity": "medium",
+            "text": "Pedir evidencia: comando, diff, owner o decision documentada."
+          },
+          {
+            "severity": "note",
+            "text": "El instructor valida si el alumno puede repetirlo sin ayuda."
+          }
+        ],
+        "cost": {
+          "model": "modelo avanzado para Agent o revision de pull request complejo",
+          "tokens": "alto controlado",
+          "permission": "minimo permiso viable para esta escena",
+          "stopRule": "Parar tras dos iteraciones sin evidencia nueva."
+        },
+        "decision": {
+          "question": "Que decision tomas sobre Presupuesto?",
+          "options": [
+            "seguir",
+            "pedir contexto",
+            "subir modelo",
+            "bloquear y llevar a tutoria"
+          ],
+          "selected": 0
+        },
+        "risk": {
+          "items": [
+            "Coste invisible",
+            "Permisos excesivos",
+            "Contexto flojo",
+            "Salida no verificable",
+            "Owner ausente"
+          ],
+          "level": "bajo"
+        },
+        "branch": {
+          "steps": [
+            "Brief",
+            "Contexto",
+            "Plan",
+            "Artefacto",
+            "Validacion",
+            "Review",
+            "Cierre"
+          ],
+          "active": 0
+        },
+        "quiz": {
+          "question": "Que prueba que Presupuesto esta entendido?",
+          "answers": [
+            "Un prompt mas largo",
+            "Una evidencia repetible",
+            "Una opinion del modelo"
+          ],
+          "correct": 1
+        }
+      },
+      "subtitles": [
+        {
+          "text": "Copilot: Presupuesto.",
+          "startMs": 525450,
+          "endMs": 528182
+        },
+        {
+          "text": "Medir premium requests evita que la adopcion se vuelva caja negra.",
+          "startMs": 528362,
+          "endMs": 533038
+        },
+        {
+          "text": "Modelo minuto 8: elegir por riesgo, contexto y coste antes de pedir otra iteracion.",
+          "startMs": 533218,
+          "endMs": 539478
+        },
+        {
+          "text": "Decision minuto 8: si no se puede auditar, vuelve a briefing.",
+          "startMs": 539658,
+          "endMs": 544526
+        }
+      ],
+      "voiceover": [
+        "Copilot: Presupuesto.",
+        "Medir premium requests evita que la adopcion se vuelva caja negra.",
+        "Modelo minuto 8: elegir por riesgo, contexto y coste antes de pedir otra iteracion.",
+        "Decision minuto 8: si no se puede auditar, vuelve a briefing."
+      ],
+      "screen": {
+        "mode": "cost",
+        "title": "Presupuesto",
+        "visual": "copilot-cost"
+      },
+      "blueprintAction": {
+        "learningRubric": {
+          "learns": "Reconoce por que \"Presupuesto\" necesita evidencia y no solo respuesta.",
+          "does": "Formula una peticion verificable con limite de alcance.",
+          "decides": "Convertir la duda en material de tutoria si se repite.",
+          "vendor": "copilot",
+          "usefulnessScore": 88,
+          "memoryCheck": "Puede nombrar el riesgo principal sin mirar la slide.",
+          "productionPass": "2000-final-direction"
+        }
+      },
+      "production": {
+        "audioVersion": "audio-prod-v2-2026-05-18",
+        "voiceProfileId": "copilotReview",
+        "voice": "es-ES-AlvaroNeural",
+        "rate": "+4%",
+        "pitch": "+0Hz",
+        "energy": "critica",
+        "emphasis": "finding, severidad y prueba",
+        "pauseMs": 240,
+        "role": "safety",
+        "reviewRubric": {
+          "learns": "Reconoce por que \"Presupuesto\" necesita evidencia y no solo respuesta.",
+          "does": "Formula una peticion verificable con limite de alcance.",
+          "decides": "Convertir la duda en material de tutoria si se repite.",
+          "memoryCheck": "Puede nombrar el riesgo principal sin mirar la slide."
+        },
+        "prosodyNotes": {
+          "pace": "+4%",
+          "pause": "240ms antes de la decision",
+          "emphasis": "finding, severidad y prueba",
+          "energy": "critica"
+        },
+        "pronunciationPass": "spain-voice-units-v1"
+      }
+    },
+    {
+      "id": "23-activacion",
+      "name": "Activacion",
+      "startMs": 550000,
+      "endMs": 575000,
+      "type": "quiz",
+      "content": {
+        "mode": "quiz",
+        "vendor": "copilot",
+        "title": "Activacion",
+        "eyebrow": "Copilot Masterclass 10 minutos - Workbench / escena 23",
+        "label": "Primer reto: diagnosticar bug, aplicar Edit y preparar pull request.",
+        "presenterCue": "Relacionar Activacion con una decision real del alumno.",
+        "actionLabel": "Mostrar artefacto",
+        "actionDetail": "Primer reto: diagnosticar bug, aplicar Edit y preparar pull request.",
+        "prompt": "Actua como Copilot en Visual Studio Code, GitHub, revision de pull request y Copilot Chat. Objetivo: Activacion. Contexto: Primer reto: diagnosticar bug, aplicar Edit y preparar pull request.. Antes de editar, devuelve criterio de cierre, riesgo y coste esperado. No avances si falta evidencia verificable.",
+        "response": [
+          "Lectura: Activacion se trata como decision operativa, no como teoria.",
+          "Artefacto: copilot-instructions.md o el prompt asociado documenta la regla estable.",
+          "Evidencia minuto 9: \"Activacion\" queda ligado a prueba, owner y decision.",
+          "Siguiente paso: aplicar solo si el humano acepta riesgo y coste."
+        ],
+        "diff": [
+          "diff --git a/copilot-instructions.md b/copilot-instructions.md",
+          "- regla implicita: Activacion",
+          "+ regla explicita: Primer reto: diagnosticar bug, aplicar Edit y preparar pull request.",
+          "+ done_when = \"prueba, review, coste y owner visibles\""
+        ],
+        "terminal": [
+          "$ pnpm test -- total.spec.ts",
+          "PASS copilot-instructions.md",
+          "checked: Activacion",
+          "model: modelo rapido de Copilot Chat",
+          "budget: dentro del limite de workshop"
+        ],
+        "review": [
+          {
+            "severity": "note",
+            "text": "Comprobar que Activacion no se queda en recomendacion generica."
+          },
+          {
+            "severity": "medium",
+            "text": "Pedir evidencia: comando, diff, owner o decision documentada."
+          },
+          {
+            "severity": "note",
+            "text": "El instructor valida si el alumno puede repetirlo sin ayuda."
+          }
+        ],
+        "cost": {
+          "model": "modelo rapido de Copilot Chat",
+          "tokens": "bajo/medio por contexto acotado",
+          "permission": "minimo permiso viable para esta escena",
+          "stopRule": "Parar tras dos iteraciones sin evidencia nueva."
+        },
+        "decision": {
+          "question": "Que decision tomas sobre Activacion?",
+          "options": [
+            "seguir",
+            "pedir contexto",
+            "subir modelo",
+            "bloquear y llevar a tutoria"
+          ],
+          "selected": 1
+        },
+        "risk": {
+          "items": [
+            "Coste invisible",
+            "Permisos excesivos",
+            "Contexto flojo",
+            "Salida no verificable",
+            "Owner ausente"
+          ],
+          "level": "bajo"
+        },
+        "branch": {
+          "steps": [
+            "Brief",
+            "Contexto",
+            "Plan",
+            "Artefacto",
+            "Validacion",
+            "Review",
+            "Cierre"
+          ],
+          "active": 1
+        },
+        "quiz": {
+          "question": "Que prueba que Activacion esta entendido?",
+          "answers": [
+            "Un prompt mas largo",
+            "Una evidencia repetible",
+            "Una opinion del modelo"
+          ],
+          "correct": 1
+        }
+      },
+      "subtitles": [
+        {
+          "text": "Copilot: Activacion.",
+          "startMs": 550450,
+          "endMs": 553134
+        },
+        {
+          "text": "Primer reto: diagnosticar bug, aplicar Edit y preparar pull request.",
+          "startMs": 553314,
+          "endMs": 558422
+        },
+        {
+          "text": "Modelo minuto 9: elegir por riesgo, contexto y coste antes de pedir otra iteracion.",
+          "startMs": 558602,
+          "endMs": 564814
+        },
+        {
+          "text": "Decision minuto 9: cerrar solo cuando patch local, test y comentario de pull request.",
+          "startMs": 564994,
+          "endMs": 570990
+        }
+      ],
+      "voiceover": [
+        "Copilot: Activacion.",
+        "Primer reto: diagnosticar bug, aplicar Edit y preparar pull request.",
+        "Modelo minuto 9: elegir por riesgo, contexto y coste antes de pedir otra iteracion.",
+        "Decision minuto 9: cerrar solo cuando patch local, test y comentario de pull request."
+      ],
+      "screen": {
+        "mode": "quiz",
+        "title": "Activacion",
+        "visual": "copilot-quiz"
+      },
+      "blueprintAction": {
+        "learningRubric": {
+          "learns": "Distingue decision humana de ejecucion automatizada en Copilot.",
+          "does": "Comprueba la salida contra prueba, owner o captura.",
+          "decides": "Aceptar solo si la evidencia queda visible para otra persona.",
+          "vendor": "copilot",
+          "usefulnessScore": 90,
+          "memoryCheck": "Puede repetir el prompt inicial con criterio de cierre.",
+          "productionPass": "2000-final-direction"
+        }
+      },
+      "production": {
+        "audioVersion": "audio-prod-v2-2026-05-18",
+        "voiceProfileId": "copilotReview",
+        "voice": "es-ES-AlvaroNeural",
+        "rate": "+4%",
+        "pitch": "+0Hz",
+        "energy": "critica",
+        "emphasis": "finding, severidad y prueba",
+        "pauseMs": 240,
+        "role": "reflection",
+        "reviewRubric": {
+          "learns": "Distingue decision humana de ejecucion automatizada en Copilot.",
+          "does": "Comprueba la salida contra prueba, owner o captura.",
+          "decides": "Aceptar solo si la evidencia queda visible para otra persona.",
+          "memoryCheck": "Puede repetir el prompt inicial con criterio de cierre."
+        },
+        "prosodyNotes": {
+          "pace": "+4%",
+          "pause": "240ms antes de la decision",
+          "emphasis": "finding, severidad y prueba",
+          "energy": "critica"
+        },
+        "pronunciationPass": "spain-voice-units-v1"
+      }
+    },
+    {
+      "id": "24-resumen",
+      "name": "Resumen",
+      "startMs": 575000,
       "endMs": 600000,
       "type": "finale",
       "content": {
-        "title": "Lo que activa Copilot",
+        "title": "Lo que debe quedar despues de Copilot",
         "summary": [
-          { "number": "01", "label": "Modo correcto", "body": "Ask, Edit y Agent se eligen por riesgo y autonomia." },
-          { "number": "02", "label": "Memoria de equipo", "body": "Instructions y prompt files convierten practica en estandar." },
-          { "number": "03", "label": "PR revisable", "body": "Cloud y Agent solo funcionan si el cierre deja evidencia." }
+          {
+            "number": "01",
+            "label": "Superficie",
+            "body": "Elegir Visual Studio Code, GitHub, revision de pull request y Copilot Chat segun tarea."
+          },
+          {
+            "number": "02",
+            "label": "Criterio",
+            "body": "Definir alcance, aceptacion y evidencia."
+          },
+          {
+            "number": "03",
+            "label": "Coste",
+            "body": "Modelo, contexto y permiso visibles."
+          },
+          {
+            "number": "04",
+            "label": "Practica",
+            "body": "Ejercicio asociado y cierre revisable."
+          }
         ],
-        "cta": "Siguiente paso: abrir Copilot Basic y completar el reto de error-to-fix."
+        "cta": "El alumno sale sabiendo elegir Ask, Edit o Agent sin perder control de revision ni coste."
       },
       "subtitles": [
-        { "text": "Copilot aporta velocidad.", "startMs": 558000, "endMs": 565000 },
-        { "text": "El curso aporta criterio.", "startMs": 566000, "endMs": 574000 },
-        { "text": "La combinacion es lo que escala.", "startMs": 575000, "endMs": 596000 }
-      ]
+        {
+          "text": "Copilot: Resumen.",
+          "startMs": 575450,
+          "endMs": 578038
+        },
+        {
+          "text": "Copilot funciona cuando cada modo tiene frontera, evidencia y review.",
+          "startMs": 578218,
+          "endMs": 583254
+        },
+        {
+          "text": "Modelo minuto 9: elegir por riesgo, contexto y coste antes de pedir otra iteracion.",
+          "startMs": 583434,
+          "endMs": 589646
+        },
+        {
+          "text": "Decision minuto 9: seguir, pedir contexto, escalar modelo o bloquear.",
+          "startMs": 589826,
+          "endMs": 595822
+        }
+      ],
+      "voiceover": [
+        "Copilot: Resumen.",
+        "Copilot funciona cuando cada modo tiene frontera, evidencia y review.",
+        "Modelo minuto 9: elegir por riesgo, contexto y coste antes de pedir otra iteracion.",
+        "Decision minuto 9: seguir, pedir contexto, escalar modelo o bloquear."
+      ],
+      "screen": {
+        "mode": "finale",
+        "title": "Resumen",
+        "visual": "copilot-finale"
+      },
+      "blueprintAction": {
+        "learningRubric": {
+          "learns": "Ubica coste, permiso y criterio antes de aceptar la salida.",
+          "does": "Registra el criterio que permitiria repetir el paso sin instructor.",
+          "decides": "Seguir, pedir mas contexto, escalar modelo o bloquear.",
+          "vendor": "copilot",
+          "usefulnessScore": 92,
+          "memoryCheck": "Puede explicar el paso en una frase de menos de 20 segundos.",
+          "productionPass": "2000-final-direction"
+        }
+      },
+      "production": {
+        "audioVersion": "audio-prod-v2-2026-05-18",
+        "voiceProfileId": "copilotReview",
+        "voice": "es-ES-AlvaroNeural",
+        "rate": "+4%",
+        "pitch": "+0Hz",
+        "energy": "critica",
+        "emphasis": "finding, severidad y prueba",
+        "pauseMs": 240,
+        "role": "reflection",
+        "reviewRubric": {
+          "learns": "Ubica coste, permiso y criterio antes de aceptar la salida.",
+          "does": "Registra el criterio que permitiria repetir el paso sin instructor.",
+          "decides": "Seguir, pedir mas contexto, escalar modelo o bloquear.",
+          "memoryCheck": "Puede explicar el paso en una frase de menos de 20 segundos."
+        },
+        "prosodyNotes": {
+          "pace": "+4%",
+          "pause": "240ms antes de la decision",
+          "emphasis": "finding, severidad y prueba",
+          "energy": "critica"
+        },
+        "pronunciationPass": "spain-voice-units-v1"
+      }
     }
-  ]
+  ],
+  "generatedFrom": "scripts/rebuild-masterclass-videos.mjs",
+  "production": {
+    "audioProductionVersion": "audio-prod-v2-2026-05-18",
+    "productionPass": "2000-final-direction",
+    "vendor": "copilot",
+    "narrativePass": "teacher-contract-v1",
+    "pronunciationPass": "spain-voice-units-v1"
+  }
 }

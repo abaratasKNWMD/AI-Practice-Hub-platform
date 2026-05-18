@@ -1,0 +1,56 @@
+1
+00:00:00,450 --> 00:00:03,038
+Objetivo de esta clase:
+
+2
+00:00:03,218 --> 00:00:08,614
+resolver Claude Advanced 02 - Plugin and Actions con criterio practico.
+
+3
+00:00:08,794 --> 00:00:13,710
+Al final debes poder quedarte con una regla de uso y un ejemplo repetible.
+
+4
+00:00:13,890 --> 00:00:17,918
+La ruta sera: concepto, ejemplo y cierre.
+
+5
+00:00:18,098 --> 00:00:21,118
+Durante el video mira esta decision:
+
+6
+00:00:21,298 --> 00:00:25,038
+cuando aplicar esta tecnica en tu propio repositorio.
+
+7
+00:00:30,450 --> 00:00:32,966
+Plugin es distribucion.
+
+8
+00:00:33,146 --> 00:00:36,022
+Action es ejecucion repetible.
+
+9
+00:00:36,202 --> 00:00:39,942
+Governance decide cuando se activa y quien responde.
+
+10
+00:01:00,450 --> 00:01:04,814
+La potencia real aparece cuando el criterio se puede instalar.
+
+11
+00:01:04,994 --> 00:01:09,910
+Evidencia minuto 1: "Checklist automation" no se cierra sin test
+
+12
+00:01:10,090 --> 00:01:12,918
+captura o criterio escrito.
+
+13
+00:01:13,098 --> 00:01:19,382
+Accion minuto 1: pedir salida pequena verificable y con owner. (Claude
+
+14
+00:01:19,562 --> 00:01:22,006
+minuto 1 paso 1)
+

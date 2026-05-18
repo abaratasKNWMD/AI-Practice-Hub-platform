@@ -9,92 +9,397 @@
   "author": "AI Practice Hub",
   "createdAt": "2026-05-07T00:00:00.000Z",
   "chapters": [
-    { "id": "start", "label": "Bug", "startMs": 0 },
-    { "id": "plan", "label": "Plan", "startMs": 8000 },
-    { "id": "patch", "label": "Patch", "startMs": 42000 },
-    { "id": "close", "label": "Cierre", "startMs": 70000 }
+    {
+      "id": "start",
+      "label": "Bug",
+      "startMs": 0
+    },
+    {
+      "id": "plan",
+      "label": "Plan",
+      "startMs": 8000
+    },
+    {
+      "id": "patch",
+      "label": "Patch",
+      "startMs": 42000
+    },
+    {
+      "id": "close",
+      "label": "Cierre",
+      "startMs": 70000
+    }
   ],
   "scenes": [
     {
       "id": "title",
       "name": "Apertura",
       "startMs": 0,
-      "endMs": 8000,
+      "endMs": 22500,
       "type": "title",
       "content": {
         "title": "Plan antes de patch",
-        "subtitle": "La forma mas barata de evitar cambios enormes.",
-        "tag": "Codex Basic"
+        "subtitle": "Objetivo: resolver Codex Basic 02 - Plan Before Patch con criterio practico.",
+        "tag": "Codex Basic",
+        "narrativeContract": {
+          "objective": "resolver Codex Basic 02 - Plan Before Patch con criterio practico.",
+          "outcome": "quedarte con una regla de uso y un ejemplo repetible.",
+          "route": "concepto, ejemplo y cierre.",
+          "decision": "cuando aplicar esta tecnica en tu propio repositorio."
+        }
       },
       "subtitles": [
-        { "text": "La prisa produce diffs grandes.", "startMs": 1000, "endMs": 3800 },
-        { "text": "El plan obliga a Codex a pensar con alcance.", "startMs": 4000, "endMs": 7600 }
-      ]
+        {
+          "text": "Objetivo de esta clase:",
+          "startMs": 450,
+          "endMs": 2966
+        },
+        {
+          "text": "resolver Codex Basic 02 - Plan Before Patch con criterio practico.",
+          "startMs": 3011,
+          "endMs": 8143
+        },
+        {
+          "text": "Al final debes poder quedarte con una regla de uso y un ejemplo repetible.",
+          "startMs": 8188,
+          "endMs": 12984
+        },
+        {
+          "text": "La ruta sera: concepto, ejemplo y cierre.",
+          "startMs": 13029,
+          "endMs": 16937
+        },
+        {
+          "text": "Durante el video mira esta decision:",
+          "startMs": 16982,
+          "endMs": 19930
+        },
+        {
+          "text": "cuando aplicar esta tecnica en tu propio repositorio.",
+          "startMs": 18776,
+          "endMs": 22420
+        }
+      ],
+      "voiceover": [
+        "Objetivo de esta clase:",
+        "resolver Codex Basic 02 - Plan Before Patch con criterio practico.",
+        "Al final debes poder quedarte con una regla de uso y un ejemplo repetible.",
+        "La ruta sera: concepto, ejemplo y cierre.",
+        "Durante el video mira esta decision:",
+        "cuando aplicar esta tecnica en tu propio repositorio."
+      ],
+      "blueprintAction": {
+        "learningRubric": {
+          "learns": "Reconoce por que \"Plan antes de patch\" necesita evidencia y no solo respuesta.",
+          "does": "Formula una peticion verificable con limite de alcance.",
+          "decides": "Convertir la duda en material de tutoria si se repite.",
+          "vendor": "codex",
+          "usefulnessScore": 82,
+          "memoryCheck": "Puede nombrar el riesgo principal sin mirar la slide.",
+          "productionPass": "2000-final-direction"
+        }
+      },
+      "production": {
+        "audioVersion": "audio-prod-v2-2026-05-18",
+        "voiceProfileId": "codexNarrator",
+        "voice": "es-ES-AlvaroNeural",
+        "rate": "+8%",
+        "pitch": "+0Hz",
+        "energy": "precisa",
+        "emphasis": "plan, patch, test y coste",
+        "pauseMs": 180,
+        "role": "narrator",
+        "reviewRubric": {
+          "learns": "Reconoce por que \"Plan antes de patch\" necesita evidencia y no solo respuesta.",
+          "does": "Formula una peticion verificable con limite de alcance.",
+          "decides": "Convertir la duda en material de tutoria si se repite.",
+          "memoryCheck": "Puede nombrar el riesgo principal sin mirar la slide."
+        },
+        "prosodyNotes": {
+          "pace": "+8%",
+          "pause": "180ms antes de la decision",
+          "emphasis": "plan, patch, test y coste",
+          "energy": "precisa"
+        },
+        "pronunciationPass": "spain-voice-units-v1"
+      }
     },
     {
       "id": "thinking",
       "name": "Planificando",
-      "startMs": 8000,
-      "endMs": 42000,
+      "startMs": 22500,
+      "endMs": 45000,
       "type": "thinking",
       "content": {
         "tag": "Debug protocol",
-        "title": "Codex antes de tocar login...",
+        "title": "Codex antes de tocar login.",
         "thoughts": [
-          { "ms": 0, "text": "Leer rutas de autenticacion y tests existentes", "done": false },
-          { "ms": 6000, "text": "Reproducir fallo o identificar condicion exacta", "done": false },
-          { "ms": 12000, "text": "Aislar causa probable en un archivo", "done": false },
-          { "ms": 18000, "text": "Proponer patch minimo", "done": false },
-          { "ms": 26000, "text": "Validar con test o caso manual", "done": true }
-        ]
+          {
+            "ms": 0,
+            "text": "Leer rutas de autenticacion y tests existentes",
+            "done": false
+          },
+          {
+            "ms": 6000,
+            "text": "Reproducir fallo o identificar condicion exacta",
+            "done": false
+          },
+          {
+            "ms": 12000,
+            "text": "Aislar causa probable en un archivo",
+            "done": false
+          },
+          {
+            "ms": 18000,
+            "text": "Proponer patch minimo",
+            "done": false
+          },
+          {
+            "ms": 26000,
+            "text": "Validar con test o caso manual",
+            "done": true
+          }
+        ],
+        "auditNote": "Pensamiento ampliado para que la pantalla tenga decision, permiso y salida."
       },
       "subtitles": [
-        { "text": "Un plan no tiene que ser largo.", "startMs": 9000, "endMs": 14000 },
-        { "text": "Tiene que ordenar diagnostico, patch y verificacion.", "startMs": 14500, "endMs": 26000 },
-        { "text": "Sin ese orden, Codex puede arreglar un sintoma.", "startMs": 26500, "endMs": 40500 }
-      ]
+        {
+          "text": "Un plan no tiene que ser largo.",
+          "startMs": 22950,
+          "endMs": 25898
+        },
+        {
+          "text": "Tiene que ordenar diagnostico, patch y verificacion.",
+          "startMs": 26078,
+          "endMs": 30298
+        },
+        {
+          "text": "Sin ese orden, Codex puede arreglar un sintoma.",
+          "startMs": 30478,
+          "endMs": 34602
+        }
+      ],
+      "voiceover": [
+        "Un plan no tiene que ser largo.",
+        "Tiene que ordenar diagnostico, patch y verificacion.",
+        "Sin ese orden, Codex puede arreglar un sintoma."
+      ],
+      "blueprintAction": {
+        "learningRubric": {
+          "learns": "Distingue decision humana de ejecucion automatizada en Codex.",
+          "does": "Comprueba la salida contra prueba, owner o captura.",
+          "decides": "Aceptar solo si la evidencia queda visible para otra persona.",
+          "vendor": "codex",
+          "usefulnessScore": 84,
+          "memoryCheck": "Puede repetir el prompt inicial con criterio de cierre.",
+          "productionPass": "2000-final-direction"
+        }
+      },
+      "production": {
+        "audioVersion": "audio-prod-v2-2026-05-18",
+        "voiceProfileId": "codexReflection",
+        "voice": "es-ES-AlvaroNeural",
+        "rate": "+3%",
+        "pitch": "+0Hz",
+        "energy": "reflexiva",
+        "emphasis": "riesgo, permiso y evidencia",
+        "pauseMs": 260,
+        "role": "reflection",
+        "reviewRubric": {
+          "learns": "Distingue decision humana de ejecucion automatizada en Codex.",
+          "does": "Comprueba la salida contra prueba, owner o captura.",
+          "decides": "Aceptar solo si la evidencia queda visible para otra persona.",
+          "memoryCheck": "Puede repetir el prompt inicial con criterio de cierre."
+        },
+        "prosodyNotes": {
+          "pace": "+3%",
+          "pause": "260ms antes de la decision",
+          "emphasis": "riesgo, permiso y evidencia",
+          "energy": "reflexiva"
+        },
+        "pronunciationPass": "spain-voice-units-v1"
+      }
     },
     {
       "id": "coding",
       "name": "Checklist",
-      "startMs": 42000,
-      "endMs": 70000,
+      "startMs": 45000,
+      "endMs": 67500,
       "type": "coding",
       "content": {
         "tag": "Checklist de cierre",
         "filename": "docs/codex-debug-checklist.md",
-        "code": "## Antes de editar\\n- Que archivo parece responsable?\\n- Que evidencia apunta a el?\\n- Que no vamos a tocar?\\n\\n## Patch\\n- Cambio minimo.\\n- Sin refactor lateral.\\n- Sin formateo masivo.\\n\\n## Cierre\\n- Test ejecutado.\\n- Causa raiz explicada.\\n- Riesgo residual declarado.",
+        "code": "## Antes de editar\\n- Que archivo parece responsable?\\n- Que evidencia apunta a el?\\n- Que no vamos a tocar?\\n\\n## Patch\\n- Cambio minimo.\\n- Sin refactor lateral.\\n- Sin formateo masivo.\\n\\n## Cierre\\n- Test ejecutado.\\n- Causa raiz explicada.\\n- Riesgo residual declarado. # Cierre operativo done_when: evidencia + coste + owner stop_rule: parar si no hay senal nueva",
         "commentary": [
-          { "atLine": 1, "text": "Fase de diagnostico" },
-          { "atLine": 6, "text": "Fase de edicion" },
-          { "atLine": 11, "text": "Fase de verificacion" }
+          {
+            "atLine": 1,
+            "text": "Fase de diagnostico"
+          },
+          {
+            "atLine": 6,
+            "text": "Fase de edicion"
+          },
+          {
+            "atLine": 11,
+            "text": "Fase de verificacion"
+          }
         ]
       },
       "subtitles": [
-        { "text": "Esta checklist cabe en cualquier equipo.", "startMs": 43000, "endMs": 50000 },
-        { "text": "Antes, durante y despues del patch.", "startMs": 50500, "endMs": 60000 },
-        { "text": "Eso es lo que el alumno debe practicar.", "startMs": 60500, "endMs": 69000 }
-      ]
+        {
+          "text": "Esta checklist cabe en cualquier equipo.",
+          "startMs": 45450,
+          "endMs": 48518
+        },
+        {
+          "text": "Antes, durante y despues del patch.",
+          "startMs": 48698,
+          "endMs": 51838
+        },
+        {
+          "text": "Eso es lo que el alumno debe practicar.",
+          "startMs": 52018,
+          "endMs": 55182
+        }
+      ],
+      "voiceover": [
+        "Esta checklist cabe en cualquier equipo.",
+        "Antes, durante y despues del patch.",
+        "Eso es lo que el alumno debe practicar."
+      ],
+      "blueprintAction": {
+        "learningRubric": {
+          "learns": "Ubica coste, permiso y criterio antes de aceptar la salida.",
+          "does": "Registra el criterio que permitiria repetir el paso sin instructor.",
+          "decides": "Seguir, pedir mas contexto, escalar modelo o bloquear.",
+          "vendor": "codex",
+          "usefulnessScore": 86,
+          "memoryCheck": "Puede explicar el paso en una frase de menos de 20 segundos.",
+          "productionPass": "2000-final-direction"
+        }
+      },
+      "production": {
+        "audioVersion": "audio-prod-v2-2026-05-18",
+        "voiceProfileId": "codexNarrator",
+        "voice": "es-ES-AlvaroNeural",
+        "rate": "+8%",
+        "pitch": "+0Hz",
+        "energy": "precisa",
+        "emphasis": "plan, patch, test y coste",
+        "pauseMs": 180,
+        "role": "narrator",
+        "reviewRubric": {
+          "learns": "Ubica coste, permiso y criterio antes de aceptar la salida.",
+          "does": "Registra el criterio que permitiria repetir el paso sin instructor.",
+          "decides": "Seguir, pedir mas contexto, escalar modelo o bloquear.",
+          "memoryCheck": "Puede explicar el paso en una frase de menos de 20 segundos."
+        },
+        "prosodyNotes": {
+          "pace": "+8%",
+          "pause": "180ms antes de la decision",
+          "emphasis": "plan, patch, test y coste",
+          "energy": "precisa"
+        },
+        "pronunciationPass": "spain-voice-units-v1"
+      }
     },
     {
       "id": "finale",
       "name": "Cierre",
-      "startMs": 70000,
+      "startMs": 67500,
       "endMs": 90000,
       "type": "finale",
       "content": {
         "title": "El diff debe contar una historia",
         "summary": [
-          { "number": "01", "label": "Causa", "body": "Por que fallaba." },
-          { "number": "02", "label": "Cambio", "body": "Que se toco y que no." },
-          { "number": "03", "label": "Prueba", "body": "Como sabemos que funciona." }
+          {
+            "number": "01",
+            "label": "Causa",
+            "body": "Por que fallaba."
+          },
+          {
+            "number": "02",
+            "label": "Cambio",
+            "body": "Que se toco y que no."
+          },
+          {
+            "number": "03",
+            "label": "Prueba",
+            "body": "Como sabemos que funciona."
+          }
         ],
         "cta": "Ejercicio asociado: cx-b04-bug-login."
       },
       "subtitles": [
-        { "text": "Causa, cambio y prueba.", "startMs": 70500, "endMs": 79000 },
-        { "text": "Ese es el cierre profesional con Codex.", "startMs": 79500, "endMs": 89500 }
-      ]
+        {
+          "text": "Causa, cambio y prueba.",
+          "startMs": 67950,
+          "endMs": 70922
+        },
+        {
+          "text": "Ese es el cierre profesional con Codex.",
+          "startMs": 71102,
+          "endMs": 74506
+        },
+        {
+          "text": "Evidencia minuto 1: el artefacto muestra que se controlo permiso, alcance y modelo.",
+          "startMs": 74686,
+          "endMs": 80754
+        },
+        {
+          "text": "Accion minuto 1: convertir repo en una decision que se pueda ensenar en tutoria.",
+          "startMs": 80934,
+          "endMs": 86498
+        }
+      ],
+      "voiceover": [
+        "Causa, cambio y prueba.",
+        "Ese es el cierre profesional con Codex.",
+        "Evidencia minuto 1: el artefacto muestra que se controlo permiso, alcance y modelo.",
+        "Accion minuto 1: convertir repo en una decision que se pueda ensenar en tutoria."
+      ],
+      "blueprintAction": {
+        "learningRubric": {
+          "learns": "Reconoce por que \"El diff debe contar una historia\" necesita evidencia y no solo respuesta.",
+          "does": "Formula una peticion verificable con limite de alcance.",
+          "decides": "Convertir la duda en material de tutoria si se repite.",
+          "vendor": "codex",
+          "usefulnessScore": 88,
+          "memoryCheck": "Puede nombrar el riesgo principal sin mirar la slide.",
+          "productionPass": "2000-final-direction"
+        }
+      },
+      "production": {
+        "audioVersion": "audio-prod-v2-2026-05-18",
+        "voiceProfileId": "codexReflection",
+        "voice": "es-ES-AlvaroNeural",
+        "rate": "+3%",
+        "pitch": "+0Hz",
+        "energy": "reflexiva",
+        "emphasis": "riesgo, permiso y evidencia",
+        "pauseMs": 260,
+        "role": "reflection",
+        "reviewRubric": {
+          "learns": "Reconoce por que \"El diff debe contar una historia\" necesita evidencia y no solo respuesta.",
+          "does": "Formula una peticion verificable con limite de alcance.",
+          "decides": "Convertir la duda en material de tutoria si se repite.",
+          "memoryCheck": "Puede nombrar el riesgo principal sin mirar la slide."
+        },
+        "prosodyNotes": {
+          "pace": "+3%",
+          "pause": "260ms antes de la decision",
+          "emphasis": "riesgo, permiso y evidencia",
+          "energy": "reflexiva"
+        },
+        "pronunciationPass": "spain-voice-units-v1"
+      }
     }
-  ]
+  ],
+  "production": {
+    "audioProductionVersion": "audio-prod-v2-2026-05-18",
+    "productionPass": "2000-final-direction",
+    "vendor": "codex",
+    "narrativePass": "teacher-contract-v1",
+    "pronunciationPass": "spain-voice-units-v1"
+  }
 }

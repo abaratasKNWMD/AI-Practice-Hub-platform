@@ -1,0 +1,48 @@
+WEBVTT
+
+NOTE cp-medium-01-instructions - Copilot Medium 01 - Instructions
+
+1
+00:00:00.450 --> 00:00:06.830
+Objetivo de esta clase: resolver Copilot Medium 01 - Instructions con criterio practico.
+
+2
+00:00:07.010 --> 00:00:11.854
+Al final debes poder quedarte con una regla de uso y un ejemplo repetible.
+
+3
+00:00:12.034 --> 00:00:15.990
+La ruta sera: concepto, ejemplo y cierre.
+
+4
+00:00:16.170 --> 00:00:19.142
+Durante el video mira esta decision:
+
+5
+00:00:19.322 --> 00:00:23.014
+cuando aplicar esta tecnica en tu propio repositorio.
+
+6
+00:00:30.450 --> 00:00:34.286
+Copilot-instructions es para reglas siempre activas.
+
+7
+00:00:34.466 --> 00:00:38.422
+Los instruction files aplican por path o por tarea.
+
+8
+00:00:38.602 --> 00:00:42.030
+Separar capas mantiene el contexto limpio.
+
+9
+00:01:00.450 --> 00:01:05.438
+Si una instruccion no cambia una decision de Copilot, probablemente sobra.
+
+10
+00:01:05.618 --> 00:01:10.726
+Evidencia minuto 1: patch local, test y comentario de pull request.
+
+11
+00:01:10.906 --> 00:01:16.350
+Accion minuto 1: parar si "Regla de instructions" no produce evidencia nueva.
+

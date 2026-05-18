@@ -9,56 +9,301 @@
   "author": "AI Practice Hub",
   "createdAt": "2026-05-07T00:00:00.000Z",
   "chapters": [
-    { "id": "start", "label": "Memoria", "startMs": 0 },
-    { "id": "concept", "label": "Capas", "startMs": 9000 },
-    { "id": "close", "label": "Regla", "startMs": 65000 }
+    {
+      "id": "start",
+      "label": "Memoria",
+      "startMs": 0
+    },
+    {
+      "id": "concept",
+      "label": "Capas",
+      "startMs": 30000
+    },
+    {
+      "id": "close",
+      "label": "Regla",
+      "startMs": 65000
+    }
   ],
   "scenes": [
     {
       "id": "title",
       "name": "Apertura",
       "startMs": 0,
-      "endMs": 9000,
+      "endMs": 30000,
       "type": "title",
-      "content": { "title": "CLAUDE.md", "subtitle": "La memoria que evita repetir el mismo briefing cada dia.", "tag": "Claude Orientation" },
-      "subtitles": [{ "text": "Claude Code no empieza de cero si el repositorio tiene memoria bien escrita.", "startMs": 1000, "endMs": 8200 }]
+      "content": {
+        "title": "CLAUDE.md",
+        "subtitle": "Objetivo: resolver Claude Orientation 01 - CLAUDE.md con criterio practico.",
+        "tag": "Claude Orientation",
+        "narrativeContract": {
+          "objective": "resolver Claude Orientation 01 - CLAUDE.md con criterio practico.",
+          "outcome": "quedarte con una regla de uso y un ejemplo repetible.",
+          "route": "concepto, ejemplo y cierre.",
+          "decision": "cuando aplicar esta tecnica en tu propio repositorio."
+        }
+      },
+      "subtitles": [
+        {
+          "text": "Objetivo de esta clase:",
+          "startMs": 450,
+          "endMs": 3038
+        },
+        {
+          "text": "resolver Claude Orientation 01 - CLAUDE.md con criterio practico.",
+          "startMs": 3218,
+          "endMs": 8806
+        },
+        {
+          "text": "Al final debes poder quedarte con una regla de uso y un ejemplo repetible.",
+          "startMs": 8986,
+          "endMs": 13902
+        },
+        {
+          "text": "La ruta sera: concepto, ejemplo y cierre.",
+          "startMs": 14082,
+          "endMs": 18110
+        },
+        {
+          "text": "Durante el video mira esta decision:",
+          "startMs": 18290,
+          "endMs": 21310
+        },
+        {
+          "text": "cuando aplicar esta tecnica en tu propio repositorio.",
+          "startMs": 21490,
+          "endMs": 25230
+        }
+      ],
+      "voiceover": [
+        "Objetivo de esta clase:",
+        "resolver Claude Orientation 01 - CLAUDE.md con criterio practico.",
+        "Al final debes poder quedarte con una regla de uso y un ejemplo repetible.",
+        "La ruta sera: concepto, ejemplo y cierre.",
+        "Durante el video mira esta decision:",
+        "cuando aplicar esta tecnica en tu propio repositorio."
+      ],
+      "blueprintAction": {
+        "learningRubric": {
+          "learns": "Ubica coste, permiso y criterio antes de aceptar la salida.",
+          "does": "Registra el criterio que permitiria repetir el paso sin instructor.",
+          "decides": "Seguir, pedir mas contexto, escalar modelo o bloquear.",
+          "vendor": "claude",
+          "usefulnessScore": 82,
+          "memoryCheck": "Puede explicar el paso en una frase de menos de 20 segundos.",
+          "productionPass": "2000-final-direction"
+        }
+      },
+      "production": {
+        "audioVersion": "audio-prod-v2-2026-05-18",
+        "voiceProfileId": "claudeNarrator",
+        "voice": "es-ES-AlvaroNeural",
+        "rate": "+5%",
+        "pitch": "+0Hz",
+        "energy": "calmada",
+        "emphasis": "memoria, skill, hook y MCP",
+        "pauseMs": 220,
+        "role": "narrator",
+        "reviewRubric": {
+          "learns": "Ubica coste, permiso y criterio antes de aceptar la salida.",
+          "does": "Registra el criterio que permitiria repetir el paso sin instructor.",
+          "decides": "Seguir, pedir mas contexto, escalar modelo o bloquear.",
+          "memoryCheck": "Puede explicar el paso en una frase de menos de 20 segundos."
+        },
+        "prosodyNotes": {
+          "pace": "+5%",
+          "pause": "220ms antes de la decision",
+          "emphasis": "memoria, skill, hook y M C P",
+          "energy": "calmada"
+        },
+        "pronunciationPass": "spain-voice-units-v1"
+      }
     },
     {
       "id": "concept",
       "name": "Capas",
-      "startMs": 9000,
-      "endMs": 65000,
+      "startMs": 30000,
+      "endMs": 60000,
       "type": "concept",
       "content": {
         "tag": "Memoria operativa",
         "title": "No todo va al prompt",
-        "body": "El error comun es pegar contexto una y otra vez. En Claude Code, el equipo puede mover informacion estable a CLAUDE.md, preferencias personales a CLAUDE.local.md, reglas especificas a .claude/rules y procedimientos repetidos a skills.\n\nEsto reduce coste, mejora consistencia y hace que la tutoria sea sobre decisiones reales, no sobre explicar de nuevo el repo.",
+        "body": "El error comun es pegar contexto una y otra vez. En Claude Code, el equipo puede mover informacion estable a CLAUDE.md, preferencias personales a CLAUDE.local.md, reglas especificas a.claude/rules y procedimientos repetidos a skills. Esto reduce coste, mejora consistencia y hace que la tutoria sea sobre decisiones reales, no sobre explicar de nuevo el repo.",
         "highlight": "Memoria buena = menos repeticion, menos tokens, mejores decisiones.",
-        "points": ["CLAUDE.md: reglas estables de proyecto", "Rules: contexto por area", "Skills: procedimientos invocables", "Local memory: preferencias no versionadas"]
+        "points": [
+          "CLAUDE.md: reglas estables de proyecto",
+          "Rules: contexto por area",
+          "Skills: procedimientos invocables",
+          "Local memory: preferencias no versionadas"
+        ]
       },
       "subtitles": [
-        { "text": "La memoria no es un cajon para todo.", "startMs": 10000, "endMs": 22000 },
-        { "text": "Cada capa tiene una funcion y un coste.", "startMs": 23000, "endMs": 42000 },
-        { "text": "El objetivo es que la sesion arranque con contexto justo.", "startMs": 43000, "endMs": 63000 }
-      ]
+        {
+          "text": "La memoria no es un cajon para todo.",
+          "startMs": 30450,
+          "endMs": 33638
+        },
+        {
+          "text": "Cada capa tiene una funcion y un coste.",
+          "startMs": 33818,
+          "endMs": 37126
+        },
+        {
+          "text": "El objetivo es que la sesion arranque con contexto justo.",
+          "startMs": 37306,
+          "endMs": 41454
+        }
+      ],
+      "voiceover": [
+        "La memoria no es un cajon para todo.",
+        "Cada capa tiene una funcion y un coste.",
+        "El objetivo es que la sesion arranque con contexto justo."
+      ],
+      "blueprintAction": {
+        "learningRubric": {
+          "learns": "Reconoce por que \"No todo va al prompt\" necesita evidencia y no solo respuesta.",
+          "does": "Formula una peticion verificable con limite de alcance.",
+          "decides": "Convertir la duda en material de tutoria si se repite.",
+          "vendor": "claude",
+          "usefulnessScore": 84,
+          "memoryCheck": "Puede nombrar el riesgo principal sin mirar la slide.",
+          "productionPass": "2000-final-direction"
+        }
+      },
+      "production": {
+        "audioVersion": "audio-prod-v2-2026-05-18",
+        "voiceProfileId": "claudeNarrator",
+        "voice": "es-ES-AlvaroNeural",
+        "rate": "+5%",
+        "pitch": "+0Hz",
+        "energy": "calmada",
+        "emphasis": "memoria, skill, hook y MCP",
+        "pauseMs": 220,
+        "role": "narrator",
+        "reviewRubric": {
+          "learns": "Reconoce por que \"No todo va al prompt\" necesita evidencia y no solo respuesta.",
+          "does": "Formula una peticion verificable con limite de alcance.",
+          "decides": "Convertir la duda en material de tutoria si se repite.",
+          "memoryCheck": "Puede nombrar el riesgo principal sin mirar la slide."
+        },
+        "prosodyNotes": {
+          "pace": "+5%",
+          "pause": "220ms antes de la decision",
+          "emphasis": "memoria, skill, hook y M C P",
+          "energy": "calmada"
+        },
+        "pronunciationPass": "spain-voice-units-v1"
+      }
     },
     {
       "id": "finale",
       "name": "Cierre",
-      "startMs": 65000,
+      "startMs": 60000,
       "endMs": 90000,
       "type": "finale",
       "content": {
         "title": "Regla de memoria",
         "summary": [
-          { "number": "01", "label": "Estable", "body": "Va a CLAUDE.md." },
-          { "number": "02", "label": "Especifico", "body": "Va a rules o skills." },
-          { "number": "03", "label": "Personal", "body": "Va a CLAUDE.local.md." }
+          {
+            "number": "01",
+            "label": "Estable",
+            "body": "Va a CLAUDE.md."
+          },
+          {
+            "number": "02",
+            "label": "Especifico",
+            "body": "Va a rules o skills."
+          },
+          {
+            "number": "03",
+            "label": "Personal",
+            "body": "Va a CLAUDE.local.md."
+          }
         ],
         "cta": "Ejercicio: cl0-e02-claude-md."
       },
-      "subtitles": [{ "text": "Si una regla se repite cada semana, no la expliques: versionala.", "startMs": 66000, "endMs": 89000 }]
+      "subtitles": [
+        {
+          "text": "Si una regla se repite cada semana, no la expliques: versionala.",
+          "startMs": 60450,
+          "endMs": 65558
+        },
+        {
+          "text": "Evidencia minuto 1:",
+          "startMs": 65738,
+          "endMs": 68254
+        },
+        {
+          "text": "hay una salida que otro perfil puede revisar sin rehacer el contexto.",
+          "startMs": 68434,
+          "endMs": 73230
+        },
+        {
+          "text": "Accion minuto 1: comparar la respuesta con el criterio de cierre",
+          "startMs": 73410,
+          "endMs": 78206
+        },
+        {
+          "text": "no con la sensacion de velocidad.",
+          "startMs": 78386,
+          "endMs": 81286
+        },
+        {
+          "text": "no con la sensacion de velocidad. (Claude, minuto 1, paso 4)",
+          "startMs": 81466,
+          "endMs": 87702
+        }
+      ],
+      "voiceover": [
+        "Si una regla se repite cada semana, no la expliques: versionala.",
+        "Evidencia minuto 1:",
+        "hay una salida que otro perfil puede revisar sin rehacer el contexto.",
+        "Accion minuto 1: comparar la respuesta con el criterio de cierre",
+        "no con la sensacion de velocidad.",
+        "no con la sensacion de velocidad. (Claude, minuto 1, paso 4)"
+      ],
+      "blueprintAction": {
+        "learningRubric": {
+          "learns": "Distingue decision humana de ejecucion automatizada en Claude.",
+          "does": "Comprueba la salida contra prueba, owner o captura.",
+          "decides": "Aceptar solo si la evidencia queda visible para otra persona.",
+          "vendor": "claude",
+          "usefulnessScore": 86,
+          "memoryCheck": "Puede repetir el prompt inicial con criterio de cierre.",
+          "productionPass": "2000-final-direction"
+        }
+      },
+      "production": {
+        "audioVersion": "audio-prod-v2-2026-05-18",
+        "voiceProfileId": "claudeSafety",
+        "voice": "es-ES-AlvaroNeural",
+        "rate": "+2%",
+        "pitch": "+0Hz",
+        "energy": "deliberada",
+        "emphasis": "permiso, bloqueo y rollback",
+        "pauseMs": 300,
+        "role": "reflection",
+        "reviewRubric": {
+          "learns": "Distingue decision humana de ejecucion automatizada en Claude.",
+          "does": "Comprueba la salida contra prueba, owner o captura.",
+          "decides": "Aceptar solo si la evidencia queda visible para otra persona.",
+          "memoryCheck": "Puede repetir el prompt inicial con criterio de cierre."
+        },
+        "prosodyNotes": {
+          "pace": "+2%",
+          "pause": "300ms antes de la decision",
+          "emphasis": "permiso, bloqueo y rollback",
+          "energy": "deliberada"
+        },
+        "pronunciationPass": "spain-voice-units-v1"
+      }
     }
-  ]
+  ],
+  "production": {
+    "audioProductionVersion": "audio-prod-v2-2026-05-18",
+    "productionPass": "2000-final-direction",
+    "vendor": "claude",
+    "narrativePass": "teacher-contract-v1",
+    "pronunciationPass": "spain-voice-units-v1"
+  }
 }
-

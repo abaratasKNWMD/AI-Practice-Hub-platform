@@ -151,6 +151,21 @@ export const SCENE_TYPE_CATALOG = {
       cta: 'Empieza con LlamaIndex en 5 minutos — docs.llamaindex.ai',
     },
   },
+  'media-break': {
+    description: 'Visual memory break with a deck asset, realistic vendor screenshot, meme, reflection or operative diagram. Use to reset attention and attach a concrete lesson to an image.',
+    requiredFields: ['kind', 'title', 'imageUrl', 'caption', 'situation', 'tension', 'action', 'evidence', 'decision'],
+    example: {
+      kind: 'screenshot',
+      title: 'La decision antes del patch',
+      imageUrl: '/video-assets/vendor-mockups/codex-cli-cloud.svg',
+      caption: 'La imagen no decora: marca que mirar antes de ejecutar.',
+      situation: 'El agente ya tiene contexto suficiente para proponer un cambio.',
+      tension: 'Si se ejecuta sin evidencia, el coste y el riesgo se esconden.',
+      action: 'Pedir plan, permiso y prueba minima antes del patch.',
+      evidence: 'El cierre deja diff, test y coste.',
+      decision: 'Seguir solo si la evidencia existe.',
+    },
+  },
   prompt: {
     description: 'Operational screen that types a prompt with objective, context, constraints and done criteria.',
     requiredFields: ['mode', 'title', 'prompt'],

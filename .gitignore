@@ -11,3 +11,6 @@ node_modules/
 tsconfig.tsbuildinfo
 .env*.local
 .DS_Store
+
+# Generated full-scene visual QA captures are useful locally but too heavy for Git.
+public/release-ops/qa/video-audit-100/screenshots/

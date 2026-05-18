@@ -1,0 +1,72 @@
+WEBVTT
+
+NOTE cx-ultra-02-pr-swarm - Codex Ultra 02 - pull request Swarm
+
+1
+00:00:00.450 --> 00:00:02.966
+Objetivo de esta clase:
+
+2
+00:00:03.011 --> 00:00:08.191
+resolver Codex Ultra 02 - pull request Swarm con criterio practico.
+
+3
+00:00:08.236 --> 00:00:13.032
+Al final debes poder quedarte con una regla de uso y un ejemplo repetible.
+
+4
+00:00:13.077 --> 00:00:16.985
+La ruta sera: concepto, ejemplo y cierre.
+
+5
+00:00:17.030 --> 00:00:19.978
+Durante el video mira esta decision:
+
+6
+00:00:18.776 --> 00:00:22.420
+cuando aplicar esta tecnica en tu propio repositorio.
+
+7
+00:00:22.950 --> 00:00:25.754
+Cada rol ve un tipo de riesgo.
+
+8
+00:00:25.934 --> 00:00:28.978
+El orquestador no copia respuestas.
+
+9
+00:00:29.158 --> 00:00:32.658
+Integra, resuelve desacuerdos y decide.
+
+10
+00:00:45.450 --> 00:00:48.446
+El valor aparece en la sintesis.
+
+11
+00:00:48.626 --> 00:00:51.454
+No en tener muchas voces.
+
+12
+00:00:51.634 --> 00:00:55.182
+Un buen swarm termina con una decision clara.
+
+13
+00:01:07.950 --> 00:01:11.042
+El swarm potente no hace ruido.
+
+14
+00:01:11.222 --> 00:01:13.810
+Hace mejor la decision.
+
+15
+00:01:13.990 --> 00:01:20.298
+Evidencia minuto 1: "Swarm que sirve" no se cierra sin test, captura o criterio escrito.
+
+16
+00:01:20.478 --> 00:01:26.762
+Accion minuto 1: pedir salida pequena verificable y con owner. (Codex
+
+17
+00:01:26.942 --> 00:01:29.482
+minuto 1 paso 12)
+

@@ -1,0 +1,332 @@
+{
+  "generatedAt": "2026-05-18T16:52:04.524Z",
+  "totals": {
+    "courses": 44,
+    "scenes": 961,
+    "subtitles": 7017,
+    "manifests": 44,
+    "audioEntries": 7017,
+    "audioBytes": 181045584,
+    "missingAudio": 0,
+    "missingManifest": 0,
+    "missingVtt": 0,
+    "missingSrt": 0,
+    "longSubtitles": 0,
+    "fastSubtitles": 0,
+    "slowSubtitles": 0,
+    "audioOverflow": 0,
+    "audioMb": 172.7,
+    "pass": true
+  },
+  "issues": [],
+  "courses": [
+    {
+      "id": "cl-advanced-01-hooks",
+      "scenes": 3,
+      "subtitles": 11,
+      "entries": 11,
+      "issues": []
+    },
+    {
+      "id": "cl-advanced-02-plugin-action",
+      "scenes": 3,
+      "subtitles": 14,
+      "entries": 14,
+      "issues": []
+    },
+    {
+      "id": "cl-basic-01-claude-md",
+      "scenes": 3,
+      "subtitles": 16,
+      "entries": 16,
+      "issues": []
+    },
+    {
+      "id": "cl-basic-02-compact-context",
+      "scenes": 3,
+      "subtitles": 15,
+      "entries": 15,
+      "issues": []
+    },
+    {
+      "id": "cl-masterclass-10m-claude-operating-model",
+      "scenes": 24,
+      "subtitles": 133,
+      "entries": 133,
+      "issues": []
+    },
+    {
+      "id": "cl-operator-01-first-skill",
+      "scenes": 3,
+      "subtitles": 11,
+      "entries": 11,
+      "issues": []
+    },
+    {
+      "id": "cl-operator-02-subagent-explorer",
+      "scenes": 3,
+      "subtitles": 13,
+      "entries": 13,
+      "issues": []
+    },
+    {
+      "id": "cl-operator-03-mcp-project",
+      "scenes": 3,
+      "subtitles": 17,
+      "entries": 17,
+      "issues": []
+    },
+    {
+      "id": "cl-orientation-01-claude-md",
+      "scenes": 3,
+      "subtitles": 15,
+      "entries": 15,
+      "issues": []
+    },
+    {
+      "id": "cl-orientation-02-memory-vs-instructions",
+      "scenes": 3,
+      "subtitles": 12,
+      "entries": 12,
+      "issues": []
+    },
+    {
+      "id": "cl-orientation-03-cost-context",
+      "scenes": 3,
+      "subtitles": 12,
+      "entries": 12,
+      "issues": []
+    },
+    {
+      "id": "cl-sdk-01-agent-sdk",
+      "scenes": 3,
+      "subtitles": 12,
+      "entries": 12,
+      "issues": []
+    },
+    {
+      "id": "cl-sdk-02-evals-governance",
+      "scenes": 3,
+      "subtitles": 17,
+      "entries": 17,
+      "issues": []
+    },
+    {
+      "id": "cl-workshop-30m-memory-to-hook",
+      "scenes": 60,
+      "subtitles": 389,
+      "entries": 389,
+      "issues": []
+    },
+    {
+      "id": "cl-workshop-60m-memory-to-automation",
+      "scenes": 120,
+      "subtitles": 1052,
+      "entries": 1052,
+      "issues": []
+    },
+    {
+      "id": "cp-advanced-01-custom-agent",
+      "scenes": 3,
+      "subtitles": 20,
+      "entries": 20,
+      "issues": []
+    },
+    {
+      "id": "cp-advanced-02-mcp-code-review",
+      "scenes": 3,
+      "subtitles": 14,
+      "entries": 14,
+      "issues": []
+    },
+    {
+      "id": "cp-basic-01-inline-completion",
+      "scenes": 3,
+      "subtitles": 18,
+      "entries": 18,
+      "issues": []
+    },
+    {
+      "id": "cp-basic-02-ask-edit-agent",
+      "scenes": 3,
+      "subtitles": 15,
+      "entries": 15,
+      "issues": []
+    },
+    {
+      "id": "cp-basic-03-error-to-fix",
+      "scenes": 3,
+      "subtitles": 11,
+      "entries": 11,
+      "issues": []
+    },
+    {
+      "id": "cp-cloud-01-cloud-agent-pr",
+      "scenes": 3,
+      "subtitles": 12,
+      "entries": 12,
+      "issues": []
+    },
+    {
+      "id": "cp-cloud-02-premium-requests",
+      "scenes": 3,
+      "subtitles": 13,
+      "entries": 13,
+      "issues": []
+    },
+    {
+      "id": "cp-git-01-fork-vs-branch",
+      "scenes": 3,
+      "subtitles": 17,
+      "entries": 17,
+      "issues": []
+    },
+    {
+      "id": "cp-git-02-pr-as-contract",
+      "scenes": 3,
+      "subtitles": 15,
+      "entries": 15,
+      "issues": []
+    },
+    {
+      "id": "cp-masterclass-10m-copilot-workbench",
+      "scenes": 24,
+      "subtitles": 143,
+      "entries": 143,
+      "issues": []
+    },
+    {
+      "id": "cp-medium-01-instructions",
+      "scenes": 3,
+      "subtitles": 11,
+      "entries": 11,
+      "issues": []
+    },
+    {
+      "id": "cp-medium-02-prompt-files",
+      "scenes": 3,
+      "subtitles": 13,
+      "entries": 13,
+      "issues": []
+    },
+    {
+      "id": "cp-workshop-30m-error-to-pr",
+      "scenes": 60,
+      "subtitles": 391,
+      "entries": 391,
+      "issues": []
+    },
+    {
+      "id": "cp-workshop-60m-vscode-to-pr-review",
+      "scenes": 120,
+      "subtitles": 1168,
+      "entries": 1168,
+      "issues": []
+    },
+    {
+      "id": "cx-basic-01-agents-md",
+      "scenes": 4,
+      "subtitles": 14,
+      "entries": 14,
+      "issues": []
+    },
+    {
+      "id": "cx-basic-02-plan-before-patch",
+      "scenes": 4,
+      "subtitles": 16,
+      "entries": 16,
+      "issues": []
+    },
+    {
+      "id": "cx-masterclass-10m-codex-operating-system",
+      "scenes": 24,
+      "subtitles": 126,
+      "entries": 126,
+      "issues": []
+    },
+    {
+      "id": "cx-medium-01-model-picker",
+      "scenes": 4,
+      "subtitles": 15,
+      "entries": 15,
+      "issues": []
+    },
+    {
+      "id": "cx-medium-02-mcp-readonly",
+      "scenes": 4,
+      "subtitles": 15,
+      "entries": 15,
+      "issues": []
+    },
+    {
+      "id": "cx-medium-03-skill-qa-visual",
+      "scenes": 4,
+      "subtitles": 15,
+      "entries": 15,
+      "issues": []
+    },
+    {
+      "id": "cx-orientation-01-surface-map",
+      "scenes": 4,
+      "subtitles": 16,
+      "entries": 16,
+      "issues": []
+    },
+    {
+      "id": "cx-orientation-02-first-task",
+      "scenes": 4,
+      "subtitles": 19,
+      "entries": 19,
+      "issues": []
+    },
+    {
+      "id": "cx-orientation-03-permissions",
+      "scenes": 4,
+      "subtitles": 16,
+      "entries": 16,
+      "issues": []
+    },
+    {
+      "id": "cx-ultra-01-github-action",
+      "scenes": 4,
+      "subtitles": 15,
+      "entries": 15,
+      "issues": []
+    },
+    {
+      "id": "cx-ultra-02-pr-swarm",
+      "scenes": 4,
+      "subtitles": 17,
+      "entries": 17,
+      "issues": []
+    },
+    {
+      "id": "cx-workshop-30m-first-real-task",
+      "scenes": 60,
+      "subtitles": 341,
+      "entries": 341,
+      "issues": []
+    },
+    {
+      "id": "cx-workshop-60m-first-task-to-pr",
+      "scenes": 120,
+      "subtitles": 1049,
+      "entries": 1049,
+      "issues": []
+    },
+    {
+      "id": "hub-operating-model-60m",
+      "scenes": 120,
+      "subtitles": 839,
+      "entries": 839,
+      "issues": []
+    },
+    {
+      "id": "hub-workshop-60m-vendor-selection",
+      "scenes": 120,
+      "subtitles": 904,
+      "entries": 904,
+      "issues": []
+    }
+  ]
+}

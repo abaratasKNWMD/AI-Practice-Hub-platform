@@ -47,7 +47,7 @@ export function Controls({
   }
 
   return (
-    <div className="absolute bottom-0 left-0 right-0 z-20 bg-gradient-to-t from-background via-background/90 to-transparent pt-16 pb-3 px-4 md:px-6">
+    <div data-movie-controls className="absolute bottom-0 left-0 right-0 z-20 bg-gradient-to-t from-background via-background/90 to-transparent pt-16 pb-3 px-4 md:px-6">
 
       {/* Chapter labels — small ticks above bar */}
       <div className="relative w-full h-5 mb-1 hidden md:block">

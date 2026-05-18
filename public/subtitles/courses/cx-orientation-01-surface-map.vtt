@@ -1,0 +1,68 @@
+WEBVTT
+
+NOTE cx-orientation-01-surface-map - Codex Orientation 01 - Surface Map
+
+1
+00:00:00.450 --> 00:00:02.966
+Objetivo de esta clase:
+
+2
+00:00:03.011 --> 00:00:08.335
+resolver Codex Orientation 01 - Surface Map con criterio practico.
+
+3
+00:00:08.380 --> 00:00:13.176
+Al final debes poder quedarte con una regla de uso y un ejemplo repetible.
+
+4
+00:00:13.221 --> 00:00:17.129
+La ruta sera: concepto, ejemplo y cierre.
+
+5
+00:00:17.174 --> 00:00:20.122
+Durante el video mira esta decision:
+
+6
+00:00:18.776 --> 00:00:22.420
+cuando aplicar esta tecnica en tu propio repositorio.
+
+7
+00:00:22.950 --> 00:00:25.850
+Piensa Codex como tres capas.
+
+8
+00:00:26.030 --> 00:00:29.554
+Conversacion, workspace y herramientas.
+
+9
+00:00:29.734 --> 00:00:34.074
+El primer ejercicio es mapear esas capas en un repo real.
+
+10
+00:00:45.450 --> 00:00:49.214
+El mal arranque pide solucion antes de diagnostico.
+
+11
+00:00:49.394 --> 00:00:53.614
+El buen arranque pide mapa, evidencias y siguiente paso.
+
+12
+00:00:53.794 --> 00:00:57.150
+Eso reduce coste y aumenta confianza.
+
+13
+00:01:07.950 --> 00:01:11.498
+Explora, pregunta y despues actua.
+
+14
+00:01:11.678 --> 00:01:15.706
+Ese orden convierte Codex en una herramienta de equipo.
+
+15
+00:01:15.886 --> 00:01:21.954
+Evidencia minuto 1: el artefacto muestra que se controlo permiso, alcance y modelo.
+
+16
+00:01:22.134 --> 00:01:27.698
+Accion minuto 1: convertir repo en una decision que se pueda ensenar en tutoria.
+

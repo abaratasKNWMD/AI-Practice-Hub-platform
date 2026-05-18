@@ -115,30 +115,105 @@ function splitDuration(totalSec, parts) {
 }
 
 function getAutoBeatKinds(scene) {
-  if (scene.kind === 'coding') return ['prompt', 'streaming', 'diff', 'terminal']
-  if (scene.kind === 'error') return ['terminal', 'risk', 'prompt', 'decision']
-  if (scene.kind === 'compare') return ['decision', 'risk', 'cost', 'quiz']
-  if (scene.kind === 'thinking') return ['streaming', 'decision', 'cost', 'pause']
-  if (scene.kind === 'linear') return ['branch', 'decision', 'cost', 'pr-review']
-  if (scene.kind === 'preview') return ['pr-review', 'terminal', 'decision', 'cost']
-  if (scene.kind === 'finale') return ['quiz', 'pr-review', 'cost', 'pause']
-  return ['prompt', 'streaming', 'decision', 'cost']
+  if (scene.kind === 'coding') return ['prompt', 'streaming', 'diff', 'terminal', 'decision', 'risk', 'pr-review', 'cost', 'branch', 'quiz']
+  if (scene.kind === 'error') return ['terminal', 'risk', 'prompt', 'streaming', 'diff', 'decision', 'pause', 'terminal', 'cost', 'quiz']
+  if (scene.kind === 'compare') return ['decision', 'risk', 'cost', 'quiz', 'prompt', 'streaming', 'branch', 'pause', 'pr-review', 'decision']
+  if (scene.kind === 'thinking') return ['streaming', 'decision', 'cost', 'pause', 'prompt', 'branch', 'risk', 'quiz', 'terminal', 'pr-review']
+  if (scene.kind === 'linear') return ['branch', 'decision', 'cost', 'pr-review', 'prompt', 'streaming', 'diff', 'terminal', 'risk', 'quiz']
+  if (scene.kind === 'preview') return ['pr-review', 'terminal', 'decision', 'cost', 'risk', 'prompt', 'streaming', 'diff', 'pause', 'quiz']
+  if (scene.kind === 'finale') return ['quiz', 'pr-review', 'cost', 'pause', 'decision', 'branch', 'risk', 'terminal', 'streaming', 'quiz']
+  return ['prompt', 'streaming', 'decision', 'branch', 'cost', 'risk', 'diff', 'terminal', 'pause', 'quiz']
 }
 
 function autoBeatCount(blueprint, scene) {
   if (Array.isArray(scene.beats) && scene.beats.length) return scene.beats.length
-  if (blueprint.durationMin === 60) return 4
-  if (blueprint.durationMin === 30) return 2
+  if (blueprint.durationMin === 60) return 10
+  if (blueprint.durationMin === 30) return 5
+  if (blueprint.durationMin === 20) return 4
+  if (blueprint.durationMin === 10) return 3
   return 1
 }
 
-function pickVoiceover(scene, index, count) {
+function vendorProfile(vendor = 'platform') {
+  const profiles = {
+    codex: {
+      name: 'Codex',
+      file: 'AGENTS.md',
+      surface: 'CLI, IDE y cloud task',
+      modelFast: 'modelo rapido para lectura',
+      modelStrong: 'modelo fuerte para cambios ambiguos',
+      permission: 'readonly antes de workspace-write',
+      command: 'pnpm test -- auth.spec.ts',
+      artifact: 'diff pequeno, tests y resumen de coste',
+      risk: 'ediciones amplias sin plan',
+    },
+    copilot: {
+      name: 'Copilot',
+      file: 'copilot-instructions.md',
+      surface: 'VS Code Ask, Edit, Agent y PR review',
+      modelFast: 'modelo rapido de Copilot Chat',
+      modelStrong: 'modelo avanzado para Agent o PR complejo',
+      permission: 'seleccion y rutas acotadas',
+      command: 'pnpm test -- total.spec.ts',
+      artifact: 'patch local, test y comentario de PR',
+      risk: 'aceptar sugerencias sin evidencia',
+    },
+    claude: {
+      name: 'Claude',
+      file: 'CLAUDE.md',
+      surface: 'Claude Code, skills, hooks, subagentes y MCP',
+      modelFast: 'modelo eficiente para lectura y clasificacion',
+      modelStrong: 'modelo fuerte para arquitectura o automatizacion',
+      permission: 'tool access minimo y hooks con rollback',
+      command: 'pnpm test -- auth.spec.ts',
+      artifact: 'skill, hook o patch con owner',
+      risk: 'automatizar sin frontera ni firma humana',
+    },
+    platform: {
+      name: 'AI Practice Hub',
+      file: 'ruta-de-aprendizaje.json',
+      surface: 'hub, workshops, metricas y tutorias',
+      modelFast: 'modelo economico para triaje',
+      modelStrong: 'modelo fuerte para criterio transversal',
+      permission: 'datos mock y evidencias anonimizadas',
+      command: 'pnpm release:smoke',
+      artifact: 'decision de ruta, ejercicio y evidencia',
+      risk: 'formacion bonita sin transferencia al trabajo real',
+    },
+  }
+  return profiles[vendor] ?? profiles.platform
+}
+
+function shortText(value, fallback = 'criterio operativo', max = 118) {
+  if (!value) return fallback
+  if (typeof value === 'string') return value.length > max ? `${value.slice(0, max - 3)}...` : value
+  if (Array.isArray(value)) return shortText(value.join(', '), fallback, max)
+  if (typeof value === 'object') {
+    const first = Object.values(value).flat().find(item => typeof item === 'string')
+    return shortText(first, fallback, max)
+  }
+  return fallback
+}
+
+function sceneSignal(scene) {
+  const content = scene.screen?.content ?? {}
+  return shortText(
+    content.task ?? content.issue ?? content.prompt ?? content.rule ?? content.description ?? content.headline ?? content.title ?? scene.screen?.title,
+    scene.name,
+  )
+}
+
+function pickVoiceover(blueprint, scene, beat, index, count) {
+  const profile = vendorProfile(blueprint.vendor)
   if (count === 1) return scene.voiceover
-  const text = scene.voiceover[index % scene.voiceover.length]
-  const labels = ['Pantalla de accion', 'Respuesta simulada', 'Decision humana', 'Coste y riesgo']
+  const text = shortText(scene.voiceover[index % scene.voiceover.length], scene.name, 86)
+  const labels = ['Pantalla de accion', 'Contexto visible', 'Decision humana', 'Evidencia', 'Coste y riesgo', 'Checkpoint']
+  const label = beat?.label ?? labels[index % labels.length]
   return [
-    `${labels[index] ?? 'Paso'}: ${text}`,
-    scene.action?.detail ?? scene.screen.presenterCue ?? 'El instructor conecta la pantalla con el criterio operativo.',
+    `${label}: ${text}`,
+    `En ${profile.name}, esta pantalla se aterriza en ${profile.surface}.`,
+    `La evidencia esperada es ${profile.artifact}.`,
+    shortText(scene.action?.detail ?? scene.screen.presenterCue, 'El instructor conecta pantalla, decision y siguiente paso.'),
   ]
 }
 
@@ -152,11 +227,18 @@ function stringifySnippet(value) {
 }
 
 function buildOperationalContent(blueprint, scene, beat, index) {
+  const profile = vendorProfile(blueprint.vendor)
   const sourceContent = beat.screen?.content ?? scene.screen.content
   const action = beat.action ?? scene.action
   const mode = beat.kind ?? 'decision'
   const title = beat.screen?.title ?? scene.screen.title ?? scene.name
   const snippet = stringifySnippet(sourceContent)
+  const signal = sceneSignal(scene)
+  const actionDetail = shortText(action?.detail ?? scene.screen.presenterCue, signal)
+  const filename = shortText(sourceContent?.filename ?? sourceContent?.file ?? sourceContent?.path ?? profile.file, profile.file)
+  const acceptance = sourceContent?.acceptance ?? sourceContent?.expected ?? sourceContent?.checks ?? sourceContent?.rules ?? []
+  const acceptanceText = Array.isArray(acceptance) && acceptance.length ? shortText(acceptance[0], 'criterio verificable') : 'criterio verificable'
+  const step = index + 1
 
   return {
     mode,
@@ -166,55 +248,74 @@ function buildOperationalContent(blueprint, scene, beat, index) {
     label: beat.label,
     presenterCue: beat.screen?.presenterCue ?? scene.screen.presenterCue,
     actionLabel: action?.label,
-    actionDetail: action?.detail,
+    actionDetail,
     expectedOutput: action?.expectedOutput,
-    prompt: action?.detail ?? scene.screen.presenterCue ?? snippet,
+    prompt: [
+      `Actua como ${profile.name} en modo ${mode}.`,
+      `Objetivo: ${signal}.`,
+      `Lee ${filename} y solo las rutas necesarias.`,
+      `Antes de cambiar nada, devuelve hipotesis, criterio de cierre y riesgo.`,
+      `Permiso actual: ${profile.permission}.`,
+      `Salida esperada: ${profile.artifact}.`,
+    ].join('\n'),
     response: [
-      action?.expectedOutput ?? 'Respuesta simulada con salida verificable.',
-      'Se cita evidencia, se limita alcance y se deja una decision humana clara.',
-      'El cierre declara siguiente paso, coste aproximado y riesgo residual.',
+      `${profile.name} localiza la senal principal: ${signal}.`,
+      `Propone trabajar sobre ${filename} y mantener fuera cualquier cambio no pedido.`,
+      `Criterio de cierre: ${acceptanceText}; si falta evidencia, no se aprueba.`,
+      `Decision: seguir con ${profile.modelFast} salvo que aparezca acoplamiento real.`,
     ],
     diff: [
-      '- cambio ambiguo sin criterio de aceptacion',
-      '+ cambio acotado con test, owner y evidencia',
-      '+ registro de modelo, permiso y coste',
+      `diff --git a/${filename} b/${filename}`,
+      `- // comportamiento implicito sin evidencia: ${signal}`,
+      `+ // criterio explicito: ${acceptanceText}`,
+      `+ audit.model = "${step % 3 === 0 ? profile.modelStrong : profile.modelFast}"`,
+      '+ audit.doneWhen = "test, review y coste registrados"',
     ],
     terminal: [
-      '$ pnpm test -- --runInBand',
-      '✓ test relevante pasa',
-      '✓ no hay errores de consola',
-      'i coste relativo registrado',
+      `$ ${profile.command}`,
+      `PASS ${filename}`,
+      `checked: ${acceptanceText}`,
+      `model: ${step % 3 === 0 ? profile.modelStrong : profile.modelFast}`,
+      `permission: ${profile.permission}`,
     ],
     review: [
-      { severity: 'blocker', text: 'No hay criterios bloqueantes pendientes.' },
-      { severity: 'medium', text: action?.detail ?? 'Revisar alcance y evidencia antes de aprobar.' },
-      { severity: 'note', text: 'El humano firma el criterio final.' },
+      { severity: step % 5 === 0 ? 'high' : 'note', text: `Verificar que ${filename} no arrastra cambios laterales.` },
+      { severity: 'medium', text: `${profile.name} debe explicar evidencia, no solo mostrar una respuesta correcta.` },
+      { severity: 'note', text: `Owner humano firma si ${acceptanceText} queda demostrado.` },
     ],
     cost: {
-      model: index % 3 === 0 ? 'modelo rapido' : index % 3 === 1 ? 'modelo estandar' : 'modelo fuerte',
-      tokens: index % 3 === 0 ? 'bajo' : index % 3 === 1 ? 'medio' : 'alto controlado',
-      permission: scene.action?.type === 'tool-run' ? 'ejecucion acotada' : 'readonly/workspace segun fase',
-      stopRule: 'Parar si no hay evidencia nueva en el siguiente intento.',
+      model: step % 3 === 0 ? profile.modelStrong : step % 3 === 1 ? profile.modelFast : 'modelo estandar con contexto reducido',
+      tokens: step % 3 === 0 ? 'alto controlado por ventana concreta' : step % 3 === 1 ? 'bajo por lectura acotada' : 'medio por patch y test',
+      permission: scene.action?.type === 'tool-run' ? 'ejecucion acotada con comando visible' : profile.permission,
+      stopRule: `Parar si ${profile.name} no aporta evidencia nueva en el siguiente intento.`,
     },
     decision: {
-      question: 'Que debe decidir la persona antes de continuar?',
+      question: `Decision humana antes de continuar con ${profile.name}`,
       options: ['seguir con alcance actual', 'pedir mas contexto', 'subir modelo', 'bloquear y llevar a tutoria'],
       selected: index % 4,
     },
     risk: {
-      items: ['Permisos', 'Coste', 'Contexto', 'Calidad', 'Responsabilidad humana'],
+      items: [profile.risk, 'Coste por iteracion', 'Contexto incompleto', 'Calidad de evidencia', 'Responsabilidad humana'],
       level: index % 3 === 0 ? 'bajo' : index % 3 === 1 ? 'medio' : 'alto',
     },
     branch: {
-      steps: ['Issue', 'Branch', 'Plan', 'Patch', 'Tests', 'Review', 'PR'],
+      steps: blueprint.vendor === 'copilot'
+        ? ['Issue', 'Ask', 'Edit', 'Agent', 'Tests', 'Review', 'PR']
+        : blueprint.vendor === 'claude'
+          ? ['Brief', 'CLAUDE.md', 'Skill', 'Hook', 'MCP', 'Eval', 'Signoff']
+          : ['Issue', 'Branch', 'Plan', 'Patch', 'Tests', 'Review', 'PR'],
       active: Math.min(6, index + 2),
     },
     quiz: {
-      question: 'Cual es la evidencia minima para cerrar esta pantalla?',
+      question: `Que evidencia cierra esta pantalla de ${profile.name}?`,
       answers: ['Una respuesta convincente', 'Un diff probado o decision documentada', 'Un prompt mas largo'],
       correct: 1,
     },
-    source: sourceContent,
+    source: {
+      ...sourceContent,
+      operationalSignal: signal,
+      snippet,
+    },
   }
 }
 
@@ -242,10 +343,10 @@ function expandBlueprintScene(blueprint, scene) {
   return durations.map((durationSec, index) => {
     const beat = Array.isArray(scene.beats) ? scene.beats[index] : {
       id: `beat-${String(index + 1).padStart(2, '0')}`,
-      label: ['Prompt', 'Respuesta', 'Decision', 'Coste'][index] ?? `Beat ${index + 1}`,
+      label: ['Prompt', 'Respuesta', 'Decision', 'Timeline', 'Coste', 'Riesgo', 'Diff', 'Terminal', 'Pausa', 'Checkpoint'][index] ?? `Beat ${index + 1}`,
       durationSec,
       kind: kinds[index % kinds.length],
-      voiceover: pickVoiceover(scene, index, count),
+      voiceover: pickVoiceover(blueprint, scene, null, index, count),
       action: scene.action,
     }
 
@@ -255,7 +356,7 @@ function expandBlueprintScene(blueprint, scene) {
       durationSec,
       kind: beat.kind ?? kinds[index % kinds.length] ?? 'decision',
       content: buildOperationalContent(blueprint, scene, beat, index),
-      voiceover: beat.voiceover ?? pickVoiceover(scene, index, count),
+      voiceover: beat.voiceover ?? pickVoiceover(blueprint, scene, beat, index, count),
       subtitles: beat.subtitles,
       action: beat.action ?? scene.action,
       sourceSceneId: scene.id,

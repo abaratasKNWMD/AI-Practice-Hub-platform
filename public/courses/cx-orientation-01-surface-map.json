@@ -9,38 +9,131 @@
   "author": "AI Practice Hub",
   "createdAt": "2026-05-07T00:00:00.000Z",
   "chapters": [
-    { "id": "start", "label": "Mapa", "startMs": 0 },
-    { "id": "surfaces", "label": "Superficies", "startMs": 8000 },
-    { "id": "workflow", "label": "Workflow", "startMs": 42000 },
-    { "id": "close", "label": "Cierre", "startMs": 70000 }
+    {
+      "id": "start",
+      "label": "Mapa",
+      "startMs": 0
+    },
+    {
+      "id": "surfaces",
+      "label": "Superficies",
+      "startMs": 8000
+    },
+    {
+      "id": "workflow",
+      "label": "Workflow",
+      "startMs": 42000
+    },
+    {
+      "id": "close",
+      "label": "Cierre",
+      "startMs": 70000
+    }
   ],
   "scenes": [
     {
       "id": "title",
       "name": "Apertura",
       "startMs": 0,
-      "endMs": 8000,
+      "endMs": 22500,
       "type": "title",
       "content": {
         "title": "Codex en 90 segundos",
-        "subtitle": "No empieces pidiendo codigo. Empieza pidiendo mapa.",
-        "tag": "Orientation / Codex"
+        "subtitle": "Objetivo: resolver Codex Orientation 01 - Surface Map con criterio practico.",
+        "tag": "Orientation / Codex",
+        "narrativeContract": {
+          "objective": "resolver Codex Orientation 01 - Surface Map con criterio practico.",
+          "outcome": "quedarte con una regla de uso y un ejemplo repetible.",
+          "route": "concepto, ejemplo y cierre.",
+          "decision": "cuando aplicar esta tecnica en tu propio repositorio."
+        }
       },
       "subtitles": [
-        { "text": "Codex no es solo un chat.", "startMs": 800, "endMs": 2800 },
-        { "text": "Es una superficie de trabajo con contexto, herramientas y permisos.", "startMs": 3000, "endMs": 7000 }
-      ]
+        {
+          "text": "Objetivo de esta clase:",
+          "startMs": 450,
+          "endMs": 2966
+        },
+        {
+          "text": "resolver Codex Orientation 01 - Surface Map con criterio practico.",
+          "startMs": 3011,
+          "endMs": 8335
+        },
+        {
+          "text": "Al final debes poder quedarte con una regla de uso y un ejemplo repetible.",
+          "startMs": 8380,
+          "endMs": 13176
+        },
+        {
+          "text": "La ruta sera: concepto, ejemplo y cierre.",
+          "startMs": 13221,
+          "endMs": 17129
+        },
+        {
+          "text": "Durante el video mira esta decision:",
+          "startMs": 17174,
+          "endMs": 20122
+        },
+        {
+          "text": "cuando aplicar esta tecnica en tu propio repositorio.",
+          "startMs": 18776,
+          "endMs": 22420
+        }
+      ],
+      "voiceover": [
+        "Objetivo de esta clase:",
+        "resolver Codex Orientation 01 - Surface Map con criterio practico.",
+        "Al final debes poder quedarte con una regla de uso y un ejemplo repetible.",
+        "La ruta sera: concepto, ejemplo y cierre.",
+        "Durante el video mira esta decision:",
+        "cuando aplicar esta tecnica en tu propio repositorio."
+      ],
+      "blueprintAction": {
+        "learningRubric": {
+          "learns": "Ubica coste, permiso y criterio antes de aceptar la salida.",
+          "does": "Registra el criterio que permitiria repetir el paso sin instructor.",
+          "decides": "Seguir, pedir mas contexto, escalar modelo o bloquear.",
+          "vendor": "codex",
+          "usefulnessScore": 82,
+          "memoryCheck": "Puede explicar el paso en una frase de menos de 20 segundos.",
+          "productionPass": "2000-final-direction"
+        }
+      },
+      "production": {
+        "audioVersion": "audio-prod-v2-2026-05-18",
+        "voiceProfileId": "codexNarrator",
+        "voice": "es-ES-AlvaroNeural",
+        "rate": "+8%",
+        "pitch": "+0Hz",
+        "energy": "precisa",
+        "emphasis": "plan, patch, test y coste",
+        "pauseMs": 180,
+        "role": "narrator",
+        "reviewRubric": {
+          "learns": "Ubica coste, permiso y criterio antes de aceptar la salida.",
+          "does": "Registra el criterio que permitiria repetir el paso sin instructor.",
+          "decides": "Seguir, pedir mas contexto, escalar modelo o bloquear.",
+          "memoryCheck": "Puede explicar el paso en una frase de menos de 20 segundos."
+        },
+        "prosodyNotes": {
+          "pace": "+8%",
+          "pause": "180ms antes de la decision",
+          "emphasis": "plan, patch, test y coste",
+          "energy": "precisa"
+        },
+        "pronunciationPass": "spain-voice-units-v1"
+      }
     },
     {
       "id": "concept",
       "name": "Mapa de superficie",
-      "startMs": 8000,
-      "endMs": 42000,
+      "startMs": 22500,
+      "endMs": 45000,
       "type": "concept",
       "content": {
         "tag": "Superficie Codex",
         "title": "Tres capas: conversacion, workspace y herramientas",
-        "body": "La conversacion sirve para formular objetivo y criterio. El workspace contiene archivos, estado local, scripts y cambios. Las herramientas permiten leer, editar, ejecutar, verificar, consultar docs o usar conectores.\n\nUn usuario avanzado no pide magia. Pide una operacion concreta sobre esas tres capas.",
+        "body": "La conversacion sirve para formular objetivo y criterio. El workspace contiene archivos, estado local, scripts y cambios. Las herramientas permiten leer, editar, ejecutar, verificar, consultar docs o usar conectores. Un usuario avanzado no pide magia. Pide una operacion concreta sobre esas tres capas.",
         "highlight": "La primera victoria es entender el terreno antes de tocarlo.",
         "points": [
           "Conversacion: objetivo, restricciones, definicion de terminado.",
@@ -50,16 +143,68 @@
         ]
       },
       "subtitles": [
-        { "text": "Piensa Codex como tres capas.", "startMs": 9000, "endMs": 13000 },
-        { "text": "Conversacion, workspace y herramientas.", "startMs": 13500, "endMs": 17500 },
-        { "text": "El primer ejercicio es mapear esas capas en un repo real.", "startMs": 18000, "endMs": 28000 }
-      ]
+        {
+          "text": "Piensa Codex como tres capas.",
+          "startMs": 22950,
+          "endMs": 25850
+        },
+        {
+          "text": "Conversacion, workspace y herramientas.",
+          "startMs": 26030,
+          "endMs": 29554
+        },
+        {
+          "text": "El primer ejercicio es mapear esas capas en un repo real.",
+          "startMs": 29734,
+          "endMs": 34074
+        }
+      ],
+      "voiceover": [
+        "Piensa Codex como tres capas.",
+        "Conversacion, workspace y herramientas.",
+        "El primer ejercicio es mapear esas capas en un repo real."
+      ],
+      "blueprintAction": {
+        "learningRubric": {
+          "learns": "Reconoce por que \"Tres capas: conversacion, workspace y herramientas\" necesita evidencia y no solo respuesta.",
+          "does": "Formula una peticion verificable con limite de alcance.",
+          "decides": "Convertir la duda en material de tutoria si se repite.",
+          "vendor": "codex",
+          "usefulnessScore": 84,
+          "memoryCheck": "Puede nombrar el riesgo principal sin mirar la slide.",
+          "productionPass": "2000-final-direction"
+        }
+      },
+      "production": {
+        "audioVersion": "audio-prod-v2-2026-05-18",
+        "voiceProfileId": "codexNarrator",
+        "voice": "es-ES-AlvaroNeural",
+        "rate": "+8%",
+        "pitch": "+0Hz",
+        "energy": "precisa",
+        "emphasis": "plan, patch, test y coste",
+        "pauseMs": 180,
+        "role": "narrator",
+        "reviewRubric": {
+          "learns": "Reconoce por que \"Tres capas: conversacion, workspace y herramientas\" necesita evidencia y no solo respuesta.",
+          "does": "Formula una peticion verificable con limite de alcance.",
+          "decides": "Convertir la duda en material de tutoria si se repite.",
+          "memoryCheck": "Puede nombrar el riesgo principal sin mirar la slide."
+        },
+        "prosodyNotes": {
+          "pace": "+8%",
+          "pause": "180ms antes de la decision",
+          "emphasis": "plan, patch, test y coste",
+          "energy": "precisa"
+        },
+        "pronunciationPass": "spain-voice-units-v1"
+      }
     },
     {
       "id": "compare",
       "name": "Primer pedido",
-      "startMs": 42000,
-      "endMs": 70000,
+      "startMs": 45000,
+      "endMs": 67500,
       "type": "compare",
       "content": {
         "tag": "Mal arranque vs buen arranque",
@@ -67,9 +212,22 @@
           "label": "Pedido impulsivo",
           "color": "destructive",
           "steps": [
-            { "icon": "AlertTriangle", "text": "Arregla esto rapido" },
-            { "icon": "Code", "text": "Codex toca archivos sin contexto suficiente" },
-            { "icon": "MessageSquare", "text": "El usuario revisa una solucion opaca" }
+            {
+              "icon": "AlertTriangle",
+              "text": "Arregla esto rapido"
+            },
+            {
+              "icon": "Code",
+              "text": "Codex toca archivos sin contexto suficiente"
+            },
+            {
+              "icon": "MessageSquare",
+              "text": "El usuario revisa una solucion opaca"
+            },
+            {
+              "icon": "AlertTriangle",
+              "text": "Sin evidencia, la decision vuelve a tutoria."
+            }
           ],
           "total": "Mas reintentos, mas coste"
         },
@@ -77,38 +235,182 @@
           "label": "Pedido profesional",
           "color": "accent",
           "steps": [
-            { "icon": "Eye", "text": "Explora en read-only" },
-            { "icon": "FileText", "text": "Devuelve mapa con rutas y comandos" },
-            { "icon": "Check", "text": "Propone siguiente paso verificable" }
+            {
+              "icon": "Eye",
+              "text": "Explora en read-only"
+            },
+            {
+              "icon": "FileText",
+              "text": "Devuelve mapa con rutas y comandos"
+            },
+            {
+              "icon": "Check",
+              "text": "Propone siguiente paso verificable"
+            },
+            {
+              "icon": "Check",
+              "text": "Cerrar con criterio, coste y validacion."
+            }
           ],
           "total": "Menos ruido, mejor control"
-        }
+        },
+        "auditNote": "Comparativa enriquecida para explicar cuando usar, cuando no usar y como cerrar."
       },
       "subtitles": [
-        { "text": "El mal arranque pide solucion antes de diagnostico.", "startMs": 43000, "endMs": 48500 },
-        { "text": "El buen arranque pide mapa, evidencias y siguiente paso.", "startMs": 49000, "endMs": 56000 },
-        { "text": "Eso reduce coste y aumenta confianza.", "startMs": 56500, "endMs": 68500 }
-      ]
+        {
+          "text": "El mal arranque pide solucion antes de diagnostico.",
+          "startMs": 45450,
+          "endMs": 49214
+        },
+        {
+          "text": "El buen arranque pide mapa, evidencias y siguiente paso.",
+          "startMs": 49394,
+          "endMs": 53614
+        },
+        {
+          "text": "Eso reduce coste y aumenta confianza.",
+          "startMs": 53794,
+          "endMs": 57150
+        }
+      ],
+      "voiceover": [
+        "El mal arranque pide solucion antes de diagnostico.",
+        "El buen arranque pide mapa, evidencias y siguiente paso.",
+        "Eso reduce coste y aumenta confianza."
+      ],
+      "blueprintAction": {
+        "learningRubric": {
+          "learns": "Distingue decision humana de ejecucion automatizada en Codex.",
+          "does": "Comprueba la salida contra prueba, owner o captura.",
+          "decides": "Aceptar solo si la evidencia queda visible para otra persona.",
+          "vendor": "codex",
+          "usefulnessScore": 86,
+          "memoryCheck": "Puede repetir el prompt inicial con criterio de cierre.",
+          "productionPass": "2000-final-direction"
+        }
+      },
+      "production": {
+        "audioVersion": "audio-prod-v2-2026-05-18",
+        "voiceProfileId": "codexNarrator",
+        "voice": "es-ES-AlvaroNeural",
+        "rate": "+8%",
+        "pitch": "+0Hz",
+        "energy": "precisa",
+        "emphasis": "plan, patch, test y coste",
+        "pauseMs": 180,
+        "role": "narrator",
+        "reviewRubric": {
+          "learns": "Distingue decision humana de ejecucion automatizada en Codex.",
+          "does": "Comprueba la salida contra prueba, owner o captura.",
+          "decides": "Aceptar solo si la evidencia queda visible para otra persona.",
+          "memoryCheck": "Puede repetir el prompt inicial con criterio de cierre."
+        },
+        "prosodyNotes": {
+          "pace": "+8%",
+          "pause": "180ms antes de la decision",
+          "emphasis": "plan, patch, test y coste",
+          "energy": "precisa"
+        },
+        "pronunciationPass": "spain-voice-units-v1"
+      }
     },
     {
       "id": "finale",
       "name": "Cierre",
-      "startMs": 70000,
+      "startMs": 67500,
       "endMs": 90000,
       "type": "finale",
       "content": {
         "title": "Primera regla Codex",
         "summary": [
-          { "number": "01", "label": "Explora", "body": "Pide un mapa del repo con rutas reales." },
-          { "number": "02", "label": "Pregunta", "body": "Haz que Codex declare supuestos y riesgos." },
-          { "number": "03", "label": "Actua", "body": "Solo despues de entender, autoriza cambios." }
+          {
+            "number": "01",
+            "label": "Explora",
+            "body": "Pide un mapa del repo con rutas reales."
+          },
+          {
+            "number": "02",
+            "label": "Pregunta",
+            "body": "Haz que Codex declare supuestos y riesgos."
+          },
+          {
+            "number": "03",
+            "label": "Actua",
+            "body": "Solo despues de entender, autoriza cambios."
+          }
         ],
         "cta": "Ejercicio asociado: cx-b01-repo-map."
       },
       "subtitles": [
-        { "text": "Explora, pregunta y despues actua.", "startMs": 70500, "endMs": 77500 },
-        { "text": "Ese orden convierte Codex en una herramienta de equipo.", "startMs": 78000, "endMs": 89500 }
-      ]
+        {
+          "text": "Explora, pregunta y despues actua.",
+          "startMs": 67950,
+          "endMs": 71498
+        },
+        {
+          "text": "Ese orden convierte Codex en una herramienta de equipo.",
+          "startMs": 71678,
+          "endMs": 75706
+        },
+        {
+          "text": "Evidencia minuto 1: el artefacto muestra que se controlo permiso, alcance y modelo.",
+          "startMs": 75886,
+          "endMs": 81954
+        },
+        {
+          "text": "Accion minuto 1: convertir repo en una decision que se pueda ensenar en tutoria.",
+          "startMs": 82134,
+          "endMs": 87698
+        }
+      ],
+      "voiceover": [
+        "Explora, pregunta y despues actua.",
+        "Ese orden convierte Codex en una herramienta de equipo.",
+        "Evidencia minuto 1: el artefacto muestra que se controlo permiso, alcance y modelo.",
+        "Accion minuto 1: convertir repo en una decision que se pueda ensenar en tutoria."
+      ],
+      "blueprintAction": {
+        "learningRubric": {
+          "learns": "Ubica coste, permiso y criterio antes de aceptar la salida.",
+          "does": "Registra el criterio que permitiria repetir el paso sin instructor.",
+          "decides": "Seguir, pedir mas contexto, escalar modelo o bloquear.",
+          "vendor": "codex",
+          "usefulnessScore": 88,
+          "memoryCheck": "Puede explicar el paso en una frase de menos de 20 segundos.",
+          "productionPass": "2000-final-direction"
+        }
+      },
+      "production": {
+        "audioVersion": "audio-prod-v2-2026-05-18",
+        "voiceProfileId": "codexReflection",
+        "voice": "es-ES-AlvaroNeural",
+        "rate": "+3%",
+        "pitch": "+0Hz",
+        "energy": "reflexiva",
+        "emphasis": "riesgo, permiso y evidencia",
+        "pauseMs": 260,
+        "role": "reflection",
+        "reviewRubric": {
+          "learns": "Ubica coste, permiso y criterio antes de aceptar la salida.",
+          "does": "Registra el criterio que permitiria repetir el paso sin instructor.",
+          "decides": "Seguir, pedir mas contexto, escalar modelo o bloquear.",
+          "memoryCheck": "Puede explicar el paso en una frase de menos de 20 segundos."
+        },
+        "prosodyNotes": {
+          "pace": "+3%",
+          "pause": "260ms antes de la decision",
+          "emphasis": "riesgo, permiso y evidencia",
+          "energy": "reflexiva"
+        },
+        "pronunciationPass": "spain-voice-units-v1"
+      }
     }
-  ]
+  ],
+  "production": {
+    "audioProductionVersion": "audio-prod-v2-2026-05-18",
+    "productionPass": "2000-final-direction",
+    "vendor": "codex",
+    "narrativePass": "teacher-contract-v1",
+    "pronunciationPass": "spain-voice-units-v1"
+  }
 }

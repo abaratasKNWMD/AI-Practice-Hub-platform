@@ -1,0 +1,60 @@
+1
+00:00:00,450 --> 00:00:03,038
+Objetivo de esta clase:
+
+2
+00:00:03,218 --> 00:00:08,806
+resolver Claude Orientation 01 - CLAUDE.md con criterio practico.
+
+3
+00:00:08,986 --> 00:00:13,902
+Al final debes poder quedarte con una regla de uso y un ejemplo repetible.
+
+4
+00:00:14,082 --> 00:00:18,110
+La ruta sera: concepto, ejemplo y cierre.
+
+5
+00:00:18,290 --> 00:00:21,310
+Durante el video mira esta decision:
+
+6
+00:00:21,490 --> 00:00:25,230
+cuando aplicar esta tecnica en tu propio repositorio.
+
+7
+00:00:30,450 --> 00:00:33,638
+La memoria no es un cajon para todo.
+
+8
+00:00:33,818 --> 00:00:37,126
+Cada capa tiene una funcion y un coste.
+
+9
+00:00:37,306 --> 00:00:41,454
+El objetivo es que la sesion arranque con contexto justo.
+
+10
+00:01:00,450 --> 00:01:05,558
+Si una regla se repite cada semana, no la expliques: versionala.
+
+11
+00:01:05,738 --> 00:01:08,254
+Evidencia minuto 1:
+
+12
+00:01:08,434 --> 00:01:13,230
+hay una salida que otro perfil puede revisar sin rehacer el contexto.
+
+13
+00:01:13,410 --> 00:01:18,206
+Accion minuto 1: comparar la respuesta con el criterio de cierre
+
+14
+00:01:18,386 --> 00:01:21,286
+no con la sensacion de velocidad.
+
+15
+00:01:21,466 --> 00:01:27,702
+no con la sensacion de velocidad. (Claude, minuto 1, paso 4)
+

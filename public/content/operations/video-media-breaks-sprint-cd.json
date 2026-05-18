@@ -1,0 +1,1335 @@
+{
+  "generatedAt": "2026-05-18T12:23:02.968Z",
+  "target": "Sprint C/D - media breaks + human script",
+  "mediaBreaks": [
+    {
+      "courseId": "cl-masterclass-10m-claude-operating-model",
+      "sceneIndex": 6,
+      "sceneId": "07-claude-md",
+      "vendor": "claude",
+      "kind": "screenshot",
+      "imageUrl": "/video-assets/vendor-mockups/claude-skills-mcp.svg",
+      "title": "Captura mental: Claude Code, skills, hooks y MCP"
+    },
+    {
+      "courseId": "cl-masterclass-10m-claude-operating-model",
+      "sceneIndex": 10,
+      "sceneId": "11-coste-por-automatizacion",
+      "vendor": "claude",
+      "kind": "screenshot",
+      "imageUrl": "/video-assets/vendor-mockups/claude-hooks-ci.svg",
+      "title": "Captura mental: Claude Code, skills, hooks y MCP"
+    },
+    {
+      "courseId": "cl-masterclass-10m-claude-operating-model",
+      "sceneIndex": 15,
+      "sceneId": "16-review-de-automatizacion",
+      "vendor": "claude",
+      "kind": "screenshot",
+      "imageUrl": "/video-assets/vendor-mockups/claude-subagent-board.svg",
+      "title": "Captura mental: Claude Code, skills, hooks y MCP"
+    },
+    {
+      "courseId": "cl-masterclass-10m-claude-operating-model",
+      "sceneIndex": 18,
+      "sceneId": "19-evals",
+      "vendor": "claude",
+      "kind": "diagram",
+      "imageUrl": "/decks/claude/curso-02/images/diagram-mcp-governance-loop.svg",
+      "title": "Mapa operativo: Claude Code, skills, hooks y MCP"
+    },
+    {
+      "courseId": "cl-workshop-30m-memory-to-hook",
+      "sceneIndex": 8,
+      "sceneId": "claude-md__beat-04",
+      "vendor": "claude",
+      "kind": "diagram",
+      "imageUrl": "/decks/claude/curso-02/images/diagram-skill-lifecycle.svg",
+      "title": "Mapa operativo: Claude Code, skills, hooks y MCP"
+    },
+    {
+      "courseId": "cl-workshop-30m-memory-to-hook",
+      "sceneIndex": 14,
+      "sceneId": "context-audit__beat-05",
+      "vendor": "claude",
+      "kind": "diagram",
+      "imageUrl": "/decks/claude/curso-02/images/diagram-subagent-routing.svg",
+      "title": "Mapa operativo: Claude Code, skills, hooks y MCP"
+    },
+    {
+      "courseId": "cl-workshop-30m-memory-to-hook",
+      "sceneIndex": 21,
+      "sceneId": "skill__beat-02",
+      "vendor": "claude",
+      "kind": "reflection",
+      "imageUrl": "/decks/claude/curso-02/images/reflection-agent-boundary.svg",
+      "title": "Pausa: que estamos aceptando aqui?"
+    },
+    {
+      "courseId": "cl-workshop-30m-memory-to-hook",
+      "sceneIndex": 27,
+      "sceneId": "subagent__beat-03",
+      "vendor": "claude",
+      "kind": "reflection",
+      "imageUrl": "/decks/claude/curso-02/images/reflection-context-diet.svg",
+      "title": "Pausa: que estamos aceptando aqui?"
+    },
+    {
+      "courseId": "cl-workshop-30m-memory-to-hook",
+      "sceneIndex": 33,
+      "sceneId": "mcp-readonly__beat-04",
+      "vendor": "claude",
+      "kind": "reflection",
+      "imageUrl": "/decks/claude/curso-02/images/reflection-skill-ownership.svg",
+      "title": "Pausa: que estamos aceptando aqui?"
+    },
+    {
+      "courseId": "cl-workshop-30m-memory-to-hook",
+      "sceneIndex": 40,
+      "sceneId": "hook-test__beat-01",
+      "vendor": "claude",
+      "kind": "reflection",
+      "imageUrl": "/decks/claude/curso-03/images/reflection-automation-accountability.svg",
+      "title": "Pausa: que estamos aceptando aqui?"
+    },
+    {
+      "courseId": "cl-workshop-30m-memory-to-hook",
+      "sceneIndex": 47,
+      "sceneId": "handoff__beat-03",
+      "vendor": "claude",
+      "kind": "reflection",
+      "imageUrl": "/decks/claude/curso-03/images/reflection-cost-shadow.svg",
+      "title": "Pausa: que estamos aceptando aqui?"
+    },
+    {
+      "courseId": "cl-workshop-30m-memory-to-hook",
+      "sceneIndex": 53,
+      "sceneId": "rubric__beat-04",
+      "vendor": "claude",
+      "kind": "reflection",
+      "imageUrl": "/decks/claude/curso-03/images/reflection-human-signoff.svg",
+      "title": "Pausa: que estamos aceptando aqui?"
+    },
+    {
+      "courseId": "cl-workshop-60m-memory-to-automation",
+      "sceneIndex": 9,
+      "sceneId": "opening-memory__beat-10",
+      "vendor": "claude",
+      "kind": "reflection",
+      "imageUrl": "/decks/claude/curso-03/images/reflection-rollback-map.svg",
+      "title": "Pausa: que estamos aceptando aqui?"
+    },
+    {
+      "courseId": "cl-workshop-60m-memory-to-automation",
+      "sceneIndex": 16,
+      "sceneId": "context-triage__beat-07",
+      "vendor": "claude",
+      "kind": "meme",
+      "imageUrl": "/decks/claude/curso-01/images/meme-claude-md-novel.svg",
+      "title": "Cuando \"Memoria, rules o skill\" se va de las manos"
+    },
+    {
+      "courseId": "cl-workshop-60m-memory-to-automation",
+      "sceneIndex": 25,
+      "sceneId": "claude-md-audit__beat-06",
+      "vendor": "claude",
+      "kind": "meme",
+      "imageUrl": "/decks/claude/curso-01/images/meme-context-suitcase.svg",
+      "title": "Cuando \"CLAUDE.md podado\" se va de las manos"
+    },
+    {
+      "courseId": "cl-workshop-60m-memory-to-automation",
+      "sceneIndex": 32,
+      "sceneId": "skill-fix-tests__beat-03",
+      "vendor": "claude",
+      "kind": "meme",
+      "imageUrl": "/decks/claude/curso-01/images/meme-cost-coffee.svg",
+      "title": "Cuando \"SKILL.md\" se va de las manos"
+    },
+    {
+      "courseId": "cl-workshop-60m-memory-to-automation",
+      "sceneIndex": 40,
+      "sceneId": "subagent-explorer__beat-01",
+      "vendor": "claude",
+      "kind": "meme",
+      "imageUrl": "/decks/claude/curso-01/images/meme-prompt-landfill.svg",
+      "title": "Cuando \"Explorer agent\" se va de las manos"
+    },
+    {
+      "courseId": "cl-workshop-60m-memory-to-automation",
+      "sceneIndex": 48,
+      "sceneId": "subagent-explorer__beat-09",
+      "vendor": "claude",
+      "kind": "meme",
+      "imageUrl": "/decks/claude/curso-02/images/meme-agent-costume.svg",
+      "title": "Cuando \"Explorer agent\" se va de las manos"
+    },
+    {
+      "courseId": "cl-workshop-60m-memory-to-automation",
+      "sceneIndex": 56,
+      "sceneId": "mcp-readonly__beat-07",
+      "vendor": "claude",
+      "kind": "meme",
+      "imageUrl": "/decks/claude/curso-02/images/meme-agent-theater.svg",
+      "title": "Cuando \"Inventario MCP\" se va de las manos"
+    },
+    {
+      "courseId": "cl-workshop-60m-memory-to-automation",
+      "sceneIndex": 65,
+      "sceneId": "hook-policy__beat-06",
+      "vendor": "claude",
+      "kind": "meme",
+      "imageUrl": "/decks/claude/curso-02/images/meme-mcp-universal-plug.svg",
+      "title": "Cuando \"Hook deterministic\" se va de las manos"
+    },
+    {
+      "courseId": "cl-workshop-60m-memory-to-automation",
+      "sceneIndex": 72,
+      "sceneId": "eval-mini__beat-03",
+      "vendor": "claude",
+      "kind": "meme",
+      "imageUrl": "/decks/claude/curso-02/images/meme-prompt-drawer.svg",
+      "title": "Cuando \"LLM-as-a-Judge con contrato\" se va de las manos"
+    },
+    {
+      "courseId": "cl-workshop-60m-memory-to-automation",
+      "sceneIndex": 80,
+      "sceneId": "cost-routing__beat-01",
+      "vendor": "claude",
+      "kind": "meme",
+      "imageUrl": "/decks/claude/curso-02/images/meme-skill-confetti.svg",
+      "title": "Cuando \"Modelo por tarea\" se va de las manos"
+    },
+    {
+      "courseId": "cl-workshop-60m-memory-to-automation",
+      "sceneIndex": 88,
+      "sceneId": "cost-routing__beat-09",
+      "vendor": "claude",
+      "kind": "meme",
+      "imageUrl": "/decks/claude/curso-02/images/meme-skill-postit.svg",
+      "title": "Cuando \"Modelo por tarea\" se va de las manos"
+    },
+    {
+      "courseId": "cl-workshop-60m-memory-to-automation",
+      "sceneIndex": 95,
+      "sceneId": "plugin-rollout__beat-06",
+      "vendor": "claude",
+      "kind": "meme",
+      "imageUrl": "/decks/claude/curso-03/images/meme-action-confetti.svg",
+      "title": "Cuando \"Distribucion interna\" se va de las manos"
+    },
+    {
+      "courseId": "cl-workshop-60m-memory-to-automation",
+      "sceneIndex": 104,
+      "sceneId": "rollout-pack__beat-05",
+      "vendor": "claude",
+      "kind": "meme",
+      "imageUrl": "/decks/claude/curso-03/images/meme-autopilot.svg",
+      "title": "Cuando \"Pack de salida\" se va de las manos"
+    },
+    {
+      "courseId": "cl-workshop-60m-memory-to-automation",
+      "sceneIndex": 111,
+      "sceneId": "close__beat-02",
+      "vendor": "claude",
+      "kind": "meme",
+      "imageUrl": "/decks/claude/curso-03/images/meme-big-auto-button.svg",
+      "title": "Cuando \"De uso individual a sistema\" se va de las manos"
+    },
+    {
+      "courseId": "cp-advanced-01-custom-agent",
+      "sceneIndex": 1,
+      "sceneId": "coding",
+      "vendor": "copilot",
+      "kind": "meme",
+      "imageUrl": "/decks/copilot/curso-03/images/meme-agent-catalog.svg",
+      "title": "Cuando \"Agent profile\" se va de las manos"
+    },
+    {
+      "courseId": "cp-masterclass-10m-copilot-workbench",
+      "sceneIndex": 6,
+      "sceneId": "07-instrucciones",
+      "vendor": "copilot",
+      "kind": "meme",
+      "imageUrl": "/decks/copilot/curso-03/images/meme-agent-costume.svg",
+      "title": "Cuando \"Instrucciones\" se va de las manos"
+    },
+    {
+      "courseId": "cp-masterclass-10m-copilot-workbench",
+      "sceneIndex": 10,
+      "sceneId": "11-premium-requests",
+      "vendor": "copilot",
+      "kind": "meme",
+      "imageUrl": "/decks/copilot/curso-03/images/meme-docker-magic.svg",
+      "title": "Cuando \"Premium requests\" se va de las manos"
+    },
+    {
+      "courseId": "cp-masterclass-10m-copilot-workbench",
+      "sceneIndex": 15,
+      "sceneId": "16-pr-review",
+      "vendor": "copilot",
+      "kind": "meme",
+      "imageUrl": "/decks/copilot/curso-03/images/meme-instruction-lasagna.svg",
+      "title": "Cuando \"PR review\" se va de las manos"
+    },
+    {
+      "courseId": "cp-masterclass-10m-copilot-workbench",
+      "sceneIndex": 18,
+      "sceneId": "19-custom-agents",
+      "vendor": "copilot",
+      "kind": "meme",
+      "imageUrl": "/decks/copilot/curso-03/images/meme-instructions-wish.svg",
+      "title": "Cuando \"Custom agents\" se va de las manos"
+    },
+    {
+      "courseId": "cp-workshop-30m-error-to-pr",
+      "sceneIndex": 7,
+      "sceneId": "error-ticket__beat-03",
+      "vendor": "copilot",
+      "kind": "meme",
+      "imageUrl": "/decks/copilot/curso-03/images/meme-maturity-skip.svg",
+      "title": "Cuando \"Error inicial\" se va de las manos"
+    },
+    {
+      "courseId": "cp-workshop-30m-error-to-pr",
+      "sceneIndex": 14,
+      "sceneId": "ask-prompt__beat-05",
+      "vendor": "copilot",
+      "kind": "meme",
+      "imageUrl": "/decks/copilot/curso-03/images/meme-mcp-universal-plug.svg",
+      "title": "Cuando \"Prompt Ask\" se va de las manos"
+    },
+    {
+      "courseId": "cp-workshop-30m-error-to-pr",
+      "sceneIndex": 21,
+      "sceneId": "edit-patch__beat-02",
+      "vendor": "copilot",
+      "kind": "meme",
+      "imageUrl": "/decks/copilot/curso-03/images/meme-prompt-postit.svg",
+      "title": "Cuando \"Inline Edit\" se va de las manos"
+    },
+    {
+      "courseId": "cp-workshop-30m-error-to-pr",
+      "sceneIndex": 27,
+      "sceneId": "test-generation__beat-03",
+      "vendor": "copilot",
+      "kind": "meme",
+      "imageUrl": "/decks/copilot/curso-03/images/meme-token-json.svg",
+      "title": "Cuando \"Test con Copilot\" se va de las manos"
+    },
+    {
+      "courseId": "cp-workshop-30m-error-to-pr",
+      "sceneIndex": 34,
+      "sceneId": "agent-contract__beat-05",
+      "vendor": "copilot",
+      "kind": "meme",
+      "imageUrl": "/decks/copilot/curso-03/images/meme-variable-spaghetti.svg",
+      "title": "Cuando \"Cuando usar Agent\" se va de las manos"
+    },
+    {
+      "courseId": "cp-workshop-30m-error-to-pr",
+      "sceneIndex": 40,
+      "sceneId": "premium-budget__beat-01",
+      "vendor": "copilot",
+      "kind": "diagram",
+      "imageUrl": "/decks/copilot/curso-01/images/context-engine.svg",
+      "title": "Mapa operativo: VS Code, Copilot Chat y PR review"
+    },
+    {
+      "courseId": "cp-workshop-30m-error-to-pr",
+      "sceneIndex": 47,
+      "sceneId": "pr-contract__beat-03",
+      "vendor": "copilot",
+      "kind": "reflection",
+      "imageUrl": "/decks/copilot/curso-01/images/copilot-core-hero.svg",
+      "title": "Pausa: que estamos aceptando aqui?"
+    },
+    {
+      "courseId": "cp-workshop-30m-error-to-pr",
+      "sceneIndex": 53,
+      "sceneId": "rubric__beat-04",
+      "vendor": "copilot",
+      "kind": "screenshot",
+      "imageUrl": "/decks/copilot/curso-01/images/legal-shield.svg",
+      "title": "Captura mental: VS Code, Copilot Chat y PR review"
+    },
+    {
+      "courseId": "cp-workshop-60m-vscode-to-pr-review",
+      "sceneIndex": 9,
+      "sceneId": "opening-vscode__beat-10",
+      "vendor": "copilot",
+      "kind": "meme",
+      "imageUrl": "/decks/copilot/curso-01/images/model-picker.svg",
+      "title": "Cuando \"Copilot como mesa de trabajo\" se va de las manos"
+    },
+    {
+      "courseId": "cp-workshop-60m-vscode-to-pr-review",
+      "sceneIndex": 16,
+      "sceneId": "issue-intake__beat-07",
+      "vendor": "copilot",
+      "kind": "diagram",
+      "imageUrl": "/decks/copilot/curso-01/images/setup-checklist.svg",
+      "title": "Mapa operativo: VS Code, Copilot Chat y PR review"
+    },
+    {
+      "courseId": "cp-workshop-60m-vscode-to-pr-review",
+      "sceneIndex": 25,
+      "sceneId": "mode-map__beat-06",
+      "vendor": "copilot",
+      "kind": "reflection",
+      "imageUrl": "/decks/copilot/curso-01/images/subscription-gauge.svg",
+      "title": "Pausa: que estamos aceptando aqui?"
+    },
+    {
+      "courseId": "cp-workshop-60m-vscode-to-pr-review",
+      "sceneIndex": 32,
+      "sceneId": "ask-diagnosis__beat-03",
+      "vendor": "copilot",
+      "kind": "diagram",
+      "imageUrl": "/decks/copilot/curso-01/images/tools-gate.svg",
+      "title": "Mapa operativo: VS Code, Copilot Chat y PR review"
+    },
+    {
+      "courseId": "cp-workshop-60m-vscode-to-pr-review",
+      "sceneIndex": 41,
+      "sceneId": "instructions__beat-02",
+      "vendor": "copilot",
+      "kind": "diagram",
+      "imageUrl": "/decks/copilot/curso-01/images/workspace-map.svg",
+      "title": "Mapa operativo: VS Code, Copilot Chat y PR review"
+    },
+    {
+      "courseId": "cp-workshop-60m-vscode-to-pr-review",
+      "sceneIndex": 49,
+      "sceneId": "instructions__beat-10",
+      "vendor": "copilot",
+      "kind": "diagram",
+      "imageUrl": "/decks/copilot/curso-02/images/chat-cockpit.svg",
+      "title": "Mapa operativo: VS Code, Copilot Chat y PR review"
+    },
+    {
+      "courseId": "cp-workshop-60m-vscode-to-pr-review",
+      "sceneIndex": 56,
+      "sceneId": "edit-patch__beat-07",
+      "vendor": "copilot",
+      "kind": "reflection",
+      "imageUrl": "/decks/copilot/curso-02/images/cli-context-commands.svg",
+      "title": "Pausa: que estamos aceptando aqui?"
+    },
+    {
+      "courseId": "cp-workshop-60m-vscode-to-pr-review",
+      "sceneIndex": 65,
+      "sceneId": "generate-tests__beat-06",
+      "vendor": "copilot",
+      "kind": "screenshot",
+      "imageUrl": "/decks/copilot/curso-02/images/cli-trust-boundary.svg",
+      "title": "Captura mental: VS Code, Copilot Chat y PR review"
+    },
+    {
+      "courseId": "cp-workshop-60m-vscode-to-pr-review",
+      "sceneIndex": 72,
+      "sceneId": "agent-handoff__beat-03",
+      "vendor": "copilot",
+      "kind": "meme",
+      "imageUrl": "/decks/copilot/curso-02/images/completion-ghost.svg",
+      "title": "Cuando \"Handoff a Agent\" se va de las manos"
+    },
+    {
+      "courseId": "cp-workshop-60m-vscode-to-pr-review",
+      "sceneIndex": 80,
+      "sceneId": "pr-review__beat-01",
+      "vendor": "copilot",
+      "kind": "diagram",
+      "imageUrl": "/decks/copilot/curso-02/images/context-router.svg",
+      "title": "Mapa operativo: VS Code, Copilot Chat y PR review"
+    },
+    {
+      "courseId": "cp-workshop-60m-vscode-to-pr-review",
+      "sceneIndex": 88,
+      "sceneId": "pr-review__beat-09",
+      "vendor": "copilot",
+      "kind": "diagram",
+      "imageUrl": "/decks/copilot/curso-02/images/feature-flow-hero.svg",
+      "title": "Mapa operativo: VS Code, Copilot Chat y PR review"
+    },
+    {
+      "courseId": "cp-workshop-60m-vscode-to-pr-review",
+      "sceneIndex": 96,
+      "sceneId": "premium-budget__beat-07",
+      "vendor": "copilot",
+      "kind": "screenshot",
+      "imageUrl": "/decks/copilot/curso-02/images/pr-summary-board.svg",
+      "title": "Captura mental: VS Code, Copilot Chat y PR review"
+    },
+    {
+      "courseId": "cp-workshop-60m-vscode-to-pr-review",
+      "sceneIndex": 104,
+      "sceneId": "team-template__beat-05",
+      "vendor": "copilot",
+      "kind": "meme",
+      "imageUrl": "/decks/copilot/curso-02/images/review-lens.svg",
+      "title": "Cuando \"Pack reutilizable\" se va de las manos"
+    },
+    {
+      "courseId": "cp-workshop-60m-vscode-to-pr-review",
+      "sceneIndex": 111,
+      "sceneId": "close__beat-02",
+      "vendor": "copilot",
+      "kind": "diagram",
+      "imageUrl": "/decks/copilot/curso-02/images/shortcut-conflict.svg",
+      "title": "Mapa operativo: VS Code, Copilot Chat y PR review"
+    },
+    {
+      "courseId": "cx-masterclass-10m-codex-operating-system",
+      "sceneIndex": 6,
+      "sceneId": "07-agents-md",
+      "vendor": "codex",
+      "kind": "meme",
+      "imageUrl": "/decks/codex/curso-02/assets/potente-meme-reasoning-lever.png",
+      "title": "Cuando \"AGENTS.md\" se va de las manos"
+    },
+    {
+      "courseId": "cx-masterclass-10m-codex-operating-system",
+      "sceneIndex": 10,
+      "sceneId": "11-cost-ledger",
+      "vendor": "codex",
+      "kind": "meme",
+      "imageUrl": "/decks/codex/curso-02/assets/potente-meme-token-blender.png",
+      "title": "Cuando \"Cost ledger\" se va de las manos"
+    },
+    {
+      "courseId": "cx-masterclass-10m-codex-operating-system",
+      "sceneIndex": 15,
+      "sceneId": "16-review-del-propio-diff",
+      "vendor": "codex",
+      "kind": "meme",
+      "imageUrl": "/decks/codex/curso-03/assets/ultra-meme-agent-debate-protocol.png",
+      "title": "Cuando \"Review del propio diff\" se va de las manos"
+    },
+    {
+      "courseId": "cx-masterclass-10m-codex-operating-system",
+      "sceneIndex": 18,
+      "sceneId": "19-subagentes",
+      "vendor": "codex",
+      "kind": "meme",
+      "imageUrl": "/decks/codex/curso-03/assets/ultra-meme-ast-chunking.png",
+      "title": "Cuando \"Subagentes\" se va de las manos"
+    },
+    {
+      "courseId": "cx-workshop-30m-first-real-task",
+      "sceneIndex": 7,
+      "sceneId": "workshop-ticket__beat-03",
+      "vendor": "codex",
+      "kind": "meme",
+      "imageUrl": "/decks/codex/curso-03/assets/ultra-meme-rag-stale.png",
+      "title": "Cuando \"Ticket del reto\" se va de las manos"
+    },
+    {
+      "courseId": "cx-workshop-30m-first-real-task",
+      "sceneIndex": 14,
+      "sceneId": "repo-map-prompt__beat-05",
+      "vendor": "codex",
+      "kind": "meme",
+      "imageUrl": "/decks/codex/curso-03/assets/ultra-meme-swarm-chaos.png",
+      "title": "Cuando \"Prompt de mapa\" se va de las manos"
+    },
+    {
+      "courseId": "cx-workshop-30m-first-real-task",
+      "sceneIndex": 21,
+      "sceneId": "agents-md__beat-02",
+      "vendor": "codex",
+      "kind": "meme",
+      "imageUrl": "/decks/codex/curso-03/assets/ultra-meme-synthetic-data-factory.png",
+      "title": "Cuando \"Crear AGENTS.md\" se va de las manos"
+    },
+    {
+      "courseId": "cx-workshop-30m-first-real-task",
+      "sceneIndex": 28,
+      "sceneId": "patch-plan__beat-04",
+      "vendor": "codex",
+      "kind": "meme",
+      "imageUrl": "/decks/codex/curso-03/assets/ultra-meme-token-cost.png",
+      "title": "Cuando \"Plan antes de patch\" se va de las manos"
+    },
+    {
+      "courseId": "cx-workshop-30m-first-real-task",
+      "sceneIndex": 34,
+      "sceneId": "diff-review__beat-05",
+      "vendor": "codex",
+      "kind": "reflection",
+      "imageUrl": "/decks/codex/curso-01/assets/codex-control-room.png",
+      "title": "Pausa: que estamos aceptando aqui?"
+    },
+    {
+      "courseId": "cx-workshop-30m-first-real-task",
+      "sceneIndex": 40,
+      "sceneId": "cost-permission__beat-01",
+      "vendor": "codex",
+      "kind": "screenshot",
+      "imageUrl": "/decks/codex/curso-01/assets/rubber-duck-review.png",
+      "title": "Captura mental: Codex CLI y cloud task"
+    },
+    {
+      "courseId": "cx-workshop-30m-first-real-task",
+      "sceneIndex": 47,
+      "sceneId": "handoff__beat-03",
+      "vendor": "codex",
+      "kind": "meme",
+      "imageUrl": "/decks/codex/curso-02/assets/potente-agent-standup.png",
+      "title": "Cuando \"Handoff final\" se va de las manos"
+    },
+    {
+      "courseId": "cx-workshop-30m-first-real-task",
+      "sceneIndex": 53,
+      "sceneId": "facilitator-review__beat-04",
+      "vendor": "codex",
+      "kind": "diagram",
+      "imageUrl": "/decks/codex/curso-02/assets/potente-codex-platform.png",
+      "title": "Mapa operativo: Codex CLI y cloud task"
+    },
+    {
+      "courseId": "cx-workshop-60m-first-task-to-pr",
+      "sceneIndex": 9,
+      "sceneId": "opening-contract__beat-10",
+      "vendor": "codex",
+      "kind": "reflection",
+      "imageUrl": "/decks/codex/curso-02/assets/potente-context-overload.png",
+      "title": "Pausa: que estamos aceptando aqui?"
+    },
+    {
+      "courseId": "cx-workshop-60m-first-task-to-pr",
+      "sceneIndex": 16,
+      "sceneId": "task-intake__beat-07",
+      "vendor": "codex",
+      "kind": "screenshot",
+      "imageUrl": "/decks/codex/curso-02/assets/potente-governance-console.png",
+      "title": "Captura mental: Codex CLI y cloud task"
+    },
+    {
+      "courseId": "cx-workshop-60m-first-task-to-pr",
+      "sceneIndex": 25,
+      "sceneId": "repo-map__beat-06",
+      "vendor": "codex",
+      "kind": "meme",
+      "imageUrl": "/decks/codex/curso-02/assets/potente-labs-workshop.png",
+      "title": "Cuando \"Prompt de exploracion readonly\" se va de las manos"
+    },
+    {
+      "courseId": "cx-workshop-60m-first-task-to-pr",
+      "sceneIndex": 32,
+      "sceneId": "model-permission-choice__beat-03",
+      "vendor": "codex",
+      "kind": "diagram",
+      "imageUrl": "/decks/codex/curso-02/assets/potente-mcp-tool-hub.png",
+      "title": "Mapa operativo: Codex CLI y cloud task"
+    },
+    {
+      "courseId": "cx-workshop-60m-first-task-to-pr",
+      "sceneIndex": 41,
+      "sceneId": "plan-before-patch__beat-02",
+      "vendor": "codex",
+      "kind": "reflection",
+      "imageUrl": "/decks/codex/curso-03/assets/ultra-batch-night-run.png",
+      "title": "Pausa: que estamos aceptando aqui?"
+    },
+    {
+      "courseId": "cx-workshop-60m-first-task-to-pr",
+      "sceneIndex": 49,
+      "sceneId": "plan-before-patch__beat-10",
+      "vendor": "codex",
+      "kind": "screenshot",
+      "imageUrl": "/decks/codex/curso-03/assets/ultra-distillation-lab.png",
+      "title": "Captura mental: Codex CLI y cloud task"
+    },
+    {
+      "courseId": "cx-workshop-60m-first-task-to-pr",
+      "sceneIndex": 56,
+      "sceneId": "patch-minimal__beat-07",
+      "vendor": "codex",
+      "kind": "meme",
+      "imageUrl": "/decks/codex/curso-03/assets/ultra-enterprise-rag.png",
+      "title": "Cuando \"Diff esperado\" se va de las manos"
+    },
+    {
+      "courseId": "cx-workshop-60m-first-task-to-pr",
+      "sceneIndex": 65,
+      "sceneId": "tests-first__beat-06",
+      "vendor": "codex",
+      "kind": "diagram",
+      "imageUrl": "/decks/codex/curso-03/assets/ultra-pr-judge.png",
+      "title": "Mapa operativo: Codex CLI y cloud task"
+    },
+    {
+      "courseId": "cx-workshop-60m-first-task-to-pr",
+      "sceneIndex": 72,
+      "sceneId": "rescue-loop__beat-03",
+      "vendor": "codex",
+      "kind": "reflection",
+      "imageUrl": "/decks/codex/curso-03/assets/ultra-swarm-orchestrator.png",
+      "title": "Pausa: que estamos aceptando aqui?"
+    },
+    {
+      "courseId": "cx-workshop-60m-first-task-to-pr",
+      "sceneIndex": 80,
+      "sceneId": "review-diff__beat-01",
+      "vendor": "codex",
+      "kind": "screenshot",
+      "imageUrl": "/video-assets/vendor-mockups/codex-cli-cloud.svg",
+      "title": "Captura mental: Codex CLI y cloud task"
+    },
+    {
+      "courseId": "cx-workshop-60m-first-task-to-pr",
+      "sceneIndex": 88,
+      "sceneId": "review-diff__beat-09",
+      "vendor": "codex",
+      "kind": "screenshot",
+      "imageUrl": "/video-assets/vendor-mockups/codex-cloud-pr.svg",
+      "title": "Captura mental: Codex CLI y cloud task"
+    },
+    {
+      "courseId": "cx-workshop-60m-first-task-to-pr",
+      "sceneIndex": 95,
+      "sceneId": "cost-ledger__beat-06",
+      "vendor": "codex",
+      "kind": "screenshot",
+      "imageUrl": "/video-assets/vendor-mockups/codex-mcp-cost.svg",
+      "title": "Captura mental: Codex CLI y cloud task"
+    },
+    {
+      "courseId": "cx-workshop-60m-first-task-to-pr",
+      "sceneIndex": 104,
+      "sceneId": "pr-narrative__beat-05",
+      "vendor": "codex",
+      "kind": "reflection",
+      "imageUrl": "/decks/codex/curso-01/assets/context-token-reflection.png",
+      "title": "Pausa: que estamos aceptando aqui?"
+    },
+    {
+      "courseId": "cx-workshop-60m-first-task-to-pr",
+      "sceneIndex": 111,
+      "sceneId": "retro-handoff__beat-02",
+      "vendor": "codex",
+      "kind": "reflection",
+      "imageUrl": "/decks/codex/curso-01/assets/course1-reflection-sandbox-keys.png",
+      "title": "Pausa: que estamos aceptando aqui?"
+    },
+    {
+      "courseId": "hub-operating-model-60m",
+      "sceneIndex": 9,
+      "sceneId": "title__beat-10",
+      "vendor": "hub",
+      "kind": "screenshot",
+      "imageUrl": "/video-assets/vendor-mockups/hub-learning-ops.svg",
+      "title": "Captura mental: AI Practice Hub"
+    },
+    {
+      "courseId": "hub-operating-model-60m",
+      "sceneIndex": 16,
+      "sceneId": "demand-problem__beat-07",
+      "vendor": "hub",
+      "kind": "screenshot",
+      "imageUrl": "/video-assets/vendor-mockups/hub-learning-ops.svg",
+      "title": "Captura mental: AI Practice Hub"
+    },
+    {
+      "courseId": "hub-operating-model-60m",
+      "sceneIndex": 25,
+      "sceneId": "flipping-model__beat-06",
+      "vendor": "hub",
+      "kind": "screenshot",
+      "imageUrl": "/video-assets/vendor-mockups/hub-learning-ops.svg",
+      "title": "Captura mental: AI Practice Hub"
+    },
+    {
+      "courseId": "hub-operating-model-60m",
+      "sceneIndex": 32,
+      "sceneId": "routes__beat-03",
+      "vendor": "hub",
+      "kind": "screenshot",
+      "imageUrl": "/video-assets/vendor-mockups/hub-learning-ops.svg",
+      "title": "Captura mental: AI Practice Hub"
+    },
+    {
+      "courseId": "hub-operating-model-60m",
+      "sceneIndex": 41,
+      "sceneId": "content-system__beat-02",
+      "vendor": "hub",
+      "kind": "screenshot",
+      "imageUrl": "/video-assets/vendor-mockups/hub-learning-ops.svg",
+      "title": "Captura mental: AI Practice Hub"
+    },
+    {
+      "courseId": "hub-operating-model-60m",
+      "sceneIndex": 49,
+      "sceneId": "content-system__beat-10",
+      "vendor": "hub",
+      "kind": "screenshot",
+      "imageUrl": "/video-assets/vendor-mockups/hub-learning-ops.svg",
+      "title": "Captura mental: AI Practice Hub"
+    },
+    {
+      "courseId": "hub-operating-model-60m",
+      "sceneIndex": 56,
+      "sceneId": "video-factory__beat-07",
+      "vendor": "hub",
+      "kind": "screenshot",
+      "imageUrl": "/video-assets/vendor-mockups/hub-learning-ops.svg",
+      "title": "Captura mental: AI Practice Hub"
+    },
+    {
+      "courseId": "hub-operating-model-60m",
+      "sceneIndex": 64,
+      "sceneId": "exercise-depth__beat-05",
+      "vendor": "hub",
+      "kind": "screenshot",
+      "imageUrl": "/video-assets/vendor-mockups/hub-learning-ops.svg",
+      "title": "Captura mental: AI Practice Hub"
+    },
+    {
+      "courseId": "hub-operating-model-60m",
+      "sceneIndex": 72,
+      "sceneId": "cost-governance__beat-03",
+      "vendor": "hub",
+      "kind": "screenshot",
+      "imageUrl": "/video-assets/vendor-mockups/hub-learning-ops.svg",
+      "title": "Captura mental: AI Practice Hub"
+    },
+    {
+      "courseId": "hub-operating-model-60m",
+      "sceneIndex": 80,
+      "sceneId": "tutoring-model__beat-01",
+      "vendor": "hub",
+      "kind": "screenshot",
+      "imageUrl": "/video-assets/vendor-mockups/hub-learning-ops.svg",
+      "title": "Captura mental: AI Practice Hub"
+    },
+    {
+      "courseId": "hub-operating-model-60m",
+      "sceneIndex": 88,
+      "sceneId": "tutoring-model__beat-09",
+      "vendor": "hub",
+      "kind": "screenshot",
+      "imageUrl": "/video-assets/vendor-mockups/hub-learning-ops.svg",
+      "title": "Captura mental: AI Practice Hub"
+    },
+    {
+      "courseId": "hub-operating-model-60m",
+      "sceneIndex": 96,
+      "sceneId": "sprint-board__beat-07",
+      "vendor": "hub",
+      "kind": "screenshot",
+      "imageUrl": "/video-assets/vendor-mockups/hub-learning-ops.svg",
+      "title": "Captura mental: AI Practice Hub"
+    },
+    {
+      "courseId": "hub-operating-model-60m",
+      "sceneIndex": 104,
+      "sceneId": "release-readiness__beat-05",
+      "vendor": "hub",
+      "kind": "screenshot",
+      "imageUrl": "/video-assets/vendor-mockups/hub-learning-ops.svg",
+      "title": "Captura mental: AI Practice Hub"
+    },
+    {
+      "courseId": "hub-operating-model-60m",
+      "sceneIndex": 111,
+      "sceneId": "finale__beat-02",
+      "vendor": "hub",
+      "kind": "screenshot",
+      "imageUrl": "/video-assets/vendor-mockups/hub-learning-ops.svg",
+      "title": "Captura mental: AI Practice Hub"
+    },
+    {
+      "courseId": "hub-workshop-60m-vendor-selection",
+      "sceneIndex": 9,
+      "sceneId": "opening-decision__beat-10",
+      "vendor": "hub",
+      "kind": "screenshot",
+      "imageUrl": "/video-assets/vendor-mockups/hub-learning-ops.svg",
+      "title": "Captura mental: AI Practice Hub"
+    },
+    {
+      "courseId": "hub-workshop-60m-vendor-selection",
+      "sceneIndex": 17,
+      "sceneId": "vendor-map__beat-08",
+      "vendor": "hub",
+      "kind": "screenshot",
+      "imageUrl": "/video-assets/vendor-mockups/hub-learning-ops.svg",
+      "title": "Captura mental: AI Practice Hub"
+    },
+    {
+      "courseId": "hub-workshop-60m-vendor-selection",
+      "sceneIndex": 26,
+      "sceneId": "case-small-bug__beat-07",
+      "vendor": "hub",
+      "kind": "screenshot",
+      "imageUrl": "/video-assets/vendor-mockups/hub-learning-ops.svg",
+      "title": "Captura mental: AI Practice Hub"
+    },
+    {
+      "courseId": "hub-workshop-60m-vendor-selection",
+      "sceneIndex": 33,
+      "sceneId": "case-team-activation__beat-04",
+      "vendor": "hub",
+      "kind": "screenshot",
+      "imageUrl": "/video-assets/vendor-mockups/hub-learning-ops.svg",
+      "title": "Captura mental: AI Practice Hub"
+    },
+    {
+      "courseId": "hub-workshop-60m-vendor-selection",
+      "sceneIndex": 41,
+      "sceneId": "case-platform-automation__beat-02",
+      "vendor": "hub",
+      "kind": "screenshot",
+      "imageUrl": "/video-assets/vendor-mockups/hub-learning-ops.svg",
+      "title": "Captura mental: AI Practice Hub"
+    },
+    {
+      "courseId": "hub-workshop-60m-vendor-selection",
+      "sceneIndex": 49,
+      "sceneId": "case-platform-automation__beat-10",
+      "vendor": "hub",
+      "kind": "screenshot",
+      "imageUrl": "/video-assets/vendor-mockups/hub-learning-ops.svg",
+      "title": "Captura mental: AI Practice Hub"
+    },
+    {
+      "courseId": "hub-workshop-60m-vendor-selection",
+      "sceneIndex": 57,
+      "sceneId": "risk-permission__beat-08",
+      "vendor": "hub",
+      "kind": "screenshot",
+      "imageUrl": "/video-assets/vendor-mockups/hub-learning-ops.svg",
+      "title": "Captura mental: AI Practice Hub"
+    },
+    {
+      "courseId": "hub-workshop-60m-vendor-selection",
+      "sceneIndex": 65,
+      "sceneId": "cost-model__beat-06",
+      "vendor": "hub",
+      "kind": "screenshot",
+      "imageUrl": "/video-assets/vendor-mockups/hub-learning-ops.svg",
+      "title": "Captura mental: AI Practice Hub"
+    },
+    {
+      "courseId": "hub-workshop-60m-vendor-selection",
+      "sceneIndex": 72,
+      "sceneId": "training-route__beat-03",
+      "vendor": "hub",
+      "kind": "screenshot",
+      "imageUrl": "/video-assets/vendor-mockups/hub-learning-ops.svg",
+      "title": "Captura mental: AI Practice Hub"
+    },
+    {
+      "courseId": "hub-workshop-60m-vendor-selection",
+      "sceneIndex": 80,
+      "sceneId": "demo-routing__beat-01",
+      "vendor": "hub",
+      "kind": "screenshot",
+      "imageUrl": "/video-assets/vendor-mockups/hub-learning-ops.svg",
+      "title": "Captura mental: AI Practice Hub"
+    },
+    {
+      "courseId": "hub-workshop-60m-vendor-selection",
+      "sceneIndex": 88,
+      "sceneId": "demo-routing__beat-09",
+      "vendor": "hub",
+      "kind": "screenshot",
+      "imageUrl": "/video-assets/vendor-mockups/hub-learning-ops.svg",
+      "title": "Captura mental: AI Practice Hub"
+    },
+    {
+      "courseId": "hub-workshop-60m-vendor-selection",
+      "sceneIndex": 95,
+      "sceneId": "feedback-loop__beat-06",
+      "vendor": "hub",
+      "kind": "screenshot",
+      "imageUrl": "/video-assets/vendor-mockups/hub-learning-ops.svg",
+      "title": "Captura mental: AI Practice Hub"
+    },
+    {
+      "courseId": "hub-workshop-60m-vendor-selection",
+      "sceneIndex": 104,
+      "sceneId": "release-handoff__beat-05",
+      "vendor": "hub",
+      "kind": "screenshot",
+      "imageUrl": "/video-assets/vendor-mockups/hub-learning-ops.svg",
+      "title": "Captura mental: AI Practice Hub"
+    },
+    {
+      "courseId": "hub-workshop-60m-vendor-selection",
+      "sceneIndex": 111,
+      "sceneId": "close__beat-02",
+      "vendor": "hub",
+      "kind": "screenshot",
+      "imageUrl": "/video-assets/vendor-mockups/hub-learning-ops.svg",
+      "title": "Captura mental: AI Practice Hub"
+    }
+  ],
+  "courses": [
+    {
+      "id": "cl-advanced-01-hooks",
+      "vendor": "claude",
+      "target": 1,
+      "converted": 0,
+      "sceneCount": 3,
+      "mediaBreakCount": 0
+    },
+    {
+      "id": "cl-advanced-02-plugin-action",
+      "vendor": "claude",
+      "target": 1,
+      "converted": 0,
+      "sceneCount": 3,
+      "mediaBreakCount": 0
+    },
+    {
+      "id": "cl-basic-01-claude-md",
+      "vendor": "claude",
+      "target": 1,
+      "converted": 0,
+      "sceneCount": 3,
+      "mediaBreakCount": 0
+    },
+    {
+      "id": "cl-basic-02-compact-context",
+      "vendor": "claude",
+      "target": 1,
+      "converted": 0,
+      "sceneCount": 3,
+      "mediaBreakCount": 0
+    },
+    {
+      "id": "cl-masterclass-10m-claude-operating-model",
+      "vendor": "claude",
+      "target": 4,
+      "converted": 4,
+      "sceneCount": 24,
+      "mediaBreakCount": 4
+    },
+    {
+      "id": "cl-operator-01-first-skill",
+      "vendor": "claude",
+      "target": 1,
+      "converted": 0,
+      "sceneCount": 3,
+      "mediaBreakCount": 0
+    },
+    {
+      "id": "cl-operator-02-subagent-explorer",
+      "vendor": "claude",
+      "target": 1,
+      "converted": 0,
+      "sceneCount": 3,
+      "mediaBreakCount": 0
+    },
+    {
+      "id": "cl-operator-03-mcp-project",
+      "vendor": "claude",
+      "target": 1,
+      "converted": 0,
+      "sceneCount": 3,
+      "mediaBreakCount": 0
+    },
+    {
+      "id": "cl-orientation-01-claude-md",
+      "vendor": "claude",
+      "target": 1,
+      "converted": 0,
+      "sceneCount": 3,
+      "mediaBreakCount": 0
+    },
+    {
+      "id": "cl-orientation-02-memory-vs-instructions",
+      "vendor": "claude",
+      "target": 1,
+      "converted": 0,
+      "sceneCount": 3,
+      "mediaBreakCount": 0
+    },
+    {
+      "id": "cl-orientation-03-cost-context",
+      "vendor": "claude",
+      "target": 1,
+      "converted": 0,
+      "sceneCount": 3,
+      "mediaBreakCount": 0
+    },
+    {
+      "id": "cl-sdk-01-agent-sdk",
+      "vendor": "claude",
+      "target": 1,
+      "converted": 0,
+      "sceneCount": 3,
+      "mediaBreakCount": 0
+    },
+    {
+      "id": "cl-sdk-02-evals-governance",
+      "vendor": "claude",
+      "target": 1,
+      "converted": 0,
+      "sceneCount": 3,
+      "mediaBreakCount": 0
+    },
+    {
+      "id": "cl-workshop-30m-memory-to-hook",
+      "vendor": "claude",
+      "target": 8,
+      "converted": 8,
+      "sceneCount": 60,
+      "mediaBreakCount": 8
+    },
+    {
+      "id": "cl-workshop-60m-memory-to-automation",
+      "vendor": "claude",
+      "target": 14,
+      "converted": 14,
+      "sceneCount": 120,
+      "mediaBreakCount": 14
+    },
+    {
+      "id": "cp-advanced-01-custom-agent",
+      "vendor": "copilot",
+      "target": 1,
+      "converted": 1,
+      "sceneCount": 3,
+      "mediaBreakCount": 1
+    },
+    {
+      "id": "cp-advanced-02-mcp-code-review",
+      "vendor": "copilot",
+      "target": 1,
+      "converted": 0,
+      "sceneCount": 3,
+      "mediaBreakCount": 0
+    },
+    {
+      "id": "cp-basic-01-inline-completion",
+      "vendor": "copilot",
+      "target": 0,
+      "converted": 0,
+      "sceneCount": 3,
+      "mediaBreakCount": 0
+    },
+    {
+      "id": "cp-basic-02-ask-edit-agent",
+      "vendor": "copilot",
+      "target": 0,
+      "converted": 0,
+      "sceneCount": 3,
+      "mediaBreakCount": 0
+    },
+    {
+      "id": "cp-basic-03-error-to-fix",
+      "vendor": "copilot",
+      "target": 0,
+      "converted": 0,
+      "sceneCount": 3,
+      "mediaBreakCount": 0
+    },
+    {
+      "id": "cp-cloud-01-cloud-agent-pr",
+      "vendor": "copilot",
+      "target": 0,
+      "converted": 0,
+      "sceneCount": 3,
+      "mediaBreakCount": 0
+    },
+    {
+      "id": "cp-cloud-02-premium-requests",
+      "vendor": "copilot",
+      "target": 0,
+      "converted": 0,
+      "sceneCount": 3,
+      "mediaBreakCount": 0
+    },
+    {
+      "id": "cp-git-01-fork-vs-branch",
+      "vendor": "copilot",
+      "target": 0,
+      "converted": 0,
+      "sceneCount": 3,
+      "mediaBreakCount": 0
+    },
+    {
+      "id": "cp-git-02-pr-as-contract",
+      "vendor": "copilot",
+      "target": 0,
+      "converted": 0,
+      "sceneCount": 3,
+      "mediaBreakCount": 0
+    },
+    {
+      "id": "cp-masterclass-10m-copilot-workbench",
+      "vendor": "copilot",
+      "target": 4,
+      "converted": 4,
+      "sceneCount": 24,
+      "mediaBreakCount": 4
+    },
+    {
+      "id": "cp-medium-01-instructions",
+      "vendor": "copilot",
+      "target": 0,
+      "converted": 0,
+      "sceneCount": 3,
+      "mediaBreakCount": 0
+    },
+    {
+      "id": "cp-medium-02-prompt-files",
+      "vendor": "copilot",
+      "target": 0,
+      "converted": 0,
+      "sceneCount": 3,
+      "mediaBreakCount": 0
+    },
+    {
+      "id": "cp-workshop-30m-error-to-pr",
+      "vendor": "copilot",
+      "target": 8,
+      "converted": 8,
+      "sceneCount": 60,
+      "mediaBreakCount": 8
+    },
+    {
+      "id": "cp-workshop-60m-vscode-to-pr-review",
+      "vendor": "copilot",
+      "target": 14,
+      "converted": 14,
+      "sceneCount": 120,
+      "mediaBreakCount": 14
+    },
+    {
+      "id": "cx-basic-01-agents-md",
+      "vendor": "codex",
+      "target": 0,
+      "converted": 0,
+      "sceneCount": 4,
+      "mediaBreakCount": 0
+    },
+    {
+      "id": "cx-basic-02-plan-before-patch",
+      "vendor": "codex",
+      "target": 0,
+      "converted": 0,
+      "sceneCount": 4,
+      "mediaBreakCount": 0
+    },
+    {
+      "id": "cx-masterclass-10m-codex-operating-system",
+      "vendor": "codex",
+      "target": 4,
+      "converted": 4,
+      "sceneCount": 24,
+      "mediaBreakCount": 4
+    },
+    {
+      "id": "cx-medium-01-model-picker",
+      "vendor": "codex",
+      "target": 0,
+      "converted": 0,
+      "sceneCount": 4,
+      "mediaBreakCount": 0
+    },
+    {
+      "id": "cx-medium-02-mcp-readonly",
+      "vendor": "codex",
+      "target": 0,
+      "converted": 0,
+      "sceneCount": 4,
+      "mediaBreakCount": 0
+    },
+    {
+      "id": "cx-medium-03-skill-qa-visual",
+      "vendor": "codex",
+      "target": 0,
+      "converted": 0,
+      "sceneCount": 4,
+      "mediaBreakCount": 0
+    },
+    {
+      "id": "cx-orientation-01-surface-map",
+      "vendor": "codex",
+      "target": 0,
+      "converted": 0,
+      "sceneCount": 4,
+      "mediaBreakCount": 0
+    },
+    {
+      "id": "cx-orientation-02-first-task",
+      "vendor": "codex",
+      "target": 0,
+      "converted": 0,
+      "sceneCount": 4,
+      "mediaBreakCount": 0
+    },
+    {
+      "id": "cx-orientation-03-permissions",
+      "vendor": "codex",
+      "target": 0,
+      "converted": 0,
+      "sceneCount": 4,
+      "mediaBreakCount": 0
+    },
+    {
+      "id": "cx-ultra-01-github-action",
+      "vendor": "codex",
+      "target": 0,
+      "converted": 0,
+      "sceneCount": 4,
+      "mediaBreakCount": 0
+    },
+    {
+      "id": "cx-ultra-02-pr-swarm",
+      "vendor": "codex",
+      "target": 0,
+      "converted": 0,
+      "sceneCount": 4,
+      "mediaBreakCount": 0
+    },
+    {
+      "id": "cx-workshop-30m-first-real-task",
+      "vendor": "codex",
+      "target": 8,
+      "converted": 8,
+      "sceneCount": 60,
+      "mediaBreakCount": 8
+    },
+    {
+      "id": "cx-workshop-60m-first-task-to-pr",
+      "vendor": "codex",
+      "target": 14,
+      "converted": 14,
+      "sceneCount": 120,
+      "mediaBreakCount": 14
+    },
+    {
+      "id": "hub-operating-model-60m",
+      "vendor": "hub",
+      "target": 14,
+      "converted": 14,
+      "sceneCount": 120,
+      "mediaBreakCount": 14
+    },
+    {
+      "id": "hub-workshop-60m-vendor-selection",
+      "vendor": "hub",
+      "target": 14,
+      "converted": 14,
+      "sceneCount": 120,
+      "mediaBreakCount": 14
+    }
+  ],
+  "mockups": [
+    "/video-assets/vendor-mockups/codex-cli-cloud.svg",
+    "/video-assets/vendor-mockups/codex-cloud-pr.svg",
+    "/video-assets/vendor-mockups/codex-mcp-cost.svg",
+    "/video-assets/vendor-mockups/copilot-vscode-agent.svg",
+    "/video-assets/vendor-mockups/copilot-pr-review.svg",
+    "/video-assets/vendor-mockups/copilot-context-router.svg",
+    "/video-assets/vendor-mockups/claude-skills-mcp.svg",
+    "/video-assets/vendor-mockups/claude-hooks-ci.svg",
+    "/video-assets/vendor-mockups/claude-subagent-board.svg",
+    "/video-assets/vendor-mockups/hub-learning-ops.svg"
+  ]
+}

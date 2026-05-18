@@ -1,0 +1,48 @@
+WEBVTT
+
+NOTE cl-operator-01-first-skill - Claude Operator 01 - First Skill
+
+1
+00:00:00.450 --> 00:00:06.950
+Objetivo de esta clase: resolver Claude Operator 01 - First Skill con criterio practico.
+
+2
+00:00:07.130 --> 00:00:12.046
+Al final debes poder quedarte con una regla de uso y un ejemplo repetible.
+
+3
+00:00:12.226 --> 00:00:16.254
+La ruta sera: concepto, ejemplo y cierre.
+
+4
+00:00:16.434 --> 00:00:19.454
+Durante el video mira esta decision:
+
+5
+00:00:19.634 --> 00:00:23.374
+cuando aplicar esta tecnica en tu propio repositorio.
+
+6
+00:00:30.450 --> 00:00:33.398
+La description es el disparador.
+
+7
+00:00:33.578 --> 00:00:38.014
+Las referencias permiten profundidad sin cargarlo todo siempre.
+
+8
+00:00:38.194 --> 00:00:41.430
+Esto es flipping training convertido en tooling.
+
+9
+00:01:00.450 --> 00:01:05.486
+No escribas el mismo prompt cada lunes. Hazlo skill.
+
+10
+00:01:05.666 --> 00:01:10.942
+Evidencia minuto 1: skill versionada, hook probado y owner claro.
+
+11
+00:01:11.122 --> 00:01:16.734
+Accion minuto 1: parar si "Cuando crear una skill" no produce evidencia nueva.
+

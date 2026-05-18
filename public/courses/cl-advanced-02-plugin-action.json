@@ -9,56 +9,295 @@
   "author": "AI Practice Hub",
   "createdAt": "2026-05-07T00:00:00.000Z",
   "chapters": [
-    { "id": "start", "label": "Plugin", "startMs": 0 },
-    { "id": "concept", "label": "Distribucion", "startMs": 9000 },
-    { "id": "close", "label": "CI", "startMs": 65000 }
+    {
+      "id": "start",
+      "label": "Plugin",
+      "startMs": 0
+    },
+    {
+      "id": "concept",
+      "label": "Distribucion",
+      "startMs": 30000
+    },
+    {
+      "id": "close",
+      "label": "CI",
+      "startMs": 65000
+    }
   ],
   "scenes": [
     {
       "id": "title",
       "name": "Apertura",
       "startMs": 0,
-      "endMs": 9000,
+      "endMs": 30000,
       "type": "title",
-      "content": { "title": "Plugins + Actions", "subtitle": "De buenas practicas sueltas a plataforma de equipo.", "tag": "Claude Advanced" },
-      "subtitles": [{ "text": "El salto enterprise es distribuir capacidades, no enviar un markdown por correo.", "startMs": 1000, "endMs": 8200 }]
+      "content": {
+        "title": "Plugins + Actions",
+        "subtitle": "Objetivo: resolver Claude Advanced 02 - Plugin and Actions con criterio practico.",
+        "tag": "Claude Advanced",
+        "narrativeContract": {
+          "objective": "resolver Claude Advanced 02 - Plugin and Actions con criterio practico.",
+          "outcome": "quedarte con una regla de uso y un ejemplo repetible.",
+          "route": "concepto, ejemplo y cierre.",
+          "decision": "cuando aplicar esta tecnica en tu propio repositorio."
+        }
+      },
+      "subtitles": [
+        {
+          "text": "Objetivo de esta clase:",
+          "startMs": 450,
+          "endMs": 3038
+        },
+        {
+          "text": "resolver Claude Advanced 02 - Plugin and Actions con criterio practico.",
+          "startMs": 3218,
+          "endMs": 8614
+        },
+        {
+          "text": "Al final debes poder quedarte con una regla de uso y un ejemplo repetible.",
+          "startMs": 8794,
+          "endMs": 13710
+        },
+        {
+          "text": "La ruta sera: concepto, ejemplo y cierre.",
+          "startMs": 13890,
+          "endMs": 17918
+        },
+        {
+          "text": "Durante el video mira esta decision:",
+          "startMs": 18098,
+          "endMs": 21118
+        },
+        {
+          "text": "cuando aplicar esta tecnica en tu propio repositorio.",
+          "startMs": 21298,
+          "endMs": 25038
+        }
+      ],
+      "voiceover": [
+        "Objetivo de esta clase:",
+        "resolver Claude Advanced 02 - Plugin and Actions con criterio practico.",
+        "Al final debes poder quedarte con una regla de uso y un ejemplo repetible.",
+        "La ruta sera: concepto, ejemplo y cierre.",
+        "Durante el video mira esta decision:",
+        "cuando aplicar esta tecnica en tu propio repositorio."
+      ],
+      "blueprintAction": {
+        "learningRubric": {
+          "learns": "Distingue decision humana de ejecucion automatizada en Claude.",
+          "does": "Comprueba la salida contra prueba, owner o captura.",
+          "decides": "Aceptar solo si la evidencia queda visible para otra persona.",
+          "vendor": "claude",
+          "usefulnessScore": 82,
+          "memoryCheck": "Puede repetir el prompt inicial con criterio de cierre.",
+          "productionPass": "2000-final-direction"
+        }
+      },
+      "production": {
+        "audioVersion": "audio-prod-v2-2026-05-18",
+        "voiceProfileId": "claudeNarrator",
+        "voice": "es-ES-AlvaroNeural",
+        "rate": "+5%",
+        "pitch": "+0Hz",
+        "energy": "calmada",
+        "emphasis": "memoria, skill, hook y MCP",
+        "pauseMs": 220,
+        "role": "narrator",
+        "reviewRubric": {
+          "learns": "Distingue decision humana de ejecucion automatizada en Claude.",
+          "does": "Comprueba la salida contra prueba, owner o captura.",
+          "decides": "Aceptar solo si la evidencia queda visible para otra persona.",
+          "memoryCheck": "Puede repetir el prompt inicial con criterio de cierre."
+        },
+        "prosodyNotes": {
+          "pace": "+5%",
+          "pause": "220ms antes de la decision",
+          "emphasis": "memoria, skill, hook y M C P",
+          "energy": "calmada"
+        },
+        "pronunciationPass": "spain-voice-units-v1"
+      }
     },
     {
       "id": "concept",
       "name": "Distribucion",
-      "startMs": 9000,
-      "endMs": 65000,
+      "startMs": 30000,
+      "endMs": 60000,
       "type": "concept",
       "content": {
         "tag": "Pack reutilizable",
         "title": "Un plugin empaqueta criterio",
-        "body": "Un plugin puede agrupar skills, subagentes, hooks y configuracion. Una GitHub Action puede invocar Claude en PRs con permisos minimos y una rubrica clara.\n\nLa pregunta no es si Claude puede comentar una PR. La pregunta es quien lo permite, con que coste, bajo que trigger y quien revisa el resultado.",
+        "body": "Un plugin puede agrupar skills, subagentes, hooks y configuracion. Una GitHub Action puede invocar Claude en PRs con permisos minimos y una rubrica clara. La pregunta no es si Claude puede comentar una pull request. La pregunta es quien lo permite, con que coste, bajo que trigger y quien revisa el resultado.",
         "highlight": "Automatizar sin governance solo mueve el problema a CI.",
-        "points": ["Manifest versionado", "Skills y agents empaquetados", "Hooks de seguridad", "PR trigger con permisos minimos"]
+        "points": [
+          "Manifest versionado",
+          "Skills y agents empaquetados",
+          "Hooks de seguridad",
+          "pull request trigger con permisos minimos"
+        ]
       },
       "subtitles": [
-        { "text": "Plugin es distribucion.", "startMs": 10000, "endMs": 22000 },
-        { "text": "Action es ejecucion repetible.", "startMs": 23000, "endMs": 41000 },
-        { "text": "Governance decide cuando se activa y quien responde.", "startMs": 42000, "endMs": 63000 }
-      ]
+        {
+          "text": "Plugin es distribucion.",
+          "startMs": 30450,
+          "endMs": 32966
+        },
+        {
+          "text": "Action es ejecucion repetible.",
+          "startMs": 33146,
+          "endMs": 36022
+        },
+        {
+          "text": "Governance decide cuando se activa y quien responde.",
+          "startMs": 36202,
+          "endMs": 39942
+        }
+      ],
+      "voiceover": [
+        "Plugin es distribucion.",
+        "Action es ejecucion repetible.",
+        "Governance decide cuando se activa y quien responde."
+      ],
+      "blueprintAction": {
+        "learningRubric": {
+          "learns": "Ubica coste, permiso y criterio antes de aceptar la salida.",
+          "does": "Registra el criterio que permitiria repetir el paso sin instructor.",
+          "decides": "Seguir, pedir mas contexto, escalar modelo o bloquear.",
+          "vendor": "claude",
+          "usefulnessScore": 84,
+          "memoryCheck": "Puede explicar el paso en una frase de menos de 20 segundos.",
+          "productionPass": "2000-final-direction"
+        }
+      },
+      "production": {
+        "audioVersion": "audio-prod-v2-2026-05-18",
+        "voiceProfileId": "claudeNarrator",
+        "voice": "es-ES-AlvaroNeural",
+        "rate": "+5%",
+        "pitch": "+0Hz",
+        "energy": "calmada",
+        "emphasis": "memoria, skill, hook y MCP",
+        "pauseMs": 220,
+        "role": "narrator",
+        "reviewRubric": {
+          "learns": "Ubica coste, permiso y criterio antes de aceptar la salida.",
+          "does": "Registra el criterio que permitiria repetir el paso sin instructor.",
+          "decides": "Seguir, pedir mas contexto, escalar modelo o bloquear.",
+          "memoryCheck": "Puede explicar el paso en una frase de menos de 20 segundos."
+        },
+        "prosodyNotes": {
+          "pace": "+5%",
+          "pause": "220ms antes de la decision",
+          "emphasis": "memoria, skill, hook y M C P",
+          "energy": "calmada"
+        },
+        "pronunciationPass": "spain-voice-units-v1"
+      }
     },
     {
       "id": "finale",
       "name": "Cierre",
-      "startMs": 65000,
+      "startMs": 60000,
       "endMs": 90000,
       "type": "finale",
       "content": {
         "title": "Checklist automation",
         "summary": [
-          { "number": "Pack", "label": "Plugin", "body": "Skills, agents y hooks." },
-          { "number": "Run", "label": "Action", "body": "Trigger y permisos minimos." },
-          { "number": "Own", "label": "Governance", "body": "Coste, owner y aprobacion." }
+          {
+            "number": "Pack",
+            "label": "Plugin",
+            "body": "Skills, agents y hooks."
+          },
+          {
+            "number": "Run",
+            "label": "Action",
+            "body": "Trigger y permisos minimos."
+          },
+          {
+            "number": "Own",
+            "label": "Governance",
+            "body": "Coste, owner y aprobacion."
+          }
         ],
         "cta": "Ejercicio: cl-a03-plugin-team-review."
       },
-      "subtitles": [{ "text": "La potencia real aparece cuando el criterio se puede instalar.", "startMs": 66000, "endMs": 89000 }]
+      "subtitles": [
+        {
+          "text": "La potencia real aparece cuando el criterio se puede instalar.",
+          "startMs": 60450,
+          "endMs": 64814
+        },
+        {
+          "text": "Evidencia minuto 1: \"Checklist automation\" no se cierra sin test",
+          "startMs": 64994,
+          "endMs": 69910
+        },
+        {
+          "text": "captura o criterio escrito.",
+          "startMs": 70090,
+          "endMs": 72918
+        },
+        {
+          "text": "Accion minuto 1: pedir salida pequena verificable y con owner. (Claude",
+          "startMs": 73098,
+          "endMs": 79382
+        },
+        {
+          "text": "minuto 1 paso 1)",
+          "startMs": 79562,
+          "endMs": 82006
+        }
+      ],
+      "voiceover": [
+        "La potencia real aparece cuando el criterio se puede instalar.",
+        "Evidencia minuto 1: \"Checklist automation\" no se cierra sin test",
+        "captura o criterio escrito.",
+        "Accion minuto 1: pedir salida pequena verificable y con owner. (Claude",
+        "minuto 1 paso 1)"
+      ],
+      "blueprintAction": {
+        "learningRubric": {
+          "learns": "Reconoce por que \"Checklist automation\" necesita evidencia y no solo respuesta.",
+          "does": "Formula una peticion verificable con limite de alcance.",
+          "decides": "Convertir la duda en material de tutoria si se repite.",
+          "vendor": "claude",
+          "usefulnessScore": 86,
+          "memoryCheck": "Puede nombrar el riesgo principal sin mirar la slide.",
+          "productionPass": "2000-final-direction"
+        }
+      },
+      "production": {
+        "audioVersion": "audio-prod-v2-2026-05-18",
+        "voiceProfileId": "claudeSafety",
+        "voice": "es-ES-AlvaroNeural",
+        "rate": "+2%",
+        "pitch": "+0Hz",
+        "energy": "deliberada",
+        "emphasis": "permiso, bloqueo y rollback",
+        "pauseMs": 300,
+        "role": "reflection",
+        "reviewRubric": {
+          "learns": "Reconoce por que \"Checklist automation\" necesita evidencia y no solo respuesta.",
+          "does": "Formula una peticion verificable con limite de alcance.",
+          "decides": "Convertir la duda en material de tutoria si se repite.",
+          "memoryCheck": "Puede nombrar el riesgo principal sin mirar la slide."
+        },
+        "prosodyNotes": {
+          "pace": "+2%",
+          "pause": "300ms antes de la decision",
+          "emphasis": "permiso, bloqueo y rollback",
+          "energy": "deliberada"
+        },
+        "pronunciationPass": "spain-voice-units-v1"
+      }
     }
-  ]
+  ],
+  "production": {
+    "audioProductionVersion": "audio-prod-v2-2026-05-18",
+    "productionPass": "2000-final-direction",
+    "vendor": "claude",
+    "narrativePass": "teacher-contract-v1",
+    "pronunciationPass": "spain-voice-units-v1"
+  }
 }
-

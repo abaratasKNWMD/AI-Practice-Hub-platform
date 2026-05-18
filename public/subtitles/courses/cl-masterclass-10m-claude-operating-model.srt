@@ -1,0 +1,532 @@
+1
+00:00:00,450 --> 00:00:05,894
+Objetivo de esta clase: entender el sistema operativo de Claude en 10 minutos.
+
+2
+00:00:06,074 --> 00:00:11,446
+Al final debes poder saber cuando usarlo, cuando no usarlo y que evidencia pedir.
+
+3
+00:00:11,626 --> 00:00:17,214
+La ruta sera: Aterrizaje, Superficies, Metodo y cierre operativo.
+
+4
+00:00:17,394 --> 00:00:20,414
+Durante el video mira esta decision:
+
+5
+00:00:20,594 --> 00:00:24,574
+si la herramienta encaja con el trabajo real del equipo.
+
+6
+00:00:25,450 --> 00:00:28,542
+Claude: Superficies Claude.
+
+7
+00:00:28,587 --> 00:00:34,631
+Project, Claude Code, M C P, skills y subagentes tienen trabajos distintos.
+
+8
+00:00:34,676 --> 00:00:38,752
+Modelo minuto 0: elegir por riesgo En Claude
+
+9
+00:00:38,797 --> 00:00:42,321
+valida "Superficies Claude" antes de iterar.
+
+10
+00:00:42,366 --> 00:00:47,618
+contexto y coste antes de pedir otra iteracion. En Claude
+
+11
+00:00:46,396 --> 00:00:49,920
+valida "Superficies Claude" antes de iterar.
+
+12
+00:00:43,684 --> 00:00:49,920
+Decision minuto 0: cerrar solo cuando skill versionada, hook probado y owner claro.
+
+13
+00:00:50,450 --> 00:00:54,118
+Claude: Memoria mala vs memoria util.
+
+14
+00:00:54,163 --> 00:00:58,863
+Guardar todo no ayuda; guardar reglas estables reduce friccion.
+
+15
+00:00:58,908 --> 00:01:02,984
+Modelo minuto 0: elegir por riesgo En Claude
+
+16
+00:01:03,029 --> 00:01:07,297
+valida "Memoria mala vs memoria util" antes de iterar.
+
+17
+00:01:07,342 --> 00:01:12,594
+contexto y coste antes de pedir otra iteracion. En Claude
+
+18
+00:01:10,652 --> 00:01:14,920
+valida "Memoria mala vs memoria util" antes de iterar.
+
+19
+00:01:08,900 --> 00:01:14,920
+Decision minuto 0: seguir, pedir contexto, escalar modelo o bloquear.
+
+20
+00:01:15,450 --> 00:01:18,182
+Claude: Brief de tarea.
+
+21
+00:01:18,362 --> 00:01:23,278
+Separar objetivo, frontera, owner, evidencia y rollback.
+
+22
+00:01:23,458 --> 00:01:29,550
+Modelo minuto 1: elegir por riesgo, contexto y coste antes de pedir otra iteracion.
+
+23
+00:01:29,730 --> 00:01:35,606
+Decision minuto 1: seguir, pedir contexto, escalar modelo o bloquear.
+
+24
+00:01:40,450 --> 00:01:43,134
+Claude: Prompt de skill.
+
+25
+00:01:43,314 --> 00:01:48,158
+Una skill captura procedimiento repetible y evita reexplicar el trabajo.
+
+26
+00:01:48,338 --> 00:01:54,430
+Modelo minuto 1: elegir por riesgo, contexto y coste antes de pedir otra iteracion.
+
+27
+00:01:54,610 --> 00:02:00,294
+Decision minuto 1: si el riesgo supera la evidencia, entra instructor o tech lead.
+
+28
+00:02:05,450 --> 00:02:08,422
+Claude: Respuesta esperada.
+
+29
+00:02:08,602 --> 00:02:13,950
+Claude debe devolver pasos, riesgos y artefacto final, no entusiasmo.
+
+30
+00:02:14,130 --> 00:02:20,270
+Modelo minuto 2: elegir por riesgo, contexto y coste antes de pedir otra iteracion.
+
+31
+00:02:20,450 --> 00:02:25,846
+Decision minuto 2: guardar la duda como material reutilizable si se repite.
+
+32
+00:02:30,450 --> 00:02:35,918
+Situacion minuto 2: alguien tendra que mantener esta salida despues de la demo.
+
+33
+00:02:35,963 --> 00:02:41,863
+Tension minuto 2: el agente puede avanzar mas rapido que nuestra capacidad de revisar.
+
+34
+00:02:41,908 --> 00:02:47,232
+Accion minuto 2: pedir salida pequena, verificable y con owner.
+
+35
+00:02:47,277 --> 00:02:52,073
+Evidencia minuto 2: "Captura mental: Claude Code skills
+
+36
+00:02:50,484 --> 00:02:54,920
+hooks y M C P" queda ligado a prueba owner y decision.
+
+37
+00:02:55,450 --> 00:02:58,278
+Claude: Hook gobernado.
+
+38
+00:02:58,458 --> 00:03:03,278
+Un hook bueno bloquea con criterio y ofrece salida, no con susto.
+
+39
+00:03:03,458 --> 00:03:09,598
+Modelo minuto 2: elegir por riesgo, contexto y coste antes de pedir otra iteracion.
+
+40
+00:03:09,778 --> 00:03:15,846
+Decision minuto 2: cerrar solo cuando skill versionada, hook probado y owner claro.
+
+41
+00:03:20,450 --> 00:03:23,662
+Claude: Terminal y evidencia.
+
+42
+00:03:23,842 --> 00:03:28,446
+Cada automatizacion necesita salida legible y rollback probado.
+
+43
+00:03:28,626 --> 00:03:34,862
+Modelo minuto 3: elegir por riesgo, contexto y coste antes de pedir otra iteracion.
+
+44
+00:03:35,042 --> 00:03:41,014
+Decision minuto 3: seguir, pedir contexto, escalar modelo o bloquear.
+
+45
+00:03:45,450 --> 00:03:48,518
+Claude: Decision de modelo.
+
+46
+00:03:48,698 --> 00:03:52,774
+Usar potencia segun ambiguedad, no por costumbre.
+
+47
+00:03:52,954 --> 00:03:59,358
+Modelo minuto 3: elegir por riesgo, contexto y coste antes de pedir otra iteracion.
+
+48
+00:03:59,538 --> 00:04:05,510
+Decision minuto 3: si el riesgo supera la evidencia, entra instructor o tech lead.
+
+49
+00:04:10,450 --> 00:04:16,278
+Situacion minuto 4: el equipo mira "Captura mental: Claude Code skills
+
+50
+00:04:16,323 --> 00:04:22,055
+hooks y M C P" dentro del memoria skill o M C P con coste y permiso visibles.
+
+51
+00:04:22,100 --> 00:04:27,832
+hooks y M C P" dentro del memoria skill o M C P con coste y permiso visibles.
+
+52
+00:04:27,877 --> 00:04:33,513
+Tension minuto 4: el coste malo suele aparecer cuando nadie define el cierre.
+
+53
+00:04:31,084 --> 00:04:34,920
+Accion minuto 4: convertir memoria
+
+54
+00:04:30,364 --> 00:04:34,920
+skill o M C P en una decision que se pueda ensenar en tutoria.
+
+55
+00:04:28,564 --> 00:04:34,920
+no con la sensacion de velocidad. (Claude, minuto 4, paso 2)
+
+56
+00:04:29,932 --> 00:04:34,920
+Evidencia minuto 4: "Captura mental: Claude Code skills
+
+57
+00:04:30,484 --> 00:04:34,920
+hooks y M C P" queda ligado a prueba owner y decision.
+
+58
+00:04:29,932 --> 00:04:34,920
+hooks y M C P" no se cierra sin test captura o criterio escrito.
+
+59
+00:04:35,450 --> 00:04:38,614
+Claude: Permisos M C P.
+
+60
+00:04:38,794 --> 00:04:44,742
+Inventario, scope, lectura, escritura y owner antes de conectar fuentes.
+
+61
+00:04:44,922 --> 00:04:51,326
+Modelo minuto 4: elegir por riesgo, contexto y coste antes de pedir otra iteracion.
+
+62
+00:04:51,506 --> 00:04:56,494
+Decision minuto 4: si no se puede auditar, vuelve a briefing.
+
+63
+00:05:00,450 --> 00:05:03,302
+Claude: Timeline Claude.
+
+64
+00:05:03,347 --> 00:05:09,391
+Brief, CLAUDE.md, Skill, Hook, M C P, Eval y Signoff.
+
+65
+00:05:09,436 --> 00:05:15,672
+Modelo minuto 5: elegir por riesgo En Claude, valida "Timeline Claude" antes de iterar.
+
+66
+00:05:15,717 --> 00:05:20,969
+contexto y coste antes de pedir otra iteracion. En Claude
+
+67
+00:05:21,014 --> 00:05:24,322
+valida "Timeline Claude" antes de iterar.
+
+68
+00:05:18,900 --> 00:05:24,920
+Decision minuto 5: seguir, pedir contexto, escalar modelo o bloquear.
+
+69
+00:05:25,450 --> 00:05:27,966
+Claude: Checkpoint.
+
+70
+00:05:28,011 --> 00:05:33,311
+El alumno decide si esto debe ser memoria, skill, hook o M C P.
+
+71
+00:05:33,356 --> 00:05:39,472
+Modelo minuto 5: elegir por riesgo En Claude, valida "Checkpoint" antes de iterar.
+
+72
+00:05:39,517 --> 00:05:44,913
+contexto y coste antes de pedir otra iteracion. En Claude
+
+73
+00:05:44,958 --> 00:05:48,122
+valida "Checkpoint" antes de iterar.
+
+74
+00:05:43,948 --> 00:05:49,920
+Decision minuto 5: si el riesgo supera la evidencia, entra instructor o tech lead.
+
+75
+00:05:50,450 --> 00:05:53,566
+Claude: Pensamiento Claude.
+
+76
+00:05:53,611 --> 00:05:57,735
+La frontera del agente importa mas que la longitud del prompt.
+
+77
+00:05:57,780 --> 00:06:02,024
+Modelo minuto 5: elegir por riesgo En Claude
+
+78
+00:06:02,069 --> 00:06:05,641
+valida "Pensamiento Claude" antes de iterar.
+
+79
+00:06:05,686 --> 00:06:11,082
+contexto y coste antes de pedir otra iteracion. En Claude
+
+80
+00:06:11,127 --> 00:06:14,699
+valida "Pensamiento Claude" antes de iterar.
+
+81
+00:06:09,284 --> 00:06:14,920
+Decision minuto 5: guardar la duda como material reutilizable si se repite.
+
+82
+00:06:15,450 --> 00:06:21,182
+Situacion minuto 6: el equipo mira "Captura mental: Claude Code skills
+
+83
+00:06:21,227 --> 00:06:26,959
+hooks y M C P" dentro del memoria skill o M C P con coste y permiso visibles.
+
+84
+00:06:27,004 --> 00:06:32,736
+hooks y M C P" dentro del memoria skill o M C P con coste y permiso visibles.
+
+85
+00:06:32,781 --> 00:06:38,369
+Tension minuto 6: el coste malo suele aparecer cuando nadie define el cierre.
+
+86
+00:06:36,156 --> 00:06:39,920
+Accion minuto 6: convertir memoria
+
+87
+00:06:35,364 --> 00:06:39,920
+skill o M C P en una decision que se pueda ensenar en tutoria.
+
+88
+00:06:33,516 --> 00:06:39,920
+no con la sensacion de velocidad. (Claude, minuto 6, paso 3)
+
+89
+00:06:35,052 --> 00:06:39,920
+Evidencia minuto 6: "Captura mental: Claude Code skills
+
+90
+00:06:35,484 --> 00:06:39,920
+hooks y M C P" queda ligado a prueba owner y decision.
+
+91
+00:06:34,932 --> 00:06:39,920
+hooks y M C P" no se cierra sin test captura o criterio escrito.
+
+92
+00:06:40,450 --> 00:06:43,446
+Claude: Pausa instructor.
+
+93
+00:06:43,626 --> 00:06:48,278
+Parar y preguntar: que pasa si esto falla a las 3 de la manana?
+
+94
+00:06:48,458 --> 00:06:54,862
+Modelo minuto 6: elegir por riesgo, contexto y coste antes de pedir otra iteracion.
+
+95
+00:06:55,042 --> 00:07:00,030
+Decision minuto 6: si no se puede auditar, vuelve a briefing.
+
+96
+00:07:05,450 --> 00:07:08,182
+Claude: Subagentes.
+
+97
+00:07:08,362 --> 00:07:13,902
+Explorer, calidad, security y architect tienen coste y permisos distintos.
+
+98
+00:07:14,082 --> 00:07:20,294
+Modelo minuto 7: elegir por riesgo, contexto y coste antes de pedir otra iteracion.
+
+99
+00:07:20,474 --> 00:07:26,590
+Decision minuto 7: cerrar solo cuando skill versionada, hook probado y owner claro.
+
+100
+00:07:30,450 --> 00:07:34,934
+Situacion minuto 7: la pantalla no busca impresionar;
+
+101
+00:07:34,979 --> 00:07:39,295
+busca cerrar "Mapa operativo: Claude Code skills
+
+102
+00:07:39,340 --> 00:07:42,528
+hooks y M C P" con evidencia.
+
+103
+00:07:42,573 --> 00:07:46,889
+busca cerrar "Mapa operativo: Claude Code skills
+
+104
+00:07:46,934 --> 00:07:50,122
+hooks y M C P" con evidencia.
+
+105
+00:07:49,644 --> 00:07:54,920
+Tension minuto 7: aceptar rapido puede esconder contexto infinito
+
+106
+00:07:51,540 --> 00:07:54,920
+permisos y automatizacion sin rollback.
+
+107
+00:07:49,500 --> 00:07:54,920
+Accion minuto 7: parar si "Mapa operativo: Claude Code skills
+
+108
+00:07:51,084 --> 00:07:54,920
+hooks y M C P" no produce evidencia nueva.
+
+109
+00:07:48,996 --> 00:07:54,920
+skill o M C P en una decision que se pueda ensenar en tutoria. (Claude
+
+110
+00:07:52,116 --> 00:07:54,920
+minuto 7 paso 3)
+
+111
+00:07:49,356 --> 00:07:54,920
+Evidencia minuto 7: el artefacto muestra que se controlo contexto infinito
+
+112
+00:07:51,540 --> 00:07:54,920
+permisos y automatizacion sin rollback.
+
+113
+00:07:49,932 --> 00:07:54,920
+hooks y M C P" no se cierra sin test captura o criterio escrito.
+
+114
+00:07:55,450 --> 00:07:58,302
+Claude: CI controlada.
+
+115
+00:07:58,482 --> 00:08:04,190
+Automatizar PRs exige label, max retries, logs y firma humana.
+
+116
+00:08:04,370 --> 00:08:10,582
+Modelo minuto 7: elegir por riesgo, contexto y coste antes de pedir otra iteracion.
+
+117
+00:08:10,762 --> 00:08:16,590
+Decision minuto 7: si el riesgo supera la evidencia, entra instructor o tech lead.
+
+118
+00:08:20,450 --> 00:08:23,782
+Claude: Go / No-Go.
+
+119
+00:08:23,962 --> 00:08:28,782
+Claude ayuda mucho cuando hay procedimiento; no sustituye ownership.
+
+120
+00:08:28,962 --> 00:08:35,342
+Modelo minuto 8: elegir por riesgo, contexto y coste antes de pedir otra iteracion.
+
+121
+00:08:35,522 --> 00:08:41,110
+Decision minuto 8: guardar la duda como material reutilizable si se repite.
+
+122
+00:08:45,450 --> 00:08:48,230
+Claude: Presupuesto.
+
+123
+00:08:48,410 --> 00:08:52,702
+Contexto largo sin dieta se convierte en coste invisible.
+
+124
+00:08:52,882 --> 00:08:59,262
+Modelo minuto 8: elegir por riesgo, contexto y coste antes de pedir otra iteracion.
+
+125
+00:08:59,442 --> 00:09:04,382
+Decision minuto 8: si no se puede auditar, vuelve a briefing.
+
+126
+00:09:10,450 --> 00:09:13,134
+Claude: Activacion.
+
+127
+00:09:13,314 --> 00:09:18,086
+Primer reto: convertir una rutina repetida en skill con prueba.
+
+128
+00:09:18,266 --> 00:09:24,598
+Modelo minuto 9: elegir por riesgo, contexto y coste antes de pedir otra iteracion.
+
+129
+00:09:24,778 --> 00:09:31,038
+Decision minuto 9: cerrar solo cuando skill versionada, hook probado y owner claro.
+
+130
+00:09:35,450 --> 00:09:38,062
+Claude: Resumen.
+
+131
+00:09:38,242 --> 00:09:43,038
+Claude funciona cuando memoria, tools y agentes tienen gobierno.
+
+132
+00:09:43,218 --> 00:09:49,550
+Modelo minuto 9: elegir por riesgo, contexto y coste antes de pedir otra iteracion.
+
+133
+00:09:49,730 --> 00:09:55,846
+Decision minuto 9: seguir, pedir contexto, escalar modelo o bloquear.
+

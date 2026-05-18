@@ -1,6 +1,6 @@
 {
   "id": "cl-sdk-02-evals-governance",
-  "title": "Claude SDK 02 - Evals and Governance",
+  "title": "Claude S D K 02 - Evals and Governance",
   "description": "Evaluar agentes Claude con rubricas, coste y decisiones go/no-go.",
   "template": "technical",
   "durationPreset": 5,
@@ -9,25 +9,121 @@
   "author": "AI Practice Hub",
   "createdAt": "2026-05-07T00:00:00.000Z",
   "chapters": [
-    { "id": "start", "label": "Evals", "startMs": 0 },
-    { "id": "compare", "label": "Medicion", "startMs": 9000 },
-    { "id": "close", "label": "Piloto", "startMs": 65000 }
+    {
+      "id": "start",
+      "label": "Evals",
+      "startMs": 0
+    },
+    {
+      "id": "compare",
+      "label": "Medicion",
+      "startMs": 30000
+    },
+    {
+      "id": "close",
+      "label": "Piloto",
+      "startMs": 65000
+    }
   ],
   "scenes": [
     {
       "id": "title",
       "name": "Apertura",
       "startMs": 0,
-      "endMs": 9000,
+      "endMs": 30000,
       "type": "title",
-      "content": { "title": "Evals + governance", "subtitle": "El agente que no se mide no se despliega.", "tag": "Claude Enterprise" },
-      "subtitles": [{ "text": "En enterprise, una demo brillante no basta. Hay que medir.", "startMs": 1000, "endMs": 8200 }]
+      "content": {
+        "title": "Evals + governance",
+        "subtitle": "Objetivo: resolver Claude S D K 02 - Evals and Governance con criterio practico.",
+        "tag": "Claude Enterprise",
+        "narrativeContract": {
+          "objective": "resolver Claude S D K 02 - Evals and Governance con criterio practico.",
+          "outcome": "quedarte con una regla de uso y un ejemplo repetible.",
+          "route": "concepto, ejemplo y cierre.",
+          "decision": "cuando aplicar esta tecnica en tu propio repositorio."
+        }
+      },
+      "subtitles": [
+        {
+          "text": "Objetivo de esta clase:",
+          "startMs": 450,
+          "endMs": 3038
+        },
+        {
+          "text": "resolver Claude S D K 02 - Evals and Governance con criterio practico.",
+          "startMs": 3218,
+          "endMs": 8710
+        },
+        {
+          "text": "Al final debes poder quedarte con una regla de uso y un ejemplo repetible.",
+          "startMs": 8890,
+          "endMs": 13806
+        },
+        {
+          "text": "La ruta sera: concepto, ejemplo y cierre.",
+          "startMs": 13986,
+          "endMs": 18014
+        },
+        {
+          "text": "Durante el video mira esta decision:",
+          "startMs": 18194,
+          "endMs": 21214
+        },
+        {
+          "text": "cuando aplicar esta tecnica en tu propio repositorio.",
+          "startMs": 21394,
+          "endMs": 25134
+        }
+      ],
+      "voiceover": [
+        "Objetivo de esta clase:",
+        "resolver Claude S D K 02 - Evals and Governance con criterio practico.",
+        "Al final debes poder quedarte con una regla de uso y un ejemplo repetible.",
+        "La ruta sera: concepto, ejemplo y cierre.",
+        "Durante el video mira esta decision:",
+        "cuando aplicar esta tecnica en tu propio repositorio."
+      ],
+      "blueprintAction": {
+        "learningRubric": {
+          "learns": "Reconoce por que \"Evals + governance\" necesita evidencia y no solo respuesta.",
+          "does": "Formula una peticion verificable con limite de alcance.",
+          "decides": "Convertir la duda en material de tutoria si se repite.",
+          "vendor": "claude",
+          "usefulnessScore": 82,
+          "memoryCheck": "Puede nombrar el riesgo principal sin mirar la slide.",
+          "productionPass": "2000-final-direction"
+        }
+      },
+      "production": {
+        "audioVersion": "audio-prod-v2-2026-05-18",
+        "voiceProfileId": "claudeNarrator",
+        "voice": "es-ES-AlvaroNeural",
+        "rate": "+5%",
+        "pitch": "+0Hz",
+        "energy": "calmada",
+        "emphasis": "memoria, skill, hook y MCP",
+        "pauseMs": 220,
+        "role": "narrator",
+        "reviewRubric": {
+          "learns": "Reconoce por que \"Evals + governance\" necesita evidencia y no solo respuesta.",
+          "does": "Formula una peticion verificable con limite de alcance.",
+          "decides": "Convertir la duda en material de tutoria si se repite.",
+          "memoryCheck": "Puede nombrar el riesgo principal sin mirar la slide."
+        },
+        "prosodyNotes": {
+          "pace": "+5%",
+          "pause": "220ms antes de la decision",
+          "emphasis": "memoria, skill, hook y M C P",
+          "energy": "calmada"
+        },
+        "pronunciationPass": "spain-voice-units-v1"
+      }
     },
     {
       "id": "compare",
       "name": "Medicion",
-      "startMs": 9000,
-      "endMs": 65000,
+      "startMs": 30000,
+      "endMs": 60000,
       "type": "compare",
       "content": {
         "tag": "De demo a piloto",
@@ -35,9 +131,22 @@
           "label": "Demo",
           "color": "destructive",
           "steps": [
-            { "icon": "Sparkles", "text": "Parece inteligente" },
-            { "icon": "MessageSquare", "text": "Salida libre" },
-            { "icon": "HelpCircle", "text": "Sin metrica" }
+            {
+              "icon": "Sparkles",
+              "text": "Parece inteligente"
+            },
+            {
+              "icon": "MessageSquare",
+              "text": "Salida libre"
+            },
+            {
+              "icon": "HelpCircle",
+              "text": "Sin metrica"
+            },
+            {
+              "icon": "AlertTriangle",
+              "text": "Sin evidencia, la decision vuelve a tutoria."
+            }
           ],
           "total": "No escalable"
         },
@@ -45,35 +154,206 @@
           "label": "Piloto evaluado",
           "color": "accent",
           "steps": [
-            { "icon": "FileJson", "text": "Contrato JSON" },
-            { "icon": "ClipboardCheck", "text": "Rubrica versionada" },
-            { "icon": "Wallet", "text": "Coste por ejecucion" }
+            {
+              "icon": "FileJson",
+              "text": "Contrato JSON"
+            },
+            {
+              "icon": "ClipboardCheck",
+              "text": "Rubrica versionada"
+            },
+            {
+              "icon": "Wallet",
+              "text": "Coste por ejecucion"
+            },
+            {
+              "icon": "Check",
+              "text": "Cerrar con criterio, coste y validacion."
+            }
           ],
           "total": "Gobernable"
-        }
+        },
+        "auditNote": "Comparativa enriquecida para explicar cuando usar, cuando no usar y como cerrar."
       },
       "subtitles": [
-        { "text": "Medir no mata la magia. La vuelve confiable.", "startMs": 10000, "endMs": 28000 },
-        { "text": "El contrato JSON permite dashboards y comparaciones.", "startMs": 29000, "endMs": 48000 },
-        { "text": "El go/no-go depende de calidad, coste y riesgo.", "startMs": 49000, "endMs": 63000 }
-      ]
+        {
+          "text": "Medir no mata la magia. La vuelve confiable.",
+          "startMs": 30450,
+          "endMs": 35078
+        },
+        {
+          "text": "El contrato JSON permite dashboards y comparaciones.",
+          "startMs": 35258,
+          "endMs": 39286
+        },
+        {
+          "text": "El go/no-go depende de calidad, coste y riesgo.",
+          "startMs": 39466,
+          "endMs": 44022
+        }
+      ],
+      "voiceover": [
+        "Medir no mata la magia. La vuelve confiable.",
+        "El contrato JSON permite dashboards y comparaciones.",
+        "El go/no-go depende de calidad, coste y riesgo."
+      ],
+      "blueprintAction": {
+        "learningRubric": {
+          "learns": "Distingue decision humana de ejecucion automatizada en Claude.",
+          "does": "Comprueba la salida contra prueba, owner o captura.",
+          "decides": "Aceptar solo si la evidencia queda visible para otra persona.",
+          "vendor": "claude",
+          "usefulnessScore": 84,
+          "memoryCheck": "Puede repetir el prompt inicial con criterio de cierre.",
+          "productionPass": "2000-final-direction"
+        }
+      },
+      "production": {
+        "audioVersion": "audio-prod-v2-2026-05-18",
+        "voiceProfileId": "claudeNarrator",
+        "voice": "es-ES-AlvaroNeural",
+        "rate": "+5%",
+        "pitch": "+0Hz",
+        "energy": "calmada",
+        "emphasis": "memoria, skill, hook y MCP",
+        "pauseMs": 220,
+        "role": "narrator",
+        "reviewRubric": {
+          "learns": "Distingue decision humana de ejecucion automatizada en Claude.",
+          "does": "Comprueba la salida contra prueba, owner o captura.",
+          "decides": "Aceptar solo si la evidencia queda visible para otra persona.",
+          "memoryCheck": "Puede repetir el prompt inicial con criterio de cierre."
+        },
+        "prosodyNotes": {
+          "pace": "+5%",
+          "pause": "220ms antes de la decision",
+          "emphasis": "memoria, skill, hook y M C P",
+          "energy": "calmada"
+        },
+        "pronunciationPass": "spain-voice-units-v1"
+      }
     },
     {
       "id": "finale",
       "name": "Cierre",
-      "startMs": 65000,
+      "startMs": 60000,
       "endMs": 90000,
       "type": "finale",
       "content": {
         "title": "Go/no-go",
         "summary": [
-          { "number": "Quality", "label": "Calidad", "body": "Detecta lo que debe." },
-          { "number": "Cost", "label": "Coste", "body": "Previsible por ejecucion." },
-          { "number": "Risk", "label": "Riesgo", "body": "Permisos y datos controlados." }
+          {
+            "number": "Quality",
+            "label": "Calidad",
+            "body": "Detecta lo que debe."
+          },
+          {
+            "number": "Cost",
+            "label": "Coste",
+            "body": "Previsible por ejecucion."
+          },
+          {
+            "number": "Risk",
+            "label": "Riesgo",
+            "body": "Permisos y datos controlados."
+          }
         ],
         "cta": "Ejercicio: cl-s05-capstone-reviewer."
       },
-      "subtitles": [{ "text": "El capstone no es hacer un agente. Es decidir si merece vivir.", "startMs": 66000, "endMs": 89000 }]
+      "subtitles": [
+        {
+          "text": "El capstone no es hacer un agente. Es decidir si merece vivir.",
+          "startMs": 60450,
+          "endMs": 66038
+        },
+        {
+          "text": "Evidencia minuto 1: el artefacto muestra que se controlo contexto infinito",
+          "startMs": 66083,
+          "endMs": 71575
+        },
+        {
+          "text": "permisos y automatizacion sin rollback.",
+          "startMs": 71620,
+          "endMs": 75000
+        },
+        {
+          "text": "permisos y automatizacion sin rollback. (Claude, minuto 1, paso 5)",
+          "startMs": 75045,
+          "endMs": 81857
+        },
+        {
+          "text": "Accion minuto 1: pedir salida pequena verificable y con owner. (Claude",
+          "startMs": 81902,
+          "endMs": 88186
+        },
+        {
+          "text": "minuto 1 paso 6)",
+          "startMs": 87356,
+          "endMs": 89920
+        },
+        {
+          "text": "skill o M C P en una decision que se pueda ensenar en tutoria. (Claude",
+          "startMs": 83996,
+          "endMs": 89920
+        },
+        {
+          "text": "minuto 1 paso 6)",
+          "startMs": 87356,
+          "endMs": 89920
+        }
+      ],
+      "voiceover": [
+        "El capstone no es hacer un agente. Es decidir si merece vivir.",
+        "Evidencia minuto 1: el artefacto muestra que se controlo contexto infinito",
+        "permisos y automatizacion sin rollback.",
+        "permisos y automatizacion sin rollback. (Claude, minuto 1, paso 5)",
+        "Accion minuto 1: pedir salida pequena verificable y con owner. (Claude",
+        "minuto 1 paso 6)",
+        "skill o M C P en una decision que se pueda ensenar en tutoria. (Claude",
+        "minuto 1 paso 6)"
+      ],
+      "blueprintAction": {
+        "learningRubric": {
+          "learns": "Ubica coste, permiso y criterio antes de aceptar la salida.",
+          "does": "Registra el criterio que permitiria repetir el paso sin instructor.",
+          "decides": "Seguir, pedir mas contexto, escalar modelo o bloquear.",
+          "vendor": "claude",
+          "usefulnessScore": 86,
+          "memoryCheck": "Puede explicar el paso en una frase de menos de 20 segundos.",
+          "productionPass": "2000-final-direction"
+        }
+      },
+      "production": {
+        "audioVersion": "audio-prod-v2-2026-05-18",
+        "voiceProfileId": "claudeSafety",
+        "voice": "es-ES-AlvaroNeural",
+        "rate": "+2%",
+        "pitch": "+0Hz",
+        "energy": "deliberada",
+        "emphasis": "permiso, bloqueo y rollback",
+        "pauseMs": 300,
+        "role": "reflection",
+        "reviewRubric": {
+          "learns": "Ubica coste, permiso y criterio antes de aceptar la salida.",
+          "does": "Registra el criterio que permitiria repetir el paso sin instructor.",
+          "decides": "Seguir, pedir mas contexto, escalar modelo o bloquear.",
+          "memoryCheck": "Puede explicar el paso en una frase de menos de 20 segundos."
+        },
+        "prosodyNotes": {
+          "pace": "+2%",
+          "pause": "300ms antes de la decision",
+          "emphasis": "permiso, bloqueo y rollback",
+          "energy": "deliberada"
+        },
+        "pronunciationPass": "spain-voice-units-v1"
+      }
     }
-  ]
+  ],
+  "production": {
+    "audioProductionVersion": "audio-prod-v2-2026-05-18",
+    "productionPass": "2000-final-direction",
+    "vendor": "claude",
+    "narrativePass": "teacher-contract-v1",
+    "pronunciationPass": "spain-voice-units-v1"
+  }
 }

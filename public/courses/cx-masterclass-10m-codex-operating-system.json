@@ -1,262 +1,3438 @@
 {
   "id": "cx-masterclass-10m-codex-operating-system",
-  "title": "Codex Masterclass 10m - Operating System",
-  "description": "Video largo inicial para presentar Codex como sistema operativo de trabajo: superficies, AGENTS.md, modelos, permisos, coste, ejercicios y workshops.",
+  "title": "Codex Masterclass 10 minutos - Operating System",
+  "description": "Masterclass intensiva para explicar Codex como sistema operativo de trabajo: superficies, AGENTS.md, modelos, permisos, coste, M C P, subagentes, pull request y activacion real.",
   "template": "technical",
   "durationPreset": 10,
   "durationMs": 600000,
   "voice": "es-ES-AlvaroNeural",
   "author": "AI Practice Hub",
-  "createdAt": "2026-05-08T00:00:00.000Z",
+  "createdAt": "2026-05-15",
   "chapters": [
-    { "id": "start", "label": "Aterrizaje", "startMs": 0 },
-    { "id": "surface", "label": "Superficies", "startMs": 60000 },
-    { "id": "method", "label": "Metodo", "startMs": 180000 },
-    { "id": "governance", "label": "Coste y permisos", "startMs": 360000 },
-    { "id": "close", "label": "Activacion", "startMs": 520000 }
+    {
+      "id": "start",
+      "label": "Aterrizaje",
+      "startMs": 0
+    },
+    {
+      "id": "surface",
+      "label": "Superficies",
+      "startMs": 100000
+    },
+    {
+      "id": "method",
+      "label": "Metodo",
+      "startMs": 225000
+    },
+    {
+      "id": "governance",
+      "label": "Coste y permisos",
+      "startMs": 350000
+    },
+    {
+      "id": "activation",
+      "label": "Activacion",
+      "startMs": 500000
+    }
   ],
   "scenes": [
     {
-      "id": "title",
-      "name": "Apertura",
+      "id": "01-codex-como-operador-de-repo",
+      "name": "Codex como operador de repo",
       "startMs": 0,
-      "endMs": 30000,
+      "endMs": 25000,
       "type": "title",
       "content": {
-        "title": "Codex como sistema operativo",
-        "subtitle": "Diez minutos para aterrizar plataforma, metodo, coste y practica real.",
-        "tag": "Codex / Masterclass inicial"
-      },
-      "subtitles": [
-        { "text": "La idea no es aprender otro chat.", "startMs": 2000, "endMs": 7000 },
-        { "text": "La idea es convertir Codex en una forma repetible de trabajar con repos reales.", "startMs": 8000, "endMs": 19000 },
-        { "text": "Este video abre la ruta antes de entrar a decks y ejercicios.", "startMs": 20000, "endMs": 29000 }
-      ]
-    },
-    {
-      "id": "concept-platform",
-      "name": "Plataforma",
-      "startMs": 30000,
-      "endMs": 90000,
-      "type": "concept",
-      "content": {
-        "tag": "Mapa mental",
-        "title": "Codex no vive en una sola pantalla",
-        "body": "Codex aparece como experiencia web, CLI, IDE, cloud tasks y automatizaciones. Lo importante no es memorizar botones: es elegir la superficie que reduce friccion, riesgo y coste para la tarea actual.",
-        "highlight": "Superficie antes que prompt.",
-        "points": [
-          "IDE: cambios acotados y feedback visual.",
-          "CLI: repos, comandos, scripts y tareas reproducibles.",
-          "Cloud: delegacion paralela y PRs trazables.",
-          "Hub: cursos, labs, videos y workshops para que el equipo practique."
-        ]
-      },
-      "subtitles": [
-        { "text": "Elegir mal la superficie crea ruido.", "startMs": 35000, "endMs": 44000 },
-        { "text": "Elegir bien la superficie convierte Codex en una herramienta predecible.", "startMs": 45000, "endMs": 59000 },
-        { "text": "Ese es el primer habito del curso.", "startMs": 60000, "endMs": 72000 }
-      ]
-    },
-    {
-      "id": "compare-starts",
-      "name": "Arranque correcto",
-      "startMs": 90000,
-      "endMs": 150000,
-      "type": "compare",
-      "content": {
-        "tag": "Mal pedido vs operacion profesional",
-        "left": {
-          "label": "Pedido impulsivo",
-          "color": "destructive",
-          "steps": [
-            { "icon": "MessageSquare", "text": "Arregla esto rapido" },
-            { "icon": "Code", "text": "Codex edita sin mapa suficiente" },
-            { "icon": "AlertTriangle", "text": "El usuario revisa tarde y con poca evidencia" }
-          ],
-          "total": "Mas vueltas, mas tokens, mas dudas"
-        },
-        "right": {
-          "label": "Operacion Codex",
-          "color": "accent",
-          "steps": [
-            { "icon": "Eye", "text": "Explora rutas y tests en read-only" },
-            { "icon": "FileText", "text": "Propone plan corto y criterio de cierre" },
-            { "icon": "Check", "text": "Edita poco y verifica con evidencia" }
-          ],
-          "total": "Menos ruido, mas control"
+        "title": "Operating System",
+        "subtitle": "Objetivo: entender el sistema operativo de Codex en 10 minutos.",
+        "tag": "Codex / Masterclass",
+        "narrativeContract": {
+          "objective": "entender el sistema operativo de Codex en 10 minutos.",
+          "outcome": "saber cuando usarlo, cuando no usarlo y que evidencia pedir.",
+          "route": "Aterrizaje, Superficies, Metodo y cierre operativo.",
+          "decision": "si la herramienta encaja con el trabajo real del equipo."
         }
       },
       "subtitles": [
-        { "text": "La diferencia esta en el orden.", "startMs": 94000, "endMs": 102000 },
-        { "text": "Primero mapa, despues plan, despues patch.", "startMs": 103000, "endMs": 113000 },
-        { "text": "Codex es potente cuando el humano define el marco.", "startMs": 114000, "endMs": 136000 }
-      ]
+        {
+          "text": "Objetivo de esta clase: entender el sistema operativo de Codex en 10 minutos.",
+          "startMs": 450,
+          "endMs": 5798
+        },
+        {
+          "text": "Al final debes poder saber cuando usarlo, cuando no usarlo y que evidencia pedir.",
+          "startMs": 5978,
+          "endMs": 11206
+        },
+        {
+          "text": "La ruta sera: Aterrizaje, Superficies, Metodo y cierre operativo.",
+          "startMs": 11386,
+          "endMs": 16830
+        },
+        {
+          "text": "Durante el video mira esta decision:",
+          "startMs": 17010,
+          "endMs": 19958
+        },
+        {
+          "text": "si la herramienta encaja con el trabajo real del equipo.",
+          "startMs": 20138,
+          "endMs": 24022
+        }
+      ],
+      "voiceover": [
+        "Objetivo de esta clase: entender el sistema operativo de Codex en 10 minutos.",
+        "Al final debes poder saber cuando usarlo, cuando no usarlo y que evidencia pedir.",
+        "La ruta sera: Aterrizaje, Superficies, Metodo y cierre operativo.",
+        "Durante el video mira esta decision:",
+        "si la herramienta encaja con el trabajo real del equipo."
+      ],
+      "screen": {
+        "mode": "title",
+        "title": "Codex como operador de repo",
+        "visual": "codex-title"
+      },
+      "blueprintAction": {
+        "learningRubric": {
+          "learns": "Distingue decision humana de ejecucion automatizada en Codex.",
+          "does": "Comprueba la salida contra prueba, owner o captura.",
+          "decides": "Aceptar solo si la evidencia queda visible para otra persona.",
+          "vendor": "codex",
+          "usefulnessScore": 82,
+          "memoryCheck": "Puede repetir el prompt inicial con criterio de cierre.",
+          "productionPass": "2000-final-direction"
+        }
+      },
+      "production": {
+        "audioVersion": "audio-prod-v2-2026-05-18",
+        "voiceProfileId": "codexNarrator",
+        "voice": "es-ES-AlvaroNeural",
+        "rate": "+8%",
+        "pitch": "+0Hz",
+        "energy": "precisa",
+        "emphasis": "plan, patch, test y coste",
+        "pauseMs": 180,
+        "role": "narrator",
+        "reviewRubric": {
+          "learns": "Distingue decision humana de ejecucion automatizada en Codex.",
+          "does": "Comprueba la salida contra prueba, owner o captura.",
+          "decides": "Aceptar solo si la evidencia queda visible para otra persona.",
+          "memoryCheck": "Puede repetir el prompt inicial con criterio de cierre."
+        },
+        "prosodyNotes": {
+          "pace": "+8%",
+          "pause": "180ms antes de la decision",
+          "emphasis": "plan, patch, test y coste",
+          "energy": "precisa"
+        },
+        "pronunciationPass": "spain-voice-units-v1"
+      }
     },
     {
-      "id": "linear-first-lab",
-      "name": "Primer lab",
-      "startMs": 150000,
-      "endMs": 210000,
+      "id": "02-mapa-de-superficies",
+      "name": "Mapa de superficies",
+      "startMs": 25000,
+      "endMs": 50000,
+      "type": "concept",
+      "content": {
+        "tag": "Codex / Masterclass",
+        "title": "Mapa de superficies",
+        "body": "Elegir terminal, IDE, web o cloud segun friccion, riesgo y necesidad de trazabilidad. La idea clave: convertir una pantalla de herramienta en un criterio repetible de trabajo. La persona no memoriza botones; aprende a decidir superficie, modelo, permiso, evidencia y cierre.",
+        "highlight": "No avanzar sin evidencia visible: AGENTS.md, diff, test, coste u owner.",
+        "points": [
+          "Superficie: terminal, IDE, web y cloud task.",
+          "Modelo: modelo rapido para leer y ubicar.",
+          "Artefacto: AGENTS.md.",
+          "Validacion: pnpm test -- auth.spec.ts."
+        ]
+      },
+      "subtitles": [
+        {
+          "text": "Codex: Mapa de superficies.",
+          "startMs": 25450,
+          "endMs": 28614
+        },
+        {
+          "text": "Elegir terminal, IDE, web o cloud segun friccion, riesgo y necesidad de trazabilidad.",
+          "startMs": 28659,
+          "endMs": 34679
+        },
+        {
+          "text": "Modelo minuto 0: elegir por riesgo En Codex",
+          "startMs": 34724,
+          "endMs": 38656
+        },
+        {
+          "text": "valida \"Mapa de superficies\" antes de iterar.",
+          "startMs": 38701,
+          "endMs": 42153
+        },
+        {
+          "text": "contexto y coste antes de pedir otra iteracion. En Codex",
+          "startMs": 42198,
+          "endMs": 47330
+        },
+        {
+          "text": "valida \"Mapa de superficies\" antes de iterar.",
+          "startMs": 46468,
+          "endMs": 49920
+        },
+        {
+          "text": "Decision minuto 0: si no se puede auditar, vuelve a briefing.",
+          "startMs": 45220,
+          "endMs": 49920
+        }
+      ],
+      "voiceover": [
+        "Codex: Mapa de superficies.",
+        "Elegir terminal, IDE, web o cloud segun friccion, riesgo y necesidad de trazabilidad.",
+        "Modelo minuto 0: elegir por riesgo En Codex",
+        "valida \"Mapa de superficies\" antes de iterar.",
+        "contexto y coste antes de pedir otra iteracion. En Codex",
+        "valida \"Mapa de superficies\" antes de iterar.",
+        "Decision minuto 0: si no se puede auditar, vuelve a briefing."
+      ],
+      "screen": {
+        "mode": "concept",
+        "title": "Mapa de superficies",
+        "visual": "codex-concept"
+      },
+      "blueprintAction": {
+        "learningRubric": {
+          "learns": "Ubica coste, permiso y criterio antes de aceptar la salida.",
+          "does": "Registra el criterio que permitiria repetir el paso sin instructor.",
+          "decides": "Seguir, pedir mas contexto, escalar modelo o bloquear.",
+          "vendor": "codex",
+          "usefulnessScore": 84,
+          "memoryCheck": "Puede explicar el paso en una frase de menos de 20 segundos.",
+          "productionPass": "2000-final-direction"
+        }
+      },
+      "production": {
+        "audioVersion": "audio-prod-v2-2026-05-18",
+        "voiceProfileId": "codexNarrator",
+        "voice": "es-ES-AlvaroNeural",
+        "rate": "+8%",
+        "pitch": "+0Hz",
+        "energy": "precisa",
+        "emphasis": "plan, patch, test y coste",
+        "pauseMs": 180,
+        "role": "narrator",
+        "reviewRubric": {
+          "learns": "Ubica coste, permiso y criterio antes de aceptar la salida.",
+          "does": "Registra el criterio que permitiria repetir el paso sin instructor.",
+          "decides": "Seguir, pedir mas contexto, escalar modelo o bloquear.",
+          "memoryCheck": "Puede explicar el paso en una frase de menos de 20 segundos."
+        },
+        "prosodyNotes": {
+          "pace": "+8%",
+          "pause": "180ms antes de la decision",
+          "emphasis": "plan, patch, test y coste",
+          "energy": "precisa"
+        },
+        "pronunciationPass": "spain-voice-units-v1"
+      }
+    },
+    {
+      "id": "03-arranque-malo-vs-profesional",
+      "name": "Arranque malo vs profesional",
+      "startMs": 50000,
+      "endMs": 75000,
+      "type": "compare",
+      "content": {
+        "tag": "Codex / decision",
+        "left": {
+          "label": "Uso impulsivo",
+          "color": "destructive",
+          "steps": [
+            {
+              "icon": "MessageSquare",
+              "text": "Pedir resultado sin contexto ni limite."
+            },
+            {
+              "icon": "Code",
+              "text": "Aceptar salida porque parece razonable."
+            },
+            {
+              "icon": "AlertTriangle",
+              "text": "Descubrir tarde el coste o el riesgo."
+            }
+          ],
+          "total": "Mas vueltas y menos confianza"
+        },
+        "right": {
+          "label": "Uso profesional",
+          "color": "accent",
+          "steps": [
+            {
+              "icon": "Eye",
+              "text": "Elegir superficie y permiso minimo."
+            },
+            {
+              "icon": "FileText",
+              "text": "Pedir plan, evidencia y criterio de cierre."
+            },
+            {
+              "icon": "Check",
+              "text": "Validar con test, review o decision documentada."
+            }
+          ],
+          "total": "Menos ruido y mas transferencia"
+        }
+      },
+      "subtitles": [
+        {
+          "text": "Codex: Arranque malo vs profesional.",
+          "startMs": 50450,
+          "endMs": 54022
+        },
+        {
+          "text": "El prompt impulsivo gasta tokens; el briefing con criterio reduce vueltas.",
+          "startMs": 54067,
+          "endMs": 59103
+        },
+        {
+          "text": "Modelo minuto 0: elegir por riesgo En Codex",
+          "startMs": 59148,
+          "endMs": 63080
+        },
+        {
+          "text": "valida \"Arranque malo vs profesional\" antes de iterar.",
+          "startMs": 63125,
+          "endMs": 67153
+        },
+        {
+          "text": "contexto y coste antes de pedir otra iteracion. En Codex",
+          "startMs": 67198,
+          "endMs": 72330
+        },
+        {
+          "text": "valida \"Arranque malo vs profesional\" antes de iterar.",
+          "startMs": 70892,
+          "endMs": 74920
+        },
+        {
+          "text": "Decision minuto 0: cerrar solo cuando diff minimo, test verde y coste registrado.",
+          "startMs": 69044,
+          "endMs": 74920
+        }
+      ],
+      "voiceover": [
+        "Codex: Arranque malo vs profesional.",
+        "El prompt impulsivo gasta tokens; el briefing con criterio reduce vueltas.",
+        "Modelo minuto 0: elegir por riesgo En Codex",
+        "valida \"Arranque malo vs profesional\" antes de iterar.",
+        "contexto y coste antes de pedir otra iteracion. En Codex",
+        "valida \"Arranque malo vs profesional\" antes de iterar.",
+        "Decision minuto 0: cerrar solo cuando diff minimo, test verde y coste registrado."
+      ],
+      "screen": {
+        "mode": "compare",
+        "title": "Arranque malo vs profesional",
+        "visual": "codex-compare"
+      },
+      "blueprintAction": {
+        "learningRubric": {
+          "learns": "Reconoce por que \"Arranque malo vs profesional\" necesita evidencia y no solo respuesta.",
+          "does": "Formula una peticion verificable con limite de alcance.",
+          "decides": "Convertir la duda en material de tutoria si se repite.",
+          "vendor": "codex",
+          "usefulnessScore": 86,
+          "memoryCheck": "Puede nombrar el riesgo principal sin mirar la slide.",
+          "productionPass": "2000-final-direction"
+        }
+      },
+      "production": {
+        "audioVersion": "audio-prod-v2-2026-05-18",
+        "voiceProfileId": "codexNarrator",
+        "voice": "es-ES-AlvaroNeural",
+        "rate": "+8%",
+        "pitch": "+0Hz",
+        "energy": "precisa",
+        "emphasis": "plan, patch, test y coste",
+        "pauseMs": 180,
+        "role": "narrator",
+        "reviewRubric": {
+          "learns": "Reconoce por que \"Arranque malo vs profesional\" necesita evidencia y no solo respuesta.",
+          "does": "Formula una peticion verificable con limite de alcance.",
+          "decides": "Convertir la duda en material de tutoria si se repite.",
+          "memoryCheck": "Puede nombrar el riesgo principal sin mirar la slide."
+        },
+        "prosodyNotes": {
+          "pace": "+8%",
+          "pause": "180ms antes de la decision",
+          "emphasis": "plan, patch, test y coste",
+          "energy": "precisa"
+        },
+        "pronunciationPass": "spain-voice-units-v1"
+      }
+    },
+    {
+      "id": "04-ticket-minimo",
+      "name": "Ticket minimo",
+      "startMs": 75000,
+      "endMs": 100000,
       "type": "linear",
       "content": {
-        "ticketId": "CX-100",
-        "title": "Primer reto: mapa de repo antes de tocar codigo",
+        "ticketId": "CO-103",
+        "title": "Ticket minimo",
         "project": "Codex Practice Hub",
         "priority": "High",
         "assignee": "Participante",
-        "status": "Ready",
-        "labels": ["orientation", "read-only", "context"],
-        "description": "Abrir un repo de ejercicios y pedir a Codex: 1. mapa de carpetas relevantes, 2. comandos de validacion, 3. riesgos, 4. propuesta de siguiente paso sin editar archivos."
+        "status": "Ready for practice",
+        "labels": [
+          "ai-practice",
+          "evidence",
+          "cost-aware"
+        ],
+        "description": "Problema, restricciones, aceptacion y evidencia antes de abrir la sesion. Entregable: explicar decision de superficie, modelo, permiso, coste y evidencia antes de cerrar la escena."
       },
       "subtitles": [
-        { "text": "El primer reto no es espectacular.", "startMs": 154000, "endMs": 163000 },
-        { "text": "Es deliberadamente read-only.", "startMs": 164000, "endMs": 172000 },
-        { "text": "Queremos crear criterio antes de crear diffs.", "startMs": 173000, "endMs": 194000 }
-      ]
+        {
+          "text": "Codex: Ticket minimo.",
+          "startMs": 75450,
+          "endMs": 78254
+        },
+        {
+          "text": "Problema, restricciones, aceptacion y evidencia antes de abrir la sesion.",
+          "startMs": 78434,
+          "endMs": 83734
+        },
+        {
+          "text": "Modelo minuto 1: elegir por riesgo, contexto y coste antes de pedir otra iteracion.",
+          "startMs": 83914,
+          "endMs": 89838
+        },
+        {
+          "text": "Decision minuto 1: cerrar solo cuando diff minimo, test verde y coste registrado.",
+          "startMs": 90018,
+          "endMs": 95702
+        }
+      ],
+      "voiceover": [
+        "Codex: Ticket minimo.",
+        "Problema, restricciones, aceptacion y evidencia antes de abrir la sesion.",
+        "Modelo minuto 1: elegir por riesgo, contexto y coste antes de pedir otra iteracion.",
+        "Decision minuto 1: cerrar solo cuando diff minimo, test verde y coste registrado."
+      ],
+      "screen": {
+        "mode": "linear",
+        "title": "Ticket minimo",
+        "visual": "codex-linear"
+      },
+      "blueprintAction": {
+        "learningRubric": {
+          "learns": "Distingue decision humana de ejecucion automatizada en Codex.",
+          "does": "Comprueba la salida contra prueba, owner o captura.",
+          "decides": "Aceptar solo si la evidencia queda visible para otra persona.",
+          "vendor": "codex",
+          "usefulnessScore": 88,
+          "memoryCheck": "Puede repetir el prompt inicial con criterio de cierre.",
+          "productionPass": "2000-final-direction"
+        }
+      },
+      "production": {
+        "audioVersion": "audio-prod-v2-2026-05-18",
+        "voiceProfileId": "codexNarrator",
+        "voice": "es-ES-AlvaroNeural",
+        "rate": "+8%",
+        "pitch": "+0Hz",
+        "energy": "precisa",
+        "emphasis": "plan, patch, test y coste",
+        "pauseMs": 180,
+        "role": "narrator",
+        "reviewRubric": {
+          "learns": "Distingue decision humana de ejecucion automatizada en Codex.",
+          "does": "Comprueba la salida contra prueba, owner o captura.",
+          "decides": "Aceptar solo si la evidencia queda visible para otra persona.",
+          "memoryCheck": "Puede repetir el prompt inicial con criterio de cierre."
+        },
+        "prosodyNotes": {
+          "pace": "+8%",
+          "pause": "180ms antes de la decision",
+          "emphasis": "plan, patch, test y coste",
+          "energy": "precisa"
+        },
+        "pronunciationPass": "spain-voice-units-v1"
+      }
     },
     {
-      "id": "thinking-plan",
-      "name": "Plan de trabajo",
-      "startMs": 210000,
-      "endMs": 285000,
+      "id": "05-prompt-readonly",
+      "name": "Prompt readonly",
+      "startMs": 100000,
+      "endMs": 125000,
+      "type": "prompt",
+      "content": {
+        "mode": "prompt",
+        "vendor": "codex",
+        "title": "Prompt readonly",
+        "eyebrow": "Codex Masterclass 10 minutos - Operating System / escena 05",
+        "label": "Primero mapa de rutas, tests y riesgos; despues permiso de editar.",
+        "presenterCue": "Relacionar Prompt readonly con una decision real del alumno.",
+        "actionLabel": "Mostrar artefacto",
+        "actionDetail": "Primero mapa de rutas, tests y riesgos; despues permiso de editar.",
+        "prompt": "Actua como Codex en terminal, IDE, web y cloud task. Objetivo: Prompt readonly. Contexto: Primero mapa de rutas, tests y riesgos; despues permiso de editar.. Antes de editar, devuelve criterio de cierre, riesgo y coste esperado. No avances si falta evidencia verificable.",
+        "response": [
+          "Lectura: Prompt readonly se trata como decision operativa, no como teoria.",
+          "Artefacto: AGENTS.md o el prompt asociado documenta la regla estable.",
+          "Evidencia minuto 1: el artefacto muestra que se controlo permiso, alcance y modelo.",
+          "Siguiente paso: aplicar solo si el humano acepta riesgo y coste."
+        ],
+        "diff": [
+          "diff --git a/AGENTS.md b/AGENTS.md",
+          "- regla implicita: Prompt readonly",
+          "+ regla explicita: Primero mapa de rutas, tests y riesgos; despues permiso de editar.",
+          "+ done_when = \"prueba, review, coste y owner visibles\""
+        ],
+        "terminal": [
+          "$ pnpm test -- auth.spec.ts",
+          "PASS AGENTS.md",
+          "checked: Prompt readonly",
+          "model: modelo rapido para leer y ubicar",
+          "budget: dentro del limite de workshop"
+        ],
+        "review": [
+          {
+            "severity": "note",
+            "text": "Comprobar que Prompt readonly no se queda en recomendacion generica."
+          },
+          {
+            "severity": "medium",
+            "text": "Pedir evidencia: comando, diff, owner o decision documentada."
+          },
+          {
+            "severity": "note",
+            "text": "El instructor valida si el alumno puede repetirlo sin ayuda."
+          }
+        ],
+        "cost": {
+          "model": "modelo rapido para leer y ubicar",
+          "tokens": "bajo/medio por contexto acotado",
+          "permission": "minimo permiso viable para esta escena",
+          "stopRule": "Parar tras dos iteraciones sin evidencia nueva."
+        },
+        "decision": {
+          "question": "Que decision tomas sobre Prompt readonly?",
+          "options": [
+            "seguir",
+            "pedir contexto",
+            "subir modelo",
+            "bloquear y llevar a tutoria"
+          ],
+          "selected": 0
+        },
+        "risk": {
+          "items": [
+            "Coste invisible",
+            "Permisos excesivos",
+            "Contexto flojo",
+            "Salida no verificable",
+            "Owner ausente"
+          ],
+          "level": "medio"
+        },
+        "branch": {
+          "steps": [
+            "Brief",
+            "Contexto",
+            "Plan",
+            "Artefacto",
+            "Validacion",
+            "Review",
+            "Cierre"
+          ],
+          "active": 4
+        },
+        "quiz": {
+          "question": "Que prueba que Prompt readonly esta entendido?",
+          "answers": [
+            "Un prompt mas largo",
+            "Una evidencia repetible",
+            "Una opinion del modelo"
+          ],
+          "correct": 1
+        }
+      },
+      "subtitles": [
+        {
+          "text": "Codex: Prompt readonly.",
+          "startMs": 100450,
+          "endMs": 103230
+        },
+        {
+          "text": "Primero mapa de rutas, tests y riesgos; despues permiso de editar.",
+          "startMs": 103410,
+          "endMs": 108470
+        },
+        {
+          "text": "Modelo minuto 1: elegir por riesgo, contexto y coste antes de pedir otra iteracion.",
+          "startMs": 108650,
+          "endMs": 114574
+        },
+        {
+          "text": "Decision minuto 1: seguir, pedir contexto, escalar modelo o bloquear.",
+          "startMs": 114754,
+          "endMs": 120462
+        }
+      ],
+      "voiceover": [
+        "Codex: Prompt readonly.",
+        "Primero mapa de rutas, tests y riesgos; despues permiso de editar.",
+        "Modelo minuto 1: elegir por riesgo, contexto y coste antes de pedir otra iteracion.",
+        "Decision minuto 1: seguir, pedir contexto, escalar modelo o bloquear."
+      ],
+      "screen": {
+        "mode": "prompt",
+        "title": "Prompt readonly",
+        "visual": "codex-prompt"
+      },
+      "blueprintAction": {
+        "learningRubric": {
+          "learns": "Ubica coste, permiso y criterio antes de aceptar la salida.",
+          "does": "Registra el criterio que permitiria repetir el paso sin instructor.",
+          "decides": "Seguir, pedir mas contexto, escalar modelo o bloquear.",
+          "vendor": "codex",
+          "usefulnessScore": 90,
+          "memoryCheck": "Puede explicar el paso en una frase de menos de 20 segundos.",
+          "productionPass": "2000-final-direction"
+        }
+      },
+      "production": {
+        "audioVersion": "audio-prod-v2-2026-05-18",
+        "voiceProfileId": "codexNarrator",
+        "voice": "es-ES-AlvaroNeural",
+        "rate": "+8%",
+        "pitch": "+0Hz",
+        "energy": "precisa",
+        "emphasis": "plan, patch, test y coste",
+        "pauseMs": 180,
+        "role": "narrator",
+        "reviewRubric": {
+          "learns": "Ubica coste, permiso y criterio antes de aceptar la salida.",
+          "does": "Registra el criterio que permitiria repetir el paso sin instructor.",
+          "decides": "Seguir, pedir mas contexto, escalar modelo o bloquear.",
+          "memoryCheck": "Puede explicar el paso en una frase de menos de 20 segundos."
+        },
+        "prosodyNotes": {
+          "pace": "+8%",
+          "pause": "180ms antes de la decision",
+          "emphasis": "plan, patch, test y coste",
+          "energy": "precisa"
+        },
+        "pronunciationPass": "spain-voice-units-v1"
+      }
+    },
+    {
+      "id": "06-respuesta-esperada",
+      "name": "Respuesta esperada",
+      "startMs": 125000,
+      "endMs": 150000,
+      "type": "streaming",
+      "content": {
+        "mode": "streaming",
+        "vendor": "codex",
+        "title": "Respuesta esperada",
+        "eyebrow": "Codex Masterclass 10 minutos - Operating System / escena 06",
+        "label": "Codex debe devolver hipotesis, archivos y siguiente pregunta, no un patch prematuro.",
+        "presenterCue": "Relacionar Respuesta esperada con una decision real del alumno.",
+        "actionLabel": "Mostrar artefacto",
+        "actionDetail": "Codex debe devolver hipotesis, archivos y siguiente pregunta, no un patch prematuro.",
+        "prompt": "Actua como Codex en terminal, IDE, web y cloud task. Objetivo: Respuesta esperada. Contexto: Codex debe devolver hipotesis, archivos y siguiente pregunta, no un patch prematuro.. Antes de editar, devuelve criterio de cierre, riesgo y coste esperado. No avances si falta evidencia verificable.",
+        "response": [
+          "Lectura: Respuesta esperada se trata como decision operativa, no como teoria.",
+          "Artefacto: AGENTS.md o el prompt asociado documenta la regla estable.",
+          "Evidencia minuto 2: diff minimo, test verde y coste registrado.",
+          "Siguiente paso: aplicar solo si el humano acepta riesgo y coste."
+        ],
+        "diff": [
+          "diff --git a/AGENTS.md b/AGENTS.md",
+          "- regla implicita: Respuesta esperada",
+          "+ regla explicita: Codex debe devolver hipotesis, archivos y siguiente pregunta, no un patch prematuro.",
+          "+ done_when = \"prueba, review, coste y owner visibles\""
+        ],
+        "terminal": [
+          "$ pnpm test -- auth.spec.ts",
+          "PASS AGENTS.md",
+          "checked: Respuesta esperada",
+          "model: modelo rapido para leer y ubicar",
+          "budget: dentro del limite de workshop"
+        ],
+        "review": [
+          {
+            "severity": "note",
+            "text": "Comprobar que Respuesta esperada no se queda en recomendacion generica."
+          },
+          {
+            "severity": "medium",
+            "text": "Pedir evidencia: comando, diff, owner o decision documentada."
+          },
+          {
+            "severity": "note",
+            "text": "El instructor valida si el alumno puede repetirlo sin ayuda."
+          }
+        ],
+        "cost": {
+          "model": "modelo rapido para leer y ubicar",
+          "tokens": "bajo/medio por contexto acotado",
+          "permission": "minimo permiso viable para esta escena",
+          "stopRule": "Parar tras dos iteraciones sin evidencia nueva."
+        },
+        "decision": {
+          "question": "Que decision tomas sobre Respuesta esperada?",
+          "options": [
+            "seguir",
+            "pedir contexto",
+            "subir modelo",
+            "bloquear y llevar a tutoria"
+          ],
+          "selected": 1
+        },
+        "risk": {
+          "items": [
+            "Coste invisible",
+            "Permisos excesivos",
+            "Contexto flojo",
+            "Salida no verificable",
+            "Owner ausente"
+          ],
+          "level": "alto"
+        },
+        "branch": {
+          "steps": [
+            "Brief",
+            "Contexto",
+            "Plan",
+            "Artefacto",
+            "Validacion",
+            "Review",
+            "Cierre"
+          ],
+          "active": 5
+        },
+        "quiz": {
+          "question": "Que prueba que Respuesta esperada esta entendido?",
+          "answers": [
+            "Un prompt mas largo",
+            "Una evidencia repetible",
+            "Una opinion del modelo"
+          ],
+          "correct": 1
+        }
+      },
+      "subtitles": [
+        {
+          "text": "Codex: Respuesta esperada.",
+          "startMs": 125450,
+          "endMs": 128350
+        },
+        {
+          "text": "Codex debe devolver hipotesis, archivos y siguiente pregunta, no un patch prematuro.",
+          "startMs": 128530,
+          "endMs": 134022
+        },
+        {
+          "text": "Modelo minuto 2: elegir por riesgo, contexto y coste antes de pedir otra iteracion.",
+          "startMs": 134202,
+          "endMs": 140174
+        },
+        {
+          "text": "Decision minuto 2: si el riesgo supera la evidencia, entra instructor o tech lead.",
+          "startMs": 140354,
+          "endMs": 145966
+        }
+      ],
+      "voiceover": [
+        "Codex: Respuesta esperada.",
+        "Codex debe devolver hipotesis, archivos y siguiente pregunta, no un patch prematuro.",
+        "Modelo minuto 2: elegir por riesgo, contexto y coste antes de pedir otra iteracion.",
+        "Decision minuto 2: si el riesgo supera la evidencia, entra instructor o tech lead."
+      ],
+      "screen": {
+        "mode": "streaming",
+        "title": "Respuesta esperada",
+        "visual": "codex-streaming"
+      },
+      "blueprintAction": {
+        "learningRubric": {
+          "learns": "Reconoce por que \"Respuesta esperada\" necesita evidencia y no solo respuesta.",
+          "does": "Formula una peticion verificable con limite de alcance.",
+          "decides": "Convertir la duda en material de tutoria si se repite.",
+          "vendor": "codex",
+          "usefulnessScore": 92,
+          "memoryCheck": "Puede nombrar el riesgo principal sin mirar la slide.",
+          "productionPass": "2000-final-direction"
+        }
+      },
+      "production": {
+        "audioVersion": "audio-prod-v2-2026-05-18",
+        "voiceProfileId": "codexNarrator",
+        "voice": "es-ES-AlvaroNeural",
+        "rate": "+8%",
+        "pitch": "+0Hz",
+        "energy": "precisa",
+        "emphasis": "plan, patch, test y coste",
+        "pauseMs": 180,
+        "role": "narrator",
+        "reviewRubric": {
+          "learns": "Reconoce por que \"Respuesta esperada\" necesita evidencia y no solo respuesta.",
+          "does": "Formula una peticion verificable con limite de alcance.",
+          "decides": "Convertir la duda en material de tutoria si se repite.",
+          "memoryCheck": "Puede nombrar el riesgo principal sin mirar la slide."
+        },
+        "prosodyNotes": {
+          "pace": "+8%",
+          "pause": "180ms antes de la decision",
+          "emphasis": "plan, patch, test y coste",
+          "energy": "precisa"
+        },
+        "pronunciationPass": "spain-voice-units-v1"
+      }
+    },
+    {
+      "id": "07-agents-md",
+      "name": "Media break / meme",
+      "startMs": 150000,
+      "endMs": 175000,
+      "type": "media-break",
+      "content": {
+        "source": "sprint-cd-media-breaks",
+        "vendor": "codex",
+        "kind": "meme",
+        "title": "Cuando \"AGENTS.md\" se va de las manos",
+        "imageUrl": "/decks/codex/curso-02/assets/potente-meme-reasoning-lever.png",
+        "alt": "codex meme asset",
+        "caption": "Humor util: si te hace sonreir, tambien debe recordarte una regla.",
+        "situation": "Situacion minuto 2: alguien tendra que mantener esta salida despues de la demo.",
+        "tension": "Tension minuto 2: el agente puede avanzar mas rapido que nuestra capacidad de revisar.",
+        "example": "Ejemplo: convertir respuesta en artefacto de equipo.",
+        "action": "Accion minuto 2: parar si \"Cuando AGENTS.md se va de las manos\" no produce evidencia nueva.",
+        "evidence": "Evidencia minuto 2: hay una salida que otro perfil puede revisar sin rehacer el contexto.",
+        "decision": "Decision minuto 2: cerrar solo cuando diff minimo, test verde y coste registrado.",
+        "rubric": {
+          "learns": "Codex no es magia: es un flujo de plan, patch, test y evidencia.",
+          "does": "Usa AGENTS.md, permiso minimo y test acotado.",
+          "decides": "Si escala modelo, pide contexto o bloquea."
+        }
+      },
+      "subtitles": [
+        {
+          "text": "Situacion minuto 2:",
+          "startMs": 150450,
+          "endMs": 153062
+        },
+        {
+          "text": "el equipo mira \"Cuando AGENTS.md se va de las manos\" dentro del repo",
+          "startMs": 153107,
+          "endMs": 157999
+        },
+        {
+          "text": "con coste y permiso visibles.",
+          "startMs": 158044,
+          "endMs": 161016
+        },
+        {
+          "text": "el equipo mira \"Cuando AGENTS.md se va de las manos\" dentro del repo",
+          "startMs": 161061,
+          "endMs": 165953
+        },
+        {
+          "text": "con coste y permiso visibles. (Codex, minuto 2, paso 45)",
+          "startMs": 165998,
+          "endMs": 172786
+        },
+        {
+          "text": "Tension minuto 2: el agente puede avanzar mas rapido que nuestra capacidad de revisar.",
+          "startMs": 169068,
+          "endMs": 174920
+        },
+        {
+          "text": "Accion minuto 2: pedir salida pequena, verificable y con owner.",
+          "startMs": 169644,
+          "endMs": 174920
+        },
+        {
+          "text": "no con la sensacion de velocidad. (Codex, minuto 2, paso 24)",
+          "startMs": 168348,
+          "endMs": 174920
+        },
+        {
+          "text": "Evidencia minuto 2:",
+          "startMs": 172380,
+          "endMs": 174920
+        },
+        {
+          "text": "hay una salida que otro perfil puede revisar sin rehacer el contexto.",
+          "startMs": 170172,
+          "endMs": 174920
+        },
+        {
+          "text": "captura o criterio escrito. (Codex, minuto 2, paso 35)",
+          "startMs": 168300,
+          "endMs": 174920
+        }
+      ],
+      "voiceover": [
+        "Situacion minuto 2:",
+        "el equipo mira \"Cuando AGENTS.md se va de las manos\" dentro del repo",
+        "con coste y permiso visibles.",
+        "el equipo mira \"Cuando AGENTS.md se va de las manos\" dentro del repo",
+        "con coste y permiso visibles. (Codex, minuto 2, paso 45)",
+        "Tension minuto 2: el agente puede avanzar mas rapido que nuestra capacidad de revisar.",
+        "Accion minuto 2: pedir salida pequena, verificable y con owner.",
+        "no con la sensacion de velocidad. (Codex, minuto 2, paso 24)",
+        "Evidencia minuto 2:",
+        "hay una salida que otro perfil puede revisar sin rehacer el contexto.",
+        "captura o criterio escrito. (Codex, minuto 2, paso 35)"
+      ],
+      "screen": {
+        "mode": "media-break",
+        "title": "Cuando \"AGENTS.md\" se va de las manos",
+        "visual": "/decks/codex/curso-02/assets/potente-meme-reasoning-lever.png"
+      },
+      "blueprintAction": {
+        "learningRubric": {
+          "learns": "Distingue decision humana de ejecucion automatizada en Codex.",
+          "does": "Comprueba la salida contra prueba, owner o captura.",
+          "decides": "Aceptar solo si la evidencia queda visible para otra persona.",
+          "vendor": "codex",
+          "usefulnessScore": 98,
+          "memoryCheck": "Puede repetir el prompt inicial con criterio de cierre.",
+          "productionPass": "2000-final-direction"
+        }
+      },
+      "production": {
+        "audioVersion": "audio-prod-v2-2026-05-18",
+        "voiceProfileId": "codexReflection",
+        "voice": "es-ES-AlvaroNeural",
+        "rate": "+3%",
+        "pitch": "+0Hz",
+        "energy": "reflexiva",
+        "emphasis": "riesgo, permiso y evidencia",
+        "pauseMs": 260,
+        "role": "reflection",
+        "reviewRubric": {
+          "learns": "Distingue decision humana de ejecucion automatizada en Codex.",
+          "does": "Comprueba la salida contra prueba, owner o captura.",
+          "decides": "Aceptar solo si la evidencia queda visible para otra persona.",
+          "memoryCheck": "Puede repetir el prompt inicial con criterio de cierre."
+        },
+        "prosodyNotes": {
+          "pace": "+3%",
+          "pause": "260ms antes de la decision",
+          "emphasis": "riesgo, permiso y evidencia",
+          "energy": "reflexiva"
+        },
+        "pronunciationPass": "spain-voice-units-v1"
+      }
+    },
+    {
+      "id": "08-diff-pequeno",
+      "name": "Diff pequeno",
+      "startMs": 175000,
+      "endMs": 200000,
+      "type": "diff",
+      "content": {
+        "mode": "diff",
+        "vendor": "codex",
+        "title": "Diff pequeno",
+        "eyebrow": "Codex Masterclass 10 minutos - Operating System / escena 08",
+        "label": "El cambio bueno se nota por lo que no toca y por el test que lo protege.",
+        "presenterCue": "Relacionar Diff pequeno con una decision real del alumno.",
+        "actionLabel": "Mostrar artefacto",
+        "actionDetail": "El cambio bueno se nota por lo que no toca y por el test que lo protege.",
+        "prompt": "Actua como Codex en terminal, IDE, web y cloud task. Objetivo: Diff pequeno. Contexto: El cambio bueno se nota por lo que no toca y por el test que lo protege.. Antes de editar, devuelve criterio de cierre, riesgo y coste esperado. No avances si falta evidencia verificable.",
+        "response": [
+          "Lectura: Diff pequeno se trata como decision operativa, no como teoria.",
+          "Artefacto: AGENTS.md o el prompt asociado documenta la regla estable.",
+          "Evidencia minuto 2: \"Diff pequeno\" no se cierra sin test, captura o criterio escrito.",
+          "Siguiente paso: aplicar solo si el humano acepta riesgo y coste."
+        ],
+        "diff": [
+          "diff --git a/AGENTS.md b/AGENTS.md",
+          "- regla implicita: Diff pequeno",
+          "+ regla explicita: El cambio bueno se nota por lo que no toca y por el test que lo protege.",
+          "+ done_when = \"prueba, review, coste y owner visibles\""
+        ],
+        "terminal": [
+          "$ pnpm test -- auth.spec.ts",
+          "PASS AGENTS.md",
+          "checked: Diff pequeno",
+          "model: modelo rapido para leer y ubicar",
+          "budget: dentro del limite de workshop"
+        ],
+        "review": [
+          {
+            "severity": "high",
+            "text": "Comprobar que Diff pequeno no se queda en recomendacion generica."
+          },
+          {
+            "severity": "medium",
+            "text": "Pedir evidencia: comando, diff, owner o decision documentada."
+          },
+          {
+            "severity": "note",
+            "text": "El instructor valida si el alumno puede repetirlo sin ayuda."
+          }
+        ],
+        "cost": {
+          "model": "modelo rapido para leer y ubicar",
+          "tokens": "bajo/medio por contexto acotado",
+          "permission": "minimo permiso viable para esta escena",
+          "stopRule": "Parar tras dos iteraciones sin evidencia nueva."
+        },
+        "decision": {
+          "question": "Que decision tomas sobre Diff pequeno?",
+          "options": [
+            "seguir",
+            "pedir contexto",
+            "subir modelo",
+            "bloquear y llevar a tutoria"
+          ],
+          "selected": 0
+        },
+        "risk": {
+          "items": [
+            "Coste invisible",
+            "Permisos excesivos",
+            "Contexto flojo",
+            "Salida no verificable",
+            "Owner ausente"
+          ],
+          "level": "bajo"
+        },
+        "branch": {
+          "steps": [
+            "Brief",
+            "Contexto",
+            "Plan",
+            "Artefacto",
+            "Validacion",
+            "Review",
+            "Cierre"
+          ],
+          "active": 0
+        },
+        "quiz": {
+          "question": "Que prueba que Diff pequeno esta entendido?",
+          "answers": [
+            "Un prompt mas largo",
+            "Una evidencia repetible",
+            "Una opinion del modelo"
+          ],
+          "correct": 1
+        }
+      },
+      "subtitles": [
+        {
+          "text": "Codex: Diff pequeno.",
+          "startMs": 175450,
+          "endMs": 178038
+        },
+        {
+          "text": "El cambio bueno se nota por lo que no toca y por el test que lo protege.",
+          "startMs": 178218,
+          "endMs": 182702
+        },
+        {
+          "text": "Modelo minuto 2: elegir por riesgo, contexto y coste antes de pedir otra iteracion.",
+          "startMs": 182882,
+          "endMs": 188854
+        },
+        {
+          "text": "Decision minuto 2: si no se puede auditar, vuelve a briefing.",
+          "startMs": 189034,
+          "endMs": 193710
+        }
+      ],
+      "voiceover": [
+        "Codex: Diff pequeno.",
+        "El cambio bueno se nota por lo que no toca y por el test que lo protege.",
+        "Modelo minuto 2: elegir por riesgo, contexto y coste antes de pedir otra iteracion.",
+        "Decision minuto 2: si no se puede auditar, vuelve a briefing."
+      ],
+      "screen": {
+        "mode": "diff",
+        "title": "Diff pequeno",
+        "visual": "codex-diff"
+      },
+      "blueprintAction": {
+        "learningRubric": {
+          "learns": "Ubica coste, permiso y criterio antes de aceptar la salida.",
+          "does": "Registra el criterio que permitiria repetir el paso sin instructor.",
+          "decides": "Seguir, pedir mas contexto, escalar modelo o bloquear.",
+          "vendor": "codex",
+          "usefulnessScore": 96,
+          "memoryCheck": "Puede explicar el paso en una frase de menos de 20 segundos.",
+          "productionPass": "2000-final-direction"
+        }
+      },
+      "production": {
+        "audioVersion": "audio-prod-v2-2026-05-18",
+        "voiceProfileId": "codexNarrator",
+        "voice": "es-ES-AlvaroNeural",
+        "rate": "+8%",
+        "pitch": "+0Hz",
+        "energy": "precisa",
+        "emphasis": "plan, patch, test y coste",
+        "pauseMs": 180,
+        "role": "narrator",
+        "reviewRubric": {
+          "learns": "Ubica coste, permiso y criterio antes de aceptar la salida.",
+          "does": "Registra el criterio que permitiria repetir el paso sin instructor.",
+          "decides": "Seguir, pedir mas contexto, escalar modelo o bloquear.",
+          "memoryCheck": "Puede explicar el paso en una frase de menos de 20 segundos."
+        },
+        "prosodyNotes": {
+          "pace": "+8%",
+          "pause": "180ms antes de la decision",
+          "emphasis": "plan, patch, test y coste",
+          "energy": "precisa"
+        },
+        "pronunciationPass": "spain-voice-units-v1"
+      }
+    },
+    {
+      "id": "09-terminal-con-evidencia",
+      "name": "Terminal con evidencia",
+      "startMs": 200000,
+      "endMs": 225000,
+      "type": "terminal",
+      "content": {
+        "mode": "terminal",
+        "vendor": "codex",
+        "title": "Terminal con evidencia",
+        "eyebrow": "Codex Masterclass 10 minutos - Operating System / escena 09",
+        "label": "Cada comando debe explicar que valida y que queda fuera.",
+        "presenterCue": "Relacionar Terminal con evidencia con una decision real del alumno.",
+        "actionLabel": "Mostrar artefacto",
+        "actionDetail": "Cada comando debe explicar que valida y que queda fuera.",
+        "prompt": "Actua como Codex en terminal, IDE, web y cloud task. Objetivo: Terminal con evidencia. Contexto: Cada comando debe explicar que valida y que queda fuera.. Antes de editar, devuelve criterio de cierre, riesgo y coste esperado. No avances si falta evidencia verificable.",
+        "response": [
+          "Lectura: Terminal con evidencia se trata como decision operativa, no como teoria.",
+          "Artefacto: AGENTS.md o el prompt asociado documenta la regla estable.",
+          "Evidencia minuto 3: \"Terminal con evidencia\" queda ligado a prueba, owner y decision.",
+          "Siguiente paso: aplicar solo si el humano acepta riesgo y coste."
+        ],
+        "diff": [
+          "diff --git a/AGENTS.md b/AGENTS.md",
+          "- regla implicita: Terminal con evidencia",
+          "+ regla explicita: Cada comando debe explicar que valida y que queda fuera.",
+          "+ done_when = \"prueba, review, coste y owner visibles\""
+        ],
+        "terminal": [
+          "$ pnpm test -- auth.spec.ts",
+          "PASS AGENTS.md",
+          "checked: Terminal con evidencia",
+          "model: modelo rapido para leer y ubicar",
+          "budget: dentro del limite de workshop"
+        ],
+        "review": [
+          {
+            "severity": "note",
+            "text": "Comprobar que Terminal con evidencia no se queda en recomendacion generica."
+          },
+          {
+            "severity": "medium",
+            "text": "Pedir evidencia: comando, diff, owner o decision documentada."
+          },
+          {
+            "severity": "note",
+            "text": "El instructor valida si el alumno puede repetirlo sin ayuda."
+          }
+        ],
+        "cost": {
+          "model": "modelo rapido para leer y ubicar",
+          "tokens": "bajo/medio por contexto acotado",
+          "permission": "minimo permiso viable para esta escena",
+          "stopRule": "Parar tras dos iteraciones sin evidencia nueva."
+        },
+        "decision": {
+          "question": "Que decision tomas sobre Terminal con evidencia?",
+          "options": [
+            "seguir",
+            "pedir contexto",
+            "subir modelo",
+            "bloquear y llevar a tutoria"
+          ],
+          "selected": 1
+        },
+        "risk": {
+          "items": [
+            "Coste invisible",
+            "Permisos excesivos",
+            "Contexto flojo",
+            "Salida no verificable",
+            "Owner ausente"
+          ],
+          "level": "bajo"
+        },
+        "branch": {
+          "steps": [
+            "Brief",
+            "Contexto",
+            "Plan",
+            "Artefacto",
+            "Validacion",
+            "Review",
+            "Cierre"
+          ],
+          "active": 1
+        },
+        "quiz": {
+          "question": "Que prueba que Terminal con evidencia esta entendido?",
+          "answers": [
+            "Un prompt mas largo",
+            "Una evidencia repetible",
+            "Una opinion del modelo"
+          ],
+          "correct": 1
+        }
+      },
+      "subtitles": [
+        {
+          "text": "Codex: Terminal con evidencia.",
+          "startMs": 200450,
+          "endMs": 203710
+        },
+        {
+          "text": "Cada comando debe explicar que valida y que queda fuera.",
+          "startMs": 203890,
+          "endMs": 207750
+        },
+        {
+          "text": "Modelo minuto 3: elegir por riesgo, contexto y coste antes de pedir otra iteracion.",
+          "startMs": 207930,
+          "endMs": 213998
+        },
+        {
+          "text": "Decision minuto 3: cerrar solo cuando diff minimo, test verde y coste registrado.",
+          "startMs": 214178,
+          "endMs": 219982
+        }
+      ],
+      "voiceover": [
+        "Codex: Terminal con evidencia.",
+        "Cada comando debe explicar que valida y que queda fuera.",
+        "Modelo minuto 3: elegir por riesgo, contexto y coste antes de pedir otra iteracion.",
+        "Decision minuto 3: cerrar solo cuando diff minimo, test verde y coste registrado."
+      ],
+      "screen": {
+        "mode": "terminal",
+        "title": "Terminal con evidencia",
+        "visual": "codex-terminal"
+      },
+      "blueprintAction": {
+        "learningRubric": {
+          "learns": "Reconoce por que \"Terminal con evidencia\" necesita evidencia y no solo respuesta.",
+          "does": "Formula una peticion verificable con limite de alcance.",
+          "decides": "Convertir la duda en material de tutoria si se repite.",
+          "vendor": "codex",
+          "usefulnessScore": 98,
+          "memoryCheck": "Puede nombrar el riesgo principal sin mirar la slide.",
+          "productionPass": "2000-final-direction"
+        }
+      },
+      "production": {
+        "audioVersion": "audio-prod-v2-2026-05-18",
+        "voiceProfileId": "codexNarrator",
+        "voice": "es-ES-AlvaroNeural",
+        "rate": "+8%",
+        "pitch": "+0Hz",
+        "energy": "precisa",
+        "emphasis": "plan, patch, test y coste",
+        "pauseMs": 180,
+        "role": "narrator",
+        "reviewRubric": {
+          "learns": "Reconoce por que \"Terminal con evidencia\" necesita evidencia y no solo respuesta.",
+          "does": "Formula una peticion verificable con limite de alcance.",
+          "decides": "Convertir la duda en material de tutoria si se repite.",
+          "memoryCheck": "Puede nombrar el riesgo principal sin mirar la slide."
+        },
+        "prosodyNotes": {
+          "pace": "+8%",
+          "pause": "180ms antes de la decision",
+          "emphasis": "plan, patch, test y coste",
+          "energy": "precisa"
+        },
+        "pronunciationPass": "spain-voice-units-v1"
+      }
+    },
+    {
+      "id": "10-decision-de-modelo",
+      "name": "Decision de modelo",
+      "startMs": 225000,
+      "endMs": 250000,
+      "type": "decision",
+      "content": {
+        "mode": "decision",
+        "vendor": "codex",
+        "title": "Decision de modelo",
+        "eyebrow": "Codex Masterclass 10 minutos - Operating System / escena 10",
+        "label": "Subir potencia solo si la incertidumbre tecnica lo justifica.",
+        "presenterCue": "Relacionar Decision de modelo con una decision real del alumno.",
+        "actionLabel": "Mostrar artefacto",
+        "actionDetail": "Subir potencia solo si la incertidumbre tecnica lo justifica.",
+        "prompt": "Actua como Codex en terminal, IDE, web y cloud task. Objetivo: Decision de modelo. Contexto: Subir potencia solo si la incertidumbre tecnica lo justifica.. Antes de editar, devuelve criterio de cierre, riesgo y coste esperado. No avances si falta evidencia verificable.",
+        "response": [
+          "Lectura: Decision de modelo se trata como decision operativa, no como teoria.",
+          "Artefacto: AGENTS.md o el prompt asociado documenta la regla estable.",
+          "Evidencia minuto 3: el artefacto muestra que se controlo permiso, alcance y modelo.",
+          "Siguiente paso: aplicar solo si el humano acepta riesgo y coste."
+        ],
+        "diff": [
+          "diff --git a/AGENTS.md b/AGENTS.md",
+          "- regla implicita: Decision de modelo",
+          "+ regla explicita: Subir potencia solo si la incertidumbre tecnica lo justifica.",
+          "+ done_when = \"prueba, review, coste y owner visibles\""
+        ],
+        "terminal": [
+          "$ pnpm test -- auth.spec.ts",
+          "PASS AGENTS.md",
+          "checked: Decision de modelo",
+          "model: modelo fuerte para refactor o pull request complejo",
+          "budget: dentro del limite de workshop"
+        ],
+        "review": [
+          {
+            "severity": "note",
+            "text": "Comprobar que Decision de modelo no se queda en recomendacion generica."
+          },
+          {
+            "severity": "medium",
+            "text": "Pedir evidencia: comando, diff, owner o decision documentada."
+          },
+          {
+            "severity": "note",
+            "text": "El instructor valida si el alumno puede repetirlo sin ayuda."
+          }
+        ],
+        "cost": {
+          "model": "modelo fuerte para refactor o pull request complejo",
+          "tokens": "alto controlado",
+          "permission": "minimo permiso viable para esta escena",
+          "stopRule": "Parar tras dos iteraciones sin evidencia nueva."
+        },
+        "decision": {
+          "question": "Que decision tomas sobre Decision de modelo?",
+          "options": [
+            "seguir",
+            "pedir contexto",
+            "subir modelo",
+            "bloquear y llevar a tutoria"
+          ],
+          "selected": 2
+        },
+        "risk": {
+          "items": [
+            "Coste invisible",
+            "Permisos excesivos",
+            "Contexto flojo",
+            "Salida no verificable",
+            "Owner ausente"
+          ],
+          "level": "medio"
+        },
+        "branch": {
+          "steps": [
+            "Brief",
+            "Contexto",
+            "Plan",
+            "Artefacto",
+            "Validacion",
+            "Review",
+            "Cierre"
+          ],
+          "active": 2
+        },
+        "quiz": {
+          "question": "Que prueba que Decision de modelo esta entendido?",
+          "answers": [
+            "Un prompt mas largo",
+            "Una evidencia repetible",
+            "Una opinion del modelo"
+          ],
+          "correct": 1
+        }
+      },
+      "subtitles": [
+        {
+          "text": "Codex: Decision de modelo.",
+          "startMs": 225450,
+          "endMs": 228566
+        },
+        {
+          "text": "Subir potencia solo si la incertidumbre tecnica lo justifica.",
+          "startMs": 228746,
+          "endMs": 233254
+        },
+        {
+          "text": "Modelo minuto 3: elegir por riesgo, contexto y coste antes de pedir otra iteracion.",
+          "startMs": 233434,
+          "endMs": 239790
+        },
+        {
+          "text": "Decision minuto 3: seguir, pedir contexto, escalar modelo o bloquear.",
+          "startMs": 239970,
+          "endMs": 246062
+        }
+      ],
+      "voiceover": [
+        "Codex: Decision de modelo.",
+        "Subir potencia solo si la incertidumbre tecnica lo justifica.",
+        "Modelo minuto 3: elegir por riesgo, contexto y coste antes de pedir otra iteracion.",
+        "Decision minuto 3: seguir, pedir contexto, escalar modelo o bloquear."
+      ],
+      "screen": {
+        "mode": "decision",
+        "title": "Decision de modelo",
+        "visual": "codex-decision"
+      },
+      "blueprintAction": {
+        "learningRubric": {
+          "learns": "Distingue decision humana de ejecucion automatizada en Codex.",
+          "does": "Comprueba la salida contra prueba, owner o captura.",
+          "decides": "Aceptar solo si la evidencia queda visible para otra persona.",
+          "vendor": "codex",
+          "usefulnessScore": 82,
+          "memoryCheck": "Puede repetir el prompt inicial con criterio de cierre.",
+          "productionPass": "2000-final-direction"
+        }
+      },
+      "production": {
+        "audioVersion": "audio-prod-v2-2026-05-18",
+        "voiceProfileId": "codexReflection",
+        "voice": "es-ES-AlvaroNeural",
+        "rate": "+3%",
+        "pitch": "+0Hz",
+        "energy": "reflexiva",
+        "emphasis": "riesgo, permiso y evidencia",
+        "pauseMs": 260,
+        "role": "reflection",
+        "reviewRubric": {
+          "learns": "Distingue decision humana de ejecucion automatizada en Codex.",
+          "does": "Comprueba la salida contra prueba, owner o captura.",
+          "decides": "Aceptar solo si la evidencia queda visible para otra persona.",
+          "memoryCheck": "Puede repetir el prompt inicial con criterio de cierre."
+        },
+        "prosodyNotes": {
+          "pace": "+3%",
+          "pause": "260ms antes de la decision",
+          "emphasis": "riesgo, permiso y evidencia",
+          "energy": "reflexiva"
+        },
+        "pronunciationPass": "spain-voice-units-v1"
+      }
+    },
+    {
+      "id": "11-cost-ledger",
+      "name": "Media break / meme",
+      "startMs": 250000,
+      "endMs": 275000,
+      "type": "media-break",
+      "content": {
+        "source": "sprint-cd-media-breaks",
+        "vendor": "codex",
+        "kind": "meme",
+        "title": "Cuando \"Cost ledger\" se va de las manos",
+        "imageUrl": "/decks/codex/curso-02/assets/potente-meme-token-blender.png",
+        "alt": "codex meme asset",
+        "caption": "Humor util: si te hace sonreir, tambien debe recordarte una regla.",
+        "situation": "Situacion minuto 4: el equipo mira \"Cuando Cost ledger se va de las manos\" dentro del repo, con coste y permiso visibles.",
+        "tension": "Tension minuto 4: sin evidencia, la IA parece productiva pero no deja confianza.",
+        "example": "Ejemplo: Diff pequeno, test verde y resumen de coste.",
+        "action": "Accion minuto 4: convertir repo en una decision que se pueda ensenar en tutoria.",
+        "evidence": "Evidencia minuto 4: diff minimo, test verde y coste registrado.",
+        "decision": "Decision minuto 4: si no se puede auditar, vuelve a briefing.",
+        "rubric": {
+          "learns": "Codex no es magia: es un flujo de plan, patch, test y evidencia.",
+          "does": "Usa AGENTS.md, permiso minimo y test acotado.",
+          "decides": "Si escala modelo, pide contexto o bloquea."
+        }
+      },
+      "subtitles": [
+        {
+          "text": "Situacion minuto 4: Codex solo avanza si el siguiente humano entiende el por que.",
+          "startMs": 250450,
+          "endMs": 256086
+        },
+        {
+          "text": "Tension minuto 4: aceptar rapido puede esconder permiso, alcance y modelo.",
+          "startMs": 256131,
+          "endMs": 262151
+        },
+        {
+          "text": "Accion minuto 4:",
+          "startMs": 262196,
+          "endMs": 264664
+        },
+        {
+          "text": "parar si \"Cuando Cost ledger se va de las manos\" no produce evidencia nueva.",
+          "startMs": 264709,
+          "endMs": 269721
+        },
+        {
+          "text": "Evidencia minuto 4:",
+          "startMs": 269766,
+          "endMs": 272330
+        },
+        {
+          "text": "hay una salida que otro perfil puede revisar sin rehacer el contexto.",
+          "startMs": 270172,
+          "endMs": 274920
+        }
+      ],
+      "voiceover": [
+        "Situacion minuto 4: Codex solo avanza si el siguiente humano entiende el por que.",
+        "Tension minuto 4: aceptar rapido puede esconder permiso, alcance y modelo.",
+        "Accion minuto 4:",
+        "parar si \"Cuando Cost ledger se va de las manos\" no produce evidencia nueva.",
+        "Evidencia minuto 4:",
+        "hay una salida que otro perfil puede revisar sin rehacer el contexto."
+      ],
+      "screen": {
+        "mode": "media-break",
+        "title": "Cuando \"Cost ledger\" se va de las manos",
+        "visual": "/decks/codex/curso-02/assets/potente-meme-token-blender.png"
+      },
+      "blueprintAction": {
+        "learningRubric": {
+          "learns": "Ubica coste, permiso y criterio antes de aceptar la salida.",
+          "does": "Registra el criterio que permitiria repetir el paso sin instructor.",
+          "decides": "Seguir, pedir mas contexto, escalar modelo o bloquear.",
+          "vendor": "codex",
+          "usefulnessScore": 82,
+          "memoryCheck": "Puede explicar el paso en una frase de menos de 20 segundos.",
+          "productionPass": "2000-final-direction"
+        }
+      },
+      "production": {
+        "audioVersion": "audio-prod-v2-2026-05-18",
+        "voiceProfileId": "codexReflection",
+        "voice": "es-ES-AlvaroNeural",
+        "rate": "+3%",
+        "pitch": "+0Hz",
+        "energy": "reflexiva",
+        "emphasis": "riesgo, permiso y evidencia",
+        "pauseMs": 260,
+        "role": "reflection",
+        "reviewRubric": {
+          "learns": "Ubica coste, permiso y criterio antes de aceptar la salida.",
+          "does": "Registra el criterio que permitiria repetir el paso sin instructor.",
+          "decides": "Seguir, pedir mas contexto, escalar modelo o bloquear.",
+          "memoryCheck": "Puede explicar el paso en una frase de menos de 20 segundos."
+        },
+        "prosodyNotes": {
+          "pace": "+3%",
+          "pause": "260ms antes de la decision",
+          "emphasis": "riesgo, permiso y evidencia",
+          "energy": "reflexiva"
+        },
+        "pronunciationPass": "spain-voice-units-v1"
+      }
+    },
+    {
+      "id": "12-permisos",
+      "name": "Permisos",
+      "startMs": 275000,
+      "endMs": 300000,
+      "type": "risk",
+      "content": {
+        "mode": "risk",
+        "vendor": "codex",
+        "title": "Permisos",
+        "eyebrow": "Codex Masterclass 10 minutos - Operating System / escena 12",
+        "label": "Readonly, workspace-write y ejecucion son decisiones separadas.",
+        "presenterCue": "Relacionar Permisos con una decision real del alumno.",
+        "actionLabel": "Mostrar artefacto",
+        "actionDetail": "Readonly, workspace-write y ejecucion son decisiones separadas.",
+        "prompt": "Actua como Codex en terminal, IDE, web y cloud task. Objetivo: Permisos. Contexto: Readonly, workspace-write y ejecucion son decisiones separadas.. Antes de editar, devuelve criterio de cierre, riesgo y coste esperado. No avances si falta evidencia verificable.",
+        "response": [
+          "Lectura: Permisos se trata como decision operativa, no como teoria.",
+          "Artefacto: AGENTS.md o el prompt asociado documenta la regla estable.",
+          "Evidencia minuto 4: hay una salida que otro perfil puede revisar sin rehacer el contexto.",
+          "Siguiente paso: aplicar solo si el humano acepta riesgo y coste."
+        ],
+        "diff": [
+          "diff --git a/AGENTS.md b/AGENTS.md",
+          "- regla implicita: Permisos",
+          "+ regla explicita: Readonly, workspace-write y ejecucion son decisiones separadas.",
+          "+ done_when = \"prueba, review, coste y owner visibles\""
+        ],
+        "terminal": [
+          "$ pnpm test -- auth.spec.ts",
+          "PASS AGENTS.md",
+          "checked: Permisos",
+          "model: modelo rapido para leer y ubicar",
+          "budget: dentro del limite de workshop"
+        ],
+        "review": [
+          {
+            "severity": "note",
+            "text": "Comprobar que Permisos no se queda en recomendacion generica."
+          },
+          {
+            "severity": "medium",
+            "text": "Pedir evidencia: comando, diff, owner o decision documentada."
+          },
+          {
+            "severity": "note",
+            "text": "El instructor valida si el alumno puede repetirlo sin ayuda."
+          }
+        ],
+        "cost": {
+          "model": "modelo rapido para leer y ubicar",
+          "tokens": "bajo/medio por contexto acotado",
+          "permission": "minimo permiso viable para esta escena",
+          "stopRule": "Parar tras dos iteraciones sin evidencia nueva."
+        },
+        "decision": {
+          "question": "Que decision tomas sobre Permisos?",
+          "options": [
+            "seguir",
+            "pedir contexto",
+            "subir modelo",
+            "bloquear y llevar a tutoria"
+          ],
+          "selected": 0
+        },
+        "risk": {
+          "items": [
+            "Coste invisible",
+            "Permisos excesivos",
+            "Contexto flojo",
+            "Salida no verificable",
+            "Owner ausente"
+          ],
+          "level": "medio"
+        },
+        "branch": {
+          "steps": [
+            "Brief",
+            "Contexto",
+            "Plan",
+            "Artefacto",
+            "Validacion",
+            "Review",
+            "Cierre"
+          ],
+          "active": 4
+        },
+        "quiz": {
+          "question": "Que prueba que Permisos esta entendido?",
+          "answers": [
+            "Un prompt mas largo",
+            "Una evidencia repetible",
+            "Una opinion del modelo"
+          ],
+          "correct": 1
+        }
+      },
+      "subtitles": [
+        {
+          "text": "Codex: Permisos.",
+          "startMs": 275450,
+          "endMs": 278230
+        },
+        {
+          "text": "Readonly, workspace-write y ejecucion son decisiones separadas.",
+          "startMs": 278410,
+          "endMs": 283302
+        },
+        {
+          "text": "Modelo minuto 4: elegir por riesgo, contexto y coste antes de pedir otra iteracion.",
+          "startMs": 283482,
+          "endMs": 289838
+        },
+        {
+          "text": "Decision minuto 4: guardar la duda como material reutilizable si se repite.",
+          "startMs": 290018,
+          "endMs": 295582
+        }
+      ],
+      "voiceover": [
+        "Codex: Permisos.",
+        "Readonly, workspace-write y ejecucion son decisiones separadas.",
+        "Modelo minuto 4: elegir por riesgo, contexto y coste antes de pedir otra iteracion.",
+        "Decision minuto 4: guardar la duda como material reutilizable si se repite."
+      ],
+      "screen": {
+        "mode": "risk",
+        "title": "Permisos",
+        "visual": "codex-risk"
+      },
+      "blueprintAction": {
+        "learningRubric": {
+          "learns": "Reconoce por que \"Permisos\" necesita evidencia y no solo respuesta.",
+          "does": "Formula una peticion verificable con limite de alcance.",
+          "decides": "Convertir la duda en material de tutoria si se repite.",
+          "vendor": "codex",
+          "usefulnessScore": 86,
+          "memoryCheck": "Puede nombrar el riesgo principal sin mirar la slide.",
+          "productionPass": "2000-final-direction"
+        }
+      },
+      "production": {
+        "audioVersion": "audio-prod-v2-2026-05-18",
+        "voiceProfileId": "codexReflection",
+        "voice": "es-ES-AlvaroNeural",
+        "rate": "+3%",
+        "pitch": "+0Hz",
+        "energy": "reflexiva",
+        "emphasis": "riesgo, permiso y evidencia",
+        "pauseMs": 260,
+        "role": "safety",
+        "reviewRubric": {
+          "learns": "Reconoce por que \"Permisos\" necesita evidencia y no solo respuesta.",
+          "does": "Formula una peticion verificable con limite de alcance.",
+          "decides": "Convertir la duda en material de tutoria si se repite.",
+          "memoryCheck": "Puede nombrar el riesgo principal sin mirar la slide."
+        },
+        "prosodyNotes": {
+          "pace": "+3%",
+          "pause": "260ms antes de la decision",
+          "emphasis": "riesgo, permiso y evidencia",
+          "energy": "reflexiva"
+        },
+        "pronunciationPass": "spain-voice-units-v1"
+      }
+    },
+    {
+      "id": "13-timeline-de-pr",
+      "name": "Timeline de pull request",
+      "startMs": 300000,
+      "endMs": 325000,
+      "type": "branch",
+      "content": {
+        "mode": "branch",
+        "vendor": "codex",
+        "title": "Timeline de pull request",
+        "eyebrow": "Codex Masterclass 10 minutos - Operating System / escena 13",
+        "label": "Issue, branch, plan, patch, tests, review y cierre.",
+        "presenterCue": "Relacionar Timeline de pull request con una decision real del alumno.",
+        "actionLabel": "Mostrar artefacto",
+        "actionDetail": "Issue, branch, plan, patch, tests, review y cierre.",
+        "prompt": "Actua como Codex en terminal, IDE, web y cloud task. Objetivo: Timeline de pull request. Contexto: Issue, branch, plan, patch, tests, review y cierre.. Antes de editar, devuelve criterio de cierre, riesgo y coste esperado. No avances si falta evidencia verificable.",
+        "response": [
+          "Lectura: Timeline de pull request se trata como decision operativa, no como teoria.",
+          "Artefacto: AGENTS.md o el prompt asociado documenta la regla estable.",
+          "Evidencia minuto 5: \"Timeline de pull request\" no se cierra sin test, captura o criterio escrito.",
+          "Siguiente paso: aplicar solo si el humano acepta riesgo y coste."
+        ],
+        "diff": [
+          "diff --git a/AGENTS.md b/AGENTS.md",
+          "- regla implicita: Timeline de pull request",
+          "+ regla explicita: Issue, branch, plan, patch, tests, review y cierre.",
+          "+ done_when = \"prueba, review, coste y owner visibles\""
+        ],
+        "terminal": [
+          "$ pnpm test -- auth.spec.ts",
+          "PASS AGENTS.md",
+          "checked: Timeline de pull request",
+          "model: modelo fuerte para refactor o pull request complejo",
+          "budget: dentro del limite de workshop"
+        ],
+        "review": [
+          {
+            "severity": "note",
+            "text": "Comprobar que Timeline de pull request no se queda en recomendacion generica."
+          },
+          {
+            "severity": "medium",
+            "text": "Pedir evidencia: comando, diff, owner o decision documentada."
+          },
+          {
+            "severity": "note",
+            "text": "El instructor valida si el alumno puede repetirlo sin ayuda."
+          }
+        ],
+        "cost": {
+          "model": "modelo fuerte para refactor o pull request complejo",
+          "tokens": "alto controlado",
+          "permission": "minimo permiso viable para esta escena",
+          "stopRule": "Parar tras dos iteraciones sin evidencia nueva."
+        },
+        "decision": {
+          "question": "Que decision tomas sobre Timeline de pull request?",
+          "options": [
+            "seguir",
+            "pedir contexto",
+            "subir modelo",
+            "bloquear y llevar a tutoria"
+          ],
+          "selected": 1
+        },
+        "risk": {
+          "items": [
+            "Coste invisible",
+            "Permisos excesivos",
+            "Contexto flojo",
+            "Salida no verificable",
+            "Owner ausente"
+          ],
+          "level": "alto"
+        },
+        "branch": {
+          "steps": [
+            "Brief",
+            "Contexto",
+            "Plan",
+            "Artefacto",
+            "Validacion",
+            "Review",
+            "Cierre"
+          ],
+          "active": 5
+        },
+        "quiz": {
+          "question": "Que prueba que Timeline de pull request esta entendido?",
+          "answers": [
+            "Un prompt mas largo",
+            "Una evidencia repetible",
+            "Una opinion del modelo"
+          ],
+          "correct": 1
+        }
+      },
+      "subtitles": [
+        {
+          "text": "Codex: Timeline de pull request.",
+          "startMs": 300450,
+          "endMs": 303494
+        },
+        {
+          "text": "Issue, branch, plan, patch, tests, review y cierre.",
+          "startMs": 303539,
+          "endMs": 308839
+        },
+        {
+          "text": "Modelo minuto 5: elegir por riesgo En Codex",
+          "startMs": 308884,
+          "endMs": 312912
+        },
+        {
+          "text": "valida \"Timeline de pull request\" antes de iterar.",
+          "startMs": 312957,
+          "endMs": 316529
+        },
+        {
+          "text": "contexto y coste antes de pedir otra iteracion. En Codex",
+          "startMs": 316574,
+          "endMs": 321706
+        },
+        {
+          "text": "valida \"Timeline de pull request\" antes de iterar.",
+          "startMs": 321348,
+          "endMs": 324920
+        },
+        {
+          "text": "Decision minuto 5: cerrar solo cuando diff minimo, test verde y coste registrado.",
+          "startMs": 319044,
+          "endMs": 324920
+        }
+      ],
+      "voiceover": [
+        "Codex: Timeline de pull request.",
+        "Issue, branch, plan, patch, tests, review y cierre.",
+        "Modelo minuto 5: elegir por riesgo En Codex",
+        "valida \"Timeline de pull request\" antes de iterar.",
+        "contexto y coste antes de pedir otra iteracion. En Codex",
+        "valida \"Timeline de pull request\" antes de iterar.",
+        "Decision minuto 5: cerrar solo cuando diff minimo, test verde y coste registrado."
+      ],
+      "screen": {
+        "mode": "branch",
+        "title": "Timeline de pull request",
+        "visual": "codex-branch"
+      },
+      "blueprintAction": {
+        "learningRubric": {
+          "learns": "Distingue decision humana de ejecucion automatizada en Codex.",
+          "does": "Comprueba la salida contra prueba, owner o captura.",
+          "decides": "Aceptar solo si la evidencia queda visible para otra persona.",
+          "vendor": "codex",
+          "usefulnessScore": 88,
+          "memoryCheck": "Puede repetir el prompt inicial con criterio de cierre.",
+          "productionPass": "2000-final-direction"
+        }
+      },
+      "production": {
+        "audioVersion": "audio-prod-v2-2026-05-18",
+        "voiceProfileId": "codexNarrator",
+        "voice": "es-ES-AlvaroNeural",
+        "rate": "+8%",
+        "pitch": "+0Hz",
+        "energy": "precisa",
+        "emphasis": "plan, patch, test y coste",
+        "pauseMs": 180,
+        "role": "narrator",
+        "reviewRubric": {
+          "learns": "Distingue decision humana de ejecucion automatizada en Codex.",
+          "does": "Comprueba la salida contra prueba, owner o captura.",
+          "decides": "Aceptar solo si la evidencia queda visible para otra persona.",
+          "memoryCheck": "Puede repetir el prompt inicial con criterio de cierre."
+        },
+        "prosodyNotes": {
+          "pace": "+8%",
+          "pause": "180ms antes de la decision",
+          "emphasis": "plan, patch, test y coste",
+          "energy": "precisa"
+        },
+        "pronunciationPass": "spain-voice-units-v1"
+      }
+    },
+    {
+      "id": "14-checkpoint",
+      "name": "Checkpoint",
+      "startMs": 325000,
+      "endMs": 350000,
+      "type": "quiz",
+      "content": {
+        "mode": "quiz",
+        "vendor": "codex",
+        "title": "Checkpoint",
+        "eyebrow": "Codex Masterclass 10 minutos - Operating System / escena 14",
+        "label": "El alumno distingue respuesta bonita de evidencia suficiente.",
+        "presenterCue": "Relacionar Checkpoint con una decision real del alumno.",
+        "actionLabel": "Mostrar artefacto",
+        "actionDetail": "El alumno distingue respuesta bonita de evidencia suficiente.",
+        "prompt": "Actua como Codex en terminal, IDE, web y cloud task. Objetivo: Checkpoint. Contexto: El alumno distingue respuesta bonita de evidencia suficiente.. Antes de editar, devuelve criterio de cierre, riesgo y coste esperado. No avances si falta evidencia verificable.",
+        "response": [
+          "Lectura: Checkpoint se trata como decision operativa, no como teoria.",
+          "Artefacto: AGENTS.md o el prompt asociado documenta la regla estable.",
+          "Evidencia minuto 5: \"Checkpoint\" queda ligado a prueba, owner y decision.",
+          "Siguiente paso: aplicar solo si el humano acepta riesgo y coste."
+        ],
+        "diff": [
+          "diff --git a/AGENTS.md b/AGENTS.md",
+          "- regla implicita: Checkpoint",
+          "+ regla explicita: El alumno distingue respuesta bonita de evidencia suficiente.",
+          "+ done_when = \"prueba, review, coste y owner visibles\""
+        ],
+        "terminal": [
+          "$ pnpm test -- auth.spec.ts",
+          "PASS AGENTS.md",
+          "checked: Checkpoint",
+          "model: modelo rapido para leer y ubicar",
+          "budget: dentro del limite de workshop"
+        ],
+        "review": [
+          {
+            "severity": "note",
+            "text": "Comprobar que Checkpoint no se queda en recomendacion generica."
+          },
+          {
+            "severity": "medium",
+            "text": "Pedir evidencia: comando, diff, owner o decision documentada."
+          },
+          {
+            "severity": "note",
+            "text": "El instructor valida si el alumno puede repetirlo sin ayuda."
+          }
+        ],
+        "cost": {
+          "model": "modelo rapido para leer y ubicar",
+          "tokens": "bajo/medio por contexto acotado",
+          "permission": "minimo permiso viable para esta escena",
+          "stopRule": "Parar tras dos iteraciones sin evidencia nueva."
+        },
+        "decision": {
+          "question": "Que decision tomas sobre Checkpoint?",
+          "options": [
+            "seguir",
+            "pedir contexto",
+            "subir modelo",
+            "bloquear y llevar a tutoria"
+          ],
+          "selected": 2
+        },
+        "risk": {
+          "items": [
+            "Coste invisible",
+            "Permisos excesivos",
+            "Contexto flojo",
+            "Salida no verificable",
+            "Owner ausente"
+          ],
+          "level": "alto"
+        },
+        "branch": {
+          "steps": [
+            "Brief",
+            "Contexto",
+            "Plan",
+            "Artefacto",
+            "Validacion",
+            "Review",
+            "Cierre"
+          ],
+          "active": 6
+        },
+        "quiz": {
+          "question": "Que prueba que Checkpoint esta entendido?",
+          "answers": [
+            "Un prompt mas largo",
+            "Una evidencia repetible",
+            "Una opinion del modelo"
+          ],
+          "correct": 1
+        }
+      },
+      "subtitles": [
+        {
+          "text": "Codex: Checkpoint.",
+          "startMs": 325450,
+          "endMs": 328086
+        },
+        {
+          "text": "El alumno distingue respuesta bonita de evidencia suficiente.",
+          "startMs": 328131,
+          "endMs": 332495
+        },
+        {
+          "text": "Modelo minuto 5: elegir por riesgo En Codex, valida \"Checkpoint\" antes de iterar.",
+          "startMs": 332540,
+          "endMs": 338632
+        },
+        {
+          "text": "contexto y coste antes de pedir otra iteracion. En Codex",
+          "startMs": 338677,
+          "endMs": 344025
+        },
+        {
+          "text": "valida \"Checkpoint\" antes de iterar.",
+          "startMs": 344070,
+          "endMs": 347210
+        },
+        {
+          "text": "Decision minuto 5: seguir, pedir contexto, escalar modelo o bloquear.",
+          "startMs": 343780,
+          "endMs": 349920
+        }
+      ],
+      "voiceover": [
+        "Codex: Checkpoint.",
+        "El alumno distingue respuesta bonita de evidencia suficiente.",
+        "Modelo minuto 5: elegir por riesgo En Codex, valida \"Checkpoint\" antes de iterar.",
+        "contexto y coste antes de pedir otra iteracion. En Codex",
+        "valida \"Checkpoint\" antes de iterar.",
+        "Decision minuto 5: seguir, pedir contexto, escalar modelo o bloquear."
+      ],
+      "screen": {
+        "mode": "quiz",
+        "title": "Checkpoint",
+        "visual": "codex-quiz"
+      },
+      "blueprintAction": {
+        "learningRubric": {
+          "learns": "Ubica coste, permiso y criterio antes de aceptar la salida.",
+          "does": "Registra el criterio que permitiria repetir el paso sin instructor.",
+          "decides": "Seguir, pedir mas contexto, escalar modelo o bloquear.",
+          "vendor": "codex",
+          "usefulnessScore": 90,
+          "memoryCheck": "Puede explicar el paso en una frase de menos de 20 segundos.",
+          "productionPass": "2000-final-direction"
+        }
+      },
+      "production": {
+        "audioVersion": "audio-prod-v2-2026-05-18",
+        "voiceProfileId": "codexReflection",
+        "voice": "es-ES-AlvaroNeural",
+        "rate": "+3%",
+        "pitch": "+0Hz",
+        "energy": "reflexiva",
+        "emphasis": "riesgo, permiso y evidencia",
+        "pauseMs": 260,
+        "role": "reflection",
+        "reviewRubric": {
+          "learns": "Ubica coste, permiso y criterio antes de aceptar la salida.",
+          "does": "Registra el criterio que permitiria repetir el paso sin instructor.",
+          "decides": "Seguir, pedir mas contexto, escalar modelo o bloquear.",
+          "memoryCheck": "Puede explicar el paso en una frase de menos de 20 segundos."
+        },
+        "prosodyNotes": {
+          "pace": "+3%",
+          "pause": "260ms antes de la decision",
+          "emphasis": "riesgo, permiso y evidencia",
+          "energy": "reflexiva"
+        },
+        "pronunciationPass": "spain-voice-units-v1"
+      }
+    },
+    {
+      "id": "15-pensamiento-operativo",
+      "name": "Pensamiento operativo",
+      "startMs": 350000,
+      "endMs": 375000,
       "type": "thinking",
       "content": {
-        "tag": "Loop Codex",
-        "title": "Como debe pensar una sesion buena",
+        "tag": "Codex / razonamiento operativo",
+        "title": "Pensamiento operativo",
         "thoughts": [
-          { "ms": 0, "text": "Identificar objetivo y restricciones.", "done": true },
-          { "ms": 10000, "text": "Leer AGENTS.md y reglas locales.", "done": true },
-          { "ms": 22000, "text": "Explorar rutas candidatas sin editar.", "done": true },
-          { "ms": 36000, "text": "Proponer plan de 2-4 pasos.", "done": true },
-          { "ms": 52000, "text": "Aplicar patch pequeno y verificable.", "done": false },
-          { "ms": 66000, "text": "Cerrar con checks, riesgos y coste.", "done": false }
+          {
+            "ms": 0,
+            "text": "Identificar objetivo real y restriccion principal.",
+            "done": true
+          },
+          {
+            "ms": 5000,
+            "text": "Consultar AGENTS.md o regla estable equivalente.",
+            "done": true
+          },
+          {
+            "ms": 10000,
+            "text": "Elegir modelo y permiso por riesgo.",
+            "done": true
+          },
+          {
+            "ms": 15000,
+            "text": "Pedir artefacto verificable, no narrativa.",
+            "done": false
+          },
+          {
+            "ms": 20000,
+            "text": "Cerrar con coste, owner y siguiente accion.",
+            "done": false
+          }
         ]
       },
       "subtitles": [
-        { "text": "Esta cadencia se repite en todos los cursos.", "startMs": 215000, "endMs": 227000 },
-        { "text": "No es burocracia: es control tecnico.", "startMs": 228000, "endMs": 244000 },
-        { "text": "Cuando todos la usan, las tutorias cambian de nivel.", "startMs": 245000, "endMs": 270000 }
-      ]
+        {
+          "text": "Codex: Pensamiento operativo.",
+          "startMs": 350450,
+          "endMs": 353758
+        },
+        {
+          "text": "Codex rinde cuando el humano impone orden, no cuando pide milagros.",
+          "startMs": 353803,
+          "endMs": 358647
+        },
+        {
+          "text": "Modelo minuto 5: elegir por riesgo En Codex",
+          "startMs": 358692,
+          "endMs": 362912
+        },
+        {
+          "text": "valida \"Pensamiento operativo\" antes de iterar.",
+          "startMs": 362957,
+          "endMs": 366721
+        },
+        {
+          "text": "contexto y coste antes de pedir otra iteracion. En Codex",
+          "startMs": 366766,
+          "endMs": 372114
+        },
+        {
+          "text": "valida \"Pensamiento operativo\" antes de iterar.",
+          "startMs": 371156,
+          "endMs": 374920
+        },
+        {
+          "text": "Decision minuto 5: si el riesgo supera la evidencia, entra instructor o tech lead.",
+          "startMs": 368996,
+          "endMs": 374920
+        }
+      ],
+      "voiceover": [
+        "Codex: Pensamiento operativo.",
+        "Codex rinde cuando el humano impone orden, no cuando pide milagros.",
+        "Modelo minuto 5: elegir por riesgo En Codex",
+        "valida \"Pensamiento operativo\" antes de iterar.",
+        "contexto y coste antes de pedir otra iteracion. En Codex",
+        "valida \"Pensamiento operativo\" antes de iterar.",
+        "Decision minuto 5: si el riesgo supera la evidencia, entra instructor o tech lead."
+      ],
+      "screen": {
+        "mode": "thinking",
+        "title": "Pensamiento operativo",
+        "visual": "codex-thinking"
+      },
+      "blueprintAction": {
+        "learningRubric": {
+          "learns": "Reconoce por que \"Pensamiento operativo\" necesita evidencia y no solo respuesta.",
+          "does": "Formula una peticion verificable con limite de alcance.",
+          "decides": "Convertir la duda en material de tutoria si se repite.",
+          "vendor": "codex",
+          "usefulnessScore": 92,
+          "memoryCheck": "Puede nombrar el riesgo principal sin mirar la slide.",
+          "productionPass": "2000-final-direction"
+        }
+      },
+      "production": {
+        "audioVersion": "audio-prod-v2-2026-05-18",
+        "voiceProfileId": "codexReflection",
+        "voice": "es-ES-AlvaroNeural",
+        "rate": "+3%",
+        "pitch": "+0Hz",
+        "energy": "reflexiva",
+        "emphasis": "riesgo, permiso y evidencia",
+        "pauseMs": 260,
+        "role": "reflection",
+        "reviewRubric": {
+          "learns": "Reconoce por que \"Pensamiento operativo\" necesita evidencia y no solo respuesta.",
+          "does": "Formula una peticion verificable con limite de alcance.",
+          "decides": "Convertir la duda en material de tutoria si se repite.",
+          "memoryCheck": "Puede nombrar el riesgo principal sin mirar la slide."
+        },
+        "prosodyNotes": {
+          "pace": "+3%",
+          "pause": "260ms antes de la decision",
+          "emphasis": "riesgo, permiso y evidencia",
+          "energy": "reflexiva"
+        },
+        "pronunciationPass": "spain-voice-units-v1"
+      }
     },
     {
-      "id": "coding-agents",
-      "name": "AGENTS.md",
-      "startMs": 285000,
-      "endMs": 345000,
-      "type": "coding",
+      "id": "16-review-del-propio-diff",
+      "name": "Media break / meme",
+      "startMs": 375000,
+      "endMs": 400000,
+      "type": "media-break",
       "content": {
-        "filename": "AGENTS.md",
-        "language": "markdown",
-        "code": "# AGENTS.md\n\n## Objetivo\nAyudar en cambios pequenos, revisables y con evidencia.\n\n## Reglas\n- Antes de editar, lee estructura y tests cercanos.\n- No leas ni escribas .env, secrets o credenciales.\n- Propone plan corto antes de patch.\n- Cierra con diff, checks ejecutados, coste estimado y riesgos.\n\n## Comandos\n- pnpm lint\n- pnpm test\n- pnpm build"
+        "source": "sprint-cd-media-breaks",
+        "vendor": "codex",
+        "kind": "meme",
+        "title": "Cuando \"Review del propio diff\" se va de las manos",
+        "imageUrl": "/decks/codex/curso-03/assets/ultra-meme-agent-debate-protocol.png",
+        "alt": "codex meme asset",
+        "caption": "Humor util: si te hace sonreir, tambien debe recordarte una regla.",
+        "situation": "Situacion minuto 6: el equipo mira \"Cuando Review del propio diff se va de las manos\" dentro del repo, con coste y permiso visibles.",
+        "tension": "Tension minuto 6: sin evidencia, la IA parece productiva pero no deja confianza.",
+        "example": "Ejemplo: mirar permiso, modelo y salida antes de seguir.",
+        "action": "Accion minuto 6: convertir repo en una decision que se pueda ensenar en tutoria.",
+        "evidence": "Evidencia minuto 6: diff minimo, test verde y coste registrado.",
+        "decision": "Decision minuto 6: si no se puede auditar, vuelve a briefing.",
+        "rubric": {
+          "learns": "Codex no es magia: es un flujo de plan, patch, test y evidencia.",
+          "does": "Usa AGENTS.md, permiso minimo y test acotado.",
+          "decides": "Si escala modelo, pide contexto o bloquea."
+        }
       },
       "subtitles": [
-        { "text": "AGENTS.md reduce repeticion.", "startMs": 290000, "endMs": 298000 },
-        { "text": "Tambien reduce coste, porque evita explicar lo mismo cada vez.", "startMs": 299000, "endMs": 317000 },
-        { "text": "El archivo no debe ser una enciclopedia.", "startMs": 318000, "endMs": 334000 }
-      ]
+        {
+          "text": "Situacion minuto 6: Codex solo avanza si el siguiente humano entiende el por que.",
+          "startMs": 375450,
+          "endMs": 381062
+        },
+        {
+          "text": "Tension minuto 6: aceptar rapido puede esconder permiso, alcance y modelo.",
+          "startMs": 381107,
+          "endMs": 387079
+        },
+        {
+          "text": "Accion minuto 6:",
+          "startMs": 387124,
+          "endMs": 389664
+        },
+        {
+          "text": "parar si \"Cuando Review del propio diff se va de las manos\" no produce evidencia nueva.",
+          "startMs": 389709,
+          "endMs": 394985
+        },
+        {
+          "text": "parar si \"Cuando Review del propio diff se va de las manos\" no produce evidencia nueva.",
+          "startMs": 394644,
+          "endMs": 399920
+        },
+        {
+          "text": "Evidencia minuto 6: el artefacto muestra que se controlo permiso, alcance y modelo.",
+          "startMs": 393876,
+          "endMs": 399920
+        }
+      ],
+      "voiceover": [
+        "Situacion minuto 6: Codex solo avanza si el siguiente humano entiende el por que.",
+        "Tension minuto 6: aceptar rapido puede esconder permiso, alcance y modelo.",
+        "Accion minuto 6:",
+        "parar si \"Cuando Review del propio diff se va de las manos\" no produce evidencia nueva.",
+        "parar si \"Cuando Review del propio diff se va de las manos\" no produce evidencia nueva.",
+        "Evidencia minuto 6: el artefacto muestra que se controlo permiso, alcance y modelo."
+      ],
+      "screen": {
+        "mode": "media-break",
+        "title": "Cuando \"Review del propio diff\" se va de las manos",
+        "visual": "/decks/codex/curso-03/assets/ultra-meme-agent-debate-protocol.png"
+      },
+      "blueprintAction": {
+        "learningRubric": {
+          "learns": "Distingue decision humana de ejecucion automatizada en Codex.",
+          "does": "Comprueba la salida contra prueba, owner o captura.",
+          "decides": "Aceptar solo si la evidencia queda visible para otra persona.",
+          "vendor": "codex",
+          "usefulnessScore": 84,
+          "memoryCheck": "Puede repetir el prompt inicial con criterio de cierre.",
+          "productionPass": "2000-final-direction"
+        }
+      },
+      "production": {
+        "audioVersion": "audio-prod-v2-2026-05-18",
+        "voiceProfileId": "codexReflection",
+        "voice": "es-ES-AlvaroNeural",
+        "rate": "+3%",
+        "pitch": "+0Hz",
+        "energy": "reflexiva",
+        "emphasis": "riesgo, permiso y evidencia",
+        "pauseMs": 260,
+        "role": "reflection",
+        "reviewRubric": {
+          "learns": "Distingue decision humana de ejecucion automatizada en Codex.",
+          "does": "Comprueba la salida contra prueba, owner o captura.",
+          "decides": "Aceptar solo si la evidencia queda visible para otra persona.",
+          "memoryCheck": "Puede repetir el prompt inicial con criterio de cierre."
+        },
+        "prosodyNotes": {
+          "pace": "+3%",
+          "pause": "260ms antes de la decision",
+          "emphasis": "riesgo, permiso y evidencia",
+          "energy": "reflexiva"
+        },
+        "pronunciationPass": "spain-voice-units-v1"
+      }
     },
     {
-      "id": "concept-cost",
-      "name": "Modelos y coste",
-      "startMs": 345000,
-      "endMs": 420000,
+      "id": "17-pausa-instructor",
+      "name": "Pausa instructor",
+      "startMs": 400000,
+      "endMs": 425000,
+      "type": "pause",
+      "content": {
+        "mode": "pause",
+        "vendor": "codex",
+        "title": "Pausa instructor",
+        "eyebrow": "Codex Masterclass 10 minutos - Operating System / escena 17",
+        "label": "Parar la demo y pedir decision, riesgo y coste en voz alta.",
+        "presenterCue": "Relacionar Pausa instructor con una decision real del alumno.",
+        "actionLabel": "Parar y debatir",
+        "actionDetail": "Parar la demo y pedir decision, riesgo y coste en voz alta.",
+        "prompt": "Actua como Codex en terminal, IDE, web y cloud task. Objetivo: Pausa instructor. Contexto: Parar la demo y pedir decision, riesgo y coste en voz alta.. Antes de editar, devuelve criterio de cierre, riesgo y coste esperado. No avances si falta evidencia verificable.",
+        "response": [
+          "Lectura: Pausa instructor se trata como decision operativa, no como teoria.",
+          "Artefacto: AGENTS.md o el prompt asociado documenta la regla estable.",
+          "Evidencia minuto 6: hay una salida que otro perfil puede revisar sin rehacer el contexto.",
+          "Siguiente paso: aplicar solo si el humano acepta riesgo y coste."
+        ],
+        "diff": [
+          "diff --git a/AGENTS.md b/AGENTS.md",
+          "- regla implicita: Pausa instructor",
+          "+ regla explicita: Parar la demo y pedir decision, riesgo y coste en voz alta.",
+          "+ done_when = \"prueba, review, coste y owner visibles\""
+        ],
+        "terminal": [
+          "$ pnpm test -- auth.spec.ts",
+          "PASS AGENTS.md",
+          "checked: Pausa instructor",
+          "model: modelo rapido para leer y ubicar",
+          "budget: dentro del limite de workshop"
+        ],
+        "review": [
+          {
+            "severity": "note",
+            "text": "Comprobar que Pausa instructor no se queda en recomendacion generica."
+          },
+          {
+            "severity": "medium",
+            "text": "Pedir evidencia: comando, diff, owner o decision documentada."
+          },
+          {
+            "severity": "note",
+            "text": "El instructor valida si el alumno puede repetirlo sin ayuda."
+          }
+        ],
+        "cost": {
+          "model": "modelo rapido para leer y ubicar",
+          "tokens": "bajo/medio por contexto acotado",
+          "permission": "minimo permiso viable para esta escena",
+          "stopRule": "Parar tras dos iteraciones sin evidencia nueva."
+        },
+        "decision": {
+          "question": "Que decision tomas sobre Pausa instructor?",
+          "options": [
+            "seguir",
+            "pedir contexto",
+            "subir modelo",
+            "bloquear y llevar a tutoria"
+          ],
+          "selected": 2
+        },
+        "risk": {
+          "items": [
+            "Coste invisible",
+            "Permisos excesivos",
+            "Contexto flojo",
+            "Salida no verificable",
+            "Owner ausente"
+          ],
+          "level": "medio"
+        },
+        "branch": {
+          "steps": [
+            "Brief",
+            "Contexto",
+            "Plan",
+            "Artefacto",
+            "Validacion",
+            "Review",
+            "Cierre"
+          ],
+          "active": 2
+        },
+        "quiz": {
+          "question": "Que prueba que Pausa instructor esta entendido?",
+          "answers": [
+            "Un prompt mas largo",
+            "Una evidencia repetible",
+            "Una opinion del modelo"
+          ],
+          "correct": 1
+        }
+      },
+      "subtitles": [
+        {
+          "text": "Codex: Pausa instructor.",
+          "startMs": 400450,
+          "endMs": 403518
+        },
+        {
+          "text": "Parar la demo y pedir decision, riesgo y coste en voz alta.",
+          "startMs": 403698,
+          "endMs": 408134
+        },
+        {
+          "text": "Modelo minuto 6: elegir por riesgo, contexto y coste antes de pedir otra iteracion.",
+          "startMs": 408314,
+          "endMs": 414646
+        },
+        {
+          "text": "Decision minuto 6: guardar la duda como material reutilizable si se repite.",
+          "startMs": 414826,
+          "endMs": 420318
+        }
+      ],
+      "voiceover": [
+        "Codex: Pausa instructor.",
+        "Parar la demo y pedir decision, riesgo y coste en voz alta.",
+        "Modelo minuto 6: elegir por riesgo, contexto y coste antes de pedir otra iteracion.",
+        "Decision minuto 6: guardar la duda como material reutilizable si se repite."
+      ],
+      "screen": {
+        "mode": "pause",
+        "title": "Pausa instructor",
+        "visual": "codex-pause"
+      },
+      "blueprintAction": {
+        "learningRubric": {
+          "learns": "Ubica coste, permiso y criterio antes de aceptar la salida.",
+          "does": "Registra el criterio que permitiria repetir el paso sin instructor.",
+          "decides": "Seguir, pedir mas contexto, escalar modelo o bloquear.",
+          "vendor": "codex",
+          "usefulnessScore": 96,
+          "memoryCheck": "Puede explicar el paso en una frase de menos de 20 segundos.",
+          "productionPass": "2000-final-direction"
+        }
+      },
+      "production": {
+        "audioVersion": "audio-prod-v2-2026-05-18",
+        "voiceProfileId": "codexReflection",
+        "voice": "es-ES-AlvaroNeural",
+        "rate": "+3%",
+        "pitch": "+0Hz",
+        "energy": "reflexiva",
+        "emphasis": "riesgo, permiso y evidencia",
+        "pauseMs": 260,
+        "role": "reflection",
+        "reviewRubric": {
+          "learns": "Ubica coste, permiso y criterio antes de aceptar la salida.",
+          "does": "Registra el criterio que permitiria repetir el paso sin instructor.",
+          "decides": "Seguir, pedir mas contexto, escalar modelo o bloquear.",
+          "memoryCheck": "Puede explicar el paso en una frase de menos de 20 segundos."
+        },
+        "prosodyNotes": {
+          "pace": "+3%",
+          "pause": "260ms antes de la decision",
+          "emphasis": "riesgo, permiso y evidencia",
+          "energy": "reflexiva"
+        },
+        "pronunciationPass": "spain-voice-units-v1"
+      }
+    },
+    {
+      "id": "18-mcp-y-contexto",
+      "name": "M C P y contexto",
+      "startMs": 425000,
+      "endMs": 450000,
       "type": "concept",
       "content": {
-        "tag": "Gobierno",
-        "title": "Modelo, razonamiento y coste se eligen",
-        "body": "Un equipo maduro no usa siempre la maxima potencia. Usa modelos y esfuerzo segun riesgo, ambiguedad, impacto y necesidad de verificacion. El coste malo suele venir del rework y del contexto sin filtrar.",
-        "highlight": "Coste visible no significa miedo: significa capacidad de decision.",
+        "tag": "Codex / Masterclass",
+        "title": "M C P y contexto",
+        "body": "Conectar fuentes solo si aportan senal y tienen owner. La idea clave: convertir una pantalla de herramienta en un criterio repetible de trabajo. La persona no memoriza botones; aprende a decidir superficie, modelo, permiso, evidencia y cierre.",
+        "highlight": "No avanzar sin evidencia visible: AGENTS.md, diff, test, coste u owner.",
         "points": [
-          "Tareas read-only y mapas: barato y rapido.",
-          "Cambios de arquitectura: modelo fuerte y plan controlado.",
-          "MCPs: solo si desbloquean una decision real.",
-          "Sesiones largas: compactar o reiniciar con handoff."
+          "Superficie: terminal, IDE, web y cloud task.",
+          "Modelo: modelo rapido para leer y ubicar.",
+          "Artefacto: AGENTS.md.",
+          "Validacion: pnpm test -- auth.spec.ts."
         ]
       },
       "subtitles": [
-        { "text": "Coste no es solo dinero.", "startMs": 350000, "endMs": 359000 },
-        { "text": "Tambien es ruido, atencion y tiempo de revision.", "startMs": 360000, "endMs": 375000 },
-        { "text": "Por eso cada ejercicio declara modelo, permisos y coste esperado.", "startMs": 376000, "endMs": 404000 }
-      ]
+        {
+          "text": "Codex: M C P y contexto.",
+          "startMs": 425450,
+          "endMs": 428662
+        },
+        {
+          "text": "Conectar fuentes solo si aportan senal y tienen owner.",
+          "startMs": 428842,
+          "endMs": 432750
+        },
+        {
+          "text": "Modelo minuto 7: elegir por riesgo, contexto y coste antes de pedir otra iteracion.",
+          "startMs": 432930,
+          "endMs": 438974
+        },
+        {
+          "text": "Decision minuto 7: si no se puede auditar, vuelve a briefing.",
+          "startMs": 439154,
+          "endMs": 443926
+        }
+      ],
+      "voiceover": [
+        "Codex: M C P y contexto.",
+        "Conectar fuentes solo si aportan senal y tienen owner.",
+        "Modelo minuto 7: elegir por riesgo, contexto y coste antes de pedir otra iteracion.",
+        "Decision minuto 7: si no se puede auditar, vuelve a briefing."
+      ],
+      "screen": {
+        "mode": "concept",
+        "title": "M C P y contexto",
+        "visual": "codex-concept"
+      },
+      "blueprintAction": {
+        "learningRubric": {
+          "learns": "Reconoce por que \"M C P y contexto\" necesita evidencia y no solo respuesta.",
+          "does": "Formula una peticion verificable con limite de alcance.",
+          "decides": "Convertir la duda en material de tutoria si se repite.",
+          "vendor": "codex",
+          "usefulnessScore": 98,
+          "memoryCheck": "Puede nombrar el riesgo principal sin mirar la slide.",
+          "productionPass": "2000-final-direction"
+        }
+      },
+      "production": {
+        "audioVersion": "audio-prod-v2-2026-05-18",
+        "voiceProfileId": "codexNarrator",
+        "voice": "es-ES-AlvaroNeural",
+        "rate": "+8%",
+        "pitch": "+0Hz",
+        "energy": "precisa",
+        "emphasis": "plan, patch, test y coste",
+        "pauseMs": 180,
+        "role": "narrator",
+        "reviewRubric": {
+          "learns": "Reconoce por que \"M C P y contexto\" necesita evidencia y no solo respuesta.",
+          "does": "Formula una peticion verificable con limite de alcance.",
+          "decides": "Convertir la duda en material de tutoria si se repite.",
+          "memoryCheck": "Puede nombrar el riesgo principal sin mirar la slide."
+        },
+        "prosodyNotes": {
+          "pace": "+8%",
+          "pause": "180ms antes de la decision",
+          "emphasis": "plan, patch, test y coste",
+          "energy": "precisa"
+        },
+        "pronunciationPass": "spain-voice-units-v1"
+      }
     },
     {
-      "id": "error-permissions",
-      "name": "Permisos",
-      "startMs": 420000,
-      "endMs": 490000,
-      "type": "error",
+      "id": "19-subagentes",
+      "name": "Media break / meme",
+      "startMs": 450000,
+      "endMs": 475000,
+      "type": "media-break",
       "content": {
-        "tag": "Riesgo controlable",
-        "sentry": {
-          "id": "SAFE-401",
-          "title": "Permiso amplio sin alcance",
-          "file": "workspace",
-          "line": 1,
-          "occurrences": 3,
-          "users": 1,
-          "first": "hace 2 minutos",
-          "trace": [
-            "User approves command without plan",
-            "Agent reads unrelated folders",
-            "Context grows and diff becomes hard to review"
+        "source": "sprint-cd-media-breaks",
+        "vendor": "codex",
+        "kind": "meme",
+        "title": "Cuando \"Subagentes\" se va de las manos",
+        "imageUrl": "/decks/codex/curso-03/assets/ultra-meme-ast-chunking.png",
+        "alt": "codex meme asset",
+        "caption": "Humor util: si te hace sonreir, tambien debe recordarte una regla.",
+        "situation": "Situacion minuto 7: la pantalla no busca impresionar; busca cerrar \"Cuando Subagentes se va de las manos\" con evidencia.",
+        "tension": "Tension minuto 7: el coste malo suele aparecer cuando nadie define el cierre.",
+        "example": "Ejemplo: convertir respuesta en artefacto de equipo.",
+        "action": "Accion minuto 7: pedir salida pequena, verificable y con owner.",
+        "evidence": "Evidencia minuto 7: \"Cuando Subagentes se va de las manos\" queda ligado a prueba, owner y decision.",
+        "decision": "Decision minuto 7: si el riesgo supera la evidencia, entra instructor o tech lead.",
+        "rubric": {
+          "learns": "Codex no es magia: es un flujo de plan, patch, test y evidencia.",
+          "does": "Usa AGENTS.md, permiso minimo y test acotado.",
+          "decides": "Si escala modelo, pide contexto o bloquea."
+        }
+      },
+      "subtitles": [
+        {
+          "text": "Situacion minuto 7:",
+          "startMs": 450450,
+          "endMs": 453086
+        },
+        {
+          "text": "Codex recibe \"Cuando Subagentes se va de las manos\" y debe convertirlo en trabajo",
+          "startMs": 453131,
+          "endMs": 458575
+        },
+        {
+          "text": "revisable.",
+          "startMs": 458620,
+          "endMs": 460656
+        },
+        {
+          "text": "Codex recibe \"Cuando Subagentes se va de las manos\" y debe convertirlo en trabajo",
+          "startMs": 460701,
+          "endMs": 466145
+        },
+        {
+          "text": "revisable. (Codex, minuto 7, paso 5)",
+          "startMs": 466190,
+          "endMs": 471874
+        },
+        {
+          "text": "Tension minuto 7: el coste malo suele aparecer cuando nadie define el cierre.",
+          "startMs": 469332,
+          "endMs": 474920
+        },
+        {
+          "text": "Accion minuto 7: convertir repo en una decision que se pueda ensenar en tutoria.",
+          "startMs": 469188,
+          "endMs": 474920
+        },
+        {
+          "text": "Evidencia minuto 7: diff minimo, test verde y coste registrado.",
+          "startMs": 469740,
+          "endMs": 474920
+        }
+      ],
+      "voiceover": [
+        "Situacion minuto 7:",
+        "Codex recibe \"Cuando Subagentes se va de las manos\" y debe convertirlo en trabajo",
+        "revisable.",
+        "Codex recibe \"Cuando Subagentes se va de las manos\" y debe convertirlo en trabajo",
+        "revisable. (Codex, minuto 7, paso 5)",
+        "Tension minuto 7: el coste malo suele aparecer cuando nadie define el cierre.",
+        "Accion minuto 7: convertir repo en una decision que se pueda ensenar en tutoria.",
+        "Evidencia minuto 7: diff minimo, test verde y coste registrado."
+      ],
+      "screen": {
+        "mode": "media-break",
+        "title": "Cuando \"Subagentes\" se va de las manos",
+        "visual": "/decks/codex/curso-03/assets/ultra-meme-ast-chunking.png"
+      },
+      "blueprintAction": {
+        "learningRubric": {
+          "learns": "Distingue decision humana de ejecucion automatizada en Codex.",
+          "does": "Comprueba la salida contra prueba, owner o captura.",
+          "decides": "Aceptar solo si la evidencia queda visible para otra persona.",
+          "vendor": "codex",
+          "usefulnessScore": 86,
+          "memoryCheck": "Puede repetir el prompt inicial con criterio de cierre.",
+          "productionPass": "2000-final-direction"
+        }
+      },
+      "production": {
+        "audioVersion": "audio-prod-v2-2026-05-18",
+        "voiceProfileId": "codexReflection",
+        "voice": "es-ES-AlvaroNeural",
+        "rate": "+3%",
+        "pitch": "+0Hz",
+        "energy": "reflexiva",
+        "emphasis": "riesgo, permiso y evidencia",
+        "pauseMs": 260,
+        "role": "reflection",
+        "reviewRubric": {
+          "learns": "Distingue decision humana de ejecucion automatizada en Codex.",
+          "does": "Comprueba la salida contra prueba, owner o captura.",
+          "decides": "Aceptar solo si la evidencia queda visible para otra persona.",
+          "memoryCheck": "Puede repetir el prompt inicial con criterio de cierre."
+        },
+        "prosodyNotes": {
+          "pace": "+3%",
+          "pause": "260ms antes de la decision",
+          "emphasis": "riesgo, permiso y evidencia",
+          "energy": "reflexiva"
+        },
+        "pronunciationPass": "spain-voice-units-v1"
+      }
+    },
+    {
+      "id": "20-ci-y-pr-swarm",
+      "name": "CI y pull request swarm",
+      "startMs": 475000,
+      "endMs": 500000,
+      "type": "terminal",
+      "content": {
+        "mode": "terminal",
+        "vendor": "codex",
+        "title": "CI y pull request swarm",
+        "eyebrow": "Codex Masterclass 10 minutos - Operating System / escena 20",
+        "label": "Automatizar revision exige coste maximo, permisos minimos y firma humana.",
+        "presenterCue": "Relacionar CI y pull request swarm con una decision real del alumno.",
+        "actionLabel": "Mostrar artefacto",
+        "actionDetail": "Automatizar revision exige coste maximo, permisos minimos y firma humana.",
+        "prompt": "Actua como Codex en terminal, IDE, web y cloud task. Objetivo: CI y pull request swarm. Contexto: Automatizar revision exige coste maximo, permisos minimos y firma humana.. Antes de editar, devuelve criterio de cierre, riesgo y coste esperado. No avances si falta evidencia verificable.",
+        "response": [
+          "Lectura: CI y pull request swarm se trata como decision operativa, no como teoria.",
+          "Artefacto: AGENTS.md o el prompt asociado documenta la regla estable.",
+          "Evidencia minuto 7: el artefacto muestra que se controlo permiso, alcance y modelo.",
+          "Siguiente paso: aplicar solo si el humano acepta riesgo y coste."
+        ],
+        "diff": [
+          "diff --git a/AGENTS.md b/AGENTS.md",
+          "- regla implicita: CI y pull request swarm",
+          "+ regla explicita: Automatizar revision exige coste maximo, permisos minimos y firma humana.",
+          "+ done_when = \"prueba, review, coste y owner visibles\""
+        ],
+        "terminal": [
+          "$ pnpm test -- auth.spec.ts",
+          "PASS AGENTS.md",
+          "checked: CI y pull request swarm",
+          "model: modelo rapido para leer y ubicar",
+          "budget: dentro del limite de workshop"
+        ],
+        "review": [
+          {
+            "severity": "note",
+            "text": "Comprobar que CI y pull request swarm no se queda en recomendacion generica."
+          },
+          {
+            "severity": "medium",
+            "text": "Pedir evidencia: comando, diff, owner o decision documentada."
+          },
+          {
+            "severity": "note",
+            "text": "El instructor valida si el alumno puede repetirlo sin ayuda."
+          }
+        ],
+        "cost": {
+          "model": "modelo rapido para leer y ubicar",
+          "tokens": "bajo/medio por contexto acotado",
+          "permission": "minimo permiso viable para esta escena",
+          "stopRule": "Parar tras dos iteraciones sin evidencia nueva."
+        },
+        "decision": {
+          "question": "Que decision tomas sobre CI y pull request swarm?",
+          "options": [
+            "seguir",
+            "pedir contexto",
+            "subir modelo",
+            "bloquear y llevar a tutoria"
           ],
-          "context": "El problema no es que Codex pueda actuar. El problema es permitir accion sin contrato."
+          "selected": 1
         },
-        "linearFix": {
-          "ticketId": "CX-101",
-          "title": "Anadir gate de permisos al prompt",
-          "description": "Antes de ejecutar comandos o editar muchos archivos, Codex debe explicar impacto, rutas, comando y check de salida."
+        "risk": {
+          "items": [
+            "Coste invisible",
+            "Permisos excesivos",
+            "Contexto flojo",
+            "Salida no verificable",
+            "Owner ausente"
+          ],
+          "level": "alto"
         },
-        "fix": "Antes de ejecutar, dime:\n- que comando quieres correr\n- por que es necesario\n- que archivos puede afectar\n- como sabremos si fue correcto\n\nSi el alcance crece, para y pregunta."
+        "branch": {
+          "steps": [
+            "Brief",
+            "Contexto",
+            "Plan",
+            "Artefacto",
+            "Validacion",
+            "Review",
+            "Cierre"
+          ],
+          "active": 5
+        },
+        "quiz": {
+          "question": "Que prueba que CI y pull request swarm esta entendido?",
+          "answers": [
+            "Un prompt mas largo",
+            "Una evidencia repetible",
+            "Una opinion del modelo"
+          ],
+          "correct": 1
+        }
       },
       "subtitles": [
-        { "text": "Los permisos son una herramienta de diseno.", "startMs": 425000, "endMs": 438000 },
-        { "text": "No se trata de frenar Codex, sino de hacer su trabajo revisable.", "startMs": 439000, "endMs": 462000 },
-        { "text": "El hub entrena ese reflejo desde el primer dia.", "startMs": 463000, "endMs": 482000 }
-      ]
+        {
+          "text": "Codex: CI y pull request swarm.",
+          "startMs": 475450,
+          "endMs": 478734
+        },
+        {
+          "text": "Automatizar revision exige coste maximo, permisos minimos y firma humana.",
+          "startMs": 478914,
+          "endMs": 484214
+        },
+        {
+          "text": "Modelo minuto 7: elegir por riesgo, contexto y coste antes de pedir otra iteracion.",
+          "startMs": 484394,
+          "endMs": 490438
+        },
+        {
+          "text": "Decision minuto 7: seguir, pedir contexto, escalar modelo o bloquear.",
+          "startMs": 490618,
+          "endMs": 496470
+        }
+      ],
+      "voiceover": [
+        "Codex: CI y pull request swarm.",
+        "Automatizar revision exige coste maximo, permisos minimos y firma humana.",
+        "Modelo minuto 7: elegir por riesgo, contexto y coste antes de pedir otra iteracion.",
+        "Decision minuto 7: seguir, pedir contexto, escalar modelo o bloquear."
+      ],
+      "screen": {
+        "mode": "terminal",
+        "title": "CI y pull request swarm",
+        "visual": "codex-terminal"
+      },
+      "blueprintAction": {
+        "learningRubric": {
+          "learns": "Ubica coste, permiso y criterio antes de aceptar la salida.",
+          "does": "Registra el criterio que permitiria repetir el paso sin instructor.",
+          "decides": "Seguir, pedir mas contexto, escalar modelo o bloquear.",
+          "vendor": "codex",
+          "usefulnessScore": 84,
+          "memoryCheck": "Puede explicar el paso en una frase de menos de 20 segundos.",
+          "productionPass": "2000-final-direction"
+        }
+      },
+      "production": {
+        "audioVersion": "audio-prod-v2-2026-05-18",
+        "voiceProfileId": "codexNarrator",
+        "voice": "es-ES-AlvaroNeural",
+        "rate": "+8%",
+        "pitch": "+0Hz",
+        "energy": "precisa",
+        "emphasis": "plan, patch, test y coste",
+        "pauseMs": 180,
+        "role": "narrator",
+        "reviewRubric": {
+          "learns": "Ubica coste, permiso y criterio antes de aceptar la salida.",
+          "does": "Registra el criterio que permitiria repetir el paso sin instructor.",
+          "decides": "Seguir, pedir mas contexto, escalar modelo o bloquear.",
+          "memoryCheck": "Puede explicar el paso en una frase de menos de 20 segundos."
+        },
+        "prosodyNotes": {
+          "pace": "+8%",
+          "pause": "180ms antes de la decision",
+          "emphasis": "plan, patch, test y coste",
+          "energy": "precisa"
+        },
+        "pronunciationPass": "spain-voice-units-v1"
+      }
     },
     {
-      "id": "preview-activation",
-      "name": "Activacion",
-      "startMs": 490000,
-      "endMs": 555000,
-      "type": "preview",
+      "id": "21-go-no-go",
+      "name": "Go / No-Go",
+      "startMs": 500000,
+      "endMs": 525000,
+      "type": "decision",
       "content": {
-        "title": "Ruta de activacion Codex",
-        "description": "El alumno consume el video, abre el deck, ejecuta un lab y llega a tutoria con un handoff.",
-        "items": [
-          { "label": "Cursos", "value": "C0-C4" },
-          { "label": "Labs", "value": "20" },
-          { "label": "Microvideos", "value": "10+" },
-          { "label": "Cierre", "value": "diff + checks + riesgos" }
-        ]
+        "mode": "decision",
+        "vendor": "codex",
+        "title": "Go / No-Go",
+        "eyebrow": "Codex Masterclass 10 minutos - Operating System / escena 21",
+        "label": "Cuando usar Codex, cuando no usarlo y cuando llevarlo a tutoria.",
+        "presenterCue": "Relacionar Go / No-Go con una decision real del alumno.",
+        "actionLabel": "Mostrar artefacto",
+        "actionDetail": "Cuando usar Codex, cuando no usarlo y cuando llevarlo a tutoria.",
+        "prompt": "Actua como Codex en terminal, IDE, web y cloud task. Objetivo: Go / No-Go. Contexto: Cuando usar Codex, cuando no usarlo y cuando llevarlo a tutoria.. Antes de editar, devuelve criterio de cierre, riesgo y coste esperado. No avances si falta evidencia verificable.",
+        "response": [
+          "Lectura: Go / No-Go se trata como decision operativa, no como teoria.",
+          "Artefacto: AGENTS.md o el prompt asociado documenta la regla estable.",
+          "Evidencia minuto 8: diff minimo, test verde y coste registrado.",
+          "Siguiente paso: aplicar solo si el humano acepta riesgo y coste."
+        ],
+        "diff": [
+          "diff --git a/AGENTS.md b/AGENTS.md",
+          "- regla implicita: Go / No-Go",
+          "+ regla explicita: Cuando usar Codex, cuando no usarlo y cuando llevarlo a tutoria.",
+          "+ done_when = \"prueba, review, coste y owner visibles\""
+        ],
+        "terminal": [
+          "$ pnpm test -- auth.spec.ts",
+          "PASS AGENTS.md",
+          "checked: Go / No-Go",
+          "model: modelo rapido para leer y ubicar",
+          "budget: dentro del limite de workshop"
+        ],
+        "review": [
+          {
+            "severity": "note",
+            "text": "Comprobar que Go / No-Go no se queda en recomendacion generica."
+          },
+          {
+            "severity": "medium",
+            "text": "Pedir evidencia: comando, diff, owner o decision documentada."
+          },
+          {
+            "severity": "note",
+            "text": "El instructor valida si el alumno puede repetirlo sin ayuda."
+          }
+        ],
+        "cost": {
+          "model": "modelo rapido para leer y ubicar",
+          "tokens": "bajo/medio por contexto acotado",
+          "permission": "minimo permiso viable para esta escena",
+          "stopRule": "Parar tras dos iteraciones sin evidencia nueva."
+        },
+        "decision": {
+          "question": "Que decision tomas sobre Go / No-Go?",
+          "options": [
+            "seguir",
+            "pedir contexto",
+            "subir modelo",
+            "bloquear y llevar a tutoria"
+          ],
+          "selected": 2
+        },
+        "risk": {
+          "items": [
+            "Coste invisible",
+            "Permisos excesivos",
+            "Contexto flojo",
+            "Salida no verificable",
+            "Owner ausente"
+          ],
+          "level": "alto"
+        },
+        "branch": {
+          "steps": [
+            "Brief",
+            "Contexto",
+            "Plan",
+            "Artefacto",
+            "Validacion",
+            "Review",
+            "Cierre"
+          ],
+          "active": 6
+        },
+        "quiz": {
+          "question": "Que prueba que Go / No-Go esta entendido?",
+          "answers": [
+            "Un prompt mas largo",
+            "Una evidencia repetible",
+            "Una opinion del modelo"
+          ],
+          "correct": 1
+        }
       },
       "subtitles": [
-        { "text": "La plataforma no intenta sustituir al profesor.", "startMs": 496000, "endMs": 511000 },
-        { "text": "Intenta quitarle las dudas repetidas.", "startMs": 512000, "endMs": 524000 },
-        { "text": "Asi la tutoria se dedica a decisiones reales.", "startMs": 525000, "endMs": 546000 }
-      ]
+        {
+          "text": "Codex: Go / No-Go.",
+          "startMs": 500450,
+          "endMs": 503734
+        },
+        {
+          "text": "Cuando usar Codex, cuando no usarlo y cuando llevarlo a tutoria.",
+          "startMs": 503914,
+          "endMs": 508638
+        },
+        {
+          "text": "Modelo minuto 8: elegir por riesgo, contexto y coste antes de pedir otra iteracion.",
+          "startMs": 508818,
+          "endMs": 515126
+        },
+        {
+          "text": "Decision minuto 8: si el riesgo supera la evidencia, entra instructor o tech lead.",
+          "startMs": 515306,
+          "endMs": 521182
+        }
+      ],
+      "voiceover": [
+        "Codex: Go / No-Go.",
+        "Cuando usar Codex, cuando no usarlo y cuando llevarlo a tutoria.",
+        "Modelo minuto 8: elegir por riesgo, contexto y coste antes de pedir otra iteracion.",
+        "Decision minuto 8: si el riesgo supera la evidencia, entra instructor o tech lead."
+      ],
+      "screen": {
+        "mode": "decision",
+        "title": "Go / No-Go",
+        "visual": "codex-decision"
+      },
+      "blueprintAction": {
+        "learningRubric": {
+          "learns": "Reconoce por que \"Go / No-Go\" necesita evidencia y no solo respuesta.",
+          "does": "Formula una peticion verificable con limite de alcance.",
+          "decides": "Convertir la duda en material de tutoria si se repite.",
+          "vendor": "codex",
+          "usefulnessScore": 86,
+          "memoryCheck": "Puede nombrar el riesgo principal sin mirar la slide.",
+          "productionPass": "2000-final-direction"
+        }
+      },
+      "production": {
+        "audioVersion": "audio-prod-v2-2026-05-18",
+        "voiceProfileId": "codexReflection",
+        "voice": "es-ES-AlvaroNeural",
+        "rate": "+3%",
+        "pitch": "+0Hz",
+        "energy": "reflexiva",
+        "emphasis": "riesgo, permiso y evidencia",
+        "pauseMs": 260,
+        "role": "reflection",
+        "reviewRubric": {
+          "learns": "Reconoce por que \"Go / No-Go\" necesita evidencia y no solo respuesta.",
+          "does": "Formula una peticion verificable con limite de alcance.",
+          "decides": "Convertir la duda en material de tutoria si se repite.",
+          "memoryCheck": "Puede nombrar el riesgo principal sin mirar la slide."
+        },
+        "prosodyNotes": {
+          "pace": "+3%",
+          "pause": "260ms antes de la decision",
+          "emphasis": "riesgo, permiso y evidencia",
+          "energy": "reflexiva"
+        },
+        "pronunciationPass": "spain-voice-units-v1"
+      }
     },
     {
-      "id": "finale",
-      "name": "Cierre",
-      "startMs": 555000,
+      "id": "22-presupuesto-por-tarea",
+      "name": "Presupuesto por tarea",
+      "startMs": 525000,
+      "endMs": 550000,
+      "type": "cost",
+      "content": {
+        "mode": "cost",
+        "vendor": "codex",
+        "title": "Presupuesto por tarea",
+        "eyebrow": "Codex Masterclass 10 minutos - Operating System / escena 22",
+        "label": "Una tarea sin limite de iteraciones no esta lista para automatizarse.",
+        "presenterCue": "Relacionar Presupuesto por tarea con una decision real del alumno.",
+        "actionLabel": "Mostrar artefacto",
+        "actionDetail": "Una tarea sin limite de iteraciones no esta lista para automatizarse.",
+        "prompt": "Actua como Codex en terminal, IDE, web y cloud task. Objetivo: Presupuesto por tarea. Contexto: Una tarea sin limite de iteraciones no esta lista para automatizarse.. Antes de editar, devuelve criterio de cierre, riesgo y coste esperado. No avances si falta evidencia verificable.",
+        "response": [
+          "Lectura: Presupuesto por tarea se trata como decision operativa, no como teoria.",
+          "Artefacto: AGENTS.md o el prompt asociado documenta la regla estable.",
+          "Evidencia minuto 8: hay una salida que otro perfil puede revisar sin rehacer el contexto.",
+          "Siguiente paso: aplicar solo si el humano acepta riesgo y coste."
+        ],
+        "diff": [
+          "diff --git a/AGENTS.md b/AGENTS.md",
+          "- regla implicita: Presupuesto por tarea",
+          "+ regla explicita: Una tarea sin limite de iteraciones no esta lista para automatizarse.",
+          "+ done_when = \"prueba, review, coste y owner visibles\""
+        ],
+        "terminal": [
+          "$ pnpm test -- auth.spec.ts",
+          "PASS AGENTS.md",
+          "checked: Presupuesto por tarea",
+          "model: modelo fuerte para refactor o pull request complejo",
+          "budget: dentro del limite de workshop"
+        ],
+        "review": [
+          {
+            "severity": "high",
+            "text": "Comprobar que Presupuesto por tarea no se queda en recomendacion generica."
+          },
+          {
+            "severity": "medium",
+            "text": "Pedir evidencia: comando, diff, owner o decision documentada."
+          },
+          {
+            "severity": "note",
+            "text": "El instructor valida si el alumno puede repetirlo sin ayuda."
+          }
+        ],
+        "cost": {
+          "model": "modelo fuerte para refactor o pull request complejo",
+          "tokens": "alto controlado",
+          "permission": "minimo permiso viable para esta escena",
+          "stopRule": "Parar tras dos iteraciones sin evidencia nueva."
+        },
+        "decision": {
+          "question": "Que decision tomas sobre Presupuesto por tarea?",
+          "options": [
+            "seguir",
+            "pedir contexto",
+            "subir modelo",
+            "bloquear y llevar a tutoria"
+          ],
+          "selected": 0
+        },
+        "risk": {
+          "items": [
+            "Coste invisible",
+            "Permisos excesivos",
+            "Contexto flojo",
+            "Salida no verificable",
+            "Owner ausente"
+          ],
+          "level": "bajo"
+        },
+        "branch": {
+          "steps": [
+            "Brief",
+            "Contexto",
+            "Plan",
+            "Artefacto",
+            "Validacion",
+            "Review",
+            "Cierre"
+          ],
+          "active": 0
+        },
+        "quiz": {
+          "question": "Que prueba que Presupuesto por tarea esta entendido?",
+          "answers": [
+            "Un prompt mas largo",
+            "Una evidencia repetible",
+            "Una opinion del modelo"
+          ],
+          "correct": 1
+        }
+      },
+      "subtitles": [
+        {
+          "text": "Codex: Presupuesto por tarea.",
+          "startMs": 525450,
+          "endMs": 528686
+        },
+        {
+          "text": "Una tarea sin limite de iteraciones no esta lista para automatizarse.",
+          "startMs": 528866,
+          "endMs": 533662
+        },
+        {
+          "text": "Modelo minuto 8: elegir por riesgo, contexto y coste antes de pedir otra iteracion.",
+          "startMs": 533842,
+          "endMs": 540150
+        },
+        {
+          "text": "Decision minuto 8: guardar la duda como material reutilizable si se repite.",
+          "startMs": 540330,
+          "endMs": 545870
+        }
+      ],
+      "voiceover": [
+        "Codex: Presupuesto por tarea.",
+        "Una tarea sin limite de iteraciones no esta lista para automatizarse.",
+        "Modelo minuto 8: elegir por riesgo, contexto y coste antes de pedir otra iteracion.",
+        "Decision minuto 8: guardar la duda como material reutilizable si se repite."
+      ],
+      "screen": {
+        "mode": "cost",
+        "title": "Presupuesto por tarea",
+        "visual": "codex-cost"
+      },
+      "blueprintAction": {
+        "learningRubric": {
+          "learns": "Distingue decision humana de ejecucion automatizada en Codex.",
+          "does": "Comprueba la salida contra prueba, owner o captura.",
+          "decides": "Aceptar solo si la evidencia queda visible para otra persona.",
+          "vendor": "codex",
+          "usefulnessScore": 88,
+          "memoryCheck": "Puede repetir el prompt inicial con criterio de cierre.",
+          "productionPass": "2000-final-direction"
+        }
+      },
+      "production": {
+        "audioVersion": "audio-prod-v2-2026-05-18",
+        "voiceProfileId": "codexReflection",
+        "voice": "es-ES-AlvaroNeural",
+        "rate": "+3%",
+        "pitch": "+0Hz",
+        "energy": "reflexiva",
+        "emphasis": "riesgo, permiso y evidencia",
+        "pauseMs": 260,
+        "role": "safety",
+        "reviewRubric": {
+          "learns": "Distingue decision humana de ejecucion automatizada en Codex.",
+          "does": "Comprueba la salida contra prueba, owner o captura.",
+          "decides": "Aceptar solo si la evidencia queda visible para otra persona.",
+          "memoryCheck": "Puede repetir el prompt inicial con criterio de cierre."
+        },
+        "prosodyNotes": {
+          "pace": "+3%",
+          "pause": "260ms antes de la decision",
+          "emphasis": "riesgo, permiso y evidencia",
+          "energy": "reflexiva"
+        },
+        "pronunciationPass": "spain-voice-units-v1"
+      }
+    },
+    {
+      "id": "23-activacion-del-alumno",
+      "name": "Activacion del alumno",
+      "startMs": 550000,
+      "endMs": 575000,
+      "type": "quiz",
+      "content": {
+        "mode": "quiz",
+        "vendor": "codex",
+        "title": "Activacion del alumno",
+        "eyebrow": "Codex Masterclass 10 minutos - Operating System / escena 23",
+        "label": "Primer reto: mapear repo, planear patch y cerrar con evidencia.",
+        "presenterCue": "Relacionar Activacion del alumno con una decision real del alumno.",
+        "actionLabel": "Mostrar artefacto",
+        "actionDetail": "Primer reto: mapear repo, planear patch y cerrar con evidencia.",
+        "prompt": "Actua como Codex en terminal, IDE, web y cloud task. Objetivo: Activacion del alumno. Contexto: Primer reto: mapear repo, planear patch y cerrar con evidencia.. Antes de editar, devuelve criterio de cierre, riesgo y coste esperado. No avances si falta evidencia verificable.",
+        "response": [
+          "Lectura: Activacion del alumno se trata como decision operativa, no como teoria.",
+          "Artefacto: AGENTS.md o el prompt asociado documenta la regla estable.",
+          "Evidencia minuto 9: \"Activacion del alumno\" no se cierra sin test, captura o criterio escrito.",
+          "Siguiente paso: aplicar solo si el humano acepta riesgo y coste."
+        ],
+        "diff": [
+          "diff --git a/AGENTS.md b/AGENTS.md",
+          "- regla implicita: Activacion del alumno",
+          "+ regla explicita: Primer reto: mapear repo, planear patch y cerrar con evidencia.",
+          "+ done_when = \"prueba, review, coste y owner visibles\""
+        ],
+        "terminal": [
+          "$ pnpm test -- auth.spec.ts",
+          "PASS AGENTS.md",
+          "checked: Activacion del alumno",
+          "model: modelo rapido para leer y ubicar",
+          "budget: dentro del limite de workshop"
+        ],
+        "review": [
+          {
+            "severity": "note",
+            "text": "Comprobar que Activacion del alumno no se queda en recomendacion generica."
+          },
+          {
+            "severity": "medium",
+            "text": "Pedir evidencia: comando, diff, owner o decision documentada."
+          },
+          {
+            "severity": "note",
+            "text": "El instructor valida si el alumno puede repetirlo sin ayuda."
+          }
+        ],
+        "cost": {
+          "model": "modelo rapido para leer y ubicar",
+          "tokens": "bajo/medio por contexto acotado",
+          "permission": "minimo permiso viable para esta escena",
+          "stopRule": "Parar tras dos iteraciones sin evidencia nueva."
+        },
+        "decision": {
+          "question": "Que decision tomas sobre Activacion del alumno?",
+          "options": [
+            "seguir",
+            "pedir contexto",
+            "subir modelo",
+            "bloquear y llevar a tutoria"
+          ],
+          "selected": 1
+        },
+        "risk": {
+          "items": [
+            "Coste invisible",
+            "Permisos excesivos",
+            "Contexto flojo",
+            "Salida no verificable",
+            "Owner ausente"
+          ],
+          "level": "bajo"
+        },
+        "branch": {
+          "steps": [
+            "Brief",
+            "Contexto",
+            "Plan",
+            "Artefacto",
+            "Validacion",
+            "Review",
+            "Cierre"
+          ],
+          "active": 1
+        },
+        "quiz": {
+          "question": "Que prueba que Activacion del alumno esta entendido?",
+          "answers": [
+            "Un prompt mas largo",
+            "Una evidencia repetible",
+            "Una opinion del modelo"
+          ],
+          "correct": 1
+        }
+      },
+      "subtitles": [
+        {
+          "text": "Codex: Activacion del alumno.",
+          "startMs": 550450,
+          "endMs": 553566
+        },
+        {
+          "text": "Primer reto: mapear repo, planear patch y cerrar con evidencia.",
+          "startMs": 553746,
+          "endMs": 558638
+        },
+        {
+          "text": "Modelo minuto 9: elegir por riesgo, contexto y coste antes de pedir otra iteracion.",
+          "startMs": 558818,
+          "endMs": 565078
+        },
+        {
+          "text": "Decision minuto 9: si no se puede auditar, vuelve a briefing.",
+          "startMs": 565258,
+          "endMs": 570198
+        }
+      ],
+      "voiceover": [
+        "Codex: Activacion del alumno.",
+        "Primer reto: mapear repo, planear patch y cerrar con evidencia.",
+        "Modelo minuto 9: elegir por riesgo, contexto y coste antes de pedir otra iteracion.",
+        "Decision minuto 9: si no se puede auditar, vuelve a briefing."
+      ],
+      "screen": {
+        "mode": "quiz",
+        "title": "Activacion del alumno",
+        "visual": "codex-quiz"
+      },
+      "blueprintAction": {
+        "learningRubric": {
+          "learns": "Ubica coste, permiso y criterio antes de aceptar la salida.",
+          "does": "Registra el criterio que permitiria repetir el paso sin instructor.",
+          "decides": "Seguir, pedir mas contexto, escalar modelo o bloquear.",
+          "vendor": "codex",
+          "usefulnessScore": 90,
+          "memoryCheck": "Puede explicar el paso en una frase de menos de 20 segundos.",
+          "productionPass": "2000-final-direction"
+        }
+      },
+      "production": {
+        "audioVersion": "audio-prod-v2-2026-05-18",
+        "voiceProfileId": "codexReflection",
+        "voice": "es-ES-AlvaroNeural",
+        "rate": "+3%",
+        "pitch": "+0Hz",
+        "energy": "reflexiva",
+        "emphasis": "riesgo, permiso y evidencia",
+        "pauseMs": 260,
+        "role": "reflection",
+        "reviewRubric": {
+          "learns": "Ubica coste, permiso y criterio antes de aceptar la salida.",
+          "does": "Registra el criterio que permitiria repetir el paso sin instructor.",
+          "decides": "Seguir, pedir mas contexto, escalar modelo o bloquear.",
+          "memoryCheck": "Puede explicar el paso en una frase de menos de 20 segundos."
+        },
+        "prosodyNotes": {
+          "pace": "+3%",
+          "pause": "260ms antes de la decision",
+          "emphasis": "riesgo, permiso y evidencia",
+          "energy": "reflexiva"
+        },
+        "pronunciationPass": "spain-voice-units-v1"
+      }
+    },
+    {
+      "id": "24-resumen",
+      "name": "Resumen",
+      "startMs": 575000,
       "endMs": 600000,
       "type": "finale",
       "content": {
-        "title": "Lo que queda activado",
+        "title": "Lo que debe quedar despues de Codex",
         "summary": [
-          { "number": "01", "label": "Metodo", "body": "Mapa, plan, patch y evidencia antes de escalar." },
-          { "number": "02", "label": "Gobierno", "body": "Modelo, permisos, contexto y coste se deciden explicitamente." },
-          { "number": "03", "label": "Practica", "body": "El hub convierte cada concepto en reto autoconsumible." }
+          {
+            "number": "01",
+            "label": "Superficie",
+            "body": "Elegir terminal, IDE, web y cloud task segun tarea."
+          },
+          {
+            "number": "02",
+            "label": "Criterio",
+            "body": "Definir alcance, aceptacion y evidencia."
+          },
+          {
+            "number": "03",
+            "label": "Coste",
+            "body": "Modelo, contexto y permiso visibles."
+          },
+          {
+            "number": "04",
+            "label": "Practica",
+            "body": "Ejercicio asociado y cierre revisable."
+          }
         ],
-        "cta": "Siguiente paso: abrir Codex Basic y completar el primer lab read-only."
+        "cta": "El alumno sale sabiendo pedir a Codex un cambio pequeno, probado, barato y defendible."
       },
       "subtitles": [
-        { "text": "Codex no se adopta con una demo brillante.", "startMs": 558000, "endMs": 570000 },
-        { "text": "Se adopta con un metodo repetible.", "startMs": 571000, "endMs": 581000 },
-        { "text": "Ahora toca practicarlo.", "startMs": 582000, "endMs": 597000 }
-      ]
+        {
+          "text": "Codex: Resumen.",
+          "startMs": 575450,
+          "endMs": 578110
+        },
+        {
+          "text": "Codex funciona como metodo: contexto, plan, patch, tests, review, coste.",
+          "startMs": 578290,
+          "endMs": 585534
+        },
+        {
+          "text": "Modelo minuto 9: elegir por riesgo, contexto y coste antes de pedir otra iteracion.",
+          "startMs": 585714,
+          "endMs": 591974
+        },
+        {
+          "text": "Decision minuto 9: cerrar solo cuando diff minimo, test verde y coste registrado.",
+          "startMs": 592154,
+          "endMs": 598150
+        }
+      ],
+      "voiceover": [
+        "Codex: Resumen.",
+        "Codex funciona como metodo: contexto, plan, patch, tests, review, coste.",
+        "Modelo minuto 9: elegir por riesgo, contexto y coste antes de pedir otra iteracion.",
+        "Decision minuto 9: cerrar solo cuando diff minimo, test verde y coste registrado."
+      ],
+      "screen": {
+        "mode": "finale",
+        "title": "Resumen",
+        "visual": "codex-finale"
+      },
+      "blueprintAction": {
+        "learningRubric": {
+          "learns": "Reconoce por que \"Lo que debe quedar despues de Codex\" necesita evidencia y no solo respuesta.",
+          "does": "Formula una peticion verificable con limite de alcance.",
+          "decides": "Convertir la duda en material de tutoria si se repite.",
+          "vendor": "codex",
+          "usefulnessScore": 92,
+          "memoryCheck": "Puede nombrar el riesgo principal sin mirar la slide.",
+          "productionPass": "2000-final-direction"
+        }
+      },
+      "production": {
+        "audioVersion": "audio-prod-v2-2026-05-18",
+        "voiceProfileId": "codexReflection",
+        "voice": "es-ES-AlvaroNeural",
+        "rate": "+3%",
+        "pitch": "+0Hz",
+        "energy": "reflexiva",
+        "emphasis": "riesgo, permiso y evidencia",
+        "pauseMs": 260,
+        "role": "reflection",
+        "reviewRubric": {
+          "learns": "Reconoce por que \"Lo que debe quedar despues de Codex\" necesita evidencia y no solo respuesta.",
+          "does": "Formula una peticion verificable con limite de alcance.",
+          "decides": "Convertir la duda en material de tutoria si se repite.",
+          "memoryCheck": "Puede nombrar el riesgo principal sin mirar la slide."
+        },
+        "prosodyNotes": {
+          "pace": "+3%",
+          "pause": "260ms antes de la decision",
+          "emphasis": "riesgo, permiso y evidencia",
+          "energy": "reflexiva"
+        },
+        "pronunciationPass": "spain-voice-units-v1"
+      }
     }
-  ]
+  ],
+  "generatedFrom": "scripts/rebuild-masterclass-videos.mjs",
+  "production": {
+    "audioProductionVersion": "audio-prod-v2-2026-05-18",
+    "productionPass": "2000-final-direction",
+    "vendor": "codex",
+    "narrativePass": "teacher-contract-v1",
+    "pronunciationPass": "spain-voice-units-v1"
+  }
 }

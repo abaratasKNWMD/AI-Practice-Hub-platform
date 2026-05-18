@@ -1,0 +1,4212 @@
+WEBVTT
+
+NOTE cl-workshop-60m-memory-to-automation - Workshop 1 hora Claude - De memoria a automatizacion controlada
+
+1
+00:00:00.450 --> 00:00:03.038
+Objetivo de esta clase:
+
+2
+00:00:03.083 --> 00:00:07.615
+pasar de memoria dispersa a automatizacion controlada con Claude.
+
+3
+00:00:07.660 --> 00:00:14.928
+Al final debes poder separar CLAUDE.md, skill, subagente, hook, M C P y evaluacion.
+
+4
+00:00:14.973 --> 00:00:21.833
+La ruta sera: auditoria de contexto, skill, subagente, permisos, hook y rollout.
+
+5
+00:00:21.878 --> 00:00:24.898
+Durante el video mira esta decision:
+
+6
+00:00:24.943 --> 00:00:29.499
+que se guarda en memoria y que debe convertirse en control versionado.
+
+7
+00:00:30.450 --> 00:00:37.070
+Contexto visible: En una hora vamos a separar memoria, skill, subagente, M C P y hook.
+
+8
+00:00:37.115 --> 00:00:42.535
+Situacion minuto 0: Claude solo avanza si el siguiente humano entiende el por que.
+
+9
+00:00:42.580 --> 00:00:47.832
+Evidencia minuto 0: skill versionada, hook probado y owner claro.
+
+10
+00:00:47.877 --> 00:00:50.201
+Claude minuto 0:
+
+11
+00:00:50.246 --> 00:00:52.570
+Claude minuto 0:
+
+12
+00:00:52.615 --> 00:00:58.203
+Mostrar outputs y explicar que se revisan como artefactos de plataforma para "Claude no
+
+13
+00:00:56.948 --> 00:00:59.920
+para "Claude no necesita mas charla
+
+14
+00:00:57.644 --> 00:00:59.920
+necesita memori".
+
+15
+00:00:55.052 --> 00:00:59.920
+necesita mas charla (Claude, minuto 0, paso 2)
+
+16
+00:00:54.332 --> 00:00:59.920
+necesita memori". (Claude, minuto 0, paso 2)
+
+17
+00:01:00.450 --> 00:01:04.790
+Decision humana: El objetivo no es tener mas archivos
+
+18
+00:01:04.835 --> 00:01:08.407
+es reducir repeticion y aumentar control.
+
+19
+00:01:08.452 --> 00:01:12.840
+Situacion minuto 1: la pantalla no busca impresionar;
+
+20
+00:01:12.885 --> 00:01:16.529
+busca cerrar "Claude no necesita mas charla
+
+21
+00:01:16.574 --> 00:01:20.218
+necesita memoria operativ" con evidencia.
+
+22
+00:01:20.263 --> 00:01:23.907
+busca cerrar "Claude no necesita mas charla
+
+23
+00:01:23.952 --> 00:01:27.596
+necesita memoria operativ" con evidencia.
+
+24
+00:01:24.644 --> 00:01:29.920
+Evidencia minuto 1: skill versionada, hook probado y owner claro.
+
+25
+00:01:22.964 --> 00:01:29.920
+permisos y automatizacion sin rollback. (Claude, minuto 1, paso 27)
+
+26
+00:01:27.572 --> 00:01:29.920
+Claude minuto 1:
+
+27
+00:01:27.572 --> 00:01:29.920
+Claude minuto 1:
+
+28
+00:01:24.164 --> 00:01:29.920
+Mostrar outputs y explicar que se revisan como artefactos de plataforma para "Claude no
+
+29
+00:01:26.876 --> 00:01:29.920
+para "Claude no necesita mas charla
+
+30
+00:01:27.596 --> 00:01:29.920
+necesita memori".
+
+31
+00:01:25.004 --> 00:01:29.920
+necesita mas charla (Claude, minuto 1, paso 3)
+
+32
+00:01:24.212 --> 00:01:29.920
+necesita memori". (Claude, minuto 1, paso 3)
+
+33
+00:01:30.450 --> 00:01:32.894
+Evidencia minuto 1:
+
+34
+00:01:32.939 --> 00:01:37.615
+hay una salida que otro perfil puede revisar sin rehacer el contexto.
+
+35
+00:01:37.660 --> 00:01:42.936
+Situacion minuto 1: alguien tendra que mantener esta salida despues de la demo.
+
+36
+00:01:42.981 --> 00:01:47.105
+Evidencia minuto 1: "Claude no necesita mas charla
+
+37
+00:01:47.150 --> 00:01:50.986
+necesita memoria operativ" no se cierra sin test
+
+38
+00:01:51.031 --> 00:01:53.787
+captura o criterio escrito.
+
+39
+00:01:53.832 --> 00:01:57.668
+necesita memoria operativ" no se cierra sin test
+
+40
+00:01:53.828 --> 00:01:59.920
+captura o criterio escrito. (Claude, minuto 1, paso 5)
+
+41
+00:01:57.644 --> 00:01:59.920
+Claude minuto 1:
+
+42
+00:01:57.644 --> 00:01:59.920
+Claude minuto 1:
+
+43
+00:01:54.332 --> 00:01:59.920
+Mostrar outputs y explicar que se revisan como artefactos de plataforma para "Claude no
+
+44
+00:01:56.948 --> 00:01:59.920
+para "Claude no necesita mas charla
+
+45
+00:01:57.644 --> 00:01:59.920
+necesita memori".
+
+46
+00:01:55.172 --> 00:01:59.920
+necesita mas charla (Claude, minuto 1, paso 4)
+
+47
+00:01:54.404 --> 00:01:59.920
+necesita memori". (Claude, minuto 1, paso 4)
+
+48
+00:02:00.450 --> 00:02:07.142
+Coste y riesgo: En una hora vamos a separar memoria, skill, subagente, M C P y hook.
+
+49
+00:02:07.187 --> 00:02:12.271
+Situacion minuto 2: Claude recibe "Claude no necesita mas charla
+
+50
+00:02:12.316 --> 00:02:17.112
+necesita memoria operativ" y debe convertirlo en trabajo revisable.
+
+51
+00:02:17.157 --> 00:02:21.953
+necesita memoria operativ" y debe convertirlo en trabajo revisable.
+
+52
+00:02:21.998 --> 00:02:24.562
+Evidencia minuto 2:
+
+53
+00:02:24.607 --> 00:02:29.403
+hay una salida que otro perfil puede revisar sin rehacer el contexto.
+
+54
+00:02:25.076 --> 00:02:29.920
+necesita memoria operativ" queda ligado a prueba owner y decision.
+
+55
+00:02:27.524 --> 00:02:29.920
+Claude minuto 2:
+
+56
+00:02:27.524 --> 00:02:29.920
+Claude minuto 2:
+
+57
+00:02:24.164 --> 00:02:29.920
+Mostrar outputs y explicar que se revisan como artefactos de plataforma para "Claude no
+
+58
+00:02:26.876 --> 00:02:29.920
+para "Claude no necesita mas charla
+
+59
+00:02:27.596 --> 00:02:29.920
+necesita memori".
+
+60
+00:02:24.908 --> 00:02:29.920
+necesita mas charla (Claude, minuto 2, paso 5)
+
+61
+00:02:24.164 --> 00:02:29.920
+necesita memori". (Claude, minuto 2, paso 5)
+
+62
+00:02:30.450 --> 00:02:34.478
+Checkpoint: El objetivo no es tener mas archivos
+
+63
+00:02:34.523 --> 00:02:38.095
+es reducir repeticion y aumentar control.
+
+64
+00:02:38.140 --> 00:02:43.608
+Situacion minuto 2: alguien tendra que mantener esta salida despues de la demo.
+
+65
+00:02:43.653 --> 00:02:47.897
+Evidencia minuto 2: "Claude no necesita mas charla
+
+66
+00:02:47.942 --> 00:02:51.874
+necesita memoria operativ" no se cierra sin test
+
+67
+00:02:51.919 --> 00:02:54.747
+captura o criterio escrito.
+
+68
+00:02:54.792 --> 00:02:58.724
+necesita memoria operativ" no se cierra sin test
+
+69
+00:02:53.708 --> 00:02:59.920
+captura o criterio escrito. (Claude, minuto 2, paso 6)
+
+70
+00:02:57.524 --> 00:02:59.920
+Claude minuto 2:
+
+71
+00:02:57.524 --> 00:02:59.920
+Claude minuto 2:
+
+72
+00:02:54.164 --> 00:02:59.920
+Mostrar outputs y explicar que se revisan como artefactos de plataforma para "Claude no
+
+73
+00:02:56.876 --> 00:02:59.920
+para "Claude no necesita mas charla
+
+74
+00:02:57.596 --> 00:02:59.920
+necesita memori".
+
+75
+00:02:54.956 --> 00:02:59.920
+necesita mas charla (Claude, minuto 2, paso 6)
+
+76
+00:02:54.188 --> 00:02:59.920
+necesita memori". (Claude, minuto 2, paso 6)
+
+77
+00:03:00.450 --> 00:03:05.246
+Accion minuto 3: comparar la respuesta con el criterio de cierre
+
+78
+00:03:05.291 --> 00:03:08.119
+no con la sensacion de velocidad.
+
+79
+00:03:08.164 --> 00:03:12.936
+Claude brilla cuando el equipo convierte conocimiento repetido en sistema.
+
+80
+00:03:12.981 --> 00:03:17.969
+Situacion minuto 3: Claude recibe "Claude no necesita mas charla
+
+81
+00:03:18.014 --> 00:03:22.690
+necesita memoria operativ" y debe convertirlo en trabajo revisable.
+
+82
+00:03:22.735 --> 00:03:27.411
+necesita memoria operativ" y debe convertirlo en trabajo revisable.
+
+83
+00:03:27.380 --> 00:03:29.920
+Evidencia minuto 3:
+
+84
+00:03:25.244 --> 00:03:29.920
+hay una salida que otro perfil puede revisar sin rehacer el contexto.
+
+85
+00:03:25.196 --> 00:03:29.920
+necesita memoria operativ" queda ligado a prueba owner y decision.
+
+86
+00:03:27.548 --> 00:03:29.920
+Claude minuto 3:
+
+87
+00:03:27.548 --> 00:03:29.920
+Claude minuto 3:
+
+88
+00:03:24.332 --> 00:03:29.920
+Mostrar outputs y explicar que se revisan como artefactos de plataforma para "Claude no
+
+89
+00:03:26.948 --> 00:03:29.920
+para "Claude no necesita mas charla
+
+90
+00:03:27.644 --> 00:03:29.920
+necesita memori".
+
+91
+00:03:24.980 --> 00:03:29.920
+necesita mas charla (Claude, minuto 3, paso 7)
+
+92
+00:03:24.308 --> 00:03:29.920
+necesita memori". (Claude, minuto 3, paso 7)
+
+93
+00:03:30.450 --> 00:03:37.070
+Contexto visible: En una hora vamos a separar memoria, skill, subagente, M C P y hook.
+
+94
+00:03:37.115 --> 00:03:42.007
+Situacion minuto 3: el equipo mira "Claude no necesita mas charla
+
+95
+00:03:42.052 --> 00:03:46.560
+necesita memoria operativ" dentro del memoria skill o M C P
+
+96
+00:03:46.605 --> 00:03:49.529
+con coste y permiso visibles.
+
+97
+00:03:49.574 --> 00:03:54.082
+necesita memoria operativ" dentro del memoria skill o M C P
+
+98
+00:03:53.732 --> 00:03:59.920
+con coste y permiso visibles. (Claude, minuto 3, paso 8)
+
+99
+00:03:55.700 --> 00:03:59.920
+Evidencia minuto 3: "Claude no necesita mas charla
+
+100
+00:03:56.084 --> 00:03:59.920
+necesita memoria operativ" no se cierra sin test
+
+101
+00:03:57.164 --> 00:03:59.920
+captura o criterio escrito.
+
+102
+00:03:57.548 --> 00:03:59.920
+Claude minuto 3:
+
+103
+00:03:57.548 --> 00:03:59.920
+Claude minuto 3:
+
+104
+00:03:54.332 --> 00:03:59.920
+Mostrar outputs y explicar que se revisan como artefactos de plataforma para "Claude no
+
+105
+00:03:56.948 --> 00:03:59.920
+para "Claude no necesita mas charla
+
+106
+00:03:57.644 --> 00:03:59.920
+necesita memori".
+
+107
+00:03:55.004 --> 00:03:59.920
+necesita mas charla (Claude, minuto 3, paso 8)
+
+108
+00:03:54.356 --> 00:03:59.920
+necesita memori". (Claude, minuto 3, paso 8)
+
+109
+00:04:00.450 --> 00:04:04.790
+Decision humana: El objetivo no es tener mas archivos
+
+110
+00:04:04.835 --> 00:04:08.407
+es reducir repeticion y aumentar control.
+
+111
+00:04:08.452 --> 00:04:14.160
+Situacion minuto 4: Claude solo avanza si el siguiente humano entiende el por que.
+
+112
+00:04:14.205 --> 00:04:19.673
+Evidencia minuto 4: skill versionada, hook probado y owner claro.
+
+113
+00:04:19.718 --> 00:04:22.162
+Claude minuto 4:
+
+114
+00:04:22.207 --> 00:04:24.651
+Claude minuto 4:
+
+115
+00:04:24.164 --> 00:04:29.920
+Mostrar outputs y explicar que se revisan como artefactos de plataforma para "Claude no
+
+116
+00:04:26.876 --> 00:04:29.920
+para "Claude no necesita mas charla
+
+117
+00:04:27.596 --> 00:04:29.920
+necesita memori".
+
+118
+00:04:24.812 --> 00:04:29.920
+necesita mas charla (Claude, minuto 4, paso 9)
+
+119
+00:04:24.092 --> 00:04:29.920
+necesita memori". (Claude, minuto 4, paso 9)
+
+120
+00:04:30.450 --> 00:04:36.158
+Situacion minuto 4: Claude solo avanza si el siguiente humano entiende el por que.
+
+121
+00:04:36.203 --> 00:04:41.575
+Tension minuto 4: aceptar rapido puede esconder contexto infinito
+
+122
+00:04:41.620 --> 00:04:45.000
+permisos y automatizacion sin rollback.
+
+123
+00:04:45.045 --> 00:04:52.169
+permisos y automatizacion sin rollback. (Claude, minuto 4, paso 28)
+
+124
+00:04:52.214 --> 00:04:57.682
+Accion minuto 4: nombrar modelo, permiso y limite antes de iterar.
+
+125
+00:04:54.332 --> 00:04:59.920
+Evidencia minuto 4: el artefacto muestra que se controlo contexto infinito
+
+126
+00:04:56.540 --> 00:04:59.920
+permisos y automatizacion sin rollback.
+
+127
+00:04:54.092 --> 00:04:59.920
+owner y decision. (Claude, minuto 4, paso 4)
+
+128
+00:05:00.450 --> 00:05:05.366
+Pantalla de accion: No todo lo que sabemos debe ir en CLAUDE.md.
+
+129
+00:05:05.411 --> 00:05:11.335
+Situacion minuto 5: la pantalla no busca impresionar; busca cerrar "Memoria
+
+130
+00:05:11.380 --> 00:05:14.352
+rules o skill" con evidencia.
+
+131
+00:05:14.397 --> 00:05:17.369
+rules o skill" con evidencia.
+
+132
+00:05:17.414 --> 00:05:22.522
+Evidencia minuto 5: "Memoria rules o skill" no se cierra sin test
+
+133
+00:05:22.567 --> 00:05:25.395
+captura o criterio escrito.
+
+134
+00:05:22.868 --> 00:05:29.920
+permisos y automatizacion sin rollback. (Claude, minuto 5, paso 29)
+
+135
+00:05:24.188 --> 00:05:29.920
+Claude minuto 5: El grupo clasifica cinco piezas de contexto en memoria rule
+
+136
+00:05:22.820 --> 00:05:29.920
+skill o subagente en "Memoria rules o skill". (Claude, minuto 5, paso 1)
+
+137
+00:05:30.450 --> 00:05:35.174
+Contexto visible: Si una instruccion es estable vive en memoria.
+
+138
+00:05:35.219 --> 00:05:38.335
+Si es un procedimiento probablemen.
+
+139
+00:05:38.380 --> 00:05:42.624
+Situacion minuto 5: Claude recibe "Memoria
+
+140
+00:05:42.669 --> 00:05:46.937
+rules o skill" y debe convertirlo en trabajo revisable.
+
+141
+00:05:46.982 --> 00:05:51.250
+rules o skill" y debe convertirlo en trabajo revisable.
+
+142
+00:05:51.295 --> 00:05:53.883
+Evidencia minuto 5:
+
+143
+00:05:53.928 --> 00:05:58.724
+hay una salida que otro perfil puede revisar sin rehacer el contexto.
+
+144
+00:05:54.188 --> 00:05:59.920
+Claude minuto 5: El grupo clasifica cinco piezas de contexto en memoria rule
+
+145
+00:05:52.796 --> 00:05:59.920
+skill o subagente en "Memoria rules o skill". (Claude, minuto 5, paso 2)
+
+146
+00:06:00.450 --> 00:06:06.710
+Decision humana: Si requiere rol y criterio independiente, empieza a parecer subagente.
+
+147
+00:06:06.755 --> 00:06:12.415
+Situacion minuto 6: el equipo mira "Memoria rules o skill" dentro del memoria
+
+148
+00:06:12.460 --> 00:06:16.344
+skill o M C P con coste y permiso visibles.
+
+149
+00:06:16.389 --> 00:06:23.729
+skill o M C P con coste y permiso visibles. (Claude, minuto 6, paso 7)
+
+150
+00:06:23.774 --> 00:06:29.218
+Evidencia minuto 6: el artefacto muestra que se controlo contexto infinito
+
+151
+00:06:26.540 --> 00:06:29.920
+permisos y automatizacion sin rollback.
+
+152
+00:06:24.212 --> 00:06:29.920
+Claude minuto 6: El grupo clasifica cinco piezas de contexto en memoria rule
+
+153
+00:06:22.724 --> 00:06:29.920
+skill o subagente en "Memoria rules o skill". (Claude, minuto 6, paso 3)
+
+154
+00:06:30.450 --> 00:06:33.062
+Evidencia minuto 6:
+
+155
+00:06:33.107 --> 00:06:37.903
+hay una salida que otro perfil puede revisar sin rehacer el contexto.
+
+156
+00:06:37.948 --> 00:06:43.440
+Situacion minuto 6: alguien tendra que mantener esta salida despues de la demo.
+
+157
+00:06:43.485 --> 00:06:48.521
+Evidencia minuto 6: "Memoria rules o skill" no se cierra sin test
+
+158
+00:06:48.566 --> 00:06:51.394
+captura o criterio escrito.
+
+159
+00:06:51.439 --> 00:06:57.723
+captura o criterio escrito. (Claude, minuto 6, paso 7)
+
+160
+00:06:54.212 --> 00:06:59.920
+Claude minuto 6: El grupo clasifica cinco piezas de contexto en memoria rule
+
+161
+00:06:52.796 --> 00:06:59.920
+skill o subagente en "Memoria rules o skill". (Claude, minuto 6, paso 4)
+
+162
+00:07:00.450 --> 00:07:04.934
+Coste y riesgo: Si una instruccion es estable vive en memoria.
+
+163
+00:07:04.979 --> 00:07:08.023
+Si es un procedimiento probablemen.
+
+164
+00:07:08.068 --> 00:07:13.632
+Situacion minuto 7: el equipo mira "Memoria rules o skill" dentro del memoria
+
+165
+00:07:13.677 --> 00:07:17.465
+skill o M C P con coste y permiso visibles.
+
+166
+00:07:17.510 --> 00:07:24.730
+skill o M C P con coste y permiso visibles. (Claude, minuto 7, paso 8)
+
+167
+00:07:24.500 --> 00:07:29.920
+Evidencia minuto 7: el artefacto muestra que se controlo contexto infinito
+
+168
+00:07:26.636 --> 00:07:29.920
+permisos y automatizacion sin rollback.
+
+169
+00:07:24.308 --> 00:07:29.920
+Claude minuto 7: El grupo clasifica cinco piezas de contexto en memoria rule
+
+170
+00:07:22.868 --> 00:07:29.920
+skill o subagente en "Memoria rules o skill". (Claude, minuto 7, paso 5)
+
+171
+00:07:30.450 --> 00:07:36.158
+Checkpoint: Si requiere rol y criterio independiente, empieza a parecer subagente.
+
+172
+00:07:36.203 --> 00:07:41.983
+Situacion minuto 7: la pantalla no busca impresionar; busca cerrar "Memoria
+
+173
+00:07:42.028 --> 00:07:44.928
+rules o skill" con evidencia.
+
+174
+00:07:44.973 --> 00:07:47.873
+rules o skill" con evidencia.
+
+175
+00:07:47.918 --> 00:07:52.810
+Evidencia minuto 7: "Memoria rules o skill" no se cierra sin test
+
+176
+00:07:52.855 --> 00:07:55.611
+captura o criterio escrito.
+
+177
+00:07:53.228 --> 00:07:59.920
+permisos y automatizacion sin rollback. (Claude, minuto 7, paso 30)
+
+178
+00:07:54.308 --> 00:07:59.920
+Claude minuto 7: El grupo clasifica cinco piezas de contexto en memoria rule
+
+179
+00:07:52.892 --> 00:07:59.920
+skill o subagente en "Memoria rules o skill". (Claude, minuto 7, paso 6)
+
+180
+00:08:00.450 --> 00:08:05.966
+Situacion minuto 8: alguien tendra que mantener esta salida despues de la demo.
+
+181
+00:08:06.011 --> 00:08:11.959
+Tension minuto 8: el agente puede avanzar mas rapido que nuestra capacidad de revisar.
+
+182
+00:08:12.004 --> 00:08:17.496
+Accion minuto 8: pedir salida pequena, verificable y con owner.
+
+183
+00:08:17.541 --> 00:08:21.209
+Evidencia minuto 8: "Cuando Memoria
+
+184
+00:08:21.254 --> 00:08:26.290
+rules o skill se va de las manos" queda ligado a prueba owner y decision.
+
+185
+00:08:24.884 --> 00:08:29.920
+rules o skill se va de las manos" queda ligado a prueba owner y decision.
+
+186
+00:08:30.450 --> 00:08:35.174
+Contexto visible: Si una instruccion es estable vive en memoria.
+
+187
+00:08:35.219 --> 00:08:38.335
+Si es un procedimiento probablemen.
+
+188
+00:08:38.380 --> 00:08:44.352
+Situacion minuto 8: la pantalla no busca impresionar; busca cerrar "Memoria
+
+189
+00:08:44.397 --> 00:08:47.369
+rules o skill" con evidencia.
+
+190
+00:08:47.414 --> 00:08:50.386
+rules o skill" con evidencia.
+
+191
+00:08:50.431 --> 00:08:55.467
+Evidencia minuto 8: "Memoria rules o skill" no se cierra sin test
+
+192
+00:08:55.512 --> 00:08:58.340
+captura o criterio escrito.
+
+193
+00:08:52.892 --> 00:08:59.920
+permisos y automatizacion sin rollback. (Claude, minuto 8, paso 31)
+
+194
+00:08:54.164 --> 00:08:59.920
+Claude minuto 8: El grupo clasifica cinco piezas de contexto en memoria rule
+
+195
+00:08:52.748 --> 00:08:59.920
+skill o subagente en "Memoria rules o skill". (Claude, minuto 8, paso 7)
+
+196
+00:09:00.450 --> 00:09:06.710
+Decision humana: Si requiere rol y criterio independiente, empieza a parecer subagente.
+
+197
+00:09:06.755 --> 00:09:12.223
+Situacion minuto 9: alguien tendra que mantener esta salida despues de la demo.
+
+198
+00:09:12.268 --> 00:09:17.280
+Evidencia minuto 9: "Memoria rules o skill" no se cierra sin test
+
+199
+00:09:17.325 --> 00:09:20.153
+captura o criterio escrito.
+
+200
+00:09:20.198 --> 00:09:26.506
+captura o criterio escrito. (Claude, minuto 9, paso 8)
+
+201
+00:09:24.164 --> 00:09:29.920
+Claude minuto 9: El grupo clasifica cinco piezas de contexto en memoria rule
+
+202
+00:09:22.748 --> 00:09:29.920
+skill o subagente en "Memoria rules o skill". (Claude, minuto 9, paso 8)
+
+203
+00:09:30.450 --> 00:09:35.462
+Evidencia minuto 9: "Memoria rules o skill" no se cierra sin test
+
+204
+00:09:35.507 --> 00:09:38.335
+captura o criterio escrito.
+
+205
+00:09:38.380 --> 00:09:44.616
+captura o criterio escrito. (Claude, minuto 9, paso 9)
+
+206
+00:09:44.661 --> 00:09:50.345
+Situacion minuto 9: el equipo mira "Memoria rules o skill" dentro del memoria
+
+207
+00:09:50.390 --> 00:09:54.274
+skill o M C P con coste y permiso visibles.
+
+208
+00:09:54.319 --> 00:09:58.587
+rules o skill" y debe convertirlo en trabajo revisable.
+
+209
+00:09:54.428 --> 00:09:59.920
+Evidencia minuto 9: el artefacto muestra que se controlo contexto infinito
+
+210
+00:09:56.540 --> 00:09:59.920
+permisos y automatizacion sin rollback.
+
+211
+00:09:54.164 --> 00:09:59.920
+Claude minuto 9: El grupo clasifica cinco piezas de contexto en memoria rule
+
+212
+00:09:52.796 --> 00:09:59.920
+skill o subagente en "Memoria rules o skill". (Claude, minuto 9, paso 9)
+
+213
+00:10:00.450 --> 00:10:07.070
+Pantalla de accion: La memoria larga no siempre ayuda. A veces diluye lo importante.
+
+214
+00:10:07.115 --> 00:10:11.527
+Situacion 10 minutos: la pantalla no busca impresionar;
+
+215
+00:10:11.572 --> 00:10:15.792
+busca cerrar "CLAUDE.md podado" con evidencia.
+
+216
+00:10:15.837 --> 00:10:20.057
+busca cerrar "CLAUDE.md podado" con evidencia.
+
+217
+00:10:20.102 --> 00:10:25.162
+Evidencia 10 minutos: "CLAUDE.md podado" no se cierra sin test
+
+218
+00:10:25.207 --> 00:10:27.963
+captura o criterio escrito.
+
+219
+00:10:23.012 --> 00:10:29.920
+permisos y automatizacion sin rollback. (Claude, 10 minutos, paso 32)
+
+220
+00:10:25.772 --> 00:10:29.920
+Claude 10 minutos: Simular respuesta con tabla keep
+
+221
+00:10:22.844 --> 00:10:29.920
+move-to-skill y delete para "CLAUDE.md podado". (Claude, 10 minutos, paso 1)
+
+222
+00:10:30.450 --> 00:10:35.846
+Contexto visible: Pedimos a Claude que audite la memoria como un documento vivo.
+
+223
+00:10:36.026 --> 00:10:41.518
+Situacion 10 minutos: Claude solo avanza si el siguiente humano entiende el por que.
+
+224
+00:10:41.698 --> 00:10:46.950
+Evidencia 10 minutos: skill versionada, hook probado y owner claro.
+
+225
+00:10:47.130 --> 00:10:51.278
+Claude 10 minutos: Simular respuesta con tabla keep
+
+226
+00:10:51.458 --> 00:10:58.630
+move-to-skill y delete para "CLAUDE.md podado". (Claude, 10 minutos, paso 2)
+
+227
+00:11:00.450 --> 00:11:04.574
+Decision humana: El resultado debe ser mas corto
+
+228
+00:11:04.619 --> 00:11:07.831
+mas accionable y mas facil de mantener.
+
+229
+00:11:07.876 --> 00:11:12.336
+Situacion 11 minutos: la pantalla no busca impresionar;
+
+230
+00:11:12.381 --> 00:11:16.601
+busca cerrar "CLAUDE.md podado" con evidencia.
+
+231
+00:11:16.646 --> 00:11:20.866
+busca cerrar "CLAUDE.md podado" con evidencia.
+
+232
+00:11:20.911 --> 00:11:25.971
+Evidencia 11 minutos: "CLAUDE.md podado" no se cierra sin test
+
+233
+00:11:26.016 --> 00:11:28.772
+captura o criterio escrito.
+
+234
+00:11:23.036 --> 00:11:29.920
+permisos y automatizacion sin rollback. (Claude, 11 minutos, paso 33)
+
+235
+00:11:25.748 --> 00:11:29.920
+Claude 11 minutos: Simular respuesta con tabla keep
+
+236
+00:11:22.748 --> 00:11:29.920
+move-to-skill y delete para "CLAUDE.md podado". (Claude, 11 minutos, paso 3)
+
+237
+00:11:30.450 --> 00:11:33.086
+Evidencia 11 minutos:
+
+238
+00:11:33.131 --> 00:11:37.807
+hay una salida que otro perfil puede revisar sin rehacer el contexto.
+
+239
+00:11:37.852 --> 00:11:43.224
+Situacion 11 minutos: alguien tendra que mantener esta salida despues de la demo.
+
+240
+00:11:43.269 --> 00:11:48.329
+Evidencia 11 minutos: "CLAUDE.md podado" no se cierra sin test
+
+241
+00:11:48.374 --> 00:11:51.130
+captura o criterio escrito.
+
+242
+00:11:51.175 --> 00:11:55.347
+Claude 11 minutos: Simular respuesta con tabla keep
+
+243
+00:11:52.724 --> 00:11:59.920
+move-to-skill y delete para "CLAUDE.md podado". (Claude, 11 minutos, paso 4)
+
+244
+00:12:00.450 --> 00:12:05.822
+Coste y riesgo: Pedimos a Claude que audite la memoria como un documento vivo.
+
+245
+00:12:05.867 --> 00:12:08.575
+Situacion 12 minutos:
+
+246
+00:12:08.620 --> 00:12:14.136
+Claude recibe "CLAUDE.md podado" y debe convertirlo en trabajo revisable.
+
+247
+00:12:14.181 --> 00:12:20.513
+Evidencia 12 minutos: "CLAUDE.md podado" queda ligado a prueba, owner y decision.
+
+248
+00:12:20.558 --> 00:12:24.778
+Claude 12 minutos: Simular respuesta con tabla keep
+
+249
+00:12:22.436 --> 00:12:29.920
+move-to-skill y delete para "CLAUDE.md podado". (Claude, 12 minutos, paso 5)
+
+250
+00:12:30.450 --> 00:12:33.158
+Situacion 12 minutos:
+
+251
+00:12:33.203 --> 00:12:38.719
+el equipo mira "Cuando CLAUDE.md podado se va de las manos" dentro del memoria
+
+252
+00:12:38.764 --> 00:12:42.648
+skill o M C P con coste y permiso visibles.
+
+253
+00:12:42.693 --> 00:12:48.209
+el equipo mira "Cuando CLAUDE.md podado se va de las manos" dentro del memoria
+
+254
+00:12:48.254 --> 00:12:55.618
+skill o M C P con coste y permiso visibles. (Claude, 12 minutos, paso 9)
+
+255
+00:12:53.948 --> 00:12:59.920
+Tension 12 minutos: el agente puede avanzar mas rapido que nuestra capacidad de revisar.
+
+256
+00:12:54.572 --> 00:12:59.920
+Accion 12 minutos: pedir salida pequena, verificable y con owner.
+
+257
+00:12:53.492 --> 00:12:59.920
+no con la sensacion de velocidad. (Claude, 12 minutos, paso 8)
+
+258
+00:12:57.284 --> 00:12:59.920
+Evidencia 12 minutos:
+
+259
+00:12:55.124 --> 00:12:59.920
+hay una salida que otro perfil puede revisar sin rehacer el contexto.
+
+260
+00:12:55.076 --> 00:12:59.920
+"Cuando CLAUDE.md podado se va de las manos" no se cierra sin test
+
+261
+00:12:53.636 --> 00:12:59.920
+captura o criterio escrito. (Claude, 12 minutos, paso 10)
+
+262
+00:13:00.450 --> 00:13:07.262
+Pantalla de accion: La memoria larga no siempre ayuda. A veces diluye lo importante.
+
+263
+00:13:07.307 --> 00:13:13.039
+Situacion 13 minutos: Claude solo avanza si el siguiente humano entiende el por que.
+
+264
+00:13:13.084 --> 00:13:18.552
+Evidencia 13 minutos: skill versionada, hook probado y owner claro.
+
+265
+00:13:18.597 --> 00:13:22.841
+Claude 13 minutos: Simular respuesta con tabla keep
+
+266
+00:13:22.436 --> 00:13:29.920
+move-to-skill y delete para "CLAUDE.md podado". (Claude, 13 minutos, paso 6)
+
+267
+00:13:30.450 --> 00:13:36.014
+Contexto visible: Pedimos a Claude que audite la memoria como un documento vivo.
+
+268
+00:13:36.059 --> 00:13:41.887
+Situacion 13 minutos: el equipo mira "CLAUDE.md podado" dentro del memoria
+
+269
+00:13:41.932 --> 00:13:45.816
+skill o M C P con coste y permiso visibles.
+
+270
+00:13:45.861 --> 00:13:53.201
+skill o M C P con coste y permiso visibles. (Claude, 13 minutos, paso 10)
+
+271
+00:13:53.246 --> 00:13:58.834
+Evidencia 13 minutos: el artefacto muestra que se controlo contexto infinito
+
+272
+00:13:56.540 --> 00:13:59.920
+permisos y automatizacion sin rollback.
+
+273
+00:13:55.676 --> 00:13:59.920
+Claude 13 minutos: Simular respuesta con tabla keep
+
+274
+00:13:52.436 --> 00:13:59.920
+move-to-skill y delete para "CLAUDE.md podado". (Claude, 13 minutos, paso 7)
+
+275
+00:14:00.450 --> 00:14:04.574
+Decision humana: El resultado debe ser mas corto
+
+276
+00:14:04.619 --> 00:14:07.831
+mas accionable y mas facil de mantener.
+
+277
+00:14:07.876 --> 00:14:13.536
+Situacion 14 minutos: Claude solo avanza si el siguiente humano entiende el por que.
+
+278
+00:14:13.581 --> 00:14:18.929
+Evidencia 14 minutos: skill versionada, hook probado y owner claro.
+
+279
+00:14:18.974 --> 00:14:23.266
+Claude 14 minutos: Simular respuesta con tabla keep
+
+280
+00:14:22.556 --> 00:14:29.920
+move-to-skill y delete para "CLAUDE.md podado". (Claude, 14 minutos, paso 8)
+
+281
+00:14:30.450 --> 00:14:35.798
+Evidencia 14 minutos: "CLAUDE.md podado" no se cierra sin test
+
+282
+00:14:35.843 --> 00:14:38.671
+captura o criterio escrito.
+
+283
+00:14:38.716 --> 00:14:41.616
+Situacion 14 minutos:
+
+284
+00:14:41.661 --> 00:14:47.177
+Claude recibe "CLAUDE.md podado" y debe convertirlo en trabajo revisable.
+
+285
+00:14:47.222 --> 00:14:53.746
+Evidencia 14 minutos: "CLAUDE.md podado" queda ligado a prueba, owner y decision.
+
+286
+00:14:53.791 --> 00:14:58.179
+Claude 14 minutos: Simular respuesta con tabla keep
+
+287
+00:14:52.316 --> 00:14:59.920
+move-to-skill y delete para "CLAUDE.md podado". (Claude, 14 minutos, paso 9)
+
+288
+00:15:00.450 --> 00:15:05.174
+Pantalla de accion: Cuando repetimos el mismo flujo tres veces
+
+289
+00:15:05.219 --> 00:15:08.095
+probablemente merece una skill.
+
+290
+00:15:08.140 --> 00:15:13.632
+Situacion 15 minutos: alguien tendra que mantener esta salida despues de la demo.
+
+291
+00:15:13.677 --> 00:15:19.961
+Evidencia 15 minutos: "SKILL.md" no se cierra sin test, captura o criterio escrito.
+
+292
+00:15:20.006 --> 00:15:22.474
+Claude 15 minutos:
+
+293
+00:15:22.519 --> 00:15:24.987
+Claude 15 minutos:
+
+294
+00:15:24.428 --> 00:15:29.920
+Mostrar estructura de skill y pedir al grupo revisar stop conditions para "SKILL.md"
+
+295
+00:15:27.644 --> 00:15:29.920
+para "SKILL.md".
+
+296
+00:15:30.450 --> 00:15:35.198
+Contexto visible: La skill fix-tests define cuando se usa que lee
+
+297
+00:15:35.243 --> 00:15:38.119
+que puede editar y cuando se deti.
+
+298
+00:15:38.164 --> 00:15:44.520
+Situacion 15 minutos: Claude recibe "SKILL.md" y debe convertirlo en trabajo revisable.
+
+299
+00:15:44.565 --> 00:15:50.369
+Evidencia 15 minutos: "SKILL.md" queda ligado a prueba, owner y decision.
+
+300
+00:15:50.414 --> 00:15:52.882
+Claude 15 minutos:
+
+301
+00:15:52.927 --> 00:15:55.395
+Claude 15 minutos:
+
+302
+00:15:54.428 --> 00:15:59.920
+Mostrar estructura de skill y pedir al grupo revisar stop conditions para "SKILL.md"
+
+303
+00:15:57.644 --> 00:15:59.920
+para "SKILL.md".
+
+304
+00:16:00.450 --> 00:16:03.374
+Situacion 16 minutos:
+
+305
+00:16:03.419 --> 00:16:08.863
+Claude recibe "Cuando SKILL.md se va de las manos" y debe convertirlo en trabajo
+
+306
+00:16:08.908 --> 00:16:10.944
+revisable.
+
+307
+00:16:10.989 --> 00:16:16.433
+Claude recibe "Cuando SKILL.md se va de las manos" y debe convertirlo en trabajo
+
+308
+00:16:16.478 --> 00:16:22.114
+revisable. (Claude, 16 minutos, paso 1)
+
+309
+00:16:22.159 --> 00:16:27.987
+Tension 16 minutos: el coste malo suele aparecer cuando nadie define el cierre.
+
+310
+00:16:25.916 --> 00:16:29.920
+Accion 16 minutos: convertir memoria
+
+311
+00:16:25.364 --> 00:16:29.920
+skill o M C P en una decision que se pueda ensenar en tutoria.
+
+312
+00:16:24.332 --> 00:16:29.920
+Evidencia 16 minutos: skill versionada, hook probado y owner claro.
+
+313
+00:16:30.450 --> 00:16:33.230
+Evidencia 16 minutos:
+
+314
+00:16:33.275 --> 00:16:37.951
+hay una salida que otro perfil puede revisar sin rehacer el contexto.
+
+315
+00:16:37.996 --> 00:16:43.608
+Situacion 16 minutos: alguien tendra que mantener esta salida despues de la demo.
+
+316
+00:16:43.653 --> 00:16:50.057
+Evidencia 16 minutos: "SKILL.md" no se cierra sin test, captura o criterio escrito.
+
+317
+00:16:50.102 --> 00:16:52.738
+Claude 16 minutos:
+
+318
+00:16:52.783 --> 00:16:55.419
+Claude 16 minutos:
+
+319
+00:16:54.428 --> 00:16:59.920
+Mostrar estructura de skill y pedir al grupo revisar stop conditions para "SKILL.md"
+
+320
+00:16:57.644 --> 00:16:59.920
+para "SKILL.md".
+
+321
+00:17:00.450 --> 00:17:05.222
+Coste y riesgo: La skill fix-tests define cuando se usa que lee
+
+322
+00:17:05.267 --> 00:17:08.215
+que puede editar y cuando se deti.
+
+323
+00:17:08.260 --> 00:17:14.640
+Situacion 17 minutos: el equipo mira "SKILL.md" dentro del memoria skill o M C P
+
+324
+00:17:14.685 --> 00:17:17.681
+con coste y permiso visibles.
+
+325
+00:17:17.726 --> 00:17:24.442
+con coste y permiso visibles. (Claude, 17 minutos, paso 9)
+
+326
+00:17:24.116 --> 00:17:29.920
+Evidencia 17 minutos: el artefacto muestra que se controlo contexto infinito
+
+327
+00:17:26.540 --> 00:17:29.920
+permisos y automatizacion sin rollback.
+
+328
+00:17:27.164 --> 00:17:29.920
+Claude 17 minutos:
+
+329
+00:17:27.164 --> 00:17:29.920
+Claude 17 minutos:
+
+330
+00:17:24.260 --> 00:17:29.920
+Mostrar estructura de skill y pedir al grupo revisar stop conditions para "SKILL.md"
+
+331
+00:17:27.596 --> 00:17:29.920
+para "SKILL.md".
+
+332
+00:17:30.450 --> 00:17:35.294
+Checkpoint: Esto permite escalar practica sin depender del profesor.
+
+333
+00:17:35.339 --> 00:17:40.159
+Situacion 17 minutos: la pantalla no busca impresionar;
+
+334
+00:17:40.204 --> 00:17:44.016
+busca cerrar "SKILL.md" con evidencia.
+
+335
+00:17:44.061 --> 00:17:49.865
+Evidencia 17 minutos: el artefacto muestra que se controlo contexto infinito
+
+336
+00:17:49.910 --> 00:17:53.290
+permisos y automatizacion sin rollback.
+
+337
+00:17:52.436 --> 00:17:59.920
+permisos y automatizacion sin rollback. (Claude, 17 minutos, paso 34)
+
+338
+00:17:57.164 --> 00:17:59.920
+Claude 17 minutos:
+
+339
+00:17:57.164 --> 00:17:59.920
+Claude 17 minutos:
+
+340
+00:17:54.260 --> 00:17:59.920
+Mostrar estructura de skill y pedir al grupo revisar stop conditions para "SKILL.md"
+
+341
+00:17:57.596 --> 00:17:59.920
+para "SKILL.md".
+
+342
+00:18:00.450 --> 00:18:05.294
+Pantalla de accion: Cuando repetimos el mismo flujo tres veces
+
+343
+00:18:05.339 --> 00:18:08.287
+probablemente merece una skill.
+
+344
+00:18:08.332 --> 00:18:14.952
+Situacion 18 minutos: Claude recibe "SKILL.md" y debe convertirlo en trabajo revisable.
+
+345
+00:18:14.997 --> 00:18:21.089
+Evidencia 18 minutos: "SKILL.md" queda ligado a prueba, owner y decision.
+
+346
+00:18:21.134 --> 00:18:23.818
+Claude 18 minutos:
+
+347
+00:18:23.863 --> 00:18:26.547
+Claude 18 minutos:
+
+348
+00:18:24.260 --> 00:18:29.920
+Mostrar estructura de skill y pedir al grupo revisar stop conditions para "SKILL.md"
+
+349
+00:18:27.596 --> 00:18:29.920
+para "SKILL.md".
+
+350
+00:18:30.450 --> 00:18:35.318
+Contexto visible: La skill fix-tests define cuando se usa que lee
+
+351
+00:18:35.363 --> 00:18:38.311
+que puede editar y cuando se deti.
+
+352
+00:18:38.356 --> 00:18:43.152
+Situacion 18 minutos: la pantalla no busca impresionar;
+
+353
+00:18:43.197 --> 00:18:47.009
+busca cerrar "SKILL.md" con evidencia.
+
+354
+00:18:47.054 --> 00:18:52.786
+Evidencia 18 minutos: el artefacto muestra que se controlo contexto infinito
+
+355
+00:18:52.831 --> 00:18:56.211
+permisos y automatizacion sin rollback.
+
+356
+00:18:52.436 --> 00:18:59.920
+permisos y automatizacion sin rollback. (Claude, 18 minutos, paso 35)
+
+357
+00:18:57.236 --> 00:18:59.920
+Claude 18 minutos:
+
+358
+00:18:57.236 --> 00:18:59.920
+Claude 18 minutos:
+
+359
+00:18:54.260 --> 00:18:59.920
+Mostrar estructura de skill y pedir al grupo revisar stop conditions para "SKILL.md"
+
+360
+00:18:57.596 --> 00:18:59.920
+para "SKILL.md".
+
+361
+00:19:00.450 --> 00:19:05.606
+Decision humana: Esto permite escalar practica sin depender del profesor.
+
+362
+00:19:05.651 --> 00:19:11.263
+Situacion 19 minutos: alguien tendra que mantener esta salida despues de la demo.
+
+363
+00:19:11.308 --> 00:19:17.784
+Evidencia 19 minutos: "SKILL.md" no se cierra sin test, captura o criterio escrito.
+
+364
+00:19:17.829 --> 00:19:20.513
+Claude 19 minutos:
+
+365
+00:19:20.558 --> 00:19:23.242
+Claude 19 minutos:
+
+366
+00:19:23.287 --> 00:19:28.779
+Mostrar estructura de skill y pedir al grupo revisar stop conditions para "SKILL.md"
+
+367
+00:19:27.644 --> 00:19:29.920
+para "SKILL.md".
+
+368
+00:19:30.450 --> 00:19:37.094
+Evidencia 19 minutos: "SKILL.md" no se cierra sin test, captura o criterio escrito.
+
+369
+00:19:37.139 --> 00:19:43.807
+Situacion 19 minutos: Claude recibe "SKILL.md" y debe convertirlo en trabajo revisable.
+
+370
+00:19:43.852 --> 00:19:49.992
+Evidencia 19 minutos: "SKILL.md" queda ligado a prueba, owner y decision.
+
+371
+00:19:50.037 --> 00:19:52.793
+Claude 19 minutos:
+
+372
+00:19:52.838 --> 00:19:55.594
+Claude 19 minutos:
+
+373
+00:19:54.260 --> 00:19:59.920
+Mostrar estructura de skill y pedir al grupo revisar stop conditions para "SKILL.md"
+
+374
+00:19:57.596 --> 00:19:59.920
+para "SKILL.md".
+
+375
+00:20:00.450 --> 00:20:03.206
+Situacion 20 minutos:
+
+376
+00:20:03.251 --> 00:20:08.311
+el equipo mira "Cuando Explorer agent se va de las manos" dentro del memoria
+
+377
+00:20:08.356 --> 00:20:12.240
+skill o M C P con coste y permiso visibles.
+
+378
+00:20:12.285 --> 00:20:17.345
+el equipo mira "Cuando Explorer agent se va de las manos" dentro del memoria
+
+379
+00:20:17.390 --> 00:20:24.754
+skill o M C P con coste y permiso visibles. (Claude, 20 minutos, paso 11)
+
+380
+00:20:23.900 --> 00:20:29.920
+Tension 20 minutos: el agente puede avanzar mas rapido que nuestra capacidad de revisar.
+
+381
+00:20:24.476 --> 00:20:29.920
+Accion 20 minutos: pedir salida pequena, verificable y con owner.
+
+382
+00:20:23.516 --> 00:20:29.920
+no con la sensacion de velocidad. (Claude, 20 minutos, paso 9)
+
+383
+00:20:27.212 --> 00:20:29.920
+Evidencia 20 minutos:
+
+384
+00:20:25.124 --> 00:20:29.920
+hay una salida que otro perfil puede revisar sin rehacer el contexto.
+
+385
+00:20:25.532 --> 00:20:29.920
+"Cuando Explorer agent se va de las manos" no se cierra sin test
+
+386
+00:20:23.612 --> 00:20:29.920
+captura o criterio escrito. (Claude, 20 minutos, paso 11)
+
+387
+00:20:30.450 --> 00:20:34.550
+Contexto visible: El explorer no escribe codigo.
+
+388
+00:20:34.595 --> 00:20:38.815
+Quita ruido del agente principal y entrega un mapa v.
+
+389
+00:20:38.860 --> 00:20:41.616
+Situacion 20 minutos:
+
+390
+00:20:41.661 --> 00:20:46.601
+Claude recibe "Explorer agent" y debe convertirlo en trabajo revisable.
+
+391
+00:20:46.646 --> 00:20:52.570
+Evidencia 20 minutos: "Explorer agent" queda ligado a prueba, owner y decision.
+
+392
+00:20:52.615 --> 00:20:55.131
+Claude 20 minutos:
+
+393
+00:20:55.176 --> 00:20:57.692
+Claude 20 minutos:
+
+394
+00:20:54.260 --> 00:20:59.920
+Simular respuesta del subagente con archivos y riesgos para "Explorer agent" para
+
+395
+00:20:57.740 --> 00:20:59.920
+"Explorer agent".
+
+396
+00:21:00.450 --> 00:21:04.766
+Decision humana: Si no tiene limites no es arquitectura
+
+397
+00:21:04.811 --> 00:21:07.927
+es confusion con nombre elegante.
+
+398
+00:21:07.972 --> 00:21:12.696
+Situacion 21 minutos: la pantalla no busca impresionar;
+
+399
+00:21:12.741 --> 00:21:16.529
+busca cerrar "Explorer agent" con evidencia.
+
+400
+00:21:16.574 --> 00:21:20.362
+busca cerrar "Explorer agent" con evidencia.
+
+401
+00:21:20.407 --> 00:21:25.275
+Evidencia 21 minutos: "Explorer agent" no se cierra sin test
+
+402
+00:21:25.320 --> 00:21:28.148
+captura o criterio escrito.
+
+403
+00:21:22.628 --> 00:21:29.920
+permisos y automatizacion sin rollback. (Claude, 21 minutos, paso 36)
+
+404
+00:21:27.332 --> 00:21:29.920
+Claude 21 minutos:
+
+405
+00:21:27.332 --> 00:21:29.920
+Claude 21 minutos:
+
+406
+00:21:24.260 --> 00:21:29.920
+Simular respuesta del subagente con archivos y riesgos para "Explorer agent" para
+
+407
+00:21:27.740 --> 00:21:29.920
+"Explorer agent".
+
+408
+00:21:30.450 --> 00:21:33.230
+Evidencia 21 minutos:
+
+409
+00:21:33.275 --> 00:21:38.071
+hay una salida que otro perfil puede revisar sin rehacer el contexto.
+
+410
+00:21:38.116 --> 00:21:43.800
+Situacion 21 minutos: alguien tendra que mantener esta salida despues de la demo.
+
+411
+00:21:43.845 --> 00:21:48.713
+Evidencia 21 minutos: "Explorer agent" no se cierra sin test
+
+412
+00:21:48.758 --> 00:21:51.586
+captura o criterio escrito.
+
+413
+00:21:51.631 --> 00:21:54.219
+Claude 21 minutos:
+
+414
+00:21:54.264 --> 00:21:56.852
+Claude 21 minutos:
+
+415
+00:21:54.260 --> 00:21:59.920
+Simular respuesta del subagente con archivos y riesgos para "Explorer agent" para
+
+416
+00:21:57.740 --> 00:21:59.920
+"Explorer agent".
+
+417
+00:22:00.450 --> 00:22:04.358
+Coste y riesgo: El explorer no escribe codigo.
+
+418
+00:22:04.403 --> 00:22:08.503
+Quita ruido del agente principal y entrega un mapa v.
+
+419
+00:22:08.548 --> 00:22:14.016
+Situacion 22 minutos: el equipo mira "Explorer agent" dentro del memoria
+
+420
+00:22:14.061 --> 00:22:17.849
+skill o M C P con coste y permiso visibles.
+
+421
+00:22:17.894 --> 00:22:25.210
+skill o M C P con coste y permiso visibles. (Claude, 22 minutos, paso 12)
+
+422
+00:22:24.428 --> 00:22:29.920
+Evidencia 22 minutos: el artefacto muestra que se controlo contexto infinito
+
+423
+00:22:26.636 --> 00:22:29.920
+permisos y automatizacion sin rollback.
+
+424
+00:22:27.380 --> 00:22:29.920
+Claude 22 minutos:
+
+425
+00:22:27.380 --> 00:22:29.920
+Claude 22 minutos:
+
+426
+00:22:24.428 --> 00:22:29.920
+Simular respuesta del subagente con archivos y riesgos para "Explorer agent" para
+
+427
+00:22:27.812 --> 00:22:29.920
+"Explorer agent".
+
+428
+00:22:30.450 --> 00:22:36.422
+Checkpoint: Si no tiene limites, no es arquitectura, es confusion con nombre elegante.
+
+429
+00:22:36.467 --> 00:22:41.071
+Situacion 22 minutos: la pantalla no busca impresionar;
+
+430
+00:22:41.116 --> 00:22:44.808
+busca cerrar "Explorer agent" con evidencia.
+
+431
+00:22:44.853 --> 00:22:48.545
+busca cerrar "Explorer agent" con evidencia.
+
+432
+00:22:48.590 --> 00:22:53.362
+Evidencia 22 minutos: "Explorer agent" no se cierra sin test
+
+433
+00:22:53.407 --> 00:22:56.163
+captura o criterio escrito.
+
+434
+00:22:52.772 --> 00:22:59.920
+permisos y automatizacion sin rollback. (Claude, 22 minutos, paso 37)
+
+435
+00:22:57.380 --> 00:22:59.920
+Claude 22 minutos:
+
+436
+00:22:57.380 --> 00:22:59.920
+Claude 22 minutos:
+
+437
+00:22:54.428 --> 00:22:59.920
+Simular respuesta del subagente con archivos y riesgos para "Explorer agent" para
+
+438
+00:22:57.812 --> 00:22:59.920
+"Explorer agent".
+
+439
+00:23:00.450 --> 00:23:05.390
+Pantalla de accion: Un subagente es util cuando separa responsabilidad.
+
+440
+00:23:05.435 --> 00:23:11.311
+Situacion 23 minutos: Claude solo avanza si el siguiente humano entiende el por que.
+
+441
+00:23:11.356 --> 00:23:16.992
+Evidencia 23 minutos: skill versionada, hook probado y owner claro.
+
+442
+00:23:17.037 --> 00:23:19.745
+Claude 23 minutos:
+
+443
+00:23:19.790 --> 00:23:22.498
+Claude 23 minutos:
+
+444
+00:23:22.543 --> 00:23:28.203
+Simular respuesta del subagente con archivos y riesgos para "Explorer agent" para
+
+445
+00:23:27.740 --> 00:23:29.920
+"Explorer agent".
+
+446
+00:23:30.450 --> 00:23:34.550
+Contexto visible: El explorer no escribe codigo.
+
+447
+00:23:34.595 --> 00:23:38.815
+Quita ruido del agente principal y entrega un mapa v.
+
+448
+00:23:38.860 --> 00:23:43.680
+Situacion 23 minutos: la pantalla no busca impresionar;
+
+449
+00:23:43.725 --> 00:23:47.513
+busca cerrar "Explorer agent" con evidencia.
+
+450
+00:23:47.558 --> 00:23:51.346
+busca cerrar "Explorer agent" con evidencia.
+
+451
+00:23:51.391 --> 00:23:56.379
+Evidencia 23 minutos: "Explorer agent" no se cierra sin test
+
+452
+00:23:56.424 --> 00:23:59.252
+captura o criterio escrito.
+
+453
+00:23:52.484 --> 00:23:59.920
+permisos y automatizacion sin rollback. (Claude, 23 minutos, paso 38)
+
+454
+00:23:57.212 --> 00:23:59.920
+Claude 23 minutos:
+
+455
+00:23:57.212 --> 00:23:59.920
+Claude 23 minutos:
+
+456
+00:23:54.260 --> 00:23:59.920
+Simular respuesta del subagente con archivos y riesgos para "Explorer agent" para
+
+457
+00:23:57.740 --> 00:23:59.920
+"Explorer agent".
+
+458
+00:24:00.450 --> 00:24:05.318
+Situacion 24 minutos: la pantalla no busca impresionar;
+
+459
+00:24:05.363 --> 00:24:10.303
+busca cerrar "Cuando Explorer agent se va de las manos" con evidencia.
+
+460
+00:24:10.348 --> 00:24:15.288
+busca cerrar "Cuando Explorer agent se va de las manos" con evidencia.
+
+461
+00:24:15.333 --> 00:24:21.641
+Tension 24 minutos: el agente puede avanzar mas rapido que nuestra capacidad de revisar.
+
+462
+00:24:21.686 --> 00:24:27.394
+Accion 24 minutos: pedir salida pequena, verificable y con owner.
+
+463
+00:24:23.996 --> 00:24:29.920
+skill o M C P en una decision que se pueda ensenar en tutoria. (Claude
+
+464
+00:24:26.780 --> 00:24:29.920
+24 minutos paso 8)
+
+465
+00:24:26.972 --> 00:24:29.920
+Evidencia 24 minutos:
+
+466
+00:24:25.124 --> 00:24:29.920
+hay una salida que otro perfil puede revisar sin rehacer el contexto.
+
+467
+00:24:30.450 --> 00:24:35.510
+Evidencia 24 minutos: "Explorer agent" no se cierra sin test
+
+468
+00:24:35.555 --> 00:24:38.383
+captura o criterio escrito.
+
+469
+00:24:38.428 --> 00:24:41.424
+Situacion 24 minutos:
+
+470
+00:24:41.469 --> 00:24:46.409
+Claude recibe "Explorer agent" y debe convertirlo en trabajo revisable.
+
+471
+00:24:46.454 --> 00:24:52.594
+Evidencia 24 minutos: "Explorer agent" queda ligado a prueba, owner y decision.
+
+472
+00:24:52.639 --> 00:24:55.419
+Claude 24 minutos:
+
+473
+00:24:55.464 --> 00:24:58.244
+Claude 24 minutos:
+
+474
+00:24:54.260 --> 00:24:59.920
+Simular respuesta del subagente con archivos y riesgos para "Explorer agent" para
+
+475
+00:24:57.740 --> 00:24:59.920
+"Explorer agent".
+
+476
+00:25:00.450 --> 00:25:06.182
+Pantalla de accion: M C P da contexto y accion, por eso requiere politica.
+
+477
+00:25:06.227 --> 00:25:10.999
+Situacion 25 minutos: la pantalla no busca impresionar;
+
+478
+00:25:11.044 --> 00:25:15.120
+busca cerrar "Inventario M C P" con evidencia.
+
+479
+00:25:15.165 --> 00:25:19.241
+busca cerrar "Inventario M C P" con evidencia.
+
+480
+00:25:19.286 --> 00:25:24.538
+Evidencia 25 minutos: "Inventario M C P" no se cierra sin test
+
+481
+00:25:24.583 --> 00:25:27.339
+captura o criterio escrito.
+
+482
+00:25:22.652 --> 00:25:29.920
+permisos y automatizacion sin rollback. (Claude, 25 minutos, paso 39)
+
+483
+00:25:25.388 --> 00:25:29.920
+Claude 25 minutos: Clasificar conectores por valor
+
+484
+00:25:26.396 --> 00:25:29.920
+riesgo y permiso para "Inventario M C P".
+
+485
+00:25:30.450 --> 00:25:34.694
+Contexto visible: El default del workshop es readonly.
+
+486
+00:25:34.874 --> 00:25:40.846
+Situacion 25 minutos: Claude solo avanza si el siguiente humano entiende el por que.
+
+487
+00:25:41.026 --> 00:25:46.710
+Evidencia 25 minutos: skill versionada, hook probado y owner claro.
+
+488
+00:25:46.890 --> 00:25:51.542
+Claude 25 minutos: Clasificar conectores por valor
+
+489
+00:25:51.722 --> 00:25:55.342
+riesgo y permiso para "Inventario M C P".
+
+490
+00:26:00.450 --> 00:26:05.246
+Decision humana: La escritura se reserva para casos concretos
+
+491
+00:26:05.291 --> 00:26:08.311
+auditables y con responsable.
+
+492
+00:26:08.356 --> 00:26:13.152
+Situacion 26 minutos: la pantalla no busca impresionar;
+
+493
+00:26:13.197 --> 00:26:17.369
+busca cerrar "Inventario M C P" con evidencia.
+
+494
+00:26:17.414 --> 00:26:21.586
+busca cerrar "Inventario M C P" con evidencia.
+
+495
+00:26:21.631 --> 00:26:26.955
+Evidencia 26 minutos: "Inventario M C P" no se cierra sin test
+
+496
+00:26:27.000 --> 00:26:29.828
+captura o criterio escrito.
+
+497
+00:26:22.724 --> 00:26:29.920
+permisos y automatizacion sin rollback. (Claude, 26 minutos, paso 40)
+
+498
+00:26:25.316 --> 00:26:29.920
+Claude 26 minutos: Clasificar conectores por valor
+
+499
+00:26:26.300 --> 00:26:29.920
+riesgo y permiso para "Inventario M C P".
+
+500
+00:26:30.450 --> 00:26:33.326
+Evidencia 26 minutos:
+
+501
+00:26:33.371 --> 00:26:38.167
+hay una salida que otro perfil puede revisar sin rehacer el contexto.
+
+502
+00:26:38.212 --> 00:26:43.968
+Situacion 26 minutos: alguien tendra que mantener esta salida despues de la demo.
+
+503
+00:26:44.013 --> 00:26:49.337
+Evidencia 26 minutos: "Inventario M C P" no se cierra sin test
+
+504
+00:26:49.382 --> 00:26:52.210
+captura o criterio escrito.
+
+505
+00:26:52.255 --> 00:26:56.859
+Claude 26 minutos: Clasificar conectores por valor
+
+506
+00:26:56.300 --> 00:26:59.920
+riesgo y permiso para "Inventario M C P".
+
+507
+00:27:00.450 --> 00:27:04.454
+Coste y riesgo: El default del workshop es readonly.
+
+508
+00:27:04.634 --> 00:27:07.582
+Situacion 27 minutos:
+
+509
+00:27:07.762 --> 00:27:12.990
+Claude recibe "Inventario M C P" y debe convertirlo en trabajo revisable.
+
+510
+00:27:13.170 --> 00:27:19.478
+Evidencia 27 minutos: "Inventario M C P" queda ligado a prueba, owner y decision.
+
+511
+00:27:19.658 --> 00:27:24.190
+Claude 27 minutos: Clasificar conectores por valor
+
+512
+00:27:24.370 --> 00:27:27.894
+riesgo y permiso para "Inventario M C P".
+
+513
+00:27:30.450 --> 00:27:36.350
+Checkpoint: La escritura se reserva para casos concretos, auditables y con responsable.
+
+514
+00:27:36.395 --> 00:27:41.119
+Situacion 27 minutos: la pantalla no busca impresionar;
+
+515
+00:27:41.164 --> 00:27:45.240
+busca cerrar "Inventario M C P" con evidencia.
+
+516
+00:27:45.285 --> 00:27:49.361
+busca cerrar "Inventario M C P" con evidencia.
+
+517
+00:27:49.406 --> 00:27:54.634
+Evidencia 27 minutos: "Inventario M C P" no se cierra sin test
+
+518
+00:27:54.679 --> 00:27:57.435
+captura o criterio escrito.
+
+519
+00:27:52.700 --> 00:27:59.920
+permisos y automatizacion sin rollback. (Claude, 27 minutos, paso 41)
+
+520
+00:27:55.388 --> 00:27:59.920
+Claude 27 minutos: Clasificar conectores por valor
+
+521
+00:27:56.396 --> 00:27:59.920
+riesgo y permiso para "Inventario M C P".
+
+522
+00:28:00.450 --> 00:28:06.230
+Situacion 28 minutos: alguien tendra que mantener esta salida despues de la demo.
+
+523
+00:28:06.410 --> 00:28:12.622
+Tension 28 minutos: el agente puede avanzar mas rapido que nuestra capacidad de revisar.
+
+524
+00:28:12.802 --> 00:28:18.486
+Accion 28 minutos: pedir salida pequena, verificable y con owner.
+
+525
+00:28:18.666 --> 00:28:21.542
+Evidencia 28 minutos:
+
+526
+00:28:21.722 --> 00:28:26.398
+"Cuando Inventario M C P se va de las manos" queda ligado a prueba
+
+527
+00:28:26.578 --> 00:28:28.902
+owner y decision.
+
+528
+00:28:30.450 --> 00:28:34.574
+Contexto visible: El default del workshop es readonly.
+
+529
+00:28:34.619 --> 00:28:40.375
+Situacion 28 minutos: el equipo mira "Inventario M C P" dentro del memoria
+
+530
+00:28:40.420 --> 00:28:44.208
+skill o M C P con coste y permiso visibles.
+
+531
+00:28:44.253 --> 00:28:51.665
+skill o M C P con coste y permiso visibles. (Claude, 28 minutos, paso 13)
+
+532
+00:28:51.710 --> 00:28:57.298
+Evidencia 28 minutos: el artefacto muestra que se controlo contexto infinito
+
+533
+00:28:56.636 --> 00:28:59.920
+permisos y automatizacion sin rollback.
+
+534
+00:28:55.460 --> 00:28:59.920
+Claude 28 minutos: Clasificar conectores por valor
+
+535
+00:28:56.396 --> 00:28:59.920
+riesgo y permiso para "Inventario M C P".
+
+536
+00:29:00.450 --> 00:29:05.246
+Decision humana: La escritura se reserva para casos concretos
+
+537
+00:29:05.426 --> 00:29:08.446
+auditables y con responsable.
+
+538
+00:29:08.626 --> 00:29:14.502
+Situacion 29 minutos: Claude solo avanza si el siguiente humano entiende el por que.
+
+539
+00:29:14.682 --> 00:29:20.414
+Evidencia 29 minutos: skill versionada, hook probado y owner claro.
+
+540
+00:29:20.594 --> 00:29:25.222
+Claude 29 minutos: Clasificar conectores por valor
+
+541
+00:29:25.402 --> 00:29:29.022
+riesgo y permiso para "Inventario M C P".
+
+542
+00:29:30.450 --> 00:29:35.798
+Evidencia 29 minutos: "Inventario M C P" no se cierra sin test
+
+543
+00:29:35.843 --> 00:29:38.671
+captura o criterio escrito.
+
+544
+00:29:38.716 --> 00:29:41.736
+Situacion 29 minutos:
+
+545
+00:29:41.781 --> 00:29:47.153
+Claude recibe "Inventario M C P" y debe convertirlo en trabajo revisable.
+
+546
+00:29:47.198 --> 00:29:53.674
+Evidencia 29 minutos: "Inventario M C P" queda ligado a prueba, owner y decision.
+
+547
+00:29:53.719 --> 00:29:58.347
+Claude 29 minutos: Clasificar conectores por valor
+
+548
+00:29:56.300 --> 00:29:59.920
+riesgo y permiso para "Inventario M C P".
+
+549
+00:30:00.450 --> 00:30:05.294
+Pantalla de accion: Hay reglas que no deben depender del humor del modelo.
+
+550
+00:30:05.339 --> 00:30:09.919
+Situacion 30 minutos: la pantalla no busca impresionar;
+
+551
+00:30:09.964 --> 00:30:13.968
+busca cerrar "Hook deterministic" con evidencia.
+
+552
+00:30:14.013 --> 00:30:18.017
+busca cerrar "Hook deterministic" con evidencia.
+
+553
+00:30:18.062 --> 00:30:22.834
+Evidencia 30 minutos: "Hook deterministic" no se cierra sin test
+
+554
+00:30:22.879 --> 00:30:25.635
+captura o criterio escrito.
+
+555
+00:30:22.916 --> 00:30:29.920
+permisos y automatizacion sin rollback. (Claude, 30 minutos, paso 42)
+
+556
+00:30:27.452 --> 00:30:29.920
+Claude 30 minutos:
+
+557
+00:30:25.028 --> 00:30:29.920
+Mostrar un intento bloqueado y una salida segura para "Hook deterministic".
+
+558
+00:30:30.450 --> 00:30:32.750
+Contexto visible:
+
+559
+00:30:32.930 --> 00:30:37.534
+Un hook anti secretos bloquea antes de que el error llegue al pull request.
+
+560
+00:30:37.714 --> 00:30:43.278
+Situacion 30 minutos: Claude solo avanza si el siguiente humano entiende el por que.
+
+561
+00:30:43.458 --> 00:30:48.782
+Evidencia 30 minutos: skill versionada, hook probado y owner claro.
+
+562
+00:30:48.962 --> 00:30:51.430
+Claude 30 minutos:
+
+563
+00:30:51.610 --> 00:30:56.502
+Mostrar un intento bloqueado y una salida segura para "Hook deterministic".
+
+564
+00:31:00.450 --> 00:31:05.582
+Decision humana: La IA ayuda, pero el guardrail debe ser determinista.
+
+565
+00:31:05.627 --> 00:31:11.383
+Situacion 31 minutos: el equipo mira "Hook deterministic" dentro del memoria
+
+566
+00:31:11.428 --> 00:31:15.216
+skill o M C P con coste y permiso visibles.
+
+567
+00:31:15.261 --> 00:31:22.793
+skill o M C P con coste y permiso visibles. (Claude, 31 minutos, paso 14)
+
+568
+00:31:22.838 --> 00:31:28.474
+Evidencia 31 minutos: el artefacto muestra que se controlo contexto infinito
+
+569
+00:31:26.636 --> 00:31:29.920
+permisos y automatizacion sin rollback.
+
+570
+00:31:27.236 --> 00:31:29.920
+Claude 31 minutos:
+
+571
+00:31:25.028 --> 00:31:29.920
+Mostrar un intento bloqueado y una salida segura para "Hook deterministic".
+
+572
+00:31:30.450 --> 00:31:33.326
+Evidencia 31 minutos:
+
+573
+00:31:33.371 --> 00:31:38.047
+hay una salida que otro perfil puede revisar sin rehacer el contexto.
+
+574
+00:31:38.092 --> 00:31:43.776
+Situacion 31 minutos: alguien tendra que mantener esta salida despues de la demo.
+
+575
+00:31:43.821 --> 00:31:48.785
+Evidencia 31 minutos: "Hook deterministic" no se cierra sin test
+
+576
+00:31:48.830 --> 00:31:51.586
+captura o criterio escrito.
+
+577
+00:31:51.631 --> 00:31:54.315
+Claude 31 minutos:
+
+578
+00:31:54.360 --> 00:31:59.252
+Mostrar un intento bloqueado y una salida segura para "Hook deterministic".
+
+579
+00:32:00.450 --> 00:32:02.678
+Coste y riesgo:
+
+580
+00:32:02.723 --> 00:32:07.447
+Un hook anti secretos bloquea antes de que el error llegue al pull request.
+
+581
+00:32:07.492 --> 00:32:10.512
+Situacion 32 minutos:
+
+582
+00:32:10.557 --> 00:32:15.833
+Claude recibe "Hook deterministic" y debe convertirlo en trabajo revisable.
+
+583
+00:32:15.878 --> 00:32:21.154
+Claude recibe "Hook deterministic" y debe convertirlo en trabajo revisable.
+
+584
+00:32:21.199 --> 00:32:24.171
+Evidencia 32 minutos:
+
+585
+00:32:24.216 --> 00:32:29.012
+hay una salida que otro perfil puede revisar sin rehacer el contexto.
+
+586
+00:32:27.212 --> 00:32:29.920
+Claude 32 minutos:
+
+587
+00:32:24.884 --> 00:32:29.920
+Mostrar un intento bloqueado y una salida segura para "Hook deterministic".
+
+588
+00:32:30.450 --> 00:32:33.470
+Situacion 32 minutos:
+
+589
+00:32:33.515 --> 00:32:38.887
+el equipo mira "Cuando Hook deterministic se va de las manos" dentro del memoria
+
+590
+00:32:38.932 --> 00:32:42.816
+skill o M C P con coste y permiso visibles.
+
+591
+00:32:42.861 --> 00:32:48.233
+el equipo mira "Cuando Hook deterministic se va de las manos" dentro del memoria
+
+592
+00:32:48.278 --> 00:32:55.906
+skill o M C P con coste y permiso visibles. (Claude, 32 minutos, paso 15)
+
+593
+00:32:53.660 --> 00:32:59.920
+Tension 32 minutos: el agente puede avanzar mas rapido que nuestra capacidad de revisar.
+
+594
+00:32:54.260 --> 00:32:59.920
+Accion 32 minutos: pedir salida pequena, verificable y con owner.
+
+595
+00:32:53.396 --> 00:32:59.920
+no con la sensacion de velocidad. (Claude, 32 minutos, paso 10)
+
+596
+00:32:56.948 --> 00:32:59.920
+Evidencia 32 minutos:
+
+597
+00:32:55.124 --> 00:32:59.920
+hay una salida que otro perfil puede revisar sin rehacer el contexto.
+
+598
+00:32:55.268 --> 00:32:59.920
+"Cuando Hook deterministic se va de las manos" no se cierra sin test
+
+599
+00:32:53.444 --> 00:32:59.920
+captura o criterio escrito. (Claude, 32 minutos, paso 12)
+
+600
+00:33:00.450 --> 00:33:05.438
+Pantalla de accion: Hay reglas que no deben depender del humor del modelo.
+
+601
+00:33:05.618 --> 00:33:11.614
+Situacion 33 minutos: Claude solo avanza si el siguiente humano entiende el por que.
+
+602
+00:33:11.794 --> 00:33:17.622
+Evidencia 33 minutos: skill versionada, hook probado y owner claro.
+
+603
+00:33:17.802 --> 00:33:20.654
+Claude 33 minutos:
+
+604
+00:33:20.834 --> 00:33:25.870
+Mostrar un intento bloqueado y una salida segura para "Hook deterministic".
+
+605
+00:33:30.450 --> 00:33:32.822
+Contexto visible:
+
+606
+00:33:32.867 --> 00:33:37.591
+Un hook anti secretos bloquea antes de que el error llegue al pull request.
+
+607
+00:33:37.636 --> 00:33:43.632
+Situacion 33 minutos: el equipo mira "Hook deterministic" dentro del memoria
+
+608
+00:33:43.677 --> 00:33:47.561
+skill o M C P con coste y permiso visibles.
+
+609
+00:33:47.606 --> 00:33:55.498
+skill o M C P con coste y permiso visibles. (Claude, 33 minutos, paso 16)
+
+610
+00:33:54.020 --> 00:33:59.920
+Evidencia 33 minutos: el artefacto muestra que se controlo contexto infinito
+
+611
+00:33:56.540 --> 00:33:59.920
+permisos y automatizacion sin rollback.
+
+612
+00:33:57.068 --> 00:33:59.920
+Claude 33 minutos:
+
+613
+00:33:54.884 --> 00:33:59.920
+Mostrar un intento bloqueado y una salida segura para "Hook deterministic".
+
+614
+00:34:00.450 --> 00:34:05.582
+Decision humana: La IA ayuda, pero el guardrail debe ser determinista.
+
+615
+00:34:05.762 --> 00:34:11.614
+Situacion 34 minutos: alguien tendra que mantener esta salida despues de la demo.
+
+616
+00:34:11.794 --> 00:34:16.950
+Evidencia 34 minutos: "Hook deterministic" no se cierra sin test
+
+617
+00:34:17.130 --> 00:34:19.886
+captura o criterio escrito.
+
+618
+00:34:20.066 --> 00:34:22.870
+Claude 34 minutos:
+
+619
+00:34:23.050 --> 00:34:27.942
+Mostrar un intento bloqueado y una salida segura para "Hook deterministic".
+
+620
+00:34:30.450 --> 00:34:35.750
+Evidencia 34 minutos: "Hook deterministic" no se cierra sin test
+
+621
+00:34:35.795 --> 00:34:38.623
+captura o criterio escrito.
+
+622
+00:34:38.668 --> 00:34:41.784
+Situacion 34 minutos:
+
+623
+00:34:41.829 --> 00:34:47.105
+Claude recibe "Hook deterministic" y debe convertirlo en trabajo revisable.
+
+624
+00:34:47.150 --> 00:34:52.426
+Claude recibe "Hook deterministic" y debe convertirlo en trabajo revisable.
+
+625
+00:34:52.471 --> 00:34:55.563
+Evidencia 34 minutos:
+
+626
+00:34:55.124 --> 00:34:59.920
+hay una salida que otro perfil puede revisar sin rehacer el contexto.
+
+627
+00:34:57.044 --> 00:34:59.920
+Claude 34 minutos:
+
+628
+00:34:54.884 --> 00:34:59.920
+Mostrar un intento bloqueado y una salida segura para "Hook deterministic".
+
+629
+00:35:00.450 --> 00:35:05.198
+Pantalla de accion: Una eval no convierte el modelo en juez perfecto.
+
+630
+00:35:05.243 --> 00:35:10.231
+Situacion 35 minutos: la pantalla no busca impresionar;
+
+631
+00:35:10.276 --> 00:35:15.408
+busca cerrar "modelo de lenguaje-as-a-Judge con contrato" con evidencia.
+
+632
+00:35:15.453 --> 00:35:20.585
+busca cerrar "modelo de lenguaje-as-a-Judge con contrato" con evidencia.
+
+633
+00:35:20.630 --> 00:35:27.154
+Evidencia 35 minutos: "modelo de lenguaje-as-a-Judge con contrato" no se cierra sin test
+
+634
+00:35:27.092 --> 00:35:29.920
+captura o criterio escrito.
+
+635
+00:35:22.244 --> 00:35:29.920
+permisos y automatizacion sin rollback. (Claude, 35 minutos, paso 43)
+
+636
+00:35:27.044 --> 00:35:29.920
+Claude 35 minutos:
+
+637
+00:35:27.044 --> 00:35:29.920
+Claude 35 minutos:
+
+638
+00:35:24.188 --> 00:35:29.920
+Simular JSON de evaluacion con un finding menor para "modelo de lenguaje-as-a-Judge con
+
+639
+00:35:27.716 --> 00:35:29.920
+contrato" para
+
+640
+00:35:26.372 --> 00:35:29.920
+"modelo de lenguaje-as-a-Judge con contrato".
+
+641
+00:35:30.450 --> 00:35:35.486
+Contexto visible: Pero crea una comparacion repetible entre salidas.
+
+642
+00:35:35.531 --> 00:35:41.455
+Situacion 35 minutos: Claude solo avanza si el siguiente humano entiende el por que.
+
+643
+00:35:41.500 --> 00:35:47.160
+Evidencia 35 minutos: skill versionada, hook probado y owner claro.
+
+644
+00:35:47.205 --> 00:35:50.009
+Claude 35 minutos:
+
+645
+00:35:50.054 --> 00:35:52.858
+Claude 35 minutos:
+
+646
+00:35:52.903 --> 00:35:58.491
+Simular JSON de evaluacion con un finding menor para "modelo de lenguaje-as-a-Judge con
+
+647
+00:35:57.764 --> 00:35:59.920
+contrato" para
+
+648
+00:35:56.468 --> 00:35:59.920
+"modelo de lenguaje-as-a-Judge con contrato".
+
+649
+00:36:00.450 --> 00:36:03.494
+Situacion 36 minutos:
+
+650
+00:36:03.539 --> 00:36:09.271
+Claude recibe "Cuando modelo de lenguaje-as-a-Judge con contrato se va de las manos" y
+
+651
+00:36:09.316 --> 00:36:11.688
+debe convertirlo
+
+652
+00:36:11.733 --> 00:36:14.249
+en trabajo revisable.
+
+653
+00:36:14.294 --> 00:36:20.026
+Claude recibe "Cuando modelo de lenguaje-as-a-Judge con contrato se va de las manos" y
+
+654
+00:36:20.071 --> 00:36:22.443
+debe convertirlo
+
+655
+00:36:22.488 --> 00:36:25.004
+en trabajo revisable.
+
+656
+00:36:23.924 --> 00:36:29.920
+Tension 36 minutos: el coste malo suele aparecer cuando nadie define el cierre.
+
+657
+00:36:25.820 --> 00:36:29.920
+Accion 36 minutos: convertir memoria
+
+658
+00:36:25.364 --> 00:36:29.920
+skill o M C P en una decision que se pueda ensenar en tutoria.
+
+659
+00:36:24.164 --> 00:36:29.920
+Evidencia 36 minutos: skill versionada, hook probado y owner claro.
+
+660
+00:36:22.340 --> 00:36:29.920
+permisos y automatizacion sin rollback. (Claude, 36 minutos, paso 44)
+
+661
+00:36:30.450 --> 00:36:33.446
+Evidencia 36 minutos:
+
+662
+00:36:33.491 --> 00:36:38.287
+hay una salida que otro perfil puede revisar sin rehacer el contexto.
+
+663
+00:36:38.332 --> 00:36:44.256
+Situacion 36 minutos: alguien tendra que mantener esta salida despues de la demo.
+
+664
+00:36:44.301 --> 00:36:50.753
+Evidencia 36 minutos: "modelo de lenguaje-as-a-Judge con contrato" no se cierra sin test
+
+665
+00:36:50.798 --> 00:36:53.626
+captura o criterio escrito.
+
+666
+00:36:53.276 --> 00:36:59.920
+captura o criterio escrito. (Claude, 36 minutos, paso 13)
+
+667
+00:36:57.116 --> 00:36:59.920
+Claude 36 minutos:
+
+668
+00:36:57.116 --> 00:36:59.920
+Claude 36 minutos:
+
+669
+00:36:54.188 --> 00:36:59.920
+Simular JSON de evaluacion con un finding menor para "modelo de lenguaje-as-a-Judge con
+
+670
+00:36:57.716 --> 00:36:59.920
+contrato" para
+
+671
+00:36:56.372 --> 00:36:59.920
+"modelo de lenguaje-as-a-Judge con contrato".
+
+672
+00:37:00.450 --> 00:37:05.414
+Coste y riesgo: Pero crea una comparacion repetible entre salidas.
+
+673
+00:37:05.459 --> 00:37:08.551
+Situacion 37 minutos:
+
+674
+00:37:08.596 --> 00:37:14.472
+Claude recibe "modelo de lenguaje-as-a-Judge con contrato" y debe convertirlo en trabajo
+
+675
+00:37:14.517 --> 00:37:16.553
+revisable.
+
+676
+00:37:16.598 --> 00:37:22.474
+Claude recibe "modelo de lenguaje-as-a-Judge con contrato" y debe convertirlo en trabajo
+
+677
+00:37:22.519 --> 00:37:24.555
+revisable.
+
+678
+00:37:24.600 --> 00:37:27.668
+Evidencia 37 minutos:
+
+679
+00:37:25.124 --> 00:37:29.920
+hay una salida que otro perfil puede revisar sin rehacer el contexto.
+
+680
+00:37:27.068 --> 00:37:29.920
+Claude 37 minutos:
+
+681
+00:37:27.068 --> 00:37:29.920
+Claude 37 minutos:
+
+682
+00:37:24.188 --> 00:37:29.920
+Simular JSON de evaluacion con un finding menor para "modelo de lenguaje-as-a-Judge con
+
+683
+00:37:27.716 --> 00:37:29.920
+contrato" para
+
+684
+00:37:26.372 --> 00:37:29.920
+"modelo de lenguaje-as-a-Judge con contrato".
+
+685
+00:37:30.450 --> 00:37:36.470
+Checkpoint: El truco es exigir contrato de salida, evidencia y criterio de aprobado.
+
+686
+00:37:36.515 --> 00:37:41.359
+Situacion 37 minutos: la pantalla no busca impresionar;
+
+687
+00:37:41.404 --> 00:37:46.392
+busca cerrar "modelo de lenguaje-as-a-Judge con contrato" con evidencia.
+
+688
+00:37:46.437 --> 00:37:51.425
+busca cerrar "modelo de lenguaje-as-a-Judge con contrato" con evidencia.
+
+689
+00:37:51.470 --> 00:37:57.802
+Evidencia 37 minutos: "modelo de lenguaje-as-a-Judge con contrato" no se cierra sin test
+
+690
+00:37:57.164 --> 00:37:59.920
+captura o criterio escrito.
+
+691
+00:37:52.508 --> 00:37:59.920
+permisos y automatizacion sin rollback. (Claude, 37 minutos, paso 45)
+
+692
+00:37:57.140 --> 00:37:59.920
+Claude 37 minutos:
+
+693
+00:37:57.140 --> 00:37:59.920
+Claude 37 minutos:
+
+694
+00:37:54.332 --> 00:37:59.920
+Simular JSON de evaluacion con un finding menor para "modelo de lenguaje-as-a-Judge con
+
+695
+00:37:57.764 --> 00:37:59.920
+contrato" para
+
+696
+00:37:56.468 --> 00:37:59.920
+"modelo de lenguaje-as-a-Judge con contrato".
+
+697
+00:38:00.450 --> 00:38:05.078
+Pantalla de accion: Una eval no convierte el modelo en juez perfecto.
+
+698
+00:38:05.123 --> 00:38:10.951
+Situacion 38 minutos: Claude solo avanza si el siguiente humano entiende el por que.
+
+699
+00:38:10.996 --> 00:38:16.632
+Evidencia 38 minutos: skill versionada, hook probado y owner claro.
+
+700
+00:38:16.677 --> 00:38:19.457
+Claude 38 minutos:
+
+701
+00:38:19.502 --> 00:38:22.282
+Claude 38 minutos:
+
+702
+00:38:22.327 --> 00:38:27.915
+Simular JSON de evaluacion con un finding menor para "modelo de lenguaje-as-a-Judge con
+
+703
+00:38:27.764 --> 00:38:29.920
+contrato" para
+
+704
+00:38:26.468 --> 00:38:29.920
+"modelo de lenguaje-as-a-Judge con contrato".
+
+705
+00:38:30.450 --> 00:38:35.486
+Contexto visible: Pero crea una comparacion repetible entre salidas.
+
+706
+00:38:35.531 --> 00:38:38.527
+Situacion 38 minutos:
+
+707
+00:38:38.572 --> 00:38:43.752
+el equipo mira "modelo de lenguaje-as-a-Judge con contrato" dentro del memoria
+
+708
+00:38:43.797 --> 00:38:47.585
+skill o M C P con coste y permiso visibles.
+
+709
+00:38:47.630 --> 00:38:52.810
+el equipo mira "modelo de lenguaje-as-a-Judge con contrato" dentro del memoria
+
+710
+00:38:52.196 --> 00:38:59.920
+skill o M C P con coste y permiso visibles. (Claude, 38 minutos, paso 17)
+
+711
+00:38:53.660 --> 00:38:59.920
+Evidencia 38 minutos: "modelo de lenguaje-as-a-Judge con contrato" no se cierra sin test
+
+712
+00:38:57.164 --> 00:38:59.920
+captura o criterio escrito.
+
+713
+00:38:57.140 --> 00:38:59.920
+Claude 38 minutos:
+
+714
+00:38:57.140 --> 00:38:59.920
+Claude 38 minutos:
+
+715
+00:38:54.332 --> 00:38:59.920
+Simular JSON de evaluacion con un finding menor para "modelo de lenguaje-as-a-Judge con
+
+716
+00:38:57.764 --> 00:38:59.920
+contrato" para
+
+717
+00:38:56.468 --> 00:38:59.920
+"modelo de lenguaje-as-a-Judge con contrato".
+
+718
+00:39:00.450 --> 00:39:05.006
+Decision humana: El truco es exigir contrato de salida
+
+719
+00:39:05.051 --> 00:39:08.119
+evidencia y criterio de aprobado.
+
+720
+00:39:08.164 --> 00:39:14.184
+Situacion 39 minutos: Claude solo avanza si el siguiente humano entiende el por que.
+
+721
+00:39:14.229 --> 00:39:20.081
+Evidencia 39 minutos: skill versionada, hook probado y owner claro.
+
+722
+00:39:20.126 --> 00:39:22.978
+Claude 39 minutos:
+
+723
+00:39:23.023 --> 00:39:25.875
+Claude 39 minutos:
+
+724
+00:39:24.188 --> 00:39:29.920
+Simular JSON de evaluacion con un finding menor para "modelo de lenguaje-as-a-Judge con
+
+725
+00:39:27.716 --> 00:39:29.920
+contrato" para
+
+726
+00:39:26.372 --> 00:39:29.920
+"modelo de lenguaje-as-a-Judge con contrato".
+
+727
+00:39:30.450 --> 00:39:36.902
+Evidencia 39 minutos: "modelo de lenguaje-as-a-Judge con contrato" no se cierra sin test
+
+728
+00:39:36.947 --> 00:39:39.775
+captura o criterio escrito.
+
+729
+00:39:39.820 --> 00:39:46.632
+captura o criterio escrito. (Claude, 39 minutos, paso 14)
+
+730
+00:39:46.677 --> 00:39:49.769
+Situacion 39 minutos:
+
+731
+00:39:49.814 --> 00:39:55.138
+el equipo mira "modelo de lenguaje-as-a-Judge con contrato" dentro del memoria
+
+732
+00:39:55.183 --> 00:39:59.067
+skill o M C P con coste y permiso visibles.
+
+733
+00:39:54.044 --> 00:39:59.920
+Claude recibe "modelo de lenguaje-as-a-Judge con contrato" y debe convertirlo en trabajo
+
+734
+00:39:57.884 --> 00:39:59.920
+revisable.
+
+735
+00:39:54.020 --> 00:39:59.920
+Evidencia 39 minutos: el artefacto muestra que se controlo contexto infinito
+
+736
+00:39:56.540 --> 00:39:59.920
+permisos y automatizacion sin rollback.
+
+737
+00:39:57.068 --> 00:39:59.920
+Claude 39 minutos:
+
+738
+00:39:57.068 --> 00:39:59.920
+Claude 39 minutos:
+
+739
+00:39:54.188 --> 00:39:59.920
+Simular JSON de evaluacion con un finding menor para "modelo de lenguaje-as-a-Judge con
+
+740
+00:39:57.716 --> 00:39:59.920
+contrato" para
+
+741
+00:39:56.372 --> 00:39:59.920
+"modelo de lenguaje-as-a-Judge con contrato".
+
+742
+00:40:00.450 --> 00:40:03.326
+Situacion 40 minutos:
+
+743
+00:40:03.371 --> 00:40:08.623
+el equipo mira "Cuando Modelo por tarea se va de las manos" dentro del memoria
+
+744
+00:40:08.668 --> 00:40:12.552
+skill o M C P con coste y permiso visibles.
+
+745
+00:40:12.597 --> 00:40:17.849
+el equipo mira "Cuando Modelo por tarea se va de las manos" dentro del memoria
+
+746
+00:40:17.894 --> 00:40:25.738
+skill o M C P con coste y permiso visibles. (Claude, 40 minutos, paso 18)
+
+747
+00:40:23.852 --> 00:40:29.920
+Tension 40 minutos: el agente puede avanzar mas rapido que nuestra capacidad de revisar.
+
+748
+00:40:24.428 --> 00:40:29.920
+Accion 40 minutos: pedir salida pequena, verificable y con owner.
+
+749
+00:40:23.348 --> 00:40:29.920
+no con la sensacion de velocidad. (Claude, 40 minutos, paso 11)
+
+750
+00:40:27.068 --> 00:40:29.920
+Evidencia 40 minutos:
+
+751
+00:40:25.124 --> 00:40:29.920
+hay una salida que otro perfil puede revisar sin rehacer el contexto.
+
+752
+00:40:22.484 --> 00:40:29.920
+permisos y automatizacion sin rollback. (Claude, 40 minutos, paso 46)
+
+753
+00:40:30.450 --> 00:40:35.534
+Contexto visible: Explorar con un modelo caro puede ser desperdicio.
+
+754
+00:40:35.579 --> 00:40:38.695
+Revisar un cambio critico con un.
+
+755
+00:40:38.740 --> 00:40:41.616
+Situacion 40 minutos:
+
+756
+00:40:41.661 --> 00:40:46.793
+Claude recibe "Modelo por tarea" y debe convertirlo en trabajo revisable.
+
+757
+00:40:46.838 --> 00:40:53.050
+Evidencia 40 minutos: "Modelo por tarea" queda ligado a prueba, owner y decision.
+
+758
+00:40:53.095 --> 00:40:59.787
+Completar tabla de modelo por rol. (Claude, 40 minutos, paso 1)
+
+759
+00:41:00.450 --> 00:41:05.606
+Decision humana: La politica debe ser simple para que el equipo la use.
+
+760
+00:41:05.651 --> 00:41:11.407
+Situacion 41 minutos: el equipo mira "Modelo por tarea" dentro del memoria
+
+761
+00:41:11.452 --> 00:41:15.336
+skill o M C P con coste y permiso visibles.
+
+762
+00:41:15.381 --> 00:41:23.321
+skill o M C P con coste y permiso visibles. (Claude, 41 minutos, paso 19)
+
+763
+00:41:23.366 --> 00:41:29.170
+Evidencia 41 minutos: el artefacto muestra que se controlo contexto infinito
+
+764
+00:41:26.540 --> 00:41:29.920
+permisos y automatizacion sin rollback.
+
+765
+00:41:22.988 --> 00:41:29.920
+Completar tabla de modelo por rol. (Claude, 41 minutos, paso 2)
+
+766
+00:41:30.450 --> 00:41:33.422
+Evidencia 41 minutos:
+
+767
+00:41:33.467 --> 00:41:38.263
+hay una salida que otro perfil puede revisar sin rehacer el contexto.
+
+768
+00:41:38.308 --> 00:41:44.136
+Situacion 41 minutos: alguien tendra que mantener esta salida despues de la demo.
+
+769
+00:41:44.181 --> 00:41:49.457
+Evidencia 41 minutos: "Modelo por tarea" no se cierra sin test
+
+770
+00:41:49.502 --> 00:41:52.330
+captura o criterio escrito.
+
+771
+00:41:52.375 --> 00:41:59.331
+Completar tabla de modelo por rol. (Claude, 41 minutos, paso 3)
+
+772
+00:42:00.450 --> 00:42:05.366
+Coste y riesgo: Explorar con un modelo caro puede ser desperdicio.
+
+773
+00:42:05.411 --> 00:42:08.455
+Revisar un cambio critico con un.
+
+774
+00:42:08.500 --> 00:42:14.112
+Situacion 42 minutos: el equipo mira "Modelo por tarea" dentro del memoria
+
+775
+00:42:14.157 --> 00:42:17.945
+skill o M C P con coste y permiso visibles.
+
+776
+00:42:17.990 --> 00:42:25.474
+skill o M C P con coste y permiso visibles. (Claude, 42 minutos, paso 20)
+
+777
+00:42:24.236 --> 00:42:29.920
+Evidencia 42 minutos: el artefacto muestra que se controlo contexto infinito
+
+778
+00:42:26.636 --> 00:42:29.920
+permisos y automatizacion sin rollback.
+
+779
+00:42:23.132 --> 00:42:29.920
+Completar tabla de modelo por rol. (Claude, 42 minutos, paso 4)
+
+780
+00:42:30.450 --> 00:42:35.150
+Checkpoint: La politica debe ser simple para que el equipo la use.
+
+781
+00:42:35.195 --> 00:42:39.943
+Situacion 42 minutos: la pantalla no busca impresionar;
+
+782
+00:42:39.988 --> 00:42:43.800
+busca cerrar "Modelo por tarea" con evidencia.
+
+783
+00:42:43.845 --> 00:42:47.657
+busca cerrar "Modelo por tarea" con evidencia.
+
+784
+00:42:47.702 --> 00:42:52.858
+Evidencia 42 minutos: "Modelo por tarea" no se cierra sin test
+
+785
+00:42:52.903 --> 00:42:55.659
+captura o criterio escrito.
+
+786
+00:42:52.484 --> 00:42:59.920
+permisos y automatizacion sin rollback. (Claude, 42 minutos, paso 47)
+
+787
+00:42:53.108 --> 00:42:59.920
+Completar tabla de modelo por rol. (Claude, 42 minutos, paso 5)
+
+788
+00:43:00.450 --> 00:43:05.414
+Pantalla de accion: La potencia se reserva para incertidumbre y riesgo.
+
+789
+00:43:05.594 --> 00:43:11.494
+Situacion 43 minutos: Claude solo avanza si el siguiente humano entiende el por que.
+
+790
+00:43:11.674 --> 00:43:17.454
+Evidencia 43 minutos: skill versionada, hook probado y owner claro.
+
+791
+00:43:17.634 --> 00:43:24.470
+Completar tabla de modelo por rol. (Claude, 43 minutos, paso 6)
+
+792
+00:43:30.450 --> 00:43:35.534
+Contexto visible: Explorar con un modelo caro puede ser desperdicio.
+
+793
+00:43:35.579 --> 00:43:38.695
+Revisar un cambio critico con un.
+
+794
+00:43:38.740 --> 00:43:43.680
+Situacion 43 minutos: la pantalla no busca impresionar;
+
+795
+00:43:43.725 --> 00:43:47.633
+busca cerrar "Modelo por tarea" con evidencia.
+
+796
+00:43:47.678 --> 00:43:51.586
+busca cerrar "Modelo por tarea" con evidencia.
+
+797
+00:43:51.631 --> 00:43:57.027
+Evidencia 43 minutos: "Modelo por tarea" no se cierra sin test
+
+798
+00:43:57.072 --> 00:43:59.900
+captura o criterio escrito.
+
+799
+00:43:52.220 --> 00:43:59.920
+permisos y automatizacion sin rollback. (Claude, 43 minutos, paso 48)
+
+800
+00:43:52.844 --> 00:43:59.920
+Completar tabla de modelo por rol. (Claude, 43 minutos, paso 7)
+
+801
+00:44:00.450 --> 00:44:05.486
+Situacion 44 minutos: la pantalla no busca impresionar;
+
+802
+00:44:05.531 --> 00:44:10.591
+busca cerrar "Cuando Modelo por tarea se va de las manos" con evidencia.
+
+803
+00:44:10.636 --> 00:44:15.696
+busca cerrar "Cuando Modelo por tarea se va de las manos" con evidencia.
+
+804
+00:44:15.741 --> 00:44:22.193
+Tension 44 minutos: el agente puede avanzar mas rapido que nuestra capacidad de revisar.
+
+805
+00:44:22.238 --> 00:44:28.114
+Accion 44 minutos: pedir salida pequena, verificable y con owner.
+
+806
+00:44:23.996 --> 00:44:29.920
+skill o M C P en una decision que se pueda ensenar en tutoria. (Claude
+
+807
+00:44:26.660 --> 00:44:29.920
+44 minutos paso 9)
+
+808
+00:44:26.780 --> 00:44:29.920
+Evidencia 44 minutos:
+
+809
+00:44:25.124 --> 00:44:29.920
+hay una salida que otro perfil puede revisar sin rehacer el contexto.
+
+810
+00:44:30.450 --> 00:44:35.894
+Evidencia 44 minutos: "Modelo por tarea" no se cierra sin test
+
+811
+00:44:35.939 --> 00:44:38.767
+captura o criterio escrito.
+
+812
+00:44:38.812 --> 00:44:41.976
+Situacion 44 minutos:
+
+813
+00:44:42.021 --> 00:44:47.153
+Claude recibe "Modelo por tarea" y debe convertirlo en trabajo revisable.
+
+814
+00:44:47.198 --> 00:44:53.794
+Evidencia 44 minutos: "Modelo por tarea" queda ligado a prueba, owner y decision.
+
+815
+00:44:52.772 --> 00:44:59.920
+Completar tabla de modelo por rol. (Claude, 44 minutos, paso 8)
+
+816
+00:45:00.450 --> 00:45:04.574
+Pantalla de accion: Cuando una skill o hook funciona
+
+817
+00:45:04.619 --> 00:45:08.239
+aparece la tentacion de distribuirlo a todo el mu.
+
+818
+00:45:08.284 --> 00:45:14.088
+Situacion 45 minutos: alguien tendra que mantener esta salida despues de la demo.
+
+819
+00:45:14.133 --> 00:45:19.481
+Evidencia 45 minutos: "Distribucion interna" no se cierra sin test
+
+820
+00:45:19.526 --> 00:45:22.282
+captura o criterio escrito.
+
+821
+00:45:22.327 --> 00:45:26.691
+Claude 45 minutos: Crear una tabla de anillos
+
+822
+00:45:26.180 --> 00:45:29.920
+gates y responsable para "Distribucion interna".
+
+823
+00:45:30.450 --> 00:45:36.350
+Contexto 45 minutos: mira primero el alcance que condiciona esta salida.
+
+824
+00:45:36.395 --> 00:45:41.215
+El rollout por anillos evita que una buena idea se convierta en incidente.
+
+825
+00:45:41.260 --> 00:45:44.424
+Situacion 45 minutos:
+
+826
+00:45:44.469 --> 00:45:49.817
+Claude recibe "Distribucion interna" y debe convertirlo en trabajo revisable.
+
+827
+00:45:49.862 --> 00:45:55.210
+Claude recibe "Distribucion interna" y debe convertirlo en trabajo revisable.
+
+828
+00:45:55.255 --> 00:45:58.419
+Evidencia 45 minutos:
+
+829
+00:45:55.124 --> 00:45:59.920
+hay una salida que otro perfil puede revisar sin rehacer el contexto.
+
+830
+00:45:55.436 --> 00:45:59.920
+Claude 45 minutos: Crear una tabla de anillos
+
+831
+00:45:56.084 --> 00:45:59.920
+gates y responsable para "Distribucion interna".
+
+832
+00:46:00.450 --> 00:46:04.862
+Decision humana: Cada anillo necesita feedback y version.
+
+833
+00:46:04.907 --> 00:46:10.927
+Situacion 46 minutos: el equipo mira "Distribucion interna" dentro del memoria
+
+834
+00:46:10.972 --> 00:46:14.856
+skill o M C P con coste y permiso visibles.
+
+835
+00:46:14.901 --> 00:46:22.817
+skill o M C P con coste y permiso visibles. (Claude, 46 minutos, paso 21)
+
+836
+00:46:22.862 --> 00:46:28.810
+Evidencia 46 minutos: el artefacto muestra que se controlo contexto infinito
+
+837
+00:46:26.540 --> 00:46:29.920
+permisos y automatizacion sin rollback.
+
+838
+00:46:25.508 --> 00:46:29.920
+Claude 46 minutos: Crear una tabla de anillos
+
+839
+00:46:26.084 --> 00:46:29.920
+gates y responsable para "Distribucion interna".
+
+840
+00:46:30.450 --> 00:46:33.518
+Evidencia 46 minutos:
+
+841
+00:46:33.563 --> 00:46:38.359
+hay una salida que otro perfil puede revisar sin rehacer el contexto.
+
+842
+00:46:38.404 --> 00:46:42.120
+aparece la tentacion de distribuirlo a todo el mu.
+
+843
+00:46:42.165 --> 00:46:48.209
+Situacion 46 minutos: Claude solo avanza si el siguiente humano entiende el por que.
+
+844
+00:46:48.254 --> 00:46:54.154
+Evidencia 46 minutos: skill versionada, hook probado y owner claro.
+
+845
+00:46:54.199 --> 00:46:58.611
+Claude 46 minutos: Crear una tabla de anillos
+
+846
+00:46:56.084 --> 00:46:59.920
+gates y responsable para "Distribucion interna".
+
+847
+00:47:00.450 --> 00:47:05.678
+Coste y riesgo: (Claude, 47 minutos, paso 1)
+
+848
+00:47:05.723 --> 00:47:10.423
+El rollout por anillos evita que una buena idea se convierta en incidente.
+
+849
+00:47:10.468 --> 00:47:16.416
+Situacion 47 minutos: el equipo mira "Distribucion interna" dentro del memoria
+
+850
+00:47:16.461 --> 00:47:20.249
+skill o M C P con coste y permiso visibles.
+
+851
+00:47:20.294 --> 00:47:28.114
+skill o M C P con coste y permiso visibles. (Claude, 47 minutos, paso 22)
+
+852
+00:47:24.092 --> 00:47:29.920
+Evidencia 47 minutos: el artefacto muestra que se controlo contexto infinito
+
+853
+00:47:26.636 --> 00:47:29.920
+permisos y automatizacion sin rollback.
+
+854
+00:47:25.580 --> 00:47:29.920
+Claude 47 minutos: Crear una tabla de anillos
+
+855
+00:47:26.180 --> 00:47:29.920
+gates y responsable para "Distribucion interna".
+
+856
+00:47:30.450 --> 00:47:33.638
+Situacion 47 minutos:
+
+857
+00:47:33.683 --> 00:47:39.127
+el equipo mira "Cuando Distribucion interna se va de las manos" dentro del memoria
+
+858
+00:47:39.172 --> 00:47:43.056
+skill o M C P con coste y permiso visibles.
+
+859
+00:47:43.101 --> 00:47:48.545
+el equipo mira "Cuando Distribucion interna se va de las manos" dentro del memoria
+
+860
+00:47:48.590 --> 00:47:56.722
+skill o M C P con coste y permiso visibles. (Claude, 47 minutos, paso 23)
+
+861
+00:47:53.492 --> 00:47:59.920
+Tension 47 minutos: el agente puede avanzar mas rapido que nuestra capacidad de revisar.
+
+862
+00:47:54.044 --> 00:47:59.920
+Accion 47 minutos: pedir salida pequena, verificable y con owner.
+
+863
+00:47:52.988 --> 00:47:59.920
+no con la sensacion de velocidad. (Claude, 47 minutos, paso 12)
+
+864
+00:47:56.780 --> 00:47:59.920
+Evidencia 47 minutos:
+
+865
+00:47:55.124 --> 00:47:59.920
+hay una salida que otro perfil puede revisar sin rehacer el contexto.
+
+866
+00:47:55.268 --> 00:47:59.920
+"Cuando Distribucion interna se va de las manos" no se cierra sin test
+
+867
+00:47:53.036 --> 00:47:59.920
+captura o criterio escrito. (Claude, 47 minutos, paso 15)
+
+868
+00:48:00.450 --> 00:48:04.574
+Pantalla de accion: Cuando una skill o hook funciona
+
+869
+00:48:04.619 --> 00:48:08.239
+aparece la tentacion de distribuirlo a todo el mu.
+
+870
+00:48:08.284 --> 00:48:11.328
+Situacion 48 minutos:
+
+871
+00:48:11.373 --> 00:48:16.577
+Claude recibe "Distribucion interna" y debe convertirlo en trabajo revisable.
+
+872
+00:48:16.622 --> 00:48:21.826
+Claude recibe "Distribucion interna" y debe convertirlo en trabajo revisable.
+
+873
+00:48:21.871 --> 00:48:24.867
+Evidencia 48 minutos:
+
+874
+00:48:24.912 --> 00:48:29.588
+hay una salida que otro perfil puede revisar sin rehacer el contexto.
+
+875
+00:48:25.676 --> 00:48:29.920
+Claude 48 minutos: Crear una tabla de anillos
+
+876
+00:48:26.180 --> 00:48:29.920
+gates y responsable para "Distribucion interna".
+
+877
+00:48:30.450 --> 00:48:36.134
+Contexto 48 minutos: mira primero el alcance que condiciona esta salida.
+
+878
+00:48:36.179 --> 00:48:40.879
+El rollout por anillos evita que una buena idea se convierta en incidente.
+
+879
+00:48:40.924 --> 00:48:45.744
+Situacion 48 minutos: la pantalla no busca impresionar;
+
+880
+00:48:45.789 --> 00:48:49.769
+busca cerrar "Distribucion interna" con evidencia.
+
+881
+00:48:49.814 --> 00:48:53.794
+busca cerrar "Distribucion interna" con evidencia.
+
+882
+00:48:53.839 --> 00:48:59.139
+Evidencia 48 minutos: "Distribucion interna" no se cierra sin test
+
+883
+00:48:57.164 --> 00:48:59.920
+captura o criterio escrito.
+
+884
+00:48:52.412 --> 00:48:59.920
+permisos y automatizacion sin rollback. (Claude, 48 minutos, paso 49)
+
+885
+00:48:55.676 --> 00:48:59.920
+Claude 48 minutos: Crear una tabla de anillos
+
+886
+00:48:56.180 --> 00:48:59.920
+gates y responsable para "Distribucion interna".
+
+887
+00:49:00.450 --> 00:49:04.862
+Decision humana: Cada anillo necesita feedback y version.
+
+888
+00:49:05.042 --> 00:49:11.038
+Situacion 49 minutos: alguien tendra que mantener esta salida despues de la demo.
+
+889
+00:49:11.218 --> 00:49:16.710
+Evidencia 49 minutos: "Distribucion interna" no se cierra sin test
+
+890
+00:49:16.890 --> 00:49:19.718
+captura o criterio escrito.
+
+891
+00:49:19.898 --> 00:49:24.334
+Claude 49 minutos: Crear una tabla de anillos
+
+892
+00:49:24.514 --> 00:49:28.350
+gates y responsable para "Distribucion interna".
+
+893
+00:49:30.450 --> 00:49:35.942
+Evidencia 49 minutos: "Distribucion interna" no se cierra sin test
+
+894
+00:49:35.987 --> 00:49:38.815
+captura o criterio escrito.
+
+895
+00:49:38.860 --> 00:49:42.576
+aparece la tentacion de distribuirlo a todo el mu.
+
+896
+00:49:42.621 --> 00:49:48.737
+Situacion 49 minutos: el equipo mira "Distribucion interna" dentro del memoria
+
+897
+00:49:48.782 --> 00:49:52.666
+skill o M C P con coste y permiso visibles.
+
+898
+00:49:51.884 --> 00:49:59.920
+skill o M C P con coste y permiso visibles. (Claude, 49 minutos, paso 24)
+
+899
+00:49:53.948 --> 00:49:59.920
+Evidencia 49 minutos: el artefacto muestra que se controlo contexto infinito
+
+900
+00:49:56.540 --> 00:49:59.920
+permisos y automatizacion sin rollback.
+
+901
+00:49:55.484 --> 00:49:59.920
+Claude 49 minutos: Crear una tabla de anillos
+
+902
+00:49:56.084 --> 00:49:59.920
+gates y responsable para "Distribucion interna".
+
+903
+00:50:00.450 --> 00:50:05.726
+Pantalla de accion: El workshop termina con un pack, no con apuntes sueltos.
+
+904
+00:50:05.771 --> 00:50:10.447
+Situacion 50 minutos: la pantalla no busca impresionar;
+
+905
+00:50:10.492 --> 00:50:14.136
+busca cerrar "Pack de salida" con evidencia.
+
+906
+00:50:14.181 --> 00:50:17.825
+busca cerrar "Pack de salida" con evidencia.
+
+907
+00:50:17.870 --> 00:50:22.642
+Evidencia 50 minutos: "Pack de salida" no se cierra sin test
+
+908
+00:50:22.687 --> 00:50:25.443
+captura o criterio escrito.
+
+909
+00:50:22.868 --> 00:50:29.920
+permisos y automatizacion sin rollback. (Claude, 50 minutos, paso 50)
+
+910
+00:50:24.044 --> 00:50:29.920
+Claude 50 minutos: Mostrar archivos y criterios de aceptacion para "Pack de salida".
+
+911
+00:50:30.450 --> 00:50:35.462
+Contexto visible: Cada archivo representa una decision: memoria
+
+912
+00:50:35.642 --> 00:50:38.902
+procedimiento rol control o evalua.
+
+913
+00:50:39.082 --> 00:50:41.910
+Situacion 50 minutos:
+
+914
+00:50:42.090 --> 00:50:47.030
+Claude recibe "Pack de salida" y debe convertirlo en trabajo revisable.
+
+915
+00:50:47.210 --> 00:50:53.110
+Evidencia 50 minutos: "Pack de salida" queda ligado a prueba, owner y decision.
+
+916
+00:50:53.290 --> 00:50:59.166
+Claude 50 minutos: Mostrar archivos y criterios de aceptacion para "Pack de salida".
+
+917
+00:51:00.450 --> 00:51:05.702
+Decision humana: Este pack es el minimo viable para empezar un piloto serio.
+
+918
+00:51:05.747 --> 00:51:11.287
+Situacion 51 minutos: el equipo mira "Pack de salida" dentro del memoria
+
+919
+00:51:11.332 --> 00:51:15.120
+skill o M C P con coste y permiso visibles.
+
+920
+00:51:15.165 --> 00:51:22.817
+skill o M C P con coste y permiso visibles. (Claude, 51 minutos, paso 25)
+
+921
+00:51:22.862 --> 00:51:28.546
+Evidencia 51 minutos: el artefacto muestra que se controlo contexto infinito
+
+922
+00:51:26.636 --> 00:51:29.920
+permisos y automatizacion sin rollback.
+
+923
+00:51:23.924 --> 00:51:29.920
+Claude 51 minutos: Mostrar archivos y criterios de aceptacion para "Pack de salida".
+
+924
+00:51:30.450 --> 00:51:33.398
+Evidencia 51 minutos:
+
+925
+00:51:33.578 --> 00:51:38.254
+hay una salida que otro perfil puede revisar sin rehacer el contexto.
+
+926
+00:51:38.434 --> 00:51:44.214
+Situacion 51 minutos: alguien tendra que mantener esta salida despues de la demo.
+
+927
+00:51:44.394 --> 00:51:49.286
+Evidencia 51 minutos: "Pack de salida" no se cierra sin test
+
+928
+00:51:49.466 --> 00:51:52.222
+captura o criterio escrito.
+
+929
+00:51:52.402 --> 00:51:58.398
+Claude 51 minutos: Mostrar archivos y criterios de aceptacion para "Pack de salida".
+
+930
+00:52:00.450 --> 00:52:06.494
+Situacion 52 minutos: Claude solo avanza si el siguiente humano entiende el por que.
+
+931
+00:52:06.539 --> 00:52:12.343
+Tension 52 minutos: aceptar rapido puede esconder contexto infinito
+
+932
+00:52:12.388 --> 00:52:15.768
+permisos y automatizacion sin rollback.
+
+933
+00:52:15.813 --> 00:52:23.321
+permisos y automatizacion sin rollback. (Claude, 52 minutos, paso 51)
+
+934
+00:52:23.366 --> 00:52:29.170
+Accion 52 minutos: nombrar modelo, permiso y limite antes de iterar.
+
+935
+00:52:24.740 --> 00:52:29.920
+parar si "Cuando Pack de salida se va de las manos" no produce evidencia nueva.
+
+936
+00:52:26.828 --> 00:52:29.920
+Evidencia 52 minutos:
+
+937
+00:52:25.604 --> 00:52:29.920
+"Cuando Pack de salida se va de las manos" no se cierra sin test
+
+938
+00:52:27.092 --> 00:52:29.920
+captura o criterio escrito.
+
+939
+00:52:25.580 --> 00:52:29.920
+"Cuando Pack de salida se va de las manos" queda ligado a prueba
+
+940
+00:52:23.804 --> 00:52:29.920
+owner y decision. (Claude, 52 minutos, paso 5)
+
+941
+00:52:30.450 --> 00:52:35.438
+Checkpoint: Este pack es el minimo viable para empezar un piloto serio.
+
+942
+00:52:35.483 --> 00:52:40.471
+Situacion 52 minutos: la pantalla no busca impresionar;
+
+943
+00:52:40.516 --> 00:52:44.256
+busca cerrar "Pack de salida" con evidencia.
+
+944
+00:52:44.301 --> 00:52:48.041
+busca cerrar "Pack de salida" con evidencia.
+
+945
+00:52:48.086 --> 00:52:53.218
+Evidencia 52 minutos: "Pack de salida" no se cierra sin test
+
+946
+00:52:53.263 --> 00:52:56.091
+captura o criterio escrito.
+
+947
+00:52:52.340 --> 00:52:59.920
+permisos y automatizacion sin rollback. (Claude, 52 minutos, paso 52)
+
+948
+00:52:53.708 --> 00:52:59.920
+Claude 52 minutos: Mostrar archivos y criterios de aceptacion para "Pack de salida".
+
+949
+00:53:00.450 --> 00:53:05.870
+Pantalla de accion: El workshop termina con un pack, no con apuntes sueltos.
+
+950
+00:53:06.050 --> 00:53:12.190
+Situacion 53 minutos: Claude solo avanza si el siguiente humano entiende el por que.
+
+951
+00:53:12.370 --> 00:53:18.294
+Evidencia 53 minutos: skill versionada, hook probado y owner claro.
+
+952
+00:53:18.474 --> 00:53:24.806
+Claude 53 minutos: Mostrar archivos y criterios de aceptacion para "Pack de salida".
+
+953
+00:53:30.450 --> 00:53:35.606
+Contexto visible: Cada archivo representa una decision: memoria
+
+954
+00:53:35.651 --> 00:53:38.983
+procedimiento rol control o evalua.
+
+955
+00:53:39.028 --> 00:53:44.088
+Situacion 53 minutos: la pantalla no busca impresionar;
+
+956
+00:53:44.133 --> 00:53:47.873
+busca cerrar "Pack de salida" con evidencia.
+
+957
+00:53:47.918 --> 00:53:51.658
+busca cerrar "Pack de salida" con evidencia.
+
+958
+00:53:51.703 --> 00:53:56.907
+Evidencia 53 minutos: "Pack de salida" no se cierra sin test
+
+959
+00:53:56.952 --> 00:53:59.780
+captura o criterio escrito.
+
+960
+00:53:52.220 --> 00:53:59.920
+permisos y automatizacion sin rollback. (Claude, 53 minutos, paso 53)
+
+961
+00:53:53.588 --> 00:53:59.920
+Claude 53 minutos: Mostrar archivos y criterios de aceptacion para "Pack de salida".
+
+962
+00:54:00.450 --> 00:54:05.702
+Decision humana: Este pack es el minimo viable para empezar un piloto serio.
+
+963
+00:54:05.882 --> 00:54:11.806
+Situacion 54 minutos: alguien tendra que mantener esta salida despues de la demo.
+
+964
+00:54:11.986 --> 00:54:17.094
+Evidencia 54 minutos: "Pack de salida" no se cierra sin test
+
+965
+00:54:17.274 --> 00:54:20.030
+captura o criterio escrito.
+
+966
+00:54:20.210 --> 00:54:26.422
+Claude 54 minutos: Mostrar archivos y criterios de aceptacion para "Pack de salida".
+
+967
+00:54:30.450 --> 00:54:35.702
+Evidencia 54 minutos: "Pack de salida" no se cierra sin test
+
+968
+00:54:35.747 --> 00:54:38.575
+captura o criterio escrito.
+
+969
+00:54:38.620 --> 00:54:41.832
+Situacion 54 minutos:
+
+970
+00:54:41.877 --> 00:54:46.961
+Claude recibe "Pack de salida" y debe convertirlo en trabajo revisable.
+
+971
+00:54:47.006 --> 00:54:53.386
+Evidencia 54 minutos: "Pack de salida" queda ligado a prueba, owner y decision.
+
+972
+00:54:53.431 --> 00:54:59.835
+Claude 54 minutos: Mostrar archivos y criterios de aceptacion para "Pack de salida".
+
+973
+00:55:00.450 --> 00:55:07.094
+Accion 55 minutos: parar si "De uso individual a sistema" no produce evidencia nueva.
+
+974
+00:55:07.139 --> 00:55:12.463
+Claude aterriza cuando deja de ser una conversacion brillante y se convierte en sis.
+
+975
+00:55:12.508 --> 00:55:18.600
+Situacion 55 minutos: alguien tendra que mantener esta salida despues de la demo.
+
+976
+00:55:18.645 --> 00:55:24.521
+Evidencia 55 minutos: "De uso individual a sistema" no se cierra sin test
+
+977
+00:55:24.566 --> 00:55:27.394
+captura o criterio escrito.
+
+978
+00:55:22.844 --> 00:55:29.920
+captura o criterio escrito. (Claude, 55 minutos, paso 16)
+
+979
+00:55:23.372 --> 00:55:29.920
+Claude 55 minutos: Recoger outputs y decidir piloto para "De uso individual a sistema".
+
+980
+00:55:30.450 --> 00:55:36.542
+Situacion 55 minutos: alguien tendra que mantener esta salida despues de la demo.
+
+981
+00:55:36.587 --> 00:55:43.111
+Tension 55 minutos: el agente puede avanzar mas rapido que nuestra capacidad de revisar.
+
+982
+00:55:43.156 --> 00:55:49.104
+Accion 55 minutos: pedir salida pequena, verificable y con owner.
+
+983
+00:55:49.149 --> 00:55:52.337
+Evidencia 55 minutos:
+
+984
+00:55:52.382 --> 00:55:57.466
+"Cuando De uso individual a sistema se va de las manos" queda ligado a prueba
+
+985
+00:55:57.511 --> 00:55:59.835
+owner y decision.
+
+986
+00:55:54.836 --> 00:55:59.920
+"Cuando De uso individual a sistema se va de las manos" queda ligado a prueba
+
+987
+00:55:53.660 --> 00:55:59.920
+owner y decision. (Claude, 55 minutos, paso 6)
+
+988
+00:56:00.450 --> 00:56:07.118
+Decision 56 minutos: seguir, pedir contexto, escalar modelo o bloquear.
+
+989
+00:56:07.163 --> 00:56:12.679
+El siguiente paso es probarlo con un caso real y medir si reduce dudas de tutoria.
+
+990
+00:56:12.724 --> 00:56:17.784
+Situacion 56 minutos: la pantalla no busca impresionar;
+
+991
+00:56:17.829 --> 00:56:22.193
+busca cerrar "De uso individual a sistema" con evidencia.
+
+992
+00:56:22.238 --> 00:56:26.602
+busca cerrar "De uso individual a sistema" con evidencia.
+
+993
+00:56:24.116 --> 00:56:29.920
+Evidencia 56 minutos: "De uso individual a sistema" no se cierra sin test
+
+994
+00:56:27.092 --> 00:56:29.920
+captura o criterio escrito.
+
+995
+00:56:22.196 --> 00:56:29.920
+permisos y automatizacion sin rollback. (Claude, 56 minutos, paso 54)
+
+996
+00:56:23.444 --> 00:56:29.920
+Claude 56 minutos: Recoger outputs y decidir piloto para "De uso individual a sistema".
+
+997
+00:56:30.450 --> 00:56:33.590
+Evidencia 56 minutos:
+
+998
+00:56:33.635 --> 00:56:38.431
+hay una salida que otro perfil puede revisar sin rehacer el contexto.
+
+999
+00:56:38.476 --> 00:56:43.800
+Claude aterriza cuando deja de ser una conversacion brillante y se convierte en sis.
+
+1000
+00:56:43.845 --> 00:56:49.985
+Situacion 56 minutos: Claude solo avanza si el siguiente humano entiende el por que.
+
+1001
+00:56:50.030 --> 00:56:55.930
+Evidencia 56 minutos: skill versionada, hook probado y owner claro.
+
+1002
+00:56:53.444 --> 00:56:59.920
+Claude 56 minutos: Recoger outputs y decidir piloto para "De uso individual a sistema".
+
+1003
+00:57:00.450 --> 00:57:04.406
+Coste y riesgo: La memoria reduce repeticion
+
+1004
+00:57:04.451 --> 00:57:08.359
+las skills capturan procedimiento y los hooks protege.
+
+1005
+00:57:08.404 --> 00:57:11.664
+Situacion 57 minutos:
+
+1006
+00:57:11.709 --> 00:57:16.265
+el equipo mira "De uso individual a sistema" dentro del memoria
+
+1007
+00:57:16.310 --> 00:57:20.194
+skill o M C P con coste y permiso visibles.
+
+1008
+00:57:20.239 --> 00:57:24.795
+el equipo mira "De uso individual a sistema" dentro del memoria
+
+1009
+00:57:21.812 --> 00:57:29.920
+skill o M C P con coste y permiso visibles. (Claude, 57 minutos, paso 26)
+
+1010
+00:57:24.092 --> 00:57:29.920
+Evidencia 57 minutos: "De uso individual a sistema" no se cierra sin test
+
+1011
+00:57:27.092 --> 00:57:29.920
+captura o criterio escrito.
+
+1012
+00:57:23.372 --> 00:57:29.920
+Claude 57 minutos: Recoger outputs y decidir piloto para "De uso individual a sistema".
+
+1013
+00:57:30.450 --> 00:57:32.222
+Checkpoint:
+
+1014
+00:57:32.267 --> 00:57:37.639
+El siguiente paso es probarlo con un caso real y medir si reduce dudas de tutoria.
+
+1015
+00:57:37.684 --> 00:57:43.608
+Situacion 57 minutos: alguien tendra que mantener esta salida despues de la demo.
+
+1016
+00:57:43.653 --> 00:57:49.313
+Evidencia 57 minutos: "De uso individual a sistema" no se cierra sin test
+
+1017
+00:57:49.358 --> 00:57:52.114
+captura o criterio escrito.
+
+1018
+00:57:52.159 --> 00:57:59.067
+captura o criterio escrito. (Claude, 57 minutos, paso 17)
+
+1019
+00:57:53.564 --> 00:57:59.920
+Claude 57 minutos: Recoger outputs y decidir piloto para "De uso individual a sistema".
+
+1020
+00:58:00.450 --> 00:58:05.822
+Accion 58 minutos: comparar la respuesta con el criterio de cierre
+
+1021
+00:58:05.867 --> 00:58:08.767
+no con la sensacion de velocidad.
+
+1022
+00:58:08.812 --> 00:58:14.136
+Claude aterriza cuando deja de ser una conversacion brillante y se convierte en sis.
+
+1023
+00:58:14.181 --> 00:58:17.369
+Situacion 58 minutos:
+
+1024
+00:58:17.414 --> 00:58:23.026
+Claude recibe "De uso individual a sistema" y debe convertirlo en trabajo revisable.
+
+1025
+00:58:23.071 --> 00:58:28.683
+Claude recibe "De uso individual a sistema" y debe convertirlo en trabajo revisable.
+
+1026
+00:58:26.756 --> 00:58:29.920
+Evidencia 58 minutos:
+
+1027
+00:58:25.124 --> 00:58:29.920
+hay una salida que otro perfil puede revisar sin rehacer el contexto.
+
+1028
+00:58:23.468 --> 00:58:29.920
+Claude 58 minutos: Recoger outputs y decidir piloto para "De uso individual a sistema".
+
+1029
+00:58:30.450 --> 00:58:34.478
+Contexto visible: La memoria reduce repeticion
+
+1030
+00:58:34.523 --> 00:58:38.335
+las skills capturan procedimiento y los hooks protege.
+
+1031
+00:58:38.380 --> 00:58:43.320
+Situacion 58 minutos: la pantalla no busca impresionar;
+
+1032
+00:58:43.365 --> 00:58:47.609
+busca cerrar "De uso individual a sistema" con evidencia.
+
+1033
+00:58:47.654 --> 00:58:51.898
+busca cerrar "De uso individual a sistema" con evidencia.
+
+1034
+00:58:51.943 --> 00:58:57.555
+Evidencia 58 minutos: "De uso individual a sistema" no se cierra sin test
+
+1035
+00:58:57.164 --> 00:58:59.920
+captura o criterio escrito.
+
+1036
+00:58:52.460 --> 00:58:59.920
+permisos y automatizacion sin rollback. (Claude, 58 minutos, paso 55)
+
+1037
+00:58:53.660 --> 00:58:59.920
+Claude 58 minutos: Recoger outputs y decidir piloto para "De uso individual a sistema".
+
+1038
+00:59:00.450 --> 00:59:06.830
+Decision 59 minutos: si el riesgo supera la evidencia, entra instructor o tech lead.
+
+1039
+00:59:06.875 --> 00:59:12.247
+El siguiente paso es probarlo con un caso real y medir si reduce dudas de tutoria.
+
+1040
+00:59:12.292 --> 00:59:18.288
+Situacion 59 minutos: Claude solo avanza si el siguiente humano entiende el por que.
+
+1041
+00:59:18.333 --> 00:59:24.137
+Evidencia 59 minutos: skill versionada, hook probado y owner claro.
+
+1042
+00:59:23.612 --> 00:59:29.920
+Claude 59 minutos: Recoger outputs y decidir piloto para "De uso individual a sistema".
+
+1043
+00:59:30.450 --> 00:59:36.278
+Evidencia 59 minutos: "De uso individual a sistema" no se cierra sin test
+
+1044
+00:59:36.323 --> 00:59:39.151
+captura o criterio escrito.
+
+1045
+00:59:39.196 --> 00:59:46.200
+captura o criterio escrito. (Claude, 59 minutos, paso 18)
+
+1046
+00:59:46.245 --> 00:59:51.569
+Claude aterriza cuando deja de ser una conversacion brillante y se convierte en sis.
+
+1047
+00:59:51.614 --> 00:59:56.722
+Situacion 59 minutos: la pantalla no busca impresionar;
+
+1048
+00:59:55.556 --> 00:59:59.920
+busca cerrar "De uso individual a sistema" con evidencia.
+
+1049
+00:59:55.364 --> 00:59:59.920
+el equipo mira "De uso individual a sistema" dentro del memoria
+
+1050
+00:59:51.884 --> 00:59:59.920
+skill o M C P con coste y permiso visibles. (Claude, 59 minutos, paso 27)
+
+1051
+00:59:53.948 --> 00:59:59.920
+Evidencia 59 minutos: skill versionada, hook probado y owner claro.
+
+1052
+00:59:53.420 --> 00:59:59.920
+Claude 59 minutos: Recoger outputs y decidir piloto para "De uso individual a sistema".
+

@@ -9,25 +9,115 @@
   "author": "AI Practice Hub",
   "createdAt": "2026-05-07T00:00:00.000Z",
   "chapters": [
-    { "id": "start", "label": "Hooks", "startMs": 0 },
-    { "id": "compare", "label": "Control", "startMs": 9000 },
-    { "id": "close", "label": "Eventos", "startMs": 65000 }
+    {
+      "id": "start",
+      "label": "Hooks",
+      "startMs": 0
+    },
+    {
+      "id": "compare",
+      "label": "Control",
+      "startMs": 30000
+    },
+    {
+      "id": "close",
+      "label": "Eventos",
+      "startMs": 65000
+    }
   ],
   "scenes": [
     {
       "id": "title",
       "name": "Apertura",
       "startMs": 0,
-      "endMs": 9000,
+      "endMs": 30000,
       "type": "title",
-      "content": { "title": "Hooks", "subtitle": "Cuando no basta con pedir por favor.", "tag": "Claude Advanced" },
-      "subtitles": [{ "text": "Los hooks convierten reglas de seguridad en controles ejecutables.", "startMs": 1000, "endMs": 8200 }]
+      "content": {
+        "title": "Hooks",
+        "subtitle": "Objetivo: resolver Claude Advanced 01 - Hooks con criterio practico.",
+        "tag": "Claude Advanced",
+        "narrativeContract": {
+          "objective": "resolver Claude Advanced 01 - Hooks con criterio practico.",
+          "outcome": "quedarte con una regla de uso y un ejemplo repetible.",
+          "route": "concepto, ejemplo y cierre.",
+          "decision": "cuando aplicar esta tecnica en tu propio repositorio."
+        }
+      },
+      "subtitles": [
+        {
+          "text": "Objetivo de esta clase: resolver Claude Advanced 01 - Hooks con criterio practico.",
+          "startMs": 450,
+          "endMs": 6638
+        },
+        {
+          "text": "Al final debes poder quedarte con una regla de uso y un ejemplo repetible.",
+          "startMs": 6818,
+          "endMs": 11734
+        },
+        {
+          "text": "La ruta sera: concepto, ejemplo y cierre.",
+          "startMs": 11914,
+          "endMs": 15942
+        },
+        {
+          "text": "Durante el video mira esta decision:",
+          "startMs": 16122,
+          "endMs": 19142
+        },
+        {
+          "text": "cuando aplicar esta tecnica en tu propio repositorio.",
+          "startMs": 19322,
+          "endMs": 23062
+        }
+      ],
+      "voiceover": [
+        "Objetivo de esta clase: resolver Claude Advanced 01 - Hooks con criterio practico.",
+        "Al final debes poder quedarte con una regla de uso y un ejemplo repetible.",
+        "La ruta sera: concepto, ejemplo y cierre.",
+        "Durante el video mira esta decision:",
+        "cuando aplicar esta tecnica en tu propio repositorio."
+      ],
+      "blueprintAction": {
+        "learningRubric": {
+          "learns": "Reconoce por que \"Hooks\" necesita evidencia y no solo respuesta.",
+          "does": "Formula una peticion verificable con limite de alcance.",
+          "decides": "Convertir la duda en material de tutoria si se repite.",
+          "vendor": "claude",
+          "usefulnessScore": 82,
+          "memoryCheck": "Puede nombrar el riesgo principal sin mirar la slide.",
+          "productionPass": "2000-final-direction"
+        }
+      },
+      "production": {
+        "audioVersion": "audio-prod-v2-2026-05-18",
+        "voiceProfileId": "claudeNarrator",
+        "voice": "es-ES-AlvaroNeural",
+        "rate": "+5%",
+        "pitch": "+0Hz",
+        "energy": "calmada",
+        "emphasis": "memoria, skill, hook y MCP",
+        "pauseMs": 220,
+        "role": "narrator",
+        "reviewRubric": {
+          "learns": "Reconoce por que \"Hooks\" necesita evidencia y no solo respuesta.",
+          "does": "Formula una peticion verificable con limite de alcance.",
+          "decides": "Convertir la duda en material de tutoria si se repite.",
+          "memoryCheck": "Puede nombrar el riesgo principal sin mirar la slide."
+        },
+        "prosodyNotes": {
+          "pace": "+5%",
+          "pause": "220ms antes de la decision",
+          "emphasis": "memoria, skill, hook y M C P",
+          "energy": "calmada"
+        },
+        "pronunciationPass": "spain-voice-units-v1"
+      }
     },
     {
       "id": "compare",
       "name": "Control",
-      "startMs": 9000,
-      "endMs": 65000,
+      "startMs": 30000,
+      "endMs": 60000,
       "type": "compare",
       "content": {
         "tag": "Guardrails",
@@ -35,9 +125,22 @@
           "label": "Solo instrucciones",
           "color": "destructive",
           "steps": [
-            { "icon": "MessageSquare", "text": "No escribas secretos" },
-            { "icon": "AlertTriangle", "text": "Depende de memoria" },
-            { "icon": "XCircle", "text": "Falla tarde" }
+            {
+              "icon": "MessageSquare",
+              "text": "No escribas secretos"
+            },
+            {
+              "icon": "AlertTriangle",
+              "text": "Depende de memoria"
+            },
+            {
+              "icon": "XCircle",
+              "text": "Falla tarde"
+            },
+            {
+              "icon": "AlertTriangle",
+              "text": "Sin evidencia, la decision vuelve a tutoria."
+            }
           ],
           "total": "Fragil"
         },
@@ -45,36 +148,176 @@
           "label": "Hook",
           "color": "accent",
           "steps": [
-            { "icon": "ShieldCheck", "text": "Intercepta Write/Edit" },
-            { "icon": "Terminal", "text": "Ejecuta script" },
-            { "icon": "Ban", "text": "Bloquea con exit code" }
+            {
+              "icon": "ShieldCheck",
+              "text": "Intercepta Write/Edit"
+            },
+            {
+              "icon": "Terminal",
+              "text": "Ejecuta script"
+            },
+            {
+              "icon": "Ban",
+              "text": "Bloquea con exit code"
+            },
+            {
+              "icon": "Check",
+              "text": "Cerrar con criterio, coste y validacion."
+            }
           ],
           "total": "Deterministico"
-        }
+        },
+        "auditNote": "Comparativa enriquecida para explicar cuando usar, cuando no usar y como cerrar."
       },
       "subtitles": [
-        { "text": "Un hook no convence al modelo. Controla la herramienta.", "startMs": 10000, "endMs": 29000 },
-        { "text": "Eso es lo que lo hace util para seguridad.", "startMs": 30000, "endMs": 47000 },
-        { "text": "La clave es fallar claro y con poco ruido.", "startMs": 48000, "endMs": 63000 }
-      ]
+        {
+          "text": "Un hook no convence al modelo. Controla la herramienta.",
+          "startMs": 30450,
+          "endMs": 35582
+        },
+        {
+          "text": "Eso es lo que lo hace util para seguridad.",
+          "startMs": 35762,
+          "endMs": 39022
+        },
+        {
+          "text": "La clave es fallar claro y con poco ruido.",
+          "startMs": 39202,
+          "endMs": 42654
+        }
+      ],
+      "voiceover": [
+        "Un hook no convence al modelo. Controla la herramienta.",
+        "Eso es lo que lo hace util para seguridad.",
+        "La clave es fallar claro y con poco ruido."
+      ],
+      "blueprintAction": {
+        "learningRubric": {
+          "learns": "Distingue decision humana de ejecucion automatizada en Claude.",
+          "does": "Comprueba la salida contra prueba, owner o captura.",
+          "decides": "Aceptar solo si la evidencia queda visible para otra persona.",
+          "vendor": "claude",
+          "usefulnessScore": 84,
+          "memoryCheck": "Puede repetir el prompt inicial con criterio de cierre.",
+          "productionPass": "2000-final-direction"
+        }
+      },
+      "production": {
+        "audioVersion": "audio-prod-v2-2026-05-18",
+        "voiceProfileId": "claudeNarrator",
+        "voice": "es-ES-AlvaroNeural",
+        "rate": "+5%",
+        "pitch": "+0Hz",
+        "energy": "calmada",
+        "emphasis": "memoria, skill, hook y MCP",
+        "pauseMs": 220,
+        "role": "narrator",
+        "reviewRubric": {
+          "learns": "Distingue decision humana de ejecucion automatizada en Claude.",
+          "does": "Comprueba la salida contra prueba, owner o captura.",
+          "decides": "Aceptar solo si la evidencia queda visible para otra persona.",
+          "memoryCheck": "Puede repetir el prompt inicial con criterio de cierre."
+        },
+        "prosodyNotes": {
+          "pace": "+5%",
+          "pause": "220ms antes de la decision",
+          "emphasis": "memoria, skill, hook y M C P",
+          "energy": "calmada"
+        },
+        "pronunciationPass": "spain-voice-units-v1"
+      }
     },
     {
       "id": "finale",
       "name": "Cierre",
-      "startMs": 65000,
+      "startMs": 60000,
       "endMs": 90000,
       "type": "finale",
       "content": {
         "title": "Eventos basicos",
         "summary": [
-          { "number": "Pre", "label": "Antes", "body": "Bloquea acciones peligrosas." },
-          { "number": "Post", "label": "Despues", "body": "Audita o formatea." },
-          { "number": "Stop", "label": "Cierre", "body": "Exige evidencia." }
+          {
+            "number": "Pre",
+            "label": "Antes",
+            "body": "Bloquea acciones peligrosas."
+          },
+          {
+            "number": "Post",
+            "label": "Despues",
+            "body": "Audita o formatea."
+          },
+          {
+            "number": "Stop",
+            "label": "Cierre",
+            "body": "Exige evidencia."
+          }
         ],
         "cta": "Ejercicio: cl-a01-hook-block-secrets."
       },
-      "subtitles": [{ "text": "Los hooks buenos no hacen teatro. Evitan errores reales.", "startMs": 66000, "endMs": 89000 }]
+      "subtitles": [
+        {
+          "text": "Los hooks buenos no hacen teatro. Evitan errores reales.",
+          "startMs": 60450,
+          "endMs": 65870
+        },
+        {
+          "text": "Evidencia minuto 1: skill versionada, hook probado y owner claro.",
+          "startMs": 66050,
+          "endMs": 71326
+        },
+        {
+          "text": "Accion minuto 1: parar si \"Eventos basicos\" no produce evidencia nueva.",
+          "startMs": 71506,
+          "endMs": 76854
+        }
+      ],
+      "voiceover": [
+        "Los hooks buenos no hacen teatro. Evitan errores reales.",
+        "Evidencia minuto 1: skill versionada, hook probado y owner claro.",
+        "Accion minuto 1: parar si \"Eventos basicos\" no produce evidencia nueva."
+      ],
+      "blueprintAction": {
+        "learningRubric": {
+          "learns": "Ubica coste, permiso y criterio antes de aceptar la salida.",
+          "does": "Registra el criterio que permitiria repetir el paso sin instructor.",
+          "decides": "Seguir, pedir mas contexto, escalar modelo o bloquear.",
+          "vendor": "claude",
+          "usefulnessScore": 86,
+          "memoryCheck": "Puede explicar el paso en una frase de menos de 20 segundos.",
+          "productionPass": "2000-final-direction"
+        }
+      },
+      "production": {
+        "audioVersion": "audio-prod-v2-2026-05-18",
+        "voiceProfileId": "claudeSafety",
+        "voice": "es-ES-AlvaroNeural",
+        "rate": "+2%",
+        "pitch": "+0Hz",
+        "energy": "deliberada",
+        "emphasis": "permiso, bloqueo y rollback",
+        "pauseMs": 300,
+        "role": "reflection",
+        "reviewRubric": {
+          "learns": "Ubica coste, permiso y criterio antes de aceptar la salida.",
+          "does": "Registra el criterio que permitiria repetir el paso sin instructor.",
+          "decides": "Seguir, pedir mas contexto, escalar modelo o bloquear.",
+          "memoryCheck": "Puede explicar el paso en una frase de menos de 20 segundos."
+        },
+        "prosodyNotes": {
+          "pace": "+2%",
+          "pause": "300ms antes de la decision",
+          "emphasis": "permiso, bloqueo y rollback",
+          "energy": "deliberada"
+        },
+        "pronunciationPass": "spain-voice-units-v1"
+      }
     }
-  ]
+  ],
+  "production": {
+    "audioProductionVersion": "audio-prod-v2-2026-05-18",
+    "productionPass": "2000-final-direction",
+    "vendor": "claude",
+    "narrativePass": "teacher-contract-v1",
+    "pronunciationPass": "spain-voice-units-v1"
+  }
 }
-

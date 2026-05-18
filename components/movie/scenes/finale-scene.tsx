@@ -24,7 +24,7 @@ export function FinaleScene({ content, progress }: FinaleSceneProps) {
   const showCta = progress > 80
 
   return (
-    <div className="flex flex-col h-full overflow-y-auto bg-background px-6 md:px-16 lg:px-32 py-10 pb-28">
+    <div className="flex h-full flex-col overflow-hidden bg-background px-6 py-8 pb-24 md:px-16 md:py-10 md:pb-28 lg:px-32">
       <motion.p
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
@@ -37,18 +37,18 @@ export function FinaleScene({ content, progress }: FinaleSceneProps) {
         initial={{ opacity: 0, y: 10 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6 }}
-        className="text-3xl md:text-5xl font-bold text-foreground mb-12 text-balance"
+        className="mb-8 text-3xl font-bold text-foreground text-balance md:mb-12 md:text-5xl"
       >
         {content.title}
       </motion.h2>
 
-      <div className="grid md:grid-cols-2 gap-5 mb-12">
+      <div className="mb-8 grid gap-4 overflow-hidden md:mb-12 md:grid-cols-2 md:gap-5">
         {content.summary.map((item, i) => (
           <motion.div
             key={i}
             animate={{ opacity: i < visibleItems ? 1 : 0, y: i < visibleItems ? 0 : 12 }}
             transition={{ duration: 0.5 }}
-            className="rounded-xl border border-border bg-card p-5 flex flex-col gap-2"
+            className={`flex flex-col gap-2 rounded-xl border border-border bg-card p-4 md:p-5 ${i > 1 ? 'hidden md:flex' : ''}`}
           >
             <span className="text-xs font-mono text-muted-foreground/50 tracking-widest">
               {item.number}
@@ -64,7 +64,7 @@ export function FinaleScene({ content, progress }: FinaleSceneProps) {
           initial={{ opacity: 0, y: 10 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
-          className="rounded-xl border border-accent/40 bg-accent/5 px-6 py-5"
+          className="hidden rounded-xl border border-accent/40 bg-accent/5 px-6 py-5 md:block"
         >
           <p className="text-base md:text-lg font-semibold text-foreground text-balance">
             {content.cta}

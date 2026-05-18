@@ -2,7 +2,7 @@
 
 import { useEffect, useRef } from 'react'
 import { motion } from 'framer-motion'
-import { Circle } from 'lucide-react'
+import { CheckCircle2, Circle, Clock3, ListChecks } from 'lucide-react'
 
 interface LinearContent {
   ticketId: string
@@ -39,13 +39,16 @@ export function LinearScene({ content, progress }: LinearSceneProps) {
   }
   const priorityClass = PRIORITY_COLOR[content.priority] ?? 'text-muted-foreground border-border bg-card'
 
+  const visibleLabels = content.labels.slice(0, Math.max(1, Math.ceil((progress / 100) * content.labels.length)))
+
   return (
-    <div className="flex flex-col h-full overflow-hidden bg-background px-4 md:px-10 lg:px-16 py-8 pb-28">
+    <div className="h-full overflow-hidden bg-background px-4 py-8 pb-28 md:px-10 lg:px-16">
+      <div className="grid h-full min-h-0 gap-5 xl:grid-cols-[minmax(0,1fr)_22rem]">
       <motion.div
         initial={{ opacity: 0, y: 16 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5 }}
-        className="flex-1 flex flex-col min-h-0 max-w-3xl mx-auto w-full rounded-xl border border-border overflow-hidden"
+        className="flex min-h-0 w-full flex-col overflow-hidden rounded-lg border border-border"
       >
         {/* Linear top bar */}
         <div className="shrink-0 flex items-center gap-2 px-4 py-2.5 bg-zinc-900 border-b border-border">
@@ -125,11 +128,55 @@ export function LinearScene({ content, progress }: LinearSceneProps) {
               className="flex items-center gap-2 text-xs font-mono text-muted-foreground pt-2"
             >
               <Circle className="w-2 h-2 fill-accent text-accent" />
-              Spec completo — listo para ejecutar
+              Spec completo - listo para ejecutar
             </motion.div>
           )}
         </div>
       </motion.div>
+
+      <aside className="hidden min-h-0 space-y-4 xl:block">
+        <section className="rounded-lg border border-border bg-card p-4">
+          <div className="mb-4 flex items-center gap-2">
+            <ListChecks className="h-4 w-4 text-muted-foreground" />
+            <p className="text-xs font-mono uppercase tracking-[0.18em] text-muted-foreground">criterio de practica</p>
+          </div>
+          <div className="space-y-3">
+            {['Objetivo claro', 'Restricciones visibles', 'Evidencia esperada', 'Owner humano'].map((item, index) => (
+              <div key={item} className="flex items-center gap-3">
+                <span className={`flex h-7 w-7 items-center justify-center rounded-full border ${progress > index * 22 ? 'border-accent/40 bg-accent/10 text-accent' : 'border-border text-muted-foreground/40'}`}>
+                  <CheckCircle2 className="h-4 w-4" />
+                </span>
+                <span className="text-sm text-foreground/75">{item}</span>
+              </div>
+            ))}
+          </div>
+        </section>
+
+        <section className="rounded-lg border border-border bg-card p-4">
+          <div className="mb-4 flex items-center gap-2">
+            <Clock3 className="h-4 w-4 text-muted-foreground" />
+            <p className="text-xs font-mono uppercase tracking-[0.18em] text-muted-foreground">estado</p>
+          </div>
+          <div className="grid grid-cols-2 gap-3">
+            <div className="rounded-md border border-border bg-background p-3">
+              <p className="text-[10px] uppercase tracking-[0.16em] text-muted-foreground">prioridad</p>
+              <p className="mt-2 text-sm font-semibold text-foreground">{content.priority}</p>
+            </div>
+            <div className="rounded-md border border-border bg-background p-3">
+              <p className="text-[10px] uppercase tracking-[0.16em] text-muted-foreground">avance</p>
+              <p className="mt-2 text-sm font-semibold text-foreground">{Math.round(progress)}%</p>
+            </div>
+          </div>
+          <div className="mt-4 flex flex-wrap gap-2">
+            {visibleLabels.map(label => (
+              <span key={label} className="rounded border border-accent/25 bg-accent/10 px-2 py-1 text-xs font-mono text-accent">
+                {label}
+              </span>
+            ))}
+          </div>
+        </section>
+      </aside>
+      </div>
     </div>
   )
 }

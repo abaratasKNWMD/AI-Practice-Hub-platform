@@ -1,0 +1,80 @@
+1
+00:00:00,450 --> 00:00:02,990
+Objetivo de esta clase:
+
+2
+00:00:03,170 --> 00:00:08,278
+resolver Copilot Advanced 01 - Custom Agent con criterio practico.
+
+3
+00:00:08,458 --> 00:00:13,302
+Al final debes poder quedarte con una regla de uso y un ejemplo repetible.
+
+4
+00:00:13,482 --> 00:00:17,438
+La ruta sera: concepto, ejemplo y cierre.
+
+5
+00:00:17,618 --> 00:00:20,590
+Durante el video mira esta decision:
+
+6
+00:00:20,770 --> 00:00:24,462
+cuando aplicar esta tecnica en tu propio repositorio.
+
+7
+00:00:30,450 --> 00:00:34,862
+Situacion minuto 0: la pantalla no busca impresionar;
+
+8
+00:00:34,907 --> 00:00:39,727
+busca cerrar "Cuando Agent profile se va de las manos" con evidencia.
+
+9
+00:00:39,772 --> 00:00:44,592
+busca cerrar "Cuando Agent profile se va de las manos" con evidencia.
+
+10
+00:00:44,637 --> 00:00:50,417
+Tension minuto 0: el agente puede avanzar mas rapido que nuestra capacidad de revisar.
+
+11
+00:00:50,462 --> 00:00:56,602
+Accion minuto 0: pedir salida pequena verificable y con owner. (Copilot
+
+12
+00:00:56,647 --> 00:00:59,379
+minuto 0 paso 7)
+
+13
+00:00:54,596 --> 00:00:59,920
+convertir workspace de Visual Studio Code en una decision que se pueda ensenar en
+
+14
+00:00:58,172 --> 00:00:59,920
+tutoria.
+
+15
+00:00:56,972 --> 00:00:59,920
+(Copilot minuto 0 paso 1)
+
+16
+00:00:57,428 --> 00:00:59,920
+Evidencia minuto 0:
+
+17
+00:00:55,220 --> 00:00:59,920
+hay una salida que otro perfil puede revisar sin rehacer el contexto.
+
+18
+00:01:00,450 --> 00:01:06,278
+Buenos agentes tienen frontera. Sin frontera, solo hay ruido.
+
+19
+00:01:06,458 --> 00:01:11,566
+Evidencia minuto 1: patch local, test y comentario de pull request.
+
+20
+00:01:11,746 --> 00:01:17,286
+Accion minuto 1: parar si "Agentes con frontera" no produce evidencia nueva.
+

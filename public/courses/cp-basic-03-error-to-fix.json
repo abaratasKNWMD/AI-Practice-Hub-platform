@@ -9,31 +9,115 @@
   "author": "AI Practice Hub",
   "createdAt": "2026-05-07T00:00:00.000Z",
   "chapters": [
-    { "id": "start", "label": "Error", "startMs": 0 },
-    { "id": "fix", "label": "Fix", "startMs": 9000 },
-    { "id": "close", "label": "Verificar", "startMs": 65000 }
+    {
+      "id": "start",
+      "label": "Error",
+      "startMs": 0
+    },
+    {
+      "id": "fix",
+      "label": "Fix",
+      "startMs": 9000
+    },
+    {
+      "id": "close",
+      "label": "Verificar",
+      "startMs": 65000
+    }
   ],
   "scenes": [
     {
       "id": "title",
       "name": "Apertura",
       "startMs": 0,
-      "endMs": 9000,
+      "endMs": 30000,
       "type": "title",
       "content": {
         "title": "Error -> Fix",
-        "subtitle": "No pegues un stacktrace y reces. Dale contexto.",
-        "tag": "Copilot Basic"
+        "subtitle": "Objetivo: resolver Copilot Basic 03 - Error to Fix con criterio practico.",
+        "tag": "Copilot Basic",
+        "narrativeContract": {
+          "objective": "resolver Copilot Basic 03 - Error to Fix con criterio practico.",
+          "outcome": "quedarte con una regla de uso y un ejemplo repetible.",
+          "route": "concepto, ejemplo y cierre.",
+          "decision": "cuando aplicar esta tecnica en tu propio repositorio."
+        }
       },
       "subtitles": [
-        { "text": "Un error sin contexto invita a parches grandes.", "startMs": 1000, "endMs": 7800 }
-      ]
+        {
+          "text": "Objetivo de esta clase: resolver Copilot Basic 03 - Error to Fix con criterio practico.",
+          "startMs": 450,
+          "endMs": 7046
+        },
+        {
+          "text": "Al final debes poder quedarte con una regla de uso y un ejemplo repetible.",
+          "startMs": 7226,
+          "endMs": 12070
+        },
+        {
+          "text": "La ruta sera: concepto, ejemplo y cierre.",
+          "startMs": 12250,
+          "endMs": 16206
+        },
+        {
+          "text": "Durante el video mira esta decision:",
+          "startMs": 16386,
+          "endMs": 19358
+        },
+        {
+          "text": "cuando aplicar esta tecnica en tu propio repositorio.",
+          "startMs": 19538,
+          "endMs": 23230
+        }
+      ],
+      "voiceover": [
+        "Objetivo de esta clase: resolver Copilot Basic 03 - Error to Fix con criterio practico.",
+        "Al final debes poder quedarte con una regla de uso y un ejemplo repetible.",
+        "La ruta sera: concepto, ejemplo y cierre.",
+        "Durante el video mira esta decision:",
+        "cuando aplicar esta tecnica en tu propio repositorio."
+      ],
+      "blueprintAction": {
+        "learningRubric": {
+          "learns": "Distingue decision humana de ejecucion automatizada en Copilot.",
+          "does": "Comprueba la salida contra prueba, owner o captura.",
+          "decides": "Aceptar solo si la evidencia queda visible para otra persona.",
+          "vendor": "copilot",
+          "usefulnessScore": 82,
+          "memoryCheck": "Puede repetir el prompt inicial con criterio de cierre.",
+          "productionPass": "2000-final-direction"
+        }
+      },
+      "production": {
+        "audioVersion": "audio-prod-v2-2026-05-18",
+        "voiceProfileId": "copilotNarrator",
+        "voice": "es-ES-AlvaroNeural",
+        "rate": "+7%",
+        "pitch": "+0Hz",
+        "energy": "practica",
+        "emphasis": "modo, contexto y PR",
+        "pauseMs": 180,
+        "role": "narrator",
+        "reviewRubric": {
+          "learns": "Distingue decision humana de ejecucion automatizada en Copilot.",
+          "does": "Comprueba la salida contra prueba, owner o captura.",
+          "decides": "Aceptar solo si la evidencia queda visible para otra persona.",
+          "memoryCheck": "Puede repetir el prompt inicial con criterio de cierre."
+        },
+        "prosodyNotes": {
+          "pace": "+7%",
+          "pause": "180ms antes de la decision",
+          "emphasis": "modo, contexto y pull request",
+          "energy": "practica"
+        },
+        "pronunciationPass": "spain-voice-units-v1"
+      }
     },
     {
       "id": "error",
       "name": "Error",
-      "startMs": 9000,
-      "endMs": 65000,
+      "startMs": 30000,
+      "endMs": 60000,
       "type": "error",
       "content": {
         "tag": "Debug con Copilot",
@@ -45,7 +129,10 @@
           "occurrences": 12,
           "users": 3,
           "first": "hace 10 min",
-          "trace": ["at getUserName (src/session.js:42)", "at renderHeader (src/header.js:12)"],
+          "trace": [
+            "at getUserName (src/session.js:42)",
+            "at renderHeader (src/header.js:12)"
+          ],
           "context": "return session.user.name"
         },
         "linearFix": {
@@ -53,32 +140,157 @@
           "title": "Fix: session user can be missing",
           "description": "Add guard clause and regression test for missing user."
         },
-        "fix": "if (!session?.user?.name) {\n  return 'Invitado'\n}\n\nreturn session.user.name"
+        "fix": "if (!session?.user?.name) { return 'Invitado' } return session.user.name"
       },
       "subtitles": [
-        { "text": "El prompt bueno dice que estaba pasando, donde falla y que no queremos tocar.", "startMs": 10000, "endMs": 31000 },
-        { "text": "Despues pedimos patch minimo y test.", "startMs": 32000, "endMs": 50000 },
-        { "text": "Copilot arregla mejor cuando el cierre esta definido.", "startMs": 51000, "endMs": 62000 }
-      ]
+        {
+          "text": "El prompt bueno dice que estaba pasando, donde falla y que no queremos tocar.",
+          "startMs": 30450,
+          "endMs": 35462
+        },
+        {
+          "text": "Despues pedimos patch minimo y test.",
+          "startMs": 35642,
+          "endMs": 38734
+        },
+        {
+          "text": "Copilot arregla mejor cuando el cierre esta definido.",
+          "startMs": 38914,
+          "endMs": 42822
+        }
+      ],
+      "voiceover": [
+        "El prompt bueno dice que estaba pasando, donde falla y que no queremos tocar.",
+        "Despues pedimos patch minimo y test.",
+        "Copilot arregla mejor cuando el cierre esta definido."
+      ],
+      "blueprintAction": {
+        "learningRubric": {
+          "learns": "Ubica coste, permiso y criterio antes de aceptar la salida.",
+          "does": "Registra el criterio que permitiria repetir el paso sin instructor.",
+          "decides": "Seguir, pedir mas contexto, escalar modelo o bloquear.",
+          "vendor": "copilot",
+          "usefulnessScore": 84,
+          "memoryCheck": "Puede explicar el paso en una frase de menos de 20 segundos.",
+          "productionPass": "2000-final-direction"
+        }
+      },
+      "production": {
+        "audioVersion": "audio-prod-v2-2026-05-18",
+        "voiceProfileId": "copilotReview",
+        "voice": "es-ES-AlvaroNeural",
+        "rate": "+4%",
+        "pitch": "+0Hz",
+        "energy": "critica",
+        "emphasis": "finding, severidad y prueba",
+        "pauseMs": 240,
+        "role": "safety",
+        "reviewRubric": {
+          "learns": "Ubica coste, permiso y criterio antes de aceptar la salida.",
+          "does": "Registra el criterio que permitiria repetir el paso sin instructor.",
+          "decides": "Seguir, pedir mas contexto, escalar modelo o bloquear.",
+          "memoryCheck": "Puede explicar el paso en una frase de menos de 20 segundos."
+        },
+        "prosodyNotes": {
+          "pace": "+4%",
+          "pause": "240ms antes de la decision",
+          "emphasis": "finding, severidad y prueba",
+          "energy": "critica"
+        },
+        "pronunciationPass": "spain-voice-units-v1"
+      }
     },
     {
       "id": "finale",
       "name": "Cierre",
-      "startMs": 65000,
+      "startMs": 60000,
       "endMs": 90000,
       "type": "finale",
       "content": {
         "title": "Debug operativo",
         "summary": [
-          { "number": "01", "label": "Contexto", "body": "Que hacias y que fallo." },
-          { "number": "02", "label": "Limite", "body": "Que no debe tocar." },
-          { "number": "03", "label": "Test", "body": "Como se comprueba." }
+          {
+            "number": "01",
+            "label": "Contexto",
+            "body": "Que hacias y que fallo."
+          },
+          {
+            "number": "02",
+            "label": "Limite",
+            "body": "Que no debe tocar."
+          },
+          {
+            "number": "03",
+            "label": "Test",
+            "body": "Como se comprueba."
+          }
         ],
         "cta": "Ejercicio: cp-b06-error-to-fix."
       },
       "subtitles": [
-        { "text": "Contexto, limite y test. Asi se arreglan bugs con Copilot.", "startMs": 66000, "endMs": 89000 }
-      ]
+        {
+          "text": "Contexto, limite y test. Asi se arreglan bugs con Copilot.",
+          "startMs": 60450,
+          "endMs": 65894
+        },
+        {
+          "text": "Evidencia minuto 1: \"Debug operativo\" queda ligado a prueba, owner y decision.",
+          "startMs": 66074,
+          "endMs": 71854
+        },
+        {
+          "text": "Accion minuto 1: nombrar modelo, permiso y limite antes de iterar.",
+          "startMs": 72034,
+          "endMs": 77214
+        }
+      ],
+      "voiceover": [
+        "Contexto, limite y test. Asi se arreglan bugs con Copilot.",
+        "Evidencia minuto 1: \"Debug operativo\" queda ligado a prueba, owner y decision.",
+        "Accion minuto 1: nombrar modelo, permiso y limite antes de iterar."
+      ],
+      "blueprintAction": {
+        "learningRubric": {
+          "learns": "Reconoce por que \"Debug operativo\" necesita evidencia y no solo respuesta.",
+          "does": "Formula una peticion verificable con limite de alcance.",
+          "decides": "Convertir la duda en material de tutoria si se repite.",
+          "vendor": "copilot",
+          "usefulnessScore": 86,
+          "memoryCheck": "Puede nombrar el riesgo principal sin mirar la slide.",
+          "productionPass": "2000-final-direction"
+        }
+      },
+      "production": {
+        "audioVersion": "audio-prod-v2-2026-05-18",
+        "voiceProfileId": "copilotReview",
+        "voice": "es-ES-AlvaroNeural",
+        "rate": "+4%",
+        "pitch": "+0Hz",
+        "energy": "critica",
+        "emphasis": "finding, severidad y prueba",
+        "pauseMs": 240,
+        "role": "reflection",
+        "reviewRubric": {
+          "learns": "Reconoce por que \"Debug operativo\" necesita evidencia y no solo respuesta.",
+          "does": "Formula una peticion verificable con limite de alcance.",
+          "decides": "Convertir la duda en material de tutoria si se repite.",
+          "memoryCheck": "Puede nombrar el riesgo principal sin mirar la slide."
+        },
+        "prosodyNotes": {
+          "pace": "+4%",
+          "pause": "240ms antes de la decision",
+          "emphasis": "finding, severidad y prueba",
+          "energy": "critica"
+        },
+        "pronunciationPass": "spain-voice-units-v1"
+      }
     }
-  ]
+  ],
+  "production": {
+    "audioProductionVersion": "audio-prod-v2-2026-05-18",
+    "productionPass": "2000-final-direction",
+    "vendor": "copilot",
+    "narrativePass": "teacher-contract-v1",
+    "pronunciationPass": "spain-voice-units-v1"
+  }
 }

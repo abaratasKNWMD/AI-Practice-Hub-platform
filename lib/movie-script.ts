@@ -25,6 +25,7 @@ export type SceneType =
   | 'preview'
   | 'error'
   | 'finale'
+  | 'media-break'
   | 'prompt'
   | 'streaming'
   | 'diff'

@@ -9,33 +9,120 @@
   "author": "AI Practice Hub",
   "createdAt": "2026-05-07T00:00:00.000Z",
   "chapters": [
-    { "id": "start", "label": "Modelo", "startMs": 0 },
-    { "id": "compare", "label": "Comparar", "startMs": 8000 },
-    { "id": "policy", "label": "Politica", "startMs": 42000 },
-    { "id": "close", "label": "Cierre", "startMs": 70000 }
+    {
+      "id": "start",
+      "label": "Modelo",
+      "startMs": 0
+    },
+    {
+      "id": "compare",
+      "label": "Comparar",
+      "startMs": 22500
+    },
+    {
+      "id": "policy",
+      "label": "Politica",
+      "startMs": 42000
+    },
+    {
+      "id": "close",
+      "label": "Cierre",
+      "startMs": 70000
+    }
   ],
   "scenes": [
     {
       "id": "title",
       "name": "Apertura",
       "startMs": 0,
-      "endMs": 8000,
+      "endMs": 22500,
       "type": "title",
       "content": {
         "title": "Modelo correcto",
-        "subtitle": "No siempre gana el mas grande. Gana el adecuado.",
-        "tag": "Codex / Coste"
+        "subtitle": "Objetivo: resolver Codex Medium 01 - Model Picker con criterio practico.",
+        "tag": "Codex / Coste",
+        "narrativeContract": {
+          "objective": "resolver Codex Medium 01 - Model Picker con criterio practico.",
+          "outcome": "quedarte con una regla de uso y un ejemplo repetible.",
+          "route": "concepto, ejemplo y cierre.",
+          "decision": "cuando aplicar esta tecnica en tu propio repositorio."
+        }
       },
       "subtitles": [
-        { "text": "Elegir modelo es una decision de riesgo.", "startMs": 1000, "endMs": 5200 },
-        { "text": "No una decision de vanidad.", "startMs": 5400, "endMs": 7600 }
-      ]
+        {
+          "text": "Objetivo de esta clase: resolver Codex Medium 01 - Model Picker con criterio practico.",
+          "startMs": 450,
+          "endMs": 6686
+        },
+        {
+          "text": "Al final debes poder quedarte con una regla de uso y un ejemplo repetible.",
+          "startMs": 6731,
+          "endMs": 11527
+        },
+        {
+          "text": "La ruta sera: concepto, ejemplo y cierre.",
+          "startMs": 11572,
+          "endMs": 15480
+        },
+        {
+          "text": "Durante el video mira esta decision:",
+          "startMs": 15525,
+          "endMs": 18473
+        },
+        {
+          "text": "cuando aplicar esta tecnica en tu propio repositorio.",
+          "startMs": 18518,
+          "endMs": 22162
+        }
+      ],
+      "voiceover": [
+        "Objetivo de esta clase: resolver Codex Medium 01 - Model Picker con criterio practico.",
+        "Al final debes poder quedarte con una regla de uso y un ejemplo repetible.",
+        "La ruta sera: concepto, ejemplo y cierre.",
+        "Durante el video mira esta decision:",
+        "cuando aplicar esta tecnica en tu propio repositorio."
+      ],
+      "blueprintAction": {
+        "learningRubric": {
+          "learns": "Ubica coste, permiso y criterio antes de aceptar la salida.",
+          "does": "Registra el criterio que permitiria repetir el paso sin instructor.",
+          "decides": "Seguir, pedir mas contexto, escalar modelo o bloquear.",
+          "vendor": "codex",
+          "usefulnessScore": 82,
+          "memoryCheck": "Puede explicar el paso en una frase de menos de 20 segundos.",
+          "productionPass": "2000-final-direction"
+        }
+      },
+      "production": {
+        "audioVersion": "audio-prod-v2-2026-05-18",
+        "voiceProfileId": "codexNarrator",
+        "voice": "es-ES-AlvaroNeural",
+        "rate": "+8%",
+        "pitch": "+0Hz",
+        "energy": "precisa",
+        "emphasis": "plan, patch, test y coste",
+        "pauseMs": 180,
+        "role": "narrator",
+        "reviewRubric": {
+          "learns": "Ubica coste, permiso y criterio antes de aceptar la salida.",
+          "does": "Registra el criterio que permitiria repetir el paso sin instructor.",
+          "decides": "Seguir, pedir mas contexto, escalar modelo o bloquear.",
+          "memoryCheck": "Puede explicar el paso en una frase de menos de 20 segundos."
+        },
+        "prosodyNotes": {
+          "pace": "+8%",
+          "pause": "180ms antes de la decision",
+          "emphasis": "plan, patch, test y coste",
+          "energy": "precisa"
+        },
+        "pronunciationPass": "spain-voice-units-v1"
+      }
     },
     {
       "id": "compare",
       "name": "Modelos",
-      "startMs": 8000,
-      "endMs": 42000,
+      "startMs": 22500,
+      "endMs": 45000,
       "type": "compare",
       "content": {
         "tag": "Tarea vs modelo",
@@ -43,9 +130,22 @@
           "label": "Escalar siempre",
           "color": "destructive",
           "steps": [
-            { "icon": "Zap", "text": "GPT-5.5 para todo" },
-            { "icon": "AlertTriangle", "text": "Coste alto en tareas mecanicas" },
-            { "icon": "AlertTriangle", "text": "El alumno no aprende criterio" }
+            {
+              "icon": "Zap",
+              "text": "GPT-5.5 para todo"
+            },
+            {
+              "icon": "AlertTriangle",
+              "text": "Coste alto en tareas mecanicas"
+            },
+            {
+              "icon": "AlertTriangle",
+              "text": "El alumno no aprende criterio"
+            },
+            {
+              "icon": "AlertTriangle",
+              "text": "Sin evidencia, la decision vuelve a tutoria."
+            }
           ],
           "total": "Potente, pero caro"
         },
@@ -53,24 +153,90 @@
           "label": "Escalar por riesgo",
           "color": "accent",
           "steps": [
-            { "icon": "Check", "text": "Mini para lectura simple" },
-            { "icon": "Code", "text": "GPT-5.4 para implementacion estandar" },
-            { "icon": "Eye", "text": "GPT-5.5 para arquitectura y multimodal" }
+            {
+              "icon": "Check",
+              "text": "Mini para lectura simple"
+            },
+            {
+              "icon": "Code",
+              "text": "GPT-5.4 para implementacion estandar"
+            },
+            {
+              "icon": "Eye",
+              "text": "GPT-5.5 para arquitectura y multimodal"
+            },
+            {
+              "icon": "Check",
+              "text": "Cerrar con criterio, coste y validacion."
+            }
           ],
           "total": "Mejor ROI"
-        }
+        },
+        "auditNote": "Comparativa enriquecida para explicar cuando usar, cuando no usar y como cerrar."
       },
       "subtitles": [
-        { "text": "El modelo grande brilla en problemas grandes.", "startMs": 9000, "endMs": 16000 },
-        { "text": "Pero muchas tareas son pequenas y verificables.", "startMs": 16500, "endMs": 26500 },
-        { "text": "La politica debe ensenar cuando escalar.", "startMs": 27000, "endMs": 40500 }
-      ]
+        {
+          "text": "El modelo grande brilla en problemas grandes.",
+          "startMs": 22950,
+          "endMs": 26402
+        },
+        {
+          "text": "Pero muchas tareas son pequenas y verificables.",
+          "startMs": 26582,
+          "endMs": 30106
+        },
+        {
+          "text": "La politica debe ensenar cuando escalar.",
+          "startMs": 30286,
+          "endMs": 33450
+        }
+      ],
+      "voiceover": [
+        "El modelo grande brilla en problemas grandes.",
+        "Pero muchas tareas son pequenas y verificables.",
+        "La politica debe ensenar cuando escalar."
+      ],
+      "blueprintAction": {
+        "learningRubric": {
+          "learns": "Reconoce por que \"Modelos\" necesita evidencia y no solo respuesta.",
+          "does": "Formula una peticion verificable con limite de alcance.",
+          "decides": "Convertir la duda en material de tutoria si se repite.",
+          "vendor": "codex",
+          "usefulnessScore": 84,
+          "memoryCheck": "Puede nombrar el riesgo principal sin mirar la slide.",
+          "productionPass": "2000-final-direction"
+        }
+      },
+      "production": {
+        "audioVersion": "audio-prod-v2-2026-05-18",
+        "voiceProfileId": "codexNarrator",
+        "voice": "es-ES-AlvaroNeural",
+        "rate": "+8%",
+        "pitch": "+0Hz",
+        "energy": "precisa",
+        "emphasis": "plan, patch, test y coste",
+        "pauseMs": 180,
+        "role": "narrator",
+        "reviewRubric": {
+          "learns": "Reconoce por que \"Modelos\" necesita evidencia y no solo respuesta.",
+          "does": "Formula una peticion verificable con limite de alcance.",
+          "decides": "Convertir la duda en material de tutoria si se repite.",
+          "memoryCheck": "Puede nombrar el riesgo principal sin mirar la slide."
+        },
+        "prosodyNotes": {
+          "pace": "+8%",
+          "pause": "180ms antes de la decision",
+          "emphasis": "plan, patch, test y coste",
+          "energy": "precisa"
+        },
+        "pronunciationPass": "spain-voice-units-v1"
+      }
     },
     {
       "id": "concept",
       "name": "Politica",
-      "startMs": 42000,
-      "endMs": 70000,
+      "startMs": 45000,
+      "endMs": 67500,
       "type": "concept",
       "content": {
         "tag": "Regla practica",
@@ -80,34 +246,166 @@
         "points": [
           "Mide reintentos.",
           "Registra modelo y razon de eleccion.",
-          "Escala solo con motivo."
+          "Escala solo con motivo.",
+          "Coste: elegir modelo y contexto antes de pedir otra iteracion.",
+          "Cierre: evidencia, decision y siguiente accion visible."
         ]
       },
       "subtitles": [
-        { "text": "Tres variables mandan: ambiguedad, impacto y contexto.", "startMs": 43000, "endMs": 53500 },
-        { "text": "Si suben, sube el modelo.", "startMs": 54000, "endMs": 61000 },
-        { "text": "Si bajan, cuida el presupuesto.", "startMs": 61500, "endMs": 69000 }
-      ]
+        {
+          "text": "Tres variables mandan: ambiguedad, impacto y contexto.",
+          "startMs": 45450,
+          "endMs": 49718
+        },
+        {
+          "text": "Si suben, sube el modelo.",
+          "startMs": 49898,
+          "endMs": 52798
+        },
+        {
+          "text": "Si bajan, cuida el presupuesto.",
+          "startMs": 52978,
+          "endMs": 56070
+        }
+      ],
+      "voiceover": [
+        "Tres variables mandan: ambiguedad, impacto y contexto.",
+        "Si suben, sube el modelo.",
+        "Si bajan, cuida el presupuesto."
+      ],
+      "blueprintAction": {
+        "learningRubric": {
+          "learns": "Distingue decision humana de ejecucion automatizada en Codex.",
+          "does": "Comprueba la salida contra prueba, owner o captura.",
+          "decides": "Aceptar solo si la evidencia queda visible para otra persona.",
+          "vendor": "codex",
+          "usefulnessScore": 86,
+          "memoryCheck": "Puede repetir el prompt inicial con criterio de cierre.",
+          "productionPass": "2000-final-direction"
+        }
+      },
+      "production": {
+        "audioVersion": "audio-prod-v2-2026-05-18",
+        "voiceProfileId": "codexNarrator",
+        "voice": "es-ES-AlvaroNeural",
+        "rate": "+8%",
+        "pitch": "+0Hz",
+        "energy": "precisa",
+        "emphasis": "plan, patch, test y coste",
+        "pauseMs": 180,
+        "role": "narrator",
+        "reviewRubric": {
+          "learns": "Distingue decision humana de ejecucion automatizada en Codex.",
+          "does": "Comprueba la salida contra prueba, owner o captura.",
+          "decides": "Aceptar solo si la evidencia queda visible para otra persona.",
+          "memoryCheck": "Puede repetir el prompt inicial con criterio de cierre."
+        },
+        "prosodyNotes": {
+          "pace": "+8%",
+          "pause": "180ms antes de la decision",
+          "emphasis": "plan, patch, test y coste",
+          "energy": "precisa"
+        },
+        "pronunciationPass": "spain-voice-units-v1"
+      }
     },
     {
       "id": "finale",
       "name": "Cierre",
-      "startMs": 70000,
+      "startMs": 67500,
       "endMs": 90000,
       "type": "finale",
       "content": {
         "title": "Politica de modelos",
         "summary": [
-          { "number": "01", "label": "Mini", "body": "Rapido y barato para inventario." },
-          { "number": "02", "label": "GPT-5.4", "body": "Trabajo diario de implementacion." },
-          { "number": "03", "label": "GPT-5.5", "body": "Arquitectura, multimodal y alto riesgo." }
+          {
+            "number": "01",
+            "label": "Mini",
+            "body": "Rapido y barato para inventario."
+          },
+          {
+            "number": "02",
+            "label": "GPT-5.4",
+            "body": "Trabajo diario de implementacion."
+          },
+          {
+            "number": "03",
+            "label": "GPT-5.5",
+            "body": "Arquitectura, multimodal y alto riesgo."
+          }
         ],
         "cta": "Ejercicio asociado: cx-m02-modelos-coste."
       },
       "subtitles": [
-        { "text": "La meta no es gastar menos siempre.", "startMs": 70500, "endMs": 80000 },
-        { "text": "Es gastar mejor.", "startMs": 80500, "endMs": 89500 }
-      ]
+        {
+          "text": "La meta no es gastar menos siempre.",
+          "startMs": 67950,
+          "endMs": 71114
+        },
+        {
+          "text": "Es gastar mejor.",
+          "startMs": 71294,
+          "endMs": 73594
+        },
+        {
+          "text": "Evidencia minuto 1: \"Politica de modelos\" queda ligado a prueba, owner y decision.",
+          "startMs": 73774,
+          "endMs": 79746
+        },
+        {
+          "text": "Accion minuto 1: nombrar modelo, permiso y limite antes de iterar.",
+          "startMs": 79926,
+          "endMs": 85154
+        }
+      ],
+      "voiceover": [
+        "La meta no es gastar menos siempre.",
+        "Es gastar mejor.",
+        "Evidencia minuto 1: \"Politica de modelos\" queda ligado a prueba, owner y decision.",
+        "Accion minuto 1: nombrar modelo, permiso y limite antes de iterar."
+      ],
+      "blueprintAction": {
+        "learningRubric": {
+          "learns": "Ubica coste, permiso y criterio antes de aceptar la salida.",
+          "does": "Registra el criterio que permitiria repetir el paso sin instructor.",
+          "decides": "Seguir, pedir mas contexto, escalar modelo o bloquear.",
+          "vendor": "codex",
+          "usefulnessScore": 88,
+          "memoryCheck": "Puede explicar el paso en una frase de menos de 20 segundos.",
+          "productionPass": "2000-final-direction"
+        }
+      },
+      "production": {
+        "audioVersion": "audio-prod-v2-2026-05-18",
+        "voiceProfileId": "codexReflection",
+        "voice": "es-ES-AlvaroNeural",
+        "rate": "+3%",
+        "pitch": "+0Hz",
+        "energy": "reflexiva",
+        "emphasis": "riesgo, permiso y evidencia",
+        "pauseMs": 260,
+        "role": "reflection",
+        "reviewRubric": {
+          "learns": "Ubica coste, permiso y criterio antes de aceptar la salida.",
+          "does": "Registra el criterio que permitiria repetir el paso sin instructor.",
+          "decides": "Seguir, pedir mas contexto, escalar modelo o bloquear.",
+          "memoryCheck": "Puede explicar el paso en una frase de menos de 20 segundos."
+        },
+        "prosodyNotes": {
+          "pace": "+3%",
+          "pause": "260ms antes de la decision",
+          "emphasis": "riesgo, permiso y evidencia",
+          "energy": "reflexiva"
+        },
+        "pronunciationPass": "spain-voice-units-v1"
+      }
     }
-  ]
+  ],
+  "production": {
+    "audioProductionVersion": "audio-prod-v2-2026-05-18",
+    "productionPass": "2000-final-direction",
+    "vendor": "codex",
+    "narrativePass": "teacher-contract-v1",
+    "pronunciationPass": "spain-voice-units-v1"
+  }
 }

@@ -9,66 +9,284 @@
   "author": "AI Practice Hub",
   "createdAt": "2026-05-07T00:00:00.000Z",
   "chapters": [
-    { "id": "start", "label": "Instructions", "startMs": 0 },
-    { "id": "code", "label": ".github", "startMs": 9000 },
-    { "id": "close", "label": "Regla", "startMs": 65000 }
+    {
+      "id": "start",
+      "label": "Instructions",
+      "startMs": 0
+    },
+    {
+      "id": "code",
+      "label": ".github",
+      "startMs": 9000
+    },
+    {
+      "id": "close",
+      "label": "Regla",
+      "startMs": 65000
+    }
   ],
   "scenes": [
     {
       "id": "title",
       "name": "Apertura",
       "startMs": 0,
-      "endMs": 9000,
+      "endMs": 30000,
       "type": "title",
       "content": {
         "title": "Instructions sin ruido",
-        "subtitle": "Global para lo estable. Path-specific para lo concreto.",
-        "tag": "Copilot Medium"
+        "subtitle": "Objetivo: resolver Copilot Medium 01 - Instructions con criterio practico.",
+        "tag": "Copilot Medium",
+        "narrativeContract": {
+          "objective": "resolver Copilot Medium 01 - Instructions con criterio practico.",
+          "outcome": "quedarte con una regla de uso y un ejemplo repetible.",
+          "route": "concepto, ejemplo y cierre.",
+          "decision": "cuando aplicar esta tecnica en tu propio repositorio."
+        }
       },
       "subtitles": [
-        { "text": "Las instrucciones buenas reducen repeticion. Las malas meten ruido permanente.", "startMs": 1000, "endMs": 8200 }
-      ]
+        {
+          "text": "Objetivo de esta clase: resolver Copilot Medium 01 - Instructions con criterio practico.",
+          "startMs": 450,
+          "endMs": 6830
+        },
+        {
+          "text": "Al final debes poder quedarte con una regla de uso y un ejemplo repetible.",
+          "startMs": 7010,
+          "endMs": 11854
+        },
+        {
+          "text": "La ruta sera: concepto, ejemplo y cierre.",
+          "startMs": 12034,
+          "endMs": 15990
+        },
+        {
+          "text": "Durante el video mira esta decision:",
+          "startMs": 16170,
+          "endMs": 19142
+        },
+        {
+          "text": "cuando aplicar esta tecnica en tu propio repositorio.",
+          "startMs": 19322,
+          "endMs": 23014
+        }
+      ],
+      "voiceover": [
+        "Objetivo de esta clase: resolver Copilot Medium 01 - Instructions con criterio practico.",
+        "Al final debes poder quedarte con una regla de uso y un ejemplo repetible.",
+        "La ruta sera: concepto, ejemplo y cierre.",
+        "Durante el video mira esta decision:",
+        "cuando aplicar esta tecnica en tu propio repositorio."
+      ],
+      "blueprintAction": {
+        "learningRubric": {
+          "learns": "Distingue decision humana de ejecucion automatizada en Copilot.",
+          "does": "Comprueba la salida contra prueba, owner o captura.",
+          "decides": "Aceptar solo si la evidencia queda visible para otra persona.",
+          "vendor": "copilot",
+          "usefulnessScore": 82,
+          "memoryCheck": "Puede repetir el prompt inicial con criterio de cierre.",
+          "productionPass": "2000-final-direction"
+        }
+      },
+      "production": {
+        "audioVersion": "audio-prod-v2-2026-05-18",
+        "voiceProfileId": "copilotNarrator",
+        "voice": "es-ES-AlvaroNeural",
+        "rate": "+7%",
+        "pitch": "+0Hz",
+        "energy": "practica",
+        "emphasis": "modo, contexto y PR",
+        "pauseMs": 180,
+        "role": "narrator",
+        "reviewRubric": {
+          "learns": "Distingue decision humana de ejecucion automatizada en Copilot.",
+          "does": "Comprueba la salida contra prueba, owner o captura.",
+          "decides": "Aceptar solo si la evidencia queda visible para otra persona.",
+          "memoryCheck": "Puede repetir el prompt inicial con criterio de cierre."
+        },
+        "prosodyNotes": {
+          "pace": "+7%",
+          "pause": "180ms antes de la decision",
+          "emphasis": "modo, contexto y pull request",
+          "energy": "practica"
+        },
+        "pronunciationPass": "spain-voice-units-v1"
+      }
     },
     {
       "id": "coding",
       "name": "Tree",
-      "startMs": 9000,
-      "endMs": 65000,
+      "startMs": 30000,
+      "endMs": 60000,
       "type": "coding",
       "content": {
         "tag": "Customization tree",
         "filename": ".github/",
-        "code": ".github/\n  copilot-instructions.md\n  instructions/\n    frontend.instructions.md\n    backend.instructions.md\n    tests.instructions.md\n    review.instructions.md\n\n# copilot-instructions.md\n- Stack y comandos.\n- Seguridad.\n- Formato de cierre.\n\n# frontend.instructions.md\n---\napplyTo: \"components/**/*.{tsx,css}\"\n---\n- Accesibilidad.\n- Responsive.\n- No overlap.",
+        "code": ".github/ copilot-instructions.md instructions/ frontend.instructions.md backend.instructions.md tests.instructions.md review.instructions.md # copilot-instructions.md - Stack y comandos. - Seguridad. - Formato de cierre. # frontend.instructions.md --- applyTo: \"components/**/*.{tsx,css}\" --- - Accesibilidad. - Responsive. - No overlap. # Cierre operativo done_when: evidencia + coste + owner stop_rule: parar si no hay senal nueva",
         "commentary": [
-          { "atLine": 2, "text": "Siempre activo" },
-          { "atLine": 3, "text": "Especifico por path/tarea" },
-          { "atLine": 15, "text": "applyTo acota contexto" }
+          {
+            "atLine": 2,
+            "text": "Siempre activo"
+          },
+          {
+            "atLine": 3,
+            "text": "Especifico por path/tarea"
+          },
+          {
+            "atLine": 15,
+            "text": "applyTo acota contexto"
+          }
         ]
       },
       "subtitles": [
-        { "text": "Copilot-instructions es para reglas siempre activas.", "startMs": 10000, "endMs": 26000 },
-        { "text": "Los instruction files aplican por path o por tarea.", "startMs": 27000, "endMs": 44000 },
-        { "text": "Separar capas mantiene el contexto limpio.", "startMs": 45000, "endMs": 62000 }
-      ]
+        {
+          "text": "Copilot-instructions es para reglas siempre activas.",
+          "startMs": 30450,
+          "endMs": 34286
+        },
+        {
+          "text": "Los instruction files aplican por path o por tarea.",
+          "startMs": 34466,
+          "endMs": 38422
+        },
+        {
+          "text": "Separar capas mantiene el contexto limpio.",
+          "startMs": 38602,
+          "endMs": 42030
+        }
+      ],
+      "voiceover": [
+        "Copilot-instructions es para reglas siempre activas.",
+        "Los instruction files aplican por path o por tarea.",
+        "Separar capas mantiene el contexto limpio."
+      ],
+      "blueprintAction": {
+        "learningRubric": {
+          "learns": "Ubica coste, permiso y criterio antes de aceptar la salida.",
+          "does": "Registra el criterio que permitiria repetir el paso sin instructor.",
+          "decides": "Seguir, pedir mas contexto, escalar modelo o bloquear.",
+          "vendor": "copilot",
+          "usefulnessScore": 84,
+          "memoryCheck": "Puede explicar el paso en una frase de menos de 20 segundos.",
+          "productionPass": "2000-final-direction"
+        }
+      },
+      "production": {
+        "audioVersion": "audio-prod-v2-2026-05-18",
+        "voiceProfileId": "copilotNarrator",
+        "voice": "es-ES-AlvaroNeural",
+        "rate": "+7%",
+        "pitch": "+0Hz",
+        "energy": "practica",
+        "emphasis": "modo, contexto y PR",
+        "pauseMs": 180,
+        "role": "narrator",
+        "reviewRubric": {
+          "learns": "Ubica coste, permiso y criterio antes de aceptar la salida.",
+          "does": "Registra el criterio que permitiria repetir el paso sin instructor.",
+          "decides": "Seguir, pedir mas contexto, escalar modelo o bloquear.",
+          "memoryCheck": "Puede explicar el paso en una frase de menos de 20 segundos."
+        },
+        "prosodyNotes": {
+          "pace": "+7%",
+          "pause": "180ms antes de la decision",
+          "emphasis": "modo, contexto y pull request",
+          "energy": "practica"
+        },
+        "pronunciationPass": "spain-voice-units-v1"
+      }
     },
     {
       "id": "finale",
       "name": "Cierre",
-      "startMs": 65000,
+      "startMs": 60000,
       "endMs": 90000,
       "type": "finale",
       "content": {
         "title": "Regla de instructions",
         "summary": [
-          { "number": "01", "label": "Global", "body": "Stack, comandos, seguridad." },
-          { "number": "02", "label": "Path", "body": "Frontend, backend, tests." },
-          { "number": "03", "label": "Corto", "body": "Si no cambia decisiones, sobra." }
+          {
+            "number": "01",
+            "label": "Global",
+            "body": "Stack, comandos, seguridad."
+          },
+          {
+            "number": "02",
+            "label": "Path",
+            "body": "Frontend, backend, tests."
+          },
+          {
+            "number": "03",
+            "label": "Corto",
+            "body": "Si no cambia decisiones, sobra."
+          }
         ],
         "cta": "Ejercicios: cp-m04 y cp-m05."
       },
       "subtitles": [
-        { "text": "Si una instruccion no cambia una decision de Copilot, probablemente sobra.", "startMs": 66000, "endMs": 89000 }
-      ]
+        {
+          "text": "Si una instruccion no cambia una decision de Copilot, probablemente sobra.",
+          "startMs": 60450,
+          "endMs": 65438
+        },
+        {
+          "text": "Evidencia minuto 1: patch local, test y comentario de pull request.",
+          "startMs": 65618,
+          "endMs": 70726
+        },
+        {
+          "text": "Accion minuto 1: parar si \"Regla de instructions\" no produce evidencia nueva.",
+          "startMs": 70906,
+          "endMs": 76350
+        }
+      ],
+      "voiceover": [
+        "Si una instruccion no cambia una decision de Copilot, probablemente sobra.",
+        "Evidencia minuto 1: patch local, test y comentario de pull request.",
+        "Accion minuto 1: parar si \"Regla de instructions\" no produce evidencia nueva."
+      ],
+      "blueprintAction": {
+        "learningRubric": {
+          "learns": "Reconoce por que \"Regla de instructions\" necesita evidencia y no solo respuesta.",
+          "does": "Formula una peticion verificable con limite de alcance.",
+          "decides": "Convertir la duda en material de tutoria si se repite.",
+          "vendor": "copilot",
+          "usefulnessScore": 86,
+          "memoryCheck": "Puede nombrar el riesgo principal sin mirar la slide.",
+          "productionPass": "2000-final-direction"
+        }
+      },
+      "production": {
+        "audioVersion": "audio-prod-v2-2026-05-18",
+        "voiceProfileId": "copilotReview",
+        "voice": "es-ES-AlvaroNeural",
+        "rate": "+4%",
+        "pitch": "+0Hz",
+        "energy": "critica",
+        "emphasis": "finding, severidad y prueba",
+        "pauseMs": 240,
+        "role": "reflection",
+        "reviewRubric": {
+          "learns": "Reconoce por que \"Regla de instructions\" necesita evidencia y no solo respuesta.",
+          "does": "Formula una peticion verificable con limite de alcance.",
+          "decides": "Convertir la duda en material de tutoria si se repite.",
+          "memoryCheck": "Puede nombrar el riesgo principal sin mirar la slide."
+        },
+        "prosodyNotes": {
+          "pace": "+4%",
+          "pause": "240ms antes de la decision",
+          "emphasis": "finding, severidad y prueba",
+          "energy": "critica"
+        },
+        "pronunciationPass": "spain-voice-units-v1"
+      }
     }
-  ]
+  ],
+  "production": {
+    "audioProductionVersion": "audio-prod-v2-2026-05-18",
+    "productionPass": "2000-final-direction",
+    "vendor": "copilot",
+    "narrativePass": "teacher-contract-v1",
+    "pronunciationPass": "spain-voice-units-v1"
+  }
 }

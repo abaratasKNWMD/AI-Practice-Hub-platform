@@ -1,0 +1,122 @@
+{
+  "generatedAt": "2026-05-18T16:47:57.896Z",
+  "audioProductionVersion": "audio-prod-v2-2026-05-18",
+  "principle": "Produccion bloqueada a voz espanola de Espana. La variacion queda en ritmo, energia y enfasis, no en acento.",
+  "profiles": [
+    {
+      "id": "codexNarrator",
+      "vendor": "codex",
+      "label": "Codex tecnico",
+      "voice": "es-ES-AlvaroNeural",
+      "rate": "+8%",
+      "pitch": "+0Hz",
+      "energy": "precisa",
+      "emphasis": "plan, patch, test y coste",
+      "pauseMs": 180
+    },
+    {
+      "id": "codexReflection",
+      "vendor": "codex",
+      "label": "Codex pausa de criterio",
+      "voice": "es-ES-AlvaroNeural",
+      "rate": "+3%",
+      "pitch": "+0Hz",
+      "energy": "reflexiva",
+      "emphasis": "riesgo, permiso y evidencia",
+      "pauseMs": 260
+    },
+    {
+      "id": "copilotNarrator",
+      "vendor": "copilot",
+      "label": "Copilot workstation",
+      "voice": "es-ES-AlvaroNeural",
+      "rate": "+7%",
+      "pitch": "+0Hz",
+      "energy": "practica",
+      "emphasis": "modo, contexto y PR",
+      "pauseMs": 180
+    },
+    {
+      "id": "copilotReview",
+      "vendor": "copilot",
+      "label": "Copilot revision",
+      "voice": "es-ES-AlvaroNeural",
+      "rate": "+4%",
+      "pitch": "+0Hz",
+      "energy": "critica",
+      "emphasis": "finding, severidad y prueba",
+      "pauseMs": 240
+    },
+    {
+      "id": "claudeNarrator",
+      "vendor": "claude",
+      "label": "Claude arquitectura",
+      "voice": "es-ES-AlvaroNeural",
+      "rate": "+5%",
+      "pitch": "+0Hz",
+      "energy": "calmada",
+      "emphasis": "memoria, skill, hook y MCP",
+      "pauseMs": 220
+    },
+    {
+      "id": "claudeSafety",
+      "vendor": "claude",
+      "label": "Claude guardrail",
+      "voice": "es-ES-AlvaroNeural",
+      "rate": "+2%",
+      "pitch": "+0Hz",
+      "energy": "deliberada",
+      "emphasis": "permiso, bloqueo y rollback",
+      "pauseMs": 300
+    },
+    {
+      "id": "hubNarrator",
+      "vendor": "hub",
+      "label": "Hub estrategia",
+      "voice": "es-ES-AlvaroNeural",
+      "rate": "+6%",
+      "pitch": "+0Hz",
+      "energy": "ejecutiva",
+      "emphasis": "ruta, metrica y tutoria",
+      "pauseMs": 200
+    },
+    {
+      "id": "hubInstructor",
+      "vendor": "hub",
+      "label": "Hub instructor",
+      "voice": "es-ES-AlvaroNeural",
+      "rate": "+3%",
+      "pitch": "+0Hz",
+      "energy": "cercana",
+      "emphasis": "pregunta, decision y siguiente paso",
+      "pauseMs": 280
+    }
+  ],
+  "routing": {
+    "title": "narrator",
+    "concept": "narrator",
+    "prompt": "narrator",
+    "streaming": "narrator",
+    "coding": "narrator",
+    "terminal": "narrator",
+    "diff": "narrator",
+    "mediaBreak": "reflection",
+    "pause": "reflection",
+    "quiz": "reflection",
+    "risk": "safety",
+    "cost": "safety",
+    "error": "safety",
+    "prReview": "review"
+  },
+  "summary": {
+    "generatedAt": "2026-05-18T15:18:44.433Z",
+    "courses": 44,
+    "updatedOpenings": 44,
+    "normalizedStrings": 11,
+    "voices": {
+      "es-ES-AlvaroNeural": 961
+    },
+    "productionVoice": "es-ES-AlvaroNeural",
+    "nonSpainVoices": 0
+  }
+}

@@ -1,0 +1,1454 @@
+{
+  "generatedAt": "2026-05-18T16:52:01.450Z",
+  "summary": {
+    "videoCount": 44,
+    "avgTeacherScore": 100,
+    "objectiveReady": 44,
+    "nonSpainVoiceVideos": 0,
+    "timeUnitRiskVideos": 0,
+    "ellipsisVideos": 0,
+    "longSubtitleVideos": 0
+  },
+  "courses": [
+    {
+      "id": "cl-advanced-01-hooks",
+      "title": "Claude Advanced 01 - Hooks",
+      "vendor": "claude",
+      "durationMin": 2,
+      "scenes": 3,
+      "subtitles": 11,
+      "voices": [
+        "es-ES-AlvaroNeural"
+      ],
+      "chapters": [
+        "Hooks",
+        "Control",
+        "Eventos"
+      ],
+      "mediaBreaks": 0,
+      "maxSubtitleChars": 82,
+      "avgWords": 9.5,
+      "objective": {
+        "hasObjective": true,
+        "hasOutcome": true,
+        "hasRoute": true,
+        "hasDecision": true,
+        "opening": "Objetivo de esta clase: resolver Claude Advanced 01 - Hooks con criterio practico. Al final debes poder quedarte con una regla de uso y un ejemplo repetible. La ruta sera: concepto, ejemplo y cierre. Durante el video mira esta decision: cuando aplicar esta tecnica en tu propio repositorio. Un hook no convence al modelo. Controla la herramienta. Eso es lo que lo hace util para seguridad. La clave es fallar claro y con poco ruido."
+      },
+      "ellipsis": 0,
+      "timeHits": 0,
+      "longSubtitles": 0,
+      "clipped": 0,
+      "risks": [],
+      "teacherScore": 100
+    },
+    {
+      "id": "cl-advanced-02-plugin-action",
+      "title": "Claude Advanced 02 - Plugin and Actions",
+      "vendor": "claude",
+      "durationMin": 2,
+      "scenes": 3,
+      "subtitles": 14,
+      "voices": [
+        "es-ES-AlvaroNeural"
+      ],
+      "chapters": [
+        "Plugin",
+        "Distribucion",
+        "CI"
+      ],
+      "mediaBreaks": 0,
+      "maxSubtitleChars": 74,
+      "avgWords": 7.4,
+      "objective": {
+        "hasObjective": true,
+        "hasOutcome": true,
+        "hasRoute": true,
+        "hasDecision": true,
+        "opening": "Objetivo de esta clase: resolver Claude Advanced 02 - Plugin and Actions con criterio practico. Al final debes poder quedarte con una regla de uso y un ejemplo repetible. La ruta sera: concepto, ejemplo y cierre. Durante el video mira esta decision: cuando aplicar esta tecnica en tu propio repositorio. Plugin es distribucion. Action es ejecucion repetible."
+      },
+      "ellipsis": 0,
+      "timeHits": 0,
+      "longSubtitles": 0,
+      "clipped": 0,
+      "risks": [],
+      "teacherScore": 100
+    },
+    {
+      "id": "cl-basic-01-claude-md",
+      "title": "Claude Basic 01 - CLAUDE.md Real",
+      "vendor": "claude",
+      "durationMin": 2,
+      "scenes": 3,
+      "subtitles": 16,
+      "voices": [
+        "es-ES-AlvaroNeural"
+      ],
+      "chapters": [
+        "Repo",
+        "Memoria",
+        "Checklist"
+      ],
+      "mediaBreaks": 0,
+      "maxSubtitleChars": 88,
+      "avgWords": 9.1,
+      "objective": {
+        "hasObjective": true,
+        "hasOutcome": true,
+        "hasRoute": true,
+        "hasDecision": true,
+        "opening": "Objetivo de esta clase: resolver Claude Basic 01 - CLAUDE.md Real con criterio practico. Al final debes poder quedarte con una regla de uso y un ejemplo repetible. La ruta sera: concepto, ejemplo y cierre. Durante el video mira esta decision: cuando aplicar esta tecnica en tu propio repositorio. La memoria sirve para bajar incertidumbre. Si la regla no se puede comprobar, probablemente sobra. La mejor memoria cabe en una pantalla y se mantiene viva."
+      },
+      "ellipsis": 0,
+      "timeHits": 0,
+      "longSubtitles": 0,
+      "clipped": 0,
+      "risks": [],
+      "teacherScore": 100
+    },
+    {
+      "id": "cl-basic-02-compact-context",
+      "title": "Claude Basic 02 - Compact Context",
+      "vendor": "claude",
+      "durationMin": 2,
+      "scenes": 3,
+      "subtitles": 15,
+      "voices": [
+        "es-ES-AlvaroNeural"
+      ],
+      "chapters": [
+        "Compact",
+        "Estado",
+        "Handoff"
+      ],
+      "mediaBreaks": 0,
+      "maxSubtitleChars": 74,
+      "avgWords": 7.9,
+      "objective": {
+        "hasObjective": true,
+        "hasOutcome": true,
+        "hasRoute": true,
+        "hasDecision": true,
+        "opening": "Objetivo de esta clase: resolver Claude Basic 02 - Compact Context con criterio practico. Al final debes poder quedarte con una regla de uso y un ejemplo repetible. La ruta sera: concepto, ejemplo y cierre. Durante el video mira esta decision: cuando aplicar esta tecnica en tu propio repositorio. No guardes la conversacion completa. Guarda los hechos que permiten continuar."
+      },
+      "ellipsis": 0,
+      "timeHits": 0,
+      "longSubtitles": 0,
+      "clipped": 0,
+      "risks": [],
+      "teacherScore": 100
+    },
+    {
+      "id": "cl-masterclass-10m-claude-operating-model",
+      "title": "Claude Masterclass 10 minutos - Operating Model",
+      "vendor": "claude",
+      "durationMin": 10,
+      "scenes": 24,
+      "subtitles": 133,
+      "voices": [
+        "es-ES-AlvaroNeural"
+      ],
+      "chapters": [
+        "Aterrizaje",
+        "Superficies",
+        "Metodo",
+        "Coste y permisos",
+        "Activacion"
+      ],
+      "mediaBreaks": 4,
+      "maxSubtitleChars": 87,
+      "avgWords": 9.8,
+      "objective": {
+        "hasObjective": true,
+        "hasOutcome": true,
+        "hasRoute": true,
+        "hasDecision": true,
+        "opening": "Objetivo de esta clase: entender el sistema operativo de Claude en 10 minutos. Al final debes poder saber cuando usarlo, cuando no usarlo y que evidencia pedir. La ruta sera: Aterrizaje, Superficies, Metodo y cierre operativo. Durante el video mira esta decision: si la herramienta encaja con el trabajo real del equipo. Claude: Superficies Claude. Project, Claude Code, M C P, skills y subagentes tienen trabajos distintos. Modelo minuto 0: elegir por riesgo En Claude"
+      },
+      "ellipsis": 0,
+      "timeHits": 0,
+      "longSubtitles": 0,
+      "clipped": 0,
+      "risks": [],
+      "teacherScore": 100
+    },
+    {
+      "id": "cl-operator-01-first-skill",
+      "title": "Claude Operator 01 - First Skill",
+      "vendor": "claude",
+      "durationMin": 2,
+      "scenes": 3,
+      "subtitles": 11,
+      "voices": [
+        "es-ES-AlvaroNeural"
+      ],
+      "chapters": [
+        "Skill",
+        "Anatomia",
+        "Uso"
+      ],
+      "mediaBreaks": 0,
+      "maxSubtitleChars": 88,
+      "avgWords": 9.1,
+      "objective": {
+        "hasObjective": true,
+        "hasOutcome": true,
+        "hasRoute": true,
+        "hasDecision": true,
+        "opening": "Objetivo de esta clase: resolver Claude Operator 01 - First Skill con criterio practico. Al final debes poder quedarte con una regla de uso y un ejemplo repetible. La ruta sera: concepto, ejemplo y cierre. Durante el video mira esta decision: cuando aplicar esta tecnica en tu propio repositorio. La description es el disparador. Las referencias permiten profundidad sin cargarlo todo siempre. Esto es flipping training convertido en tooling."
+      },
+      "ellipsis": 0,
+      "timeHits": 0,
+      "longSubtitles": 0,
+      "clipped": 0,
+      "risks": [],
+      "teacherScore": 100
+    },
+    {
+      "id": "cl-operator-02-subagent-explorer",
+      "title": "Claude Operator 02 - Subagent Explorer",
+      "vendor": "claude",
+      "durationMin": 2,
+      "scenes": 3,
+      "subtitles": 13,
+      "voices": [
+        "es-ES-AlvaroNeural"
+      ],
+      "chapters": [
+        "Subagentes",
+        "Separacion",
+        "Roles"
+      ],
+      "mediaBreaks": 0,
+      "maxSubtitleChars": 86,
+      "avgWords": 8.2,
+      "objective": {
+        "hasObjective": true,
+        "hasOutcome": true,
+        "hasRoute": true,
+        "hasDecision": true,
+        "opening": "Objetivo de esta clase: resolver Claude Operator 02 - Subagent Explorer con criterio practico. Al final debes poder quedarte con una regla de uso y un ejemplo repetible. La ruta sera: concepto, ejemplo y cierre. Durante el video mira esta decision: cuando aplicar esta tecnica en tu propio repositorio. Separar roles reduce ruido. Explorer puede ser barato y read-only."
+      },
+      "ellipsis": 0,
+      "timeHits": 0,
+      "longSubtitles": 0,
+      "clipped": 0,
+      "risks": [],
+      "teacherScore": 100
+    },
+    {
+      "id": "cl-operator-03-mcp-project",
+      "title": "Claude Operator 03 - M C P Project",
+      "vendor": "claude",
+      "durationMin": 2,
+      "scenes": 3,
+      "subtitles": 17,
+      "voices": [
+        "es-ES-AlvaroNeural"
+      ],
+      "chapters": [
+        "M C P",
+        "Riesgo",
+        "Inventario"
+      ],
+      "mediaBreaks": 0,
+      "maxSubtitleChars": 74,
+      "avgWords": 8.5,
+      "objective": {
+        "hasObjective": true,
+        "hasOutcome": true,
+        "hasRoute": true,
+        "hasDecision": true,
+        "opening": "Objetivo de esta clase: resolver Claude Operator 03 - M C P Project con criterio practico. Al final debes poder quedarte con una regla de uso y un ejemplo repetible. La ruta sera: concepto, ejemplo y cierre. Durante el video mira esta decision: cuando aplicar esta tecnica en tu propio repositorio. El M C P bueno es explicito. El M C P peligroso aparece como magia sin owner."
+      },
+      "ellipsis": 0,
+      "timeHits": 0,
+      "longSubtitles": 0,
+      "clipped": 0,
+      "risks": [],
+      "teacherScore": 100
+    },
+    {
+      "id": "cl-orientation-01-claude-md",
+      "title": "Claude Orientation 01 - CLAUDE.md",
+      "vendor": "claude",
+      "durationMin": 2,
+      "scenes": 3,
+      "subtitles": 15,
+      "voices": [
+        "es-ES-AlvaroNeural"
+      ],
+      "chapters": [
+        "Memoria",
+        "Capas",
+        "Regla"
+      ],
+      "mediaBreaks": 0,
+      "maxSubtitleChars": 74,
+      "avgWords": 8.5,
+      "objective": {
+        "hasObjective": true,
+        "hasOutcome": true,
+        "hasRoute": true,
+        "hasDecision": true,
+        "opening": "Objetivo de esta clase: resolver Claude Orientation 01 - CLAUDE.md con criterio practico. Al final debes poder quedarte con una regla de uso y un ejemplo repetible. La ruta sera: concepto, ejemplo y cierre. Durante el video mira esta decision: cuando aplicar esta tecnica en tu propio repositorio. La memoria no es un cajon para todo. Cada capa tiene una funcion y un coste."
+      },
+      "ellipsis": 0,
+      "timeHits": 0,
+      "longSubtitles": 0,
+      "clipped": 0,
+      "risks": [],
+      "teacherScore": 100
+    },
+    {
+      "id": "cl-orientation-02-memory-vs-instructions",
+      "title": "Claude Orientation 02 - Memory vs Instructions",
+      "vendor": "claude",
+      "durationMin": 2,
+      "scenes": 3,
+      "subtitles": 12,
+      "voices": [
+        "es-ES-AlvaroNeural"
+      ],
+      "chapters": [
+        "Decision",
+        "Comparativa",
+        "Matriz"
+      ],
+      "mediaBreaks": 0,
+      "maxSubtitleChars": 78,
+      "avgWords": 8.8,
+      "objective": {
+        "hasObjective": true,
+        "hasOutcome": true,
+        "hasRoute": true,
+        "hasDecision": true,
+        "opening": "Objetivo de esta clase: resolver Claude Orientation 02 - Memory vs Instructions con criterio practico. Al final debes poder quedarte con una regla de uso y un ejemplo repetible. La ruta sera: concepto, ejemplo y cierre. Durante el video mira esta decision: cuando aplicar esta tecnica en tu propio repositorio. Si todo vive en el prompt, todo cuesta siempre. Las capas permiten cargar solo lo que toca."
+      },
+      "ellipsis": 0,
+      "timeHits": 0,
+      "longSubtitles": 0,
+      "clipped": 0,
+      "risks": [],
+      "teacherScore": 100
+    },
+    {
+      "id": "cl-orientation-03-cost-context",
+      "title": "Claude Orientation 03 - Cost and Context",
+      "vendor": "claude",
+      "durationMin": 2,
+      "scenes": 3,
+      "subtitles": 12,
+      "voices": [
+        "es-ES-AlvaroNeural"
+      ],
+      "chapters": [
+        "Coste",
+        "Controles",
+        "Modelo"
+      ],
+      "mediaBreaks": 0,
+      "maxSubtitleChars": 74,
+      "avgWords": 8.6,
+      "objective": {
+        "hasObjective": true,
+        "hasOutcome": true,
+        "hasRoute": true,
+        "hasDecision": true,
+        "opening": "Objetivo de esta clase: resolver Claude Orientation 03 - Cost and Context con criterio practico. Al final debes poder quedarte con una regla de uso y un ejemplo repetible. La ruta sera: concepto, ejemplo y cierre. Durante el video mira esta decision: cuando aplicar esta tecnica en tu propio repositorio. No es solo precio por modelo. El contexto viejo tambien cuesta y confunde."
+      },
+      "ellipsis": 0,
+      "timeHits": 0,
+      "longSubtitles": 0,
+      "clipped": 0,
+      "risks": [],
+      "teacherScore": 100
+    },
+    {
+      "id": "cl-sdk-01-agent-sdk",
+      "title": "Claude S D K 01 - Agent S D K",
+      "vendor": "claude",
+      "durationMin": 2,
+      "scenes": 3,
+      "subtitles": 12,
+      "voices": [
+        "es-ES-AlvaroNeural"
+      ],
+      "chapters": [
+        "S D K",
+        "Agente",
+        "Contrato"
+      ],
+      "mediaBreaks": 0,
+      "maxSubtitleChars": 85,
+      "avgWords": 9.9,
+      "objective": {
+        "hasObjective": true,
+        "hasOutcome": true,
+        "hasRoute": true,
+        "hasDecision": true,
+        "opening": "Objetivo de esta clase: resolver Claude S D K 01 - Agent S D K con criterio practico. Al final debes poder quedarte con una regla de uso y un ejemplo repetible. La ruta sera: concepto, ejemplo y cierre. Durante el video mira esta decision: cuando aplicar esta tecnica en tu propio repositorio. El S D K convierte una practica en software. Por eso necesita contrato de salida y permisos estrechos. El primer agente enterprise debe ser pequeño y evaluable."
+      },
+      "ellipsis": 0,
+      "timeHits": 0,
+      "longSubtitles": 0,
+      "clipped": 0,
+      "risks": [],
+      "teacherScore": 100
+    },
+    {
+      "id": "cl-sdk-02-evals-governance",
+      "title": "Claude S D K 02 - Evals and Governance",
+      "vendor": "claude",
+      "durationMin": 2,
+      "scenes": 3,
+      "subtitles": 17,
+      "voices": [
+        "es-ES-AlvaroNeural"
+      ],
+      "chapters": [
+        "Evals",
+        "Medicion",
+        "Piloto"
+      ],
+      "mediaBreaks": 0,
+      "maxSubtitleChars": 74,
+      "avgWords": 8.7,
+      "objective": {
+        "hasObjective": true,
+        "hasOutcome": true,
+        "hasRoute": true,
+        "hasDecision": true,
+        "opening": "Objetivo de esta clase: resolver Claude S D K 02 - Evals and Governance con criterio practico. Al final debes poder quedarte con una regla de uso y un ejemplo repetible. La ruta sera: concepto, ejemplo y cierre. Durante el video mira esta decision: cuando aplicar esta tecnica en tu propio repositorio. Medir no mata la magia. La vuelve confiable. El contrato JSON permite dashboards y comparaciones."
+      },
+      "ellipsis": 0,
+      "timeHits": 0,
+      "longSubtitles": 0,
+      "clipped": 0,
+      "risks": [],
+      "teacherScore": 100
+    },
+    {
+      "id": "cl-workshop-30m-memory-to-hook",
+      "title": "Claude Workshop 30 minutos - Memory to Hook",
+      "vendor": "claude",
+      "durationMin": 30,
+      "scenes": 60,
+      "subtitles": 389,
+      "voices": [
+        "es-ES-AlvaroNeural"
+      ],
+      "chapters": [
+        "Briefing",
+        "Memoria",
+        "Skills y subagentes",
+        "Hooks",
+        "Cierre"
+      ],
+      "mediaBreaks": 8,
+      "maxSubtitleChars": 88,
+      "avgWords": 9.1,
+      "objective": {
+        "hasObjective": true,
+        "hasOutcome": true,
+        "hasRoute": true,
+        "hasDecision": true,
+        "opening": "Objetivo de esta clase: practicar Claude Workshop 30 minutos - Memory to Hook sin depender del instructor. Al final debes poder terminar con una salida revisable y un criterio de cierre claro. La ruta sera: Briefing, Memoria, Skills y subagentes, Hooks y cierre. Durante el video mira esta decision: si la evidencia permite avanzar o toca pedir ayuda. Contexto visible: Primero memoria, despues contexto, luego skills y subagentes. Situacion minuto 0: Claude recibe \"Apertura\" y debe convertirlo en trabajo revisable. Evidencia minuto 0: \"Apertura\" queda ligado a prueba, owner y decision."
+      },
+      "ellipsis": 0,
+      "timeHits": 0,
+      "longSubtitles": 0,
+      "clipped": 0,
+      "risks": [],
+      "teacherScore": 100
+    },
+    {
+      "id": "cl-workshop-60m-memory-to-automation",
+      "title": "Workshop 1 hora Claude - De memoria a automatizacion controlada",
+      "vendor": "claude",
+      "durationMin": 60,
+      "scenes": 120,
+      "subtitles": 1052,
+      "voices": [
+        "es-ES-AlvaroNeural"
+      ],
+      "chapters": [
+        "Memoria util",
+        "Skills y subagentes",
+        "M C P y hooks",
+        "Evals y coste",
+        "Rollout"
+      ],
+      "mediaBreaks": 14,
+      "maxSubtitleChars": 88,
+      "avgWords": 8.9,
+      "objective": {
+        "hasObjective": true,
+        "hasOutcome": true,
+        "hasRoute": true,
+        "hasDecision": true,
+        "opening": "Objetivo de esta clase: pasar de memoria dispersa a automatizacion controlada con Claude. Al final debes poder separar CLAUDE.md, skill, subagente, hook, M C P y evaluacion. La ruta sera: auditoria de contexto, skill, subagente, permisos, hook y rollout. Durante el video mira esta decision: que se guarda en memoria y que debe convertirse en control versionado. Contexto visible: En una hora vamos a separar memoria, skill, subagente, M C P y hook. Situacion minuto 0: Claude solo avanza si el siguiente humano entiende el por que."
+      },
+      "ellipsis": 0,
+      "timeHits": 0,
+      "longSubtitles": 0,
+      "clipped": 0,
+      "risks": [],
+      "teacherScore": 100
+    },
+    {
+      "id": "cp-advanced-01-custom-agent",
+      "title": "Copilot Advanced 01 - Custom Agent",
+      "vendor": "copilot",
+      "durationMin": 2,
+      "scenes": 3,
+      "subtitles": 20,
+      "voices": [
+        "es-ES-AlvaroNeural"
+      ],
+      "chapters": [
+        "Agent",
+        ".agent.md",
+        "Roles"
+      ],
+      "mediaBreaks": 1,
+      "maxSubtitleChars": 86,
+      "avgWords": 8.8,
+      "objective": {
+        "hasObjective": true,
+        "hasOutcome": true,
+        "hasRoute": true,
+        "hasDecision": true,
+        "opening": "Objetivo de esta clase: resolver Copilot Advanced 01 - Custom Agent con criterio practico. Al final debes poder quedarte con una regla de uso y un ejemplo repetible. La ruta sera: concepto, ejemplo y cierre. Durante el video mira esta decision: cuando aplicar esta tecnica en tu propio repositorio. Situacion minuto 0: la pantalla no busca impresionar; busca cerrar \"Cuando Agent profile se va de las manos\" con evidencia."
+      },
+      "ellipsis": 0,
+      "timeHits": 0,
+      "longSubtitles": 0,
+      "clipped": 0,
+      "risks": [],
+      "teacherScore": 100
+    },
+    {
+      "id": "cp-advanced-02-mcp-code-review",
+      "title": "Copilot Advanced 02 - M C P and Review",
+      "vendor": "copilot",
+      "durationMin": 2,
+      "scenes": 3,
+      "subtitles": 14,
+      "voices": [
+        "es-ES-AlvaroNeural"
+      ],
+      "chapters": [
+        "M C P",
+        "Control",
+        "Review"
+      ],
+      "mediaBreaks": 0,
+      "maxSubtitleChars": 81,
+      "avgWords": 8.7,
+      "objective": {
+        "hasObjective": true,
+        "hasOutcome": true,
+        "hasRoute": true,
+        "hasDecision": true,
+        "opening": "Objetivo de esta clase: resolver Copilot Advanced 02 - M C P and Review con criterio practico. Al final debes poder quedarte con una regla de uso y un ejemplo repetible. La ruta sera: concepto, ejemplo y cierre. Durante el video mira esta decision: cuando aplicar esta tecnica en tu propio repositorio. No actives todo por comodidad. Empieza readonly y documenta tools."
+      },
+      "ellipsis": 0,
+      "timeHits": 0,
+      "longSubtitles": 0,
+      "clipped": 0,
+      "risks": [],
+      "teacherScore": 100
+    },
+    {
+      "id": "cp-basic-01-inline-completion",
+      "title": "Copilot Basic 01 - Inline Completion",
+      "vendor": "copilot",
+      "durationMin": 2,
+      "scenes": 3,
+      "subtitles": 18,
+      "voices": [
+        "es-ES-AlvaroNeural"
+      ],
+      "chapters": [
+        "Ghost text",
+        "Contexto",
+        "Criterio"
+      ],
+      "mediaBreaks": 0,
+      "maxSubtitleChars": 81,
+      "avgWords": 7.9,
+      "objective": {
+        "hasObjective": true,
+        "hasOutcome": true,
+        "hasRoute": true,
+        "hasDecision": true,
+        "opening": "Objetivo de esta clase: resolver Copilot Basic 01 - Inline Completion con criterio practico. Al final debes poder quedarte con una regla de uso y un ejemplo repetible. La ruta sera: concepto, ejemplo y cierre. Durante el video mira esta decision: cuando aplicar esta tecnica en tu propio repositorio. Copilot no lee tu mente: lee nombres, comentarios y archivos abiertos. Con buen contexto, la sugerencia mejora mucho."
+      },
+      "ellipsis": 0,
+      "timeHits": 0,
+      "longSubtitles": 0,
+      "clipped": 0,
+      "risks": [],
+      "teacherScore": 100
+    },
+    {
+      "id": "cp-basic-02-ask-edit-agent",
+      "title": "Copilot Basic 02 - Ask Edit Agent",
+      "vendor": "copilot",
+      "durationMin": 2,
+      "scenes": 3,
+      "subtitles": 15,
+      "voices": [
+        "es-ES-AlvaroNeural"
+      ],
+      "chapters": [
+        "Modos",
+        "Decision",
+        "Regla"
+      ],
+      "mediaBreaks": 0,
+      "maxSubtitleChars": 74,
+      "avgWords": 8.1,
+      "objective": {
+        "hasObjective": true,
+        "hasOutcome": true,
+        "hasRoute": true,
+        "hasDecision": true,
+        "opening": "Objetivo de esta clase: resolver Copilot Basic 02 - Ask Edit Agent con criterio practico. Al final debes poder quedarte con una regla de uso y un ejemplo repetible. La ruta sera: concepto, ejemplo y cierre. Durante el video mira esta decision: cuando aplicar esta tecnica en tu propio repositorio. Ask sirve para entender. Edit sirve para cambiar algo acotado."
+      },
+      "ellipsis": 0,
+      "timeHits": 0,
+      "longSubtitles": 0,
+      "clipped": 0,
+      "risks": [],
+      "teacherScore": 100
+    },
+    {
+      "id": "cp-basic-03-error-to-fix",
+      "title": "Copilot Basic 03 - Error to Fix",
+      "vendor": "copilot",
+      "durationMin": 2,
+      "scenes": 3,
+      "subtitles": 11,
+      "voices": [
+        "es-ES-AlvaroNeural"
+      ],
+      "chapters": [
+        "Error",
+        "Fix",
+        "Verificar"
+      ],
+      "mediaBreaks": 0,
+      "maxSubtitleChars": 87,
+      "avgWords": 10,
+      "objective": {
+        "hasObjective": true,
+        "hasOutcome": true,
+        "hasRoute": true,
+        "hasDecision": true,
+        "opening": "Objetivo de esta clase: resolver Copilot Basic 03 - Error to Fix con criterio practico. Al final debes poder quedarte con una regla de uso y un ejemplo repetible. La ruta sera: concepto, ejemplo y cierre. Durante el video mira esta decision: cuando aplicar esta tecnica en tu propio repositorio. El prompt bueno dice que estaba pasando, donde falla y que no queremos tocar. Despues pedimos patch minimo y test. Copilot arregla mejor cuando el cierre esta definido."
+      },
+      "ellipsis": 0,
+      "timeHits": 0,
+      "longSubtitles": 0,
+      "clipped": 0,
+      "risks": [],
+      "teacherScore": 100
+    },
+    {
+      "id": "cp-cloud-01-cloud-agent-pr",
+      "title": "Copilot Cloud 01 - Agent pull request",
+      "vendor": "copilot",
+      "durationMin": 2,
+      "scenes": 3,
+      "subtitles": 12,
+      "voices": [
+        "es-ES-AlvaroNeural"
+      ],
+      "chapters": [
+        "Cloud",
+        "Issue -> pull request",
+        "Review"
+      ],
+      "mediaBreaks": 0,
+      "maxSubtitleChars": 77,
+      "avgWords": 8.6,
+      "objective": {
+        "hasObjective": true,
+        "hasOutcome": true,
+        "hasRoute": true,
+        "hasDecision": true,
+        "opening": "Objetivo de esta clase: resolver Copilot Cloud 01 - Agent pull request con criterio practico. Al final debes poder quedarte con una regla de uso y un ejemplo repetible. La ruta sera: concepto, ejemplo y cierre. Durante el video mira esta decision: cuando aplicar esta tecnica en tu propio repositorio. El issue debe incluir objetivo, contexto y restricciones. Tambien acceptance criteria y presupuesto."
+      },
+      "ellipsis": 0,
+      "timeHits": 0,
+      "longSubtitles": 0,
+      "clipped": 0,
+      "risks": [],
+      "teacherScore": 100
+    },
+    {
+      "id": "cp-cloud-02-premium-requests",
+      "title": "Copilot Cloud 02 - Premium Requests",
+      "vendor": "copilot",
+      "durationMin": 2,
+      "scenes": 3,
+      "subtitles": 13,
+      "voices": [
+        "es-ES-AlvaroNeural"
+      ],
+      "chapters": [
+        "Coste",
+        "Requests",
+        "Budget"
+      ],
+      "mediaBreaks": 0,
+      "maxSubtitleChars": 87,
+      "avgWords": 8.5,
+      "objective": {
+        "hasObjective": true,
+        "hasOutcome": true,
+        "hasRoute": true,
+        "hasDecision": true,
+        "opening": "Objetivo de esta clase: resolver Copilot Cloud 02 - Premium Requests con criterio practico. Al final debes poder quedarte con una regla de uso y un ejemplo repetible. La ruta sera: concepto, ejemplo y cierre. Durante el video mira esta decision: cuando aplicar esta tecnica en tu propio repositorio. Incluido, premium y cloud no son la misma bolsa. Los detalles cambian, asi que ensenamos criterio."
+      },
+      "ellipsis": 0,
+      "timeHits": 0,
+      "longSubtitles": 0,
+      "clipped": 0,
+      "risks": [],
+      "teacherScore": 100
+    },
+    {
+      "id": "cp-git-01-fork-vs-branch",
+      "title": "Copilot Git 01 - Fork vs Branch",
+      "vendor": "copilot",
+      "durationMin": 2,
+      "scenes": 3,
+      "subtitles": 17,
+      "voices": [
+        "es-ES-AlvaroNeural"
+      ],
+      "chapters": [
+        "Git survival",
+        "Fork vs branch",
+        "Checklist"
+      ],
+      "mediaBreaks": 0,
+      "maxSubtitleChars": 87,
+      "avgWords": 8.9,
+      "objective": {
+        "hasObjective": true,
+        "hasOutcome": true,
+        "hasRoute": true,
+        "hasDecision": true,
+        "opening": "Objetivo de esta clase: resolver Copilot Git 01 - Fork vs Branch con criterio practico. Al final debes poder quedarte con una regla de uso y un ejemplo repetible. La ruta sera: concepto, ejemplo y cierre. Durante el video mira esta decision: cuando aplicar esta tecnica en tu propio repositorio. Fork es otro repo. Branch es una linea de trabajo. Para formacion interna casi siempre queremos branch. Asi el pull request, el diff y la review son faciles de seguir."
+      },
+      "ellipsis": 0,
+      "timeHits": 0,
+      "longSubtitles": 0,
+      "clipped": 0,
+      "risks": [],
+      "teacherScore": 100
+    },
+    {
+      "id": "cp-git-02-pr-as-contract",
+      "title": "Copilot Git 02 - pull request as Contract",
+      "vendor": "copilot",
+      "durationMin": 2,
+      "scenes": 3,
+      "subtitles": 15,
+      "voices": [
+        "es-ES-AlvaroNeural"
+      ],
+      "chapters": [
+        "pull request",
+        "Contrato",
+        "Review"
+      ],
+      "mediaBreaks": 0,
+      "maxSubtitleChars": 74,
+      "avgWords": 8.9,
+      "objective": {
+        "hasObjective": true,
+        "hasOutcome": true,
+        "hasRoute": true,
+        "hasDecision": true,
+        "opening": "Objetivo de esta clase: resolver Copilot Git 02 - pull request as Contract con criterio practico. Al final debes poder quedarte con una regla de uso y un ejemplo repetible. La ruta sera: concepto, ejemplo y cierre. Durante el video mira esta decision: cuando aplicar esta tecnica en tu propio repositorio. El pull request bueno dice objetivo, contexto, no alcance y verificacion. La pregunta a Copilot review tambien debe tener criterio."
+      },
+      "ellipsis": 0,
+      "timeHits": 0,
+      "longSubtitles": 0,
+      "clipped": 0,
+      "risks": [],
+      "teacherScore": 100
+    },
+    {
+      "id": "cp-masterclass-10m-copilot-workbench",
+      "title": "Copilot Masterclass 10 minutos - Workbench",
+      "vendor": "copilot",
+      "durationMin": 10,
+      "scenes": 24,
+      "subtitles": 143,
+      "voices": [
+        "es-ES-AlvaroNeural"
+      ],
+      "chapters": [
+        "Aterrizaje",
+        "Superficies",
+        "Metodo",
+        "Coste y permisos",
+        "Activacion"
+      ],
+      "mediaBreaks": 4,
+      "maxSubtitleChars": 88,
+      "avgWords": 9.1,
+      "objective": {
+        "hasObjective": true,
+        "hasOutcome": true,
+        "hasRoute": true,
+        "hasDecision": true,
+        "opening": "Objetivo de esta clase: entender el sistema operativo de Copilot en 10 minutos. Al final debes poder saber cuando usarlo, cuando no usarlo y que evidencia pedir. La ruta sera: Aterrizaje, Superficies, Metodo y cierre operativo. Durante el video mira esta decision: si la herramienta encaja con el trabajo real del equipo. Copilot: Superficies en Visual Studio Code. Inline sugiere Ask explica Edit cambia Agent coordina y revision de pull request revisa."
+      },
+      "ellipsis": 0,
+      "timeHits": 0,
+      "longSubtitles": 0,
+      "clipped": 0,
+      "risks": [],
+      "teacherScore": 100
+    },
+    {
+      "id": "cp-medium-01-instructions",
+      "title": "Copilot Medium 01 - Instructions",
+      "vendor": "copilot",
+      "durationMin": 2,
+      "scenes": 3,
+      "subtitles": 11,
+      "voices": [
+        "es-ES-AlvaroNeural"
+      ],
+      "chapters": [
+        "Instructions",
+        ".github",
+        "Regla"
+      ],
+      "mediaBreaks": 0,
+      "maxSubtitleChars": 88,
+      "avgWords": 9.4,
+      "objective": {
+        "hasObjective": true,
+        "hasOutcome": true,
+        "hasRoute": true,
+        "hasDecision": true,
+        "opening": "Objetivo de esta clase: resolver Copilot Medium 01 - Instructions con criterio practico. Al final debes poder quedarte con una regla de uso y un ejemplo repetible. La ruta sera: concepto, ejemplo y cierre. Durante el video mira esta decision: cuando aplicar esta tecnica en tu propio repositorio. Copilot-instructions es para reglas siempre activas. Los instruction files aplican por path o por tarea. Separar capas mantiene el contexto limpio."
+      },
+      "ellipsis": 0,
+      "timeHits": 0,
+      "longSubtitles": 0,
+      "clipped": 0,
+      "risks": [],
+      "teacherScore": 100
+    },
+    {
+      "id": "cp-medium-02-prompt-files",
+      "title": "Copilot Medium 02 - Prompt Files",
+      "vendor": "copilot",
+      "durationMin": 2,
+      "scenes": 3,
+      "subtitles": 13,
+      "voices": [
+        "es-ES-AlvaroNeural"
+      ],
+      "chapters": [
+        "Prompts",
+        "Prompt file",
+        "Workflow"
+      ],
+      "mediaBreaks": 0,
+      "maxSubtitleChars": 88,
+      "avgWords": 8.3,
+      "objective": {
+        "hasObjective": true,
+        "hasOutcome": true,
+        "hasRoute": true,
+        "hasDecision": true,
+        "opening": "Objetivo de esta clase: resolver Copilot Medium 02 - Prompt Files con criterio practico. Al final debes poder quedarte con una regla de uso y un ejemplo repetible. La ruta sera: concepto, ejemplo y cierre. Durante el video mira esta decision: cuando aplicar esta tecnica en tu propio repositorio. El frontmatter define descripcion, modo y herramientas. El cuerpo define el workflow. Esto convierte buenas practicas en atajos de equipo."
+      },
+      "ellipsis": 0,
+      "timeHits": 0,
+      "longSubtitles": 0,
+      "clipped": 0,
+      "risks": [],
+      "teacherScore": 100
+    },
+    {
+      "id": "cp-workshop-30m-error-to-pr",
+      "title": "Copilot Workshop 30 minutos - Error to pull request",
+      "vendor": "copilot",
+      "durationMin": 30,
+      "scenes": 60,
+      "subtitles": 391,
+      "voices": [
+        "es-ES-AlvaroNeural"
+      ],
+      "chapters": [
+        "Briefing",
+        "Ask",
+        "Edit",
+        "Agent",
+        "pull request"
+      ],
+      "mediaBreaks": 8,
+      "maxSubtitleChars": 88,
+      "avgWords": 9.1,
+      "objective": {
+        "hasObjective": true,
+        "hasOutcome": true,
+        "hasRoute": true,
+        "hasDecision": true,
+        "opening": "Objetivo de esta clase: practicar Copilot Workshop 30 minutos - Error to pull request sin depender del instructor. Al final debes poder terminar con una salida revisable y un criterio de cierre claro. La ruta sera: Briefing, Ask, Edit, Agent y cierre. Durante el video mira esta decision: si la evidencia permite avanzar o toca pedir ayuda. Contexto visible: Es un banco de trabajo con modos. Situacion minuto 0: el equipo mira \"Apertura\" dentro del workspace de Visual Studio Code"
+      },
+      "ellipsis": 0,
+      "timeHits": 0,
+      "longSubtitles": 0,
+      "clipped": 0,
+      "risks": [],
+      "teacherScore": 100
+    },
+    {
+      "id": "cp-workshop-60m-vscode-to-pr-review",
+      "title": "Workshop 1 hora Copilot - De Visual Studio Code al revision de pull request",
+      "vendor": "copilot",
+      "durationMin": 60,
+      "scenes": 120,
+      "subtitles": 1168,
+      "voices": [
+        "es-ES-AlvaroNeural"
+      ],
+      "chapters": [
+        "Setup Visual Studio Code",
+        "Ask, Edit y Agent",
+        "Instrucciones y prompts",
+        "Tests y revision de pull request",
+        "Coste y cierre"
+      ],
+      "mediaBreaks": 14,
+      "maxSubtitleChars": 88,
+      "avgWords": 8.2,
+      "objective": {
+        "hasObjective": true,
+        "hasOutcome": true,
+        "hasRoute": true,
+        "hasDecision": true,
+        "opening": "Objetivo de esta clase: pasar de un error en Visual Studio Code a un pull request revisado con Copilot. Al final debes poder elegir Ask, Edit, Agent o review sin perder control del cambio. La ruta sera: diagnostico, instrucciones, edicion, pruebas, review y presupuesto. Durante el video mira esta decision: que modo de Copilot conviene en cada riesgo. Contexto minuto 0: mira primero el alcance que condiciona esta salida. En esta hora vamos a usar Visual Studio Code como una mesa de trabajo: preguntar editar dele."
+      },
+      "ellipsis": 0,
+      "timeHits": 0,
+      "longSubtitles": 0,
+      "clipped": 0,
+      "risks": [],
+      "teacherScore": 100
+    },
+    {
+      "id": "cx-basic-01-agents-md",
+      "title": "Codex Basic 01 - AGENTS.md",
+      "vendor": "codex",
+      "durationMin": 2,
+      "scenes": 4,
+      "subtitles": 14,
+      "voices": [
+        "es-ES-AlvaroNeural"
+      ],
+      "chapters": [
+        "Por que",
+        "Reglas",
+        "Archivo",
+        "Cierre"
+      ],
+      "mediaBreaks": 0,
+      "maxSubtitleChars": 83,
+      "avgWords": 8.5,
+      "objective": {
+        "hasObjective": true,
+        "hasOutcome": true,
+        "hasRoute": true,
+        "hasDecision": true,
+        "opening": "Objetivo de esta clase: resolver Codex Basic 01 - AGENTS.md con criterio practico. Al final debes poder quedarte con una regla de uso y un ejemplo repetible. La ruta sera: concepto, ejemplo y cierre. Durante el video mira esta decision: cuando aplicar esta tecnica en tu propio repositorio. Un AGENTS.md bueno ayuda a decidir. No es decoracion de onboarding. Cada linea debe evitar una mala decision futura."
+      },
+      "ellipsis": 0,
+      "timeHits": 0,
+      "longSubtitles": 0,
+      "clipped": 0,
+      "risks": [],
+      "teacherScore": 100
+    },
+    {
+      "id": "cx-basic-02-plan-before-patch",
+      "title": "Codex Basic 02 - Plan Before Patch",
+      "vendor": "codex",
+      "durationMin": 2,
+      "scenes": 4,
+      "subtitles": 16,
+      "voices": [
+        "es-ES-AlvaroNeural"
+      ],
+      "chapters": [
+        "Bug",
+        "Plan",
+        "Patch",
+        "Cierre"
+      ],
+      "mediaBreaks": 0,
+      "maxSubtitleChars": 83,
+      "avgWords": 8.1,
+      "objective": {
+        "hasObjective": true,
+        "hasOutcome": true,
+        "hasRoute": true,
+        "hasDecision": true,
+        "opening": "Objetivo de esta clase: resolver Codex Basic 02 - Plan Before Patch con criterio practico. Al final debes poder quedarte con una regla de uso y un ejemplo repetible. La ruta sera: concepto, ejemplo y cierre. Durante el video mira esta decision: cuando aplicar esta tecnica en tu propio repositorio. Un plan no tiene que ser largo. Tiene que ordenar diagnostico, patch y verificacion."
+      },
+      "ellipsis": 0,
+      "timeHits": 0,
+      "longSubtitles": 0,
+      "clipped": 0,
+      "risks": [],
+      "teacherScore": 100
+    },
+    {
+      "id": "cx-masterclass-10m-codex-operating-system",
+      "title": "Codex Masterclass 10 minutos - Operating System",
+      "vendor": "codex",
+      "durationMin": 10,
+      "scenes": 24,
+      "subtitles": 126,
+      "voices": [
+        "es-ES-AlvaroNeural"
+      ],
+      "chapters": [
+        "Aterrizaje",
+        "Superficies",
+        "Metodo",
+        "Coste y permisos",
+        "Activacion"
+      ],
+      "mediaBreaks": 4,
+      "maxSubtitleChars": 87,
+      "avgWords": 9.6,
+      "objective": {
+        "hasObjective": true,
+        "hasOutcome": true,
+        "hasRoute": true,
+        "hasDecision": true,
+        "opening": "Objetivo de esta clase: entender el sistema operativo de Codex en 10 minutos. Al final debes poder saber cuando usarlo, cuando no usarlo y que evidencia pedir. La ruta sera: Aterrizaje, Superficies, Metodo y cierre operativo. Durante el video mira esta decision: si la herramienta encaja con el trabajo real del equipo. Codex: Mapa de superficies. Elegir terminal, IDE, web o cloud segun friccion, riesgo y necesidad de trazabilidad. Modelo minuto 0: elegir por riesgo En Codex"
+      },
+      "ellipsis": 0,
+      "timeHits": 0,
+      "longSubtitles": 0,
+      "clipped": 0,
+      "risks": [],
+      "teacherScore": 100
+    },
+    {
+      "id": "cx-medium-01-model-picker",
+      "title": "Codex Medium 01 - Model Picker",
+      "vendor": "codex",
+      "durationMin": 2,
+      "scenes": 4,
+      "subtitles": 15,
+      "voices": [
+        "es-ES-AlvaroNeural"
+      ],
+      "chapters": [
+        "Modelo",
+        "Comparar",
+        "Politica",
+        "Cierre"
+      ],
+      "mediaBreaks": 0,
+      "maxSubtitleChars": 86,
+      "avgWords": 7.9,
+      "objective": {
+        "hasObjective": true,
+        "hasOutcome": true,
+        "hasRoute": true,
+        "hasDecision": true,
+        "opening": "Objetivo de esta clase: resolver Codex Medium 01 - Model Picker con criterio practico. Al final debes poder quedarte con una regla de uso y un ejemplo repetible. La ruta sera: concepto, ejemplo y cierre. Durante el video mira esta decision: cuando aplicar esta tecnica en tu propio repositorio. El modelo grande brilla en problemas grandes. Pero muchas tareas son pequenas y verificables. La politica debe ensenar cuando escalar."
+      },
+      "ellipsis": 0,
+      "timeHits": 0,
+      "longSubtitles": 0,
+      "clipped": 0,
+      "risks": [],
+      "teacherScore": 100
+    },
+    {
+      "id": "cx-medium-02-mcp-readonly",
+      "title": "Codex Medium 02 - M C P Readonly",
+      "vendor": "codex",
+      "durationMin": 2,
+      "scenes": 4,
+      "subtitles": 15,
+      "voices": [
+        "es-ES-AlvaroNeural"
+      ],
+      "chapters": [
+        "M C P",
+        "Contexto",
+        "Inventario",
+        "Cierre"
+      ],
+      "mediaBreaks": 0,
+      "maxSubtitleChars": 88,
+      "avgWords": 8,
+      "objective": {
+        "hasObjective": true,
+        "hasOutcome": true,
+        "hasRoute": true,
+        "hasDecision": true,
+        "opening": "Objetivo de esta clase: resolver Codex Medium 02 - M C P Readonly con criterio practico. Al final debes poder quedarte con una regla de uso y un ejemplo repetible. La ruta sera: concepto, ejemplo y cierre. Durante el video mira esta decision: cuando aplicar esta tecnica en tu propio repositorio. Read-only debe ser el default en aula. El valor esta en reducir incertidumbre. No en conectar cosas por conectar."
+      },
+      "ellipsis": 0,
+      "timeHits": 0,
+      "longSubtitles": 0,
+      "clipped": 0,
+      "risks": [],
+      "teacherScore": 100
+    },
+    {
+      "id": "cx-medium-03-skill-qa-visual",
+      "title": "Codex Medium 03 - Skill calidad Visual",
+      "vendor": "codex",
+      "durationMin": 2,
+      "scenes": 4,
+      "subtitles": 15,
+      "voices": [
+        "es-ES-AlvaroNeural"
+      ],
+      "chapters": [
+        "Skill",
+        "SKILL.md",
+        "calidad",
+        "Cierre"
+      ],
+      "mediaBreaks": 0,
+      "maxSubtitleChars": 83,
+      "avgWords": 8.3,
+      "objective": {
+        "hasObjective": true,
+        "hasOutcome": true,
+        "hasRoute": true,
+        "hasDecision": true,
+        "opening": "Objetivo de esta clase: resolver Codex Medium 03 - Skill calidad Visual con criterio practico. Al final debes poder quedarte con una regla de uso y un ejemplo repetible. La ruta sera: concepto, ejemplo y cierre. Durante el video mira esta decision: cuando aplicar esta tecnica en tu propio repositorio. La skill dice cuando se activa. Y obliga a mirar consola, desktop y mobile."
+      },
+      "ellipsis": 0,
+      "timeHits": 0,
+      "longSubtitles": 0,
+      "clipped": 0,
+      "risks": [],
+      "teacherScore": 100
+    },
+    {
+      "id": "cx-orientation-01-surface-map",
+      "title": "Codex Orientation 01 - Surface Map",
+      "vendor": "codex",
+      "durationMin": 2,
+      "scenes": 4,
+      "subtitles": 16,
+      "voices": [
+        "es-ES-AlvaroNeural"
+      ],
+      "chapters": [
+        "Mapa",
+        "Superficies",
+        "Workflow",
+        "Cierre"
+      ],
+      "mediaBreaks": 0,
+      "maxSubtitleChars": 83,
+      "avgWords": 8.3,
+      "objective": {
+        "hasObjective": true,
+        "hasOutcome": true,
+        "hasRoute": true,
+        "hasDecision": true,
+        "opening": "Objetivo de esta clase: resolver Codex Orientation 01 - Surface Map con criterio practico. Al final debes poder quedarte con una regla de uso y un ejemplo repetible. La ruta sera: concepto, ejemplo y cierre. Durante el video mira esta decision: cuando aplicar esta tecnica en tu propio repositorio. Piensa Codex como tres capas. Conversacion, workspace y herramientas."
+      },
+      "ellipsis": 0,
+      "timeHits": 0,
+      "longSubtitles": 0,
+      "clipped": 0,
+      "risks": [],
+      "teacherScore": 100
+    },
+    {
+      "id": "cx-orientation-02-first-task",
+      "title": "Codex Orientation 02 - First Task",
+      "vendor": "codex",
+      "durationMin": 2,
+      "scenes": 4,
+      "subtitles": 19,
+      "voices": [
+        "es-ES-AlvaroNeural"
+      ],
+      "chapters": [
+        "Tarea",
+        "Briefing",
+        "Prompt",
+        "Cierre"
+      ],
+      "mediaBreaks": 0,
+      "maxSubtitleChars": 74,
+      "avgWords": 7.7,
+      "objective": {
+        "hasObjective": true,
+        "hasOutcome": true,
+        "hasRoute": true,
+        "hasDecision": true,
+        "opening": "Objetivo de esta clase: resolver Codex Orientation 02 - First Task con criterio practico. Al final debes poder quedarte con una regla de uso y un ejemplo repetible. La ruta sera: concepto, ejemplo y cierre. Durante el video mira esta decision: cuando aplicar esta tecnica en tu propio repositorio. Un briefing bueno cabe en cuatro piezas. Objetivo, contexto, restricciones y criterio de cierre."
+      },
+      "ellipsis": 0,
+      "timeHits": 0,
+      "longSubtitles": 0,
+      "clipped": 0,
+      "risks": [],
+      "teacherScore": 100
+    },
+    {
+      "id": "cx-orientation-03-permissions",
+      "title": "Codex Orientation 03 - Permissions",
+      "vendor": "codex",
+      "durationMin": 2,
+      "scenes": 4,
+      "subtitles": 16,
+      "voices": [
+        "es-ES-AlvaroNeural"
+      ],
+      "chapters": [
+        "Permisos",
+        "Modos",
+        "Coste",
+        "Cierre"
+      ],
+      "mediaBreaks": 0,
+      "maxSubtitleChars": 83,
+      "avgWords": 7.3,
+      "objective": {
+        "hasObjective": true,
+        "hasOutcome": true,
+        "hasRoute": true,
+        "hasDecision": true,
+        "opening": "Objetivo de esta clase: resolver Codex Orientation 03 - Permissions con criterio practico. Al final debes poder quedarte con una regla de uso y un ejemplo repetible. La ruta sera: concepto, ejemplo y cierre. Durante el video mira esta decision: cuando aplicar esta tecnica en tu propio repositorio. No todo necesita permiso de escritura. Primero leer. Luego editar. Luego ejecutar."
+      },
+      "ellipsis": 0,
+      "timeHits": 0,
+      "longSubtitles": 0,
+      "clipped": 0,
+      "risks": [],
+      "teacherScore": 100
+    },
+    {
+      "id": "cx-ultra-01-github-action",
+      "title": "Codex Ultra 01 - GitHub Action",
+      "vendor": "codex",
+      "durationMin": 2,
+      "scenes": 4,
+      "subtitles": 15,
+      "voices": [
+        "es-ES-AlvaroNeural"
+      ],
+      "chapters": [
+        "CI",
+        "Workflow",
+        "Guardas",
+        "Cierre"
+      ],
+      "mediaBreaks": 0,
+      "maxSubtitleChars": 86,
+      "avgWords": 8.1,
+      "objective": {
+        "hasObjective": true,
+        "hasOutcome": true,
+        "hasRoute": true,
+        "hasDecision": true,
+        "opening": "Objetivo de esta clase: resolver Codex Ultra 01 - GitHub Action con criterio practico. Al final debes poder quedarte con una regla de uso y un ejemplo repetible. La ruta sera: concepto, ejemplo y cierre. Durante el video mira esta decision: cuando aplicar esta tecnica en tu propio repositorio. El workflow empieza con permisos minimos. Luego limita tiempo, diff y presupuesto. La salida debe ser estructurada."
+      },
+      "ellipsis": 0,
+      "timeHits": 0,
+      "longSubtitles": 0,
+      "clipped": 0,
+      "risks": [],
+      "teacherScore": 100
+    },
+    {
+      "id": "cx-ultra-02-pr-swarm",
+      "title": "Codex Ultra 02 - pull request Swarm",
+      "vendor": "codex",
+      "durationMin": 2,
+      "scenes": 4,
+      "subtitles": 17,
+      "voices": [
+        "es-ES-AlvaroNeural"
+      ],
+      "chapters": [
+        "Swarm",
+        "Roles",
+        "Orquestacion",
+        "Cierre"
+      ],
+      "mediaBreaks": 0,
+      "maxSubtitleChars": 88,
+      "avgWords": 7.4,
+      "objective": {
+        "hasObjective": true,
+        "hasOutcome": true,
+        "hasRoute": true,
+        "hasDecision": true,
+        "opening": "Objetivo de esta clase: resolver Codex Ultra 02 - pull request Swarm con criterio practico. Al final debes poder quedarte con una regla de uso y un ejemplo repetible. La ruta sera: concepto, ejemplo y cierre. Durante el video mira esta decision: cuando aplicar esta tecnica en tu propio repositorio. Cada rol ve un tipo de riesgo. El orquestador no copia respuestas."
+      },
+      "ellipsis": 0,
+      "timeHits": 0,
+      "longSubtitles": 0,
+      "clipped": 0,
+      "risks": [],
+      "teacherScore": 100
+    },
+    {
+      "id": "cx-workshop-30m-first-real-task",
+      "title": "Codex Workshop 30 minutos - First Real Task",
+      "vendor": "codex",
+      "durationMin": 30,
+      "scenes": 60,
+      "subtitles": 341,
+      "voices": [
+        "es-ES-AlvaroNeural"
+      ],
+      "chapters": [
+        "Briefing",
+        "Mapa read-only",
+        "AGENTS.md",
+        "Bugfix",
+        "Cierre"
+      ],
+      "mediaBreaks": 8,
+      "maxSubtitleChars": 88,
+      "avgWords": 9.9,
+      "objective": {
+        "hasObjective": true,
+        "hasOutcome": true,
+        "hasRoute": true,
+        "hasDecision": true,
+        "opening": "Objetivo de esta clase: practicar Codex Workshop 30 minutos - First Real Task sin depender del instructor. Al final debes poder terminar con una salida revisable y un criterio de cierre claro. La ruta sera: Briefing, Mapa read-only, AGENTS.md, Bugfix y cierre. Durante el video mira esta decision: si la evidencia permite avanzar o toca pedir ayuda. Contexto visible: No empezamos pidiendo codigo: empezamos pidiendo mapa limites y evidencia. Situacion minuto 0: Codex solo avanza si el siguiente humano entiende el por que."
+      },
+      "ellipsis": 0,
+      "timeHits": 0,
+      "longSubtitles": 0,
+      "clipped": 0,
+      "risks": [],
+      "teacherScore": 100
+    },
+    {
+      "id": "cx-workshop-60m-first-task-to-pr",
+      "title": "Workshop 1 hora Codex - Del primer task al pull request revisable",
+      "vendor": "codex",
+      "durationMin": 60,
+      "scenes": 120,
+      "subtitles": 1049,
+      "voices": [
+        "es-ES-AlvaroNeural"
+      ],
+      "chapters": [
+        "Setup y contrato",
+        "Contexto y plan",
+        "Implementacion guiada",
+        "Pruebas y review",
+        "pull request y cierre"
+      ],
+      "mediaBreaks": 14,
+      "maxSubtitleChars": 88,
+      "avgWords": 8.5,
+      "objective": {
+        "hasObjective": true,
+        "hasOutcome": true,
+        "hasRoute": true,
+        "hasDecision": true,
+        "opening": "Objetivo de esta clase: pasar de una peticion ambigua a un pull request revisable con Codex. Al final debes poder salir con briefing, AGENTS, plan, diff, tests y coste defendible. La ruta sera: briefing, mapa del repo, plan, patch, pruebas y handoff. Durante el video mira esta decision: si Codex esta produciendo evidencia o solo texto convincente. Contexto minuto 0: mira primero el alcance que condiciona esta salida. Durante una hora vamos a pasar de un task ambiguo a un pull request que otro"
+      },
+      "ellipsis": 0,
+      "timeHits": 0,
+      "longSubtitles": 0,
+      "clipped": 0,
+      "risks": [],
+      "teacherScore": 100
+    },
+    {
+      "id": "hub-operating-model-60m",
+      "title": "AI Practice Hub 60 minutos - Operating Model",
+      "vendor": "hub",
+      "durationMin": 60,
+      "scenes": 120,
+      "subtitles": 839,
+      "voices": [
+        "es-ES-AlvaroNeural"
+      ],
+      "chapters": [
+        "Problema",
+        "Modelo",
+        "Contenido",
+        "Gobierno",
+        "Roadmap"
+      ],
+      "mediaBreaks": 14,
+      "maxSubtitleChars": 88,
+      "avgWords": 8.8,
+      "objective": {
+        "hasObjective": true,
+        "hasOutcome": true,
+        "hasRoute": true,
+        "hasDecision": true,
+        "opening": "Objetivo de esta clase: convertir formacion reactiva en un sistema de practica tutoria y medicion. Al final debes poder tener un operating model para cursos videos ejercicios metricas y owners. La ruta sera: demanda, rutas, contenido, video factory, ejercicios, tutorias y release. Durante el video mira esta decision: que dudas se resuelven con material y cuales deben ir a tutoria. Contexto minuto 0: mira primero el alcance que condiciona esta salida."
+      },
+      "ellipsis": 0,
+      "timeHits": 0,
+      "longSubtitles": 0,
+      "clipped": 0,
+      "risks": [],
+      "teacherScore": 100
+    },
+    {
+      "id": "hub-workshop-60m-vendor-selection",
+      "title": "Workshop 1 hora Transversal - Elegir Codex, Copilot o Claude por caso",
+      "vendor": "hub",
+      "durationMin": 60,
+      "scenes": 120,
+      "subtitles": 904,
+      "voices": [
+        "es-ES-AlvaroNeural"
+      ],
+      "chapters": [
+        "Decision tree",
+        "Fortalezas por vendor",
+        "Casos practicos",
+        "Coste y gobierno",
+        "Salida de plataforma"
+      ],
+      "mediaBreaks": 14,
+      "maxSubtitleChars": 88,
+      "avgWords": 8.9,
+      "objective": {
+        "hasObjective": true,
+        "hasOutcome": true,
+        "hasRoute": true,
+        "hasDecision": true,
+        "opening": "Objetivo de esta clase: decidir que plataforma usar segun tarea, riesgo, equipo y coste. Al final debes poder salir con una matriz de decision para Codex Copilot Claude y ruta transversal. La ruta sera: mapa de vendors, casos, permisos, coste, formacion y handoff. Durante el video mira esta decision: que herramienta conviene antes de abrir un agente. Contexto visible: Codex, Copilot y Claude tienen fortalezas distintas. Situacion minuto 0: AI Practice Hub recibe \"No hay vendor universal\" y debe convertirlo en trabajo"
+      },
+      "ellipsis": 0,
+      "timeHits": 0,
+      "longSubtitles": 0,
+      "clipped": 0,
+      "risks": [],
+      "teacherScore": 100
+    }
+  ]
+}

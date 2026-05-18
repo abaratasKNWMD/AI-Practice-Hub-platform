@@ -1,7 +1,7 @@
 {
   "id": "cl-operator-02-subagent-explorer",
   "title": "Claude Operator 02 - Subagent Explorer",
-  "description": "Separar exploracion, QA y seguridad con subagentes.",
+  "description": "Separar exploracion, calidad y seguridad con subagentes.",
   "template": "technical",
   "durationPreset": 5,
   "durationMs": 90000,
@@ -9,25 +9,121 @@
   "author": "AI Practice Hub",
   "createdAt": "2026-05-07T00:00:00.000Z",
   "chapters": [
-    { "id": "start", "label": "Subagentes", "startMs": 0 },
-    { "id": "compare", "label": "Separacion", "startMs": 9000 },
-    { "id": "close", "label": "Roles", "startMs": 65000 }
+    {
+      "id": "start",
+      "label": "Subagentes",
+      "startMs": 0
+    },
+    {
+      "id": "compare",
+      "label": "Separacion",
+      "startMs": 30000
+    },
+    {
+      "id": "close",
+      "label": "Roles",
+      "startMs": 65000
+    }
   ],
   "scenes": [
     {
       "id": "title",
       "name": "Apertura",
       "startMs": 0,
-      "endMs": 9000,
+      "endMs": 30000,
       "type": "title",
-      "content": { "title": "Subagentes", "subtitle": "No todo tiene que vivir en el hilo principal.", "tag": "Claude Operator" },
-      "subtitles": [{ "text": "Los subagentes separan contexto, herramientas y responsabilidad.", "startMs": 1000, "endMs": 8200 }]
+      "content": {
+        "title": "Subagentes",
+        "subtitle": "Objetivo: resolver Claude Operator 02 - Subagent Explorer con criterio practico.",
+        "tag": "Claude Operator",
+        "narrativeContract": {
+          "objective": "resolver Claude Operator 02 - Subagent Explorer con criterio practico.",
+          "outcome": "quedarte con una regla de uso y un ejemplo repetible.",
+          "route": "concepto, ejemplo y cierre.",
+          "decision": "cuando aplicar esta tecnica en tu propio repositorio."
+        }
+      },
+      "subtitles": [
+        {
+          "text": "Objetivo de esta clase:",
+          "startMs": 450,
+          "endMs": 3038
+        },
+        {
+          "text": "resolver Claude Operator 02 - Subagent Explorer con criterio practico.",
+          "startMs": 3218,
+          "endMs": 8662
+        },
+        {
+          "text": "Al final debes poder quedarte con una regla de uso y un ejemplo repetible.",
+          "startMs": 8842,
+          "endMs": 13758
+        },
+        {
+          "text": "La ruta sera: concepto, ejemplo y cierre.",
+          "startMs": 13938,
+          "endMs": 17966
+        },
+        {
+          "text": "Durante el video mira esta decision:",
+          "startMs": 18146,
+          "endMs": 21166
+        },
+        {
+          "text": "cuando aplicar esta tecnica en tu propio repositorio.",
+          "startMs": 21346,
+          "endMs": 25086
+        }
+      ],
+      "voiceover": [
+        "Objetivo de esta clase:",
+        "resolver Claude Operator 02 - Subagent Explorer con criterio practico.",
+        "Al final debes poder quedarte con una regla de uso y un ejemplo repetible.",
+        "La ruta sera: concepto, ejemplo y cierre.",
+        "Durante el video mira esta decision:",
+        "cuando aplicar esta tecnica en tu propio repositorio."
+      ],
+      "blueprintAction": {
+        "learningRubric": {
+          "learns": "Reconoce por que \"Subagentes\" necesita evidencia y no solo respuesta.",
+          "does": "Formula una peticion verificable con limite de alcance.",
+          "decides": "Convertir la duda en material de tutoria si se repite.",
+          "vendor": "claude",
+          "usefulnessScore": 82,
+          "memoryCheck": "Puede nombrar el riesgo principal sin mirar la slide.",
+          "productionPass": "2000-final-direction"
+        }
+      },
+      "production": {
+        "audioVersion": "audio-prod-v2-2026-05-18",
+        "voiceProfileId": "claudeNarrator",
+        "voice": "es-ES-AlvaroNeural",
+        "rate": "+5%",
+        "pitch": "+0Hz",
+        "energy": "calmada",
+        "emphasis": "memoria, skill, hook y MCP",
+        "pauseMs": 220,
+        "role": "narrator",
+        "reviewRubric": {
+          "learns": "Reconoce por que \"Subagentes\" necesita evidencia y no solo respuesta.",
+          "does": "Formula una peticion verificable con limite de alcance.",
+          "decides": "Convertir la duda en material de tutoria si se repite.",
+          "memoryCheck": "Puede nombrar el riesgo principal sin mirar la slide."
+        },
+        "prosodyNotes": {
+          "pace": "+5%",
+          "pause": "220ms antes de la decision",
+          "emphasis": "memoria, skill, hook y M C P",
+          "energy": "calmada"
+        },
+        "pronunciationPass": "spain-voice-units-v1"
+      }
     },
     {
       "id": "compare",
       "name": "Separacion",
-      "startMs": 9000,
-      "endMs": 65000,
+      "startMs": 30000,
+      "endMs": 60000,
       "type": "compare",
       "content": {
         "tag": "Un agente vs ecosistema",
@@ -35,9 +131,22 @@
           "label": "Hilo saturado",
           "color": "destructive",
           "steps": [
-            { "icon": "Search", "text": "Explora todo" },
-            { "icon": "Code", "text": "Implementa todo" },
-            { "icon": "ShieldAlert", "text": "Revisa todo tarde" }
+            {
+              "icon": "Search",
+              "text": "Explora todo"
+            },
+            {
+              "icon": "Code",
+              "text": "Implementa todo"
+            },
+            {
+              "icon": "ShieldAlert",
+              "text": "Revisa todo tarde"
+            },
+            {
+              "icon": "AlertTriangle",
+              "text": "Sin evidencia, la decision vuelve a tutoria."
+            }
           ],
           "total": "Contexto mezclado"
         },
@@ -45,36 +154,182 @@
           "label": "Subagentes",
           "color": "accent",
           "steps": [
-            { "icon": "Eye", "text": "Explorer read-only" },
-            { "icon": "ClipboardCheck", "text": "QA reviewer" },
-            { "icon": "ShieldCheck", "text": "Security reviewer" }
+            {
+              "icon": "Eye",
+              "text": "Explorer read-only"
+            },
+            {
+              "icon": "ClipboardCheck",
+              "text": "calidad reviewer"
+            },
+            {
+              "icon": "ShieldCheck",
+              "text": "Security reviewer"
+            },
+            {
+              "icon": "Check",
+              "text": "Cerrar con criterio, coste y validacion."
+            }
           ],
           "total": "Contexto enfocado"
-        }
+        },
+        "auditNote": "Comparativa enriquecida para explicar cuando usar, cuando no usar y como cerrar."
       },
       "subtitles": [
-        { "text": "Separar roles reduce ruido.", "startMs": 10000, "endMs": 25000 },
-        { "text": "Explorer puede ser barato y read-only.", "startMs": 26000, "endMs": 43000 },
-        { "text": "QA y seguridad entran cuando el riesgo lo merece.", "startMs": 44000, "endMs": 63000 }
-      ]
+        {
+          "text": "Separar roles reduce ruido.",
+          "startMs": 30450,
+          "endMs": 33422
+        },
+        {
+          "text": "Explorer puede ser barato y read-only.",
+          "startMs": 33602,
+          "endMs": 36910
+        },
+        {
+          "text": "calidad y seguridad entran cuando el riesgo lo merece.",
+          "startMs": 37090,
+          "endMs": 40974
+        }
+      ],
+      "voiceover": [
+        "Separar roles reduce ruido.",
+        "Explorer puede ser barato y read-only.",
+        "calidad y seguridad entran cuando el riesgo lo merece."
+      ],
+      "blueprintAction": {
+        "learningRubric": {
+          "learns": "Distingue decision humana de ejecucion automatizada en Claude.",
+          "does": "Comprueba la salida contra prueba, owner o captura.",
+          "decides": "Aceptar solo si la evidencia queda visible para otra persona.",
+          "vendor": "claude",
+          "usefulnessScore": 84,
+          "memoryCheck": "Puede repetir el prompt inicial con criterio de cierre.",
+          "productionPass": "2000-final-direction"
+        }
+      },
+      "production": {
+        "audioVersion": "audio-prod-v2-2026-05-18",
+        "voiceProfileId": "claudeNarrator",
+        "voice": "es-ES-AlvaroNeural",
+        "rate": "+5%",
+        "pitch": "+0Hz",
+        "energy": "calmada",
+        "emphasis": "memoria, skill, hook y MCP",
+        "pauseMs": 220,
+        "role": "narrator",
+        "reviewRubric": {
+          "learns": "Distingue decision humana de ejecucion automatizada en Claude.",
+          "does": "Comprueba la salida contra prueba, owner o captura.",
+          "decides": "Aceptar solo si la evidencia queda visible para otra persona.",
+          "memoryCheck": "Puede repetir el prompt inicial con criterio de cierre."
+        },
+        "prosodyNotes": {
+          "pace": "+5%",
+          "pause": "220ms antes de la decision",
+          "emphasis": "memoria, skill, hook y M C P",
+          "energy": "calmada"
+        },
+        "pronunciationPass": "spain-voice-units-v1"
+      }
     },
     {
       "id": "finale",
       "name": "Cierre",
-      "startMs": 65000,
+      "startMs": 60000,
       "endMs": 90000,
       "type": "finale",
       "content": {
         "title": "Roles minimos",
         "summary": [
-          { "number": "Explorer", "label": "Leer", "body": "Mapea repo y blast radius." },
-          { "number": "QA", "label": "Probar", "body": "Busca gaps y regresiones." },
-          { "number": "Security", "label": "Proteger", "body": "Audita permisos y secretos." }
+          {
+            "number": "Explorer",
+            "label": "Leer",
+            "body": "Mapea repo y blast radius."
+          },
+          {
+            "number": "calidad",
+            "label": "Probar",
+            "body": "Busca gaps y regresiones."
+          },
+          {
+            "number": "Security",
+            "label": "Proteger",
+            "body": "Audita permisos y secretos."
+          }
         ],
         "cta": "Ejercicio: cl-o03-subagent-explorer."
       },
-      "subtitles": [{ "text": "El equipo no necesita mas caos. Necesita roles claros.", "startMs": 66000, "endMs": 89000 }]
+      "subtitles": [
+        {
+          "text": "El equipo no necesita mas caos. Necesita roles claros.",
+          "startMs": 60450,
+          "endMs": 65894
+        },
+        {
+          "text": "Evidencia minuto 1: \"Roles minimos\" no se cierra sin test, captura o criterio escrito.",
+          "startMs": 66074,
+          "endMs": 72358
+        },
+        {
+          "text": "Accion minuto 1: pedir salida pequena verificable y con owner. (Claude",
+          "startMs": 72538,
+          "endMs": 78822
+        },
+        {
+          "text": "minuto 1 paso 3)",
+          "startMs": 79002,
+          "endMs": 81566
+        }
+      ],
+      "voiceover": [
+        "El equipo no necesita mas caos. Necesita roles claros.",
+        "Evidencia minuto 1: \"Roles minimos\" no se cierra sin test, captura o criterio escrito.",
+        "Accion minuto 1: pedir salida pequena verificable y con owner. (Claude",
+        "minuto 1 paso 3)"
+      ],
+      "blueprintAction": {
+        "learningRubric": {
+          "learns": "Ubica coste, permiso y criterio antes de aceptar la salida.",
+          "does": "Registra el criterio que permitiria repetir el paso sin instructor.",
+          "decides": "Seguir, pedir mas contexto, escalar modelo o bloquear.",
+          "vendor": "claude",
+          "usefulnessScore": 86,
+          "memoryCheck": "Puede explicar el paso en una frase de menos de 20 segundos.",
+          "productionPass": "2000-final-direction"
+        }
+      },
+      "production": {
+        "audioVersion": "audio-prod-v2-2026-05-18",
+        "voiceProfileId": "claudeSafety",
+        "voice": "es-ES-AlvaroNeural",
+        "rate": "+2%",
+        "pitch": "+0Hz",
+        "energy": "deliberada",
+        "emphasis": "permiso, bloqueo y rollback",
+        "pauseMs": 300,
+        "role": "reflection",
+        "reviewRubric": {
+          "learns": "Ubica coste, permiso y criterio antes de aceptar la salida.",
+          "does": "Registra el criterio que permitiria repetir el paso sin instructor.",
+          "decides": "Seguir, pedir mas contexto, escalar modelo o bloquear.",
+          "memoryCheck": "Puede explicar el paso en una frase de menos de 20 segundos."
+        },
+        "prosodyNotes": {
+          "pace": "+2%",
+          "pause": "300ms antes de la decision",
+          "emphasis": "permiso, bloqueo y rollback",
+          "energy": "deliberada"
+        },
+        "pronunciationPass": "spain-voice-units-v1"
+      }
     }
-  ]
+  ],
+  "production": {
+    "audioProductionVersion": "audio-prod-v2-2026-05-18",
+    "productionPass": "2000-final-direction",
+    "vendor": "claude",
+    "narrativePass": "teacher-contract-v1",
+    "pronunciationPass": "spain-voice-units-v1"
+  }
 }
-

@@ -1,0 +1,68 @@
+WEBVTT
+
+NOTE cx-basic-02-plan-before-patch - Codex Basic 02 - Plan Before Patch
+
+1
+00:00:00.450 --> 00:00:02.966
+Objetivo de esta clase:
+
+2
+00:00:03.011 --> 00:00:08.143
+resolver Codex Basic 02 - Plan Before Patch con criterio practico.
+
+3
+00:00:08.188 --> 00:00:12.984
+Al final debes poder quedarte con una regla de uso y un ejemplo repetible.
+
+4
+00:00:13.029 --> 00:00:16.937
+La ruta sera: concepto, ejemplo y cierre.
+
+5
+00:00:16.982 --> 00:00:19.930
+Durante el video mira esta decision:
+
+6
+00:00:18.776 --> 00:00:22.420
+cuando aplicar esta tecnica en tu propio repositorio.
+
+7
+00:00:22.950 --> 00:00:25.898
+Un plan no tiene que ser largo.
+
+8
+00:00:26.078 --> 00:00:30.298
+Tiene que ordenar diagnostico, patch y verificacion.
+
+9
+00:00:30.478 --> 00:00:34.602
+Sin ese orden, Codex puede arreglar un sintoma.
+
+10
+00:00:45.450 --> 00:00:48.518
+Esta checklist cabe en cualquier equipo.
+
+11
+00:00:48.698 --> 00:00:51.838
+Antes, durante y despues del patch.
+
+12
+00:00:52.018 --> 00:00:55.182
+Eso es lo que el alumno debe practicar.
+
+13
+00:01:07.950 --> 00:01:10.922
+Causa, cambio y prueba.
+
+14
+00:01:11.102 --> 00:01:14.506
+Ese es el cierre profesional con Codex.
+
+15
+00:01:14.686 --> 00:01:20.754
+Evidencia minuto 1: el artefacto muestra que se controlo permiso, alcance y modelo.
+
+16
+00:01:20.934 --> 00:01:26.498
+Accion minuto 1: convertir repo en una decision que se pueda ensenar en tutoria.
+

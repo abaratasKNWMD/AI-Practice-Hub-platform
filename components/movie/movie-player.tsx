@@ -1,6 +1,6 @@
 'use client'
 
-import { useCallback, useEffect, useRef } from 'react'
+import { useCallback, useEffect, useRef, useState } from 'react'
 import { AnimatePresence, motion } from 'framer-motion'
 import { useMoviePlayer } from '@/hooks/use-movie-player'
 import { Subtitles } from './subtitles'
@@ -15,12 +15,14 @@ import { ConceptScene } from './scenes/concept-scene'
 import { CompareScene } from './scenes/compare-scene'
 import { ErrorScene } from './scenes/error-scene'
 import { OpsScene } from './scenes/ops-scene'
+import { MediaBreakScene } from './scenes/media-break-scene'
 import type {
   Scene,
   SceneType,
 } from '@/lib/movie-script'
 import { CHAPTERS } from '@/lib/movie-script'
 import type { CourseJSON } from '@/lib/course-schema'
+import type { CourseAudioManifest } from '@/lib/audio-manifest'
 
 type AnyContent = any
 const LEARNING_STORAGE_KEY = 'ai-practice-hub.learning-os.v1'
@@ -32,8 +34,36 @@ interface MoviePlayerProps {
 export function MoviePlayer({ course }: MoviePlayerProps) {
   const containerRef = useRef<HTMLDivElement>(null)
   const lastVideoProgressSaveRef = useRef(0)
+  const [audioManifest, setAudioManifest] = useState<CourseAudioManifest | null>(null)
   const progressId = course?.id ?? 'spec-driven-dev'
   const chapters = course?.chapters ?? CHAPTERS
+  const firstSubtitleLength = course?.scenes?.[0]?.subtitles?.[0]?.text?.length ?? 0
+  const manifestCacheKey = course
+    ? encodeURIComponent(`${course.id}-${course.durationMs}-${course.scenes?.length ?? 0}-${firstSubtitleLength}`)
+    : ''
+
+  useEffect(() => {
+    let cancelled = false
+    setAudioManifest(null)
+    if (!course?.id) return
+
+    fetch(`/audio/courses/${course.id}/manifest.json?v=${manifestCacheKey}`, { cache: 'no-store' })
+      .then(response => {
+        if (!response.ok) return null
+        return response.json() as Promise<CourseAudioManifest>
+      })
+      .then(manifest => {
+        if (!cancelled) setAudioManifest(manifest)
+      })
+      .catch(() => {
+        if (!cancelled) setAudioManifest(null)
+      })
+
+    return () => {
+      cancelled = true
+    }
+  }, [course?.id, manifestCacheKey])
+
   const {
     isPlaying,
     currentTimeMs,
@@ -51,6 +81,7 @@ export function MoviePlayer({ course }: MoviePlayerProps) {
   } = useMoviePlayer({
     script: course?.scenes,
     totalDurationMs: course?.durationMs,
+    audioManifest,
   })
 
   // Auto-play on mount
@@ -123,6 +154,7 @@ export function MoviePlayer({ course }: MoviePlayerProps) {
       case 'preview':  return <PreviewScene content={c} progress={p} />
       case 'error':    return <ErrorScene   content={c} progress={p} />
       case 'finale':   return <FinaleScene  content={c} progress={p} />
+      case 'media-break': return <MediaBreakScene content={c} progress={p} />
       case 'prompt':
       case 'streaming':
       case 'diff':
@@ -156,7 +188,7 @@ export function MoviePlayer({ course }: MoviePlayerProps) {
       </AnimatePresence>
 
       {/* Subtitles — sit above controls */}
-      <Subtitles subtitle={currentSubtitle} />
+      <Subtitles subtitle={currentSubtitle} currentTimeMs={currentTimeMs} />
 
       {/* Controls bar */}
       <Controls

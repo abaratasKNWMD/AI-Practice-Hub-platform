@@ -1,0 +1,48 @@
+1
+00:00:00,450 --> 00:00:07,214
+Objetivo de esta clase: resolver Claude S D K 01 - Agent S D K con criterio practico.
+
+2
+00:00:07,394 --> 00:00:12,310
+Al final debes poder quedarte con una regla de uso y un ejemplo repetible.
+
+3
+00:00:12,490 --> 00:00:16,518
+La ruta sera: concepto, ejemplo y cierre.
+
+4
+00:00:16,698 --> 00:00:19,718
+Durante el video mira esta decision:
+
+5
+00:00:19,898 --> 00:00:23,638
+cuando aplicar esta tecnica en tu propio repositorio.
+
+6
+00:00:30,450 --> 00:00:33,950
+El S D K convierte una practica en software.
+
+7
+00:00:34,130 --> 00:00:38,302
+Por eso necesita contrato de salida y permisos estrechos.
+
+8
+00:00:38,482 --> 00:00:42,678
+El primer agente enterprise debe ser pequeño y evaluable.
+
+9
+00:01:00,450 --> 00:01:05,222
+El S D K no reemplaza governance. La obliga.
+
+10
+00:01:05,402 --> 00:01:11,734
+Evidencia minuto 1: "S D K minimo" no se cierra sin test, captura o criterio escrito.
+
+11
+00:01:11,914 --> 00:01:18,198
+Accion minuto 1: pedir salida pequena verificable y con owner. (Claude
+
+12
+00:01:18,378 --> 00:01:20,990
+minuto 1 paso 5)
+

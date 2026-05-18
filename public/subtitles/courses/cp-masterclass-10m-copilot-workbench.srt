@@ -1,0 +1,572 @@
+1
+00:00:00,450 --> 00:00:05,942
+Objetivo de esta clase: entender el sistema operativo de Copilot en 10 minutos.
+
+2
+00:00:06,122 --> 00:00:11,398
+Al final debes poder saber cuando usarlo, cuando no usarlo y que evidencia pedir.
+
+3
+00:00:11,578 --> 00:00:17,070
+La ruta sera: Aterrizaje, Superficies, Metodo y cierre operativo.
+
+4
+00:00:17,250 --> 00:00:20,222
+Durante el video mira esta decision:
+
+5
+00:00:20,402 --> 00:00:24,310
+si la herramienta encaja con el trabajo real del equipo.
+
+6
+00:00:25,450 --> 00:00:29,118
+Copilot: Superficies en Visual Studio Code.
+
+7
+00:00:29,163 --> 00:00:32,567
+Inline sugiere Ask explica Edit cambia
+
+8
+00:00:32,612 --> 00:00:36,352
+Agent coordina y revision de pull request revisa.
+
+9
+00:00:36,397 --> 00:00:40,305
+Modelo minuto 0: elegir por riesgo En Copilot
+
+10
+00:00:40,350 --> 00:00:44,666
+valida "Superficies en Visual Studio Code" antes de iterar.
+
+11
+00:00:44,711 --> 00:00:49,819
+contexto y coste antes de pedir otra iteracion. En Copilot
+
+12
+00:00:45,604 --> 00:00:49,920
+valida "Superficies en Visual Studio Code" antes de iterar.
+
+13
+00:00:43,948 --> 00:00:49,920
+Decision minuto 0: cerrar solo cuando patch local, test y comentario de pull request.
+
+14
+00:00:50,450 --> 00:00:53,758
+Copilot: Mal uso vs buen uso.
+
+15
+00:00:53,803 --> 00:00:57,903
+Aceptar sugerencias al vuelo no equivale a entregar software.
+
+16
+00:00:57,948 --> 00:01:01,856
+Modelo minuto 0: elegir por riesgo En Copilot
+
+17
+00:01:01,901 --> 00:01:05,617
+valida "Mal uso vs buen uso" antes de iterar.
+
+18
+00:01:05,662 --> 00:01:10,770
+contexto y coste antes de pedir otra iteracion. En Copilot
+
+19
+00:01:10,815 --> 00:01:14,531
+valida "Mal uso vs buen uso" antes de iterar.
+
+20
+00:01:08,996 --> 00:01:14,920
+Decision minuto 0: seguir, pedir contexto, escalar modelo o bloquear.
+
+21
+00:01:15,450 --> 00:01:18,110
+Copilot: Issue pequeno.
+
+22
+00:01:18,290 --> 00:01:23,518
+Un bug de checkout permite practicar modo, contexto, test y pull request.
+
+23
+00:01:23,698 --> 00:01:29,670
+Modelo minuto 1: elegir por riesgo, contexto y coste antes de pedir otra iteracion.
+
+24
+00:01:29,850 --> 00:01:35,606
+Decision minuto 1: seguir, pedir contexto, escalar modelo o bloquear.
+
+25
+00:01:40,450 --> 00:01:42,942
+Copilot: Prompt Ask.
+
+26
+00:01:43,122 --> 00:01:47,438
+Preguntar primero donde esta el calculo y que supuesto se rompe.
+
+27
+00:01:47,618 --> 00:01:53,590
+Modelo minuto 1: elegir por riesgo, contexto y coste antes de pedir otra iteracion.
+
+28
+00:01:53,770 --> 00:01:59,358
+Decision minuto 1: si el riesgo supera la evidencia, entra instructor o tech lead.
+
+29
+00:02:05,450 --> 00:02:08,134
+Copilot: Diagnostico.
+
+30
+00:02:08,314 --> 00:02:13,038
+Copilot debe ubicar ruta, supuesto y test minimo antes de editar.
+
+31
+00:02:13,218 --> 00:02:19,238
+Modelo minuto 2: elegir por riesgo, contexto y coste antes de pedir otra iteracion.
+
+32
+00:02:19,418 --> 00:02:24,718
+Decision minuto 2: guardar la duda como material reutilizable si se repite.
+
+33
+00:02:30,450 --> 00:02:35,822
+Situacion minuto 2: alguien tendra que mantener esta salida despues de la demo.
+
+34
+00:02:35,867 --> 00:02:41,647
+Tension minuto 2: el agente puede avanzar mas rapido que nuestra capacidad de revisar.
+
+35
+00:02:41,692 --> 00:02:46,920
+Accion minuto 2: pedir salida pequena, verificable y con owner.
+
+36
+00:02:46,965 --> 00:02:49,481
+Evidencia minuto 2:
+
+37
+00:02:49,526 --> 00:02:53,698
+"Cuando Instrucciones se va de las manos" queda ligado a prueba
+
+38
+00:02:52,644 --> 00:02:54,920
+owner y decision.
+
+39
+00:02:50,748 --> 00:02:54,920
+"Cuando Instrucciones se va de las manos" queda ligado a prueba
+
+40
+00:02:49,260 --> 00:02:54,920
+owner y decision. (Copilot, minuto 2, paso 7)
+
+41
+00:02:55,450 --> 00:02:58,278
+Copilot: Edit localizado.
+
+42
+00:02:58,458 --> 00:03:03,686
+Seleccionar contexto reduce ruido y evita cambios multiarchivo innecesarios.
+
+43
+00:03:03,866 --> 00:03:09,886
+Modelo minuto 2: elegir por riesgo, contexto y coste antes de pedir otra iteracion.
+
+44
+00:03:10,066 --> 00:03:15,846
+Decision minuto 2: cerrar solo cuando patch local, test y comentario de pull request.
+
+45
+00:03:20,450 --> 00:03:23,374
+Copilot: Terminal de prueba.
+
+46
+00:03:23,554 --> 00:03:27,846
+El test demuestra red -> green, no solo cobertura decorativa.
+
+47
+00:03:28,026 --> 00:03:34,142
+Modelo minuto 3: elegir por riesgo, contexto y coste antes de pedir otra iteracion.
+
+48
+00:03:34,322 --> 00:03:40,198
+Decision minuto 3: seguir, pedir contexto, escalar modelo o bloquear.
+
+49
+00:03:45,450 --> 00:03:48,110
+Copilot: Elegir Agent.
+
+50
+00:03:48,290 --> 00:03:52,606
+Agent compensa cuando hay varias rutas y una rubrica clara.
+
+51
+00:03:52,786 --> 00:03:59,070
+Modelo minuto 3: elegir por riesgo, contexto y coste antes de pedir otra iteracion.
+
+52
+00:03:59,250 --> 00:04:05,126
+Decision minuto 3: si el riesgo supera la evidencia, entra instructor o tech lead.
+
+53
+00:04:10,450 --> 00:04:13,110
+Situacion minuto 4:
+
+54
+00:04:13,155 --> 00:04:18,815
+el equipo mira "Cuando Premium requests se va de las manos" dentro del workspace de VS
+
+55
+00:04:18,860 --> 00:04:20,416
+Code
+
+56
+00:04:20,461 --> 00:04:23,409
+con coste y permiso visibles.
+
+57
+00:04:23,454 --> 00:04:29,114
+el equipo mira "Cuando Premium requests se va de las manos" dentro del workspace de VS
+
+58
+00:04:29,159 --> 00:04:30,715
+Code
+
+59
+00:04:28,564 --> 00:04:34,920
+con coste y permiso visibles. (Copilot, minuto 4, paso 10)
+
+60
+00:04:29,788 --> 00:04:34,920
+Tension minuto 4: aceptar rapido puede esconder modo equivocado
+
+61
+00:04:31,924 --> 00:04:34,920
+contexto pobre y review floja.
+
+62
+00:04:32,476 --> 00:04:34,920
+Accion minuto 4:
+
+63
+00:04:29,692 --> 00:04:34,920
+parar si "Cuando Premium requests se va de las manos" no produce evidencia nueva.
+
+64
+00:04:28,468 --> 00:04:34,920
+no con la sensacion de velocidad. (Copilot, minuto 4, paso 16)
+
+65
+00:04:29,572 --> 00:04:34,920
+Evidencia minuto 4: el artefacto muestra que se controlo modo equivocado
+
+66
+00:04:31,924 --> 00:04:34,920
+contexto pobre y review floja.
+
+67
+00:04:30,532 --> 00:04:34,920
+"Cuando Premium requests se va de las manos" no se cierra sin test
+
+68
+00:04:28,660 --> 00:04:34,920
+captura o criterio escrito. (Copilot, minuto 4, paso 21)
+
+69
+00:04:35,450 --> 00:04:38,662
+Copilot: Permisos y contexto.
+
+70
+00:04:38,842 --> 00:04:44,358
+Mas contexto no siempre es mejor; contexto irrelevante contamina la respuesta.
+
+71
+00:04:44,538 --> 00:04:50,822
+Modelo minuto 4: elegir por riesgo, contexto y coste antes de pedir otra iteracion.
+
+72
+00:04:51,002 --> 00:04:55,894
+Decision minuto 4: si no se puede auditar, vuelve a briefing.
+
+73
+00:05:00,450 --> 00:05:03,374
+Copilot: Timeline de trabajo.
+
+74
+00:05:03,419 --> 00:05:08,647
+Issue, Ask, Edit, Agent, Tests, Review y pull request.
+
+75
+00:05:08,692 --> 00:05:12,672
+Modelo minuto 5: elegir por riesgo En Copilot
+
+76
+00:05:12,717 --> 00:05:16,169
+valida "Timeline de trabajo" antes de iterar.
+
+77
+00:05:16,214 --> 00:05:21,322
+contexto y coste antes de pedir otra iteracion. En Copilot
+
+78
+00:05:21,367 --> 00:05:24,819
+valida "Timeline de trabajo" antes de iterar.
+
+79
+00:05:18,996 --> 00:05:24,920
+Decision minuto 5: seguir, pedir contexto, escalar modelo o bloquear.
+
+80
+00:05:25,450 --> 00:05:27,846
+Copilot: Checkpoint.
+
+81
+00:05:27,891 --> 00:05:31,847
+El alumno decide modo segun incertidumbre y riesgo.
+
+82
+00:05:31,892 --> 00:05:37,888
+Modelo minuto 5: elegir por riesgo En Copilot, valida "Checkpoint" antes de iterar.
+
+83
+00:05:37,933 --> 00:05:43,161
+contexto y coste antes de pedir otra iteracion. En Copilot
+
+84
+00:05:43,206 --> 00:05:46,322
+valida "Checkpoint" antes de iterar.
+
+85
+00:05:44,044 --> 00:05:49,920
+Decision minuto 5: si el riesgo supera la evidencia, entra instructor o tech lead.
+
+86
+00:05:50,450 --> 00:05:53,422
+Copilot: Pensamiento Copilot.
+
+87
+00:05:53,467 --> 00:05:57,231
+Cambiar de modo es madurez, no indecision.
+
+88
+00:05:57,276 --> 00:06:01,376
+Modelo minuto 5: elegir por riesgo En Copilot
+
+89
+00:06:01,421 --> 00:06:05,041
+valida "Pensamiento Copilot" antes de iterar.
+
+90
+00:06:05,086 --> 00:06:10,314
+contexto y coste antes de pedir otra iteracion. En Copilot
+
+91
+00:06:10,359 --> 00:06:13,979
+valida "Pensamiento Copilot" antes de iterar.
+
+92
+00:06:09,380 --> 00:06:14,920
+Decision minuto 5: guardar la duda como material reutilizable si se repite.
+
+93
+00:06:15,450 --> 00:06:18,110
+Situacion minuto 6:
+
+94
+00:06:18,155 --> 00:06:23,575
+el equipo mira "Cuando revision de pull request se va de las manos" dentro del workspace
+
+95
+00:06:23,620 --> 00:06:26,184
+de Visual Studio Code
+
+96
+00:06:26,229 --> 00:06:29,177
+con coste y permiso visibles.
+
+97
+00:06:29,222 --> 00:06:34,642
+el equipo mira "Cuando revision de pull request se va de las manos" dentro del workspace
+
+98
+00:06:34,687 --> 00:06:37,251
+de Visual Studio Code
+
+99
+00:06:33,444 --> 00:06:39,920
+con coste y permiso visibles. (Copilot, minuto 6, paso 11)
+
+100
+00:06:34,068 --> 00:06:39,920
+Tension minuto 6: el agente puede avanzar mas rapido que nuestra capacidad de revisar.
+
+101
+00:06:34,596 --> 00:06:39,920
+Accion minuto 6: pedir salida pequena, verificable y con owner.
+
+102
+00:06:33,396 --> 00:06:39,920
+no con la sensacion de velocidad. (Copilot, minuto 6, paso 17)
+
+103
+00:06:37,332 --> 00:06:39,920
+Evidencia minuto 6:
+
+104
+00:06:35,220 --> 00:06:39,920
+hay una salida que otro perfil puede revisar sin rehacer el contexto.
+
+105
+00:06:33,588 --> 00:06:39,920
+captura o criterio escrito. (Copilot, minuto 6, paso 22)
+
+106
+00:06:40,450 --> 00:06:43,350
+Copilot: Pausa instructor.
+
+107
+00:06:43,530 --> 00:06:47,798
+Antes de Agent, el grupo verbaliza alcance y stop rule.
+
+108
+00:06:47,978 --> 00:06:54,262
+Modelo minuto 6: elegir por riesgo, contexto y coste antes de pedir otra iteracion.
+
+109
+00:06:54,442 --> 00:06:59,334
+Decision minuto 6: si no se puede auditar, vuelve a briefing.
+
+110
+00:07:05,450 --> 00:07:08,062
+Copilot: Prompt files.
+
+111
+00:07:08,242 --> 00:07:12,534
+Prompts reutilizables para tareas repetidas y equipos grandes.
+
+112
+00:07:12,714 --> 00:07:18,806
+Modelo minuto 7: elegir por riesgo, contexto y coste antes de pedir otra iteracion.
+
+113
+00:07:18,986 --> 00:07:24,862
+Decision minuto 7: cerrar solo cuando patch local, test y comentario de pull request.
+
+114
+00:07:30,450 --> 00:07:34,838
+Situacion minuto 7: la pantalla no busca impresionar;
+
+115
+00:07:34,883 --> 00:07:39,703
+busca cerrar "Cuando Custom agents se va de las manos" con evidencia.
+
+116
+00:07:39,748 --> 00:07:44,568
+busca cerrar "Cuando Custom agents se va de las manos" con evidencia.
+
+117
+00:07:44,613 --> 00:07:50,465
+Tension minuto 7: el agente puede avanzar mas rapido que nuestra capacidad de revisar.
+
+118
+00:07:49,596 --> 00:07:54,920
+Accion minuto 7: pedir salida pequena, verificable y con owner.
+
+119
+00:07:49,596 --> 00:07:54,920
+convertir workspace de Visual Studio Code en una decision que se pueda ensenar en
+
+120
+00:07:53,172 --> 00:07:54,920
+tutoria.
+
+121
+00:07:51,756 --> 00:07:54,920
+(Copilot minuto 7 paso 5)
+
+122
+00:07:52,356 --> 00:07:54,920
+Evidencia minuto 7:
+
+123
+00:07:50,220 --> 00:07:54,920
+hay una salida que otro perfil puede revisar sin rehacer el contexto.
+
+124
+00:07:55,450 --> 00:07:58,254
+Copilot: GitHub workflow.
+
+125
+00:07:58,434 --> 00:08:03,182
+Del commit al pull request con comentario claro, checks y trazabilidad.
+
+126
+00:08:03,362 --> 00:08:09,454
+Modelo minuto 7: elegir por riesgo, contexto y coste antes de pedir otra iteracion.
+
+127
+00:08:09,634 --> 00:08:15,342
+Decision minuto 7: si el riesgo supera la evidencia, entra instructor o tech lead.
+
+128
+00:08:20,450 --> 00:08:23,710
+Copilot: Go / No-Go.
+
+129
+00:08:23,890 --> 00:08:28,686
+Usar Copilot para acelerar criterio, no para saltarse revision.
+
+130
+00:08:28,866 --> 00:08:35,126
+Modelo minuto 8: elegir por riesgo, contexto y coste antes de pedir otra iteracion.
+
+131
+00:08:35,306 --> 00:08:40,798
+Decision minuto 8: guardar la duda como material reutilizable si se repite.
+
+132
+00:08:45,450 --> 00:08:48,182
+Copilot: Presupuesto.
+
+133
+00:08:48,362 --> 00:08:53,038
+Medir premium requests evita que la adopcion se vuelva caja negra.
+
+134
+00:08:53,218 --> 00:08:59,478
+Modelo minuto 8: elegir por riesgo, contexto y coste antes de pedir otra iteracion.
+
+135
+00:08:59,658 --> 00:09:04,526
+Decision minuto 8: si no se puede auditar, vuelve a briefing.
+
+136
+00:09:10,450 --> 00:09:13,134
+Copilot: Activacion.
+
+137
+00:09:13,314 --> 00:09:18,422
+Primer reto: diagnosticar bug, aplicar Edit y preparar pull request.
+
+138
+00:09:18,602 --> 00:09:24,814
+Modelo minuto 9: elegir por riesgo, contexto y coste antes de pedir otra iteracion.
+
+139
+00:09:24,994 --> 00:09:30,990
+Decision minuto 9: cerrar solo cuando patch local, test y comentario de pull request.
+
+140
+00:09:35,450 --> 00:09:38,038
+Copilot: Resumen.
+
+141
+00:09:38,218 --> 00:09:43,254
+Copilot funciona cuando cada modo tiene frontera, evidencia y review.
+
+142
+00:09:43,434 --> 00:09:49,646
+Modelo minuto 9: elegir por riesgo, contexto y coste antes de pedir otra iteracion.
+
+143
+00:09:49,826 --> 00:09:55,822
+Decision minuto 9: seguir, pedir contexto, escalar modelo o bloquear.
+

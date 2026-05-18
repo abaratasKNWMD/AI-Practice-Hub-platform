@@ -1,175 +1,175 @@
 {
   "baseUrl": "http://localhost:3001",
-  "generatedAt": "2026-05-08T11:35:35.537Z",
+  "generatedAt": "2026-05-18T16:53:19.860Z",
   "status": "passed",
   "routeResults": [
     {
       "target": "/",
       "status": 200,
       "ok": true,
-      "bytes": 201171,
-      "ms": 1099
+      "bytes": 205146,
+      "ms": 8545
     },
     {
       "target": "/operaciones",
       "status": 200,
       "ok": true,
-      "bytes": 2292946,
-      "ms": 2931
+      "bytes": 2362989,
+      "ms": 1576
     },
     {
       "target": "/plataforma",
       "status": 200,
       "ok": true,
-      "bytes": 262802,
-      "ms": 404
+      "bytes": 263081,
+      "ms": 379
     },
     {
       "target": "/tracks/codex",
       "status": 200,
       "ok": true,
-      "bytes": 251040,
-      "ms": 559
+      "bytes": 251303,
+      "ms": 465
     },
     {
       "target": "/tracks/copilot",
       "status": 200,
       "ok": true,
-      "bytes": 277254,
-      "ms": 613
+      "bytes": 277528,
+      "ms": 474
     },
     {
       "target": "/tracks/claude",
       "status": 200,
       "ok": true,
-      "bytes": 283361,
-      "ms": 620
+      "bytes": 283638,
+      "ms": 467
     },
     {
       "target": "/tracks/codex/courses/codex-basic",
       "status": 200,
       "ok": true,
-      "bytes": 374818,
-      "ms": 3368
+      "bytes": 382750,
+      "ms": 1009
     },
     {
       "target": "/tracks/copilot/courses/copilot-basic",
       "status": 200,
       "ok": true,
-      "bytes": 446468,
-      "ms": 2092
+      "bytes": 467799,
+      "ms": 880
     },
     {
       "target": "/tracks/claude/courses/claude-basic",
       "status": 200,
       "ok": true,
-      "bytes": 408877,
-      "ms": 1909
+      "bytes": 417573,
+      "ms": 883
     },
     {
       "target": "/tracks/codex/exercises/cx-b04-bug-login",
       "status": 200,
       "ok": true,
-      "bytes": 172280,
-      "ms": 3137
+      "bytes": 174372,
+      "ms": 798
     },
     {
       "target": "/tracks/copilot/exercises/cp-b06-error-to-fix",
       "status": 200,
       "ok": true,
-      "bytes": 163203,
-      "ms": 1003
+      "bytes": 164617,
+      "ms": 707
     },
     {
       "target": "/tracks/claude/exercises/cl-a01-hook-block-secrets",
       "status": 200,
       "ok": true,
-      "bytes": 172123,
-      "ms": 1487
+      "bytes": 174165,
+      "ms": 711
     },
     {
       "target": "/tracks/codex/workshops/codex-workshop-1h-first-task-to-pr",
       "status": 200,
       "ok": true,
-      "bytes": 190424,
-      "ms": 1035
+      "bytes": 192820,
+      "ms": 755
     },
     {
       "target": "/tracks/copilot/workshops/copilot-workshop-1h-vscode-to-pr-review",
       "status": 200,
       "ok": true,
-      "bytes": 189585,
-      "ms": 744
+      "bytes": 192037,
+      "ms": 684
     },
     {
       "target": "/tracks/claude/workshops/claude-workshop-1h-memory-to-automation",
       "status": 200,
       "ok": true,
-      "bytes": 192596,
-      "ms": 668
+      "bytes": 195068,
+      "ms": 724
     },
     {
       "target": "/player/cx-workshop-60m-first-task-to-pr",
       "status": 200,
       "ok": true,
-      "bytes": 25619,
-      "ms": 132
+      "bytes": 25592,
+      "ms": 932
     },
     {
       "target": "/player/cp-workshop-60m-vscode-to-pr-review",
       "status": 200,
       "ok": true,
-      "bytes": 25630,
-      "ms": 94
+      "bytes": 26050,
+      "ms": 90
     },
     {
       "target": "/player/cl-workshop-60m-memory-to-automation",
       "status": 200,
       "ok": true,
-      "bytes": 25637,
-      "ms": 115
+      "bytes": 26056,
+      "ms": 73
     },
     {
       "target": "/player/hub-workshop-60m-vendor-selection",
       "status": 200,
       "ok": true,
-      "bytes": 25619,
-      "ms": 106
+      "bytes": 26044,
+      "ms": 71
     },
     {
       "target": "/workshop-packs/codex/cx-workshop-60m-first-task-to-pr/README.md",
       "status": 200,
       "ok": true,
       "bytes": 686,
-      "ms": 6
+      "ms": 9
     },
     {
       "target": "/workshop-packs/copilot/cp-workshop-60m-vscode-to-pr-review/README.md",
       "status": 200,
       "ok": true,
       "bytes": 601,
-      "ms": 6
+      "ms": 7
     },
     {
       "target": "/workshop-packs/claude/cl-workshop-60m-memory-to-automation/README.md",
       "status": 200,
       "ok": true,
       "bytes": 513,
-      "ms": 5
+      "ms": 3
     },
     {
       "target": "/workshop-packs/platform/hub-workshop-60m-vendor-selection/README.md",
       "status": 200,
       "ok": true,
       "bytes": 487,
-      "ms": 3
+      "ms": 4
     },
     {
       "target": "/release-ops/checklists/release-checklist.md",
       "status": 200,
       "ok": true,
       "bytes": 1094,
-      "ms": 6
+      "ms": 5
     },
     {
       "target": "/release-ops/feedback/feedback-loop.md",
@@ -183,42 +183,42 @@
       "status": 200,
       "ok": true,
       "bytes": 1735,
-      "ms": 5
+      "ms": 4
     },
     {
       "target": "/release-ops/qa/visual-qa-plan.md",
       "status": 200,
       "ok": true,
       "bytes": 1381,
-      "ms": 5
+      "ms": 4
     },
     {
       "target": "/release-ops/versioning.md",
       "status": 200,
       "ok": true,
       "bytes": 802,
-      "ms": 5
+      "ms": 3
     },
     {
       "target": "/content/operations/content-versions.json",
       "status": 200,
       "ok": true,
       "bytes": 765,
-      "ms": 5
+      "ms": 3
     },
     {
       "target": "/content/operations/ownership.json",
       "status": 200,
       "ok": true,
       "bytes": 9037,
-      "ms": 6
+      "ms": 4
     },
     {
       "target": "/content/operations/freshness-checklist.json",
       "status": 200,
       "ok": true,
       "bytes": 563,
-      "ms": 5
+      "ms": 2
     },
     {
       "target": "/content/operations/quarterly-review.json",
@@ -232,14 +232,14 @@
       "status": 200,
       "ok": true,
       "bytes": 715,
-      "ms": 4
+      "ms": 3
     },
     {
       "target": "/exercise-packs/starters/transversal-starter/README.md",
       "status": 200,
       "ok": true,
       "bytes": 153,
-      "ms": 5
+      "ms": 3
     }
   ],
   "courseResults": [
@@ -247,85 +247,85 @@
       "target": "/api/courses/cx-workshop-30m-first-real-task",
       "status": 200,
       "ok": true,
-      "bytes": 72123,
-      "ms": 47,
+      "bytes": 341278,
+      "ms": 705,
       "slug": "cx-workshop-30m-first-real-task",
       "expectedDurationMs": 1800000,
       "expectedScenes": 24,
       "durationMs": 1800000,
-      "scenes": 24
+      "scenes": 60
     },
     {
       "target": "/api/courses/cp-workshop-30m-error-to-pr",
       "status": 200,
       "ok": true,
-      "bytes": 67633,
-      "ms": 22,
+      "bytes": 340916,
+      "ms": 35,
       "slug": "cp-workshop-30m-error-to-pr",
       "expectedDurationMs": 1800000,
       "expectedScenes": 24,
       "durationMs": 1800000,
-      "scenes": 24
+      "scenes": 60
     },
     {
       "target": "/api/courses/cl-workshop-30m-memory-to-hook",
       "status": 200,
       "ok": true,
-      "bytes": 66983,
-      "ms": 22,
+      "bytes": 339468,
+      "ms": 25,
       "slug": "cl-workshop-30m-memory-to-hook",
       "expectedDurationMs": 1800000,
       "expectedScenes": 24,
       "durationMs": 1800000,
-      "scenes": 24
+      "scenes": 60
     },
     {
       "target": "/api/courses/cx-workshop-60m-first-task-to-pr",
       "status": 200,
       "ok": true,
-      "bytes": 142132,
-      "ms": 23,
+      "bytes": 695407,
+      "ms": 34,
       "slug": "cx-workshop-60m-first-task-to-pr",
       "expectedDurationMs": 3600000,
       "expectedScenes": 48,
       "durationMs": 3600000,
-      "scenes": 48
+      "scenes": 120
     },
     {
       "target": "/api/courses/cp-workshop-60m-vscode-to-pr-review",
       "status": 200,
       "ok": true,
-      "bytes": 134052,
-      "ms": 22,
+      "bytes": 713224,
+      "ms": 43,
       "slug": "cp-workshop-60m-vscode-to-pr-review",
       "expectedDurationMs": 3600000,
       "expectedScenes": 48,
       "durationMs": 3600000,
-      "scenes": 48
+      "scenes": 120
     },
     {
       "target": "/api/courses/cl-workshop-60m-memory-to-automation",
       "status": 200,
       "ok": true,
-      "bytes": 134089,
-      "ms": 24,
+      "bytes": 694267,
+      "ms": 41,
       "slug": "cl-workshop-60m-memory-to-automation",
       "expectedDurationMs": 3600000,
       "expectedScenes": 48,
       "durationMs": 3600000,
-      "scenes": 48
+      "scenes": 120
     },
     {
       "target": "/api/courses/hub-workshop-60m-vendor-selection",
       "status": 200,
       "ok": true,
-      "bytes": 132507,
-      "ms": 22,
+      "bytes": 683674,
+      "ms": 57,
       "slug": "hub-workshop-60m-vendor-selection",
       "expectedDurationMs": 3600000,
       "expectedScenes": 48,
       "durationMs": 3600000,
-      "scenes": 48
+      "scenes": 120
     }
   ]
 }

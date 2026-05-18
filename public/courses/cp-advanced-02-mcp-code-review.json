@@ -1,7 +1,7 @@
 {
   "id": "cp-advanced-02-mcp-code-review",
-  "title": "Copilot Advanced 02 - MCP and Review",
-  "description": "MCP readonly y Copilot code review con instrucciones concretas.",
+  "title": "Copilot Advanced 02 - M C P and Review",
+  "description": "M C P readonly y Copilot code review con instrucciones concretas.",
   "template": "technical",
   "durationPreset": 5,
   "durationMs": 90000,
@@ -9,41 +9,144 @@
   "author": "AI Practice Hub",
   "createdAt": "2026-05-07T00:00:00.000Z",
   "chapters": [
-    { "id": "start", "label": "MCP", "startMs": 0 },
-    { "id": "compare", "label": "Control", "startMs": 9000 },
-    { "id": "close", "label": "Review", "startMs": 65000 }
+    {
+      "id": "start",
+      "label": "M C P",
+      "startMs": 0
+    },
+    {
+      "id": "compare",
+      "label": "Control",
+      "startMs": 30000
+    },
+    {
+      "id": "close",
+      "label": "Review",
+      "startMs": 65000
+    }
   ],
   "scenes": [
     {
       "id": "title",
       "name": "Apertura",
       "startMs": 0,
-      "endMs": 9000,
+      "endMs": 30000,
       "type": "title",
       "content": {
-        "title": "MCP + Review",
-        "subtitle": "Mas contexto, pero con allowlist y politica.",
-        "tag": "Copilot Advanced"
+        "title": "M C P + Review",
+        "subtitle": "Objetivo: resolver Copilot Advanced 02 - M C P and Review con criterio practico.",
+        "tag": "Copilot Advanced",
+        "narrativeContract": {
+          "objective": "resolver Copilot Advanced 02 - M C P and Review con criterio practico.",
+          "outcome": "quedarte con una regla de uso y un ejemplo repetible.",
+          "route": "concepto, ejemplo y cierre.",
+          "decision": "cuando aplicar esta tecnica en tu propio repositorio."
+        }
       },
       "subtitles": [
-        { "text": "MCP puede hacer a Copilot mas util, y tambien mas arriesgado.", "startMs": 1000, "endMs": 8200 }
-      ]
+        {
+          "text": "Objetivo de esta clase:",
+          "startMs": 450,
+          "endMs": 2990
+        },
+        {
+          "text": "resolver Copilot Advanced 02 - M C P and Review con criterio practico.",
+          "startMs": 3170,
+          "endMs": 8590
+        },
+        {
+          "text": "Al final debes poder quedarte con una regla de uso y un ejemplo repetible.",
+          "startMs": 8770,
+          "endMs": 13614
+        },
+        {
+          "text": "La ruta sera: concepto, ejemplo y cierre.",
+          "startMs": 13794,
+          "endMs": 17750
+        },
+        {
+          "text": "Durante el video mira esta decision:",
+          "startMs": 17930,
+          "endMs": 20902
+        },
+        {
+          "text": "cuando aplicar esta tecnica en tu propio repositorio.",
+          "startMs": 21082,
+          "endMs": 24774
+        }
+      ],
+      "voiceover": [
+        "Objetivo de esta clase:",
+        "resolver Copilot Advanced 02 - M C P and Review con criterio practico.",
+        "Al final debes poder quedarte con una regla de uso y un ejemplo repetible.",
+        "La ruta sera: concepto, ejemplo y cierre.",
+        "Durante el video mira esta decision:",
+        "cuando aplicar esta tecnica en tu propio repositorio."
+      ],
+      "blueprintAction": {
+        "learningRubric": {
+          "learns": "Distingue decision humana de ejecucion automatizada en Copilot.",
+          "does": "Comprueba la salida contra prueba, owner o captura.",
+          "decides": "Aceptar solo si la evidencia queda visible para otra persona.",
+          "vendor": "copilot",
+          "usefulnessScore": 82,
+          "memoryCheck": "Puede repetir el prompt inicial con criterio de cierre.",
+          "productionPass": "2000-final-direction"
+        }
+      },
+      "production": {
+        "audioVersion": "audio-prod-v2-2026-05-18",
+        "voiceProfileId": "copilotNarrator",
+        "voice": "es-ES-AlvaroNeural",
+        "rate": "+7%",
+        "pitch": "+0Hz",
+        "energy": "practica",
+        "emphasis": "modo, contexto y PR",
+        "pauseMs": 180,
+        "role": "narrator",
+        "reviewRubric": {
+          "learns": "Distingue decision humana de ejecucion automatizada en Copilot.",
+          "does": "Comprueba la salida contra prueba, owner o captura.",
+          "decides": "Aceptar solo si la evidencia queda visible para otra persona.",
+          "memoryCheck": "Puede repetir el prompt inicial con criterio de cierre."
+        },
+        "prosodyNotes": {
+          "pace": "+7%",
+          "pause": "180ms antes de la decision",
+          "emphasis": "modo, contexto y pull request",
+          "energy": "practica"
+        },
+        "pronunciationPass": "spain-voice-units-v1"
+      }
     },
     {
       "id": "compare",
       "name": "Control",
-      "startMs": 9000,
-      "endMs": 65000,
+      "startMs": 30000,
+      "endMs": 60000,
       "type": "compare",
       "content": {
-        "tag": "MCP governance",
+        "tag": "M C P governance",
         "left": {
           "label": "Todo conectado",
           "color": "destructive",
           "steps": [
-            { "icon": "Zap", "text": "Todos los servidores activos" },
-            { "icon": "AlertTriangle", "text": "Datos y acciones sin inventario" },
-            { "icon": "MessageSquare", "text": "Review con ruido y contexto excesivo" }
+            {
+              "icon": "Zap",
+              "text": "Todos los servidores activos"
+            },
+            {
+              "icon": "AlertTriangle",
+              "text": "Datos y acciones sin inventario"
+            },
+            {
+              "icon": "MessageSquare",
+              "text": "Review con ruido y contexto excesivo"
+            },
+            {
+              "icon": "AlertTriangle",
+              "text": "Sin evidencia, la decision vuelve a tutoria."
+            }
           ],
           "total": "Potente pero opaco"
         },
@@ -51,37 +154,188 @@
           "label": "Readonly + allowlist",
           "color": "accent",
           "steps": [
-            { "icon": "Eye", "text": "GitHub MCP readonly primero" },
-            { "icon": "FileText", "text": "Inventario de datos y tools" },
-            { "icon": "Check", "text": "Review con instrucciones concretas" }
+            {
+              "icon": "Eye",
+              "text": "GitHub M C P readonly primero"
+            },
+            {
+              "icon": "FileText",
+              "text": "Inventario de datos y tools"
+            },
+            {
+              "icon": "Check",
+              "text": "Review con instrucciones concretas"
+            },
+            {
+              "icon": "Check",
+              "text": "Cerrar con criterio, coste y validacion."
+            }
           ],
           "total": "Potente y gobernable"
-        }
+        },
+        "auditNote": "Comparativa enriquecida para explicar cuando usar, cuando no usar y como cerrar."
       },
       "subtitles": [
-        { "text": "No actives todo por comodidad.", "startMs": 10000, "endMs": 22000 },
-        { "text": "Empieza readonly y documenta tools.", "startMs": 23000, "endMs": 39000 },
-        { "text": "Despues usa review con politica y evidencia.", "startMs": 40000, "endMs": 62000 }
-      ]
+        {
+          "text": "No actives todo por comodidad.",
+          "startMs": 30450,
+          "endMs": 33158
+        },
+        {
+          "text": "Empieza readonly y documenta tools.",
+          "startMs": 33338,
+          "endMs": 36454
+        },
+        {
+          "text": "Despues usa review con politica y evidencia.",
+          "startMs": 36634,
+          "endMs": 40278
+        }
+      ],
+      "voiceover": [
+        "No actives todo por comodidad.",
+        "Empieza readonly y documenta tools.",
+        "Despues usa review con politica y evidencia."
+      ],
+      "blueprintAction": {
+        "learningRubric": {
+          "learns": "Ubica coste, permiso y criterio antes de aceptar la salida.",
+          "does": "Registra el criterio que permitiria repetir el paso sin instructor.",
+          "decides": "Seguir, pedir mas contexto, escalar modelo o bloquear.",
+          "vendor": "copilot",
+          "usefulnessScore": 84,
+          "memoryCheck": "Puede explicar el paso en una frase de menos de 20 segundos.",
+          "productionPass": "2000-final-direction"
+        }
+      },
+      "production": {
+        "audioVersion": "audio-prod-v2-2026-05-18",
+        "voiceProfileId": "copilotNarrator",
+        "voice": "es-ES-AlvaroNeural",
+        "rate": "+7%",
+        "pitch": "+0Hz",
+        "energy": "practica",
+        "emphasis": "modo, contexto y PR",
+        "pauseMs": 180,
+        "role": "narrator",
+        "reviewRubric": {
+          "learns": "Ubica coste, permiso y criterio antes de aceptar la salida.",
+          "does": "Registra el criterio que permitiria repetir el paso sin instructor.",
+          "decides": "Seguir, pedir mas contexto, escalar modelo o bloquear.",
+          "memoryCheck": "Puede explicar el paso en una frase de menos de 20 segundos."
+        },
+        "prosodyNotes": {
+          "pace": "+7%",
+          "pause": "180ms antes de la decision",
+          "emphasis": "modo, contexto y pull request",
+          "energy": "practica"
+        },
+        "pronunciationPass": "spain-voice-units-v1"
+      }
     },
     {
       "id": "finale",
       "name": "Cierre",
-      "startMs": 65000,
+      "startMs": 60000,
       "endMs": 90000,
       "type": "finale",
       "content": {
-        "title": "MCP y review sin sustos",
+        "title": "M C P y review sin sustos",
         "summary": [
-          { "number": "01", "label": "Readonly", "body": "Primero entender." },
-          { "number": "02", "label": "Allowlist", "body": "Tools permitidas." },
-          { "number": "03", "label": "Review policy", "body": "Findings con evidencia." }
+          {
+            "number": "01",
+            "label": "Readonly",
+            "body": "Primero entender."
+          },
+          {
+            "number": "02",
+            "label": "Allowlist",
+            "body": "Tools permitidas."
+          },
+          {
+            "number": "03",
+            "label": "Review policy",
+            "body": "Findings con evidencia."
+          }
         ],
         "cta": "Ejercicios: cp-a01 y cp-a04."
       },
       "subtitles": [
-        { "text": "Readonly, allowlist y review policy. Ese es el triangulo seguro.", "startMs": 66000, "endMs": 89000 }
-      ]
+        {
+          "text": "Readonly, allowlist y review policy. Ese es el triangulo seguro.",
+          "startMs": 60450,
+          "endMs": 66398
+        },
+        {
+          "text": "Evidencia minuto 1: \"M C P y review sin sustos\" no se cierra sin test",
+          "startMs": 66578,
+          "endMs": 71878
+        },
+        {
+          "text": "captura o criterio escrito.",
+          "startMs": 72058,
+          "endMs": 74838
+        },
+        {
+          "text": "captura o criterio escrito. (Copilot, minuto 1, paso 19)",
+          "startMs": 75018,
+          "endMs": 81302
+        },
+        {
+          "text": "Accion minuto 1: parar si \"M C P y review sin sustos\" no produce evidencia nueva.",
+          "startMs": 81482,
+          "endMs": 87502
+        }
+      ],
+      "voiceover": [
+        "Readonly, allowlist y review policy. Ese es el triangulo seguro.",
+        "Evidencia minuto 1: \"M C P y review sin sustos\" no se cierra sin test",
+        "captura o criterio escrito.",
+        "captura o criterio escrito. (Copilot, minuto 1, paso 19)",
+        "Accion minuto 1: parar si \"M C P y review sin sustos\" no produce evidencia nueva."
+      ],
+      "blueprintAction": {
+        "learningRubric": {
+          "learns": "Reconoce por que \"M C P y review sin sustos\" necesita evidencia y no solo respuesta.",
+          "does": "Formula una peticion verificable con limite de alcance.",
+          "decides": "Convertir la duda en material de tutoria si se repite.",
+          "vendor": "copilot",
+          "usefulnessScore": 86,
+          "memoryCheck": "Puede nombrar el riesgo principal sin mirar la slide.",
+          "productionPass": "2000-final-direction"
+        }
+      },
+      "production": {
+        "audioVersion": "audio-prod-v2-2026-05-18",
+        "voiceProfileId": "copilotReview",
+        "voice": "es-ES-AlvaroNeural",
+        "rate": "+4%",
+        "pitch": "+0Hz",
+        "energy": "critica",
+        "emphasis": "finding, severidad y prueba",
+        "pauseMs": 240,
+        "role": "reflection",
+        "reviewRubric": {
+          "learns": "Reconoce por que \"M C P y review sin sustos\" necesita evidencia y no solo respuesta.",
+          "does": "Formula una peticion verificable con limite de alcance.",
+          "decides": "Convertir la duda en material de tutoria si se repite.",
+          "memoryCheck": "Puede nombrar el riesgo principal sin mirar la slide."
+        },
+        "prosodyNotes": {
+          "pace": "+4%",
+          "pause": "240ms antes de la decision",
+          "emphasis": "finding, severidad y prueba",
+          "energy": "critica"
+        },
+        "pronunciationPass": "spain-voice-units-v1"
+      }
     }
-  ]
+  ],
+  "production": {
+    "audioProductionVersion": "audio-prod-v2-2026-05-18",
+    "productionPass": "2000-final-direction",
+    "vendor": "copilot",
+    "narrativePass": "teacher-contract-v1",
+    "pronunciationPass": "spain-voice-units-v1"
+  }
 }

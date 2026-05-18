@@ -9,31 +9,115 @@
   "author": "AI Practice Hub",
   "createdAt": "2026-05-07T00:00:00.000Z",
   "chapters": [
-    { "id": "start", "label": "Git survival", "startMs": 0 },
-    { "id": "compare", "label": "Fork vs branch", "startMs": 9000 },
-    { "id": "close", "label": "Checklist", "startMs": 65000 }
+    {
+      "id": "start",
+      "label": "Git survival",
+      "startMs": 0
+    },
+    {
+      "id": "compare",
+      "label": "Fork vs branch",
+      "startMs": 30000
+    },
+    {
+      "id": "close",
+      "label": "Checklist",
+      "startMs": 65000
+    }
   ],
   "scenes": [
     {
       "id": "title",
       "name": "Apertura",
       "startMs": 0,
-      "endMs": 9000,
+      "endMs": 30000,
       "type": "title",
       "content": {
         "title": "Fork vs branch",
-        "subtitle": "Lo minimo de GitHub para trabajar con Copilot sin atascar el workshop.",
-        "tag": "Copilot CP0"
+        "subtitle": "Objetivo: resolver Copilot Git 01 - Fork vs Branch con criterio practico.",
+        "tag": "Copilot CP0",
+        "narrativeContract": {
+          "objective": "resolver Copilot Git 01 - Fork vs Branch con criterio practico.",
+          "outcome": "quedarte con una regla de uso y un ejemplo repetible.",
+          "route": "concepto, ejemplo y cierre.",
+          "decision": "cuando aplicar esta tecnica en tu propio repositorio."
+        }
       },
       "subtitles": [
-        { "text": "Antes de pedir a Copilot que cambie codigo, hay que saber donde va el cambio.", "startMs": 1000, "endMs": 7600 }
-      ]
+        {
+          "text": "Objetivo de esta clase: resolver Copilot Git 01 - Fork vs Branch con criterio practico.",
+          "startMs": 450,
+          "endMs": 6926
+        },
+        {
+          "text": "Al final debes poder quedarte con una regla de uso y un ejemplo repetible.",
+          "startMs": 7106,
+          "endMs": 11950
+        },
+        {
+          "text": "La ruta sera: concepto, ejemplo y cierre.",
+          "startMs": 12130,
+          "endMs": 16086
+        },
+        {
+          "text": "Durante el video mira esta decision:",
+          "startMs": 16266,
+          "endMs": 19238
+        },
+        {
+          "text": "cuando aplicar esta tecnica en tu propio repositorio.",
+          "startMs": 19418,
+          "endMs": 23110
+        }
+      ],
+      "voiceover": [
+        "Objetivo de esta clase: resolver Copilot Git 01 - Fork vs Branch con criterio practico.",
+        "Al final debes poder quedarte con una regla de uso y un ejemplo repetible.",
+        "La ruta sera: concepto, ejemplo y cierre.",
+        "Durante el video mira esta decision:",
+        "cuando aplicar esta tecnica en tu propio repositorio."
+      ],
+      "blueprintAction": {
+        "learningRubric": {
+          "learns": "Distingue decision humana de ejecucion automatizada en Copilot.",
+          "does": "Comprueba la salida contra prueba, owner o captura.",
+          "decides": "Aceptar solo si la evidencia queda visible para otra persona.",
+          "vendor": "copilot",
+          "usefulnessScore": 82,
+          "memoryCheck": "Puede repetir el prompt inicial con criterio de cierre.",
+          "productionPass": "2000-final-direction"
+        }
+      },
+      "production": {
+        "audioVersion": "audio-prod-v2-2026-05-18",
+        "voiceProfileId": "copilotNarrator",
+        "voice": "es-ES-AlvaroNeural",
+        "rate": "+7%",
+        "pitch": "+0Hz",
+        "energy": "practica",
+        "emphasis": "modo, contexto y PR",
+        "pauseMs": 180,
+        "role": "narrator",
+        "reviewRubric": {
+          "learns": "Distingue decision humana de ejecucion automatizada en Copilot.",
+          "does": "Comprueba la salida contra prueba, owner o captura.",
+          "decides": "Aceptar solo si la evidencia queda visible para otra persona.",
+          "memoryCheck": "Puede repetir el prompt inicial con criterio de cierre."
+        },
+        "prosodyNotes": {
+          "pace": "+7%",
+          "pause": "180ms antes de la decision",
+          "emphasis": "modo, contexto y pull request",
+          "energy": "practica"
+        },
+        "pronunciationPass": "spain-voice-units-v1"
+      }
     },
     {
       "id": "compare",
       "name": "Comparativa",
-      "startMs": 9000,
-      "endMs": 65000,
+      "startMs": 30000,
+      "endMs": 60000,
       "type": "compare",
       "content": {
         "tag": "GitHub survival",
@@ -41,9 +125,22 @@
           "label": "Fork",
           "color": "destructive",
           "steps": [
-            { "icon": "GitPullRequest", "text": "Copia del repo en otra cuenta u organizacion" },
-            { "icon": "AlertTriangle", "text": "Comun en open source y permisos externos" },
-            { "icon": "FileText", "text": "Puede confundir si el alumno solo necesita practicar" }
+            {
+              "icon": "GitPullRequest",
+              "text": "Copia del repo en otra cuenta u organizacion"
+            },
+            {
+              "icon": "AlertTriangle",
+              "text": "Comun en open source y permisos externos"
+            },
+            {
+              "icon": "FileText",
+              "text": "Puede confundir si el alumno solo necesita practicar"
+            },
+            {
+              "icon": "AlertTriangle",
+              "text": "Sin evidencia, la decision vuelve a tutoria."
+            }
           ],
           "total": "Otro repo"
         },
@@ -51,37 +148,212 @@
           "label": "Branch",
           "color": "accent",
           "steps": [
-            { "icon": "Code", "text": "Linea de trabajo dentro del mismo repo" },
-            { "icon": "Check", "text": "Ideal para labs y PRs internos" },
-            { "icon": "Eye", "text": "Diff claro para Copilot review" }
+            {
+              "icon": "Code",
+              "text": "Linea de trabajo dentro del mismo repo"
+            },
+            {
+              "icon": "Check",
+              "text": "Ideal para labs y PRs internos"
+            },
+            {
+              "icon": "Eye",
+              "text": "Diff claro para Copilot review"
+            },
+            {
+              "icon": "Check",
+              "text": "Cerrar con criterio, coste y validacion."
+            }
           ],
           "total": "Mismo repo, cambio aislado"
-        }
+        },
+        "auditNote": "Comparativa enriquecida para explicar cuando usar, cuando no usar y como cerrar."
       },
       "subtitles": [
-        { "text": "Fork es otro repo. Branch es una linea de trabajo.", "startMs": 10000, "endMs": 19000 },
-        { "text": "Para formacion interna casi siempre queremos branch.", "startMs": 20000, "endMs": 33000 },
-        { "text": "Asi el PR, el diff y la review son faciles de seguir.", "startMs": 34000, "endMs": 62000 }
-      ]
+        {
+          "text": "Fork es otro repo. Branch es una linea de trabajo.",
+          "startMs": 30450,
+          "endMs": 35294
+        },
+        {
+          "text": "Para formacion interna casi siempre queremos branch.",
+          "startMs": 35474,
+          "endMs": 39118
+        },
+        {
+          "text": "Asi el pull request, el diff y la review son faciles de seguir.",
+          "startMs": 39298,
+          "endMs": 43542
+        }
+      ],
+      "voiceover": [
+        "Fork es otro repo. Branch es una linea de trabajo.",
+        "Para formacion interna casi siempre queremos branch.",
+        "Asi el pull request, el diff y la review son faciles de seguir."
+      ],
+      "blueprintAction": {
+        "learningRubric": {
+          "learns": "Ubica coste, permiso y criterio antes de aceptar la salida.",
+          "does": "Registra el criterio que permitiria repetir el paso sin instructor.",
+          "decides": "Seguir, pedir mas contexto, escalar modelo o bloquear.",
+          "vendor": "copilot",
+          "usefulnessScore": 84,
+          "memoryCheck": "Puede explicar el paso en una frase de menos de 20 segundos.",
+          "productionPass": "2000-final-direction"
+        }
+      },
+      "production": {
+        "audioVersion": "audio-prod-v2-2026-05-18",
+        "voiceProfileId": "copilotNarrator",
+        "voice": "es-ES-AlvaroNeural",
+        "rate": "+7%",
+        "pitch": "+0Hz",
+        "energy": "practica",
+        "emphasis": "modo, contexto y PR",
+        "pauseMs": 180,
+        "role": "narrator",
+        "reviewRubric": {
+          "learns": "Ubica coste, permiso y criterio antes de aceptar la salida.",
+          "does": "Registra el criterio que permitiria repetir el paso sin instructor.",
+          "decides": "Seguir, pedir mas contexto, escalar modelo o bloquear.",
+          "memoryCheck": "Puede explicar el paso en una frase de menos de 20 segundos."
+        },
+        "prosodyNotes": {
+          "pace": "+7%",
+          "pause": "180ms antes de la decision",
+          "emphasis": "modo, contexto y pull request",
+          "energy": "practica"
+        },
+        "pronunciationPass": "spain-voice-units-v1"
+      }
     },
     {
       "id": "finale",
       "name": "Cierre",
-      "startMs": 65000,
+      "startMs": 60000,
       "endMs": 90000,
       "type": "finale",
       "content": {
         "title": "CP0 checklist",
         "summary": [
-          { "number": "01", "label": "Branch", "body": "Aisla el trabajo." },
-          { "number": "02", "label": "Commit", "body": "Cuenta una unidad pequena." },
-          { "number": "03", "label": "PR", "body": "Convierte el cambio en conversacion." }
+          {
+            "number": "01",
+            "label": "Branch",
+            "body": "Aisla el trabajo."
+          },
+          {
+            "number": "02",
+            "label": "Commit",
+            "body": "Cuenta una unidad pequena."
+          },
+          {
+            "number": "03",
+            "label": "pull request",
+            "body": "Convierte el cambio en conversacion."
+          }
         ],
         "cta": "Ejercicio: cp0-e01-branch-pr."
       },
       "subtitles": [
-        { "text": "Branch, commit, PR. Con eso ya podemos practicar Copilot en serio.", "startMs": 66000, "endMs": 89000 }
-      ]
+        {
+          "text": "Branch, commit, pull request. Con eso ya podemos practicar Copilot en serio.",
+          "startMs": 60450,
+          "endMs": 66974
+        },
+        {
+          "text": "Evidencia minuto 1: el artefacto muestra que se controlo modo equivocado",
+          "startMs": 67019,
+          "endMs": 72271
+        },
+        {
+          "text": "contexto pobre y review floja.",
+          "startMs": 72316,
+          "endMs": 75312
+        },
+        {
+          "text": "contexto pobre y review floja. (Copilot, minuto 1, paso 3)",
+          "startMs": 75357,
+          "endMs": 81641
+        },
+        {
+          "text": "Accion minuto 1: pedir salida pequena verificable y con owner. (Copilot",
+          "startMs": 81686,
+          "endMs": 87778
+        },
+        {
+          "text": "minuto 1 paso 9)",
+          "startMs": 87404,
+          "endMs": 89920
+        },
+        {
+          "text": "convertir workspace de Visual Studio Code en una decision que se pueda ensenar en",
+          "startMs": 84596,
+          "endMs": 89920
+        },
+        {
+          "text": "tutoria.",
+          "startMs": 88172,
+          "endMs": 89920
+        },
+        {
+          "text": "(Copilot minuto 1 paso 4)",
+          "startMs": 87020,
+          "endMs": 89920
+        }
+      ],
+      "voiceover": [
+        "Branch, commit, pull request. Con eso ya podemos practicar Copilot en serio.",
+        "Evidencia minuto 1: el artefacto muestra que se controlo modo equivocado",
+        "contexto pobre y review floja.",
+        "contexto pobre y review floja. (Copilot, minuto 1, paso 3)",
+        "Accion minuto 1: pedir salida pequena verificable y con owner. (Copilot",
+        "minuto 1 paso 9)",
+        "convertir workspace de Visual Studio Code en una decision que se pueda ensenar en",
+        "tutoria.",
+        "(Copilot minuto 1 paso 4)"
+      ],
+      "blueprintAction": {
+        "learningRubric": {
+          "learns": "Reconoce por que \"CP0 checklist\" necesita evidencia y no solo respuesta.",
+          "does": "Formula una peticion verificable con limite de alcance.",
+          "decides": "Convertir la duda en material de tutoria si se repite.",
+          "vendor": "copilot",
+          "usefulnessScore": 86,
+          "memoryCheck": "Puede nombrar el riesgo principal sin mirar la slide.",
+          "productionPass": "2000-final-direction"
+        }
+      },
+      "production": {
+        "audioVersion": "audio-prod-v2-2026-05-18",
+        "voiceProfileId": "copilotReview",
+        "voice": "es-ES-AlvaroNeural",
+        "rate": "+4%",
+        "pitch": "+0Hz",
+        "energy": "critica",
+        "emphasis": "finding, severidad y prueba",
+        "pauseMs": 240,
+        "role": "reflection",
+        "reviewRubric": {
+          "learns": "Reconoce por que \"CP0 checklist\" necesita evidencia y no solo respuesta.",
+          "does": "Formula una peticion verificable con limite de alcance.",
+          "decides": "Convertir la duda en material de tutoria si se repite.",
+          "memoryCheck": "Puede nombrar el riesgo principal sin mirar la slide."
+        },
+        "prosodyNotes": {
+          "pace": "+4%",
+          "pause": "240ms antes de la decision",
+          "emphasis": "finding, severidad y prueba",
+          "energy": "critica"
+        },
+        "pronunciationPass": "spain-voice-units-v1"
+      }
     }
-  ]
+  ],
+  "production": {
+    "audioProductionVersion": "audio-prod-v2-2026-05-18",
+    "productionPass": "2000-final-direction",
+    "vendor": "copilot",
+    "narrativePass": "teacher-contract-v1",
+    "pronunciationPass": "spain-voice-units-v1"
+  }
 }

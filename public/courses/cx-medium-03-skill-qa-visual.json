@@ -1,6 +1,6 @@
 {
   "id": "cx-medium-03-skill-qa-visual",
-  "title": "Codex Medium 03 - Skill QA Visual",
+  "title": "Codex Medium 03 - Skill calidad Visual",
   "description": "Una skill reusable para verificar UI con Codex antes de cerrar un cambio.",
   "template": "technical",
   "durationPreset": 5,
@@ -9,90 +9,391 @@
   "author": "AI Practice Hub",
   "createdAt": "2026-05-07T00:00:00.000Z",
   "chapters": [
-    { "id": "start", "label": "Skill", "startMs": 0 },
-    { "id": "file", "label": "SKILL.md", "startMs": 8000 },
-    { "id": "qa", "label": "QA", "startMs": 42000 },
-    { "id": "close", "label": "Cierre", "startMs": 70000 }
+    {
+      "id": "start",
+      "label": "Skill",
+      "startMs": 0
+    },
+    {
+      "id": "file",
+      "label": "SKILL.md",
+      "startMs": 8000
+    },
+    {
+      "id": "qa",
+      "label": "calidad",
+      "startMs": 42000
+    },
+    {
+      "id": "close",
+      "label": "Cierre",
+      "startMs": 70000
+    }
   ],
   "scenes": [
     {
       "id": "title",
       "name": "Apertura",
       "startMs": 0,
-      "endMs": 8000,
+      "endMs": 22500,
       "type": "title",
       "content": {
-        "title": "Skill QA Visual",
-        "subtitle": "Convertir criterio repetible en una herramienta de Codex.",
-        "tag": "Codex / Skills"
+        "title": "Skill calidad Visual",
+        "subtitle": "Objetivo: resolver Codex Medium 03 - Skill calidad Visual con criterio practico.",
+        "tag": "Codex / Skills",
+        "narrativeContract": {
+          "objective": "resolver Codex Medium 03 - Skill calidad Visual con criterio practico.",
+          "outcome": "quedarte con una regla de uso y un ejemplo repetible.",
+          "route": "concepto, ejemplo y cierre.",
+          "decision": "cuando aplicar esta tecnica en tu propio repositorio."
+        }
       },
       "subtitles": [
-        { "text": "Una skill empaqueta una forma buena de trabajar.", "startMs": 1000, "endMs": 6500 }
-      ]
+        {
+          "text": "Objetivo de esta clase:",
+          "startMs": 450,
+          "endMs": 2966
+        },
+        {
+          "text": "resolver Codex Medium 03 - Skill calidad Visual con criterio practico.",
+          "startMs": 3011,
+          "endMs": 8359
+        },
+        {
+          "text": "Al final debes poder quedarte con una regla de uso y un ejemplo repetible.",
+          "startMs": 8404,
+          "endMs": 13200
+        },
+        {
+          "text": "La ruta sera: concepto, ejemplo y cierre.",
+          "startMs": 13245,
+          "endMs": 17153
+        },
+        {
+          "text": "Durante el video mira esta decision:",
+          "startMs": 17198,
+          "endMs": 20146
+        },
+        {
+          "text": "cuando aplicar esta tecnica en tu propio repositorio.",
+          "startMs": 18776,
+          "endMs": 22420
+        }
+      ],
+      "voiceover": [
+        "Objetivo de esta clase:",
+        "resolver Codex Medium 03 - Skill calidad Visual con criterio practico.",
+        "Al final debes poder quedarte con una regla de uso y un ejemplo repetible.",
+        "La ruta sera: concepto, ejemplo y cierre.",
+        "Durante el video mira esta decision:",
+        "cuando aplicar esta tecnica en tu propio repositorio."
+      ],
+      "blueprintAction": {
+        "learningRubric": {
+          "learns": "Distingue decision humana de ejecucion automatizada en Codex.",
+          "does": "Comprueba la salida contra prueba, owner o captura.",
+          "decides": "Aceptar solo si la evidencia queda visible para otra persona.",
+          "vendor": "codex",
+          "usefulnessScore": 82,
+          "memoryCheck": "Puede repetir el prompt inicial con criterio de cierre.",
+          "productionPass": "2000-final-direction"
+        }
+      },
+      "production": {
+        "audioVersion": "audio-prod-v2-2026-05-18",
+        "voiceProfileId": "codexNarrator",
+        "voice": "es-ES-AlvaroNeural",
+        "rate": "+8%",
+        "pitch": "+0Hz",
+        "energy": "precisa",
+        "emphasis": "plan, patch, test y coste",
+        "pauseMs": 180,
+        "role": "narrator",
+        "reviewRubric": {
+          "learns": "Distingue decision humana de ejecucion automatizada en Codex.",
+          "does": "Comprueba la salida contra prueba, owner o captura.",
+          "decides": "Aceptar solo si la evidencia queda visible para otra persona.",
+          "memoryCheck": "Puede repetir el prompt inicial con criterio de cierre."
+        },
+        "prosodyNotes": {
+          "pace": "+8%",
+          "pause": "180ms antes de la decision",
+          "emphasis": "plan, patch, test y coste",
+          "energy": "precisa"
+        },
+        "pronunciationPass": "spain-voice-units-v1"
+      }
     },
     {
       "id": "coding",
       "name": "Skill",
-      "startMs": 8000,
-      "endMs": 42000,
+      "startMs": 22500,
+      "endMs": 45000,
       "type": "coding",
       "content": {
         "tag": "SKILL.md",
         "filename": "skills/qa-visual-codex/SKILL.md",
-        "code": "# QA visual Codex\\n\\nUsa esta skill despues de cambios frontend.\\n\\n## Workflow\\n1. Arranca la app si hace falta.\\n2. Abre la pantalla principal.\\n3. Revisa consola.\\n4. Comprueba desktop y mobile.\\n5. Busca textos cortados, overlap, scroll roto y CTAs invisibles.\\n6. Reporta evidencias y riesgo residual.\\n\\n## Cierre\\n- Captura o descripcion visual.\\n- Errores de consola.\\n- Cambios recomendados.",
+        "code": "# calidad visual Codex\\n\\nUsa esta skill despues de cambios frontend.\\n\\n## Workflow\\n1. Arranca la app si hace falta.\\n2. Abre la pantalla principal.\\n3. Revisa consola.\\n4. Comprueba desktop y mobile.\\n5. Busca textos cortados, overlap, scroll roto y CTAs invisibles.\\n6. Reporta evidencias y riesgo residual.\\n\\n## Cierre\\n- Captura o descripcion visual.\\n- Errores de consola.\\n- Cambios recomendados. # Cierre operativo done_when: evidencia + coste + owner stop_rule: parar si no hay senal nueva",
         "commentary": [
-          { "atLine": 3, "text": "Cuándo usarla" },
-          { "atLine": 6, "text": "Workflow concreto" },
-          { "atLine": 13, "text": "Cierre con evidencias" }
+          {
+            "atLine": 3,
+            "text": "Cuándo usarla"
+          },
+          {
+            "atLine": 6,
+            "text": "Workflow concreto"
+          },
+          {
+            "atLine": 13,
+            "text": "Cierre con evidencias"
+          }
         ]
       },
       "subtitles": [
-        { "text": "La skill dice cuando se activa.", "startMs": 9000, "endMs": 15000 },
-        { "text": "Y obliga a mirar consola, desktop y mobile.", "startMs": 15500, "endMs": 28500 },
-        { "text": "Esto reduce bugs visuales antes de la review humana.", "startMs": 29000, "endMs": 40500 }
-      ]
+        {
+          "text": "La skill dice cuando se activa.",
+          "startMs": 22950,
+          "endMs": 25730
+        },
+        {
+          "text": "Y obliga a mirar consola, desktop y mobile.",
+          "startMs": 25910,
+          "endMs": 29626
+        },
+        {
+          "text": "Esto reduce bugs visuales antes de la review humana.",
+          "startMs": 29806,
+          "endMs": 33618
+        }
+      ],
+      "voiceover": [
+        "La skill dice cuando se activa.",
+        "Y obliga a mirar consola, desktop y mobile.",
+        "Esto reduce bugs visuales antes de la review humana."
+      ],
+      "blueprintAction": {
+        "learningRubric": {
+          "learns": "Ubica coste, permiso y criterio antes de aceptar la salida.",
+          "does": "Registra el criterio que permitiria repetir el paso sin instructor.",
+          "decides": "Seguir, pedir mas contexto, escalar modelo o bloquear.",
+          "vendor": "codex",
+          "usefulnessScore": 84,
+          "memoryCheck": "Puede explicar el paso en una frase de menos de 20 segundos.",
+          "productionPass": "2000-final-direction"
+        }
+      },
+      "production": {
+        "audioVersion": "audio-prod-v2-2026-05-18",
+        "voiceProfileId": "codexNarrator",
+        "voice": "es-ES-AlvaroNeural",
+        "rate": "+8%",
+        "pitch": "+0Hz",
+        "energy": "precisa",
+        "emphasis": "plan, patch, test y coste",
+        "pauseMs": 180,
+        "role": "narrator",
+        "reviewRubric": {
+          "learns": "Ubica coste, permiso y criterio antes de aceptar la salida.",
+          "does": "Registra el criterio que permitiria repetir el paso sin instructor.",
+          "decides": "Seguir, pedir mas contexto, escalar modelo o bloquear.",
+          "memoryCheck": "Puede explicar el paso en una frase de menos de 20 segundos."
+        },
+        "prosodyNotes": {
+          "pace": "+8%",
+          "pause": "180ms antes de la decision",
+          "emphasis": "plan, patch, test y coste",
+          "energy": "precisa"
+        },
+        "pronunciationPass": "spain-voice-units-v1"
+      }
     },
     {
       "id": "thinking",
       "name": "Verificacion",
-      "startMs": 42000,
-      "endMs": 70000,
+      "startMs": 45000,
+      "endMs": 67500,
       "type": "thinking",
       "content": {
-        "tag": "QA loop",
-        "title": "Codex verificando pantalla...",
+        "tag": "calidad loop",
+        "title": "Codex verificando pantalla.",
         "thoughts": [
-          { "ms": 0, "text": "Pagina carga sin error 500", "done": false },
-          { "ms": 5000, "text": "Consola limpia", "done": false },
-          { "ms": 10000, "text": "Desktop sin overlap", "done": false },
-          { "ms": 16000, "text": "Mobile mantiene jerarquia y controles", "done": false },
-          { "ms": 23000, "text": "Findings listos con severidad", "done": true }
-        ]
+          {
+            "ms": 0,
+            "text": "Pagina carga sin error 500",
+            "done": false
+          },
+          {
+            "ms": 5000,
+            "text": "Consola limpia",
+            "done": false
+          },
+          {
+            "ms": 10000,
+            "text": "Desktop sin overlap",
+            "done": false
+          },
+          {
+            "ms": 16000,
+            "text": "Mobile mantiene jerarquia y controles",
+            "done": false
+          },
+          {
+            "ms": 23000,
+            "text": "Findings listos con severidad",
+            "done": true
+          }
+        ],
+        "auditNote": "Pensamiento ampliado para que la pantalla tenga decision, permiso y salida."
       },
       "subtitles": [
-        { "text": "La verificacion no es mirar por encima.", "startMs": 43000, "endMs": 51000 },
-        { "text": "Es un loop reproducible.", "startMs": 51500, "endMs": 61000 },
-        { "text": "Y por eso merece ser skill.", "startMs": 61500, "endMs": 69000 }
-      ]
+        {
+          "text": "La verificacion no es mirar por encima.",
+          "startMs": 45450,
+          "endMs": 48830
+        },
+        {
+          "text": "Es un loop reproducible.",
+          "startMs": 49010,
+          "endMs": 51670
+        },
+        {
+          "text": "Y por eso merece ser skill.",
+          "startMs": 51850,
+          "endMs": 54726
+        }
+      ],
+      "voiceover": [
+        "La verificacion no es mirar por encima.",
+        "Es un loop reproducible.",
+        "Y por eso merece ser skill."
+      ],
+      "blueprintAction": {
+        "learningRubric": {
+          "learns": "Reconoce por que \"Codex verificando pantalla.\" necesita evidencia y no solo respuesta.",
+          "does": "Formula una peticion verificable con limite de alcance.",
+          "decides": "Convertir la duda en material de tutoria si se repite.",
+          "vendor": "codex",
+          "usefulnessScore": 86,
+          "memoryCheck": "Puede nombrar el riesgo principal sin mirar la slide.",
+          "productionPass": "2000-final-direction"
+        }
+      },
+      "production": {
+        "audioVersion": "audio-prod-v2-2026-05-18",
+        "voiceProfileId": "codexReflection",
+        "voice": "es-ES-AlvaroNeural",
+        "rate": "+3%",
+        "pitch": "+0Hz",
+        "energy": "reflexiva",
+        "emphasis": "riesgo, permiso y evidencia",
+        "pauseMs": 260,
+        "role": "reflection",
+        "reviewRubric": {
+          "learns": "Reconoce por que \"Codex verificando pantalla.\" necesita evidencia y no solo respuesta.",
+          "does": "Formula una peticion verificable con limite de alcance.",
+          "decides": "Convertir la duda en material de tutoria si se repite.",
+          "memoryCheck": "Puede nombrar el riesgo principal sin mirar la slide."
+        },
+        "prosodyNotes": {
+          "pace": "+3%",
+          "pause": "260ms antes de la decision",
+          "emphasis": "riesgo, permiso y evidencia",
+          "energy": "reflexiva"
+        },
+        "pronunciationPass": "spain-voice-units-v1"
+      }
     },
     {
       "id": "finale",
       "name": "Cierre",
-      "startMs": 70000,
+      "startMs": 67500,
       "endMs": 90000,
       "type": "finale",
       "content": {
         "title": "Skills = operaciones reutilizables",
         "summary": [
-          { "number": "01", "label": "Trigger", "body": "Cuando debe usarse." },
-          { "number": "02", "label": "Workflow", "body": "Pasos claros y verificables." },
-          { "number": "03", "label": "Cierre", "body": "Evidencia, findings y riesgo residual." }
+          {
+            "number": "01",
+            "label": "Trigger",
+            "body": "Cuando debe usarse."
+          },
+          {
+            "number": "02",
+            "label": "Workflow",
+            "body": "Pasos claros y verificables."
+          },
+          {
+            "number": "03",
+            "label": "Cierre",
+            "body": "Evidencia, findings y riesgo residual."
+          }
         ],
         "cta": "Ejercicio asociado: cx-m04-skill-qa."
       },
       "subtitles": [
-        { "text": "Una skill convierte una buena costumbre en sistema.", "startMs": 70500, "endMs": 89500 }
-      ]
+        {
+          "text": "Una skill convierte una buena costumbre en sistema.",
+          "startMs": 67950,
+          "endMs": 71714
+        },
+        {
+          "text": "Evidencia minuto 1: el artefacto muestra que se controlo permiso, alcance y modelo.",
+          "startMs": 71894,
+          "endMs": 77962
+        },
+        {
+          "text": "Accion minuto 1: convertir repo en una decision que se pueda ensenar en tutoria.",
+          "startMs": 78142,
+          "endMs": 83706
+        }
+      ],
+      "voiceover": [
+        "Una skill convierte una buena costumbre en sistema.",
+        "Evidencia minuto 1: el artefacto muestra que se controlo permiso, alcance y modelo.",
+        "Accion minuto 1: convertir repo en una decision que se pueda ensenar en tutoria."
+      ],
+      "blueprintAction": {
+        "learningRubric": {
+          "learns": "Distingue decision humana de ejecucion automatizada en Codex.",
+          "does": "Comprueba la salida contra prueba, owner o captura.",
+          "decides": "Aceptar solo si la evidencia queda visible para otra persona.",
+          "vendor": "codex",
+          "usefulnessScore": 88,
+          "memoryCheck": "Puede repetir el prompt inicial con criterio de cierre.",
+          "productionPass": "2000-final-direction"
+        }
+      },
+      "production": {
+        "audioVersion": "audio-prod-v2-2026-05-18",
+        "voiceProfileId": "codexReflection",
+        "voice": "es-ES-AlvaroNeural",
+        "rate": "+3%",
+        "pitch": "+0Hz",
+        "energy": "reflexiva",
+        "emphasis": "riesgo, permiso y evidencia",
+        "pauseMs": 260,
+        "role": "reflection",
+        "reviewRubric": {
+          "learns": "Distingue decision humana de ejecucion automatizada en Codex.",
+          "does": "Comprueba la salida contra prueba, owner o captura.",
+          "decides": "Aceptar solo si la evidencia queda visible para otra persona.",
+          "memoryCheck": "Puede repetir el prompt inicial con criterio de cierre."
+        },
+        "prosodyNotes": {
+          "pace": "+3%",
+          "pause": "260ms antes de la decision",
+          "emphasis": "riesgo, permiso y evidencia",
+          "energy": "reflexiva"
+        },
+        "pronunciationPass": "spain-voice-units-v1"
+      }
     }
-  ]
+  ],
+  "production": {
+    "audioProductionVersion": "audio-prod-v2-2026-05-18",
+    "productionPass": "2000-final-direction",
+    "vendor": "codex",
+    "narrativePass": "teacher-contract-v1",
+    "pronunciationPass": "spain-voice-units-v1"
+  }
 }

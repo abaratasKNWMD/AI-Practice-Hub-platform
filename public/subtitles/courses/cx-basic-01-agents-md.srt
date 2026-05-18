@@ -1,0 +1,56 @@
+1
+00:00:00,450 --> 00:00:07,118
+Objetivo de esta clase: resolver Codex Basic 01 - AGENTS.md con criterio practico.
+
+2
+00:00:07,163 --> 00:00:11,959
+Al final debes poder quedarte con una regla de uso y un ejemplo repetible.
+
+3
+00:00:12,004 --> 00:00:15,912
+La ruta sera: concepto, ejemplo y cierre.
+
+4
+00:00:15,957 --> 00:00:18,905
+Durante el video mira esta decision:
+
+5
+00:00:18,776 --> 00:00:22,420
+cuando aplicar esta tecnica en tu propio repositorio.
+
+6
+00:00:22,950 --> 00:00:26,234
+Un AGENTS.md bueno ayuda a decidir.
+
+7
+00:00:26,414 --> 00:00:29,098
+No es decoracion de onboarding.
+
+8
+00:00:29,278 --> 00:00:32,850
+Cada linea debe evitar una mala decision futura.
+
+9
+00:00:45,450 --> 00:00:48,374
+Observa que el archivo es corto.
+
+10
+00:00:48,554 --> 00:00:51,742
+Tiene comandos, flujo y limites.
+
+11
+00:00:51,922 --> 00:00:55,302
+Suficiente para mejorar muchas sesiones.
+
+12
+00:01:07,950 --> 00:01:12,194
+El AGENTS.md es pequeno, local y accionable.
+
+13
+00:01:12,374 --> 00:01:18,442
+Evidencia minuto 1: el artefacto muestra que se controlo permiso, alcance y modelo.
+
+14
+00:01:18,622 --> 00:01:24,186
+Accion minuto 1: convertir repo en una decision que se pueda ensenar en tutoria.
+

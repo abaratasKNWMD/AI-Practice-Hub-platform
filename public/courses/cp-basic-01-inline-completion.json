@@ -9,66 +9,326 @@
   "author": "AI Practice Hub",
   "createdAt": "2026-05-07T00:00:00.000Z",
   "chapters": [
-    { "id": "start", "label": "Ghost text", "startMs": 0 },
-    { "id": "code", "label": "Contexto", "startMs": 9000 },
-    { "id": "close", "label": "Criterio", "startMs": 65000 }
+    {
+      "id": "start",
+      "label": "Ghost text",
+      "startMs": 0
+    },
+    {
+      "id": "code",
+      "label": "Contexto",
+      "startMs": 9000
+    },
+    {
+      "id": "close",
+      "label": "Criterio",
+      "startMs": 65000
+    }
   ],
   "scenes": [
     {
       "id": "title",
       "name": "Apertura",
       "startMs": 0,
-      "endMs": 9000,
+      "endMs": 30000,
       "type": "title",
       "content": {
         "title": "Ghost text con criterio",
-        "subtitle": "Aceptar rapido no significa aceptar sin mirar.",
-        "tag": "Copilot Basic"
+        "subtitle": "Objetivo: resolver Copilot Basic 01 - Inline Completion con criterio practico.",
+        "tag": "Copilot Basic",
+        "narrativeContract": {
+          "objective": "resolver Copilot Basic 01 - Inline Completion con criterio practico.",
+          "outcome": "quedarte con una regla de uso y un ejemplo repetible.",
+          "route": "concepto, ejemplo y cierre.",
+          "decision": "cuando aplicar esta tecnica en tu propio repositorio."
+        }
       },
       "subtitles": [
-        { "text": "El autocompletado de Copilot es rapido, pero el criterio sigue siendo humano.", "startMs": 1000, "endMs": 8200 }
-      ]
+        {
+          "text": "Objetivo de esta clase:",
+          "startMs": 450,
+          "endMs": 2990
+        },
+        {
+          "text": "resolver Copilot Basic 01 - Inline Completion con criterio practico.",
+          "startMs": 3170,
+          "endMs": 8566
+        },
+        {
+          "text": "Al final debes poder quedarte con una regla de uso y un ejemplo repetible.",
+          "startMs": 8746,
+          "endMs": 13590
+        },
+        {
+          "text": "La ruta sera: concepto, ejemplo y cierre.",
+          "startMs": 13770,
+          "endMs": 17726
+        },
+        {
+          "text": "Durante el video mira esta decision:",
+          "startMs": 17906,
+          "endMs": 20878
+        },
+        {
+          "text": "cuando aplicar esta tecnica en tu propio repositorio.",
+          "startMs": 21058,
+          "endMs": 24750
+        }
+      ],
+      "voiceover": [
+        "Objetivo de esta clase:",
+        "resolver Copilot Basic 01 - Inline Completion con criterio practico.",
+        "Al final debes poder quedarte con una regla de uso y un ejemplo repetible.",
+        "La ruta sera: concepto, ejemplo y cierre.",
+        "Durante el video mira esta decision:",
+        "cuando aplicar esta tecnica en tu propio repositorio."
+      ],
+      "blueprintAction": {
+        "learningRubric": {
+          "learns": "Ubica coste, permiso y criterio antes de aceptar la salida.",
+          "does": "Registra el criterio que permitiria repetir el paso sin instructor.",
+          "decides": "Seguir, pedir mas contexto, escalar modelo o bloquear.",
+          "vendor": "copilot",
+          "usefulnessScore": 82,
+          "memoryCheck": "Puede explicar el paso en una frase de menos de 20 segundos.",
+          "productionPass": "2000-final-direction"
+        }
+      },
+      "production": {
+        "audioVersion": "audio-prod-v2-2026-05-18",
+        "voiceProfileId": "copilotNarrator",
+        "voice": "es-ES-AlvaroNeural",
+        "rate": "+7%",
+        "pitch": "+0Hz",
+        "energy": "practica",
+        "emphasis": "modo, contexto y PR",
+        "pauseMs": 180,
+        "role": "narrator",
+        "reviewRubric": {
+          "learns": "Ubica coste, permiso y criterio antes de aceptar la salida.",
+          "does": "Registra el criterio que permitiria repetir el paso sin instructor.",
+          "decides": "Seguir, pedir mas contexto, escalar modelo o bloquear.",
+          "memoryCheck": "Puede explicar el paso en una frase de menos de 20 segundos."
+        },
+        "prosodyNotes": {
+          "pace": "+7%",
+          "pause": "180ms antes de la decision",
+          "emphasis": "modo, contexto y pull request",
+          "energy": "practica"
+        },
+        "pronunciationPass": "spain-voice-units-v1"
+      }
     },
     {
       "id": "coding",
       "name": "Codigo",
-      "startMs": 9000,
-      "endMs": 65000,
+      "startMs": 30000,
+      "endMs": 60000,
       "type": "coding",
       "content": {
         "tag": "Inline completion",
         "filename": "src/price.js",
-        "code": "// Mal contexto: Copilot adivina demasiado\nfunction calc(x) {\n  // aplicar descuento\n}\n\n// Buen contexto: nombres y contrato\nfunction applyDiscount(priceInCents, discountPercent) {\n  if (discountPercent < 0 || discountPercent > 100) {\n    throw new Error('Invalid discount')\n  }\n\n  return Math.round(priceInCents * (1 - discountPercent / 100))\n}",
+        "code": "// Mal contexto: Copilot adivina demasiado function calc(x) { // aplicar descuento } // Buen contexto: nombres y contrato function applyDiscount(priceInCents, discountPercent) { if (discountPercent < 0 || discountPercent > 100) { throw new Error('Invalid discount') } return Math.round(priceInCents * (1 - discountPercent / 100)) } # Cierre operativo done_when: evidencia + coste + owner stop_rule: parar si no hay senal nueva",
         "commentary": [
-          { "atLine": 1, "text": "Contexto pobre" },
-          { "atLine": 6, "text": "Nombres utiles" },
-          { "atLine": 7, "text": "Edge case explicito" }
+          {
+            "atLine": 1,
+            "text": "Contexto pobre"
+          },
+          {
+            "atLine": 6,
+            "text": "Nombres utiles"
+          },
+          {
+            "atLine": 7,
+            "text": "Edge case explicito"
+          }
         ]
       },
       "subtitles": [
-        { "text": "Copilot no lee tu mente: lee nombres, comentarios y archivos abiertos.", "startMs": 10000, "endMs": 25000 },
-        { "text": "Con buen contexto, la sugerencia mejora mucho.", "startMs": 26000, "endMs": 43000 },
-        { "text": "Aun asi hay que revisar edge cases.", "startMs": 44000, "endMs": 62000 }
-      ]
+        {
+          "text": "Copilot no lee tu mente: lee nombres, comentarios y archivos abiertos.",
+          "startMs": 30450,
+          "endMs": 35750
+        },
+        {
+          "text": "Con buen contexto, la sugerencia mejora mucho.",
+          "startMs": 35930,
+          "endMs": 39718
+        },
+        {
+          "text": "Aun asi hay que revisar edge cases.",
+          "startMs": 39898,
+          "endMs": 42894
+        }
+      ],
+      "voiceover": [
+        "Copilot no lee tu mente: lee nombres, comentarios y archivos abiertos.",
+        "Con buen contexto, la sugerencia mejora mucho.",
+        "Aun asi hay que revisar edge cases."
+      ],
+      "blueprintAction": {
+        "learningRubric": {
+          "learns": "Reconoce por que \"Codigo\" necesita evidencia y no solo respuesta.",
+          "does": "Formula una peticion verificable con limite de alcance.",
+          "decides": "Convertir la duda en material de tutoria si se repite.",
+          "vendor": "copilot",
+          "usefulnessScore": 84,
+          "memoryCheck": "Puede nombrar el riesgo principal sin mirar la slide.",
+          "productionPass": "2000-final-direction"
+        }
+      },
+      "production": {
+        "audioVersion": "audio-prod-v2-2026-05-18",
+        "voiceProfileId": "copilotNarrator",
+        "voice": "es-ES-AlvaroNeural",
+        "rate": "+7%",
+        "pitch": "+0Hz",
+        "energy": "practica",
+        "emphasis": "modo, contexto y PR",
+        "pauseMs": 180,
+        "role": "narrator",
+        "reviewRubric": {
+          "learns": "Reconoce por que \"Codigo\" necesita evidencia y no solo respuesta.",
+          "does": "Formula una peticion verificable con limite de alcance.",
+          "decides": "Convertir la duda en material de tutoria si se repite.",
+          "memoryCheck": "Puede nombrar el riesgo principal sin mirar la slide."
+        },
+        "prosodyNotes": {
+          "pace": "+7%",
+          "pause": "180ms antes de la decision",
+          "emphasis": "modo, contexto y pull request",
+          "energy": "practica"
+        },
+        "pronunciationPass": "spain-voice-units-v1"
+      }
     },
     {
       "id": "finale",
       "name": "Cierre",
-      "startMs": 65000,
+      "startMs": 60000,
       "endMs": 90000,
       "type": "finale",
       "content": {
         "title": "Completion profesional",
         "summary": [
-          { "number": "01", "label": "Contexto", "body": "Archivo, nombres y comentario." },
-          { "number": "02", "label": "Revision", "body": "No aceptar a ciegas." },
-          { "number": "03", "label": "Test", "body": "Comprobar edge cases." }
+          {
+            "number": "01",
+            "label": "Contexto",
+            "body": "Archivo, nombres y comentario."
+          },
+          {
+            "number": "02",
+            "label": "Revision",
+            "body": "No aceptar a ciegas."
+          },
+          {
+            "number": "03",
+            "label": "Test",
+            "body": "Comprobar edge cases."
+          }
         ],
         "cta": "Ejercicio: cp-b02-inline-completion."
       },
       "subtitles": [
-        { "text": "Contexto, revision y test. Esa es la completion profesional.", "startMs": 66000, "endMs": 89000 }
-      ]
+        {
+          "text": "Contexto, revision y test. Esa es la completion profesional.",
+          "startMs": 60450,
+          "endMs": 66158
+        },
+        {
+          "text": "Evidencia minuto 1: el artefacto muestra que se controlo modo equivocado",
+          "startMs": 66203,
+          "endMs": 71455
+        },
+        {
+          "text": "contexto pobre y review floja.",
+          "startMs": 71500,
+          "endMs": 74496
+        },
+        {
+          "text": "contexto pobre y review floja. (Copilot, minuto 1, paso 1)",
+          "startMs": 74541,
+          "endMs": 80705
+        },
+        {
+          "text": "Accion minuto 1: pedir salida pequena verificable y con owner. (Copilot",
+          "startMs": 80750,
+          "endMs": 86842
+        },
+        {
+          "text": "minuto 1 paso 7)",
+          "startMs": 86887,
+          "endMs": 89427
+        },
+        {
+          "text": "convertir workspace de Visual Studio Code en una decision que se pueda ensenar en",
+          "startMs": 84596,
+          "endMs": 89920
+        },
+        {
+          "text": "tutoria.",
+          "startMs": 88172,
+          "endMs": 89920
+        },
+        {
+          "text": "(Copilot minuto 1 paso 2)",
+          "startMs": 87068,
+          "endMs": 89920
+        }
+      ],
+      "voiceover": [
+        "Contexto, revision y test. Esa es la completion profesional.",
+        "Evidencia minuto 1: el artefacto muestra que se controlo modo equivocado",
+        "contexto pobre y review floja.",
+        "contexto pobre y review floja. (Copilot, minuto 1, paso 1)",
+        "Accion minuto 1: pedir salida pequena verificable y con owner. (Copilot",
+        "minuto 1 paso 7)",
+        "convertir workspace de Visual Studio Code en una decision que se pueda ensenar en",
+        "tutoria.",
+        "(Copilot minuto 1 paso 2)"
+      ],
+      "blueprintAction": {
+        "learningRubric": {
+          "learns": "Distingue decision humana de ejecucion automatizada en Copilot.",
+          "does": "Comprueba la salida contra prueba, owner o captura.",
+          "decides": "Aceptar solo si la evidencia queda visible para otra persona.",
+          "vendor": "copilot",
+          "usefulnessScore": 86,
+          "memoryCheck": "Puede repetir el prompt inicial con criterio de cierre.",
+          "productionPass": "2000-final-direction"
+        }
+      },
+      "production": {
+        "audioVersion": "audio-prod-v2-2026-05-18",
+        "voiceProfileId": "copilotReview",
+        "voice": "es-ES-AlvaroNeural",
+        "rate": "+4%",
+        "pitch": "+0Hz",
+        "energy": "critica",
+        "emphasis": "finding, severidad y prueba",
+        "pauseMs": 240,
+        "role": "reflection",
+        "reviewRubric": {
+          "learns": "Distingue decision humana de ejecucion automatizada en Copilot.",
+          "does": "Comprueba la salida contra prueba, owner o captura.",
+          "decides": "Aceptar solo si la evidencia queda visible para otra persona.",
+          "memoryCheck": "Puede repetir el prompt inicial con criterio de cierre."
+        },
+        "prosodyNotes": {
+          "pace": "+4%",
+          "pause": "240ms antes de la decision",
+          "emphasis": "finding, severidad y prueba",
+          "energy": "critica"
+        },
+        "pronunciationPass": "spain-voice-units-v1"
+      }
     }
-  ]
+  ],
+  "production": {
+    "audioProductionVersion": "audio-prod-v2-2026-05-18",
+    "productionPass": "2000-final-direction",
+    "vendor": "copilot",
+    "narrativePass": "teacher-contract-v1",
+    "pronunciationPass": "spain-voice-units-v1"
+  }
 }

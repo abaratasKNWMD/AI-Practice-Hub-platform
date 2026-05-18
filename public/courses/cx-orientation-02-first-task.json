@@ -9,33 +9,126 @@
   "author": "AI Practice Hub",
   "createdAt": "2026-05-07T00:00:00.000Z",
   "chapters": [
-    { "id": "start", "label": "Tarea", "startMs": 0 },
-    { "id": "brief", "label": "Briefing", "startMs": 8000 },
-    { "id": "prompt", "label": "Prompt", "startMs": 42000 },
-    { "id": "close", "label": "Cierre", "startMs": 70000 }
+    {
+      "id": "start",
+      "label": "Tarea",
+      "startMs": 0
+    },
+    {
+      "id": "brief",
+      "label": "Briefing",
+      "startMs": 8000
+    },
+    {
+      "id": "prompt",
+      "label": "Prompt",
+      "startMs": 42000
+    },
+    {
+      "id": "close",
+      "label": "Cierre",
+      "startMs": 70000
+    }
   ],
   "scenes": [
     {
       "id": "title",
       "name": "Apertura",
       "startMs": 0,
-      "endMs": 8000,
+      "endMs": 22500,
       "type": "title",
       "content": {
         "title": "Tu primera tarea",
-        "subtitle": "Objetivo, contexto, restricciones y criterio de cierre.",
-        "tag": "Codex / Prompting"
+        "subtitle": "Objetivo: resolver Codex Orientation 02 - First Task con criterio practico.",
+        "tag": "Codex / Prompting",
+        "narrativeContract": {
+          "objective": "resolver Codex Orientation 02 - First Task con criterio practico.",
+          "outcome": "quedarte con una regla de uso y un ejemplo repetible.",
+          "route": "concepto, ejemplo y cierre.",
+          "decision": "cuando aplicar esta tecnica en tu propio repositorio."
+        }
       },
       "subtitles": [
-        { "text": "La primera tarea marca el tono de toda la sesion.", "startMs": 1000, "endMs": 5000 },
-        { "text": "Vamos a hacerla verificable.", "startMs": 5200, "endMs": 7600 }
-      ]
+        {
+          "text": "Objetivo de esta clase:",
+          "startMs": 450,
+          "endMs": 2966
+        },
+        {
+          "text": "resolver Codex Orientation 02 - First Task con criterio practico.",
+          "startMs": 3011,
+          "endMs": 8263
+        },
+        {
+          "text": "Al final debes poder quedarte con una regla de uso y un ejemplo repetible.",
+          "startMs": 8308,
+          "endMs": 13104
+        },
+        {
+          "text": "La ruta sera: concepto, ejemplo y cierre.",
+          "startMs": 13149,
+          "endMs": 17057
+        },
+        {
+          "text": "Durante el video mira esta decision:",
+          "startMs": 17102,
+          "endMs": 20050
+        },
+        {
+          "text": "cuando aplicar esta tecnica en tu propio repositorio.",
+          "startMs": 18776,
+          "endMs": 22420
+        }
+      ],
+      "voiceover": [
+        "Objetivo de esta clase:",
+        "resolver Codex Orientation 02 - First Task con criterio practico.",
+        "Al final debes poder quedarte con una regla de uso y un ejemplo repetible.",
+        "La ruta sera: concepto, ejemplo y cierre.",
+        "Durante el video mira esta decision:",
+        "cuando aplicar esta tecnica en tu propio repositorio."
+      ],
+      "blueprintAction": {
+        "learningRubric": {
+          "learns": "Reconoce por que \"Tu primera tarea\" necesita evidencia y no solo respuesta.",
+          "does": "Formula una peticion verificable con limite de alcance.",
+          "decides": "Convertir la duda en material de tutoria si se repite.",
+          "vendor": "codex",
+          "usefulnessScore": 82,
+          "memoryCheck": "Puede nombrar el riesgo principal sin mirar la slide.",
+          "productionPass": "2000-final-direction"
+        }
+      },
+      "production": {
+        "audioVersion": "audio-prod-v2-2026-05-18",
+        "voiceProfileId": "codexNarrator",
+        "voice": "es-ES-AlvaroNeural",
+        "rate": "+8%",
+        "pitch": "+0Hz",
+        "energy": "precisa",
+        "emphasis": "plan, patch, test y coste",
+        "pauseMs": 180,
+        "role": "narrator",
+        "reviewRubric": {
+          "learns": "Reconoce por que \"Tu primera tarea\" necesita evidencia y no solo respuesta.",
+          "does": "Formula una peticion verificable con limite de alcance.",
+          "decides": "Convertir la duda en material de tutoria si se repite.",
+          "memoryCheck": "Puede nombrar el riesgo principal sin mirar la slide."
+        },
+        "prosodyNotes": {
+          "pace": "+8%",
+          "pause": "180ms antes de la decision",
+          "emphasis": "plan, patch, test y coste",
+          "energy": "precisa"
+        },
+        "pronunciationPass": "spain-voice-units-v1"
+      }
     },
     {
       "id": "linear",
       "name": "Briefing",
-      "startMs": 8000,
-      "endMs": 42000,
+      "startMs": 22500,
+      "endMs": 45000,
       "type": "linear",
       "content": {
         "ticketId": "CX-001",
@@ -44,58 +137,278 @@
         "priority": "Medium",
         "assignee": "Codex",
         "status": "Ready",
-        "labels": ["codex", "bug", "training"],
-        "description": "Objetivo: diagnosticar y corregir un fallo de login reproducible.\n\nContexto: el repo tiene tests y una pantalla de autenticacion.\n\nRestricciones: no reescribir autenticacion completa, no tocar estilos no relacionados, no cambiar contrato de API sin justificar.\n\nCriterio de cierre: explicar causa raiz, aplicar patch minimo, ejecutar test relevante o documentar bloqueo."
+        "labels": [
+          "codex",
+          "bug",
+          "training"
+        ],
+        "description": "Objetivo: diagnosticar y corregir un fallo de login reproducible. Contexto: el repo tiene tests y una pantalla de autenticacion. Restricciones: no reescribir autenticacion completa, no tocar estilos no relacionados, no cambiar contrato de A P I sin justificar. Criterio de cierre: explicar causa raiz, aplicar patch minimo, ejecutar test relevante o documentar bloqueo."
       },
       "subtitles": [
-        { "text": "Un briefing bueno cabe en cuatro piezas.", "startMs": 9000, "endMs": 15000 },
-        { "text": "Objetivo, contexto, restricciones y criterio de cierre.", "startMs": 15500, "endMs": 25000 },
-        { "text": "Asi Codex puede actuar sin inventar alcance.", "startMs": 25500, "endMs": 40500 }
-      ]
+        {
+          "text": "Un briefing bueno cabe en cuatro piezas.",
+          "startMs": 22950,
+          "endMs": 26162
+        },
+        {
+          "text": "Objetivo, contexto, restricciones y criterio de cierre.",
+          "startMs": 26342,
+          "endMs": 30802
+        },
+        {
+          "text": "Asi Codex puede actuar sin inventar alcance.",
+          "startMs": 30982,
+          "endMs": 34602
+        }
+      ],
+      "voiceover": [
+        "Un briefing bueno cabe en cuatro piezas.",
+        "Objetivo, contexto, restricciones y criterio de cierre.",
+        "Asi Codex puede actuar sin inventar alcance."
+      ],
+      "blueprintAction": {
+        "learningRubric": {
+          "learns": "Distingue decision humana de ejecucion automatizada en Codex.",
+          "does": "Comprueba la salida contra prueba, owner o captura.",
+          "decides": "Aceptar solo si la evidencia queda visible para otra persona.",
+          "vendor": "codex",
+          "usefulnessScore": 84,
+          "memoryCheck": "Puede repetir el prompt inicial con criterio de cierre.",
+          "productionPass": "2000-final-direction"
+        }
+      },
+      "production": {
+        "audioVersion": "audio-prod-v2-2026-05-18",
+        "voiceProfileId": "codexNarrator",
+        "voice": "es-ES-AlvaroNeural",
+        "rate": "+8%",
+        "pitch": "+0Hz",
+        "energy": "precisa",
+        "emphasis": "plan, patch, test y coste",
+        "pauseMs": 180,
+        "role": "narrator",
+        "reviewRubric": {
+          "learns": "Distingue decision humana de ejecucion automatizada en Codex.",
+          "does": "Comprueba la salida contra prueba, owner o captura.",
+          "decides": "Aceptar solo si la evidencia queda visible para otra persona.",
+          "memoryCheck": "Puede repetir el prompt inicial con criterio de cierre."
+        },
+        "prosodyNotes": {
+          "pace": "+8%",
+          "pause": "180ms antes de la decision",
+          "emphasis": "plan, patch, test y coste",
+          "energy": "precisa"
+        },
+        "pronunciationPass": "spain-voice-units-v1"
+      }
     },
     {
       "id": "coding",
       "name": "Prompt",
-      "startMs": 42000,
-      "endMs": 70000,
+      "startMs": 45000,
+      "endMs": 67500,
       "type": "coding",
       "content": {
         "tag": "Prompt operativo",
         "filename": "prompts/first-task.md",
-        "code": "Objetivo: arreglar el bug de login descrito en CX-001.\\n\\nContexto:\\n- Antes de editar, lee las rutas relevantes.\\n- Cita archivos y comandos que uses.\\n\\nRestricciones:\\n- No reescribas autenticacion completa.\\n- No toques estilos no relacionados.\\n- Mantén el diff pequeno.\\n\\nCierre:\\n- Explica causa raiz.\\n- Aplica patch minimo.\\n- Ejecuta test relevante o explica bloqueo.",
+        "code": "Objetivo: arreglar el bug de login descrito en CX-001.\\n\\nContexto:\\n- Antes de editar, lee las rutas relevantes.\\n- Cita archivos y comandos que uses.\\n\\nRestricciones:\\n- No reescribas autenticacion completa.\\n- No toques estilos no relacionados.\\n- Mantén el diff pequeno.\\n\\nCierre:\\n- Explica causa raiz.\\n- Aplica patch minimo.\\n- Ejecuta test relevante o explica bloqueo. # Cierre operativo done_when: evidencia + coste + owner stop_rule: parar si no hay senal nueva",
         "commentary": [
-          { "atLine": 1, "text": "Objetivo claro" },
-          { "atLine": 4, "text": "Contexto con evidencia" },
-          { "atLine": 9, "text": "Limites de alcance" },
-          { "atLine": 14, "text": "Definicion de terminado" }
+          {
+            "atLine": 1,
+            "text": "Objetivo claro"
+          },
+          {
+            "atLine": 4,
+            "text": "Contexto con evidencia"
+          },
+          {
+            "atLine": 9,
+            "text": "Limites de alcance"
+          },
+          {
+            "atLine": 14,
+            "text": "Definicion de terminado"
+          }
         ]
       },
       "subtitles": [
-        { "text": "Este prompt no es largo por gusto.", "startMs": 43000, "endMs": 47000 },
-        { "text": "Es largo donde importa: restricciones y verificacion.", "startMs": 47500, "endMs": 56500 },
-        { "text": "Codex ahora sabe como cerrar.", "startMs": 57000, "endMs": 69000 }
-      ]
+        {
+          "text": "Este prompt no es largo por gusto.",
+          "startMs": 45450,
+          "endMs": 48350
+        },
+        {
+          "text": "Es largo donde importa: restricciones y verificacion.",
+          "startMs": 48530,
+          "endMs": 52702
+        },
+        {
+          "text": "Codex ahora sabe como cerrar.",
+          "startMs": 52882,
+          "endMs": 55734
+        }
+      ],
+      "voiceover": [
+        "Este prompt no es largo por gusto.",
+        "Es largo donde importa: restricciones y verificacion.",
+        "Codex ahora sabe como cerrar."
+      ],
+      "blueprintAction": {
+        "learningRubric": {
+          "learns": "Ubica coste, permiso y criterio antes de aceptar la salida.",
+          "does": "Registra el criterio que permitiria repetir el paso sin instructor.",
+          "decides": "Seguir, pedir mas contexto, escalar modelo o bloquear.",
+          "vendor": "codex",
+          "usefulnessScore": 86,
+          "memoryCheck": "Puede explicar el paso en una frase de menos de 20 segundos.",
+          "productionPass": "2000-final-direction"
+        }
+      },
+      "production": {
+        "audioVersion": "audio-prod-v2-2026-05-18",
+        "voiceProfileId": "codexNarrator",
+        "voice": "es-ES-AlvaroNeural",
+        "rate": "+8%",
+        "pitch": "+0Hz",
+        "energy": "precisa",
+        "emphasis": "plan, patch, test y coste",
+        "pauseMs": 180,
+        "role": "narrator",
+        "reviewRubric": {
+          "learns": "Ubica coste, permiso y criterio antes de aceptar la salida.",
+          "does": "Registra el criterio que permitiria repetir el paso sin instructor.",
+          "decides": "Seguir, pedir mas contexto, escalar modelo o bloquear.",
+          "memoryCheck": "Puede explicar el paso en una frase de menos de 20 segundos."
+        },
+        "prosodyNotes": {
+          "pace": "+8%",
+          "pause": "180ms antes de la decision",
+          "emphasis": "plan, patch, test y coste",
+          "energy": "precisa"
+        },
+        "pronunciationPass": "spain-voice-units-v1"
+      }
     },
     {
       "id": "finale",
       "name": "Cierre",
-      "startMs": 70000,
+      "startMs": 67500,
       "endMs": 90000,
       "type": "finale",
       "content": {
         "title": "Una tarea lista para Codex",
         "summary": [
-          { "number": "01", "label": "Objetivo", "body": "Que queremos conseguir." },
-          { "number": "02", "label": "Contexto", "body": "Que debe mirar antes de tocar." },
-          { "number": "03", "label": "Restricciones", "body": "Que no debe cambiar." },
-          { "number": "04", "label": "Cierre", "body": "Como sabemos que esta terminado." }
+          {
+            "number": "01",
+            "label": "Objetivo",
+            "body": "Que queremos conseguir."
+          },
+          {
+            "number": "02",
+            "label": "Contexto",
+            "body": "Que debe mirar antes de tocar."
+          },
+          {
+            "number": "03",
+            "label": "Restricciones",
+            "body": "Que no debe cambiar."
+          },
+          {
+            "number": "04",
+            "label": "Cierre",
+            "body": "Como sabemos que esta terminado."
+          }
         ],
         "cta": "Ejercicio asociado: cx-b02-prompt-4-piezas."
       },
       "subtitles": [
-        { "text": "La calidad de Codex empieza en la calidad de la tarea.", "startMs": 70500, "endMs": 82000 },
-        { "text": "Briefing bueno, menos reintentos.", "startMs": 82500, "endMs": 89500 }
-      ]
+        {
+          "text": "La calidad de Codex empieza en la calidad de la tarea.",
+          "startMs": 67950,
+          "endMs": 71906
+        },
+        {
+          "text": "Briefing bueno, menos reintentos.",
+          "startMs": 71951,
+          "endMs": 75259
+        },
+        {
+          "text": "Evidencia minuto 1:",
+          "startMs": 75304,
+          "endMs": 77796
+        },
+        {
+          "text": "hay una salida que otro perfil puede revisar sin rehacer el contexto.",
+          "startMs": 77841,
+          "endMs": 82589
+        },
+        {
+          "text": "Accion minuto 1: comparar la respuesta con el criterio de cierre",
+          "startMs": 82634,
+          "endMs": 87382
+        },
+        {
+          "text": "no con la sensacion de velocidad.",
+          "startMs": 87044,
+          "endMs": 89920
+        },
+        {
+          "text": "no con la sensacion de velocidad. (Codex, minuto 1, paso 27)",
+          "startMs": 83396,
+          "endMs": 89920
+        }
+      ],
+      "voiceover": [
+        "La calidad de Codex empieza en la calidad de la tarea.",
+        "Briefing bueno, menos reintentos.",
+        "Evidencia minuto 1:",
+        "hay una salida que otro perfil puede revisar sin rehacer el contexto.",
+        "Accion minuto 1: comparar la respuesta con el criterio de cierre",
+        "no con la sensacion de velocidad.",
+        "no con la sensacion de velocidad. (Codex, minuto 1, paso 27)"
+      ],
+      "blueprintAction": {
+        "learningRubric": {
+          "learns": "Reconoce por que \"Una tarea lista para Codex\" necesita evidencia y no solo respuesta.",
+          "does": "Formula una peticion verificable con limite de alcance.",
+          "decides": "Convertir la duda en material de tutoria si se repite.",
+          "vendor": "codex",
+          "usefulnessScore": 88,
+          "memoryCheck": "Puede nombrar el riesgo principal sin mirar la slide.",
+          "productionPass": "2000-final-direction"
+        }
+      },
+      "production": {
+        "audioVersion": "audio-prod-v2-2026-05-18",
+        "voiceProfileId": "codexReflection",
+        "voice": "es-ES-AlvaroNeural",
+        "rate": "+3%",
+        "pitch": "+0Hz",
+        "energy": "reflexiva",
+        "emphasis": "riesgo, permiso y evidencia",
+        "pauseMs": 260,
+        "role": "reflection",
+        "reviewRubric": {
+          "learns": "Reconoce por que \"Una tarea lista para Codex\" necesita evidencia y no solo respuesta.",
+          "does": "Formula una peticion verificable con limite de alcance.",
+          "decides": "Convertir la duda en material de tutoria si se repite.",
+          "memoryCheck": "Puede nombrar el riesgo principal sin mirar la slide."
+        },
+        "prosodyNotes": {
+          "pace": "+3%",
+          "pause": "260ms antes de la decision",
+          "emphasis": "riesgo, permiso y evidencia",
+          "energy": "reflexiva"
+        },
+        "pronunciationPass": "spain-voice-units-v1"
+      }
     }
-  ]
+  ],
+  "production": {
+    "audioProductionVersion": "audio-prod-v2-2026-05-18",
+    "productionPass": "2000-final-direction",
+    "vendor": "codex",
+    "narrativePass": "teacher-contract-v1",
+    "pronunciationPass": "spain-voice-units-v1"
+  }
 }

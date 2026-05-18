@@ -1,0 +1,60 @@
+1
+00:00:00,450 --> 00:00:02,990
+Objetivo de esta clase:
+
+2
+00:00:03,170 --> 00:00:08,350
+resolver Copilot Basic 02 - Ask Edit Agent con criterio practico.
+
+3
+00:00:08,530 --> 00:00:13,374
+Al final debes poder quedarte con una regla de uso y un ejemplo repetible.
+
+4
+00:00:13,554 --> 00:00:17,510
+La ruta sera: concepto, ejemplo y cierre.
+
+5
+00:00:17,690 --> 00:00:20,662
+Durante el video mira esta decision:
+
+6
+00:00:20,842 --> 00:00:24,534
+cuando aplicar esta tecnica en tu propio repositorio.
+
+7
+00:00:30,450 --> 00:00:32,966
+Ask sirve para entender.
+
+8
+00:00:33,146 --> 00:00:36,358
+Edit sirve para cambiar algo acotado.
+
+9
+00:00:36,538 --> 00:00:40,782
+Agent solo merece la pena si hay plan, alcance y cierre.
+
+10
+00:01:00,450 --> 00:01:04,430
+El modo correcto ahorra tiempo, coste y sustos.
+
+11
+00:01:04,610 --> 00:01:07,078
+Evidencia minuto 1:
+
+12
+00:01:07,258 --> 00:01:11,958
+hay una salida que otro perfil puede revisar sin rehacer el contexto.
+
+13
+00:01:12,138 --> 00:01:16,838
+Accion minuto 1: comparar la respuesta con el criterio de cierre
+
+14
+00:01:17,018 --> 00:01:19,870
+no con la sensacion de velocidad.
+
+15
+00:01:20,050 --> 00:01:26,214
+no con la sensacion de velocidad. (Copilot, minuto 1, paso 13)
+

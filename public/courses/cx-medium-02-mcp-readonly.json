@@ -1,6 +1,6 @@
 {
   "id": "cx-medium-02-mcp-readonly",
-  "title": "Codex Medium 02 - MCP Readonly",
+  "title": "Codex Medium 02 - M C P Readonly",
   "description": "Uso de MCPs y conectores en modo seguro, con evidencia y politica de equipo.",
   "template": "technical",
   "durationPreset": 5,
@@ -9,39 +9,126 @@
   "author": "AI Practice Hub",
   "createdAt": "2026-05-07T00:00:00.000Z",
   "chapters": [
-    { "id": "start", "label": "MCP", "startMs": 0 },
-    { "id": "concept", "label": "Contexto", "startMs": 8000 },
-    { "id": "inventory", "label": "Inventario", "startMs": 42000 },
-    { "id": "close", "label": "Cierre", "startMs": 70000 }
+    {
+      "id": "start",
+      "label": "M C P",
+      "startMs": 0
+    },
+    {
+      "id": "concept",
+      "label": "Contexto",
+      "startMs": 22500
+    },
+    {
+      "id": "inventory",
+      "label": "Inventario",
+      "startMs": 42000
+    },
+    {
+      "id": "close",
+      "label": "Cierre",
+      "startMs": 70000
+    }
   ],
   "scenes": [
     {
       "id": "title",
       "name": "Apertura",
       "startMs": 0,
-      "endMs": 8000,
+      "endMs": 22500,
       "type": "title",
       "content": {
-        "title": "MCP read-only",
-        "subtitle": "Contexto externo sin acciones peligrosas.",
-        "tag": "Codex / MCP"
+        "title": "M C P read-only",
+        "subtitle": "Objetivo: resolver Codex Medium 02 - M C P Readonly con criterio practico.",
+        "tag": "Codex / M C P",
+        "narrativeContract": {
+          "objective": "resolver Codex Medium 02 - M C P Readonly con criterio practico.",
+          "outcome": "quedarte con una regla de uso y un ejemplo repetible.",
+          "route": "concepto, ejemplo y cierre.",
+          "decision": "cuando aplicar esta tecnica en tu propio repositorio."
+        }
       },
       "subtitles": [
-        { "text": "Un MCP amplia contexto.", "startMs": 1000, "endMs": 3500 },
-        { "text": "Pero contexto y permisos deben separarse.", "startMs": 3800, "endMs": 7600 }
-      ]
+        {
+          "text": "Objetivo de esta clase: resolver Codex Medium 02 - M C P Readonly con criterio practico.",
+          "startMs": 450,
+          "endMs": 7070
+        },
+        {
+          "text": "Al final debes poder quedarte con una regla de uso y un ejemplo repetible.",
+          "startMs": 7115,
+          "endMs": 11911
+        },
+        {
+          "text": "La ruta sera: concepto, ejemplo y cierre.",
+          "startMs": 11956,
+          "endMs": 15864
+        },
+        {
+          "text": "Durante el video mira esta decision:",
+          "startMs": 15909,
+          "endMs": 18857
+        },
+        {
+          "text": "cuando aplicar esta tecnica en tu propio repositorio.",
+          "startMs": 18776,
+          "endMs": 22420
+        }
+      ],
+      "voiceover": [
+        "Objetivo de esta clase: resolver Codex Medium 02 - M C P Readonly con criterio practico.",
+        "Al final debes poder quedarte con una regla de uso y un ejemplo repetible.",
+        "La ruta sera: concepto, ejemplo y cierre.",
+        "Durante el video mira esta decision:",
+        "cuando aplicar esta tecnica en tu propio repositorio."
+      ],
+      "blueprintAction": {
+        "learningRubric": {
+          "learns": "Reconoce por que \"M C P read-only\" necesita evidencia y no solo respuesta.",
+          "does": "Formula una peticion verificable con limite de alcance.",
+          "decides": "Convertir la duda en material de tutoria si se repite.",
+          "vendor": "codex",
+          "usefulnessScore": 82,
+          "memoryCheck": "Puede nombrar el riesgo principal sin mirar la slide.",
+          "productionPass": "2000-final-direction"
+        }
+      },
+      "production": {
+        "audioVersion": "audio-prod-v2-2026-05-18",
+        "voiceProfileId": "codexNarrator",
+        "voice": "es-ES-AlvaroNeural",
+        "rate": "+8%",
+        "pitch": "+0Hz",
+        "energy": "precisa",
+        "emphasis": "plan, patch, test y coste",
+        "pauseMs": 180,
+        "role": "narrator",
+        "reviewRubric": {
+          "learns": "Reconoce por que \"M C P read-only\" necesita evidencia y no solo respuesta.",
+          "does": "Formula una peticion verificable con limite de alcance.",
+          "decides": "Convertir la duda en material de tutoria si se repite.",
+          "memoryCheck": "Puede nombrar el riesgo principal sin mirar la slide."
+        },
+        "prosodyNotes": {
+          "pace": "+8%",
+          "pause": "180ms antes de la decision",
+          "emphasis": "plan, patch, test y coste",
+          "energy": "precisa"
+        },
+        "pronunciationPass": "spain-voice-units-v1"
+      }
     },
     {
       "id": "concept",
       "name": "Contexto controlado",
-      "startMs": 8000,
-      "endMs": 42000,
+      "startMs": 22500,
+      "endMs": 45000,
       "type": "concept",
       "content": {
         "tag": "Enterprise context",
         "title": "Read-only es el modo docente por defecto",
-        "body": "Para formacion, un conector debe responder a una pregunta concreta: que incertidumbre reduce? Si no reduce incertidumbre, solo anade coste y riesgo.\n\nLa regla: conectar para leer, citar evidencia y decidir; no para ejecutar acciones de negocio durante el aprendizaje.",
-        "highlight": "Un MCP util debe tener owner, alcance, permisos y retirada.",
+        "body": "Para formacion, un conector debe responder a una pregunta concreta: que incertidumbre reduce? Si no reduce incertidumbre, solo anade coste y riesgo. La regla: conectar para leer, citar evidencia y decidir; no para ejecutar acciones de negocio durante el aprendizaje.",
+        "highlight": "Un M C P util debe tener owner, alcance, permisos y retirada.",
         "points": [
           "Fuente: que sistema lee.",
           "Permiso: que puede hacer y que no.",
@@ -50,52 +137,238 @@
         ]
       },
       "subtitles": [
-        { "text": "Read-only debe ser el default en aula.", "startMs": 9000, "endMs": 16000 },
-        { "text": "El valor esta en reducir incertidumbre.", "startMs": 16500, "endMs": 26000 },
-        { "text": "No en conectar cosas por conectar.", "startMs": 26500, "endMs": 40500 }
-      ]
+        {
+          "text": "Read-only debe ser el default en aula.",
+          "startMs": 22950,
+          "endMs": 26090
+        },
+        {
+          "text": "El valor esta en reducir incertidumbre.",
+          "startMs": 26270,
+          "endMs": 29458
+        },
+        {
+          "text": "No en conectar cosas por conectar.",
+          "startMs": 29638,
+          "endMs": 32586
+        }
+      ],
+      "voiceover": [
+        "Read-only debe ser el default en aula.",
+        "El valor esta en reducir incertidumbre.",
+        "No en conectar cosas por conectar."
+      ],
+      "blueprintAction": {
+        "learningRubric": {
+          "learns": "Distingue decision humana de ejecucion automatizada en Codex.",
+          "does": "Comprueba la salida contra prueba, owner o captura.",
+          "decides": "Aceptar solo si la evidencia queda visible para otra persona.",
+          "vendor": "codex",
+          "usefulnessScore": 84,
+          "memoryCheck": "Puede repetir el prompt inicial con criterio de cierre.",
+          "productionPass": "2000-final-direction"
+        }
+      },
+      "production": {
+        "audioVersion": "audio-prod-v2-2026-05-18",
+        "voiceProfileId": "codexNarrator",
+        "voice": "es-ES-AlvaroNeural",
+        "rate": "+8%",
+        "pitch": "+0Hz",
+        "energy": "precisa",
+        "emphasis": "plan, patch, test y coste",
+        "pauseMs": 180,
+        "role": "narrator",
+        "reviewRubric": {
+          "learns": "Distingue decision humana de ejecucion automatizada en Codex.",
+          "does": "Comprueba la salida contra prueba, owner o captura.",
+          "decides": "Aceptar solo si la evidencia queda visible para otra persona.",
+          "memoryCheck": "Puede repetir el prompt inicial con criterio de cierre."
+        },
+        "prosodyNotes": {
+          "pace": "+8%",
+          "pause": "180ms antes de la decision",
+          "emphasis": "plan, patch, test y coste",
+          "energy": "precisa"
+        },
+        "pronunciationPass": "spain-voice-units-v1"
+      }
     },
     {
       "id": "linear",
       "name": "Inventario",
-      "startMs": 42000,
-      "endMs": 70000,
+      "startMs": 45000,
+      "endMs": 67500,
       "type": "linear",
       "content": {
-        "ticketId": "MCP-INV",
+        "ticketId": "M C P-INV",
         "title": "Inventario de MCPs permitidos en formacion",
         "project": "AI Practice Hub",
         "priority": "High",
         "assignee": "Platform Team",
         "status": "Draft",
-        "labels": ["mcp", "security", "codex"],
-        "description": "Campos obligatorios por conector:\n- Nombre y owner.\n- Fuente de datos.\n- Permisos exactos.\n- Datos sensibles potenciales.\n- Casos de uso docentes.\n- Casos prohibidos.\n- Caducidad o revision.\n\nDecision: todo alumno empieza en read-only salvo excepcion aprobada."
+        "labels": [
+          "mcp",
+          "security",
+          "codex"
+        ],
+        "description": "Campos obligatorios por conector: - Nombre y owner. - Fuente de datos. - Permisos exactos. - Datos sensibles potenciales. - Casos de uso docentes. - Casos prohibidos. - Caducidad o revision. Decision: todo alumno empieza en read-only salvo excepcion aprobada."
       },
       "subtitles": [
-        { "text": "El inventario hace visible el riesgo.", "startMs": 43000, "endMs": 50000 },
-        { "text": "Owner, fuente, permiso y uso permitido.", "startMs": 50500, "endMs": 61000 },
-        { "text": "Sin inventario, no hay gobierno.", "startMs": 61500, "endMs": 69000 }
-      ]
+        {
+          "text": "El inventario hace visible el riesgo.",
+          "startMs": 45450,
+          "endMs": 48542
+        },
+        {
+          "text": "Owner, fuente, permiso y uso permitido.",
+          "startMs": 48722,
+          "endMs": 52582
+        },
+        {
+          "text": "Sin inventario, no hay gobierno.",
+          "startMs": 52762,
+          "endMs": 55854
+        }
+      ],
+      "voiceover": [
+        "El inventario hace visible el riesgo.",
+        "Owner, fuente, permiso y uso permitido.",
+        "Sin inventario, no hay gobierno."
+      ],
+      "blueprintAction": {
+        "learningRubric": {
+          "learns": "Ubica coste, permiso y criterio antes de aceptar la salida.",
+          "does": "Registra el criterio que permitiria repetir el paso sin instructor.",
+          "decides": "Seguir, pedir mas contexto, escalar modelo o bloquear.",
+          "vendor": "codex",
+          "usefulnessScore": 86,
+          "memoryCheck": "Puede explicar el paso en una frase de menos de 20 segundos.",
+          "productionPass": "2000-final-direction"
+        }
+      },
+      "production": {
+        "audioVersion": "audio-prod-v2-2026-05-18",
+        "voiceProfileId": "codexNarrator",
+        "voice": "es-ES-AlvaroNeural",
+        "rate": "+8%",
+        "pitch": "+0Hz",
+        "energy": "precisa",
+        "emphasis": "plan, patch, test y coste",
+        "pauseMs": 180,
+        "role": "narrator",
+        "reviewRubric": {
+          "learns": "Ubica coste, permiso y criterio antes de aceptar la salida.",
+          "does": "Registra el criterio que permitiria repetir el paso sin instructor.",
+          "decides": "Seguir, pedir mas contexto, escalar modelo o bloquear.",
+          "memoryCheck": "Puede explicar el paso en una frase de menos de 20 segundos."
+        },
+        "prosodyNotes": {
+          "pace": "+8%",
+          "pause": "180ms antes de la decision",
+          "emphasis": "plan, patch, test y coste",
+          "energy": "precisa"
+        },
+        "pronunciationPass": "spain-voice-units-v1"
+      }
     },
     {
       "id": "finale",
       "name": "Cierre",
-      "startMs": 70000,
+      "startMs": 67500,
       "endMs": 90000,
       "type": "finale",
       "content": {
-        "title": "MCP con criterio",
+        "title": "M C P con criterio",
         "summary": [
-          { "number": "01", "label": "Fuente", "body": "Que lee exactamente." },
-          { "number": "02", "label": "Permiso", "body": "Que acciones puede hacer." },
-          { "number": "03", "label": "Evidencia", "body": "Que dato justifica la respuesta." }
+          {
+            "number": "01",
+            "label": "Fuente",
+            "body": "Que lee exactamente."
+          },
+          {
+            "number": "02",
+            "label": "Permiso",
+            "body": "Que acciones puede hacer."
+          },
+          {
+            "number": "03",
+            "label": "Evidencia",
+            "body": "Que dato justifica la respuesta."
+          }
         ],
         "cta": "Ejercicio asociado: cx-m03-mcp-readonly."
       },
       "subtitles": [
-        { "text": "Conectar contexto no significa abrir acciones.", "startMs": 70500, "endMs": 80500 },
-        { "text": "Read-only primero.", "startMs": 81000, "endMs": 89500 }
-      ]
+        {
+          "text": "Conectar contexto no significa abrir acciones.",
+          "startMs": 67950,
+          "endMs": 71810
+        },
+        {
+          "text": "Read-only primero.",
+          "startMs": 71990,
+          "endMs": 74218
+        },
+        {
+          "text": "Evidencia minuto 1: diff minimo, test verde y coste registrado.",
+          "startMs": 74398,
+          "endMs": 79434
+        },
+        {
+          "text": "Accion minuto 1: parar si \"M C P con criterio\" no produce evidencia nueva.",
+          "startMs": 79614,
+          "endMs": 85298
+        }
+      ],
+      "voiceover": [
+        "Conectar contexto no significa abrir acciones.",
+        "Read-only primero.",
+        "Evidencia minuto 1: diff minimo, test verde y coste registrado.",
+        "Accion minuto 1: parar si \"M C P con criterio\" no produce evidencia nueva."
+      ],
+      "blueprintAction": {
+        "learningRubric": {
+          "learns": "Reconoce por que \"M C P con criterio\" necesita evidencia y no solo respuesta.",
+          "does": "Formula una peticion verificable con limite de alcance.",
+          "decides": "Convertir la duda en material de tutoria si se repite.",
+          "vendor": "codex",
+          "usefulnessScore": 88,
+          "memoryCheck": "Puede nombrar el riesgo principal sin mirar la slide.",
+          "productionPass": "2000-final-direction"
+        }
+      },
+      "production": {
+        "audioVersion": "audio-prod-v2-2026-05-18",
+        "voiceProfileId": "codexReflection",
+        "voice": "es-ES-AlvaroNeural",
+        "rate": "+3%",
+        "pitch": "+0Hz",
+        "energy": "reflexiva",
+        "emphasis": "riesgo, permiso y evidencia",
+        "pauseMs": 260,
+        "role": "reflection",
+        "reviewRubric": {
+          "learns": "Reconoce por que \"M C P con criterio\" necesita evidencia y no solo respuesta.",
+          "does": "Formula una peticion verificable con limite de alcance.",
+          "decides": "Convertir la duda en material de tutoria si se repite.",
+          "memoryCheck": "Puede nombrar el riesgo principal sin mirar la slide."
+        },
+        "prosodyNotes": {
+          "pace": "+3%",
+          "pause": "260ms antes de la decision",
+          "emphasis": "riesgo, permiso y evidencia",
+          "energy": "reflexiva"
+        },
+        "pronunciationPass": "spain-voice-units-v1"
+      }
     }
-  ]
+  ],
+  "production": {
+    "audioProductionVersion": "audio-prod-v2-2026-05-18",
+    "productionPass": "2000-final-direction",
+    "vendor": "codex",
+    "narrativePass": "teacher-contract-v1",
+    "pronunciationPass": "spain-voice-units-v1"
+  }
 }

@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-08T11:30:21.917Z",
+  "generatedAt": "2026-05-18T16:52:58.423Z",
   "status": "passed",
   "checkedVideos": 44,
   "longVideos": 8,
@@ -41,11 +41,11 @@
       ],
       "missingTypes": [],
       "subtitleMissing": 0,
-      "voiceMissing": 3,
+      "voiceMissing": 0,
       "actionMissing": 3,
       "sceneGaps": [],
       "chapterIssues": [],
-      "status": "needs-review"
+      "status": "passed"
     },
     {
       "slug": "cl-advanced-02-plugin-action",
@@ -62,11 +62,11 @@
       ],
       "missingTypes": [],
       "subtitleMissing": 0,
-      "voiceMissing": 3,
+      "voiceMissing": 0,
       "actionMissing": 3,
       "sceneGaps": [],
       "chapterIssues": [],
-      "status": "needs-review"
+      "status": "passed"
     },
     {
       "slug": "cl-basic-01-claude-md",
@@ -83,11 +83,11 @@
       ],
       "missingTypes": [],
       "subtitleMissing": 0,
-      "voiceMissing": 3,
+      "voiceMissing": 0,
       "actionMissing": 3,
       "sceneGaps": [],
       "chapterIssues": [],
-      "status": "needs-review"
+      "status": "passed"
     },
     {
       "slug": "cl-basic-02-compact-context",
@@ -104,38 +104,46 @@
       ],
       "missingTypes": [],
       "subtitleMissing": 0,
-      "voiceMissing": 3,
+      "voiceMissing": 0,
       "actionMissing": 3,
       "sceneGaps": [],
       "chapterIssues": [],
-      "status": "needs-review"
+      "status": "passed"
     },
     {
       "slug": "cl-masterclass-10m-claude-operating-model",
       "file": "cl-masterclass-10m-claude-operating-model.json",
-      "title": "Claude Masterclass 10m - Operating Model",
+      "title": "Claude Masterclass 10 minutos - Operating Model",
       "durationMs": 600000,
       "durationMin": 10,
-      "sceneCount": 10,
+      "sceneCount": 24,
       "chapterCount": 5,
       "types": [
-        "coding",
+        "branch",
         "compare",
         "concept",
-        "error",
+        "cost",
+        "decision",
+        "diff",
         "finale",
         "linear",
-        "preview",
+        "media-break",
+        "pause",
+        "prompt",
+        "quiz",
+        "risk",
+        "streaming",
+        "terminal",
         "thinking",
         "title"
       ],
       "missingTypes": [],
       "subtitleMissing": 0,
-      "voiceMissing": 10,
-      "actionMissing": 10,
+      "voiceMissing": 0,
+      "actionMissing": 11,
       "sceneGaps": [],
       "chapterIssues": [],
-      "status": "needs-review"
+      "status": "passed"
     },
     {
       "slug": "cl-operator-01-first-skill",
@@ -152,11 +160,11 @@
       ],
       "missingTypes": [],
       "subtitleMissing": 0,
-      "voiceMissing": 3,
+      "voiceMissing": 0,
       "actionMissing": 3,
       "sceneGaps": [],
       "chapterIssues": [],
-      "status": "needs-review"
+      "status": "passed"
     },
     {
       "slug": "cl-operator-02-subagent-explorer",
@@ -173,16 +181,16 @@
       ],
       "missingTypes": [],
       "subtitleMissing": 0,
-      "voiceMissing": 3,
+      "voiceMissing": 0,
       "actionMissing": 3,
       "sceneGaps": [],
       "chapterIssues": [],
-      "status": "needs-review"
+      "status": "passed"
     },
     {
       "slug": "cl-operator-03-mcp-project",
       "file": "cl-operator-03-mcp-project.json",
-      "title": "Claude Operator 03 - MCP Project",
+      "title": "Claude Operator 03 - M C P Project",
       "durationMs": 90000,
       "durationMin": 2,
       "sceneCount": 3,
@@ -194,11 +202,11 @@
       ],
       "missingTypes": [],
       "subtitleMissing": 0,
-      "voiceMissing": 3,
+      "voiceMissing": 0,
       "actionMissing": 3,
       "sceneGaps": [],
       "chapterIssues": [],
-      "status": "needs-review"
+      "status": "passed"
     },
     {
       "slug": "cl-orientation-01-claude-md",
@@ -215,11 +223,11 @@
       ],
       "missingTypes": [],
       "subtitleMissing": 0,
-      "voiceMissing": 3,
+      "voiceMissing": 0,
       "actionMissing": 3,
       "sceneGaps": [],
       "chapterIssues": [],
-      "status": "needs-review"
+      "status": "passed"
     },
     {
       "slug": "cl-orientation-02-memory-vs-instructions",
@@ -236,11 +244,11 @@
       ],
       "missingTypes": [],
       "subtitleMissing": 0,
-      "voiceMissing": 3,
+      "voiceMissing": 0,
       "actionMissing": 3,
       "sceneGaps": [],
       "chapterIssues": [],
-      "status": "needs-review"
+      "status": "passed"
     },
     {
       "slug": "cl-orientation-03-cost-context",
@@ -257,16 +265,16 @@
       ],
       "missingTypes": [],
       "subtitleMissing": 0,
-      "voiceMissing": 3,
+      "voiceMissing": 0,
       "actionMissing": 3,
       "sceneGaps": [],
       "chapterIssues": [],
-      "status": "needs-review"
+      "status": "passed"
     },
     {
       "slug": "cl-sdk-01-agent-sdk",
       "file": "cl-sdk-01-agent-sdk.json",
-      "title": "Claude SDK 01 - Agent SDK",
+      "title": "Claude S D K 01 - Agent S D K",
       "durationMs": 90000,
       "durationMin": 2,
       "sceneCount": 3,
@@ -278,16 +286,16 @@
       ],
       "missingTypes": [],
       "subtitleMissing": 0,
-      "voiceMissing": 3,
+      "voiceMissing": 0,
       "actionMissing": 3,
       "sceneGaps": [],
       "chapterIssues": [],
-      "status": "needs-review"
+      "status": "passed"
     },
     {
       "slug": "cl-sdk-02-evals-governance",
       "file": "cl-sdk-02-evals-governance.json",
-      "title": "Claude SDK 02 - Evals and Governance",
+      "title": "Claude S D K 02 - Evals and Governance",
       "durationMs": 90000,
       "durationMin": 2,
       "sceneCount": 3,
@@ -299,50 +307,26 @@
       ],
       "missingTypes": [],
       "subtitleMissing": 0,
-      "voiceMissing": 3,
-      "actionMissing": 3,
-      "sceneGaps": [],
-      "chapterIssues": [],
-      "status": "needs-review"
-    },
-    {
-      "slug": "cl-workshop-30m-memory-to-hook",
-      "file": "cl-workshop-30m-memory-to-hook.json",
-      "title": "Claude Workshop 30m - Memory to Hook",
-      "durationMs": 1800000,
-      "durationMin": 30,
-      "sceneCount": 24,
-      "chapterCount": 5,
-      "types": [
-        "decision",
-        "pr-review",
-        "prompt",
-        "quiz",
-        "risk",
-        "streaming",
-        "terminal"
-      ],
-      "missingTypes": [],
-      "subtitleMissing": 0,
       "voiceMissing": 0,
-      "actionMissing": 0,
+      "actionMissing": 3,
       "sceneGaps": [],
       "chapterIssues": [],
       "status": "passed"
     },
     {
-      "slug": "cl-workshop-60m-memory-to-automation",
-      "file": "cl-workshop-60m-memory-to-automation.json",
-      "title": "Workshop 1h Claude - De memoria a automatizacion controlada",
-      "durationMs": 3600000,
-      "durationMin": 60,
-      "sceneCount": 48,
+      "slug": "cl-workshop-30m-memory-to-hook",
+      "file": "cl-workshop-30m-memory-to-hook.json",
+      "title": "Claude Workshop 30 minutos - Memory to Hook",
+      "durationMs": 1800000,
+      "durationMin": 30,
+      "sceneCount": 60,
       "chapterCount": 5,
       "types": [
         "branch",
         "cost",
         "decision",
         "diff",
+        "media-break",
         "pause",
         "pr-review",
         "prompt",
@@ -354,7 +338,37 @@
       "missingTypes": [],
       "subtitleMissing": 0,
       "voiceMissing": 0,
-      "actionMissing": 0,
+      "actionMissing": 8,
+      "sceneGaps": [],
+      "chapterIssues": [],
+      "status": "passed"
+    },
+    {
+      "slug": "cl-workshop-60m-memory-to-automation",
+      "file": "cl-workshop-60m-memory-to-automation.json",
+      "title": "Workshop 1 hora Claude - De memoria a automatizacion controlada",
+      "durationMs": 3600000,
+      "durationMin": 60,
+      "sceneCount": 120,
+      "chapterCount": 5,
+      "types": [
+        "branch",
+        "cost",
+        "decision",
+        "diff",
+        "media-break",
+        "pause",
+        "pr-review",
+        "prompt",
+        "quiz",
+        "risk",
+        "streaming",
+        "terminal"
+      ],
+      "missingTypes": [],
+      "subtitleMissing": 0,
+      "voiceMissing": 0,
+      "actionMissing": 14,
       "sceneGaps": [],
       "chapterIssues": [],
       "status": "passed"
@@ -368,22 +382,22 @@
       "sceneCount": 3,
       "chapterCount": 3,
       "types": [
-        "coding",
         "finale",
+        "media-break",
         "title"
       ],
       "missingTypes": [],
       "subtitleMissing": 0,
-      "voiceMissing": 3,
+      "voiceMissing": 0,
       "actionMissing": 3,
       "sceneGaps": [],
       "chapterIssues": [],
-      "status": "needs-review"
+      "status": "passed"
     },
     {
       "slug": "cp-advanced-02-mcp-code-review",
       "file": "cp-advanced-02-mcp-code-review.json",
-      "title": "Copilot Advanced 02 - MCP and Review",
+      "title": "Copilot Advanced 02 - M C P and Review",
       "durationMs": 90000,
       "durationMin": 2,
       "sceneCount": 3,
@@ -395,11 +409,11 @@
       ],
       "missingTypes": [],
       "subtitleMissing": 0,
-      "voiceMissing": 3,
+      "voiceMissing": 0,
       "actionMissing": 3,
       "sceneGaps": [],
       "chapterIssues": [],
-      "status": "needs-review"
+      "status": "passed"
     },
     {
       "slug": "cp-basic-01-inline-completion",
@@ -416,11 +430,11 @@
       ],
       "missingTypes": [],
       "subtitleMissing": 0,
-      "voiceMissing": 3,
+      "voiceMissing": 0,
       "actionMissing": 3,
       "sceneGaps": [],
       "chapterIssues": [],
-      "status": "needs-review"
+      "status": "passed"
     },
     {
       "slug": "cp-basic-02-ask-edit-agent",
@@ -437,11 +451,11 @@
       ],
       "missingTypes": [],
       "subtitleMissing": 0,
-      "voiceMissing": 3,
+      "voiceMissing": 0,
       "actionMissing": 3,
       "sceneGaps": [],
       "chapterIssues": [],
-      "status": "needs-review"
+      "status": "passed"
     },
     {
       "slug": "cp-basic-03-error-to-fix",
@@ -458,16 +472,16 @@
       ],
       "missingTypes": [],
       "subtitleMissing": 0,
-      "voiceMissing": 3,
+      "voiceMissing": 0,
       "actionMissing": 3,
       "sceneGaps": [],
       "chapterIssues": [],
-      "status": "needs-review"
+      "status": "passed"
     },
     {
       "slug": "cp-cloud-01-cloud-agent-pr",
       "file": "cp-cloud-01-cloud-agent-pr.json",
-      "title": "Copilot Cloud 01 - Agent PR",
+      "title": "Copilot Cloud 01 - Agent pull request",
       "durationMs": 90000,
       "durationMin": 2,
       "sceneCount": 3,
@@ -479,11 +493,11 @@
       ],
       "missingTypes": [],
       "subtitleMissing": 0,
-      "voiceMissing": 3,
+      "voiceMissing": 0,
       "actionMissing": 3,
       "sceneGaps": [],
       "chapterIssues": [],
-      "status": "needs-review"
+      "status": "passed"
     },
     {
       "slug": "cp-cloud-02-premium-requests",
@@ -500,11 +514,11 @@
       ],
       "missingTypes": [],
       "subtitleMissing": 0,
-      "voiceMissing": 3,
+      "voiceMissing": 0,
       "actionMissing": 3,
       "sceneGaps": [],
       "chapterIssues": [],
-      "status": "needs-review"
+      "status": "passed"
     },
     {
       "slug": "cp-git-01-fork-vs-branch",
@@ -521,16 +535,16 @@
       ],
       "missingTypes": [],
       "subtitleMissing": 0,
-      "voiceMissing": 3,
+      "voiceMissing": 0,
       "actionMissing": 3,
       "sceneGaps": [],
       "chapterIssues": [],
-      "status": "needs-review"
+      "status": "passed"
     },
     {
       "slug": "cp-git-02-pr-as-contract",
       "file": "cp-git-02-pr-as-contract.json",
-      "title": "Copilot Git 02 - PR as Contract",
+      "title": "Copilot Git 02 - pull request as Contract",
       "durationMs": 90000,
       "durationMin": 2,
       "sceneCount": 3,
@@ -542,38 +556,46 @@
       ],
       "missingTypes": [],
       "subtitleMissing": 0,
-      "voiceMissing": 3,
+      "voiceMissing": 0,
       "actionMissing": 3,
       "sceneGaps": [],
       "chapterIssues": [],
-      "status": "needs-review"
+      "status": "passed"
     },
     {
       "slug": "cp-masterclass-10m-copilot-workbench",
       "file": "cp-masterclass-10m-copilot-workbench.json",
-      "title": "Copilot Masterclass 10m - Workbench",
+      "title": "Copilot Masterclass 10 minutos - Workbench",
       "durationMs": 600000,
       "durationMin": 10,
-      "sceneCount": 10,
+      "sceneCount": 24,
       "chapterCount": 5,
       "types": [
-        "coding",
+        "branch",
         "compare",
         "concept",
-        "error",
+        "cost",
+        "decision",
+        "diff",
         "finale",
         "linear",
-        "preview",
+        "media-break",
+        "pause",
+        "prompt",
+        "quiz",
+        "risk",
+        "streaming",
+        "terminal",
         "thinking",
         "title"
       ],
       "missingTypes": [],
       "subtitleMissing": 0,
-      "voiceMissing": 10,
-      "actionMissing": 10,
+      "voiceMissing": 0,
+      "actionMissing": 11,
       "sceneGaps": [],
       "chapterIssues": [],
-      "status": "needs-review"
+      "status": "passed"
     },
     {
       "slug": "cp-medium-01-instructions",
@@ -590,11 +612,11 @@
       ],
       "missingTypes": [],
       "subtitleMissing": 0,
-      "voiceMissing": 3,
+      "voiceMissing": 0,
       "actionMissing": 3,
       "sceneGaps": [],
       "chapterIssues": [],
-      "status": "needs-review"
+      "status": "passed"
     },
     {
       "slug": "cp-medium-02-prompt-files",
@@ -611,50 +633,26 @@
       ],
       "missingTypes": [],
       "subtitleMissing": 0,
-      "voiceMissing": 3,
-      "actionMissing": 3,
-      "sceneGaps": [],
-      "chapterIssues": [],
-      "status": "needs-review"
-    },
-    {
-      "slug": "cp-workshop-30m-error-to-pr",
-      "file": "cp-workshop-30m-error-to-pr.json",
-      "title": "Copilot Workshop 30m - Error to PR",
-      "durationMs": 1800000,
-      "durationMin": 30,
-      "sceneCount": 24,
-      "chapterCount": 5,
-      "types": [
-        "decision",
-        "pr-review",
-        "prompt",
-        "quiz",
-        "risk",
-        "streaming",
-        "terminal"
-      ],
-      "missingTypes": [],
-      "subtitleMissing": 0,
       "voiceMissing": 0,
-      "actionMissing": 0,
+      "actionMissing": 3,
       "sceneGaps": [],
       "chapterIssues": [],
       "status": "passed"
     },
     {
-      "slug": "cp-workshop-60m-vscode-to-pr-review",
-      "file": "cp-workshop-60m-vscode-to-pr-review.json",
-      "title": "Workshop 1h Copilot - De VS Code al PR review",
-      "durationMs": 3600000,
-      "durationMin": 60,
-      "sceneCount": 48,
+      "slug": "cp-workshop-30m-error-to-pr",
+      "file": "cp-workshop-30m-error-to-pr.json",
+      "title": "Copilot Workshop 30 minutos - Error to pull request",
+      "durationMs": 1800000,
+      "durationMin": 30,
+      "sceneCount": 60,
       "chapterCount": 5,
       "types": [
         "branch",
         "cost",
         "decision",
         "diff",
+        "media-break",
         "pause",
         "pr-review",
         "prompt",
@@ -666,7 +664,37 @@
       "missingTypes": [],
       "subtitleMissing": 0,
       "voiceMissing": 0,
-      "actionMissing": 0,
+      "actionMissing": 8,
+      "sceneGaps": [],
+      "chapterIssues": [],
+      "status": "passed"
+    },
+    {
+      "slug": "cp-workshop-60m-vscode-to-pr-review",
+      "file": "cp-workshop-60m-vscode-to-pr-review.json",
+      "title": "Workshop 1 hora Copilot - De Visual Studio Code al revision de pull request",
+      "durationMs": 3600000,
+      "durationMin": 60,
+      "sceneCount": 120,
+      "chapterCount": 5,
+      "types": [
+        "branch",
+        "cost",
+        "decision",
+        "diff",
+        "media-break",
+        "pause",
+        "pr-review",
+        "prompt",
+        "quiz",
+        "risk",
+        "streaming",
+        "terminal"
+      ],
+      "missingTypes": [],
+      "subtitleMissing": 0,
+      "voiceMissing": 0,
+      "actionMissing": 14,
       "sceneGaps": [],
       "chapterIssues": [],
       "status": "passed"
@@ -687,11 +715,11 @@
       ],
       "missingTypes": [],
       "subtitleMissing": 0,
-      "voiceMissing": 4,
+      "voiceMissing": 0,
       "actionMissing": 4,
       "sceneGaps": [],
       "chapterIssues": [],
-      "status": "needs-review"
+      "status": "passed"
     },
     {
       "slug": "cx-basic-02-plan-before-patch",
@@ -709,38 +737,46 @@
       ],
       "missingTypes": [],
       "subtitleMissing": 0,
-      "voiceMissing": 4,
+      "voiceMissing": 0,
       "actionMissing": 4,
       "sceneGaps": [],
       "chapterIssues": [],
-      "status": "needs-review"
+      "status": "passed"
     },
     {
       "slug": "cx-masterclass-10m-codex-operating-system",
       "file": "cx-masterclass-10m-codex-operating-system.json",
-      "title": "Codex Masterclass 10m - Operating System",
+      "title": "Codex Masterclass 10 minutos - Operating System",
       "durationMs": 600000,
       "durationMin": 10,
-      "sceneCount": 10,
+      "sceneCount": 24,
       "chapterCount": 5,
       "types": [
-        "coding",
+        "branch",
         "compare",
         "concept",
-        "error",
+        "cost",
+        "decision",
+        "diff",
         "finale",
         "linear",
-        "preview",
+        "media-break",
+        "pause",
+        "prompt",
+        "quiz",
+        "risk",
+        "streaming",
+        "terminal",
         "thinking",
         "title"
       ],
       "missingTypes": [],
       "subtitleMissing": 0,
-      "voiceMissing": 10,
-      "actionMissing": 10,
+      "voiceMissing": 0,
+      "actionMissing": 11,
       "sceneGaps": [],
       "chapterIssues": [],
-      "status": "needs-review"
+      "status": "passed"
     },
     {
       "slug": "cx-medium-01-model-picker",
@@ -758,16 +794,16 @@
       ],
       "missingTypes": [],
       "subtitleMissing": 0,
-      "voiceMissing": 4,
+      "voiceMissing": 0,
       "actionMissing": 4,
       "sceneGaps": [],
       "chapterIssues": [],
-      "status": "needs-review"
+      "status": "passed"
     },
     {
       "slug": "cx-medium-02-mcp-readonly",
       "file": "cx-medium-02-mcp-readonly.json",
-      "title": "Codex Medium 02 - MCP Readonly",
+      "title": "Codex Medium 02 - M C P Readonly",
       "durationMs": 90000,
       "durationMin": 2,
       "sceneCount": 4,
@@ -780,16 +816,16 @@
       ],
       "missingTypes": [],
       "subtitleMissing": 0,
-      "voiceMissing": 4,
+      "voiceMissing": 0,
       "actionMissing": 4,
       "sceneGaps": [],
       "chapterIssues": [],
-      "status": "needs-review"
+      "status": "passed"
     },
     {
       "slug": "cx-medium-03-skill-qa-visual",
       "file": "cx-medium-03-skill-qa-visual.json",
-      "title": "Codex Medium 03 - Skill QA Visual",
+      "title": "Codex Medium 03 - Skill calidad Visual",
       "durationMs": 90000,
       "durationMin": 2,
       "sceneCount": 4,
@@ -802,11 +838,11 @@
       ],
       "missingTypes": [],
       "subtitleMissing": 0,
-      "voiceMissing": 4,
+      "voiceMissing": 0,
       "actionMissing": 4,
       "sceneGaps": [],
       "chapterIssues": [],
-      "status": "needs-review"
+      "status": "passed"
     },
     {
       "slug": "cx-orientation-01-surface-map",
@@ -824,11 +860,11 @@
       ],
       "missingTypes": [],
       "subtitleMissing": 0,
-      "voiceMissing": 4,
+      "voiceMissing": 0,
       "actionMissing": 4,
       "sceneGaps": [],
       "chapterIssues": [],
-      "status": "needs-review"
+      "status": "passed"
     },
     {
       "slug": "cx-orientation-02-first-task",
@@ -846,11 +882,11 @@
       ],
       "missingTypes": [],
       "subtitleMissing": 0,
-      "voiceMissing": 4,
+      "voiceMissing": 0,
       "actionMissing": 4,
       "sceneGaps": [],
       "chapterIssues": [],
-      "status": "needs-review"
+      "status": "passed"
     },
     {
       "slug": "cx-orientation-03-permissions",
@@ -868,11 +904,11 @@
       ],
       "missingTypes": [],
       "subtitleMissing": 0,
-      "voiceMissing": 4,
+      "voiceMissing": 0,
       "actionMissing": 4,
       "sceneGaps": [],
       "chapterIssues": [],
-      "status": "needs-review"
+      "status": "passed"
     },
     {
       "slug": "cx-ultra-01-github-action",
@@ -890,16 +926,16 @@
       ],
       "missingTypes": [],
       "subtitleMissing": 0,
-      "voiceMissing": 4,
+      "voiceMissing": 0,
       "actionMissing": 4,
       "sceneGaps": [],
       "chapterIssues": [],
-      "status": "needs-review"
+      "status": "passed"
     },
     {
       "slug": "cx-ultra-02-pr-swarm",
       "file": "cx-ultra-02-pr-swarm.json",
-      "title": "Codex Ultra 02 - PR Swarm",
+      "title": "Codex Ultra 02 - pull request Swarm",
       "durationMs": 90000,
       "durationMin": 2,
       "sceneCount": 4,
@@ -912,23 +948,27 @@
       ],
       "missingTypes": [],
       "subtitleMissing": 0,
-      "voiceMissing": 4,
+      "voiceMissing": 0,
       "actionMissing": 4,
       "sceneGaps": [],
       "chapterIssues": [],
-      "status": "needs-review"
+      "status": "passed"
     },
     {
       "slug": "cx-workshop-30m-first-real-task",
       "file": "cx-workshop-30m-first-real-task.json",
-      "title": "Codex Workshop 30m - First Real Task",
+      "title": "Codex Workshop 30 minutos - First Real Task",
       "durationMs": 1800000,
       "durationMin": 30,
-      "sceneCount": 24,
+      "sceneCount": 60,
       "chapterCount": 5,
       "types": [
         "branch",
+        "cost",
         "decision",
+        "diff",
+        "media-break",
+        "pause",
         "pr-review",
         "prompt",
         "quiz",
@@ -939,7 +979,7 @@
       "missingTypes": [],
       "subtitleMissing": 0,
       "voiceMissing": 0,
-      "actionMissing": 0,
+      "actionMissing": 8,
       "sceneGaps": [],
       "chapterIssues": [],
       "status": "passed"
@@ -947,16 +987,17 @@
     {
       "slug": "cx-workshop-60m-first-task-to-pr",
       "file": "cx-workshop-60m-first-task-to-pr.json",
-      "title": "Workshop 1h Codex - Del primer task al PR revisable",
+      "title": "Workshop 1 hora Codex - Del primer task al pull request revisable",
       "durationMs": 3600000,
       "durationMin": 60,
-      "sceneCount": 48,
+      "sceneCount": 120,
       "chapterCount": 5,
       "types": [
         "branch",
         "cost",
         "decision",
         "diff",
+        "media-break",
         "pause",
         "pr-review",
         "prompt",
@@ -968,7 +1009,7 @@
       "missingTypes": [],
       "subtitleMissing": 0,
       "voiceMissing": 0,
-      "actionMissing": 0,
+      "actionMissing": 14,
       "sceneGaps": [],
       "chapterIssues": [],
       "status": "passed"
@@ -976,16 +1017,17 @@
     {
       "slug": "hub-operating-model-60m",
       "file": "hub-operating-model-60m.json",
-      "title": "AI Practice Hub 60m - Operating Model",
+      "title": "AI Practice Hub 60 minutos - Operating Model",
       "durationMs": 3600000,
       "durationMin": 60,
-      "sceneCount": 48,
+      "sceneCount": 120,
       "chapterCount": 5,
       "types": [
         "branch",
         "cost",
         "decision",
         "diff",
+        "media-break",
         "pause",
         "pr-review",
         "prompt",
@@ -997,7 +1039,7 @@
       "missingTypes": [],
       "subtitleMissing": 0,
       "voiceMissing": 0,
-      "actionMissing": 0,
+      "actionMissing": 14,
       "sceneGaps": [],
       "chapterIssues": [],
       "status": "passed"
@@ -1005,16 +1047,17 @@
     {
       "slug": "hub-workshop-60m-vendor-selection",
       "file": "hub-workshop-60m-vendor-selection.json",
-      "title": "Workshop 1h Transversal - Elegir Codex, Copilot o Claude por caso",
+      "title": "Workshop 1 hora Transversal - Elegir Codex, Copilot o Claude por caso",
       "durationMs": 3600000,
       "durationMin": 60,
-      "sceneCount": 48,
+      "sceneCount": 120,
       "chapterCount": 5,
       "types": [
         "branch",
         "cost",
         "decision",
         "diff",
+        "media-break",
         "pause",
         "pr-review",
         "prompt",
@@ -1026,7 +1069,7 @@
       "missingTypes": [],
       "subtitleMissing": 0,
       "voiceMissing": 0,
-      "actionMissing": 0,
+      "actionMissing": 14,
       "sceneGaps": [],
       "chapterIssues": [],
       "status": "passed"

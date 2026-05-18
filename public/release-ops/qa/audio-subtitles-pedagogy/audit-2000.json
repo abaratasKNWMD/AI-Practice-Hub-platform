@@ -1,0 +1,1193 @@
+{
+  "generatedAt": "2026-05-18T16:53:01.833Z",
+  "baseUrl": "http://localhost:3001",
+  "thresholds": {
+    "strictSubtitleChars": 95,
+    "hardSubtitleChars": 140,
+    "fastCps": 20,
+    "slowCps": 6,
+    "estimatedSpanishWordsPerSec": 2.55
+  },
+  "vendors": {
+    "codex": 13,
+    "copilot": 14,
+    "claude": 15,
+    "hub": 2,
+    "other": 0
+  },
+  "sceneTypes": {
+    "title": 36,
+    "compare": 14,
+    "finale": 36,
+    "concept": 21,
+    "linear": 7,
+    "prompt": 80,
+    "streaming": 76,
+    "media-break": 107,
+    "diff": 49,
+    "terminal": 75,
+    "decision": 92,
+    "risk": 67,
+    "branch": 63,
+    "quiz": 69,
+    "thinking": 6,
+    "pause": 38,
+    "cost": 75,
+    "pr-review": 41,
+    "coding": 8,
+    "error": 1
+  },
+  "summary": {
+    "videoCount": 44,
+    "sceneCount": 961,
+    "subtitleCount": 7017,
+    "missingSubtitleScenes": 0,
+    "missingVoiceScenes": 0,
+    "strictLongSubtitles": 0,
+    "hardLongSubtitles": 0,
+    "fastSubtitles": 0,
+    "slowSubtitles": 0,
+    "ttsTooLong": 441,
+    "ttsTooShort": 0,
+    "imageRefs": 107,
+    "realAssetRefs": 73,
+    "audioManifests": 44,
+    "audioEntries": 7017,
+    "audioBytes": 181045584,
+    "missingAudioManifests": 0,
+    "missingAudioEntries": 0,
+    "missingVtt": 0,
+    "missingSrt": 0,
+    "audioOverflow": 0,
+    "screenVisuals": 853,
+    "quizScenes": 69,
+    "pauseScenes": 38,
+    "repeatedFactoryLines": 0,
+    "longWorkshopsWithoutMediaBreaks": 0,
+    "lowInteractionLongVideos": 0,
+    "scenesWithProsody": 961,
+    "entriesWithProsody": 7017,
+    "manifestsWithAudioVersion": 44,
+    "totalDurationMin": 469.5,
+    "avgSubtitleChars": 54.5,
+    "avgSubtitleWords": 8.8,
+    "subtitleGapMin": 5.7,
+    "audioMb": 172.7,
+    "voiceCount": 1,
+    "voiceProfileCount": 8,
+    "voices": [
+      "es-ES-AlvaroNeural"
+    ],
+    "spainVoiceOnly": true,
+    "voiceProfiles": [
+      "claudeNarrator",
+      "claudeSafety",
+      "codexNarrator",
+      "codexReflection",
+      "copilotNarrator",
+      "copilotReview",
+      "hubInstructor",
+      "hubNarrator"
+    ],
+    "audioProductionVersion": "audio-prod-v2-2026-05-18",
+    "hasAudioReleaseManifest": true,
+    "hasAudioPackagingPolicy": true,
+    "hasAudioRouting": true,
+    "hasHumanReviewPlan": true
+  },
+  "score": {
+    "subtitles": 400,
+    "audio": 400,
+    "visualMedia": 400,
+    "pedagogy": 400,
+    "operations": 392,
+    "total": 1992
+  },
+  "tts": {
+    "status": 200,
+    "ok": true,
+    "ms": 2366,
+    "bytes": 19152,
+    "contentType": "audio/mpeg"
+  },
+  "repeats": [
+    [
+      "captura o criterio escrito.",
+      283
+    ],
+    [
+      "hay una salida que otro perfil puede revisar sin rehacer el contexto.",
+      139
+    ],
+    [
+      "con coste y permiso visibles.",
+      132
+    ],
+    [
+      "permisos y automatizacion sin rollback.",
+      51
+    ],
+    [
+      "AI Practice Hub solo avanza si el siguiente humano entiende el por que.",
+      48
+    ],
+    [
+      "contexto pobre y review floja.",
+      46
+    ],
+    [
+      "Durante el video mira esta decision:",
+      39
+    ],
+    [
+      "Al final debes poder quedarte con una regla de uso y un ejemplo repetible.",
+      33
+    ],
+    [
+      "La ruta sera: concepto, ejemplo y cierre.",
+      33
+    ],
+    [
+      "cuando aplicar esta tecnica en tu propio repositorio.",
+      33
+    ],
+    [
+      "el artefacto muestra que se controlo soporte reactivo y dudas repetidas.",
+      32
+    ],
+    [
+      "Objetivo de esta clase:",
+      28
+    ],
+    [
+      "skill o M C P con coste y permiso visibles.",
+      28
+    ],
+    [
+      "no con la sensacion de velocidad.",
+      19
+    ],
+    [
+      "owner y decision.",
+      18
+    ],
+    [
+      "revisable.",
+      18
+    ],
+    [
+      "Code",
+      16
+    ],
+    [
+      "convertir workspace de Visual Studio Code en una decision que se pueda ensenar en",
+      14
+    ],
+    [
+      "tutoria.",
+      14
+    ],
+    [
+      "AI Practice Hub\" dentro del ruta de aprendizaje",
+      14
+    ],
+    [
+      "que estamos aceptando aqui?\" con evidencia.",
+      10
+    ],
+    [
+      "busca cerrar \"Captura mental: AI Practice Hub\" con evidencia.",
+      10
+    ],
+    [
+      "Evidencia minuto 1:",
+      9
+    ],
+    [
+      "Mostrar estructura de skill y pedir al grupo revisar stop conditions para \"SKILL.md\"",
+      9
+    ],
+    [
+      "para \"SKILL.md\".",
+      9
+    ],
+    [
+      "riesgo y permiso para \"Inventario M C P\".",
+      9
+    ],
+    [
+      "Mostrar un intento bloqueado y una salida segura para \"Hook deterministic\".",
+      9
+    ],
+    [
+      "Simular JSON de evaluacion con un finding menor para \"modelo de lenguaje-as-a-Judge con",
+      9
+    ],
+    [
+      "contrato\" para",
+      9
+    ],
+    [
+      "\"modelo de lenguaje-as-a-Judge con contrato\".",
+      9
+    ]
+  ],
+  "courses": [
+    {
+      "id": "cl-workshop-60m-memory-to-automation",
+      "vendor": "claude",
+      "durationMin": 60,
+      "scenes": 120,
+      "subtitles": 1052,
+      "strictLong": 0,
+      "slow": 0,
+      "fast": 0,
+      "ttsTooLong": 76,
+      "ttsTooShort": 0,
+      "repeatedFactoryLines": 0,
+      "imageRefs": 14,
+      "audioEntries": 1052,
+      "quiz": 12,
+      "pause": 6,
+      "risks": [
+        "76 ventanas TTS ajustadas"
+      ],
+      "score": 86
+    },
+    {
+      "id": "cp-workshop-60m-vscode-to-pr-review",
+      "vendor": "copilot",
+      "durationMin": 60,
+      "scenes": 120,
+      "subtitles": 1168,
+      "strictLong": 0,
+      "slow": 0,
+      "fast": 0,
+      "ttsTooLong": 65,
+      "ttsTooShort": 0,
+      "repeatedFactoryLines": 0,
+      "imageRefs": 14,
+      "audioEntries": 1168,
+      "quiz": 11,
+      "pause": 5,
+      "risks": [
+        "65 ventanas TTS ajustadas"
+      ],
+      "score": 86
+    },
+    {
+      "id": "cx-workshop-30m-first-real-task",
+      "vendor": "codex",
+      "durationMin": 30,
+      "scenes": 60,
+      "subtitles": 341,
+      "strictLong": 0,
+      "slow": 0,
+      "fast": 0,
+      "ttsTooLong": 32,
+      "ttsTooShort": 0,
+      "repeatedFactoryLines": 0,
+      "imageRefs": 8,
+      "audioEntries": 341,
+      "quiz": 1,
+      "pause": 1,
+      "risks": [
+        "32 ventanas TTS ajustadas"
+      ],
+      "score": 86
+    },
+    {
+      "id": "cx-workshop-60m-first-task-to-pr",
+      "vendor": "codex",
+      "durationMin": 60,
+      "scenes": 120,
+      "subtitles": 1049,
+      "strictLong": 0,
+      "slow": 0,
+      "fast": 0,
+      "ttsTooLong": 59,
+      "ttsTooShort": 0,
+      "repeatedFactoryLines": 0,
+      "imageRefs": 14,
+      "audioEntries": 1049,
+      "quiz": 12,
+      "pause": 6,
+      "risks": [
+        "59 ventanas TTS ajustadas"
+      ],
+      "score": 86
+    },
+    {
+      "id": "hub-operating-model-60m",
+      "vendor": "hub",
+      "durationMin": 60,
+      "scenes": 120,
+      "subtitles": 839,
+      "strictLong": 0,
+      "slow": 0,
+      "fast": 0,
+      "ttsTooLong": 37,
+      "ttsTooShort": 0,
+      "repeatedFactoryLines": 0,
+      "imageRefs": 14,
+      "audioEntries": 839,
+      "quiz": 11,
+      "pause": 10,
+      "risks": [
+        "37 ventanas TTS ajustadas"
+      ],
+      "score": 86
+    },
+    {
+      "id": "hub-workshop-60m-vendor-selection",
+      "vendor": "hub",
+      "durationMin": 60,
+      "scenes": 120,
+      "subtitles": 904,
+      "strictLong": 0,
+      "slow": 0,
+      "fast": 0,
+      "ttsTooLong": 59,
+      "ttsTooShort": 0,
+      "repeatedFactoryLines": 0,
+      "imageRefs": 14,
+      "audioEntries": 904,
+      "quiz": 12,
+      "pause": 5,
+      "risks": [
+        "59 ventanas TTS ajustadas"
+      ],
+      "score": 86
+    },
+    {
+      "id": "cl-advanced-01-hooks",
+      "vendor": "claude",
+      "durationMin": 1.5,
+      "scenes": 3,
+      "subtitles": 11,
+      "strictLong": 0,
+      "slow": 0,
+      "fast": 0,
+      "ttsTooLong": 3,
+      "ttsTooShort": 0,
+      "repeatedFactoryLines": 0,
+      "imageRefs": 0,
+      "audioEntries": 11,
+      "quiz": 0,
+      "pause": 0,
+      "risks": [
+        "3 ventanas TTS ajustadas",
+        "sin imagen/asset dentro del video"
+      ],
+      "score": 91.7
+    },
+    {
+      "id": "cp-advanced-02-mcp-code-review",
+      "vendor": "copilot",
+      "durationMin": 1.5,
+      "scenes": 3,
+      "subtitles": 14,
+      "strictLong": 0,
+      "slow": 0,
+      "fast": 0,
+      "ttsTooLong": 3,
+      "ttsTooShort": 0,
+      "repeatedFactoryLines": 0,
+      "imageRefs": 0,
+      "audioEntries": 14,
+      "quiz": 0,
+      "pause": 0,
+      "risks": [
+        "3 ventanas TTS ajustadas",
+        "sin imagen/asset dentro del video"
+      ],
+      "score": 91.7
+    },
+    {
+      "id": "cl-basic-01-claude-md",
+      "vendor": "claude",
+      "durationMin": 1.5,
+      "scenes": 3,
+      "subtitles": 16,
+      "strictLong": 0,
+      "slow": 0,
+      "fast": 0,
+      "ttsTooLong": 2,
+      "ttsTooShort": 0,
+      "repeatedFactoryLines": 0,
+      "imageRefs": 0,
+      "audioEntries": 16,
+      "quiz": 0,
+      "pause": 0,
+      "risks": [
+        "2 ventanas TTS ajustadas",
+        "sin imagen/asset dentro del video"
+      ],
+      "score": 92.1
+    },
+    {
+      "id": "cl-orientation-02-memory-vs-instructions",
+      "vendor": "claude",
+      "durationMin": 1.5,
+      "scenes": 3,
+      "subtitles": 12,
+      "strictLong": 0,
+      "slow": 0,
+      "fast": 0,
+      "ttsTooLong": 2,
+      "ttsTooShort": 0,
+      "repeatedFactoryLines": 0,
+      "imageRefs": 0,
+      "audioEntries": 12,
+      "quiz": 0,
+      "pause": 0,
+      "risks": [
+        "2 ventanas TTS ajustadas",
+        "sin imagen/asset dentro del video"
+      ],
+      "score": 92.1
+    },
+    {
+      "id": "cl-sdk-01-agent-sdk",
+      "vendor": "claude",
+      "durationMin": 1.5,
+      "scenes": 3,
+      "subtitles": 12,
+      "strictLong": 0,
+      "slow": 0,
+      "fast": 0,
+      "ttsTooLong": 2,
+      "ttsTooShort": 0,
+      "repeatedFactoryLines": 0,
+      "imageRefs": 0,
+      "audioEntries": 12,
+      "quiz": 0,
+      "pause": 0,
+      "risks": [
+        "2 ventanas TTS ajustadas",
+        "sin imagen/asset dentro del video"
+      ],
+      "score": 92.1
+    },
+    {
+      "id": "cp-basic-02-ask-edit-agent",
+      "vendor": "copilot",
+      "durationMin": 1.5,
+      "scenes": 3,
+      "subtitles": 15,
+      "strictLong": 0,
+      "slow": 0,
+      "fast": 0,
+      "ttsTooLong": 2,
+      "ttsTooShort": 0,
+      "repeatedFactoryLines": 0,
+      "imageRefs": 0,
+      "audioEntries": 15,
+      "quiz": 0,
+      "pause": 0,
+      "risks": [
+        "2 ventanas TTS ajustadas",
+        "sin imagen/asset dentro del video"
+      ],
+      "score": 92.1
+    },
+    {
+      "id": "cp-basic-03-error-to-fix",
+      "vendor": "copilot",
+      "durationMin": 1.5,
+      "scenes": 3,
+      "subtitles": 11,
+      "strictLong": 0,
+      "slow": 0,
+      "fast": 0,
+      "ttsTooLong": 2,
+      "ttsTooShort": 0,
+      "repeatedFactoryLines": 0,
+      "imageRefs": 0,
+      "audioEntries": 11,
+      "quiz": 0,
+      "pause": 0,
+      "risks": [
+        "2 ventanas TTS ajustadas",
+        "sin imagen/asset dentro del video"
+      ],
+      "score": 92.1
+    },
+    {
+      "id": "cp-git-01-fork-vs-branch",
+      "vendor": "copilot",
+      "durationMin": 1.5,
+      "scenes": 3,
+      "subtitles": 17,
+      "strictLong": 0,
+      "slow": 0,
+      "fast": 0,
+      "ttsTooLong": 2,
+      "ttsTooShort": 0,
+      "repeatedFactoryLines": 0,
+      "imageRefs": 0,
+      "audioEntries": 17,
+      "quiz": 0,
+      "pause": 0,
+      "risks": [
+        "2 ventanas TTS ajustadas",
+        "sin imagen/asset dentro del video"
+      ],
+      "score": 92.1
+    },
+    {
+      "id": "cx-basic-02-plan-before-patch",
+      "vendor": "codex",
+      "durationMin": 1.5,
+      "scenes": 4,
+      "subtitles": 16,
+      "strictLong": 0,
+      "slow": 0,
+      "fast": 0,
+      "ttsTooLong": 2,
+      "ttsTooShort": 0,
+      "repeatedFactoryLines": 0,
+      "imageRefs": 0,
+      "audioEntries": 16,
+      "quiz": 0,
+      "pause": 0,
+      "risks": [
+        "2 ventanas TTS ajustadas",
+        "sin imagen/asset dentro del video"
+      ],
+      "score": 92.1
+    },
+    {
+      "id": "cx-medium-02-mcp-readonly",
+      "vendor": "codex",
+      "durationMin": 1.5,
+      "scenes": 4,
+      "subtitles": 15,
+      "strictLong": 0,
+      "slow": 0,
+      "fast": 0,
+      "ttsTooLong": 2,
+      "ttsTooShort": 0,
+      "repeatedFactoryLines": 0,
+      "imageRefs": 0,
+      "audioEntries": 15,
+      "quiz": 0,
+      "pause": 0,
+      "risks": [
+        "2 ventanas TTS ajustadas",
+        "sin imagen/asset dentro del video"
+      ],
+      "score": 92.1
+    },
+    {
+      "id": "cx-orientation-02-first-task",
+      "vendor": "codex",
+      "durationMin": 1.5,
+      "scenes": 4,
+      "subtitles": 19,
+      "strictLong": 0,
+      "slow": 0,
+      "fast": 0,
+      "ttsTooLong": 2,
+      "ttsTooShort": 0,
+      "repeatedFactoryLines": 0,
+      "imageRefs": 0,
+      "audioEntries": 19,
+      "quiz": 0,
+      "pause": 0,
+      "risks": [
+        "2 ventanas TTS ajustadas",
+        "sin imagen/asset dentro del video"
+      ],
+      "score": 92.1
+    },
+    {
+      "id": "cx-ultra-02-pr-swarm",
+      "vendor": "codex",
+      "durationMin": 1.5,
+      "scenes": 4,
+      "subtitles": 17,
+      "strictLong": 0,
+      "slow": 0,
+      "fast": 0,
+      "ttsTooLong": 2,
+      "ttsTooShort": 0,
+      "repeatedFactoryLines": 0,
+      "imageRefs": 0,
+      "audioEntries": 17,
+      "quiz": 0,
+      "pause": 0,
+      "risks": [
+        "2 ventanas TTS ajustadas",
+        "sin imagen/asset dentro del video"
+      ],
+      "score": 92.1
+    },
+    {
+      "id": "cp-workshop-30m-error-to-pr",
+      "vendor": "copilot",
+      "durationMin": 30,
+      "scenes": 60,
+      "subtitles": 391,
+      "strictLong": 0,
+      "slow": 0,
+      "fast": 0,
+      "ttsTooLong": 17,
+      "ttsTooShort": 0,
+      "repeatedFactoryLines": 0,
+      "imageRefs": 8,
+      "audioEntries": 391,
+      "quiz": 2,
+      "pause": 1,
+      "risks": [
+        "17 ventanas TTS ajustadas"
+      ],
+      "score": 92.4
+    },
+    {
+      "id": "cl-advanced-02-plugin-action",
+      "vendor": "claude",
+      "durationMin": 1.5,
+      "scenes": 3,
+      "subtitles": 14,
+      "strictLong": 0,
+      "slow": 0,
+      "fast": 0,
+      "ttsTooLong": 1,
+      "ttsTooShort": 0,
+      "repeatedFactoryLines": 0,
+      "imageRefs": 0,
+      "audioEntries": 14,
+      "quiz": 0,
+      "pause": 0,
+      "risks": [
+        "1 ventanas TTS ajustadas",
+        "sin imagen/asset dentro del video"
+      ],
+      "score": 92.6
+    },
+    {
+      "id": "cl-basic-02-compact-context",
+      "vendor": "claude",
+      "durationMin": 1.5,
+      "scenes": 3,
+      "subtitles": 15,
+      "strictLong": 0,
+      "slow": 0,
+      "fast": 0,
+      "ttsTooLong": 1,
+      "ttsTooShort": 0,
+      "repeatedFactoryLines": 0,
+      "imageRefs": 0,
+      "audioEntries": 15,
+      "quiz": 0,
+      "pause": 0,
+      "risks": [
+        "1 ventanas TTS ajustadas",
+        "sin imagen/asset dentro del video"
+      ],
+      "score": 92.6
+    },
+    {
+      "id": "cl-operator-01-first-skill",
+      "vendor": "claude",
+      "durationMin": 1.5,
+      "scenes": 3,
+      "subtitles": 11,
+      "strictLong": 0,
+      "slow": 0,
+      "fast": 0,
+      "ttsTooLong": 1,
+      "ttsTooShort": 0,
+      "repeatedFactoryLines": 0,
+      "imageRefs": 0,
+      "audioEntries": 11,
+      "quiz": 0,
+      "pause": 0,
+      "risks": [
+        "1 ventanas TTS ajustadas",
+        "sin imagen/asset dentro del video"
+      ],
+      "score": 92.6
+    },
+    {
+      "id": "cl-operator-02-subagent-explorer",
+      "vendor": "claude",
+      "durationMin": 1.5,
+      "scenes": 3,
+      "subtitles": 13,
+      "strictLong": 0,
+      "slow": 0,
+      "fast": 0,
+      "ttsTooLong": 1,
+      "ttsTooShort": 0,
+      "repeatedFactoryLines": 0,
+      "imageRefs": 0,
+      "audioEntries": 13,
+      "quiz": 0,
+      "pause": 0,
+      "risks": [
+        "1 ventanas TTS ajustadas",
+        "sin imagen/asset dentro del video"
+      ],
+      "score": 92.6
+    },
+    {
+      "id": "cl-operator-03-mcp-project",
+      "vendor": "claude",
+      "durationMin": 1.5,
+      "scenes": 3,
+      "subtitles": 17,
+      "strictLong": 0,
+      "slow": 0,
+      "fast": 0,
+      "ttsTooLong": 1,
+      "ttsTooShort": 0,
+      "repeatedFactoryLines": 0,
+      "imageRefs": 0,
+      "audioEntries": 17,
+      "quiz": 0,
+      "pause": 0,
+      "risks": [
+        "1 ventanas TTS ajustadas",
+        "sin imagen/asset dentro del video"
+      ],
+      "score": 92.6
+    },
+    {
+      "id": "cl-orientation-01-claude-md",
+      "vendor": "claude",
+      "durationMin": 1.5,
+      "scenes": 3,
+      "subtitles": 15,
+      "strictLong": 0,
+      "slow": 0,
+      "fast": 0,
+      "ttsTooLong": 1,
+      "ttsTooShort": 0,
+      "repeatedFactoryLines": 0,
+      "imageRefs": 0,
+      "audioEntries": 15,
+      "quiz": 0,
+      "pause": 0,
+      "risks": [
+        "1 ventanas TTS ajustadas",
+        "sin imagen/asset dentro del video"
+      ],
+      "score": 92.6
+    },
+    {
+      "id": "cl-orientation-03-cost-context",
+      "vendor": "claude",
+      "durationMin": 1.5,
+      "scenes": 3,
+      "subtitles": 12,
+      "strictLong": 0,
+      "slow": 0,
+      "fast": 0,
+      "ttsTooLong": 1,
+      "ttsTooShort": 0,
+      "repeatedFactoryLines": 0,
+      "imageRefs": 0,
+      "audioEntries": 12,
+      "quiz": 0,
+      "pause": 0,
+      "risks": [
+        "1 ventanas TTS ajustadas",
+        "sin imagen/asset dentro del video"
+      ],
+      "score": 92.6
+    },
+    {
+      "id": "cl-sdk-02-evals-governance",
+      "vendor": "claude",
+      "durationMin": 1.5,
+      "scenes": 3,
+      "subtitles": 17,
+      "strictLong": 0,
+      "slow": 0,
+      "fast": 0,
+      "ttsTooLong": 1,
+      "ttsTooShort": 0,
+      "repeatedFactoryLines": 0,
+      "imageRefs": 0,
+      "audioEntries": 17,
+      "quiz": 0,
+      "pause": 0,
+      "risks": [
+        "1 ventanas TTS ajustadas",
+        "sin imagen/asset dentro del video"
+      ],
+      "score": 92.6
+    },
+    {
+      "id": "cp-basic-01-inline-completion",
+      "vendor": "copilot",
+      "durationMin": 1.5,
+      "scenes": 3,
+      "subtitles": 18,
+      "strictLong": 0,
+      "slow": 0,
+      "fast": 0,
+      "ttsTooLong": 1,
+      "ttsTooShort": 0,
+      "repeatedFactoryLines": 0,
+      "imageRefs": 0,
+      "audioEntries": 18,
+      "quiz": 0,
+      "pause": 0,
+      "risks": [
+        "1 ventanas TTS ajustadas",
+        "sin imagen/asset dentro del video"
+      ],
+      "score": 92.6
+    },
+    {
+      "id": "cp-cloud-01-cloud-agent-pr",
+      "vendor": "copilot",
+      "durationMin": 1.5,
+      "scenes": 3,
+      "subtitles": 12,
+      "strictLong": 0,
+      "slow": 0,
+      "fast": 0,
+      "ttsTooLong": 1,
+      "ttsTooShort": 0,
+      "repeatedFactoryLines": 0,
+      "imageRefs": 0,
+      "audioEntries": 12,
+      "quiz": 0,
+      "pause": 0,
+      "risks": [
+        "1 ventanas TTS ajustadas",
+        "sin imagen/asset dentro del video"
+      ],
+      "score": 92.6
+    },
+    {
+      "id": "cp-cloud-02-premium-requests",
+      "vendor": "copilot",
+      "durationMin": 1.5,
+      "scenes": 3,
+      "subtitles": 13,
+      "strictLong": 0,
+      "slow": 0,
+      "fast": 0,
+      "ttsTooLong": 1,
+      "ttsTooShort": 0,
+      "repeatedFactoryLines": 0,
+      "imageRefs": 0,
+      "audioEntries": 13,
+      "quiz": 0,
+      "pause": 0,
+      "risks": [
+        "1 ventanas TTS ajustadas",
+        "sin imagen/asset dentro del video"
+      ],
+      "score": 92.6
+    },
+    {
+      "id": "cp-git-02-pr-as-contract",
+      "vendor": "copilot",
+      "durationMin": 1.5,
+      "scenes": 3,
+      "subtitles": 15,
+      "strictLong": 0,
+      "slow": 0,
+      "fast": 0,
+      "ttsTooLong": 1,
+      "ttsTooShort": 0,
+      "repeatedFactoryLines": 0,
+      "imageRefs": 0,
+      "audioEntries": 15,
+      "quiz": 0,
+      "pause": 0,
+      "risks": [
+        "1 ventanas TTS ajustadas",
+        "sin imagen/asset dentro del video"
+      ],
+      "score": 92.6
+    },
+    {
+      "id": "cp-medium-01-instructions",
+      "vendor": "copilot",
+      "durationMin": 1.5,
+      "scenes": 3,
+      "subtitles": 11,
+      "strictLong": 0,
+      "slow": 0,
+      "fast": 0,
+      "ttsTooLong": 1,
+      "ttsTooShort": 0,
+      "repeatedFactoryLines": 0,
+      "imageRefs": 0,
+      "audioEntries": 11,
+      "quiz": 0,
+      "pause": 0,
+      "risks": [
+        "1 ventanas TTS ajustadas",
+        "sin imagen/asset dentro del video"
+      ],
+      "score": 92.6
+    },
+    {
+      "id": "cp-medium-02-prompt-files",
+      "vendor": "copilot",
+      "durationMin": 1.5,
+      "scenes": 3,
+      "subtitles": 13,
+      "strictLong": 0,
+      "slow": 0,
+      "fast": 0,
+      "ttsTooLong": 1,
+      "ttsTooShort": 0,
+      "repeatedFactoryLines": 0,
+      "imageRefs": 0,
+      "audioEntries": 13,
+      "quiz": 0,
+      "pause": 0,
+      "risks": [
+        "1 ventanas TTS ajustadas",
+        "sin imagen/asset dentro del video"
+      ],
+      "score": 92.6
+    },
+    {
+      "id": "cx-basic-01-agents-md",
+      "vendor": "codex",
+      "durationMin": 1.5,
+      "scenes": 4,
+      "subtitles": 14,
+      "strictLong": 0,
+      "slow": 0,
+      "fast": 0,
+      "ttsTooLong": 1,
+      "ttsTooShort": 0,
+      "repeatedFactoryLines": 0,
+      "imageRefs": 0,
+      "audioEntries": 14,
+      "quiz": 0,
+      "pause": 0,
+      "risks": [
+        "1 ventanas TTS ajustadas",
+        "sin imagen/asset dentro del video"
+      ],
+      "score": 92.6
+    },
+    {
+      "id": "cx-medium-01-model-picker",
+      "vendor": "codex",
+      "durationMin": 1.5,
+      "scenes": 4,
+      "subtitles": 15,
+      "strictLong": 0,
+      "slow": 0,
+      "fast": 0,
+      "ttsTooLong": 1,
+      "ttsTooShort": 0,
+      "repeatedFactoryLines": 0,
+      "imageRefs": 0,
+      "audioEntries": 15,
+      "quiz": 0,
+      "pause": 0,
+      "risks": [
+        "1 ventanas TTS ajustadas",
+        "sin imagen/asset dentro del video"
+      ],
+      "score": 92.6
+    },
+    {
+      "id": "cx-medium-03-skill-qa-visual",
+      "vendor": "codex",
+      "durationMin": 1.5,
+      "scenes": 4,
+      "subtitles": 15,
+      "strictLong": 0,
+      "slow": 0,
+      "fast": 0,
+      "ttsTooLong": 1,
+      "ttsTooShort": 0,
+      "repeatedFactoryLines": 0,
+      "imageRefs": 0,
+      "audioEntries": 15,
+      "quiz": 0,
+      "pause": 0,
+      "risks": [
+        "1 ventanas TTS ajustadas",
+        "sin imagen/asset dentro del video"
+      ],
+      "score": 92.6
+    },
+    {
+      "id": "cx-orientation-01-surface-map",
+      "vendor": "codex",
+      "durationMin": 1.5,
+      "scenes": 4,
+      "subtitles": 16,
+      "strictLong": 0,
+      "slow": 0,
+      "fast": 0,
+      "ttsTooLong": 1,
+      "ttsTooShort": 0,
+      "repeatedFactoryLines": 0,
+      "imageRefs": 0,
+      "audioEntries": 16,
+      "quiz": 0,
+      "pause": 0,
+      "risks": [
+        "1 ventanas TTS ajustadas",
+        "sin imagen/asset dentro del video"
+      ],
+      "score": 92.6
+    },
+    {
+      "id": "cx-orientation-03-permissions",
+      "vendor": "codex",
+      "durationMin": 1.5,
+      "scenes": 4,
+      "subtitles": 16,
+      "strictLong": 0,
+      "slow": 0,
+      "fast": 0,
+      "ttsTooLong": 1,
+      "ttsTooShort": 0,
+      "repeatedFactoryLines": 0,
+      "imageRefs": 0,
+      "audioEntries": 16,
+      "quiz": 0,
+      "pause": 0,
+      "risks": [
+        "1 ventanas TTS ajustadas",
+        "sin imagen/asset dentro del video"
+      ],
+      "score": 92.6
+    },
+    {
+      "id": "cx-ultra-01-github-action",
+      "vendor": "codex",
+      "durationMin": 1.5,
+      "scenes": 4,
+      "subtitles": 15,
+      "strictLong": 0,
+      "slow": 0,
+      "fast": 0,
+      "ttsTooLong": 1,
+      "ttsTooShort": 0,
+      "repeatedFactoryLines": 0,
+      "imageRefs": 0,
+      "audioEntries": 15,
+      "quiz": 0,
+      "pause": 0,
+      "risks": [
+        "1 ventanas TTS ajustadas",
+        "sin imagen/asset dentro del video"
+      ],
+      "score": 92.6
+    },
+    {
+      "id": "cl-masterclass-10m-claude-operating-model",
+      "vendor": "claude",
+      "durationMin": 10,
+      "scenes": 24,
+      "subtitles": 133,
+      "strictLong": 0,
+      "slow": 0,
+      "fast": 0,
+      "ttsTooLong": 16,
+      "ttsTooShort": 0,
+      "repeatedFactoryLines": 0,
+      "imageRefs": 4,
+      "audioEntries": 133,
+      "quiz": 2,
+      "pause": 1,
+      "risks": [
+        "16 ventanas TTS ajustadas"
+      ],
+      "score": 92.8
+    },
+    {
+      "id": "cl-workshop-30m-memory-to-hook",
+      "vendor": "claude",
+      "durationMin": 30,
+      "scenes": 60,
+      "subtitles": 389,
+      "strictLong": 0,
+      "slow": 0,
+      "fast": 0,
+      "ttsTooLong": 15,
+      "ttsTooShort": 0,
+      "repeatedFactoryLines": 0,
+      "imageRefs": 8,
+      "audioEntries": 389,
+      "quiz": 2,
+      "pause": 1,
+      "risks": [
+        "15 ventanas TTS ajustadas"
+      ],
+      "score": 93.3
+    },
+    {
+      "id": "cx-masterclass-10m-codex-operating-system",
+      "vendor": "codex",
+      "durationMin": 10,
+      "scenes": 24,
+      "subtitles": 126,
+      "strictLong": 0,
+      "slow": 0,
+      "fast": 0,
+      "ttsTooLong": 10,
+      "ttsTooShort": 0,
+      "repeatedFactoryLines": 0,
+      "imageRefs": 4,
+      "audioEntries": 126,
+      "quiz": 2,
+      "pause": 1,
+      "risks": [
+        "10 ventanas TTS ajustadas"
+      ],
+      "score": 95.5
+    },
+    {
+      "id": "cp-masterclass-10m-copilot-workbench",
+      "vendor": "copilot",
+      "durationMin": 10,
+      "scenes": 24,
+      "subtitles": 143,
+      "strictLong": 0,
+      "slow": 0,
+      "fast": 0,
+      "ttsTooLong": 8,
+      "ttsTooShort": 0,
+      "repeatedFactoryLines": 0,
+      "imageRefs": 4,
+      "audioEntries": 143,
+      "quiz": 2,
+      "pause": 1,
+      "risks": [
+        "8 ventanas TTS ajustadas"
+      ],
+      "score": 96.4
+    },
+    {
+      "id": "cp-advanced-01-custom-agent",
+      "vendor": "copilot",
+      "durationMin": 1.5,
+      "scenes": 3,
+      "subtitles": 20,
+      "strictLong": 0,
+      "slow": 0,
+      "fast": 0,
+      "ttsTooLong": 1,
+      "ttsTooShort": 0,
+      "repeatedFactoryLines": 0,
+      "imageRefs": 1,
+      "audioEntries": 20,
+      "quiz": 0,
+      "pause": 0,
+      "risks": [
+        "1 ventanas TTS ajustadas"
+      ],
+      "score": 99.6
+    }
+  ]
+}

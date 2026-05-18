@@ -1,0 +1,52 @@
+1
+00:00:00,450 --> 00:00:02,990
+Objetivo de esta clase:
+
+2
+00:00:03,170 --> 00:00:08,350
+resolver Copilot Cloud 02 - Premium Requests con criterio practico.
+
+3
+00:00:08,530 --> 00:00:13,374
+Al final debes poder quedarte con una regla de uso y un ejemplo repetible.
+
+4
+00:00:13,554 --> 00:00:17,510
+La ruta sera: concepto, ejemplo y cierre.
+
+5
+00:00:17,690 --> 00:00:20,662
+Durante el video mira esta decision:
+
+6
+00:00:20,842 --> 00:00:24,534
+cuando aplicar esta tecnica en tu propio repositorio.
+
+7
+00:00:30,450 --> 00:00:34,454
+Incluido, premium y cloud no son la misma bolsa.
+
+8
+00:00:34,634 --> 00:00:38,470
+Los detalles cambian, asi que ensenamos criterio.
+
+9
+00:00:38,650 --> 00:00:42,342
+Coste por resultado util, no coste por prompt.
+
+10
+00:01:00,450 --> 00:01:05,726
+Feature, modelo y resultado. Ese es el log minimo.
+
+11
+00:01:05,906 --> 00:01:12,070
+Evidencia minuto 1: "Budget Copilot" no se cierra sin test, captura o criterio escrito.
+
+12
+00:01:12,250 --> 00:01:18,342
+Accion minuto 1: pedir salida pequena verificable y con owner. (Copilot
+
+13
+00:01:18,522 --> 00:01:21,038
+minuto 1 paso 8)
+

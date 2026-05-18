@@ -1,0 +1,3360 @@
+WEBVTT
+
+NOTE hub-operating-model-60m - AI Practice Hub 60 minutos - Operating Model
+
+1
+00:00:00.450 --> 00:00:03.014
+Objetivo de esta clase:
+
+2
+00:00:03.059 --> 00:00:08.071
+convertir formacion reactiva en un sistema de practica tutoria y medicion.
+
+3
+00:00:08.116 --> 00:00:12.672
+Al final debes poder tener un operating model para cursos videos
+
+4
+00:00:12.717 --> 00:00:15.689
+ejercicios metricas y owners.
+
+5
+00:00:15.734 --> 00:00:23.266
+La ruta sera: demanda, rutas, contenido, video factory, ejercicios, tutorias y release.
+
+6
+00:00:23.311 --> 00:00:26.307
+Durante el video mira esta decision:
+
+7
+00:00:25.604 --> 00:00:29.920
+que dudas se resuelven con material y cuales deben ir a tutoria.
+
+8
+00:00:30.450 --> 00:00:35.630
+Contexto minuto 0: mira primero el alcance que condiciona esta salida.
+
+9
+00:00:35.675 --> 00:00:40.639
+El problema es que la demanda crece mas rapido que la capacidad del equipo formador.
+
+10
+00:00:40.684 --> 00:00:45.024
+Situacion minuto 0: la pantalla no busca impresionar;
+
+11
+00:00:45.069 --> 00:00:48.977
+busca cerrar "Apertura ejecutiva" con evidencia.
+
+12
+00:00:49.022 --> 00:00:52.930
+busca cerrar "Apertura ejecutiva" con evidencia.
+
+13
+00:00:52.975 --> 00:00:57.819
+Evidencia minuto 0: "Apertura ejecutiva" no se cierra sin test
+
+14
+00:00:57.188 --> 00:00:59.920
+captura o criterio escrito.
+
+15
+00:00:53.708 --> 00:00:59.920
+Alinear audiencia con el dolor: 12 horas semanales y dudas repetidas. (Hub
+
+16
+00:00:57.236 --> 00:00:59.920
+minuto 0 paso 2)
+
+17
+00:01:00.450 --> 00:01:05.558
+Decision humana: La respuesta es una plataforma de practica con videos
+
+18
+00:01:05.603 --> 00:01:08.551
+ejercicios workshops y tuto.
+
+19
+00:01:08.596 --> 00:01:11.208
+Situacion minuto 1:
+
+20
+00:01:11.253 --> 00:01:15.929
+AI Practice Hub solo avanza si el siguiente humano entiende el por que.
+
+21
+00:01:15.974 --> 00:01:21.298
+Evidencia minuto 1: progreso, entrega, revision y feedback.
+
+22
+00:01:21.343 --> 00:01:27.723
+Alinear audiencia con el dolor: 12 horas semanales y dudas repetidas. (Hub
+
+23
+00:01:27.380 --> 00:01:29.920
+minuto 1 paso 3)
+
+24
+00:01:30.450 --> 00:01:35.174
+Evidencia minuto 1: "Apertura ejecutiva" no se cierra sin test
+
+25
+00:01:35.219 --> 00:01:37.951
+captura o criterio escrito.
+
+26
+00:01:37.996 --> 00:01:40.536
+Situacion minuto 1:
+
+27
+00:01:40.581 --> 00:01:46.121
+AI Practice Hub recibe "Apertura ejecutiva" y debe convertirlo en trabajo revisable.
+
+28
+00:01:46.166 --> 00:01:51.706
+AI Practice Hub recibe "Apertura ejecutiva" y debe convertirlo en trabajo revisable.
+
+29
+00:01:51.751 --> 00:01:54.171
+Evidencia minuto 1:
+
+30
+00:01:54.216 --> 00:01:58.844
+hay una salida que otro perfil puede revisar sin rehacer el contexto.
+
+31
+00:01:53.708 --> 00:01:59.920
+Alinear audiencia con el dolor: 12 horas semanales y dudas repetidas. (Hub
+
+32
+00:01:57.428 --> 00:01:59.920
+minuto 1 paso 4)
+
+33
+00:02:00.450 --> 00:02:05.102
+Coste y riesgo: (Hub, minuto 2, paso 5)
+
+34
+00:02:05.147 --> 00:02:10.255
+El problema es que la demanda crece mas rapido que la capacidad del equipo formador.
+
+35
+00:02:10.300 --> 00:02:15.720
+Situacion minuto 2: alguien tendra que mantener esta salida despues de la demo.
+
+36
+00:02:15.765 --> 00:02:20.633
+Evidencia minuto 2: "Apertura ejecutiva" no se cierra sin test
+
+37
+00:02:20.678 --> 00:02:23.482
+captura o criterio escrito.
+
+38
+00:02:23.527 --> 00:02:29.907
+Alinear audiencia con el dolor: 12 horas semanales y dudas repetidas. (Hub
+
+39
+00:02:27.140 --> 00:02:29.920
+minuto 2 paso 5)
+
+40
+00:02:30.450 --> 00:02:35.150
+Checkpoint: La respuesta es una plataforma de practica con videos
+
+41
+00:02:35.195 --> 00:02:38.143
+ejercicios workshops y tuto.
+
+42
+00:02:38.188 --> 00:02:40.800
+Situacion minuto 2:
+
+43
+00:02:40.845 --> 00:02:46.529
+AI Practice Hub recibe "Apertura ejecutiva" y debe convertirlo en trabajo revisable.
+
+44
+00:02:46.574 --> 00:02:52.258
+AI Practice Hub recibe "Apertura ejecutiva" y debe convertirlo en trabajo revisable.
+
+45
+00:02:52.303 --> 00:02:54.843
+Evidencia minuto 2:
+
+46
+00:02:54.888 --> 00:02:59.636
+hay una salida que otro perfil puede revisar sin rehacer el contexto.
+
+47
+00:02:53.540 --> 00:02:59.920
+Alinear audiencia con el dolor: 12 horas semanales y dudas repetidas. (Hub
+
+48
+00:02:57.188 --> 00:02:59.920
+minuto 2 paso 6)
+
+49
+00:03:00.450 --> 00:03:04.862
+Pantalla de accion: El problema no es solo impartir cursos.
+
+50
+00:03:04.907 --> 00:03:07.495
+Situacion minuto 3:
+
+51
+00:03:07.540 --> 00:03:12.120
+el equipo mira "Apertura ejecutiva" dentro del ruta de aprendizaje
+
+52
+00:03:12.165 --> 00:03:15.065
+con coste y permiso visibles.
+
+53
+00:03:15.110 --> 00:03:19.690
+el equipo mira "Apertura ejecutiva" dentro del ruta de aprendizaje
+
+54
+00:03:19.735 --> 00:03:26.163
+con coste y permiso visibles. (Hub, minuto 3, paso 78)
+
+55
+00:03:25.052 --> 00:03:29.920
+Evidencia minuto 3: "Apertura ejecutiva" no se cierra sin test
+
+56
+00:03:27.188 --> 00:03:29.920
+captura o criterio escrito.
+
+57
+00:03:23.708 --> 00:03:29.920
+Alinear audiencia con el dolor: 12 horas semanales y dudas repetidas. (Hub
+
+58
+00:03:27.236 --> 00:03:29.920
+minuto 3 paso 7)
+
+59
+00:03:30.450 --> 00:03:35.654
+Contexto minuto 3: mira primero el alcance que condiciona esta salida.
+
+60
+00:03:35.699 --> 00:03:40.663
+El problema es que la demanda crece mas rapido que la capacidad del equipo formador.
+
+61
+00:03:40.708 --> 00:03:43.296
+Situacion minuto 3:
+
+62
+00:03:43.341 --> 00:03:47.897
+AI Practice Hub solo avanza si el siguiente humano entiende el por que.
+
+63
+00:03:47.942 --> 00:03:53.314
+Evidencia minuto 3: progreso, entrega, revision y feedback.
+
+64
+00:03:53.359 --> 00:03:59.571
+Alinear audiencia con el dolor: 12 horas semanales y dudas repetidas. (Hub
+
+65
+00:03:57.236 --> 00:03:59.920
+minuto 3 paso 8)
+
+66
+00:04:00.450 --> 00:04:05.558
+Decision humana: La respuesta es una plataforma de practica con videos
+
+67
+00:04:05.603 --> 00:04:08.551
+ejercicios workshops y tuto.
+
+68
+00:04:08.596 --> 00:04:11.280
+Situacion minuto 4:
+
+69
+00:04:11.325 --> 00:04:16.049
+el equipo mira "Apertura ejecutiva" dentro del ruta de aprendizaje
+
+70
+00:04:16.094 --> 00:04:19.066
+con coste y permiso visibles.
+
+71
+00:04:19.111 --> 00:04:23.835
+el equipo mira "Apertura ejecutiva" dentro del ruta de aprendizaje
+
+72
+00:04:23.324 --> 00:04:29.920
+con coste y permiso visibles. (Hub, minuto 4, paso 79)
+
+73
+00:04:24.932 --> 00:04:29.920
+Evidencia minuto 4: "Apertura ejecutiva" no se cierra sin test
+
+74
+00:04:27.116 --> 00:04:29.920
+captura o criterio escrito.
+
+75
+00:04:23.540 --> 00:04:29.920
+Alinear audiencia con el dolor: 12 horas semanales y dudas repetidas. (Hub
+
+76
+00:04:27.140 --> 00:04:29.920
+minuto 4 paso 9)
+
+77
+00:04:30.450 --> 00:04:34.982
+Situacion minuto 4: el equipo mira "Captura mental:
+
+78
+00:04:35.027 --> 00:04:38.815
+AI Practice Hub" dentro del ruta de aprendizaje
+
+79
+00:04:38.860 --> 00:04:41.832
+con coste y permiso visibles.
+
+80
+00:04:41.877 --> 00:04:45.665
+AI Practice Hub" dentro del ruta de aprendizaje
+
+81
+00:04:45.710 --> 00:04:52.042
+con coste y permiso visibles. (Hub, minuto 4, paso 80)
+
+82
+00:04:52.087 --> 00:04:58.011
+Tension minuto 4: el agente puede avanzar mas rapido que nuestra capacidad de revisar.
+
+83
+00:04:54.524 --> 00:04:59.920
+Accion minuto 4: pedir salida pequena, verificable y con owner.
+
+84
+00:04:53.492 --> 00:04:59.920
+no con la sensacion de velocidad. (Hub, minuto 4, paso 34)
+
+85
+00:04:57.356 --> 00:04:59.920
+Evidencia minuto 4:
+
+86
+00:04:55.172 --> 00:04:59.920
+hay una salida que otro perfil puede revisar sin rehacer el contexto.
+
+87
+00:04:53.444 --> 00:04:59.920
+captura o criterio escrito. (Hub, minuto 4, paso 45)
+
+88
+00:05:00.450 --> 00:05:05.054
+Pantalla de accion: El diagnostico es que falta precalentamiento.
+
+89
+00:05:05.099 --> 00:05:07.711
+Situacion minuto 5:
+
+90
+00:05:07.756 --> 00:05:12.312
+AI Practice Hub solo avanza si el siguiente humano entiende el por que.
+
+91
+00:05:12.357 --> 00:05:17.705
+Evidencia minuto 5: progreso, entrega, revision y feedback.
+
+92
+00:05:17.750 --> 00:05:20.098
+Hub minuto 5:
+
+93
+00:05:20.143 --> 00:05:22.491
+Hub minuto 5:
+
+94
+00:05:22.536 --> 00:05:28.004
+Mostrar ejemplos de dudas que deben moverse a autoconsumo para "Demanda reactiva" para
+
+95
+00:05:27.668 --> 00:05:29.920
+"Demanda reactiva".
+
+96
+00:05:30.450 --> 00:05:34.814
+Contexto visible: La gente llega a clase sin base comun.
+
+97
+00:05:34.859 --> 00:05:37.471
+Situacion minuto 5:
+
+98
+00:05:37.516 --> 00:05:42.048
+el equipo mira "Demanda reactiva" dentro del ruta de aprendizaje
+
+99
+00:05:42.093 --> 00:05:44.993
+con coste y permiso visibles.
+
+100
+00:05:45.038 --> 00:05:49.570
+el equipo mira "Demanda reactiva" dentro del ruta de aprendizaje
+
+101
+00:05:49.615 --> 00:05:55.947
+con coste y permiso visibles. (Hub, minuto 5, paso 81)
+
+102
+00:05:55.220 --> 00:05:59.920
+Evidencia minuto 5: "Demanda reactiva" no se cierra sin test
+
+103
+00:05:57.188 --> 00:05:59.920
+captura o criterio escrito.
+
+104
+00:05:57.572 --> 00:05:59.920
+Hub minuto 5:
+
+105
+00:05:57.572 --> 00:05:59.920
+Hub minuto 5:
+
+106
+00:05:54.452 --> 00:05:59.920
+Mostrar ejemplos de dudas que deben moverse a autoconsumo para "Demanda reactiva" para
+
+107
+00:05:57.668 --> 00:05:59.920
+"Demanda reactiva".
+
+108
+00:06:00.450 --> 00:06:06.302
+Decision minuto 6: si el riesgo supera la evidencia, entra instructor o tech lead.
+
+109
+00:06:06.347 --> 00:06:11.599
+Por eso el directo se llena de preguntas que podrian estar resueltas en material gu.
+
+110
+00:06:11.644 --> 00:06:14.328
+Situacion minuto 6:
+
+111
+00:06:14.373 --> 00:06:19.049
+AI Practice Hub solo avanza si el siguiente humano entiende el por que.
+
+112
+00:06:19.094 --> 00:06:24.538
+Evidencia minuto 6: progreso, entrega, revision y feedback.
+
+113
+00:06:24.583 --> 00:06:26.931
+Hub minuto 6:
+
+114
+00:06:26.976 --> 00:06:29.324
+Hub minuto 6:
+
+115
+00:06:24.308 --> 00:06:29.920
+Mostrar ejemplos de dudas que deben moverse a autoconsumo para "Demanda reactiva" para
+
+116
+00:06:27.596 --> 00:06:29.920
+"Demanda reactiva".
+
+117
+00:06:30.450 --> 00:06:35.246
+Evidencia minuto 6: "Demanda reactiva" no se cierra sin test
+
+118
+00:06:35.291 --> 00:06:38.023
+captura o criterio escrito.
+
+119
+00:06:38.068 --> 00:06:40.680
+Situacion minuto 6:
+
+120
+00:06:40.725 --> 00:06:46.241
+AI Practice Hub recibe "Demanda reactiva" y debe convertirlo en trabajo revisable.
+
+121
+00:06:46.286 --> 00:06:51.802
+AI Practice Hub recibe "Demanda reactiva" y debe convertirlo en trabajo revisable.
+
+122
+00:06:51.847 --> 00:06:54.387
+Evidencia minuto 6:
+
+123
+00:06:54.432 --> 00:06:59.060
+hay una salida que otro perfil puede revisar sin rehacer el contexto.
+
+124
+00:06:57.620 --> 00:06:59.920
+Hub minuto 6:
+
+125
+00:06:57.620 --> 00:06:59.920
+Hub minuto 6:
+
+126
+00:06:54.452 --> 00:06:59.920
+Mostrar ejemplos de dudas que deben moverse a autoconsumo para "Demanda reactiva" para
+
+127
+00:06:57.668 --> 00:06:59.920
+"Demanda reactiva".
+
+128
+00:07:00.450 --> 00:07:04.766
+Coste y riesgo: La gente llega a clase sin base comun.
+
+129
+00:07:04.811 --> 00:07:09.247
+Situacion minuto 7: la pantalla no busca impresionar;
+
+130
+00:07:09.292 --> 00:07:13.248
+busca cerrar "Demanda reactiva" con evidencia.
+
+131
+00:07:13.293 --> 00:07:17.249
+busca cerrar "Demanda reactiva" con evidencia.
+
+132
+00:07:17.294 --> 00:07:22.138
+Evidencia minuto 7: "Demanda reactiva" no se cierra sin test
+
+133
+00:07:22.183 --> 00:07:24.987
+captura o criterio escrito.
+
+134
+00:07:25.032 --> 00:07:27.380
+Hub minuto 7:
+
+135
+00:07:27.425 --> 00:07:29.773
+Hub minuto 7:
+
+136
+00:07:24.308 --> 00:07:29.920
+Mostrar ejemplos de dudas que deben moverse a autoconsumo para "Demanda reactiva" para
+
+137
+00:07:27.596 --> 00:07:29.920
+"Demanda reactiva".
+
+138
+00:07:30.450 --> 00:07:32.246
+Checkpoint:
+
+139
+00:07:32.291 --> 00:07:37.543
+Por eso el directo se llena de preguntas que podrian estar resueltas en material gu.
+
+140
+00:07:37.588 --> 00:07:40.224
+Situacion minuto 7:
+
+141
+00:07:40.269 --> 00:07:45.929
+AI Practice Hub recibe "Demanda reactiva" y debe convertirlo en trabajo revisable.
+
+142
+00:07:45.974 --> 00:07:51.634
+AI Practice Hub recibe "Demanda reactiva" y debe convertirlo en trabajo revisable.
+
+143
+00:07:51.679 --> 00:07:54.267
+Evidencia minuto 7:
+
+144
+00:07:54.312 --> 00:07:59.060
+hay una salida que otro perfil puede revisar sin rehacer el contexto.
+
+145
+00:07:57.572 --> 00:07:59.920
+Hub minuto 7:
+
+146
+00:07:57.572 --> 00:07:59.920
+Hub minuto 7:
+
+147
+00:07:54.308 --> 00:07:59.920
+Mostrar ejemplos de dudas que deben moverse a autoconsumo para "Demanda reactiva" para
+
+148
+00:07:57.596 --> 00:07:59.920
+"Demanda reactiva".
+
+149
+00:08:00.450 --> 00:08:05.342
+Situacion minuto 8: AI Practice Hub recibe "Captura mental:
+
+150
+00:08:05.387 --> 00:08:09.511
+AI Practice Hub" y debe convertirlo en trabajo revisable.
+
+151
+00:08:09.556 --> 00:08:16.824
+AI Practice Hub" y debe convertirlo en trabajo revisable. (Hub, minuto 8, paso 1)
+
+152
+00:08:16.869 --> 00:08:23.153
+Tension minuto 8: sin evidencia, la IA parece productiva pero no deja confianza.
+
+153
+00:08:23.198 --> 00:08:28.090
+Accion minuto 8: comparar la respuesta con el criterio de cierre
+
+154
+00:08:27.044 --> 00:08:29.920
+no con la sensacion de velocidad.
+
+155
+00:08:24.356 --> 00:08:29.920
+Evidencia minuto 8: "Captura mental: AI Practice Hub" no se cierra sin test
+
+156
+00:08:27.116 --> 00:08:29.920
+captura o criterio escrito.
+
+157
+00:08:30.450 --> 00:08:34.814
+Contexto visible: La gente llega a clase sin base comun.
+
+158
+00:08:34.859 --> 00:08:40.183
+Situacion minuto 8: alguien tendra que mantener esta salida despues de la demo.
+
+159
+00:08:40.228 --> 00:08:44.952
+Evidencia minuto 8: "Demanda reactiva" no se cierra sin test
+
+160
+00:08:44.997 --> 00:08:47.729
+captura o criterio escrito.
+
+161
+00:08:47.774 --> 00:08:50.002
+Hub minuto 8:
+
+162
+00:08:50.047 --> 00:08:52.275
+Hub minuto 8:
+
+163
+00:08:52.320 --> 00:08:57.788
+Mostrar ejemplos de dudas que deben moverse a autoconsumo para "Demanda reactiva" para
+
+164
+00:08:57.668 --> 00:08:59.920
+"Demanda reactiva".
+
+165
+00:09:00.450 --> 00:09:05.942
+Decision minuto 9: guardar la duda como material reutilizable si se repite.
+
+166
+00:09:05.987 --> 00:09:11.239
+Por eso el directo se llena de preguntas que podrian estar resueltas en material gu.
+
+167
+00:09:11.284 --> 00:09:13.920
+Situacion minuto 9:
+
+168
+00:09:13.965 --> 00:09:18.617
+el equipo mira "Demanda reactiva" dentro del ruta de aprendizaje
+
+169
+00:09:18.662 --> 00:09:21.634
+con coste y permiso visibles.
+
+170
+00:09:21.679 --> 00:09:26.331
+el equipo mira "Demanda reactiva" dentro del ruta de aprendizaje
+
+171
+00:09:23.396 --> 00:09:29.920
+con coste y permiso visibles. (Hub, minuto 9, paso 82)
+
+172
+00:09:25.076 --> 00:09:29.920
+Evidencia minuto 9: "Demanda reactiva" no se cierra sin test
+
+173
+00:09:27.116 --> 00:09:29.920
+captura o criterio escrito.
+
+174
+00:09:27.620 --> 00:09:29.920
+Hub minuto 9:
+
+175
+00:09:27.620 --> 00:09:29.920
+Hub minuto 9:
+
+176
+00:09:24.308 --> 00:09:29.920
+Mostrar ejemplos de dudas que deben moverse a autoconsumo para "Demanda reactiva" para
+
+177
+00:09:27.596 --> 00:09:29.920
+"Demanda reactiva".
+
+178
+00:09:30.450 --> 00:09:36.422
+Evidencia minuto 9: "Demanda reactiva" queda ligado a prueba, owner y decision.
+
+179
+00:09:36.467 --> 00:09:40.831
+Situacion minuto 9: la pantalla no busca impresionar;
+
+180
+00:09:40.876 --> 00:09:44.832
+busca cerrar "Demanda reactiva" con evidencia.
+
+181
+00:09:44.877 --> 00:09:48.833
+busca cerrar "Demanda reactiva" con evidencia.
+
+182
+00:09:48.878 --> 00:09:53.722
+Evidencia minuto 9: "Demanda reactiva" no se cierra sin test
+
+183
+00:09:53.767 --> 00:09:56.571
+captura o criterio escrito.
+
+184
+00:09:56.616 --> 00:09:58.916
+Hub minuto 9:
+
+185
+00:09:57.620 --> 00:09:59.920
+Hub minuto 9:
+
+186
+00:09:54.308 --> 00:09:59.920
+Mostrar ejemplos de dudas que deben moverse a autoconsumo para "Demanda reactiva" para
+
+187
+00:09:57.596 --> 00:09:59.920
+"Demanda reactiva".
+
+188
+00:10:00.450 --> 00:10:04.334
+Pantalla de accion: El modelo cambia el orden.
+
+189
+00:10:04.514 --> 00:10:07.222
+Situacion 10 minutos:
+
+190
+00:10:07.402 --> 00:10:12.078
+AI Practice Hub solo avanza si el siguiente humano entiende el por que.
+
+191
+00:10:12.258 --> 00:10:17.654
+Evidencia 10 minutos: progreso, entrega, revision y feedback.
+
+192
+00:10:17.834 --> 00:10:25.270
+Definir que se debe consumir antes de reservar tutoria. (Hub, 10 minutos, paso 1)
+
+193
+00:10:30.450 --> 00:10:34.886
+Contexto visible: Primero material guiado y ejercicio.
+
+194
+00:10:34.931 --> 00:10:37.639
+Situacion 10 minutos:
+
+195
+00:10:37.684 --> 00:10:42.144
+el equipo mira "Flipping training" dentro del ruta de aprendizaje
+
+196
+00:10:42.189 --> 00:10:45.161
+con coste y permiso visibles.
+
+197
+00:10:45.206 --> 00:10:49.666
+el equipo mira "Flipping training" dentro del ruta de aprendizaje
+
+198
+00:10:49.711 --> 00:10:56.331
+con coste y permiso visibles. (Hub, 10 minutos, paso 83)
+
+199
+00:10:55.196 --> 00:10:59.920
+Evidencia 10 minutos: "Flipping training" no se cierra sin test
+
+200
+00:10:57.116 --> 00:10:59.920
+captura o criterio escrito.
+
+201
+00:10:52.388 --> 00:10:59.920
+Definir que se debe consumir antes de reservar tutoria. (Hub, 10 minutos, paso 2)
+
+202
+00:11:00.450 --> 00:11:05.486
+Decision humana: Despues tutoria con output concreto y dudas de criterio.
+
+203
+00:11:05.666 --> 00:11:11.134
+Situacion 11 minutos: alguien tendra que mantener esta salida despues de la demo.
+
+204
+00:11:11.314 --> 00:11:16.086
+Evidencia 11 minutos: "Flipping training" no se cierra sin test
+
+205
+00:11:16.266 --> 00:11:19.070
+captura o criterio escrito.
+
+206
+00:11:19.250 --> 00:11:26.710
+Definir que se debe consumir antes de reservar tutoria. (Hub, 11 minutos, paso 3)
+
+207
+00:11:30.450 --> 00:11:35.222
+Evidencia 11 minutos: "Flipping training" no se cierra sin test
+
+208
+00:11:35.267 --> 00:11:38.071
+captura o criterio escrito.
+
+209
+00:11:38.116 --> 00:11:40.800
+Situacion 11 minutos:
+
+210
+00:11:40.845 --> 00:11:46.265
+AI Practice Hub recibe "Flipping training" y debe convertirlo en trabajo revisable.
+
+211
+00:11:46.310 --> 00:11:51.730
+AI Practice Hub recibe "Flipping training" y debe convertirlo en trabajo revisable.
+
+212
+00:11:51.775 --> 00:11:54.459
+Evidencia 11 minutos:
+
+213
+00:11:54.504 --> 00:11:59.252
+hay una salida que otro perfil puede revisar sin rehacer el contexto.
+
+214
+00:11:52.436 --> 00:11:59.920
+Definir que se debe consumir antes de reservar tutoria. (Hub, 11 minutos, paso 4)
+
+215
+00:12:00.450 --> 00:12:04.598
+Coste y riesgo: Primero material guiado y ejercicio.
+
+216
+00:12:04.643 --> 00:12:09.031
+Situacion 12 minutos: la pantalla no busca impresionar;
+
+217
+00:12:09.076 --> 00:12:12.648
+busca cerrar "Flipping training" con evidencia.
+
+218
+00:12:12.693 --> 00:12:16.265
+busca cerrar "Flipping training" con evidencia.
+
+219
+00:12:16.310 --> 00:12:20.914
+Evidencia 12 minutos: "Flipping training" no se cierra sin test
+
+220
+00:12:20.959 --> 00:12:23.691
+captura o criterio escrito.
+
+221
+00:12:22.652 --> 00:12:29.920
+Definir que se debe consumir antes de reservar tutoria. (Hub, 12 minutos, paso 5)
+
+222
+00:12:30.450 --> 00:12:35.942
+Situacion 12 minutos: alguien tendra que mantener esta salida despues de la demo.
+
+223
+00:12:36.122 --> 00:12:42.046
+Tension 12 minutos: el agente puede avanzar mas rapido que nuestra capacidad de revisar.
+
+224
+00:12:42.226 --> 00:12:47.526
+Accion 12 minutos: pedir salida pequena, verificable y con owner.
+
+225
+00:12:47.706 --> 00:12:54.038
+Progreso entrega revision y feedback. (Hub, 12 minutos, paso 1)
+
+226
+00:13:00.450 --> 00:13:04.214
+Pantalla de accion: El modelo cambia el orden.
+
+227
+00:13:04.259 --> 00:13:06.991
+Situacion 13 minutos:
+
+228
+00:13:07.036 --> 00:13:11.400
+el equipo mira "Flipping training" dentro del ruta de aprendizaje
+
+229
+00:13:11.445 --> 00:13:14.345
+con coste y permiso visibles.
+
+230
+00:13:14.390 --> 00:13:18.754
+el equipo mira "Flipping training" dentro del ruta de aprendizaje
+
+231
+00:13:18.799 --> 00:13:25.251
+con coste y permiso visibles. (Hub, 13 minutos, paso 84)
+
+232
+00:13:25.244 --> 00:13:29.920
+Evidencia 13 minutos: "Flipping training" no se cierra sin test
+
+233
+00:13:27.188 --> 00:13:29.920
+captura o criterio escrito.
+
+234
+00:13:22.604 --> 00:13:29.920
+Definir que se debe consumir antes de reservar tutoria. (Hub, 13 minutos, paso 6)
+
+235
+00:13:30.450 --> 00:13:34.886
+Contexto visible: Primero material guiado y ejercicio.
+
+236
+00:13:35.066 --> 00:13:40.630
+Situacion 13 minutos: alguien tendra que mantener esta salida despues de la demo.
+
+237
+00:13:40.810 --> 00:13:45.630
+Evidencia 13 minutos: "Flipping training" no se cierra sin test
+
+238
+00:13:45.810 --> 00:13:48.614
+captura o criterio escrito.
+
+239
+00:13:48.794 --> 00:13:56.326
+Definir que se debe consumir antes de reservar tutoria. (Hub, 13 minutos, paso 7)
+
+240
+00:14:00.450 --> 00:14:05.486
+Decision humana: Despues tutoria con output concreto y dudas de criterio.
+
+241
+00:14:05.531 --> 00:14:08.407
+Situacion 14 minutos:
+
+242
+00:14:08.452 --> 00:14:13.872
+AI Practice Hub recibe "Flipping training" y debe convertirlo en trabajo revisable.
+
+243
+00:14:13.917 --> 00:14:19.337
+AI Practice Hub recibe "Flipping training" y debe convertirlo en trabajo revisable.
+
+244
+00:14:19.382 --> 00:14:22.186
+Evidencia 14 minutos:
+
+245
+00:14:22.231 --> 00:14:26.979
+hay una salida que otro perfil puede revisar sin rehacer el contexto.
+
+246
+00:14:22.292 --> 00:14:29.920
+Definir que se debe consumir antes de reservar tutoria. (Hub, 14 minutos, paso 8)
+
+247
+00:14:30.450 --> 00:14:36.470
+Evidencia 14 minutos: "Flipping training" queda ligado a prueba, owner y decision.
+
+248
+00:14:36.515 --> 00:14:41.215
+Situacion 14 minutos: la pantalla no busca impresionar;
+
+249
+00:14:41.260 --> 00:14:44.928
+busca cerrar "Flipping training" con evidencia.
+
+250
+00:14:44.973 --> 00:14:48.641
+busca cerrar "Flipping training" con evidencia.
+
+251
+00:14:48.686 --> 00:14:53.602
+Evidencia 14 minutos: "Flipping training" no se cierra sin test
+
+252
+00:14:53.647 --> 00:14:56.451
+captura o criterio escrito.
+
+253
+00:14:52.316 --> 00:14:59.920
+Definir que se debe consumir antes de reservar tutoria. (Hub, 14 minutos, paso 9)
+
+254
+00:15:00.450 --> 00:15:04.598
+Pantalla de accion: No buscamos guerra de herramientas.
+
+255
+00:15:04.778 --> 00:15:07.558
+Situacion 15 minutos:
+
+256
+00:15:07.738 --> 00:15:12.414
+AI Practice Hub solo avanza si el siguiente humano entiende el por que.
+
+257
+00:15:12.594 --> 00:15:18.110
+Evidencia 15 minutos: progreso, entrega, revision y feedback.
+
+258
+00:15:18.290 --> 00:15:23.830
+Hub 15 minutos: Mostrar cuando elegir cada vendor para "Tres rutas vendor".
+
+259
+00:15:30.450 --> 00:15:35.030
+Contexto visible: Cada vendor tiene una personalidad operativa.
+
+260
+00:15:35.075 --> 00:15:37.783
+Situacion 15 minutos:
+
+261
+00:15:37.828 --> 00:15:42.384
+el equipo mira "Tres rutas vendor" dentro del ruta de aprendizaje
+
+262
+00:15:42.429 --> 00:15:45.329
+con coste y permiso visibles.
+
+263
+00:15:45.374 --> 00:15:49.930
+el equipo mira "Tres rutas vendor" dentro del ruta de aprendizaje
+
+264
+00:15:49.975 --> 00:15:56.475
+con coste y permiso visibles. (Hub, 15 minutos, paso 85)
+
+265
+00:15:55.004 --> 00:15:59.920
+Evidencia 15 minutos: "Tres rutas vendor" no se cierra sin test
+
+266
+00:15:57.188 --> 00:15:59.920
+captura o criterio escrito.
+
+267
+00:15:54.524 --> 00:15:59.920
+Hub 15 minutos: Mostrar cuando elegir cada vendor para "Tres rutas vendor".
+
+268
+00:16:00.450 --> 00:16:05.174
+Situacion 16 minutos: la pantalla no busca impresionar;
+
+269
+00:16:05.219 --> 00:16:09.991
+busca cerrar "Captura mental: AI Practice Hub" con evidencia.
+
+270
+00:16:10.036 --> 00:16:14.808
+busca cerrar "Captura mental: AI Practice Hub" con evidencia.
+
+271
+00:16:14.853 --> 00:16:20.969
+Tension 16 minutos: el agente puede avanzar mas rapido que nuestra capacidad de revisar.
+
+272
+00:16:21.014 --> 00:16:26.530
+Accion 16 minutos: pedir salida pequena, verificable y con owner.
+
+273
+00:16:24.812 --> 00:16:29.920
+convertir ruta de aprendizaje en una decision que se pueda ensenar en tutoria.
+
+274
+00:16:27.092 --> 00:16:29.920
+Evidencia 16 minutos:
+
+275
+00:16:25.172 --> 00:16:29.920
+hay una salida que otro perfil puede revisar sin rehacer el contexto.
+
+276
+00:16:30.450 --> 00:16:35.606
+Evidencia 16 minutos: "Tres rutas vendor" no se cierra sin test
+
+277
+00:16:35.651 --> 00:16:38.455
+captura o criterio escrito.
+
+278
+00:16:38.500 --> 00:16:41.400
+Situacion 16 minutos:
+
+279
+00:16:41.445 --> 00:16:47.225
+AI Practice Hub recibe "Tres rutas vendor" y debe convertirlo en trabajo revisable.
+
+280
+00:16:47.270 --> 00:16:53.050
+AI Practice Hub recibe "Tres rutas vendor" y debe convertirlo en trabajo revisable.
+
+281
+00:16:53.095 --> 00:16:55.923
+Evidencia 16 minutos:
+
+282
+00:16:55.172 --> 00:16:59.920
+hay una salida que otro perfil puede revisar sin rehacer el contexto.
+
+283
+00:16:54.212 --> 00:16:59.920
+Hub 16 minutos: Mostrar cuando elegir cada vendor para "Tres rutas vendor".
+
+284
+00:17:00.450 --> 00:17:05.126
+Coste y riesgo: Cada vendor tiene una personalidad operativa.
+
+285
+00:17:05.171 --> 00:17:09.943
+Situacion 17 minutos: la pantalla no busca impresionar;
+
+286
+00:17:09.988 --> 00:17:13.968
+busca cerrar "Tres rutas vendor" con evidencia.
+
+287
+00:17:14.013 --> 00:17:17.993
+busca cerrar "Tres rutas vendor" con evidencia.
+
+288
+00:17:18.038 --> 00:17:23.218
+Evidencia 17 minutos: "Tres rutas vendor" no se cierra sin test
+
+289
+00:17:23.263 --> 00:17:26.067
+captura o criterio escrito.
+
+290
+00:17:24.164 --> 00:17:29.920
+Hub 17 minutos: Mostrar cuando elegir cada vendor para "Tres rutas vendor".
+
+291
+00:17:30.450 --> 00:17:35.006
+Checkpoint: El hub hace que el alumno pueda practicar la diferencia.
+
+292
+00:17:35.186 --> 00:17:38.086
+Situacion 17 minutos:
+
+293
+00:17:38.266 --> 00:17:42.822
+AI Practice Hub solo avanza si el siguiente humano entiende el por que.
+
+294
+00:17:43.002 --> 00:17:48.542
+Evidencia 17 minutos: progreso, entrega, revision y feedback.
+
+295
+00:17:48.722 --> 00:17:54.334
+Hub 17 minutos: Mostrar cuando elegir cada vendor para "Tres rutas vendor".
+
+296
+00:18:00.450 --> 00:18:04.478
+Pantalla de accion: No buscamos guerra de herramientas.
+
+297
+00:18:04.523 --> 00:18:07.351
+Situacion 18 minutos:
+
+298
+00:18:07.396 --> 00:18:11.952
+el equipo mira "Tres rutas vendor" dentro del ruta de aprendizaje
+
+299
+00:18:11.997 --> 00:18:14.897
+con coste y permiso visibles.
+
+300
+00:18:14.942 --> 00:18:19.498
+el equipo mira "Tres rutas vendor" dentro del ruta de aprendizaje
+
+301
+00:18:19.543 --> 00:18:26.187
+con coste y permiso visibles. (Hub, 18 minutos, paso 86)
+
+302
+00:18:24.932 --> 00:18:29.920
+Evidencia 18 minutos: "Tres rutas vendor" no se cierra sin test
+
+303
+00:18:27.188 --> 00:18:29.920
+captura o criterio escrito.
+
+304
+00:18:24.404 --> 00:18:29.920
+Hub 18 minutos: Mostrar cuando elegir cada vendor para "Tres rutas vendor".
+
+305
+00:18:30.450 --> 00:18:35.030
+Contexto visible: Cada vendor tiene una personalidad operativa.
+
+306
+00:18:35.210 --> 00:18:40.750
+Situacion 18 minutos: alguien tendra que mantener esta salida despues de la demo.
+
+307
+00:18:40.930 --> 00:18:45.918
+Evidencia 18 minutos: "Tres rutas vendor" no se cierra sin test
+
+308
+00:18:46.098 --> 00:18:48.830
+captura o criterio escrito.
+
+309
+00:18:49.010 --> 00:18:54.526
+Hub 18 minutos: Mostrar cuando elegir cada vendor para "Tres rutas vendor".
+
+310
+00:19:00.450 --> 00:19:05.582
+Decision humana: El hub hace que el alumno pueda practicar la diferencia.
+
+311
+00:19:05.627 --> 00:19:08.623
+Situacion 19 minutos:
+
+312
+00:19:08.668 --> 00:19:14.448
+AI Practice Hub recibe "Tres rutas vendor" y debe convertirlo en trabajo revisable.
+
+313
+00:19:14.493 --> 00:19:20.273
+AI Practice Hub recibe "Tres rutas vendor" y debe convertirlo en trabajo revisable.
+
+314
+00:19:20.318 --> 00:19:23.290
+Evidencia 19 minutos:
+
+315
+00:19:23.335 --> 00:19:28.083
+hay una salida que otro perfil puede revisar sin rehacer el contexto.
+
+316
+00:19:24.140 --> 00:19:29.920
+Hub 19 minutos: Mostrar cuando elegir cada vendor para "Tres rutas vendor".
+
+317
+00:19:30.450 --> 00:19:36.638
+Evidencia 19 minutos: "Tres rutas vendor" queda ligado a prueba, owner y decision.
+
+318
+00:19:36.683 --> 00:19:41.455
+Situacion 19 minutos: la pantalla no busca impresionar;
+
+319
+00:19:41.500 --> 00:19:45.480
+busca cerrar "Tres rutas vendor" con evidencia.
+
+320
+00:19:45.525 --> 00:19:49.505
+busca cerrar "Tres rutas vendor" con evidencia.
+
+321
+00:19:49.550 --> 00:19:54.754
+Evidencia 19 minutos: "Tres rutas vendor" no se cierra sin test
+
+322
+00:19:54.799 --> 00:19:57.603
+captura o criterio escrito.
+
+323
+00:19:54.140 --> 00:19:59.920
+Hub 19 minutos: Mostrar cuando elegir cada vendor para "Tres rutas vendor".
+
+324
+00:20:00.450 --> 00:20:04.838
+Pantalla de accion: Esta capa evita cursos que se olvidan.
+
+325
+00:20:05.018 --> 00:20:07.678
+Situacion 20 minutos:
+
+326
+00:20:07.858 --> 00:20:12.414
+AI Practice Hub solo avanza si el siguiente humano entiende el por que.
+
+327
+00:20:12.594 --> 00:20:17.894
+Evidencia 20 minutos: progreso, entrega, revision y feedback.
+
+328
+00:20:18.074 --> 00:20:24.838
+Explicar como se empaqueta un curso completo. (Hub, 20 minutos, paso 1)
+
+329
+00:20:30.450 --> 00:20:35.486
+Situacion 20 minutos: AI Practice Hub recibe "Captura mental:
+
+330
+00:20:35.531 --> 00:20:39.655
+AI Practice Hub" y debe convertirlo en trabajo revisable.
+
+331
+00:20:39.700 --> 00:20:47.088
+AI Practice Hub" y debe convertirlo en trabajo revisable. (Hub, 20 minutos, paso 2)
+
+332
+00:20:47.133 --> 00:20:53.465
+Tension 20 minutos: sin evidencia, la IA parece productiva pero no deja confianza.
+
+333
+00:20:53.510 --> 00:20:58.450
+Accion 20 minutos: comparar la respuesta con el criterio de cierre
+
+334
+00:20:57.044 --> 00:20:59.920
+no con la sensacion de velocidad.
+
+335
+00:20:54.260 --> 00:20:59.920
+Evidencia 20 minutos: "Captura mental: AI Practice Hub" no se cierra sin test
+
+336
+00:20:57.116 --> 00:20:59.920
+captura o criterio escrito.
+
+337
+00:21:00.450 --> 00:21:06.014
+Decision humana: El workshop convierte practica individual en criterio compartido.
+
+338
+00:21:06.194 --> 00:21:11.806
+Situacion 21 minutos: alguien tendra que mantener esta salida despues de la demo.
+
+339
+00:21:11.986 --> 00:21:17.070
+Evidencia 21 minutos: "Sistema de contenido" no se cierra sin test
+
+340
+00:21:17.250 --> 00:21:20.054
+captura o criterio escrito.
+
+341
+00:21:20.234 --> 00:21:27.262
+Explicar como se empaqueta un curso completo. (Hub, 21 minutos, paso 2)
+
+342
+00:21:30.450 --> 00:21:35.414
+Evidencia 21 minutos: "Sistema de contenido" no se cierra sin test
+
+343
+00:21:35.459 --> 00:21:38.191
+captura o criterio escrito.
+
+344
+00:21:38.236 --> 00:21:40.992
+Situacion 21 minutos:
+
+345
+00:21:41.037 --> 00:21:46.721
+AI Practice Hub recibe "Sistema de contenido" y debe convertirlo en trabajo revisable.
+
+346
+00:21:46.766 --> 00:21:52.450
+AI Practice Hub recibe "Sistema de contenido" y debe convertirlo en trabajo revisable.
+
+347
+00:21:52.495 --> 00:21:55.179
+Evidencia 21 minutos:
+
+348
+00:21:55.224 --> 00:21:59.852
+hay una salida que otro perfil puede revisar sin rehacer el contexto.
+
+349
+00:21:53.012 --> 00:21:59.920
+Explicar como se empaqueta un curso completo. (Hub, 21 minutos, paso 3)
+
+350
+00:22:00.450 --> 00:22:05.678
+Coste y riesgo: El deck explica, pero el ejercicio obliga a practicar.
+
+351
+00:22:05.723 --> 00:22:10.423
+Situacion 22 minutos: la pantalla no busca impresionar;
+
+352
+00:22:10.468 --> 00:22:14.472
+busca cerrar "Sistema de contenido" con evidencia.
+
+353
+00:22:14.517 --> 00:22:18.521
+busca cerrar "Sistema de contenido" con evidencia.
+
+354
+00:22:18.566 --> 00:22:23.722
+Evidencia 22 minutos: "Sistema de contenido" no se cierra sin test
+
+355
+00:22:23.767 --> 00:22:26.571
+captura o criterio escrito.
+
+356
+00:22:22.772 --> 00:22:29.920
+Explicar como se empaqueta un curso completo. (Hub, 22 minutos, paso 4)
+
+357
+00:22:30.450 --> 00:22:35.678
+Checkpoint: El workshop convierte practica individual en criterio compartido.
+
+358
+00:22:35.858 --> 00:22:38.710
+Situacion 22 minutos:
+
+359
+00:22:38.890 --> 00:22:43.566
+AI Practice Hub solo avanza si el siguiente humano entiende el por que.
+
+360
+00:22:43.746 --> 00:22:49.310
+Evidencia 22 minutos: progreso, entrega, revision y feedback.
+
+361
+00:22:49.490 --> 00:22:56.662
+Explicar como se empaqueta un curso completo. (Hub, 22 minutos, paso 5)
+
+362
+00:23:00.450 --> 00:23:04.838
+Pantalla de accion: Esta capa evita cursos que se olvidan.
+
+363
+00:23:04.883 --> 00:23:07.759
+Situacion 23 minutos:
+
+364
+00:23:07.804 --> 00:23:12.456
+el equipo mira "Sistema de contenido" dentro del ruta de aprendizaje
+
+365
+00:23:12.501 --> 00:23:15.401
+con coste y permiso visibles.
+
+366
+00:23:15.446 --> 00:23:20.098
+el equipo mira "Sistema de contenido" dentro del ruta de aprendizaje
+
+367
+00:23:20.143 --> 00:23:26.811
+con coste y permiso visibles. (Hub, 23 minutos, paso 87)
+
+368
+00:23:24.812 --> 00:23:29.920
+Evidencia 23 minutos: "Sistema de contenido" no se cierra sin test
+
+369
+00:23:27.188 --> 00:23:29.920
+captura o criterio escrito.
+
+370
+00:23:22.892 --> 00:23:29.920
+Explicar como se empaqueta un curso completo. (Hub, 23 minutos, paso 6)
+
+371
+00:23:30.450 --> 00:23:35.630
+Contexto visible: El deck explica, pero el ejercicio obliga a practicar.
+
+372
+00:23:35.810 --> 00:23:41.398
+Situacion 23 minutos: alguien tendra que mantener esta salida despues de la demo.
+
+373
+00:23:41.578 --> 00:23:46.686
+Evidencia 23 minutos: "Sistema de contenido" no se cierra sin test
+
+374
+00:23:46.866 --> 00:23:49.598
+captura o criterio escrito.
+
+375
+00:23:49.778 --> 00:23:56.782
+Explicar como se empaqueta un curso completo. (Hub, 23 minutos, paso 7)
+
+376
+00:24:00.450 --> 00:24:06.014
+Decision humana: El workshop convierte practica individual en criterio compartido.
+
+377
+00:24:06.059 --> 00:24:09.031
+Situacion 24 minutos:
+
+378
+00:24:09.076 --> 00:24:14.904
+AI Practice Hub recibe "Sistema de contenido" y debe convertirlo en trabajo revisable.
+
+379
+00:24:14.949 --> 00:24:20.777
+AI Practice Hub recibe "Sistema de contenido" y debe convertirlo en trabajo revisable.
+
+380
+00:24:20.822 --> 00:24:23.746
+Evidencia 24 minutos:
+
+381
+00:24:23.791 --> 00:24:28.539
+hay una salida que otro perfil puede revisar sin rehacer el contexto.
+
+382
+00:24:22.700 --> 00:24:29.920
+Explicar como se empaqueta un curso completo. (Hub, 24 minutos, paso 8)
+
+383
+00:24:30.450 --> 00:24:35.222
+Situacion 24 minutos: el equipo mira "Captura mental:
+
+384
+00:24:35.267 --> 00:24:39.055
+AI Practice Hub" dentro del ruta de aprendizaje
+
+385
+00:24:39.100 --> 00:24:42.072
+con coste y permiso visibles.
+
+386
+00:24:42.117 --> 00:24:45.905
+AI Practice Hub" dentro del ruta de aprendizaje
+
+387
+00:24:45.950 --> 00:24:52.834
+con coste y permiso visibles. (Hub, 24 minutos, paso 88)
+
+388
+00:24:52.879 --> 00:24:59.139
+Tension 24 minutos: el agente puede avanzar mas rapido que nuestra capacidad de revisar.
+
+389
+00:24:54.260 --> 00:24:59.920
+Accion 24 minutos: pedir salida pequena, verificable y con owner.
+
+390
+00:24:53.132 --> 00:24:59.920
+no con la sensacion de velocidad. (Hub, 24 minutos, paso 35)
+
+391
+00:24:53.276 --> 00:24:59.920
+Progreso entrega revision y feedback. (Hub, 24 minutos, paso 2)
+
+392
+00:25:00.450 --> 00:25:05.606
+Pantalla de accion: La video factory permite editar guiones largos en JSON.
+
+393
+00:25:05.786 --> 00:25:08.710
+Situacion 25 minutos:
+
+394
+00:25:08.890 --> 00:25:13.446
+AI Practice Hub solo avanza si el siguiente humano entiende el por que.
+
+395
+00:25:13.626 --> 00:25:19.214
+Evidencia 25 minutos: progreso, entrega, revision y feedback.
+
+396
+00:25:19.394 --> 00:25:24.862
+Hub 25 minutos: Mostrar relacion entre blueprint y player para "Video factory".
+
+397
+00:25:30.450 --> 00:25:35.414
+Contexto visible: Cada escena declara pantalla, voz y accion.
+
+398
+00:25:35.459 --> 00:25:38.383
+Situacion 25 minutos:
+
+399
+00:25:38.428 --> 00:25:42.816
+el equipo mira "Video factory" dentro del ruta de aprendizaje
+
+400
+00:25:42.861 --> 00:25:45.761
+con coste y permiso visibles.
+
+401
+00:25:45.806 --> 00:25:50.194
+el equipo mira "Video factory" dentro del ruta de aprendizaje
+
+402
+00:25:50.239 --> 00:25:56.859
+con coste y permiso visibles. (Hub, 25 minutos, paso 89)
+
+403
+00:25:53.444 --> 00:25:59.920
+Evidencia 25 minutos: "Video factory" no se cierra sin test, captura o criterio escrito.
+
+404
+00:25:54.452 --> 00:25:59.920
+Hub 25 minutos: Mostrar relacion entre blueprint y player para "Video factory".
+
+405
+00:26:00.450 --> 00:26:05.462
+Decision humana: El generador lo convierte en CourseScript reproducible.
+
+406
+00:26:05.642 --> 00:26:11.206
+Situacion 26 minutos: alguien tendra que mantener esta salida despues de la demo.
+
+407
+00:26:11.386 --> 00:26:17.814
+Evidencia 26 minutos: "Video factory" no se cierra sin test, captura o criterio escrito.
+
+408
+00:26:17.994 --> 00:26:23.366
+Hub 26 minutos: Mostrar relacion entre blueprint y player para "Video factory".
+
+409
+00:26:30.450 --> 00:26:36.878
+Evidencia 26 minutos: "Video factory" no se cierra sin test, captura o criterio escrito.
+
+410
+00:26:36.923 --> 00:26:39.727
+Situacion 26 minutos:
+
+411
+00:26:39.772 --> 00:26:45.048
+AI Practice Hub recibe "Video factory" y debe convertirlo en trabajo revisable.
+
+412
+00:26:45.093 --> 00:26:50.369
+AI Practice Hub recibe "Video factory" y debe convertirlo en trabajo revisable.
+
+413
+00:26:50.414 --> 00:26:53.194
+Evidencia 26 minutos:
+
+414
+00:26:53.239 --> 00:26:57.867
+hay una salida que otro perfil puede revisar sin rehacer el contexto.
+
+415
+00:26:54.548 --> 00:26:59.920
+Hub 26 minutos: Mostrar relacion entre blueprint y player para "Video factory".
+
+416
+00:27:00.450 --> 00:27:05.462
+Coste y riesgo: Cada escena declara pantalla, voz y accion.
+
+417
+00:27:05.507 --> 00:27:10.303
+Situacion 27 minutos: la pantalla no busca impresionar;
+
+418
+00:27:10.348 --> 00:27:13.968
+busca cerrar "Video factory" con evidencia.
+
+419
+00:27:14.013 --> 00:27:17.633
+busca cerrar "Video factory" con evidencia.
+
+420
+00:27:17.678 --> 00:27:24.322
+Evidencia 27 minutos: "Video factory" no se cierra sin test, captura o criterio escrito.
+
+421
+00:27:24.332 --> 00:27:29.920
+Hub 27 minutos: Mostrar relacion entre blueprint y player para "Video factory".
+
+422
+00:27:30.450 --> 00:27:35.294
+Checkpoint: El generador lo convierte en CourseScript reproducible.
+
+423
+00:27:35.474 --> 00:27:38.470
+Situacion 27 minutos:
+
+424
+00:27:38.650 --> 00:27:43.326
+AI Practice Hub solo avanza si el siguiente humano entiende el por que.
+
+425
+00:27:43.506 --> 00:27:49.190
+Evidencia 27 minutos: progreso, entrega, revision y feedback.
+
+426
+00:27:49.370 --> 00:27:54.958
+Hub 27 minutos: Mostrar relacion entre blueprint y player para "Video factory".
+
+427
+00:28:00.450 --> 00:28:05.678
+Situacion 28 minutos: AI Practice Hub recibe "Captura mental:
+
+428
+00:28:05.723 --> 00:28:09.847
+AI Practice Hub" y debe convertirlo en trabajo revisable.
+
+429
+00:28:09.892 --> 00:28:17.496
+AI Practice Hub" y debe convertirlo en trabajo revisable. (Hub, 28 minutos, paso 3)
+
+430
+00:28:17.541 --> 00:28:24.065
+Tension 28 minutos: sin evidencia, la IA parece productiva pero no deja confianza.
+
+431
+00:28:24.110 --> 00:28:29.218
+Accion 28 minutos: comparar la respuesta con el criterio de cierre
+
+432
+00:28:27.044 --> 00:28:29.920
+no con la sensacion de velocidad.
+
+433
+00:28:24.092 --> 00:28:29.920
+Evidencia 28 minutos: "Captura mental: AI Practice Hub" no se cierra sin test
+
+434
+00:28:27.116 --> 00:28:29.920
+captura o criterio escrito.
+
+435
+00:28:30.450 --> 00:28:35.558
+Contexto visible: Cada escena declara pantalla, voz y accion.
+
+436
+00:28:35.738 --> 00:28:41.470
+Situacion 28 minutos: alguien tendra que mantener esta salida despues de la demo.
+
+437
+00:28:41.650 --> 00:28:48.246
+Evidencia 28 minutos: "Video factory" no se cierra sin test, captura o criterio escrito.
+
+438
+00:28:48.426 --> 00:28:53.966
+Hub 28 minutos: Mostrar relacion entre blueprint y player para "Video factory".
+
+439
+00:29:00.450 --> 00:29:05.462
+Decision humana: El generador lo convierte en CourseScript reproducible.
+
+440
+00:29:05.507 --> 00:29:08.431
+Situacion 29 minutos:
+
+441
+00:29:08.476 --> 00:29:13.752
+AI Practice Hub recibe "Video factory" y debe convertirlo en trabajo revisable.
+
+442
+00:29:13.797 --> 00:29:19.073
+AI Practice Hub recibe "Video factory" y debe convertirlo en trabajo revisable.
+
+443
+00:29:19.118 --> 00:29:21.994
+Evidencia 29 minutos:
+
+444
+00:29:22.039 --> 00:29:26.667
+hay una salida que otro perfil puede revisar sin rehacer el contexto.
+
+445
+00:29:24.476 --> 00:29:29.920
+Hub 29 minutos: Mostrar relacion entre blueprint y player para "Video factory".
+
+446
+00:29:30.450 --> 00:29:36.590
+Evidencia 29 minutos: "Video factory" queda ligado a prueba, owner y decision.
+
+447
+00:29:36.635 --> 00:29:41.455
+Situacion 29 minutos: la pantalla no busca impresionar;
+
+448
+00:29:41.500 --> 00:29:45.120
+busca cerrar "Video factory" con evidencia.
+
+449
+00:29:45.165 --> 00:29:48.785
+busca cerrar "Video factory" con evidencia.
+
+450
+00:29:48.830 --> 00:29:55.450
+Evidencia 29 minutos: "Video factory" no se cierra sin test, captura o criterio escrito.
+
+451
+00:29:54.332 --> 00:29:59.920
+Hub 29 minutos: Mostrar relacion entre blueprint y player para "Video factory".
+
+452
+00:30:00.450 --> 00:30:04.718
+Pantalla de accion: El gran salto esta en los ejercicios.
+
+453
+00:30:04.898 --> 00:30:07.582
+Situacion 30 minutos:
+
+454
+00:30:07.762 --> 00:30:12.318
+AI Practice Hub solo avanza si el siguiente humano entiende el por que.
+
+455
+00:30:12.498 --> 00:30:17.846
+Evidencia 30 minutos: progreso, entrega, revision y feedback.
+
+456
+00:30:18.026 --> 00:30:26.062
+Aprobar estructura starter/solution/rubrica. (Hub, 30 minutos, paso 1)
+
+457
+00:30:30.450 --> 00:30:35.894
+Contexto visible: Si el alumno puede practicar solo, la tutoria cambia.
+
+458
+00:30:35.939 --> 00:30:38.695
+Situacion 30 minutos:
+
+459
+00:30:38.740 --> 00:30:44.016
+el equipo mira "Ejercicios autoconsumibles" dentro del ruta de aprendizaje
+
+460
+00:30:44.061 --> 00:30:47.033
+con coste y permiso visibles.
+
+461
+00:30:47.078 --> 00:30:52.354
+el equipo mira "Ejercicios autoconsumibles" dentro del ruta de aprendizaje
+
+462
+00:30:52.399 --> 00:30:58.731
+con coste y permiso visibles. (Hub, 30 minutos, paso 90)
+
+463
+00:30:54.500 --> 00:30:59.920
+Evidencia 30 minutos: "Ejercicios autoconsumibles" no se cierra sin test
+
+464
+00:30:57.116 --> 00:30:59.920
+captura o criterio escrito.
+
+465
+00:30:51.596 --> 00:30:59.920
+Aprobar estructura starter/solution/rubrica. (Hub, 30 minutos, paso 2)
+
+466
+00:31:00.450 --> 00:31:05.654
+Decision humana: El formador revisa outputs, no explica desde cero.
+
+467
+00:31:05.699 --> 00:31:11.479
+Situacion 31 minutos: alguien tendra que mantener esta salida despues de la demo.
+
+468
+00:31:11.524 --> 00:31:17.184
+Evidencia 31 minutos: "Ejercicios autoconsumibles" no se cierra sin test
+
+469
+00:31:17.229 --> 00:31:20.033
+captura o criterio escrito.
+
+470
+00:31:20.078 --> 00:31:26.698
+captura o criterio escrito. (Hub, 31 minutos, paso 46)
+
+471
+00:31:21.380 --> 00:31:29.920
+Aprobar estructura starter/solution/rubrica. (Hub, 31 minutos, paso 3)
+
+472
+00:31:30.450 --> 00:31:36.110
+Evidencia 31 minutos: "Ejercicios autoconsumibles" no se cierra sin test
+
+473
+00:31:36.155 --> 00:31:38.959
+captura o criterio escrito.
+
+474
+00:31:39.004 --> 00:31:45.720
+captura o criterio escrito. (Hub, 31 minutos, paso 47)
+
+475
+00:31:45.765 --> 00:31:48.713
+Situacion 31 minutos:
+
+476
+00:31:48.758 --> 00:31:54.034
+el equipo mira "Ejercicios autoconsumibles" dentro del ruta de aprendizaje
+
+477
+00:31:54.079 --> 00:31:57.051
+con coste y permiso visibles.
+
+478
+00:31:54.260 --> 00:31:59.920
+AI Practice Hub recibe "Ejercicios autoconsumibles" y debe convertirlo en trabajo
+
+479
+00:31:54.476 --> 00:31:59.920
+revisable. (Hub, 31 minutos, paso 8)
+
+480
+00:31:54.260 --> 00:31:59.920
+Evidencia 31 minutos: "Ejercicios autoconsumibles" no se cierra sin test
+
+481
+00:31:57.116 --> 00:31:59.920
+captura o criterio escrito.
+
+482
+00:31:51.356 --> 00:31:59.920
+Aprobar estructura starter/solution/rubrica. (Hub, 31 minutos, paso 4)
+
+483
+00:32:00.450 --> 00:32:05.198
+Situacion 32 minutos: el equipo mira "Captura mental:
+
+484
+00:32:05.243 --> 00:32:09.031
+AI Practice Hub" dentro del ruta de aprendizaje
+
+485
+00:32:09.076 --> 00:32:12.048
+con coste y permiso visibles.
+
+486
+00:32:12.093 --> 00:32:15.881
+AI Practice Hub" dentro del ruta de aprendizaje
+
+487
+00:32:15.926 --> 00:32:22.618
+con coste y permiso visibles. (Hub, 32 minutos, paso 91)
+
+488
+00:32:22.663 --> 00:32:28.875
+Tension 32 minutos: el agente puede avanzar mas rapido que nuestra capacidad de revisar.
+
+489
+00:32:24.308 --> 00:32:29.920
+Accion 32 minutos: pedir salida pequena, verificable y con owner.
+
+490
+00:32:23.204 --> 00:32:29.920
+no con la sensacion de velocidad. (Hub, 32 minutos, paso 36)
+
+491
+00:32:26.972 --> 00:32:29.920
+Evidencia 32 minutos:
+
+492
+00:32:25.172 --> 00:32:29.920
+hay una salida que otro perfil puede revisar sin rehacer el contexto.
+
+493
+00:32:23.324 --> 00:32:29.920
+captura o criterio escrito. (Hub, 32 minutos, paso 48)
+
+494
+00:32:30.450 --> 00:32:35.198
+Checkpoint: El formador revisa outputs, no explica desde cero.
+
+495
+00:32:35.378 --> 00:32:38.302
+Situacion 32 minutos:
+
+496
+00:32:38.482 --> 00:32:43.038
+AI Practice Hub solo avanza si el siguiente humano entiende el por que.
+
+497
+00:32:43.218 --> 00:32:48.710
+Evidencia 32 minutos: progreso, entrega, revision y feedback.
+
+498
+00:32:48.890 --> 00:32:57.190
+Aprobar estructura starter/solution/rubrica. (Hub, 32 minutos, paso 5)
+
+499
+00:33:00.450 --> 00:33:04.718
+Pantalla de accion: El gran salto esta en los ejercicios.
+
+500
+00:33:04.763 --> 00:33:07.759
+Situacion 33 minutos:
+
+501
+00:33:07.804 --> 00:33:12.936
+el equipo mira "Ejercicios autoconsumibles" dentro del ruta de aprendizaje
+
+502
+00:33:12.981 --> 00:33:15.881
+con coste y permiso visibles.
+
+503
+00:33:15.926 --> 00:33:21.058
+el equipo mira "Ejercicios autoconsumibles" dentro del ruta de aprendizaje
+
+504
+00:33:21.103 --> 00:33:27.771
+con coste y permiso visibles. (Hub, 33 minutos, paso 92)
+
+505
+00:33:24.308 --> 00:33:29.920
+Evidencia 33 minutos: "Ejercicios autoconsumibles" no se cierra sin test
+
+506
+00:33:27.188 --> 00:33:29.920
+captura o criterio escrito.
+
+507
+00:33:21.500 --> 00:33:29.920
+Aprobar estructura starter/solution/rubrica. (Hub, 33 minutos, paso 6)
+
+508
+00:33:30.450 --> 00:33:35.750
+Contexto visible: Si el alumno puede practicar solo, la tutoria cambia.
+
+509
+00:33:35.795 --> 00:33:41.503
+Situacion 33 minutos: alguien tendra que mantener esta salida despues de la demo.
+
+510
+00:33:41.548 --> 00:33:47.160
+Evidencia 33 minutos: "Ejercicios autoconsumibles" no se cierra sin test
+
+511
+00:33:47.205 --> 00:33:49.937
+captura o criterio escrito.
+
+512
+00:33:49.982 --> 00:33:56.578
+captura o criterio escrito. (Hub, 33 minutos, paso 49)
+
+513
+00:33:51.452 --> 00:33:59.920
+Aprobar estructura starter/solution/rubrica. (Hub, 33 minutos, paso 7)
+
+514
+00:34:00.450 --> 00:34:05.654
+Decision humana: El formador revisa outputs, no explica desde cero.
+
+515
+00:34:05.699 --> 00:34:08.791
+Situacion 34 minutos:
+
+516
+00:34:08.836 --> 00:34:14.496
+AI Practice Hub recibe "Ejercicios autoconsumibles" y debe convertirlo en trabajo
+
+517
+00:34:14.541 --> 00:34:16.577
+revisable.
+
+518
+00:34:16.622 --> 00:34:22.282
+AI Practice Hub recibe "Ejercicios autoconsumibles" y debe convertirlo en trabajo
+
+519
+00:34:22.327 --> 00:34:28.011
+revisable. (Hub, 34 minutos, paso 9)
+
+520
+00:34:26.852 --> 00:34:29.920
+Evidencia 34 minutos:
+
+521
+00:34:25.004 --> 00:34:29.920
+el artefacto muestra que se controlo soporte reactivo y dudas repetidas.
+
+522
+00:34:21.212 --> 00:34:29.920
+Aprobar estructura starter/solution/rubrica. (Hub, 34 minutos, paso 8)
+
+523
+00:34:30.450 --> 00:34:36.302
+Evidencia 34 minutos: "Ejercicios autoconsumibles" queda ligado a prueba
+
+524
+00:34:36.347 --> 00:34:38.647
+owner y decision.
+
+525
+00:34:38.692 --> 00:34:43.632
+Situacion 34 minutos: la pantalla no busca impresionar;
+
+526
+00:34:43.677 --> 00:34:48.137
+busca cerrar "Ejercicios autoconsumibles" con evidencia.
+
+527
+00:34:48.182 --> 00:34:52.642
+busca cerrar "Ejercicios autoconsumibles" con evidencia.
+
+528
+00:34:52.687 --> 00:34:58.539
+Evidencia 34 minutos: "Ejercicios autoconsumibles" no se cierra sin test
+
+529
+00:34:57.116 --> 00:34:59.920
+captura o criterio escrito.
+
+530
+00:34:51.212 --> 00:34:59.920
+Aprobar estructura starter/solution/rubrica. (Hub, 34 minutos, paso 9)
+
+531
+00:35:00.450 --> 00:35:05.150
+Pantalla de accion: El coste no debe aparecer al final como susto.
+
+532
+00:35:05.330 --> 00:35:08.350
+Situacion 35 minutos:
+
+533
+00:35:08.530 --> 00:35:13.086
+AI Practice Hub solo avanza si el siguiente humano entiende el por que.
+
+534
+00:35:13.266 --> 00:35:18.926
+Evidencia 35 minutos: progreso, entrega, revision y feedback.
+
+535
+00:35:19.106 --> 00:35:27.910
+Explicar como se ve coste/modelo/permisos en fichas. (Hub, 35 minutos, paso 1)
+
+536
+00:35:30.450 --> 00:35:34.718
+Contexto visible: Debe estar integrado en el aprendizaje.
+
+537
+00:35:34.763 --> 00:35:37.783
+Situacion 35 minutos:
+
+538
+00:35:37.828 --> 00:35:42.288
+el equipo mira "Coste y permisos" dentro del ruta de aprendizaje
+
+539
+00:35:42.333 --> 00:35:45.233
+con coste y permiso visibles.
+
+540
+00:35:45.278 --> 00:35:49.738
+el equipo mira "Coste y permisos" dentro del ruta de aprendizaje
+
+541
+00:35:49.783 --> 00:35:56.619
+con coste y permiso visibles. (Hub, 35 minutos, paso 93)
+
+542
+00:35:54.860 --> 00:35:59.920
+Evidencia 35 minutos: "Coste y permisos" no se cierra sin test
+
+543
+00:35:57.188 --> 00:35:59.920
+captura o criterio escrito.
+
+544
+00:35:51.020 --> 00:35:59.920
+Explicar como se ve coste/modelo/permisos en fichas. (Hub, 35 minutos, paso 2)
+
+545
+00:36:00.450 --> 00:36:05.342
+Situacion 36 minutos: la pantalla no busca impresionar;
+
+546
+00:36:05.387 --> 00:36:10.159
+busca cerrar "Captura mental: AI Practice Hub" con evidencia.
+
+547
+00:36:10.204 --> 00:36:14.976
+busca cerrar "Captura mental: AI Practice Hub" con evidencia.
+
+548
+00:36:15.021 --> 00:36:21.305
+Tension 36 minutos: el agente puede avanzar mas rapido que nuestra capacidad de revisar.
+
+549
+00:36:21.350 --> 00:36:27.082
+Accion 36 minutos: pedir salida pequena, verificable y con owner.
+
+550
+00:36:24.812 --> 00:36:29.920
+convertir ruta de aprendizaje en una decision que se pueda ensenar en tutoria.
+
+551
+00:36:23.108 --> 00:36:29.920
+Progreso entrega revision y feedback. (Hub, 36 minutos, paso 3)
+
+552
+00:36:30.450 --> 00:36:35.462
+Evidencia 36 minutos: "Coste y permisos" no se cierra sin test
+
+553
+00:36:35.507 --> 00:36:38.239
+captura o criterio escrito.
+
+554
+00:36:38.284 --> 00:36:41.232
+Situacion 36 minutos:
+
+555
+00:36:41.277 --> 00:36:46.601
+AI Practice Hub recibe "Coste y permisos" y debe convertirlo en trabajo revisable.
+
+556
+00:36:46.646 --> 00:36:51.970
+AI Practice Hub recibe "Coste y permisos" y debe convertirlo en trabajo revisable.
+
+557
+00:36:52.015 --> 00:36:54.915
+Evidencia 36 minutos:
+
+558
+00:36:54.960 --> 00:36:59.588
+hay una salida que otro perfil puede revisar sin rehacer el contexto.
+
+559
+00:36:51.044 --> 00:36:59.920
+Explicar como se ve coste/modelo/permisos en fichas. (Hub, 36 minutos, paso 3)
+
+560
+00:37:00.450 --> 00:37:04.742
+Coste y riesgo: Debe estar integrado en el aprendizaje.
+
+561
+00:37:04.787 --> 00:37:09.727
+Situacion 37 minutos: la pantalla no busca impresionar;
+
+562
+00:37:09.772 --> 00:37:13.656
+busca cerrar "Coste y permisos" con evidencia.
+
+563
+00:37:13.701 --> 00:37:17.585
+busca cerrar "Coste y permisos" con evidencia.
+
+564
+00:37:17.630 --> 00:37:22.810
+Evidencia 37 minutos: "Coste y permisos" no se cierra sin test
+
+565
+00:37:22.855 --> 00:37:25.659
+captura o criterio escrito.
+
+566
+00:37:20.756 --> 00:37:29.920
+Explicar como se ve coste/modelo/permisos en fichas. (Hub, 37 minutos, paso 4)
+
+567
+00:37:30.450 --> 00:37:34.550
+Checkpoint: Cada reto enseña una decision operativa.
+
+568
+00:37:34.730 --> 00:37:37.798
+Situacion 37 minutos:
+
+569
+00:37:37.978 --> 00:37:42.654
+AI Practice Hub solo avanza si el siguiente humano entiende el por que.
+
+570
+00:37:42.834 --> 00:37:48.638
+Evidencia 37 minutos: progreso, entrega, revision y feedback.
+
+571
+00:37:48.818 --> 00:37:57.958
+Explicar como se ve coste/modelo/permisos en fichas. (Hub, 37 minutos, paso 5)
+
+572
+00:38:00.450 --> 00:38:05.150
+Pantalla de accion: El coste no debe aparecer al final como susto.
+
+573
+00:38:05.195 --> 00:38:08.167
+Situacion 38 minutos:
+
+574
+00:38:08.212 --> 00:38:12.672
+el equipo mira "Coste y permisos" dentro del ruta de aprendizaje
+
+575
+00:38:12.717 --> 00:38:15.617
+con coste y permiso visibles.
+
+576
+00:38:15.662 --> 00:38:20.122
+el equipo mira "Coste y permisos" dentro del ruta de aprendizaje
+
+577
+00:38:20.167 --> 00:38:26.859
+con coste y permiso visibles. (Hub, 38 minutos, paso 94)
+
+578
+00:38:24.908 --> 00:38:29.920
+Evidencia 38 minutos: "Coste y permisos" no se cierra sin test
+
+579
+00:38:27.188 --> 00:38:29.920
+captura o criterio escrito.
+
+580
+00:38:21.092 --> 00:38:29.920
+Explicar como se ve coste/modelo/permisos en fichas. (Hub, 38 minutos, paso 6)
+
+581
+00:38:30.450 --> 00:38:34.718
+Contexto visible: Debe estar integrado en el aprendizaje.
+
+582
+00:38:34.898 --> 00:38:40.630
+Situacion 38 minutos: alguien tendra que mantener esta salida despues de la demo.
+
+583
+00:38:40.810 --> 00:38:45.822
+Evidencia 38 minutos: "Coste y permisos" no se cierra sin test
+
+584
+00:38:46.002 --> 00:38:48.734
+captura o criterio escrito.
+
+585
+00:38:48.914 --> 00:38:57.790
+Explicar como se ve coste/modelo/permisos en fichas. (Hub, 38 minutos, paso 7)
+
+586
+00:39:00.450 --> 00:39:04.958
+Decision humana: Cada reto enseña una decision operativa.
+
+587
+00:39:05.003 --> 00:39:08.071
+Situacion 39 minutos:
+
+588
+00:39:08.116 --> 00:39:13.584
+AI Practice Hub recibe "Coste y permisos" y debe convertirlo en trabajo revisable.
+
+589
+00:39:13.629 --> 00:39:19.097
+AI Practice Hub recibe "Coste y permisos" y debe convertirlo en trabajo revisable.
+
+590
+00:39:19.142 --> 00:39:22.210
+Evidencia 39 minutos:
+
+591
+00:39:22.255 --> 00:39:27.003
+hay una salida que otro perfil puede revisar sin rehacer el contexto.
+
+592
+00:39:20.828 --> 00:39:29.920
+Explicar como se ve coste/modelo/permisos en fichas. (Hub, 39 minutos, paso 8)
+
+593
+00:39:30.450 --> 00:39:36.710
+Evidencia 39 minutos: "Coste y permisos" queda ligado a prueba, owner y decision.
+
+594
+00:39:36.755 --> 00:39:41.647
+Situacion 39 minutos: la pantalla no busca impresionar;
+
+595
+00:39:41.692 --> 00:39:45.576
+busca cerrar "Coste y permisos" con evidencia.
+
+596
+00:39:45.621 --> 00:39:49.505
+busca cerrar "Coste y permisos" con evidencia.
+
+597
+00:39:49.550 --> 00:39:54.706
+Evidencia 39 minutos: "Coste y permisos" no se cierra sin test
+
+598
+00:39:54.751 --> 00:39:57.555
+captura o criterio escrito.
+
+599
+00:39:50.828 --> 00:39:59.920
+Explicar como se ve coste/modelo/permisos en fichas. (Hub, 39 minutos, paso 9)
+
+600
+00:40:00.450 --> 00:40:06.038
+Situacion 40 minutos: alguien tendra que mantener esta salida despues de la demo.
+
+601
+00:40:06.083 --> 00:40:12.103
+Tension 40 minutos: el agente puede avanzar mas rapido que nuestra capacidad de revisar.
+
+602
+00:40:12.148 --> 00:40:17.592
+Accion 40 minutos: pedir salida pequena, verificable y con owner.
+
+603
+00:40:17.637 --> 00:40:23.441
+Evidencia 40 minutos: "Captura mental: AI Practice Hub" queda ligado a prueba
+
+604
+00:40:23.486 --> 00:40:25.786
+owner y decision.
+
+605
+00:40:24.164 --> 00:40:29.920
+owner y decision. (Hub, 40 minutos, paso 15)
+
+606
+00:40:30.450 --> 00:40:34.718
+Contexto visible: El alumno debe llegar con evidencia.
+
+607
+00:40:34.763 --> 00:40:40.567
+Situacion 40 minutos: el equipo mira "Tutorias" dentro del ruta de aprendizaje
+
+608
+00:40:40.612 --> 00:40:43.584
+con coste y permiso visibles.
+
+609
+00:40:43.629 --> 00:40:50.321
+con coste y permiso visibles. (Hub, 40 minutos, paso 95)
+
+610
+00:40:50.366 --> 00:40:53.194
+Evidencia 40 minutos:
+
+611
+00:40:53.239 --> 00:40:58.155
+el artefacto muestra que se controlo soporte reactivo y dudas repetidas.
+
+612
+00:40:52.532 --> 00:40:59.920
+No aceptar reservas sin handoff o ejercicio asociado. (Hub, 40 minutos, paso 1)
+
+613
+00:41:00.450 --> 00:41:06.182
+Decision humana: Esto reduce horas repetidas y mejora la calidad de la conversacion.
+
+614
+00:41:06.362 --> 00:41:12.142
+Situacion 41 minutos: alguien tendra que mantener esta salida despues de la demo.
+
+615
+00:41:12.322 --> 00:41:18.678
+Evidencia 41 minutos: "Tutorias" no se cierra sin test, captura o criterio escrito.
+
+616
+00:41:18.858 --> 00:41:26.438
+No aceptar reservas sin handoff o ejercicio asociado. (Hub, 41 minutos, paso 2)
+
+617
+00:41:30.450 --> 00:41:36.806
+Evidencia 41 minutos: "Tutorias" no se cierra sin test, captura o criterio escrito.
+
+618
+00:41:36.851 --> 00:41:39.847
+Situacion 41 minutos:
+
+619
+00:41:39.892 --> 00:41:45.120
+AI Practice Hub recibe "Tutorias" y debe convertirlo en trabajo revisable.
+
+620
+00:41:45.165 --> 00:41:50.393
+AI Practice Hub recibe "Tutorias" y debe convertirlo en trabajo revisable.
+
+621
+00:41:50.438 --> 00:41:53.386
+Evidencia 41 minutos:
+
+622
+00:41:53.431 --> 00:41:58.179
+hay una salida que otro perfil puede revisar sin rehacer el contexto.
+
+623
+00:41:52.292 --> 00:41:59.920
+No aceptar reservas sin handoff o ejercicio asociado. (Hub, 41 minutos, paso 3)
+
+624
+00:42:00.450 --> 00:42:04.502
+Coste y riesgo: El alumno debe llegar con evidencia.
+
+625
+00:42:04.682 --> 00:42:09.382
+Situacion 42 minutos: la pantalla no busca impresionar;
+
+626
+00:42:09.562 --> 00:42:12.966
+busca cerrar "Tutorias" con evidencia.
+
+627
+00:42:13.146 --> 00:42:16.070
+Evidencia 42 minutos:
+
+628
+00:42:16.250 --> 00:42:21.022
+el artefacto muestra que se controlo soporte reactivo y dudas repetidas.
+
+629
+00:42:21.202 --> 00:42:28.710
+No aceptar reservas sin handoff o ejercicio asociado. (Hub, 42 minutos, paso 4)
+
+630
+00:42:30.450 --> 00:42:35.630
+Checkpoint: Esto reduce horas repetidas y mejora la calidad de la conversacion.
+
+631
+00:42:35.810 --> 00:42:38.806
+Situacion 42 minutos:
+
+632
+00:42:38.986 --> 00:42:43.542
+AI Practice Hub solo avanza si el siguiente humano entiende el por que.
+
+633
+00:42:43.722 --> 00:42:49.334
+Evidencia 42 minutos: progreso, entrega, revision y feedback.
+
+634
+00:42:49.514 --> 00:42:56.998
+No aceptar reservas sin handoff o ejercicio asociado. (Hub, 42 minutos, paso 5)
+
+635
+00:43:00.450 --> 00:43:05.198
+Pantalla de accion: La tutoria se reserva para casos reales.
+
+636
+00:43:05.243 --> 00:43:11.359
+Situacion 43 minutos: el equipo mira "Tutorias" dentro del ruta de aprendizaje
+
+637
+00:43:11.404 --> 00:43:14.376
+con coste y permiso visibles.
+
+638
+00:43:14.421 --> 00:43:21.305
+con coste y permiso visibles. (Hub, 43 minutos, paso 96)
+
+639
+00:43:21.350 --> 00:43:24.442
+Evidencia 43 minutos:
+
+640
+00:43:24.487 --> 00:43:29.403
+el artefacto muestra que se controlo soporte reactivo y dudas repetidas.
+
+641
+00:43:22.148 --> 00:43:29.920
+No aceptar reservas sin handoff o ejercicio asociado. (Hub, 43 minutos, paso 6)
+
+642
+00:43:30.450 --> 00:43:34.718
+Contexto visible: El alumno debe llegar con evidencia.
+
+643
+00:43:34.898 --> 00:43:40.798
+Situacion 43 minutos: alguien tendra que mantener esta salida despues de la demo.
+
+644
+00:43:40.978 --> 00:43:47.478
+Evidencia 43 minutos: "Tutorias" no se cierra sin test, captura o criterio escrito.
+
+645
+00:43:47.658 --> 00:43:55.478
+No aceptar reservas sin handoff o ejercicio asociado. (Hub, 43 minutos, paso 7)
+
+646
+00:44:00.450 --> 00:44:03.590
+Situacion 44 minutos:
+
+647
+00:44:03.635 --> 00:44:08.311
+AI Practice Hub solo avanza si el siguiente humano entiende el por que.
+
+648
+00:44:08.356 --> 00:44:14.928
+Tension 44 minutos: aceptar rapido puede esconder soporte reactivo y dudas repetidas.
+
+649
+00:44:14.973 --> 00:44:19.433
+Accion 44 minutos: parar si "Captura mental:
+
+650
+00:44:19.478 --> 00:44:23.170
+AI Practice Hub" no produce evidencia nueva.
+
+651
+00:44:23.215 --> 00:44:26.331
+Evidencia 44 minutos:
+
+652
+00:44:25.172 --> 00:44:29.920
+hay una salida que otro perfil puede revisar sin rehacer el contexto.
+
+653
+00:44:30.450 --> 00:44:36.542
+Evidencia 44 minutos: "Tutorias" queda ligado a prueba, owner y decision.
+
+654
+00:44:36.587 --> 00:44:41.599
+Situacion 44 minutos: la pantalla no busca impresionar;
+
+655
+00:44:41.644 --> 00:44:45.144
+busca cerrar "Tutorias" con evidencia.
+
+656
+00:44:45.189 --> 00:44:48.305
+Evidencia 44 minutos:
+
+657
+00:44:48.350 --> 00:44:53.266
+el artefacto muestra que se controlo soporte reactivo y dudas repetidas.
+
+658
+00:44:52.100 --> 00:44:59.920
+No aceptar reservas sin handoff o ejercicio asociado. (Hub, 44 minutos, paso 8)
+
+659
+00:45:00.450 --> 00:45:04.406
+Pantalla de accion: El roadmap esta dentro de la app.
+
+660
+00:45:04.586 --> 00:45:07.726
+Situacion 45 minutos:
+
+661
+00:45:07.906 --> 00:45:12.582
+AI Practice Hub solo avanza si el siguiente humano entiende el por que.
+
+662
+00:45:12.762 --> 00:45:18.686
+Evidencia 45 minutos: progreso, entrega, revision y feedback.
+
+663
+00:45:18.866 --> 00:45:24.334
+Hub 45 minutos: Mostrar sprint board y video roadmap para "Sprints".
+
+664
+00:45:30.450 --> 00:45:35.198
+Contexto visible: Esto permite ejecutar, no solo debatir.
+
+665
+00:45:35.243 --> 00:45:41.143
+Situacion 45 minutos: el equipo mira "Sprints" dentro del ruta de aprendizaje
+
+666
+00:45:41.188 --> 00:45:44.088
+con coste y permiso visibles.
+
+667
+00:45:44.133 --> 00:45:50.945
+con coste y permiso visibles. (Hub, 45 minutos, paso 97)
+
+668
+00:45:50.990 --> 00:45:54.034
+Evidencia 45 minutos:
+
+669
+00:45:54.079 --> 00:45:58.851
+el artefacto muestra que se controlo soporte reactivo y dudas repetidas.
+
+670
+00:45:54.596 --> 00:45:59.920
+Hub 45 minutos: Mostrar sprint board y video roadmap para "Sprints".
+
+671
+00:46:00.450 --> 00:46:05.222
+Decision humana: Cada sprint tiene entregables y criterio de done.
+
+672
+00:46:05.402 --> 00:46:11.326
+Situacion 46 minutos: alguien tendra que mantener esta salida despues de la demo.
+
+673
+00:46:11.506 --> 00:46:17.982
+Evidencia 46 minutos: "Sprints" no se cierra sin test, captura o criterio escrito.
+
+674
+00:46:18.162 --> 00:46:23.534
+Hub 46 minutos: Mostrar sprint board y video roadmap para "Sprints".
+
+675
+00:46:30.450 --> 00:46:36.926
+Evidencia 46 minutos: "Sprints" no se cierra sin test, captura o criterio escrito.
+
+676
+00:46:37.106 --> 00:46:40.174
+Situacion 46 minutos:
+
+677
+00:46:40.354 --> 00:46:45.438
+AI Practice Hub recibe "Sprints" y debe convertirlo en trabajo revisable.
+
+678
+00:46:45.618 --> 00:46:51.566
+Evidencia 46 minutos: "Sprints" queda ligado a prueba, owner y decision.
+
+679
+00:46:51.746 --> 00:46:57.118
+Hub 46 minutos: Mostrar sprint board y video roadmap para "Sprints".
+
+680
+00:47:00.450 --> 00:47:05.150
+Coste y riesgo: Esto permite ejecutar, no solo debatir.
+
+681
+00:47:05.330 --> 00:47:10.318
+Situacion 47 minutos: la pantalla no busca impresionar;
+
+682
+00:47:10.498 --> 00:47:13.950
+busca cerrar "Sprints" con evidencia.
+
+683
+00:47:14.130 --> 00:47:17.246
+Evidencia 47 minutos:
+
+684
+00:47:17.426 --> 00:47:22.342
+el artefacto muestra que se controlo soporte reactivo y dudas repetidas.
+
+685
+00:47:22.522 --> 00:47:27.942
+Hub 47 minutos: Mostrar sprint board y video roadmap para "Sprints".
+
+686
+00:47:30.450 --> 00:47:34.790
+Checkpoint: Cada sprint tiene entregables y criterio de done.
+
+687
+00:47:34.970 --> 00:47:38.038
+Situacion 47 minutos:
+
+688
+00:47:38.218 --> 00:47:42.774
+AI Practice Hub solo avanza si el siguiente humano entiende el por que.
+
+689
+00:47:42.954 --> 00:47:48.686
+Evidencia 47 minutos: progreso, entrega, revision y feedback.
+
+690
+00:47:48.866 --> 00:47:54.142
+Hub 47 minutos: Mostrar sprint board y video roadmap para "Sprints".
+
+691
+00:48:00.450 --> 00:48:05.870
+Situacion 48 minutos: AI Practice Hub recibe "Captura mental:
+
+692
+00:48:05.915 --> 00:48:10.039
+AI Practice Hub" y debe convertirlo en trabajo revisable.
+
+693
+00:48:10.084 --> 00:48:17.856
+AI Practice Hub" y debe convertirlo en trabajo revisable. (Hub, 48 minutos, paso 4)
+
+694
+00:48:17.901 --> 00:48:24.545
+Tension 48 minutos: sin evidencia, la IA parece productiva pero no deja confianza.
+
+695
+00:48:24.590 --> 00:48:29.842
+Accion 48 minutos: comparar la respuesta con el criterio de cierre
+
+696
+00:48:27.044 --> 00:48:29.920
+no con la sensacion de velocidad.
+
+697
+00:48:23.084 --> 00:48:29.920
+Progreso entrega revision y feedback. (Hub, 48 minutos, paso 4)
+
+698
+00:48:30.450 --> 00:48:35.198
+Contexto visible: Esto permite ejecutar, no solo debatir.
+
+699
+00:48:35.378 --> 00:48:41.110
+Situacion 48 minutos: alguien tendra que mantener esta salida despues de la demo.
+
+700
+00:48:41.290 --> 00:48:47.574
+Evidencia 48 minutos: "Sprints" no se cierra sin test, captura o criterio escrito.
+
+701
+00:48:47.754 --> 00:48:52.934
+Hub 48 minutos: Mostrar sprint board y video roadmap para "Sprints".
+
+702
+00:49:00.450 --> 00:49:05.222
+Decision humana: Cada sprint tiene entregables y criterio de done.
+
+703
+00:49:05.402 --> 00:49:08.542
+Situacion 49 minutos:
+
+704
+00:49:08.722 --> 00:49:13.806
+AI Practice Hub recibe "Sprints" y debe convertirlo en trabajo revisable.
+
+705
+00:49:13.986 --> 00:49:19.982
+Evidencia 49 minutos: "Sprints" queda ligado a prueba, owner y decision.
+
+706
+00:49:20.162 --> 00:49:25.558
+Hub 49 minutos: Mostrar sprint board y video roadmap para "Sprints".
+
+707
+00:49:30.450 --> 00:49:36.446
+Evidencia 49 minutos: "Sprints" queda ligado a prueba, owner y decision.
+
+708
+00:49:36.626 --> 00:49:41.590
+Situacion 49 minutos: la pantalla no busca impresionar;
+
+709
+00:49:41.770 --> 00:49:45.222
+busca cerrar "Sprints" con evidencia.
+
+710
+00:49:45.402 --> 00:49:48.494
+Evidencia 49 minutos:
+
+711
+00:49:48.674 --> 00:49:53.590
+el artefacto muestra que se controlo soporte reactivo y dudas repetidas.
+
+712
+00:49:53.770 --> 00:49:59.166
+Hub 49 minutos: Mostrar sprint board y video roadmap para "Sprints".
+
+713
+00:50:00.450 --> 00:50:05.606
+Pantalla de accion: La plataforma no necesita estar perfecta para pilotar.
+
+714
+00:50:05.786 --> 00:50:08.662
+Situacion 50 minutos:
+
+715
+00:50:08.842 --> 00:50:13.518
+AI Practice Hub solo avanza si el siguiente humano entiende el por que.
+
+716
+00:50:13.698 --> 00:50:19.334
+Evidencia 50 minutos: progreso, entrega, revision y feedback.
+
+717
+00:50:19.514 --> 00:50:26.014
+Acordar alcance de primera cohorte. (Hub, 50 minutos, paso 1)
+
+718
+00:50:30.450 --> 00:50:34.934
+Contexto visible: Pero si necesita outputs revisables.
+
+719
+00:50:34.979 --> 00:50:37.855
+Situacion 50 minutos:
+
+720
+00:50:37.900 --> 00:50:42.552
+el equipo mira "Release readiness" dentro del ruta de aprendizaje
+
+721
+00:50:42.597 --> 00:50:45.569
+con coste y permiso visibles.
+
+722
+00:50:45.614 --> 00:50:50.266
+el equipo mira "Release readiness" dentro del ruta de aprendizaje
+
+723
+00:50:50.311 --> 00:50:56.955
+con coste y permiso visibles. (Hub, 50 minutos, paso 98)
+
+724
+00:50:54.884 --> 00:50:59.920
+Evidencia 50 minutos: "Release readiness" no se cierra sin test
+
+725
+00:50:57.116 --> 00:50:59.920
+captura o criterio escrito.
+
+726
+00:50:53.324 --> 00:50:59.920
+Acordar alcance de primera cohorte. (Hub, 50 minutos, paso 2)
+
+727
+00:51:00.450 --> 00:51:06.086
+Decision humana: El criterio es simple: autoconsumo real y tutorias mejores.
+
+728
+00:51:06.266 --> 00:51:12.166
+Situacion 51 minutos: alguien tendra que mantener esta salida despues de la demo.
+
+729
+00:51:12.346 --> 00:51:17.550
+Evidencia 51 minutos: "Release readiness" no se cierra sin test
+
+730
+00:51:17.730 --> 00:51:20.534
+captura o criterio escrito.
+
+731
+00:51:20.714 --> 00:51:27.478
+Acordar alcance de primera cohorte. (Hub, 51 minutos, paso 3)
+
+732
+00:51:30.450 --> 00:51:35.654
+Evidencia 51 minutos: "Release readiness" no se cierra sin test
+
+733
+00:51:35.699 --> 00:51:38.503
+captura o criterio escrito.
+
+734
+00:51:38.548 --> 00:51:41.592
+Situacion 51 minutos:
+
+735
+00:51:41.637 --> 00:51:47.321
+AI Practice Hub recibe "Release readiness" y debe convertirlo en trabajo revisable.
+
+736
+00:51:47.366 --> 00:51:53.050
+AI Practice Hub recibe "Release readiness" y debe convertirlo en trabajo revisable.
+
+737
+00:51:53.095 --> 00:51:56.091
+Evidencia 51 minutos:
+
+738
+00:51:55.172 --> 00:51:59.920
+hay una salida que otro perfil puede revisar sin rehacer el contexto.
+
+739
+00:51:53.132 --> 00:51:59.920
+Acordar alcance de primera cohorte. (Hub, 51 minutos, paso 4)
+
+740
+00:52:00.450 --> 00:52:05.342
+Situacion 52 minutos: el equipo mira "Captura mental:
+
+741
+00:52:05.387 --> 00:52:09.175
+AI Practice Hub" dentro del ruta de aprendizaje
+
+742
+00:52:09.220 --> 00:52:12.192
+con coste y permiso visibles.
+
+743
+00:52:12.237 --> 00:52:16.025
+AI Practice Hub" dentro del ruta de aprendizaje
+
+744
+00:52:16.070 --> 00:52:22.906
+con coste y permiso visibles. (Hub, 52 minutos, paso 99)
+
+745
+00:52:22.951 --> 00:52:29.259
+Tension 52 minutos: el agente puede avanzar mas rapido que nuestra capacidad de revisar.
+
+746
+00:52:24.188 --> 00:52:29.920
+Accion 52 minutos: pedir salida pequena, verificable y con owner.
+
+747
+00:52:23.132 --> 00:52:29.920
+no con la sensacion de velocidad. (Hub, 52 minutos, paso 37)
+
+748
+00:52:26.852 --> 00:52:29.920
+Evidencia 52 minutos:
+
+749
+00:52:25.172 --> 00:52:29.920
+hay una salida que otro perfil puede revisar sin rehacer el contexto.
+
+750
+00:52:23.396 --> 00:52:29.920
+captura o criterio escrito. (Hub, 52 minutos, paso 50)
+
+751
+00:52:30.450 --> 00:52:35.558
+Checkpoint: El criterio es simple: autoconsumo real y tutorias mejores.
+
+752
+00:52:35.738 --> 00:52:38.758
+Situacion 52 minutos:
+
+753
+00:52:38.938 --> 00:52:43.494
+AI Practice Hub solo avanza si el siguiente humano entiende el por que.
+
+754
+00:52:43.674 --> 00:52:49.358
+Evidencia 52 minutos: progreso, entrega, revision y feedback.
+
+755
+00:52:49.538 --> 00:52:56.182
+Acordar alcance de primera cohorte. (Hub, 52 minutos, paso 5)
+
+756
+00:53:00.450 --> 00:53:05.486
+Pantalla de accion: La plataforma no necesita estar perfecta para pilotar.
+
+757
+00:53:05.531 --> 00:53:08.623
+Situacion 53 minutos:
+
+758
+00:53:08.668 --> 00:53:13.200
+el equipo mira "Release readiness" dentro del ruta de aprendizaje
+
+759
+00:53:13.245 --> 00:53:16.145
+con coste y permiso visibles.
+
+760
+00:53:16.190 --> 00:53:20.722
+el equipo mira "Release readiness" dentro del ruta de aprendizaje
+
+761
+00:53:20.767 --> 00:53:27.171
+con coste y permiso visibles. (Hub, 53 minutos, paso 100)
+
+762
+00:53:24.740 --> 00:53:29.920
+Evidencia 53 minutos: "Release readiness" no se cierra sin test
+
+763
+00:53:27.188 --> 00:53:29.920
+captura o criterio escrito.
+
+764
+00:53:23.252 --> 00:53:29.920
+Acordar alcance de primera cohorte. (Hub, 53 minutos, paso 6)
+
+765
+00:53:30.450 --> 00:53:34.934
+Contexto visible: Pero si necesita outputs revisables.
+
+766
+00:53:35.114 --> 00:53:41.086
+Situacion 53 minutos: alguien tendra que mantener esta salida despues de la demo.
+
+767
+00:53:41.266 --> 00:53:46.590
+Evidencia 53 minutos: "Release readiness" no se cierra sin test
+
+768
+00:53:46.770 --> 00:53:49.574
+captura o criterio escrito.
+
+769
+00:53:49.754 --> 00:53:56.710
+Acordar alcance de primera cohorte. (Hub, 53 minutos, paso 7)
+
+770
+00:54:00.450 --> 00:54:06.086
+Decision humana: El criterio es simple: autoconsumo real y tutorias mejores.
+
+771
+00:54:06.131 --> 00:54:09.319
+Situacion 54 minutos:
+
+772
+00:54:09.364 --> 00:54:15.048
+AI Practice Hub recibe "Release readiness" y debe convertirlo en trabajo revisable.
+
+773
+00:54:15.093 --> 00:54:20.777
+AI Practice Hub recibe "Release readiness" y debe convertirlo en trabajo revisable.
+
+774
+00:54:20.822 --> 00:54:24.010
+Evidencia 54 minutos:
+
+775
+00:54:24.055 --> 00:54:28.803
+hay una salida que otro perfil puede revisar sin rehacer el contexto.
+
+776
+00:54:22.940 --> 00:54:29.920
+Acordar alcance de primera cohorte. (Hub, 54 minutos, paso 8)
+
+777
+00:54:30.450 --> 00:54:36.998
+Evidencia 54 minutos: "Release readiness" queda ligado a prueba, owner y decision.
+
+778
+00:54:37.043 --> 00:54:42.127
+Situacion 54 minutos: la pantalla no busca impresionar;
+
+779
+00:54:42.172 --> 00:54:46.200
+busca cerrar "Release readiness" con evidencia.
+
+780
+00:54:46.245 --> 00:54:50.273
+busca cerrar "Release readiness" con evidencia.
+
+781
+00:54:50.318 --> 00:54:55.714
+Evidencia 54 minutos: "Release readiness" no se cierra sin test
+
+782
+00:54:55.759 --> 00:54:58.563
+captura o criterio escrito.
+
+783
+00:54:52.940 --> 00:54:59.920
+Acordar alcance de primera cohorte. (Hub, 54 minutos, paso 9)
+
+784
+00:55:00.450 --> 00:55:05.126
+Pantalla de accion: La meta no es crear una biblioteca infinita.
+
+785
+00:55:05.306 --> 00:55:08.542
+Situacion 55 minutos:
+
+786
+00:55:08.722 --> 00:55:13.398
+AI Practice Hub solo avanza si el siguiente humano entiende el por que.
+
+787
+00:55:13.578 --> 00:55:19.574
+Evidencia 55 minutos: progreso, entrega, revision y feedback.
+
+788
+00:55:19.754 --> 00:55:27.286
+Publicar plan de piloto y backlog de sprint siguiente. (Hub, 55 minutos, paso 1)
+
+789
+00:55:30.450 --> 00:55:36.038
+Situacion 55 minutos: AI Practice Hub recibe "Captura mental:
+
+790
+00:55:36.083 --> 00:55:40.207
+AI Practice Hub" y debe convertirlo en trabajo revisable.
+
+791
+00:55:40.252 --> 00:55:48.168
+AI Practice Hub" y debe convertirlo en trabajo revisable. (Hub, 55 minutos, paso 5)
+
+792
+00:55:48.213 --> 00:55:55.025
+Tension 55 minutos: sin evidencia, la IA parece productiva pero no deja confianza.
+
+793
+00:55:54.476 --> 00:55:59.920
+Accion 55 minutos: comparar la respuesta con el criterio de cierre
+
+794
+00:55:57.044 --> 00:55:59.920
+no con la sensacion de velocidad.
+
+795
+00:55:53.756 --> 00:55:59.920
+Evidencia 55 minutos: "Captura mental: AI Practice Hub" no se cierra sin test
+
+796
+00:55:57.116 --> 00:55:59.920
+captura o criterio escrito.
+
+797
+00:56:00.450 --> 00:56:04.358
+Decision humana: Ese es el valor real del hub.
+
+798
+00:56:04.538 --> 00:56:10.534
+Situacion 56 minutos: alguien tendra que mantener esta salida despues de la demo.
+
+799
+00:56:10.714 --> 00:56:17.094
+Evidencia 56 minutos: "Cierre" no se cierra sin test, captura o criterio escrito.
+
+800
+00:56:17.274 --> 00:56:24.830
+Publicar plan de piloto y backlog de sprint siguiente. (Hub, 56 minutos, paso 2)
+
+801
+00:56:30.450 --> 00:56:36.830
+Evidencia 56 minutos: "Cierre" no se cierra sin test, captura o criterio escrito.
+
+802
+00:56:37.010 --> 00:56:40.150
+Situacion 56 minutos:
+
+803
+00:56:40.330 --> 00:56:45.462
+AI Practice Hub recibe "Cierre" y debe convertirlo en trabajo revisable.
+
+804
+00:56:45.642 --> 00:56:51.566
+Evidencia 56 minutos: "Cierre" queda ligado a prueba, owner y decision.
+
+805
+00:56:51.746 --> 00:56:59.326
+Publicar plan de piloto y backlog de sprint siguiente. (Hub, 56 minutos, paso 3)
+
+806
+00:57:00.450 --> 00:57:05.654
+Coste y riesgo: (Hub, 57 minutos, paso 6)
+
+807
+00:57:05.699 --> 00:57:11.095
+La meta es que la gente se active con IA sin depender del formador para cada paso.
+
+808
+00:57:11.140 --> 00:57:17.184
+Situacion 57 minutos: alguien tendra que mantener esta salida despues de la demo.
+
+809
+00:57:17.229 --> 00:57:23.681
+Evidencia 57 minutos: "Cierre" no se cierra sin test, captura o criterio escrito.
+
+810
+00:57:22.244 --> 00:57:29.920
+Publicar plan de piloto y backlog de sprint siguiente. (Hub, 57 minutos, paso 4)
+
+811
+00:57:30.450 --> 00:57:33.830
+Checkpoint: Ese es el valor real del hub.
+
+812
+00:57:34.010 --> 00:57:37.150
+Situacion 57 minutos:
+
+813
+00:57:37.330 --> 00:57:41.886
+AI Practice Hub solo avanza si el siguiente humano entiende el por que.
+
+814
+00:57:42.066 --> 00:57:47.846
+Evidencia 57 minutos: progreso, entrega, revision y feedback.
+
+815
+00:57:48.026 --> 00:57:55.510
+Publicar plan de piloto y backlog de sprint siguiente. (Hub, 57 minutos, paso 5)
+
+816
+00:58:00.450 --> 00:58:05.126
+Pantalla de accion: La meta no es crear una biblioteca infinita.
+
+817
+00:58:05.171 --> 00:58:11.143
+Situacion 58 minutos: el equipo mira "Cierre" dentro del ruta de aprendizaje
+
+818
+00:58:11.188 --> 00:58:14.160
+con coste y permiso visibles.
+
+819
+00:58:14.205 --> 00:58:20.945
+con coste y permiso visibles. (Hub, 58 minutos, paso 101)
+
+820
+00:58:20.990 --> 00:58:24.130
+Evidencia 58 minutos:
+
+821
+00:58:24.175 --> 00:58:29.091
+el artefacto muestra que se controlo soporte reactivo y dudas repetidas.
+
+822
+00:58:22.364 --> 00:58:29.920
+Publicar plan de piloto y backlog de sprint siguiente. (Hub, 58 minutos, paso 6)
+
+823
+00:58:30.450 --> 00:58:36.110
+Contexto 58 minutos: mira primero el alcance que condiciona esta salida.
+
+824
+00:58:36.155 --> 00:58:41.407
+La meta es que la gente se active con IA sin depender del formador para cada paso.
+
+825
+00:58:41.452 --> 00:58:44.520
+Situacion 58 minutos:
+
+826
+00:58:44.565 --> 00:58:49.121
+AI Practice Hub solo avanza si el siguiente humano entiende el por que.
+
+827
+00:58:49.166 --> 00:58:54.898
+Evidencia 58 minutos: progreso, entrega, revision y feedback.
+
+828
+00:58:52.508 --> 00:58:59.920
+Publicar plan de piloto y backlog de sprint siguiente. (Hub, 58 minutos, paso 7)
+
+829
+00:59:00.450 --> 00:59:04.238
+Decision humana: Ese es el valor real del hub.
+
+830
+00:59:04.418 --> 00:59:07.534
+Situacion 59 minutos:
+
+831
+00:59:07.714 --> 00:59:12.702
+AI Practice Hub recibe "Cierre" y debe convertirlo en trabajo revisable.
+
+832
+00:59:12.882 --> 00:59:18.686
+Evidencia 59 minutos: "Cierre" queda ligado a prueba, owner y decision.
+
+833
+00:59:18.866 --> 00:59:26.302
+Publicar plan de piloto y backlog de sprint siguiente. (Hub, 59 minutos, paso 8)
+
+834
+00:59:30.450 --> 00:59:36.422
+Evidencia 59 minutos: "Cierre" queda ligado a prueba, owner y decision.
+
+835
+00:59:36.467 --> 00:59:41.527
+Situacion 59 minutos: la pantalla no busca impresionar;
+
+836
+00:59:41.572 --> 00:59:45.024
+busca cerrar "Cierre" con evidencia.
+
+837
+00:59:45.069 --> 00:59:48.209
+Evidencia 59 minutos:
+
+838
+00:59:48.254 --> 00:59:53.170
+el artefacto muestra que se controlo soporte reactivo y dudas repetidas.
+
+839
+00:59:52.292 --> 00:59:59.920
+Publicar plan de piloto y backlog de sprint siguiente. (Hub, 59 minutos, paso 9)
+

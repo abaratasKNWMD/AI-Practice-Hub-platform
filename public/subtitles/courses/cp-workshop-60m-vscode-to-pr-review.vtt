@@ -1,0 +1,4676 @@
+WEBVTT
+
+NOTE cp-workshop-60m-vscode-to-pr-review - Workshop 1 hora Copilot - De Visual Studio Code al revision de pull request
+
+1
+00:00:00.450 --> 00:00:02.990
+Objetivo de esta clase:
+
+2
+00:00:03.170 --> 00:00:08.134
+pasar de un error en Visual Studio Code a un pull request revisado con Copilot.
+
+3
+00:00:08.314 --> 00:00:13.974
+Al final debes poder elegir Ask, Edit, Agent o review sin perder control del cambio.
+
+4
+00:00:14.154 --> 00:00:20.846
+La ruta sera: diagnostico, instrucciones, edicion, pruebas, review y presupuesto.
+
+5
+00:00:21.026 --> 00:00:26.086
+Durante el video mira esta decision: que modo de Copilot conviene en cada riesgo.
+
+6
+00:00:30.450 --> 00:00:35.582
+Contexto minuto 0: mira primero el alcance que condiciona esta salida.
+
+7
+00:00:35.627 --> 00:00:41.263
+En esta hora vamos a usar Visual Studio Code como una mesa de trabajo: preguntar
+
+8
+00:00:41.308 --> 00:00:43.344
+editar dele.
+
+9
+00:00:43.389 --> 00:00:47.681
+Situacion minuto 0: la pantalla no busca impresionar;
+
+10
+00:00:47.726 --> 00:00:52.066
+busca cerrar "Copilot como mesa de trabajo" con evidencia.
+
+11
+00:00:52.111 --> 00:00:56.451
+busca cerrar "Copilot como mesa de trabajo" con evidencia.
+
+12
+00:00:54.716 --> 00:00:59.920
+Evidencia minuto 0: "Copilot como mesa de trabajo" no se cierra sin test
+
+13
+00:00:57.212 --> 00:00:59.920
+captura o criterio escrito.
+
+14
+00:00:53.468 --> 00:00:59.920
+contexto pobre y review floja. (Copilot, minuto 0, paso 16)
+
+15
+00:00:55.316 --> 00:00:59.920
+Copilot minuto 0: Mostrar las superficies y el output final:
+
+16
+00:00:52.556 --> 00:00:59.920
+pull request revisable para "Copilot como mesa de trabajo". (Copilot, minuto 0, paso 2)
+
+17
+00:01:00.450 --> 00:01:05.726
+Decision humana: Cada modo tiene un coste cognitivo y operativo distinto.
+
+18
+00:01:05.771 --> 00:01:10.087
+Situacion minuto 1: la pantalla no busca impresionar;
+
+19
+00:01:10.132 --> 00:01:14.592
+busca cerrar "Copilot como mesa de trabajo" con evidencia.
+
+20
+00:01:14.637 --> 00:01:19.097
+busca cerrar "Copilot como mesa de trabajo" con evidencia.
+
+21
+00:01:19.142 --> 00:01:24.418
+Evidencia minuto 1: "Copilot como mesa de trabajo" no se cierra sin test
+
+22
+00:01:24.463 --> 00:01:27.243
+captura o criterio escrito.
+
+23
+00:01:23.420 --> 00:01:29.920
+contexto pobre y review floja. (Copilot, minuto 1, paso 17)
+
+24
+00:01:25.340 --> 00:01:29.920
+Copilot minuto 1: Mostrar las superficies y el output final:
+
+25
+00:01:22.460 --> 00:01:29.920
+pull request revisable para "Copilot como mesa de trabajo". (Copilot, minuto 1, paso 3)
+
+26
+00:01:30.450 --> 00:01:35.558
+Evidencia minuto 1: el artefacto muestra que se controlo modo equivocado
+
+27
+00:01:35.603 --> 00:01:38.527
+contexto pobre y review floja.
+
+28
+00:01:38.572 --> 00:01:44.928
+contexto pobre y review floja. (Copilot, minuto 1, paso 18)
+
+29
+00:01:44.973 --> 00:01:47.489
+Situacion minuto 1:
+
+30
+00:01:47.534 --> 00:01:53.218
+Copilot recibe "Copilot como mesa de trabajo" y debe convertirlo en trabajo revisable.
+
+31
+00:01:53.263 --> 00:01:58.515
+Evidencia minuto 1: "Copilot como mesa de trabajo" queda ligado a prueba
+
+32
+00:01:57.692 --> 00:01:59.920
+owner y decision.
+
+33
+00:01:55.460 --> 00:01:59.920
+Copilot minuto 1: Mostrar las superficies y el output final:
+
+34
+00:01:52.676 --> 00:01:59.920
+pull request revisable para "Copilot como mesa de trabajo". (Copilot, minuto 1, paso 4)
+
+35
+00:02:00.450 --> 00:02:05.126
+Coste y riesgo: (Copilot, minuto 2, paso 2)
+
+36
+00:02:05.171 --> 00:02:10.975
+En esta hora vamos a usar Visual Studio Code como una mesa de trabajo: preguntar
+
+37
+00:02:11.020 --> 00:02:13.104
+editar dele.
+
+38
+00:02:13.149 --> 00:02:18.521
+Situacion minuto 2: alguien tendra que mantener esta salida despues de la demo.
+
+39
+00:02:18.566 --> 00:02:23.938
+Evidencia minuto 2: "Copilot como mesa de trabajo" no se cierra sin test
+
+40
+00:02:23.983 --> 00:02:26.763
+captura o criterio escrito.
+
+41
+00:02:23.588 --> 00:02:29.920
+captura o criterio escrito. (Copilot, minuto 2, paso 26)
+
+42
+00:02:25.196 --> 00:02:29.920
+Copilot minuto 2: Mostrar las superficies y el output final:
+
+43
+00:02:22.364 --> 00:02:29.920
+pull request revisable para "Copilot como mesa de trabajo". (Copilot, minuto 2, paso 5)
+
+44
+00:02:30.450 --> 00:02:35.270
+Checkpoint: Cada modo tiene un coste cognitivo y operativo distinto.
+
+45
+00:02:35.315 --> 00:02:40.687
+Situacion minuto 2: alguien tendra que mantener esta salida despues de la demo.
+
+46
+00:02:40.732 --> 00:02:46.104
+Evidencia minuto 2: "Copilot como mesa de trabajo" no se cierra sin test
+
+47
+00:02:46.149 --> 00:02:48.929
+captura o criterio escrito.
+
+48
+00:02:48.974 --> 00:02:55.354
+captura o criterio escrito. (Copilot, minuto 2, paso 27)
+
+49
+00:02:55.196 --> 00:02:59.920
+Copilot minuto 2: Mostrar las superficies y el output final:
+
+50
+00:02:52.388 --> 00:02:59.920
+pull request revisable para "Copilot como mesa de trabajo". (Copilot, minuto 2, paso 6)
+
+51
+00:03:00.450 --> 00:03:06.158
+Pantalla de accion: Copilot falla menos cuando dejamos de tratarlo como un unico boton.
+
+52
+00:03:06.203 --> 00:03:08.767
+Situacion minuto 3:
+
+53
+00:03:08.812 --> 00:03:14.496
+Copilot recibe "Copilot como mesa de trabajo" y debe convertirlo en trabajo revisable.
+
+54
+00:03:14.541 --> 00:03:20.225
+Copilot recibe "Copilot como mesa de trabajo" y debe convertirlo en trabajo revisable.
+
+55
+00:03:20.270 --> 00:03:22.786
+Evidencia minuto 3:
+
+56
+00:03:22.831 --> 00:03:27.411
+hay una salida que otro perfil puede revisar sin rehacer el contexto.
+
+57
+00:03:25.340 --> 00:03:29.920
+Copilot minuto 3: Mostrar las superficies y el output final:
+
+58
+00:03:22.484 --> 00:03:29.920
+pull request revisable para "Copilot como mesa de trabajo". (Copilot, minuto 3, paso 7)
+
+59
+00:03:30.450 --> 00:03:35.606
+Contexto minuto 3: mira primero el alcance que condiciona esta salida.
+
+60
+00:03:35.651 --> 00:03:41.287
+En esta hora vamos a usar Visual Studio Code como una mesa de trabajo: preguntar
+
+61
+00:03:41.332 --> 00:03:43.368
+editar dele.
+
+62
+00:03:43.413 --> 00:03:48.929
+Situacion minuto 3: Copilot solo avanza si el siguiente humano entiende el por que.
+
+63
+00:03:48.974 --> 00:03:54.010
+Evidencia minuto 3: patch local, test y comentario de pull request.
+
+64
+00:03:54.055 --> 00:03:58.635
+Copilot minuto 3: Mostrar las superficies y el output final:
+
+65
+00:03:52.556 --> 00:03:59.920
+pull request revisable para "Copilot como mesa de trabajo". (Copilot, minuto 3, paso 8)
+
+66
+00:04:00.450 --> 00:04:05.726
+Decision humana: Cada modo tiene un coste cognitivo y operativo distinto.
+
+67
+00:04:05.771 --> 00:04:11.431
+Situacion minuto 4: Copilot solo avanza si el siguiente humano entiende el por que.
+
+68
+00:04:11.476 --> 00:04:16.728
+Evidencia minuto 4: patch local, test y comentario de pull request.
+
+69
+00:04:16.773 --> 00:04:21.569
+Copilot minuto 4: Mostrar las superficies y el output final:
+
+70
+00:04:21.614 --> 00:04:29.194
+pull request revisable para "Copilot como mesa de trabajo". (Copilot, minuto 4, paso 9)
+
+71
+00:04:30.450 --> 00:04:33.110
+Situacion minuto 4:
+
+72
+00:04:33.155 --> 00:04:38.479
+Copilot recibe "Cuando Copilot como mesa de trabajo se va de las manos" y debe
+
+73
+00:04:38.524 --> 00:04:41.592
+convertirlo en trabajo revisable.
+
+74
+00:04:41.637 --> 00:04:46.961
+Copilot recibe "Cuando Copilot como mesa de trabajo se va de las manos" y debe
+
+75
+00:04:47.006 --> 00:04:50.074
+convertirlo en trabajo revisable.
+
+76
+00:04:50.119 --> 00:04:55.635
+Tension minuto 4: el coste malo suele aparecer cuando nadie define el cierre.
+
+77
+00:04:55.680 --> 00:04:58.124
+Accion minuto 4:
+
+78
+00:04:54.596 --> 00:04:59.920
+convertir workspace de Visual Studio Code en una decision que se pueda ensenar en
+
+79
+00:04:58.172 --> 00:04:59.920
+tutoria.
+
+80
+00:04:54.668 --> 00:04:59.920
+Evidencia minuto 4: patch local, test y comentario de pull request.
+
+81
+00:04:53.252 --> 00:04:59.920
+contexto pobre y review floja. (Copilot, minuto 4, paso 19)
+
+82
+00:05:00.450 --> 00:05:05.198
+Pantalla de accion: El workshop empieza con una issue que parece pequena
+
+83
+00:05:05.243 --> 00:05:07.951
+pero permite hablar de criterio.
+
+84
+00:05:07.996 --> 00:05:13.488
+Situacion minuto 5: Copilot solo avanza si el siguiente humano entiende el por que.
+
+85
+00:05:13.533 --> 00:05:18.641
+Evidencia minuto 5: patch local, test y comentario de pull request.
+
+86
+00:05:18.686 --> 00:05:22.282
+Copilot minuto 5: El grupo vota Ask
+
+87
+00:05:22.327 --> 00:05:26.907
+Edit o Agent y justifica la decision en "Issue pequeno criterio claro".
+
+88
+00:05:26.948 --> 00:05:29.920
+(Copilot minuto 5 paso 1)
+
+89
+00:05:30.450 --> 00:05:34.550
+Contexto visible: Si abrimos Agent demasiado pronto
+
+90
+00:05:34.595 --> 00:05:38.215
+tal vez delegamos un problema que aun no entende.
+
+91
+00:05:38.260 --> 00:05:42.456
+Situacion minuto 5: el equipo mira "Issue pequeno
+
+92
+00:05:42.501 --> 00:05:46.625
+criterio claro" dentro del workspace de Visual Studio Code
+
+93
+00:05:46.670 --> 00:05:49.546
+con coste y permiso visibles.
+
+94
+00:05:49.591 --> 00:05:53.715
+criterio claro" dentro del workspace de Visual Studio Code
+
+95
+00:05:53.492 --> 00:05:59.920
+con coste y permiso visibles. (Copilot, minuto 5, paso 25)
+
+96
+00:05:54.812 --> 00:05:59.920
+Evidencia minuto 5: "Issue pequeno criterio claro" no se cierra sin test
+
+97
+00:05:57.212 --> 00:05:59.920
+captura o criterio escrito.
+
+98
+00:05:56.324 --> 00:05:59.920
+Copilot minuto 5: El grupo vota Ask
+
+99
+00:05:55.340 --> 00:05:59.920
+Edit o Agent y justifica la decision en "Issue pequeno criterio claro".
+
+100
+00:05:56.900 --> 00:05:59.920
+(Copilot minuto 5 paso 2)
+
+101
+00:06:00.450 --> 00:06:05.198
+Decision humana: Primero decidimos si necesitamos explicacion
+
+102
+00:06:05.243 --> 00:06:08.839
+edicion localizada o ejecucion completa.
+
+103
+00:06:08.884 --> 00:06:14.280
+Situacion minuto 6: alguien tendra que mantener esta salida despues de la demo.
+
+104
+00:06:14.325 --> 00:06:19.505
+Evidencia minuto 6: "Issue pequeno criterio claro" no se cierra sin test
+
+105
+00:06:19.550 --> 00:06:22.330
+captura o criterio escrito.
+
+106
+00:06:22.375 --> 00:06:28.779
+captura o criterio escrito. (Copilot, minuto 6, paso 28)
+
+107
+00:06:26.276 --> 00:06:29.920
+Copilot minuto 6: El grupo vota Ask
+
+108
+00:06:25.220 --> 00:06:29.920
+Edit o Agent y justifica la decision en "Issue pequeno criterio claro".
+
+109
+00:06:26.828 --> 00:06:29.920
+(Copilot minuto 6 paso 3)
+
+110
+00:06:30.450 --> 00:06:35.462
+Evidencia minuto 6: el artefacto muestra que se controlo modo equivocado
+
+111
+00:06:35.507 --> 00:06:38.431
+contexto pobre y review floja.
+
+112
+00:06:38.476 --> 00:06:44.784
+contexto pobre y review floja. (Copilot, minuto 6, paso 20)
+
+113
+00:06:44.829 --> 00:06:47.537
+pero permite hablar de criterio.
+
+114
+00:06:47.582 --> 00:06:51.682
+Situacion minuto 6: el equipo mira "Issue pequeno
+
+115
+00:06:51.727 --> 00:06:55.851
+criterio claro" dentro del workspace de Visual Studio Code
+
+116
+00:06:55.896 --> 00:06:58.772
+con coste y permiso visibles.
+
+117
+00:06:55.820 --> 00:06:59.920
+criterio claro" y debe convertirlo en trabajo revisable.
+
+118
+00:06:54.908 --> 00:06:59.920
+Evidencia minuto 6: el artefacto muestra que se controlo modo equivocado
+
+119
+00:06:56.996 --> 00:06:59.920
+contexto pobre y review floja.
+
+120
+00:06:56.372 --> 00:06:59.920
+Copilot minuto 6: El grupo vota Ask
+
+121
+00:06:55.340 --> 00:06:59.920
+Edit o Agent y justifica la decision en "Issue pequeno criterio claro".
+
+122
+00:06:56.900 --> 00:06:59.920
+(Copilot minuto 6 paso 4)
+
+123
+00:07:00.450 --> 00:07:04.526
+Coste y riesgo: Si abrimos Agent demasiado pronto
+
+124
+00:07:04.571 --> 00:07:08.287
+tal vez delegamos un problema que aun no entende.
+
+125
+00:07:08.332 --> 00:07:12.720
+Situacion minuto 7: la pantalla no busca impresionar;
+
+126
+00:07:12.765 --> 00:07:17.105
+busca cerrar "Issue pequeno criterio claro" con evidencia.
+
+127
+00:07:17.150 --> 00:07:21.490
+busca cerrar "Issue pequeno criterio claro" con evidencia.
+
+128
+00:07:21.535 --> 00:07:26.763
+Evidencia minuto 7: "Issue pequeno criterio claro" no se cierra sin test
+
+129
+00:07:26.808 --> 00:07:29.588
+captura o criterio escrito.
+
+130
+00:07:23.348 --> 00:07:29.920
+contexto pobre y review floja. (Copilot, minuto 7, paso 21)
+
+131
+00:07:26.204 --> 00:07:29.920
+Copilot minuto 7: El grupo vota Ask
+
+132
+00:07:25.220 --> 00:07:29.920
+Edit o Agent y justifica la decision en "Issue pequeno criterio claro".
+
+133
+00:07:26.756 --> 00:07:29.920
+(Copilot minuto 7 paso 5)
+
+134
+00:07:30.450 --> 00:07:34.862
+Checkpoint: Primero decidimos si necesitamos explicacion
+
+135
+00:07:34.907 --> 00:07:38.503
+edicion localizada o ejecucion completa.
+
+136
+00:07:38.548 --> 00:07:44.184
+Situacion minuto 7: Copilot solo avanza si el siguiente humano entiende el por que.
+
+137
+00:07:44.229 --> 00:07:49.433
+Evidencia minuto 7: patch local, test y comentario de pull request.
+
+138
+00:07:49.478 --> 00:07:53.194
+Copilot minuto 7: El grupo vota Ask
+
+139
+00:07:53.239 --> 00:07:57.939
+Edit o Agent y justifica la decision en "Issue pequeno criterio claro".
+
+140
+00:07:56.780 --> 00:07:59.920
+(Copilot minuto 7 paso 6)
+
+141
+00:08:00.450 --> 00:08:05.990
+Situacion minuto 8: Copilot solo avanza si el siguiente humano entiende el por que.
+
+142
+00:08:06.035 --> 00:08:11.167
+Tension minuto 8: aceptar rapido puede esconder modo equivocado
+
+143
+00:08:11.212 --> 00:08:14.208
+contexto pobre y review floja.
+
+144
+00:08:14.253 --> 00:08:20.729
+contexto pobre y review floja. (Copilot, minuto 8, paso 22)
+
+145
+00:08:20.774 --> 00:08:26.050
+Accion minuto 8: nombrar modelo, permiso y limite antes de iterar.
+
+146
+00:08:25.292 --> 00:08:29.920
+Copilot Chat y revision de pull request" no produce evidencia nueva.
+
+147
+00:08:24.932 --> 00:08:29.920
+Evidencia minuto 8: "Mapa operativo: Visual Studio Code
+
+148
+00:08:25.628 --> 00:08:29.920
+Copilot Chat y revision de pull request" no se cierra sin test
+
+149
+00:08:27.140 --> 00:08:29.920
+captura o criterio escrito.
+
+150
+00:08:30.450 --> 00:08:34.550
+Contexto visible: Si abrimos Agent demasiado pronto
+
+151
+00:08:34.595 --> 00:08:38.215
+tal vez delegamos un problema que aun no entende.
+
+152
+00:08:38.260 --> 00:08:43.536
+Situacion minuto 8: alguien tendra que mantener esta salida despues de la demo.
+
+153
+00:08:43.581 --> 00:08:48.641
+Evidencia minuto 8: "Issue pequeno criterio claro" no se cierra sin test
+
+154
+00:08:48.686 --> 00:08:51.394
+captura o criterio escrito.
+
+155
+00:08:51.439 --> 00:08:57.603
+captura o criterio escrito. (Copilot, minuto 8, paso 29)
+
+156
+00:08:56.396 --> 00:08:59.920
+Copilot minuto 8: El grupo vota Ask
+
+157
+00:08:55.340 --> 00:08:59.920
+Edit o Agent y justifica la decision en "Issue pequeno criterio claro".
+
+158
+00:08:56.948 --> 00:08:59.920
+(Copilot minuto 8 paso 7)
+
+159
+00:09:00.450 --> 00:09:05.198
+Decision humana: Primero decidimos si necesitamos explicacion
+
+160
+00:09:05.243 --> 00:09:08.839
+edicion localizada o ejecucion completa.
+
+161
+00:09:08.884 --> 00:09:13.368
+Situacion minuto 9: Copilot recibe "Issue pequeno
+
+162
+00:09:13.413 --> 00:09:17.609
+criterio claro" y debe convertirlo en trabajo revisable.
+
+163
+00:09:17.654 --> 00:09:21.850
+criterio claro" y debe convertirlo en trabajo revisable.
+
+164
+00:09:21.895 --> 00:09:24.459
+Evidencia minuto 9:
+
+165
+00:09:24.504 --> 00:09:29.204
+hay una salida que otro perfil puede revisar sin rehacer el contexto.
+
+166
+00:09:26.252 --> 00:09:29.920
+Copilot minuto 9: El grupo vota Ask
+
+167
+00:09:25.220 --> 00:09:29.920
+Edit o Agent y justifica la decision en "Issue pequeno criterio claro".
+
+168
+00:09:26.852 --> 00:09:29.920
+(Copilot minuto 9 paso 8)
+
+169
+00:09:30.450 --> 00:09:35.582
+Evidencia minuto 9: patch local, test y comentario de pull request.
+
+170
+00:09:35.627 --> 00:09:38.407
+pero permite hablar de criterio.
+
+171
+00:09:38.452 --> 00:09:42.792
+Situacion minuto 9: la pantalla no busca impresionar;
+
+172
+00:09:42.837 --> 00:09:47.177
+busca cerrar "Issue pequeno criterio claro" con evidencia.
+
+173
+00:09:47.222 --> 00:09:51.562
+busca cerrar "Issue pequeno criterio claro" con evidencia.
+
+174
+00:09:51.607 --> 00:09:56.787
+Evidencia minuto 9: "Issue pequeno criterio claro" no se cierra sin test
+
+175
+00:09:56.832 --> 00:09:59.612
+captura o criterio escrito.
+
+176
+00:09:53.300 --> 00:09:59.920
+contexto pobre y review floja. (Copilot, minuto 9, paso 23)
+
+177
+00:09:56.252 --> 00:09:59.920
+Copilot minuto 9: El grupo vota Ask
+
+178
+00:09:55.220 --> 00:09:59.920
+Edit o Agent y justifica la decision en "Issue pequeno criterio claro".
+
+179
+00:09:56.876 --> 00:09:59.920
+(Copilot minuto 9 paso 9)
+
+180
+00:10:00.450 --> 00:10:04.286
+Pantalla de accion: Ask compra entendimiento.
+
+181
+00:10:04.331 --> 00:10:09.847
+Edit compra velocidad localizada. Agent compra coordinacion.
+
+182
+00:10:09.892 --> 00:10:15.552
+Situacion 10 minutos: Copilot solo avanza si el siguiente humano entiende el por que.
+
+183
+00:10:15.597 --> 00:10:20.729
+Evidencia 10 minutos: patch local, test y comentario de pull request.
+
+184
+00:10:20.774 --> 00:10:23.290
+Copilot 10 minutos:
+
+185
+00:10:23.335 --> 00:10:25.851
+Copilot 10 minutos:
+
+186
+00:10:24.140 --> 00:10:29.920
+Mostrar casos concretos para cada modo para "Modo correcto por incertidumbre" para "Modo
+
+187
+00:10:27.188 --> 00:10:29.920
+correcto por incertidumbre".
+
+188
+00:10:30.450 --> 00:10:34.334
+Contexto visible: No hay modo ganador para todo.
+
+189
+00:10:34.379 --> 00:10:37.063
+Situacion 10 minutos:
+
+190
+00:10:37.108 --> 00:10:42.504
+Copilot recibe "Modo correcto por incertidumbre" y debe convertirlo en trabajo
+
+191
+00:10:42.549 --> 00:10:44.561
+revisable.
+
+192
+00:10:44.606 --> 00:10:50.002
+Copilot recibe "Modo correcto por incertidumbre" y debe convertirlo en trabajo
+
+193
+00:10:50.047 --> 00:10:55.539
+revisable. (Copilot, 10 minutos, paso 3)
+
+194
+00:10:54.716 --> 00:10:59.920
+Evidencia 10 minutos: el artefacto muestra que se controlo modo equivocado
+
+195
+00:10:56.924 --> 00:10:59.920
+contexto pobre y review floja.
+
+196
+00:10:54.260 --> 00:10:59.920
+owner y decision. (Copilot, 10 minutos, paso 8)
+
+197
+00:10:57.404 --> 00:10:59.920
+Copilot 10 minutos:
+
+198
+00:10:57.404 --> 00:10:59.920
+Copilot 10 minutos:
+
+199
+00:10:54.140 --> 00:10:59.920
+Mostrar casos concretos para cada modo para "Modo correcto por incertidumbre" para "Modo
+
+200
+00:10:57.188 --> 00:10:59.920
+correcto por incertidumbre".
+
+201
+00:11:00.450 --> 00:11:05.798
+Decision humana: La madurez esta en cambiar de modo cuando cambia la incertidumbre.
+
+202
+00:11:05.843 --> 00:11:10.327
+Situacion 11 minutos: la pantalla no busca impresionar;
+
+203
+00:11:10.372 --> 00:11:14.856
+busca cerrar "Modo correcto por incertidumbre" con evidencia.
+
+204
+00:11:14.901 --> 00:11:19.385
+busca cerrar "Modo correcto por incertidumbre" con evidencia.
+
+205
+00:11:19.430 --> 00:11:24.922
+Evidencia 11 minutos: "Modo correcto por incertidumbre" no se cierra sin test
+
+206
+00:11:24.967 --> 00:11:27.747
+captura o criterio escrito.
+
+207
+00:11:23.324 --> 00:11:29.920
+contexto pobre y review floja. (Copilot, 11 minutos, paso 24)
+
+208
+00:11:27.380 --> 00:11:29.920
+Copilot 11 minutos:
+
+209
+00:11:27.380 --> 00:11:29.920
+Copilot 11 minutos:
+
+210
+00:11:24.140 --> 00:11:29.920
+Mostrar casos concretos para cada modo para "Modo correcto por incertidumbre" para "Modo
+
+211
+00:11:27.188 --> 00:11:29.920
+correcto por incertidumbre".
+
+212
+00:11:30.450 --> 00:11:35.726
+Evidencia 11 minutos: el artefacto muestra que se controlo modo equivocado
+
+213
+00:11:35.771 --> 00:11:38.767
+contexto pobre y review floja.
+
+214
+00:11:38.812 --> 00:11:45.384
+contexto pobre y review floja. (Copilot, 11 minutos, paso 25)
+
+215
+00:11:45.429 --> 00:11:48.185
+Agent compra coordinacion.
+
+216
+00:11:48.230 --> 00:11:50.890
+Situacion 11 minutos:
+
+217
+00:11:50.935 --> 00:11:56.523
+el equipo mira "Modo correcto por incertidumbre" dentro del workspace de Visual Studio
+
+218
+00:11:56.568 --> 00:11:58.124
+Code
+
+219
+00:11:56.972 --> 00:11:59.920
+con coste y permiso visibles.
+
+220
+00:11:54.524 --> 00:11:59.920
+Copilot recibe "Modo correcto por incertidumbre" y debe convertirlo en trabajo
+
+221
+00:11:54.524 --> 00:11:59.920
+revisable. (Copilot, 11 minutos, paso 4)
+
+222
+00:11:54.428 --> 00:11:59.920
+Evidencia 11 minutos: "Modo correcto por incertidumbre" no se cierra sin test
+
+223
+00:11:57.140 --> 00:11:59.920
+captura o criterio escrito.
+
+224
+00:11:54.332 --> 00:11:59.920
+owner y decision. (Copilot, 11 minutos, paso 9)
+
+225
+00:11:57.380 --> 00:11:59.920
+Copilot 11 minutos:
+
+226
+00:11:57.380 --> 00:11:59.920
+Copilot 11 minutos:
+
+227
+00:11:54.140 --> 00:11:59.920
+Mostrar casos concretos para cada modo para "Modo correcto por incertidumbre" para "Modo
+
+228
+00:11:57.188 --> 00:11:59.920
+correcto por incertidumbre".
+
+229
+00:12:00.450 --> 00:12:04.118
+Coste y riesgo: No hay modo ganador para todo.
+
+230
+00:12:04.163 --> 00:12:06.751
+Situacion 12 minutos:
+
+231
+00:12:06.796 --> 00:12:12.240
+el equipo mira "Modo correcto por incertidumbre" dentro del workspace de Visual Studio
+
+232
+00:12:12.285 --> 00:12:13.793
+Code
+
+233
+00:12:13.838 --> 00:12:16.714
+con coste y permiso visibles.
+
+234
+00:12:16.759 --> 00:12:22.203
+el equipo mira "Modo correcto por incertidumbre" dentro del workspace de Visual Studio
+
+235
+00:12:22.248 --> 00:12:23.756
+Code
+
+236
+00:12:23.540 --> 00:12:29.920
+con coste y permiso visibles. (Copilot, 12 minutos, paso 26)
+
+237
+00:12:24.596 --> 00:12:29.920
+Evidencia 12 minutos: "Modo correcto por incertidumbre" no se cierra sin test
+
+238
+00:12:27.212 --> 00:12:29.920
+captura o criterio escrito.
+
+239
+00:12:27.452 --> 00:12:29.920
+Copilot 12 minutos:
+
+240
+00:12:27.452 --> 00:12:29.920
+Copilot 12 minutos:
+
+241
+00:12:24.308 --> 00:12:29.920
+Mostrar casos concretos para cada modo para "Modo correcto por incertidumbre" para "Modo
+
+242
+00:12:27.260 --> 00:12:29.920
+correcto por incertidumbre".
+
+243
+00:12:30.450 --> 00:12:36.182
+Situacion 12 minutos: la pantalla no busca impresionar; busca cerrar "Pausa:
+
+244
+00:12:36.227 --> 00:12:39.847
+que estamos aceptando aqui?" con evidencia.
+
+245
+00:12:39.892 --> 00:12:43.512
+que estamos aceptando aqui?" con evidencia.
+
+246
+00:12:43.557 --> 00:12:49.433
+Tension 12 minutos: el agente puede avanzar mas rapido que nuestra capacidad de revisar.
+
+247
+00:12:49.478 --> 00:12:54.730
+Accion 12 minutos: pedir salida pequena, verificable y con owner.
+
+248
+00:12:54.596 --> 00:12:59.920
+convertir workspace de Visual Studio Code en una decision que se pueda ensenar en
+
+249
+00:12:58.172 --> 00:12:59.920
+tutoria.
+
+250
+00:12:56.852 --> 00:12:59.920
+(Copilot 12 minutos paso 9)
+
+251
+00:12:57.308 --> 00:12:59.920
+Evidencia 12 minutos:
+
+252
+00:12:55.220 --> 00:12:59.920
+hay una salida que otro perfil puede revisar sin rehacer el contexto.
+
+253
+00:13:00.450 --> 00:13:04.190
+Pantalla de accion: Ask compra entendimiento.
+
+254
+00:13:04.235 --> 00:13:09.607
+Edit compra velocidad localizada. Agent compra coordinacion.
+
+255
+00:13:09.652 --> 00:13:12.360
+Situacion 13 minutos:
+
+256
+00:13:12.405 --> 00:13:17.849
+el equipo mira "Modo correcto por incertidumbre" dentro del workspace de Visual Studio
+
+257
+00:13:17.894 --> 00:13:19.402
+Code
+
+258
+00:13:19.447 --> 00:13:22.323
+con coste y permiso visibles.
+
+259
+00:13:22.368 --> 00:13:27.812
+el equipo mira "Modo correcto por incertidumbre" dentro del workspace de Visual Studio
+
+260
+00:13:27.857 --> 00:13:29.365
+Code
+
+261
+00:13:23.372 --> 00:13:29.920
+con coste y permiso visibles. (Copilot, 13 minutos, paso 27)
+
+262
+00:13:24.548 --> 00:13:29.920
+Evidencia 13 minutos: "Modo correcto por incertidumbre" no se cierra sin test
+
+263
+00:13:27.212 --> 00:13:29.920
+captura o criterio escrito.
+
+264
+00:13:27.380 --> 00:13:29.920
+Copilot 13 minutos:
+
+265
+00:13:27.380 --> 00:13:29.920
+Copilot 13 minutos:
+
+266
+00:13:24.308 --> 00:13:29.920
+Mostrar casos concretos para cada modo para "Modo correcto por incertidumbre" para "Modo
+
+267
+00:13:27.260 --> 00:13:29.920
+correcto por incertidumbre".
+
+268
+00:13:30.450 --> 00:13:34.334
+Contexto visible: No hay modo ganador para todo.
+
+269
+00:13:34.379 --> 00:13:38.935
+Situacion 13 minutos: la pantalla no busca impresionar;
+
+270
+00:13:38.980 --> 00:13:43.464
+busca cerrar "Modo correcto por incertidumbre" con evidencia.
+
+271
+00:13:43.509 --> 00:13:47.993
+busca cerrar "Modo correcto por incertidumbre" con evidencia.
+
+272
+00:13:48.038 --> 00:13:53.554
+Evidencia 13 minutos: "Modo correcto por incertidumbre" no se cierra sin test
+
+273
+00:13:53.599 --> 00:13:56.379
+captura o criterio escrito.
+
+274
+00:13:53.204 --> 00:13:59.920
+contexto pobre y review floja. (Copilot, 13 minutos, paso 26)
+
+275
+00:13:57.308 --> 00:13:59.920
+Copilot 13 minutos:
+
+276
+00:13:57.308 --> 00:13:59.920
+Copilot 13 minutos:
+
+277
+00:13:54.140 --> 00:13:59.920
+Mostrar casos concretos para cada modo para "Modo correcto por incertidumbre" para "Modo
+
+278
+00:13:57.188 --> 00:13:59.920
+correcto por incertidumbre".
+
+279
+00:14:00.450 --> 00:14:05.798
+Decision humana: La madurez esta en cambiar de modo cuando cambia la incertidumbre.
+
+280
+00:14:05.843 --> 00:14:11.671
+Situacion 14 minutos: Copilot solo avanza si el siguiente humano entiende el por que.
+
+281
+00:14:11.716 --> 00:14:17.016
+Evidencia 14 minutos: patch local, test y comentario de pull request.
+
+282
+00:14:17.061 --> 00:14:19.745
+Copilot 14 minutos:
+
+283
+00:14:19.790 --> 00:14:22.474
+Copilot 14 minutos:
+
+284
+00:14:22.519 --> 00:14:28.299
+Mostrar casos concretos para cada modo para "Modo correcto por incertidumbre" para "Modo
+
+285
+00:14:27.188 --> 00:14:29.920
+correcto por incertidumbre".
+
+286
+00:14:30.450 --> 00:14:35.750
+Evidencia 14 minutos: patch local, test y comentario de pull request.
+
+287
+00:14:35.795 --> 00:14:38.551
+Agent compra coordinacion.
+
+288
+00:14:38.596 --> 00:14:43.248
+Situacion 14 minutos: la pantalla no busca impresionar;
+
+289
+00:14:43.293 --> 00:14:47.777
+busca cerrar "Modo correcto por incertidumbre" con evidencia.
+
+290
+00:14:47.822 --> 00:14:52.306
+busca cerrar "Modo correcto por incertidumbre" con evidencia.
+
+291
+00:14:52.351 --> 00:14:57.987
+Evidencia 14 minutos: "Modo correcto por incertidumbre" no se cierra sin test
+
+292
+00:14:57.140 --> 00:14:59.920
+captura o criterio escrito.
+
+293
+00:14:53.156 --> 00:14:59.920
+contexto pobre y review floja. (Copilot, 14 minutos, paso 27)
+
+294
+00:14:57.236 --> 00:14:59.920
+Copilot 14 minutos:
+
+295
+00:14:57.236 --> 00:14:59.920
+Copilot 14 minutos:
+
+296
+00:14:54.140 --> 00:14:59.920
+Mostrar casos concretos para cada modo para "Modo correcto por incertidumbre" para "Modo
+
+297
+00:14:57.188 --> 00:14:59.920
+correcto por incertidumbre".
+
+298
+00:15:00.450 --> 00:15:05.438
+Pantalla de accion: Ask es barato cuando lo usamos para orientar la lectura.
+
+299
+00:15:05.618 --> 00:15:11.014
+Situacion 15 minutos: alguien tendra que mantener esta salida despues de la demo.
+
+300
+00:15:11.194 --> 00:15:17.046
+Evidencia 15 minutos: "Prompt Ask" no se cierra sin test, captura o criterio escrito.
+
+301
+00:15:17.226 --> 00:15:21.542
+Copilot 15 minutos: Simular diagnostico con ruta
+
+302
+00:15:21.722 --> 00:15:28.582
+supuesto roto y prueba minima para "Prompt Ask". (Copilot, 15 minutos, paso 1)
+
+303
+00:15:30.450 --> 00:15:35.678
+Contexto 15 minutos: mira primero el alcance que condiciona esta salida.
+
+304
+00:15:35.723 --> 00:15:39.679
+Le pedimos a Copilot que explique supuestos y test minimo
+
+305
+00:15:39.724 --> 00:15:42.168
+no que cambie archivos.
+
+306
+00:15:42.213 --> 00:15:46.721
+Situacion 15 minutos: la pantalla no busca impresionar;
+
+307
+00:15:46.766 --> 00:15:50.074
+busca cerrar "Prompt Ask" con evidencia.
+
+308
+00:15:50.119 --> 00:15:53.427
+busca cerrar "Prompt Ask" con evidencia.
+
+309
+00:15:53.472 --> 00:15:59.324
+Evidencia 15 minutos: "Prompt Ask" no se cierra sin test, captura o criterio escrito.
+
+310
+00:15:53.348 --> 00:15:59.920
+contexto pobre y review floja. (Copilot, 15 minutos, paso 28)
+
+311
+00:15:55.604 --> 00:15:59.920
+Copilot 15 minutos: Simular diagnostico con ruta
+
+312
+00:15:53.036 --> 00:15:59.920
+supuesto roto y prueba minima para "Prompt Ask". (Copilot, 15 minutos, paso 2)
+
+313
+00:16:00.450 --> 00:16:06.398
+Situacion 16 minutos: el equipo mira "Mapa operativo: Visual Studio Code
+
+314
+00:16:06.443 --> 00:16:11.671
+Copilot Chat y revision de pull request" dentro del workspace de Visual Studio Code
+
+315
+00:16:11.716 --> 00:16:14.664
+con coste y permiso visibles.
+
+316
+00:16:14.709 --> 00:16:19.937
+Copilot Chat y revision de pull request" dentro del workspace de Visual Studio Code
+
+317
+00:16:19.982 --> 00:16:26.746
+con coste y permiso visibles. (Copilot, 16 minutos, paso 28)
+
+318
+00:16:23.852 --> 00:16:29.920
+Tension 16 minutos: el agente puede avanzar mas rapido que nuestra capacidad de revisar.
+
+319
+00:16:24.452 --> 00:16:29.920
+Accion 16 minutos: pedir salida pequena, verificable y con owner.
+
+320
+00:16:23.372 --> 00:16:29.920
+no con la sensacion de velocidad. (Copilot, 16 minutos, paso 20)
+
+321
+00:16:27.116 --> 00:16:29.920
+Evidencia 16 minutos:
+
+322
+00:16:25.220 --> 00:16:29.920
+hay una salida que otro perfil puede revisar sin rehacer el contexto.
+
+323
+00:16:25.628 --> 00:16:29.920
+Copilot Chat y revision de pull request" no se cierra sin test
+
+324
+00:16:23.372 --> 00:16:29.920
+captura o criterio escrito. (Copilot, 16 minutos, paso 30)
+
+325
+00:16:30.450 --> 00:16:35.798
+Evidencia 16 minutos: el artefacto muestra que se controlo modo equivocado
+
+326
+00:16:35.843 --> 00:16:38.767
+contexto pobre y review floja.
+
+327
+00:16:38.812 --> 00:16:45.480
+contexto pobre y review floja. (Copilot, 16 minutos, paso 29)
+
+328
+00:16:45.525 --> 00:16:48.329
+Situacion 16 minutos:
+
+329
+00:16:48.374 --> 00:16:52.978
+Copilot recibe "Prompt Ask" y debe convertirlo en trabajo revisable.
+
+330
+00:16:53.023 --> 00:16:58.539
+Evidencia 16 minutos: "Prompt Ask" queda ligado a prueba, owner y decision.
+
+331
+00:16:55.412 --> 00:16:59.920
+Copilot 16 minutos: Simular diagnostico con ruta
+
+332
+00:16:52.796 --> 00:16:59.920
+supuesto roto y prueba minima para "Prompt Ask". (Copilot, 16 minutos, paso 3)
+
+333
+00:17:00.450 --> 00:17:05.510
+Coste y riesgo: Le pedimos a Copilot que explique supuestos y test minimo
+
+334
+00:17:05.555 --> 00:17:08.071
+no que cambie archivos.
+
+335
+00:17:08.116 --> 00:17:12.840
+Situacion 17 minutos: la pantalla no busca impresionar;
+
+336
+00:17:12.885 --> 00:17:16.289
+busca cerrar "Prompt Ask" con evidencia.
+
+337
+00:17:16.334 --> 00:17:19.738
+busca cerrar "Prompt Ask" con evidencia.
+
+338
+00:17:19.783 --> 00:17:25.995
+Evidencia 17 minutos: "Prompt Ask" no se cierra sin test, captura o criterio escrito.
+
+339
+00:17:23.084 --> 00:17:29.920
+contexto pobre y review floja. (Copilot, 17 minutos, paso 30)
+
+340
+00:17:25.268 --> 00:17:29.920
+Copilot 17 minutos: Simular diagnostico con ruta
+
+341
+00:17:22.556 --> 00:17:29.920
+supuesto roto y prueba minima para "Prompt Ask". (Copilot, 17 minutos, paso 4)
+
+342
+00:17:30.450 --> 00:17:36.206
+Checkpoint: Este paso reduce el riesgo de aceptar una completion bonita pero incorrecta.
+
+343
+00:17:36.251 --> 00:17:41.983
+Situacion 17 minutos: alguien tendra que mantener esta salida despues de la demo.
+
+344
+00:17:42.028 --> 00:17:48.240
+Evidencia 17 minutos: "Prompt Ask" no se cierra sin test, captura o criterio escrito.
+
+345
+00:17:48.285 --> 00:17:52.937
+Copilot 17 minutos: Simular diagnostico con ruta
+
+346
+00:17:52.532 --> 00:17:59.920
+supuesto roto y prueba minima para "Prompt Ask". (Copilot, 17 minutos, paso 5)
+
+347
+00:18:00.450 --> 00:18:05.582
+Pantalla de accion: Ask es barato cuando lo usamos para orientar la lectura.
+
+348
+00:18:05.627 --> 00:18:08.503
+Situacion 18 minutos:
+
+349
+00:18:08.548 --> 00:18:13.272
+Copilot recibe "Prompt Ask" y debe convertirlo en trabajo revisable.
+
+350
+00:18:13.317 --> 00:18:18.977
+Evidencia 18 minutos: "Prompt Ask" queda ligado a prueba, owner y decision.
+
+351
+00:18:19.022 --> 00:18:23.626
+Copilot 18 minutos: Simular diagnostico con ruta
+
+352
+00:18:22.652 --> 00:18:29.920
+supuesto roto y prueba minima para "Prompt Ask". (Copilot, 18 minutos, paso 6)
+
+353
+00:18:30.450 --> 00:18:35.942
+Contexto 18 minutos: mira primero el alcance que condiciona esta salida.
+
+354
+00:18:35.987 --> 00:18:40.063
+Le pedimos a Copilot que explique supuestos y test minimo
+
+355
+00:18:40.108 --> 00:18:42.624
+no que cambie archivos.
+
+356
+00:18:42.669 --> 00:18:48.521
+Situacion 18 minutos: Copilot solo avanza si el siguiente humano entiende el por que.
+
+357
+00:18:48.566 --> 00:18:53.962
+Evidencia 18 minutos: patch local, test y comentario de pull request.
+
+358
+00:18:54.007 --> 00:18:58.611
+Copilot 18 minutos: Simular diagnostico con ruta
+
+359
+00:18:52.604 --> 00:18:59.920
+supuesto roto y prueba minima para "Prompt Ask". (Copilot, 18 minutos, paso 7)
+
+360
+00:19:00.450 --> 00:19:06.590
+Decision 19 minutos: cerrar solo cuando patch local, test y comentario de pull request.
+
+361
+00:19:06.635 --> 00:19:11.599
+Este paso reduce el riesgo de aceptar una completion bonita pero incorrecta.
+
+362
+00:19:11.644 --> 00:19:14.544
+Situacion 19 minutos:
+
+363
+00:19:14.589 --> 00:19:19.193
+Copilot recibe "Prompt Ask" y debe convertirlo en trabajo revisable.
+
+364
+00:19:19.238 --> 00:19:24.802
+Evidencia 19 minutos: "Prompt Ask" queda ligado a prueba, owner y decision.
+
+365
+00:19:24.847 --> 00:19:29.355
+Copilot 19 minutos: Simular diagnostico con ruta
+
+366
+00:19:22.844 --> 00:19:29.920
+supuesto roto y prueba minima para "Prompt Ask". (Copilot, 19 minutos, paso 8)
+
+367
+00:19:30.450 --> 00:19:35.870
+Evidencia 19 minutos: patch local, test y comentario de pull request.
+
+368
+00:19:35.915 --> 00:19:38.887
+Situacion 19 minutos:
+
+369
+00:19:38.932 --> 00:19:43.584
+el equipo mira "Prompt Ask" dentro del workspace de Visual Studio Code
+
+370
+00:19:43.629 --> 00:19:46.577
+con coste y permiso visibles.
+
+371
+00:19:46.622 --> 00:19:53.458
+con coste y permiso visibles. (Copilot, 19 minutos, paso 29)
+
+372
+00:19:53.503 --> 00:19:59.067
+Evidencia 19 minutos: el artefacto muestra que se controlo modo equivocado
+
+373
+00:19:56.924 --> 00:19:59.920
+contexto pobre y review floja.
+
+374
+00:19:55.292 --> 00:19:59.920
+Copilot 19 minutos: Simular diagnostico con ruta
+
+375
+00:19:52.652 --> 00:19:59.920
+supuesto roto y prueba minima para "Prompt Ask". (Copilot, 19 minutos, paso 9)
+
+376
+00:20:00.450 --> 00:20:05.486
+Pantalla de accion: Las instrucciones son memoria de equipo, no una novela.
+
+377
+00:20:05.531 --> 00:20:10.903
+Situacion 20 minutos: alguien tendra que mantener esta salida despues de la demo.
+
+378
+00:20:10.948 --> 00:20:16.152
+Evidencia 20 minutos: "copilot-instructions.md" no se cierra sin test
+
+379
+00:20:16.197 --> 00:20:18.905
+captura o criterio escrito.
+
+380
+00:20:18.950 --> 00:20:25.234
+captura o criterio escrito. (Copilot, 20 minutos, paso 31)
+
+381
+00:20:25.279 --> 00:20:27.819
+Copilot 20 minutos:
+
+382
+00:20:27.380 --> 00:20:29.920
+Copilot 20 minutos:
+
+383
+00:20:25.268 --> 00:20:29.920
+Mostrar una version corta y revisable de copilot-instructions para para
+
+384
+00:20:27.092 --> 00:20:29.920
+"copilot-instructions.md".
+
+385
+00:20:23.804 --> 00:20:29.920
+"copilot-instructions.md". (Copilot, 20 minutos, paso 1)
+
+386
+00:20:30.450 --> 00:20:36.182
+Situacion 20 minutos: Copilot solo avanza si el siguiente humano entiende el por que.
+
+387
+00:20:36.227 --> 00:20:41.455
+Tension 20 minutos: aceptar rapido puede esconder modo equivocado
+
+388
+00:20:41.500 --> 00:20:44.496
+contexto pobre y review floja.
+
+389
+00:20:44.541 --> 00:20:51.209
+contexto pobre y review floja. (Copilot, 20 minutos, paso 31)
+
+390
+00:20:51.254 --> 00:20:56.578
+Accion 20 minutos: nombrar modelo, permiso y limite antes de iterar.
+
+391
+00:20:55.292 --> 00:20:59.920
+Copilot Chat y revision de pull request" no produce evidencia nueva.
+
+392
+00:20:54.860 --> 00:20:59.920
+Evidencia 20 minutos: "Mapa operativo: Visual Studio Code
+
+393
+00:20:55.628 --> 00:20:59.920
+Copilot Chat y revision de pull request" no se cierra sin test
+
+394
+00:20:57.140 --> 00:20:59.920
+captura o criterio escrito.
+
+395
+00:21:00.450 --> 00:21:05.054
+Decision humana: Si una instruccion solo aplica a esta tarea
+
+396
+00:21:05.099 --> 00:21:08.431
+va en prompt file no en memoria global.
+
+397
+00:21:08.476 --> 00:21:14.040
+Situacion 21 minutos: alguien tendra que mantener esta salida despues de la demo.
+
+398
+00:21:14.085 --> 00:21:19.529
+Evidencia 21 minutos: "copilot-instructions.md" no se cierra sin test
+
+399
+00:21:19.574 --> 00:21:22.354
+captura o criterio escrito.
+
+400
+00:21:22.399 --> 00:21:28.995
+captura o criterio escrito. (Copilot, 21 minutos, paso 32)
+
+401
+00:21:27.284 --> 00:21:29.920
+Copilot 21 minutos:
+
+402
+00:21:27.284 --> 00:21:29.920
+Copilot 21 minutos:
+
+403
+00:21:25.148 --> 00:21:29.920
+Mostrar una version corta y revisable de copilot-instructions para para
+
+404
+00:21:27.020 --> 00:21:29.920
+"copilot-instructions.md".
+
+405
+00:21:23.516 --> 00:21:29.920
+"copilot-instructions.md". (Copilot, 21 minutos, paso 2)
+
+406
+00:21:30.450 --> 00:21:35.870
+Evidencia 21 minutos: el artefacto muestra que se controlo modo equivocado
+
+407
+00:21:35.915 --> 00:21:38.911
+contexto pobre y review floja.
+
+408
+00:21:38.956 --> 00:21:45.768
+contexto pobre y review floja. (Copilot, 21 minutos, paso 32)
+
+409
+00:21:45.813 --> 00:21:48.617
+Situacion 21 minutos:
+
+410
+00:21:48.662 --> 00:21:54.418
+Copilot recibe "copilot-instructions.md" y debe convertirlo en trabajo revisable.
+
+411
+00:21:53.348 --> 00:21:59.920
+Evidencia 21 minutos: "copilot-instructions.md" queda ligado a prueba, owner y decision.
+
+412
+00:21:57.284 --> 00:21:59.920
+Copilot 21 minutos:
+
+413
+00:21:57.284 --> 00:21:59.920
+Copilot 21 minutos:
+
+414
+00:21:55.148 --> 00:21:59.920
+Mostrar una version corta y revisable de copilot-instructions para para
+
+415
+00:21:57.020 --> 00:21:59.920
+"copilot-instructions.md".
+
+416
+00:21:53.444 --> 00:21:59.920
+"copilot-instructions.md". (Copilot, 21 minutos, paso 3)
+
+417
+00:22:00.450 --> 00:22:05.726
+Coste y riesgo: Copilot debe recibir reglas estables: estilo pruebas
+
+418
+00:22:05.771 --> 00:22:08.359
+limites y convenciones.
+
+419
+00:22:08.404 --> 00:22:12.936
+Situacion 22 minutos: la pantalla no busca impresionar;
+
+420
+00:22:12.981 --> 00:22:17.345
+busca cerrar "copilot-instructions.md" con evidencia.
+
+421
+00:22:17.390 --> 00:22:21.754
+busca cerrar "copilot-instructions.md" con evidencia.
+
+422
+00:22:21.799 --> 00:22:27.147
+Evidencia 22 minutos: "copilot-instructions.md" no se cierra sin test
+
+423
+00:22:27.192 --> 00:22:29.900
+captura o criterio escrito.
+
+424
+00:22:23.228 --> 00:22:29.920
+contexto pobre y review floja. (Copilot, 22 minutos, paso 33)
+
+425
+00:22:27.308 --> 00:22:29.920
+Copilot 22 minutos:
+
+426
+00:22:27.308 --> 00:22:29.920
+Copilot 22 minutos:
+
+427
+00:22:25.268 --> 00:22:29.920
+Mostrar una version corta y revisable de copilot-instructions para para
+
+428
+00:22:27.092 --> 00:22:29.920
+"copilot-instructions.md".
+
+429
+00:22:23.588 --> 00:22:29.920
+"copilot-instructions.md". (Copilot, 22 minutos, paso 4)
+
+430
+00:22:30.450 --> 00:22:35.222
+Checkpoint: Si una instruccion solo aplica a esta tarea va en prompt file
+
+431
+00:22:35.267 --> 00:22:37.711
+no en memoria global.
+
+432
+00:22:37.756 --> 00:22:43.392
+Situacion 22 minutos: Copilot solo avanza si el siguiente humano entiende el por que.
+
+433
+00:22:43.437 --> 00:22:48.593
+Evidencia 22 minutos: patch local, test y comentario de pull request.
+
+434
+00:22:48.638 --> 00:22:51.250
+Copilot 22 minutos:
+
+435
+00:22:51.295 --> 00:22:53.907
+Copilot 22 minutos:
+
+436
+00:22:53.952 --> 00:22:58.604
+Mostrar una version corta y revisable de copilot-instructions para para
+
+437
+00:22:57.092 --> 00:22:59.920
+"copilot-instructions.md".
+
+438
+00:22:53.564 --> 00:22:59.920
+"copilot-instructions.md". (Copilot, 22 minutos, paso 5)
+
+439
+00:23:00.450 --> 00:23:05.486
+Pantalla de accion: Las instrucciones son memoria de equipo, no una novela.
+
+440
+00:23:05.531 --> 00:23:08.383
+Situacion 23 minutos:
+
+441
+00:23:08.428 --> 00:23:14.040
+Copilot recibe "copilot-instructions.md" y debe convertirlo en trabajo revisable.
+
+442
+00:23:14.085 --> 00:23:19.697
+Copilot recibe "copilot-instructions.md" y debe convertirlo en trabajo revisable.
+
+443
+00:23:19.742 --> 00:23:22.546
+Evidencia 23 minutos:
+
+444
+00:23:22.591 --> 00:23:27.171
+hay una salida que otro perfil puede revisar sin rehacer el contexto.
+
+445
+00:23:27.212 --> 00:23:29.920
+Copilot 23 minutos:
+
+446
+00:23:27.212 --> 00:23:29.920
+Copilot 23 minutos:
+
+447
+00:23:25.268 --> 00:23:29.920
+Mostrar una version corta y revisable de copilot-instructions para para
+
+448
+00:23:27.092 --> 00:23:29.920
+"copilot-instructions.md".
+
+449
+00:23:23.492 --> 00:23:29.920
+"copilot-instructions.md". (Copilot, 23 minutos, paso 6)
+
+450
+00:23:30.450 --> 00:23:35.870
+Contexto visible: Copilot debe recibir reglas estables: estilo pruebas
+
+451
+00:23:35.915 --> 00:23:38.503
+limites y convenciones.
+
+452
+00:23:38.548 --> 00:23:44.088
+Situacion 23 minutos: alguien tendra que mantener esta salida despues de la demo.
+
+453
+00:23:44.133 --> 00:23:49.505
+Evidencia 23 minutos: "copilot-instructions.md" no se cierra sin test
+
+454
+00:23:49.550 --> 00:23:52.258
+captura o criterio escrito.
+
+455
+00:23:52.303 --> 00:23:58.851
+captura o criterio escrito. (Copilot, 23 minutos, paso 33)
+
+456
+00:23:57.212 --> 00:23:59.920
+Copilot 23 minutos:
+
+457
+00:23:57.212 --> 00:23:59.920
+Copilot 23 minutos:
+
+458
+00:23:55.268 --> 00:23:59.920
+Mostrar una version corta y revisable de copilot-instructions para para
+
+459
+00:23:57.092 --> 00:23:59.920
+"copilot-instructions.md".
+
+460
+00:23:53.516 --> 00:23:59.920
+"copilot-instructions.md". (Copilot, 23 minutos, paso 7)
+
+461
+00:24:00.450 --> 00:24:05.054
+Decision humana: Si una instruccion solo aplica a esta tarea
+
+462
+00:24:05.099 --> 00:24:08.431
+va en prompt file no en memoria global.
+
+463
+00:24:08.476 --> 00:24:11.424
+Situacion 24 minutos:
+
+464
+00:24:11.469 --> 00:24:17.225
+Copilot recibe "copilot-instructions.md" y debe convertirlo en trabajo revisable.
+
+465
+00:24:17.270 --> 00:24:23.026
+Copilot recibe "copilot-instructions.md" y debe convertirlo en trabajo revisable.
+
+466
+00:24:23.071 --> 00:24:25.971
+Evidencia 24 minutos:
+
+467
+00:24:25.220 --> 00:24:29.920
+hay una salida que otro perfil puede revisar sin rehacer el contexto.
+
+468
+00:24:27.092 --> 00:24:29.920
+Copilot 24 minutos:
+
+469
+00:24:27.092 --> 00:24:29.920
+Copilot 24 minutos:
+
+470
+00:24:25.148 --> 00:24:29.920
+Mostrar una version corta y revisable de copilot-instructions para para
+
+471
+00:24:27.020 --> 00:24:29.920
+"copilot-instructions.md".
+
+472
+00:24:23.300 --> 00:24:29.920
+"copilot-instructions.md". (Copilot, 24 minutos, paso 8)
+
+473
+00:24:30.450 --> 00:24:36.782
+Situacion 24 minutos: Copilot recibe "Mapa operativo: Visual Studio Code
+
+474
+00:24:36.827 --> 00:24:41.983
+Copilot Chat y revision de pull request" y debe convertirlo en trabajo revisable.
+
+475
+00:24:42.028 --> 00:24:47.184
+Copilot Chat y revision de pull request" y debe convertirlo en trabajo revisable.
+
+476
+00:24:47.229 --> 00:24:53.777
+Tension 24 minutos: sin evidencia, la IA parece productiva pero no deja confianza.
+
+477
+00:24:53.822 --> 00:24:58.954
+Accion 24 minutos: comparar la respuesta con el criterio de cierre
+
+478
+00:24:57.068 --> 00:24:59.920
+no con la sensacion de velocidad.
+
+479
+00:24:54.620 --> 00:24:59.920
+Evidencia 24 minutos: "Mapa operativo: Visual Studio Code
+
+480
+00:24:55.628 --> 00:24:59.920
+Copilot Chat y revision de pull request" no se cierra sin test
+
+481
+00:24:57.140 --> 00:24:59.920
+captura o criterio escrito.
+
+482
+00:24:52.844 --> 00:24:59.920
+contexto pobre y review floja. (Copilot, 24 minutos, paso 34)
+
+483
+00:25:00.450 --> 00:25:05.534
+Pantalla de accion: Ahora usamos Edit porque ya sabemos la zona de cambio.
+
+484
+00:25:05.714 --> 00:25:11.326
+Situacion 25 minutos: alguien tendra que mantener esta salida despues de la demo.
+
+485
+00:25:11.506 --> 00:25:17.814
+Evidencia 25 minutos: "Copilot Edit" no se cierra sin test, captura o criterio escrito.
+
+486
+00:25:17.994 --> 00:25:20.726
+Copilot 25 minutos:
+
+487
+00:25:20.906 --> 00:25:25.582
+Mostrar diff y comprobar que no cambio firmas publicas para "Copilot Edit".
+
+488
+00:25:30.450 --> 00:25:35.894
+Contexto 25 minutos: mira primero el alcance que condiciona esta salida.
+
+489
+00:25:35.939 --> 00:25:41.407
+Seleccionar contexto es una forma de ahorrar tokens y evitar que Copilot toque de mas.
+
+490
+00:25:41.452 --> 00:25:44.352
+Situacion 25 minutos:
+
+491
+00:25:44.397 --> 00:25:49.217
+el equipo mira "Copilot Edit" dentro del workspace de Visual Studio Code
+
+492
+00:25:49.262 --> 00:25:52.138
+con coste y permiso visibles.
+
+493
+00:25:52.183 --> 00:25:57.003
+el equipo mira "Copilot Edit" dentro del workspace de Visual Studio Code
+
+494
+00:25:53.372 --> 00:25:59.920
+con coste y permiso visibles. (Copilot, 25 minutos, paso 30)
+
+495
+00:25:53.612 --> 00:25:59.920
+Evidencia 25 minutos: "Copilot Edit" no se cierra sin test, captura o criterio escrito.
+
+496
+00:25:57.188 --> 00:25:59.920
+Copilot 25 minutos:
+
+497
+00:25:55.244 --> 00:25:59.920
+Mostrar diff y comprobar que no cambio firmas publicas para "Copilot Edit".
+
+498
+00:26:00.450 --> 00:26:04.766
+Decision humana: El patch debe ser pequeno y explicable.
+
+499
+00:26:04.811 --> 00:26:09.391
+Situacion 26 minutos: la pantalla no busca impresionar;
+
+500
+00:26:09.436 --> 00:26:13.032
+busca cerrar "Copilot Edit" con evidencia.
+
+501
+00:26:13.077 --> 00:26:16.673
+busca cerrar "Copilot Edit" con evidencia.
+
+502
+00:26:16.718 --> 00:26:22.978
+Evidencia 26 minutos: "Copilot Edit" no se cierra sin test, captura o criterio escrito.
+
+503
+00:26:23.023 --> 00:26:29.811
+contexto pobre y review floja. (Copilot, 26 minutos, paso 35)
+
+504
+00:26:27.236 --> 00:26:29.920
+Copilot 26 minutos:
+
+505
+00:26:25.244 --> 00:26:29.920
+Mostrar diff y comprobar que no cambio firmas publicas para "Copilot Edit".
+
+506
+00:26:30.450 --> 00:26:35.798
+Evidencia 26 minutos: el artefacto muestra que se controlo modo equivocado
+
+507
+00:26:35.843 --> 00:26:38.767
+contexto pobre y review floja.
+
+508
+00:26:38.812 --> 00:26:45.624
+contexto pobre y review floja. (Copilot, 26 minutos, paso 36)
+
+509
+00:26:45.669 --> 00:26:48.449
+Situacion 26 minutos:
+
+510
+00:26:48.494 --> 00:26:53.338
+Copilot recibe "Copilot Edit" y debe convertirlo en trabajo revisable.
+
+511
+00:26:53.383 --> 00:26:59.091
+Evidencia 26 minutos: "Copilot Edit" queda ligado a prueba, owner y decision.
+
+512
+00:26:57.236 --> 00:26:59.920
+Copilot 26 minutos:
+
+513
+00:26:55.244 --> 00:26:59.920
+Mostrar diff y comprobar que no cambio firmas publicas para "Copilot Edit".
+
+514
+00:27:00.450 --> 00:27:05.534
+Coste y riesgo: (Copilot, 27 minutos, paso 3)
+
+515
+00:27:05.579 --> 00:27:11.191
+Seleccionar contexto es una forma de ahorrar tokens y evitar que Copilot toque de mas.
+
+516
+00:27:11.236 --> 00:27:16.008
+Situacion 27 minutos: la pantalla no busca impresionar;
+
+517
+00:27:16.053 --> 00:27:19.745
+busca cerrar "Copilot Edit" con evidencia.
+
+518
+00:27:19.790 --> 00:27:23.482
+busca cerrar "Copilot Edit" con evidencia.
+
+519
+00:27:23.444 --> 00:27:29.920
+Evidencia 27 minutos: "Copilot Edit" no se cierra sin test, captura o criterio escrito.
+
+520
+00:27:22.940 --> 00:27:29.920
+contexto pobre y review floja. (Copilot, 27 minutos, paso 37)
+
+521
+00:27:27.068 --> 00:27:29.920
+Copilot 27 minutos:
+
+522
+00:27:25.124 --> 00:27:29.920
+Mostrar diff y comprobar que no cambio firmas publicas para "Copilot Edit".
+
+523
+00:27:30.450 --> 00:27:34.478
+Checkpoint: El patch debe ser pequeno y explicable.
+
+524
+00:27:34.658 --> 00:27:40.414
+Situacion 27 minutos: alguien tendra que mantener esta salida despues de la demo.
+
+525
+00:27:40.594 --> 00:27:47.070
+Evidencia 27 minutos: "Copilot Edit" no se cierra sin test, captura o criterio escrito.
+
+526
+00:27:47.250 --> 00:27:50.102
+Copilot 27 minutos:
+
+527
+00:27:50.282 --> 00:27:55.078
+Mostrar diff y comprobar que no cambio firmas publicas para "Copilot Edit".
+
+528
+00:28:00.450 --> 00:28:06.350
+Situacion 28 minutos: Copilot solo avanza si el siguiente humano entiende el por que.
+
+529
+00:28:06.395 --> 00:28:11.815
+Tension 28 minutos: aceptar rapido puede esconder modo equivocado
+
+530
+00:28:11.860 --> 00:28:14.856
+contexto pobre y review floja.
+
+531
+00:28:14.901 --> 00:28:21.833
+contexto pobre y review floja. (Copilot, 28 minutos, paso 38)
+
+532
+00:28:21.878 --> 00:28:27.370
+Accion 28 minutos: nombrar modelo, permiso y limite antes de iterar.
+
+533
+00:28:24.428 --> 00:28:29.920
+Evidencia 28 minutos: el artefacto muestra que se controlo modo equivocado
+
+534
+00:28:26.924 --> 00:28:29.920
+contexto pobre y review floja.
+
+535
+00:28:30.450 --> 00:28:35.990
+Contexto 28 minutos: mira primero el alcance que condiciona esta salida.
+
+536
+00:28:36.035 --> 00:28:41.647
+Seleccionar contexto es una forma de ahorrar tokens y evitar que Copilot toque de mas.
+
+537
+00:28:41.692 --> 00:28:47.376
+Situacion 28 minutos: alguien tendra que mantener esta salida despues de la demo.
+
+538
+00:28:47.421 --> 00:28:53.825
+Evidencia 28 minutos: "Copilot Edit" no se cierra sin test, captura o criterio escrito.
+
+539
+00:28:53.870 --> 00:28:56.626
+Copilot 28 minutos:
+
+540
+00:28:55.124 --> 00:28:59.920
+Mostrar diff y comprobar que no cambio firmas publicas para "Copilot Edit".
+
+541
+00:29:00.450 --> 00:29:04.766
+Decision humana: El patch debe ser pequeno y explicable.
+
+542
+00:29:04.946 --> 00:29:10.750
+Situacion 29 minutos: Copilot solo avanza si el siguiente humano entiende el por que.
+
+543
+00:29:10.930 --> 00:29:16.206
+Evidencia 29 minutos: patch local, test y comentario de pull request.
+
+544
+00:29:16.386 --> 00:29:19.142
+Copilot 29 minutos:
+
+545
+00:29:19.322 --> 00:29:23.998
+Mostrar diff y comprobar que no cambio firmas publicas para "Copilot Edit".
+
+546
+00:29:30.450 --> 00:29:35.870
+Evidencia 29 minutos: patch local, test y comentario de pull request.
+
+547
+00:29:35.915 --> 00:29:38.887
+Situacion 29 minutos:
+
+548
+00:29:38.932 --> 00:29:43.872
+el equipo mira "Copilot Edit" dentro del workspace de Visual Studio Code
+
+549
+00:29:43.917 --> 00:29:46.865
+con coste y permiso visibles.
+
+550
+00:29:46.910 --> 00:29:51.850
+el equipo mira "Copilot Edit" dentro del workspace de Visual Studio Code
+
+551
+00:29:51.895 --> 00:29:58.731
+con coste y permiso visibles. (Copilot, 29 minutos, paso 31)
+
+552
+00:29:53.420 --> 00:29:59.920
+Evidencia 29 minutos: "Copilot Edit" no se cierra sin test, captura o criterio escrito.
+
+553
+00:29:57.092 --> 00:29:59.920
+Copilot 29 minutos:
+
+554
+00:29:55.124 --> 00:29:59.920
+Mostrar diff y comprobar que no cambio firmas publicas para "Copilot Edit".
+
+555
+00:30:00.450 --> 00:30:04.694
+Pantalla de accion: Copilot puede generar muchos tests
+
+556
+00:30:04.739 --> 00:30:08.047
+pero nosotros queremos uno que capture el bug.
+
+557
+00:30:08.092 --> 00:30:13.656
+Situacion 30 minutos: Copilot solo avanza si el siguiente humano entiende el por que.
+
+558
+00:30:13.701 --> 00:30:18.785
+Evidencia 30 minutos: patch local, test y comentario de pull request.
+
+559
+00:30:18.830 --> 00:30:21.370
+Copilot 30 minutos:
+
+560
+00:30:21.415 --> 00:30:23.955
+Copilot 30 minutos:
+
+561
+00:30:24.000 --> 00:30:29.300
+Simular fallo inicial y resultado verde tras el patch para "Test de regresion" para
+
+562
+00:30:27.644 --> 00:30:29.920
+"Test de regresion".
+
+563
+00:30:30.450 --> 00:30:36.278
+Contexto visible: La evidencia buena tiene historia: antes falla, despues pasa.
+
+564
+00:30:36.323 --> 00:30:38.983
+Situacion 30 minutos:
+
+565
+00:30:39.028 --> 00:30:44.208
+Copilot recibe "Test de regresion" y debe convertirlo en trabajo revisable.
+
+566
+00:30:44.253 --> 00:30:49.433
+Copilot recibe "Test de regresion" y debe convertirlo en trabajo revisable.
+
+567
+00:30:49.478 --> 00:30:52.114
+Evidencia 30 minutos:
+
+568
+00:30:52.159 --> 00:30:56.739
+hay una salida que otro perfil puede revisar sin rehacer el contexto.
+
+569
+00:30:56.784 --> 00:30:59.324
+Copilot 30 minutos:
+
+570
+00:30:57.380 --> 00:30:59.920
+Copilot 30 minutos:
+
+571
+00:30:54.620 --> 00:30:59.920
+Simular fallo inicial y resultado verde tras el patch para "Test de regresion" para
+
+572
+00:30:57.644 --> 00:30:59.920
+"Test de regresion".
+
+573
+00:31:00.450 --> 00:31:05.342
+Decision humana: Sin esa historia, la prueba puede ser decorativa.
+
+574
+00:31:05.387 --> 00:31:10.063
+Situacion 31 minutos: la pantalla no busca impresionar;
+
+575
+00:31:10.108 --> 00:31:13.920
+busca cerrar "Test de regresion" con evidencia.
+
+576
+00:31:13.965 --> 00:31:17.777
+busca cerrar "Test de regresion" con evidencia.
+
+577
+00:31:17.822 --> 00:31:22.786
+Evidencia 31 minutos: "Test de regresion" no se cierra sin test
+
+578
+00:31:22.831 --> 00:31:25.539
+captura o criterio escrito.
+
+579
+00:31:23.156 --> 00:31:29.920
+contexto pobre y review floja. (Copilot, 31 minutos, paso 39)
+
+580
+00:31:27.188 --> 00:31:29.920
+Copilot 31 minutos:
+
+581
+00:31:27.188 --> 00:31:29.920
+Copilot 31 minutos:
+
+582
+00:31:24.620 --> 00:31:29.920
+Simular fallo inicial y resultado verde tras el patch para "Test de regresion" para
+
+583
+00:31:27.644 --> 00:31:29.920
+"Test de regresion".
+
+584
+00:31:30.450 --> 00:31:35.822
+Evidencia 31 minutos: el artefacto muestra que se controlo modo equivocado
+
+585
+00:31:35.867 --> 00:31:38.791
+contexto pobre y review floja.
+
+586
+00:31:38.836 --> 00:31:45.384
+contexto pobre y review floja. (Copilot, 31 minutos, paso 40)
+
+587
+00:31:45.429 --> 00:31:48.737
+pero nosotros queremos uno que capture el bug.
+
+588
+00:31:48.782 --> 00:31:51.634
+Situacion 31 minutos:
+
+589
+00:31:51.679 --> 00:31:56.691
+el equipo mira "Test de regresion" dentro del workspace de Visual Studio Code
+
+590
+00:31:56.736 --> 00:31:59.612
+con coste y permiso visibles.
+
+591
+00:31:54.740 --> 00:31:59.920
+Copilot recibe "Test de regresion" y debe convertirlo en trabajo revisable.
+
+592
+00:31:54.548 --> 00:31:59.920
+Evidencia 31 minutos: el artefacto muestra que se controlo modo equivocado
+
+593
+00:31:56.996 --> 00:31:59.920
+contexto pobre y review floja.
+
+594
+00:31:57.188 --> 00:31:59.920
+Copilot 31 minutos:
+
+595
+00:31:57.188 --> 00:31:59.920
+Copilot 31 minutos:
+
+596
+00:31:54.620 --> 00:31:59.920
+Simular fallo inicial y resultado verde tras el patch para "Test de regresion" para
+
+597
+00:31:57.644 --> 00:31:59.920
+"Test de regresion".
+
+598
+00:32:00.450 --> 00:32:06.374
+Coste y riesgo: La evidencia buena tiene historia: antes falla, despues pasa.
+
+599
+00:32:06.419 --> 00:32:09.391
+Situacion 32 minutos:
+
+600
+00:32:09.436 --> 00:32:14.592
+el equipo mira "Test de regresion" dentro del workspace de Visual Studio Code
+
+601
+00:32:14.637 --> 00:32:17.585
+con coste y permiso visibles.
+
+602
+00:32:17.630 --> 00:32:22.786
+el equipo mira "Test de regresion" dentro del workspace de Visual Studio Code
+
+603
+00:32:22.831 --> 00:32:29.667
+con coste y permiso visibles. (Copilot, 32 minutos, paso 32)
+
+604
+00:32:24.764 --> 00:32:29.920
+Evidencia 32 minutos: "Test de regresion" no se cierra sin test
+
+605
+00:32:27.140 --> 00:32:29.920
+captura o criterio escrito.
+
+606
+00:32:27.140 --> 00:32:29.920
+Copilot 32 minutos:
+
+607
+00:32:27.140 --> 00:32:29.920
+Copilot 32 minutos:
+
+608
+00:32:24.476 --> 00:32:29.920
+Simular fallo inicial y resultado verde tras el patch para "Test de regresion" para
+
+609
+00:32:27.572 --> 00:32:29.920
+"Test de regresion".
+
+610
+00:32:30.450 --> 00:32:35.222
+Situacion 32 minutos: la pantalla no busca impresionar;
+
+611
+00:32:35.267 --> 00:32:39.511
+busca cerrar "Captura mental: Visual Studio Code
+
+612
+00:32:39.556 --> 00:32:43.608
+Copilot Chat y revision de pull request" con evidencia.
+
+613
+00:32:43.653 --> 00:32:47.897
+busca cerrar "Captura mental: Visual Studio Code
+
+614
+00:32:47.942 --> 00:32:51.994
+Copilot Chat y revision de pull request" con evidencia.
+
+615
+00:32:52.039 --> 00:32:57.459
+Tension 32 minutos: aceptar rapido puede esconder modo equivocado
+
+616
+00:32:56.924 --> 00:32:59.920
+contexto pobre y review floja.
+
+617
+00:32:54.404 --> 00:32:59.920
+Accion 32 minutos: parar si "Captura mental: Visual Studio Code
+
+618
+00:32:55.292 --> 00:32:59.920
+Copilot Chat y revision de pull request" no produce evidencia nueva.
+
+619
+00:32:54.596 --> 00:32:59.920
+convertir workspace de Visual Studio Code en una decision que se pueda ensenar en
+
+620
+00:32:58.172 --> 00:32:59.920
+tutoria.
+
+621
+00:32:56.564 --> 00:32:59.920
+(Copilot 32 minutos paso 10)
+
+622
+00:32:54.404 --> 00:32:59.920
+Evidencia 32 minutos: el artefacto muestra que se controlo modo equivocado
+
+623
+00:32:56.924 --> 00:32:59.920
+contexto pobre y review floja.
+
+624
+00:33:00.450 --> 00:33:04.814
+Pantalla de accion: Copilot puede generar muchos tests
+
+625
+00:33:04.859 --> 00:33:08.263
+pero nosotros queremos uno que capture el bug.
+
+626
+00:33:08.308 --> 00:33:11.352
+Situacion 33 minutos:
+
+627
+00:33:11.397 --> 00:33:16.553
+el equipo mira "Test de regresion" dentro del workspace de Visual Studio Code
+
+628
+00:33:16.598 --> 00:33:19.546
+con coste y permiso visibles.
+
+629
+00:33:19.591 --> 00:33:24.747
+el equipo mira "Test de regresion" dentro del workspace de Visual Studio Code
+
+630
+00:33:22.964 --> 00:33:29.920
+con coste y permiso visibles. (Copilot, 33 minutos, paso 33)
+
+631
+00:33:24.716 --> 00:33:29.920
+Evidencia 33 minutos: "Test de regresion" no se cierra sin test
+
+632
+00:33:27.140 --> 00:33:29.920
+captura o criterio escrito.
+
+633
+00:33:27.044 --> 00:33:29.920
+Copilot 33 minutos:
+
+634
+00:33:27.044 --> 00:33:29.920
+Copilot 33 minutos:
+
+635
+00:33:24.476 --> 00:33:29.920
+Simular fallo inicial y resultado verde tras el patch para "Test de regresion" para
+
+636
+00:33:27.572 --> 00:33:29.920
+"Test de regresion".
+
+637
+00:33:30.450 --> 00:33:36.422
+Contexto visible: La evidencia buena tiene historia: antes falla, despues pasa.
+
+638
+00:33:36.467 --> 00:33:41.311
+Situacion 33 minutos: la pantalla no busca impresionar;
+
+639
+00:33:41.356 --> 00:33:45.264
+busca cerrar "Test de regresion" con evidencia.
+
+640
+00:33:45.309 --> 00:33:49.217
+busca cerrar "Test de regresion" con evidencia.
+
+641
+00:33:49.262 --> 00:33:54.466
+Evidencia 33 minutos: "Test de regresion" no se cierra sin test
+
+642
+00:33:54.511 --> 00:33:57.291
+captura o criterio escrito.
+
+643
+00:33:52.892 --> 00:33:59.920
+contexto pobre y review floja. (Copilot, 33 minutos, paso 41)
+
+644
+00:33:57.044 --> 00:33:59.920
+Copilot 33 minutos:
+
+645
+00:33:57.044 --> 00:33:59.920
+Copilot 33 minutos:
+
+646
+00:33:54.476 --> 00:33:59.920
+Simular fallo inicial y resultado verde tras el patch para "Test de regresion" para
+
+647
+00:33:57.572 --> 00:33:59.920
+"Test de regresion".
+
+648
+00:34:00.450 --> 00:34:05.342
+Decision humana: Sin esa historia, la prueba puede ser decorativa.
+
+649
+00:34:05.387 --> 00:34:11.311
+Situacion 34 minutos: Copilot solo avanza si el siguiente humano entiende el por que.
+
+650
+00:34:11.356 --> 00:34:16.776
+Evidencia 34 minutos: patch local, test y comentario de pull request.
+
+651
+00:34:16.821 --> 00:34:19.673
+Copilot 34 minutos:
+
+652
+00:34:19.718 --> 00:34:22.570
+Copilot 34 minutos:
+
+653
+00:34:22.615 --> 00:34:27.915
+Simular fallo inicial y resultado verde tras el patch para "Test de regresion" para
+
+654
+00:34:27.644 --> 00:34:29.920
+"Test de regresion".
+
+655
+00:34:30.450 --> 00:34:36.014
+Evidencia 34 minutos: patch local, test y comentario de pull request.
+
+656
+00:34:36.059 --> 00:34:39.463
+pero nosotros queremos uno que capture el bug.
+
+657
+00:34:39.508 --> 00:34:44.400
+Situacion 34 minutos: la pantalla no busca impresionar;
+
+658
+00:34:44.445 --> 00:34:48.353
+busca cerrar "Test de regresion" con evidencia.
+
+659
+00:34:48.398 --> 00:34:52.306
+busca cerrar "Test de regresion" con evidencia.
+
+660
+00:34:52.351 --> 00:34:57.555
+Evidencia 34 minutos: "Test de regresion" no se cierra sin test
+
+661
+00:34:57.140 --> 00:34:59.920
+captura o criterio escrito.
+
+662
+00:34:52.820 --> 00:34:59.920
+contexto pobre y review floja. (Copilot, 34 minutos, paso 42)
+
+663
+00:34:56.996 --> 00:34:59.920
+Copilot 34 minutos:
+
+664
+00:34:56.996 --> 00:34:59.920
+Copilot 34 minutos:
+
+665
+00:34:54.476 --> 00:34:59.920
+Simular fallo inicial y resultado verde tras el patch para "Test de regresion" para
+
+666
+00:34:57.572 --> 00:34:59.920
+"Test de regresion".
+
+667
+00:35:00.450 --> 00:35:04.070
+Pantalla de accion: Agent mode es potente
+
+668
+00:35:04.115 --> 00:35:07.855
+pero no deberia ser el primer martillo de cada tarea.
+
+669
+00:35:07.900 --> 00:35:13.824
+Situacion 35 minutos: Copilot solo avanza si el siguiente humano entiende el por que.
+
+670
+00:35:13.869 --> 00:35:19.337
+Evidencia 35 minutos: patch local, test y comentario de pull request.
+
+671
+00:35:19.382 --> 00:35:22.234
+Copilot 35 minutos:
+
+672
+00:35:22.279 --> 00:35:25.131
+Copilot 35 minutos:
+
+673
+00:35:24.668 --> 00:35:29.920
+Mostrar un prompt de Agent con limites y criterio de parada para "Handoff a Agent" para
+
+674
+00:35:27.980 --> 00:35:29.920
+"Handoff a Agent".
+
+675
+00:35:30.450 --> 00:35:35.390
+Contexto visible: Cuando lo usamos le damos carriles: que tocar
+
+676
+00:35:35.435 --> 00:35:38.479
+que no tocar como verificar y cuan.
+
+677
+00:35:38.524 --> 00:35:41.616
+Situacion 35 minutos:
+
+678
+00:35:41.661 --> 00:35:46.601
+el equipo mira "Handoff a Agent" dentro del workspace de Visual Studio Code
+
+679
+00:35:46.646 --> 00:35:49.594
+con coste y permiso visibles.
+
+680
+00:35:49.639 --> 00:35:54.579
+el equipo mira "Handoff a Agent" dentro del workspace de Visual Studio Code
+
+681
+00:35:52.844 --> 00:35:59.920
+con coste y permiso visibles. (Copilot, 35 minutos, paso 34)
+
+682
+00:35:54.956 --> 00:35:59.920
+Evidencia 35 minutos: "Handoff a Agent" no se cierra sin test
+
+683
+00:35:57.140 --> 00:35:59.920
+captura o criterio escrito.
+
+684
+00:35:56.996 --> 00:35:59.920
+Copilot 35 minutos:
+
+685
+00:35:56.996 --> 00:35:59.920
+Copilot 35 minutos:
+
+686
+00:35:54.524 --> 00:35:59.920
+Mostrar un prompt de Agent con limites y criterio de parada para "Handoff a Agent" para
+
+687
+00:35:57.932 --> 00:35:59.920
+"Handoff a Agent".
+
+688
+00:36:00.450 --> 00:36:03.446
+Situacion 36 minutos:
+
+689
+00:36:03.491 --> 00:36:08.959
+el equipo mira "Cuando Handoff a Agent se va de las manos" dentro del workspace de VS
+
+690
+00:36:09.004 --> 00:36:10.560
+Code
+
+691
+00:36:10.605 --> 00:36:13.553
+con coste y permiso visibles.
+
+692
+00:36:13.598 --> 00:36:19.066
+el equipo mira "Cuando Handoff a Agent se va de las manos" dentro del workspace de VS
+
+693
+00:36:19.111 --> 00:36:20.667
+Code
+
+694
+00:36:20.712 --> 00:36:27.740
+con coste y permiso visibles. (Copilot, 36 minutos, paso 35)
+
+695
+00:36:24.428 --> 00:36:29.920
+Tension 36 minutos: aceptar rapido puede esconder modo equivocado
+
+696
+00:36:26.924 --> 00:36:29.920
+contexto pobre y review floja.
+
+697
+00:36:27.092 --> 00:36:29.920
+Accion 36 minutos:
+
+698
+00:36:24.908 --> 00:36:29.920
+parar si "Cuando Handoff a Agent se va de las manos" no produce evidencia nueva.
+
+699
+00:36:23.204 --> 00:36:29.920
+no con la sensacion de velocidad. (Copilot, 36 minutos, paso 21)
+
+700
+00:36:24.284 --> 00:36:29.920
+Evidencia 36 minutos: el artefacto muestra que se controlo modo equivocado
+
+701
+00:36:26.924 --> 00:36:29.920
+contexto pobre y review floja.
+
+702
+00:36:25.700 --> 00:36:29.920
+"Cuando Handoff a Agent se va de las manos" no se cierra sin test
+
+703
+00:36:23.084 --> 00:36:29.920
+captura o criterio escrito. (Copilot, 36 minutos, paso 34)
+
+704
+00:36:30.450 --> 00:36:36.086
+Evidencia 36 minutos: el artefacto muestra que se controlo modo equivocado
+
+705
+00:36:36.131 --> 00:36:39.127
+contexto pobre y review floja.
+
+706
+00:36:39.172 --> 00:36:46.296
+contexto pobre y review floja. (Copilot, 36 minutos, paso 43)
+
+707
+00:36:46.341 --> 00:36:49.337
+Situacion 36 minutos:
+
+708
+00:36:49.382 --> 00:36:54.370
+Copilot recibe "Handoff a Agent" y debe convertirlo en trabajo revisable.
+
+709
+00:36:53.900 --> 00:36:59.920
+Evidencia 36 minutos: "Handoff a Agent" queda ligado a prueba, owner y decision.
+
+710
+00:36:57.044 --> 00:36:59.920
+Copilot 36 minutos:
+
+711
+00:36:57.044 --> 00:36:59.920
+Copilot 36 minutos:
+
+712
+00:36:54.524 --> 00:36:59.920
+Mostrar un prompt de Agent con limites y criterio de parada para "Handoff a Agent" para
+
+713
+00:36:57.932 --> 00:36:59.920
+"Handoff a Agent".
+
+714
+00:37:00.450 --> 00:37:05.630
+Coste y riesgo: Cuando lo usamos le damos carriles: que tocar que no tocar
+
+715
+00:37:05.675 --> 00:37:08.071
+como verificar y cuan.
+
+716
+00:37:08.116 --> 00:37:12.888
+Situacion 37 minutos: la pantalla no busca impresionar;
+
+717
+00:37:12.933 --> 00:37:16.505
+busca cerrar "Handoff a Agent" con evidencia.
+
+718
+00:37:16.550 --> 00:37:20.122
+busca cerrar "Handoff a Agent" con evidencia.
+
+719
+00:37:20.167 --> 00:37:24.939
+Evidencia 37 minutos: "Handoff a Agent" no se cierra sin test
+
+720
+00:37:24.984 --> 00:37:27.692
+captura o criterio escrito.
+
+721
+00:37:22.940 --> 00:37:29.920
+contexto pobre y review floja. (Copilot, 37 minutos, paso 44)
+
+722
+00:37:27.068 --> 00:37:29.920
+Copilot 37 minutos:
+
+723
+00:37:27.068 --> 00:37:29.920
+Copilot 37 minutos:
+
+724
+00:37:24.668 --> 00:37:29.920
+Mostrar un prompt de Agent con limites y criterio de parada para "Handoff a Agent" para
+
+725
+00:37:27.980 --> 00:37:29.920
+"Handoff a Agent".
+
+726
+00:37:30.450 --> 00:37:35.414
+Checkpoint: La autonomia sin stop rule se convierte en deuda de revision.
+
+727
+00:37:35.459 --> 00:37:41.143
+Situacion 37 minutos: alguien tendra que mantener esta salida despues de la demo.
+
+728
+00:37:41.188 --> 00:37:45.960
+Evidencia 37 minutos: "Handoff a Agent" no se cierra sin test
+
+729
+00:37:46.005 --> 00:37:48.713
+captura o criterio escrito.
+
+730
+00:37:48.758 --> 00:37:51.610
+Copilot 37 minutos:
+
+731
+00:37:51.655 --> 00:37:54.507
+Copilot 37 minutos:
+
+732
+00:37:54.552 --> 00:37:59.804
+Mostrar un prompt de Agent con limites y criterio de parada para "Handoff a Agent" para
+
+733
+00:37:57.980 --> 00:37:59.920
+"Handoff a Agent".
+
+734
+00:38:00.450 --> 00:38:04.166
+Pantalla de accion: Agent mode es potente
+
+735
+00:38:04.211 --> 00:38:08.047
+pero no deberia ser el primer martillo de cada tarea.
+
+736
+00:38:08.092 --> 00:38:11.112
+Situacion 38 minutos:
+
+737
+00:38:11.157 --> 00:38:16.097
+el equipo mira "Handoff a Agent" dentro del workspace de Visual Studio Code
+
+738
+00:38:16.142 --> 00:38:19.090
+con coste y permiso visibles.
+
+739
+00:38:19.135 --> 00:38:24.075
+el equipo mira "Handoff a Agent" dentro del workspace de Visual Studio Code
+
+740
+00:38:22.964 --> 00:38:29.920
+con coste y permiso visibles. (Copilot, 38 minutos, paso 36)
+
+741
+00:38:25.052 --> 00:38:29.920
+Evidencia 38 minutos: "Handoff a Agent" no se cierra sin test
+
+742
+00:38:27.140 --> 00:38:29.920
+captura o criterio escrito.
+
+743
+00:38:27.044 --> 00:38:29.920
+Copilot 38 minutos:
+
+744
+00:38:27.044 --> 00:38:29.920
+Copilot 38 minutos:
+
+745
+00:38:24.524 --> 00:38:29.920
+Mostrar un prompt de Agent con limites y criterio de parada para "Handoff a Agent" para
+
+746
+00:38:27.932 --> 00:38:29.920
+"Handoff a Agent".
+
+747
+00:38:30.450 --> 00:38:35.390
+Contexto visible: Cuando lo usamos le damos carriles: que tocar
+
+748
+00:38:35.435 --> 00:38:38.479
+que no tocar como verificar y cuan.
+
+749
+00:38:38.524 --> 00:38:44.352
+Situacion 38 minutos: alguien tendra que mantener esta salida despues de la demo.
+
+750
+00:38:44.397 --> 00:38:49.265
+Evidencia 38 minutos: "Handoff a Agent" no se cierra sin test
+
+751
+00:38:49.310 --> 00:38:52.090
+captura o criterio escrito.
+
+752
+00:38:52.135 --> 00:38:55.011
+Copilot 38 minutos:
+
+753
+00:38:55.056 --> 00:38:57.932
+Copilot 38 minutos:
+
+754
+00:38:54.524 --> 00:38:59.920
+Mostrar un prompt de Agent con limites y criterio de parada para "Handoff a Agent" para
+
+755
+00:38:57.932 --> 00:38:59.920
+"Handoff a Agent".
+
+756
+00:39:00.450 --> 00:39:05.750
+Decision humana: La autonomia sin stop rule se convierte en deuda de revision.
+
+757
+00:39:05.795 --> 00:39:11.671
+Situacion 39 minutos: Copilot solo avanza si el siguiente humano entiende el por que.
+
+758
+00:39:11.716 --> 00:39:17.088
+Evidencia 39 minutos: patch local, test y comentario de pull request.
+
+759
+00:39:17.133 --> 00:39:19.985
+Copilot 39 minutos:
+
+760
+00:39:20.030 --> 00:39:22.882
+Copilot 39 minutos:
+
+761
+00:39:22.927 --> 00:39:28.179
+Mostrar un prompt de Agent con limites y criterio de parada para "Handoff a Agent" para
+
+762
+00:39:27.980 --> 00:39:29.920
+"Handoff a Agent".
+
+763
+00:39:30.450 --> 00:39:35.966
+Evidencia 39 minutos: patch local, test y comentario de pull request.
+
+764
+00:39:36.011 --> 00:39:39.055
+Situacion 39 minutos:
+
+765
+00:39:39.100 --> 00:39:44.040
+el equipo mira "Handoff a Agent" dentro del workspace de Visual Studio Code
+
+766
+00:39:44.085 --> 00:39:47.033
+con coste y permiso visibles.
+
+767
+00:39:47.078 --> 00:39:52.018
+el equipo mira "Handoff a Agent" dentro del workspace de Visual Studio Code
+
+768
+00:39:52.063 --> 00:39:59.043
+con coste y permiso visibles. (Copilot, 39 minutos, paso 37)
+
+769
+00:39:55.028 --> 00:39:59.920
+Evidencia 39 minutos: "Handoff a Agent" no se cierra sin test
+
+770
+00:39:57.140 --> 00:39:59.920
+captura o criterio escrito.
+
+771
+00:39:56.996 --> 00:39:59.920
+Copilot 39 minutos:
+
+772
+00:39:56.996 --> 00:39:59.920
+Copilot 39 minutos:
+
+773
+00:39:54.524 --> 00:39:59.920
+Mostrar un prompt de Agent con limites y criterio de parada para "Handoff a Agent" para
+
+774
+00:39:57.932 --> 00:39:59.920
+"Handoff a Agent".
+
+775
+00:40:00.450 --> 00:40:05.078
+Situacion 40 minutos: la pantalla no busca impresionar;
+
+776
+00:40:05.123 --> 00:40:09.415
+busca cerrar "Mapa operativo: Visual Studio Code
+
+777
+00:40:09.460 --> 00:40:13.512
+Copilot Chat y revision de pull request" con evidencia.
+
+778
+00:40:13.557 --> 00:40:17.849
+busca cerrar "Mapa operativo: Visual Studio Code
+
+779
+00:40:17.894 --> 00:40:21.946
+Copilot Chat y revision de pull request" con evidencia.
+
+780
+00:40:21.991 --> 00:40:27.243
+Tension 40 minutos: aceptar rapido puede esconder modo equivocado
+
+781
+00:40:26.924 --> 00:40:29.920
+contexto pobre y review floja.
+
+782
+00:40:24.452 --> 00:40:29.920
+Accion 40 minutos: parar si "Mapa operativo: Visual Studio Code
+
+783
+00:40:25.292 --> 00:40:29.920
+Copilot Chat y revision de pull request" no produce evidencia nueva.
+
+784
+00:40:24.596 --> 00:40:29.920
+convertir workspace de Visual Studio Code en una decision que se pueda ensenar en
+
+785
+00:40:28.172 --> 00:40:29.920
+tutoria.
+
+786
+00:40:26.708 --> 00:40:29.920
+(Copilot 40 minutos paso 11)
+
+787
+00:40:24.452 --> 00:40:29.920
+Evidencia 40 minutos: el artefacto muestra que se controlo modo equivocado
+
+788
+00:40:26.924 --> 00:40:29.920
+contexto pobre y review floja.
+
+789
+00:40:30.450 --> 00:40:34.790
+Contexto visible: La rubrica evita respuestas genericas.
+
+790
+00:40:34.835 --> 00:40:37.591
+Situacion 40 minutos:
+
+791
+00:40:37.636 --> 00:40:42.840
+Copilot recibe "revision de pull request rubric" y debe convertirlo en trabajo
+
+792
+00:40:42.885 --> 00:40:44.849
+revisable.
+
+793
+00:40:44.894 --> 00:40:50.098
+Copilot recibe "revision de pull request rubric" y debe convertirlo en trabajo
+
+794
+00:40:50.143 --> 00:40:52.107
+revisable.
+
+795
+00:40:52.152 --> 00:40:54.884
+Evidencia 40 minutos:
+
+796
+00:40:54.929 --> 00:40:59.509
+hay una salida que otro perfil puede revisar sin rehacer el contexto.
+
+797
+00:40:57.332 --> 00:40:59.920
+Copilot 40 minutos:
+
+798
+00:40:57.332 --> 00:40:59.920
+Copilot 40 minutos:
+
+799
+00:40:54.572 --> 00:40:59.920
+Mostrar un finding menor y una aprobacion condicionada a tests para "revision de pull
+
+800
+00:40:57.812 --> 00:40:59.920
+request rubric"
+
+801
+00:40:56.996 --> 00:40:59.920
+para "revision de pull request rubric".
+
+802
+00:41:00.450 --> 00:41:05.486
+Decision humana: Queremos findings accionables, no una palmadita.
+
+803
+00:41:05.531 --> 00:41:10.303
+Situacion 41 minutos: la pantalla no busca impresionar;
+
+804
+00:41:10.348 --> 00:41:14.880
+busca cerrar "revision de pull request rubric" con evidencia.
+
+805
+00:41:14.925 --> 00:41:19.457
+busca cerrar "revision de pull request rubric" con evidencia.
+
+806
+00:41:19.502 --> 00:41:22.426
+Evidencia 41 minutos:
+
+807
+00:41:22.471 --> 00:41:26.451
+"revision de pull request rubric" no se cierra sin test
+
+808
+00:41:26.496 --> 00:41:29.276
+captura o criterio escrito.
+
+809
+00:41:22.796 --> 00:41:29.920
+contexto pobre y review floja. (Copilot, 41 minutos, paso 45)
+
+810
+00:41:27.068 --> 00:41:29.920
+Copilot 41 minutos:
+
+811
+00:41:27.068 --> 00:41:29.920
+Copilot 41 minutos:
+
+812
+00:41:24.428 --> 00:41:29.920
+Mostrar un finding menor y una aprobacion condicionada a tests para "revision de pull
+
+813
+00:41:27.740 --> 00:41:29.920
+request rubric"
+
+814
+00:41:26.900 --> 00:41:29.920
+para "revision de pull request rubric".
+
+815
+00:41:30.450 --> 00:41:36.038
+Evidencia 41 minutos: el artefacto muestra que se controlo modo equivocado
+
+816
+00:41:36.083 --> 00:41:39.079
+contexto pobre y review floja.
+
+817
+00:41:39.124 --> 00:41:46.200
+contexto pobre y review floja. (Copilot, 41 minutos, paso 46)
+
+818
+00:41:46.245 --> 00:41:51.569
+El review asistido sirve para elevar la calidad antes de pedir tiempo a otra persona.
+
+819
+00:41:51.614 --> 00:41:54.586
+Situacion 41 minutos:
+
+820
+00:41:54.356 --> 00:41:59.920
+el equipo mira "revision de pull request rubric" dentro del workspace de Visual Studio
+
+821
+00:41:58.364 --> 00:41:59.920
+Code
+
+822
+00:41:56.972 --> 00:41:59.920
+con coste y permiso visibles.
+
+823
+00:41:54.572 --> 00:41:59.920
+Copilot recibe "revision de pull request rubric" y debe convertirlo en trabajo
+
+824
+00:41:57.908 --> 00:41:59.920
+revisable.
+
+825
+00:41:54.332 --> 00:41:59.920
+Evidencia 41 minutos: el artefacto muestra que se controlo modo equivocado
+
+826
+00:41:56.924 --> 00:41:59.920
+contexto pobre y review floja.
+
+827
+00:41:57.068 --> 00:41:59.920
+Copilot 41 minutos:
+
+828
+00:41:57.068 --> 00:41:59.920
+Copilot 41 minutos:
+
+829
+00:41:54.428 --> 00:41:59.920
+Mostrar un finding menor y una aprobacion condicionada a tests para "revision de pull
+
+830
+00:41:57.740 --> 00:41:59.920
+request rubric"
+
+831
+00:41:56.900 --> 00:41:59.920
+para "revision de pull request rubric".
+
+832
+00:42:00.450 --> 00:42:04.766
+Coste y riesgo: La rubrica evita respuestas genericas.
+
+833
+00:42:04.811 --> 00:42:07.855
+Situacion 42 minutos:
+
+834
+00:42:07.900 --> 00:42:13.464
+el equipo mira "revision de pull request rubric" dentro del workspace de Visual Studio
+
+835
+00:42:13.509 --> 00:42:15.065
+Code
+
+836
+00:42:15.110 --> 00:42:18.058
+con coste y permiso visibles.
+
+837
+00:42:18.103 --> 00:42:23.667
+el equipo mira "revision de pull request rubric" dentro del workspace de Visual Studio
+
+838
+00:42:23.712 --> 00:42:25.268
+Code
+
+839
+00:42:23.012 --> 00:42:29.920
+con coste y permiso visibles. (Copilot, 42 minutos, paso 38)
+
+840
+00:42:26.948 --> 00:42:29.920
+Evidencia 42 minutos:
+
+841
+00:42:25.940 --> 00:42:29.920
+"revision de pull request rubric" no se cierra sin test
+
+842
+00:42:27.140 --> 00:42:29.920
+captura o criterio escrito.
+
+843
+00:42:27.068 --> 00:42:29.920
+Copilot 42 minutos:
+
+844
+00:42:27.068 --> 00:42:29.920
+Copilot 42 minutos:
+
+845
+00:42:24.428 --> 00:42:29.920
+Mostrar un finding menor y una aprobacion condicionada a tests para "revision de pull
+
+846
+00:42:27.740 --> 00:42:29.920
+request rubric"
+
+847
+00:42:26.900 --> 00:42:29.920
+para "revision de pull request rubric".
+
+848
+00:42:30.450 --> 00:42:35.006
+Checkpoint: Queremos findings accionables, no una palmadita.
+
+849
+00:42:35.051 --> 00:42:40.711
+Situacion 42 minutos: alguien tendra que mantener esta salida despues de la demo.
+
+850
+00:42:40.756 --> 00:42:43.656
+Evidencia 42 minutos:
+
+851
+00:42:43.701 --> 00:42:47.585
+"revision de pull request rubric" no se cierra sin test
+
+852
+00:42:47.630 --> 00:42:50.338
+captura o criterio escrito.
+
+853
+00:42:50.383 --> 00:42:53.163
+Copilot 42 minutos:
+
+854
+00:42:53.208 --> 00:42:55.988
+Copilot 42 minutos:
+
+855
+00:42:54.572 --> 00:42:59.920
+Mostrar un finding menor y una aprobacion condicionada a tests para "revision de pull
+
+856
+00:42:57.812 --> 00:42:59.920
+request rubric"
+
+857
+00:42:56.996 --> 00:42:59.920
+para "revision de pull request rubric".
+
+858
+00:43:00.450 --> 00:43:03.302
+Accion 43 minutos:
+
+859
+00:43:03.347 --> 00:43:08.527
+convertir workspace de Visual Studio Code en una decision que se pueda ensenar en
+
+860
+00:43:08.572 --> 00:43:10.272
+tutoria.
+
+861
+00:43:10.317 --> 00:43:15.497
+El review asistido sirve para elevar la calidad antes de pedir tiempo a otra persona.
+
+862
+00:43:15.542 --> 00:43:18.514
+Situacion 43 minutos:
+
+863
+00:43:18.559 --> 00:43:23.979
+el equipo mira "revision de pull request rubric" dentro del workspace de Visual Studio
+
+864
+00:43:24.024 --> 00:43:25.532
+Code
+
+865
+00:43:25.577 --> 00:43:28.453
+con coste y permiso visibles.
+
+866
+00:43:24.500 --> 00:43:29.920
+el equipo mira "revision de pull request rubric" dentro del workspace de Visual Studio
+
+867
+00:43:28.412 --> 00:43:29.920
+Code
+
+868
+00:43:23.036 --> 00:43:29.920
+con coste y permiso visibles. (Copilot, 43 minutos, paso 39)
+
+869
+00:43:26.924 --> 00:43:29.920
+Evidencia 43 minutos:
+
+870
+00:43:26.036 --> 00:43:29.920
+"revision de pull request rubric" no se cierra sin test
+
+871
+00:43:27.212 --> 00:43:29.920
+captura o criterio escrito.
+
+872
+00:43:27.092 --> 00:43:29.920
+Copilot 43 minutos:
+
+873
+00:43:27.092 --> 00:43:29.920
+Copilot 43 minutos:
+
+874
+00:43:24.572 --> 00:43:29.920
+Mostrar un finding menor y una aprobacion condicionada a tests para "revision de pull
+
+875
+00:43:27.812 --> 00:43:29.920
+request rubric"
+
+876
+00:43:26.996 --> 00:43:29.920
+para "revision de pull request rubric".
+
+877
+00:43:30.450 --> 00:43:34.790
+Contexto visible: La rubrica evita respuestas genericas.
+
+878
+00:43:34.835 --> 00:43:39.559
+Situacion 43 minutos: la pantalla no busca impresionar;
+
+879
+00:43:39.604 --> 00:43:44.016
+busca cerrar "revision de pull request rubric" con evidencia.
+
+880
+00:43:44.061 --> 00:43:48.473
+busca cerrar "revision de pull request rubric" con evidencia.
+
+881
+00:43:48.518 --> 00:43:51.514
+Evidencia 43 minutos:
+
+882
+00:43:51.559 --> 00:43:55.443
+"revision de pull request rubric" no se cierra sin test
+
+883
+00:43:55.488 --> 00:43:58.196
+captura o criterio escrito.
+
+884
+00:43:52.892 --> 00:43:59.920
+contexto pobre y review floja. (Copilot, 43 minutos, paso 47)
+
+885
+00:43:57.092 --> 00:43:59.920
+Copilot 43 minutos:
+
+886
+00:43:57.092 --> 00:43:59.920
+Copilot 43 minutos:
+
+887
+00:43:54.572 --> 00:43:59.920
+Mostrar un finding menor y una aprobacion condicionada a tests para "revision de pull
+
+888
+00:43:57.812 --> 00:43:59.920
+request rubric"
+
+889
+00:43:56.996 --> 00:43:59.920
+para "revision de pull request rubric".
+
+890
+00:44:00.450 --> 00:44:06.350
+Situacion 44 minutos: alguien tendra que mantener esta salida despues de la demo.
+
+891
+00:44:06.395 --> 00:44:12.727
+Tension 44 minutos: el agente puede avanzar mas rapido que nuestra capacidad de revisar.
+
+892
+00:44:12.772 --> 00:44:18.552
+Accion 44 minutos: pedir salida pequena, verificable y con owner.
+
+893
+00:44:18.597 --> 00:44:24.041
+Evidencia 44 minutos: "Mapa operativo: Visual Studio Code
+
+894
+00:44:24.086 --> 00:44:29.290
+Copilot Chat y revision de pull request" queda ligado a prueba owner y decision.
+
+895
+00:44:24.716 --> 00:44:29.920
+Copilot Chat y revision de pull request" queda ligado a prueba owner y decision.
+
+896
+00:44:30.450 --> 00:44:36.038
+Evidencia 44 minutos: patch local, test y comentario de pull request.
+
+897
+00:44:36.083 --> 00:44:41.407
+El review asistido sirve para elevar la calidad antes de pedir tiempo a otra persona.
+
+898
+00:44:41.452 --> 00:44:46.416
+Situacion 44 minutos: la pantalla no busca impresionar;
+
+899
+00:44:46.461 --> 00:44:50.993
+busca cerrar "revision de pull request rubric" con evidencia.
+
+900
+00:44:51.038 --> 00:44:55.570
+busca cerrar "revision de pull request rubric" con evidencia.
+
+901
+00:44:55.615 --> 00:44:58.707
+Evidencia 44 minutos:
+
+902
+00:44:55.940 --> 00:44:59.920
+"revision de pull request rubric" no se cierra sin test
+
+903
+00:44:57.140 --> 00:44:59.920
+captura o criterio escrito.
+
+904
+00:44:52.652 --> 00:44:59.920
+contexto pobre y review floja. (Copilot, 44 minutos, paso 48)
+
+905
+00:44:56.900 --> 00:44:59.920
+Copilot 44 minutos:
+
+906
+00:44:56.900 --> 00:44:59.920
+Copilot 44 minutos:
+
+907
+00:44:54.428 --> 00:44:59.920
+Mostrar un finding menor y una aprobacion condicionada a tests para "revision de pull
+
+908
+00:44:57.740 --> 00:44:59.920
+request rubric"
+
+909
+00:44:56.900 --> 00:44:59.920
+para "revision de pull request rubric".
+
+910
+00:45:00.450 --> 00:45:04.982
+Pantalla de accion: El coste no se controla usando menos IA
+
+911
+00:45:05.162 --> 00:45:08.662
+se controla usando la superficie correcta.
+
+912
+00:45:08.842 --> 00:45:14.814
+Situacion 45 minutos: Copilot solo avanza si el siguiente humano entiende el por que.
+
+913
+00:45:14.994 --> 00:45:20.486
+Evidencia 45 minutos: patch local, test y comentario de pull request.
+
+914
+00:45:20.666 --> 00:45:24.670
+Copilot 45 minutos: Registrar modo
+
+915
+00:45:24.850 --> 00:45:28.902
+motivo y resultado de la sesion para "Coste por outcome".
+
+916
+00:45:30.450 --> 00:45:35.006
+Contexto visible: Un Agent bien usado puede ahorrar una hora.
+
+917
+00:45:35.051 --> 00:45:38.431
+Un Agent mal usado crea una hora de rev.
+
+918
+00:45:38.476 --> 00:45:41.592
+Situacion 45 minutos:
+
+919
+00:45:41.637 --> 00:45:46.625
+el equipo mira "Coste por outcome" dentro del workspace de Visual Studio Code
+
+920
+00:45:46.670 --> 00:45:49.618
+con coste y permiso visibles.
+
+921
+00:45:49.663 --> 00:45:54.651
+el equipo mira "Coste por outcome" dentro del workspace de Visual Studio Code
+
+922
+00:45:52.940 --> 00:45:59.920
+con coste y permiso visibles. (Copilot, 45 minutos, paso 40)
+
+923
+00:45:54.788 --> 00:45:59.920
+Evidencia 45 minutos: "Coste por outcome" no se cierra sin test
+
+924
+00:45:57.140 --> 00:45:59.920
+captura o criterio escrito.
+
+925
+00:45:55.796 --> 00:45:59.920
+Copilot 45 minutos: Registrar modo
+
+926
+00:45:55.772 --> 00:45:59.920
+motivo y resultado de la sesion para "Coste por outcome".
+
+927
+00:46:00.450 --> 00:46:04.742
+Decision humana: Medimos outcome, no solo consumo.
+
+928
+00:46:04.787 --> 00:46:09.679
+Situacion 46 minutos: la pantalla no busca impresionar;
+
+929
+00:46:09.724 --> 00:46:13.560
+busca cerrar "Coste por outcome" con evidencia.
+
+930
+00:46:13.605 --> 00:46:17.441
+busca cerrar "Coste por outcome" con evidencia.
+
+931
+00:46:17.486 --> 00:46:22.546
+Evidencia 46 minutos: "Coste por outcome" no se cierra sin test
+
+932
+00:46:22.591 --> 00:46:25.371
+captura o criterio escrito.
+
+933
+00:46:22.724 --> 00:46:29.920
+contexto pobre y review floja. (Copilot, 46 minutos, paso 49)
+
+934
+00:46:25.820 --> 00:46:29.920
+Copilot 46 minutos: Registrar modo
+
+935
+00:46:25.772 --> 00:46:29.920
+motivo y resultado de la sesion para "Coste por outcome".
+
+936
+00:46:30.450 --> 00:46:36.134
+Evidencia 46 minutos: el artefacto muestra que se controlo modo equivocado
+
+937
+00:46:36.179 --> 00:46:39.175
+contexto pobre y review floja.
+
+938
+00:46:39.220 --> 00:46:46.224
+contexto pobre y review floja. (Copilot, 46 minutos, paso 50)
+
+939
+00:46:46.269 --> 00:46:49.865
+se controla usando la superficie correcta.
+
+940
+00:46:49.910 --> 00:46:52.954
+Situacion 46 minutos:
+
+941
+00:46:52.999 --> 00:46:57.987
+el equipo mira "Coste por outcome" dentro del workspace de Visual Studio Code
+
+942
+00:46:56.972 --> 00:46:59.920
+con coste y permiso visibles.
+
+943
+00:46:54.764 --> 00:46:59.920
+Copilot recibe "Coste por outcome" y debe convertirlo en trabajo revisable.
+
+944
+00:46:54.236 --> 00:46:59.920
+Evidencia 46 minutos: el artefacto muestra que se controlo modo equivocado
+
+945
+00:46:56.924 --> 00:46:59.920
+contexto pobre y review floja.
+
+946
+00:46:55.820 --> 00:46:59.920
+Copilot 46 minutos: Registrar modo
+
+947
+00:46:55.772 --> 00:46:59.920
+motivo y resultado de la sesion para "Coste por outcome".
+
+948
+00:47:00.450 --> 00:47:04.766
+Coste y riesgo: Un Agent bien usado puede ahorrar una hora.
+
+949
+00:47:04.811 --> 00:47:08.095
+Un Agent mal usado crea una hora de rev.
+
+950
+00:47:08.140 --> 00:47:12.936
+Situacion 47 minutos: la pantalla no busca impresionar;
+
+951
+00:47:12.981 --> 00:47:16.721
+busca cerrar "Coste por outcome" con evidencia.
+
+952
+00:47:16.766 --> 00:47:20.506
+busca cerrar "Coste por outcome" con evidencia.
+
+953
+00:47:20.551 --> 00:47:25.539
+Evidencia 47 minutos: "Coste por outcome" no se cierra sin test
+
+954
+00:47:25.584 --> 00:47:28.292
+captura o criterio escrito.
+
+955
+00:47:22.916 --> 00:47:29.920
+contexto pobre y review floja. (Copilot, 47 minutos, paso 51)
+
+956
+00:47:25.916 --> 00:47:29.920
+Copilot 47 minutos: Registrar modo
+
+957
+00:47:25.868 --> 00:47:29.920
+motivo y resultado de la sesion para "Coste por outcome".
+
+958
+00:47:30.450 --> 00:47:34.310
+Checkpoint: Medimos outcome, no solo consumo.
+
+959
+00:47:34.490 --> 00:47:40.174
+Situacion 47 minutos: alguien tendra que mantener esta salida despues de la demo.
+
+960
+00:47:40.354 --> 00:47:45.342
+Evidencia 47 minutos: "Coste por outcome" no se cierra sin test
+
+961
+00:47:45.522 --> 00:47:48.230
+captura o criterio escrito.
+
+962
+00:47:48.410 --> 00:47:52.414
+Copilot 47 minutos: Registrar modo
+
+963
+00:47:52.594 --> 00:47:56.646
+motivo y resultado de la sesion para "Coste por outcome".
+
+964
+00:48:00.450 --> 00:48:06.542
+Situacion 48 minutos: Copilot solo avanza si el siguiente humano entiende el por que.
+
+965
+00:48:06.587 --> 00:48:12.151
+Tension 48 minutos: aceptar rapido puede esconder modo equivocado
+
+966
+00:48:12.196 --> 00:48:15.192
+contexto pobre y review floja.
+
+967
+00:48:15.237 --> 00:48:22.409
+contexto pobre y review floja. (Copilot, 48 minutos, paso 52)
+
+968
+00:48:22.454 --> 00:48:28.090
+Accion 48 minutos: nombrar modelo, permiso y limite antes de iterar.
+
+969
+00:48:25.292 --> 00:48:29.920
+Copilot Chat y revision de pull request" no produce evidencia nueva.
+
+970
+00:48:24.644 --> 00:48:29.920
+Evidencia 48 minutos: "Captura mental: Visual Studio Code
+
+971
+00:48:25.628 --> 00:48:29.920
+Copilot Chat y revision de pull request" no se cierra sin test
+
+972
+00:48:27.140 --> 00:48:29.920
+captura o criterio escrito.
+
+973
+00:48:30.450 --> 00:48:34.886
+Contexto visible: Un Agent bien usado puede ahorrar una hora.
+
+974
+00:48:34.931 --> 00:48:38.215
+Un Agent mal usado crea una hora de rev.
+
+975
+00:48:38.260 --> 00:48:43.944
+Situacion 48 minutos: alguien tendra que mantener esta salida despues de la demo.
+
+976
+00:48:43.989 --> 00:48:48.881
+Evidencia 48 minutos: "Coste por outcome" no se cierra sin test
+
+977
+00:48:48.926 --> 00:48:51.634
+captura o criterio escrito.
+
+978
+00:48:51.679 --> 00:48:55.611
+Copilot 48 minutos: Registrar modo
+
+979
+00:48:55.656 --> 00:48:59.708
+motivo y resultado de la sesion para "Coste por outcome".
+
+980
+00:49:00.450 --> 00:49:04.742
+Decision humana: Medimos outcome, no solo consumo.
+
+981
+00:49:04.922 --> 00:49:11.038
+Situacion 49 minutos: Copilot solo avanza si el siguiente humano entiende el por que.
+
+982
+00:49:11.218 --> 00:49:16.806
+Evidencia 49 minutos: patch local, test y comentario de pull request.
+
+983
+00:49:16.986 --> 00:49:21.062
+Copilot 49 minutos: Registrar modo
+
+984
+00:49:21.242 --> 00:49:25.390
+motivo y resultado de la sesion para "Coste por outcome".
+
+985
+00:49:30.450 --> 00:49:36.038
+Evidencia 49 minutos: patch local, test y comentario de pull request.
+
+986
+00:49:36.083 --> 00:49:39.679
+se controla usando la superficie correcta.
+
+987
+00:49:39.724 --> 00:49:44.640
+Situacion 49 minutos: la pantalla no busca impresionar;
+
+988
+00:49:44.685 --> 00:49:48.521
+busca cerrar "Coste por outcome" con evidencia.
+
+989
+00:49:48.566 --> 00:49:52.402
+busca cerrar "Coste por outcome" con evidencia.
+
+990
+00:49:52.447 --> 00:49:57.555
+Evidencia 49 minutos: "Coste por outcome" no se cierra sin test
+
+991
+00:49:57.140 --> 00:49:59.920
+captura o criterio escrito.
+
+992
+00:49:52.676 --> 00:49:59.920
+contexto pobre y review floja. (Copilot, 49 minutos, paso 53)
+
+993
+00:49:55.844 --> 00:49:59.920
+Copilot 49 minutos: Registrar modo
+
+994
+00:49:55.772 --> 00:49:59.920
+motivo y resultado de la sesion para "Coste por outcome".
+
+995
+00:50:00.450 --> 00:50:05.294
+Pantalla de accion: El valor final no es haber visto Copilot funcionar.
+
+996
+00:50:05.339 --> 00:50:10.879
+Situacion 50 minutos: alguien tendra que mantener esta salida despues de la demo.
+
+997
+00:50:10.924 --> 00:50:15.792
+Evidencia 50 minutos: "Pack reutilizable" no se cierra sin test
+
+998
+00:50:15.837 --> 00:50:18.545
+captura o criterio escrito.
+
+999
+00:50:18.590 --> 00:50:21.274
+Copilot 50 minutos:
+
+1000
+00:50:21.319 --> 00:50:24.003
+Copilot 50 minutos:
+
+1001
+00:50:24.048 --> 00:50:29.468
+Mostrar los archivos que el grupo copia a su repo demo para "Pack reutilizable" para
+
+1002
+00:50:27.644 --> 00:50:29.920
+"Pack reutilizable".
+
+1003
+00:50:30.450 --> 00:50:35.822
+Contexto 50 minutos: mira primero el alcance que condiciona esta salida.
+
+1004
+00:50:35.867 --> 00:50:40.807
+El valor es llevarnos instrucciones y prompts que el equipo pueda usar manana.
+
+1005
+00:50:40.852 --> 00:50:43.632
+Situacion 50 minutos:
+
+1006
+00:50:43.677 --> 00:50:48.665
+el equipo mira "Pack reutilizable" dentro del workspace de Visual Studio Code
+
+1007
+00:50:48.710 --> 00:50:51.586
+con coste y permiso visibles.
+
+1008
+00:50:51.631 --> 00:50:56.619
+el equipo mira "Pack reutilizable" dentro del workspace de Visual Studio Code
+
+1009
+00:50:53.252 --> 00:50:59.920
+con coste y permiso visibles. (Copilot, 50 minutos, paso 41)
+
+1010
+00:50:55.052 --> 00:50:59.920
+Evidencia 50 minutos: "Pack reutilizable" no se cierra sin test
+
+1011
+00:50:57.212 --> 00:50:59.920
+captura o criterio escrito.
+
+1012
+00:50:57.236 --> 00:50:59.920
+Copilot 50 minutos:
+
+1013
+00:50:57.236 --> 00:50:59.920
+Copilot 50 minutos:
+
+1014
+00:50:54.500 --> 00:50:59.920
+Mostrar los archivos que el grupo copia a su repo demo para "Pack reutilizable" para
+
+1015
+00:50:57.644 --> 00:50:59.920
+"Pack reutilizable".
+
+1016
+00:51:00.450 --> 00:51:04.742
+Decision humana: Si cada alumno acaba improvisando prompts
+
+1017
+00:51:04.787 --> 00:51:07.711
+no hemos construido plataforma.
+
+1018
+00:51:07.756 --> 00:51:13.440
+Situacion 51 minutos: alguien tendra que mantener esta salida despues de la demo.
+
+1019
+00:51:13.485 --> 00:51:18.497
+Evidencia 51 minutos: "Pack reutilizable" no se cierra sin test
+
+1020
+00:51:18.542 --> 00:51:21.250
+captura o criterio escrito.
+
+1021
+00:51:21.295 --> 00:51:24.147
+Copilot 51 minutos:
+
+1022
+00:51:24.192 --> 00:51:27.044
+Copilot 51 minutos:
+
+1023
+00:51:24.500 --> 00:51:29.920
+Mostrar los archivos que el grupo copia a su repo demo para "Pack reutilizable" para
+
+1024
+00:51:27.644 --> 00:51:29.920
+"Pack reutilizable".
+
+1025
+00:51:30.450 --> 00:51:35.918
+Evidencia 51 minutos: el artefacto muestra que se controlo modo equivocado
+
+1026
+00:51:35.963 --> 00:51:38.887
+contexto pobre y review floja.
+
+1027
+00:51:38.932 --> 00:51:45.912
+contexto pobre y review floja. (Copilot, 51 minutos, paso 54)
+
+1028
+00:51:45.957 --> 00:51:48.905
+Situacion 51 minutos:
+
+1029
+00:51:48.950 --> 00:51:54.226
+Copilot recibe "Pack reutilizable" y debe convertirlo en trabajo revisable.
+
+1030
+00:51:53.684 --> 00:51:59.920
+Evidencia 51 minutos: "Pack reutilizable" queda ligado a prueba, owner y decision.
+
+1031
+00:51:57.068 --> 00:51:59.920
+Copilot 51 minutos:
+
+1032
+00:51:57.068 --> 00:51:59.920
+Copilot 51 minutos:
+
+1033
+00:51:54.500 --> 00:51:59.920
+Mostrar los archivos que el grupo copia a su repo demo para "Pack reutilizable" para
+
+1034
+00:51:57.644 --> 00:51:59.920
+"Pack reutilizable".
+
+1035
+00:52:00.450 --> 00:52:03.542
+Situacion 52 minutos:
+
+1036
+00:52:03.587 --> 00:52:09.151
+Copilot recibe "Cuando Pack reutilizable se va de las manos" y debe convertirlo en
+
+1037
+00:52:09.196 --> 00:52:11.520
+trabajo revisable.
+
+1038
+00:52:11.565 --> 00:52:17.129
+Copilot recibe "Cuando Pack reutilizable se va de las manos" y debe convertirlo en
+
+1039
+00:52:17.174 --> 00:52:19.498
+trabajo revisable.
+
+1040
+00:52:19.543 --> 00:52:25.467
+Tension 52 minutos: el coste malo suele aparecer cuando nadie define el cierre.
+
+1041
+00:52:25.512 --> 00:52:28.388
+Accion 52 minutos:
+
+1042
+00:52:24.596 --> 00:52:29.920
+convertir workspace de Visual Studio Code en una decision que se pueda ensenar en
+
+1043
+00:52:28.172 --> 00:52:29.920
+tutoria.
+
+1044
+00:52:24.380 --> 00:52:29.920
+Evidencia 52 minutos: patch local, test y comentario de pull request.
+
+1045
+00:52:22.700 --> 00:52:29.920
+contexto pobre y review floja. (Copilot, 52 minutos, paso 55)
+
+1046
+00:52:30.450 --> 00:52:36.158
+Checkpoint: Si cada alumno acaba improvisando prompts, no hemos construido plataforma.
+
+1047
+00:52:36.203 --> 00:52:42.055
+Situacion 52 minutos: alguien tendra que mantener esta salida despues de la demo.
+
+1048
+00:52:42.100 --> 00:52:47.280
+Evidencia 52 minutos: "Pack reutilizable" no se cierra sin test
+
+1049
+00:52:47.325 --> 00:52:50.105
+captura o criterio escrito.
+
+1050
+00:52:50.150 --> 00:52:53.122
+Copilot 52 minutos:
+
+1051
+00:52:53.167 --> 00:52:56.139
+Copilot 52 minutos:
+
+1052
+00:52:54.356 --> 00:52:59.920
+Mostrar los archivos que el grupo copia a su repo demo para "Pack reutilizable" para
+
+1053
+00:52:57.596 --> 00:52:59.920
+"Pack reutilizable".
+
+1054
+00:53:00.450 --> 00:53:05.414
+Pantalla de accion: El valor final no es haber visto Copilot funcionar.
+
+1055
+00:53:05.459 --> 00:53:08.599
+Situacion 53 minutos:
+
+1056
+00:53:08.644 --> 00:53:14.064
+Copilot recibe "Pack reutilizable" y debe convertirlo en trabajo revisable.
+
+1057
+00:53:14.109 --> 00:53:19.529
+Copilot recibe "Pack reutilizable" y debe convertirlo en trabajo revisable.
+
+1058
+00:53:19.574 --> 00:53:22.690
+Evidencia 53 minutos:
+
+1059
+00:53:22.735 --> 00:53:27.435
+hay una salida que otro perfil puede revisar sin rehacer el contexto.
+
+1060
+00:53:26.900 --> 00:53:29.920
+Copilot 53 minutos:
+
+1061
+00:53:26.900 --> 00:53:29.920
+Copilot 53 minutos:
+
+1062
+00:53:24.356 --> 00:53:29.920
+Mostrar los archivos que el grupo copia a su repo demo para "Pack reutilizable" para
+
+1063
+00:53:27.596 --> 00:53:29.920
+"Pack reutilizable".
+
+1064
+00:53:30.450 --> 00:53:36.206
+Contexto 53 minutos: mira primero el alcance que condiciona esta salida.
+
+1065
+00:53:36.251 --> 00:53:41.311
+El valor es llevarnos instrucciones y prompts que el equipo pueda usar manana.
+
+1066
+00:53:41.356 --> 00:53:47.280
+Situacion 53 minutos: alguien tendra que mantener esta salida despues de la demo.
+
+1067
+00:53:47.325 --> 00:53:52.577
+Evidencia 53 minutos: "Pack reutilizable" no se cierra sin test
+
+1068
+00:53:52.622 --> 00:53:55.402
+captura o criterio escrito.
+
+1069
+00:53:55.447 --> 00:53:58.467
+Copilot 53 minutos:
+
+1070
+00:53:56.900 --> 00:53:59.920
+Copilot 53 minutos:
+
+1071
+00:53:54.356 --> 00:53:59.920
+Mostrar los archivos que el grupo copia a su repo demo para "Pack reutilizable" para
+
+1072
+00:53:57.596 --> 00:53:59.920
+"Pack reutilizable".
+
+1073
+00:54:00.450 --> 00:54:04.742
+Decision humana: Si cada alumno acaba improvisando prompts
+
+1074
+00:54:04.787 --> 00:54:07.711
+no hemos construido plataforma.
+
+1075
+00:54:07.756 --> 00:54:10.848
+Situacion 54 minutos:
+
+1076
+00:54:10.893 --> 00:54:16.169
+Copilot recibe "Pack reutilizable" y debe convertirlo en trabajo revisable.
+
+1077
+00:54:16.214 --> 00:54:21.490
+Copilot recibe "Pack reutilizable" y debe convertirlo en trabajo revisable.
+
+1078
+00:54:21.535 --> 00:54:24.603
+Evidencia 54 minutos:
+
+1079
+00:54:24.648 --> 00:54:29.228
+hay una salida que otro perfil puede revisar sin rehacer el contexto.
+
+1080
+00:54:26.924 --> 00:54:29.920
+Copilot 54 minutos:
+
+1081
+00:54:26.924 --> 00:54:29.920
+Copilot 54 minutos:
+
+1082
+00:54:24.500 --> 00:54:29.920
+Mostrar los archivos que el grupo copia a su repo demo para "Pack reutilizable" para
+
+1083
+00:54:27.644 --> 00:54:29.920
+"Pack reutilizable".
+
+1084
+00:54:30.450 --> 00:54:36.158
+Evidencia 54 minutos: patch local, test y comentario de pull request.
+
+1085
+00:54:36.203 --> 00:54:39.367
+Situacion 54 minutos:
+
+1086
+00:54:39.412 --> 00:54:44.520
+el equipo mira "Pack reutilizable" dentro del workspace de Visual Studio Code
+
+1087
+00:54:44.565 --> 00:54:47.513
+con coste y permiso visibles.
+
+1088
+00:54:47.558 --> 00:54:52.666
+el equipo mira "Pack reutilizable" dentro del workspace de Visual Studio Code
+
+1089
+00:54:52.711 --> 00:54:59.883
+con coste y permiso visibles. (Copilot, 54 minutos, paso 42)
+
+1090
+00:54:54.596 --> 00:54:59.920
+Evidencia 54 minutos: "Pack reutilizable" no se cierra sin test
+
+1091
+00:54:57.140 --> 00:54:59.920
+captura o criterio escrito.
+
+1092
+00:54:56.828 --> 00:54:59.920
+Copilot 54 minutos:
+
+1093
+00:54:56.828 --> 00:54:59.920
+Copilot 54 minutos:
+
+1094
+00:54:54.356 --> 00:54:59.920
+Mostrar los archivos que el grupo copia a su repo demo para "Pack reutilizable" para
+
+1095
+00:54:57.596 --> 00:54:59.920
+"Pack reutilizable".
+
+1096
+00:55:00.450 --> 00:55:06.134
+Pantalla de accion: Copilot se vuelve serio cuando cada modo tiene una razon de uso.
+
+1097
+00:55:06.314 --> 00:55:12.310
+Situacion 55 minutos: alguien tendra que mantener esta salida despues de la demo.
+
+1098
+00:55:12.490 --> 00:55:17.910
+Evidencia 55 minutos: "Checklist de salida" no se cierra sin test
+
+1099
+00:55:18.090 --> 00:55:20.870
+captura o criterio escrito.
+
+1100
+00:55:21.050 --> 00:55:27.310
+Copilot 55 minutos: Recoger outputs y dudas para tutoria para "Checklist de salida".
+
+1101
+00:55:30.450 --> 00:55:36.662
+Situacion 55 minutos: Copilot solo avanza si el siguiente humano entiende el por que.
+
+1102
+00:55:36.707 --> 00:55:42.391
+Tension 55 minutos: aceptar rapido puede esconder modo equivocado
+
+1103
+00:55:42.436 --> 00:55:45.432
+contexto pobre y review floja.
+
+1104
+00:55:45.477 --> 00:55:52.793
+contexto pobre y review floja. (Copilot, 55 minutos, paso 56)
+
+1105
+00:55:52.838 --> 00:55:58.642
+Accion 55 minutos: nombrar modelo, permiso y limite antes de iterar.
+
+1106
+00:55:55.292 --> 00:55:59.920
+Copilot Chat y revision de pull request" no produce evidencia nueva.
+
+1107
+00:55:54.356 --> 00:55:59.920
+Evidencia 55 minutos: "Mapa operativo: Visual Studio Code
+
+1108
+00:55:55.628 --> 00:55:59.920
+Copilot Chat y revision de pull request" no se cierra sin test
+
+1109
+00:55:57.140 --> 00:55:59.920
+captura o criterio escrito.
+
+1110
+00:56:00.450 --> 00:56:05.630
+Decision humana: A partir de aqui la tutoria ya no resuelve dudas basicas:
+
+1111
+00:56:05.810 --> 00:56:08.470
+trabaja casos reales.
+
+1112
+00:56:08.650 --> 00:56:14.574
+Situacion 56 minutos: alguien tendra que mantener esta salida despues de la demo.
+
+1113
+00:56:14.754 --> 00:56:20.126
+Evidencia 56 minutos: "Checklist de salida" no se cierra sin test
+
+1114
+00:56:20.306 --> 00:56:23.086
+captura o criterio escrito.
+
+1115
+00:56:23.266 --> 00:56:29.454
+Copilot 56 minutos: Recoger outputs y dudas para tutoria para "Checklist de salida".
+
+1116
+00:56:30.450 --> 00:56:36.254
+Evidencia 56 minutos: el artefacto muestra que se controlo modo equivocado
+
+1117
+00:56:36.299 --> 00:56:39.295
+contexto pobre y review floja.
+
+1118
+00:56:39.340 --> 00:56:46.656
+contexto pobre y review floja. (Copilot, 56 minutos, paso 57)
+
+1119
+00:56:46.701 --> 00:56:49.817
+Situacion 56 minutos:
+
+1120
+00:56:49.862 --> 00:56:55.042
+Copilot recibe "Checklist de salida" y debe convertirlo en trabajo revisable.
+
+1121
+00:56:53.468 --> 00:56:59.920
+Evidencia 56 minutos: "Checklist de salida" queda ligado a prueba, owner y decision.
+
+1122
+00:56:53.732 --> 00:56:59.920
+Copilot 56 minutos: Recoger outputs y dudas para tutoria para "Checklist de salida".
+
+1123
+00:57:00.450 --> 00:57:06.158
+Coste y riesgo: El alumno sale con una issue resuelta, una review y una plantilla.
+
+1124
+00:57:06.203 --> 00:57:09.415
+Situacion 57 minutos:
+
+1125
+00:57:09.460 --> 00:57:14.568
+el equipo mira "Checklist de salida" dentro del workspace de Visual Studio Code
+
+1126
+00:57:14.613 --> 00:57:17.561
+con coste y permiso visibles.
+
+1127
+00:57:17.606 --> 00:57:22.714
+el equipo mira "Checklist de salida" dentro del workspace de Visual Studio Code
+
+1128
+00:57:22.724 --> 00:57:29.920
+con coste y permiso visibles. (Copilot, 57 minutos, paso 43)
+
+1129
+00:57:24.524 --> 00:57:29.920
+Evidencia 57 minutos: "Checklist de salida" no se cierra sin test
+
+1130
+00:57:27.140 --> 00:57:29.920
+captura o criterio escrito.
+
+1131
+00:57:23.708 --> 00:57:29.920
+Copilot 57 minutos: Recoger outputs y dudas para tutoria para "Checklist de salida".
+
+1132
+00:57:30.450 --> 00:57:35.126
+Checkpoint: A partir de aqui la tutoria ya no resuelve dudas basicas:
+
+1133
+00:57:35.306 --> 00:57:37.894
+trabaja casos reales.
+
+1134
+00:57:38.074 --> 00:57:44.118
+Situacion 57 minutos: Copilot solo avanza si el siguiente humano entiende el por que.
+
+1135
+00:57:44.298 --> 00:57:49.814
+Evidencia 57 minutos: patch local, test y comentario de pull request.
+
+1136
+00:57:49.994 --> 00:57:56.038
+Copilot 57 minutos: Recoger outputs y dudas para tutoria para "Checklist de salida".
+
+1137
+00:58:00.450 --> 00:58:06.134
+Pantalla de accion: Copilot se vuelve serio cuando cada modo tiene una razon de uso.
+
+1138
+00:58:06.179 --> 00:58:09.319
+Situacion 58 minutos:
+
+1139
+00:58:09.364 --> 00:58:14.544
+Copilot recibe "Checklist de salida" y debe convertirlo en trabajo revisable.
+
+1140
+00:58:14.589 --> 00:58:19.769
+Copilot recibe "Checklist de salida" y debe convertirlo en trabajo revisable.
+
+1141
+00:58:19.814 --> 00:58:22.930
+Evidencia 58 minutos:
+
+1142
+00:58:22.975 --> 00:58:27.675
+hay una salida que otro perfil puede revisar sin rehacer el contexto.
+
+1143
+00:58:23.732 --> 00:58:29.920
+Copilot 58 minutos: Recoger outputs y dudas para tutoria para "Checklist de salida".
+
+1144
+00:58:30.450 --> 00:58:36.110
+Contexto visible: El alumno sale con una issue resuelta, una review y una plantilla.
+
+1145
+00:58:36.155 --> 00:58:40.999
+Situacion 58 minutos: la pantalla no busca impresionar;
+
+1146
+00:58:41.044 --> 00:58:44.784
+busca cerrar "Checklist de salida" con evidencia.
+
+1147
+00:58:44.829 --> 00:58:48.569
+busca cerrar "Checklist de salida" con evidencia.
+
+1148
+00:58:48.614 --> 00:58:53.794
+Evidencia 58 minutos: "Checklist de salida" no se cierra sin test
+
+1149
+00:58:53.839 --> 00:58:56.547
+captura o criterio escrito.
+
+1150
+00:58:52.892 --> 00:58:59.920
+contexto pobre y review floja. (Copilot, 58 minutos, paso 58)
+
+1151
+00:58:53.900 --> 00:58:59.920
+Copilot 58 minutos: Recoger outputs y dudas para tutoria para "Checklist de salida".
+
+1152
+00:59:00.450 --> 00:59:05.486
+Decision humana: A partir de aqui la tutoria ya no resuelve dudas basicas:
+
+1153
+00:59:05.531 --> 00:59:08.119
+trabaja casos reales.
+
+1154
+00:59:08.164 --> 00:59:11.256
+Situacion 59 minutos:
+
+1155
+00:59:11.301 --> 00:59:16.337
+Copilot recibe "Checklist de salida" y debe convertirlo en trabajo revisable.
+
+1156
+00:59:16.382 --> 00:59:21.418
+Copilot recibe "Checklist de salida" y debe convertirlo en trabajo revisable.
+
+1157
+00:59:21.463 --> 00:59:24.507
+Evidencia 59 minutos:
+
+1158
+00:59:24.552 --> 00:59:29.132
+hay una salida que otro perfil puede revisar sin rehacer el contexto.
+
+1159
+00:59:23.900 --> 00:59:29.920
+Copilot 59 minutos: Recoger outputs y dudas para tutoria para "Checklist de salida".
+
+1160
+00:59:30.450 --> 00:59:36.062
+Evidencia 59 minutos: patch local, test y comentario de pull request.
+
+1161
+00:59:36.107 --> 00:59:39.271
+Situacion 59 minutos:
+
+1162
+00:59:39.316 --> 00:59:44.424
+el equipo mira "Checklist de salida" dentro del workspace de Visual Studio Code
+
+1163
+00:59:44.469 --> 00:59:47.417
+con coste y permiso visibles.
+
+1164
+00:59:47.462 --> 00:59:52.570
+el equipo mira "Checklist de salida" dentro del workspace de Visual Studio Code
+
+1165
+00:59:52.615 --> 00:59:59.787
+con coste y permiso visibles. (Copilot, 59 minutos, paso 44)
+
+1166
+00:59:54.548 --> 00:59:59.920
+Evidencia 59 minutos: "Checklist de salida" no se cierra sin test
+
+1167
+00:59:57.140 --> 00:59:59.920
+captura o criterio escrito.
+
+1168
+00:59:53.732 --> 00:59:59.920
+Copilot 59 minutos: Recoger outputs y dudas para tutoria para "Checklist de salida".
+

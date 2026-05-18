@@ -1,7 +1,7 @@
 {
   "id": "cx-ultra-02-pr-swarm",
-  "title": "Codex Ultra 02 - PR Swarm",
-  "description": "Orquestacion multiagente aplicada a revision de PR con Codex.",
+  "title": "Codex Ultra 02 - pull request Swarm",
+  "description": "Orquestacion multiagente aplicada a revision de pull request con Codex.",
   "template": "technical",
   "durationPreset": 5,
   "durationMs": 90000,
@@ -9,33 +9,126 @@
   "author": "AI Practice Hub",
   "createdAt": "2026-05-07T00:00:00.000Z",
   "chapters": [
-    { "id": "start", "label": "Swarm", "startMs": 0 },
-    { "id": "roles", "label": "Roles", "startMs": 8000 },
-    { "id": "orchestration", "label": "Orquestacion", "startMs": 42000 },
-    { "id": "close", "label": "Cierre", "startMs": 70000 }
+    {
+      "id": "start",
+      "label": "Swarm",
+      "startMs": 0
+    },
+    {
+      "id": "roles",
+      "label": "Roles",
+      "startMs": 8000
+    },
+    {
+      "id": "orchestration",
+      "label": "Orquestacion",
+      "startMs": 42000
+    },
+    {
+      "id": "close",
+      "label": "Cierre",
+      "startMs": 70000
+    }
   ],
   "scenes": [
     {
       "id": "title",
       "name": "Apertura",
       "startMs": 0,
-      "endMs": 8000,
+      "endMs": 22500,
       "type": "title",
       "content": {
-        "title": "PR Swarm",
-        "subtitle": "Arquitecto, dev, QA y orquestador. Cada uno con una mision.",
-        "tag": "Codex Ultra"
+        "title": "pull request Swarm",
+        "subtitle": "Objetivo: resolver Codex Ultra 02 - pull request Swarm con criterio practico.",
+        "tag": "Codex Ultra",
+        "narrativeContract": {
+          "objective": "resolver Codex Ultra 02 - pull request Swarm con criterio practico.",
+          "outcome": "quedarte con una regla de uso y un ejemplo repetible.",
+          "route": "concepto, ejemplo y cierre.",
+          "decision": "cuando aplicar esta tecnica en tu propio repositorio."
+        }
       },
       "subtitles": [
-        { "text": "Un swarm no es hacer hablar a muchos agentes.", "startMs": 1000, "endMs": 5000 },
-        { "text": "Es repartir criterios.", "startMs": 5200, "endMs": 7600 }
-      ]
+        {
+          "text": "Objetivo de esta clase:",
+          "startMs": 450,
+          "endMs": 2966
+        },
+        {
+          "text": "resolver Codex Ultra 02 - pull request Swarm con criterio practico.",
+          "startMs": 3011,
+          "endMs": 8191
+        },
+        {
+          "text": "Al final debes poder quedarte con una regla de uso y un ejemplo repetible.",
+          "startMs": 8236,
+          "endMs": 13032
+        },
+        {
+          "text": "La ruta sera: concepto, ejemplo y cierre.",
+          "startMs": 13077,
+          "endMs": 16985
+        },
+        {
+          "text": "Durante el video mira esta decision:",
+          "startMs": 17030,
+          "endMs": 19978
+        },
+        {
+          "text": "cuando aplicar esta tecnica en tu propio repositorio.",
+          "startMs": 18776,
+          "endMs": 22420
+        }
+      ],
+      "voiceover": [
+        "Objetivo de esta clase:",
+        "resolver Codex Ultra 02 - pull request Swarm con criterio practico.",
+        "Al final debes poder quedarte con una regla de uso y un ejemplo repetible.",
+        "La ruta sera: concepto, ejemplo y cierre.",
+        "Durante el video mira esta decision:",
+        "cuando aplicar esta tecnica en tu propio repositorio."
+      ],
+      "blueprintAction": {
+        "learningRubric": {
+          "learns": "Reconoce por que \"pull request Swarm\" necesita evidencia y no solo respuesta.",
+          "does": "Formula una peticion verificable con limite de alcance.",
+          "decides": "Convertir la duda en material de tutoria si se repite.",
+          "vendor": "codex",
+          "usefulnessScore": 82,
+          "memoryCheck": "Puede nombrar el riesgo principal sin mirar la slide.",
+          "productionPass": "2000-final-direction"
+        }
+      },
+      "production": {
+        "audioVersion": "audio-prod-v2-2026-05-18",
+        "voiceProfileId": "codexNarrator",
+        "voice": "es-ES-AlvaroNeural",
+        "rate": "+8%",
+        "pitch": "+0Hz",
+        "energy": "precisa",
+        "emphasis": "plan, patch, test y coste",
+        "pauseMs": 180,
+        "role": "narrator",
+        "reviewRubric": {
+          "learns": "Reconoce por que \"pull request Swarm\" necesita evidencia y no solo respuesta.",
+          "does": "Formula una peticion verificable con limite de alcance.",
+          "decides": "Convertir la duda en material de tutoria si se repite.",
+          "memoryCheck": "Puede nombrar el riesgo principal sin mirar la slide."
+        },
+        "prosodyNotes": {
+          "pace": "+8%",
+          "pause": "180ms antes de la decision",
+          "emphasis": "plan, patch, test y coste",
+          "energy": "precisa"
+        },
+        "pronunciationPass": "spain-voice-units-v1"
+      }
     },
     {
       "id": "compare",
       "name": "Roles",
-      "startMs": 8000,
-      "endMs": 42000,
+      "startMs": 22500,
+      "endMs": 45000,
       "type": "compare",
       "content": {
         "tag": "Agente unico vs swarm",
@@ -43,9 +136,22 @@
           "label": "Agente unico",
           "color": "destructive",
           "steps": [
-            { "icon": "Code", "text": "Mira arquitectura, bug, test y UX a la vez" },
-            { "icon": "AlertTriangle", "text": "Puede dejar puntos ciegos" },
-            { "icon": "MessageSquare", "text": "Respuesta larga y dificil de auditar" }
+            {
+              "icon": "Code",
+              "text": "Mira arquitectura, bug, test y UX a la vez"
+            },
+            {
+              "icon": "AlertTriangle",
+              "text": "Puede dejar puntos ciegos"
+            },
+            {
+              "icon": "MessageSquare",
+              "text": "Respuesta larga y dificil de auditar"
+            },
+            {
+              "icon": "AlertTriangle",
+              "text": "Sin evidencia, la decision vuelve a tutoria."
+            }
           ],
           "total": "Bueno para tareas pequenas"
         },
@@ -53,62 +159,284 @@
           "label": "Swarm orquestado",
           "color": "accent",
           "steps": [
-            { "icon": "Eye", "text": "Arquitecto revisa impacto y diseno" },
-            { "icon": "Code2", "text": "Dev revisa implementacion y edge cases" },
-            { "icon": "Check", "text": "QA revisa tests y regresiones" },
-            { "icon": "GitPullRequest", "text": "Orquestador sintetiza decision" }
+            {
+              "icon": "Eye",
+              "text": "Arquitecto revisa impacto y diseno"
+            },
+            {
+              "icon": "Code2",
+              "text": "Dev revisa implementacion y edge cases"
+            },
+            {
+              "icon": "Check",
+              "text": "calidad revisa tests y regresiones"
+            },
+            {
+              "icon": "GitPullRequest",
+              "text": "Orquestador sintetiza decision"
+            }
           ],
           "total": "Mejor para PRs criticos"
-        }
+        },
+        "auditNote": "Comparativa enriquecida para explicar cuando usar, cuando no usar y como cerrar."
       },
       "subtitles": [
-        { "text": "Cada rol ve un tipo de riesgo.", "startMs": 9000, "endMs": 16000 },
-        { "text": "El orquestador no copia respuestas.", "startMs": 16500, "endMs": 24500 },
-        { "text": "Integra, resuelve desacuerdos y decide.", "startMs": 25000, "endMs": 40500 }
-      ]
+        {
+          "text": "Cada rol ve un tipo de riesgo.",
+          "startMs": 22950,
+          "endMs": 25754
+        },
+        {
+          "text": "El orquestador no copia respuestas.",
+          "startMs": 25934,
+          "endMs": 28978
+        },
+        {
+          "text": "Integra, resuelve desacuerdos y decide.",
+          "startMs": 29158,
+          "endMs": 32658
+        }
+      ],
+      "voiceover": [
+        "Cada rol ve un tipo de riesgo.",
+        "El orquestador no copia respuestas.",
+        "Integra, resuelve desacuerdos y decide."
+      ],
+      "blueprintAction": {
+        "learningRubric": {
+          "learns": "Distingue decision humana de ejecucion automatizada en Codex.",
+          "does": "Comprueba la salida contra prueba, owner o captura.",
+          "decides": "Aceptar solo si la evidencia queda visible para otra persona.",
+          "vendor": "codex",
+          "usefulnessScore": 84,
+          "memoryCheck": "Puede repetir el prompt inicial con criterio de cierre.",
+          "productionPass": "2000-final-direction"
+        }
+      },
+      "production": {
+        "audioVersion": "audio-prod-v2-2026-05-18",
+        "voiceProfileId": "codexNarrator",
+        "voice": "es-ES-AlvaroNeural",
+        "rate": "+8%",
+        "pitch": "+0Hz",
+        "energy": "precisa",
+        "emphasis": "plan, patch, test y coste",
+        "pauseMs": 180,
+        "role": "narrator",
+        "reviewRubric": {
+          "learns": "Distingue decision humana de ejecucion automatizada en Codex.",
+          "does": "Comprueba la salida contra prueba, owner o captura.",
+          "decides": "Aceptar solo si la evidencia queda visible para otra persona.",
+          "memoryCheck": "Puede repetir el prompt inicial con criterio de cierre."
+        },
+        "prosodyNotes": {
+          "pace": "+8%",
+          "pause": "180ms antes de la decision",
+          "emphasis": "plan, patch, test y coste",
+          "energy": "precisa"
+        },
+        "pronunciationPass": "spain-voice-units-v1"
+      }
     },
     {
       "id": "thinking",
       "name": "Orquestacion",
-      "startMs": 42000,
-      "endMs": 70000,
+      "startMs": 45000,
+      "endMs": 67500,
       "type": "thinking",
       "content": {
         "tag": "Swarm loop",
-        "title": "Orquestador Codex sintetizando...",
+        "title": "Orquestador Codex sintetizando.",
         "thoughts": [
-          { "ms": 0, "text": "Arquitecto: impacto en modulo de autenticacion", "done": false },
-          { "ms": 5000, "text": "Dev: edge case en token expirado", "done": false },
-          { "ms": 11000, "text": "QA: falta test de sesion caducada", "done": false },
-          { "ms": 18000, "text": "Resolviendo conflicto: bug real vs preferencia", "done": false },
-          { "ms": 25000, "text": "Decision: changes requested con evidencia", "done": true }
-        ]
+          {
+            "ms": 0,
+            "text": "Arquitecto: impacto en modulo de autenticacion",
+            "done": false
+          },
+          {
+            "ms": 5000,
+            "text": "Dev: edge case en token expirado",
+            "done": false
+          },
+          {
+            "ms": 11000,
+            "text": "calidad: falta test de sesion caducada",
+            "done": false
+          },
+          {
+            "ms": 18000,
+            "text": "Resolviendo conflicto: bug real vs preferencia",
+            "done": false
+          },
+          {
+            "ms": 25000,
+            "text": "Decision minuto 0: si el riesgo supera la evidencia, entra instructor o tech lead.",
+            "done": true
+          }
+        ],
+        "auditNote": "Pensamiento ampliado para que la pantalla tenga decision, permiso y salida."
       },
       "subtitles": [
-        { "text": "El valor aparece en la sintesis.", "startMs": 43000, "endMs": 50000 },
-        { "text": "No en tener muchas voces.", "startMs": 50500, "endMs": 59000 },
-        { "text": "Un buen swarm termina con una decision clara.", "startMs": 59500, "endMs": 69000 }
-      ]
+        {
+          "text": "El valor aparece en la sintesis.",
+          "startMs": 45450,
+          "endMs": 48446
+        },
+        {
+          "text": "No en tener muchas voces.",
+          "startMs": 48626,
+          "endMs": 51454
+        },
+        {
+          "text": "Un buen swarm termina con una decision clara.",
+          "startMs": 51634,
+          "endMs": 55182
+        }
+      ],
+      "voiceover": [
+        "El valor aparece en la sintesis.",
+        "No en tener muchas voces.",
+        "Un buen swarm termina con una decision clara."
+      ],
+      "blueprintAction": {
+        "learningRubric": {
+          "learns": "Ubica coste, permiso y criterio antes de aceptar la salida.",
+          "does": "Registra el criterio que permitiria repetir el paso sin instructor.",
+          "decides": "Seguir, pedir mas contexto, escalar modelo o bloquear.",
+          "vendor": "codex",
+          "usefulnessScore": 86,
+          "memoryCheck": "Puede explicar el paso en una frase de menos de 20 segundos.",
+          "productionPass": "2000-final-direction"
+        }
+      },
+      "production": {
+        "audioVersion": "audio-prod-v2-2026-05-18",
+        "voiceProfileId": "codexReflection",
+        "voice": "es-ES-AlvaroNeural",
+        "rate": "+3%",
+        "pitch": "+0Hz",
+        "energy": "reflexiva",
+        "emphasis": "riesgo, permiso y evidencia",
+        "pauseMs": 260,
+        "role": "reflection",
+        "reviewRubric": {
+          "learns": "Ubica coste, permiso y criterio antes de aceptar la salida.",
+          "does": "Registra el criterio que permitiria repetir el paso sin instructor.",
+          "decides": "Seguir, pedir mas contexto, escalar modelo o bloquear.",
+          "memoryCheck": "Puede explicar el paso en una frase de menos de 20 segundos."
+        },
+        "prosodyNotes": {
+          "pace": "+3%",
+          "pause": "260ms antes de la decision",
+          "emphasis": "riesgo, permiso y evidencia",
+          "energy": "reflexiva"
+        },
+        "pronunciationPass": "spain-voice-units-v1"
+      }
     },
     {
       "id": "finale",
       "name": "Cierre",
-      "startMs": 70000,
+      "startMs": 67500,
       "endMs": 90000,
       "type": "finale",
       "content": {
         "title": "Swarm que sirve",
         "summary": [
-          { "number": "01", "label": "Roles", "body": "Cada agente tiene criterio propio." },
-          { "number": "02", "label": "Limites", "body": "Read-only por defecto y presupuesto." },
-          { "number": "03", "label": "Decision", "body": "Aprobado, cambios o preguntas." }
+          {
+            "number": "01",
+            "label": "Roles",
+            "body": "Cada agente tiene criterio propio."
+          },
+          {
+            "number": "02",
+            "label": "Limites",
+            "body": "Read-only por defecto y presupuesto."
+          },
+          {
+            "number": "03",
+            "label": "Decision",
+            "body": "Aprobado, cambios o preguntas."
+          }
         ],
         "cta": "Ejercicio asociado: cx-u01-pr-swarm."
       },
       "subtitles": [
-        { "text": "El swarm potente no hace ruido.", "startMs": 70500, "endMs": 79500 },
-        { "text": "Hace mejor la decision.", "startMs": 80000, "endMs": 89500 }
-      ]
+        {
+          "text": "El swarm potente no hace ruido.",
+          "startMs": 67950,
+          "endMs": 71042
+        },
+        {
+          "text": "Hace mejor la decision.",
+          "startMs": 71222,
+          "endMs": 73810
+        },
+        {
+          "text": "Evidencia minuto 1: \"Swarm que sirve\" no se cierra sin test, captura o criterio escrito.",
+          "startMs": 73990,
+          "endMs": 80298
+        },
+        {
+          "text": "Accion minuto 1: pedir salida pequena verificable y con owner. (Codex",
+          "startMs": 80478,
+          "endMs": 86762
+        },
+        {
+          "text": "minuto 1 paso 12)",
+          "startMs": 86942,
+          "endMs": 89482
+        }
+      ],
+      "voiceover": [
+        "El swarm potente no hace ruido.",
+        "Hace mejor la decision.",
+        "Evidencia minuto 1: \"Swarm que sirve\" no se cierra sin test, captura o criterio escrito.",
+        "Accion minuto 1: pedir salida pequena verificable y con owner. (Codex",
+        "minuto 1 paso 12)"
+      ],
+      "blueprintAction": {
+        "learningRubric": {
+          "learns": "Reconoce por que \"Swarm que sirve\" necesita evidencia y no solo respuesta.",
+          "does": "Formula una peticion verificable con limite de alcance.",
+          "decides": "Convertir la duda en material de tutoria si se repite.",
+          "vendor": "codex",
+          "usefulnessScore": 88,
+          "memoryCheck": "Puede nombrar el riesgo principal sin mirar la slide.",
+          "productionPass": "2000-final-direction"
+        }
+      },
+      "production": {
+        "audioVersion": "audio-prod-v2-2026-05-18",
+        "voiceProfileId": "codexReflection",
+        "voice": "es-ES-AlvaroNeural",
+        "rate": "+3%",
+        "pitch": "+0Hz",
+        "energy": "reflexiva",
+        "emphasis": "riesgo, permiso y evidencia",
+        "pauseMs": 260,
+        "role": "reflection",
+        "reviewRubric": {
+          "learns": "Reconoce por que \"Swarm que sirve\" necesita evidencia y no solo respuesta.",
+          "does": "Formula una peticion verificable con limite de alcance.",
+          "decides": "Convertir la duda en material de tutoria si se repite.",
+          "memoryCheck": "Puede nombrar el riesgo principal sin mirar la slide."
+        },
+        "prosodyNotes": {
+          "pace": "+3%",
+          "pause": "260ms antes de la decision",
+          "emphasis": "riesgo, permiso y evidencia",
+          "energy": "reflexiva"
+        },
+        "pronunciationPass": "spain-voice-units-v1"
+      }
     }
-  ]
+  ],
+  "production": {
+    "audioProductionVersion": "audio-prod-v2-2026-05-18",
+    "productionPass": "2000-final-direction",
+    "vendor": "codex",
+    "narrativePass": "teacher-contract-v1",
+    "pronunciationPass": "spain-voice-units-v1"
+  }
 }

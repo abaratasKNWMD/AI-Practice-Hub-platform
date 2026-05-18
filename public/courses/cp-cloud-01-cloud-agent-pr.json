@@ -1,7 +1,7 @@
 {
   "id": "cp-cloud-01-cloud-agent-pr",
-  "title": "Copilot Cloud 01 - Agent PR",
-  "description": "De issue delegable a PR generada por Copilot cloud agent.",
+  "title": "Copilot Cloud 01 - Agent pull request",
+  "description": "De issue delegable a pull request generada por Copilot cloud agent.",
   "template": "technical",
   "durationPreset": 5,
   "durationMs": 90000,
@@ -9,31 +9,121 @@
   "author": "AI Practice Hub",
   "createdAt": "2026-05-07T00:00:00.000Z",
   "chapters": [
-    { "id": "start", "label": "Cloud", "startMs": 0 },
-    { "id": "flow", "label": "Issue -> PR", "startMs": 9000 },
-    { "id": "close", "label": "Review", "startMs": 65000 }
+    {
+      "id": "start",
+      "label": "Cloud",
+      "startMs": 0
+    },
+    {
+      "id": "flow",
+      "label": "Issue -> pull request",
+      "startMs": 9000
+    },
+    {
+      "id": "close",
+      "label": "Review",
+      "startMs": 65000
+    }
   ],
   "scenes": [
     {
       "id": "title",
       "name": "Apertura",
       "startMs": 0,
-      "endMs": 9000,
+      "endMs": 30000,
       "type": "title",
       "content": {
         "title": "Cloud agent",
-        "subtitle": "Delegar no es abandonar: issue claro, PR revisada.",
-        "tag": "Copilot CP4"
+        "subtitle": "Objetivo: resolver Copilot Cloud 01 - Agent pull request con criterio practico.",
+        "tag": "Copilot CP4",
+        "narrativeContract": {
+          "objective": "resolver Copilot Cloud 01 - Agent pull request con criterio practico.",
+          "outcome": "quedarte con una regla de uso y un ejemplo repetible.",
+          "route": "concepto, ejemplo y cierre.",
+          "decision": "cuando aplicar esta tecnica en tu propio repositorio."
+        }
       },
       "subtitles": [
-        { "text": "Cloud agent puede trabajar desde GitHub, pero necesita un issue delegable.", "startMs": 1000, "endMs": 8200 }
-      ]
+        {
+          "text": "Objetivo de esta clase:",
+          "startMs": 450,
+          "endMs": 2990
+        },
+        {
+          "text": "resolver Copilot Cloud 01 - Agent pull request con criterio practico.",
+          "startMs": 3170,
+          "endMs": 8398
+        },
+        {
+          "text": "Al final debes poder quedarte con una regla de uso y un ejemplo repetible.",
+          "startMs": 8578,
+          "endMs": 13422
+        },
+        {
+          "text": "La ruta sera: concepto, ejemplo y cierre.",
+          "startMs": 13602,
+          "endMs": 17558
+        },
+        {
+          "text": "Durante el video mira esta decision:",
+          "startMs": 17738,
+          "endMs": 20710
+        },
+        {
+          "text": "cuando aplicar esta tecnica en tu propio repositorio.",
+          "startMs": 20890,
+          "endMs": 24582
+        }
+      ],
+      "voiceover": [
+        "Objetivo de esta clase:",
+        "resolver Copilot Cloud 01 - Agent pull request con criterio practico.",
+        "Al final debes poder quedarte con una regla de uso y un ejemplo repetible.",
+        "La ruta sera: concepto, ejemplo y cierre.",
+        "Durante el video mira esta decision:",
+        "cuando aplicar esta tecnica en tu propio repositorio."
+      ],
+      "blueprintAction": {
+        "learningRubric": {
+          "learns": "Ubica coste, permiso y criterio antes de aceptar la salida.",
+          "does": "Registra el criterio que permitiria repetir el paso sin instructor.",
+          "decides": "Seguir, pedir mas contexto, escalar modelo o bloquear.",
+          "vendor": "copilot",
+          "usefulnessScore": 82,
+          "memoryCheck": "Puede explicar el paso en una frase de menos de 20 segundos.",
+          "productionPass": "2000-final-direction"
+        }
+      },
+      "production": {
+        "audioVersion": "audio-prod-v2-2026-05-18",
+        "voiceProfileId": "copilotNarrator",
+        "voice": "es-ES-AlvaroNeural",
+        "rate": "+7%",
+        "pitch": "+0Hz",
+        "energy": "practica",
+        "emphasis": "modo, contexto y PR",
+        "pauseMs": 180,
+        "role": "narrator",
+        "reviewRubric": {
+          "learns": "Ubica coste, permiso y criterio antes de aceptar la salida.",
+          "does": "Registra el criterio que permitiria repetir el paso sin instructor.",
+          "decides": "Seguir, pedir mas contexto, escalar modelo o bloquear.",
+          "memoryCheck": "Puede explicar el paso en una frase de menos de 20 segundos."
+        },
+        "prosodyNotes": {
+          "pace": "+7%",
+          "pause": "180ms antes de la decision",
+          "emphasis": "modo, contexto y pull request",
+          "energy": "practica"
+        },
+        "pronunciationPass": "spain-voice-units-v1"
+      }
     },
     {
       "id": "linear",
       "name": "Issue",
-      "startMs": 9000,
-      "endMs": 65000,
+      "startMs": 30000,
+      "endMs": 60000,
       "type": "linear",
       "content": {
         "ticketId": "CP-CLOUD",
@@ -42,33 +132,162 @@
         "priority": "High",
         "assignee": "Copilot cloud agent",
         "status": "Ready",
-        "labels": ["cloud-agent", "governance", "ai"],
-        "description": "Goal: implementar cambio acotado.\n\nContexto: rutas y tests relevantes.\n\nConstraints: no tocar auth, no cambiar contratos publicos, no modificar secrets.\n\nAcceptance criteria: test actualizado, PR description, riesgo residual.\n\nBudget: premium requests medio y human review obligatoria."
+        "labels": [
+          "cloud-agent",
+          "governance",
+          "ai"
+        ],
+        "description": "Goal: implementar cambio acotado. Contexto: rutas y tests relevantes. Constraints: no tocar auth, no cambiar contratos publicos, no modificar secrets. Acceptance criteria: test actualizado, pull request description, riesgo residual. Budget: premium requests medio y human review obligatoria."
       },
       "subtitles": [
-        { "text": "El issue debe incluir objetivo, contexto y restricciones.", "startMs": 10000, "endMs": 29000 },
-        { "text": "Tambien acceptance criteria y presupuesto.", "startMs": 30000, "endMs": 46000 },
-        { "text": "La PR generada siempre pasa por review humana.", "startMs": 47000, "endMs": 62000 }
-      ]
+        {
+          "text": "El issue debe incluir objetivo, contexto y restricciones.",
+          "startMs": 30450,
+          "endMs": 34694
+        },
+        {
+          "text": "Tambien acceptance criteria y presupuesto.",
+          "startMs": 34874,
+          "endMs": 38206
+        },
+        {
+          "text": "La pull request generada siempre pasa por review humana.",
+          "startMs": 38386,
+          "endMs": 42366
+        }
+      ],
+      "voiceover": [
+        "El issue debe incluir objetivo, contexto y restricciones.",
+        "Tambien acceptance criteria y presupuesto.",
+        "La pull request generada siempre pasa por review humana."
+      ],
+      "blueprintAction": {
+        "learningRubric": {
+          "learns": "Reconoce por que \"Issue delegable a Copilot cloud agent\" necesita evidencia y no solo respuesta.",
+          "does": "Formula una peticion verificable con limite de alcance.",
+          "decides": "Convertir la duda en material de tutoria si se repite.",
+          "vendor": "copilot",
+          "usefulnessScore": 84,
+          "memoryCheck": "Puede nombrar el riesgo principal sin mirar la slide.",
+          "productionPass": "2000-final-direction"
+        }
+      },
+      "production": {
+        "audioVersion": "audio-prod-v2-2026-05-18",
+        "voiceProfileId": "copilotNarrator",
+        "voice": "es-ES-AlvaroNeural",
+        "rate": "+7%",
+        "pitch": "+0Hz",
+        "energy": "practica",
+        "emphasis": "modo, contexto y PR",
+        "pauseMs": 180,
+        "role": "narrator",
+        "reviewRubric": {
+          "learns": "Reconoce por que \"Issue delegable a Copilot cloud agent\" necesita evidencia y no solo respuesta.",
+          "does": "Formula una peticion verificable con limite de alcance.",
+          "decides": "Convertir la duda en material de tutoria si se repite.",
+          "memoryCheck": "Puede nombrar el riesgo principal sin mirar la slide."
+        },
+        "prosodyNotes": {
+          "pace": "+7%",
+          "pause": "180ms antes de la decision",
+          "emphasis": "modo, contexto y pull request",
+          "energy": "practica"
+        },
+        "pronunciationPass": "spain-voice-units-v1"
+      }
     },
     {
       "id": "finale",
       "name": "Cierre",
-      "startMs": 65000,
+      "startMs": 60000,
       "endMs": 90000,
       "type": "finale",
       "content": {
         "title": "Cloud agent gobernado",
         "summary": [
-          { "number": "01", "label": "Issue", "body": "Delegable y acotado." },
-          { "number": "02", "label": "PR", "body": "Generada con evidencia." },
-          { "number": "03", "label": "Humano", "body": "Responsable del merge." }
+          {
+            "number": "01",
+            "label": "Issue",
+            "body": "Delegable y acotado."
+          },
+          {
+            "number": "02",
+            "label": "pull request",
+            "body": "Generada con evidencia."
+          },
+          {
+            "number": "03",
+            "label": "Humano",
+            "body": "Responsable del merge."
+          }
         ],
         "cta": "Ejercicio: cp-c01-delegable-issue."
       },
       "subtitles": [
-        { "text": "Delegar bien significa revisar mejor, no dejar de revisar.", "startMs": 66000, "endMs": 89000 }
-      ]
+        {
+          "text": "Delegar bien significa revisar mejor, no dejar de revisar.",
+          "startMs": 60450,
+          "endMs": 65126
+        },
+        {
+          "text": "Evidencia minuto 1: patch local, test y comentario de pull request.",
+          "startMs": 65306,
+          "endMs": 70414
+        },
+        {
+          "text": "Accion minuto 1: parar si \"Cloud agent gobernado\" no produce evidencia nueva.",
+          "startMs": 70594,
+          "endMs": 76230
+        }
+      ],
+      "voiceover": [
+        "Delegar bien significa revisar mejor, no dejar de revisar.",
+        "Evidencia minuto 1: patch local, test y comentario de pull request.",
+        "Accion minuto 1: parar si \"Cloud agent gobernado\" no produce evidencia nueva."
+      ],
+      "blueprintAction": {
+        "learningRubric": {
+          "learns": "Distingue decision humana de ejecucion automatizada en Copilot.",
+          "does": "Comprueba la salida contra prueba, owner o captura.",
+          "decides": "Aceptar solo si la evidencia queda visible para otra persona.",
+          "vendor": "copilot",
+          "usefulnessScore": 86,
+          "memoryCheck": "Puede repetir el prompt inicial con criterio de cierre.",
+          "productionPass": "2000-final-direction"
+        }
+      },
+      "production": {
+        "audioVersion": "audio-prod-v2-2026-05-18",
+        "voiceProfileId": "copilotReview",
+        "voice": "es-ES-AlvaroNeural",
+        "rate": "+4%",
+        "pitch": "+0Hz",
+        "energy": "critica",
+        "emphasis": "finding, severidad y prueba",
+        "pauseMs": 240,
+        "role": "reflection",
+        "reviewRubric": {
+          "learns": "Distingue decision humana de ejecucion automatizada en Copilot.",
+          "does": "Comprueba la salida contra prueba, owner o captura.",
+          "decides": "Aceptar solo si la evidencia queda visible para otra persona.",
+          "memoryCheck": "Puede repetir el prompt inicial con criterio de cierre."
+        },
+        "prosodyNotes": {
+          "pace": "+4%",
+          "pause": "240ms antes de la decision",
+          "emphasis": "finding, severidad y prueba",
+          "energy": "critica"
+        },
+        "pronunciationPass": "spain-voice-units-v1"
+      }
     }
-  ]
+  ],
+  "production": {
+    "audioProductionVersion": "audio-prod-v2-2026-05-18",
+    "productionPass": "2000-final-direction",
+    "vendor": "copilot",
+    "narrativePass": "teacher-contract-v1",
+    "pronunciationPass": "spain-voice-units-v1"
+  }
 }

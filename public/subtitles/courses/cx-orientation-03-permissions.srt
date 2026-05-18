@@ -1,0 +1,64 @@
+1
+00:00:00,450 --> 00:00:02,966
+Objetivo de esta clase:
+
+2
+00:00:03,011 --> 00:00:08,335
+resolver Codex Orientation 03 - Permissions con criterio practico.
+
+3
+00:00:08,380 --> 00:00:13,176
+Al final debes poder quedarte con una regla de uso y un ejemplo repetible.
+
+4
+00:00:13,221 --> 00:00:17,129
+La ruta sera: concepto, ejemplo y cierre.
+
+5
+00:00:17,174 --> 00:00:20,122
+Durante el video mira esta decision:
+
+6
+00:00:18,776 --> 00:00:22,420
+cuando aplicar esta tecnica en tu propio repositorio.
+
+7
+00:00:22,950 --> 00:00:26,138
+No todo necesita permiso de escritura.
+
+8
+00:00:26,318 --> 00:00:31,762
+Primero leer. Luego editar. Luego ejecutar.
+
+9
+00:00:31,942 --> 00:00:35,274
+La progresion de permisos ensena criterio.
+
+10
+00:00:45,450 --> 00:00:48,398
+El coste se gestiona con habitos.
+
+11
+00:00:48,578 --> 00:00:53,326
+Modelo correcto, contexto correcto, cierre verificable.
+
+12
+00:00:53,506 --> 00:00:56,478
+Eso hace la plataforma sostenible.
+
+13
+00:01:07,950 --> 00:01:11,642
+Permisos bien usados aceleran el aprendizaje.
+
+14
+00:01:11,822 --> 00:01:15,058
+No frenan Codex: lo encarrilan.
+
+15
+00:01:15,238 --> 00:01:21,570
+Evidencia minuto 1: "Permisos = pedagogia" queda ligado a prueba, owner y decision.
+
+16
+00:01:21,750 --> 00:01:26,978
+Accion minuto 1: nombrar modelo, permiso y limite antes de iterar.
+

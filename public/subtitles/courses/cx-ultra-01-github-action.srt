@@ -1,0 +1,60 @@
+1
+00:00:00,450 --> 00:00:06,782
+Objetivo de esta clase: resolver Codex Ultra 01 - GitHub Action con criterio practico.
+
+2
+00:00:06,827 --> 00:00:11,623
+Al final debes poder quedarte con una regla de uso y un ejemplo repetible.
+
+3
+00:00:11,668 --> 00:00:15,576
+La ruta sera: concepto, ejemplo y cierre.
+
+4
+00:00:15,621 --> 00:00:18,569
+Durante el video mira esta decision:
+
+5
+00:00:18,614 --> 00:00:22,258
+cuando aplicar esta tecnica en tu propio repositorio.
+
+6
+00:00:22,950 --> 00:00:26,354
+El workflow empieza con permisos minimos.
+
+7
+00:00:26,534 --> 00:00:29,914
+Luego limita tiempo, diff y presupuesto.
+
+8
+00:00:30,094 --> 00:00:32,970
+La salida debe ser estructurada.
+
+9
+00:00:45,450 --> 00:00:48,566
+La action no debe opinar sin criterio.
+
+10
+00:00:48,746 --> 00:00:52,006
+Debe producir findings verificables.
+
+11
+00:00:52,186 --> 00:00:55,038
+Y parar antes de gastar de mas.
+
+12
+00:01:07,950 --> 00:01:11,786
+Codex en CI es potente cuando esta acotado.
+
+13
+00:01:11,966 --> 00:01:18,370
+Evidencia minuto 1: "CI con Codex" no se cierra sin test, captura o criterio escrito.
+
+14
+00:01:18,550 --> 00:01:24,834
+Accion minuto 1: pedir salida pequena verificable y con owner. (Codex
+
+15
+00:01:25,014 --> 00:01:27,578
+minuto 1 paso 11)
+

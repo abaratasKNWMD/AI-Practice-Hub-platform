@@ -1,7 +1,7 @@
 {
   "baseUrl": "http://localhost:3001",
   "browserPath": "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe",
-  "generatedAt": "2026-05-08T11:36:02.870Z",
+  "generatedAt": "2026-05-18T16:36:30.666Z",
   "status": "passed",
   "results": [
     {
@@ -12,9 +12,9 @@
       "height": 900,
       "output": "/release-ops/qa/screenshots/hub-desktop.png",
       "ok": true,
-      "bytes": 525931,
-      "ms": 6708,
-      "stderr": "DevTools listening on ws://127.0.0.1:55931/devtools/browser/d7b8c4cb-a0a6-41ad-8eec-a5285de4a2e0\r\n[3784:32816:0508/133519.002:ERROR:google_apis\\gcm\\engine\\registration_request.cc:291] Registration response error message: PHONE_REGISTRATION_ERROR\r\n[3784:32816:0508/133519.002:ERROR:google_apis\\gcm\\engine\\registration_request.cc:291] Registration response error message: PHONE_REGISTRATION_ERROR\r\n[3784:32816:0508/133519.006:ERROR:google_apis\\gcm\\engine\\registration_request.cc:291] Registration respo"
+      "bytes": 526034,
+      "ms": 8063,
+      "stderr": "DevTools listening on ws://127.0.0.1:62699/devtools/browser/050e44be-5789-4106-b608-165628c40a05"
     },
     {
       "id": "hub",
@@ -24,9 +24,9 @@
       "height": 844,
       "output": "/release-ops/qa/screenshots/hub-mobile.png",
       "ok": true,
-      "bytes": 153770,
-      "ms": 5492,
-      "stderr": "DevTools listening on ws://127.0.0.1:59092/devtools/browser/31155a93-98f5-4b42-9778-a443ab2336a0"
+      "bytes": 153473,
+      "ms": 7302,
+      "stderr": "DevTools listening on ws://127.0.0.1:56135/devtools/browser/ebca2e31-3095-464d-b83c-c325050f0b19"
     },
     {
       "id": "operaciones",
@@ -36,9 +36,9 @@
       "height": 900,
       "output": "/release-ops/qa/screenshots/operaciones-desktop.png",
       "ok": true,
-      "bytes": 220081,
-      "ms": 6816,
-      "stderr": "DevTools listening on ws://127.0.0.1:54462/devtools/browser/c5c1576a-1d50-4c23-ba97-88b5250e7c24\r\n[32700:16360:0508/133529.454:ERROR:google_apis\\gcm\\engine\\registration_request.cc:291] Registration response error message: PHONE_REGISTRATION_ERROR\r\n[32700:16360:0508/133529.460:ERROR:google_apis\\gcm\\engine\\registration_request.cc:291] Registration response error message: PHONE_REGISTRATION_ERROR\r\n[32700:16360:0508/133529.461:ERROR:google_apis\\gcm\\engine\\registration_request.cc:291] Registration re"
+      "bytes": 218052,
+      "ms": 6002,
+      "stderr": "DevTools listening on ws://127.0.0.1:55672/devtools/browser/49d68385-8425-429c-9a39-3c08d1de172b\r\n[36140:24136:0518/183555.632:ERROR:google_apis\\gcm\\engine\\registration_request.cc:291] Registration response error message: PHONE_REGISTRATION_ERROR\r\n[36140:24136:0518/183555.653:ERROR:google_apis\\gcm\\engine\\registration_request.cc:291] Registration response error message: PHONE_REGISTRATION_ERROR\r\n[36140:24136:0518/183555.683:ERROR:google_apis\\gcm\\engine\\registration_request.cc:291] Registration re"
     },
     {
       "id": "operaciones",
@@ -48,9 +48,9 @@
       "height": 844,
       "output": "/release-ops/qa/screenshots/operaciones-mobile.png",
       "ok": true,
-      "bytes": 58242,
-      "ms": 6460,
-      "stderr": "DevTools listening on ws://127.0.0.1:58988/devtools/browser/6d0d8ba6-bbea-42f7-85aa-98a795ea2177\r\n[2700:1296:0508/133536.869:ERROR:google_apis\\gcm\\engine\\registration_request.cc:291] Registration response error message: DEPRECATED_ENDPOINT"
+      "bytes": 58186,
+      "ms": 5923,
+      "stderr": "DevTools listening on ws://127.0.0.1:58164/devtools/browser/631f5b00-1d67-4658-bfaf-f94175a423f0\r\n[8816:28476:0518/183601.133:ERROR:google_apis\\gcm\\engine\\registration_request.cc:291] Registration response error message: PHONE_REGISTRATION_ERROR\r\n[8816:28476:0518/183601.134:ERROR:google_apis\\gcm\\engine\\registration_request.cc:291] Registration response error message: PHONE_REGISTRATION_ERROR\r\n[8816:28476:0518/183601.134:ERROR:google_apis\\gcm\\engine\\registration_request.cc:291] Registration respo"
     },
     {
       "id": "plataforma",
@@ -60,9 +60,9 @@
       "height": 900,
       "output": "/release-ops/qa/screenshots/plataforma-desktop.png",
       "ok": true,
-      "bytes": 80007,
-      "ms": 3733,
-      "stderr": "DevTools listening on ws://127.0.0.1:57704/devtools/browser/7864c6ef-d2fa-4ade-ae6b-cfd357ea7f89"
+      "bytes": 356410,
+      "ms": 5991,
+      "stderr": "DevTools listening on ws://127.0.0.1:59895/devtools/browser/387bd18a-3ebb-4158-ad7b-ee248747189c"
     },
     {
       "id": "plataforma",
@@ -72,9 +72,9 @@
       "height": 844,
       "output": "/release-ops/qa/screenshots/plataforma-mobile.png",
       "ok": true,
-      "bytes": 51792,
-      "ms": 3503,
-      "stderr": "DevTools listening on ws://127.0.0.1:61488/devtools/browser/d675d328-aea9-4270-ad9b-6afbd64608e3"
+      "bytes": 104961,
+      "ms": 6050,
+      "stderr": "DevTools listening on ws://127.0.0.1:57098/devtools/browser/4bd23a21-dc44-4ad0-af07-3ca9c90d81f6\r\n[35444:19896:0518/183613.299:ERROR:google_apis\\gcm\\engine\\registration_request.cc:291] Registration response error message: DEPRECATED_ENDPOINT"
     },
     {
       "id": "codex-track",
@@ -84,9 +84,9 @@
       "height": 900,
       "output": "/release-ops/qa/screenshots/codex-track-desktop.png",
       "ok": true,
-      "bytes": 634247,
-      "ms": 4354,
-      "stderr": "DevTools listening on ws://127.0.0.1:50495/devtools/browser/36e0d830-c2a6-4507-9c1c-f3489af033b5\r\n[28012:13580:0508/133549.832:ERROR:google_apis\\gcm\\engine\\registration_request.cc:291] Registration response error message: PHONE_REGISTRATION_ERROR\r\n[28012:13580:0508/133549.832:ERROR:google_apis\\gcm\\engine\\registration_request.cc:291] Registration response error message: PHONE_REGISTRATION_ERROR\r\n[28012:13580:0508/133550.126:ERROR:google_apis\\gcm\\engine\\registration_request.cc:291] Registration re"
+      "bytes": 635145,
+      "ms": 4249,
+      "stderr": "DevTools listening on ws://127.0.0.1:63155/devtools/browser/6c04612d-5429-48ae-b75d-3b8fb2d2b230"
     },
     {
       "id": "codex-track",
@@ -96,9 +96,9 @@
       "height": 844,
       "output": "/release-ops/qa/screenshots/codex-track-mobile.png",
       "ok": true,
-      "bytes": 113787,
-      "ms": 4815,
-      "stderr": "DevTools listening on ws://127.0.0.1:55178/devtools/browser/eac2d774-2fc5-45b6-85ca-5f9185fe9cd6\r\n[9848:14564:0508/133554.755:ERROR:google_apis\\gcm\\engine\\registration_request.cc:291] Registration response error message: PHONE_REGISTRATION_ERROR\r\n[9848:14564:0508/133554.756:ERROR:google_apis\\gcm\\engine\\registration_request.cc:291] Registration response error message: PHONE_REGISTRATION_ERROR\r\n[9848:14564:0508/133554.762:ERROR:google_apis\\gcm\\engine\\registration_request.cc:291] Registration respo"
+      "bytes": 113654,
+      "ms": 3948,
+      "stderr": "DevTools listening on ws://127.0.0.1:65501/devtools/browser/5961e7aa-0c4d-4522-85e2-4e615783dff2"
     },
     {
       "id": "player-60m",
@@ -108,9 +108,9 @@
       "height": 900,
       "output": "/release-ops/qa/screenshots/player-60m-desktop.png",
       "ok": true,
-      "bytes": 39010,
-      "ms": 3808,
-      "stderr": "DevTools listening on ws://127.0.0.1:57612/devtools/browser/75ddc5f4-7740-4749-bf55-774cf798f5c9"
+      "bytes": 166966,
+      "ms": 3691,
+      "stderr": "DevTools listening on ws://127.0.0.1:59074/devtools/browser/9e14a2e7-50ec-456f-ab28-d8e9601b323d"
     },
     {
       "id": "player-60m",
@@ -120,9 +120,9 @@
       "height": 844,
       "output": "/release-ops/qa/screenshots/player-60m-mobile.png",
       "ok": true,
-      "bytes": 27111,
-      "ms": 4001,
-      "stderr": "DevTools listening on ws://127.0.0.1:54893/devtools/browser/596b87aa-085c-4c84-a011-502450c82ac0"
+      "bytes": 49204,
+      "ms": 4827,
+      "stderr": "DevTools listening on ws://127.0.0.1:55455/devtools/browser/8a5e1aa6-6f27-4088-aaa5-0d606dded81b\r\n[34888:35456:0518/183630.503:ERROR:google_apis\\gcm\\engine\\registration_request.cc:291] Registration response error message: PHONE_REGISTRATION_ERROR\r\n[34888:35456:0518/183630.504:ERROR:google_apis\\gcm\\engine\\registration_request.cc:291] Registration response error message: PHONE_REGISTRATION_ERROR\r\n[34888:35456:0518/183630.518:ERROR:google_apis\\gcm\\engine\\registration_request.cc:291] Registration re"
     }
   ]
 }

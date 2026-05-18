@@ -9,37 +9,125 @@
   "author": "AI Practice Hub",
   "createdAt": "2026-05-07T00:00:00.000Z",
   "chapters": [
-    { "id": "start", "label": "Por que", "startMs": 0 },
-    { "id": "concept", "label": "Reglas", "startMs": 8000 },
-    { "id": "file", "label": "Archivo", "startMs": 42000 },
-    { "id": "close", "label": "Cierre", "startMs": 70000 }
+    {
+      "id": "start",
+      "label": "Por que",
+      "startMs": 0
+    },
+    {
+      "id": "concept",
+      "label": "Reglas",
+      "startMs": 22500
+    },
+    {
+      "id": "file",
+      "label": "Archivo",
+      "startMs": 42000
+    },
+    {
+      "id": "close",
+      "label": "Cierre",
+      "startMs": 70000
+    }
   ],
   "scenes": [
     {
       "id": "title",
       "name": "Apertura",
       "startMs": 0,
-      "endMs": 8000,
+      "endMs": 22500,
       "type": "title",
       "content": {
         "title": "AGENTS.md",
-        "subtitle": "La memoria operativa del equipo para Codex.",
-        "tag": "Codex Basic"
+        "subtitle": "Objetivo: resolver Codex Basic 01 - AGENTS.md con criterio practico.",
+        "tag": "Codex Basic",
+        "narrativeContract": {
+          "objective": "resolver Codex Basic 01 - AGENTS.md con criterio practico.",
+          "outcome": "quedarte con una regla de uso y un ejemplo repetible.",
+          "route": "concepto, ejemplo y cierre.",
+          "decision": "cuando aplicar esta tecnica en tu propio repositorio."
+        }
       },
       "subtitles": [
-        { "text": "AGENTS.md convierte normas tacitas en instrucciones persistentes.", "startMs": 1000, "endMs": 6500 }
-      ]
+        {
+          "text": "Objetivo de esta clase: resolver Codex Basic 01 - AGENTS.md con criterio practico.",
+          "startMs": 450,
+          "endMs": 7118
+        },
+        {
+          "text": "Al final debes poder quedarte con una regla de uso y un ejemplo repetible.",
+          "startMs": 7163,
+          "endMs": 11959
+        },
+        {
+          "text": "La ruta sera: concepto, ejemplo y cierre.",
+          "startMs": 12004,
+          "endMs": 15912
+        },
+        {
+          "text": "Durante el video mira esta decision:",
+          "startMs": 15957,
+          "endMs": 18905
+        },
+        {
+          "text": "cuando aplicar esta tecnica en tu propio repositorio.",
+          "startMs": 18776,
+          "endMs": 22420
+        }
+      ],
+      "voiceover": [
+        "Objetivo de esta clase: resolver Codex Basic 01 - AGENTS.md con criterio practico.",
+        "Al final debes poder quedarte con una regla de uso y un ejemplo repetible.",
+        "La ruta sera: concepto, ejemplo y cierre.",
+        "Durante el video mira esta decision:",
+        "cuando aplicar esta tecnica en tu propio repositorio."
+      ],
+      "blueprintAction": {
+        "learningRubric": {
+          "learns": "Ubica coste, permiso y criterio antes de aceptar la salida.",
+          "does": "Registra el criterio que permitiria repetir el paso sin instructor.",
+          "decides": "Seguir, pedir mas contexto, escalar modelo o bloquear.",
+          "vendor": "codex",
+          "usefulnessScore": 82,
+          "memoryCheck": "Puede explicar el paso en una frase de menos de 20 segundos.",
+          "productionPass": "2000-final-direction"
+        }
+      },
+      "production": {
+        "audioVersion": "audio-prod-v2-2026-05-18",
+        "voiceProfileId": "codexNarrator",
+        "voice": "es-ES-AlvaroNeural",
+        "rate": "+8%",
+        "pitch": "+0Hz",
+        "energy": "precisa",
+        "emphasis": "plan, patch, test y coste",
+        "pauseMs": 180,
+        "role": "narrator",
+        "reviewRubric": {
+          "learns": "Ubica coste, permiso y criterio antes de aceptar la salida.",
+          "does": "Registra el criterio que permitiria repetir el paso sin instructor.",
+          "decides": "Seguir, pedir mas contexto, escalar modelo o bloquear.",
+          "memoryCheck": "Puede explicar el paso en una frase de menos de 20 segundos."
+        },
+        "prosodyNotes": {
+          "pace": "+8%",
+          "pause": "180ms antes de la decision",
+          "emphasis": "plan, patch, test y coste",
+          "energy": "precisa"
+        },
+        "pronunciationPass": "spain-voice-units-v1"
+      }
     },
     {
       "id": "concept",
       "name": "Reglas utiles",
-      "startMs": 8000,
-      "endMs": 42000,
+      "startMs": 22500,
+      "endMs": 45000,
       "type": "concept",
       "content": {
         "tag": "Memoria de equipo",
         "title": "No escribas una constitucion. Escribe ayudas de trabajo.",
-        "body": "Un AGENTS.md bueno no intenta controlarlo todo. Describe como se instala, como se prueba, que convenciones importan y que limites no se deben cruzar.\n\nDebe ser suficientemente corto para que alguien lo mantenga.",
+        "body": "Un AGENTS.md bueno no intenta controlarlo todo. Describe como se instala, como se prueba, que convenciones importan y que limites no se deben cruzar. Debe ser suficientemente corto para que alguien lo mantenga.",
         "highlight": "Si una regla no cambia una decision de Codex, sobra.",
         "points": [
           "Comandos exactos: install, lint, test, build.",
@@ -49,51 +137,237 @@
         ]
       },
       "subtitles": [
-        { "text": "Un AGENTS.md bueno ayuda a decidir.", "startMs": 9000, "endMs": 15000 },
-        { "text": "No es decoracion de onboarding.", "startMs": 15500, "endMs": 22000 },
-        { "text": "Cada linea debe evitar una mala decision futura.", "startMs": 22500, "endMs": 40500 }
-      ]
+        {
+          "text": "Un AGENTS.md bueno ayuda a decidir.",
+          "startMs": 22950,
+          "endMs": 26234
+        },
+        {
+          "text": "No es decoracion de onboarding.",
+          "startMs": 26414,
+          "endMs": 29098
+        },
+        {
+          "text": "Cada linea debe evitar una mala decision futura.",
+          "startMs": 29278,
+          "endMs": 32850
+        }
+      ],
+      "voiceover": [
+        "Un AGENTS.md bueno ayuda a decidir.",
+        "No es decoracion de onboarding.",
+        "Cada linea debe evitar una mala decision futura."
+      ],
+      "blueprintAction": {
+        "learningRubric": {
+          "learns": "Reconoce por que \"No escribas una constitucion. Escribe ayudas de trabajo.\" necesita evidencia y no solo respuesta.",
+          "does": "Formula una peticion verificable con limite de alcance.",
+          "decides": "Convertir la duda en material de tutoria si se repite.",
+          "vendor": "codex",
+          "usefulnessScore": 84,
+          "memoryCheck": "Puede nombrar el riesgo principal sin mirar la slide.",
+          "productionPass": "2000-final-direction"
+        }
+      },
+      "production": {
+        "audioVersion": "audio-prod-v2-2026-05-18",
+        "voiceProfileId": "codexNarrator",
+        "voice": "es-ES-AlvaroNeural",
+        "rate": "+8%",
+        "pitch": "+0Hz",
+        "energy": "precisa",
+        "emphasis": "plan, patch, test y coste",
+        "pauseMs": 180,
+        "role": "narrator",
+        "reviewRubric": {
+          "learns": "Reconoce por que \"No escribas una constitucion. Escribe ayudas de trabajo.\" necesita evidencia y no solo respuesta.",
+          "does": "Formula una peticion verificable con limite de alcance.",
+          "decides": "Convertir la duda en material de tutoria si se repite.",
+          "memoryCheck": "Puede nombrar el riesgo principal sin mirar la slide."
+        },
+        "prosodyNotes": {
+          "pace": "+8%",
+          "pause": "180ms antes de la decision",
+          "emphasis": "plan, patch, test y coste",
+          "energy": "precisa"
+        },
+        "pronunciationPass": "spain-voice-units-v1"
+      }
     },
     {
       "id": "coding",
       "name": "Ejemplo",
-      "startMs": 42000,
-      "endMs": 70000,
+      "startMs": 45000,
+      "endMs": 67500,
       "type": "coding",
       "content": {
         "tag": "Plantilla base",
         "filename": "AGENTS.md",
-        "code": "# Instrucciones para Codex\\n\\n## Comandos\\n- Instalar: pnpm install\\n- Lint: pnpm lint\\n- Build: pnpm build\\n- Tests: pnpm test\\n\\n## Flujo\\n1. Lee antes de editar.\\n2. Propón plan si el cambio toca varias zonas.\\n3. Mantén el diff pequeno.\\n4. Verifica o explica bloqueo.\\n\\n## Limites\\n- No tocar secretos ni .env reales.\\n- No reescribir modulos completos sin pedirlo.\\n- No revertir cambios de otras personas.",
+        "code": "# Instrucciones para Codex\\n\\n## Comandos\\n- Instalar: pnpm install\\n- Lint: pnpm lint\\n- Build: pnpm build\\n- Tests: pnpm test\\n\\n## Flujo\\n1. Lee antes de editar.\\n2. Propón plan si el cambio toca varias zonas.\\n3. Mantén el diff pequeno.\\n4. Verifica o explica bloqueo.\\n\\n## Limites\\n- No tocar secretos ni.env reales.\\n- No reescribir modulos completos sin pedirlo.\\n- No revertir cambios de otras personas. # Cierre operativo done_when: evidencia + coste + owner stop_rule: parar si no hay senal nueva",
         "commentary": [
-          { "atLine": 3, "text": "Comandos reales" },
-          { "atLine": 9, "text": "Protocolo de trabajo" },
-          { "atLine": 15, "text": "Guardas de seguridad" }
+          {
+            "atLine": 3,
+            "text": "Comandos reales"
+          },
+          {
+            "atLine": 9,
+            "text": "Protocolo de trabajo"
+          },
+          {
+            "atLine": 15,
+            "text": "Guardas de seguridad"
+          }
         ]
       },
       "subtitles": [
-        { "text": "Observa que el archivo es corto.", "startMs": 43000, "endMs": 48000 },
-        { "text": "Tiene comandos, flujo y limites.", "startMs": 48500, "endMs": 57000 },
-        { "text": "Suficiente para mejorar muchas sesiones.", "startMs": 57500, "endMs": 69000 }
-      ]
+        {
+          "text": "Observa que el archivo es corto.",
+          "startMs": 45450,
+          "endMs": 48374
+        },
+        {
+          "text": "Tiene comandos, flujo y limites.",
+          "startMs": 48554,
+          "endMs": 51742
+        },
+        {
+          "text": "Suficiente para mejorar muchas sesiones.",
+          "startMs": 51922,
+          "endMs": 55302
+        }
+      ],
+      "voiceover": [
+        "Observa que el archivo es corto.",
+        "Tiene comandos, flujo y limites.",
+        "Suficiente para mejorar muchas sesiones."
+      ],
+      "blueprintAction": {
+        "learningRubric": {
+          "learns": "Distingue decision humana de ejecucion automatizada en Codex.",
+          "does": "Comprueba la salida contra prueba, owner o captura.",
+          "decides": "Aceptar solo si la evidencia queda visible para otra persona.",
+          "vendor": "codex",
+          "usefulnessScore": 86,
+          "memoryCheck": "Puede repetir el prompt inicial con criterio de cierre.",
+          "productionPass": "2000-final-direction"
+        }
+      },
+      "production": {
+        "audioVersion": "audio-prod-v2-2026-05-18",
+        "voiceProfileId": "codexNarrator",
+        "voice": "es-ES-AlvaroNeural",
+        "rate": "+8%",
+        "pitch": "+0Hz",
+        "energy": "precisa",
+        "emphasis": "plan, patch, test y coste",
+        "pauseMs": 180,
+        "role": "narrator",
+        "reviewRubric": {
+          "learns": "Distingue decision humana de ejecucion automatizada en Codex.",
+          "does": "Comprueba la salida contra prueba, owner o captura.",
+          "decides": "Aceptar solo si la evidencia queda visible para otra persona.",
+          "memoryCheck": "Puede repetir el prompt inicial con criterio de cierre."
+        },
+        "prosodyNotes": {
+          "pace": "+8%",
+          "pause": "180ms antes de la decision",
+          "emphasis": "plan, patch, test y coste",
+          "energy": "precisa"
+        },
+        "pronunciationPass": "spain-voice-units-v1"
+      }
     },
     {
       "id": "finale",
       "name": "Cierre",
-      "startMs": 70000,
+      "startMs": 67500,
       "endMs": 90000,
       "type": "finale",
       "content": {
         "title": "AGENTS.md en practica",
         "summary": [
-          { "number": "01", "label": "Corto", "body": "Se mantiene porque no pesa." },
-          { "number": "02", "label": "Local", "body": "Habla del repo real." },
-          { "number": "03", "label": "Accionable", "body": "Cambia decisiones de Codex." }
+          {
+            "number": "01",
+            "label": "Corto",
+            "body": "Se mantiene porque no pesa."
+          },
+          {
+            "number": "02",
+            "label": "Local",
+            "body": "Habla del repo real."
+          },
+          {
+            "number": "03",
+            "label": "Accionable",
+            "body": "Cambia decisiones de Codex."
+          }
         ],
         "cta": "Ejercicio asociado: cx-b03-agents-md."
       },
       "subtitles": [
-        { "text": "El AGENTS.md es pequeno, local y accionable.", "startMs": 70500, "endMs": 89500 }
-      ]
+        {
+          "text": "El AGENTS.md es pequeno, local y accionable.",
+          "startMs": 67950,
+          "endMs": 72194
+        },
+        {
+          "text": "Evidencia minuto 1: el artefacto muestra que se controlo permiso, alcance y modelo.",
+          "startMs": 72374,
+          "endMs": 78442
+        },
+        {
+          "text": "Accion minuto 1: convertir repo en una decision que se pueda ensenar en tutoria.",
+          "startMs": 78622,
+          "endMs": 84186
+        }
+      ],
+      "voiceover": [
+        "El AGENTS.md es pequeno, local y accionable.",
+        "Evidencia minuto 1: el artefacto muestra que se controlo permiso, alcance y modelo.",
+        "Accion minuto 1: convertir repo en una decision que se pueda ensenar en tutoria."
+      ],
+      "blueprintAction": {
+        "learningRubric": {
+          "learns": "Ubica coste, permiso y criterio antes de aceptar la salida.",
+          "does": "Registra el criterio que permitiria repetir el paso sin instructor.",
+          "decides": "Seguir, pedir mas contexto, escalar modelo o bloquear.",
+          "vendor": "codex",
+          "usefulnessScore": 88,
+          "memoryCheck": "Puede explicar el paso en una frase de menos de 20 segundos.",
+          "productionPass": "2000-final-direction"
+        }
+      },
+      "production": {
+        "audioVersion": "audio-prod-v2-2026-05-18",
+        "voiceProfileId": "codexReflection",
+        "voice": "es-ES-AlvaroNeural",
+        "rate": "+3%",
+        "pitch": "+0Hz",
+        "energy": "reflexiva",
+        "emphasis": "riesgo, permiso y evidencia",
+        "pauseMs": 260,
+        "role": "reflection",
+        "reviewRubric": {
+          "learns": "Ubica coste, permiso y criterio antes de aceptar la salida.",
+          "does": "Registra el criterio que permitiria repetir el paso sin instructor.",
+          "decides": "Seguir, pedir mas contexto, escalar modelo o bloquear.",
+          "memoryCheck": "Puede explicar el paso en una frase de menos de 20 segundos."
+        },
+        "prosodyNotes": {
+          "pace": "+3%",
+          "pause": "260ms antes de la decision",
+          "emphasis": "riesgo, permiso y evidencia",
+          "energy": "reflexiva"
+        },
+        "pronunciationPass": "spain-voice-units-v1"
+      }
     }
-  ]
+  ],
+  "production": {
+    "audioProductionVersion": "audio-prod-v2-2026-05-18",
+    "productionPass": "2000-final-direction",
+    "vendor": "codex",
+    "narrativePass": "teacher-contract-v1",
+    "pronunciationPass": "spain-voice-units-v1"
+  }
 }

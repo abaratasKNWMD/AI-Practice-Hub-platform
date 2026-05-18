@@ -92,13 +92,13 @@ const TOKEN_COLORS: Record<TokenType, string> = {
 function CodeLine({ line, lineNumber }: { line: string; lineNumber: number }) {
   const tokens = tokenizeLine(line)
   return (
-    <div className="flex group">
+    <div className="flex group min-w-0">
       <span className="select-none text-zinc-600 text-right pr-4 shrink-0 w-10 leading-relaxed group-hover:text-zinc-400 transition-colors">
         {lineNumber}
       </span>
-      <span className="leading-relaxed whitespace-pre">
+      <span className="min-w-0 flex-1 leading-relaxed whitespace-pre-wrap break-words">
         {tokens.map((token, i) => (
-          <span key={i} className={TOKEN_COLORS[token.type]}>
+          <span key={i} className={`${TOKEN_COLORS[token.type]} break-words`}>
             {token.text}
           </span>
         ))}
@@ -172,7 +172,7 @@ export function CodingScene({ content, progress }: CodingSceneProps) {
           {/* Code area — scrollable, follows typing */}
           <div
             ref={scrollRef}
-            className="flex-1 overflow-y-auto overflow-x-auto p-4 font-mono text-[13px] scrollbar-thin scrollbar-thumb-zinc-700 scrollbar-track-transparent"
+            className="flex-1 min-w-0 overflow-y-auto overflow-x-hidden p-4 font-mono text-[13px] scrollbar-thin scrollbar-thumb-zinc-700 scrollbar-track-transparent"
           >
             {visibleLines.map((line, i) => (
               <CodeLine key={i} line={line} lineNumber={i + 1} />

@@ -1,0 +1,56 @@
+WEBVTT
+
+NOTE cl-operator-02-subagent-explorer - Claude Operator 02 - Subagent Explorer
+
+1
+00:00:00.450 --> 00:00:03.038
+Objetivo de esta clase:
+
+2
+00:00:03.218 --> 00:00:08.662
+resolver Claude Operator 02 - Subagent Explorer con criterio practico.
+
+3
+00:00:08.842 --> 00:00:13.758
+Al final debes poder quedarte con una regla de uso y un ejemplo repetible.
+
+4
+00:00:13.938 --> 00:00:17.966
+La ruta sera: concepto, ejemplo y cierre.
+
+5
+00:00:18.146 --> 00:00:21.166
+Durante el video mira esta decision:
+
+6
+00:00:21.346 --> 00:00:25.086
+cuando aplicar esta tecnica en tu propio repositorio.
+
+7
+00:00:30.450 --> 00:00:33.422
+Separar roles reduce ruido.
+
+8
+00:00:33.602 --> 00:00:36.910
+Explorer puede ser barato y read-only.
+
+9
+00:00:37.090 --> 00:00:40.974
+calidad y seguridad entran cuando el riesgo lo merece.
+
+10
+00:01:00.450 --> 00:01:05.894
+El equipo no necesita mas caos. Necesita roles claros.
+
+11
+00:01:06.074 --> 00:01:12.358
+Evidencia minuto 1: "Roles minimos" no se cierra sin test, captura o criterio escrito.
+
+12
+00:01:12.538 --> 00:01:18.822
+Accion minuto 1: pedir salida pequena verificable y con owner. (Claude
+
+13
+00:01:19.002 --> 00:01:21.566
+minuto 1 paso 3)
+

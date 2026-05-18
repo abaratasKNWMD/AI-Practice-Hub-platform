@@ -1,0 +1,60 @@
+1
+00:00:00,450 --> 00:00:06,686
+Objetivo de esta clase: resolver Codex Medium 01 - Model Picker con criterio practico.
+
+2
+00:00:06,731 --> 00:00:11,527
+Al final debes poder quedarte con una regla de uso y un ejemplo repetible.
+
+3
+00:00:11,572 --> 00:00:15,480
+La ruta sera: concepto, ejemplo y cierre.
+
+4
+00:00:15,525 --> 00:00:18,473
+Durante el video mira esta decision:
+
+5
+00:00:18,518 --> 00:00:22,162
+cuando aplicar esta tecnica en tu propio repositorio.
+
+6
+00:00:22,950 --> 00:00:26,402
+El modelo grande brilla en problemas grandes.
+
+7
+00:00:26,582 --> 00:00:30,106
+Pero muchas tareas son pequenas y verificables.
+
+8
+00:00:30,286 --> 00:00:33,450
+La politica debe ensenar cuando escalar.
+
+9
+00:00:45,450 --> 00:00:49,718
+Tres variables mandan: ambiguedad, impacto y contexto.
+
+10
+00:00:49,898 --> 00:00:52,798
+Si suben, sube el modelo.
+
+11
+00:00:52,978 --> 00:00:56,070
+Si bajan, cuida el presupuesto.
+
+12
+00:01:07,950 --> 00:01:11,114
+La meta no es gastar menos siempre.
+
+13
+00:01:11,294 --> 00:01:13,594
+Es gastar mejor.
+
+14
+00:01:13,774 --> 00:01:19,746
+Evidencia minuto 1: "Politica de modelos" queda ligado a prueba, owner y decision.
+
+15
+00:01:19,926 --> 00:01:25,154
+Accion minuto 1: nombrar modelo, permiso y limite antes de iterar.
+

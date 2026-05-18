@@ -1,0 +1,681 @@
+{
+  "audioVersion": "audio-prod-v2-2026-05-18",
+  "generatedAt": "2026-05-18T16:49:01.681Z",
+  "courseCount": 44,
+  "entryCount": 7017,
+  "generated": 0,
+  "reused": 11,
+  "voices": [
+    "es-ES-AlvaroNeural"
+  ],
+  "voiceProfiles": [
+    {
+      "id": "codexNarrator",
+      "vendor": "codex",
+      "label": "Codex tecnico",
+      "voice": "es-ES-AlvaroNeural",
+      "rate": "+8%",
+      "pitch": "+0Hz",
+      "energy": "precisa",
+      "emphasis": "plan, patch, test y coste",
+      "pauseMs": 180
+    },
+    {
+      "id": "codexReflection",
+      "vendor": "codex",
+      "label": "Codex pausa de criterio",
+      "voice": "es-ES-AlvaroNeural",
+      "rate": "+3%",
+      "pitch": "+0Hz",
+      "energy": "reflexiva",
+      "emphasis": "riesgo, permiso y evidencia",
+      "pauseMs": 260
+    },
+    {
+      "id": "copilotNarrator",
+      "vendor": "copilot",
+      "label": "Copilot workstation",
+      "voice": "es-ES-AlvaroNeural",
+      "rate": "+7%",
+      "pitch": "+0Hz",
+      "energy": "practica",
+      "emphasis": "modo, contexto y PR",
+      "pauseMs": 180
+    },
+    {
+      "id": "copilotReview",
+      "vendor": "copilot",
+      "label": "Copilot revision",
+      "voice": "es-ES-AlvaroNeural",
+      "rate": "+4%",
+      "pitch": "+0Hz",
+      "energy": "critica",
+      "emphasis": "finding, severidad y prueba",
+      "pauseMs": 240
+    },
+    {
+      "id": "claudeNarrator",
+      "vendor": "claude",
+      "label": "Claude arquitectura",
+      "voice": "es-ES-AlvaroNeural",
+      "rate": "+5%",
+      "pitch": "+0Hz",
+      "energy": "calmada",
+      "emphasis": "memoria, skill, hook y MCP",
+      "pauseMs": 220
+    },
+    {
+      "id": "claudeSafety",
+      "vendor": "claude",
+      "label": "Claude guardrail",
+      "voice": "es-ES-AlvaroNeural",
+      "rate": "+2%",
+      "pitch": "+0Hz",
+      "energy": "deliberada",
+      "emphasis": "permiso, bloqueo y rollback",
+      "pauseMs": 300
+    },
+    {
+      "id": "hubNarrator",
+      "vendor": "hub",
+      "label": "Hub estrategia",
+      "voice": "es-ES-AlvaroNeural",
+      "rate": "+6%",
+      "pitch": "+0Hz",
+      "energy": "ejecutiva",
+      "emphasis": "ruta, metrica y tutoria",
+      "pauseMs": 200
+    },
+    {
+      "id": "hubInstructor",
+      "vendor": "hub",
+      "label": "Hub instructor",
+      "voice": "es-ES-AlvaroNeural",
+      "rate": "+3%",
+      "pitch": "+0Hz",
+      "energy": "cercana",
+      "emphasis": "pregunta, decision y siguiente paso",
+      "pauseMs": 280
+    }
+  ],
+  "cachePolicy": {
+    "publicPath": "/audio/courses/{courseId}/{scene}-{subtitle}.mp3",
+    "immutable": true,
+    "manifestControlsVersion": true,
+    "regenerationTrigger": "text, voice, rate, pitch or audioProductionVersion changes"
+  },
+  "courses": [
+    {
+      "id": "cl-advanced-01-hooks",
+      "manifestUrl": "/audio/courses/cl-advanced-01-hooks/manifest.json",
+      "manifestSha256": "ce6ae469ec18ef004b1175caf573345d69da3f317288f55b6a41de5194124f85",
+      "entries": 11,
+      "voiceCount": 1,
+      "voiceProfileCount": 2,
+      "totalAudioMs": 46920,
+      "voices": [
+        "es-ES-AlvaroNeural"
+      ],
+      "audioVersion": "audio-prod-v2-2026-05-18"
+    },
+    {
+      "id": "cl-advanced-02-plugin-action",
+      "manifestUrl": "/audio/courses/cl-advanced-02-plugin-action/manifest.json",
+      "manifestSha256": "81bbf9ce3d3a2b7d04c04bdf6949c0f521b0a8864552be9c22934dca1b808f3f",
+      "entries": 14,
+      "voiceCount": 1,
+      "voiceProfileCount": 2,
+      "totalAudioMs": 50016,
+      "voices": [
+        "es-ES-AlvaroNeural"
+      ],
+      "audioVersion": "audio-prod-v2-2026-05-18"
+    },
+    {
+      "id": "cl-basic-01-claude-md",
+      "manifestUrl": "/audio/courses/cl-basic-01-claude-md/manifest.json",
+      "manifestSha256": "412dbed674b308eee2138561285659939a873f0f10b44ca0e0badd21e1a11318",
+      "entries": 16,
+      "voiceCount": 1,
+      "voiceProfileCount": 2,
+      "totalAudioMs": 67632,
+      "voices": [
+        "es-ES-AlvaroNeural"
+      ],
+      "audioVersion": "audio-prod-v2-2026-05-18"
+    },
+    {
+      "id": "cl-basic-02-compact-context",
+      "manifestUrl": "/audio/courses/cl-basic-02-compact-context/manifest.json",
+      "manifestSha256": "1ec9a8d557470ff43173a713107d3aea49003569028056601ec8de80124834f5",
+      "entries": 15,
+      "voiceCount": 1,
+      "voiceProfileCount": 2,
+      "totalAudioMs": 55800,
+      "voices": [
+        "es-ES-AlvaroNeural"
+      ],
+      "audioVersion": "audio-prod-v2-2026-05-18"
+    },
+    {
+      "id": "cl-masterclass-10m-claude-operating-model",
+      "manifestUrl": "/audio/courses/cl-masterclass-10m-claude-operating-model/manifest.json",
+      "manifestSha256": "b9cdc7b6492ef27ada3f925c445745c40897f6a4b30d43ff6bc62d1b19e07129",
+      "entries": 133,
+      "voiceCount": 1,
+      "voiceProfileCount": 2,
+      "totalAudioMs": 607872,
+      "voices": [
+        "es-ES-AlvaroNeural"
+      ],
+      "audioVersion": "audio-prod-v2-2026-05-18"
+    },
+    {
+      "id": "cl-operator-01-first-skill",
+      "manifestUrl": "/audio/courses/cl-operator-01-first-skill/manifest.json",
+      "manifestSha256": "031f2ca712db2b5782f5f09fea5ad4b4a0b6b1c659c5ed740d48c1542dcc3fbd",
+      "entries": 11,
+      "voiceCount": 1,
+      "voiceProfileCount": 2,
+      "totalAudioMs": 45888,
+      "voices": [
+        "es-ES-AlvaroNeural"
+      ],
+      "audioVersion": "audio-prod-v2-2026-05-18"
+    },
+    {
+      "id": "cl-operator-02-subagent-explorer",
+      "manifestUrl": "/audio/courses/cl-operator-02-subagent-explorer/manifest.json",
+      "manifestSha256": "7d4e8d0b318fecc8c60ae23ee5bab41017fdea93a8d50c0ed447e0cce5da0bb8",
+      "entries": 13,
+      "voiceCount": 1,
+      "voiceProfileCount": 2,
+      "totalAudioMs": 51096,
+      "voices": [
+        "es-ES-AlvaroNeural"
+      ],
+      "audioVersion": "audio-prod-v2-2026-05-18"
+    },
+    {
+      "id": "cl-operator-03-mcp-project",
+      "manifestUrl": "/audio/courses/cl-operator-03-mcp-project/manifest.json",
+      "manifestSha256": "0550dc031acfe01ffe0739a937803f56d811238feb0bd644b2b3e165ac5461c0",
+      "entries": 17,
+      "voiceCount": 1,
+      "voiceProfileCount": 2,
+      "totalAudioMs": 68568,
+      "voices": [
+        "es-ES-AlvaroNeural"
+      ],
+      "audioVersion": "audio-prod-v2-2026-05-18"
+    },
+    {
+      "id": "cl-orientation-01-claude-md",
+      "manifestUrl": "/audio/courses/cl-orientation-01-claude-md/manifest.json",
+      "manifestSha256": "03456e914a063c53ba8de5f986e91744015d4c61a911c4dfe917a7f04a1b9e90",
+      "entries": 15,
+      "voiceCount": 1,
+      "voiceProfileCount": 2,
+      "totalAudioMs": 56976,
+      "voices": [
+        "es-ES-AlvaroNeural"
+      ],
+      "audioVersion": "audio-prod-v2-2026-05-18"
+    },
+    {
+      "id": "cl-orientation-02-memory-vs-instructions",
+      "manifestUrl": "/audio/courses/cl-orientation-02-memory-vs-instructions/manifest.json",
+      "manifestSha256": "2bf874a0f84dfdcde53133cd3f78f3e4284f75ede58e2cf2829fb08b795ccf6a",
+      "entries": 12,
+      "voiceCount": 1,
+      "voiceProfileCount": 2,
+      "totalAudioMs": 49128,
+      "voices": [
+        "es-ES-AlvaroNeural"
+      ],
+      "audioVersion": "audio-prod-v2-2026-05-18"
+    },
+    {
+      "id": "cl-orientation-03-cost-context",
+      "manifestUrl": "/audio/courses/cl-orientation-03-cost-context/manifest.json",
+      "manifestSha256": "44b6f4e8c3e8232f358fb5e5778127582d877759573a8ebb5165b51065454b6b",
+      "entries": 12,
+      "voiceCount": 1,
+      "voiceProfileCount": 2,
+      "totalAudioMs": 47136,
+      "voices": [
+        "es-ES-AlvaroNeural"
+      ],
+      "audioVersion": "audio-prod-v2-2026-05-18"
+    },
+    {
+      "id": "cl-sdk-01-agent-sdk",
+      "manifestUrl": "/audio/courses/cl-sdk-01-agent-sdk/manifest.json",
+      "manifestSha256": "a360c1e1e881d9b6dc119f3188f389f2f182c348c0cd476f13253e62305802e9",
+      "entries": 12,
+      "voiceCount": 1,
+      "voiceProfileCount": 2,
+      "totalAudioMs": 51216,
+      "voices": [
+        "es-ES-AlvaroNeural"
+      ],
+      "audioVersion": "audio-prod-v2-2026-05-18"
+    },
+    {
+      "id": "cl-sdk-02-evals-governance",
+      "manifestUrl": "/audio/courses/cl-sdk-02-evals-governance/manifest.json",
+      "manifestSha256": "493d8217fdde9ca9b16b4df197a22810b7005d3769965a45484f3d544d0b779d",
+      "entries": 17,
+      "voiceCount": 1,
+      "voiceProfileCount": 2,
+      "totalAudioMs": 71184,
+      "voices": [
+        "es-ES-AlvaroNeural"
+      ],
+      "audioVersion": "audio-prod-v2-2026-05-18"
+    },
+    {
+      "id": "cl-workshop-30m-memory-to-hook",
+      "manifestUrl": "/audio/courses/cl-workshop-30m-memory-to-hook/manifest.json",
+      "manifestSha256": "a92fcb167bf7b1ae898ded345f3939cf277ce7c93ffbdd6cd37fbe9346c444a0",
+      "entries": 389,
+      "voiceCount": 1,
+      "voiceProfileCount": 2,
+      "totalAudioMs": 1749600,
+      "voices": [
+        "es-ES-AlvaroNeural"
+      ],
+      "audioVersion": "audio-prod-v2-2026-05-18"
+    },
+    {
+      "id": "cl-workshop-60m-memory-to-automation",
+      "manifestUrl": "/audio/courses/cl-workshop-60m-memory-to-automation/manifest.json",
+      "manifestSha256": "e7026fd35d10b642c00f80226d564e0c467e4944ccf3026684a6808137a316b9",
+      "entries": 1052,
+      "voiceCount": 1,
+      "voiceProfileCount": 2,
+      "totalAudioMs": 4589112,
+      "voices": [
+        "es-ES-AlvaroNeural"
+      ],
+      "audioVersion": "audio-prod-v2-2026-05-18"
+    },
+    {
+      "id": "cp-advanced-01-custom-agent",
+      "manifestUrl": "/audio/courses/cp-advanced-01-custom-agent/manifest.json",
+      "manifestSha256": "fdadc90591f4a0818087d36294eae006445a45f2a95e774ffdf59aa40b28cc5c",
+      "entries": 20,
+      "voiceCount": 1,
+      "voiceProfileCount": 2,
+      "totalAudioMs": 80304,
+      "voices": [
+        "es-ES-AlvaroNeural"
+      ],
+      "audioVersion": "audio-prod-v2-2026-05-18"
+    },
+    {
+      "id": "cp-advanced-02-mcp-code-review",
+      "manifestUrl": "/audio/courses/cp-advanced-02-mcp-code-review/manifest.json",
+      "manifestSha256": "385f196b872da320206b07fc1e5b1e6b4d01e610d00b2af994a7e60f3410ac06",
+      "entries": 14,
+      "voiceCount": 1,
+      "voiceProfileCount": 2,
+      "totalAudioMs": 55584,
+      "voices": [
+        "es-ES-AlvaroNeural"
+      ],
+      "audioVersion": "audio-prod-v2-2026-05-18"
+    },
+    {
+      "id": "cp-basic-01-inline-completion",
+      "manifestUrl": "/audio/courses/cp-basic-01-inline-completion/manifest.json",
+      "manifestSha256": "7aea6c53bae439fa287f10ff70c6104015d3c4448c4c0968d81bf0f22351ff4c",
+      "entries": 18,
+      "voiceCount": 1,
+      "voiceProfileCount": 2,
+      "totalAudioMs": 69480,
+      "voices": [
+        "es-ES-AlvaroNeural"
+      ],
+      "audioVersion": "audio-prod-v2-2026-05-18"
+    },
+    {
+      "id": "cp-basic-02-ask-edit-agent",
+      "manifestUrl": "/audio/courses/cp-basic-02-ask-edit-agent/manifest.json",
+      "manifestSha256": "9e9b4cdec56f98d6ec1c5af935b0d2e0d446bf7dea7a59f0670ef2adb2ada4d7",
+      "entries": 15,
+      "voiceCount": 1,
+      "voiceProfileCount": 2,
+      "totalAudioMs": 54120,
+      "voices": [
+        "es-ES-AlvaroNeural"
+      ],
+      "audioVersion": "audio-prod-v2-2026-05-18"
+    },
+    {
+      "id": "cp-basic-03-error-to-fix",
+      "manifestUrl": "/audio/courses/cp-basic-03-error-to-fix/manifest.json",
+      "manifestSha256": "9f520fd5dcc577bee08bff1bfe8e2812459025eedd13ec1bcddf4fec49b9561e",
+      "entries": 11,
+      "voiceCount": 1,
+      "voiceProfileCount": 2,
+      "totalAudioMs": 47616,
+      "voices": [
+        "es-ES-AlvaroNeural"
+      ],
+      "audioVersion": "audio-prod-v2-2026-05-18"
+    },
+    {
+      "id": "cp-cloud-01-cloud-agent-pr",
+      "manifestUrl": "/audio/courses/cp-cloud-01-cloud-agent-pr/manifest.json",
+      "manifestSha256": "eb1d6754a3dae1f1e8ee1a008c1aa35842974016aa89659a0ca0bf4c058a76d8",
+      "entries": 12,
+      "voiceCount": 1,
+      "voiceProfileCount": 2,
+      "totalAudioMs": 47088,
+      "voices": [
+        "es-ES-AlvaroNeural"
+      ],
+      "audioVersion": "audio-prod-v2-2026-05-18"
+    },
+    {
+      "id": "cp-cloud-02-premium-requests",
+      "manifestUrl": "/audio/courses/cp-cloud-02-premium-requests/manifest.json",
+      "manifestSha256": "c8f21d5cd8ff4192070f968bb632cf57b1eeedc469260a38afae33993802f5b6",
+      "entries": 13,
+      "voiceCount": 1,
+      "voiceProfileCount": 2,
+      "totalAudioMs": 51384,
+      "voices": [
+        "es-ES-AlvaroNeural"
+      ],
+      "audioVersion": "audio-prod-v2-2026-05-18"
+    },
+    {
+      "id": "cp-git-01-fork-vs-branch",
+      "manifestUrl": "/audio/courses/cp-git-01-fork-vs-branch/manifest.json",
+      "manifestSha256": "3df4e006f41ff435c2ab3ad61a1b23f18de1a628a051bdfc8b8494bdf702956a",
+      "entries": 17,
+      "voiceCount": 1,
+      "voiceProfileCount": 2,
+      "totalAudioMs": 69888,
+      "voices": [
+        "es-ES-AlvaroNeural"
+      ],
+      "audioVersion": "audio-prod-v2-2026-05-18"
+    },
+    {
+      "id": "cp-git-02-pr-as-contract",
+      "manifestUrl": "/audio/courses/cp-git-02-pr-as-contract/manifest.json",
+      "manifestSha256": "fd1df77391c234ff5f961c5512c8d867c4a484060c9dc689792013abfd4ff368",
+      "entries": 15,
+      "voiceCount": 1,
+      "voiceProfileCount": 2,
+      "totalAudioMs": 59040,
+      "voices": [
+        "es-ES-AlvaroNeural"
+      ],
+      "audioVersion": "audio-prod-v2-2026-05-18"
+    },
+    {
+      "id": "cp-masterclass-10m-copilot-workbench",
+      "manifestUrl": "/audio/courses/cp-masterclass-10m-copilot-workbench/manifest.json",
+      "manifestSha256": "8c834d12d43d5c3555a9c0ebcff9627e2c52f1b61b4f5f01bc55e1b183b06792",
+      "entries": 143,
+      "voiceCount": 1,
+      "voiceProfileCount": 2,
+      "totalAudioMs": 610104,
+      "voices": [
+        "es-ES-AlvaroNeural"
+      ],
+      "audioVersion": "audio-prod-v2-2026-05-18"
+    },
+    {
+      "id": "cp-medium-01-instructions",
+      "manifestUrl": "/audio/courses/cp-medium-01-instructions/manifest.json",
+      "manifestSha256": "f411c1bf55e84bebbbd80dd31978b632e12c7841d34a30aa0134291c07f0f310",
+      "entries": 11,
+      "voiceCount": 1,
+      "voiceProfileCount": 2,
+      "totalAudioMs": 45744,
+      "voices": [
+        "es-ES-AlvaroNeural"
+      ],
+      "audioVersion": "audio-prod-v2-2026-05-18"
+    },
+    {
+      "id": "cp-medium-02-prompt-files",
+      "manifestUrl": "/audio/courses/cp-medium-02-prompt-files/manifest.json",
+      "manifestSha256": "6ee921ca7aa92eff68f366f1398e3a34b535f83cda2638eb87cc94b116aa87c7",
+      "entries": 13,
+      "voiceCount": 1,
+      "voiceProfileCount": 2,
+      "totalAudioMs": 50760,
+      "voices": [
+        "es-ES-AlvaroNeural"
+      ],
+      "audioVersion": "audio-prod-v2-2026-05-18"
+    },
+    {
+      "id": "cp-workshop-30m-error-to-pr",
+      "manifestUrl": "/audio/courses/cp-workshop-30m-error-to-pr/manifest.json",
+      "manifestSha256": "7ab392815ee7daeb8c6bb3e61d3b9e5841e3a5f01d578d7b405c271a37f3daf1",
+      "entries": 391,
+      "voiceCount": 1,
+      "voiceProfileCount": 2,
+      "totalAudioMs": 1673352,
+      "voices": [
+        "es-ES-AlvaroNeural"
+      ],
+      "audioVersion": "audio-prod-v2-2026-05-18"
+    },
+    {
+      "id": "cp-workshop-60m-vscode-to-pr-review",
+      "manifestUrl": "/audio/courses/cp-workshop-60m-vscode-to-pr-review/manifest.json",
+      "manifestSha256": "b79869bc49209af2d7aadfc6caa350623f56ddf06f6d8d74a9a6da34bb581f1e",
+      "entries": 1168,
+      "voiceCount": 1,
+      "voiceProfileCount": 2,
+      "totalAudioMs": 4757424,
+      "voices": [
+        "es-ES-AlvaroNeural"
+      ],
+      "audioVersion": "audio-prod-v2-2026-05-18"
+    },
+    {
+      "id": "cx-basic-01-agents-md",
+      "manifestUrl": "/audio/courses/cx-basic-01-agents-md/manifest.json",
+      "manifestSha256": "f22b103751cb4c51e31dccc4a144e25bd46275d6172b6d18f6e8412299719369",
+      "entries": 14,
+      "voiceCount": 1,
+      "voiceProfileCount": 2,
+      "totalAudioMs": 53232,
+      "voices": [
+        "es-ES-AlvaroNeural"
+      ],
+      "audioVersion": "audio-prod-v2-2026-05-18"
+    },
+    {
+      "id": "cx-basic-02-plan-before-patch",
+      "manifestUrl": "/audio/courses/cx-basic-02-plan-before-patch/manifest.json",
+      "manifestSha256": "878d573ad8a2f7c677801857c130f240ed0b76e8aa30529ff7421e615fc91251",
+      "entries": 16,
+      "voiceCount": 1,
+      "voiceProfileCount": 2,
+      "totalAudioMs": 57456,
+      "voices": [
+        "es-ES-AlvaroNeural"
+      ],
+      "audioVersion": "audio-prod-v2-2026-05-18"
+    },
+    {
+      "id": "cx-masterclass-10m-codex-operating-system",
+      "manifestUrl": "/audio/courses/cx-masterclass-10m-codex-operating-system/manifest.json",
+      "manifestSha256": "131452c90a55f8fead470f35ea7d75300d81ba584085ec2732bc18423195da31",
+      "entries": 126,
+      "voiceCount": 1,
+      "voiceProfileCount": 2,
+      "totalAudioMs": 564360,
+      "voices": [
+        "es-ES-AlvaroNeural"
+      ],
+      "audioVersion": "audio-prod-v2-2026-05-18"
+    },
+    {
+      "id": "cx-medium-01-model-picker",
+      "manifestUrl": "/audio/courses/cx-medium-01-model-picker/manifest.json",
+      "manifestSha256": "f472cc38b645cf8ac536cebc9e22fd1abde5f4aa26102293effec7c4b41d12c1",
+      "entries": 15,
+      "voiceCount": 1,
+      "voiceProfileCount": 2,
+      "totalAudioMs": 54696,
+      "voices": [
+        "es-ES-AlvaroNeural"
+      ],
+      "audioVersion": "audio-prod-v2-2026-05-18"
+    },
+    {
+      "id": "cx-medium-02-mcp-readonly",
+      "manifestUrl": "/audio/courses/cx-medium-02-mcp-readonly/manifest.json",
+      "manifestSha256": "395357828408f074d29c4879994d50bc0b57cc11739526a65a54406f7810ff8d",
+      "entries": 15,
+      "voiceCount": 1,
+      "voiceProfileCount": 2,
+      "totalAudioMs": 54144,
+      "voices": [
+        "es-ES-AlvaroNeural"
+      ],
+      "audioVersion": "audio-prod-v2-2026-05-18"
+    },
+    {
+      "id": "cx-medium-03-skill-qa-visual",
+      "manifestUrl": "/audio/courses/cx-medium-03-skill-qa-visual/manifest.json",
+      "manifestSha256": "00251bba7c92c26938cd82501031fe087192793e439b37236ffa3835f72751dc",
+      "entries": 15,
+      "voiceCount": 1,
+      "voiceProfileCount": 2,
+      "totalAudioMs": 53880,
+      "voices": [
+        "es-ES-AlvaroNeural"
+      ],
+      "audioVersion": "audio-prod-v2-2026-05-18"
+    },
+    {
+      "id": "cx-orientation-01-surface-map",
+      "manifestUrl": "/audio/courses/cx-orientation-01-surface-map/manifest.json",
+      "manifestSha256": "64b53c4abe0a0334760078a31c60c46cff826d20ffda890dc1c801710ac41a29",
+      "entries": 16,
+      "voiceCount": 1,
+      "voiceProfileCount": 2,
+      "totalAudioMs": 60288,
+      "voices": [
+        "es-ES-AlvaroNeural"
+      ],
+      "audioVersion": "audio-prod-v2-2026-05-18"
+    },
+    {
+      "id": "cx-orientation-02-first-task",
+      "manifestUrl": "/audio/courses/cx-orientation-02-first-task/manifest.json",
+      "manifestSha256": "74307ff6afb832b640a2154ed8aeb1bb46943c71ef1038a9fb0e4b8f1553dab1",
+      "entries": 19,
+      "voiceCount": 1,
+      "voiceProfileCount": 2,
+      "totalAudioMs": 67992,
+      "voices": [
+        "es-ES-AlvaroNeural"
+      ],
+      "audioVersion": "audio-prod-v2-2026-05-18"
+    },
+    {
+      "id": "cx-orientation-03-permissions",
+      "manifestUrl": "/audio/courses/cx-orientation-03-permissions/manifest.json",
+      "manifestSha256": "739756ca77c4d3cd0d28d19e20dd0d77c10a1a62fdb1ec502b1c49f5c67707ed",
+      "entries": 16,
+      "voiceCount": 1,
+      "voiceProfileCount": 2,
+      "totalAudioMs": 60096,
+      "voices": [
+        "es-ES-AlvaroNeural"
+      ],
+      "audioVersion": "audio-prod-v2-2026-05-18"
+    },
+    {
+      "id": "cx-ultra-01-github-action",
+      "manifestUrl": "/audio/courses/cx-ultra-01-github-action/manifest.json",
+      "manifestSha256": "e69772e4acac5461bda9631a4724b079ea0eddef838d53deb63b620bb1c4adaa",
+      "entries": 15,
+      "voiceCount": 1,
+      "voiceProfileCount": 2,
+      "totalAudioMs": 55704,
+      "voices": [
+        "es-ES-AlvaroNeural"
+      ],
+      "audioVersion": "audio-prod-v2-2026-05-18"
+    },
+    {
+      "id": "cx-ultra-02-pr-swarm",
+      "manifestUrl": "/audio/courses/cx-ultra-02-pr-swarm/manifest.json",
+      "manifestSha256": "aea1b5645136460b1177749c9b3affbf4065966177d3c167022dac87793750ca",
+      "entries": 17,
+      "voiceCount": 1,
+      "voiceProfileCount": 2,
+      "totalAudioMs": 58104,
+      "voices": [
+        "es-ES-AlvaroNeural"
+      ],
+      "audioVersion": "audio-prod-v2-2026-05-18"
+    },
+    {
+      "id": "cx-workshop-30m-first-real-task",
+      "manifestUrl": "/audio/courses/cx-workshop-30m-first-real-task/manifest.json",
+      "manifestSha256": "f3c8d981ea7d9be291b4fd526a5ed3887f33328d9307500d743d0cedd63e3d28",
+      "entries": 341,
+      "voiceCount": 1,
+      "voiceProfileCount": 2,
+      "totalAudioMs": 1541088,
+      "voices": [
+        "es-ES-AlvaroNeural"
+      ],
+      "audioVersion": "audio-prod-v2-2026-05-18"
+    },
+    {
+      "id": "cx-workshop-60m-first-task-to-pr",
+      "manifestUrl": "/audio/courses/cx-workshop-60m-first-task-to-pr/manifest.json",
+      "manifestSha256": "47b8503dc55dea65ec0eca71b64d7864f38b00535d723ac45b68adcbda33f1dd",
+      "entries": 1049,
+      "voiceCount": 1,
+      "voiceProfileCount": 2,
+      "totalAudioMs": 4418256,
+      "voices": [
+        "es-ES-AlvaroNeural"
+      ],
+      "audioVersion": "audio-prod-v2-2026-05-18"
+    },
+    {
+      "id": "hub-operating-model-60m",
+      "manifestUrl": "/audio/courses/hub-operating-model-60m/manifest.json",
+      "manifestSha256": "fe59bfba182ece9fd54521b536c0e26800570dd10d150522b9409d07f1e53ec0",
+      "entries": 839,
+      "voiceCount": 1,
+      "voiceProfileCount": 2,
+      "totalAudioMs": 3767208,
+      "voices": [
+        "es-ES-AlvaroNeural"
+      ],
+      "audioVersion": "audio-prod-v2-2026-05-18"
+    },
+    {
+      "id": "hub-workshop-60m-vendor-selection",
+      "manifestUrl": "/audio/courses/hub-workshop-60m-vendor-selection/manifest.json",
+      "manifestSha256": "084c9dfa5fbf5fe8bcce5467887af7600b31fd0463e5af90111824db02cefb46",
+      "entries": 904,
+      "voiceCount": 1,
+      "voiceProfileCount": 2,
+      "totalAudioMs": 4027728,
+      "voices": [
+        "es-ES-AlvaroNeural"
+      ],
+      "audioVersion": "audio-prod-v2-2026-05-18"
+    }
+  ]
+}
